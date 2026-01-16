@@ -1,0 +1,250 @@
+/* =========================
+   Theme overrides: 强制主色为绿色（避免缓存/调色板偏好导致看起来没变）
+   ========================= */
+:root {
+  --md-primary-fg-color: #16a34a; /* green-600 */
+  --md-accent-fg-color: #22c55e;  /* green-500 */
+}
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #22c55e; /* 提亮一点，暗色更清晰 */
+  --md-accent-fg-color: #4ade80;  /* green-400 */
+}
+
+/* =========================
+   Text color: 字体颜色（可直接在 Markdown 里用 span class）
+   用法：<span class="text-red">红色</span>
+   ========================= */
+.md-typeset .text-primary, .text-primary { color: var(--md-primary-fg-color); }
+.md-typeset .text-accent, .text-accent { color: var(--md-accent-fg-color); }
+.md-typeset .text-muted, .text-muted { color: var(--md-default-fg-color--light); }
+
+.md-typeset .text-green, .text-green { color: #16a34a; }
+.md-typeset .text-red, .text-red { color: #dc2626; }
+.md-typeset .text-orange, .text-orange { color: #f59e0b; }
+.md-typeset .text-blue, .text-blue { color: #2563eb; }
+.md-typeset .text-purple, .text-purple { color: #7c3aed; }
+
+[data-md-color-scheme="slate"] .md-typeset .text-green,
+[data-md-color-scheme="slate"] .text-green { color: #4ade80; }
+[data-md-color-scheme="slate"] .md-typeset .text-red,
+[data-md-color-scheme="slate"] .text-red { color: #f87171; }
+[data-md-color-scheme="slate"] .md-typeset .text-orange,
+[data-md-color-scheme="slate"] .text-orange { color: #fbbf24; }
+[data-md-color-scheme="slate"] .md-typeset .text-blue,
+[data-md-color-scheme="slate"] .text-blue { color: #60a5fa; }
+[data-md-color-scheme="slate"] .md-typeset .text-purple,
+[data-md-color-scheme="slate"] .text-purple { color: #a78bfa; }
+
+/* =========================
+   PDF/Print: 打印为 PDF 的样式与按钮
+   ========================= */
+/* 顶栏右上角的“下载 PDF”按钮（小图标） */
+.md-header .pdf-download-header svg {
+  width: 1.15rem;
+  height: 1.15rem;
+}
+
+/* 与其它顶栏按钮保持一致的 hover/active 区域 */
+.md-header .pdf-download-header {
+  margin-left: 0.1rem;
+}
+
+@media print {
+  /* 隐藏导航/侧边栏/页脚，只保留正文 */
+  .md-header,
+  .md-sidebar,
+  .md-footer,
+  .md-top,
+  .md-content__button,
+  .md-search,
+  .md-tabs {
+    display: none !important;
+  }
+
+  /* 正文撑满宽度 */
+  .md-grid,
+  .md-content {
+    max-width: 100% !important;
+  }
+
+  /* 去掉按钮 */
+  .pdf-download-header {
+    display: none !important;
+  }
+
+  /* 打印时更清晰的颜色 */
+  :root {
+    --md-default-bg-color: #ffffff;
+  }
+}
+
+/* =========================
+   Layout: 增大阅读区域、缩窄两侧栏（仅大屏）
+   ========================= */
+@media (min-width: 76.25em) {
+  /* 主体三栏布局：导航 / 正文 / 目录 */
+  .md-main__inner.md-grid {
+    grid-template-columns: 12rem minmax(0, 1fr) 14rem;
+  }
+
+  /* 让正文容器更宽 */
+  .md-main__inner.md-grid,
+  .md-header__inner.md-grid,
+  .md-footer-meta__inner.md-grid {
+    max-width: 92rem;
+  }
+}
+
+/* =========================
+   GitBook-like "Steps"
+   稳定用法（推荐）：
+   <div class="steps" markdown="1">
+   1. ...
+   2. ...
+   </div>
+   兼容用法（若 attr_list 对 list 生效）：列表 class=steps
+   ========================= */
+.md-typeset .steps > ol,
+.md-typeset ol.steps {
+  counter-reset: step;
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.md-typeset .steps > ol > li,
+.md-typeset ol.steps > li {
+  position: relative;
+  padding: 0.15rem 0.5rem 0.15rem 2.75rem;
+  margin: 0.75rem 0;
+}
+
+.md-typeset .steps > ol > li::before,
+.md-typeset ol.steps > li::before {
+  counter-increment: step;
+  content: counter(step);
+  position: absolute;
+  left: 0;
+  top: 0.15rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  color: var(--md-primary-bg-color);
+  background: var(--md-primary-fg-color);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12);
+}
+
+/* 连接竖线：对齐到圆点“正中”（x = 1rem）并从圆点下方延伸到下一步 */
+.md-typeset .steps > ol > li:not(:last-child)::after,
+.md-typeset ol.steps > li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  left: 1rem;             /* 圆点宽 2rem，中心点=1rem */
+  top: calc(0.15rem + 2rem + 0.25rem); /* 圆点顶部 + 圆点高度 + 间距 */
+  bottom: -0.75rem;       /* 覆盖 li 的外边距，让线条连接更自然 */
+  width: 3px;
+  transform: translateX(-50%);
+  background: color-mix(in srgb, var(--md-primary-fg-color) 35%, var(--md-default-fg-color--lightest));
+  border-radius: 999px;
+}
+
+/* 多行/多段内容：不管 li 里是 p、ul、pre 还是 admonition，都保证上下不挤出“空隙错位” */
+.md-typeset .steps > ol > li > :first-child,
+.md-typeset ol.steps > li > :first-child {
+  margin-top: 0;
+}
+
+.md-typeset .steps > ol > li > :last-child,
+.md-typeset ol.steps > li > :last-child {
+  margin-bottom: 0;
+}
+
+/* 子列表/代码块在 steps 中的视觉对齐 */
+.md-typeset .steps > ol > li > ul,
+.md-typeset .steps > ol > li > ol,
+.md-typeset ol.steps > li > ul,
+.md-typeset ol.steps > li > ol {
+  margin-left: 1rem;
+}
+
+.md-typeset .steps > ol > li pre,
+.md-typeset ol.steps > li pre {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* =========================
+   Tables: 配色/斑马纹/可选主题
+   稳定用法（推荐）：
+   <div class="table-primary" markdown="1">
+   |...|
+   </div>
+   兼容用法（若 attr_list 对 table 生效）：table class=table-primary 等
+   - 单元格内容可用 <span class="cell-ok">OK</span> 等
+   ========================= */
+.md-typeset table {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.md-typeset table thead th {
+  background: color-mix(in srgb, var(--md-primary-fg-color) 12%, transparent);
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.md-typeset table tbody tr:nth-child(2n) {
+  background: color-mix(in srgb, var(--md-default-fg-color) 4%, transparent);
+}
+
+.md-typeset table.table-compact th,
+.md-typeset table.table-compact td {
+  padding: 0.35rem 0.6rem;
+}
+
+.md-typeset .table-compact table th,
+.md-typeset .table-compact table td {
+  padding: 0.35rem 0.6rem;
+}
+
+.md-typeset table.table-primary thead th {
+  background: color-mix(in srgb, #2563eb 18%, transparent);
+}
+
+.md-typeset .table-primary table thead th {
+  background: color-mix(in srgb, #2563eb 18%, transparent);
+}
+
+.md-typeset table.table-danger thead th {
+  background: color-mix(in srgb, #dc2626 16%, transparent);
+}
+
+.md-typeset .table-danger table thead th {
+  background: color-mix(in srgb, #dc2626 16%, transparent);
+}
+
+.md-typeset .cell-ok {
+  padding: 0.1rem 0.35rem;
+  border-radius: 6px;
+  background: color-mix(in srgb, #16a34a 16%, transparent);
+  border: 1px solid color-mix(in srgb, #16a34a 25%, transparent);
+}
+
+.md-typeset .cell-warn {
+  padding: 0.1rem 0.35rem;
+  border-radius: 6px;
+  background: color-mix(in srgb, #f59e0b 18%, transparent);
+  border: 1px solid color-mix(in srgb, #f59e0b 28%, transparent);
+}
+
+.md-typeset .cell-bad {
+  padding: 0.1rem 0.35rem;
+  border-radius: 6px;
+  background: color-mix(in srgb, #dc2626 14%, transparent);
+  border: 1px solid color-mix(in srgb, #dc2626 22%, transparent);
+}
+

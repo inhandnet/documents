@@ -1,0 +1,73 @@
+site_name: Docs
+site_description: Documentation powered by MkDocs (Material)
+
+site_url: https://inhandnet.github.io/documents/en/
+# English site will be published under /en (set real URL when deploying)
+# site_url: ""
+
+repo_url: https://github.com/inhandnet/documents
+repo_name: inhandnet/documents
+edit_uri: edit/main/docs/en/
+
+# 方案 B：英文站点使用独立 docs_dir
+docs_dir: docs/en
+
+# Hide Markdown inside images folders (avoid README.md in nav)
+exclude_docs: |
+  **/images/**/*.md
+
+theme:
+  name: material
+  language: en
+  logo: assets/logo.svg
+  favicon: assets/favicon.svg
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.top
+    - navigation.indexes
+    - content.code.copy
+    - content.action.edit
+    - search.suggest
+    - search.highlight
+  palette:
+    - scheme: default
+      primary: green
+      accent: green
+    - scheme: slate
+      primary: green
+      accent: green
+
+markdown_extensions:
+  - admonition
+  - tables
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.highlight:
+      linenums: true
+      anchor_linenums: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.mark
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/pdf.js
+  - javascripts/embed-bridge.js
+  - javascripts/sidebar-search.js
+
+plugins:
+  - search
+

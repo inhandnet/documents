@@ -82,10 +82,15 @@
 /* =========================
    Layout: 增大阅读区域、缩窄两侧栏（仅大屏）
    ========================= */
+:root {
+  --md-sidebar-width: 12rem;
+  --md-sidebar-width-l: 12rem;
+}
+
 @media (min-width: 76.25em) {
   /* 主体三栏布局：导航 / 正文 / 目录 */
   .md-main__inner.md-grid {
-    grid-template-columns: 12rem minmax(0, 1fr) 14rem;
+    grid-template-columns: var(--md-sidebar-width-l) minmax(0, 1fr) var(--md-sidebar-width-l);
   }
 
   /* 让正文容器更宽 */
@@ -94,6 +99,172 @@
   .md-footer-meta__inner.md-grid {
     max-width: 92rem;
   }
+}
+
+/* =========================
+   Sidebar: 更像“文件树”的左侧目录
+   ========================= */
+/* 左侧导航条目更紧凑一点 */
+.md-nav__link {
+  padding-top: 0.08rem;
+  padding-bottom: 0.08rem;
+  display: flex;
+  align-items: center;
+  gap: 0.05rem;
+  font-size: 0.75rem;
+}
+
+/* 当前页高亮更明显 */
+.md-nav__link--active {
+  font-weight: 700;
+}
+
+/* 子级列表右缩进（目录层级缩进略小） */
+.md-nav__list .md-nav__list {
+  margin-left: 0.5rem;
+}
+
+/* 文档（链接）相对目录再右移一些，层次更清晰 */
+a.md-nav__link {
+  padding-left: 0.25rem;
+}
+
+/* 压缩目录/文档之间的垂直间距 */
+.md-nav__list {
+  margin: 0;
+  padding-left: 0;
+}
+
+.md-nav__list > .md-nav__item {
+  margin: 0.02rem 0;
+}
+
+/* 让当前文档的上级目录加粗（不改颜色） */
+.md-nav__item--active > .md-nav__link,
+.md-nav__item--active .md-nav__link--active {
+  font-weight: 700;
+}
+
+/* 自定义目录折叠图标（小三角） */
+input.md-nav__toggle + label.md-nav__link::before {
+  content: "▸";
+  display: inline-block;
+  margin-right: 0.45rem;
+  color: var(--md-primary-fg-color);
+  transform: translateY(-1px) rotate(0deg);
+  transition: transform 120ms ease;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+input.md-nav__toggle:checked + label.md-nav__link::before {
+  transform: translateY(-1px) rotate(90deg);
+}
+
+/* 隐藏默认的折叠 svg */
+input.md-nav__toggle + label.md-nav__link svg {
+  display: none;
+}
+
+/* 隐藏右侧多余的默认折叠图标 */
+.md-nav__link .md-nav__icon {
+  display: none;
+}
+
+/* Sidebar navigation search */
+.md-nav-search {
+  padding: 0.5rem 0.75rem 0.35rem;
+}
+
+.md-nav-search__input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.35rem 0.6rem;
+  border: 1px solid color-mix(in srgb, var(--md-primary-fg-color) 55%, var(--md-default-bg-color));
+  border-radius: 0.35rem;
+  background: color-mix(in srgb, var(--md-primary-fg-color) 12%, var(--md-default-bg-color));
+  color: var(--md-default-fg-color);
+  outline: none;
+  transition: box-shadow 120ms ease, border-color 120ms ease;
+}
+
+.md-nav-search__input::placeholder {
+  color: color-mix(in srgb, var(--md-primary-fg-color) 70%, var(--md-default-fg-color--light));
+}
+
+.md-nav-search__input:focus {
+  border-color: var(--md-primary-fg-color);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--md-primary-fg-color) 25%, transparent);
+  background: #fff;
+}
+
+
+/* Popup style (no dim overlay) */
+.md-nav-search--popup {
+  padding: 0.6rem 0.75rem 0.5rem;
+  background: var(--md-default-bg-color);
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.5rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.16);
+  position: relative;
+  z-index: 1001;
+  pointer-events: auto;
+}
+
+.md-nav-search--popup .md-nav-search__results {
+  max-height: 18rem;
+}
+
+.md-nav-search__backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 1000;
+}
+
+.md-nav-search__results {
+  margin-top: 0.35rem;
+  max-height: 14rem;
+  overflow: auto;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.35rem;
+  background: var(--md-default-bg-color);
+}
+
+.md-nav-search__count {
+  padding: 0.35rem 0.6rem;
+  font-size: 0.75rem;
+  color: var(--md-default-fg-color--light);
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.md-nav-search__link {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  padding: 0.45rem 0.7rem;
+  color: var(--md-default-fg-color);
+  text-decoration: none;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.md-nav-search__link:hover {
+  background: color-mix(in srgb, var(--md-primary-fg-color) 10%, transparent);
+}
+
+.md-nav-search__link-icon {
+  flex-shrink: 0;
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-top: 0.1rem;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-nav-search__hit {
+  color: var(--md-primary-fg-color);
+  font-weight: 700;
+  background: none;
 }
 
 /* =========================

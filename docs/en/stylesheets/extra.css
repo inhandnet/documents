@@ -102,9 +102,8 @@
 }
 
 /* =========================
-   Sidebar: 更像“文件树”的左侧目录
+   Sidebar: more like a "file tree"
    ========================= */
-/* 左侧导航条目更紧凑一点 */
 .md-nav__link {
   padding-top: 0.08rem;
   padding-bottom: 0.08rem;
@@ -114,22 +113,21 @@
   font-size: 0.75rem;
 }
 
-/* 当前页高亮更明显 */
 .md-nav__link--active {
   font-weight: 700;
 }
 
-/* 子级列表右缩进（目录层级缩进略小） */
+/* Indent child lists (directories) slightly */
 .md-nav__list .md-nav__list {
   margin-left: 0.5rem;
 }
 
-/* 文档（链接）相对目录再右移一些，层次更清晰 */
+/* Leaf documents shift a bit more to the right for clearer hierarchy */
 a.md-nav__link {
   padding-left: 0.25rem;
 }
 
-/* 压缩目录/文档之间的垂直间距 */
+/* Reduce vertical gaps between sections/items */
 .md-nav__list {
   margin: 0;
   padding-left: 0;
@@ -139,13 +137,13 @@ a.md-nav__link {
   margin: 0.02rem 0;
 }
 
-/* 让当前文档的上级目录加粗（不改颜色） */
+/* Ancestors bold only (do not change color) */
 .md-nav__item--active > .md-nav__link,
 .md-nav__item--active .md-nav__link--active {
   font-weight: 700;
 }
 
-/* 自定义目录折叠图标（小三角） */
+/* Custom chevron toggles */
 input.md-nav__toggle + label.md-nav__link::before {
   content: "▸";
   display: inline-block;
@@ -161,12 +159,12 @@ input.md-nav__toggle:checked + label.md-nav__link::before {
   transform: translateY(-1px) rotate(90deg);
 }
 
-/* 隐藏默认的折叠 svg */
+/* Hide default svg chevron */
 input.md-nav__toggle + label.md-nav__link svg {
   display: none;
 }
 
-/* 隐藏右侧多余的默认折叠图标 */
+/* Hide the right-side default chevron icon */
 .md-nav__link .md-nav__icon {
   display: none;
 }
@@ -265,6 +263,35 @@ input.md-nav__toggle + label.md-nav__link svg {
   color: var(--md-primary-fg-color);
   font-weight: 700;
   background: none;
+}
+
+/* "Edit this page" under H1 */
+.pm-edit-under-title {
+  margin: -0.25rem 0 1rem;
+}
+
+.pm-edit-under-title__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: var(--md-primary-fg-color);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.pm-edit-under-title__link:hover {
+  text-decoration: underline;
+}
+
+.pm-edit-under-title__sep {
+  display: inline-block;
+  margin: 0 0.35rem;
+  color: var(--md-default-fg-color--light);
+}
+
+.pm-edit-under-title__link--muted {
+  color: var(--md-default-fg-color--light);
+  font-weight: 600;
 }
 
 /* =========================

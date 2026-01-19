@@ -30,7 +30,7 @@ hide:
   <section class="pm-home__section" id="enrouter" data-tab-panel="enrouter">
     <h2 class="pm-home__h2">EnRouter</h2>
     <div class="pm-home__grid">
-      <a class="pm-card" href="EnRouter/">
+      <a class="pm-card" href="EnRouter/index.html">
         <div class="pm-card__img pm-card__img--green">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M4 6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3h-2V6H6v3H4V6m0 5h16a2 2 0 0 1 2 2v3h-2v-3H4v3H2v-3a2 2 0 0 1 2-2m2 6h12v2H6v-2Z"/></svg>
         </div>
@@ -40,7 +40,7 @@ hide:
         </div>
       </a>
 
-      <a class="pm-card" href="EnRouter/IR302/">
+      <a class="pm-card" href="EnRouter/IR302/index.html">
         <div class="pm-card__img pm-card__img--purple">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M12 3 2 9l10 6 10-6-10-6m0 10L2 7v10l10 6 10-6V7l-10 6Z"/></svg>
         </div>
@@ -50,7 +50,7 @@ hide:
         </div>
       </a>
 
-      <a class="pm-card" href="EnRouter/IR302/quickstart/">
+      <a class="pm-card" href="EnRouter/IR302/quickstart.html">
         <div class="pm-card__img pm-card__img--blue">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6m4 18H6V4h7v5h5v11z"/></svg>
         </div>
@@ -60,7 +60,7 @@ hide:
         </div>
       </a>
 
-      <a class="pm-card" href="EnRouter/IR302/faq/">
+      <a class="pm-card" href="EnRouter/IR302/faq.html">
         <div class="pm-card__img pm-card__img--orange">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-10 10 10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m1 17h-2v-2h2v2m2.07-7.75-.9.92A3.49 3.49 0 0 0 13 15h-2v-.5c0-1 .4-2 1.07-2.68l1.24-1.26a1.5 1.5 0 1 0-2.56-1.06H8.75a3.25 3.25 0 1 1 6.32 1.75Z"/></svg>
         </div>

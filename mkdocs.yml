@@ -11,6 +11,9 @@ edit_uri: edit/main/docs/zh/
 # 方案 B：中文/英文各自独立 docs_dir，构建两次输出到 / 与 /en
 docs_dir: docs/zh
 
+# 输出为 *.html（避免依赖目录 /index.html 的自动补全）
+use_directory_urls: false
+
 # 自动导航时隐藏图片目录里的 Markdown（避免 README.md 出现在侧边栏）
 exclude_docs: |
   **/images/**/*.md
@@ -66,7 +69,8 @@ extra_javascript:
   - javascripts/pdf.js
   - javascripts/embed-bridge.js
   - javascripts/sidebar-search.js
-
+  - javascripts/edit-under-title.js
+  
 plugins:
   - search
 

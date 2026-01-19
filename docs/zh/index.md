@@ -34,7 +34,7 @@ hide:
   <section class="pm-home__section" id="enrouter" data-tab-panel="enrouter">
     <h2 class="pm-home__h2">EnRouter</h2>
     <div class="pm-home__grid">
-      <a class="pm-card" href="EnRouter/IR302/quickstart/">
+      <a class="pm-card" href="EnRouter/IR302/quickstart.html">
         <div class="pm-card__img pm-card__img--green">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M4 6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3h-2V6H6v3H4V6m0 5h16a2 2 0 0 1 2 2v3h-2v-3H4v3H2v-3a2 2 0 0 1 2-2m2 6h12v2H6v-2Z"/></svg>
         </div>
@@ -44,7 +44,7 @@ hide:
         </div>
       </a>
 
-      <a class="pm-card" href="EnRouter/IR302/faq/">
+      <a class="pm-card" href="EnRouter/IR302/faq.html">
         <div class="pm-card__img pm-card__img--blue">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-10 10 10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m1 17h-2v-2h2v2m2.07-7.75-.9.92A3.49 3.49 0 0 0 13 15h-2v-.5c0-1 .4-2 1.07-2.68l1.24-1.26a1.5 1.5 0 1 0-2.56-1.06H8.75a3.25 3.25 0 1 1 6.32 1.75Z"/></svg>
         </div>
@@ -54,7 +54,7 @@ hide:
         </div>
       </a>
 
-      <a class="pm-card" href="EnRouter/InRouter/IR302/quickstart/">
+      <a class="pm-card" href="EnRouter/InRouter/IR302/quickstart.html">
         <div class="pm-card__img pm-card__img--purple">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M12 3 2 9l10 6 10-6-10-6m0 10L2 7v10l10 6 10-6V7l-10 6Z"/></svg>
         </div>
@@ -64,7 +64,7 @@ hide:
         </div>
       </a>
 
-      <a class="pm-card" href="EnRouter/InRouter/IR302/faq/">
+      <a class="pm-card" href="EnRouter/InRouter/IR302/faq.html">
         <div class="pm-card__img pm-card__img--orange">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M13 9h-2V7h2v2m0 8h-2v-6h2v6m-1-15A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2Z"/></svg>
         </div>
@@ -79,7 +79,7 @@ hide:
   <section class="pm-home__section" id="guide" data-tab-panel="guide" hidden>
     <h2 class="pm-home__h2">Guide</h2>
     <div class="pm-home__grid">
-      <a class="pm-card" href="guide/gitbook-like/">
+      <a class="pm-card" href="guide/gitbook-like.html">
         <div class="pm-card__img pm-card__img--pink">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M18 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2m0 18H6V4h12v16Z"/></svg>
         </div>
@@ -89,7 +89,7 @@ hide:
         </div>
       </a>
 
-      <a class="pm-card" href="guide/tables-and-pdf/">
+      <a class="pm-card" href="guide/tables-and-pdf.html">
         <div class="pm-card__img pm-card__img--teal">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M3 3h18v18H3V3m2 2v4h14V5H5m0 6v8h4v-8H5m6 0v8h8v-8h-8Z"/></svg>
         </div>
@@ -99,7 +99,7 @@ hide:
         </div>
       </a>
 
-      <a class="pm-card" href="guide/visual-editor/">
+      <a class="pm-card" href="guide/visual-editor.html">
         <div class="pm-card__img pm-card__img--gray">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M5 4h14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2m0 2v12h14V6H5m2 2h4v4H7V8m6 0h4v2h-4V8m0 4h4v2h-4v-2Z"/></svg>
         </div>
@@ -114,7 +114,7 @@ hide:
   <section class="pm-home__section" id="pages" data-tab-panel="pages" hidden>
     <h2 class="pm-home__h2">Pages</h2>
     <div class="pm-home__grid">
-      <a class="pm-card" href="pages/README/">
+      <a class="pm-card" href="pages/README.html">
         <div class="pm-card__img pm-card__img--blue">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6m4 18H6V4h7v5h5v11z"/></svg>
         </div>
@@ -129,7 +129,7 @@ hide:
   <section class="pm-home__section" id="switch" data-tab-panel="switch" hidden>
     <h2 class="pm-home__h2">Switch</h2>
     <div class="pm-home__grid">
-      <a class="pm-card" href="switch/visual-editor222/">
+      <a class="pm-card" href="switch/visual-editor222.html">
         <div class="pm-card__img pm-card__img--green">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M7 7h10v2H7V7m0 4h10v2H7v-2m0 4h7v2H7v-2M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"/></svg>
         </div>

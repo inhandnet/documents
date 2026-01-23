@@ -1,6 +1,5 @@
 site_name: Docs
 site_description: Documentation powered by MkDocs (Material)
-
 site_url: https://inhandnet.github.io/documents/en/
 # English site will be published under /en (set real URL when deploying)
 # site_url: ""
@@ -33,6 +32,7 @@ theme:
     - content.action.edit
     - search.suggest
     - search.highlight
+    - toc.follow
   palette:
     - scheme: default
       primary: green
@@ -48,6 +48,10 @@ markdown_extensions:
   - md_in_html
   - toc:
       permalink: true
+      toc_depth: 4
+      title: 目录
+      # 从 h1 到 h4 都纳入 TOC（默认从 h2 开始）
+      # MkDocs 的 toc 扩展不直接支持 h1，需要通过 theme 层面解决
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.inlinehilite
@@ -71,6 +75,7 @@ extra_javascript:
   - javascripts/embed-bridge.js
   - javascripts/sidebar-search.js
   - javascripts/edit-under-title.js
+  - javascripts/toc-h1.js
 
 plugins:
   - search

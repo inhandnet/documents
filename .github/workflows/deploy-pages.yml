@@ -107,12 +107,12 @@ jobs:
       - name: Copy site to Formal Server
         uses: appleboy/scp-action@v0.1.7
         with:
-          host: ${{ secrets.REMOTE_HOST }}
-          username: ${{ secrets.REMOTE_USER }}
-          password: ${{ secrets.REMOTE_PASS }}
+          host: ${{ secrets.OVERSEAS_HOST }}
+          username: ${{ secrets.OVERSEAS_USER }}
+          password: ${{ secrets.OVERSEAS_PASS }}
           source: "site/*"
           # 使用你剛改好的環境變量，確保它的值是 /data/wordpress/manuals
-          target: ${{ secrets.REMOTE_TARGET }}
+          target: ${{ secrets.OVERSEAS_TARGET }}
           # 剝離 site/ 外殼，讓內容（如 EnRouter/）直接平鋪到 manuals 目錄下
           strip_components: 1
           # 每次部署前自動清理舊文件，防止手動上傳的殘餘文件干擾路徑

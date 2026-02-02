@@ -447,4 +447,10 @@ input.md-nav__toggle + label.md-nav__link svg {
   background: color-mix(in srgb, #dc2626 14%, transparent);
   border: 1px solid color-mix(in srgb, #dc2626 22%, transparent);
 }
+.md-header{
+display:none
+}
 
+.md-sidebar {
+width:14rem;
+}

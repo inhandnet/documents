@@ -1,4 +1,66 @@
-name: Deploy MkDocs to GitHub Pages
+#name: Deploy MkDocs to GitHub Pages
+#
+#on:
+#  push:
+#    branches: [master]
+#  workflow_dispatch:
+#
+#permissions:
+#  contents: read
+#  pages: write
+#  id-token: write
+#
+#concurrency:
+#  group: "pages"
+#  cancel-in-progress: true
+#
+#jobs:
+#  build:
+#    runs-on: ubuntu-latest
+#    steps:
+#      - name: Checkout
+#        uses: actions/checkout@v4
+#
+#      - name: Setup Python
+#        uses: actions/setup-python@v5
+#        with:
+#          python-version: "3.11"
+#
+#      - name: Install dependencies
+#        run: |
+#          python -m pip install --upgrade pip
+#          pip install -r requirements.txt
+#
+#      # Build Chinese site to /
+#      - name: Build (zh)
+#        run: |
+#          python -m mkdocs build -f mkdocs.yml -d site --clean
+#
+#      # Build English site to /en/
+#      - name: Build (en)
+#        run: |
+#          python -m mkdocs build -f mkdocs.en.yml -d site/en
+#
+#      - name: Setup Pages
+#        uses: actions/configure-pages@v5
+#
+#      - name: Upload artifact
+#        uses: actions/upload-pages-artifact@v3
+#        with:
+#          path: site
+#
+#  deploy:
+#    needs: build
+#    runs-on: ubuntu-latest
+#    environment:
+#      name: github-pages
+#      url: ${{ steps.deployment.outputs.page_url }}
+#    steps:
+#      - name: Deploy to GitHub Pages
+#        id: deployment
+#        uses: actions/deploy-pages@v4
+
+name: Deploy MkDocs to Pages and Formal Server
 
 on:
   push:
@@ -15,7 +77,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -31,16 +93,32 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      # Build Chinese site to /
+      # 1. 構建中文站到 site/
       - name: Build (zh)
         run: |
           python -m mkdocs build -f mkdocs.yml -d site --clean
 
-      # Build English site to /en/
+      # 2. 構建英文站到 site/en/
       - name: Build (en)
         run: |
           python -m mkdocs build -f mkdocs.en.yml -d site/en
 
+# --- 目的地 A：推送到你的正式伺服器 (物理平鋪方案) ---
+      - name: Copy site to Formal Server
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.REMOTE_HOST }}
+          username: ${{ secrets.REMOTE_USER }}
+          password: ${{ secrets.REMOTE_PASS }}
+          source: "site/*"
+          # 使用你剛改好的環境變量，確保它的值是 /data/wordpress/manuals
+          target: ${{ secrets.REMOTE_TARGET }}
+          # 剝離 site/ 外殼，讓內容（如 EnRouter/）直接平鋪到 manuals 目錄下
+          strip_components: 1
+          # 每次部署前自動清理舊文件，防止手動上傳的殘餘文件干擾路徑
+          rm: true
+
+      # --- 目的地 B：部署到 GitHub Pages (預覽用) ---
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
@@ -49,13 +127,6 @@ jobs:
         with:
           path: site
 
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

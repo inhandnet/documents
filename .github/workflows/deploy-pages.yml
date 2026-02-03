@@ -104,6 +104,7 @@ jobs:
           python -m mkdocs build -f mkdocs.en.yml -d site/en
 
 # --- 目的地 A：推送到你的正式伺服器 (物理平鋪方案) ---
+# --- 目的地 A：推送到你的正式伺服器 (物理平鋪方案) ---
       - name: Copy site to Formal Server
         uses: appleboy/scp-action@v0.1.7
         with:
@@ -111,12 +112,11 @@ jobs:
           username: ${{ secrets.OVERSEAS_USER }}
           password: ${{ secrets.OVERSEAS_PASS }}
           source: "site/*"
-          # 使用你剛改好的環境變量，確保它的值是 /data/wordpress/manuals
           target: ${{ secrets.OVERSEAS_TARGET }}
-          # 剝離 site/ 外殼，讓內容（如 EnRouter/）直接平鋪到 manuals 目錄下
           strip_components: 1
-          # 每次部署前自動清理舊文件，防止手動上傳的殘餘文件干擾路徑
-          rm: true
+          # --- 核心修正：确保这两行在 with 缩进内 ---
+          rm: false # 不再尝试删除文件夹，避开父目录权限检查
+          overwrite: true # 确保新上传的文件可以直接覆盖旧文件
 
       # --- 目的地 B：部署到 GitHub Pages (預覽用) ---
       - name: Setup Pages

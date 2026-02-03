@@ -117,6 +117,20 @@ jobs:
           # --- 核心修正：确保这两行在 with 缩进内 ---
           rm: false # 不再尝试删除文件夹，避开父目录权限检查
           overwrite: true # 确保新上传的文件可以直接覆盖旧文件
+# --- 目的地 C：推送到国内正式伺服器 ---
+      - name: Copy site to Domestic Server
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          # 使用你定义的国内环境变量
+          host: ${{ secrets.CN_OVERSEAS_HOST }}
+          username: ${{ secrets.CN_OVERSEAS_USER }}
+          password: ${{ secrets.CN_OVERSEAS_PASS }}
+          source: "site/*"
+          # 既然目标地址一样，直接用一样的变量或写死物理路径
+          target: ${{ secrets.OVERSEAS_TARGET }}
+          strip_components: 1
+          rm: false # 同样设为 false，防止国内服务器权限报错
+          overwrite: true # 覆盖旧文件
 
       # --- 目的地 B：部署到 GitHub Pages (預覽用) ---
       - name: Setup Pages

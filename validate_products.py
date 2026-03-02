@@ -24,7 +24,11 @@ def get_whitelist(lang):
         try:
             res = requests.get(
                 f"{conf['base']}/api/plm/product/series-list",
-                params={"pageNumber": page, "pageSize": 100, "locale": "en"},
+                params={
+                    "pageNumber": page,
+                    "pageSize": 100,
+                    "locale": "zh" if lang == "zh" else "en"  # 👈 動態傳入語言
+                },
                 headers={"X-Api-Key": conf["key"].strip()},
                 timeout=10
             ).json()

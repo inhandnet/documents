@@ -3,71 +3,99 @@ import requests
 import sys
 import subprocess
 
-# 1. API 配置：国内站与海外站分开
+# 1. 配置中心：EN 站保持原样，ZH 站准备好双钥匙
 CONFIGS = {
-    "zh": {"base": "https://poweris.inhand.online", "key": os.getenv("CN_API_KEY")},
-    "en": {"base": "https://poweris.inhandnetworks.com", "key": os.getenv("GLOBAL_API_KEY")}
+    "zh": {
+        "base": "https://poweris.inhand.online",
+        "key": os.getenv("CN_API_KEY"),
+        "token": os.getenv("CN_XK_TOKEN")
+    },
+    "en": {
+        "base": "https://poweris.inhandnetworks.com",
+        "key": os.getenv("GLOBAL_API_KEY"),
+        "token": os.getenv("GLOBAL_XK_TOKEN")
+    }
 }
 
 
 def get_whitelist(lang):
-    """从 PLM 系统同步产品 ID 白名单"""
+    """自适应鉴权：ZH 站会尝试大小写及不同 Header 名"""
     conf = CONFIGS.get(lang)
-    whitelist = set()
-    if not conf or not conf["key"]:
-        print(f"⚠️ 警告: 未找到 {lang.upper()} 版 API 配置 (Secrets)，跳过该语言同步。")
-        return whitelist
+    if not conf: return None
+
+    if not conf["key"] and not conf["token"]:
+        print(f"⚠️ 警告: 未找到 {lang.upper()} 版鉴权配置，跳过同步。")
+        return None
 
     print(f"正在从 {lang.upper()} 站同步产品列表...")
-    page = 1
-    while True:
-        try:
-            res = requests.get(
-                f"{conf['base']}/api/plm/product/series-list",
-                params={
-                    "pageNumber": page,
-                    "pageSize": 100,
-                    "locale": "zh" if lang == "zh" else "en"  # 👈 動態傳入語言
-                },
-                headers={"X-Api-Key": conf["key"].strip()},
-                timeout=10
-            ).json()
 
-            if res.get("status") == 200:
-                items = res.get("result", [])
-                if not items: break
-                for item in items:
-                    if item.get("id"): whitelist.add(item["id"].lower())
-                    names = item.get("name", {})
-                    if names.get("cn"): whitelist.add(names["cn"].lower())
-                    if names.get("en"): whitelist.add(names["en"].lower())
-                if page * 100 >= res.get("total", 0): break
-                page += 1
-            else:
-                print(f"❌ {lang.upper()} 站 API 响应错误: {res.get('message')}")
+    # 构造尝试序列：如果是 ZH 站，我们把大小写都试一遍
+    auth_attempts = []
+    if conf["key"]:
+        auth_attempts.append(("X-Api-Key", conf["key"].strip()))
+        auth_attempts.append(("x-api-key", conf["key"].strip()))  # 👈 对应你 JS 里的写法
+    if conf["token"]:
+        auth_attempts.append(("XK-Token", conf["token"].strip()))
+        auth_attempts.append(("xk-token", conf["token"].strip()))  # 👈 对应你 JS 里的写法
+
+    for header_name, auth_val in auth_attempts:
+        page = 1
+        current_whitelist = set()
+        print(f"  🔑 正在尝试使用 {header_name} 进行鉴权...")
+
+        success = True
+        while True:
+            try:
+                res = requests.get(
+                    f"{conf['base']}/api/plm/product/series-list",
+                    params={
+                        "pageNumber": page,
+                        "pageSize": 100,
+                        "locale": "zh" if lang == "zh" else "en"
+                    },
+                    headers={header_name: auth_val},
+                    timeout=10
+                ).json()
+
+                if res.get("status") == 200:
+                    items = res.get("result", [])
+                    if not items: break
+                    for item in items:
+                        if item.get("id"): current_whitelist.add(item["id"].lower())
+                        names = item.get("name", {})
+                        if names.get("cn"): current_whitelist.add(names["cn"].lower())
+                        if names.get("en"): current_whitelist.add(names["en"].lower())
+                    if page * 100 >= res.get("total", 0): break
+                    page += 1
+                else:
+                    # 如果不是 200，记录错误但不立刻崩溃，换下一个 Header 试试
+                    print(f"  ❌ {header_name} 尝试失败: {res.get('message')}")
+                    success = False
+                    break
+            except Exception as e:
+                print(f"  ❌ 连接异常 ({header_name}): {e}")
+                success = False
                 break
-        except Exception as e:
-            print(f"❌ {lang.upper()} 站连接异常: {e}")
-            break
-    return whitelist
+
+        # 只要成功拿到数据（哪怕只有 1 条），就说明这把钥匙是对的
+        if success and current_whitelist:
+            print(f"  ✅ {header_name} 鉴权成功！已获取 {len(current_whitelist)} 条产品数据。")
+            return current_whitelist
+
+    return None
 
 
 def get_changed_folders():
-    """获取本次提交中涉及的所有文件夹路径，并过滤掉已删除的文件"""
+    """获取本次提交中涉及的文件夹路径，并过滤掉已在本地删除的文件"""
     try:
-        # 1. 拿到 Git 记录里的变动文件列表
         cmd = ["git", "diff", "--name-only", "HEAD~1", "HEAD"]
         output = subprocess.check_output(cmd).decode("utf-8")
         files = output.splitlines()
 
         changed_folders = set()
         for f in files:
-            # --- 💡 就是在这里加这一行！！！ ---
-            # 如果文件在本地硬盘上已经不存在了（说明被你删了），就跳过它
             if not os.path.exists(f):
                 continue
-                # ----------------------------------
-
             if (f.startswith("docs/en/") or f.startswith("docs/zh/")) and f.endswith(".md"):
                 if os.path.basename(f).lower() == "index.md": continue
                 changed_folders.add(os.path.dirname(f))
@@ -78,12 +106,10 @@ def get_changed_folders():
 
 
 def find_similar_names(folder_name, whitelist):
-    """当校验失败时，寻找最相关的产品名称作为建议"""
+    """校验失败时，寻找相关的产品 ID 作为建议"""
     suggestions = []
     fn_lower = folder_name.lower()
-    # 提取前两个字母作为模糊匹配前缀 (例如 ec312 -> ec)
     prefix = "".join([c for c in fn_lower if c.isalpha()])[:2]
-
     for item in whitelist:
         if fn_lower in item or item in fn_lower or (prefix and item.startswith(prefix)):
             suggestions.append(item)
@@ -93,34 +119,29 @@ def find_similar_names(folder_name, whitelist):
 def run_validation():
     changed_folders = get_changed_folders()
     if changed_folders is None:
-        print("✅ 未检测到文件变更或 Git 环境异常，跳过校验。")
-        return
-
+        print("❌ 错误: 无法获取 Git 变更记录。")
+        sys.exit(1)
     if not changed_folders:
         print("✅ 本次提交未涉及产品文档修改，无需校验。")
         return
 
     all_invalid = []
-    # 分语言进行精准校验
     for lang in ["zh", "en"]:
         path_prefix = f"docs/{lang}"
-        # 过滤出属于该语言路径的变更文件夹
         target_folders = [d for d in changed_folders if d.startswith(path_prefix)]
-
-        if not target_folders:
-            continue
+        if not target_folders: continue
 
         whitelist = get_whitelist(lang)
-        if not whitelist:
-            print(f"⚠️ {lang.upper()} 站白名单为空，跳过该分区校验。")
-            continue
+        if whitelist is None:
+            print(f"\n" + "!" * 60)
+            print(f"❌ 严重错误：无法获取 {lang.upper()} 分区白名单！")
+            print(f"   请核对该分区的鉴权 Key 是否已配置在 GitHub Secrets 中。")
+            print("!" * 60 + "\n")
+            sys.exit(1)
 
         print(f"🔍 正在校验 {lang.upper()} 分区变更的文件夹...")
         for folder_path in target_folders:
-            # 获取文件夹名 (例如 docs/en/AI/EC942 -> EC942)
             folder_name = os.path.basename(folder_path).lower()
-
-            # 核心逻辑：校验文件夹名是否在白名单里
             if not any(s == folder_name or s in folder_name for s in whitelist):
                 suggestions = find_similar_names(folder_name, whitelist)
                 all_invalid.append({"path": folder_path, "suggestions": suggestions})
@@ -133,12 +154,8 @@ def run_validation():
         for error in all_invalid:
             print(f"\n  --> 错误文件夹: {error['path']}")
             if error['suggestions']:
-                print(f"      💡 你是不是想找这些产品？: {', '.join(error['suggestions'])}")
-            else:
-                print(f"      💡 提示：未在 PLM 库中找到相似产品，请核对 ID。")
-        print("\n" + "!" * 60 + "\n")
+                print(f"      💡 建议 ID: {', '.join(error['suggestions'])}")
         sys.exit(1)
-
     print("\n🎉 增量校验全部通过！")
 
 

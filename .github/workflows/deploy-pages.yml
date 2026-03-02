@@ -97,8 +97,12 @@ jobs:
           # --- 插入这一步 ---
       - name: Run Product Validation
         env:
+          # --- 以前只有这两行 ---
           CN_API_KEY: ${{ secrets.CN_API_KEY }}
           GLOBAL_API_KEY: ${{ secrets.GLOBAL_API_KEY }}
+          # --- 💡 必须加上下面这两行，脚本才能读到双鉴权 Token ---
+          CN_XK_TOKEN: ${{ secrets.CN_XK_TOKEN }}
+          GLOBAL_XK_TOKEN: ${{ secrets.GLOBAL_XK_TOKEN }}
         run: |
           python validate_products.py
 

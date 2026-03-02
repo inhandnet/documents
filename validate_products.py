@@ -2,82 +2,99 @@ import os
 import requests
 import sys
 
-# 1. 这里的配置对应你发给我的 config 数据
-ENV_CONFIGS = [
-    {"name": "CN", "base": "https://poweris.inhand.online", "key": os.getenv("CN_API_KEY")},
-    {"name": "Global", "base": "https://poweris.inhandnetworks.com", "key": os.getenv("GLOBAL_API_KEY")}
-]
+# 1. 明确区分 API 配置
+CONFIGS = {
+    "zh": {"base": "https://poweris.inhand.online", "key": os.getenv("CN_API_KEY")},
+    "en": {"base": "https://poweris.inhandnetworks.com", "key": os.getenv("GLOBAL_API_KEY")}
+}
 
 
-def get_api_whitelist():
+def get_whitelist(lang):
+    conf = CONFIGS.get(lang)
     whitelist = set()
-    for env in ENV_CONFIGS:
-        if not env["key"]: continue
-        print(f"正在从 {env['name']} 站同步产品列表...")
-        page = 1
-        while True:
-            try:
-                # 调取你给我的系列列表接口
-                res = requests.get(
-                    f"{env['base']}/api/plm/product/series-list",
-                    params={"pageNumber": page, "pageSize": 100, "locale": "en"},
-                    headers={"X-Api-Key": env["key"].strip()},
-                    timeout=10
-                ).json()
+    if not conf or not conf["key"]:
+        print(f"⚠️ 警告: 未找到 {lang} 版 API 配置，跳过该语言同步。")
+        return whitelist
 
-                if res.get("status") == 200:
-                    items = res.get("result", [])
-                    if not items: break
-                    for item in items:
-                        # 核心比对项：ID 和 中英文名称
-                        if item.get("id"): whitelist.add(item["id"].lower())
-                        names = item.get("name", {})
-                        if names.get("cn"): whitelist.add(names["cn"].lower())
-                        if names.get("en"): whitelist.add(names["en"].lower())
+    print(f"正在从 {lang.upper()} 站同步产品列表...")
+    page = 1
+    while True:
+        try:
+            res = requests.get(
+                f"{conf['base']}/api/plm/product/series-list",
+                params={"pageNumber": page, "pageSize": 100, "locale": "en"},
+                headers={"X-Api-Key": conf["key"].strip()},
+                timeout=10
+            ).json()
 
-                    if page * 100 >= res.get("total", 0): break
-                    page += 1
-                else:
-                    break
-            except Exception as e:
-                print(f"警告: {env['name']} 站连接异常: {e}")
+            if res.get("status") == 200:
+                items = res.get("result", [])
+                if not items: break
+                for item in items:
+                    if item.get("id"): whitelist.add(item["id"].lower())
+                    names = item.get("name", {})
+                    if names.get("cn"): whitelist.add(names["cn"].lower())
+                    if names.get("en"): whitelist.add(names["en"].lower())
+                if page * 100 >= res.get("total", 0): break
+                page += 1
+            else:
                 break
+        except Exception as e:
+            print(f"❌ {lang.upper()} 站 API 连接异常: {e}")
+            break
     return whitelist
 
 
-def run_validation():
-    # --- 关键：请确保你的产品文档放在这个目录下 ---
-    doc_dir = "docs/products"
-
-    if not os.path.exists(doc_dir):
-        print(f"跳过校验：未找到目录 {doc_dir}")
-        return
-
-    valid_series = get_api_whitelist()
-    files = [f for f in os.listdir(doc_dir) if f.endswith(".md")]
+def validate_dir(root_path, whitelist, lang_label):
     invalid_files = []
+    found_count = 0
 
-    print(f"🔍 开始校验：共 {len(files)} 个文件...")
+    # 递归扫描目录下所有子文件夹
+    for root, dirs, files in os.walk(root_path):
+        for f in files:
+            if not f.endswith(".md"): continue
+            file_name = os.path.splitext(f)[0].lower()
+            if file_name == "index": continue
 
-    for f in files:
-        file_name = os.path.splitext(f)[0].lower()
-        if file_name == "index": continue  # 忽略 index.md
+            found_count += 1
+            # 校验逻辑：文件名是否包含在白名单中
+            is_valid = any(s in file_name for s in whitelist)
+            if not is_valid:
+                invalid_files.append(os.path.join(root, f))
 
-        # 只要文件名在接口返回的 ID 或名称列表里，就算通过
-        if file_name not in valid_series:
-            invalid_files.append(f)
+    return invalid_files, found_count
 
-    if invalid_files:
+
+def run():
+    all_invalid = []
+
+    # 分开校验：ZH -> CN API, EN -> Global API
+    for lang in ["zh", "en"]:
+        path = f"docs/{lang}"
+        if not os.path.exists(path):
+            print(f"跳过 {lang} 目录，未找到路径。")
+            continue
+
+        whitelist = get_whitelist(lang)
+        if not whitelist:
+            print(f"⚠️ {lang} 站白名单为空，跳过该目录校验。")
+            continue
+
+        print(f"🔍 正在校验 {path} 目录下的文件...")
+        invalids, count = validate_dir(path, whitelist, lang)
+        print(f"✅ 已扫描 {count} 个 {lang.upper()} 文档。")
+        all_invalid.extend(invalids)
+
+    if all_invalid:
         print("\n" + "!" * 50)
-        print("❌ 校验失败：发现不合规的文件名！")
-        for f in invalid_files:
-            print(f"  --> 文件: {f} (在接口产品库中未找到匹配项)")
-        print("\n请修正文件名，确保它对应 API 中的系列 ID 或名称。")
-        print("!" * 50 + "\n")
-        sys.exit(1)  # 强行中断 GitHub Actions
+        print("❌ 校验失败：以下文件命名不合规！")
+        for f in all_invalid:
+            print(f"  --> {f}")
+        print("\n请确保文件名包含 API 返回的系列 ID 或名称。")
+        sys.exit(1)
 
-    print("✅ 校验通过！所有文件名均合法。")
+    print("\n🎉 恭喜！所有分区校验均通过。")
 
 
 if __name__ == "__main__":
-    run_validation()
+    run()

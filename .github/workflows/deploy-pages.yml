@@ -82,6 +82,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 2  # <--- 就是加在这里，注意缩进要对齐！
 
       - name: Setup Python
         uses: actions/setup-python@v5

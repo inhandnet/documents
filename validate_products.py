@@ -49,23 +49,27 @@ def get_whitelist(lang):
 
 
 def get_changed_folders():
-    """通过 git diff 获取本次提交中修改过的产品文件夹"""
+    """获取本次提交中涉及的所有文件夹路径，并过滤掉已删除的文件"""
     try:
-        # 获取当前提交与上一次提交的差异
+        # 1. 拿到 Git 记录里的变动文件列表
         cmd = ["git", "diff", "--name-only", "HEAD~1", "HEAD"]
         output = subprocess.check_output(cmd).decode("utf-8")
         files = output.splitlines()
 
         changed_folders = set()
         for f in files:
-            # 只处理 docs/zh 或 docs/en 下的文件，且必须是 .md
-            if (f.startswith("docs/zh/") or f.startswith("docs/en/")) and f.endswith(".md"):
+            # --- 💡 就是在这里加这一行！！！ ---
+            # 如果文件在本地硬盘上已经不存在了（说明被你删了），就跳过它
+            if not os.path.exists(f):
+                continue
+                # ----------------------------------
+
+            if (f.startswith("docs/en/") or f.startswith("docs/zh/")) and f.endswith(".md"):
                 if os.path.basename(f).lower() == "index.md": continue
-                # 获取该文件所在的直接父文件夹路径
                 changed_folders.add(os.path.dirname(f))
         return changed_folders
     except Exception as e:
-        print(f"⚠️ Git 获取差异失败 (可能是首次提交): {e}。将跳过增量校验。")
+        print(f"⚠️ Git 获取差异失败: {e}")
         return None
 
 

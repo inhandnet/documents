@@ -1,0 +1,8 @@
+# 产品 → Discourse 分类 ID 映射
+# 格式: 产品型号: Discourse 分类 ID
+# 请根据实际 Discourse 论坛配置填写
+#
+# 示例:
+# EC954: 5
+# IR302: 8
+# InGateway502: 12

@@ -24,8 +24,8 @@
     var input = document.createElement("input");
     input.type = "search";
     input.className = "md-nav-search__input";
-    input.placeholder = "搜索目录";
-    input.setAttribute("aria-label", "搜索目录");
+    input.placeholder = "Search navigation";
+    input.setAttribute("aria-label", "Search navigation");
 
     container.appendChild(input);
 
@@ -87,7 +87,7 @@
 
     results.innerHTML = "";
     if (!needle) {
-      showHint(container, "键入以开始搜索");
+      showHint(container, "Type to start searching");
       return;
     }
 
@@ -105,13 +105,13 @@
       .slice(0, 20);
 
     if (!matches.length) {
-      showHint(container, "没有找到符合条件的结果");
+      showHint(container, "No matching results found");
       return;
     }
 
     var header = document.createElement("div");
     header.className = "md-nav-search__count";
-    header.textContent = matches.length + " 个符合条件的结果";
+    header.textContent = matches.length + " results";
     results.appendChild(header);
 
     function escapeHtml(text) {
@@ -172,7 +172,7 @@
       container.classList.add("md-nav-search--focused");
       openPopup(container, { autofocus: true });
       if (!input.value.trim()) {
-        showHint(container, "键入以开始搜索");
+        showHint(container, "Type to start searching");
       }
     });
 

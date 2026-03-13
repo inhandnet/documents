@@ -21,5 +21,16 @@
 .idea
 
 # VsCode
-
 .vscode/*
+
+# MkDocs build output
+site/
+site-qa/
+
+# Auto-generated product index pages (created by scripts/generate_product_index.py)
+docs/**/*/index.md
+!docs/zh/index.md
+!docs/en/index.md
+
+# Specs build output
+dist/

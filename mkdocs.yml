@@ -1,6 +1,6 @@
 site_name: Docs
 site_description: Documentation powered by MkDocs (Material)
-site_url: https://inhandnet.github.io/documents/
+site_url: https://inhand.com.cn/docs/
 # 本地预览保持为空，避免资源被错误前缀；发布时改成你的 GitHub Pages 地址
 # site_url: ""
 
@@ -21,6 +21,7 @@ exclude_docs: |
 theme:
   name: material
   language: zh
+  custom_dir: overrides
   logo: assets/logo.svg
   favicon: assets/favicon.svg
   features:
@@ -32,6 +33,7 @@ theme:
     - content.action.edit
     - search.suggest
     - search.highlight
+    - toc.follow
   palette:
     - scheme: default
       primary: green
@@ -47,6 +49,8 @@ markdown_extensions:
   - md_in_html
   - toc:
       permalink: true
+      toc_depth: 4
+      title: 目录
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.inlinehilite
@@ -70,7 +74,8 @@ extra_javascript:
   - javascripts/embed-bridge.js
   - javascripts/sidebar-search.js
   - javascripts/edit-under-title.js
-  
+  - javascripts/toc-h1.js
+
 plugins:
   - search
 

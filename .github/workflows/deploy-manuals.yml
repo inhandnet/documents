@@ -1,0 +1,101 @@
+name: Deploy Manuals to Pages and Formal Server
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - 'docs/**'
+      - 'overrides/**'
+      - 'mkdocs.yml'
+      - 'mkdocs.en.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run Product Validation
+        env:
+          CN_API_KEY: ${{ secrets.CN_API_KEY }}
+          GLOBAL_API_KEY: ${{ secrets.GLOBAL_API_KEY }}
+          CN_XK_TOKEN: ${{ secrets.CN_XK_TOKEN }}
+          GLOBAL_XK_TOKEN: ${{ secrets.GLOBAL_XK_TOKEN }}
+        run: |
+          python validate_products.py
+
+      - name: Generate Product Index Pages
+        run: |
+          python scripts/generate_product_index.py --report
+
+      # Build Chinese site to site/
+      - name: Build (zh)
+        run: |
+          python -m mkdocs build -f mkdocs.yml -d site --clean
+
+      # Build English site to site/en/
+      - name: Build (en)
+        run: |
+          python -m mkdocs build -f mkdocs.en.yml -d site/en
+
+      # Deploy to overseas formal server
+      - name: Copy site to Formal Server
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.OVERSEAS_HOST }}
+          username: ${{ secrets.OVERSEAS_USER }}
+          password: ${{ secrets.OVERSEAS_PASS }}
+          source: "site/*"
+          target: ${{ secrets.OVERSEAS_TARGET }}
+          strip_components: 1
+          rm: false
+          overwrite: true
+
+      # Deploy to domestic formal server
+      - name: Copy site to Domestic Server
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.CN_OVERSEAS_HOST }}
+          username: ${{ secrets.CN_OVERSEAS_USER }}
+          password: ${{ secrets.CN_OVERSEAS_PASS }}
+          source: "site/*"
+          target: ${{ secrets.OVERSEAS_TARGET }}
+          strip_components: 1
+          rm: false
+          overwrite: true
+
+      # Deploy to GitHub Pages (preview)
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

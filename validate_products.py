@@ -1,3 +1,4 @@
+import argparse
 import os
 import requests
 import sys
@@ -85,8 +86,19 @@ def get_whitelist(lang):
     return None
 
 
-def get_changed_folders():
-    """获取本次提交中涉及的文件夹路径，并过滤掉已在本地删除的文件"""
+def get_changed_folders(paths=None):
+    """获取本次提交中涉及的文件夹路径，并过滤掉已在本地删除的文件
+
+    Args:
+        paths: 要校验的路径前缀列表，如 ["docs/zh", "docs/en"]。
+               对于 docs/ 路径仅匹配 .md 文件；其他路径（specs/、downloads/ 等）匹配任意文件。
+    """
+    if paths is None:
+        paths = ["docs/zh", "docs/en"]
+
+    # Paths that use flat file structure (product name is filename, not directory)
+    flat_prefixes = ("releases/", "dev/")
+
     try:
         cmd = ["git", "diff", "--name-only", "HEAD~1", "HEAD"]
         output = subprocess.check_output(cmd).decode("utf-8")
@@ -96,9 +108,24 @@ def get_changed_folders():
         for f in files:
             if not os.path.exists(f):
                 continue
-            if (f.startswith("docs/en/") or f.startswith("docs/zh/")) and f.endswith(".md"):
-                if os.path.basename(f).lower() == "index.md": continue
-                changed_folders.add(os.path.dirname(f))
+            matched_prefix = None
+            for prefix in paths:
+                if f.startswith(prefix + "/"):
+                    matched_prefix = prefix
+                    break
+            if not matched_prefix:
+                continue
+            # releases/ and dev/ use different structures — skip product validation
+            # for these paths as they don't follow Category/Chipset/Model convention
+            if any(matched_prefix.startswith(fp) for fp in flat_prefixes):
+                continue
+            # docs/ 路径仅关注 .md 文件；其他路径接受任意文件
+            if matched_prefix.startswith("docs/"):
+                if not f.endswith(".md"):
+                    continue
+            if os.path.basename(f).lower() == "index.md":
+                continue
+            changed_folders.add(os.path.dirname(f))
         return changed_folders
     except Exception as e:
         print(f"⚠️ Git 获取差异失败: {e}")
@@ -116,8 +143,17 @@ def find_similar_names(folder_name, whitelist):
     return sorted(list(set(suggestions)))[:8]
 
 
-def run_validation():
-    changed_folders = get_changed_folders()
+def run_validation(paths=None):
+    """校验变更的产品目录名是否在白名单中
+
+    Args:
+        paths: 要校验的路径前缀列表，如 ["docs/zh", "docs/en", "specs/zh"]。
+               默认值 ["docs/zh", "docs/en"]，向后兼容。
+    """
+    if paths is None:
+        paths = ["docs/zh", "docs/en"]
+
+    changed_folders = get_changed_folders(paths)
     if changed_folders is None:
         print("❌ 错误: 无法获取 Git 变更记录。")
         sys.exit(1)
@@ -127,9 +163,19 @@ def run_validation():
 
     all_invalid = []
     for lang in ["zh", "en"]:
-        path_prefix = f"docs/{lang}"
-        target_folders = [d for d in changed_folders if d.startswith(path_prefix)]
-        if not target_folders: continue
+        # 收集当前语言下所有匹配的路径前缀
+        lang_prefixes = [p for p in paths if p.endswith(f"/{lang}") or p.endswith(f"/{lang}/")]
+        if not lang_prefixes:
+            continue
+
+        target_folders = []
+        for d in changed_folders:
+            for prefix in lang_prefixes:
+                if d.startswith(prefix):
+                    target_folders.append(d)
+                    break
+        if not target_folders:
+            continue
 
         whitelist = get_whitelist(lang)
         if whitelist is None:
@@ -159,5 +205,17 @@ def run_validation():
     print("\n🎉 增量校验全部通过！")
 
 
+def parse_args():
+    parser = argparse.ArgumentParser(description="校验产品目录名是否在白名单中")
+    parser.add_argument(
+        "--paths",
+        nargs="+",
+        default=["docs/zh", "docs/en"],
+        help="要校验的路径前缀列表（默认: docs/zh docs/en）"
+    )
+    return parser.parse_args()
+
+
 if __name__ == "__main__":
-    run_validation()
+    args = parse_args()
+    run_validation(args.paths)

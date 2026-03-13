@@ -1,26 +1,21 @@
-site_name: Docs
-site_description: Documentation powered by MkDocs (Material)
-site_url: https://inhand.com.cn/docs/en/
-# English site will be published under /en (set real URL when deploying)
-# site_url: ""
+site_name: QA 知识库
+site_description: 产品常见问题与解答
+site_url: https://inhand.com.cn/kb/
 
 repo_url: https://github.com/inhandnet/documents
 repo_name: inhandnet/documents
-edit_uri: edit/main/docs/en/
+edit_uri: edit/main/qa/zh/
 
-# 方案 B：英文站点使用独立 docs_dir
-docs_dir: docs/en
+docs_dir: qa/zh
 
-# 输出为 *.html（避免依赖目录 /index.html 的自动补全）
 use_directory_urls: false
 
-# Hide Markdown inside images folders (avoid README.md in nav)
 exclude_docs: |
   **/images/**/*.md
 
 theme:
   name: material
-  language: en
+  language: zh
   custom_dir: overrides
   logo: assets/logo.svg
   favicon: assets/favicon.svg
@@ -50,7 +45,7 @@ markdown_extensions:
   - toc:
       permalink: true
       toc_depth: 4
-      title: Table of Contents
+      title: 目录
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.inlinehilite
@@ -66,16 +61,6 @@ markdown_extensions:
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.mark
 
-extra_css:
-  - stylesheets/extra.css
-
-extra_javascript:
-  - javascripts/pdf.js
-  - javascripts/embed-bridge.js
-  - javascripts/sidebar-search.js
-  - javascripts/edit-under-title.js
-  - javascripts/toc-h1.js
-
 plugins:
   - search
-
+  - tags

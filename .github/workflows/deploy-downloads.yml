@@ -1,0 +1,60 @@
+name: Deploy Downloads to WordPress Server
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - 'downloads/**'
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+          lfs: true
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+
+      - name: Run Product Validation
+        env:
+          CN_API_KEY: ${{ secrets.CN_API_KEY }}
+          GLOBAL_API_KEY: ${{ secrets.GLOBAL_API_KEY }}
+          CN_XK_TOKEN: ${{ secrets.CN_XK_TOKEN }}
+          GLOBAL_XK_TOKEN: ${{ secrets.GLOBAL_XK_TOKEN }}
+        run: |
+          python validate_products.py --paths downloads/zh downloads/en
+
+      - name: Upload downloads to WordPress Server
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.WP_HOST }}
+          username: ${{ secrets.WP_USER }}
+          password: ${{ secrets.WP_PASS }}
+          source: "downloads/*"
+          target: "/var/www/wordpress/wp-content/uploads/resources/downloads"
+          strip_components: 1
+          rm: false
+          overwrite: true
+
+      # Optional: Auto-create WordPress resource entries
+      # Uncomment when WP REST API integration is ready
+      # - name: Sync to WordPress
+      #   env:
+      #     WP_API_URL: ${{ secrets.WP_API_URL }}
+      #     WP_API_USER: ${{ secrets.WP_API_USER }}
+      #     WP_API_TOKEN: ${{ secrets.WP_API_TOKEN }}
+      #   run: |
+      #     pip install pyyaml
+      #     python scripts/wp_sync.py downloads

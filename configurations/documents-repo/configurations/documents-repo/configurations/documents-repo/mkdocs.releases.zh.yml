@@ -1,0 +1,57 @@
+site_name: Release Notes
+site_description: 产品固件发版说明
+site_url: https://inhand.com.cn/releases/
+
+repo_url: https://github.com/inhandnet/documents
+repo_name: inhandnet/documents
+edit_uri: edit/main/releases/zh/
+
+docs_dir: releases/zh
+site_dir: site/releases
+
+use_directory_urls: false
+
+exclude_docs: |
+  **/images/**/*.md
+
+theme:
+  name: material
+  language: zh
+  custom_dir: overrides
+  logo: assets/logo.svg
+  favicon: assets/favicon.svg
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - toc.follow
+  palette:
+    - scheme: default
+      primary: green
+      accent: green
+    - scheme: slate
+      primary: green
+      accent: green
+
+markdown_extensions:
+  - admonition
+  - tables
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+      toc_depth: 4
+      title: 目录
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      linenums: true
+      anchor_linenums: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.mark
+
+plugins:
+  - search

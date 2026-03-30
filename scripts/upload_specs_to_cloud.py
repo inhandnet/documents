@@ -189,9 +189,10 @@ def upload_file(file_path: Path, dry_run: bool = False, commit_id: Optional[str]
 
 
 def find_upload_files(directory: Path) -> List[Path]:
-    """递归查找目录下所有需要上传的文件（排除 .md 和图片文件）。
+    """递归查找目录下所有需要上传的文件（只处理 zh/ 和 en/ 子目录）。
 
     规则：
+    - 只处理 zh/ 和 en/ 子目录下的文件
     - 排除 .md 文件（Markdown 是源文件）
     - 排除图片文件（.png, .jpg, .jpeg, .gif, .svg, .webp 等）
     - 只上传 PDF、压缩包、文档等非图片文件
@@ -200,11 +201,16 @@ def find_upload_files(directory: Path) -> List[Path]:
         return []
 
     upload_files = []
-    for file_path in directory.rglob("*"):
-        if file_path.is_file():
-            ext = file_path.suffix.lower()
-            if ext not in EXCLUDED_EXTENSIONS:
-                upload_files.append(file_path)
+
+    # 只处理 zh/ 和 en/ 子目录
+    for lang_dir in ["zh", "en"]:
+        lang_path = directory / lang_dir
+        if lang_path.exists():
+            for file_path in lang_path.rglob("*"):
+                if file_path.is_file():
+                    ext = file_path.suffix.lower()
+                    if ext not in EXCLUDED_EXTENSIONS:
+                        upload_files.append(file_path)
 
     return upload_files
 

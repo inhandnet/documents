@@ -2,10 +2,10 @@
 """上传文件到 PowerIS 云存储 API。
 
 在本地构建后运行，将生成的文件上传到云存储。
-支持除 .md 外的所有文件类型（PDF、图片、压缩包等）
+支持上传 PDF、压缩包、文档等（排除 .md 源文件和图片文件）
 
 用法：
-    python scripts/upload_specs_to_cloud.py              # 上传 dist/specs/ 下所有文件（排除 .md）
+    python scripts/upload_specs_to_cloud.py              # 上传 dist/specs/ 下所有文件
     python scripts/upload_specs_to_cloud.py --file path  # 上传指定文件
 """
 
@@ -33,6 +33,19 @@ DEFAULT_PARAMS = {
 
 # 构建输出目录
 DIST_DIR = Path("dist/specs")
+
+# 排除的文件类型
+EXCLUDED_EXTENSIONS = {
+    ".md",      # Markdown 源文件
+    ".png",     # 图片
+    ".jpg",
+    ".jpeg",
+    ".gif",
+    ".svg",
+    ".webp",
+    ".bmp",
+    ".ico",
+}
 
 
 def get_git_commit_id() -> Optional[str]:
@@ -162,31 +175,34 @@ def upload_file(file_path: Path, dry_run: bool = False, commit_id: Optional[str]
 
 
 def find_upload_files(directory: Path) -> List[Path]:
-    """递归查找目录下所有需要上传的文件（排除 .md 源文件）。
+    """递归查找目录下所有需要上传的文件（排除 .md 和图片文件）。
 
     规则：
-    - 排除 .md 文件（Markdown 是源文件，需要构建后上传）
-    - 其他所有文件类型都上传（PDF、图片、压缩包等）
+    - 排除 .md 文件（Markdown 是源文件）
+    - 排除图片文件（.png, .jpg, .jpeg, .gif, .svg, .webp 等）
+    - 只上传 PDF、压缩包、文档等非图片文件
     """
     if not directory.exists():
         return []
 
     upload_files = []
     for file_path in directory.rglob("*"):
-        if file_path.is_file() and file_path.suffix.lower() != ".md":
-            upload_files.append(file_path)
+        if file_path.is_file():
+            ext = file_path.suffix.lower()
+            if ext not in EXCLUDED_EXTENSIONS:
+                upload_files.append(file_path)
 
     return upload_files
 
 
 def main():
     parser = argparse.ArgumentParser(
-        description="上传文件到 PowerIS 云存储（排除 .md 源文件）"
+        description="上传文件到 PowerIS 云存储（排除 .md 和图片文件）"
     )
     parser.add_argument(
         "--file",
         type=Path,
-        help="指定要上传的单个文件（默认上传 dist/specs/ 下所有非 .md 文件）"
+        help="指定要上传的单个文件（默认上传 dist/specs/ 下所有非 .md 非图片文件）"
     )
     parser.add_argument(
         "--dist-dir",
@@ -236,7 +252,7 @@ def main():
     # 汇总
     print("=" * 50)
     if args.dry_run:
-        print(f"[DRY RUN] 预览完成，实际将上传: {success_count} 个文件（排除 .md 源文件）")
+        print(f"[DRY RUN] 预览完成，实际将上传: {success_count} 个文件（排除 .md 和图片）")
     else:
         print(f"上传完成: {success_count} 成功, {fail_count} 失败")
     print("=" * 50)

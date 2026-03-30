@@ -27,8 +27,7 @@ API_KEY = "5bfcc5c90c2c4ff485838773e9cc9c05"
 # 默认查询参数
 DEFAULT_PARAMS = {
     "source": "test",
-    "security_level": "0",
-    "is_cover": "false"
+    "security_level": "0"
 }
 
 # 构建输出目录
@@ -170,10 +169,9 @@ def upload_file(file_path: Path, dry_run: bool = False, commit_id: Optional[str]
 
         result = response.json()
 
-        # 检查业务错误码
-        if result.get('status') and result.get('status') >= 400:
-            print(f"  [FAIL] 上传失败: {result.get('error', 'Unknown error')}")
-            print(f"  错误码: {result.get('error_code')}")
+        # 检查是否有错误
+        if 'error' in result:
+            print(f"  [FAIL] 上传失败: {result.get('error')}")
             print(f"  完整响应: {result}")
             return False
 

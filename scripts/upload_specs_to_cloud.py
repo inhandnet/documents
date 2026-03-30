@@ -45,6 +45,14 @@ EXCLUDED_EXTENSIONS = {
     ".webp",
     ".bmp",
     ".ico",
+    ".js",      # 前端资源
+    ".css",
+    ".html",
+    ".htm",
+    ".json",
+    ".xml",
+    ".yaml",
+    ".yml",
 }
 
 

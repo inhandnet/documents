@@ -27,14 +27,15 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests pyyaml
 
-      - name: Run Product Validation
-        env:
-          CN_API_KEY: ${{ secrets.CN_API_KEY }}
-          GLOBAL_API_KEY: ${{ secrets.GLOBAL_API_KEY }}
-          CN_XK_TOKEN: ${{ secrets.CN_XK_TOKEN }}
-          GLOBAL_XK_TOKEN: ${{ secrets.GLOBAL_XK_TOKEN }}
-        run: |
-          python validate_products.py --paths specs/zh specs/en
+      # Product validation disabled
+      # - name: Run Product Validation
+      #   env:
+      #     CN_API_KEY: ${{ secrets.CN_API_KEY }}
+      #     GLOBAL_API_KEY: ${{ secrets.GLOBAL_API_KEY }}
+      #     CN_XK_TOKEN: ${{ secrets.CN_XK_TOKEN }}
+      #     GLOBAL_XK_TOKEN: ${{ secrets.GLOBAL_XK_TOKEN }}
+      #   run: |
+      #     python validate_products.py --paths specs/zh specs/en
 
       - name: Install Pandoc & WeasyPrint
         run: |

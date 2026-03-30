@@ -46,24 +46,8 @@ jobs:
         run: |
           python scripts/build_specs.py
 
-      - name: Upload specs to WordPress Server
-        uses: appleboy/scp-action@v0.1.7
-        with:
-          host: ${{ secrets.WP_HOST }}
-          username: ${{ secrets.WP_USER }}
-          password: ${{ secrets.WP_PASS }}
-          source: "dist/specs/*"
-          target: "/var/www/wordpress/wp-content/uploads/resources/specs"
-          strip_components: 2
-          rm: false
-          overwrite: true
-
-      # Optional: Auto-create WordPress resource entries
-      # Uncomment when WP REST API integration is ready
-      # - name: Sync to WordPress
-      #   env:
-      #     WP_API_URL: ${{ secrets.WP_API_URL }}
-      #     WP_API_USER: ${{ secrets.WP_API_USER }}
-      #     WP_API_TOKEN: ${{ secrets.WP_API_TOKEN }}
+      # Upload disabled - only docs is pushed
+      # - name: Upload specs to Cloud Storage
       #   run: |
-      #     python scripts/wp_sync.py specs
+      #     pip install requests
+      #     python scripts/upload_specs_to_cloud.py --dist-dir dist/specs

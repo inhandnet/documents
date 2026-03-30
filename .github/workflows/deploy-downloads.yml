@@ -36,25 +36,7 @@ jobs:
         run: |
           python validate_products.py --paths downloads/zh downloads/en
 
-      - name: Upload downloads to WordPress Server
-        uses: appleboy/scp-action@v0.1.7
-        with:
-          host: ${{ secrets.WP_HOST }}
-          username: ${{ secrets.WP_USER }}
-          password: ${{ secrets.WP_PASS }}
-          source: "downloads/*"
-          target: "/var/www/wordpress/wp-content/uploads/resources/downloads"
-          strip_components: 1
-          rm: false
-          overwrite: true
-
-      # Optional: Auto-create WordPress resource entries
-      # Uncomment when WP REST API integration is ready
-      # - name: Sync to WordPress
-      #   env:
-      #     WP_API_URL: ${{ secrets.WP_API_URL }}
-      #     WP_API_USER: ${{ secrets.WP_API_USER }}
-      #     WP_API_TOKEN: ${{ secrets.WP_API_TOKEN }}
-      #   run: |
-      #     pip install pyyaml
-      #     python scripts/wp_sync.py downloads
+      - name: Upload downloads to Cloud Storage
+        run: |
+          pip install requests
+          python scripts/upload_specs_to_cloud.py --dist-dir downloads

@@ -53,37 +53,10 @@ jobs:
         run: |
           python -m mkdocs build -f mkdocs.qa.en.yml -d site-qa/en
 
-      # Deploy QA site to overseas server
-      - name: Copy QA site to Formal Server
-        uses: appleboy/scp-action@v0.1.7
-        with:
-          host: ${{ secrets.OVERSEAS_HOST }}
-          username: ${{ secrets.OVERSEAS_USER }}
-          password: ${{ secrets.OVERSEAS_PASS }}
-          source: "site-qa/*"
-          target: "${{ secrets.OVERSEAS_TARGET }}/qa"
-          strip_components: 1
-          rm: false
-          overwrite: true
+      # Deploy disabled - only docs is pushed
+      # - name: Copy QA site to Formal Server
+      # ...
 
-      # Deploy QA site to domestic server
-      - name: Copy QA site to Domestic Server
-        uses: appleboy/scp-action@v0.1.7
-        with:
-          host: ${{ secrets.CN_OVERSEAS_HOST }}
-          username: ${{ secrets.CN_OVERSEAS_USER }}
-          password: ${{ secrets.CN_OVERSEAS_PASS }}
-          source: "site-qa/*"
-          target: "${{ secrets.OVERSEAS_TARGET }}/qa"
-          strip_components: 1
-          rm: false
-          overwrite: true
-
-      # Sync QA articles to Discourse forum
-      - name: Sync to Discourse
-        env:
-          DISCOURSE_BASE_URL: ${{ secrets.DISCOURSE_BASE_URL }}
-          DISCOURSE_API_KEY: ${{ secrets.DISCOURSE_API_KEY }}
-          DISCOURSE_API_USERNAME: ${{ secrets.DISCOURSE_API_USERNAME }}
-        run: |
-          python scripts/discourse_sync.py
+      # Sync to Discourse disabled
+      # - name: Sync to Discourse
+      # ...

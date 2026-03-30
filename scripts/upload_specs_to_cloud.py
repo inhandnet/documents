@@ -169,6 +169,14 @@ def upload_file(file_path: Path, dry_run: bool = False, commit_id: Optional[str]
         response.raise_for_status()
 
         result = response.json()
+
+        # 检查业务错误码
+        if result.get('status') and result.get('status') >= 400:
+            print(f"  [FAIL] 上传失败: {result.get('error', 'Unknown error')}")
+            print(f"  错误码: {result.get('error_code')}")
+            print(f"  完整响应: {result}")
+            return False
+
         print(f"  [OK] 上传成功")
         print(f"  完整响应: {result}")
         return True

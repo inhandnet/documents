@@ -33,6 +33,12 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      # Upload PDF and other files (excluding .md and images) to Cloud Storage
+      - name: Upload docs files to Cloud Storage
+        run: |
+          pip install requests
+          python scripts/upload_specs_to_cloud.py --dist-dir docs
+
       # Product validation disabled
       # - name: Run Product Validation
       #   env:

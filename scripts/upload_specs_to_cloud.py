@@ -202,11 +202,14 @@ def find_upload_files(directory: Path) -> List[Path]:
 
     upload_files = []
 
-    # 只处理 zh/ 和 en/ 子目录
+    # 只处理 zh/ 和 en/ 子目录，跳过 redirects 目录
     for lang_dir in ["zh", "en"]:
         lang_path = directory / lang_dir
         if lang_path.exists():
             for file_path in lang_path.rglob("*"):
+                # 跳过 redirects 目录
+                if "redirects" in file_path.parts:
+                    continue
                 if file_path.is_file():
                     ext = file_path.suffix.lower()
                     if ext not in EXCLUDED_EXTENSIONS:

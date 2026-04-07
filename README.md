@@ -95,14 +95,14 @@ configurations/zh/EC942/                         ← 方案配置（独立结构
 
 ### 1. `docs/` — 用户手册
 
-| 项目     | 说明                                                 |
-| ------ | -------------------------------------------------- |
-| 用途     | 产品用户手册，Markdown 格式编写                               |
-| 站点框架   | MkDocs + Material 主题                               |
-| 配置文件   | `mkdocs.yml`（中文）、`mkdocs.en.yml`（英文）               |
-| CI 流水线 | `deploy-manuals.yml`                               |
-| 部署目标   | 海外服务器 + 国内服务器 + GitHub Pages                       |
-| 触发条件   | `docs/**` 或 `mkdocs.yml` / `mkdocs.en.yml` 变更时自动构建 |
+| 项目      | 说明                                                       |
+| --------- | ---------------------------------------------------------- |
+| 用途      | 产品用户手册，Markdown 格式编写                            |
+| 站点框架  | MkDocs + Material 主题                                     |
+| 配置文件  | `mkdocs.yml`（中文）、`mkdocs.en.yml`（英文）              |
+| CI 流水线 | `deploy-manuals.yml`                                       |
+| 部署目标  | 海外服务器 + 国内服务器 + GitHub Pages                     |
+| 触发条件  | `docs/**` 或 `mkdocs.yml` / `mkdocs.en.yml` 变更时自动构建 |
 
 **目录层级规范：**
 
@@ -113,15 +113,15 @@ configurations/zh/EC942/                         ← 方案配置（独立结构
 
 ### 2. `qa/` — QA 知识库
 
-| 项目     | 说明                                                 |
-| ------ | -------------------------------------------------- |
-| 用途     | 产品常见问题与解答（FAQ），Markdown 格式                         |
-| 站点框架   | MkDocs + Material 主题                               |
-| 配置文件   | `mkdocs.qa.zh.yml`（中文）、`mkdocs.qa.en.yml`（英文）      |
-| CI 流水线 | `deploy-qa.yml`                                    |
-| 部署目标   | 海外服务器 + 国内服务器                                      |
-| 附加功能   | 自动同步到 Discourse 论坛（通过 `scripts/discourse_sync.py`） |
-| 触发条件   | `qa/**` 或 QA 配置文件变更时自动构建                           |
+| 项目      | 说明                                                          |
+| --------- | ------------------------------------------------------------- |
+| 用途      | 产品常见问题与解答（FAQ），Markdown 格式                      |
+| 站点框架  | MkDocs + Material 主题                                        |
+| 配置文件  | `mkdocs.qa.zh.yml`（中文）、`mkdocs.qa.en.yml`（英文）        |
+| CI 流水线 | `deploy-qa.yml`                                               |
+| 部署目标  | 海外服务器 + 国内服务器                                       |
+| 附加功能  | 自动同步到 Discourse 论坛（通过 `scripts/discourse_sync.py`） |
+| 触发条件  | `qa/**` 或 QA 配置文件变更时自动构建                          |
 
 **Discourse 同步机制：**
 
@@ -130,13 +130,13 @@ configurations/zh/EC942/                         ← 方案配置（独立结构
 
 ### 3. `specs/` — 产品规格书
 
-| 项目     | 说明                                                   |
-| ------ | ---------------------------------------------------- |
-| 用途     | 产品规格书（Datasheet），支持 PDF 直传或 Markdown 自动转 PDF         |
-| 构建脚本   | `scripts/build_specs.py`                             |
-| CI 流水线 | `deploy-specs.yml`                                   |
-| 部署目标   | WordPress 服务器（`/wp-content/uploads/resources/specs`） |
-| 触发条件   | `specs/**` 变更时自动构建                                   |
+| 项目      | 说明                                                         |
+| --------- | ------------------------------------------------------------ |
+| 用途      | 产品规格书（Datasheet），支持 PDF 直传或 Markdown 自动转 PDF |
+| 构建脚本  | `scripts/build_specs.py`                                     |
+| CI 流水线 | `deploy-specs.yml`                                           |
+| 部署目标  | WordPress 服务器（`/wp-content/uploads/resources/specs`）    |
+| 触发条件  | `specs/**` 变更时自动构建                                    |
 
 **构建逻辑：**
 
@@ -146,13 +146,13 @@ configurations/zh/EC942/                         ← 方案配置（独立结构
 
 ### 4. `configurations/` — 方案配置
 
-| 项目     | 说明                                                              |
-| ------ | --------------------------------------------------------------- |
-| 用途     | 产品方案配置，按案例组织（案例手册、配置手册、配置文件、资源文件）        |
-| 目录结构   | `{lang}/{Model}/{CaseName}/`（独立于其余四种内容类型的镜像路径）    |
+| 项目      | 说明                                                               |
+| --------- | ------------------------------------------------------------------ |
+| 用途      | 产品方案配置，按案例组织（案例手册、配置手册、配置文件、资源文件） |
+| 目录结构  | `{lang}/{Model}/{CaseName}/`（独立于其余四种内容类型的镜像路径）   |
 | CI 流水线 | 待创建（计划 `deploy-configurations.yml`）                         |
-| 部署目标   | WordPress 服务器（`/wp-content/uploads/resources/configurations`）   |
-| 触发条件   | `configurations/**` 变更时自动上传                                     |
+| 部署目标  | WordPress 服务器（`/wp-content/uploads/resources/configurations`） |
+| 触发条件  | `configurations/**` 变更时自动上传                                 |
 
 **案例目录结构：**
 
@@ -165,22 +165,22 @@ configurations/zh/EC942/                         ← 方案配置（独立结构
 
 ### 5. `brochures/` — 产品宣传册
 
-| 项目     | 说明                                                          |
-| ------ | ----------------------------------------------------------- |
-| 用途     | 产品宣传册 / Brochure（单页或多页 PDF，概览性质的产品介绍）                       |
-| CI 流水线 | 待创建（计划 `deploy-brochures.yml`）                            |
-| 部署目标   | WordPress 服务器（`/wp-content/uploads/resources/brochures`）    |
-| 触发条件   | `brochures/**` 变更时自动上传                                      |
+| 项目      | 说明                                                          |
+| --------- | ------------------------------------------------------------- |
+| 用途      | 产品宣传册 / Brochure（单页或多页 PDF，概览性质的产品介绍）   |
+| CI 流水线 | 待创建（计划 `deploy-brochures.yml`）                         |
+| 部署目标  | WordPress 服务器（`/wp-content/uploads/resources/brochures`） |
+| 触发条件  | `brochures/**` 变更时自动上传                                 |
 
 ### 6. `scripts/` — 构建与同步脚本
 
-| 脚本                           | 用途                                                          |
-| ---------------------------- | ----------------------------------------------------------- |
-| `generate_product_index.py`  | 扫描所有产品目录，自动生成按产品聚合的 `index.md` 索引页（含交叉链接与完整度报告） |
-| `scaffold_product.py`        | 新产品脚手架，一键在 docs/qa/specs/brochures 创建目录和模板文件                |
-| `build_specs.py`             | 遍历 `specs/` 下的 Markdown 文件，通过 Pandoc 转换为 PDF                |
-| `discourse_sync.py`          | 将 QA 文章变更同步到 Discourse 论坛（创建/更新帖子）                          |
-| `wp_sync.py`                 | 将规格书/配置/宣传册信息同步到 WordPress 资源中心（可选，REST API）                |
+| 脚本                        | 用途                                                                               |
+| --------------------------- | ---------------------------------------------------------------------------------- |
+| `generate_product_index.py` | 扫描所有产品目录，自动生成按产品聚合的 `index.md` 索引页（含交叉链接与完整度报告） |
+| `scaffold_product.py`       | 新产品脚手架，一键在 docs/qa/specs/brochures 创建目录和模板文件                    |
+| `build_specs.py`            | 遍历 `specs/` 下的 Markdown 文件，通过 Pandoc 转换为 PDF                           |
+| `discourse_sync.py`         | 将 QA 文章变更同步到 Discourse 论坛（创建/更新帖子）                               |
+| `wp_sync.py`                | 将规格书/配置/宣传册信息同步到 WordPress 资源中心（可选，REST API）                |
 
 ### 7. 产品索引页与交叉链接
 
@@ -206,22 +206,28 @@ docs/zh/AI Edge Computers/Rockchip/EC942/
 
 ```markdown
 # EC942
+
 **AI Edge Computers** / **Rockchip** / **EC942**
 
 ## User Manual
+
 - [EC942 User Manual](EC942_User_Manual.md)
 
 ## QA
+
 - [EC942 FAQ](/qa/AI Edge Computers/Rockchip/EC942/faq.html)
 
 ## Specs
+
 - [EC942_Datasheet.pdf](/specs/zh/AI Edge Computers/Rockchip/EC942/EC942_Datasheet.pdf)
 
 ## Configurations
+
 - [案例A — 案例手册](/configurations/zh/EC942/案例A/案例手册.html)
 - [案例A — config.json](/configurations/zh/EC942/案例A/config/config.json)
 
 ## Brochures
+
 - [EC942_Brochure.pdf](/brochures/zh/AI Edge Computers/Rockchip/EC942/EC942_Brochure.pdf)
 ```
 
@@ -318,12 +324,12 @@ python validate_products.py --paths specs/zh specs/en
 
 ### 10. `.github/workflows/` — CI/CD 流水线
 
-| 流水线                         | 触发路径               | 构建产物                             | 部署目标                          |
-| --------------------------- | ------------------ | -------------------------------- | ----------------------------- |
-| `deploy-manuals.yml`        | `docs/**`          | MkDocs 静态站点（含自动生成的产品索引页）         | 海外服务器 + 国内服务器 + GitHub Pages  |
-| `deploy-qa.yml`             | `qa/**`            | MkDocs 静态站点                      | 海外服务器 + 国内服务器 + Discourse     |
-| `deploy-specs.yml`          | `specs/**`         | PDF 文件                           | WordPress 服务器                  |
-| `deploy-downloads.yml`      | `downloads/**`     | 原始文件                             | WordPress 服务器                  |
+| 流水线                 | 触发路径       | 构建产物                                  | 部署目标                               |
+| ---------------------- | -------------- | ----------------------------------------- | -------------------------------------- |
+| `deploy-manuals.yml`   | `docs/**`      | MkDocs 静态站点（含自动生成的产品索引页） | 海外服务器 + 国内服务器 + GitHub Pages |
+| `deploy-qa.yml`        | `qa/**`        | MkDocs 静态站点                           | 海外服务器 + 国内服务器 + Discourse    |
+| `deploy-specs.yml`     | `specs/**`     | PDF 文件                                  | WordPress 服务器                       |
+| `deploy-downloads.yml` | `downloads/**` | 原始文件                                  | WordPress 服务器                       |
 
 所有流水线仅在 `master` 分支推送时触发，也支持手动触发（`workflow_dispatch`）。
 

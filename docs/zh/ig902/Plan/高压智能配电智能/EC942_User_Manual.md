@@ -6,35 +6,31 @@
 
 Version2.0, October 2023
 
-[www.inhandnetworks.com](http://www.inhandnetworks.com/) 
+[www.inhandnetworks.com](http://www.inhandnetworks.com/)
 
 ![](https://media-hub.inhand.com/ai_edge_computers/EC942_EN/646c22ad7e81cfed.png)
 
-The software described in this manual is provided according to the license agreement and can only be used according to the terms of the agreement. 
+The software described in this manual is provided according to the license agreement and can only be used according to the terms of the agreement.
 
-**Copyright Notice** 
+**Copyright Notice**
 
 © 2023 InHand Networks.All rights reserved.
 
-**Trademarks** 
+**Trademarks**
 
 The InHand logo is a registered trademark of InHand Networks.
 
 All other trademarks or registered trademarks in this manual belong to their respective manufacturers.
 
-**Disclaimer** 
+**Disclaimer**
 
-InHand Networks reserves the right to change this manual, and the product is subject to subsequent changes without prior notice. We will not be responsible for any direct, indirect, intentional, or unintentional damages and hidden dangers caused by improper installation and use. 
-
-
-
-
+InHand Networks reserves the right to change this manual, and the product is subject to subsequent changes without prior notice. We will not be responsible for any direct, indirect, intentional, or unintentional damages and hidden dangers caused by improper installation and use.
 
 # **1 Introduction**
 
 This user's manual is for the EC900 series of edge computers based on the Arm architecture and covers a complete set of instructions for all supported models. Before referring to these sections, verify that the hardware specifications of your computer model support the features/Settings covered.
 
-# **2 Hardware installation instructions** 
+# **2 Hardware installation instructions**
 
 In this chapter, we will cover the hardware installation instructions for the EC900 series of edge computers based on the Arm architecture.
 
@@ -48,11 +44,9 @@ Right panel
 
 ![](https://media-hub.inhand.com/ai_edge_computers/EC942_EN/93c79f0623032fa4.png)
 
-
-
 Front panel
 
- ![](https://media-hub.inhand.com/ai_edge_computers/EC942_EN/c585ded49d1d91ec.png)
+![](https://media-hub.inhand.com/ai_edge_computers/EC942_EN/c585ded49d1d91ec.png)
 
 ## **2.3 EC942 external conector**
 
@@ -98,8 +92,8 @@ EC942 has 1-way CAN bus interface and supports CAN 2.0A/B standard. ,and can ach
 
 | **Interface identification** | **Features**                | **Description** |
 | ---------------------------- | --------------------------- | --------------- |
-| PCOM                         | Power common terminal   |                 |
-| DGND                         | Power reference ground  |                 |
+| PCOM                         | Power common terminal       |                 |
+| DGND                         | Power reference ground      |                 |
 | DICOM                        | Input public side           |                 |
 | DI0                          | Digital input port 0        |                 |
 | DI1                          | Digital input port number 1 |                 |
@@ -123,15 +117,13 @@ Wet contact state "0" : 0 ~ +3V/-3 ~ 0V;
 
 Isolate 3000VDC;
 
-
-
- Wiring diagram
+Wiring diagram
 
 ![](https://media-hub.inhand.com/ai_edge_computers/EC942_EN/e238ae81c1508d5b.png)
 
 ![](https://media-hub.inhand.com/ai_edge_computers/EC942_EN/3ee15c843b5aa154.png)
 
-### **2.3.5 Switching Output interface (Digital Output)** 
+### **2.3.5 Switching Output interface (Digital Output)**
 
 | **Interface identification** | **Features**                 | **Description** |
 | ---------------------------- | ---------------------------- | --------------- |
@@ -150,13 +142,11 @@ Isolate 3000VDC;
 
 Isolated 3000VDC
 
-
-
 Wiring diagram
 
 ![](https://media-hub.inhand.com/ai_edge_computers/EC942_EN/27cf52edcfec3f25.png)
 
-### **2.3.6 USB** 
+### **2.3.6 USB**
 
 The EC942 provides two USB 2.0 Host ports.
 
@@ -164,40 +154,36 @@ The EC942 provides two USB 2.0 Host ports.
 
 EC942 has 12 LED lights to indicate the power supply and system operation status respectively.
 
-| **Signage** | **Name**                                         | **Definition**                                               |
-| ----------- | ------------------------------------------------ | ------------------------------------------------------------ |
-| PWR         | Power indicator                                  | Power on and always on                                       |
+| **Signage** | **Name**                                         | **Definition**                                                                                                                                                                                                         |
+| ----------- | ------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| PWR         | Power indicator                                  | Power on and always on                                                                                                                                                                                                 |
 | STATUS      | System operating status indicator light          | When the system starts normally, the STATUS flashes. If the system fails to start due to an exception in the system startup phase, or when the factory recovery operation has not been completed, STATUS is solid off. |
 | WARN        | Warning indicator light                          | When the system has a warning abnormality, the WARN light flashes. Warning abnormalities include: the factory reset has not been completed; and the dialing abnormality (the cellular function needs to be turned on). |
-| Error       | Error indicator light                            | When an Error occurs, the error indicator flashes. Errors include: Factory restoration is not complete. |
-| SIM1        | SIM1 card indicator,                             | Select SIM card 1 for dialing, select SIM card 2 for dialing or turn off dialing, long off. |
-| SIM2        | SIM1 card indicator light, always on if selected | When SIM card 2 is selected for dialing, it is always on. When SIM card 1 is selected for dialing or dialing off, it will be long off. |
-| User1       | User Programmable indicator 1                    | It is off by default and can be controlled by user programming |
-| User2       | User Programmable indicator light 2              | It is off by default and can be controlled by user programming |
-| 4G/5G       | Cellular connection status indicator             | Keep on after successful dialing                             |
-| L1          | Cellular signal strength                         | See Cellular Signal Strength Indicator instructions          |
-| L2          | Cellular signal strength                         | See Cellular Signal Strength Indicator instructions          |
-| L3          | Cellular signal strength                         | See Cellular Signal Strength Indicator instructions          |
-
-
+| Error       | Error indicator light                            | When an Error occurs, the error indicator flashes. Errors include: Factory restoration is not complete.                                                                                                                |
+| SIM1        | SIM1 card indicator,                             | Select SIM card 1 for dialing, select SIM card 2 for dialing or turn off dialing, long off.                                                                                                                            |
+| SIM2        | SIM1 card indicator light, always on if selected | When SIM card 2 is selected for dialing, it is always on. When SIM card 1 is selected for dialing or dialing off, it will be long off.                                                                                 |
+| User1       | User Programmable indicator 1                    | It is off by default and can be controlled by user programming                                                                                                                                                         |
+| User2       | User Programmable indicator light 2              | It is off by default and can be controlled by user programming                                                                                                                                                         |
+| 4G/5G       | Cellular connection status indicator             | Keep on after successful dialing                                                                                                                                                                                       |
+| L1          | Cellular signal strength                         | See Cellular Signal Strength Indicator instructions                                                                                                                                                                    |
+| L2          | Cellular signal strength                         | See Cellular Signal Strength Indicator instructions                                                                                                                                                                    |
+| L3          | Cellular signal strength                         | See Cellular Signal Strength Indicator instructions                                                                                                                                                                    |
 
 Cellular signal strength indicator
 
-  
-
-| LED  | No signal | Weak signal (RSSI < -90) | Moderate signal (-90 <= RSSI < -70) | Strong signal (RSSI >= -70) |
-| ---- | --------- | ------------------------ | ----------------------------------- | --------------------------- |
-| L1   | destroy   | bright                   | bright                              | bright                      |
-| L2   | destroy   | destroy                  | bright                              | bright                      |
-| L3   | destroy   | destroy                  | destroy                             | bright                      |
+| LED | No signal | Weak signal (RSSI < -90) | Moderate signal (-90 <= RSSI < -70) | Strong signal (RSSI >= -70) |
+| --- | --------- | ------------------------ | ----------------------------------- | --------------------------- |
+| L1  | destroy   | bright                   | bright                              | bright                      |
+| L2  | destroy   | destroy                  | bright                              | bright                      |
+| L3  | destroy   | destroy                  | destroy                             | bright                      |
 
 In addition to the combination of L1, L2, L3 signal lights to indicate cellular signal strength, there is also a set of LED combinations to mark the process of restoring the factory.
 
-| LED    | State    |      |
-| ------ | -------- | ---- |
-| WARN   | Twinkle  |      |
-| ERROR  | Flashing |      |
-| STATUS | Put out  |      |
+| LED    | State    |     |
+| ------ | -------- | --- |
+| WARN   | Twinkle  |     |
+| ERROR  | Flashing |     |
+| STATUS | Put out  |     |
 
 After executing the restore factory Settings, the system will perform a restart, after the restart is completed, the restore factory is not completed, at this time WARN light and ERROR flashing, STATUS off, in this state can not power off the device, otherwise it may lead to the loss of some files and affect the system function. This state will last for 30 seconds, when the factory recovery is completed, WARN and ERROR will go off, and STATUS will flash.
 
@@ -243,10 +229,10 @@ There are 5 antenna interfaces in EC942, and the number of antennas standard wit
 
 The dial switch controls the pull up and pull down resistance of the 485 bus. The pull up and down resistance can be selected to increase the number of 485 bus loaded devices.
 
-| **Identification** | **Functional Notes**                                         |
-| ------------------ | ------------------------------------------------------------ |
-| PU                 | ON - enable pull-up resistor; OFF - disables the pullup resistor |
-| PD                 | ON - enables pull-down resistor; OFF - disables the pull-down resistor |
+| **Identification** | **Functional Notes**                                                                       |
+| ------------------ | ------------------------------------------------------------------------------------------ |
+| PU                 | ON - enable pull-up resistor; OFF - disables the pullup resistor                           |
+| PD                 | ON - enables pull-down resistor; OFF - disables the pull-down resistor                     |
 | T                  | ON -- Enable the terminal to match the resistor; OFF - Disables terminal matching resistor |
 
 ### **2.3.16 mSATA hard disk interface**
@@ -547,6 +533,7 @@ In addition to using NTP to synchronize the time, there is a synchronization but
 Configuration import, export and factory restore are supported here.
 
 ##### **3.3.1.3.2 Firmware upgrade**
+
 ![](https://media-hub.inhand.com/ai_edge_computers/EC942_EN/652d3b3ef49fb186.png)
 
 The automatic restart option is turned off by default. After upgrading the firmware, you need to manually restart the system to take effect; When the automatic restart option is enabled, the system will be restarted automatically after the firmware upgrade is successful.
@@ -767,17 +754,17 @@ Details about the stty command are available at the following link
 
 EC942 provides two USB 2.0 Host interfaces, which are mainly used to expand storage devices and connect to mice and keyboards.
 
-EC942 supports USB storage device hotplugging. It will mount all partitions automatically. EC942 will mount all USB storage device partitions to the /mnt/ path with the mount folder named usb_<node>_<num>. Where <node> is the device node name of the partition, and <num> can be a number from 0 to 9.
+EC942 supports USB storage device hotplugging. It will mount all partitions automatically. EC942 will mount all USB storage device partitions to the /mnt/ path with the mount folder named usb*<node>*<num>. Where <node> is the device node name of the partition, and <num> can be a number from 0 to 9.
 
 ![](https://media-hub.inhand.com/ai_edge_computers/EC942_EN/b505ad3f40c08161.png)
 
 **Note**
 
-Remember to enter the sync sync command before disconnecting your USB mass storage device to prevent data loss. When you disconnect your storage device, exit from the /media/* directory. If you stay in /media/usb*, the automatic uninstall process will fail. If this happens, type umount /media/usb* to manually unmount the device
+Remember to enter the sync sync command before disconnecting your USB mass storage device to prevent data loss. When you disconnect your storage device, exit from the /media/_ directory. If you stay in /media/usb_, the automatic uninstall process will fail. If this happens, type umount /media/usb\* to manually unmount the device
 
 ## 4.3 Micro SD
 
-EC942 supports micro SD memory card but does not support hotplugging. It will mount all partitions automatically. EC942 will mount all micro SD memory card partitions to the /mnt/ path with the mount folder named sd_<node>_<num>. Where <node> is the device node name of the partition, and <num> is a number from 0 to 9.
+EC942 supports micro SD memory card but does not support hotplugging. It will mount all partitions automatically. EC942 will mount all micro SD memory card partitions to the /mnt/ path with the mount folder named sd*<node>*<num>. Where <node> is the device node name of the partition, and <num> is a number from 0 to 9.
 
 ![](https://media-hub.inhand.com/ai_edge_computers/EC942_EN/1b3123a9d46f4a4d.png)
 
@@ -857,11 +844,7 @@ If you want to view the details of the GPS, there are two ways to view it:
 
 1. Turn off the device by long pressing the on/off button for 8 seconds
 
-
-
 2. You can use Linux commands to shut down all software running on the device and stop the system. However, after running this command, major components such as CPU, RAM, and storage devices will lose power.
-
-
 
 ![](https://media-hub.inhand.com/ai_edge_computers/EC942_EN/8cc2fdb56f726a85.png)
 
@@ -908,9 +891,9 @@ There are two ways to restore factory Settings:
 1. Restore factory Settings by pressing:
 
 1. Long press the restore factory Settings button for 10-20s and see the warn light long on.
-2. When the warn light has turned on, release the Restore Factory Settings button.
-3. After releasing the Restore Factory Settings button, the error light blinks several times before the system starts to restart and perform Restore Factory Settings
-4. After the system restarts, the warn light and error light will flash, and status will be off; After about 30s, when both warn light and error light stop flashing and status starts flashing at the same time, the system is finished restoring the factory Settings.
+1. When the warn light has turned on, release the Restore Factory Settings button.
+1. After releasing the Restore Factory Settings button, the error light blinks several times before the system starts to restart and perform Restore Factory Settings
+1. After the system restarts, the warn light and error light will flash, and status will be off; After about 30s, when both warn light and error light stop flashing and status starts flashing at the same time, the system is finished restoring the factory Settings.
 
 ### **6.2 System Upgrades**
 
@@ -927,171 +910,172 @@ Get a USB key (micro SD card). If the USB key (SD card) has multiple partitions,
 EC900 provides a device information description file in JSON format. Customers who need to operate IO, LED, serial port and other peripherals can obtain the device node information of these peripherals by querying the device description information file.
 
 Device description file path: /tmp/ieos/etc/system_info.json, the content is as follows:
+
 ```json
 {
-    "device_info":{
-        "model_info":{
-            "model":"EC942",
-            "pn":"LQA8-W-G",
-            "sn":"CL9422343000019",
-            "oem":"inhand",
-            "features":";std;cell-LQA8;wlan;io;tmp2;"
+  "device_info": {
+    "model_info": {
+      "model": "EC942",
+      "pn": "LQA8-W-G",
+      "sn": "CL9422343000019",
+      "oem": "inhand",
+      "features": ";std;cell-LQA8;wlan;io;tmp2;"
+    },
+    "software_info": {
+      "boot_loader": "1.0.1",
+      "kernel": "4.19.232",
+      "version": "V2.0.1-test.2",
+      "OS": "Debian GNU/Linux 10 (buster)"
+    },
+    "hardware_info": {
+      "arch": "arm64",
+      "soc": "rk3568",
+      "interface": {
+        "eth": [
+          {
+            "iface_name": "eth2",
+            "iface_mac": "2E:62:32:7B:B5:28"
+          },
+          {
+            "iface_name": "eth1",
+            "iface_mac": "2A:62:32:7B:B5:28"
+          }
+        ],
+        "wlan": [
+          {
+            "iface_name": "wlan0",
+            "iface_mac": "88:12:AC:FA:AD:53"
+          },
+          {
+            "iface_name": "wlan1",
+            "iface_mac": "8A:12:AC:FA:AD:53"
+          }
+        ]
+      },
+      "gpio": [
+        {
+          "gpio_name": "cellular_power",
+          "dev_node": "/sys/class/gpio/gpio0"
         },
-        "software_info":{
-            "boot_loader":"1.0.1",
-            "kernel":"4.19.232",
-            "version":"V2.0.1-test.2",
-            "OS":"Debian GNU/Linux 10 (buster)"
+        {
+          "gpio_name": "sim_switch",
+          "dev_node": "/sys/class/gpio/gpio19"
         },
-        "hardware_info":{
-            "arch":"arm64",
-            "soc":"rk3568",
-            "interface":{
-                "eth":[
-                    {
-                        "iface_name":"eth2",
-                        "iface_mac":"2E:62:32:7B:B5:28"
-                    },
-                    {
-                        "iface_name":"eth1",
-                        "iface_mac":"2A:62:32:7B:B5:28"
-                    }
-                ],
-                "wlan":[
-                    {
-                        "iface_name":"wlan0",
-                        "iface_mac":"88:12:AC:FA:AD:53"
-                    },
-                    {
-                        "iface_name":"wlan1",
-                        "iface_mac":"8A:12:AC:FA:AD:53"
-                    }
-                ]
-            },
-            "gpio":[
-                {
-                    "gpio_name":"cellular_power",
-                    "dev_node":"/sys/class/gpio/gpio0"
-                },
-                {
-                    "gpio_name":"sim_switch",
-                    "dev_node":"/sys/class/gpio/gpio19"
-                },
-                {
-                    "gpio_name":"msata_power",
-                    "dev_node":"/sys/class/gpio/gpio20"
-                },
-                {
-                    "gpio_name":"gnss_power",
-                    "dev_node":"/sys/class/gpio/gpio110"
-                },
-                {
-                    "gpio_name":"ble_power",
-                    "dev_node":"/sys/class/gpio/gpio220"
-                }
-            ],
-            "user_key":[
-                {
-                    "user_key_name":"USER",
-                    "dev_node":"/sys/class/gpio/gpio95"
-                }
-            ],
-            "uart":[
-                {
-                    "uart_name":"COM1",
-                    "dev_node":"/dev/ttyS3"
-                },
-                {
-                    "uart_name":"COM2",
-                    "dev_node":"/dev/ttyS4"
-                }
-            ],
-            "io":{
-                "di":[
-                    {
-                        "di_name":"DI1",
-                        "dev_node":"/sys/class/gpio/gpio487"
-                    },
-                    {
-                        "di_name":"DI2",
-                        "dev_node":"/sys/class/gpio/gpio488"
-                    },
-                    {
-                        "di_name":"DI3",
-                        "dev_node":"/sys/class/gpio/gpio489"
-                    },
-                    {
-                        "di_name":"DI4",
-                        "dev_node":"/sys/class/gpio/gpio490"
-                    }
-                ],
-                "do":[
-                    {
-                        "di_name":"DO1",
-                        "dev_node":"/sys/class/gpio/gpio491"
-                    },
-                    {
-                        "di_name":"DO2",
-                        "dev_node":"/sys/class/gpio/gpio492"
-                    },
-                    {
-                        "di_name":"DO3",
-                        "dev_node":"/sys/class/gpio/gpio493"
-                    },
-                    {
-                        "di_name":"DO4",
-                        "dev_node":"/sys/class/gpio/gpio494"
-                    }
-                ]
-            },
-            "led":[
-                {
-                    "led_name":"USER1",
-                    "dev_node":"/sys/class/leds/user1"
-                },
-                {
-                    "led_name":"USER2",
-                    "dev_node":"/sys/class/leds/user2"
-                },
-                {
-                    "led_name":"4G/5G",
-                    "dev_node":"/sys/class/leds/cell"
-                },
-                {
-                    "led_name":"SIM1",
-                    "dev_node":"/sys/class/leds/sim1"
-                },
-                {
-                    "led_name":"SIM2",
-                    "dev_node":"/sys/class/leds/sim2"
-                },
-                {
-                    "led_name":"WARN",
-                    "dev_node":"/sys/class/leds/warn"
-                },
-                {
-                    "led_name":"ERROR",
-                    "dev_node":"/sys/class/leds/error"
-                },
-                {
-                    "led_name":"STATUS",
-                    "dev_node":"/sys/class/leds/status"
-                },
-                {
-                    "led_name":"L1",
-                    "dev_node":"/sys/class/leds/level1"
-                },
-                {
-                    "led_name":"L2",
-                    "dev_node":"/sys/class/leds/level2"
-                },
-                {
-                    "led_name":"L3",
-                    "dev_node":"/sys/class/leds/level3"
-                }
-            ]
+        {
+          "gpio_name": "msata_power",
+          "dev_node": "/sys/class/gpio/gpio20"
+        },
+        {
+          "gpio_name": "gnss_power",
+          "dev_node": "/sys/class/gpio/gpio110"
+        },
+        {
+          "gpio_name": "ble_power",
+          "dev_node": "/sys/class/gpio/gpio220"
         }
+      ],
+      "user_key": [
+        {
+          "user_key_name": "USER",
+          "dev_node": "/sys/class/gpio/gpio95"
+        }
+      ],
+      "uart": [
+        {
+          "uart_name": "COM1",
+          "dev_node": "/dev/ttyS3"
+        },
+        {
+          "uart_name": "COM2",
+          "dev_node": "/dev/ttyS4"
+        }
+      ],
+      "io": {
+        "di": [
+          {
+            "di_name": "DI1",
+            "dev_node": "/sys/class/gpio/gpio487"
+          },
+          {
+            "di_name": "DI2",
+            "dev_node": "/sys/class/gpio/gpio488"
+          },
+          {
+            "di_name": "DI3",
+            "dev_node": "/sys/class/gpio/gpio489"
+          },
+          {
+            "di_name": "DI4",
+            "dev_node": "/sys/class/gpio/gpio490"
+          }
+        ],
+        "do": [
+          {
+            "di_name": "DO1",
+            "dev_node": "/sys/class/gpio/gpio491"
+          },
+          {
+            "di_name": "DO2",
+            "dev_node": "/sys/class/gpio/gpio492"
+          },
+          {
+            "di_name": "DO3",
+            "dev_node": "/sys/class/gpio/gpio493"
+          },
+          {
+            "di_name": "DO4",
+            "dev_node": "/sys/class/gpio/gpio494"
+          }
+        ]
+      },
+      "led": [
+        {
+          "led_name": "USER1",
+          "dev_node": "/sys/class/leds/user1"
+        },
+        {
+          "led_name": "USER2",
+          "dev_node": "/sys/class/leds/user2"
+        },
+        {
+          "led_name": "4G/5G",
+          "dev_node": "/sys/class/leds/cell"
+        },
+        {
+          "led_name": "SIM1",
+          "dev_node": "/sys/class/leds/sim1"
+        },
+        {
+          "led_name": "SIM2",
+          "dev_node": "/sys/class/leds/sim2"
+        },
+        {
+          "led_name": "WARN",
+          "dev_node": "/sys/class/leds/warn"
+        },
+        {
+          "led_name": "ERROR",
+          "dev_node": "/sys/class/leds/error"
+        },
+        {
+          "led_name": "STATUS",
+          "dev_node": "/sys/class/leds/status"
+        },
+        {
+          "led_name": "L1",
+          "dev_node": "/sys/class/leds/level1"
+        },
+        {
+          "led_name": "L2",
+          "dev_node": "/sys/class/leds/level2"
+        },
+        {
+          "led_name": "L3",
+          "dev_node": "/sys/class/leds/level3"
+        }
+      ]
     }
+  }
 }
 ```
 
@@ -1125,7 +1109,7 @@ The full shell script:
 
 ```shell
 #!/bin/bash
- 
+
 gpio491="/sys/class/gpio/gpio491/value"
 gpio492="/sys/class/gpio/gpio492/value"
 gpio493="/sys/class/gpio/gpio493/value"
@@ -1150,7 +1134,7 @@ fi
 gpio487="/sys/class/gpio/gpio487/value"
 gpio488="/sys/class/gpio/gpio488/value"
 gpio489="/sys/class/gpio/gpio489/value"
-gpio490="/sys/class/gpio/gpio490/value" 
+gpio490="/sys/class/gpio/gpio490/value"
 
 # When you need to check the level of DI0, you can directly check the value of sys/class/gpio/gpio487/value.
 
@@ -1196,12 +1180,12 @@ echo 1 > /sys/class/leds/user1/brightness
 When the USER1 light is needed to flash, write the timer to the trigger file and control the time of light and off by delay_on and delay_off
 
 ```shell
-Echo # start timer timer > / sys/class/leds light  
-echo 1 seconds/user1 / trigger 
+Echo # start timer timer > / sys/class/leds light
+echo 1 seconds/user1 / trigger
 
-\# > 1000 / sys/class/leds/user1 / delay_on echo out  
+\# > 1000 / sys/class/leds/user1 / delay_on echo out
 
-\# 1 seconds 
+\# 1 seconds
 1000 > /sys/class/leds/user1/delay_off
 ```
 
@@ -1225,7 +1209,7 @@ if [ -f "$USER1_BRIGTHNESS" ]; then
   echo 1 > $USER1_BRIGTHNESS
 else
   echo "no file exit "$USER1_BRIGTHNESS
-fi 
+fi
 
 \# Light up the USER2 LED
 if [ -f "$USER2_BRIGTHNESS" ]; then
@@ -1239,7 +1223,7 @@ if [ -f "$USER1_TRIGGER" ]; then
   echo timer > $USER1_TRIGGER
 else
   echo "no file exit "$USER1_TRIGGER
-fi 
+fi
 
 \# Set the USER2 LED to flash
 if [ -f "$USER2_TRIGGER" ]; then
@@ -1306,8 +1290,8 @@ Here's how to configure the environment variables for the cross-compilation tool
 Using the classic hello world program as an example, create the following directories and files
 
 ```shell
-mkdir ~/example 
-touch ~/example/hello.c 
+mkdir ~/example
+touch ~/example/hello.c
 touch ~/example/Makefile
 ```
 
@@ -1316,10 +1300,10 @@ The contents of the ~/example/hello.c file are as follows:
 ```C
 \#include <stdio.h>
 
-int main(void) 
-{ 
-    printf("hello, world! \n"); 
-    return 0;  
+int main(void)
+{
+    printf("hello, world! \n");
+    return 0;
 }
 ```
 
@@ -1327,34 +1311,34 @@ The contents of the ~/example/Makefile are as follows:
 
 ```Makefile
 \# Define TARGET and source filenames
-target := hellworld 
-DIRS := $(shell find.-maxdepth 3-type d)  
-SRCS := $(foreach dir,$(DIRS),$(wildcard $(dir)/*.c)) 
-OBJS := $(SRCS:.c=.o) 
+target := hellworld
+DIRS := $(shell find.-maxdepth 3-type d)
+SRCS := $(foreach dir,$(DIRS),$(wildcard $(dir)/*.c))
+OBJS := $(SRCS:.c=.o)
 
 
-CC=aarch64-linux-gnu-gcc 
+CC=aarch64-linux-gnu-gcc
 
-\# Define compiler and compile options  
+\# Define compiler and compile options
 CFLAGS := -Wall-Wextra -g-wno-unused-parameters
 
-\# define default TARGET  
-all: $(TARGET) 
+\# define default TARGET
+all: $(TARGET)
 
-\# define target file dependencies and compile commands  
-$(TARGET): $(OBJS)  
-$(CC) $(CFLAGS) $(LIBS) $^ -o $@  
+\# define target file dependencies and compile commands
+$(TARGET): $(OBJS)
+$(CC) $(CFLAGS) $(LIBS) $^ -o $@
 
-\# Define the command to compile the source file to the target file 
-%.o: %.c 
+\# Define the command to compile the source file to the target file
+%.o: %.c
 $(CC) $(CFLAGS) $(LIBS) -C $< -o $@
 
-\# Define command to clear temporary files 
-clean: 
+\# Define command to clear temporary files
+clean:
 rm -f $(TARGET) $(OBJS)
 
-\# declare pseudo target ".PHONY" 
+\# declare pseudo target ".PHONY"
 .PHONY: all clean
 ```
 
-Run make in the ~/example directory to generate the object file helloworld
+Run make in the ~/example directory to generate the object file helloworld 1

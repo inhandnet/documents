@@ -1,6 +1,9 @@
 name: Deploy Manuals to Formal Server
 
 on:
+  pull_request:
+    branches: [master]
+    paths: ['docs/**']
   push:
     branches: [master]
     paths:
@@ -34,37 +37,37 @@ jobs:
           pip install -r requirements.txt
 
       # Upload PDF and other files (excluding .md and images) to Cloud Storage
+      - name: Validate docs paths
+        run: |
+          pip install requests
+          python scripts/validate_docs.py --diff
+
       - name: Upload docs files to Cloud Storage
+        if: github.event_name == 'push'
         run: |
           pip install requests
           python scripts/upload_specs_to_cloud.py --dist-dir docs
 
-      # Product validation disabled
-      # - name: Run Product Validation
-      #   env:
-      #     CN_API_KEY: ${{ secrets.CN_API_KEY }}
-      #     GLOBAL_API_KEY: ${{ secrets.GLOBAL_API_KEY }}
-      #     CN_XK_TOKEN: ${{ secrets.CN_XK_TOKEN }}
-      #     GLOBAL_XK_TOKEN: ${{ secrets.GLOBAL_XK_TOKEN }}
-      #   run: |
-      #     python validate_products.py
-
       - name: Generate Product Index Pages
+        if: github.event_name == 'push'
         run: |
           python scripts/generate_product_index.py --report
 
       # Build Chinese site to site-zh/
       - name: Build (zh)
+        if: github.event_name == 'push'
         run: |
           python -m mkdocs build -f mkdocs.yml -d site-zh --clean
 
       # Build English site to site-en/
       - name: Build (en)
+        if: github.event_name == 'push'
         run: |
           python -m mkdocs build -f mkdocs.en.yml -d site-en --clean
 
       # Deploy Chinese site to domestic server only
       - name: Copy Chinese site to Domestic Server
+        if: github.event_name == 'push'
         uses: appleboy/scp-action@v0.1.7
         with:
           host: ${{ secrets.CN_OVERSEAS_HOST }}
@@ -78,6 +81,7 @@ jobs:
 
       # Deploy English site to overseas server only
       - name: Copy English site to Overseas Server
+        if: github.event_name == 'push'
         uses: appleboy/scp-action@v0.1.7
         with:
           host: ${{ secrets.OVERSEAS_HOST }}

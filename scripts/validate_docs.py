@@ -191,6 +191,14 @@ def validate_files(file_list: List[Path]) -> bool:
         response.raise_for_status()
         result = response.json()
 
+        # Check for API error in response body
+        if 'error' in result and result['error']:
+            print(f"\n[FAIL] Validation failed:")
+            print(f"Error: {result['error']}")
+            if 'result' in result:
+                print(f"Details: {result['result']}")
+            return False
+
         print(f"\n[OK] Validation passed")
         print(f"Response: {result}")
         return True

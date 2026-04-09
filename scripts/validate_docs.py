@@ -56,10 +56,10 @@ def get_changed_files() -> List[Path]:
 
     if base_ref and head_ref:
         # PR mode: compare base branch with head branch
-        cmd = ["git", "diff", "--name-only", f"origin/{base_ref}", f"origin/{head_ref}"]
+        cmd = ["git", "-c", "core.quotePath=false", "diff", "--name-only", f"origin/{base_ref}", f"origin/{head_ref}"]
     else:
         # Push mode: compare last commit
-        cmd = ["git", "diff", "--name-only", "HEAD~1", "HEAD"]
+        cmd = ["git", "-c", "core.quotePath=false", "diff", "--name-only", "HEAD~1", "HEAD"]
 
     try:
         result = subprocess.run(cmd, capture_output=True, text=True, check=True)

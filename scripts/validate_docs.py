@@ -206,7 +206,7 @@ def forbid_files(file_list: List[Path]) -> bool:
     for path in normalized:
         print(f"  - {path}")
         try:
-            response = requests.post(
+            response = requests.put(
                 url,
                 headers=headers,
                 json={"path": path},

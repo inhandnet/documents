@@ -44,6 +44,8 @@ jobs:
 
       - name: Forbid deleted docs (push only)
         if: github.event_name == 'push'
+        env:
+          GITHUB_EVENT_BEFORE: ${{ github.event.before }}
         run: |
           pip install requests
           python scripts/validate_docs.py --forbid-deleted

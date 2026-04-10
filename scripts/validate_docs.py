@@ -186,8 +186,8 @@ def forbid_files(file_list: List[Path]) -> bool:
         if len(parts) >= 2 and parts[0] == "docs" and len(parts) >= 3:
             lang = parts[1]
             if lang in VALID_LANGS:
-                # Keep lang prefix: zh/er605/Plan/xxx.md
-                norm = "/".join(parts[1:])
+                # Remove lang prefix: FWA02-NAVA/FAQ/xxx.md (without zh/)
+                norm = "/".join(parts[2:])
                 normalized.append(norm)
 
     if not normalized:

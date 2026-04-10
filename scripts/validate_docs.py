@@ -94,6 +94,7 @@ def get_deleted_files() -> List[Path]:
 
     try:
         result = subprocess.run(cmd, capture_output=True, text=True, check=True)
+        print(f"[DEBUG] git diff output: {repr(result.stdout)}")
         deleted = []
         for line in result.stdout.strip().split("\n"):
             if not line:

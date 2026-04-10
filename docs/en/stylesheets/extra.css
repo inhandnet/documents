@@ -528,9 +528,9 @@ input.md-nav__toggle + label.md-nav__link svg {
 }
 
 /* Hide header buttons */
-.md-header__button {
+/* .md-header__button {
   display: none !important;
-}
+} */
 .wp-global-nav {
   display: none !important;
 }

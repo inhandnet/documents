@@ -179,12 +179,59 @@ def forbid_files(file_list: List[Path]) -> bool:
     Returns:
         True if all files are successfully forbidden, False otherwise
     """
-    # Normalize paths
+    # Normalize paths - keep language prefix for forbid API
     normalized = []
     for f in file_list:
-        norm = normalize_path(f)
-        if norm:
-            normalized.append(norm)
+        parts = list(f.parts)
+        if len(parts) >= 2 and parts[0] == "docs" and len(parts) >= 3:
+            lang = parts[1]
+            if lang in VALID_LANGS:
+                # Keep lang prefix: zh/er605/Plan/xxx.md
+                norm = "/".join(parts[1:])
+                normalized.append(norm)
+
+    if not normalized:
+        print("[INFO] No files to forbid")
+        return True
+
+    # Forbid API endpoint
+    url = f"{API_BASE_URL}/api/plm/github/product/published-files/forbid"
+
+    headers = {
+        "Authorization": f"Bearer {API_TOKEN}",
+        "Content-Type": "application/json",
+    }
+
+    print(f"=== Forbidding {len(normalized)} deleted files ===")
+
+    success_count = 0
+    fail_count = 0
+
+    for path in normalized:
+        print(f"  - {path}")
+        try:
+            response = requests.put(
+                url,
+                headers=headers,
+                json={"path": path},
+                timeout=30,
+            )
+            response.raise_for_status()
+            result = response.json()
+
+            if result.get("status") == 200:
+                print(f"    [OK] Forbidden successfully")
+                success_count += 1
+            else:
+                print(f"    [WARN] Unexpected response: {result}")
+                fail_count += 1
+
+        except requests.exceptions.RequestException as e:
+            print(f"    [FAIL] Failed to forbid: {e}")
+            fail_count += 1
+
+    print(f"\nForbid complete: {success_count} success, {fail_count} failed")
+    return fail_count == 0
 
     if not normalized:
         print("[INFO] No files to forbid")

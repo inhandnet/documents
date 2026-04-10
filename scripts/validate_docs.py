@@ -146,14 +146,30 @@ def get_notify_email() -> str:
     """Get notification email.
 
     Priority:
-    1. Environment variable NOTIFY_EMAIL
-    2. git config user.email
-    3. Default: github-actions@inhand.com
+    1. config.json notify_emails
+    2. Environment variable NOTIFY_EMAIL
+    3. git config user.email
+    4. Default: github-actions@inhand.com
     """
+    # Try config.json first
+    config_path = Path(__file__).parent.parent / "config.json"
+    if config_path.exists():
+        try:
+            import json
+            with open(config_path, "r", encoding="utf-8") as f:
+                config = json.load(f)
+            emails = config.get("notify_emails", [])
+            if emails:
+                return ",".join(emails)
+        except (json.JSONDecodeError, IOError):
+            pass
+
+    # Fallback to environment variable
     email = os.environ.get("NOTIFY_EMAIL")
     if email:
         return email
 
+    # Fallback to git config
     try:
         result = subprocess.run(
             ["git", "config", "user.email"],
@@ -307,8 +323,11 @@ def validate_files(file_list: List[Path]) -> bool:
     email = get_notify_email()
 
     params = {"email": email}
+
+    # Build request body with commitId inside
+    body = {"files": normalized}
     if commit_id:
-        params["commitId"] = commit_id
+        body["commitId"] = commit_id
 
     headers = {
         "Authorization": f"Bearer {API_TOKEN}",
@@ -324,7 +343,7 @@ def validate_files(file_list: List[Path]) -> bool:
             url,
             headers=headers,
             params=params,
-            json=normalized,
+            json=body,
             timeout=60,
         )
         response.raise_for_status()

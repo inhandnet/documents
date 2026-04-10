@@ -23,7 +23,7 @@ theme:
   language: zh
   custom_dir: overrides
   logo: assets/logo.svg
-  favicon: assets/favicon.svg
+  favicon: assets/logo.png
   features:
     - navigation.instant
     - navigation.tracking

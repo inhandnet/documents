@@ -451,17 +451,14 @@ input.md-nav__toggle + label.md-nav__link svg {
 /* =========================
    Hide Material header (use WordPress global nav instead)
    ========================= */
-.md-header {
   display: none !important;
 }
 
 /* Adjust main content top padding since header is hidden */
-.md-main {
   margin-top: 0 !important;
 }
 
 /* Keep sidebar at top without header */
-.md-sidebar {
   top: 0 !important;
 }
 /* Hide footer */
@@ -489,5 +486,10 @@ input.md-nav__toggle + label.md-nav__link svg {
 
 /* Hide header buttons */
 .md-header__button {
+  display: none !important;
+}
+
+/* Hide WordPress global navigation bar */
+.wp-global-nav {
   display: none !important;
 }

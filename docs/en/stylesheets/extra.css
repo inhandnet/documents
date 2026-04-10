@@ -3,38 +3,72 @@
    ========================= */
 :root {
   --md-primary-fg-color: #16a34a; /* green-600 */
-  --md-accent-fg-color: #22c55e;  /* green-500 */
+  --md-accent-fg-color: #22c55e; /* green-500 */
 }
 
 [data-md-color-scheme="slate"] {
   --md-primary-fg-color: #22c55e; /* 提亮一点，暗色更清晰 */
-  --md-accent-fg-color: #4ade80;  /* green-400 */
+  --md-accent-fg-color: #4ade80; /* green-400 */
 }
 
 /* =========================
    Text color: 字体颜色（可直接在 Markdown 里用 span class）
    用法：<span class="text-red">红色</span>
    ========================= */
-.md-typeset .text-primary, .text-primary { color: var(--md-primary-fg-color); }
-.md-typeset .text-accent, .text-accent { color: var(--md-accent-fg-color); }
-.md-typeset .text-muted, .text-muted { color: var(--md-default-fg-color--light); }
+.md-typeset .text-primary,
+.text-primary {
+  color: var(--md-primary-fg-color);
+}
+.md-typeset .text-accent,
+.text-accent {
+  color: var(--md-accent-fg-color);
+}
+.md-typeset .text-muted,
+.text-muted {
+  color: var(--md-default-fg-color--light);
+}
 
-.md-typeset .text-green, .text-green { color: #16a34a; }
-.md-typeset .text-red, .text-red { color: #dc2626; }
-.md-typeset .text-orange, .text-orange { color: #f59e0b; }
-.md-typeset .text-blue, .text-blue { color: #2563eb; }
-.md-typeset .text-purple, .text-purple { color: #7c3aed; }
+.md-typeset .text-green,
+.text-green {
+  color: #16a34a;
+}
+.md-typeset .text-red,
+.text-red {
+  color: #dc2626;
+}
+.md-typeset .text-orange,
+.text-orange {
+  color: #f59e0b;
+}
+.md-typeset .text-blue,
+.text-blue {
+  color: #2563eb;
+}
+.md-typeset .text-purple,
+.text-purple {
+  color: #7c3aed;
+}
 
 [data-md-color-scheme="slate"] .md-typeset .text-green,
-[data-md-color-scheme="slate"] .text-green { color: #4ade80; }
+[data-md-color-scheme="slate"] .text-green {
+  color: #4ade80;
+}
 [data-md-color-scheme="slate"] .md-typeset .text-red,
-[data-md-color-scheme="slate"] .text-red { color: #f87171; }
+[data-md-color-scheme="slate"] .text-red {
+  color: #f87171;
+}
 [data-md-color-scheme="slate"] .md-typeset .text-orange,
-[data-md-color-scheme="slate"] .text-orange { color: #fbbf24; }
+[data-md-color-scheme="slate"] .text-orange {
+  color: #fbbf24;
+}
 [data-md-color-scheme="slate"] .md-typeset .text-blue,
-[data-md-color-scheme="slate"] .text-blue { color: #60a5fa; }
+[data-md-color-scheme="slate"] .text-blue {
+  color: #60a5fa;
+}
 [data-md-color-scheme="slate"] .md-typeset .text-purple,
-[data-md-color-scheme="slate"] .text-purple { color: #a78bfa; }
+[data-md-color-scheme="slate"] .text-purple {
+  color: #a78bfa;
+}
 
 /* =========================
    PDF/Print: 打印为 PDF 的样式与按钮
@@ -90,7 +124,9 @@
 @media (min-width: 76.25em) {
   /* 主体三栏布局：导航 / 正文 / 目录 */
   .md-main__inner.md-grid {
-    grid-template-columns: var(--md-sidebar-width-l) minmax(0, 1fr) var(--md-sidebar-width-l);
+    grid-template-columns: var(--md-sidebar-width-l) minmax(0, 1fr) var(
+        --md-sidebar-width-l
+      );
   }
 
   /* 让正文容器更宽 */
@@ -178,24 +214,39 @@ input.md-nav__toggle + label.md-nav__link svg {
   width: 100%;
   box-sizing: border-box;
   padding: 0.35rem 0.6rem;
-  border: 1px solid color-mix(in srgb, var(--md-primary-fg-color) 55%, var(--md-default-bg-color));
+  border: 1px solid
+    color-mix(
+      in srgb,
+      var(--md-primary-fg-color) 55%,
+      var(--md-default-bg-color)
+    );
   border-radius: 0.35rem;
-  background: color-mix(in srgb, var(--md-primary-fg-color) 12%, var(--md-default-bg-color));
+  background: color-mix(
+    in srgb,
+    var(--md-primary-fg-color) 12%,
+    var(--md-default-bg-color)
+  );
   color: var(--md-default-fg-color);
   outline: none;
-  transition: box-shadow 120ms ease, border-color 120ms ease;
+  transition:
+    box-shadow 120ms ease,
+    border-color 120ms ease;
 }
 
 .md-nav-search__input::placeholder {
-  color: color-mix(in srgb, var(--md-primary-fg-color) 70%, var(--md-default-fg-color--light));
+  color: color-mix(
+    in srgb,
+    var(--md-primary-fg-color) 70%,
+    var(--md-default-fg-color--light)
+  );
 }
 
 .md-nav-search__input:focus {
   border-color: var(--md-primary-fg-color);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--md-primary-fg-color) 25%, transparent);
+  box-shadow: 0 0 0 2px
+    color-mix(in srgb, var(--md-primary-fg-color) 25%, transparent);
   background: #fff;
 }
-
 
 /* Popup style (no dim overlay) */
 .md-nav-search--popup {
@@ -341,12 +392,16 @@ input.md-nav__toggle + label.md-nav__link svg {
 .md-typeset ol.steps > li:not(:last-child)::after {
   content: "";
   position: absolute;
-  left: 1rem;             /* 圆点宽 2rem，中心点=1rem */
+  left: 1rem; /* 圆点宽 2rem，中心点=1rem */
   top: calc(0.15rem + 2rem + 0.25rem); /* 圆点顶部 + 圆点高度 + 间距 */
-  bottom: -0.75rem;       /* 覆盖 li 的外边距，让线条连接更自然 */
+  bottom: -0.75rem; /* 覆盖 li 的外边距，让线条连接更自然 */
   width: 3px;
   transform: translateX(-50%);
-  background: color-mix(in srgb, var(--md-primary-fg-color) 35%, var(--md-default-fg-color--lightest));
+  background: color-mix(
+    in srgb,
+    var(--md-primary-fg-color) 35%,
+    var(--md-default-fg-color--lightest)
+  );
   border-radius: 999px;
 }
 
@@ -449,9 +504,9 @@ input.md-nav__toggle + label.md-nav__link svg {
 /* =========================
    Hide Material header (use WordPress global nav instead)
    ========================= */
-.md-header {
+/* .md-header {
   display: none !important;
-}
+} */
 
 /* Adjust main content top padding since header is hidden */
 .md-main {
@@ -477,8 +532,10 @@ input.md-nav__toggle + label.md-nav__link svg {
   display: none !important;
 }
 
-
 /* Hide header buttons */
 .md-header__button {
+  display: none !important;
+}
+.wp-global-nav {
   display: none !important;
 }

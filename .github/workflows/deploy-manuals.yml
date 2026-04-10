@@ -46,7 +46,7 @@ jobs:
         if: github.event_name == 'push'
         run: |
           pip install requests
-          python scripts/validate_docs.py --diff --forbid-deleted
+          python scripts/validate_docs.py --forbid-deleted
 
       - name: Upload docs files to Cloud Storage
         if: github.event_name == 'push'

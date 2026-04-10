@@ -380,9 +380,19 @@ def main():
         success = validate_files(files)
         sys.exit(0 if success else 1)
 
-    # Handle git diff mode
+    # Handle forbid deleted mode (standalone)
+    if args.forbid_deleted:
+        deleted_files = get_deleted_files()
+        if deleted_files:
+            forbid_success = forbid_files(deleted_files)
+            if not forbid_success:
+                sys.exit(1)
+        else:
+            print("[INFO] No deleted files in docs/")
+        sys.exit(0)
+
+    # Handle git diff mode (validate only)
     if args.diff:
-        # Validate changed files
         files = get_changed_files()
         if files:
             success = validate_files(files)
@@ -390,17 +400,6 @@ def main():
                 sys.exit(1)
         else:
             print("[INFO] No changed files in docs/")
-
-        # Forbid deleted files if requested (only for push events)
-        if args.forbid_deleted:
-            deleted_files = get_deleted_files()
-            if deleted_files:
-                forbid_success = forbid_files(deleted_files)
-                if not forbid_success:
-                    sys.exit(1)
-            else:
-                print("[INFO] No deleted files in docs/")
-
         sys.exit(0)
 
     print("[ERROR] Must specify --diff or --file")

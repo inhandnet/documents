@@ -1,5 +1,5 @@
-site_name: Docs
-site_description: Documentation powered by MkDocs (Material)
+site_name: InHand Documentation
+site_description: InHand Networks Product Documentation
 site_url: https://inhand.com.cn/docs/en/
 # English site will be published under /en (set real URL when deploying)
 # site_url: ""
@@ -30,7 +30,7 @@ theme:
     - navigation.top
     - navigation.indexes
     - content.code.copy
-    - content.action.edit
+#    - content.action.edit  # 隐藏编辑按钮（客户视图）
     - search.suggest
     - search.highlight
     - toc.follow

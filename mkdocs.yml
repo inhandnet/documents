@@ -1,5 +1,5 @@
-site_name: Docs
-site_description: Documentation powered by MkDocs (Material)
+site_name: 映翰通在线文档
+site_description: 映翰通产品文档中心
 site_url: https://inhand.com.cn/docs/
 # 本地预览保持为空，避免资源被错误前缀；发布时改成你的 GitHub Pages 地址
 # site_url: ""
@@ -30,7 +30,7 @@ theme:
     - navigation.top
     - navigation.indexes
     - content.code.copy
-    - content.action.edit
+#    - content.action.edit  # 隐藏编辑按钮（客户视图）
     - search.suggest
     - search.highlight
     - toc.follow

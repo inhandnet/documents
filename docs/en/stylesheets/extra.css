@@ -445,3 +445,24 @@ input.md-nav__toggle + label.md-nav__link svg {
   background: color-mix(in srgb, #dc2626 14%, transparent);
   border: 1px solid color-mix(in srgb, #dc2626 22%, transparent);
 }
+
+/* =========================
+   Hide Material header (use WordPress global nav instead)
+   ========================= */
+.md-header {
+  display: none !important;
+}
+
+/* Adjust main content top padding since header is hidden */
+.md-main {
+  margin-top: 0 !important;
+}
+
+/* Keep sidebar at top without header */
+.md-sidebar {
+  top: 0 !important;
+}
+/* Hide footer */
+.md-footer {
+  display: none !important;
+}

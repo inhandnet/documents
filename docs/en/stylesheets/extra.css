@@ -523,12 +523,7 @@ input.md-nav__toggle + label.md-nav__link svg {
 }
 
 /* Hide GitHub repository link, edit buttons, and footer meta */
-.md-source__repository,
-.md-source__repository--active,
-.md-content__button,
-.md-icon,
-.md-footer-meta__inner,
-.md-grid.md-footer-meta__inner {
+.md-source {
   display: none !important;
 }
 

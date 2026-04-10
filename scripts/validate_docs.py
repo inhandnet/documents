@@ -85,6 +85,7 @@ def get_deleted_files() -> List[Path]:
         # Push mode - use GITHUB_EVENT_PATH to get before/after sha
         before_sha = os.environ.get("GITHUB_EVENT_BEFORE")
         after_sha = os.environ.get("GITHUB_SHA", "HEAD")
+        print(f"[DEBUG] GITHUB_EVENT_BEFORE={before_sha}, GITHUB_SHA={after_sha}")
         if before_sha:
             cmd = ["git", "-c", "core.quotePath=false", "diff", "--name-status", before_sha, after_sha]
         else:

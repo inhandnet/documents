@@ -70,6 +70,38 @@ def get_changed_files() -> List[Path]:
         return []
 
 
+def get_deleted_files() -> List[Path]:
+    """Get deleted files in docs/ directory.
+
+    Returns files with status 'D' (deleted) from git diff.
+    """
+    base_ref = os.environ.get("GITHUB_BASE_REF")
+    head_ref = os.environ.get("GITHUB_HEAD_REF")
+
+    if base_ref and head_ref:
+        # PR mode
+        cmd = ["git", "-c", "core.quotePath=false", "diff", "--name-status", f"origin/{base_ref}", f"origin/{head_ref}"]
+    else:
+        # Push mode
+        cmd = ["git", "-c", "core.quotePath=false", "diff", "--name-status", "HEAD~1", "HEAD"]
+
+    try:
+        result = subprocess.run(cmd, capture_output=True, text=True, check=True)
+        deleted = []
+        for line in result.stdout.strip().split("\n"):
+            if not line:
+                continue
+            # Format: "D\tfilepath" or "M\tfilepath" or "A\tfilepath"
+            parts = line.split("\t", 1)
+            if len(parts) == 2:
+                status, filepath = parts
+                if status == "D" and filepath.startswith("docs/"):
+                    deleted.append(Path(filepath))
+        return deleted
+    except subprocess.CalledProcessError:
+        return []
+
+
 def normalize_path(file_path: Path) -> Optional[str]:
     """Normalize path for API validation.
 
@@ -136,6 +168,66 @@ def get_notify_email() -> str:
         pass
 
     return "github-actions@inhand.com"
+
+
+def forbid_files(file_list: List[Path]) -> bool:
+    """Forbid (disable) deleted files via API.
+
+    Args:
+        file_list: List of deleted file paths to forbid
+
+    Returns:
+        True if all files are successfully forbidden, False otherwise
+    """
+    # Normalize paths
+    normalized = []
+    for f in file_list:
+        norm = normalize_path(f)
+        if norm:
+            normalized.append(norm)
+
+    if not normalized:
+        print("[INFO] No files to forbid")
+        return True
+
+    # Forbid API endpoint
+    url = f"{API_BASE_URL}/api/plm/github/product/published-files/forbid"
+
+    headers = {
+        "Authorization": f"Bearer {API_TOKEN}",
+        "Content-Type": "application/json",
+    }
+
+    print(f"=== Forbidding {len(normalized)} deleted files ===")
+
+    success_count = 0
+    fail_count = 0
+
+    for path in normalized:
+        print(f"  - {path}")
+        try:
+            response = requests.post(
+                url,
+                headers=headers,
+                json={"path": path},
+                timeout=30,
+            )
+            response.raise_for_status()
+            result = response.json()
+
+            if result.get("status") == 200:
+                print(f"    [OK] Forbidden successfully")
+                success_count += 1
+            else:
+                print(f"    [WARN] Unexpected response: {result}")
+                fail_count += 1
+
+        except requests.exceptions.RequestException as e:
+            print(f"    [FAIL] Failed to forbid: {e}")
+            fail_count += 1
+
+    print(f"\nForbid complete: {success_count} success, {fail_count} failed")
+    return fail_count == 0
 
 
 def validate_files(file_list: List[Path]) -> bool:
@@ -228,21 +320,44 @@ def main():
         type=Path,
         help="Validate single file",
     )
+    parser.add_argument(
+        "--forbid-deleted",
+        action="store_true",
+        help="Forbid (disable) deleted files via API (only for push events)",
+    )
     args = parser.parse_args()
 
+    # Handle single file validation
     if args.file:
         files = [args.file]
-    elif args.diff:
-        files = get_changed_files()
-        if not files:
-            print("[INFO] No changed files in docs/")
-            sys.exit(0)
-    else:
-        print("[ERROR] Must specify --diff or --file")
-        sys.exit(1)
+        success = validate_files(files)
+        sys.exit(0 if success else 1)
 
-    success = validate_files(files)
-    sys.exit(0 if success else 1)
+    # Handle git diff mode
+    if args.diff:
+        # Validate changed files
+        files = get_changed_files()
+        if files:
+            success = validate_files(files)
+            if not success:
+                sys.exit(1)
+        else:
+            print("[INFO] No changed files in docs/")
+
+        # Forbid deleted files if requested (only for push events)
+        if args.forbid_deleted:
+            deleted_files = get_deleted_files()
+            if deleted_files:
+                forbid_success = forbid_files(deleted_files)
+                if not forbid_success:
+                    sys.exit(1)
+            else:
+                print("[INFO] No deleted files in docs/")
+
+        sys.exit(0)
+
+    print("[ERROR] Must specify --diff or --file")
+    sys.exit(1)
 
 
 if __name__ == "__main__":

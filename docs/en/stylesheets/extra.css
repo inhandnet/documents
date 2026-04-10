@@ -466,3 +466,19 @@ input.md-nav__toggle + label.md-nav__link svg {
 .md-footer {
   display: none !important;
 }
+
+/* Hide GitHub repository link, edit buttons, and footer meta */
+.md-source__repository,
+.md-source__repository--active,
+.md-content__button,
+.md-icon,
+.md-footer-meta__inner,
+.md-grid.md-footer-meta__inner {
+  display: none !important;
+}
+
+
+/* Hide header buttons */
+.md-header__button {
+  display: none !important;
+}

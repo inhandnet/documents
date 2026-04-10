@@ -323,11 +323,8 @@ def validate_files(file_list: List[Path]) -> bool:
     email = get_notify_email()
 
     params = {"email": email}
-
-    # Build request body with commitId inside
-    body = {"files": normalized}
     if commit_id:
-        body["commitId"] = commit_id
+        params["commitId"] = commit_id
 
     headers = {
         "Authorization": f"Bearer {API_TOKEN}",
@@ -343,7 +340,7 @@ def validate_files(file_list: List[Path]) -> bool:
             url,
             headers=headers,
             params=params,
-            json=body,
+            json=normalized,
             timeout=60,
         )
         response.raise_for_status()

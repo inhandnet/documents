@@ -532,6 +532,12 @@ input.md-nav__toggle + label.md-nav__link svg {
   display: none !important;
 }
 
+/* Disable logo click */
+.md-header__button.md-logo {
+  pointer-events: none;
+  cursor: default;
+}
+
 /* Hide header buttons */
 /* .md-header__button {
   display: none !important;

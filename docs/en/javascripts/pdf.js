@@ -21,11 +21,11 @@
     var btn = document.createElement("button");
     btn.type = "button";
     btn.className = "md-header__button md-icon pdf-download-header";
-    btn.title = "下载 PDF（打印/另存为 PDF）";
-    btn.setAttribute("aria-label", "下载 PDF（打印/另存为 PDF）");
+    btn.title = "Download PDF";
+    btn.setAttribute("aria-label", "Download PDF");
     btn.innerHTML =
       '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">' +
-      '<path d="M5 20h14v-2H5v2zm7-18 5.5 5.5-1.42 1.42L13 5.84V16h-2V5.84L7.92 8.92 6.5 7.5 12 2z"/>' +
+      '<path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>' +
       "</svg>";
     btn.addEventListener("click", function () {
       window.print();

@@ -445,15 +445,35 @@ input.md-nav__toggle + label.md-nav__link svg {
   border: 1px solid var(--md-default-fg-color--lightest);
   border-radius: 10px;
   overflow: hidden;
+  width: 100%;
+}
+
+.md-typeset table thead th,
+.md-typeset table tbody td {
+  padding: 0.75rem 1rem;
+  vertical-align: middle;
 }
 
 .md-typeset table thead th {
   background: color-mix(in srgb, var(--md-primary-fg-color) 12%, transparent);
   border-bottom: 1px solid var(--md-default-fg-color--lightest);
+  font-weight: 600;
 }
 
 .md-typeset table tbody tr:nth-child(2n) {
   background: color-mix(in srgb, var(--md-default-fg-color) 4%, transparent);
+}
+
+/* 表格文字左对齐，但不让内容太挤 */
+.md-typeset table tbody td {
+  text-align: left;
+  line-height: 1.5;
+}
+
+/* 链接在表格中显示为行内块，避免换行 */
+.md-typeset table tbody td a {
+  display: inline;
+  word-break: break-word;
 }
 
 .md-typeset table.table-compact th,

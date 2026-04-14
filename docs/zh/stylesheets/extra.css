@@ -537,6 +537,12 @@ input.md-nav__toggle + label.md-nav__link svg {
   cursor: default;
 }
 
+/* Disable sidebar Documentation link */
+.md-nav__link[href$="index.html"] {
+  pointer-events: none;
+  cursor: default;
+}
+
 /* Hide header buttons */
 /* .md-header__button {
   display: none !important;

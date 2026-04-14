@@ -14,9 +14,10 @@ docs_dir: docs/zh
 # 输出为 *.html（避免依赖目录 /index.html 的自动补全）
 use_directory_urls: false
 
-# 自动导航时隐藏图片目录里的 Markdown（避免 README.md 出现在侧边栏）
+# 自动导航时隐藏图片目录（避免 img/ 和 images/ 出现在侧边栏）
 exclude_docs: |
-  **/images/**/*.md
+  **/images/**
+  **/img/**
 
 theme:
   name: material

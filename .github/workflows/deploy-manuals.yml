@@ -82,7 +82,7 @@ jobs:
           username: ${{ secrets.CN_OVERSEAS_USER }}
           password: ${{ secrets.CN_OVERSEAS_PASS }}
           source: "site-zh/*"
-          target: /data/wordpress/manuals/zh/
+          target: /data/wordpress/manuals/
           strip_components: 1
           rm: false
           overwrite: true
@@ -96,7 +96,7 @@ jobs:
           username: ${{ secrets.OVERSEAS_USER }}
           password: ${{ secrets.OVERSEAS_PASS }}
           source: "site-en/*"
-          target: /data/wordpress/manuals/en/
+          target: /data/wordpress/manuals/
           strip_components: 1
           rm: false
           overwrite: true

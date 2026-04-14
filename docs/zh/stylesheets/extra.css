@@ -476,6 +476,11 @@ input.md-nav__toggle + label.md-nav__link svg {
   word-break: break-word;
 }
 
+/* 增加表头最小宽度，防止表格过挤 */
+.md-typeset table:not([class]) th {
+  min-width: 10rem;
+}
+
 .md-typeset table.table-compact th,
 .md-typeset table.table-compact td {
   padding: 0.35rem 0.6rem;

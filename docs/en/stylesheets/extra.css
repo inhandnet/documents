@@ -474,6 +474,11 @@ input.md-nav__toggle + label.md-nav__link svg {
   word-break: break-word;
 }
 
+/* Increase header min-width to prevent cramped tables */
+.md-typeset table:not([class]) th {
+  min-width: 10rem;
+}
+
 .md-typeset table.table-compact th,
 .md-typeset table.table-compact td {
   padding: 0.35rem 0.6rem;

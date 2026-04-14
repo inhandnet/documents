@@ -526,6 +526,11 @@ input.md-nav__toggle + label.md-nav__link svg {
   display: none !important;
 }
 
+/* Hide sidebar title/logo in mobile view */
+.md-nav__title {
+  display: none !important;
+}
+
 /* Hide header buttons */
 /* .md-header__button {
   display: none !important;

@@ -247,9 +247,9 @@ def main():
         upload_files_list = find_upload_files(args.dist_dir)
 
     if not upload_files_list:
-        print(f"[WARN] 没有找到可上传的文件: {args.dist_dir}")
-        print("提示: 先运行 'python scripts/build_specs.py' 生成文件")
-        sys.exit(1)
+        print(f"[INFO] 没有找到可上传的文件: {args.dist_dir}")
+        print("跳过上传步骤")
+        sys.exit(0)
 
     # 获取 Git commit ID
     commit_id = get_git_commit_id()

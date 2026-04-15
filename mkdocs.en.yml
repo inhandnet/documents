@@ -15,7 +15,7 @@ docs_dir: docs/en
 use_directory_urls: false
 
 # Hide image folders (avoid img/ and images/ in nav)
-exclude_docs: |
+not_in_nav: |
   **/images/**
   **/img/**
 

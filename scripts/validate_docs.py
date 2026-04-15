@@ -209,7 +209,10 @@ def forbid_files(file_list: List[Path]) -> bool:
         if len(parts) >= 2 and parts[0] == "docs" and len(parts) >= 3:
             lang = parts[1]
             if lang in VALID_LANGS:
-                # Skip image files - only forbid markdown documents
+                # Skip image directories (img, imgs, images)
+                if any(part in {"img", "imgs", "images", "assets"} for part in parts):
+                    continue
+                # Skip image files
                 ext = Path(parts[-1]).suffix.lower()
                 if ext in {".png", ".jpg", ".jpeg", ".gif", ".svg", ".webp", ".bmp", ".ico"}:
                     continue

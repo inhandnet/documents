@@ -209,8 +209,11 @@ def forbid_files(file_list: List[Path]) -> bool:
         if len(parts) >= 2 and parts[0] == "docs" and len(parts) >= 3:
             lang = parts[1]
             if lang in VALID_LANGS:
-                # Skip image directories (img, imgs, images)
-                if any(part in {"img", "imgs", "images", "assets"} for part in parts):
+                # Skip excluded directories (images, assets, javascripts, stylesheets, etc.)
+                if any(part in EXCLUDED_DIRS for part in parts):
+                    continue
+                # Skip excluded files
+                if parts[-1] in EXCLUDED_FILES:
                     continue
                 # Skip image files
                 ext = Path(parts[-1]).suffix.lower()

@@ -23,6 +23,9 @@
 # VsCode
 .vscode/*
 
+# Claude Code local settings
+.claude/
+
 # MkDocs build output
 site/
 site-qa/

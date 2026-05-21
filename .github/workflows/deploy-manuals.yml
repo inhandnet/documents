@@ -38,6 +38,10 @@ jobs:
 
       # Upload PDF and other files (excluding .md and images) to Cloud Storage
       - name: Validate docs paths
+        env:
+          PLM_API_test_url: ${{ secrets.PLM_API_TEST_URL }}
+          PLM_API_test_token: ${{ secrets.PLM_API_TEST_TOKEN }}
+          NOTIFY_EMAILS: ${{ secrets.NOTIFY_EMAILS }}
         run: |
           pip install requests
           python scripts/validate_docs.py --diff
@@ -46,12 +50,18 @@ jobs:
         if: github.event_name == 'push'
         env:
           GITHUB_EVENT_BEFORE: ${{ github.event.before }}
+          PLM_API_test_url: ${{ secrets.PLM_API_TEST_URL }}
+          PLM_API_test_token: ${{ secrets.PLM_API_TEST_TOKEN }}
+          NOTIFY_EMAILS: ${{ secrets.NOTIFY_EMAILS }}
         run: |
           pip install requests
           python scripts/validate_docs.py --forbid-deleted
 
       - name: Upload docs files to Cloud Storage
         if: github.event_name == 'push'
+        env:
+          PLM_API_test_url: ${{ secrets.PLM_API_TEST_URL }}
+          PLM_API_test_key: ${{ secrets.PLM_API_TEST_KEY }}
         run: |
           pip install requests
           python scripts/upload_specs_to_cloud.py --dist-dir docs

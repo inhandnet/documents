@@ -19,10 +19,18 @@ from typing import List, Optional
 
 import requests
 
-# API 配置
-API_BASE_URL = "https://cloud-dev.poweris.inhand.online"
+# API 配置（从环境变量读取）
+API_BASE_URL = os.environ.get("PLM_API_test_url", "")
 API_ENDPOINT = "/api/common/github/application/files"
-API_KEY = "5bfcc5c90c2c4ff485838773e9cc9c05"
+API_KEY = os.environ.get("PLM_API_test_key", "")
+
+if not API_BASE_URL:
+    print("[错误] PLM_API_test_url 环境变量未设置")
+    sys.exit(1)
+
+if not API_KEY:
+    print("[错误] PLM_API_test_key 环境变量未设置")
+    sys.exit(1)
 
 # 默认查询参数
 DEFAULT_PARAMS = {

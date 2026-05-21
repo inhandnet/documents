@@ -18,10 +18,18 @@ from typing import List, Optional
 
 import requests
 
-# API configuration
-API_BASE_URL = "https://cloud-dev.poweris.inhand.online"
+# API configuration (read from environment variables)
+API_BASE_URL = os.environ.get("PLM_API_test_url", "")
 API_ENDPOINT = "/api/plm/github/product/published-files"
-API_TOKEN = "b4ae9d11-dd4d-40e5-931f-3480e8c20c63"
+API_TOKEN = os.environ.get("PLM_API_test_token", "")
+
+if not API_BASE_URL:
+    print("[ERROR] PLM_API_test_url environment variable is not set")
+    sys.exit(1)
+
+if not API_TOKEN:
+    print("[ERROR] PLM_API_test_token environment variable is not set")
+    sys.exit(1)
 
 # Valid languages
 VALID_LANGS = {"zh", "en"}
@@ -171,10 +179,10 @@ def get_notify_email() -> str:
         except (json.JSONDecodeError, IOError):
             pass
 
-    # Fallback to environment variable
-    email = os.environ.get("NOTIFY_EMAIL")
-    if email:
-        return email
+    # Fallback to environment variable (comma-separated emails)
+    emails = os.environ.get("NOTIFY_EMAILS")
+    if emails:
+        return emails
 
     # Fallback to git config
     try:

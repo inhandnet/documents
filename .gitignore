@@ -35,5 +35,18 @@ docs/**/*/index.md
 !docs/zh/index.md
 !docs/en/index.md
 
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Vim
+*.swp
+*.swo
+
+# Environment variables
+.env
+.env.local
+
 # Specs build output
 dist/

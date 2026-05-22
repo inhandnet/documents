@@ -50,3 +50,6 @@ __pycache__/
 
 # Specs build output
 dist/
+
+# Audit reports
+AUDIT_REPORT.md

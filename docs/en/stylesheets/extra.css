@@ -111,6 +111,40 @@
   :root {
     --md-default-bg-color: #ffffff;
   }
+
+  /* 表格：缩小字体 + 强制换行，适配打印页面 */
+  .md-typeset__table {
+    display: block !important;
+    max-width: 100% !important;
+  }
+
+  .md-typeset table {
+    width: 100% !important;
+    table-layout: auto !important;
+    font-size: 0.8em !important;
+  }
+
+  .md-typeset table th,
+  .md-typeset table td {
+    white-space: normal !important;
+    word-break: break-word !important;
+    overflow-wrap: break-word !important;
+  }
+
+  /* 代码块：换行显示，避免滚动 */
+  .md-typeset pre,
+  .md-typeset .highlight,
+  .md-typeset .md-code__content {
+    white-space: pre-wrap !important;
+    word-break: break-word !important;
+  }
+
+  /* Tabbed 内容：去掉滚动 */
+  .md-typeset .tabbed-set,
+  .md-typeset .tabbed-content {
+    overflow: visible !important;
+  }
+
 }
 
 /* =========================

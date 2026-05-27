@@ -203,6 +203,7 @@ def find_upload_files(directory: Path) -> List[Path]:
     - 只处理 zh/ 和 en/ 子目录下的文件
     - 排除 .md 文件（Markdown 是源文件）
     - 排除图片文件（.png, .jpg, .jpeg, .gif, .svg, .webp 等）
+    - 排除 Developer Documentation/series.txt
     - 只上传 PDF、压缩包、文档等非图片文件
     """
     if not directory.exists():
@@ -217,6 +218,9 @@ def find_upload_files(directory: Path) -> List[Path]:
             for file_path in lang_path.rglob("*"):
                 # 跳过 redirects 目录
                 if "redirects" in file_path.parts:
+                    continue
+                # 跳过 Developer Documentation 下的 series.txt
+                if file_path.name == "series.txt" and "Developer Documentation" in file_path.parts:
                     continue
                 if file_path.is_file():
                     ext = file_path.suffix.lower()

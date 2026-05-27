@@ -1,664 +1,1119 @@
-![](images/img_0e845ff4.png)
+# InPAD070S/3101 User Manual
 
-  InPAD070S/3101
+## Declaration
 
- User Manual
+Thank you for choosing InHand Networks products. Before use, read this user manual carefully. Compliance with the following declarations helps maintain intellectual property rights and legal compliance, and ensures the usage experience remains consistent with the latest product information. For any questions or to obtain written permission, contact the technical support team.
 
-  
+- Copyright Notice
 
-InHand Networks 
+This user manual contains copyrighted material. Copyright belongs to InHand Networks Technology Co., Ltd. and its licensors. Without written permission, no unit or individual may excerpt, reproduce, or distribute any part or all of the contents of this manual in any form.
 
-[http://www.inhandnetworks.com](http://www.inhandnetworks.com)
+- Disclaimer
 
-  
+Due to continuous product technology and specification updates, the company cannot guarantee that the information in this user manual is completely identical to the actual product. Therefore, the company assumes no liability for any disputes arising from discrepancies between actual technical parameters and the user manual. Any product changes are subject to final change and interpretation rights reserved by the company without prior notice.
 
-Version: v1.0
+- Copyright Information
 
-October 2021
+The contents of this user manual are protected by copyright law. Copyright belongs to InHand Networks Technology Co., Ltd. and its licensors. All rights reserved. Without written permission, no one may use, reproduce, or distribute the contents of this manual.
 
-  
+---
 
-Copyright © 2021-2023 All rights reserved by InHand Networks Technology Co., Ltd. and its licensors. Without the written permission of the company, no unit or individual may excerpt or reproduce part or all of the content of this book, and shall not distribute it in any form.
+## Conventions
 
-Due to product version upgrades or other reasons, the content of this manual may change. Please refer to the actual situation of the product for details. InHand reserves the right to modify the content of this manual without any notice or hint. This manual is only intended as a guide. InHand Networks does its best to provide accurate information in this manual, but does not guarantee that the content of the manual is completely error-free. All statements, information, and suggestions in this manual do not constitute any express or implied guarantee.
+### Symbol Conventions
 
-  
+The following symbols are used throughout this manual:
 
-# Foreword
+| Symbol | Meaning | Example |
+|--------|---------|---------|
+| `< >` | Indicates a variable or parameter to be replaced with an actual value | `<IP Address>` indicates a specific IP address must be entered |
+| `" "` | Indicates text labels on the interface | Click the "Save" button |
+| `→` | Indicates menu hierarchy or operation sequence | Settings → Display |
+| `【 】` | Indicates a menu or page name | Enter the 【System Settings】page |
 
-Welcome to use InBOX/InPAD series from InHand Networks, this user manual will guide you in detail how to use this product. Note that most of the examples in this brochure will use one of the products in this series as a demonstration.
-
-  
-
-## Readers
-
-This manual is mainly applicable to the following persons:
-
-3.  R & D personnel
-4.  On-site technical support and maintenance personnel
-5.  Personnel responsible for device configuration and management
-
-  
-
-Conventions in the Manual
-
-1.    Format Conventions on Command Line
+### Command Line Format Conventions
 
 | Format | Significance |
-| --- | --- |
-| Bold | Keywords of command line (the part that should be remained unchanged in command and be entered as it is) are expressed with  bold font. |
-| Italic | The parameters of command line (the part that must be replaced with  the actual value in command) are expressed in italic. |
-| \[ \] | Indicating that the part in “\[\]” is optional in command configuration. |
-| { x | y | ... } | Indicating to select one from multiple options. |
-| \[ x | y | ... \] | Indicating to select one or not to select from multiple options. |
-| { x | y | ... } \* | Indicating to select at least one from multiple options. |
-| \[ x | y | ... \] \* | Indicating to select one or more or not to select from multiple options. |
-| &<1-n> | Indicating that the parameter in front of the symbol & can be  repeatedly entered for 1~n times. |
-| # | The lines starting from no. “#” are comment lines. |
+|--------|--------------|
+| **Bold** | Command keywords (the part that should remain unchanged in a command and be entered as-is) |
+| *Italic* | Command parameters (the part that must be replaced with the actual value in a command) |
+| `[ ]` | Indicates that the part in "[ ]" is optional in command configuration |
+| `{ x \| y \| ... }` | Indicates to select one from multiple options |
+| `[ x \| y \| ... ]` | Indicates to select one or not to select from multiple options |
+| `{ x \| y \| ... } *` | Indicates to select at least one from multiple options |
+| `[ x \| y \| ... ] *` | Indicates to select one or more or not to select from multiple options |
 
-  
+### Warning Signs
 
-2.    Format Conventions on Command Line
+| Sign | Meaning |
+|------|---------|
+| ![Note Icon](./images/img_c5cc32a3.png) | Provides necessary complement or description on the contents of operation |
 
-| Format | Significance |
-| --- | --- |
-| <> | The content in angle brackets "<>" indicates button name, e.g. "click  <OK> button.” |
-| \[ \] | The content in square brackets "\[\]" indicates window name, menu  name or data sheet, e.g. “pop-up the \[New User\] window”. |
-| / | Multi-level menu is separated by "/". For example, the multi-level  menu \[File / New / Folder\] indicates the menu item \[Folder\] under the submenu \[New\] under the menu \[File\]. |
+> **Note**: Improper operation may cause data loss or damage to the device.
 
-  
+---
 
-3.    Various Signs
+## Technical Support
 
-The manual also uses a variety of eye-catching signs to indicate the places to which special attention should be paid in operation. The significances of these signs are as follows:
+**E-mail**: [support@inhandnetworks.com](mailto:support@inhandnetworks.com)
 
-|  | It indicates matters to be noted. Improper operation may causedata loss or damage to the device. |
-| --- | --- |
-| ![](images/img_c5cc32a3.png) | The necessary complement or description on the contents of  operation. |
-
-  
-
-Technical Support
-
-E-mail: [support@inhandneworks.com](mailto:support@inhandneworks.com) 
-
-Information Feedback
-
-If you have any question on product information in use, you can feed back through the following ways: E-mail : [info@inhandnetworks.com](mailto:info@inhandnetworks.com)
-
-  
+**Information Feedback**: [info@inhandnetworks.com](mailto:info@inhandnetworks.com)
 
 Thanks for your feedback to let us do better!
 
-  
+---
 
-  
+## How to Use This Manual
 
-  
+### Read by User Type
 
-  
+- First-time users: Read in sequence through Device Overview → Installation and First Use → Common Scenario Configuration → Function Description and Parameter Reference
+- Existing device users: Refer directly to Function Description and Parameter Reference or Appendix Troubleshooting
+- Developer users: Refer to Developer Options and Serial Port Test in Function Description and Parameter Reference
 
-  
+### Quick Task Reference
 
-  
+| Task | Corresponding Chapter | Estimated Time |
+|------|----------------------|----------------|
+| Install and power on the device | [Installation and First Use](#chapter-2-installation-and-first-use) | ~10 minutes |
+| Connect to cellular network | [Scenario 1: Cellular Network Access](#scenario-1-cellular-network-access) | ~5 minutes |
+| Connect to Wi-Fi network | [Scenario 2: Wi-Fi Connection](#scenario-2-wi-fi-connection) | ~5 minutes |
+| Configure Ethernet | [Scenario 3: Ethernet Configuration](#scenario-3-ethernet-configuration) | ~5 minutes |
+| Adjust display settings | [Scenario 4: Display Settings](#scenario-4-display-settings) | ~5 minutes |
+| Upgrade system firmware | [Scenario 5: System Upgrade](#scenario-5-system-upgrade) | ~10 minutes |
+| Install third-party applications | [Scenario 6: Application Installation](#scenario-6-application-installation) | ~5 minutes |
+| Troubleshoot device issues | [Appendix A: Troubleshooting](#appendix-a-troubleshooting) | As needed |
 
-# 1. Equipment Introduction
+---
+
+# Chapter 1: Device Overview
 
 ## 1.1 Overview
 
-InPAD series is a new generation of 4G smart terminal product for smart business. It is powered by the RK3288 processor and supports various connectivity options including 3G/4G, Wi-Fi, and wired connections, offering uninterrupted and stable internet access anywhere. It helps customers collect and organize local data, enabling real-time uploading data to third-party cloud management platforms and realize remote monitoring and management functions on the cloud. InPAD070S provides a higher performance, lower power consumption, and more stable hardware and software environment, ensuring fast and more reliable data transmission. 
+The InPAD series is a new generation of 4G smart terminal products designed for smart business applications. Powered by the RK3288 processor, the device supports multiple connectivity options including 3G/4G cellular, Wi-Fi, and wired Ethernet, providing uninterrupted and stable internet access. The InPAD series enables customers to collect and organize local data, upload data in real time to third-party cloud management platforms, and realize remote monitoring and management functions. The InPAD070S provides higher performance, lower power consumption, and a more stable hardware and software environment, ensuring fast and reliable data transmission.
 
-![](images/img_a0964523.png)
+<p align="center"><img src="./images/img_a0964523.webp" alt="Application Diagram"></p>
 
-Application Diagram
-
-  
-
-  
+<p align="center"><strong>Figure 1-1 Application Diagram</strong></p>
 
 ## 1.2 Packing List
 
-  
+> **Note**: Due to differences in product models and accessory selections, the following items may or may not be included in the package.
 
-Note: Due to differences in product models and accessory selection, the following items may, but are not required, be included in the package.
-
-| Type | Num | Description |
-| --- | --- | --- |
+| Item | Quantity | Description |
+|------|----------|-------------|
 | InPAD | 1 | InPAD series product |
-| RS485 terminal | 1 | 5pin industrial green terminal |
-| RS232 terminal | 2 | 3pin industrial green terminal |
+| RS485 terminal | 1 | 5-pin industrial green terminal |
+| RS232 terminal | 2 | 3-pin industrial green terminal |
 | Product warranty card | 1 | Warranty period: 1 year |
-| Antenna  （Optional accessories） | 1 | 3G/4G Antenna |
-|  | 1 | Wi-Fi Antenna |
-| AC power cord  （Optional accessories） | 1 | Power cord for American， English， Australian or European Standard |
-| Power Adapter  （Optional accessories） | 1 | 12VDC Power Adapter |
+| Antenna (Optional) | 1 | 3G/4G Antenna |
+| Antenna (Optional) | 1 | Wi-Fi Antenna |
+| AC power cord (Optional) | 1 | Power cord for American, English, Australian or European Standard |
+| Power Adapter (Optional) | 1 | 12VDC Power Adapter |
 
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-## 1.3 Panel introduction and Structure and Dimensions
-
-  
+## 1.3 Appearance and Interfaces
 
 ### 1.3.1 Front Panel
 
-The front panel of this series of products is a high-brightness capacitive touch screen, which supports 7 inches (1024\*600) and 10.1 inches (1280\*800); the dustproof and waterproof level of the screen is IP65 (as shown in Figure 1\-3-1).![](images/img_1a7972fb.png)
+The front panel of this series features a high-brightness capacitive touch screen, supporting 7 inches (1024 x 600) and 10.1 inches (1280 x 800). The dustproof and waterproof rating of the screen is IP65.
 
-Figure 1\-3-1 Front Panel
+<p align="center"><img src="./images/img_1a7972fb.webp" alt="Front Panel"></p>
 
-  
+<p align="center"><strong>Figure 1-2 Front Panel</strong></p>
 
 ### 1.3.2 Rear Panel
 
 The rear panel of the InPAD070S product has two types of mounting holes:
 
-1.  4 VESA mounting holes (75 x 75 mm, indicated by the red circles in Figure 1\-3-2). VESA mounting screws: M4 × 8 screws, screw depth: 8mm (maximum)
-2.  4 mounting holes for hanging or fixed mounting components (indicated by the yellow circles in Figure 1.2). Mounting screws: M3 × 6 screws.
+1. 4 VESA mounting holes (75 x 75 mm). VESA mounting screws: M4 x 8 screws, screw depth: 8 mm (maximum)
+2. 4 mounting holes for hanging or fixed mounting components. Mounting screws: M3 x 6 screws.
 
-![图形用户界面描述已自动生成](images/img_1842fa5c.png)
+<p align="center"><img src="./images/img_1842fa5c.webp" alt="Rear Panel"></p>
 
-Figure1\-3-2 Rear Panel
+<p align="center"><strong>Figure 1-3 Rear Panel</strong></p>
 
-  
+### 1.3.3 Equipment Interface
 
-### 1.3.3 Equipment Interface
+<p align="center"><img src="./images/img_3d43264a.webp" alt="Rear Interface"></p>
 
-![](images/img_3d43264a.png)
+<p align="center"><strong>Figure 1-4 Rear Interface</strong></p>
 
-Figure1\-3-3 Rear Interface
+This series is mainly divided into two types of equipment: InPAD070S and InPAD3101. The peripheral interfaces of the equipment are as follows:
 
-  
+| Interface | InPAD070S | InPAD3101 |
+|-----------|-----------|-----------|
+| Display | 7-inch display, Resolution: 1024 x 600 | 10.1-inch display, Resolution: 1280 x 800 |
+| Button | PWR x 1, MODE x 1 | PWR x 1, MODE x 1 |
+| Power interface | Power input: DC-input, 12V, circular interface (5521) | Power input: DC-input, 12V, circular interface (5521) |
+| SIM Card | SIM card slot x 1 | SIM card slot x 1 |
+| USB | USB 2.0 x 4 | USB 2.0 x 4 |
+| RS485 | RS485 serial port x 2, 5-pin industrial terminal, pitch 3.5 mm, with flange [ttyS2, ttyS4] | RS485 serial port x 2, 5-pin industrial terminal, pitch 3.5 mm, with flange [ttyS2, ttyS4] |
+| RS232 | RS232 serial port x 2, 3-pin industrial terminal, spacing 3.5 mm, no flange | RS232 serial port x 2, 3-pin industrial terminal, spacing 3.5 mm, no flange |
+| Network port | 10/100 Mbps x 1, WAN/LAN | 10/100 Mbps x 1, WAN/LAN |
+| Antenna interface | Wi-Fi x 1, 4G x 1 | Wi-Fi x 1, 4G x 1 |
+| Debug interface | Micro USB x 1 | Micro USB x 1 |
+| Bluetooth | 4.2 | 4.2 |
 
-This series is mainly divided into two types of equipment: InPAD070S and InPAD3101. The peripheral interfaces of the equipment are as follows: 
+#### 1.3.3.1 RS485 Interface Definition
 
-|  | InPAD070S | InPAD3101 |
-| --- | --- | --- |
-| Display | 7\-inch display   Resolution:1024x600 | 10.1\-inch display   Resolution：1280x800 |
-| Button | PWR\*1，MODE\*1 |  |
-| Power interface | Power input: DC-input, 12V, the power interface is a circular inter-face(5521) |  |
-| SIM Card | SIM card slot \*1 |  |
-| USB | USB2.0 \*4 |  |
-| RS485 | RS485 serial port \*2,   5-pin industrial terminal, pitch 3.5mm, with flange \[respectively ttyS2, ttyS4\] |  |
-| RS232 | RS232 serial port \*2,  3-pin industrial terminal, spacing 3.5mm, no flange |  |
-| Network port | 10/100Mbps \*1，WAN/LAN |  |
-| Antenna interface | Wi\-Fi\*1 ，4G\*1 |  |
-| Debug interface | Micro USB \*1 |  |
-| Bluetooth | 4.2 |  |
+<p align="center"><img src="./images/img_d272e90c.webp" alt="RS485 Interface"></p>
 
-  
+<p align="center"><strong>Figure 1-5 RS485 Interface Definition</strong></p>
 
-  
-
-#### 1.3.3.1 RS485 Interface Definition
-
-![](images/img_d272e90c.png)
-
-Figure1-3-3-1 RS485
-
-| No. | Definition |
-| --- | --- |
-| 1 | RS-485 Signal A(ttyS2) |
-| 2 | RS-485 Signal B(ttyS2) |
+| Pin | Definition |
+|-----|------------|
+| 1 | RS-485 Signal A (ttyS2) |
+| 2 | RS-485 Signal B (ttyS2) |
 | 3 | GND |
-| 4 | RS-485 Signal A(ttyS4) |
-| 5 | RS-485 Signal B(ttyS4) |
+| 4 | RS-485 Signal A (ttyS4) |
+| 5 | RS-485 Signal B (ttyS4) |
 
-  
+#### 1.3.3.2 RS232 Interface Definition
 
-#### 1.3.3.2 RS232 Interface Definition
+<p align="center"><img src="./images/img_ab66d718.webp" alt="RS232 Interface"></p>
 
-![](images/img_ab66d718.png)
+<p align="center"><strong>Figure 1-6 RS232 Interface Definition</strong></p>
 
-Figure1-3-3-2 RS232
+| Pin | Definition |
+|-----|------------|
+| 1 | RS-232 RxD |
+| 2 | RS-232 TxD |
+| 3 | RS-232 GND |
 
-| Number | Definition |
-| --- | --- |
-| 1 | RS-232 RxD |
-| 2 | RS-232 TxD |
-| 3 | RS-232 GND |
+## 1.4 LED Indicators
 
-### 1.3.4 Equipment Indicators
+<p align="center"><img src="./images/img_6491593b.webp" alt="LED Indicator"></p>
 
-#### 1.3.4.1 LED Indicator
+<p align="center"><strong>Figure 1-7 LED Indicator Location</strong></p>
 
-![](images/img_6491593b.png)
+| Indicator | Status | Meaning |
+|-----------|--------|---------|
+| Power Indicator | Steady on | Device is powered on |
+| Status Indicator | Blinking | Device is operating normally |
 
-Figure1\-3-4-1 
+## 1.5 Factory Reset
 
-| Indicator | Description |
-| --- | --- |
-| Power Indicator | Power supply indicator light, always on after power on |
-| Status Indicator | Status indicator light, blinking during normal operation |
+If the current system is Android 7.1:
 
-### 1.3.5 Dimensions
+1. Navigate to Settings → Backup \& reset → Factory data reset → RESET TABLET.
+2. Confirm the reset operation.
 
-![图示描述已自动生成](images/img_03606184.png)
+If the current system is Android 12:
 
-Figure1\-3-5-1 InPAD070S Dimensions
+1. Navigate to Settings → System → Reset options → Erase all data → RESET TABLET.
+2. Confirm the reset operation.
 
-![图示描述已自动生成](images/img_1e6dd128.png)
+> **Warning**: Use this function with caution. After factory reset, all data on the product will be cleared.
 
-Figure1\-3-5-2 InPAD101S Dimensions
+## 1.6 Default Settings
 
-# 2. Installation
+| Parameter | Default Value |
+|-----------|---------------|
+| LAN IP Address | 192.168.1.100 |
+| LAN Subnet Mask | 255.255.255.0 |
+| Ethernet Mode | Disabled by default |
+| Wi-Fi | Disabled by default |
+| 4G/Cellular | Disabled by default |
+| ICMP Detection | Enabled by default |
+| Developer Options | Disabled by default |
+| USB Debugging | Disabled by default |
 
-  
+## 1.7 Dimensions
 
-## 2.1 Precautions
+<p align="center"><img src="./images/img_03606184.webp" alt="InPAD070S Dimensions"></p>
 
-4.  Power requirements: 12 V DC.
-5.  Environmental requirements: Operating temperature –10°C to 60°C; storage temperature –40°C to 85°C; relative humidity 5% to 95% (no condensation).
-6.  Keep out of direct sunlight, away from heat sources or areas with strong electromagnetic interference.
-7.  Check that required cables and connectors are installed.
+<p align="center"><strong>Figure 1-8 InPAD070S Dimensions</strong></p>
 
-  
+<p align="center"><img src="./images/img_1e6dd128.webp" alt="InPAD3101 Dimensions"></p>
 
-## 2.2 Equipment installation method
+<p align="center"><strong>Figure 1-9 InPAD3101 Dimensions</strong></p>
 
-Note: This series of products is not equipped with mounting parts by default, and you need to choose the appropriate mounting parts for installation according to your own installation environment;
+---
 
-  
+# Chapter 2: Installation and First Use
 
-### 2.2.1 M3 hole installation 
+## 2.1 Pre-Installation Preparation
 
-2.  Step 1: Find a suitable installation position on the machine, and consider reserving a certain space for wiring operations.
-3.  Step 2: Choose the appropriate installation method according to your installation parts, and fix the sheet metal parts to the back of the device and the installation panel through the screw holes, as shown in the figure below.
+### 2.1.1 Environment Requirements
 
-![图片包含 游戏机描述已自动生成](images/img_fa7fc69d.png)
+| Item | Specification |
+|------|---------------|
+| Power supply | 12 V DC |
+| Operating temperature | -10°C to 60°C |
+| Storage temperature | -40°C to 85°C |
+| Relative humidity | 5% to 95% (non-condensing) |
 
-Figure2-2-1 Sheet Metal Mounting Ear Installation 
+### 2.1.2 Tools and Accessories Required
 
-  
+- Mounting screws (M3 x 6 or M4 x 8, depending on mounting method)
+- Grounding cable (depending on installation environment)
+- Appropriate mounting brackets or sheet metal parts
+- SIM card (for cellular network use)
+- Cellular antenna (for cellular network use)
+- Wi-Fi antenna (for Wi-Fi use)
 
-![图形用户界面中度可信度描述已自动生成](images/img_faab3756.png)
+### 2.1.3 Safety Precautions
 
-Figure2-2-1\-1 Sheet metal cover installation 
+> **Warning**: Before installation, verify that the power supply voltage matches the device specification (12 V DC). Incorrect voltage may damage the device.
 
-  
+> **Caution**: Keep the device out of direct sunlight, away from heat sources or areas with strong electromagnetic interference.
 
-  
+> **Caution**: Verify that all required cables and connectors are available before starting installation.
 
-### 2.2.2 VESA standard hole installation
+## 2.2 Installation Guide
 
-4.  Step 1: Find a suitable installation position on the machine, and consider reserving a certain space for wiring operations.
-5.  Step 2: Choose the appropriate installation method according to your installation parts, and fix the sheet metal parts to the back of the device and the installation panel through the screw holes, as shown in the figure below.
+> **Note**: This series of products is not equipped with mounting parts by default. Select appropriate mounting parts according to the installation environment.
 
-![](images/img_596e3372.png)
+### 2.2.1 M3 Hole Installation
 
-Figure2\-2-2 Fixed sheet metal installation 
+1. Find a suitable installation position on the machine, reserving sufficient space for wiring operations.
+2. Select the appropriate installation method according to the mounting parts, and fix the sheet metal parts to the back of the device and the installation panel through the screw holes.
 
-![图片包含 图形用户界面描述已自动生成](images/img_0489cb63.png)
+<p align="center"><img src="./images/img_fa7fc69d.webp" alt="Sheet Metal Mounting Ear"></p>
 
-Figure2\-2-2\-1 Fixed bracket installation
+<p align="center"><strong>Figure 2-1 Sheet Metal Mounting Ear Installation</strong></p>
 
-  
+<p align="center"><img src="./images/img_faab3756.webp" alt="Sheet Metal Cover"></p>
 
-  
+<p align="center"><strong>Figure 2-2 Sheet Metal Cover Installation</strong></p>
 
-## 2.3 Install ground protection
+### 2.2.2 VESA Standard Hole Installation
 
-3.  Step 1: Loosen the ground nut.
-4.  Step 2: Put the grounding ring of the cabinet grounding cable on the grounding post.
-5.  Step 3: Tighten the ground nut.
+1. Find a suitable installation position on the machine, reserving sufficient space for wiring operations.
+2. Select the appropriate installation method according to the mounting parts, and fix the sheet metal parts to the back of the device and the installation panel through the VESA screw holes (75 x 75 mm).
 
-Note: Ground the device to improve its immunity to interference. Depending on the environment of use, connect the ground wire to the grounding post of the device.
+<p align="center"><img src="./images/img_596e3372.webp" alt="Fixed Sheet Metal"></p>
 
-![](images/img_ce63779b.png)
+<p align="center"><strong>Figure 2-3 Fixed Sheet Metal Installation</strong></p>
 
-Figure2-3
+<p align="center"><img src="./images/img_0489cb63.webp" alt="Fixed Bracket"></p>
 
-  
+<p align="center"><strong>Figure 2-4 Fixed Bracket Installation</strong></p>
 
-# 3. Operation Instructions
+### 2.3 Ground Protection
 
-  
+1. Loosen the ground nut.
+2. Put the grounding ring of the cabinet grounding cable on the grounding post.
+3. Tighten the ground nut.
 
-## 3.1 Developer Options
+> **Note**: Ground the device to improve its immunity to interference. Depending on the environment of use, connect the ground wire to the grounding post of the device.
 
-Due to differences in versions and products, we have two ways to enter the developer mode,
+<p align="center"><img src="./images/img_ce63779b.webp" alt="Ground Protection"></p>
 
-2.  Click "Settings >> About Tablet" in the desktop application, click the “Build number” 5 times continuously, and prompt to enter the developer mode. At this point in the settings or System（Android12）page "Developer options" will appear.
-3.  Click the "settings" application and then click "About tablet", successively click "Android security patch level" twice, "Baseband version" 3 times, "Android security patch level" 4 times, and then keep clicking the "Build number" until "You are now a developer" is indicated. Then users can find "Developer options" in the "settings" application.
+<p align="center"><strong>Figure 2-5 Ground Protection Installation</strong></p>
 
-![图形用户界面, 文本, 应用程序描述已自动生成](images/img_0ca9eae4.png)
+### 2.4 Power Connection
 
-Figure3-1
+1. Connect the 12 V DC power adapter to the circular power interface (5521) on the device.
+2. Connect the power cord to a suitable power outlet.
+3. Verify that the power indicator lights up steadily after power-on.
 
-In the developer options, commonly used function items include:
+### 2.5 First Power-On
 
-1\. Logging. After it is enabled, the system will record logs to the /data/logger directory.
+1. After connecting power, the device will start automatically.
+2. Wait for the system to complete booting (status indicator blinking indicates normal operation).
+3. The Android desktop will appear on the touch screen.
 
-2\. USB debugging. After it is enabled, users can access the device through the ADB interface.
+## 2.6 Quick Check
 
-3\. Hardware watchdog. Once enabled, a restart is required to take effect.
+After installation is complete, verify the following items:
 
-## 3.2 System Upgrade
+- [ ] Device is securely mounted and all screws are tightened
+- [ ] Ground connection is properly secured (if applicable)
+- [ ] Power indicator is steady on after power-on
+- [ ] Status indicator is blinking during normal operation
+- [ ] Touch screen responds to touch input
+- [ ] Android desktop is displayed correctly
+- [ ] All required antennas are connected (if using Wi-Fi or cellular)
+- [ ] SIM card is properly inserted (if using cellular network)
 
-Users can upgrade in Android system Settings or recovery mode through U disk, or send broadcast command to upgrade through ADB.
+---
 
-Method 1: Upgrade with U disk in Android system
+# Chapter 3: Common Scenario Configuration
 
-  
+## Scenario 1: Cellular Network Access
 
-If the current system is Android7.1:
+**Objective**: Access the internet through 4G cellular network.
 
-Rename the upgrade file as "update.zip" and copy it to a U disk, then plug the U disk into InBOX/InPAD. Click " About tablet > > Udisk system updates in the "settings" application, as shown in figure 3-2-1, and the system will automatically upgrade and restart.
+**Prerequisites**: SIM card is inserted and cellular antenna is installed. Device is powered on.
 
-  
+**Estimated Time**: ~5 minutes.
 
-If the current system is Android12:
+**Operation Steps**:
+1. Insert the SIM card into the SIM card slot.
+2. Install the 4G cellular antenna.
+3. If the current system is Android 7.1: Navigate to Settings → More → Cellular networks → Access Point Names.
+   If the current system is Android 12: Navigate to Settings → Network \& internet → SIMs → Access Point Names.
+4. Click the add symbol in the upper right corner.
+5. Fill in the Name and APN (APN parameters must be obtained from the carrier).
+6. Click the save symbol in the upper right corner.
+7. In the APN list, select the newly added APN.
 
-Rename the upgrade file as "update.zip" and copy it to a U disk, then plug the U disk into InBOX/InPAD. Click " System > > Udisk system updates in the "settings" application, as shown in figure 3-2-1, and the system will automatically upgrade and restart.
+<p align="center"><img src="./images/img_db983ccd.webp" alt="APN Settings"></p>
 
-![图形用户界面, 应用程序, Teams描述已自动生成](images/img_1f6ec671.png)
+<p align="center"><strong>Figure 3-1 APN Settings</strong></p>
 
-Figure3-2-1
+<p align="center"><img src="./images/img_74358ba7.webp" alt="APN List Selection"></p>
 
-Method 2. Send a broadcast command to upgrade:
+<p align="center"><strong>Figure 3-2 APN List Selection</strong></p>
 
-1\. Rename the upgrade file to: update.zip, and copy it to the /sdcard directory of the device.
+**Verification Method**:
+1. Check the cellular signal icon in the status bar.
+2. Open a web browser and access an internet website to confirm connectivity.
 
-2\. Turn on USB debugging in the developer options.
+**Common Issues**:
+- Network connection failure: Verify the SIM card is correctly inserted and the APN parameters match the carrier requirements.
+- Weak signal or no signal: Check whether the cellular antenna is connected and adjust the device position.
 
-3\. Execute the adb command:
+## Scenario 2: Wi-Fi Connection
 
-“adb shell am broadcast -a com.ubox.upgraderom --include-stopped-packages
+**Objective**: Connect the device to an existing Wi-Fi network.
 
-”
+**Prerequisites**: Wi-Fi antenna is connected. A Wi-Fi network is available within range.
 
-4. Device will upgrade and restart automatically if the command is executed successfully.
+**Estimated Time**: ~5 minutes.
 
-Note: Method 2 can be used for FOTA of InBOX/InPAD. Download the upgrade file to the “/sdcard” directory, rename it to update.zip, and execute the broadcast command:
+**Operation Steps**:
 
-“am broadcast -a com.ubox.upgraderom --include-stopped-packages”.
+1. Ensure the Wi-Fi antenna is connected before enabling the WLAN interface.
 
-  
+<p align="center"><img src="./images/img_4998c68b.png" alt="Wi-Fi Antenna Warning"></p>
 
-  
+<p align="center"><strong>Figure 3-3 Wi-Fi Antenna Warning</strong></p>
 
-## 3.3 Display Setting
+2. If the current system is Android 7.1: Navigate to Settings → Wi-Fi.
+   If the current system is Android 12: Navigate to Settings → Network \& internet → Internet → Wi-Fi.
+3. Click the switch symbol in the upper right corner to turn on Wi-Fi.
 
-### 3.3.1 Full Screen
+<p align="center"><img src="./images/img_d0d24300.webp" alt="Wi-Fi Settings Android 7.1"></p>
 
-Click "Settings >> Display" in the desktop application, enable Full Screen display.
+<p align="center"><strong>Figure 3-4 Wi-Fi Settings (Android 7.1)</strong></p>
 
-![图形用户界面, 应用程序描述已自动生成](images/img_34f94fb3.png) 
+<p align="center"><img src="./images/img_e94f8db4.webp" alt="Wi-Fi Settings Android 12"></p>
 
-Figure3-3-1\-1
+<p align="center"><strong>Figure 3-5 Wi-Fi Settings (Android 12)</strong></p>
 
-After the prompt box "The device needs to be restarted for the settings to take effect" appears, click OK. As shown in Figure 3\-3\-2. After restarting the device will display in full screen.
+4. In the Wi-Fi networks list, select the target Wi-Fi network.
+5. When an encrypted network is selected, the password entry dialog box pops up automatically. Enter the password and click "CONNECT".
 
-![图形用户界面, 应用程序, Teams描述已自动生成](images/img_e63df267.png)
+<p align="center"><img src="./images/img_1d65febe.webp" alt="Wi-Fi Password Entry"></p>
 
-Figure3-3-1\-2
+<p align="center"><strong>Figure 3-6 Wi-Fi Password Entry</strong></p>
 
-### 3.3.2 Screen Rotation Settings
+**Verification Method**:
+1. The connected Wi-Fi network is displayed in the network list.
+2. Click the connected network to display status information, signal strength, connection speed, security, and frequency.
 
-Click "Settings > > Display > >Advanced Display", select "Rotation" to open the Rotation setting dialog box, and select the required rotation direction, as shown in Figure 3-3-2.
+<p align="center"><img src="./images/img_96cc8739.webp" alt="Wi-Fi Connection Status"></p>
 
-![图形用户界面, 应用程序描述已自动生成](images/img_5cc8f4d9.png)
+<p align="center"><strong>Figure 3-7 Wi-Fi Connection Status</strong></p>
 
-Figure3-3-2
+**Common Issues**:
+- Connection failure: Verify the Wi-Fi password is correct.
+- Weak signal: Move the device closer to the access point or check the antenna connection.
+- To remove a saved network: Select "FORGET" in the current network information dialog box.
 
-After selecting the rotation, click OK in the pop-up dialog box of "Configuration Change, Need reboot", Then device will reboot to make the configuration take effort, as shown in Figure 3-3-2.
+## Scenario 3: Ethernet Configuration
 
-![图形用户界面, 文本, 应用程序, Teams描述已自动生成](images/img_232932f6.png)
+**Objective**: Configure the Ethernet port as WAN or LAN interface.
 
-Figure3-3-3-2
+**Prerequisites**: Ethernet cable is available. Device is powered on.
 
-  
+**Estimated Time**: ~5 minutes.
 
-## 3.4 Ethernet Settings
+**Operation Steps**:
+1. Connect the Ethernet cable to the network port on the device.
+2. If the current system is Android 7.1: Navigate to Settings → Ethernet.
+   If the current system is Android 12: Navigate to Settings → Network \& internet → Ethernet.
+3. Click "Use Ethernet" to enable the Ethernet port.
 
-The Ethernet port of InBOX/InPAD can be used as WAN port or LAN port. It is disabled by default. As shown in Figure 3-4.
+<p align="center"><img src="./images/img_df6fc72f.webp" alt="Ethernet Settings"></p>
 
-![图片包含 图形用户界面描述已自动生成](images/img_df6fc72f.png)
+<p align="center"><strong>Figure 3-8 Ethernet Settings</strong></p>
 
-Figure3-4
+4. By default, Ethernet is used as WAN interface and obtains IP address through DHCP.
 
-  
+<p align="center"><img src="./images/img_454a4014.webp" alt="WAN Interface"></p>
 
-### 3.4.1 Used As WAN Interface
+<p align="center"><strong>Figure 3-9 WAN Interface</strong></p>
 
-If the current system is Android7.1:
+5. To set a static IP address for WAN: Click "Static IP Settings", enable "Use static IP", and configure the IP address, netmask, default gateway, preferred DNS server, and alternative DNS server. Click "SAVE".
 
-Click "Settings > > Ethernet". And Click "Use Ethernet" to enable the Ethernet port. When enabled, the Ethernet is used as WAN interface by default. The WAN interface obtains IP address through DHCP by default. After successfully obtaining the address, the system will display the obtained WAN port IP address, netmask, default gateway, DNS server and other interface information, as well as routing information. As shown in Figure 3-4\-1.
+<p align="center"><img src="./images/img_b5e98ea5.webp" alt="Static IP Settings"></p>
 
-  
+<p align="center"><strong>Figure 3-10 Static IP Settings</strong></p>
 
-If the current system is Android12:
+6. To use Ethernet as LAN interface: On the Ethernet page, click "Interface mode" and select LAN. The default LAN IP address is 192.168.1.100 and the mask is 255.255.255.0.
 
-Click "Settings \>\> Network&internet >> Ethernet". And Click "Use Ethernet" to enable the Ethernet port. When enabled, the Ethernet is used as WAN interface by default. The WAN interface obtains IP address through DHCP by default. After successfully obtaining the address, the system will display the obtained WAN port IP address, netmask, default gateway, DNS server and other interface information, as well as routing information. As shown in Figure 3-4\-1.
+<p align="center"><img src="./images/img_bb4553da.webp" alt="LAN Interface"></p>
 
-![图形用户界面低可信度描述已自动生成](images/img_454a4014.png)
+<p align="center"><strong>Figure 3-11 LAN Interface</strong></p>
 
-Figure3-4\-1
+7. To customize LAN IP settings: Click "LAN IP Settings", modify the IP address and netmask, and click "SAVE".
 
-The WAN interface can set a static IP address. Click "Static IP Settings". On the "static IP address" page, click "Use static IP" to set the IP address, netmask, default gateway, preferred DNS server and alternative DNS server of the WAN interface. Click save in the upper right corner to save the configuration. As shown in figure 3-4\-1-1.
+<p align="center"><img src="./images/img_3ebd163c.webp" alt="LAN IP Settings"></p>
 
-![图形用户界面, 应用程序描述已自动生成](images/img_b5e98ea5.png)
+<p align="center"><strong>Figure 3-12 LAN IP Settings</strong></p>
 
-Figure3-4\-1-1
+**Verification Method**:
+1. On the Ethernet page, verify the IP address, netmask, default gateway, and DNS server information are displayed correctly.
+2. Open a web browser and access an internet website to confirm connectivity.
 
-On the Ethernet page, users can see the IP address, netmask, default gateway, DNS server and other information of the WAN interface, as well as the generated routing information.
+**Common Issues**:
+- No IP address obtained: Verify the Ethernet cable is connected and the upstream DHCP server is functioning.
+- Cannot access the internet: Verify the gateway and DNS settings are correct.
 
-  
+## Scenario 4: Display Settings
 
-### 3.4.2 Used As LAN Interface
+**Objective**: Configure display mode and screen rotation.
 
-On the "Ethernet" page, click "Use Ethernet" to enable Ethernet. Click "interface mode", and the Ethernet will be used as a LAN interface. The default IP address of LAN interface is 192.168.1.100 and the mask is 255.255.255.0. As shown in Figure 3-4\-2.
+**Prerequisites**: Device is powered on and the display is functioning.
 
-![图形用户界面, 文本, 应用程序, 电子邮件描述已自动生成](images/img_bb4553da.png)
+**Estimated Time**: ~5 minutes.
 
-Figure3-4\-2
+### Full Screen Mode
 
-On the "Ethernet" page, click "The LAN IP Settings". Users can customize LAN interface IP settings. On the "The LAN IP Settings" page, modify the IP address and netmask, and click "SAVE" to save the configuration. As shown in Figure 3-4\-2-1.
+**Operation Steps**:
+1. Navigate to Settings → Display.
+2. Enable "Full Screen" display.
 
-![图形用户界面, 应用程序描述已自动生成](images/img_3ebd163c.png)
+<p align="center"><img src="./images/img_34f94fb3.webp" alt="Full Screen Setting"></p>
 
-Figure3-4\-2-1
+<p align="center"><strong>Figure 3-13 Full Screen Setting</strong></p>
 
-Then on the "Ethernet" page, Users can see information of LAN interface.
+3. After the prompt box "The device needs to be restarted for the settings to take effect" appears, click "OK".
 
-  
+<p align="center"><img src="./images/img_e63df267.webp" alt="Restart Prompt"></p>
 
-  
+<p align="center"><strong>Figure 3-14 Restart Prompt</strong></p>
 
-## 3.5 Wi\-Fi Settings
+4. The device will restart and display in full screen mode.
 
-![](images/img_47a5e907.png)
+### Screen Rotation
 
-Make sure the Wi\-Fi antenna is connected before enabling WLAN interface.
+**Operation Steps**:
+1. Navigate to Settings → Display → Advanced Display.
+2. Select "Rotation" to open the rotation setting dialog box.
+3. Select the required rotation direction.
 
-![Group Shape To Image](images/img_4998c68b.png)
+<p align="center"><img src="./images/img_5cc8f4d9.webp" alt="Rotation Setting"></p>
 
-  
+<p align="center"><strong>Figure 3-15 Rotation Setting</strong></p>
 
-If the current system is Android7.1:
+4. After selecting the rotation, click "OK" in the pop-up dialog box of "Configuration Change, Need reboot".
 
-Click "Settings > > Wi-Fi". Click the switch symbol in the upper right corner to turn on Wi\-Fi. As shown in Figure 3-5.
+<p align="center"><img src="./images/img_232932f6.webp" alt="Reboot Prompt"></p>
 
-If the current system is Android12:
+<p align="center"><strong>Figure 3-16 Reboot Prompt</strong></p>
 
-Click "Settings >> Network&internet > > Internet>>Wi\-Fi". Click the switch symbol in the upper right corner to turn on Wi\-Fi. As shown in Figure 3-5.
+5. The device will reboot to apply the configuration.
 
-  
+**Verification Method**:
+1. After reboot, verify the display is in the selected mode (full screen or rotated).
 
-![图形用户界面, 应用程序, Teams描述已自动生成](images/img_d0d24300.png) ![图形用户界面, 应用程序描述已自动生成](images/img_e94f8db4.png)
+**Common Issues**:
+- Rotation not applied: Verify the device was rebooted after configuration change.
 
-Figure3-5（left Android7.1；right Android12）
+## Scenario 5: System Upgrade
 
-In the Wi\-Fi networks list, the SSID and security settings (open network or WPA / WPA2 protection) of the surrounding Wi\-Fi networks will be automatically scanned. Select one of the Wi\-Fi networks to connect. When the encrypted network is selected, the enter password dialog box will pop up automatically. Enter the password and click "CONNECT". As shown in figure 3-5\-1.
+**Objective**: Upgrade the device firmware to a newer version.
 
-![图形用户界面, 应用程序描述已自动生成](images/img_1d65febe.png)
+**Prerequisites**: Upgrade file (update.zip) is prepared. USB storage device is available (for Method 1). ADB access is available (for Method 2).
 
-Figure3-5\-1
+**Estimated Time**: ~10 minutes.
 
-If the connection is successful, the Wi-Fi will be displayed in the network list. Click the connected network to display the status information, signal strength, connection speed, security and frequency of the current network, as shown in Figure 3-5\-2.
+### Method 1: Upgrade with USB Storage in Android System
 
-![](images/img_96cc8739.png)
+**Operation Steps**:
+1. Rename the upgrade file as "update.zip" and copy it to a USB storage device.
+2. Plug the USB storage device into the InPAD device.
+3. If the current system is Android 7.1: Navigate to Settings → About tablet → Udisk system updates.
+   If the current system is Android 12: Navigate to Settings → System → Udisk system updates.
+4. The system will automatically upgrade and restart.
 
-Figure3-5\-2
+<p align="center"><img src="./images/img_1f6ec671.webp" alt="USB System Upgrade"></p>
 
-When users need to remove the current network, select "FORGET" in the current network information dialog box. 
+<p align="center"><strong>Figure 3-17 USB System Upgrade</strong></p>
 
-Click the setting symbol in the upper right corner, users can see the MAC address and IP address of the Wi\-Fi interface. As shown in figure3-5\-3
+### Method 2: Upgrade via ADB Broadcast Command
 
-![](images/img_82c0dd46.png)
+**Operation Steps**:
+1. Rename the upgrade file to "update.zip" and copy it to the /sdcard directory of the device.
+2. Enable USB debugging in the Developer options.
+3. Execute the ADB command:
+   ```
+   adb shell am broadcast -a com.ubox.upgraderom --include-stopped-packages
+   ```
+4. The device will upgrade and restart automatically if the command is executed successfully.
 
-Figure3-5\-3
+> **Note**: Method 2 can be used for FOTA (Firmware Over-The-Air) of InPAD devices. Download the upgrade file to the "/sdcard" directory, rename it to update.zip, and execute the broadcast command: `am broadcast -a com.ubox.upgraderom --include-stopped-packages`.
 
-  
+**Verification Method**:
+1. After reboot, navigate to Settings → About tablet and verify the system version number.
 
-  
+**Common Issues**:
+- Upgrade fails: Verify the upgrade file is correctly named "update.zip" and is not corrupted.
+- ADB command fails: Verify USB debugging is enabled and the device is properly connected.
 
-## 3.6 4G Settings
+## Scenario 6: Application Installation
 
-### 3.6.1 APN Settings
+**Objective**: Install third-party applications on the device.
 
-If the current system is Android7.1:
+**Prerequisites**: The APK installation file is available on the device or external storage.
 
-Click "Settings > > more > >Cellular networks > > Access Point Names ", click the add symbol in the upper right corner, fill in the name and APN, and click the upper right corner to save. As shown in Figure 3-6-1.
+**Estimated Time**: ~5 minutes.
 
-  
+**Operation Steps**:
+1. Select the "File Explorer" application.
+2. Find the installation file (APK file) in the "File" tab and click it.
+3. The installation prohibition dialog box will pop up for the first installation. Click "SETTINGS".
+4. Enable "Unknown source" in the "Security" interface.
 
-If the current system is Android12:
+<p align="center"><img src="./images/img_3eefeadf.webp" alt="Unknown Source Setting 1"></p>
 
-Click "Settings > > Network&internet > >SIMs > > Access Point Names ", click the add symbol in the upper right corner, fill in the name and APN, and click the upper right corner to save. As shown in Figure 3-6-1.
+<p align="center"><strong>Figure 3-18 Unknown Source Setting</strong></p>
 
-![图形用户界面, 应用程序描述已自动生成](images/img_db983ccd.png)
+<p align="center"><img src="./images/img_5dee6095.webp" alt="Unknown Source Setting 2"></p>
 
-Figure 3-6-1
+<p align="center"><strong>Figure 3-19 Security Settings</strong></p>
 
-  
+5. Return to the File Explorer and click the installation file again to complete installation.
 
- In the APN list, select the added APN. As shown in Figure 3-6\-2.
+**Verification Method**:
+1. Verify the application icon appears on the desktop or in the application list.
+2. Launch the application to confirm it runs correctly.
 
-![图形用户界面, 应用程序描述已自动生成](images/img_74358ba7.png)
+**Common Issues**:
+- Installation blocked: Verify "Unknown source" is enabled in Security settings.
+- Parse error: Verify the APK file is compatible with the Android version and not corrupted.
 
-Figure 3-6-2
+---
 
-### 3.6.2 ICMP Detection
+# Chapter 4: Function Description and Parameter Reference
 
-If the current system is Android7.1:
+## 4.1 Developer Options
 
-Inbox/InPAD supports network detection and automatically detects the current network connectivity. If the detection fails, Inbox/InPAD will automatically redial. Click "Settings > > more > >ICMP detection" to the ICMP detection page. ICMP detection is enabled by default. Click "Configure ICMP detail", in the pop-up dialog box, set parameters such as detection server, and then click save. As shown in Figure 3\-6-2.
+### 4.1.1 Function Description
 
-If the current system is Android12:
+Developer options provide advanced system functions for developers and technical personnel, including system logging, USB debugging, and hardware watchdog.
 
-Inbox/InPAD supports network detection and automatically detects the current network connectivity. If the detection fails, Inbox/InPAD will automatically redial. Click "Settings > > Network&internet > >ICMP detection" to the ICMP detection page. ICMP detection is enabled by default. Click "Configure ICMP detail", in the pop-up dialog box, set parameters such as detection server, and then click save. As shown in Figure 3-6-2.
+### 4.1.2 Access Path
 
-![手机屏幕截图描述已自动生成](images/img_94df648c.png)
+If the current system is Android 7.1: Settings → About Tablet → Build number (click 5 times continuously).
+If the current system is Android 12: Settings → About tablet → Android security patch level (click 2 times) → Baseband version (click 3 times) → Android security patch level (click 4 times) → Build number (click until "You are now a developer" appears).
 
-Figure 3-6-2
+After entering developer mode, "Developer options" will appear in Settings or System (Android 12).
 
-## 3.7 File Management
+<p align="center"><img src="./images/img_0ca9eae4.webp" alt="Developer Options"></p>
 
-Select the "File Explorer" application to view the files and folders of the system. Users can also view external storage. File path of built in SD card is: / MNT / sdcard.
+<p align="center"><strong>Figure 4-1 Developer Options</strong></p>
 
-  
+### 4.1.3 Operation Description
 
-## 3.8 Application Installation and Uninstallation
+Commonly used function items in developer options include:
 
-### 3.8.1 Application Installation
+1. **Logging**: After enabled, the system records logs to the /data/logger directory.
+2. **USB debugging**: After enabled, users can access the device through the ADB interface.
+3. **Hardware watchdog**: Once enabled, a restart is required to take effect.
 
-Select the "File Explorer" application, find the installation file (APK file) in the "File" tab and click it. The installation prohibition dialog box will pop up for the first installation. Click "SETTINGS" to enable "Unknown source" in the "security" interface, as shown in Figure 3\-8-1. Then you can return to the File Explorer and click the installation file to complete installation.
+### 4.1.4 Parameter Description
 
-![图形用户界面, 应用程序描述已自动生成](images/img_3eefeadf.png)![图形用户界面, 应用程序描述已自动生成](images/img_5dee6095.png)
+| Parameter | Description | Default Value |
+|-----------|-------------|---------------|
+| Logging | System log recording | Disabled |
+| USB debugging | ADB interface access | Disabled |
+| Hardware watchdog | Automatic system recovery | Disabled |
 
-Figure 3-8-1
+## 4.2 System Upgrade
 
-### 3.8.2 Application Uninstallation
+### 4.2.1 Function Description
 
-Click "Settings > > Apps", click the application to be uninstalled in the application list, click "UNINSTALL", and click "OK" in the application information dialog box to uninstall the application.
+The system upgrade function allows users to update the device firmware to a newer version. Three upgrade methods are supported: USB storage upgrade in Android system, recovery mode upgrade, and ADB broadcast command upgrade.
 
-![图形用户界面, 应用程序描述已自动生成](images/img_fc34e0b7.png)
+### 4.2.2 Access Path
 
-Figure 3-8-2
+- USB upgrade (Android 7.1): Settings → About tablet → Udisk system updates
+- USB upgrade (Android 12): Settings → System → Udisk system updates
+- ADB upgrade: Via ADB shell command
 
-## 3.9 Serial Test
+### 4.2.3 Operation Description
 
-This chapter mainly test whether the serial port communication on InBOX/InPAD is working normally. Connect the serial port on the InBOX/InPAD to the serial port on the PC with a serial Convertor, as shown in Figure 3-9.
+Refer to [Scenario 5: System Upgrade](#scenario-5-system-upgrade) for detailed operation steps.
 
-![](images/img_448b8c68.png)
+### 4.2.4 Parameter Description
 
-Figure 3-9
+| Parameter | Description |
+|-----------|-------------|
+| Upgrade file name | Must be renamed to "update.zip" |
+| Upgrade file location | USB storage root directory or /sdcard |
+| ADB command | `adb shell am broadcast -a com.ubox.upgraderom --include-stopped-packages` |
 
-View the connected serial port through the device manager on the PC, as shown in Figure 3-9-1.
+## 4.3 Display Settings
 
-![图形用户界面, 文本, 应用程序, 电子邮件描述已自动生成](images/img_a8b16f25.png)
+### 4.3.1 Function Description
 
-Figure 3-9-1
+Display settings allow users to configure the screen display mode (full screen) and rotation direction.
 
-Download and run the serial port test APP on the device, as shown in Figure 3-9-2.
+### 4.3.2 Access Path
 
-![](images/img_73fa6b30.png)
+- Full screen: Settings → Display
+- Rotation: Settings → Display → Advanced Display → Rotation
 
-Figure 3-9-2
+### 4.3.3 Operation Description
 
-Click setup, select the serial port you connected in Device. And set the baud rate, as shown in Figure3-9-3.
+**Full Screen**:
+1. Navigate to Settings → Display.
+2. Enable "Full Screen" display.
+3. Click "OK" in the restart prompt dialog.
+4. The device will restart and apply full screen mode.
 
-![](images/img_6b9d670e.png)
+**Screen Rotation**:
+1. Navigate to Settings → Display → Advanced Display.
+2. Select "Rotation" to open the rotation setting dialog.
+3. Select the required rotation direction.
+4. Click "OK" in the reboot prompt dialog.
+5. The device will reboot to apply the rotation.
 
-Figure3-9-3
+### 4.3.4 Parameter Description
 
-Open "Console" after configuration, as shown in Figure3-9-4.
+| Parameter | Options | Description |
+|-----------|---------|-------------|
+| Full Screen | Enable / Disable | Enable or disable full screen display |
+| Rotation | 0° / 90° / 180° / 270° | Screen rotation direction |
 
-![](images/img_c56aebce.png)
+## 4.4 Ethernet Settings
 
-Figure3-9-4
+### 4.4.1 Function Description
 
-  
+The Ethernet port of InPAD can be used as WAN port or LAN port. It is disabled by default.
 
-Open the serial port assistant on the PC side, set the correct port, and configure the baud rate to be consistent. Then test serial port by sending data in both device and PC sides.
+### 4.4.2 Access Path
 
-![](images/img_073eb552.png)
+- Android 7.1: Settings → Ethernet
+- Android 12: Settings → Network \& internet → Ethernet
 
-Figure 3-9-5
+### 4.4.3 Operation Description
 
-  
+**Enable Ethernet**:
+1. Navigate to the Ethernet settings page.
+2. Click "Use Ethernet" to enable the Ethernet port.
 
-  
+**Configure as WAN**:
+1. Enable Ethernet. The port is used as WAN by default.
+2. The WAN interface obtains IP address through DHCP by default.
+3. To set static IP: Click "Static IP Settings", enable "Use static IP", and configure IP address, netmask, gateway, and DNS.
 
-## 3.10 Backup and Reset
+**Configure as LAN**:
+1. On the Ethernet page, click "Interface mode" and select LAN.
+2. The default LAN IP is 192.168.1.100 with mask 255.255.255.0.
+3. To customize: Click "LAN IP Settings" and modify the IP address and netmask.
 
-If the current system is Android7.1:
+### 4.4.4 Parameter Description
 
-Click "Settings > > Backup & reset > > Factory data reset > > RESET TABLET". Please use this function with caution. After selecting the factory setting, all data on the product will be clear.
+| Parameter | Default Value | Description |
+|-----------|---------------|-------------|
+| Ethernet mode | Disabled | WAN or LAN |
+| WAN IP mode | DHCP | DHCP or Static IP |
+| Static IP address | - | User-defined |
+| Static netmask | - | User-defined |
+| Static gateway | - | User-defined |
+| Static DNS | - | User-defined |
+| LAN IP address | 192.168.1.100 | LAN interface IP |
+| LAN netmask | 255.255.255.0 | LAN subnet mask |
 
-  
+## 4.5 Wi-Fi Settings
 
-If the current system is Android12:
+### 4.5.1 Function Description
 
-Click "Settings > > System >> Reset options > > Erase all data > > RESET TABLET". Please use this function with caution. After selecting the factory setting, all data on the product will be clear.
+Wi-Fi settings allow the device to scan and connect to surrounding wireless networks. The device supports WPA/WPA2 protected networks.
 
-  
+### 4.5.2 Access Path
 
-  
+- Android 7.1: Settings → Wi-Fi
+- Android 12: Settings → Network \& internet → Internet → Wi-Fi
 
-## 3.11 On/off Button
+### 4.5.3 Operation Description
 
-Press and hold On/off button for more than 1 second, then select and restart the InBOX/InPAD, as shown in Figure 3-11.
+1. Ensure the Wi-Fi antenna is connected.
+2. Navigate to Wi-Fi settings and turn on the Wi-Fi switch.
+3. Select a network from the scanned list.
+4. Enter the password for encrypted networks and click "CONNECT".
+5. To view connection details: Click the connected network to display status, signal strength, connection speed, security, and frequency.
+6. To remove a network: Select "FORGET" in the network information dialog.
+7. To view MAC and IP address: Click the settings symbol in the upper right corner.
 
-![背景图案描述已自动生成](images/img_306244db.png)
+<p align="center"><img src="./images/img_82c0dd46.webp" alt="Wi-Fi MAC and IP Address"></p>
 
-Figure 3-11
+<p align="center"><strong>Figure 4-3 Wi-Fi MAC and IP Address</strong></p>
 
-  
+### 4.5.4 Parameter Description
 
-## 3.12 MODE Button
+| Parameter | Description |
+|-----------|-------------|
+| SSID | Wi-Fi network name |
+| Security | Open network or WPA/WPA2 protection |
+| Signal strength | Current connection signal level |
+| Connection speed | Link rate |
+| Frequency | Operating frequency band |
+| MAC address | Wi-Fi interface MAC address |
+| IP address | Assigned IP address |
 
-MODE button can be programmed to realize some special functions.
+## 4.6 4G Settings
 
-1
+### 4.6.1 Function Description
+
+4G settings allow the device to connect to cellular networks for internet access. APN (Access Point Name) configuration is required for proper network registration.
+
+### 4.6.2 Access Path
+
+- Android 7.1: Settings → More → Cellular networks → Access Point Names
+- Android 12: Settings → Network \& internet → SIMs → Access Point Names
+
+### 4.6.3 Operation Description
+
+**APN Configuration**:
+1. Navigate to the Access Point Names page.
+2. Click the add symbol in the upper right corner.
+3. Fill in the Name and APN (obtained from the carrier).
+4. Click the save symbol in the upper right corner.
+5. In the APN list, select the newly added APN.
+
+**ICMP Detection**:
+1. Navigate to the ICMP detection page (Android 7.1: Settings → More → ICMP detection; Android 12: Settings → Network \& internet → ICMP detection).
+2. ICMP detection is enabled by default.
+3. Click "Configure ICMP detail" to set detection server parameters.
+4. Click "Save" to save the configuration.
+
+<p align="center"><img src="./images/img_94df648c.webp" alt="ICMP Detection"></p>
+
+<p align="center"><strong>Figure 4-4 ICMP Detection</strong></p>
+
+### 4.6.4 Parameter Description
+
+| Parameter | Description | Default Value |
+|-----------|-------------|---------------|
+| APN Name | Access point name | User-defined |
+| APN | Carrier network identifier | User-defined |
+| ICMP detection | Network connectivity detection | Enabled |
+| Detection server | ICMP target server address | User-defined |
+
+## 4.7 File Management
+
+### 4.7.1 Function Description
+
+File management allows users to browse files and folders on the system and external storage devices.
+
+### 4.7.2 Access Path
+
+File Explorer application
+
+### 4.7.3 Operation Description
+
+1. Select the "File Explorer" application.
+2. Browse files and folders in the system.
+3. External storage devices can also be accessed.
+
+### 4.7.4 Parameter Description
+
+| Parameter | Description |
+|-----------|-------------|
+| Built-in SD card path | /mnt/sdcard |
+
+## 4.8 Application Management
+
+### 4.8.1 Function Description
+
+Application management allows users to install third-party APK files and uninstall existing applications.
+
+### 4.8.2 Access Path
+
+- Installation: File Explorer → select APK file
+- Uninstallation: Settings → Apps → select application → UNINSTALL
+
+### 4.8.3 Operation Description
+
+**Installation**:
+1. Select the "File Explorer" application.
+2. Find the APK file in the "File" tab and click it.
+3. For first installation, enable "Unknown source" in Security settings when prompted.
+4. Click the installation file again to complete installation.
+
+**Uninstallation**:
+1. Navigate to Settings → Apps.
+2. Click the application to be uninstalled.
+3. Click "UNINSTALL" and confirm.
+
+<p align="center"><img src="./images/img_fc34e0b7.webp" alt="Application Uninstallation"></p>
+
+<p align="center"><strong>Figure 4-4 Application Uninstallation</strong></p>
+
+## 4.9 Serial Port Test
+
+### 4.9.1 Function Description
+
+Serial port test verifies whether the serial port communication on InPAD is working normally.
+
+### 4.9.2 Access Path
+
+Serial port test APP (third-party application)
+
+### 4.9.3 Operation Description
+
+1. Connect the serial port on the InPAD to the serial port on the PC with a serial converter.
+
+<p align="center"><img src="./images/img_448b8c68.webp" alt="Serial Port Connection"></p>
+
+<p align="center"><strong>Figure 4-5 Serial Port Connection</strong></p>
+
+2. View the connected serial port through the device manager on the PC.
+
+<p align="center"><img src="./images/img_a8b16f25.webp" alt="Device Manager"></p>
+
+<p align="center"><strong>Figure 4-6 Device Manager Serial Port</strong></p>
+
+3. Download and run the serial port test APP on the device.
+
+<p align="center"><img src="./images/img_73fa6b30.webp" alt="Serial Test APP"></p>
+
+<p align="center"><strong>Figure 4-7 Serial Port Test APP</strong></p>
+
+4. Click setup, select the connected serial port in Device, and set the baud rate.
+
+<p align="center"><img src="./images/img_6b9d670e.webp" alt="Serial Port Setup"></p>
+
+<p align="center"><strong>Figure 4-8 Serial Port Setup</strong></p>
+
+5. Open "Console" after configuration.
+
+<p align="center"><img src="./images/img_c56aebce.webp" alt="Serial Console"></p>
+
+<p align="center"><strong>Figure 4-9 Serial Console</strong></p>
+
+6. Open the serial port assistant on the PC side, set the correct port, and configure the baud rate to be consistent.
+7. Test the serial port by sending data from both the device and PC sides.
+
+<p align="center"><img src="./images/img_073eb552.webp" alt="PC Serial Assistant"></p>
+
+<p align="center"><strong>Figure 4-10 PC Serial Port Assistant</strong></p>
+
+### 4.9.4 Parameter Description
+
+| Parameter | Description |
+|-----------|-------------|
+| Serial port | ttyS2, ttyS4 (RS485); RS232 serial ports |
+| Baud rate | Configurable (must match on both sides) |
+| Data bits | Configurable |
+| Stop bits | Configurable |
+| Parity | Configurable |
+
+## 4.10 Backup and Reset
+
+### 4.10.1 Function Description
+
+Factory data reset restores the device to its original factory state, clearing all user data and settings.
+
+### 4.10.2 Access Path
+
+- Android 7.1: Settings → Backup \& reset → Factory data reset → RESET TABLET
+- Android 12: Settings → System → Reset options → Erase all data → RESET TABLET
+
+### 4.10.3 Operation Description
+
+1. Navigate to the factory reset page.
+2. Click "RESET TABLET".
+3. Confirm the reset operation.
+
+> **Warning**: Use this function with caution. After factory reset, all data on the product will be cleared.
+
+### 4.10.4 Parameter Description
+
+| Parameter | Description |
+|-----------|-------------|
+| Factory data reset | Restores device to factory default state |
+
+## 4.11 Power Button
+
+### 4.11.1 Function Description
+
+The power button controls device power state and restart operations.
+
+### 4.11.2 Operation Description
+
+Press and hold the power button for more than 1 second, then select restart to reboot the device.
+
+<p align="center"><img src="./images/img_306244db.webp" alt="Power Button Menu"></p>
+
+<p align="center"><strong>Figure 4-11 Power Button Menu</strong></p>
+
+### 4.11.3Parameter Description
+
+| Parameter | Description |
+|-----------|-------------|
+| Long press duration | > 1 second |
+| Function | Power menu / Restart |
+
+## 4.12 MODE Button
+
+### 4.12.1 Function Description
+
+The MODE button can be programmed to realize special functions.
+
+---
+
+# Chapter 5: Typical Applications
+
+## Case 1: Industrial HMI and Data Collection Terminal
+
+**Scenario Description**: InPAD series devices are deployed in industrial environments as human-machine interface (HMI) terminals and data collection gateways. The device connects to PLCs and sensors through RS485/RS232 serial ports, collects real-time production data, and uploads it to a cloud management platform via 4G cellular or Wi-Fi network.
+
+**Network Topology**:
+
+<p align="center"><img src="./images/img_a0964523.webp" alt="Industrial HMI Network Topology"></p>
+
+<p align="center"><strong>Figure 5-1 Industrial HMI Network Topology</strong></p>
+
+**Device Role**: The InPAD device serves as an edge gateway and HMI terminal, responsible for serial data collection, local display, protocol conversion, and cloud data upload.
+
+**Configuration Steps**:
+1. Install the device at the industrial site using VESA or M3 hole mounting.
+2. Connect the grounding cable to improve anti-interference capability.
+3. Connect RS485/RS232 cables from PLCs/sensors to the device serial ports.
+4. Insert a SIM card and install the 4G antenna for cellular network access.
+5. Configure APN parameters according to [Scenario 1: Cellular Network Access](#scenario-1-cellular-network-access).
+6. Alternatively, connect to the site Wi-Fi according to [Scenario 2: Wi-Fi Connection](#scenario-2-wi-fi-connection).
+7. Install the data collection application via [Scenario 6: Application Installation](#scenario-6-application-installation).
+8. Configure the serial port parameters (baud rate, data bits, etc.) in the application.
+9. Verify data collection and cloud upload functionality.
+
+**Reference Chapters**:
+- [Serial Port Test](#49-serial-port-test)
+- [4G Settings](#46-4g-settings)
+- [Wi-Fi Settings](#45-wi-fi-settings)
+- [Application Installation](#scenario-6-application-installation)
+
+## Case 2: Remote Monitoring Terminal
+
+**Scenario Description**: InPAD devices are deployed in remote or distributed locations (such as vending machines, charging stations, or environmental monitoring sites) as monitoring terminals. The device displays operational status on the touch screen and transmits monitoring data to a central management platform through 4G network.
+
+**Network Topology**:
+
+<p align="center"><img src="./images/img_a0964523.webp" alt="Remote Monitoring Network Topology"></p>
+
+<p align="center"><strong>Figure 5-2 Remote Monitoring Network Topology</strong></p>
+
+**Device Role**: The InPAD device serves as a remote monitoring terminal and edge gateway, responsible for local status display, data buffering, and remote data transmission.
+
+**Configuration Steps**:
+1. Mount the device at the monitoring site.
+2. Connect power and grounding.
+3. Install the cellular antenna and insert a SIM card.
+4. Configure the APN for cellular network access according to [Scenario 1: Cellular Network Access](#scenario-1-cellular-network-access).
+5. Configure display settings (full screen or rotation) as needed according to [Scenario 4: Display Settings](#scenario-4-display-settings).
+6. Install the monitoring application.
+7. Configure the monitoring parameters and server address in the application.
+8. Verify data transmission to the central platform.
+
+**Reference Chapters**:
+- [Display Settings](#scenario-4-display-settings)
+- [Cellular Network Access](#scenario-1-cellular-network-access)
+- [Application Installation](#scenario-6-application-installation)
+
+---
+
+# Appendix A: Troubleshooting
+
+## A.1 Network Connection Issues
+
+| Symptom | Possible Cause | Troubleshooting Steps | Reference Chapter |
+|---------|----------------|----------------------|-------------------|
+| Cannot connect to cellular network | SIM card not inserted or poor contact | 1. Check if SIM card is correctly inserted<br>2. Re-insert the SIM card | [SIM Card Installation](#scenario-1-cellular-network-access) |
+| Cannot connect to cellular network | APN parameter configuration error | 1. Verify APN parameters are correct<br>2. Contact carrier for correct APN | [Cellular Network Configuration](#scenario-1-cellular-network-access) |
+| Cannot connect to cellular network | Weak signal or no signal | 1. Check if antenna is connected<br>2. Adjust device position | [Cellular Network Configuration](#scenario-1-cellular-network-access) |
+| Wi-Fi connection fails | Incorrect password | 1. Re-enter the Wi-Fi password<br>2. Verify password with network administrator | [Wi-Fi Connection](#scenario-2-wi-fi-connection) |
+| Wi-Fi connection fails | Weak signal | 1. Move device closer to access point<br>2. Check Wi-Fi antenna connection | [Wi-Fi Connection](#scenario-2-wi-fi-connection) |
+| Cannot obtain IP via Ethernet | Cable not connected | 1. Check Ethernet cable connection<br>2. Replace cable if damaged | [Ethernet Configuration](#scenario-3-ethernet-configuration) |
+| Cannot obtain IP via Ethernet | DHCP server unavailable | 1. Verify upstream network device is functioning<br>2. Configure static IP instead | [Ethernet Configuration](#scenario-3-ethernet-configuration) |
+
+## A.2 Display Issues
+
+| Symptom | Possible Cause | Troubleshooting Steps | Reference Chapter |
+|---------|----------------|----------------------|-------------------|
+| Screen not displaying | Power not connected | 1. Check power cable connection<br>2. Verify power adapter output is 12V DC | [Power Connection](#24-power-connection) |
+| Screen not displaying | Device not powered on | 1. Check power indicator status<br>2. Long press power button to start | [Power Button](#411-power-button) |
+| Touch not responding | Screen frozen | 1. Restart the device<br>2. Check for application conflicts | [Power Button](#411-power-button) |
+| Display rotation not applied | Device not rebooted | 1. Reboot device after changing rotation settings | [Display Settings](#scenario-4-display-settings) |
+
+## A.3 System Issues
+
+| Symptom | Possible Cause | Troubleshooting Steps | Reference Chapter |
+|---------|----------------|----------------------|-------------------|
+| System runs slowly | Too many applications running | 1. Close unused applications<br>2. Uninstall unnecessary applications | [Application Management](#48-application-management) |
+| Application crashes | Incompatible application | 1. Uninstall the problematic application<br>2. Install a compatible version | [Application Management](#48-application-management) |
+| Cannot install application | Unknown sources disabled | 1. Enable "Unknown source" in Security settings | [Application Installation](#scenario-6-application-installation) |
+| System upgrade fails | Corrupted upgrade file | 1. Re-download the upgrade file<br>2. Verify file is named "update.zip" | [System Upgrade](#scenario-5-system-upgrade) |
+
+## A.4 Serial Communication Issues
+
+| Symptom | Possible Cause | Troubleshooting Steps | Reference Chapter |
+|---------|----------------|----------------------|-------------------|
+| Serial port no data | Incorrect baud rate | 1. Verify baud rate matches on both sides | [Serial Port Test](#49-serial-port-test) |
+| Serial port no data | Wrong serial port selected | 1. Verify correct port in device manager<br>2. Check physical connection | [Serial Port Test](#49-serial-port-test) |
+| Garbled data | Mismatched data format | 1. Verify data bits, stop bits, and parity settings | [Serial Port Test](#49-serial-port-test) |
+
+---
+
+# Appendix B: Safety Precautions
+
+1. The device shall be used within the specified temperature and humidity ranges (operating temperature: -10°C to 60°C; relative humidity: 5% to 95%, non-condensing).
+2. Do not use the device in flammable or explosive environments.
+3. Before connecting power, verify the voltage meets the device specification (12 V DC).
+4. Keep the device out of direct sunlight and away from heat sources.
+5. Keep the device away from areas with strong electromagnetic interference.
+6. Do not disassemble or modify the device. Doing so will void the warranty.
+7. Ensure proper grounding to improve anti-interference capability.
+8. Use only approved accessories and power adapters.
+
+> **Warning**: Non-professionals should not open the device enclosure. Risk of electric shock.
+
+> **Caution**: Improper operation may cause data loss or damage to the device.
+
+---
+
+# FAQ
+
+### Q1: What is the difference between InPAD070S and InPAD3101?
+
+The main difference is the display size and resolution. InPAD070S features a 7-inch display with resolution of 1024 x 600. InPAD3101 features a 10.1-inch display with resolution of 1280 x 800. All other interfaces and functions are identical.
+
+### Q2: How to distinguish between Android 7.1 and Android 12 system settings paths?
+
+Android 7.1 system settings are organized in a flat structure (e.g., Settings → Ethernet). Android 12 system settings are reorganized under Network \& internet and System categories (e.g., Settings → Network \& internet → Ethernet). Refer to the specific operation steps in each chapter for the correct path.
+
+### Q3: 4G cannot connect to the internet?
+
+1. Physical environment: Check whether the SIM card is inserted into the correct slot and whether the cellular antenna is installed.
+2. APN settings: Ensure the APN configuration matches the information provided by the carrier.
+3. Check device connectivity: Log in to the device and use the ICMP tool to ping 8.8.8.8 to test connectivity.
+4. Verify SIM card: Remove the SIM card and install it in a mobile phone to check whether it can access the internet normally.
+5. Restart: Power off the device, wait a few seconds, and reconnect power to retry.
+6. Factory reset: Restore the device to factory settings and retry.
+
+### Q4: How to enable full screen mode?
+
+Navigate to Settings → Display, enable "Full Screen", and click "OK" in the restart prompt. The device will reboot and display in full screen mode.
+
+### Q5: How to perform a factory reset?
+
+For Android 7.1: Navigate to Settings → Backup \& reset → Factory data reset → RESET TABLET.
+For Android 12: Navigate to Settings → System → Reset options → Erase all data → RESET TABLET.
+Note: All data will be cleared after factory reset. Use with caution.
+
+### Q6: How to connect the device to a PC for debugging?
+
+1. Enable USB debugging in Developer options.
+2. Connect the device to the PC using a Micro USB cable.
+3. Use ADB commands to access the device.
+
+### Q7: What file path is used for the built-in SD card?
+
+The built-in SD card path is /mnt/sdcard.

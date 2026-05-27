@@ -1,357 +1,575 @@
-Edge Computer EC300 Series
+# EC300 Series Edge Computer User Manual
 
-User Manual
 
-**(****Applicable for IEOS V2.0.0 and above****)**
+## Declaration
 
-Version1.1, February 2024
+Thank you for selecting this product. Prior to use, read this user manual carefully and observe the following statements. Compliance with these provisions helps maintain intellectual property rights and legal compliance, and ensures that the usage experience remains consistent with the latest product information. For questions or to obtain written permission, contact the technical support team.
 
-[www.inhand](http://www.inhandnetworks.com.cn)[.com](http://www.inhandnetworks.com.cn)
+- **Copyright Notice**
 
-![](images/img_c06604e0.png)
+  This user manual contains copyright-protected material. All rights are reserved by Beijing InHand Networks Technology Co., Ltd. and its licensors. No part of this manual may be excerpted, reproduced, or transmitted in any form or by any means without prior written permission.
 
-The software described in this manual is provided according to the license agreement and can only be used according to the terms of the agreement.
+- **Disclaimer**
 
-**Copyright Notice**
+  Due to continuous updates in product technology and specifications, the company does not guarantee that the information in this user manual is entirely consistent with the actual product. Therefore, the company assumes no liability for disputes arising from discrepancies between actual technical parameters and the contents of this manual. Product changes may be made without prior notice. The company reserves the right of final modification and interpretation.
 
-© 2024 InHand Networks.All rights reserved.
+- **Copyright Information**
 
-**Trademarks**
+  The contents of this user manual are protected by copyright law. All rights are reserved by Beijing InHand Networks Technology Co., Ltd. and its licensors. No part of this manual may be used, copied, or distributed without prior written permission.
 
-The InHand logo is a registered trademark of InHand Networks.
+## GUI Conventions
 
-All other trademarks or registered trademarks in this manual belong to their respective manufacturers.
+The following symbols and formatting conventions are used throughout this manual:
 
-**Disclaimer**  
+| Symbol | Meaning | Example |
+|--------|---------|---------|
+| `< >` | Indicates a variable or parameter to be replaced with an actual value | `<IP address>` indicates that a specific IP address must be entered |
+| `" "` | Indicates a text label on the interface | Click the "Save" button |
+| `→` | Indicates a menu hierarchy or sequence of operations | **Network** → **Cellular** |
+| `【 】` | Indicates a menu or page name | Navigate to the 【System Settings】page |
 
-InHand Networks reserves the right to change this manual, and the product is subject to subsequent changes without prior notice. We will not be responsible for any direct, indirect, intentional, or unintentional damages and hidden dangers caused by improper installation and use.
+## Technical Support
 
-# 1 Introduction
+**Beijing InHand Networks Technology Co., Ltd. (Headquarters)**
 
-This user's manual is for the Arm architecture based edge computer EC300 and covers a complete set of instructions for all supported models. Before referring to these chapters, verify that the hardware specifications of your computer model support the features covered.
+- Phone: 010-8417 0010
+- Address: 5/F, Building 3, No. 18 Ziyue Road, Chaoyang District, Beijing
 
-In order to facilitate user configuration, InHand has developed a set of IEOS system programs, providing a web interface, users can easily through the web network management and system management, The IEOS is based on debian 11, so it can use native Linux commands for network management and system administration.but it should be noted that when the IEOS function is enabled, IEOS will take over the network management and system management. At this time through the Linux native command for network management and system management may fail; IEOS is enabled by default, if users need to perform network management and system management based on Linux native command line, they need to close IEOS first.
+**Chengdu Office**
 
-# 2 Hardware Installation Instructions 
+- Phone: 028-8679 8244
+- Address: 14/F, China Taiping Financial Tower, No. 1777 North Tianfu Avenue, Wuhou District, Chengdu, Sichuan
 
-In this chapter, we will cover the external interface instructions of ARM-architecture-based edge computer EC300.
+**Guangzhou Office**
 
-## 2.1 Introduction
+- Phone: 020-8562 9571
+- Address: Unit B-130, Yuanyang New Third Board Creative Park, No. 5 Tangdong East Road, Tianhe District, Guangzhou
 
-The following sections describe the application of external connectors and pin assignment.
+**Wuhan Office**
 
-## 2.2 EC300 Panel
+- Phone: 027-8716 3566
+- Address: Room 2001, Building 11, Bali Haoting, No. 2 Luoyu East Road, Hongshan District, Wuhan, Hubei
 
-### 2.2.1 Front Panel
+**Shanghai Office**
 
-![](images/img_79b644f3.png)
+- Phone: 021-5480 8501
+- Address: Room 1103, No. 18 Shunyi Road, Putuo District, Shanghai
 
-### 2.2.2 Left Panel
+## How to Use This Manual
 
-![](images/img_95797ade.png)
+### Reading Guide
 
-### 2.2.3 Right Panel
+- First-time users: It is recommended to read the chapters in the following order: "Know the Device" → "Installation and First Use" → "Common Scenario Configurations" → "Feature Descriptions and Parameter Reference"
+- Existing device users: Refer directly to "Feature Descriptions and Parameter Reference" or "Appendix: Troubleshooting"
+- Cloud platform management users: Refer to the device remote management platform sections in "Common Scenario Configurations" (where applicable)
 
-![](images/img_379b4d4f.png)
+### Quick Jump by Task
 
-## 2.3 EC300 External Interface
+| Task | Corresponding Chapter | Estimated Time |
+|------|----------------------|----------------|
+| Connect to the device via Ethernet | [Ethernet Connection](#ethernet-connection) | Approx. 5 minutes |
+| Configure cellular network | [Cellular Network Configuration](#cellular-network-configuration) | Approx. 10 minutes |
+| Configure Wi-Fi | [Wi-Fi Configuration](#wi-fi-configuration) | Approx. 5 minutes |
+| Configure OpenVPN | [OpenVPN Configuration](#openvpn-configuration) | Approx. 10 minutes |
+| Firmware upgrade | [Firmware Upgrade](#firmware-upgrade) | Approx. 15 minutes |
+| Device remote management | [DeviceLive Cloud Management](#devicelive-cloud-management) | Approx. 10 minutes |
+| Peripheral interface configuration | [Peripheral Interfaces](#peripheral-interfaces) | As needed |
+| Factory reset | [Factory Reset](#factory-reset) | Approx. 5 minutes |
 
-### 2.3.1 Ethernet
+**Default Access Information for the EC300 Series Edge Computer**
 
-This is a dual RJ45 connector for Ethernet connection.
+| Item | Default Value |
+|------|---------------|
+| ETH 1 IP address | 192.168.3.100/24 |
+| ETH 2 IP address | 192.168.4.100/24 |
+| SSH username | edge |
+| SSH password | security@edge |
+| Web login username | adm |
+| Web login password | 123456 |
 
-The EC300 has 2 RJ45 Ethernet ports and supports 10M/100M adaptive rates.
 
-Yellow light: LINK indicator light: When the device is LINK UP, the light remains on; when the device is LINK DOWN, the light remains off.
 
-Green light: ACT light, flashing when there is data passing through.
+# Chapter 1 Know the Device
 
-### 2.3.2 Serial Port
+## 1.1 Overview
 
-EC300 supports up to four serial ports: two standard serial ports and two expandable serial ports.
+The EC300 series edge computers are Arm architecture-based industrial computing platforms designed for lightweight edge application development. Equipped with rich interfaces including serial ports, CAN bus, and analog input, the EC300 supports interface expansion to meet diverse industrial automation requirements. The device runs a built-in Linux system (Debian 11) with long-term support. Security features such as Secure Boot and TPM2.0 ensure software and data integrity. The built-in InHand DeviceSupervisor Agent enables data collection, processing, and cloud deployment, with support for DeviceLive cloud management platform remote monitoring.
 
-COM1(standard): RS-232 / RS-485 (RX1 TX1 / A1 B1),you can only choose to access RS-232 or RS-485 at the same time, they can't work at the same time.
+## 1.2 Packing List
 
-COM2(standard): RS-485 (A2 B2)
+| Item | Quantity | Description |
+|------|----------|-------------|
+| EC312 Host | 1 | Edge computer main unit |
+| Power Adapter | 1 | Optional equipment |
+| Wi-Fi Antenna | 1 | Standard equipment (depending on the device model) |
+| GPS Antenna | 1 | Standard equipment (depending on the device model) |
+| Cellular Antenna | 1 | Standard equipment (depending on the device model) |
+| Card Needle | 1 | Used for SIM card tray removal |
+| Warranty Card | 1 | Product warranty certificate |
 
-COM3(extensible): RS232 / RS485 (Extended interface PIN1   Extended interface PIN2)
+## 1.3 Appearance and Interfaces
 
-COM4(extensible): RS232 / RS485 (Extended interface PIN5   Extended interface PIN6)
+The EC312 panel layout is as follows:
 
-### 2.3.3 CAN
+### 1.3.1 Front Panel
 
-The EC300 is equipped with three expandable CAN bus interfaces, offering support for CAN FD with a maximum data rate of up to 5 Mbps. It is fully compliant with the CAN 2.0 A/B standards.  
+<p align="center"><img src="images/img_26f100f8.webp" alt="EC312 front panel" width="70%"></p>
 
-CAN1: Extended interface PIN1   Extended interface PIN2  
+<p align="center"><strong>Figure 1-1 EC312 Front Panel</strong></p>
 
-CAN2: Extend interface PIN5   Extend interface PIN6
+### 1.3.2 Left Panel
 
-CAN3: Expand interface PIN9   Expand interface PIN10
+<p align="center"><img src="images/img_a10f9383.webp" alt="EC312 left panel" width="70%"></p>
 
-### 2.3.4 Digital Input Interface   
+<p align="center"><strong>Figure 1-2 EC312 Left Panel</strong></p>
 
-| Parameter | Description | Min | Type | Max | Unit |
-| --- | --- | --- | --- | --- | --- |
-| Vds | Drain source voltage |  |  | 48 | V |
-| VIN Low | Maximal input voltage recongnized as LOW |  |  | 3 | V |
-| VIN High | Minimal input voltage recognized as HIGH | 10 |  | 30 | V |
+### 1.3.3 Right Panel
 
-  
+<p align="center"><img src="images/img_2e623ec3.webp" alt="EC312 right panel" width="70%"></p>
 
-| Interface identification | Features | Description |
-| --- | --- | --- |
-| GND | Power reference ground | 4 digital input DI,  Wet contact state        "1":+10~+30V/-30 ~ -10VDC  "0": 0 ~ +3V/-3 ~ 0V  Isolate 3000VDC |
-| DICOM | Input public side |  |
-| DI0 | Digital input port 0 |  |
-| DI1 | Digital input port number 1 |  |
-| DI2 | Digital input port number 2 |  |
-| DI3 | Digital input port number 3 |  |
+<p align="center"><strong>Figure 1-3 EC312 Right Panel</strong></p>
 
-  
+### 1.3.4 Interface Description
 
-Wiring diagram(only supports wet contact wiring)
+| Interface | Position | Function Description |
+|-----------|----------|---------------------|
+| ETH 1/ETH 2 | Front panel | RJ45 Ethernet port, 10M/100M adaptive |
+| COM1/COM2 | Left panel | Standard serial port (RS-232/RS-485) |
+| DC Input | Left panel | 9-48V DC power input |
+| SIM Card Slot | Left panel | Dual NANO SIM card slot |
+| MicroSD Slot | Front panel | MicroSD card slot for extended storage |
+| USB 2.0 | Left panel | USB 2.0 Host interface |
+| Antenna Interfaces | Right panel | Cellular, GPS, Wi-Fi antenna SMA interfaces |
+| Extension Interface | Right panel | Expansion module interface for serial/CAN/DI/DO/AIN |
+| RESET | Left panel | Factory reset button |
+| User Programmable Button | Left panel | User-defined function button |
 
-![](images/img_4f104e6a.png)  
+## 1.4 Indicator Lights
 
-### 2.3.5 Digital Output Interface   
+<p align="center"><img src="images/img_df2b4883.webp" alt="EC312 antenna interface and indicators"></p>
 
-| Interface identification | Features | Description |
-| --- | --- | --- |
-| DO0 | Digital output port 0 | 4 DO OD output, isolated 3000VDC |
-| DO1 | Digital output port port 1 |  |
-| DO2 | Digital output port 2 |  |
-| DO3 | Digital output port port 3 |  |
-| GND | Power Reference Ground |  |
+<p align="center"><strong>Figure 1-4 EC312 Antenna Interface</strong></p>
 
-  
+| Indicator | Status | Meaning |
+|-----------|--------|---------|
+| PWR | Solid on | Device powered on |
+| STATUS | Flashing | System starts normally |
+| | Solid off | System startup exception or factory recovery not completed |
+| WARN | Flashing | Warning abnormality (factory reset incomplete or dialing abnormality when cellular is enabled) |
+| NET | Solid off | Dial function not enabled |
+| | Flashing | Dialing in progress |
+| | Solid on | Dialing successful |
+| User1 | Solid off (default) | User programmable indicator LED 1, controllable via programming |
+| User2 | Solid off (default) | User programmable indicator LED 2, controllable via programming |
+| User3 | Solid off (default) | User programmable indicator LED 3, controllable via programming |
+| User4 | Solid off (default) | User programmable indicator LED 4, controllable via programming |
 
-Wiring Diagram
+## 1.5 Factory Reset
 
-![](images/img_8501917f.png)  
+There are two methods to restore the EC300 to factory settings:
 
-### 2.3.6 **Analog Input Interface**  
+### Hardware Factory Reset
 
-The EC300 supports up to two expandable AIN analog current signal input interfaces with an input range of 4-20mA. It uses the TI TLA2022 12-bit ADC, featuring a sampling rate of 1.6kHz, a resolution of 16.6μA, and an accuracy of 1%.  
+1. Power on the device and ensure the system has started.
+2. Long press the **Reset** key for 10-20 seconds until the **WARN** light stays solid on.
+3. When the **WARN** light turns on, release the **Reset** key.
+4. The device will automatically restart and restore factory settings.
 
-  
+> **Note**: System reset is an important function. After reset, the device will return to the default state and all user data and configurations will be lost. Before resetting, ensure that critical data has been backed up to external storage media.
 
-Wiring Diagram  
+### Software Factory Reset
 
-![](images/img_ab2444d4.png)  
+1. Log in to the web management interface.
+2. Navigate to 【System Management】→【Configuration Management】.
+3. Click the reset button and confirm. The device will complete the factory reset operation automatically.
 
-### **2.3.7 USB**  
+Alternatively, use the Linux command line:
 
-The EC300 provides a USB 2.0 Host port.
+```
+sudo factory_reset
+```
 
-### 2.3.8 LED
+## 1.6 Default Settings
 
-EC300 has 8 LED lights to indicate the power supply and system operation status respectively.
+| Parameter | Default Value |
+|-----------|---------------|
+| ETH 1 IP address | 192.168.3.100/24 |
+| ETH 2 IP address | 192.168.4.100/24 |
+| SSH username | edge |
+| SSH password | security@edge |
+| Web login username | adm |
+| Web login password | 123456 |
+| IEOS HTTPS port | 9100 |
+| Root user | Disabled by default |
 
-| Signage | Name | Definition |
-| --- | --- | --- |
-| PWR | Power indicator | Solid on after power on. |
-| STATUS | System operating status indicator light | When the system starts normally, the STATUS flashes. If the system fails to start due to an exception in the system startup phase; Or when the factory recovery operation has not been completed, STATUS is solid off. |
-| WARN | Warning indicator light | When the system has a warning abnormality, the WARN light flashes. Warning abnormalities include: the factory reset has not been completed; and the dialing abnormality (the cellular function needs to be turned on). |
-| NET | Cellular connection status indicator | Dial function is not enabled, solid off.        Dialing, flashing.        Dialing is successful, solid on. |
-| User1 | User programmable indicator 1 | It is off by default and can be controlled by user programming |
-| User2 | User programmable indicator 2 | It is off by default and can be controlled by user programming |
-| User3 | User programmable indicator 3 | It is off by default and can be controlled by user programming |
-| User4 | User programmable indicator 4 | It is off by default and can be controlled by user programming |
 
-### 2.3.9 User Programmable Keys
 
-EC300 provides an API interface. Users can call the API interface to detect the status of programmable keys and then implement their own key logic.  
+# Chapter 2 Installation and First Use
 
-### 2.3.10 DC Input
+## 2.1 Pre-Installation Preparation
 
-The EC300 supports 9 to 48V DC input
+Before installing the EC300 series edge computer, verify the following items:
 
-### 2.3.11 SIM Card Slot
+| Item | Requirement |
+|------|-------------|
+| Power supply | 9-48V DC, dual-pin terminal (V+, V-) |
+| Power consumption | 6W |
+| Operating temperature | -20 to 70°C (-4°F to 158°F) |
+| Storage temperature | -40 to 85°C (-40°F to 185°F) |
+| Environmental humidity | 5-95% (without frost) |
+| Tools | Screwdriver (for DIN rail or wall mounting), network cable |
 
-The EC300 supports 2 SIM card slots, and the SIM card needs to be installed with power off by pressing the SIM card into the slot.
+> **Attention**: The SIM card must be installed while the device is powered off. Ensure the device power has been disconnected before SIM card installation.
 
-### 2.3.12 MicroSD Card Slot
+## 2.2 Installation Guide
 
-The EC300 has a slot for the MicroSD card, SD needs to be plugged in and out with power off status.
+### 2.2.1 DIN Rail Installation
 
-### 2.3.13 Restore the Factory Keys
+The DIN rail installation plate is attached to the EC312 rear panel (fixed with M3 x 6mm screws). The installation steps are as follows:
 
-There is a reset button for the system to reset to factory settings. Please refer [to Restore Factory Settings](#9EoWG) for more information.
+1. Clip the upper hook of the DIN rail installation plate into the top of the DIN rail bracket.
+2. Slowly push the device forward towards the DIN rail bracket to ensure that the bottom end of the DIN rail clicks into place.
 
-### 2.3.14 Antenna Interface
+<p align="center"><img src="images/img_2d54601d.webp" alt="DIN rail installation" width="50%"></p>
 
-There are 5 antenna interfaces in EC300, and the number of antennas standard with different models is different. Screw the antenna into the corresponding antenna interface to complete the antenna installation.
+<p align="center"><strong>Figure 2-1 DIN Rail Installation</strong></p>
+
+### 2.2.2 Wall-Mounted Installation
+
+The EC312 can be installed using a wall-mounted kit, which needs to be purchased separately.
+
+1. Use screws (M3 x 4mm) to secure the wall mounting kit to the back panel of EC312.
+
+<p align="center"><img src="images/img_436b6e87.webp" alt="Wall mount kit installation step 1" width="50%"></p>
+
+<p align="center"><strong>Figure 2-2 Wall Mount Kit Installation (Step 1)</strong></p>
+
+2. After the wall-mounted kit is successfully fixed to EC312, use an additional 4 M8 and 2 M3 screws to secure EC312 to the wall or cabinet.
+
+<p align="center"><img src="images/img_51446897.webp" alt="Wall mount kit installation step 2" width="50%"></p>
+
+<p align="center"><strong>Figure 2-3 Wall Mount Kit Installation (Step 2)</strong></p>
+
+### 2.2.3 Power Connection
+
+The EC312 supports 9-48V DC power supply. Insert the adapter terminal into the DC port of EC312 and connect the power adapter.
+
+<p align="center"><img src="images/img_97054bdb.webp" alt="DC input interface"></p>
+
+<p align="center"><strong>Figure 2-4 DC Input Interface</strong></p>
+
+When the PWR power indicator light remains on, the device has been powered on normally.
+
+### 2.2.4 SIM Card Installation
+
+1. Ensure that the device power has been disconnected before installation.
+2. Remove the SIM card holder using the card needle (included in the factory).
+
+<p align="center"><img src="images/img_e45824f2.webp" alt="SIM card tray removal" width="30%"></p>
+
+<p align="center"><strong>Figure 2-5 SIM Card Tray Removal</strong></p>
+
+3. Insert the NANO SIM card. There are two card slots located above and below the drawer-style card holder.
+
+<p align="center"><img src="images/img_5452ef45.webp" alt="SIM card installation" width="30%"></p>
+
+<p align="center"><strong>Figure 2-6 SIM Card Installation</strong></p>
+
+### 2.2.5 Antenna Installation
+
+The EC300 has five antenna interfaces in total. The number of standard antennas for different models varies. Screw the antenna into the corresponding SMA antenna interface to complete the antenna installation.
 
 | Identification | Name |
-| --- | --- |
-| ANT1 | 4G LTE main antenna |
-| ANT2 | 4G LTE diversity receive antenna |
-| GPS | GPS antenna(Please use passive GPS antenna) |
+|----------------|------|
+| ANT1 | 4G LTE main antenna / 5G antenna |
+| ANT2 | 4G LTE diversity receive antenna / 5G antenna |
+| GPS | GPS antenna |
 | Wi-Fi | Wi-Fi antenna |
-| Lora | LoRa antenna |
 
-### 2.3.15 Extended Interface
+<p align="center"><img src="images/img_df2b4883.webp" alt="Antenna installation"></p>
 
-EC300 can support interface expansion. For detailed selection instructions, please refer to the product specification. The currently supported expansion combinations are as follows:
+<p align="center"><strong>Figure 2-7 Antenna Installation</strong></p>
 
-| Extension module | Feature |
-| --- | --- |
-| NAAD | 2x 4-20mA analog input+4x DI+4x DO |
-| N44C | 2x RS-485+1x CAN FD |
-| N4CC | 1x RS-485+2x CAN FD |
-| N44D | 2x RS-485+4x DI+4x DO |
-| — | NONE |
+### 2.2.6 First Login via SSH
 
-  
+1. Interconnect the PC and EC312 using a network cable. Plug one end into the Ethernet port of EC312 and the other end into the network port of the computer.
+2. Set the PC IP address to the same network segment as the device interface (ETH1: 192.168.3.0/24, ETH2: 192.168.4.0/24).
 
-The extension interface is defined as follows:
+<p align="center"><img src="images/img_92574a86.webp" alt="PC connection to EC312" width="70%"></p>
 
-![](images/img_d57793a0.png)  
+<p align="center"><strong>Figure 2-8 PC Connection to EC312</strong></p>
 
-  
+3. Use PuTTY or a Linux terminal to establish an SSH connection to the device.
 
-| PIN | Extension module&Interface Definition |
-| --- | --- |
-| **NAAD** | **N44C** | **N4CC** | **N44D** |
-| **1** | **AIN1+** | **A\_485\_A** | **A\_485\_A** | **A\_485\_A** |
-| **2** | **\-** | **A\_485\_B** | **A\_485\_B** | **A\_485\_B** |
-| **3** | **AIN1-** | **\-** | **\-** | **\-** |
-| **4** | **GND** | **GND** | **GND** | **GND** |
-| **5** | **AIN2+** | **B\_485\_A** | **CAN2\_H** | **B\_485\_A** |
-| **6** | **\-** | **B\_485\_B** | **CAN2\_L** | **B\_485\_B** |
-| **7** | **AIN2-** | **\-** | **\-** | **\-** |
-| **8** | **GND** | **GND** | **GND** | **GND** |
-| **9** | **\-** | **CAN3\_H** | **CAN3\_H** | **\-** |
-| **10** | **\-** | **CAN3\_L** | **CAN3\_L** | **\-** |
-| **11** | **DO0** | **\-** | **\-** | **DO0** |
-| **12** | **DO1** | **\-** | **\-** | **DO1** |
-| **13** | **DO2** | **\-** | **\-** | **DO2** |
-| **14** | **DO3** | **\-** | **\-** | **DO3** |
-| **15** | **DI0** | **\-** | **\-** | **DI0** |
-| **16** | **DI1** | **\-** | **\-** | **DI1** |
-| **17** | **DI2** | **\-** | **\-** | **DI2** |
-| **18** | **DI3** | **\-** | **\-** | **DI3** |
-| **19** | **DI\_COM** | **\-** | **\-** | **DI\_COM** |
-| **20** | **GND** | **\-** | **\-** | **GND** |
+<p align="center"><img src="images/img_6937f4fa.webp" alt="SSH connection example" width="50%"></p>
 
-# 3 Getting Started  
+<p align="center"><strong>Figure 2-9 SSH Connection Example</strong></p>
 
-In this chapter, we will introduce the basic configuration of EC300.
+4. Log in with the default credentials:
+   - Username: edge
+   - Password: security@edge
 
-## 3.1 Connect to the EC300
+### 2.2.7 First Login via Web Interface
 
-You will need a computer that you can use to connect to the EC300 and log in to the command line interface. It can be connected by means of an Ethernet cable.
+1. Open a web browser and navigate to `https://192.168.4.100:9100` (using ETH2 as an example).
+2. Enter the login credentials:
+   - Username: adm
+   - Password: 123456
 
-Factory default username and password:
+<p align="center"><img src="images/img_2e45e251.webp" alt="Web login page"></p>
 
-Username: edge
+<p align="center"><strong>Figure 2-10 Web Login Page</strong></p>
 
-Password: security@edge
+> **Note**: Not all EC312 models support the WEB interface management function. For specific support, see the "Ordering Guide" section of the EC312 Series Edge Computer Product Specification.
 
-EC300 devices are factory created root by default, but login is disabled. If you need to use the root user, change the system configuration manually and type sudo -s to switch to the root user. The user edge is in the sudo group, so you can use sudo under the edge user to execute system-level commands. See the sudo Mechanism section in Chapter 5 for additional details.
+## 2.3 Quick Check
 
-Tips:
+After installation is complete, verify the following items:
 
-When command not found appears, type sudo -s to switch to the root user or use the sudo command to operate.
+- [ ] The PWR indicator is solid on, indicating normal power supply.
+- [ ] The STATUS indicator is flashing, indicating normal system startup.
+- [ ] The network cable is securely connected and the PC can ping the device IP address.
+- [ ] The SIM card is properly inserted (if cellular function is required).
+- [ ] Antennas are properly installed (if cellular/Wi-Fi/GPS function is required).
+- [ ] The device can be accessed via SSH or web interface.
 
-Note:
 
-For security reasons, we recommend that you disable the default user account and create your own account.
 
-### 3.1.1 Connecting via the SSH Console
+# Chapter 3 Common Scenario Configurations
 
-The EC300 supports SSH connections over Ethernet. Connect to the EC300 using the following default IP address.
 
-| Port | Default IP |
-| --- | --- |
-| ETH 1 | 192.168.3.100 |
-| ETH 2 | 192.168.4.100 |
 
-3.1.1.1 Linux Users  
+## Scenario 1: Connect to the Device via Ethernet
 
-Tips
+**Objective**: Connect a PC to the EC300 via Ethernet and establish management access through SSH or the web interface.
 
-These steps apply if you are connecting to EC300 on a Linux PC. Please do not apply these steps to the EC300 device itself. Before you run the ssh command, be sure to configure your PC's Ethernet port IP address to be within a specific range. ETH1:192.168.3.0/24, ETH2:192.168.4.0/24.
+**Prerequisites**: The EC300 is powered on, a network cable is available, and the PC has an Ethernet port.
 
-Use the ssh command to access the ETH1 port of the EC300 on a Linux PC.
+**Estimated Time**: Approx. 5 minutes.
 
-![](images/img_00d553f4.png)
+**Operation Steps**:
+1. Connect one end of the network cable to the ETH 1 or ETH 2 port of the EC300.
+2. Connect the other end of the network cable to the PC Ethernet port.
+3. Configure the PC IP address to be in the same subnet as the device:
+   - For ETH 1: Set PC IP to 192.168.3.x/24 (e.g., 192.168.3.10)
+   - For ETH 2: Set PC IP to 192.168.4.x/24 (e.g., 192.168.4.10)
+4. Open an SSH client (PuTTY on Windows, or terminal on Linux) and connect to the device IP address.
+5. Log in with the default SSH credentials (username: edge, password: security@edge).
 
-Type yes to continue to complete the connection.
+Alternatively, for web access:
+1. Open a web browser and navigate to `https://<device-ip>:9100`.
+2. Log in with the default web credentials (username: adm, password: 123456).
 
-![](images/img_6d0f1a5c.png)
+**Verification Method**:
+1. Ping the device IP address from the PC to confirm network connectivity.
+2. Confirm successful login via SSH or web interface.
 
-When the terminal prompt edge@edge-computer:~$ appears and shell commands can be entered, the connection is successful.
+**Common Issues**:
+- Unable to ping the device: Check whether the PC IP address is in the same subnet as the device, and verify the network cable connection.
+- Web page cannot be opened: Confirm the URL uses HTTPS and port 9100; clear the browser cache or try a different browser.
 
-![](images/img_dce2ad9c.png)
 
-##### 3.1.1.2 Windows Users
 
-Tips:
+## Scenario 2: Cellular Network Configuration
 
-These steps apply if you are connecting the EC300 on a Windows PC. Please do not apply these steps to the EC300 device itself.
+**Objective**: Connect the EC300 to the Internet via 4G/5G cellular network.
 
-Please perform the following steps on your Windows PC:
+**Prerequisites**: A valid SIM card has been inserted, the cellular antenna is installed, and the device is powered on. The device supports web management.
 
-Click the link [http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html), download PuTTY (free) software, SSH command in Windows environment to establish a connection to the edge computer EC300. The following is an example of using SSH to connect:
+**Estimated Time**: Approx. 10 minutes.
 
-![](images/img_167cf685.png)
+**Operation Steps**:
+1. Log in to the web management interface at `https://<device-ip>:9100`.
+2. Navigate to 【Network】→【Cellular】.
+3. Enable the cellular function (enabled by default).
+4. Configure the APN parameters if using a dedicated network card (obtain APN parameters from the operator).
+5. Select the network mode (Auto, 3G, 4G, LTE, WCDMA, etc.). It is recommended to select Auto.
+6. Enable or disable the default route as required.
+7. If dual-SIM is supported, configure Dual SIM settings:
+   - Enable Dual SIM.
+   - Select the main SIM card.
+   - Set the maximum number of dial attempts before switching.
+8. Configure ICMP probe parameters to detect and recover from false connections (recommended for cellular connections).
+9. Click "Save" and wait for the connection to establish.
 
-## 3.2 User Account Management
+**Verification Method**:
+1. Check the NET indicator on the device; solid on indicates successful dialing.
+2. Navigate to 【Status】→【Cellular Status】to view the IP address, signal strength, and connection details.
+3. Use the network diagnostic tool to ping an external address (e.g., 8.8.8.8).
 
-### 3.2.1 Switch to the Root User
+**Common Issues**:
+- Network connection failure: Check whether the SIM card is correctly inserted, whether the APN parameters are correct, and whether the antenna is properly connected.
+- False connection (dialing successful but unable to access the Internet): Enable ICMP probe and configure appropriate probe addresses and intervals.
+- Signal weak or no signal: Adjust the device position or antenna orientation.
 
-You can use the sudo -s command to switch to the root user. For security reasons, do not operate all commands as root.
 
-Tips
 
-Click on the link for more information on sudo commands.
+## Scenario 3: Wi-Fi Configuration
 
-[https://wiki.debian.org/sudo](https://wiki.debian.org/sudo \h)
+**Objective**: Configure the EC300 Wi-Fi function in Station mode or Access Point mode.
 
-Note
+**Prerequisites**: The device model supports Wi-Fi, the Wi-Fi antenna is installed, and the device is powered on.
 
-You may get a "permission denied" message when using some pipe or redirect behavior without root permissions. In this case, you must use 'sudo su -c' instead of '>','<','>>','<<','etc', etc. You need to include the full command in single quotes.
+**Estimated Time**: Approx. 5 minutes.
 
-### 3.2.2 Creating and Deleting User Accounts
+**Operation Steps** (Station Mode):
+1. Log in to the web management interface.
+2. Navigate to 【Network】→【Wi-Fi】→【Station】.
+3. Enable Wi-Fi.
+4. Enter or scan for the SSID of the target wireless network.
+5. Select the authentication method (Open, WPA-PSK, WPA2-PSK, WPA-PSK/WPA2-PSK Mixed).
+6. Select the encryption mode and enter the Wi-Fi password.
+7. Enable or disable the default route as required.
+8. Click "Save" and wait for the connection to establish.
 
-You can use the useradd and userdel commands to create and delete a user's account. Be sure to use these commands in the home screen to set the relevant access rights for that account. Here is an example of how to create test1 in the sudo group (the default login environment for test1 users is bash and their home directory is /home/test1).
+**Operation Steps** (Access Point Mode):
+1. Navigate to 【Network】→【Wi-Fi】→【Access Point】.
+2. Configure the SSID broadcast setting.
+3. Select the band (2.4G or 5.8G) and radio type (802.11a/n/ac or 802.11b/g/n).
+4. Set the channel, SSID, authentication method, and encryption mode.
+5. Set the Wi-Fi password (WEP Key).
+6. Configure the bandwidth, stations limit, IP address, and subnet mask.
+7. Click "Save".
 
-![](images/img_67701e13.png)
+**Verification Method**:
+1. For Station mode: Navigate to 【Status】→【Wi-Fi Status】to verify the IP address and gateway information.
+2. For AP mode: Use a wireless client to search for the configured SSID and connect.
 
-To change test1's password, use the passwd command, enter the new password and repeat to confirm the change.
+**Common Issues**:
+- Unable to connect to the target SSID: Verify the SSID and password are correct; check signal strength.
+- Client cannot obtain an IP address in AP mode: Verify the DHCP Server settings on the corresponding interface.
 
-![](images/img_32a7e5dd.png)
 
-If you want to remove user test1, use the command userdel.
 
-![](images/img_a63a4058.png)
+## Scenario 4: OpenVPN Configuration
 
-### 3.2.3 Disable the Default User Account
+**Objective**: Establish a secure VPN tunnel using OpenVPN for remote access or site-to-site connectivity.
 
-Note
+**Prerequisites**: The device is connected to the Internet via Ethernet or cellular. OpenVPN certificates and keys have been prepared.
 
-You should first create a user account before disabling the default account
+**Estimated Time**: Approx. 10 minutes.
 
-Use the passwd command to lock the default user account so that edge users cannot log in
+**Operation Steps** (OpenVPN Server):
+1. Log in to the web management interface.
+2. Navigate to 【Network】→【OpenVPN】→【Server】.
+3. Click "Add" to create a new server configuration.
+4. Configure the server name, status, interface type (tun), and network type (p2p, net30, or subnet).
+5. Configure the virtual network segment and network mask (for subnet mode).
+6. Import the CA certificate, public key certificate, private key certificate, and DH parameter files.
+7. In advanced settings, configure the server address, protocol type, port, encryption algorithm, hash algorithm, and other parameters as needed.
+8. Click "Save" and start the server.
 
-![](images/img_19f9ae77.png)
+Alternatively, import an existing OpenVPN Server configuration file containing the certificates and keys.
 
-Unlock the edge user
+**Operation Steps** (OpenVPN Client):
+1. Navigate to 【Network】→【OpenVPN】→【Client】.
+2. Click "Add" to create a new client configuration.
+3. Configure the client name, status, interface type, and network type.
+4. Enter the OpenVPN Server address, port, and protocol.
+5. Import the CA certificate, client public key certificate, and client private key certificate.
+6. Configure advanced settings as needed.
+7. Click "Save" and start the client.
 
-![](images/img_4d970ffe.png)
+**Verification Method**:
+1. Navigate to 【Status】→【OpenVPN Server Status】or 【OpenVPN Client Status】to view the connection state.
+2. Verify that the virtual IP address has been assigned and the tunnel connection duration is displayed.
 
-## 3.3 Network Administration and System Administration
+**Common Issues**:
+- Connection cannot be established: Verify the server address, port, and certificates are correct.
+- Tunnel disconnects frequently: Enable tunnel persistence and key retention in advanced settings.
 
-### 3.3.1 Web Management based on IEOS
 
-IEOS is a set of network management and system management program running on Linux system developed by InHand. IEOS provides web interface, users can access Ethernet port ip address, cellular dial-up, Wi-Fi Station, DHCP Client/Server, static routing, and network management through the web. Firewalls and other network configuration; System time, time zone, firmware upgrade and system restart can also be operated; In addition, IEOS also supports docking with InHand device management platform DeviceLive. Users can remotely monitor and manage EC300 devices through DeviceLive platform.
 
-IEOS adopts the design scheme of status and configuration separation, which is divided into three functional sections: network management, system management and status. The network management menu and the system management menu can only be used for network and system related configuration, and the status information needs to be unified to the status page.
+## Scenario 5: DeviceLive Cloud Management
 
-Important note: When using IEOS program to manage network configuration and system configuration, if you use Linux native commands at the same time, the two may affect each other, resulting in abnormal running state. It is recommended that the configuration supported by IEOS be managed through IEOS web, and the configuration not supported by IEOS, such as VPN, can be combined with native Linux commands to achieve the configuration goal.
+**Objective**: Connect the EC300 to the InHand DeviceLive platform for remote monitoring and management.
 
-#### 3.3.1.1 Login to the Web
+**Prerequisites**: The device is connected to the Internet, and a DeviceLive account is available.
+
+**Estimated Time**: Approx. 10 minutes.
+
+**Operation Steps**:
+1. Log in to the web management interface.
+2. Navigate to 【System Management】→【Basic Configuration】→【Cloud Management】.
+3. Enable the DeviceLive connection switch.
+4. Select the cloud server address (domestic or overseas platform).
+5. Click "Save".
+6. Log in to the DeviceLive platform and verify that the device appears in the device list.
+
+**Verification Method**:
+1. On the DeviceLive platform, check whether the device is online.
+2. Verify that device information (model, serial number, firmware version) is displayed correctly.
+3. Test remote operations such as configuration viewing or firmware upgrade through the platform.
+
+**Common Issues**:
+- Device cannot connect to DeviceLive: Verify the device has Internet access and the correct cloud server address is selected.
+- Device appears offline: Check the firewall rules to ensure outbound connections to the DeviceLive server are not blocked.
+
+
+
+# Chapter 4 Feature Descriptions and Parameter Reference
+
+## 4.1 User Account Management
+
+### 4.1.1 Switch to the Root User
+
+Use the `sudo -s` command to switch to the root user. For security reasons, do not operate all commands as root.
+
+> **Note**: A "permission denied" message may appear when using pipe or redirect behavior without root permissions. In this case, use `sudo su -c` instead of `>`, `<`, `>>`, `<<`, etc. Include the full command in single quotes.
+
+For more information on sudo commands, refer to [https://wiki.debian.org/sudo](https://wiki.debian.org/sudo).
+
+### 4.1.2 Creating and Deleting User Accounts
+
+Use the `useradd` and `userdel` commands to create and delete user accounts.
+
+<p align="center"><img src="images/img_67701e13.png" alt="Create user account"></p>
+
+<p align="center"><strong>Figure 4-1 Create User Account</strong></p>
+
+To change a user's password, use the `passwd` command:
+
+<p align="center"><img src="images/img_32a7e5dd.webp" alt="Change user password"></p>
+
+<p align="center"><strong>Figure 4-2 Change User Password</strong></p>
+
+To remove a user, use the `userdel` command:
+
+<p align="center"><img src="images/img_a63a4058.png" alt="Delete user account"></p>
+
+<p align="center"><strong>Figure 4-3 Delete User Account</strong></p>
+
+### 4.1.3 Disable the Default User Account
+
+> **Note**: Create a new user account before disabling the default account.
+
+Use the `passwd` command to lock the default user account:
+
+<p align="center"><img src="images/img_19f9ae77.webp" alt="Lock default user"></p>
+
+<p align="center"><strong>Figure 4-4 Lock Default User</strong></p>
+
+To unlock the edge user:
+
+<p align="center"><img src="images/img_4d970ffe.webp" alt="Unlock default user"></p>
+
+<p align="center"><strong>Figure 4-5 Unlock Default User</strong></p>
+
+
+
+## 4.2 Web Management based on IEOS
+
+IEOS is a network management and system management program developed by InHand that runs on Linux systems. IEOS provides a web interface through which users can perform network management and system management tasks. The IEOS is based on Debian 11, so native Linux commands can also be used for network and system administration. However, when IEOS is enabled, it takes over network and system management. Using native Linux commands for network and system management may fail at this time. IEOS is enabled by default. If users need to perform network and system management based on Linux native command line, IEOS must be disabled first.
+
+IEOS adopts a design scheme of status and configuration separation, divided into three functional sections: Network Management, System Management, and Status. The Network Management and System Management menus are used for configuration only, while status information is displayed on the Status page.
+
+> **Important Note**: When using IEOS to manage network and system configuration, using Linux native commands simultaneously may cause conflicts and result in abnormal running states. It is recommended that configuration supported by IEOS be managed through the IEOS web interface, and configuration not supported by IEOS (such as VPN) be combined with native Linux commands.
+
+IEOS uses port 9100 as the HTTPS connection port and does not support access through HTTP. When users access the web using HTTP, they are automatically redirected to HTTPS.
+
+> **Important Note**: When IEOS is enabled, it reserves port numbers from 9100 to 9200 for internal communication. Client programs should avoid using these port numbers to prevent conflicts and malfunctions.
+
+### 4.2.1 Login to the Web
 
 Considering that the user's program may need to use the standard HTTP/HTTPS port number 80/443, IEOS uses the port number 9100 as the HTTPS connection port, and does not support access through HTTP; When the user uses HTTP to access the web, it will automatically jump to HTTPS. This document uses eth2's default address of 192.168.4.100 as an example.
 
@@ -363,23 +581,31 @@ login password: 123456
 
 Important note: When IEOS program is enabled, it will reserve some port numbers for internal communication. The reserved port number ranges from 9100 to 9200. After IEOS is enabled, the client's program should avoid using these port numbers, otherwise it may cause conflicts and malfunction.
 
-![](images/img_3aad6c11.png)
+<p align="center"><img src="images/img_3aad6c11.webp" alt="Web Login Page (IEOS HTTPS)"></p>
 
-#### 3.3.1.2 Network Management
+<p align="center"><strong>Figure 4-6 Web Login Page (IEOS HTTPS)</strong></p>
 
-##### 3.3.1.2.1 Configuring the Ethernet Interface
+### 4.2.2 Network Management
+
+#### 4.2.2.1 Configuring the Ethernet Interface
 
 Configure the eth1 interface with a static IP address
 
-![](images/img_271d8ac4.png)
+<p align="center"><img src="images/img_271d8ac4.webp" alt="Ethernet Interface Static IP Configuration"></p>
+
+<p align="center"><strong>Figure 4-7 Ethernet Interface Static IP Configuration</strong></p>
 
 Configure the eth1 interface with a DHCP Client
 
-![](images/img_e7efc66e.png)
+<p align="center"><img src="images/img_e7efc66e.webp" alt="Ethernet Interface DHCP Client Configuration"></p>
+
+<p align="center"><strong>Figure 4-8 Ethernet Interface DHCP Client Configuration</strong></p>
 
 Start the dhcp server function on the eth1 interface and assign an address to the downstream device connected to eth1.
 
-![](images/img_a8ac43d5.png)
+<p align="center"><img src="images/img_a8ac43d5.webp" alt="Ethernet Interface DHCP Server Configuration"></p>
+
+<p align="center"><strong>Figure 4-9 Ethernet Interface DHCP Server Configuration</strong></p>
 
 DHCP Server configuration parameters description:
 
@@ -391,9 +617,11 @@ Max Address Number: The maximum number of addresses in the address pool.
 
 Lease period: The length of the lease period
 
-##### 3.3.1.2.2 Configure Cellular Dialing
+#### 4.2.2.2 Configure Cellular Dialing
 
-![](images/img_dd8d7ea6.png)
+<p align="center"><img src="images/img_dd8d7ea6.webp" alt="Cellular Dialing Configuration"></p>
+
+<p align="center"><strong>Figure 4-10 Cellular Dialing Configuration</strong></p>
 
 Cellular network parameters Description:
 
@@ -407,7 +635,9 @@ Enable Default Route: Enable the add default route function, when enabled, when 
 
 Metric: This is the metric for the default routing of the cellular port. When default routing is configured on the cellular, Wi-Fi, and Ethernet ports, the metric with the lowest value is used.
 
-![](images/img_e039cd29.png)
+<p align="center"><img src="images/img_e039cd29.webp" alt="Cellular Dual SIM Configuration"></p>
+
+<p align="center"><strong>Figure 4-11 Cellular Dual SIM Configuration</strong></p>
 
 Dual SIM Enabled: Dual Sim enabled. In order to improve the reliability of the network, EC300 supports dual SIM and single dial. Two sim cards need to be inserted into the device. If the sim1 card fails to dial because of unpaid charges, it will automatically switch to the sim2 card for dialing. By default, it is off.
 
@@ -419,7 +649,9 @@ APN Profile: sim card selected dialing parameters set, the default value is auto
 
 PIN Code: The PIN code of the sim card.
 
-![](images/img_af1da5e0.png)
+<p align="center"><img src="images/img_af1da5e0.webp" alt="Cellular ICMP Probe Configuration"></p>
+
+<p align="center"><strong>Figure 4-12 Cellular ICMP Probe Configuration</strong></p>
 
 Wireless cellular networks are complex, sometimes there will be dial-up false connection, that is, the dial-up state is successful, but the target address can not be ping; When this happens, you can simply dial again and get back to normal. IEOS cellular dialing supports ICMP probing to detect spurious connections. It is recommended that customers with cellular connections enable ICMP probing so that false connections can be quickly recovered.
 
@@ -435,7 +667,9 @@ Detection Max Retries: the maximum number of probes; When a probe fails to reach
 
 Detection Strict: Whether strict detection is enabled. When strict detection is turned off, the detection program will detect whether the packet received by the cellular interface has changed in each detection cycle. If there is a change, it means that the cellular network is working, and ICMP packets will not be sent for detection, so as to save some traffic; If the probe is turned on, ICMP probe packets will be sent periodically regardless of whether the number of packets received by the cellular interface has changed. By default, it is off.
 
-![](images/img_068493a9.png)
+<p align="center"><img src="images/img_068493a9.webp" alt="Cellular Advanced Configuration"></p>
+
+<p align="center"><strong>Figure 4-13 Cellular Advanced Configuration</strong></p>
 
 In Advanced configuration are some less commonly used Settings options.
 
@@ -447,14 +681,16 @@ Dial Interval; But if a dial fails, the amount of time to wait before making ano
 
 Signal Query Interval: Signal query interval. When the signal is bad, you may have problems with false connections; At this time, redialing has a certain probability to solve the problem of false connection. The dialing program will check the signal strength at regular intervals; here, the signal detection period is configured.
 
-##### 3.3.1.2.3 Configure the Wi-Fi 
+#### 4.2.2.3 Configure the Wi-Fi 
 
-  
+
 The EC series supports both Station and AP modes.
 
-##### 3.3.1.2.3.1 Station Mode  
+**Station Mode**  
 
-![](images/img_40f8295b.png)
+<p align="center"><img src="images/img_40f8295b.webp" alt="Wi-Fi Station Mode Configuration"></p>
+
+<p align="center"><strong>Figure 4-14 Wi-Fi Station Mode Configuration</strong></p>
 
 Enable Wi-Fi: Enable the switch; Off by default
 
@@ -470,10 +706,11 @@ Encrypt Mode:CCMP, TKIP, TKIP and CCMP are supported
 
 WPA/WPA2 PSK Key: Key information
 
-##### 3.3.1.2.3.2 Access Point Mode  
+**Access Point Mode**
 
-#### **![](images/img_43cb0c3b.png)  
-**
+<p align="center"><img src="images/img_43cb0c3b.webp" alt="Wi-Fi Access Point Mode Configuration"></p>
+
+<p align="center"><strong>Figure 4-15 Wi-Fi Access Point Mode Configuration</strong></p>
 
 **SSID Broadcast:  
 **
@@ -544,11 +781,13 @@ Local IP address in Wi-Fi AP mode (default: 192.168.100.100).
 
 Subnet configuration parameter, default: 255.255.255.0.  
 
-##### 3.3.1.2.4 Configuring Static Routes  
+#### 4.2.2.4 Configuring Static Routes  
 
 This is a static routing for Ethernet. When the default routing for Ethernet, cellular, and wifi is configured, the default route with the lowest metric value will take effect. You need to make sure that the Metric value of the default route is different.
 
-![](images/img_4ffada65.png)
+<p align="center"><img src="images/img_4ffada65.webp" alt="Static Route Configuration"></p>
+
+<p align="center"><strong>Figure 4-16 Static Route Configuration</strong></p>
 
 Static route configuration parameters:
 
@@ -562,37 +801,47 @@ Gateway: Next hop address
 
 Metric: The metric for the static route
 
-##### 3.3.1.2.5 Configuring the Firewall
+#### 4.2.2.5 Configuring the Firewall
 
-![](images/img_076c26d7.png)
+<p align="center"><img src="images/img_076c26d7.webp" alt="Firewall Configuration"></p>
+
+<p align="center"><strong>Figure 4-17 Firewall Configuration</strong></p>
 
 Only the iptables command is currently supported for configuration.
 
-##### 3.3.1.2.6 Configuring DNS
+#### 4.2.2.6 Configuring DNS
 
-![](images/img_abf4a64a.png)
+<p align="center"><img src="images/img_abf4a64a.webp" alt="DNS Configuration"></p>
+
+<p align="center"><strong>Figure 4-18 DNS Configuration</strong></p>
 
 DNS Servers: DNS Server address, up to 4 can be configured
 
 Domain name hijacking: Domain name hijacking function, can realize the binding between IP address and domain name.
 
-![](images/img_4cb6c127.png)
+<p align="center"><img src="images/img_4cb6c127.webp" alt="DNS Domain Hijacking Configuration"></p>
 
-##### 3.3.1.2.7 Network Diagnostics
+<p align="center"><strong>Figure 4-19 DNS Domain Hijacking Configuration</strong></p>
+
+#### 4.2.2.7 Network Diagnostics
 
 Network diagnostics support ping, traceroute and nslookup functions.
 
-![](images/img_bfdec343.png)
+<p align="center"><img src="images/img_bfdec343.webp" alt="Network Diagnostics"></p>
 
-#### 3.3.1.2.8 Configuring OpenVPN 
+<p align="center"><strong>Figure 4-20 Network Diagnostics</strong></p>
 
-##### 3.3.1.2.8.1 Configuring OpenVPN Server 
+#### 4.2.2.8 Configuring OpenVPN 
+
+**Configuring OpenVPN Server**
 
 The configuration of OpenVPN can be configured manually on the web page or by importing a configuration file. 
 
 1\. Manual Configuration 
 
-![](images/img_7243d20a.png)  
+<p align="center"><img src="images/img_7243d20a.webp" alt="OpenVPN Server Manual Configuration"></p>
+
+<p align="center"><strong>Figure 4-21 OpenVPN Server Manual Configuration</strong></p>
 
 1.  **Server Name** : The string that uniquely identifies the server-side configuration. It can contain only English letters and numbers, start with a letter, and can be no more than 64 characters in length. 
 2.  **Status** : On or off, used to control the start or stop of the OpenVPN Server. 
@@ -604,7 +853,6 @@ The configuration of OpenVPN can be configured manually on the web page or by im
 8.  **Public Key Certificate** : You need to import the server's public key certificate file here. 
 9.  **Private Key Certificate** : The private key certificate file of the import server is required here.
 10.  **DH parameter** : The DH parameter file of the import server is required here.  
-     
 
 In the advanced settings, you can configure some parameters with low frequency of change.   
 
@@ -624,33 +872,35 @@ In the advanced settings, you can configure some parameters with low frequency o
 14.  **Connection detection timeout** : If no response is received within the timeout period, determine that the connection is disconnected and try to restart.
 15.  **Allow client-to-client communication** : Whether to allow the client and the client to communicate with each other.
 16.  **Push to client** : can push information such as routing and DNS to the client.   
-     
 
-2. Import Configuration  
+17.  Import Configuration  
 
-![](images/img_0d367876.png)  
+<p align="center"><img src="images/img_0d367876.webp" alt="OpenVPN Server Import Configuration"></p>
+
+<p align="center"><strong>Figure 4-22 OpenVPN Server Import Configuration</strong></p>
 
 1.  **Server Name** : The string that uniquely identifies the server configuration. It can contain only English letters and numbers and start with a letter. The string must be no more than 64 characters in length. 
 2.  **Status** : On or off, used to control the start or stop of the OpenVPN Server. 
 3.  **Interface Type** : Currently, only tun mode is supported. 
 4.  **Profile** : import the OpenVPN Server configuration file, which must contain information such as the CA certificate, Server certificate, and Server key.   
-    
 
-##### 3.3.1.2.8.2 Configuring the OpenVPN Client 
+**Configuring the OpenVPN Client**
 
 1. Manual Configuration  
 
-![](images/img_50f62399.png)  
+<p align="center"><img src="images/img_50f62399.webp" alt="OpenVPN Client Manual Configuration"></p>
+
+<p align="center"><strong>Figure 4-23 OpenVPN Client Manual Configuration</strong></p>
 
 1.  **Client Name** : A string that uniquely identifies the server configuration. It can contain only English letters and numbers, start with a letter, and can be no more than 64 characters in length. 
 2.  **Status** : On or off, used to control the start or stop of the OpenVPN Server. 
 3.  **Interface Type** : Currently, only tun mode is supported. 
 4.  **Network Type** : Support p2p , net30 and subnet . p2p and net30 used to establish a point-to-point connection, subnet used to establish a virtual local area network. When the network type is p2p or net30 you need to configure the local IP address and remote IP address. 
 5.  **OpenVPN Server** : configure the ip address, port number, and protocol information of the OpenVPN Server in the format of ip port proto, for example: 192.168.3.200 1194 udp you can configure up to 10 server addresses. The OpenVPN client attempts to establish a connection one at a time in order until the OpenVPN tunnel is successfully established.   
-    
+
 6.  **Log Level** : Value range 1 to 11 , the larger the value, the more detailed the log information, ALL view the OpenVPN log in the type log. 
 7.  **CA Certificate** : The CA certificate file needs to be imported here.  
-    
+
 8.  **Public Key Certificate** : The public key certificate file of the client needs to be imported here. 
 9.  **Private Key Certificate** : The private key certificate file of the client needs to be imported here. 
 
@@ -665,321 +915,536 @@ In the advanced settings, you can configure some parameters with low frequency o
 7.  **User Group** : Specify the user group to run the OpenVPN process.
 8.  **Connection Detection Interval** : The cycle of sending heartbeat packets to check whether the VPN connection is alive. 
 9.  **Connection detection timeout** : If no response is received within the timeout period, determine that the connection is disconnected and try to restart.  
-    
 
 2\. Import Configuration  
 
-![](images/img_d9658234.png)  
+<p align="center"><img src="images/img_d9658234.webp" alt="OpenVPN Client Import Configuration"></p>
+
+<p align="center"><strong>Figure 4-24 OpenVPN Client Import Configuration</strong></p>
 
 1.  **Client Name** : The string that uniquely identifies the client configuration. It can contain only English letters and numbers and start with a letter. The string must be no more than 64 characters in length. 
 2.  **Status** : Turns on or off to control the start or stop of the OpenVPN client. 
 3.  **Interface Type** : Currently, only tun mode is supported. 
 4.  **Profile** : Import the OpenVPN Client configuration file. The configuration file must contain information such as the CA certificate, Client certificate, and Client key. 
 
-#### 3.3.1.3 System Administration  
 
-##### 3.3.1.3.1 Basic Configuration
+### 4.2.3 System Administration
 
-Cloud management  
+#### 4.2.3.1 Basic Configuration
 
-![](images/img_f14300c1.png)
+**Cloud Management**
 
-Enabled: the enable switch that connects to the DeviceLive platform; DeviceLive is the remote monitoring and management platform of Inhantong equipment;
+Navigate to 【System Management】→【Basic Configuration】→【Cloud Management】 to configure.
 
-Cloud Server: DeviceLive platform has 2 addresses; One is the address of the domestic platform, the other is the address of the overseas platform; Here you choose which platform to connect to.
+<p align="center"><img src="images/img_f14300c1.webp" alt="Cloud management configuration"></p>
 
-Time zone and NTP client
+<p align="center"><strong>Figure 4-25 Cloud Management Configuration</strong></p>
 
-![](images/img_3c9c6b8f.png)
+| Parameter | Description |
+|-----------|-------------|
+| Enabled | Enable switch for connecting to the DeviceLive platform |
+| Cloud Server | Select the domestic or overseas DeviceLive platform address |
 
-A maximum of 10 NTP Server addresses can be configured, and the program periodically sends synchronization requests to each server address in turn. After the synchronization is successful, the system time is written to the RTC and no longer continues to send synchronization requests to the later NTP servers.
+**Time Zone and NTP Client**
 
-In addition to using NTP to synchronize the time, there is a synchronization button in the Device Info status page to synchronize the time manually, but only when the device time and the local time (the time of accessing the computer used by the device) differ by more than 3s, this synchronization button will be displayed.
+Navigate to 【System Management】→【Basic Configuration】→【Time Zone and NTP】 to configure.
 
-![](images/img_91a08423.png)
+<p align="center"><img src="images/img_3c9c6b8f.webp" alt="Time zone and NTP configuration"></p>
 
-Configuration import, export and factory restore are supported here.
+<p align="center"><strong>Figure 4-26 Time Zone and NTP Configuration</strong></p>
 
-##### 3.3.1.3.2 Firmware Upgrade
+A maximum of 10 NTP Server addresses can be configured. The program periodically sends synchronization requests to each server address in turn. After successful synchronization, the system time is written to the RTC and synchronization requests to subsequent NTP servers stop.
 
-##### ![](images/img_e0a81183.png)
+In addition to NTP synchronization, a manual synchronization button is available on the Device Info status page. This button is displayed only when the device time and local time differ by more than 3 seconds.
 
-The automatic restart option is turned off by default. After upgrading the firmware, you need to manually restart the system to take effect; When the automatic restart option is enabled, the system will be restarted automatically after the firmware upgrade is successful.
+<p align="center"><img src="images/img_91a08423.webp" alt="Manual time synchronization"></p>
 
-##### 3.3.1.3.3 Others
+<p align="center"><strong>Figure 4-27 Manual Time Synchronization</strong></p>
 
-![](images/img_e31ea691.png)
+**Configuration Import, Export, and Factory Restore**
 
-This page has 2 functions: restart the system and reset the system. Resetting the system needs to be used carefully. The resetting system function will restore the system configuration status and file system status to the factory, which means that the software installed by the user will also be cleared.
+Navigate to 【System Management】→【Basic Configuration】→【Configuration Management】 to import, export, or restore configuration.
 
-#### 3.3.1.4 Status
+#### 4.2.3.2 Firmware Upgrade
 
-##### 3.3.1.4.1 Device Information
+Navigate to 【System Management】→【Firmware Upgrade】 to upgrade the device firmware.
+
+<p align="center"><img src="images/img_e0a81183.webp" alt="Firmware upgrade"></p>
+
+<p align="center"><strong>Figure 4-28 Firmware Upgrade</strong></p>
+
+The automatic restart option is turned off by default. After upgrading the firmware, manually restart the system for the upgrade to take effect. When automatic restart is enabled, the system restarts automatically after a successful firmware upgrade.
+
+#### 4.2.3.3 Others
+
+Navigate to 【System Management】→【Others】 to restart or reset the system.
+
+<p align="center"><img src="images/img_e31ea691.png" alt="System restart and reset"></p>
+
+<p align="center"><strong>Figure 4-29 System Restart and Reset</strong></p>
+
+> **Warning**: The reset system function restores the system configuration and file system to factory defaults. Software installed by the user will also be cleared. Use with caution.
+
+
+
+### 4.2.4 Status
+
+#### 4.2.4.1 Device Information
 
 The device information status page shows hostname, device model, serial number, firmware version, kernel version, filesystem version, and an overview of CPU, memory, and disk space usage.
 
-##### ![](images/img_8e355b68.png)3.3.1.4.2 Cellular Status Information
+<p align="center"><img src="images/img_8e355b68.webp" alt="Device information"></p>
 
-The cellular status page shows IMEI, IMSI, ICCID, signal strength of the current SIM, as well as the IP address, DNS and other information obtained through dialing.
+<p align="center"><strong>Figure 4-30 Device Information</strong></p>
 
-![](images/img_bcf350c8.png)
+#### 4.2.4.2 Cellular Status Information
 
-##### 3.3.1.4.3 Wi-Fi Status Information
+The cellular status page shows IMEI, IMSI, ICCID, signal strength of the current SIM, as well as the IP address, DNS, and other information obtained through dialing.
+
+<p align="center"><img src="images/img_bcf350c8.webp" alt="Cellular status"></p>
+
+<p align="center"><strong>Figure 4-31 Cellular Status Information</strong></p>
+
+#### 4.2.4.3 Wi-Fi Status Information
 
 The Wi-Fi status page shows the IP address, gateway, and DNS information obtained after the Wi-Fi connection was successful.
 
-![](images/img_1a458d17.png)
+<p align="center"><img src="images/img_1a458d17.webp" alt="Wi-Fi status"></p>
 
-##### 3.3.1.4.4 DHCP Server Status Information
+<p align="center"><strong>Figure 4-32 Wi-Fi Status Information</strong></p>
 
-The DHCP Server status page shows the assigned IP address of the device as a DHCP Server, the client hostname, the client host mac, and the expiration time.
+#### 4.2.4.4 DHCP Server Status Information
 
-![](images/img_682ec2fb.png)
+The DHCP Server status page shows the assigned IP address of the device as a DHCP Server, the client hostname, the client host MAC, and the expiration time.
 
-##### 3.3.1.4.5 Routing Status Information
+<p align="center"><img src="images/img_682ec2fb.webp" alt="DHCP server status"></p>
 
-The route status page displays IPv4 direct route, static route and route neighbor information.
+<p align="center"><strong>Figure 4-33 DHCP Server Status Information</strong></p>
 
-![](images/img_886e51bc.png)
+#### 4.2.4.5 Routing Status Information
 
-##### 3.3.1.4.6 Firewall Status Information
+The route status page displays IPv4 direct route, static route, and route neighbor information.
 
-Firewall status information shows filtering rules, IP address mapping rules and other information.
+<p align="center"><img src="images/img_886e51bc.webp" alt="Routing status"></p>
 
-![](images/img_15ffc561.png)
+<p align="center"><strong>Figure 4-34 Routing Status Information</strong></p>
 
-##### 3.3.1.4.7 Log Information
+#### 4.2.4.6 Firewall Status Information
 
-The log page can view the system log, user log and set the log level, including Error, Info, Debug and other levels. Logs can also be downloaded locally.
+Firewall status information shows filtering rules, IP address mapping rules, and other information.
 
-![](images/img_9fbe228b.png)
+<p align="center"><img src="images/img_15ffc561.webp" alt="Firewall status"></p>
 
-### **3.3.1.4.8 OpenVPN Status Information** 
+<p align="center"><strong>Figure 4-35 Firewall Status Information</strong></p>
 
-### **3.3.1.4.8.1 OpenVPN Server Status Information** 
+#### 4.2.4.7 Log Information
 
-On the OpenVPN Server Status page, you can view information such as the status update time and the connected OpenVPN clients. 
+The log page can view the system log, user log, and set the log level, including Error, Info, Debug, and other levels. Logs can also be downloaded locally.
 
-![](images/img_17f57b10.png)  
+<p align="center"><img src="images/img_9fbe228b.webp" alt="Log information"></p>
 
-### 3.3.1.4.8.2 OpenVPN Client Status Information 
+<p align="center"><strong>Figure 4-36 Log Information</strong></p>
 
-On the OpenVPN Client Status page, you can view information such as the virtual IP address obtained by the client and the tunnel connection duration.  
+#### 4.2.4.8 OpenVPN Status Information
 
-![](images/img_4d641c5b.png)  
+**OpenVPN Server Status**
 
-### 3.3.2 Linux-based command-line management
+On the OpenVPN Server Status page, information such as the status update time and the connected OpenVPN clients can be viewed.
 
-When using the Linux command line for network and system configuration, the first thing you need to do is close the IEOS program. IEOS is managed through systemctl,  
+<p align="center"><img src="images/img_17f57b10.webp" alt="OpenVPN server status"></p>
 
-How to turn off IEOS is as follows:
+<p align="center"><strong>Figure 4-37 OpenVPN Server Status</strong></p>
 
-systemctl stop ieos\_daemon  
+**OpenVPN Client Status**
 
-This shutdown only applies to this startup, and IEOS programs will still start after the system is rebooted. Here's how to prevent IEOS programs from starting:
+On the OpenVPN Client Status page, information such as the virtual IP address obtained by the client and the tunnel connection duration can be viewed.
 
-systemctl disable ieos\_daemon  
+<p align="center"><img src="images/img_4d641c5b.webp" alt="OpenVPN client status"></p>
 
-Important note: After IEOS is turned off, wireless networking functions such as dialing and Wi-Fi require native Linux commands, and there is no way to remotely manage devices on the DeviceLive platform.
+<p align="center"><strong>Figure 4-38 OpenVPN Client Status</strong></p>
 
-#### 3.3.2.1 Network management
 
-##### 3.3.2.1.1 Set up a Static IP Address
 
-If you want to set static IP address for EC300, through the command **vim/etc/network/interfaces.d/eth1** or **vim/etc/network/interfaces.d/eth2**  to modify the corresponding network configuration file to set the default gateway, address, Network and subnet mask of Ethernet interface. As an example, let's set a static IP address for the eth2 port:
+## 4.3 Linux-based Command-Line Management
 
-![](images/img_c9abd8ff.png)
+### 4.3.1 Network management
 
-After changing the interface IP configuration, run /etc/init.d/networking restart to restart the network service for the configuration to take effect.
+When using the Linux command line for network and system configuration, IEOS must be disabled first. IEOS is managed through systemctl.
 
-##### 3.3.2.1.2 Set up a Dynamic IP Address
+To stop IEOS (applies only to the current boot):
 
-If you want to set dynamic IP address for EC300, through the command  
+```
+systemctl stop ieos_daemon
+```
 
-**vim/etc/network/interfaces.d/eth1** or **vim/etc/network/interfaces.d/eth2** to modify the corresponding network configuration file. Set it to DHCP after **inet** will automatically get the IP address.  
+To prevent IEOS from starting after reboot:
 
-Here is an example of setting a dynamic IP to the eth1 port.
+```
+systemctl disable ieos_daemon
+```
 
-![](images/img_803a77ed.png)
+> **Important Note**: After IEOS is turned off, wireless networking functions such as dialing and Wi-Fi require native Linux commands. Remote management on the DeviceLive platform is not available.
 
-After changing the interface IP configuration, run **/etc/init.d/networking** restart to restart the network service for the configuration to take effect.
+#### 4.3.1.1 Set Up a Static IP Address
 
-#### 3.3.2.3 System Administration
+Edit `/etc/network/interfaces.d/eth1` or `/etc/network/interfaces.d/eth2` to set the default gateway, address, network, and subnet mask:
 
-##### 3.3.2.3.1 Querying the Firmware Version
+<p align="center"><img src="images/img_c9abd8ff.webp" alt="Static IP command line configuration"></p>
 
-To check the computer firmware version for the EC300, type:
+<p align="center"><strong>Figure 4-39 Static IP Command Line Configuration</strong></p>
 
-![](images/img_d61266d8.png)
+After changing the interface IP configuration, run `/etc/init.d/networking restart` to restart the network service.
 
-##### 3.3.2.3.2 Check Available Disk Space
+#### 4.3.1.2 Set Up a Dynamic IP Address
 
-To determine the amount of available drive space, use the df command with the **\-h** option. The system will return the amount of drive space broken down by file system. For EC300 products, the disk partition available to users is **/dev/mmcblk0p8**. Here's an example:
+Edit the corresponding network configuration file and set the interface to DHCP after `inet`:
 
-##### ![](images/img_27bb1f32.png)
+<p align="center"><img src="images/img_803a77ed.webp" alt="DHCP command line configuration"></p>
 
-##### 3.3.2.3.3 Adjust the Time
+<p align="center"><strong>Figure 4-40 DHCP Command Line Configuration</strong></p>
 
-The EC300 has two time Settings. One is system time and the other is RTC (Real Time Clock) time, which is maintained by the EC300's hardware. Use the date command to query the current system time or to set a new system time. Use the **hwclock** command to query the current RTC time or set a new RTC time.
+After changing the interface IP configuration, run `/etc/init.d/networking restart` to restart the network service.
 
-Set the system time with the command date **MMDDhhmmYYYY**:
+### 4.3.2 System Administration
 
-MM: month
+#### 4.3.2.1 Query Firmware Version
 
-DD: day
+To check the computer firmware version:
 
-hh: hour
+<p align="center"><img src="images/img_d61266d8.webp" alt="Query firmware version"></p>
 
-mm: minutes
+<p align="center"><strong>Figure 4-41 Query Firmware Version</strong></p>
 
-YYYY: Year
+#### 4.3.2.2 Check Available Disk Space
 
-![](images/img_6aa3b4ee.png)
+Use the `df -h` command to check available drive space. For EC300 products, the disk partition available to users is `/dev/mmcblk0p8`.
 
-RTC time can be set to system time using the following command
+<p align="center"><img src="images/img_27bb1f32.webp" alt="Check disk space"></p>
 
-![](images/img_96bfc673.png)
+<p align="center"><strong>Figure 4-42 Check Available Disk Space</strong></p>
 
-Click on the link below for more details about the date and time:
+#### 4.3.2.3 Adjust the Time
 
-[https://www.debian.org/doc/manuals/system-administrator/ch-sysadmin-time.html](https://www.debian.org/doc/manuals/system-administrator/ch-sysadmin-time.html)
+The EC300 has two time settings: system time and RTC (Real Time Clock) time. Use the `date` command to query or set the system time. Use the `hwclock` command to query or set the RTC time.
 
-[https://wiki.debian.org/DateTime](https://wiki.debian.org/DateTime)
+Set the system time with the command `date MMDDhhmmYYYY`:
 
-##### 3.3.2.3.4 Set Time Zone
+<p align="center"><img src="images/img_6aa3b4ee.webp" alt="Set system time"></p>
 
-There are two ways to configure the time zone for the EC300. One is to use the command **tzselect**. The other is to use the **/etc/localtime** file.
+<p align="center"><strong>Figure 4-43 Set System Time</strong></p>
 
-##### 3.3.2.3.5 Use the Tzselect Command
+Set the RTC time to the system time:
 
-When you type the **tzselect** command, you will be taken to the area selection screen. Select the approximate area (divided by continent and ocean) and enter the number in front of the continent or ocean.
+<p align="center"><img src="images/img_96bfc673.webp" alt="Set RTC time"></p>
 
-![](images/img_5f6a40da.png)
+<p align="center"><strong>Figure 4-44 Set RTC Time</strong></p>
 
-Then select the continent or the country under the ocean
+For more details about date and time, refer to:
+- [https://www.debian.org/doc/manuals/system-administrator/ch-sysadmin-time.html](https://www.debian.org/doc/manuals/system-administrator/ch-sysadmin-time.html)
+- [https://wiki.debian.org/DateTime](https://wiki.debian.org/DateTime)
 
-![](images/img_45fa689a.png)
+#### 4.3.2.4 Set Time Zone
 
-Follow the steps above to get the China time zone keyword Asia/Shanghai and execute the following command to set the time zone.
+There are two ways to configure the time zone: using the `tzselect` command or the `/etc/localtime` file.
 
-![](images/img_c9c49ab1.png)
+**Using tzselect**
 
-##### 3.3.2.3.6 Using a Localtime File
+When typing the `tzselect` command, select the approximate area by entering the number in front of the continent or ocean.
 
-The localtime file is stored in **/etc/localtime** and is used by the GNU library for C (glibc) if no value is set for the TZ environment variable. This file is either a copy of **/usr/share/zoneinfo/file** or a symbolic link to it. If EC300 cannot find**/usr/share/zoneinfo/file**, please download from the website when you need the time zone information file ([https://www.iana.org/time-zones](https://www.iana.org/time-zones)), and links to the localtime file in the EC300.
+<p align="center"><img src="images/img_5f6a40da.webp" alt="tzselect area selection"></p>
 
-Note:
+<p align="center"><strong>Figure 4-45 tzselect Area Selection</strong></p>
 
-After successfully downloading the required time zone information file, unzip it, and then compile and generate the corresponding binary file using zic command. The generated time zone file is "**/usr/share/zoneinfo/custom time zone filename**".
+Then select the country under the continent:
 
-# 4 Advanced Configuration of the Peripheral Interface
+<p align="center"><img src="images/img_45fa689a.webp" alt="tzselect country selection"></p>
 
-In this chapter, we will introduce the advanced configuration of peripheral interfaces for EC300, an edge computer based on Arm architecture.
+<p align="center"><strong>Figure 4-46 tzselect Country Selection</strong></p>
 
-This chapter covers the following topics:
+After obtaining the time zone keyword, execute the following command to set the time zone:
 
-## 4.1 Serial Ports
+<p align="center"><img src="images/img_c9c49ab1.webp" alt="Set time zone"></p>
 
-EC300 has four serial ports, one serial port supports RS485, three serial ports support RS-232 or RS-485 mode.
+<p align="center"><strong>Figure 4-47 Set Time Zone</strong></p>
 
-The corresponding device node for COM1 is /dev/ttyS4
+**Using a Localtime File**
 
-The device node for COM2 is /dev/ttyS5
+The localtime file is stored in `/etc/localtime`. If `/usr/share/zoneinfo/file` is not available, download the time zone information file from [https://www.iana.org/time-zones](https://www.iana.org/time-zones), and link it to the localtime file on the EC300.
 
-The device node for COM3 is /dev/ttyS6
+> **Note**: After downloading the time zone information file, unzip it and compile the corresponding binary file using the `zic` command. The generated time zone file is `/usr/share/zoneinfo/custom_time_zone_filename`.
 
-COM4 is represented by /dev/ttyS8
 
-### 4.1.1 Change the Serial Port Settings
 
-Check and set the serial port with the **stty** command
+## 4.4 Peripheral Interfaces
 
-To see the details, type **sudo stty --help**:
+### 4.4.1 Serial Ports
 
-![](images/img_9ca9b539.png)
+The EC300 has four serial ports. COM1 supports RS-232/RS-485. COM2 supports RS-485. COM3 and COM4 are expandable serial ports supporting RS-232/RS-485.
 
-![](images/img_a16b9f27.png)
+| Serial Port | Device Node | Mode |
+|-------------|-------------|------|
+| COM1 | /dev/ttyS4 | RS-232 / RS-485 |
+| COM2 | /dev/ttyS5 | RS-485 |
+| COM3 | /dev/ttyS6 | RS-232 / RS-485 (expandable) |
+| COM4 | /dev/ttyS8 | RS-232 / RS-485 (expandable) |
 
-![](images/img_8e927bd5.png)
+**Standard Serial Port Pin Definition**
 
-![](images/img_0b433896.png)
+<p align="center"><img src="images/img_2ed1f31d.webp" alt="Standard serial port"></p>
 
-![](images/img_a1fc4594.png)
+<p align="center"><strong>Figure 4-48 Standard Serial Port</strong></p>
 
-### 4.1.2 Check the Serial Port Information
+| Pin | COM1 (RS-232) | COM1 (RS-485) | COM2 (RS-485) |
+|-----|---------------|---------------|---------------|
+| A1 | — | A+ | — |
+| B1 | — | B- | — |
+| RX1 | RX | — | — |
+| TX1 | TX | — | — |
+| GND | GND | GND | — |
+| A2 | — | — | A+ |
+| B2 | — | — | B- |
+| GND | — | — | GND |
 
-![](images/img_704eb9b5.png)
+**Expandable Serial Port**
 
-### 4.1.3 Set the Baud Rate of COM1 Serial Port
+<p align="center"><img src="images/img_53b560bc.webp" alt="Expandable serial port" width="50%"></p>
 
-![](images/img_6907f3ee.png)
+<p align="center"><strong>Figure 4-49 Expandable Serial Port</strong></p>
 
-Note
+> **Remark**: The specific support for expandable serial ports depends on the model of the expansion module.
 
-Details about the stty command are available at the following link
+**Change Serial Port Settings**
 
-[http://www.gnu.org/software/coreutils/manual/coreutils.html](http://www.gnu.org/software/coreutils/manual/coreutils.html)
+Check and set the serial port with the `stty` command.
 
-## 4.2 USB Interface
+<p align="center"><img src="images/img_9ca9b539.webp" alt="stty command help"></p>
 
-The EC300 provides a USB 2.0 Host interface, which is mainly used to expand storage.
+<p align="center"><strong>Figure 4-50 stty Command Help</strong></p>
 
-The EC300 supports USB storage device hotplugging.
+<p align="center"><img src="images/img_a16b9f27.webp" alt="stty command example 1"></p>
 
-Note
+<p align="center"><strong>Figure 4-51 stty Command Example 1</strong></p>
 
-Remember to enter the sync sync command before disconnecting your USB mass storage device to prevent data loss. When you disconnect the storage device, exit from the mount directory.
+<p align="center"><img src="images/img_8e927bd5.webp" alt="stty command example 2"></p>
 
-## 4.3 MicroSD Card
+<p align="center"><strong>Figure 4-52 stty Command Example 2</strong></p>
 
-The partition of the SD card needs to be formatted as FAT32. The formatting method is as follows:
+<p align="center"><img src="images/img_0b433896.webp" alt="stty command example 3"></p>
 
-● SD card capacity <= 32GB: Insert the SD card into the card reader, and then insert the card reader into a computer using the Windows system. Most Windows systems only support SD cards with a capacity less than 32GB to be formatted as FAT32 system. A partition will be automatically created during formatting. You can also format it as FAT32 file system under Linux system. The method is the same as SD card capacity > 32GB.
+<p align="center"><strong>Figure 4-53 stty Command Example 3</strong></p>
 
-● SD card capacity > 32GB: When the SD card capacity is greater than 32GB, you need to format it in FAT32 format under Linux. Insert the SD card into the card reader, and then insert the card reader into a computer using the Linux system or a computer with a Linux virtual machine installed.
+<p align="center"><img src="images/img_a1fc4594.webp" alt="stty command example 4"></p>
 
-a. Run **fdisk -l** to view the device node corresponding to the SD card, which is **/dev/sda** in the example
+<p align="center"><strong>Figure 4-54 stty Command Example 4</strong></p>
 
-b. Run **fdisk/dev/sda** to partition (**p** to view the current partition, **d** to delete the existing partition, **n** to create a new partition, and **w** to save the changes) to create a partition
+**Check Serial Port Information**
 
-**/dev/sda1**
+<p align="center"><img src="images/img_704eb9b5.webp" alt="Check serial port information"></p>
 
-c. Run **sudo mkfs.vfat -F 32 /dev/sda1** to format the partition as FAT32.
+<p align="center"><strong>Figure 4-55 Check Serial Port Information</strong></p>
 
-d. After formatting, remove the SD card from the card reader and insert it into the device while the device is powered off
+**Set the Baud Rate of COM1**
 
-The EC300 doesn’t support hot swapping of micro SD memory card. Below is the link of mount reference: 
+<p align="center"><img src="images/img_6907f3ee.webp" alt="Set COM1 baud rate"></p>
 
-[https://www.man7.org/linux/man-pages/man8/mount.8.html](https://www.man7.org/linux/man-pages/man8/mount.8.html)
+<p align="center"><strong>Figure 4-56 Set COM1 Baud Rate</strong></p>
 
-## 4.4 CAN bus Interface
+> **Note**: Details about the stty command are available at [http://www.gnu.org/software/coreutils/manual/coreutils.html](http://www.gnu.org/software/coreutils/manual/coreutils.html).
 
-The three-way CAN port of the EC300 supports the CAN bus.
+### 4.4.2 USB Interface
 
-### 4.4.1 Configure the connection CAN Interface
+The EC300 provides a USB 2.0 Host interface, mainly used for expanding storage devices. The device supports hot swapping of USB storage devices.
 
-By default, the CAN port will be initialized. If you need any other configuration, check the CAN device using the **ip link** command. To check the status of the CAN device, use the **ip link** command:
+> **Attention**: Before disconnecting a USB mass storage device, enter the `sync` synchronization command to prevent data loss. When disconnecting the storage device, exit from the mounting directory.
 
-To configure a CAN device, use **ip link set can\* down** to first turn off the device
+### 4.4.3 MicroSD Card
 
-Where can\* is selected from can1, can2, or can3.
+The EC300 has a MicroSD card slot for extended storage, located below the front panel.
 
-![](images/img_c6278a48.png)
+<p align="center"><img src="images/img_3f634e0d.webp" alt="MicroSD card slot 1" width="20%"></p>
 
-Then configure the bit rate (here's a 50k bit rate example) :
+<p align="center"><strong>Figure 4-57 MicroSD Card Slot (View 1)</strong></p>
 
-![](images/img_aae87ead.png)
+<p align="center"><img src="images/img_15ee5645.webp" alt="MicroSD card slot 2" width="20%"></p>
 
-Finally turn the device back on
+<p align="center"><strong>Figure 4-58 MicroSD Card Slot (View 2)</strong></p>
 
-![](images/img_e33dd34b.png)
+The partition of the SD card needs to be formatted as FAT32:
 
-## 4.5 IO Debugging
+- SD card capacity <= 32GB: Insert the SD card into a card reader and format it as FAT32 on a Windows or Linux system.
+- SD card capacity > 32GB: Format under Linux using the following steps:
+  1. Run `fdisk -l` to view the device node (e.g., `/dev/sda`).
+  2. Run `fdisk /dev/sda` to partition (`p` to view, `d` to delete, `n` to create, `w` to save).
+  3. Run `sudo mkfs.vfat -F 32 /dev/sda1` to format the partition as FAT32.
+  4. Remove the SD card and insert it into the device while powered off.
 
-The EC300 supports 4-way IO input and 4-way IO output.
+> **Note**: The EC300 does not support hot swapping of the MicroSD card. For mount reference, see [https://www.man7.org/linux/man-pages/man8/mount.8.html](https://www.man7.org/linux/man-pages/man8/mount.8.html).
 
-| Port number | Device description file |
-| --- | --- |
+### 4.4.4 CAN Bus Interface
+
+The EC300 has a 3-way CAN bus interface and supports the CAN 2.0 A/B standard. It is compatible with CAN FD and can reach a maximum speed of 5 Mbps.
+
+| CAN Port | Pins |
+|----------|------|
+| CAN1 | Extension Interface PIN1, PIN2 |
+| CAN2 | Extension Interface PIN5, PIN6 |
+| CAN3 | Extension Interface PIN9, PIN10 |
+
+<p align="center"><img src="images/img_9d96e0e2.png" alt="CAN interface"></p>
+
+<p align="center"><strong>Figure 4-59 CAN Interface</strong></p>
+
+> **Remark**: The support for CAN interface expansion depends on the model of the expansion module.
+
+**Configure the CAN Interface**
+
+By default, the CAN port will be initialized. To reconfigure, first turn off the device:
+
+<p align="center"><img src="images/img_c6278a48.webp" alt="Turn off CAN device"></p>
+
+<p align="center"><strong>Figure 4-60 Turn Off CAN Device</strong></p>
+
+Configure the bit rate (example: 50k):
+
+<p align="center"><img src="images/img_aae87ead.webp" alt="Configure CAN bit rate"></p>
+
+<p align="center"><strong>Figure 4-61 Configure CAN Bit Rate</strong></p>
+
+Turn the device back on:
+
+<p align="center"><img src="images/img_e33dd34b.webp" alt="Turn on CAN device"></p>
+
+<p align="center"><strong>Figure 4-62 Turn On CAN Device</strong></p>
+
+### 4.4.5 IO Ports
+
+**Digital Input Interface**
+
+| Parameter | Description | Min | Type | Max | Unit |
+|-----------|-------------|-----|------|-----|------|
+| Vds | Drain source voltage | | | 48 | V |
+| VIN Low | Maximal input voltage recognized as LOW | | | 3 | V |
+| VIN High | Minimal input voltage recognized as HIGH | 10 | | 30 | V |
+
+| Interface Identification | Features | Description |
+|--------------------------|----------|-------------|
+| GND | Power reference ground | 4 digital input DI, wet contact state. "1": +10~+30V / -30~-10VDC; "0": 0~+3V / -3~0V. Isolate 3000VDC |
+| DICOM | Input public side | |
+| DI0 | Digital input port 0 | |
+| DI1 | Digital input port 1 | |
+| DI2 | Digital input port 2 | |
+| DI3 | Digital input port 3 | |
+
+The wiring method is as follows (only supports wet node wiring):
+
+<p align="center"><img src="images/img_0a9fe7c4.webp" alt="Digital input wiring"></p>
+
+<p align="center"><strong>Figure 4-63 Digital Input Wiring</strong></p>
+
+**Digital Output Interface**
+
+| Interface Identification | Function | Description |
+|--------------------------|----------|-------------|
+| DO0 | Digital output interface 0 | 4-way DO OD output, isolated 3000VDC |
+| DO1 | Digital output interface 1 | |
+| DO2 | Digital output interface 2 | |
+| DO3 | Digital output interface 3 | |
+| GND | Grounding terminal | |
+
+The wiring method is as follows:
+
+<p align="center"><img src="images/img_d5739e65.webp" alt="Digital output wiring"></p>
+
+<p align="center"><strong>Figure 4-64 Digital Output Wiring</strong></p>
+
+> **Remark**: The support for digital input/output interfaces depends on the model of the expansion module.
+
+### 4.4.6 Analog Input Interface
+
+The EC300 supports up to two expandable AIN analog current signal input interfaces with an input range of 4-20mA. It uses the TI TLA2022 12-bit ADC, featuring a sampling rate of 1.6kHz, a resolution of 16.6uA, and an accuracy of 1%.
+
+| Port Number | Device Description File |
+|-------------|-------------------------|
+| AIN1 | /dev/ain1 |
+| AIN2 | /dev/ain2 |
+
+To read the AIN current value, use `cat /dev/ain1`:
+
+<p align="center"><img src="images/img_f19cf019.webp" alt="Read analog input value"></p>
+
+<p align="center"><strong>Figure 4-65 Read Analog Input Value</strong></p>
+
+The return value indicates the current channel current value in microamperes (uA).
+
+### 4.4.7 SuperCapacitor
+
+**Specifications**
+
+The supercapacitor specifications are: 10.8V/5F.
+
+The power-off holding module can maintain system operation for 20-30 seconds after power failure depending on the load conditions.
+
+**Power Failure Alarm**
+
+When the external power supply is disconnected, the system sends a UDP broadcast message `power_down` to port 9107 of IP address 255.255.255.255.
+
+**Safe Shutdown**
+
+Power failure refers to the continuous disconnection of the external power supply for more than 0.5 seconds. After sending the UDP broadcast message, the system waits for 3 seconds and actively performs a power off.
+
+
+
+## 4.5 Security
+
+### 4.5.1 Sudo Mechanism
+
+In the EC300, the root user is disabled for better security. Sudo is a program that lets the system administrator allow an approved user to execute some commands as the root user or another user. The most basic rule is to give as few privileges as possible to get the job done. Using sudo is more secure than root session opening for a number of reasons, including:
+
+- Grant privileges to normal users without having to know the root password (sudo will prompt for the current user's password).
+- It is easy to run privileged commands via sudo, and the rest of the time, work as an unprivileged user, reducing potential damage due to wrong operations.
+
+The default user `edge` is in the sudo group and can use `sudo` to execute system-level commands.
+
+### 4.5.2 Firewalls
+
+Netfilter/iptables is a packet-filtering firewall tool that comes with the Linux system. It is powerful and flexible, and can finely control the data packets flowing into, out of, and through the server.
+
+On the web interface, navigate to 【Network】→【Firewall】 to configure firewall rules using iptables commands.
+
+### 4.5.3 TPM2.0
+
+TPM (Trusted Platform Module) is a hardware security module designed to provide security and encryption capabilities for computer systems. It is a secure microcontroller that can be embedded in a computer system or sold as a standalone hardware device. It contains a cryptographic coprocessor for storing encryption keys, digital certificates, and other secure data, and supports multiple cryptographic algorithms and security protocols.
+
+The EC300 provides TPM2.0 hardware support and is pre-installed with the tpm2-tools tool, which can be used to test and verify TPM2.0.
+
+**Generate Random Numbers**:
+
+<p align="center"><img src="images/img_fc94b2ea.webp" alt="TPM2 generate random numbers"></p>
+
+<p align="center"><strong>Figure 4-66 TPM2.0 Generate Random Numbers</strong></p>
+
+> **Note**: For more information on how to use tpm2-tools, refer to [https://tpm2-tools.readthedocs.io/en/latest/](https://tpm2-tools.readthedocs.io/en/latest/)
+
+### 4.5.4 Secure Boot
+
+The EC300 supports Secure Boot to ensure software integrity during the boot process.
+
+
+
+## 4.6 Programming Guidelines
+
+The EC300 provides a JSON format device information description file. Users who need to operate IO, LED, serial port, and other peripherals can obtain the device node information by querying the device description file.
+
+Device description file path: `/tmp/ieos/etc/system_info.json`
+
+### 4.6.1 IO Programming
+
+There are 8 IO interfaces on the device: DI0~DI3 are 4 input pins, and DO0~DO3 are 4 output pins.
+
+According to the device description file, the IO device nodes are:
+
+| Port Number | Device Description File |
+|-------------|-------------------------|
 | DI0 | /sys/class/gpio/gpio454/value |
 | DI1 | /sys/class/gpio/gpio455/value |
 | DI2 | /sys/class/gpio/gpio456/value |
@@ -989,353 +1454,344 @@ The EC300 supports 4-way IO input and 4-way IO output.
 | DO2 | /sys/class/gpio/gpio465/value |
 | DO3 | /sys/class/gpio/gpio461/value |
 
-Reading the DI status can be done using cat **"Device profile"**;
+When programming the IO interface, directly operate the value under the device node.
 
-![](images/img_c668a693.png)
-
-DO status can be controlled by using **echo 1 > "Device Profile" or echo 0 > "Device Profile"** as root user
-
-![](images/img_c1fc8a5b.png)
-
-## 4.6 AIN Debugging  
-
-Refer to Section 2.3.6 for wiring definitions and Section 2.3.15 for hardware interface definitions.
-
-| Port number | Device description file |
-| --- | --- |
-| AIN1 | /dev/ain1 |
-| AIN2 | /dev/ain2 |
-
-To read the AIN current value, you can use **cat "device description file".**
-
-  
-
-**
-
-![](images/img_f19cf019.png)
-
-**
-
-The return value indicates the current channel current value in microamperes (uA).
-
-## 4.7 SuperCapacitor
-
-### 4.7.1 Specification
-
-#### 4.7.1.1 Capacitor Specifications
-
-The specifications of the supercapacitor are: 10.8V/5F.
-
-#### 4.7.1.2 Power-Off Retention
-
-The power-off holding module can maintain system operation for 20-30S after power failure depending on the load conditions.
-
-### 4.7.2 Functions
-
-#### 4.7.2.1 Power Failure Alarm  
-
-The EC300 supports the power-down alarm function. When the external power supply is disconnected, the system will send a UDP broadcast message ‘power\_down’ to port 9107 of IP address 255.255.255.255.
-
-#### 4.7.2.2 Safe Shutdown
-
-Power failure refers to the continuous disconnection of the external power supply for more than 0.5 seconds. After sending the UDP broadcast message, the system waits for 3 seconds and actively performs a power off.
-
-# 5 Security  
-
-In this chapter, we will introduce the security mechanism of EC300, an edge computer based on ARM architecture.
-
-## 5.1 Sudo Mechanism  
-
-In EC300, the root user is banned for better security. Sudo is a program that lets the system administrator allow an approved user to execute some commands as the root user or another user. The most basic rule is to give as few privileges as possible to get the job done. Using sudo is more secure than root session opening for a number of reasons, including:
-
-• Grant privileges to normal users without having to know the root password (sudo will prompt for the current user's password)
-
-• It's easy to run privileged commands via sudo, and the rest of the time, work as an unprivileged user, reducing potential damage due to wrong operations.
-
-## 5.2 Firewalls
-
-Netfileter/iptables (hereafter referred to as iptables) is an excellent and completely free firewall tool based on packet filtering that comes with the Nuix/Linux system. It is very powerful and flexible to use. It can finely control the data packets flowing into, out of and through the server.  
-
-## 5.3 TPM2.0  
-
-TPM stands for "Trusted Platform Module" and it is a hardware security module designed to provide security and encryption capabilities for computer systems. It is a secure microcontroller that can be embedded in a computer system or sold as a standalone hardware device. It contains a cryptographic coprocessor for storing encryption keys, digital certificates, and other secure data, as well as supporting multiple cryptographic algorithms and security protocols. On EC300, the standard TPM2 protocol stack and TPM2 tools have been integrated for user use.  
-
-  
-
-ARM computers provide TPM2.0 hardware support and are pre-installed with the tpm2-tools tool, which can be used to test and verify TPM2.0.  
-
-**Generate random numbers  
-**
-
-**![](images/img_fc94b2ea.png)  
-**
-
-NOTE 
-
-For more information on how to use tpm2-tools, please refer to [https://tpm2-tools.readthedocs.io/en/latest/](https://tpm2-tools.readthedocs.io/en/latest/)
-
-# 6 The System Restores Factory Settings 
-
-In this chapter, we will describe how EC300, an edge computer based on Arm architecture, restores factory Settings.
-
-This chapter covers the following topics:
-
-## 6.1 Restore Factory Settings  
-
-There are two ways to restore factory Settings:
-
-1.  By typing the command, the system will automatically restart and restore the factory Settings.
-
-![](images/img_0fbde3ac.png)
-
-2.  Restore factory Settings by pressing:
-
-1.  Long press the **Reset** key for 10-20s and see the **WARN** light long on.
-    
-
-1.  When the **WARN** light has turned on, release the **Reset** key.
-    
-
-NOTE:  
-
-  
-
-(1) System reset is an important function of ARM computers. After system reset, the ARM computer will be restored to the default state and all user data and configurations will be lost.
-
-(2) Before resetting your ARM computer system, ensure that critical data has been effectively backed up and transferred to external storage media (such as a removable disk)  
-
-  
-
-# 7 Programming Guidelines
-
-EC300 provides a JSON format device information description file. Customers who need to operate IO, LED, serial port and other peripherals can obtain the device node information of these peripherals by querying the device description information file.
-
-Device description file path: **/tmp/ieos/etc/system\_info.json**, the content is as follows:
+**Example**: When DO0 needs to output a high level, write 1 to `/sys/class/gpio/gpio323/value`:
 
 ```
-{  "device_info": {    "model_info": {      "model": "EC312",      "pn": "H-LQA3-LC4D",      "sn": "CL3124050000001",      "oem": "inhand",      "features": ";std;cell-LQA3;wlan;"    },    "software_info": {      "boot_loader": "V1.0.2",      "kernel": "5.10.168",      "version": "V1.0.1-beta1",      "os": "Debian GNU/Linux 11 (bullseye)"    },    "hardware_info": {      "arch": "armv8",      "soc": "AM6231",      "interface": {        "eth": [          {            "iface_name": "eth1",            "iface_mac": "00:08:5f:17:04:00"          },          {            "iface_name": "eth2",            "iface_mac": "00:18:5f:17:04:02"          }        ],        "wlan": [          {            "iface_name": "wlan0",            "iface_mac": "f4:3c:3b:ca:e9:36"          },          {            "iface_name": "wlan1",            "iface_mac": "f6:3c:3b:ca:e9:36"          }        ]      },      "gpio": [        {          "gpio_name": "cellular_power",          "dev_node": "/sys/class/gpio/gpio401"        },        {          "gpio_name": "sim_switch",          "dev_node": "/sys/class/gpio/gpio405"        }      ],      "user_key": [        {          "user_key_name": "user1",          "dev_node": "/dev/input/event2"        }      ],      "uart": [        {          "uart_name": "com1",          "dev_node": "/dev/ttyS4"        },        {          "uart_name": "com2",          "dev_node": "/dev/ttyS5"        }      ],      "led": [        {          "led_name": "user1",          "dev_node": "/sys/class/leds/user1"        },        {          "led_name": "user2",          "dev_node": "/sys/class/leds/user2"        },        {          "led_name": "user3",          "dev_node": "/sys/class/leds/user3"        },        {          "led_name": "user4",          "dev_node": "/sys/class/leds/user4"        },        {          "led_name": "cell",          "dev_node": "/sys/class/leds/cell"        },        {          "led_name": "warn",          "dev_node": "/sys/class/leds/warn"        },        {          "led_name": "status",          "dev_node": "/sys/class/leds/status"        }      ],      "io": {        "di": [          {            "di_name": "di1",            "dev_node": "/sys/class/gpio/gpio454"          },          {            "di_name": "di2",            "dev_node": "/sys/class/gpio/gpio455"          },          {            "di_name": "di3",            "dev_node": "/sys/class/gpio/gpio456"          },          {            "di_name": "di4",            "dev_node": "/sys/class/gpio/gpio457"          }        ],         "do": [                   {                      "do_name":"do1",     //The name matches the name on the panel                      "dev_node": "/sys/class/gpio/gpio11"                   },                   {                      "do_name":"do2",                      "dev_node":"/sys/class/gpio/gpio12"                   }                ]            },            "ain": [               {                    "ain_name": "ain1",                     "ain_node": "/dev/ain1"               },               {                    "ain_name": "ain2",                     "ain_node": "/dev/ain2"               }                          ]        }    }}
-```
-
-## 7.1 IO Programming Guide
-
-Currently, there are a total of 8 IO interfaces on the device: for example, there are 4 input pins from DI1 to DI4 on the device panel; DO1~DO4 are 4 output pins.
-
-According to the device description file **/tmp/ieos/etc/system\_info.json**, the IO device nodes are:
-
-When you need to program IO interface, directly operate the value under the background device node **(sys/class/gpio/gpioxxx/value)**
-
-Example:
-
-When DO1 needs to output a high level, you can directly write **1** to **sys/class/gpio/gpio323/value**
-
 echo 1 > /sys/class/gpio/gpio323/value
+```
 
-When you need to check the level of DI1, you can also directly check the value of **sys/class/gpio/gpio454/value**
+When checking the level of DI0, read the value of `/sys/class/gpio/gpio454/value`:
 
+```
 cat /sys/class/gpio/gpio454/value
+```
 
-The full shell script:  
+**Full Shell Script**:
 
-#!/bin/bash  
-  
-gpio323="/sys/class/gpio/gpio323/value"  
-gpio453="/sys/class/gpio/gpio453/value"  
-gpio465="/sys/class/gpio/gpio465/value"  
-gpio461="/sys/class/gpio/gpio461/value"  
-  
+```bash
+#!/bin/bash
 
-\# When DO1 needs to output a high level, you can directly write 1 to sys/class/gpio/gpio323/value.if \[ -f "$gpio323" \]; then  
-    echo 1 > /sys/class/gpio/gpio323/value  
-else  
-    echo "no file exit "$gpio323  
-fi  
-  
-# When DO1 needs to output a low level, you can directly write 0 to sys/class/gpio/gpio323/value.  
-  
-if \[ -f "$gpio323" \]; then  
-    echo 0 > $gpio323  
-else  
-    echo "no file exit "$gpio323  
-fi  
-  
-gpio454="/sys/class/gpio/gpio454/value"  
-gpio455="/sys/class/gpio/gpio455/value"  
-gpio456="/sys/class/gpio/gpio456/value"  
-gpio457="/sys/class/gpio/gpio457/value"
+gpio323="/sys/class/gpio/gpio323/value"
+gpio453="/sys/class/gpio/gpio453/value"
+gpio465="/sys/class/gpio/gpio465/value"
+gpio461="/sys/class/gpio/gpio461/value"
 
-\# To check the level of DI1, you can directly read the value of sys/class/gpio/gpio454/value.  
-if \[ -f "$gpio454" \]; then  
-    cat $gpio454  
-else  
-    echo "no file exit "$gpio454  
-fi  
-
-  
-
-## 7.2 Led Programming Guide
-
-The user can use the four lights USER1, USER2, USER3 and USER4 on the device for status prompts, please check the light label to confirm the position of the light.
-
-According to the device description information file **/tmp/ieos/etc/system\_info.json**, the device node corresponding to LED can be obtained as follows:
-
-user1: **/sys/class/leds/user1**
-
-user2: **/sys/class/leds/user2**
-
-user3: **/sys/class/leds/user3**
-
-user4: **/sys/class/leds/user4**
-
-There are some control files in **/sys/class/leds/user1** to control the attributes and status of LEDs:
-
-**/sys/class/leds/user1/brightness**: this file is used to control the user1 lights on or off. Write 1 to always on, write 0 to always off.
-
-**/sys/class/leds/user1/trigger**: The trigger of the LED light can be written as timer to indicate timer triggering, and write none to cancel the trigger.
-
-**/sys/class/leds/user1/delay\_on**: This file indicates the time the LED light is on, in ms.
-
-**/sys/class/leds/user1/delay\_off**: This file indicates the time the LED light is off, in ms.
-
-If trigger is configured for timing, the value in the brightness will no longer take effect and will automatically change to 0.
-
-Replace user1 with user2 in the file path to control the operation of the USER2 light, this mechanism works the same for USER3 and USER4.
-
-Example:
-
-Write 1 to the brightness file when you need the USER1 light to be on
-
-**echo 1 > /sys/class/leds/user1/brightness**
-
-When the USER1 light is needed to flash, the timer is written to the trigger file, and the light and off times are controlled by delay\_on and delay\_off  
-
-\# start timer  
- echo timer > /sys/class/leds/user1/trigger  
-\# echo on 1 second  
- echo 1000> /sys/class/leds/user1/delay\_on  
-\# echo out 1 second  
- echo 1000 > /sys/class/leds/user1/delay\_off
-
-Full shell script:
-
-#!/bin/bash  
-  
-USER1\_BRIGTHNESS="/sys/class/leds/user1/brightness"  
-USER1\_TRIGGER="/sys/class/leds/user1/trigger"  
-USER1\_DELAY\_ON="/sys/class/leds/user1/delay\_on"  
-USER1\_DELAY\_OFF="/sys/class/leds/user1/delay\_off"  
-  
-\# Light the USER1 LED  
-if \[ -f "$USER1\_BRIGTHNESS" \]; then  
-    echo 1 > $USER1\_BRIGTHNESS  
-else  
-    echo "no file exit "$USER1\_BRIGTHNESS  
-fi  
-  
-\# Set the USER1 LED to flash  
-if \[ -f "$USER1\_TRIGGER" \]; then  
-    echo timer > $USER1\_TRIGGER  
-else  
-    echo "no file exit "$USER1\_TRIGGER  
-fi  
-  
-\# Set the USER1 LED on for 1000ms  
-if \[ -f "$USER1\_DELAY\_ON" \]; then  
-    echo 1000 > $USER1\_DELAY\_ON  
-else  
-    echo "no file exit "$USER1\_DELAY\_ON  
-fi  
-  
-\# Set the USER1 LED off for 1000ms  
-if \[ -f "$USER1\_DELAY\_OFF" \]; then  
-    echo 1000 > $USER1\_DELAY\_OFF  
-else  
-    echo "no file exit "$USER1\_DELAY\_OFF  
-fi  
-  
-\# Turn off USER1 blinking  
-if \[ -f "$USER1\_TRIGGER" \]; then  
-    echo none > $USER1\_TRIGGER  
-else  
-    echo "no file exit "$USER1\_TRIGGER  
+# Set DO0 high
+if [ -f "$gpio323" ]; then
+    echo 1 > $gpio323
+else
+    echo "no file exit "$gpio323
 fi
 
-## 7.3 Cross-compiling
+# Set DO0 low
+if [ -f "$gpio323" ]; then
+    echo 0 > $gpio323
+else
+    echo "no file exit "$gpio323
+fi
 
-A user's own C/ C++ program can be cross-compiled by using the cross-compilation toolchain on the development machine, and then the object file is uploaded to the EC300 device for execution.
+gpio454="/sys/class/gpio/gpio454/value"
+gpio455="/sys/class/gpio/gpio455/value"
+gpio456="/sys/class/gpio/gpio456/value"
+gpio457="/sys/class/gpio/gpio457/value"
 
-Cross-compilation tool zip package: gcc-linaro-6.3.1-2017.05-x86\_64\_aarch64-linux-gnu.tar.gz
+# Read DI0 level
+if [ -f "$gpio454" ]; then
+    cat $gpio454
+else
+    echo "no file exit "$gpio454
+fi
+```
 
-Here's how to configure the environment variables for the cross-compilation toolchain:
+### 4.6.2 LED Programming
 
-1. Unzip **gcc-linaro-6.3.1-2017.05-x86\_64\_aarch64-linux-gnu.tar.gz** to /opt on your development machine (you can also unzip it to any other PATH, adjust the path environment variable in step 2)
+The four lights USER1, USER2, USER3, and USER4 on the device can be used for status prompts.
 
-2. Edit the **~/.bashrc** file and add a line **PATH=$PATH:/opt/gcc-linaro-6.3.1-2017.05-x86\_64\_aarch64-linux-gnu/bin** at the end of the file
+According to the device description file, the LED device nodes are:
 
-3. Execute source **~/.bashrc** to make the environment variables work in the current terminal; The newly opened terminal will take effect automatically.
+| LED | Device Node |
+|-----|-------------|
+| user1 | /sys/class/leds/user1 |
+| user2 | /sys/class/leds/user2 |
+| user3 | /sys/class/leds/user3 |
+| user4 | /sys/class/leds/user4 |
 
-Using the classic hello world program as an example, create the following directories and files
+Control files in the LED directory:
 
-mkdir ~/example  
-touch ~/example/hello.c  
-touch ~/example/Makefile  
+| File | Function |
+|------|----------|
+| brightness | Controls the LED on or off. Write 1 for on, 0 for off |
+| trigger | Timer trigger. Write `timer` for timing trigger, `none` to cancel |
+| delay_on | Time the LED is on, in ms |
+| delay_off | Time the LED is off, in ms |
 
-The contents of the **~/example/hello.c** file are as follows:  
+If trigger is configured for timing, the value in brightness will no longer take effect and will automatically change to 0.
 
-mkdir ~/example   
-touch ~/example/hello.c   
-touch ~/example/Makefile  
+**Example**: Turn on USER1:
 
-The contents of the ~/example/hello.c file are as follows:
+```
+echo 1 > /sys/class/leds/user1/brightness
+```
 
-#include <stdio.h>  
-   
-int main(void)   
-{   
-       printf("hello, world! \\n");   
-        return 0;    
+Make USER1 flash (1 second on, 1 second off):
+
+```
+echo timer > /sys/class/leds/user1/trigger
+echo 1000 > /sys/class/leds/user1/delay_on
+echo 1000 > /sys/class/leds/user1/delay_off
+```
+
+### 4.6.3 Cross-Compiling
+
+A user's own C/C++ program can be cross-compiled using the cross-compilation toolchain on the development machine, and then the object file is uploaded to the EC300 device for execution.
+
+Cross-compilation tool zip package: `gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu.tar.gz`
+
+**Environment Variable Configuration**:
+
+1. Unzip the toolchain to `/opt` on the development machine.
+2. Edit `~/.bashrc` and add: `PATH=$PATH:/opt/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu/bin`
+3. Execute `source ~/.bashrc` to apply the environment variables.
+
+**Example Makefile**:
+
+```makefile
+# Define TARGET and source filenames
+target := hellworld
+DIRS := $(shell find . -maxdepth 3 -type d)
+SRCS := $(foreach dir,$(DIRS),$(wildcard $(dir)/*.c))
+OBJS := $(SRCS:.c=.o)
+
+CC=aarch64-linux-gnu-gcc
+
+# Define compiler and compile options
+CFLAGS := -Wall -Wextra -g -Wno-unused-parameters
+
+# define default TARGET
+all: $(TARGET)
+
+# define target file dependencies and compile commands
+$(TARGET): $(OBJS)
+	$(CC) $(CFLAGS) $(LIBS) $^ -o $@
+
+# Define the command to compile the source file to the target file
+%.o: %.c
+	$(CC) $(CFLAGS) $(LIBS) -c $< -o $@
+
+# Define command to clear temporary files
+clean:
+	rm -f $(TARGET) $(OBJS)
+
+# declare pseudo target ".PHONY"
+.PHONY: all clean
+```
+
+Run `make` in the project directory to generate the object file.
+
+### 4.6.4 Watchdog Programming
+
+- There is an external hardware watchdog on the device. The device will restart if the watchdog is not fed for 60 seconds.
+- The system watchdog program can be disabled so that a custom program can implement the feed logic: `systemctl stop watchdog`
+
+**Example Watchdog Program**:
+
+```c
+#include <fcntl.h>
+#include <unistd.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+#include <signal.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+
+static int fd = 0;
+
+/* Signal processing function */
+void signal_handler(int signal)
+{
+    /* Shut down the watchdog. The device will restart after 60 seconds if the dog is not fed */
+    write(fd, "V", 1);
+    close(fd);
+    exit(0);
 }
 
-The contents of the ~/example/Makefile are as follows:
+int main(int argc, char **argv)
+{
+    /* Open the watchdog */
+    fd = open("/dev/watchdog0", O_WRONLY);
+    /* Registering Kill signals */
+    signal(SIGTERM, signal_handler);
 
-\# Define TARGET and source filenames   
-target := hellworld   
-DIRS := $(shell find.-maxdepth 3-type d)    
-SRCS := $(foreach dir,$(DIRS),$(wildcard $(dir)/\*.c))   
-OBJS := $(SRCS:.c=.o)   
-  
-  
-CC=aarch64-linux-gnu-gcc   
-  
-\# Define compiler and compile options    
-CFLAGS := -Wall-Wextra -g-wno-unused-parameters   
-  
-\# define default TARGET    
-all: $(TARGET)  
-  
-\# define target file dependencies and compile commands    
-$(TARGET): $(OBJS)    
-$(CC) $(CFLAGS) $(LIBS) $^ -o $@    
-  
-\# Define the command to compile the source file to the target file   
-%.o: %.c   
-$(CC) $(CFLAGS) $(LIBS) -C $< -o $@  
-   
-\# Define command to clear temporary files   
-clean:   
-rm -f $(TARGET) $(OBJS)  
-   
-\# declare pseudo target ".PHONY"   
-.PHONY: all clean
-
-Run make in the ~/example directory to generate the object file helloworld
-
-## **7.4 Watchdog P**rogramming
-
--   There is an external hardware watchdog on the device, and the device will restart if the dog is not fed for 60 seconds
--   You can disable the system watchdog program, in your own program to implement feed the dog, so that the program can restart the device when the exception
--   Shut down the system watchdog with this command：`systemctl stop watchdog`
--   Example watchdog program：
-
+    while (1) {
+        /* Feed the dog by writing */
+        write(fd, "\0", 1);
+        /* Feed the dog every 10 seconds */
+        sleep(10);
+    }
+}
 ```
-#include <fcntl.h>#include <unistd.h>#include <stdlib.h>#include <stdio.h>#include <string.h>#include <signal.h>#include <sys/types.h>#include <sys/stat.h>static int fd = 0;/* Signal processing functions */void signal_handler(int signal){    /* Shut down the watchdog. The device will restart after 60 seconds if the dog is not fed */    write(fd, "V", 1);    close(fd);    exit(0);}int main(int argc, char **argv){    /* open the watchdog by opening */    fd = open("/dev/watchdog0", O_WRONLY);    /* Registering Kill signals */    signal(SIGTERM, signal_handler);        while (1) {        /* Feed the dog by writing */        write(fd, "\0", 1);         /* Feed the dog every 10 seconds */        sleep(10);    }}
-```
+
+
+
+# Chapter 5 Typical Applications
+
+## Case 1: Industrial Data Collection and Cloud Deployment
+
+**Scenario Description**: In an industrial automation environment, the EC300 edge computer collects data from PLCs and sensors via serial ports and digital inputs, processes the data locally, and uploads it to the cloud through the cellular network for remote monitoring.
+
+**Device Role**: The EC300 acts as an edge gateway, responsible for collecting data from field devices via serial ports and IO interfaces, performing local data processing, and transmitting data to the DeviceLive cloud platform through the cellular network.
+
+**Configuration Steps**:
+1. Install the EC300 on a DIN rail at the industrial site.
+2. Connect the power supply (9-48V DC).
+3. Connect PLCs or sensors to the COM1/COM2 serial ports or DI/DO interfaces.
+4. Insert a valid SIM card and install the cellular antenna.
+5. Power on the device and verify that the PWR and STATUS indicators are normal.
+6. Log in to the web management interface.
+7. Navigate to 【Network】→【Cellular】 and configure the APN parameters.
+8. Verify cellular connection in 【Status】→【Cellular Status】.
+9. Navigate to 【System Management】→【Basic Configuration】→【Cloud Management】 and enable DeviceLive connection.
+10. On the DeviceLive platform, verify that the device is online and data is being received.
+
+**Reference Chapters**:
+- [Installation and First Use](#chapter-2-installation-and-first-use)
+- [Cellular Network](#43-cellular-network)
+- [Serial Ports](#4131-serial-ports)
+- [Digital Input/Output](#4135-digital-input-interface)
+- [DeviceLive Cloud Management](#4101-cloud-management)
+
+
+
+# Appendix Troubleshooting
+
+## 1 Network Connection Issues
+
+| Symptom | Possible Cause | Troubleshooting Steps | Corresponding Chapter |
+|---------|----------------|----------------------|----------------------|
+| Cannot connect to cellular network | SIM card not inserted or poor contact | 1. Check whether the SIM card is correctly inserted<br>2. Reinsert the SIM card | [SIM Card Installation](#225-sim-card-installation) |
+| Cannot connect to cellular network | APN parameter configuration error | 1. Verify APN parameters are correct<br>2. Contact the operator to obtain the correct APN | [Cellular Network](#43-cellular-network) |
+| Cannot connect to cellular network | Weak or no signal | 1. Check whether the antenna is connected<br>2. Adjust the device position or antenna orientation | [Antenna Installation](#225-antenna-installation) |
+| Cannot connect to cellular network | Cellular function disabled | 1. Check whether the cellular function is enabled in the web interface<br>2. Enable the cellular switch and save | [Cellular Network](#43-cellular-network) |
+| Web interface cannot be opened | Incorrect IP address | 1. Confirm the PC and device are in the same subnet<br>2. Check the device default IP address | [First Login via Web](#227-first-login-via-web-interface) |
+| Web interface cannot be opened | Browser compatibility issue | 1. Try a different browser (recommended: Chrome)<br>2. Clear the browser cache | [First Login via Web](#227-first-login-via-web-interface) |
+| Web interface cannot be opened | HTTPS port blocked | 1. Confirm the URL uses HTTPS and port 9100<br>2. Check the PC firewall settings | [First Login via Web](#227-first-login-via-web-interface) |
+| Cannot ping the device | Network cable not connected | 1. Check the network cable connection<br>2. Replace the network cable | [Connect to the Device](#2216-first-login-via-ssh) |
+| Cannot ping the device | PC IP configuration error | 1. Set the PC IP to the same subnet as the device<br>2. Disable and re-enable the network adapter | [Connect to the Device](#2216-first-login-via-ssh) |
+| Wi-Fi connection failure | Incorrect SSID or password | 1. Verify the SSID and password are correct<br>2. Rescan and reconnect | [Wi-Fi Configuration](#44-wi-fi) |
+| Wi-Fi connection failure | Wi-Fi function disabled | 1. Enable Wi-Fi in the web interface<br>2. Save and wait for the connection | [Wi-Fi Configuration](#44-wi-fi) |
+
+## 2 SSH Access Issues
+
+| Symptom | Possible Cause | Troubleshooting Steps | Corresponding Chapter |
+|---------|----------------|----------------------|----------------------|
+| SSH connection refused | Incorrect IP address | 1. Verify the device IP address<br>2. Check the PC network configuration | [First Login via SSH](#2216-first-login-via-ssh) |
+| SSH connection refused | SSH service not running | 1. Verify the device is powered on and started<br>2. Check the device status indicators | [Indicator Lights](#14-indicator-lights) |
+| Login failure | Incorrect username or password | 1. Verify the default username: edge<br>2. Verify the default password: security@edge | [Default Settings](#16-default-settings) |
+
+## 3 System Issues
+
+| Symptom | Possible Cause | Troubleshooting Steps | Corresponding Chapter |
+|---------|----------------|----------------------|----------------------|
+| Device cannot start | Power supply abnormal | 1. Check the power supply voltage (9-48V DC)<br>2. Check the power cable connection | [Power Connection](#223-power-connection) |
+| Device cannot start | System startup exception | 1. Check the STATUS indicator status<br>2. Perform a factory reset if necessary | [Factory Reset](#15-factory-reset) |
+| Factory reset fails | Reset button not pressed long enough | 1. Long press the Reset key for 10-20 seconds<br>2. Wait for the WARN light to stay solid on | [Factory Reset](#15-factory-reset) |
+| Firmware upgrade fails | Incorrect firmware file | 1. Verify the firmware file matches the device model<br>2. Re-download the firmware file | [Firmware Upgrade](#4104-firmware-upgrade) |
+| Device restarts unexpectedly | Infinite redial disabled with no SIM card | 1. Insert a valid SIM card<br>2. Or enable infinitely redial in cellular advanced settings | [Cellular Advanced](#434-advanced-configuration) |
+
+## 4 Peripheral Interface Issues
+
+| Symptom | Possible Cause | Troubleshooting Steps | Corresponding Chapter |
+|---------|----------------|----------------------|----------------------|
+| Serial port communication failure | Incorrect baud rate | 1. Check and set the correct baud rate using `stty`<br>2. Verify the serial port mode (RS-232/RS-485) | [Serial Ports](#4131-serial-ports) |
+| Serial port communication failure | Incorrect wiring | 1. Verify TX/RX or A/B wiring is correct<br>2. Check the GND connection | [Serial Port Pin Definition](#4131-serial-ports) |
+| USB storage not recognized | Unsupported file system | 1. Format the USB device as FAT32 or ext4<br>2. Reinsert the device | [USB Interface](#4132-usb-interface) |
+| MicroSD card not recognized | Unsupported file system | 1. Format the SD card as FAT32<br>2. Ensure the device is powered off during insertion | [MicroSD Card](#4133-microsd-card) |
+| DI/DO not working | Expansion module not supported | 1. Verify the expansion module model supports DI/DO<br>2. Check the extension interface pin definition | [Extension Interface](#1314-interface-description) |
+| CAN communication failure | Incorrect bit rate | 1. Check and configure the correct CAN bit rate<br>2. Verify the CAN interface is up | [CAN Bus Interface](#4134-can-bus-interface) |
+
+
+
+# Appendix Safety Precautions
+
+1. The device must be used within the specified temperature and humidity ranges.
+2. Do not use the device in flammable or explosive environments.
+3. Verify that the power supply voltage meets the device specifications (9-48V DC) before connecting power.
+4. The SIM card and MicroSD card must be installed or removed only when the device is powered off.
+5. Before disconnecting a USB mass storage device, execute the `sync` command to prevent data loss.
+6. Non-professionals must not open the device enclosure due to electric shock risk.
+7. Ensure proper grounding when installing the device in an industrial cabinet.
+8. Do not expose the device to direct sunlight or rain for extended periods.
+9. Use only certified power adapters and antennas to avoid interference or damage.
+10. When performing a factory reset, ensure that critical data has been backed up to external storage.
+
+> **Warning**: Non-professionals must not open the device enclosure. Electric shock risk.
+
+> **Warning**: System reset will erase all user data and configurations. Back up critical data before resetting.
+
+
+
+# FAQ Frequently Asked Questions
+
+### Question 1: What is the difference between the EC300 and a standard industrial PC?
+
+1. The EC300 is an edge computer designed for industrial IoT applications with built-in cellular, Wi-Fi, and cloud management capabilities.
+2. It supports industrial interfaces such as RS-232, RS-485, CAN bus, digital input/output, and analog input.
+3. The device includes hardware security features such as Secure Boot and TPM2.0.
+4. It supports the IEOS web management system and DeviceLive cloud platform for remote management.
+5. Standard industrial PCs typically lack integrated wireless connectivity and industrial I/O interfaces.
+
+### Question 2: Why cannot the device connect to the cellular network?
+
+1. Physical environment: Check whether the SIM card is inserted into the correct slot and whether the cellular antenna is installed.
+2. APN settings: Ensure the APN configuration matches the information provided by the operator.
+3. Check device connectivity: Log in to the device web interface and use the network diagnostic tool to ping 8.8.8.8. If successful, check the connectivity between the PC and the device.
+4. Verify SIM card status: Remove the SIM card and install it in a mobile phone to verify it can connect to the network.
+5. Restart: Power off the device, wait a few seconds, and reconnect power to retry the network connection.
+6. Factory reset: Restore the device to factory defaults and retry the network connection.
+
+### Question 3: How to disable IEOS and use native Linux commands?
+
+1. Log in to the device via SSH.
+2. Execute `systemctl stop ieos_daemon` to stop IEOS for the current session.
+3. Execute `systemctl disable ieos_daemon` to prevent IEOS from starting after reboot.
+4. Use native Linux commands for network and system management.
+5. To re-enable IEOS, execute `systemctl enable ieos_daemon` and `systemctl start ieos_daemon`.
+
+> **Note**: After IEOS is disabled, wireless networking functions require native Linux commands, and DeviceLive remote management is unavailable.
+
+### Question 4: How to change the default web login password?
+
+1. Log in to the web management interface with the default credentials.
+2. Navigate to the user management or system settings page (depending on the IEOS version).
+3. Change the password and save.
+4. For security reasons, it is recommended to disable the default `adm` account and create a new administrator account.
+
+### Question 5: What expansion modules are supported by the EC300?
+
+| Expansion Module | Function |
+|------------------|----------|
+| NAAD | 2x 4-20mA analog input + 4x DI + 4x DO |
+| N44C | 2x RS-485 + 1x CAN FD |
+| N4CC | 1x RS-485 + 2x CAN FD |
+| N44D | 2x RS-485 + 4x DI + 4x DO |
+| — | No expansion module |
+
+For detailed selection instructions, refer to the EC312 Series Edge Computer Product Specification.
+
+### Question 6: How to read digital input and control digital output via programming?
+
+1. Query the device description file at `/tmp/ieos/etc/system_info.json` to obtain the device node paths.
+2. Read DI status using `cat /sys/class/gpio/gpioXXX/value`.
+3. Control DO status using `echo 1 > /sys/class/gpio/gpioXXX/value` (high) or `echo 0 > /sys/class/gpio/gpioXXX/value` (low).
+4. Refer to the Programming Guidelines section for sample shell scripts.
+
+### Question 7: Why does the device restart automatically?
+
+1. Check whether the cellular infinite redial option is disabled and the device has no valid SIM card. In this case, the system may restart after repeated dialing failures.
+2. Check whether the hardware watchdog is triggered due to a program exception.
+3. Check whether an automatic restart is configured after firmware upgrade.
+4. Check the power supply stability. Voltage fluctuations may cause unexpected restarts.
+

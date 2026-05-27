@@ -4,7 +4,7 @@
 
 ### Declaration
 
-Thank you for choosing our product. Before use, please carefully read this user manual. By complying with the following statements, intellectual property rights and legal compliance will be maintained, ensuring that the user experience aligns with the latest product information. If there are any questions or if written permission is needed, please contact the technical support team
+Thank you for choosing our product. Before use, please carefully read this user manual. By complying with the following statements, intellectual property rights and legal compliance will be maintained, ensuring that the user experience aligns with the latest product information. If there are any questions or if written permission is needed, please contact the technical support team.
 
 - Copyright Statement
 
@@ -20,14 +20,14 @@ The content of this user manual is protected by copyright laws. The copyright be
 
 ### Graphical Interface Conventions
 
-| Symbol       | Meaning                                                                                             | Example                                                            |
-| ------------ | --------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
-| `< >`        | Indicates a variable or parameter to be replaced with an actual value                               | `<IP Address>` indicates a specific IP address needs to be entered |
-| `" "`        | Indicates text labels on the interface                                                              | Click the "Save" button                                            |
-| `→`          | Indicates menu hierarchy or operation sequence                                                      | 【Network】→【Cellular】                                           |
-| `【 】`      | Indicates a menu or page name                                                                       | Enter the 【System Settings】page                                  |
-| **Cautions** | Points to be mindful of during operation; improper actions may result in data loss or device damage | -                                                                  |
-| **Note**     | Supplementary and necessary explanations for the operation description                              | -                                                                  |
+| Symbol | Meaning | Example |
+|--------|---------|---------|
+| `< >` | Indicates a variable or parameter to be replaced with an actual value | `<IP Address>` indicates a specific IP address needs to be entered |
+| `" "` | Indicates text labels on the interface | Click the "Save" button |
+| `→` | Indicates menu hierarchy or operation sequence | 【Network】→【Cellular】 |
+| `【 】` | Indicates a menu or page name | Enter the 【System Settings】page |
+| **Cautions** | Points to be mindful of during operation; improper actions may result in data loss or device damage | - |
+| **Note** | Supplementary and necessary explanations for the operation description | - |
 
 ### Technical Support
 
@@ -71,16 +71,16 @@ Address: Room 1103, No. 18 Shunyi Road, Putuo District, Shanghai
 
 **Quick Navigation by Task**
 
-| Task                                         | Corresponding Chapter                                                        | Estimated Time   |
-| -------------------------------------------- | ---------------------------------------------------------------------------- | ---------------- |
-| Understand device hardware and indicators    | [Getting to Know the Device](#chapter-1-getting-to-know-the-device)          | About 5 minutes  |
-| Complete device installation and first login | [Installation and First Use](#chapter-2-installation-and-first-use)          | About 10 minutes |
-| Configure cellular network access            | [Scenario: Cellular Internet Access](#scenario-1-cellular-internet-access)   | About 5 minutes  |
-| Configure wired broadband access             | [Scenario: Wired Broadband Access](#scenario-2-wired-broadband-access)       | About 5 minutes  |
-| Configure Wi-Fi                              | [Scenario: Wi-Fi Configuration](#scenario-3-wi-fi-configuration)             | About 5 minutes  |
-| Configure VPN                                | [Scenario: VPN Configuration](#scenario-4-vpn-configuration)                 | About 10 minutes |
-| Manage device via cloud platform             | [Scenario: Cloud Platform Management](#scenario-5-cloud-platform-management) | About 10 minutes |
-| Diagnose network faults                      | [Appendix: Troubleshooting](#appendix-troubleshooting)                       | As needed        |
+| Task | Corresponding Chapter | Estimated Time |
+|------|----------------------|----------------|
+| Understand device hardware and indicators | [Getting to Know the Device](#chapter-1-getting-to-know-the-device) | About 5 minutes |
+| Complete device installation and first login | [Installation and First Use](#chapter-2-installation-and-first-use) | About 10 minutes |
+| Configure cellular network access | [Scenario: Cellular Internet Access](#scenario-1-cellular-internet-access) | About 5 minutes |
+| Configure wired broadband access | [Scenario: Wired Broadband Access](#scenario-2-wired-broadband-access) | About 5 minutes |
+| Configure Wi-Fi | [Scenario: Wi-Fi Configuration](#scenario-3-wi-fi-configuration) | About 5 minutes |
+| Configure VPN | [Scenario: VPN Configuration](#scenario-4-vpn-configuration) | About 10 minutes |
+| Manage device via cloud platform | [Scenario: Cloud Platform Management](#scenario-5-cloud-platform-management) | About 10 minutes |
+| Diagnose network faults | [Appendix: Troubleshooting](#appendix-troubleshooting) | As needed |
 
 ---
 
@@ -92,14 +92,14 @@ The 5G CPE02 series leverages the high-speed connectivity of 5G cellular network
 
 ## 1.2 Package Contents
 
-| Item              | Quantity | Description                         |
-| ----------------- | -------- | ----------------------------------- |
-| 5G CPE02 Host     | 1        | Main device unit                    |
-| Power Adapter     | 1        | Original power adapter              |
-| Ethernet Cable    | 1        | For wired connection                |
-| Cellular Antennas | 4        | For 5G/4G cellular signal reception |
-| Wi-Fi Antennas    | 4        | For 2.4GHz/5GHz wireless signal     |
-| Quick Start Guide | 1        | Printed quick reference document    |
+| Item | Quantity | Description |
+|------|----------|-------------|
+| 5G CPE02 Host | 1 | Main device unit |
+| Power Adapter | 1 | Original power adapter |
+| Ethernet Cable | 1 | For wired connection |
+| Cellular Antennas | 4 | For 5G/4G cellular signal reception |
+| Wi-Fi Antennas | 4 | For 2.4GHz/5GHz wireless signal |
+| Quick Start Guide | 1 | Printed quick reference document |
 
 (Original manuscript not detailed for additional accessories, to be supplemented)
 
@@ -111,16 +111,16 @@ The 5G CPE02 series leverages the high-speed connectivity of 5G cellular network
 
 (Original manuscript does not contain detailed appearance and interface diagrams, to be supplemented)
 
-| Interface                   | Position   | Function Description                                              |
-| --------------------------- | ---------- | ----------------------------------------------------------------- |
-| WAN/LAN Port                | Rear       | Ethernet port for wired network access or local device connection |
-| LAN Port                    | Rear       | Ethernet port for local device connection                         |
-| SIM Card Slot               | Side       | For inserting external SIM card                                   |
-| Power Interface             | Rear       | DC power input                                                    |
-| Reset Button                | Front/Side | Restore factory settings                                          |
-| WPS Button                  | Front      | One-touch Wi-Fi connection                                        |
-| Cellular Antenna Interfaces | Rear       | 4x cellular antenna connectors                                    |
-| Wi-Fi Antenna Interfaces    | Rear       | 4x Wi-Fi antenna connectors                                       |
+| Interface | Position | Function Description |
+|-----------|----------|---------------------|
+| WAN/LAN Port | Rear | Ethernet port for wired network access or local device connection |
+| LAN Port | Rear | Ethernet port for local device connection |
+| SIM Card Slot | Side | For inserting external SIM card |
+| Power Interface | Rear | DC power input |
+| Reset Button | Front/Side | Restore factory settings |
+| WPS Button | Front | One-touch Wi-Fi connection |
+| Cellular Antenna Interfaces | Rear | 4x cellular antenna connectors |
+| Wi-Fi Antenna Interfaces | Rear | 4x Wi-Fi antenna connectors |
 
 (Original manuscript not detailed for complete interface specifications, to be supplemented)
 
@@ -130,25 +130,25 @@ The 5G CPE02 series leverages the high-speed connectivity of 5G cellular network
 
 <p align="center"><strong>Figure 1-2 Indicator Description</strong></p>
 
-| Indicator           | Status         | Meaning                                                           |
-| ------------------- | -------------- | ----------------------------------------------------------------- |
-| Network             | Off            | Device not powered on                                             |
-|                     | Red flashing   | Network connection disconnected                                   |
-|                     | Green flashing | Cellular network connecting                                       |
-|                     | Blue flashing  | Wired network connecting                                          |
-|                     | Solid green    | Cellular network connected / Wired network connected successfully |
-| Wi-Fi               | Off            | Function disabled                                                 |
-|                     | Green flashing | Wi-Fi driver loading                                              |
-|                     | Solid green    | AP mode active                                                    |
-| Cellular            | Off            | Function disabled                                                 |
-|                     | Solid red      | Poor cellular signal                                              |
-|                     | Solid blue     | Moderate cellular signal                                          |
-|                     | Solid green    | Strong cellular signal                                            |
-| SYS (System Status) | Off            | Device not powered on                                             |
-|                     | Solid red      | System booting                                                    |
-|                     | Red flashing   | System error                                                      |
-|                     | Solid green    | System running normally                                           |
-|                     | Solid blue     | Software upgrading                                                |
+| Indicator | Status | Meaning |
+|-----------|--------|---------|
+| Network | Off | Device not powered on |
+| | Red flashing | Network connection disconnected |
+| | Green flashing | Cellular network connecting |
+| | Blue flashing | Wired network connecting |
+| | Solid green | Cellular network connected / Wired network connected successfully |
+| Wi-Fi | Off | Function disabled |
+| | Green flashing | Wi-Fi driver loading |
+| | Solid green | AP mode active |
+| Cellular | Off | Function disabled |
+| | Solid red | Poor cellular signal |
+| | Solid blue | Moderate cellular signal |
+| | Solid green | Strong cellular signal |
+| SYS (System Status) | Off | Device not powered on |
+| | Solid red | System booting |
+| | Red flashing | System error |
+| | Solid green | System running normally |
+| | Solid blue | Software upgrading |
 
 ## 1.5 Restoring Factory Settings
 
@@ -161,13 +161,13 @@ The 5G CPE02 series leverages the high-speed connectivity of 5G cellular network
 
 ## 1.6 Default Settings
 
-| No. | Function              | Default Settings                                                                                                                                                                                                                                                                                                                                     |
-| --- | --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1   | Cellular              | Dual SIM cards enabled, using SIM1 by default                                                                                                                                                                                                                                                                                                        |
-| 2   | Wi-Fi                 | Wi-Fi 2.4G access point enabled, SSID: Prefixed with "CPE02-", followed by the last 6 digits of the wireless MAC address. Wi-Fi 5G access point enabled, SSID: Prefixed with "CPE02-5G-", followed by the last 6 digits of the wireless MAC address. Authentication method is WPA2-PSK. Password for both is the last 8 digits of the serial number. |
-| 3   | Ethernet              | 1 WAN port and 1 LAN port enabled. IP Address: 192.168.2.1, Subnet Mask: 255.255.255.0. DHCP server enabled, address pool from 192.168.2.2 to 192.168.2.100                                                                                                                                                                                          |
-| 4   | Management Services   | Local HTTP and HTTPS enabled, ports 80 and 443 respectively. Access from cellular network disabled                                                                                                                                                                                                                                                   |
-| 5   | Username and Password | Check the device's nameplate for login credentials                                                                                                                                                                                                                                                                                                   |
+| No. | Function | Default Settings |
+|-----|----------|------------------|
+| 1 | Cellular | Dual SIM cards enabled, using SIM1 by default |
+| 2 | Wi-Fi | Wi-Fi 2.4G access point enabled, SSID: Prefixed with "CPE02-", followed by the last 6 digits of the wireless MAC address. Wi-Fi 5G access point enabled, SSID: Prefixed with "CPE02-5G-", followed by the last 6 digits of the wireless MAC address. Authentication method is WPA2-PSK. Password for both is the last 8 digits of the serial number. |
+| 3 | Ethernet | 1 WAN port and 1 LAN port enabled. IP Address: 192.168.2.1, Subnet Mask: 255.255.255.0. DHCP server enabled, address pool from 192.168.2.2 to 192.168.2.100 |
+| 4 | Management Services | Local HTTP and HTTPS enabled, ports 80 and 443 respectively. Access from cellular network disabled |
+| 5 | Username and Password | Check the device's nameplate for login credentials |
 
 ---
 
@@ -177,14 +177,14 @@ The 5G CPE02 series leverages the high-speed connectivity of 5G cellular network
 
 Before installing the device, confirm the following items are prepared:
 
-| Item                  | Requirement                                                   |
-| --------------------- | ------------------------------------------------------------- |
-| SIM Card              | Valid SIM card with data plan activated (for cellular access) |
-| Antennas              | All cellular and Wi-Fi antennas must be properly installed    |
-| Power Adapter         | Use the original power adapter included in the package        |
-| Ethernet Cable        | For wired connection to PC or upstream network device         |
-| PC or Terminal Device | For accessing the Web management interface                    |
-| Web Browser           | Chrome, Firefox, Edge, or other modern browsers               |
+| Item | Requirement |
+|------|-------------|
+| SIM Card | Valid SIM card with data plan activated (for cellular access) |
+| Antennas | All cellular and Wi-Fi antennas must be properly installed |
+| Power Adapter | Use the original power adapter included in the package |
+| Ethernet Cable | For wired connection to PC or upstream network device |
+| PC or Terminal Device | For accessing the Web management interface |
+| Web Browser | Chrome, Firefox, Edge, or other modern browsers |
 
 > **Caution**: Use only the provided original power adapter to prevent potential device damage resulting from using incompatible power adapters.
 
@@ -220,12 +220,12 @@ Install all cellular antennas and Wi-Fi antennas onto the corresponding antenna 
 
 If the PC fails to obtain an IP address automatically, configure it with a static IP address:
 
-| Parameter       | Value                                                                         |
-| --------------- | ----------------------------------------------------------------------------- |
-| IP Address      | 192.168.2.x (Choose an available address within 192.168.2.2 to 192.168.2.254) |
-| Subnet Mask     | 255.255.255.0                                                                 |
-| Default Gateway | 192.168.2.1                                                                   |
-| DNS Servers     | 8.8.8.8 (or ISP's DNS server address)                                         |
+| Parameter | Value |
+|-----------|-------|
+| IP Address | 192.168.2.x (Choose an available address within 192.168.2.2 to 192.168.2.254) |
+| Subnet Mask | 255.255.255.0 |
+| Default Gateway | 192.168.2.1 |
+| DNS Servers | 8.8.8.8 (or ISP's DNS server address) |
 
 ### 2.2.5 Logging In to the Web Interface
 
@@ -283,6 +283,7 @@ After completing installation, verify the following items:
 - [ ] Web management interface is accessible at 192.168.2.1
 - [ ] Internet connection is confirmed via Dashboard interface status
 
+
 ---
 
 # Chapter 3 Common Scenario Configuration
@@ -296,7 +297,6 @@ After completing installation, verify the following items:
 **Estimated Time**: About 5 minutes.
 
 **Operation Steps**:
-
 1. Insert the SIM card and install all cellular antennas.
 2. Power on the device and wait for the system to boot (SYS indicator solid green).
 3. Log in to the Web management interface at `192.168.2.1`.
@@ -306,13 +306,11 @@ After completing installation, verify the following items:
 7. Click "Save" and wait for the cellular connection to establish.
 
 **Verification**:
-
 1. Check the indicator status: Cellular indicator solid green indicates strong signal and connection.
 2. In the Dashboard, verify the Cellular icon is green.
 3. Access any Internet website to confirm connectivity.
 
 **Common Issues**:
-
 - Network connection failure: Check SIM card insertion, verify APN parameters, check signal strength.
 - Data transmission/reception abnormal: Check signal strength and data plan balance.
 
@@ -325,7 +323,6 @@ After completing installation, verify the following items:
 **Estimated Time**: About 5 minutes.
 
 **Operation Steps**:
-
 1. Connect the upstream network device to the CPE02 WAN port using an Ethernet cable.
 2. Log in to the Web management interface at `192.168.2.1`.
 3. Navigate to 【Internet】→【Uplink Table】, click "Edit" on the WAN1 interface.
@@ -336,12 +333,10 @@ After completing installation, verify the following items:
 5. Click "Save" and wait for the connection to establish.
 
 **Verification**:
-
 1. In the Dashboard, verify the WAN icon is green.
 2. Access any Internet website to confirm connectivity.
 
 **Common Issues**:
-
 - WAN connection failure: Check Ethernet cable connection, verify upstream device DHCP server status, check PPPoE credentials.
 - IP address conflict: Ensure the WAN IP and LAN IP are in different subnets.
 
@@ -354,7 +349,6 @@ After completing installation, verify the following items:
 **Estimated Time**: About 5 minutes.
 
 **Operation Steps**:
-
 1. Log in to the Web management interface at `192.168.2.1`.
 2. Navigate to 【Wi-Fi】, select the SSID to configure and click "Edit".
 3. Configure the following parameters:
@@ -366,14 +360,12 @@ After completing installation, verify the following items:
 4. Click "Save" to apply the configuration.
 
 **Notes**:
-
 1. The device comes with two default main SSIDs for 2.4GHz and 5GHz. These main SSIDs cannot have their frequency bands modified or deleted.
 2. Once an SSID is added, its frequency band cannot be modified, and the channel will automatically align with the channel of the corresponding main SSID.
 3. The CPE02 series products only support AP mode and do not support Wi-Fi STA.
 4. The SSID's network can be assigned to a previously created subnet within the local network.
 
 **Verification**:
-
 1. Search for the configured SSID on a wireless terminal device.
 2. Connect using the configured password.
 3. Access the Internet to confirm connectivity.
@@ -387,7 +379,6 @@ After completing installation, verify the following items:
 **Estimated Time**: About 10 minutes.
 
 **Operation Steps**:
-
 1. Log in to the Web management interface at `192.168.2.1`.
 2. For IPSec VPN, navigate to 【VPN】→【IPSec VPN】, click "Add".
 3. Configure IPSec VPN parameters: Name, IKE Version, Negotiation Mode, Pre-Shared Key, Uplink Interface, Peer Address, Tunnel Mode, Local Subnet, Peer Subnet, IKE Policy, and IPSec Policy.
@@ -396,12 +387,10 @@ After completing installation, verify the following items:
 6. Click "Save" to apply the configuration.
 
 **Verification**:
-
 1. Navigate to 【Status】→【VPN】 to check VPN status and traffic.
 2. Verify remote devices can access resources through the VPN tunnel.
 
 **Common Issues**:
-
 - Tunnel not established: Check Pre-Shared Key consistency, verify peer address reachability, check IKE policy compatibility.
 - No traffic through tunnel: Verify local and peer subnet configuration, check firewall rules.
 
@@ -414,7 +403,6 @@ After completing installation, verify the following items:
 **Estimated Time**: About 10 minutes.
 
 **Operation Steps**:
-
 1. Register for an InCloud Manager account at https://star.inhandcloud.com/.
 2. Log in to the cloud platform and navigate to the Devices menu.
 3. Click "Add" and enter the device's serial number and MAC address.
@@ -423,16 +411,15 @@ After completing installation, verify the following items:
 6. On the platform, click the device name to access the device details page for remote monitoring and configuration.
 
 **Notes**:
-
 1. When a device is added for the first time, it comes with a complimentary 3-year free Basic Edition license.
 2. Users can renew licenses as needed in the future.
 3. For features like bulk configuration deployment, firmware upgrades, and Connector, cloud platform access is required.
 
 **Verification**:
-
 1. The device appears online in the InCloud Manager device list.
 2. Real-time device status, traffic statistics, and signal strength are visible on the platform.
 3. Remote access to the device local interface is available via the platform.
+
 
 ---
 
@@ -524,21 +511,21 @@ In the 【Dashboard】→【Device Information】 interface, details about the d
 
 <p align="center"><strong>Figure 4-10 Device Information Panel</strong></p>
 
-| Parameter        | Description                                                                                 |
-| ---------------- | ------------------------------------------------------------------------------------------- |
-| Name             | Identifies the device's name, default is "CPE02", modifiable                                |
-| MAC Address      | Identifies the device's physical MAC address                                                |
-| Local Gateway IP | The default subnet gateway address for the device                                           |
-| Model            | The specific model of the device, determines cellular and WLAN feature support              |
-| Uptime           | The device's running time since power-up                                                    |
-| System Time      | Displays the device's time zone and system time                                             |
-| Serial           | A unique code identifying the device, used for indexing or adding to a platform account     |
-| Internet Access  | The upstream interface used for device connectivity                                         |
-| License Status   | Information about the license applied to the device (InCloud Manager Basic or Professional) |
-| Firmware Version | The current software version used by the device                                             |
-| Uplink IP        | The IP address of the upstream interface used for device connectivity                       |
+| Parameter | Description |
+|-----------|-------------|
+| Name | Identifies the device's name, default is "CPE02", modifiable |
+| MAC Address | Identifies the device's physical MAC address |
+| Local Gateway IP | The default subnet gateway address for the device |
+| Model | The specific model of the device, determines cellular and WLAN feature support |
+| Uptime | The device's running time since power-up |
+| System Time | Displays the device's time zone and system time |
+| Serial | A unique code identifying the device, used for indexing or adding to a platform account |
+| Internet Access | The upstream interface used for device connectivity |
+| License Status | Information about the license applied to the device (InCloud Manager Basic or Professional) |
+| Firmware Version | The current software version used by the device |
+| Uplink IP | The IP address of the upstream interface used for device connectivity |
 
-**Interface Status**
+ **Interface Status**
 
 In the 【Dashboard】→【Interface Status】 feature, the operational status of each interface can be visually checked. Click on the interface name to view details.
 
@@ -570,7 +557,7 @@ The 【Status】→【Link Monitoring】 feature monitors the health status of u
 
 <p align="center"><strong>Figure 4-14 Link Monitor Panel</strong></p>
 
-**Cellular Signal**
+ **Cellular Signal**
 
 The 【Status】→【Cellular Signal】 feature displays signal strength as well as parameters like RSSI, SINR, RSRP, and RSRQ of the cellular dial-up.
 
@@ -586,7 +573,7 @@ The 【Status】→【Clients】 feature provides detailed information about wir
 
 <p align="center"><strong>Figure 4-16 Clients Panel</strong></p>
 
-**VPN**
+ **VPN**
 
 The 【Status】→【VPN】 feature displays information about IPSec VPN and L2TP VPN, including status, traffic, and the duration of the most recent connection.
 
@@ -602,19 +589,19 @@ Through the IP Passthrough function, terminal devices can directly obtain a publ
 
 <p align="center"><strong>Figure 4-18 Passthrough Status</strong></p>
 
-| Parameter                 | Description                                           |
-| ------------------------- | ----------------------------------------------------- |
-| Status                    | Working status of Passthrough                         |
-| Passthrough WAN           | The uplink of Passthrough transmission                |
-| Passthrough LAN           | The LAN interface to which Passthrough is transmitted |
-| Passthrough IP/Mask       | The IP address and subnet mask of the Passthrough     |
-| Passthrough Gateway       | The gateway address of the Passthrough                |
-| Passthrough DNS1/2        | The DNS resolution address when Passthrough is active |
-| Passthrough MAC           | The MAC address obtained by Passthrough               |
-| Address Allocation Status | The status of Passthrough address allocation          |
-| Lease Timeout             | The lease time of Passthrough                         |
+| Parameter | Description |
+|-----------|-------------|
+| Status | Working status of Passthrough |
+| Passthrough WAN | The uplink of Passthrough transmission |
+| Passthrough LAN | The LAN interface to which Passthrough is transmitted |
+| Passthrough IP/Mask | The IP address and subnet mask of the Passthrough |
+| Passthrough Gateway | The gateway address of the Passthrough |
+| Passthrough DNS1/2 | The DNS resolution address when Passthrough is active |
+| Passthrough MAC | The MAC address obtained by Passthrough |
+| Address Allocation Status | The status of Passthrough address allocation |
+| Lease Timeout | The lease time of Passthrough |
 
-**Events**
+ **Events**
 
 The device records event logs, including user login, configuration changes, link changes, reboot, and other events. This information can be checked in the 【Status】→【Events】 interface. Specific events on a particular date can be viewed by setting the start and end dates or choosing the event type.
 
@@ -630,11 +617,11 @@ The device records logs generated during operation to facilitate fault localizat
 
 <p align="center"><strong>Figure 4-20 Logs Interface</strong></p>
 
-| Function                 | Description                                                                                             |
-| ------------------------ | ------------------------------------------------------------------------------------------------------- |
-| Download Logs            | Download the device's operational logs                                                                  |
+| Function | Description |
+|----------|-------------|
+| Download Logs | Download the device's operational logs |
 | Download Diagnostic Logs | Download diagnostic logs including system operation logs, device information, and device configurations |
-| Clear Logs               | Clear the device's operational logs; diagnostic logs are not cleared                                    |
+| Clear Logs | Clear the device's operational logs; diagnostic logs are not cleared |
 
 ## 4.2 Internet
 
@@ -655,7 +642,6 @@ Users can edit the cellular interface and WAN1 interface in the 【Internet】�
 <p align="center"><strong>Figure 4-22 Uplink Table</strong></p>
 
 > **Cautions**:
->
 > 1. When the WAN1 interface is deleted, it will be switched to the LAN1 interface. Routing, policy routing, inbound/outbound rules, port forwarding, DDNS, and VPN related to the WAN interface will be deleted.
 > 2. The WAN port of the device supports three different Internet connection modes.
 
@@ -708,13 +694,11 @@ Users can configure link detection-related settings in the 【Internet】→【U
 > **Cautions**:
 > **Link detection switch**: When enabled, it detects the connectivity of all uplink interfaces and is enabled by default.
 > **Detection address**: Fill in the specified probe address.
->
 > 1. After filling in, all uplink links will only detect this address. When the address cannot be detected, the equipment networking will be affected.
 > 2. If it is not filled in, the device will detect the DNS address and alternative detection address of the uplink interface, and select the available detection address from them.
 
 > **Link switching based on detection items**: In the link backup mode, users can set detection items to trigger the switching between links and SIM cards.
 > The following conditions need to be met simultaneously:
->
 > 1. Link detection switch on
 > 2. Enable detection item
 > 3. It works in the link backup mode and is not the "do not switch" option
@@ -750,7 +734,6 @@ Parameters can be configured by clicking the "Edit" button.
 <p align="center"><strong>Figure 4-31 Set the SSID Parameters</strong></p>
 
 > **Notes**:
->
 > 1. The device comes with two default main SSIDs for 2.4GHz and 5GHz. These main SSIDs cannot have their frequency bands modified or deleted.
 > 2. Once an SSID is added, its frequency band cannot be modified, and the channel will automatically align with the channel of the corresponding main SSID.
 > 3. The CPE02 series products only support AP mode and do not support Wi-Fi STA.
@@ -770,27 +753,27 @@ A new IPSec VPN item can be created by 【VPN】→【IPSec VPN】→【Add】. 
 
 <p align="center"><strong>Figure 4-32 Set the IPSec VPN Parameters</strong></p>
 
-| Parameter                        | Description                                                                                                                                     |
-| -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| Name                             | Specify the name of the IPSec VPN created on the device, used for local VPN management                                                          |
-| Status                           | Configure the enable status of the IPsec function                                                                                               |
-| IKE Version                      | Specify the version of the IKE protocol used on this device, IKEv1 and IKEv2 are optional                                                       |
-| Negotiation Mode                 | Based on the configuration parameters of the peer device, choose between Main Mode and Aggressive Mode                                          |
-| Pre-Shared Key                   | Specify the authentication key for IKE negotiation, which must be consistent on both sides                                                      |
-| Uplink Interface                 | Specify the local uplink interface used to establish the tunnel                                                                                 |
-| Peer Address                     | Specify the IP address of the peer device. The peer address must be set to 0.0.0.0 if the device works as an IPSec VPN server                   |
-| Tunnel Mode                      | Specify the IP packet encapsulation mode on the IPSec VPN tunnel. Tunnel mode and transmission mode are optional                                |
-| Local Subnet                     | Specify the IP address segment of the traffic to be sent out by the device through the IPSec VPN tunnel                                         |
-| Peer Subnet                      | Specify the IP address segment used for communication on the remote client                                                                      |
-| IKE Policy - Encryption          | Specify the encryption algorithm for IKE                                                                                                        |
-| IKE Policy - Authentication      | Authentication parameters during the IKE negotiation process                                                                                    |
-| IKE Policy - DH Groups           | Specify the DH key exchange mode                                                                                                                |
-| IKE Policy - Lifetime            | Specify the lifetime of the IKE SA, 86400 is set by default                                                                                     |
-| IPSec Policy - Security Protocol | Specify the security protocol used for ESP                                                                                                      |
-| IPSec Policy - Encryption        | Specify the encryption algorithm of the ESP protocol                                                                                            |
-| IPSec Policy - Authentication    | Specify the authentication algorithm for ESP                                                                                                    |
-| IPSec Policy - PFS Groups        | Specify the Perfect Forward Secrecy (PFS) mode, which improves communication security through an additional key exchange in Phase 2 negotiation |
-| IPSec Policy - Lifetime          | Specify the lifetime of the IPSec SA, 86400 is set by default                                                                                   |
+| Parameter | Description |
+|-----------|-------------|
+| Name | Specify the name of the IPSec VPN created on the device, used for local VPN management |
+| Status | Configure the enable status of the IPsec function |
+| IKE Version | Specify the version of the IKE protocol used on this device, IKEv1 and IKEv2 are optional |
+| Negotiation Mode | Based on the configuration parameters of the peer device, choose between Main Mode and Aggressive Mode |
+| Pre-Shared Key | Specify the authentication key for IKE negotiation, which must be consistent on both sides |
+| Uplink Interface | Specify the local uplink interface used to establish the tunnel |
+| Peer Address | Specify the IP address of the peer device. The peer address must be set to 0.0.0.0 if the device works as an IPSec VPN server |
+| Tunnel Mode | Specify the IP packet encapsulation mode on the IPSec VPN tunnel. Tunnel mode and transmission mode are optional |
+| Local Subnet | Specify the IP address segment of the traffic to be sent out by the device through the IPSec VPN tunnel |
+| Peer Subnet | Specify the IP address segment used for communication on the remote client |
+| IKE Policy - Encryption | Specify the encryption algorithm for IKE |
+| IKE Policy - Authentication | Authentication parameters during the IKE negotiation process |
+| IKE Policy - DH Groups | Specify the DH key exchange mode |
+| IKE Policy - Lifetime | Specify the lifetime of the IKE SA, 86400 is set by default |
+| IPSec Policy - Security Protocol | Specify the security protocol used for ESP |
+| IPSec Policy - Encryption | Specify the encryption algorithm of the ESP protocol |
+| IPSec Policy - Authentication | Specify the authentication algorithm for ESP |
+| IPSec Policy - PFS Groups | Specify the Perfect Forward Secrecy (PFS) mode, which improves communication security through an additional key exchange in Phase 2 negotiation |
+| IPSec Policy - Lifetime | Specify the lifetime of the IPSec SA, 86400 is set by default |
 
 ### 4.5.2 L2TP VPN
 
@@ -808,16 +791,16 @@ Typically, the L2TP server is strategically deployed at the enterprise's headqua
 
 Please configure the following parameters based on the actual network requirements.
 
-| Parameter                    | Description                                                                                                 |
-| ---------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| Name                         | The name of the L2TP server, which cannot be changed                                                        |
-| Status                       | Enable or disable this L2TP server by clicking the switch                                                   |
-| Uplink Interface             | Specify the uplink interface to establish a tunnel from the L2TP server                                     |
-| VPN Connection Address       | Specify the gateway address for the L2TP VPN client                                                         |
-| IP Pool                      | The system will assign an IP address to the L2TP client from the specified IP address pool                  |
-| Username/Password            | Specify the username and password for L2TP negotiation, which must be consistent on both ends of the tunnel |
-| Authentication Mode          | Specify the authentication mode for the L2TP tunnel                                                         |
-| Enable Tunnel Authentication | Both ends of the tunnel must be configured with the same username and password for this option              |
+| Parameter | Description |
+|-----------|-------------|
+| Name | The name of the L2TP server, which cannot be changed |
+| Status | Enable or disable this L2TP server by clicking the switch |
+| Uplink Interface | Specify the uplink interface to establish a tunnel from the L2TP server |
+| VPN Connection Address | Specify the gateway address for the L2TP VPN client |
+| IP Pool | The system will assign an IP address to the L2TP client from the specified IP address pool |
+| Username/Password | Specify the username and password for L2TP negotiation, which must be consistent on both ends of the tunnel |
+| Authentication Mode | Specify the authentication mode for the L2TP tunnel |
+| Enable Tunnel Authentication | Both ends of the tunnel must be configured with the same username and password for this option |
 
 **Client**
 
@@ -829,14 +812,14 @@ The L2TP client parameters can be configured to establish a tunnel with a remote
 
 Please configure the following parameters based on the actual network requirements.
 
-| Parameter                  | Description                                                                                                           |
-| -------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| Name                       | Specify the local name of the L2TP client tunnel                                                                      |
-| Status                     | Enable or disable this L2TP client by clicking the switch                                                             |
-| Uplink Interface           | Specify the uplink interface to establish a tunnel with a remote L2TP server                                          |
-| Server Address             | Specify the IP address set by the remote L2TP server                                                                  |
-| Username/Password          | Specify the username and password for L2TP negotiation, which must be consistent on both ends of the tunnel           |
-| Authentication Mode        | Specify the authentication mode for the L2TP tunnel                                                                   |
+| Parameter | Description |
+|-----------|-------------|
+| Name | Specify the local name of the L2TP client tunnel |
+| Status | Enable or disable this L2TP client by clicking the switch |
+| Uplink Interface | Specify the uplink interface to establish a tunnel with a remote L2TP server |
+| Server Address | Specify the IP address set by the remote L2TP server |
+| Username/Password | Specify the username and password for L2TP negotiation, which must be consistent on both ends of the tunnel |
+| Authentication Mode | Specify the authentication mode for the L2TP tunnel |
 | Enable Tunnel Verification | Both ends of the tunnel must be configured with the same server's name and verification key as this option is enabled |
 
 ## 4.6 Security
@@ -861,15 +844,15 @@ Traffic entering and leaving can be controlled based on interfaces using the 【
 
 The following parameters must be configured properly.
 
-| Parameter   | Description                                                                                                                                  |
-| ----------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| Name        | Set the local identifier of the inbound rule                                                                                                 |
-| Status      | Enable or disable this rule by clicking the switch                                                                                           |
-| Interface   | Set the forwarding interface for traffic. In the inbound direction, the outbound interface is generally the upstream interface of the device |
-| Protocol    | Configure the protocol type of packets to be matched. Optional: Any, UDP, TCP, ICMP, Custom                                                  |
-| Source      | Set the source IP address of packets to be matched, supporting IP address or retain the default option Any                                   |
-| Destination | Set the destination IP address of the packets to be matched, supporting entering an IP address or retaining the default option Any           |
-| Behaviour   | Set the behaviour if the traffic matches the configured rules                                                                                |
+| Parameter | Description |
+|-----------|-------------|
+| Name | Set the local identifier of the inbound rule |
+| Status | Enable or disable this rule by clicking the switch |
+| Interface | Set the forwarding interface for traffic. In the inbound direction, the outbound interface is generally the upstream interface of the device |
+| Protocol | Configure the protocol type of packets to be matched. Optional: Any, UDP, TCP, ICMP, Custom |
+| Source | Set the source IP address of packets to be matched, supporting IP address or retain the default option Any |
+| Destination | Set the destination IP address of the packets to be matched, supporting entering an IP address or retaining the default option Any |
+| Behaviour | Set the behaviour if the traffic matches the configured rules |
 
 ### 4.6.2 NAT
 
@@ -889,15 +872,15 @@ For example, after setting port forwarding rules as shown below, when users from
 
 The following parameters must be set properly.
 
-| Parameter     | Description                                                                                                                          |
-| ------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| Name          | Set the local identifier of the port forwarding rule                                                                                 |
-| Status        | Enable or disable this rule by clicking the switch                                                                                   |
-| Interface     | Set the uplink interface that provides port mapping for internal clients. This interface must be configured with a public IP address |
-| Protocol      | Set the protocol of the port on which port mapping takes effect. Supports TCP, UDP, and TCP&UDP                                      |
-| Public Port   | Set the protocol port on the uplink interface to be mapped                                                                           |
-| Local Address | Set the IP address of the target client that external users need to access                                                           |
-| Local Port    | Set the protocol port that external users need to access on the target client                                                        |
+| Parameter | Description |
+|-----------|-------------|
+| Name | Set the local identifier of the port forwarding rule |
+| Status | Enable or disable this rule by clicking the switch |
+| Interface | Set the uplink interface that provides port mapping for internal clients. This interface must be configured with a public IP address |
+| Protocol | Set the protocol of the port on which port mapping takes effect. Supports TCP, UDP, and TCP&UDP |
+| Public Port | Set the protocol port on the uplink interface to be mapped |
+| Local Address | Set the IP address of the target client that external users need to access |
+| Local Port | Set the protocol port that external users need to access on the target client |
 
 ### 4.6.3 MAC Address Filtering
 
@@ -925,14 +908,14 @@ Which domain names are allowed and which domain names are blocked can be configu
 
 The following parameters must be set properly.
 
-| Parameter   | Description                                                                                                                        |
-| ----------- | ---------------------------------------------------------------------------------------------------------------------------------- |
-| Name        | Set the local identifier of the rule                                                                                               |
-| Status      | Enable or disable this rule by clicking the switch                                                                                 |
-| Protocol    | Set the protocol of the port. Supports TCP, UDP, and TCP&UDP                                                                       |
-| Source      | Set the source IP address of packets to be matched, supporting IP address or retain the default option Any                         |
+| Parameter | Description |
+|-----------|-------------|
+| Name | Set the local identifier of the rule |
+| Status | Enable or disable this rule by clicking the switch |
+| Protocol | Set the protocol of the port. Supports TCP, UDP, and TCP&UDP |
+| Source | Set the source IP address of packets to be matched, supporting IP address or retain the default option Any |
 | Destination | Set the destination IP address of the packets to be matched, supporting entering an IP address or retaining the default option Any |
-| Output      | Set the traffic egress interface, optional WAN port and cellular                                                                   |
+| Output | Set the traffic egress interface, optional WAN port and cellular |
 
 ## 4.7 Service
 
@@ -977,7 +960,6 @@ A fixed IP address can be allocated to a device based on its MAC address using t
 <p align="center"><strong>Figure 4-46 Fixed Address</strong></p>
 
 > **Cautions**:
->
 > 1. The addresses available for allocation must fall within the address range of the IP-mode local network, or else the configuration will not take effect.
 > 2. When a local network is deleted, all fixed address allocation rules within the address range of that local network will also be deleted.
 
@@ -990,7 +972,6 @@ Static routing entries can be configured using the 【Services】→【Static Ro
 <p align="center"><strong>Figure 4-47 Static Routes</strong></p>
 
 > **Cautions**:
->
 > 1. Static routes with the same destination address/network cannot have the same next-hop address, interface, or priority. Otherwise, it may lead to routing failures.
 > 2. When WAN1 is deleted, the corresponding static routes using those interfaces will also be removed.
 
@@ -1004,12 +985,12 @@ The Dynamic DNS server address can be manually configured under the 【Services�
 
 <p align="center"><strong>Figure 4-48 Set the Dynamic DNS Address</strong></p>
 
-| Parameter        | Description                                                                                                        |
-| ---------------- | ------------------------------------------------------------------------------------------------------------------ |
+| Parameter | Description |
+|-----------|-------------|
 | Service Provider | Provided by the dynamic DNS service provider. Choose from dyndns, 3322, oray, no-IP, or customize (requires a URL) |
-| Hostname         | Click on the URL below the service provider to register and obtain the hostname                                    |
-| Username         | Click on the URL below the service provider to register and obtain the username                                    |
-| Password         | The password set by the user during registration                                                                   |
+| Hostname | Click on the URL below the service provider to register and obtain the hostname |
+| Username | Click on the URL below the service provider to register and obtain the username |
+| Password | The password set by the user during registration |
 
 ### 4.7.7 Passthrough Settings
 
@@ -1019,15 +1000,15 @@ The IP Passthrough feature can be enabled in 【Services】→【Passthrough Set
 
 <p align="center"><strong>Figure 4-49 Set the IP Passthrough Mode</strong></p>
 
-| Parameter             | Description                                                                            |
-| --------------------- | -------------------------------------------------------------------------------------- |
-| IP Passthrough Switch | The enable switch for the IP Passthrough (IPPT) status                                 |
-| Passthrough MAC       | Only clients bound to this MAC can obtain the upstream interface address of the device |
-| Passthrough WAN       | The uplink for IP Passthrough                                                          |
-| Passthrough LAN       | The LAN port for IP Passthrough                                                        |
-| Passthrough IP Mask   | The subnet mask transmitted through the uplink interface for IP Passthrough            |
-| DHCP Server           | The DHCP function switch for IP Passthrough                                            |
-| Lease                 | The lease time for the DHCP service                                                    |
+| Parameter | Description |
+|-----------|-------------|
+| IP Passthrough Switch | The enable switch for the IP Passthrough (IPPT) status |
+| Passthrough MAC | Only clients bound to this MAC can obtain the upstream interface address of the device |
+| Passthrough WAN | The uplink for IP Passthrough |
+| Passthrough LAN | The LAN port for IP Passthrough |
+| Passthrough IP Mask | The subnet mask transmitted through the uplink interface for IP Passthrough |
+| DHCP Server | The DHCP function switch for IP Passthrough |
+| Lease | The lease time for the DHCP service |
 
 ## 4.8 System
 
@@ -1057,11 +1038,11 @@ Whether external access to the router's Web configuration interface from the Int
 
 <p align="center"><strong>Figure 4-52 Configure the Remote Access Control</strong></p>
 
-| Parameter | Description                                                                                                                                                                                                    |
-| --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| HTTPS     | When enabled, users can access the router's Web interface remotely by entering the public IP address and port of the upstream interface in a Web browser                                                       |
-| SSH       | When enabled, users can remotely log in to the router's backend by using remote tools like CRT, entering the public IP address and port of the device's upstream interface, along with a username and password |
-| Ping      | When enabled, the upstream interface address allows external networks to initiate Ping requests                                                                                                                |
+| Parameter | Description |
+|-----------|-------------|
+| HTTPS | When enabled, users can access the router's Web interface remotely by entering the public IP address and port of the upstream interface in a Web browser |
+| SSH | When enabled, users can remotely log in to the router's backend by using remote tools like CRT, entering the public IP address and port of the device's upstream interface, along with a username and password |
+| Ping | When enabled, the upstream interface address allows external networks to initiate Ping requests |
 
 ### 4.8.4 System Clock
 
@@ -1081,12 +1062,12 @@ In the 【System】→【Device Options】 section, various device operations ca
 
 <p align="center"><strong>Figure 4-54 Device Option</strong></p>
 
-| Function               | Description                                                                                                                              |
-| ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| Reboot Device          | Click the "Reboot" button to reboot the device                                                                                           |
-| Upgrade Software       | Click the "Upgrade" button to upload the software version locally and complete the upgrade                                               |
+| Function | Description |
+|----------|-------------|
+| Reboot Device | Click the "Reboot" button to reboot the device |
+| Upgrade Software | Click the "Upgrade" button to upload the software version locally and complete the upgrade |
 | Upgrade Module Version | The CPE02 provides a module upgrade option for updating the cellular module. Non-professionals are advised not to perform this operation |
-| Restore to Factory     | Click "Restore Factory Settings" to reset the device to its initial configuration state                                                  |
+| Restore to Factory | Click "Restore Factory Settings" to reset the device to its initial configuration state |
 
 ### 4.8.6 Configuration Management
 
@@ -1164,7 +1145,7 @@ The logout time can be set in 【System】→【Other Settings】→【Web Login
 
 <p align="center"><strong>Figure 4-62 Set the Web Page Logout Time</strong></p>
 
-**Automatically Restarts**
+ **Automatically Restarts**
 
 To enable automatic network recovery, the device will automatically reboot if it cannot connect to the Internet for 1 hour. Enabled by default. If the device should not reboot automatically, click the button to disable it.
 
@@ -1209,7 +1190,6 @@ To prevent accidental factory resets, the Reset button can be disabled in the so
 **Device Role**: The 5G CPE02 serves as the central gateway router, providing Internet access via 5G cellular network, Wi-Fi coverage for customers and staff, and LAN ports for wired devices such as POS terminals and IP cameras.
 
 **Configuration Steps**:
-
 1. Install the SIM card and all antennas on the 5G CPE02.
 2. Power on the device and confirm cellular network connection (SYS solid green, Cellular indicator solid green).
 3. Log in to the Web management interface at 192.168.2.1.
@@ -1219,7 +1199,6 @@ To prevent accidental factory resets, the Reset button can be disabled in the so
 7. (Optional) Enable cloud management in 【System】→【Cloud Management】 for remote monitoring across multiple stores.
 
 **Reference Chapters**:
-
 - [Cellular Internet Access](#scenario-1-cellular-internet-access)
 - [Wi-Fi Configuration](#scenario-3-wi-fi-configuration)
 - [Cloud Platform Management](#scenario-5-cloud-platform-management)
@@ -1232,50 +1211,50 @@ To prevent accidental factory resets, the Reset button can be disabled in the so
 
 ## 1 Network Connection Issues
 
-| Phenomenon                          | Possible Cause                        | Troubleshooting Steps                                                               | Reference Chapter                                                         |
-| ----------------------------------- | ------------------------------------- | ----------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
-| Cannot connect to cellular network  | SIM card not inserted or poor contact | 1. Check SIM card insertion<br>2. Re-insert the SIM card                            | [Installing the SIM Card](#222-installing-the-sim-card)                   |
-| Cannot connect to cellular network  | APN parameter configuration error     | 1. Verify APN parameters<br>2. Contact carrier for correct APN                      | [Cellular Interface Configuration](#421-cellular-interface-configuration) |
-| Cannot connect to cellular network  | Weak or no signal                     | 1. Check antenna connections<br>2. Adjust device position                           | [Installing Antennas](#221-installing-antennas)                           |
-| Cannot connect to cellular network  | Data plan expired or limit exceeded   | 1. Check data plan status with carrier<br>2. Renew or upgrade the data plan         | [Cellular Internet Access](#scenario-1-cellular-internet-access)          |
-| Cannot connect to WAN               | Ethernet cable not connected properly | 1. Check cable connection<br>2. Replace the cable if damaged                        | [Connecting via Ethernet Cable](#224-connecting-via-ethernet-cable)       |
-| Cannot connect to WAN               | Upstream DHCP server disabled         | 1. Verify upstream device status<br>2. Configure static IP or enable DHCP           | [DHCP Client](#dhcp-client)                                               |
-| Cannot connect to WAN               | PPPoE credentials incorrect           | 1. Verify PPPoE username and password<br>2. Re-enter credentials                    | [PPPoE](#pppoe)                                                           |
-| No Internet access after connection | Link detection misconfigured          | 1. Check detection address settings<br>2. Disable link detection in private network | [Uplink Settings](#422-uplink-settings)                                   |
+| Phenomenon | Possible Cause | Troubleshooting Steps | Reference Chapter |
+|------------|---------------|----------------------|-------------------|
+| Cannot connect to cellular network | SIM card not inserted or poor contact | 1. Check SIM card insertion<br>2. Re-insert the SIM card | [Installing the SIM Card](#222-installing-the-sim-card) |
+| Cannot connect to cellular network | APN parameter configuration error | 1. Verify APN parameters<br>2. Contact carrier for correct APN | [Cellular Interface Configuration](#421-cellular-interface-configuration) |
+| Cannot connect to cellular network | Weak or no signal | 1. Check antenna connections<br>2. Adjust device position | [Installing Antennas](#221-installing-antennas) |
+| Cannot connect to cellular network | Data plan expired or limit exceeded | 1. Check data plan status with carrier<br>2. Renew or upgrade the data plan | [Cellular Internet Access](#scenario-1-cellular-internet-access) |
+| Cannot connect to WAN | Ethernet cable not connected properly | 1. Check cable connection<br>2. Replace the cable if damaged | [Connecting via Ethernet Cable](#224-connecting-via-ethernet-cable) |
+| Cannot connect to WAN | Upstream DHCP server disabled | 1. Verify upstream device status<br>2. Configure static IP or enable DHCP | [DHCP Client](#dhcp-client) |
+| Cannot connect to WAN | PPPoE credentials incorrect | 1. Verify PPPoE username and password<br>2. Re-enter credentials | [PPPoE](#pppoe) |
+| No Internet access after connection | Link detection misconfigured | 1. Check detection address settings<br>2. Disable link detection in private network | [Uplink Settings](#422-uplink-settings) |
 
 ## 2 Web Interface Access Issues
 
-| Phenomenon                | Possible Cause                | Troubleshooting Steps                                                                     | Reference Chapter                                                       |
-| ------------------------- | ----------------------------- | ----------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| Cannot open Web interface | IP address incorrect          | 1. Confirm PC and device are in the same subnet<br>2. Check device default IP 192.168.2.1 | [Logging In to the Web Interface](#225-logging-in-to-the-web-interface) |
-| Cannot open Web interface | Browser compatibility issue   | 1. Change browser (Chrome recommended)<br>2. Clear browser cache                          | [Logging In to the Web Interface](#225-logging-in-to-the-web-interface) |
-| Cannot open Web interface | PC IP configuration incorrect | 1. Set PC to obtain IP automatically<br>2. Or configure static IP in 192.168.2.x range    | [Connecting via Ethernet Cable](#224-connecting-via-ethernet-cable)     |
+| Phenomenon | Possible Cause | Troubleshooting Steps | Reference Chapter |
+|------------|---------------|----------------------|-------------------|
+| Cannot open Web interface | IP address incorrect | 1. Confirm PC and device are in the same subnet<br>2. Check device default IP 192.168.2.1 | [Logging In to the Web Interface](#225-logging-in-to-the-web-interface) |
+| Cannot open Web interface | Browser compatibility issue | 1. Change browser (Chrome recommended)<br>2. Clear browser cache | [Logging In to the Web Interface](#225-logging-in-to-the-web-interface) |
+| Cannot open Web interface | PC IP configuration incorrect | 1. Set PC to obtain IP automatically<br>2. Or configure static IP in 192.168.2.x range | [Connecting via Ethernet Cable](#224-connecting-via-ethernet-cable) |
 
 ## 3 Wi-Fi Issues
 
-| Phenomenon              | Possible Cause           | Troubleshooting Steps                                                        | Reference Chapter                                      |
-| ----------------------- | ------------------------ | ---------------------------------------------------------------------------- | ------------------------------------------------------ |
-| Cannot find Wi-Fi SSID  | Wi-Fi function disabled  | 1. Check Wi-Fi settings in Web interface<br>2. Enable the corresponding SSID | [Wi-Fi Configuration](#scenario-3-wi-fi-configuration) |
-| Cannot connect to Wi-Fi | Password incorrect       | 1. Verify password<br>2. Check device nameplate for default password         | [Default Settings](#16-default-settings)               |
-| Slow Wi-Fi speed        | Connected to 2.4GHz band | 1. Connect to 5GHz SSID for higher speed<br>2. Reduce distance from device   | [Wi-Fi Configuration](#scenario-3-wi-fi-configuration) |
-| Slow Wi-Fi speed        | Signal interference      | 1. Adjust device position<br>2. Change Wi-Fi channel                         | [Wi-Fi Configuration](#scenario-3-wi-fi-configuration) |
+| Phenomenon | Possible Cause | Troubleshooting Steps | Reference Chapter |
+|------------|---------------|----------------------|-------------------|
+| Cannot find Wi-Fi SSID | Wi-Fi function disabled | 1. Check Wi-Fi settings in Web interface<br>2. Enable the corresponding SSID | [Wi-Fi Configuration](#scenario-3-wi-fi-configuration) |
+| Cannot connect to Wi-Fi | Password incorrect | 1. Verify password<br>2. Check device nameplate for default password | [Default Settings](#16-default-settings) |
+| Slow Wi-Fi speed | Connected to 2.4GHz band | 1. Connect to 5GHz SSID for higher speed<br>2. Reduce distance from device | [Wi-Fi Configuration](#scenario-3-wi-fi-configuration) |
+| Slow Wi-Fi speed | Signal interference | 1. Adjust device position<br>2. Change Wi-Fi channel | [Wi-Fi Configuration](#scenario-3-wi-fi-configuration) |
 
 ## 4 VPN Issues
 
-| Phenomenon                 | Possible Cause              | Troubleshooting Steps                                                            | Reference Chapter               |
-| -------------------------- | --------------------------- | -------------------------------------------------------------------------------- | ------------------------------- |
-| VPN tunnel not established | Pre-Shared Key mismatch     | 1. Verify Pre-Shared Key consistency on both ends<br>2. Re-enter the key         | [IPSec VPN](#451-ipsec-vpn)     |
-| VPN tunnel not established | Peer address unreachable    | 1. Check peer IP address correctness<br>2. Verify network connectivity to peer   | [IPSec VPN](#451-ipsec-vpn)     |
-| VPN tunnel not established | IKE policy incompatible     | 1. Match encryption and authentication algorithms<br>2. Verify DH group settings | [IPSec VPN](#451-ipsec-vpn)     |
-| L2TP connection failed     | Username/password incorrect | 1. Verify credentials on both ends<br>2. Re-enter username and password          | [L2TP VPN Server](#4521-server) |
+| Phenomenon | Possible Cause | Troubleshooting Steps | Reference Chapter |
+|------------|---------------|----------------------|-------------------|
+| VPN tunnel not established | Pre-Shared Key mismatch | 1. Verify Pre-Shared Key consistency on both ends<br>2. Re-enter the key | [IPSec VPN](#451-ipsec-vpn) |
+| VPN tunnel not established | Peer address unreachable | 1. Check peer IP address correctness<br>2. Verify network connectivity to peer | [IPSec VPN](#451-ipsec-vpn) |
+| VPN tunnel not established | IKE policy incompatible | 1. Match encryption and authentication algorithms<br>2. Verify DH group settings | [IPSec VPN](#451-ipsec-vpn) |
+| L2TP connection failed | Username/password incorrect | 1. Verify credentials on both ends<br>2. Re-enter username and password | [L2TP VPN Server](#4521-server) |
 
 ## 5 Cloud Platform Issues
 
-| Phenomenon                    | Possible Cause                 | Troubleshooting Steps                                                              | Reference Chapter                                                  |
-| ----------------------------- | ------------------------------ | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
-| Device offline on platform    | Cloud management disabled      | 1. Check 【System】→【Cloud Management】<br>2. Enable cloud management if disabled | [Cloud Management](#482-cloud-management)                          |
-| Device offline on platform    | No Internet connection         | 1. Verify device Internet connectivity<br>2. Check cellular or WAN connection      | [Cellular Internet Access](#scenario-1-cellular-internet-access)   |
-| Cannot add device to platform | Serial number or MAC incorrect | 1. Verify serial number and MAC address<br>2. Check device nameplate               | [Cloud Platform Management](#scenario-5-cloud-platform-management) |
+| Phenomenon | Possible Cause | Troubleshooting Steps | Reference Chapter |
+|------------|---------------|----------------------|-------------------|
+| Device offline on platform | Cloud management disabled | 1. Check 【System】→【Cloud Management】<br>2. Enable cloud management if disabled | [Cloud Management](#482-cloud-management) |
+| Device offline on platform | No Internet connection | 1. Verify device Internet connectivity<br>2. Check cellular or WAN connection | [Cellular Internet Access](#scenario-1-cellular-internet-access) |
+| Cannot add device to platform | Serial number or MAC incorrect | 1. Verify serial number and MAC address<br>2. Check device nameplate | [Cloud Platform Management](#scenario-5-cloud-platform-management) |
 
 ---
 
@@ -1329,3 +1308,4 @@ Yes, the majority of configuration tasks can be completed locally. However, for 
 1. Check the cellular network signal strength and ensure the router is positioned in an area with strong signal reception.
 2. Connect the device to the 5GHz band for higher speeds.
 3. Update the router firmware to access the latest performance and stability improvements.
+

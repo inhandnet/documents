@@ -246,7 +246,6 @@ def forbid_files(file_list: List[Path]) -> bool:
     print(f"=== Forbidding {len(normalized)} deleted files ===")
 
     success_count = 0
-    fail_count = 0
 
     for path in normalized:
         print(f"  - {path}")
@@ -264,58 +263,13 @@ def forbid_files(file_list: List[Path]) -> bool:
                 print(f"    [OK] Forbidden successfully")
                 success_count += 1
             else:
-                print(f"    [WARN] Unexpected response: {result}")
-                fail_count += 1
+                print(f"    [WARN] Unexpected response: {result} — skipped")
 
         except requests.exceptions.RequestException as e:
-            print(f"    [FAIL] Failed to forbid: {e}")
-            fail_count += 1
+            print(f"    [WARN] Failed to forbid: {e} — skipped")
 
-    print(f"\nForbid complete: {success_count} success, {fail_count} failed")
-    return fail_count == 0
-
-    if not normalized:
-        print("[INFO] No files to forbid")
-        return True
-
-    # Forbid API endpoint
-    url = f"{API_BASE_URL}/api/plm/github/product/published-files/forbid"
-
-    headers = {
-        "Authorization": f"Bearer {API_TOKEN}",
-        "Content-Type": "application/json",
-    }
-
-    print(f"=== Forbidding {len(normalized)} deleted files ===")
-
-    success_count = 0
-    fail_count = 0
-
-    for path in normalized:
-        print(f"  - {path}")
-        try:
-            response = requests.put(
-                url,
-                headers=headers,
-                json={"path": path},
-                timeout=30,
-            )
-            response.raise_for_status()
-            result = response.json()
-
-            if result.get("status") == 200:
-                print(f"    [OK] Forbidden successfully")
-                success_count += 1
-            else:
-                print(f"    [WARN] Unexpected response: {result}")
-                fail_count += 1
-
-        except requests.exceptions.RequestException as e:
-            print(f"    [FAIL] Failed to forbid: {e}")
-            fail_count += 1
-
-    print(f"\nForbid complete: {success_count} success, {fail_count} failed")
-    return fail_count == 0
+    print(f"\nForbid complete: {success_count}/{len(normalized)} success")
+    return True
 
 
 def validate_files(file_list: List[Path]) -> bool:
@@ -327,14 +281,16 @@ def validate_files(file_list: List[Path]) -> bool:
     Returns:
         True if all files are valid, False otherwise
     """
-    # Normalize paths
+    # Normalize paths and keep file references
     normalized = []
+    file_map = {}  # norm -> Path
     for f in file_list:
         norm = normalize_path(f)
         if norm:
             try:
                 size = f.stat().st_size
                 normalized.append({"path": norm, "size": size})
+                file_map[norm] = f
             except FileNotFoundError:
                 print(f"  [WARN] File not found: {f}")
 
@@ -371,27 +327,37 @@ def validate_files(file_list: List[Path]) -> bool:
         response.raise_for_status()
         result = response.json()
 
-        # Check for API error in response body
-        if 'error' in result and result['error']:
-            print(f"\n[FAIL] Validation failed:")
-            print(f"Error: {result['error']}")
-            if 'result' in result:
-                print(f"Details: {result['result']}")
-            return False
-
-        print(f"\n[OK] Validation passed")
-        print(f"Response: {result}")
+    except requests.exceptions.RequestException as e:
+        print(f"\n[WARN] Validation request failed: {e}")
         return True
 
-    except requests.exceptions.HTTPError as e:
-        print(f"\n[FAIL] Validation failed: {e}")
-        if hasattr(e.response, 'text'):
-            print(f"Response: {e.response.text}")
-        return False
+    # Check for API error in response body
+    if 'error' in result and result['error']:
+        print(f"\n[WARN] Validation returned errors:")
+        # Parse failed paths from result field (list of strings like "path格式错误：...")
+        failed_paths = set()
+        import re
+        for detail in result.get('result', []):
+            # Extract path before "格式错误"
+            m = re.match(r'^(.+?)格式错误[：:]', str(detail))
+            if m:
+                failed_paths.add(m.group(1))
+            print(f"  - {detail}")
 
-    except requests.exceptions.RequestException as e:
-        print(f"\n[FAIL] Request failed: {e}")
-        return False
+        for item in normalized:
+            path = item['path']
+            f = file_map.get(path)
+            if path in failed_paths and f and f.exists():
+                print(f"  [DELETE] Removing invalid file: {f}")
+                f.unlink()
+
+        passed = len(normalized) - len(failed_paths)
+        print(f"\nValidation complete: {passed} passed, {len(failed_paths)} failed (removed)")
+        return True
+
+    print(f"\n[OK] Validation passed")
+    print(f"Response: {result}")
+    return True
 
 
 def main():

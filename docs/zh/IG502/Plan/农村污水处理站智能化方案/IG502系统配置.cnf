@@ -1,0 +1,333 @@
+!
+# product IG502L
+!
+#system config
+language Chinese
+hostname EdgeGateway
+ip domain-name edgegateway.com.cn
+clock timezone UTC-8
+service password-encryption
+!
+#log config
+log server 192.168.2.11 port 514
+log persistent severity 7
+!
+#user config
+username adm privilege 15 password $1$tzKw.9sc$vhYo9wIpzmD7sYgTOZHMf.
+!
+enable password $1$a7D6kbQp$alT.cFcmxX6Vi/4wWxQWl1
+!
+#aaa config
+!
+#cron config
+remote-login retry 20
+!
+#alarm config
+!
+#loopback config
+interface loopback 1
+  ip address 127.0.0.1 255.0.0.0
+!
+!
+#ethernet interface config
+interface fastethernet 0/1
+  track l2-state
+!
+interface fastethernet 0/2
+!
+!
+#Ethernet sub interface config
+!
+#cellular config
+cellular 1 gsm profile 1 3gnet *99***1# auto gprs $AES$1AECAFF97D1C43422E0186407306E5AA
+cellular 1 dial interval 10
+cellular 1 signal interval 120
+cellular 1 network auto
+cellular 1 pdp_type ipv4v6
+cellular 1 dual-sim main 1
+cellular 1 dual-sim policy redial 3
+cellular 1 dual-sim policy uptime 600
+cellular 1 sms mode text
+cellular 1 sms interval 30
+!
+interface cellular 1
+  dialer profile 1
+  dialer profile auto secondary
+  dialer timeout 120
+  dialer activate auto
+  ip address negotiated
+  ip mru 1500
+  ip mtu 1500
+  dialer infinitely-retry
+  ppp ipcp dns request
+  ppp keepalive 55 5
+!
+!
+#dot11 config
+interface dot11radio 1
+  shutdown
+  ip address dhcp
+  station-role workgroup-bridge
+  radio-type dot11bgn
+!
+!
+#bridge config
+!
+bridge 1
+!
+interface bridge 1
+  ip address 192.168.2.1 255.255.255.0
+!
+interface fastethernet 0/2
+  bridge-group 1
+!
+interface fastethernet 0/1
+  bridge-group 1
+!
+!
+!
+#dialer config
+!
+#ipsec config
+crypto ipsec-daemon start
+crypto ikev1 policy 11
+  encryption 3des
+  hash md5
+  group 2
+  lifetime 86400
+!
+crypto ipsec transform-set 22 esp-3des esp-sha1-hmac
+  mode tunnel
+!
+!
+#l2tp config
+!
+!
+#openvpn config
+interface openvpn 1
+  auto-configuration openvpn 1
+!
+!
+#openvpn server config
+!
+#web config
+ip web-access timeout 3600
+ip https access enable
+!
+#device-manager config
+device-manager enable
+device-manager server iot.inhand.com.cn
+device-manager tls
+device-manager account xxxx@inhand.com.cn
+device-manager location cellular
+!
+#InConnect config
+inconnect enable
+inconnect server ics.inhandiot.com
+inconnect account XXX@inhand.com.cn
+inconnect location cellular
+!
+#DeviceLive config
+devicelive mode off
+devicelive server cn
+!
+#Erlang config
+erlang mode off
+erlang server iscada.inhandcloud.cn
+!
+#Custome Cloud Cert
+!
+#telnet server config
+ip telnet server port 23
+no ip telnet access enable
+!
+#ssh server config
+ip ssh server port 22
+crypto ssh-key generate rsa modulus 1024
+ip ssh timeout 0
+!
+#dhcp-relay config
+!
+#dns-relay config
+ip dns-relay server
+!
+#dhcp server config
+interface bridge 1
+  ip dhcp-server enable
+  ip dhcp-server range 192.168.2.1 192.168.2.254
+  ip dhcp-server lease 1440
+!
+!
+#dns config
+!
+ip protocol dns 1
+!
+#ip host config
+!
+#ddns config
+!
+
+#bluetooth config
+bluetooth name IG_bluetooth
+bluetooth mode ble
+bluetooth work-mode master
+!
+#snmp config
+
+#ovdp config
+!
+!
+
+#huaweicloud config
+!
+
+#Azure IoT Edge config
+!
+
+#AWS IoT Greengrass config
+!
+#ntp server config
+  ntp master 2
+  ntp server 0.pool.ntp.org
+  ntp server 1.pool.ntp.org
+  ntp server 2.pool.ntp.org
+  ntp server 3.pool.ntp.org
+!
+!
+
+#Telegraf config
+!
+
+#abbcloud config
+abbcloud prefix-len 64
+abbcloud verify-client 1
+!
+#email config
+!
+#sntp client config
+sntp-client
+sntp-client update-interval 60
+sntp-client server 54.223.100.252 port 123
+sntp-client server ntp.aliyun.com port 123
+!
+#gre config
+!
+#static route config
+ip route 0.0.0.0 0.0.0.0 dot11radio 1
+!
+#rip config
+!
+!
+#ospf config
+!
+!
+#filtering config
+!
+#bgp config
+!
+!
+#firewall config
+!
+!
+interface cellular 1
+  ip access-group 192 admin
+!
+access-list 100 10 permit ip any any 
+access-list 101 10 permit ip any any 
+access-list 102 10 permit ip any any 
+access-list 192 10 permit tcp any any eq 443 log
+access-list 192 20 deny tcp any any eq 80 
+access-list 192 30 deny tcp any any eq 23 
+access-list 192 40 deny tcp any any eq 22 
+access-list 192 50 deny tcp any any eq 53 
+access-list 192 60 deny udp any any eq 53 
+access-list 193 10 permit ip 10.8.0.0 0.0.255.255 any 
+interface fastethernet 0/1
+  ip nat outside
+!
+interface bridge 1
+  ip nat inside
+!
+interface cellular 1
+  ip nat outside
+!
+interface openvpn 1
+  ip nat outside
+!
+!
+ip snat inside list 101 interface fastethernet 0/1 
+ip snat inside list 100 interface cellular 1 
+ip snat outside list 193 interface bridge 1 description ics_nat 
+!
+!
+!
+!
+!
+#tcp mss config
+ip tcp adjust-mss 1360
+!
+!
+!
+#netwatcher config
+!
+!
+#sla config
+!
+#track config
+!
+#vrrpd config
+!
+#backup config
+!
+#mroute config
+!
+#cert config
+!
+!
+#cert enroll config
+crypto key generate rsa general-keys modulus 1024
+!
+!
+#dls config
+!
+#gps config
+  gps enable
+  gps type 3
+!
+#gps serial config
+!
+#gps server config
+!
+#gps client config
+!
+#Serial Configuration
+serial 1
+!
+serial 2
+!
+!
+#python config
+python debug
+python fix-password $AES$834A3CC93A08A6E9F44A1E7147F500DA
+python enable
+python log username adm password $AES$BFA541FA10FA3B041CBA4412D12C52B8
+python app 1 on
+python appcmd 1 logsize 10 2
+device_supervisor 
+quit
+!
+!
+#Modbus IO Configuration
+io config digital input 1 di
+io config digital input 2 di
+io config digital input 3 di
+io config digital input 4 di
+io config relay 1 output retentive on
+io config relay 2 output retentive off
+io config relay 3 output retentive off
+io config relay 4 output retentive off
+!
+#traffic-stated config
+!
+#data-usage config
+#end of configuration

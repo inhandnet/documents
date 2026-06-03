@@ -23,6 +23,7 @@ import requests
 API_BASE_URL = os.environ.get("PLM_API_test_url", "")
 API_ENDPOINT = "/api/common/github/application/files"
 API_KEY = os.environ.get("PLM_API_test_key", "")
+API_TOKEN = os.environ.get("PLM_API_test_token", "")
 
 if not API_BASE_URL:
     print("[错误] PLM_API_test_url 环境变量未设置")
@@ -106,7 +107,7 @@ def normalize_upload_path(file_path: Path, base_dir: Path = DIST_DIR) -> str:
 
 
 def upload_file(file_path: Path, dry_run: bool = False, commit_id: Optional[str] = None,
-                base_dir: Path = DIST_DIR) -> bool:
+                base_dir: Path = DIST_DIR):
     """上传单个文件到云存储 API。
 
     Args:
@@ -116,7 +117,10 @@ def upload_file(file_path: Path, dry_run: bool = False, commit_id: Optional[str]
         base_dir: 基础目录，用于计算相对路径
 
     Returns:
-        上传成功返回 True，失败返回 False
+        True: 上传成功
+        "cleaned": 上传失败(4xx)，已回滚并删除本地文件
+        "skipped": 上传失败(5xx/超时)，已回滚，保留本地文件
+        False: 其他错误（文件不存在等）
     """
     if not file_path.exists():
         print(f"  [FAIL] 文件不存在: {file_path}")
@@ -191,9 +195,56 @@ def upload_file(file_path: Path, dry_run: bool = False, commit_id: Optional[str]
         print(f"  [FAIL] 上传失败: {e}")
         if hasattr(e.response, 'text'):
             print(f"     响应: {e.response.text}")
-        return False
+
+        # 回滚：禁用资源中心记录并删除本地文件
+        is_client_error = False
+        if e.response is not None and 400 <= e.response.status_code < 500:
+            is_client_error = True
+        _rollback_upload(file_path, normalized_path, is_client_error)
+
+        return "cleaned" if is_client_error else "skipped"
     finally:
         files["file"][1].close()
+
+
+def _rollback_upload(file_path: Path, normalized_path: str, is_client_error: bool) -> None:
+    """上传失败时回滚：禁用资源中心记录，并根据错误类型决定是否删除本地文件。
+
+    Args:
+        file_path: 本地文件路径
+        normalized_path: 用于 API 的规范化路径
+        is_client_error: 是否为 4xx 客户端错误（是则删除本地文件）
+    """
+    # 1. 调用 forbid API 禁用资源中心记录
+    if API_TOKEN:
+        forbid_url = f"{API_BASE_URL}/api/plm/github/product/published-files/forbid"
+        headers = {
+            "Authorization": f"Bearer {API_TOKEN}",
+            "Content-Type": "application/json",
+        }
+        try:
+            response = requests.put(
+                forbid_url,
+                headers=headers,
+                json={"path": normalized_path},
+                timeout=30,
+            )
+            response.raise_for_status()
+            print(f"  [ROLLBACK] 已禁用资源中心记录: {normalized_path}")
+        except requests.exceptions.RequestException as forbid_e:
+            print(f"  [WARN] 回滚资源中心记录失败: {forbid_e}")
+    else:
+        print(f"  [WARN] 未设置 PLM_API_test_token，无法回滚资源中心记录")
+
+    # 2. 4xx 客户端错误时删除本地文件（文件本身有问题，留着还会失败）
+    if is_client_error:
+        try:
+            file_path.unlink()
+            print(f"  [DELETE] 已删除本地文件: {file_path}")
+        except OSError as del_e:
+            print(f"  [WARN] 删除本地文件失败: {del_e}")
+    else:
+        print(f"  [SKIP DELETE] 服务端错误/超时，保留本地文件: {file_path}")
 
 
 def find_upload_files(directory: Path) -> List[Path]:
@@ -204,7 +255,9 @@ def find_upload_files(directory: Path) -> List[Path]:
     - 排除 .md 文件（Markdown 是源文件）
     - 排除图片文件（.png, .jpg, .jpeg, .gif, .svg, .webp 等）
     - 排除 Developer Documentation/series.txt
-    - 只上传 PDF、压缩包、文档等非图片文件
+    - 排除 Manuals 目录下的所有文件（手册由 MkDocs 构建部署，不走云存储）
+    - Datasheets 目录下只上传 PDF
+    - 其他目录上传 PDF、压缩包、文档等非图片文件
     """
     if not directory.exists():
         return []
@@ -225,6 +278,12 @@ def find_upload_files(directory: Path) -> List[Path]:
                 if file_path.is_file():
                     ext = file_path.suffix.lower()
                     if ext not in EXCLUDED_EXTENSIONS:
+                        # 排除 Manuals 目录下的所有文件
+                        if any(p.lower() == "manuals" for p in file_path.parts):
+                            continue
+                        # Datasheets 目录下只保留 PDF
+                        if any(p.lower() == "datasheets" for p in file_path.parts) and ext != ".pdf":
+                            continue
                         upload_files.append(file_path)
 
     return upload_files
@@ -274,25 +333,33 @@ def main():
 
     # 上传文件
     success_count = 0
-    fail_count = 0
+    cleaned_count = 0   # 4xx 错误：已回滚并删除
+    skipped_count = 0   # 5xx/超时：已回滚，保留文件
 
     for upload_file_path in upload_files_list:
-        if upload_file(upload_file_path, dry_run=args.dry_run, commit_id=commit_id,
-                      base_dir=args.dist_dir):
+        result = upload_file(upload_file_path, dry_run=args.dry_run, commit_id=commit_id,
+                             base_dir=args.dist_dir)
+        if result is True:
             success_count += 1
-        else:
-            fail_count += 1
+        elif result == "cleaned":
+            cleaned_count += 1
+        elif result == "skipped":
+            skipped_count += 1
         print()
 
     # 汇总
     print("=" * 50)
     if args.dry_run:
-        print(f"[DRY RUN] 预览完成，实际将上传: {success_count} 个文件（排除 .md 和图片）")
+        print(f"[DRY RUN] 预览完成，实际将上传: {success_count} 个文件")
     else:
-        print(f"上传完成: {success_count} 成功, {fail_count} 失败")
+        total_processed = success_count + cleaned_count + skipped_count
+        print(f"上传完成: {success_count} 成功, {cleaned_count} 清理(4xx), {skipped_count} 跳过(5xx/超时)")
+        print(f"总计处理: {total_processed}/{len(upload_files_list)}")
     print("=" * 50)
 
-    if fail_count > 0:
+    # 只有全部失败才退出报错；有成功的就继续（让 CI 后续步骤正常执行）
+    if success_count == 0 and (cleaned_count > 0 or skipped_count > 0):
+        print("[ERROR] 全部上传失败")
         sys.exit(1)
 
 

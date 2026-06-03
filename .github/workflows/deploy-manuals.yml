@@ -111,3 +111,17 @@ jobs:
           rm: false
           overwrite: true
 
+      # Deploy English site to new overseas server
+      - name: Copy English site to Overseas Server (NEW)
+        if: github.event_name == 'push'
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.OVERSEAS_HOST_NEW }}
+          username: ${{ secrets.OVERSEAS_USER }}
+          password: ${{ secrets.OVERSEAS_PASS }}
+          source: "site-en/*"
+          target: /data/wordpress/manuals/
+          strip_components: 1
+          rm: false
+          overwrite: true
+

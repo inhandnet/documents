@@ -31,8 +31,8 @@ if not API_TOKEN:
     print("[ERROR] PLM_API_test_token environment variable is not set")
     sys.exit(1)
 
-# Valid languages
-VALID_LANGS = {"zh", "en"}
+# Valid languages (currently only en is active for testing)
+VALID_LANGS = {"en"}
 
 # Excluded files
 EXCLUDED_FILES = {".gitkeep", "index.md"}

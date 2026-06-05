@@ -77,9 +77,9 @@ jobs:
         if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
         env:
           PLM_API_ZHENG_ZH_URL: ${{ secrets.PLM_API_ZHENG_ZH_URL }}
-          PLM_API_ZHENG_ZH_KEY: ${{ secrets.PLM_API_ZHENG_ZH_KEY }}
+          PLM_API_ZHENG_ZH_TOKEN: ${{ secrets.PLM_API_ZHENG_ZH_TOKEN }}
           PLM_API_ZHENG_EN_URL: ${{ secrets.PLM_API_ZHENG_EN_URL }}
-          PLM_API_ZHENG_EN_KEY: ${{ secrets.PLM_API_ZHENG_EN_KEY }}
+          PLM_API_ZHENG_EN_TOKEN: ${{ secrets.PLM_API_ZHENG_EN_TOKEN }}
         run: |
           pip install requests
           python scripts/upload_specs_to_cloud.py --dist-dir docs

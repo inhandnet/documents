@@ -282,7 +282,10 @@ def forbid_files(file_list: List[Path]) -> bool:
                     print(f"    [WARN] Unexpected response: {result} — skipped")
 
             except requests.exceptions.RequestException as e:
-                print(f"    [WARN] Failed to forbid: {e} — skipped")
+                print(f"    [WARN] Failed to forbid: {e}")
+                print(f"      URL: {url}")
+                print(f"      Path: {path}")
+                print(f"      Error type: {type(e).__name__}")
 
     print(f"\nForbid complete: {total_success}/{total_count} success")
     return True
@@ -349,7 +352,15 @@ def validate_files(file_list: List[Path]) -> bool:
             result = response.json()
 
         except requests.exceptions.RequestException as e:
-            print(f"\n[WARN] Validation request failed ({lang}): {e}")
+            print(f"\n[WARN] Validation request failed ({lang})")
+            print(f"  URL: {url}")
+            print(f"  Params: {params}")
+            print(f"  Files count: {len(items)}")
+            print(f"  Error type: {type(e).__name__}")
+            print(f"  Error detail: {e}")
+            if hasattr(e, 'request') and e.request:
+                print(f"  Request method: {e.request.method}")
+                print(f"  Request URL: {e.request.url}")
             continue
 
         # Check for API error in response body

@@ -212,9 +212,17 @@ def upload_file(file_path: Path, dry_run: bool = False, commit_id: Optional[str]
         return True
 
     except requests.exceptions.RequestException as e:
-        print(f"  [FAIL] 上传失败: {e}")
+        print(f"  [FAIL] 上传失败")
+        print(f"    Error type: {type(e).__name__}")
+        print(f"    Error detail: {e}")
+        print(f"    Request URL: {url}")
+        print(f"    Request params: {params}")
+        print(f"    Request headers: {headers}")
         if hasattr(e.response, 'text'):
-            print(f"     响应: {e.response.text}")
+            print(f"    Response: {e.response.text}")
+        if hasattr(e, 'request') and e.request:
+            print(f"    Request method: {e.request.method}")
+            print(f"    Request full URL: {e.request.url}")
 
         # 回滚：禁用资源中心记录并删除本地文件
         is_client_error = False
@@ -253,7 +261,11 @@ def _rollback_upload(file_path: Path, normalized_path: str, config: dict, is_cli
             response.raise_for_status()
             print(f"  [ROLLBACK] 已禁用资源中心记录: {normalized_path}")
         except requests.exceptions.RequestException as forbid_e:
-            print(f"  [WARN] 回滚资源中心记录失败: {forbid_e}")
+            print(f"  [WARN] 回滚资源中心记录失败")
+            print(f"    URL: {forbid_url}")
+            print(f"    Path: {normalized_path}")
+            print(f"    Error type: {type(forbid_e).__name__}")
+            print(f"    Error detail: {forbid_e}")
     else:
         print(f"  [WARN] 未设置对应语言的 API token，无法回滚资源中心记录")
 

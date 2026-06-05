@@ -27,8 +27,8 @@ VALID_LANGS = {"zh", "en"}
 
 def get_api_config(lang: str) -> dict:
     """Get API config for the given language."""
-    env_url = f"PLM_API_{lang.upper()}_URL"
-    env_token = f"PLM_API_{lang.upper()}_TOKEN"
+    env_url = f"PLM_API_ZHENG_{lang.upper()}_URL"
+    env_token = f"PLM_API_ZHENG_{lang.upper()}_TOKEN"
     url = os.environ.get(env_url, "")
     token = os.environ.get(env_token, "")
 

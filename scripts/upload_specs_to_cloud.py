@@ -42,9 +42,9 @@ def get_api_config(file_path: Path, base_dir: Path = DIST_DIR) -> dict:
     parts = list(rel_path.parts)
     lang = parts[0] if parts else ""
 
-    env_url = f"PLM_API_{lang.upper()}_URL"
-    env_key = f"PLM_API_{lang.upper()}_KEY"
-    env_token = f"PLM_API_{lang.upper()}_TOKEN"
+    env_url = f"PLM_API_ZHENG_{lang.upper()}_URL"
+    env_key = f"PLM_API_ZHENG_{lang.upper()}_KEY"
+    env_token = f"PLM_API_ZHENG_{lang.upper()}_TOKEN"
 
     url = os.environ.get(env_url, "")
     key = os.environ.get(env_key, "")

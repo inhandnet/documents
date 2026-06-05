@@ -18,21 +18,28 @@ from typing import List, Optional
 
 import requests
 
-# API configuration (read from environment variables)
-API_BASE_URL = os.environ.get("PLM_API_test_url", "")
+# API endpoint (same for both zh and en)
 API_ENDPOINT = "/api/plm/github/product/published-files"
-API_TOKEN = os.environ.get("PLM_API_test_token", "")
 
-if not API_BASE_URL:
-    print("[ERROR] PLM_API_test_url environment variable is not set")
-    sys.exit(1)
+# Valid languages
+VALID_LANGS = {"zh", "en"}
 
-if not API_TOKEN:
-    print("[ERROR] PLM_API_test_token environment variable is not set")
-    sys.exit(1)
 
-# Valid languages (currently only en is active for testing)
-VALID_LANGS = {"en"}
+def get_api_config(lang: str) -> dict:
+    """Get API config for the given language."""
+    env_url = f"PLM_API_{lang.upper()}_URL"
+    env_token = f"PLM_API_{lang.upper()}_TOKEN"
+    url = os.environ.get(env_url, "")
+    token = os.environ.get(env_token, "")
+
+    if not url:
+        print(f"[ERROR] {env_url} environment variable is not set")
+        sys.exit(1)
+    if not token:
+        print(f"[ERROR] {env_token} environment variable is not set")
+        sys.exit(1)
+
+    return {"url": url, "token": token}
 
 # Excluded files
 EXCLUDED_FILES = {".gitkeep", "index.md"}
@@ -214,8 +221,8 @@ def forbid_files(file_list: List[Path]) -> bool:
     Returns:
         True if all files are successfully forbidden, False otherwise
     """
-    # Normalize paths - keep language prefix for forbid API
-    normalized = []
+    # Normalize paths - group by language
+    by_lang = {}  # lang -> [(norm, original_path)]
     for f in file_list:
         parts = list(f.parts)
         if len(parts) >= 2 and parts[0] == "docs" and len(parts) >= 3:
@@ -236,46 +243,48 @@ def forbid_files(file_list: List[Path]) -> bool:
                     continue
                 # Remove lang prefix: FWA02-NAVA/FAQ/xxx.md (without zh/)
                 norm = "/".join(parts[2:])
-                normalized.append(norm)
+                by_lang.setdefault(lang, []).append(norm)
 
-    if not normalized:
+    if not by_lang:
         print("[INFO] No files to forbid")
         return True
 
-    # Forbid API endpoint
-    url = f"{API_BASE_URL}/api/plm/github/product/published-files/forbid"
+    total_success = 0
+    total_count = 0
 
-    headers = {
-        "Authorization": f"Bearer {API_TOKEN}",
-        "Content-Type": "application/json",
-    }
+    for lang, paths in by_lang.items():
+        config = get_api_config(lang)
+        url = f"{config['url']}/api/plm/github/product/published-files/forbid"
+        headers = {
+            "Authorization": f"Bearer {config['token']}",
+            "Content-Type": "application/json",
+        }
 
-    print(f"=== Forbidding {len(normalized)} deleted files ===")
+        print(f"=== Forbidding {len(paths)} deleted files ({lang}) ===")
+        total_count += len(paths)
 
-    success_count = 0
+        for path in paths:
+            print(f"  - {path}")
+            try:
+                response = requests.put(
+                    url,
+                    headers=headers,
+                    json={"path": path},
+                    timeout=30,
+                )
+                response.raise_for_status()
+                result = response.json()
 
-    for path in normalized:
-        print(f"  - {path}")
-        try:
-            response = requests.put(
-                url,
-                headers=headers,
-                json={"path": path},
-                timeout=30,
-            )
-            response.raise_for_status()
-            result = response.json()
+                if result.get("status") == 200:
+                    print(f"    [OK] Forbidden successfully")
+                    total_success += 1
+                else:
+                    print(f"    [WARN] Unexpected response: {result} — skipped")
 
-            if result.get("status") == 200:
-                print(f"    [OK] Forbidden successfully")
-                success_count += 1
-            else:
-                print(f"    [WARN] Unexpected response: {result} — skipped")
+            except requests.exceptions.RequestException as e:
+                print(f"    [WARN] Failed to forbid: {e} — skipped")
 
-        except requests.exceptions.RequestException as e:
-            print(f"    [WARN] Failed to forbid: {e} — skipped")
-
-    print(f"\nForbid complete: {success_count}/{len(normalized)} success")
+    print(f"\nForbid complete: {total_success}/{total_count} success")
     return True
 
 
@@ -288,82 +297,86 @@ def validate_files(file_list: List[Path]) -> bool:
     Returns:
         True if all files are valid, False otherwise
     """
-    # Normalize paths and keep file references
-    normalized = []
+    # Normalize paths and group by language
+    by_lang = {}  # lang -> [{"path": norm, "size": size}]
     file_map = {}  # norm -> Path
     for f in file_list:
         norm = normalize_path(f)
         if norm:
             try:
                 size = f.stat().st_size
-                normalized.append({"path": norm, "size": size})
-                file_map[norm] = f
+                # Get language from path: docs/zh/... or docs/en/...
+                lang = f.parts[1] if len(f.parts) >= 2 else ""
+                if lang in VALID_LANGS:
+                    by_lang.setdefault(lang, []).append({"path": norm, "size": size})
+                    file_map[norm] = f
             except FileNotFoundError:
                 print(f"  [WARN] File not found: {f}")
 
-    if not normalized:
+    if not by_lang:
         print("[INFO] No files to validate")
         return True
 
-    # Prepare API request
-    url = f"{API_BASE_URL}{API_ENDPOINT}"
     commit_id = get_git_commit_id()
     email = get_notify_email()
 
-    params = {"email": email}
-    if commit_id:
-        params["commitId"] = commit_id
+    for lang, items in by_lang.items():
+        config = get_api_config(lang)
+        url = f"{config['url']}{API_ENDPOINT}"
 
-    headers = {
-        "Authorization": f"Bearer {API_TOKEN}",
-        "Content-Type": "application/json",
-    }
+        params = {"email": email}
+        if commit_id:
+            params["commitId"] = commit_id
 
-    print(f"=== Validating {len(normalized)} files ===")
-    for item in normalized:
-        print(f"  - {item['path']} ({item['size']} bytes)")
+        headers = {
+            "Authorization": f"Bearer {config['token']}",
+            "Content-Type": "application/json",
+        }
 
-    try:
-        response = requests.post(
-            url,
-            headers=headers,
-            params=params,
-            json=normalized,
-            timeout=60,
-        )
-        response.raise_for_status()
-        result = response.json()
+        print(f"=== Validating {len(items)} files ({lang}) ===")
+        for item in items:
+            print(f"  - {item['path']} ({item['size']} bytes)")
 
-    except requests.exceptions.RequestException as e:
-        print(f"\n[WARN] Validation request failed: {e}")
-        return True
+        try:
+            response = requests.post(
+                url,
+                headers=headers,
+                params=params,
+                json=items,
+                timeout=60,
+            )
+            response.raise_for_status()
+            result = response.json()
 
-    # Check for API error in response body
-    if 'error' in result and result['error']:
-        print(f"\n[WARN] Validation returned errors:")
-        # Parse failed paths from result field (list of strings like "path格式错误：...")
-        failed_paths = set()
-        import re
-        for detail in result.get('result', []):
-            # Extract path before "格式错误"
-            m = re.match(r'^(.+?)格式错误[：:]', str(detail))
-            if m:
-                failed_paths.add(m.group(1))
-            print(f"  - {detail}")
+        except requests.exceptions.RequestException as e:
+            print(f"\n[WARN] Validation request failed ({lang}): {e}")
+            continue
 
-        for item in normalized:
-            path = item['path']
-            f = file_map.get(path)
-            if path in failed_paths and f and f.exists():
-                print(f"  [DELETE] Removing invalid file: {f}")
-                f.unlink()
+        # Check for API error in response body
+        if 'error' in result and result['error']:
+            print(f"\n[WARN] Validation returned errors ({lang}):")
+            # Parse failed paths from result field (list of strings like "path格式错误：...")
+            failed_paths = set()
+            import re
+            for detail in result.get('result', []):
+                # Extract path before "格式错误"
+                m = re.match(r'^(.+?)格式错误[：:]', str(detail))
+                if m:
+                    failed_paths.add(m.group(1))
+                print(f"  - {detail}")
 
-        passed = len(normalized) - len(failed_paths)
-        print(f"\nValidation complete: {passed} passed, {len(failed_paths)} failed (removed)")
-        return True
+            for item in items:
+                path = item['path']
+                f = file_map.get(path)
+                if path in failed_paths and f and f.exists():
+                    print(f"  [DELETE] Removing invalid file: {f}")
+                    f.unlink()
 
-    print(f"\n[OK] Validation passed")
-    print(f"Response: {result}")
+            passed = len(items) - len(failed_paths)
+            print(f"\nValidation complete ({lang}): {passed} passed, {len(failed_paths)} failed (removed)")
+        else:
+            print(f"\n[OK] Validation passed ({lang})")
+
     return True
 
 

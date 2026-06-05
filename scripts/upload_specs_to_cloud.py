@@ -19,19 +19,8 @@ from typing import List, Optional
 
 import requests
 
-# API 配置（从环境变量读取）
-API_BASE_URL = os.environ.get("PLM_API_test_url", "")
+# API endpoint (same for both zh and en)
 API_ENDPOINT = "/api/common/github/application/files"
-API_KEY = os.environ.get("PLM_API_test_key", "")
-API_TOKEN = os.environ.get("PLM_API_test_token", "")
-
-if not API_BASE_URL:
-    print("[错误] PLM_API_test_url 环境变量未设置")
-    sys.exit(1)
-
-if not API_KEY:
-    print("[错误] PLM_API_test_key 环境变量未设置")
-    sys.exit(1)
 
 # 默认查询参数
 DEFAULT_PARAMS = {
@@ -41,6 +30,34 @@ DEFAULT_PARAMS = {
 
 # 构建输出目录
 DIST_DIR = Path("dist/specs")
+
+
+def get_api_config(file_path: Path, base_dir: Path = DIST_DIR) -> dict:
+    """根据文件路径的语言前缀获取对应 API 配置。"""
+    try:
+        rel_path = file_path.relative_to(base_dir)
+    except ValueError:
+        rel_path = file_path
+
+    parts = list(rel_path.parts)
+    lang = parts[0] if parts else ""
+
+    env_url = f"PLM_API_{lang.upper()}_URL"
+    env_key = f"PLM_API_{lang.upper()}_KEY"
+    env_token = f"PLM_API_{lang.upper()}_TOKEN"
+
+    url = os.environ.get(env_url, "")
+    key = os.environ.get(env_key, "")
+    token = os.environ.get(env_token, "")
+
+    if not url:
+        print(f"[错误] {env_url} 环境变量未设置")
+        sys.exit(1)
+    if not key:
+        print(f"[错误] {env_key} 环境变量未设置")
+        sys.exit(1)
+
+    return {"url": url, "key": key, "token": token}
 
 # 排除的文件类型
 EXCLUDED_EXTENSIONS = {
@@ -133,8 +150,11 @@ def upload_file(file_path: Path, dry_run: bool = False, commit_id: Optional[str]
     # 标准化路径（去掉 dist/specs/zh/ 等前缀）
     normalized_path = normalize_upload_path(file_path, base_dir)
 
+    # 获取对应语言的 API 配置
+    config = get_api_config(file_path, base_dir)
+
     # 构建完整 URL
-    url = f"{API_BASE_URL}{API_ENDPOINT}"
+    url = f"{config['url']}{API_ENDPOINT}"
     params = DEFAULT_PARAMS.copy()
 
     # 添加路径参数
@@ -146,7 +166,7 @@ def upload_file(file_path: Path, dry_run: bool = False, commit_id: Optional[str]
 
     # 准备请求头
     headers = {
-        "x-api-key": API_KEY
+        "x-api-key": config["key"]
     }
 
     # 自动检测 MIME 类型
@@ -200,26 +220,27 @@ def upload_file(file_path: Path, dry_run: bool = False, commit_id: Optional[str]
         is_client_error = False
         if e.response is not None and 400 <= e.response.status_code < 500:
             is_client_error = True
-        _rollback_upload(file_path, normalized_path, is_client_error)
+        _rollback_upload(file_path, normalized_path, config, is_client_error)
 
         return "cleaned" if is_client_error else "skipped"
     finally:
         files["file"][1].close()
 
 
-def _rollback_upload(file_path: Path, normalized_path: str, is_client_error: bool) -> None:
+def _rollback_upload(file_path: Path, normalized_path: str, config: dict, is_client_error: bool) -> None:
     """上传失败时回滚：禁用资源中心记录，并根据错误类型决定是否删除本地文件。
 
     Args:
         file_path: 本地文件路径
         normalized_path: 用于 API 的规范化路径
+        config: API 配置（含 url, key, token）
         is_client_error: 是否为 4xx 客户端错误（是则删除本地文件）
     """
     # 1. 调用 forbid API 禁用资源中心记录
-    if API_TOKEN:
-        forbid_url = f"{API_BASE_URL}/api/plm/github/product/published-files/forbid"
+    if config.get("token"):
+        forbid_url = f"{config['url']}/api/plm/github/product/published-files/forbid"
         headers = {
-            "Authorization": f"Bearer {API_TOKEN}",
+            "Authorization": f"Bearer {config['token']}",
             "Content-Type": "application/json",
         }
         try:
@@ -234,7 +255,7 @@ def _rollback_upload(file_path: Path, normalized_path: str, is_client_error: boo
         except requests.exceptions.RequestException as forbid_e:
             print(f"  [WARN] 回滚资源中心记录失败: {forbid_e}")
     else:
-        print(f"  [WARN] 未设置 PLM_API_test_token，无法回滚资源中心记录")
+        print(f"  [WARN] 未设置对应语言的 API token，无法回滚资源中心记录")
 
     # 2. 4xx 客户端错误时删除本地文件（文件本身有问题，留着还会失败）
     if is_client_error:

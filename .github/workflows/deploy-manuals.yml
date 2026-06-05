@@ -45,10 +45,10 @@ jobs:
       # Upload PDF and other files (excluding .md and images) to Cloud Storage
       - name: Validate docs paths
         env:
-          PLM_API_ZH_URL: ${{ secrets.PLM_API_ZH_URL }}
-          PLM_API_ZH_TOKEN: ${{ secrets.PLM_API_ZH_TOKEN }}
-          PLM_API_EN_URL: ${{ secrets.PLM_API_EN_URL }}
-          PLM_API_EN_TOKEN: ${{ secrets.PLM_API_EN_TOKEN }}
+          PLM_API_ZHENG_ZH_URL: ${{ secrets.PLM_API_ZHENG_ZH_URL }}
+          PLM_API_ZHENG_ZH_TOKEN: ${{ secrets.PLM_API_ZHENG_ZH_TOKEN }}
+          PLM_API_ZHENG_EN_URL: ${{ secrets.PLM_API_ZHENG_EN_URL }}
+          PLM_API_ZHENG_EN_TOKEN: ${{ secrets.PLM_API_ZHENG_EN_TOKEN }}
           NOTIFY_EMAILS: ${{ secrets.NOTIFY_EMAILS }}
         run: |
           pip install requests
@@ -64,10 +64,10 @@ jobs:
         if: github.event_name == 'push'
         env:
           GITHUB_EVENT_BEFORE: ${{ github.event.before }}
-          PLM_API_ZH_URL: ${{ secrets.PLM_API_ZH_URL }}
-          PLM_API_ZH_TOKEN: ${{ secrets.PLM_API_ZH_TOKEN }}
-          PLM_API_EN_URL: ${{ secrets.PLM_API_EN_URL }}
-          PLM_API_EN_TOKEN: ${{ secrets.PLM_API_EN_TOKEN }}
+          PLM_API_ZHENG_ZH_URL: ${{ secrets.PLM_API_ZHENG_ZH_URL }}
+          PLM_API_ZHENG_ZH_TOKEN: ${{ secrets.PLM_API_ZHENG_ZH_TOKEN }}
+          PLM_API_ZHENG_EN_URL: ${{ secrets.PLM_API_ZHENG_EN_URL }}
+          PLM_API_ZHENG_EN_TOKEN: ${{ secrets.PLM_API_ZHENG_EN_TOKEN }}
           NOTIFY_EMAILS: ${{ secrets.NOTIFY_EMAILS }}
         run: |
           pip install requests
@@ -76,10 +76,10 @@ jobs:
       - name: Upload docs files to Cloud Storage
         if: github.event_name == 'push'
         env:
-          PLM_API_ZH_URL: ${{ secrets.PLM_API_ZH_URL }}
-          PLM_API_ZH_KEY: ${{ secrets.PLM_API_ZH_KEY }}
-          PLM_API_EN_URL: ${{ secrets.PLM_API_EN_URL }}
-          PLM_API_EN_KEY: ${{ secrets.PLM_API_EN_KEY }}
+          PLM_API_ZHENG_ZH_URL: ${{ secrets.PLM_API_ZHENG_ZH_URL }}
+          PLM_API_ZHENG_ZH_KEY: ${{ secrets.PLM_API_ZHENG_ZH_KEY }}
+          PLM_API_ZHENG_EN_URL: ${{ secrets.PLM_API_ZHENG_EN_URL }}
+          PLM_API_ZHENG_EN_KEY: ${{ secrets.PLM_API_ZHENG_EN_KEY }}
         run: |
           pip install requests
           python scripts/upload_specs_to_cloud.py --dist-dir docs

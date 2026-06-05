@@ -42,68 +42,38 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      # Upload PDF and other files (excluding .md and images) to Cloud Storage
-      - name: Validate docs paths
-        env:
-          PLM_API_ZHENG_ZH_URL: ${{ secrets.PLM_API_ZHENG_ZH_URL }}
-          PLM_API_ZHENG_ZH_TOKEN: ${{ secrets.PLM_API_ZHENG_ZH_TOKEN }}
-          PLM_API_ZHENG_EN_URL: ${{ secrets.PLM_API_ZHENG_EN_URL }}
-          PLM_API_ZHENG_EN_TOKEN: ${{ secrets.PLM_API_ZHENG_EN_TOKEN }}
-          NOTIFY_EMAILS: ${{ secrets.NOTIFY_EMAILS }}
-        run: |
-          pip install requests
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.validate_all }}" = "true" ]; then
-            echo "Running full validation (--all)"
-            python scripts/validate_docs.py --all
-          else
-            echo "Running incremental validation (--diff)"
-            python scripts/validate_docs.py --diff
-          fi
-
-      - name: Forbid deleted docs (push only)
-        if: github.event_name == 'push'
-        env:
-          GITHUB_EVENT_BEFORE: ${{ github.event.before }}
-          PLM_API_ZHENG_ZH_URL: ${{ secrets.PLM_API_ZHENG_ZH_URL }}
-          PLM_API_ZHENG_ZH_TOKEN: ${{ secrets.PLM_API_ZHENG_ZH_TOKEN }}
-          PLM_API_ZHENG_EN_URL: ${{ secrets.PLM_API_ZHENG_EN_URL }}
-          PLM_API_ZHENG_EN_TOKEN: ${{ secrets.PLM_API_ZHENG_EN_TOKEN }}
-          NOTIFY_EMAILS: ${{ secrets.NOTIFY_EMAILS }}
-        run: |
-          pip install requests
-          python scripts/validate_docs.py --forbid-deleted
-
+      # 1. Upload non-Markdown files to Cloud Storage
       - name: Upload docs files to Cloud Storage
-        if: github.event_name == 'push'
+        if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
         env:
           PLM_API_ZHENG_ZH_URL: ${{ secrets.PLM_API_ZHENG_ZH_URL }}
-          PLM_API_ZHENG_ZH_KEY: ${{ secrets.PLM_API_ZHENG_ZH_KEY }}
+          PLM_API_ZHENG_ZH_TOKEN: ${{ secrets.PLM_API_ZHENG_ZH_TOKEN }}
           PLM_API_ZHENG_EN_URL: ${{ secrets.PLM_API_ZHENG_EN_URL }}
-          PLM_API_ZHENG_EN_KEY: ${{ secrets.PLM_API_ZHENG_EN_KEY }}
+          PLM_API_ZHENG_EN_TOKEN: ${{ secrets.PLM_API_ZHENG_EN_TOKEN }}
         run: |
           pip install requests
           python scripts/upload_specs_to_cloud.py --dist-dir docs
 
+      # 2. Generate product index pages
       - name: Generate Product Index Pages
-        if: github.event_name == 'push'
+        if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
         run: |
           python scripts/generate_product_index.py --report
 
-      # Build Chinese site to site-zh/
+      # 3. Build sites
       - name: Build (zh)
-        if: github.event_name == 'push'
+        if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
         run: |
           python -m mkdocs build -f mkdocs.yml -d site-zh --clean
 
-      # Build English site to site-en/
       - name: Build (en)
-        if: github.event_name == 'push'
+        if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
         run: |
           python -m mkdocs build -f mkdocs.en.yml -d site-en --clean
 
-      # Deploy Chinese site to domestic server only
+      # 4. Deploy
       - name: Copy Chinese site to Domestic Server
-        if: github.event_name == 'push'
+        if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
         uses: appleboy/scp-action@v0.1.7
         with:
           host: ${{ secrets.CN_OVERSEAS_HOST }}
@@ -115,9 +85,8 @@ jobs:
           rm: false
           overwrite: true
 
-      # Deploy English site to overseas server only
       - name: Copy English site to Overseas Server
-        if: github.event_name == 'push'
+        if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
         uses: appleboy/scp-action@v0.1.7
         with:
           host: ${{ secrets.OVERSEAS_HOST }}
@@ -129,9 +98,8 @@ jobs:
           rm: false
           overwrite: true
 
-      # Deploy English site to new overseas server
       - name: Copy English site to Overseas Server (NEW)
-        if: github.event_name == 'push'
+        if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
         uses: appleboy/scp-action@v0.1.7
         with:
           host: ${{ secrets.OVERSEAS_HOST_NEW }}
@@ -142,4 +110,36 @@ jobs:
           strip_components: 1
           rm: false
           overwrite: true
+
+      # 5. Sync paths to resource center (validate)
+      - name: Sync docs paths
+        env:
+          PLM_API_ZHENG_ZH_URL: ${{ secrets.PLM_API_ZHENG_ZH_URL }}
+          PLM_API_ZHENG_ZH_TOKEN: ${{ secrets.PLM_API_ZHENG_ZH_TOKEN }}
+          PLM_API_ZHENG_EN_URL: ${{ secrets.PLM_API_ZHENG_EN_URL }}
+          PLM_API_ZHENG_EN_TOKEN: ${{ secrets.PLM_API_ZHENG_EN_TOKEN }}
+          NOTIFY_EMAILS: ${{ secrets.NOTIFY_EMAILS }}
+        run: |
+          pip install requests
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.validate_all }}" = "true" ]; then
+            echo "Running full sync (--all)"
+            python scripts/validate_docs.py --all
+          else
+            echo "Running incremental sync (--diff)"
+            python scripts/validate_docs.py --diff
+          fi
+
+      # 6. Forbid deleted files
+      - name: Forbid deleted docs
+        if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+        env:
+          GITHUB_EVENT_BEFORE: ${{ github.event.before }}
+          PLM_API_ZHENG_ZH_URL: ${{ secrets.PLM_API_ZHENG_ZH_URL }}
+          PLM_API_ZHENG_ZH_TOKEN: ${{ secrets.PLM_API_ZHENG_ZH_TOKEN }}
+          PLM_API_ZHENG_EN_URL: ${{ secrets.PLM_API_ZHENG_EN_URL }}
+          PLM_API_ZHENG_EN_TOKEN: ${{ secrets.PLM_API_ZHENG_EN_TOKEN }}
+          NOTIFY_EMAILS: ${{ secrets.NOTIFY_EMAILS }}
+        run: |
+          pip install requests
+          python scripts/validate_docs.py --forbid-deleted
 

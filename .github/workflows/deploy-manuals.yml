@@ -12,6 +12,12 @@ on:
       - 'mkdocs.yml'
       - 'mkdocs.en.yml'
   workflow_dispatch:
+    inputs:
+      validate_all:
+        description: '全量校验（校验 docs/ 下所有文件）'
+        required: false
+        default: false
+        type: boolean
 
 permissions:
   contents: read
@@ -46,7 +52,13 @@ jobs:
           NOTIFY_EMAILS: ${{ secrets.NOTIFY_EMAILS }}
         run: |
           pip install requests
-          python scripts/validate_docs.py --diff
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.validate_all }}" = "true" ]; then
+            echo "Running full validation (--all)"
+            python scripts/validate_docs.py --all
+          else
+            echo "Running incremental validation (--diff)"
+            python scripts/validate_docs.py --diff
+          fi
 
       - name: Forbid deleted docs (push only)
         if: github.event_name == 'push'

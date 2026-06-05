@@ -399,6 +399,11 @@ def main():
         action="store_true",
         help="Forbid (disable) deleted files via API (only for push events)",
     )
+    parser.add_argument(
+        "--all",
+        action="store_true",
+        help="Validate all files under docs/",
+    )
     args = parser.parse_args()
 
     # Handle single file validation
@@ -429,8 +434,34 @@ def main():
             print("[INFO] No changed files in docs/")
         sys.exit(0)
 
-    print("[ERROR] Must specify --diff or --file")
+    # Handle validate all files
+    if args.all:
+        files = get_all_files()
+        if files:
+            print(f"[INFO] Found {len(files)} files to validate")
+            success = validate_files(files)
+            if not success:
+                sys.exit(1)
+        else:
+            print("[INFO] No files found in docs/")
+        sys.exit(0)
+
+    print("[ERROR] Must specify --diff, --file, or --all")
     sys.exit(1)
+
+
+def get_all_files() -> List[Path]:
+    """Get all files under docs/ directory that should be validated."""
+    docs_dir = Path("docs")
+    if not docs_dir.exists():
+        return []
+
+    files = []
+    for file_path in docs_dir.rglob("*"):
+        if file_path.is_file() and normalize_path(file_path):
+            files.append(file_path)
+
+    return files
 
 
 if __name__ == "__main__":

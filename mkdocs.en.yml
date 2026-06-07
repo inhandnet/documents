@@ -79,4 +79,8 @@ extra_javascript:
 
 plugins:
   - search
+  - exclude:
+      glob:
+        - "**/Datasheets/**"
+        - "**/datasheets/**"
 

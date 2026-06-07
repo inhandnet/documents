@@ -33,7 +33,7 @@ CONFIGURATIONS_EXTENSIONS = {".md", ".cfg", ".conf", ".json", ".yaml", ".yml", "
 # deployment/ lives inside docs/{lang}/{Category}/{Chipset}/{Model}/deployment/
 DEPLOYMENT_EXTENSIONS = {".md", ".cfg", ".conf", ".json", ".yaml", ".yml", ".xml", ".ini", ".txt", ".zip"}
 
-SKIP_DIRS = {"assets", "images", "stylesheets", "javascripts", "_redirects", "deployment"}
+SKIP_DIRS = {"assets", "images", "stylesheets", "javascripts", "_redirects", "deployment", "Datasheets", "datasheets"}
 SKIP_FILES = {"index.md", ".gitkeep"}
 
 

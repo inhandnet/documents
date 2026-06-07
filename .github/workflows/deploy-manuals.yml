@@ -71,7 +71,38 @@ jobs:
         run: |
           python -m mkdocs build -f mkdocs.en.yml -d site-en --clean
 
-      # 4. Deploy
+      # 4. Clean cloud-storage files from build output (keep only site assets)
+      - name: Clean cloud-storage files from site output
+        if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+        run: |
+          # Remove files served from cloud storage (PDF, CFG, DAT, etc.)
+          # Keep HTML/CSS/JS/images/fonts — only files needed by the static site
+          for site in site-zh site-en; do
+            if [ -d "$site" ]; then
+              find "$site" -type f \
+                ! -name "*.html" \
+                ! -name "*.css" \
+                ! -name "*.js" \
+                ! -name "*.png" \
+                ! -name "*.jpg" \
+                ! -name "*.jpeg" \
+                ! -name "*.gif" \
+                ! -name "*.svg" \
+                ! -name "*.webp" \
+                ! -name "*.ico" \
+                ! -name "*.woff" \
+                ! -name "*.woff2" \
+                ! -name "*.ttf" \
+                ! -name "*.eot" \
+                ! -name "*.json" \
+                ! -name "*.xml" \
+                ! -name "*.txt" \
+                -delete
+            fi
+          done
+          echo "Cleaned cloud-storage files from site output"
+
+      # 5. Deploy
       - name: Copy Chinese site to Domestic Server
         if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
         uses: appleboy/scp-action@v0.1.7

@@ -160,13 +160,13 @@ def normalize_path(file_path: Path) -> Optional[str]:
     if parts[-1] in EXCLUDED_FILES:
         return None
 
-    # Skip image files
+    # Skip image files in any directory
     ext = Path(parts[-1]).suffix.lower()
     if ext in {".png", ".jpg", ".jpeg", ".gif", ".svg", ".webp", ".bmp", ".ico"}:
         return None
 
-    # Skip image files in any directory (including Datasheets)
-    if ext in {".png", ".jpg", ".jpeg", ".gif", ".svg", ".webp", ".bmp", ".ico"}:
+    # Datasheets directory: only PDF files go through validation/forbid
+    if any(p.lower() == "datasheets" for p in parts) and ext != ".pdf":
         return None
 
     # Join remaining parts (remove docs/ and language prefix)
@@ -239,12 +239,12 @@ def forbid_files(file_list: List[Path]) -> bool:
                 # Skip excluded files
                 if parts[-1] in EXCLUDED_FILES:
                     continue
-                # Skip image files
+                # Skip image files in any directory
                 ext = Path(parts[-1]).suffix.lower()
                 if ext in {".png", ".jpg", ".jpeg", ".gif", ".svg", ".webp", ".bmp", ".ico"}:
                     continue
-                # Skip image files only (allow all other formats including PDF, MD, CNF, CFG, etc.)
-                if ext in {".png", ".jpg", ".jpeg", ".gif", ".svg", ".webp", ".bmp", ".ico"}:
+                # Datasheets directory: only PDF files go through forbid
+                if any(p.lower() == "datasheets" for p in parts) and ext != ".pdf":
                     continue
                 # Remove lang prefix: FWA02-NAVA/FAQ/xxx.md (without zh/)
                 norm = "/".join(parts[2:])

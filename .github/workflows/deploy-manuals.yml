@@ -3,25 +3,24 @@ name: Deploy Manuals to Formal Server
 on:
   pull_request:
     branches: [master]
-    paths: ['docs/**']
+    paths: ["docs/**"]
   push:
     branches: [master]
     paths:
-      - 'docs/**'
-      - 'overrides/**'
-      - 'mkdocs.yml'
-      - 'mkdocs.en.yml'
+      - "docs/**"
+      - "overrides/**"
+      - "mkdocs.yml"
+      - "mkdocs.en.yml"
   workflow_dispatch:
     inputs:
       validate_all:
-        description: '全量校验（校验 docs/ 下所有文件）'
+        description: "全量校验（校验 docs/ 下所有文件）"
         required: false
         default: false
         type: boolean
 
 permissions:
   contents: read
-
 
 jobs:
   build-and-deploy:
@@ -113,7 +112,7 @@ jobs:
           source: "site-zh/*"
           target: /data/wordpress/manuals/
           strip_components: 1
-          rm: true
+          rm: false
           overwrite: true
 
       - name: Copy English site to Overseas Server
@@ -126,7 +125,7 @@ jobs:
           source: "site-en/*"
           target: /data/wordpress/manuals/
           strip_components: 1
-          rm: true
+          rm: false
           overwrite: true
 
       - name: Copy English site to Overseas Server (NEW)
@@ -139,7 +138,7 @@ jobs:
           source: "site-en/*"
           target: /data/wordpress/manuals/
           strip_components: 1
-          rm: true
+          rm: false
           overwrite: true
 
       # 5. Sync paths to resource center (validate)
@@ -173,4 +172,3 @@ jobs:
         run: |
           pip install requests
           python scripts/validate_docs.py --forbid-deleted
-

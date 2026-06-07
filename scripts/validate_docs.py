@@ -73,8 +73,13 @@ def get_changed_files() -> List[Path]:
         # PR mode: compare base branch with head branch
         cmd = ["git", "-c", "core.quotePath=false", "diff", "--name-only", f"origin/{base_ref}", f"origin/{head_ref}"]
     else:
-        # Push mode: compare last commit
-        cmd = ["git", "-c", "core.quotePath=false", "diff", "--name-only", "HEAD~1", "HEAD"]
+        # Push mode: use GitHub's before/after sha if available
+        before_sha = os.environ.get("GITHUB_EVENT_BEFORE")
+        after_sha = os.environ.get("GITHUB_SHA", "HEAD")
+        if before_sha:
+            cmd = ["git", "-c", "core.quotePath=false", "diff", "--name-only", before_sha, after_sha]
+        else:
+            cmd = ["git", "-c", "core.quotePath=false", "diff", "--name-only", "HEAD~1", "HEAD"]
 
     try:
         result = subprocess.run(cmd, capture_output=True, text=True, check=True)

@@ -102,16 +102,6 @@ jobs:
           echo "Cleaned cloud-storage files from site output"
 
       # 5. Deploy
-      - name: Clean Chinese site directory
-        if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
-        uses: appleboy/ssh-action@v0.1.7
-        with:
-          host: ${{ secrets.CN_OVERSEAS_HOST }}
-          username: ${{ secrets.CN_OVERSEAS_USER }}
-          password: ${{ secrets.CN_OVERSEAS_PASS }}
-          script: rm -rf /data/wordpress/manuals/*
-          continue-on-error: true
-
       - name: Copy Chinese site to Domestic Server
         if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
         uses: appleboy/scp-action@v0.1.7
@@ -125,16 +115,6 @@ jobs:
           rm: false
           overwrite: true
 
-      - name: Clean English site directory
-        if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
-        uses: appleboy/ssh-action@v0.1.7
-        with:
-          host: ${{ secrets.OVERSEAS_HOST }}
-          username: ${{ secrets.OVERSEAS_USER }}
-          password: ${{ secrets.OVERSEAS_PASS }}
-          script: rm -rf /data/wordpress/manuals/*
-          continue-on-error: true
-
       - name: Copy English site to Overseas Server
         if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
         uses: appleboy/scp-action@v0.1.7
@@ -147,16 +127,6 @@ jobs:
           strip_components: 1
           rm: false
           overwrite: true
-
-      - name: Clean English site directory (NEW)
-        if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
-        uses: appleboy/ssh-action@v0.1.7
-        with:
-          host: ${{ secrets.OVERSEAS_HOST_NEW }}
-          username: ${{ secrets.OVERSEAS_USER }}
-          password: ${{ secrets.OVERSEAS_PASS }}
-          script: rm -rf /data/wordpress/manuals/*
-          continue-on-error: true
 
       - name: Copy English site to Overseas Server (NEW)
         if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'

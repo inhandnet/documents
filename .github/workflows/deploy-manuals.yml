@@ -113,7 +113,7 @@ jobs:
           source: "site-zh/*"
           target: /data/wordpress/manuals/
           strip_components: 1
-          rm: false
+          rm: true
           overwrite: true
 
       - name: Copy English site to Overseas Server
@@ -126,7 +126,7 @@ jobs:
           source: "site-en/*"
           target: /data/wordpress/manuals/
           strip_components: 1
-          rm: false
+          rm: true
           overwrite: true
 
       - name: Copy English site to Overseas Server (NEW)
@@ -139,7 +139,7 @@ jobs:
           source: "site-en/*"
           target: /data/wordpress/manuals/
           strip_components: 1
-          rm: false
+          rm: true
           overwrite: true
 
       # 5. Sync paths to resource center (validate)

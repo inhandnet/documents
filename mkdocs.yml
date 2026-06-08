@@ -93,6 +93,7 @@ extra_javascript:
 
 plugins:
   - search
+  - awesome-pages
   - exclude:
       glob:
         - "**/Datasheets/**"

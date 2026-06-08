@@ -42,7 +42,7 @@ def get_api_config(lang: str) -> dict:
     return {"url": url, "token": token}
 
 # Excluded files
-EXCLUDED_FILES = {".gitkeep", "index.md"}
+EXCLUDED_FILES = {".gitkeep", "index.md", ".pages"}
 EXCLUDED_DIRS = {"img", "images", "assets", "javascripts", "stylesheets"}
 
 

@@ -14,25 +14,6 @@ docs_dir: docs/en
 # 输出为 *.html（避免依赖目录 /index.html 的自动补全）
 use_directory_urls: false
 
-# Hide image folders and sub-category folders (avoid sidebar showing category hierarchy)
-not_in_nav: |
-  **/images/**
-  **/img/**
-  **/General/**
-  **/4G Version/**
-  **/5G Version/**
-  **/1G Version/**
-  **/Road/**
-  **/Rail/**
-  **/Python SDK/**
-  **/Docker SDK/**
-  **/Greengrass SDK/**
-  **/Device Supervisor Agent/**
-  **/FlexAPI/**
-  **/User manual/**
-  **/Installation Guide/**
-  **/Quick user manual/**
-
 theme:
   name: material
   language: en

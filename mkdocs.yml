@@ -14,25 +14,6 @@ docs_dir: docs/zh
 # 输出为 *.html（避免依赖目录 /index.html 的自动补全）
 use_directory_urls: false
 
-# 自动导航时隐藏图片目录和子分类目录（避免侧边栏显示分类层级）
-not_in_nav: |
-  **/images/**
-  **/img/**
-  **/通用/**
-  **/4G版/**
-  **/5G版/**
-  **/1G版/**
-  **/Road/**
-  **/Rail/**
-  **/Python SDK/**
-  **/Docker SDK/**
-  **/Greengrass SDK/**
-  **/Device Supervisor Agent/**
-  **/FlexAPI/**
-  **/用户手册/**
-  **/安装指南/**
-  **/快速用户手册/**
-
 theme:
   name: material
   language: zh

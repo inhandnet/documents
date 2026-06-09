@@ -122,6 +122,8 @@ def build_index_content(lang: str, category: str, chipset: str, model: str,
     lines = [
         f"---",
         f"title: {title}",
+        f"hide:",
+        f"  - navigation",
         f"---",
         f"",
         f"# {title}",

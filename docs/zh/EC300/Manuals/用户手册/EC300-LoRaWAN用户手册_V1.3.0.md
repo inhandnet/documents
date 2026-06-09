@@ -1,0 +1,1857 @@
+# EC300-LoRaWAN用户手册_V1.3.0
+
+**边缘计算机EC300-LoRaWAN系列**
+
+**用户手册**
+
+**（适用于** IEOS V2.0.0及以上版本**）**
+
+Version 1.3.0，2025年12月
+
+[www.inhand.com.cn](http://www.inhand.com.cn)
+
+![1719803379372-a44cffa9-09ed-4bd7-9eac-be8551e26791.png](./img/sGshZJl12v0kEmKG/1719803379372-a44cffa9-09ed-4bd7-9eac-be8551e26791-346093.png)
+
+本手册中描述的软件是根据许可协议提供的，只能按照该协议的条款使用。
+
+**版权声明**
+
+© 2025 映翰通网络 保留所有权利。
+
+**商标**
+
+InHand标志是映翰通网络的注册商标。
+
+本手册中的所有其他商标或注册商标属于其各自的制造商。
+
+**免责声明**
+
+本公司保留对此手册更改的权利，产品后续相关变更时，恕不另行通知。对于任何因安装、使用不当而导致的直接、间接、有意或无意的损坏及隐患概不负责。
+
+## **1 导言**
+
+本用户手册适用于基于Arm架构的边缘计算机EC300-LoRaWAN（以下简称EC300），并涵盖整套适用于所有支持型号的说明。在参考这些章节之前，请确认您计算机型号的硬件规格是否支持所涵盖的功能/设置。
+
+## **2 硬件安装说明**
+
+在本章中，我们将介绍基于Arm架构的边缘计算机EC300的外部接口说明。
+
+### **2.1介绍**
+
+下面的章节描述了外部连接器和引脚分配的应用。
+
+### **2.2 EC300面板**
+
+### **2.2.1 正面板**
+
+![1719803379434-4ae3f8b6-d9f7-402f-8ae8-5f539b856a9a.png](./img/sGshZJl12v0kEmKG/1719803379434-4ae3f8b6-d9f7-402f-8ae8-5f539b856a9a-756843.png)
+
+### **2.2.2 左侧面板**
+
+![1719803379399-6f46c0be-8878-4abe-b728-b93c753d972c.png](./img/sGshZJl12v0kEmKG/1719803379399-6f46c0be-8878-4abe-b728-b93c753d972c-382221.png)
+
+### **2.2.3 右侧面板**
+
+![1764575859959-c017dbeb-781f-4878-ac48-dc080f2f80d1.png](./img/sGshZJl12v0kEmKG/1764575859959-c017dbeb-781f-4878-ac48-dc080f2f80d1-314043.png)
+
+### **2.3 EC300外部接口**
+
+### **2.3.1 以太网**
+
+这是用于以太网连接的双 RJ45 连接器。
+
+EC300有2个RJ45以太网口，支持10M/100M自适应速率。
+
+黄灯：LINK指示灯，当设备LINK UP时长亮，LINK DOWN时长灭。
+
+绿灯：ACT灯，当有数据时闪烁。
+
+### **2.3.2 串口**
+
+EC300最多支持四路串口：两路标配串口和两路可扩展串口。
+
+COM1（标配）：RS-232 / RS-485 （RX1 TX1 / A1 B1)，在同一时刻，你只能选择接入RS-232或者RS-485，他们不能同时接入工作。
+
+COM2（标配）：RS-485（A2 B2）
+
+COM3（扩展）：RS232 / RS485（扩展接口PIN1 扩展接口PIN2）
+
+COM4（扩展）：RS232 / RS485（扩展接口PIN5 扩展接口PIN6）
+
+### **2.3.3 CAN**
+
+EC300最多支持3路可扩展的CAN总线接口，支持CAN FD，最高速率5Mbps，同时兼容CAN 2.0 A/B标准。
+
+CAN1：扩展接口PIN1 扩展接口PIN2
+
+CAN2：扩展接口PIN5 扩展接口PIN6
+
+CAN3：扩展接口PIN9 扩展接口PIN10
+
+### **2.3.4 数字量输入接口（Digital Input）**
+
+| Parameter | Description | Min | Type | Max | Unit |
+| :---: | :---: | --- | --- | :---: | :---: |
+| Vds | Drain source voltage |  |  | 48 | V |
+| VIN Low | Maximal input voltage recongnized as LOW |  |  | 3 | V |
+| VIN High | Minimal input voltage recognized as HIGH | 10 |  | 30 | V |
+
+| **接口标识** | **功能** | **描述** |
+| :---: | :---: | --- |
+| GND | **电源参考地** | 4路数字量输入DI,<br/>湿接点状态“1”:+10~+30V/-30 ~ -10VDC<br/>湿接点状态<br/>0”: 0 ~ +3V/-3 ~ 0V<br/>隔离3000VDC |
+| DICOM | 输入公共端 | |
+| DI0 | 数字量输入 0 号接口 | |
+| DI1 | 数字量输入 1 号接口 | |
+| DI2 | 数字量输入 2 号接口 | |
+| DI3 | 数字量输入 3 号接口 | |
+
+接线示意图(仅支持湿节点接线方式)
+
+![1719803379424-2ec0407b-c2a8-4d25-8ded-6b8e772689b8.png](./img/sGshZJl12v0kEmKG/1719803379424-2ec0407b-c2a8-4d25-8ded-6b8e772689b8-306021.png)
+
+### **2.3.5 数字量输出接口（Digital Output）**
+
+| **接口标识** | **功能** | **描述** |
+| :---: | :---: | --- |
+| DO0 | 数字量输出 0 号接口 | 4 路 DO OD输出, 隔离3000VDC |
+| DO1 | 数字量输出 1 号接口 | |
+| DO2 | 数字量输出 2 号接口 | |
+| DO3 | 数字量输出 3 号接口 | |
+| GND | 接地端 | |
+
+接线示意图
+
+![1719803380004-fd56762e-d734-43ed-ac91-78dfaaa3ac5d.png](./img/sGshZJl12v0kEmKG/1719803380004-fd56762e-d734-43ed-ac91-78dfaaa3ac5d-789509.png)
+
+### **2.3.6 模拟量输入接口（AIN）**
+
+EC300最多支持两路可扩展的AIN模拟电流信号接入接口，输入范围4 - 20mA，采用TI TLA2022 12位ADC，采样率1.6KHz，分辨率16.6uA，精度1%。
+
+接线示意图
+
+![1736320736609-1e8e0267-ee41-4b00-b892-d192057875bf.png](./img/sGshZJl12v0kEmKG/1736320736609-1e8e0267-ee41-4b00-b892-d192057875bf-760092.png)
+
+### **2.3.7 USB**
+
+EC300提供一个 USB 2.0 Host 接口。
+
+### **2.3.8 LED**
+
+EC300 有8个LED灯，分别对电源及系统运行状态进行指示。
+
+| **标识** | **名称** | **定义** |
+| --- | --- | --- |
+| PWR | 电源指示灯 | 上电常亮 |
+| STATUS | 系统运行状态指示灯 | 当系统正常启动后，STATUS闪烁；如果系统启动阶段发生异常导致系统启动失败，或者恢复出厂操作尚未完成时，STATUS长灭。 |
+| WARN | 警告指示灯 | 当系统发生警告异常时，WARN灯闪烁。警告异常包括：恢复出厂尚未完成、拨号异常（需开启蜂窝功能）。 |
+| NET | 蜂窝网连接状态指示灯 | 未开启拨号功能，熄灭<br/>拨号中，闪烁<br/>拨号成功，常亮 |
+| User1 | 用户可编程指示灯1 | 默认熄灭，可由用户编程控制 |
+| User2 | 用户可编程指示灯2 | 默认熄灭，可由用户编程控制 |
+| User3 | 用户可编程指示灯3 | 默认熄灭，可由用户编程控制 |
+| User4 | 用户可编程指示灯4 | 默认熄灭，可由用户编程控制 |
+
+### **2.3.9 用户可编程按键**
+
+EC300提供API接口，用户可以调用API接口检测可编程按键的状态，然后实现自己的按键逻辑。
+
+### **2.3.10 直流输入**
+
+EC300支持9~48V直流输入
+
+### **2.3.11 SIM卡插槽**
+
+EC300支持2个SIM卡插槽，SIM卡需要在断电状态下安装，将SIM卡按压插入卡槽即可。
+
+### **2.3.12 MicroSD卡槽**
+
+EC300有一个MircoSD卡的卡槽，SD不支持热插拔，需要在断电情况下插拔。
+
+### **2.3.13 恢复出厂按键**
+
+EC312有一个复位按钮用于系统恢复出厂，参考"系统恢复出厂设置"章节。
+
+### **2.3.14 天线接口**
+
+EC300共有5个天线接口，不同型号标配的天线数量不同，将天线拧入相应的天线接口完成天线安装。
+
+| **标识** | **名称** |
+| :---: | :---: |
+| ANT1 | 4G LTE主天线/5G天线 |
+| ANT2 | 4G LTE分集接收天线/5G天线 |
+| GPS | GPS天线 |
+| Wi-Fi | WiFi天线 |
+| Lora | Lora天线 |
+
+### **2.3.15 扩展接口**
+
+EC300可以支持接口扩展，选型说明详见产品规格书，目前已经支持的扩展模块如下：
+
+| 扩展模块 | 功能 |
+| :---: | :---: |
+| NAAD | 2x 4-20mA模拟量输入+4x DI+4x DO |
+| N44C | 2x RS-485+1x CAN FD |
+| N4CC | 1x RS-485+2x CAN FD |
+| N44D | 2x RS-485+4x DI+4x DO |
+| — | NONE |
+
+扩展接口定义如下：
+
+![1719803379859-3f68de67-134a-4a60-9c62-42dac29e7bbd.png](./img/sGshZJl12v0kEmKG/1719803379859-3f68de67-134a-4a60-9c62-42dac29e7bbd-056418.png)
+
+| **PIN** | **扩展模块** | | | |
+| :---: | :---: | --- | --- | --- |
+| | **NAAD** | **N44C** | **N4CC** | **N44D** |
+| | **接口定义** | | | |
+| 1 | AIN1+ | A\_485\_A | A\_485\_A | A\_485\_A |
+| 2 | - | A\_485\_B | A\_485\_B | A\_485\_B |
+| 3 | AIN1- | - | - | - |
+| 4 | GND | GND | GND | GND |
+| 5 | AIN2+ | B\_485\_A | CAN2\_H | B\_485\_A |
+| 6 | - | B\_485\_B | CAN2\_L | B\_485\_B |
+| 7 | AIN2- | - | - | - |
+| 8 | GND | GND | GND | GND |
+| 9 | - | CAN3\_H | CAN3\_H | - |
+| 10 | - | CAN3\_L | CAN3\_L | - |
+| 11 | DO0 | - | - | DO0 |
+| 12 | DO1 | - | - | DO1 |
+| 13 | DO2 | - | - | DO2 |
+| 14 | DO3 | - | - | DO3 |
+| 15 | DI0 | - | - | DI0 |
+| 16 | DI1 | - | - | DI1 |
+| 17 | DI2 | - | - | DI2 |
+| 18 | DI3 | - | - | DI3 |
+| 19 | DI\_COM | - | - | DI\_COM |
+| 20 | GND | - | - | GND |
+
+## **3 入门**
+
+在本章中，我们将介绍基于Arm结构的边缘计算机EC300的基础配置。
+
+### **3.1连接到EC300**
+
+您需要一台计算机，用于连接到EC300并登录到命令行界面。可以通过以太网网线的方式连接。
+
+出厂默认的用户名和密钥：
+
+**Username: edge**
+
+**Password: security@edge**
+
+EC300设备出厂默认创建了root，但是登录被禁用。如果需要使用root用户，请手动修改系统配置，输入sudo -s 切换至root用户。用户edge在sudo组中，所以您可以在edge用户下使用sudo来执行系统级命令。有关其他细节，请参阅第5章中的sudo机制部分。
+
+**提示**
+
+当出现**command not found**时，输入sudo -s切换至root用户或使用sudo命令来操作。
+
+**注意**
+
+出于安全考虑，我们建议您禁用默认的用户账户，并创建您自己的用户帐户。
+
+### **3.1.1 通过SSH Console进行连接**
+
+EC300支持通过以太网的SSH连接。使用以下默认IP 地址连接到EC300。
+
+| **端口** | **默认IP** |
+| --- | --- |
+| ETH 1  | 192.168.3.100 |
+| ETH 2  | 192.168.4.100 |
+
+#### **3.1.1.1 Linux用户**
+
+提示
+
+这些步骤适用于您在 Linux PC上连接到EC300。请不要将这些步骤应用于EC300设备本身。在您运行ssh命令之前，请确保将PC的以太网口IP地址配置在特定范围内。ETH1：192.168.3.0/24，ETH2：192.168.4.0/24。
+
+在 Linux PC上使用 ssh 命令访问EC300的ETH1 端口。
+
+![1719803379989-1fb974d1-3bad-4ecc-9930-3cefafc2f105.png](./img/sGshZJl12v0kEmKG/1719803379989-1fb974d1-3bad-4ecc-9930-3cefafc2f105-432754.png)
+
+输入**yes** 继续完成连接。
+
+![1719803380058-4f5656df-d710-4ff2-bd06-3884eb24f9ef.png](./img/sGshZJl12v0kEmKG/1719803380058-4f5656df-d710-4ff2-bd06-3884eb24f9ef-870863.png)
+
+当界面出现终端提示符edge@edge-computer:~$，可输入shell命令时，连接成功。
+
+![1719803380198-eca76d92-31a3-4d93-b2c1-968350410801.png](./img/sGshZJl12v0kEmKG/1719803380198-eca76d92-31a3-4d93-b2c1-968350410801-302625.png)
+
+##### **3.1.1.2 Windows用户**
+
+**提示**
+
+这些步骤适用于您在Windows PC上连接EC300。请不要将这些步骤应用于EC300设备本身。
+
+请在您的Windows PC机上做出如下步骤
+
+点击链接<http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html>，下载PuTTY（免费的软件），在Windows环境下以SSH命令的方式来建立与边缘计算机EC300的连接。下图是使用SSH连接的示例：
+
+![1719803380376-b69fda97-2fdc-493c-b3ed-e083bdbdf727.png](./img/sGshZJl12v0kEmKG/1719803380376-b69fda97-2fdc-493c-b3ed-e083bdbdf727-013545.png)
+
+### **3.2用户账户管理**
+
+### **3.2.1 切换到root用户**
+
+您可以使用sudo -s的命令来切换到root用户。出于安全考虑，不要在root权限下操作所有的命令。
+
+**提示**
+
+点击链接获取更多关于**sudo** 命令的信息。
+
+[https://wiki.debian.org/sudo](https://wiki.debian.org/sudo%20/h)
+
+**注意**
+
+您可能会在非root权限下使用一些管道或者重定向行为的时候得到”permission denied“的提示，此时您必须使用'sudo su -c'来取代'>','<','>>','<<','etc'等命令，需要包含完整命令的单引号。
+
+### **3.2.2 创建和删除用户账户**
+
+您可以使用**useradd**和**userdel** 命令来创建和删除用户的账户。请务必在主界面使用这些命令来设置该账户的相关访问权限。以下是如何在sudo组中创建test1的示例 （test1用户的默认登陆环境是bash，其主目录是/home/test1）
+
+![1719803380446-a2a53626-9e83-4657-af29-c423a37ed3cf.png](./img/sGshZJl12v0kEmKG/1719803380446-a2a53626-9e83-4657-af29-c423a37ed3cf-837764.png)
+
+修改test1的密钥，用passwd命令，输入新密钥然后重复输入新密钥以确认更改
+
+![1719803380529-7b85029d-9a61-4bb7-bb0a-4e6cef8e9657.png](./img/sGshZJl12v0kEmKG/1719803380529-7b85029d-9a61-4bb7-bb0a-4e6cef8e9657-658058.png)
+
+如果要删除用户test1，请使用命令userdel
+
+![1719803380538-2b972766-ac9c-4c72-8c53-c02aebdcc62b.png](./img/sGshZJl12v0kEmKG/1719803380538-2b972766-ac9c-4c72-8c53-c02aebdcc62b-004834.png)
+
+### **3.2.3 禁用默认的用户账户**
+
+注意
+
+在禁用默认帐户之前，应首先创建一个用户帐户
+
+使用passwd命令来锁定默认用户账户，使edge用户无法登录
+
+![1719803380744-4361159c-5f34-42a4-9914-38a0178c704c.png](./img/sGshZJl12v0kEmKG/1719803380744-4361159c-5f34-42a4-9914-38a0178c704c-468768.png)
+
+对edge用户进行解除锁定
+
+![1719803380882-2bca600f-2530-40d4-85f2-f055c87efce0.png](./img/sGshZJl12v0kEmKG/1719803380882-2bca600f-2530-40d4-85f2-f055c87efce0-270991.png)
+
+### **3.3 网络管理和系统管理**
+
+EC300基于debian 11系统，因此可以使用Linux原生的命令进行网络管理和系统管理；为了便于用户配置，映翰通开发了一套IEOS系统程序，提供web界面，用户可以方便的通过web进行网络管理和系统管理，但需要注意的是，当启用IEOS功能后，IEOS会接管网络管理和系统管理，此时通过Linux原生命令进行网络管理和系统管理可能会失效；设备出厂默认启用IEOS，如果用户需要基于Linux原生的命令行进行网络管理和系统管理，需要先关闭IEOS。
+
+### **3.3.1 基于IEOS的web管理**
+
+IEOS是映翰通自研的一套运行在Linux系统上的网络管理和系统管理程序，IEOS提供web界面，用户可以通过web进行以太网口ip地址，蜂窝拨号，Wi-Fi Station，DHCP Client/Server，静态路由，防火墙等网络配置；也可以对系统时间，时区，固件升级和系统重启等进行操作；另外IEOS还支持对接映翰通的设备管理平台DeviceLive，用户可以通过DeviceLive平台对EC300设备进行远程监控和管理。
+
+IEOS采用状态和配置分离的设计方案，分为网络管理，系统管理和状态三大功能板块。网络管理菜单和系统管理菜单下只能进行网络和系统的相关配置，状态信息需要统一到状态页面查看。
+
+重要说明：使用IEOS程序管理网络配置和系统配置的时候，如果同时使用Linux原生命令，二者可能会相互影响，导致异常的运行状态。建议IEOS支持的配置都通过IEOS web来实现管理，IEOS不支持的配置，比如VPN，可以结合Linux原生命令一起实现配置目标。
+
+#### **3.3.1.1 登录web**
+
+考虑到用户的程序可能会需要使用HTTP/HTTPS标准端口号80/443，IEOS使用9100端口号做为HTTPS连接的端口，不支持通过HTTP访问；当用户使用HTTP访问web的时候，会自动跳转到通过HTTPS。本文档以通过eth2的默认地址192.168.4.100为例来进行说明。
+
+登陆地址：[https://192.168.4.100:9100](https://192.168.4.100:9100/)
+
+初始登陆用户名：adm
+
+初始登陆密钥：123456
+
+重要说明：IEOS程序启用时，会预留一些端口号供内部通信使用，预留端口号范围9100 ~ 9200，启用IEOS后，客户的程序应该避开使用这些端口号，否则可能会产生冲突导致功能异常。
+
+![1719803380935-fa9bce97-a2cc-4c47-8cb6-27c29f0fb404.png](./img/sGshZJl12v0kEmKG/1719803380935-fa9bce97-a2cc-4c47-8cb6-27c29f0fb404-324772.png)
+
+#### **3.3.1.2 网络管理**
+
+##### **3.3.1.2.1 配置以太网接口**
+
+给eth1接口配置静态IP地址
+
+![1719803380972-db5acfbe-8f4d-4c46-9302-63ccce2a1c13.png](./img/sGshZJl12v0kEmKG/1719803380972-db5acfbe-8f4d-4c46-9302-63ccce2a1c13-762021.png)
+
+给eth1接口配置DHCP Client
+
+![1719803380971-098c0956-44e1-4ebc-b692-b048157621a3.png](./img/sGshZJl12v0kEmKG/1719803380971-098c0956-44e1-4ebc-b692-b048157621a3-213500.png)
+
+在eth1接口上启动dhcp server功能，给eth1的下挂设备分配地址
+
+![1719803381245-9c6f3dd3-1e00-4c66-a586-5beb4435aad3.png](./img/sGshZJl12v0kEmKG/1719803381245-9c6f3dd3-1e00-4c66-a586-5beb4435aad3-536871.png)
+
+DHCP Server配置参数说明：
+
+**Enable DHCP Server**：DHCP Server功能的开关
+
+**Starting Address**：DHCP Server地址池起始基址，网段 + 起始地址 = 地址池的起始ip地址。在截图中，eth1的网段是192.168.3.0/24，基址是1，则地址池的起始地址是192.168.3.1/24.
+
+**Max Address Number**：地址池中的最大地址数量.
+
+**Lease period**：租期时间
+
+##### **3.3.1.2.2 配置蜂窝拨号**
+
+![1719803381432-1e921803-7d8f-4b3f-91cf-f19953df0a90.png](./img/sGshZJl12v0kEmKG/1719803381432-1e921803-7d8f-4b3f-91cf-f19953df0a90-156102.png)
+
+蜂窝网参数说明：
+
+**Enabled**: 蜂窝功能的开关；默认是开启的状态。
+
+**Profiles**：拨号参数集，用于专网卡拨号时配置APN，用户名，密钥以及认证方式等信息。如果不是专网卡，通常不需要修改这里的配置。拨号参数集最多可以添加10条记录。
+
+**Network Mode**：蜂窝的网络制式，可以选择3G，4G等相关网络制式，比如LTE，WCDMA等。如果不清楚选哪种网络制式，则选择自动；程序会自动选择一个最合适的网络制式。默认值是自动。
+
+**Enable Default Route**：启用添加默认路由功能，开启后，当拨号成功后，会添加一条蜂窝口的默认路由。默认是开启的。
+
+**Metric**：蜂窝口默认路由的度量值，当蜂窝口，Wi-Fi和以太网口都配置了默认路由的时候，度量值最小的生效。
+
+![1719803381598-c2fb8185-cddf-4eed-af2d-4441a0e910d8.png](./img/sGshZJl12v0kEmKG/1719803381598-c2fb8185-cddf-4eed-af2d-4441a0e910d8-415657.png)\
+
+**Dual SIM Enabled**：启用双卡功能。EC300为了提高网络的可靠性，支持双卡单拨。设备上需要插入2张sim卡，开启该功能后，如果sim1卡因为欠费导致拨号失败，会自动切换到sim2卡进行拨号。默认是关闭的。
+
+**Main SIM**：主sim卡，拨号时会优先使用选中的sim卡进行拨号，拨号失败达到一定次数时，在切换到另外一张sim卡进行拨号，默认先使用sim1进行拨号。
+
+**Max Number of Dials**: 开启双卡单拨功能后，当前拨号sim卡拨号达到指定次数，切换到另外一张sim卡进行拨号。
+
+**APN Profile**: sim卡选用的拨号参数集，默认值是自动。通常专网卡通常需要配置拨号参数集，并在此处选择拨号参数集的Index。
+
+**PIN Code**：sim卡的PIN码。
+
+![1719803381580-76035397-5291-443c-a291-f0484bfd7bc6.png](./img/sGshZJl12v0kEmKG/1719803381580-76035397-5291-443c-a291-f0484bfd7bc6-819950.png)
+
+无线蜂窝网络比较复杂，有些时候会出现拨号假连接的情况，即拨号状态是成功的，但却ping不通目标地址；发生这些状况的时候，重新拨号一次就可以恢复正常。IEOS蜂窝拨号支持ICMP探测以发现假连接。建议使用蜂窝联网的客户开启ICMP探测，这样出现假连接的时候也可以快速恢复。
+
+ICMP探测参数：
+
+**ICMP Detection Server Probes**：ICMP探测地址；可以配置2个探测地址，只要有1个地址探测成功，则说明蜂窝没有出现假连接。2个地址都没有配置的时候，ICMP探测功能处于关闭状态。
+
+**Detection Interval**：间隔多久进行一次ICMP探测。
+
+**Detection Timeout**：ICMP探测超时时间，等待多久没有收到探测响应报文，则认为此次探测失败
+
+**Detection Max Retries**：最大探测次数；当探测失败达到这个值的时候，触发重新拨号。取值范围\[1,5]
+
+**Detection Strict**：是否开启严格探测。关闭严格探测时，探测程序在每个探测周期会检测蜂窝接口接收的报文是否发生变化，如果有变化，说明蜂窝网络是通的，则不会发送ICMP报文进行探测，这样可以节省一些流量；如果开启探测，则无论蜂窝接口接收报文的数量是否发生变化，都会周期性的发送ICMP探测报文。默认是关闭的。
+
+![1719803381584-3adf0a9a-3a27-4b5b-be93-7ab821940367.png](./img/sGshZJl12v0kEmKG/1719803381584-3adf0a9a-3a27-4b5b-be93-7ab821940367-776457.png)
+
+高级配置中是一些不常用的设置选项。
+
+**Debug Mode enabled**：是否启用debug功能，开启后，日志中会增加一些拨号相关的调试信息，默认关闭。
+
+**Enable Infinitely Redial**：开启无限重拨。某些情况下，拨号会处于异常状态，通过重启系统可以恢复正常；默认无限重拨是关闭的，当拨号失败一定次数后，会重启系统尝试恢复。由于拨号默认是开启的，有些客户在不插sim卡的情况下，拨号失败，系统会重启，针对这种情况，可以开启无限重拨；这样无论拨号失败多少次，系统都不会重启。
+
+**Dial Interval**：拨号间隔；但某次拨号失败时，进行下一次拨号之前等待的时间。
+
+**Signal Query Interval**：信号查询间隔。信号不好时，可能会产生假连接的问题；这时重新拨号有一定概率可以解决假连接的问题。拨号程序会定期检测信号强度，这里配置的是信号检测周期。
+
+##### 3.3.1.2.3 配置LoRaWAN
+
+LoRaWAN配置分为3种状态：
+
+- **Off:** 关闭状态，不做业务处理.
+- \*\*Packet forward: \*\*报文转发状态，转发LoRaWAN数据到第三方network server平台
+- \*\*Build-in network server：\*\*内置的network server
+
+###### 3.3.1.2.3.1 Off
+
+![1740551550348-ce0c299e-068e-4b7b-b3ef-918447dec664.png](./img/sGshZJl12v0kEmKG/1740551550348-ce0c299e-068e-4b7b-b3ef-918447dec664-533473.png)
+
+###### 3.3.1.2.3.2 Packet forward
+
+Packet forward转发分为udp转发和mqtt转发。
+
+![1740560808165-cebce9c6-7c3e-454b-ac77-a9caa8fa759a.png](./img/sGshZJl12v0kEmKG/1740560808165-cebce9c6-7c3e-454b-ac77-a9caa8fa759a-259088.png)
+
+**Region:**  LG312在不同地区有不同的型号，这里的区域由型号决定，不可配置，只做显示用。
+
+**Frequency plan:**  频段信息，需要和终端节点，network server的频段信息保持一致。
+
+\*\*Log Level：\*\*日志等级，根据需要调整不同的日志等级，默认的日志等级为Error.
+
+**Protocol:**  Packet forward转发分为udp转发和mqtt转发。
+
+- udp转发
+
+![1740560897118-3cf135be-aaa7-4d83-8b87-f4326f28585a.png](./img/sGshZJl12v0kEmKG/1740560897118-3cf135be-aaa7-4d83-8b87-f4326f28585a-279465.png)
+
+**Server Address**: network server的地址，最多可以添加5个
+
+**Port**：network server的端口号
+
+**Keepalive interval**：和network server之间维持的心跳间隔，单位是秒，取值范围\[1, 3600]，默认是10
+
+\*\*Keepalive max failures：\*\*心跳探测失败的最大次数，超过这个次数，则认为网关和平台之间失去连接
+
+\*\*Forward CRC OK: \*\* 是否转发CRC校验正常的LoRaWAN报文；默认开启。
+
+\*\*Forward CRC Invalid：\*\*是否转发CRC校验无效的LoRaWAN报文；默认关闭。
+
+**Forward CRC Missing**：是否转发没有CRC的LoRaWAN报文；默认关闭。
+
+- mqtt转发
+
+![1740561167362-aa690c1d-40fb-4d97-bd08-1d1641570198.png](./img/sGshZJl12v0kEmKG/1740561167362-aa690c1d-40fb-4d97-bd08-1d1641570198-515560.png)
+
+\*\*Server Address：\*\*network server提供的mqtt broker监听ip地址
+
+**Port：** network server提供的mqtt broker的监听端口号
+
+\*\*Client ID：\*\*mqtt客户端的client id.
+
+\*\*Enable User Auth: \*\*是否开启用户认证，开启后需要输入用户名，密码
+
+\*\*Username：\*\*和mqtt broker建立连接时用于认证的用户名
+
+\*\*Password：\*\*和mqtt broker建立连接时用于认证的密码
+
+**Enable TLS**：是否启用TLS；
+
+\*\*Mode：\*\*开启TLS后可见，用于配置使用CA证书还是自签名证书
+
+\*\*Topic prefix：\*\*在默认的topic前面添加配置的前缀作为最终的topic；默认的topic包括：
+
+```
+- gateway/{{gateway_dev_eui}}/event/up
+- gateway/{{gateway_dev_eui}}/event/stats
+```
+
+\*\*Use JSON：\*\*以json格式发送数据还是以二进制格式发送数据
+
+\*\*Keepalive：\*\*mqtt心跳间隔
+
+\*\*Qos：\*\*mqtt消息的qos等级。
+
+\*\*Clean Session：\*\*是否清除session
+
+###### 3.3.1.2.3.3 Build-in network server
+
+![1741335940900-b9c1c690-885b-44a0-9896-b04df8b83e54.png](./img/sGshZJl12v0kEmKG/1741335940900-b9c1c690-885b-44a0-9896-b04df8b83e54-828055.png)
+
+**Region:**  LG312在不同地区有不同的型号，这里的区域由型号决定，不可配置，只做显示用。
+
+**Frequency plan:**  频段信息，需要和终端节点，network server的频段信息保持一致。
+
+\*\*Log Level：\*\*日志等级，根据需要调整不同的日志等级，默认的日志等级为Error.
+
+\*\*Go to the Network Server manage page： \*\*这是一个链接，点击后跳转到chirpstack配置页面，网关EUI，终端的JoinEUI和Appkey等信息都在chirpstack页面配置。chirpstack的使用详解本章节后半部分。
+
+\*\*Network ID: \*\* LoRa的组网ID，用于区分不同的网络。
+
+\*\*Enable ADR：\*\*是否开启ADR(Adaptive Data Rate)功能，该功能需要终端节点支持ADR才能生效。
+
+\*\*Min Allowed TX Data Rate：\*\*配置最小发送速率，需要启用ADR才能配置.
+
+**Max Allowed TX Data Rate：**配置最大发送速率；需要启用ADR才能配置.
+
+**Rx1 Delay:**Rx1窗口延迟时间，单位秒，取值范围\[1,15]
+
+**RX1 Data Rate Offset:** RX1接收窗口的速率偏移；
+
+**RX2 Frequency：**RX2接收窗口使用的频率;
+
+**RX2 Data Rate：**RX2接收窗口使用的数据速率；
+
+**Enable Integration:**是否开启数据推送集成；开启后，从终端接收到的数据可以推送到mqtt broker.
+
+**Server Address:** mqtt broker的地址；LG312本地运行一个mqtt broker，默认推送到127.0.0.1，客户的程序在LG312上运行时可以订阅相关topic获取loRaWAN数据。
+
+**Server Port：**mqtt borker的端口号；默认是9121
+
+\*\*Client ID：\*\*mqtt客户端的client id.
+
+\*\*Enable User Auth: \*\*是否开启用户认证，开启后需要输入用户名，密码；LG312上运行的mqtt broker已开启用户名密码认证。
+
+\*\*Username：\*\*和mqtt broker建立连接时用于认证的用户名；连接本地mqtt broker的用户名是carrier
+
+\*\*Password：\*\*和mqtt broker建立连接时用于认证的密码；连接本地mqtt broker的密码是mqtt@carrier
+
+**Enable TLS**：是否启用TLS；
+
+\*\*Mode：\*\*开启TLS后可见，用于配置使用CA证书还是自签名证书
+
+**Join Toic/UpLink Topic/Downlink Topic/Downlink Acknowledge Topic/Status Topic：**这里定义的是消息模板，其中{{application\_id}}和{{dev\_eui}}是变量，{{application\_id}}是在chirpstack配置页面添加application之后自动生成的，取值可以从chirpstack服务器页面获取，详解后文；{{dev\_eui}}是终端设备的device eui，从终端设备厂商提供的设备信息中获取。
+
+**application/{{application\_id}}/device/{{dev\_eui}}/join：** 终端设备接入事件对应的topic.
+
+topic示例: <code>application/acb57b95-2c39-486e-a8e7-724d4d6343ac/device/9620853c959b5856/join</code>
+
+payload示例如下：
+
+```json
+{  
+    "deduplicationId": "feef733a-bd99-4b54-b0f9-ed045d03f898",  
+    "time": "2025-03-07T06:54:35.594623020+00:00",  
+    "deviceInfo": {  
+        "tenantId": "52f14cd4-c6f1-4fbd-8f87-4025e1d49242",  
+        "tenantName": "ChirpStack",  
+        "applicationId": "acb57b95-2c39-486e-a8e7-724d4d6343ac",  
+        "applicationName": "ddd",  
+        "deviceProfileId": "6a5e561f-17bd-4bee-a6ff-707a81e71008",  
+        "deviceProfileName": "profile-01",  
+        "deviceName": "node-01",  
+        "devEui": "9620853c959b5856",  
+        "deviceClassEnabled": "CLASS_C",  
+        "tags": {  
+  
+        }  
+    },  
+    "devAddr": "06b0b667"  
+}
+```
+
+**application/{{application\_id}}/device/{{dev\_eui}}/up：** 终端设备发送上行数据对应的topic；data字段是终端发送的以base64编码的业务数据，base64解码后能获取到原始数据.
+
+topic示例：<code>application/acb57b95-2c39-486e-a8e7-724d4d6343ac/device/9620853c959b5856/up</code>
+
+payload示例如下：
+
+```json
+{
+  "deduplicationId": "ce397905-f943-45af-8ab5-cebb371b2a3a",
+  "time": "2025-03-07T08:10:33.292943009+00:00",
+  "deviceInfo": {
+    "tenantId": "52f14cd4-c6f1-4fbd-8f87-4025e1d49242",
+    "tenantName": "ChirpStack",
+    "applicationId": "acb57b95-2c39-486e-a8e7-724d4d6343ac",
+    "applicationName": "ddd",
+    "deviceProfileId": "6a5e561f-17bd-4bee-a6ff-707a81e71008",
+    "deviceProfileName": "profile-01",
+    "deviceName": "node-01",
+    "devEui": "9620853c959b5856",
+    "deviceClassEnabled": "CLASS_C",
+    "tags": {}
+  },
+  "devAddr": "06b0b667",
+  "adr": false,
+  "dr": 1,
+  "fCnt": 79,
+  "fPort": 51,
+  "confirmed": false,
+  "data": "7u7u",
+  "rxInfo": [
+    {
+      "gatewayId": "0016c001f10550c9",
+      "uplinkId": 314812379,
+      "nsTime": "2025-03-07T08:10:33.035682529+00:00",
+      "rssi": -12,
+      "snr": 12.25,
+      "channel": 4,
+      "location": {
+        "latitude": 35.86166,
+        "longitude": 104.195397
+      },
+      "context": "BhqN7A==",
+      "metadata": {
+        "region_config_id": "us915_0",
+        "region_common_name": "US915"
+      },
+      "crcStatus": "CRC_OK"
+    }
+  ],
+  "txInfo": {
+    "frequency": 903100000,
+    "modulation": {
+      "lora": {
+        "bandwidth": 125000,
+        "spreadingFactor": 9,
+        "codeRate": "CR_4_5"
+      }
+    }
+  }
+}
+```
+
+**application/{{application\_id}}/device/{{dev\_eui}}/down：** 给终端设备发送下行数据对应的topic；devEui字段对应的值需要和topic中的dev\_eui保持一致。
+
+topic示例：<code>application/acb57b95-2c39-486e-a8e7-724d4d6343ac/device/9620853c959b5856/down</code>
+
+payload示例如下：
+
+```shell
+{
+    "devEui": "9620853c959b5856",
+    "fPort": 1,
+    "data": "7u7u"
+}
+```
+
+**application/{{application\_id}}/device/{{dev\_eui}}/txack：** 终端设备收到下行数据后返回ack消息时对应的topic
+
+topic示例：<code>application/acb57b95-2c39-486e-a8e7-724d4d6343ac/device/9620853c959b5856/txack</code>
+
+payload示例如下：
+
+```json
+{
+  "downlinkId": 2677400421,
+  "time": "2025-03-07T08:15:27.302565414+00:00",
+  "deviceInfo": {
+    "tenantId": "52f14cd4-c6f1-4fbd-8f87-4025e1d49242",
+    "tenantName": "ChirpStack",
+    "applicationId": "acb57b95-2c39-486e-a8e7-724d4d6343ac",
+    "applicationName": "ddd",
+    "deviceProfileId": "6a5e561f-17bd-4bee-a6ff-707a81e71008",
+    "deviceProfileName": "profile-01",
+    "deviceName": "node-01",
+    "devEui": "9620853c959b5856",
+    "deviceClassEnabled": "CLASS_C",
+    "tags": {}
+  },
+  "queueItemId": "98b73db8-4631-479c-a315-aa9d1b58b35a",
+  "fCntDown": 2,
+  "gatewayId": "0016c001f10550c9",
+  "txInfo": {
+    "frequency": 923300000,
+    "power": 21,
+    "modulation": {
+      "lora": {
+        "bandwidth": 500000,
+        "spreadingFactor": 12,
+        "codeRate": "CR_4_5",
+        "polarizationInversion": true
+      }
+    },
+    "timing": {
+      "immediately": {}
+    },
+    "context": "FSvtpQ=="
+  }
+}
+```
+
+**application/{{application\_id}}/device/{{dev\_eui}}/status：** 解调幅度和电池状态对应的topic
+
+topic示例：<code>application/acb57b95-2c39-486e-a8e7-724d4d6343ac/device/9620853c959b5856/status</code>
+
+payload示例如下：
+
+```json
+{
+  "deduplicationId": "a0047d3f-b432-4400-8ef8-ed8fad4c9025",
+  "time": "2025-03-07T08:16:15.688878229+00:00",
+  "deviceInfo": {
+    "tenantId": "52f14cd4-c6f1-4fbd-8f87-4025e1d49242",
+    "tenantName": "ChirpStack",
+    "applicationId": "acb57b95-2c39-486e-a8e7-724d4d6343ac",
+    "applicationName": "ddd",
+    "deviceProfileId": "6a5e561f-17bd-4bee-a6ff-707a81e71008",
+    "deviceProfileName": "profile-01",
+    "deviceName": "node-01",
+    "devEui": "9620853c959b5856",
+    "deviceClassEnabled": "CLASS_C",
+    "tags": {}
+  },
+  "margin": 10,
+  "externalPowerSource": false,
+  "batteryLevelUnavailable": false,
+  "batteryLevel": 100
+}
+```
+
+**Use JSON：**是否使用JSON格式传送数据，关闭后使用protobuf格式发送数据
+
+**Keepalive：** mqtt心跳间隔，单位秒
+
+**Qos:** mqtt消息的qos等级
+
+\*\*Clean Session：\*\*是否清除session
+
+**Chirpstack的使用：**
+
+1. 点击上面链接后会跳转到chirpstack登录页面；默认的用户名/密码是admin/admin
+
+![1740633093543-b2702587-a7ac-48cd-8806-a180d7e619bf.png](./img/sGshZJl12v0kEmKG/1740633093543-b2702587-a7ac-48cd-8806-a180d7e619bf-635497.png)
+
+1. 登录后，建议先修改默认密码
+
+![1740627544038-ccf4dcb7-e5d1-43f4-84cb-0bac094c3cbe.png](./img/sGshZJl12v0kEmKG/1740627544038-ccf4dcb7-e5d1-43f4-84cb-0bac094c3cbe-652726.png)
+
+![1740633158644-f68ed7e5-8961-436b-a5b5-59dff15812c4.png](./img/sGshZJl12v0kEmKG/1740633158644-f68ed7e5-8961-436b-a5b5-59dff15812c4-279989.png)
+
+1. 切到`Gateway`菜单，点击`Add gateway`添加一个网关，添加网关的时候需要gateway eui，这个信息可以从`设备概览`状态页面获取.
+
+![1743585221110-d8fc643a-7887-43ae-8b4d-7fb3fdc203c6.png](./img/sGshZJl12v0kEmKG/1743585221110-d8fc643a-7887-43ae-8b4d-7fb3fdc203c6-388781.png)
+
+![1740633417366-06f81385-d6d8-430d-bc31-d0c75ccace70.png](./img/sGshZJl12v0kEmKG/1740633417366-06f81385-d6d8-430d-bc31-d0c75ccace70-887762.png)
+
+![1740633593914-80b47b87-c72c-49df-842d-eccf62022e3d.png](./img/sGshZJl12v0kEmKG/1740633593914-80b47b87-c72c-49df-842d-eccf62022e3d-552194.png)
+
+添加网关几十秒后，再次点击`Gateway`菜单，可以看到网关已经在线
+
+![1740647743993-589ed522-4941-47fc-9adc-c1f9efbf9c49.png](./img/sGshZJl12v0kEmKG/1740647743993-589ed522-4941-47fc-9adc-c1f9efbf9c49-813493.png)
+
+1. 切到`Device Profiles`菜单，点击`Add device profile`添加一个profile文件.
+
+![1740648399435-22e60985-ca8e-4bae-aabe-d42f11588c32.png](./img/sGshZJl12v0kEmKG/1740648399435-22e60985-ca8e-4bae-aabe-d42f11588c32-521456.png)
+
+Region和Region configuration的可选项由前面的配置决定
+
+![1740648705819-c14e0030-b81f-4704-b891-f473c0601114.png](./img/sGshZJl12v0kEmKG/1740648705819-c14e0030-b81f-4704-b891-f473c0601114-975619.png)
+
+MAC version和Regional parameters revision需要根据终端节点支持的规格来设置。
+
+1. 切到`Applications`菜单，点击`Add application`添加一个application
+
+![1740649093367-76086840-b03f-45a9-a5dd-87c063b56a8c.png](./img/sGshZJl12v0kEmKG/1740649093367-76086840-b03f-45a9-a5dd-87c063b56a8c-513115.png)
+
+application添加成功后，会生成app id，当需要将lorawan数据通过mqtt推送出去的时候，会用到此处的       appid。
+
+![1740649408595-4246a07e-3203-4967-bab8-6485884d5d5a.png](./img/sGshZJl12v0kEmKG/1740649408595-4246a07e-3203-4967-bab8-6485884d5d5a-942662.png)
+
+1. 创建applicaiton之后，基于该applicaiton，点击`Add device`添加device
+
+![1740650923131-7ecda079-405f-4fb2-8b01-f75600d4f197.png](./img/sGshZJl12v0kEmKG/1740650923131-7ecda079-405f-4fb2-8b01-f75600d4f197-918232.png)
+
+![1740650953529-d06d2ab1-bd1a-4609-bb1c-462a52559070.png](./img/sGshZJl12v0kEmKG/1740650953529-d06d2ab1-bd1a-4609-bb1c-462a52559070-216852.png)
+
+<code>Device EUI</code>, <code>Join EUI</code>和<code>Applicaiton key</code>这些信息需要从终端制造商获取。
+
+1. 测试通信
+
+触发终端产生数据，然后点击设备的EUI，选择`Events`来查看是否收到了终端的数据
+
+![1740652394326-6e2e8baa-d3e9-423b-ab06-763a56edf9fa.png](./img/sGshZJl12v0kEmKG/1740652394326-6e2e8baa-d3e9-423b-ab06-763a56edf9fa-732588.png)
+
+![1740652441774-d5178089-60f4-4142-b9e4-b33b4583aa7e.png](./img/sGshZJl12v0kEmKG/1740652441774-d5178089-60f4-4142-b9e4-b33b4583aa7e-316866.png)
+
+测试network server给终端发送数据的时候，需要将终端切换到Class C模式，可以在Device profiles的配置中使能Class C，然后切到`Queue`菜单发送数据给终端，在终端测查看数据是否已经接收到了。
+
+![1740652760629-c178069c-1f28-4b46-bc30-e55311e4fcc3.png](./img/sGshZJl12v0kEmKG/1740652760629-c178069c-1f28-4b46-bc30-e55311e4fcc3-183953.png)
+
+##### 3.3.1.2.4 配置Wi-Fi Station
+
+![1697710001410-20fa30f0-62bd-4399-9876-7980a5c4d44b.png](./img/sGshZJl12v0kEmKG/1697710001410-20fa30f0-62bd-4399-9876-7980a5c4d44b-255507.png)
+
+**Enable Wi-Fi**：使能开关；默认关闭
+
+**Client SSID**：需要连接的ssid，可以手动输入；也可以通过扫描按钮获取附近可连的ssid
+
+**Enable Default Route**：是否启用添加默认路由功能，开启后，当wifi连接成功后，会添加一条wlan口的默认路由。默认是开启的。
+
+**Metric**：wifi口默认路由的度量值，当蜂窝口，Wi-Fi和以太网口都配置了默认路由的时候，度量值最小的生效。
+
+**Auth Method**：认证方式，支持无认证，WPA-PSK，WPA2-PSK，WPA-PSK/WPA2-PSK Mixed
+
+**Encrypt Mode**：加密方式；支持CCMP，TKIP，TKIP和CCMP
+
+**WPA/WPA2 PSK Key**：密钥信息
+
+##### 3.3.1.2.5 配置静态路由
+
+这里配置的是以太网的静态路由，当同时配置了以太网，蜂窝，wifi的默认路由时，metric值最小的那一条默认路由生效。需要保证默认路由的Metric值是不同的。
+
+![1743589941232-432265d4-96f3-4df9-adea-f582a06aaa31.png](./img/sGshZJl12v0kEmKG/1743589941232-432265d4-96f3-4df9-adea-f582a06aaa31-791037.png)
+
+静态路由配置参数：
+
+**Interface**：静态路由的出接口
+
+**Target**：目标网络
+
+**Netmask**：目标网络掩码
+
+**Gateway**：下一跳地址
+
+**Metric**：静态路由的度量值
+
+##### 3.3.1.2.6 配置防火墙
+
+- Basic Setting
+
+![1743585405129-0fa8f8a5-132e-4ac8-b745-b5797cdf751f.png](./img/sGshZJl12v0kEmKG/1743585405129-0fa8f8a5-132e-4ac8-b745-b5797cdf751f-867655.png)
+
+分别设置入站，出站和转发策略。
+
+![1743585483420-7167d793-4e7b-4dcb-aeae-df1fbc8b461b.png](./img/sGshZJl12v0kEmKG/1743585483420-7167d793-4e7b-4dcb-aeae-df1fbc8b461b-537797.png)
+
+在Region配置中可以添加域规则，域是基于接口的，可以配置广域网和局域网域。<code>Masq</code>用于控制是否启用NAT规则，针对广域网接口，如果下挂设备需要联网，可以开启该选项。
+
+![1743585756318-2dbb4f18-3d54-433d-bc65-1630fbc3b57d.png](./img/sGshZJl12v0kEmKG/1743585756318-2dbb4f18-3d54-433d-bc65-1630fbc3b57d-088733.png)
+
+- Port Forward
+
+  ```
+   DNAT规则通常用于报文从广域网方向进入，访问局域网下的设备时使用。
+  ```
+
+![1743587088415-f1b73fd8-4a7d-4089-9bd9-3d8458536784.png](./img/sGshZJl12v0kEmKG/1743587088415-f1b73fd8-4a7d-4089-9bd9-3d8458536784-521626.png)
+
+DNAT Name：用于配置DNAT规则的名称，可以用于说明DNAT规则的目的。
+
+Status：添加规则后，可以启用/禁用该规则；当Status为off的时候，则禁用规则。
+
+Proto：支持IP/UDP/TCP等协议类型
+
+Src：标识设备从哪个域，即哪个接口收到报文。
+
+Src IP：标识报文的源IP地址；如果不填，则匹配所有报文。
+
+Inside IP：标识需要访问的目标设备的IP地址，通常是局域网内的一台设备，比如HTTP服务器。
+
+Ext IP：当一个域有多个IP地址时，用于标识Src域对应的接口的IP地址，当接口有多个IP地址时，需要选择一个。
+
+截图中的规则的含义是：当从`wan`域收到一个源地址是10.5.30.198，目的地址是192.168.3.100时，会将目的地址修改为`192.168.6.6`。
+
+SNAT规则通常用于报文从局域网进入，需要将报文的源IP地址修改为wan口IP地址时使用。
+
+![1743587383976-d43f8328-0797-4959-801a-8577b48935b3.png](./img/sGshZJl12v0kEmKG/1743587383976-d43f8328-0797-4959-801a-8577b48935b3-838680.png)
+
+SNAT Name: 用于配置SNAT规则的名称，可以用于说明SNAT规则的目的。
+
+Status：添加规则后，可以启用/禁用该规则；当Status为off的时候，则禁用规则。
+
+Proto：支持IP/UDP/TCP等协议类型
+
+Src：报文来自于哪个域，即来自哪个接口，通常是局域网域。
+
+Src IP：匹配报文的源IP地址；可以不填写，即匹配所有源IP地址。
+
+Dest：报文从哪个域发出去，通常是广域网域
+
+Dest Ip：报文的目的IP地址；可以不填写，即匹配所有报文
+
+SNAT IP：将报文的源ip修改后的IP地址。
+
+截图中规则的含义是：将从lan域(eth2)进入的，路由到wan域(eth1)发送处于的报文的源IP地址，修改为eth1接口的ip地址，即192.168.3.100.
+
+- Comm rules
+
+通信规则用于过滤报文转发
+
+![1743588066397-41322cfe-ac3b-489d-a0bf-22ac1a75f0e0.png](./img/sGshZJl12v0kEmKG/1743588066397-41322cfe-ac3b-489d-a0bf-22ac1a75f0e0-605964.png)
+
+Comm Rule: 用于标识规则，可以描述规则的目标。
+
+Status： 添加规则后，可以启用/禁用该规则；当Status为off的时候，则禁用规则。
+
+Proto：支持IP/UDP/TCP等协议类型
+
+Target：目标处理动作，可以Drop，Accept或Reject
+
+Src：报文从哪个域进入设备
+
+Dest：报文经过哪个域从设备发出
+
+Dest IP: 报文的目标地址；不配置时匹配所有目标地址
+
+Dest Port：报文的目标端口；不配置时匹配所有端口
+
+Src IP：报文的源IP地址；不配置时匹配所有源IP地址
+
+Src Port：报文的源端口；不配置时匹配所有源端口
+
+- MAC Address filtering
+
+![1754360617973-5f9d910e-84af-4dc7-93eb-23305dd28cc9.png](./img/sGshZJl12v0kEmKG/1754360617973-5f9d910e-84af-4dc7-93eb-23305dd28cc9-800778.png)
+
+MAC地址过滤功能用于控制LG312下挂设备产生的报文是否可以被LG312转发，但不会影响下挂设备对LG312本身的访问。MAC地址列表中最多可以添加500条规则。
+
+该功能包含三种模式：`Unlimited`, `Blacklist`和 `Whitelist`。当模式为`Unlimited`时，相当于该功能是关闭的，不会对MAC地址列表中的设备产生影响；当模式为`Blacklist`时，MAC地址列表中的设备产生的报文将被丢弃，其他MAC地址的设备产生的报文可以被正常转发；当模式为`Whitelist`是，只有MAC地址列表中的设备产生的报文可以被转发，其他MAC地址的设备产生的报文会被丢弃。
+
+MAC地址列表中每一个记录都可以`启用`/`禁用`，当某个记录处于禁用状态时，该MAC地址对应的设备相当于不存在于`Blacklist`或 `whitelist`中。
+
+- Custom Rules
+
+在自定义防火墙输入框中，用户可以输入Linux原生的iptables规则。
+
+![1743588422355-5c46c393-3b87-4bd0-8982-5da503c9a6fa.png](./img/sGshZJl12v0kEmKG/1743588422355-5c46c393-3b87-4bd0-8982-5da503c9a6fa-840978.png)
+
+##### 3.3.1.2.7 配置DNS
+
+![1743588451787-e52b6ea1-0c88-4e0b-ba3c-a3100138b4d7.png](./img/sGshZJl12v0kEmKG/1743588451787-e52b6ea1-0c88-4e0b-ba3c-a3100138b4d7-725265.png)
+
+**DNS Servers**：DNS Server地址，最多支持配置4个
+
+**Domain name hijacking：**域名劫持功能，可以实现IP地址和域名之间的绑定。
+
+![1697711384608-c645ed0c-8d41-4d62-8ca0-ee6215e42306.png](./img/sGshZJl12v0kEmKG/1697711384608-c645ed0c-8d41-4d62-8ca0-ee6215e42306-757025.png)
+
+##### 3.3.1.2.8 网络诊断
+
+网络诊断支持ping，traceroute和nslookup功能。
+
+![1697711464182-5dfc006d-91e8-4161-bf85-d151a264196b.png](./img/sGshZJl12v0kEmKG/1697711464182-5dfc006d-91e8-4161-bf85-d151a264196b-278439.png)
+
+##### 3.3.1.2.9 配置OpenVPN
+
+###### 3.3.1.2.9.1配置OpenVPN服务器
+
+OpenVPN的配置，可以通过web页面手动配置，也可以通过导入配置文件的方式进行配置。
+
+1. 手动配置
+
+![1750742907946-c73c6dc4-9f38-4e09-8b04-007ef1876c27.png](./img/sGshZJl12v0kEmKG/1750742907946-c73c6dc4-9f38-4e09-8b04-007ef1876c27-040852.png)
+
+**Server Name**：唯一标识服务器端配置的字符串，只能包含英文字母和数字，并以字母开头，长度不超过64个字符。
+
+**Status**：开启或关闭，用于控制OpenVPN服务器的启动或停止.
+
+**Interface Type**：目前只支持tun模式。
+
+**Network Type**：支持`p2p`，`net30`和`subnet`。`p2p`和 `net30`用于建立点对点的连接，`subnet`用于建立虚拟局域网。
+
+**Virtual Network**：`subnet`模式下，需要配置虚拟网络的网段信息；如果是`p2p`或 `net30`配置的则是本端IP地址和远端IP地址。
+
+**Netmask**：`subnet`模式下，需要配置虚拟网络的子网掩码信息。
+
+**CA Certification**：此处需要导入CA证书文件
+
+**Public Key Certification**：此处需要导入服务器的公钥证书文件
+
+**Private Key Certification**：此处需要导入服务器的私钥证书文件
+
+**DH Parameters**：此处需要导入服务器的DH参数文件
+
+高级设置中可以配置一些改动频率比较低的参数。
+
+**Server Address**：OpenVPN监听的IP地址，默认监听0.0.0.0，即监听所有IP地址
+
+**Protocol Type**：支持`udp`和 `tcp`，默认`udp`。
+
+**Server Port**：服务器监听的端口号，默认`1194`。
+
+**Encryption Algorithm**：配置用于保证数据传输机密性的加密算法。
+
+**Hash Algorithm**：配置用于保证数据传输完整性的哈希算法。
+
+**Key Management**：启用密钥保持后，即使OpenVPN因网络异常出现短暂断开也能快速恢复，无需重新握手。
+
+**Tunnel maintenance**：启用隧道保持后，可以防止隧道因短暂网络波动而关闭。
+
+**LZO Compression**：是否启用LZO压缩。
+
+**Maximum Number of Clients**：配置同时连接OpenVPN Server的客户端数量。
+
+**User**：指定运行 OpenVPN 进程的用户
+
+**User Group**：指定运行 OpenVPN 进程的用户组
+
+**Loglevel**：取值范围 <code>1~11</code>，数值越大，日志信息越详细；可以在日志页面，<code>ALL</code>类型日志中查看OpenVPN日志。
+
+**Connection Detection Interval**：发送心跳包检测VPN连接是否存活的周期
+
+**Connection Detection Timeout**：如果在超时时间内未收到对方响应，判定连接已断开并尝试重启
+
+**Allows Client to Client Communication**：是否允许客户端和客户端相互通信
+
+**Push to Client**：可以推送路由和DNS等信息到客户端。
+
+1. 导入配置
+
+![1750743051802-65ec91aa-49ec-41b5-967c-53cf62069c5f.png](./img/sGshZJl12v0kEmKG/1750743051802-65ec91aa-49ec-41b5-967c-53cf62069c5f-472641.png)
+
+**Server Name**：唯一标识服务器端配置的字符串，只能包含英文字母和数字，并以字母开头，长度不超过64个字符.
+
+**Status**：开启或关闭，用于控制OpenVPN服务器的启动或停止.
+
+**Interface Type**：目前只支持tun模式。
+
+**Config File**：导入OpenVPN Server配置文件，配置文件中需要包含CA证书，服务器证书和服务器密钥等信息。
+
+###### 3.3.1.2.9.2 配置OpenVPN客户端
+
+1. 手动配置
+
+![1750743069548-77e7ac81-6539-41a3-a9e3-26cc28d422ad.png](./img/sGshZJl12v0kEmKG/1750743069548-77e7ac81-6539-41a3-a9e3-26cc28d422ad-698351.png)
+
+**Client Name**：唯一标识服务器端配置的字符串，只能包含英文字母和数字，并以字母开头，长度不超过64个字符。
+
+**Status**：开启或关闭，用于控制OpenVPN服务器的启动或停止.
+
+**Interface Type**：目前只支持tun模式。
+
+**Network Type**：支持`p2p`，`net30`和`subnet`。`p2p`和 `net30`用于建立点对点的连接，`subnet`用于建立虚拟局域网。当网络类型是`p2p`或 `net30`时，需要配置本端IP地址和远端IP地址。
+
+**OpenVPN Server**：配置OpenVPN服务器的IP地址，端口号以及协议信息，格式为：ip port proto，例如：
+
+`192.168.3.200 1194 udp`，最多可以配置10个服务器地址。OpenVPN客户端会按照顺序一次尝试建立连接，直到成功建立OpenVPN隧道。
+
+**Loglevel**：取值范围 <code>1~11</code>，数值越大，日志信息越详细；可以在日志页面，<code>ALL</code>类型日志中查看OpenVPN日志。
+
+**CA Certification**：此处需要导入CA证书文件
+
+**Public Key Certification**：此处需要导入客户端的公钥证书文件
+
+**Private Key Certification**：此处需要导入客户端的私钥证书文件
+
+高级设置中可以配置一些改动频率比较低的参数。
+
+**Encryption Algorithm**：配置用于保证数据传输机密性的加密算法。
+
+**Hash Algorithm**：配置用于保证数据传输完整性的哈希算法。
+
+**Key Management**：启用密钥保持后，即使OpenVPN因网络异常出现短暂断开也能快速恢复，无需重新握手。
+
+**Tunnel maintenance**：启用隧道保持后，可以防止隧道因短暂网络波动而关闭。
+
+**LZO Compression**：是否启用LZO压缩。
+
+**User**：指定运行 OpenVPN 进程的用户
+
+**User Group**：指定运行 OpenVPN 进程的用户组
+
+**Connection Detection Interval**：发送心跳包检测VPN连接是否存活的周期
+
+**Connection Detection Timeout**：如果在超时时间内未收到对方响应，判定连接已断开并尝试重启
+
+1. 导入配置
+
+![1750743080758-0b1bf867-3484-490b-80a2-a2425f9ac58e.png](./img/sGshZJl12v0kEmKG/1750743080758-0b1bf867-3484-490b-80a2-a2425f9ac58e-771301.png)
+
+**Client Name**：唯一标识客户端端配置的字符串，只能包含英文字母和数字，并以字母开头，长度不超过64个字符.
+
+**Status**：开启或关闭，用于控制OpenVPN客户端的启动或停止.
+
+**Interface Type**：目前只支持tun模式。
+
+**Config File**：导入OpenVPN Client配置文件，配置文件中需要包含CA证书，客户端证书和客户端密钥等信息。
+
+#### **3.3.1.3 系统管理**
+
+##### **3.3.1.3.1 基础配置**
+
+云管理
+
+![1719803382608-024556f2-bd35-4492-b205-8db299adf3d8.png](./img/sGshZJl12v0kEmKG/1719803382608-024556f2-bd35-4492-b205-8db299adf3d8-200523.png)\
+
+**Enabled**： 对接DeviceLive平台的使能开关; DeviceLive是映翰通设备的远程监控和管理平台；
+
+**Cloud Server**：DeviceLive平台有2个地址；一个是国内平台的地址，另外一个是海外平台地址；这里选择连接哪个平台。
+
+时区和NTP client
+
+![1719803382587-c5cd8c8d-9377-4b55-a778-765591ed8ca2.png](./img/sGshZJl12v0kEmKG/1719803382587-c5cd8c8d-9377-4b55-a778-765591ed8ca2-257950.png)\
+
+最多可以配置10个NTP Server地址，程序周期性的依次向每个服务器地址发送同步请求，同步成功后，将系统时间写入RTC，并不再继续向后面的NTP服务器发送同步请求。
+
+除了使用NTP同步时间，在Device Info状态页面有一个同步按钮可以手动同步时间，但只有当设备时间和本地时间(访问设备所使用的电脑的时间)相差超过3s时，才会显示这个同步按钮。
+
+![1719803382743-208d2cfc-f64d-4722-a538-cfac043c20f9.png](./img/sGshZJl12v0kEmKG/1719803382743-208d2cfc-f64d-4722-a538-cfac043c20f9-535120.png)
+
+这里支持配置的导入，导出以及恢复出厂。
+
+##### **3.3.1.3.2 固件升级**
+
+![1719803382828-b6e080cb-ba9b-4554-bb02-b33373f7d460.png](./img/sGshZJl12v0kEmKG/1719803382828-b6e080cb-ba9b-4554-bb02-b33373f7d460-540709.png)
+
+自动重启选项默认是关闭的，升级固件之后，需要手动重启系统才能生效；开启自动重启选项后，升级固件成功后会自动重启系统。
+
+##### **3.3.1.3.3 其他**
+
+![1719803382955-439566fa-592e-43c7-95d8-0d0d6e285e35.png](./img/sGshZJl12v0kEmKG/1719803382955-439566fa-592e-43c7-95d8-0d0d6e285e35-027184.png)
+
+这个页面有重启系统和重置系统2个功能。重置系统需要慎重使用，重置系统功能会将系统的配置状态和文件系统状态恢复到和出厂时一致，也就是说用户安装的软件也会被清除。
+
+#### **3.3.1.4 状态**
+
+##### **3.3.1.4.1 设备信息**
+
+设备信息状态页面显示主机名，设备型号，序列号，固件版本，内核版本，文件系统版本以及CPU，内存和磁盘空间的使用概况。\
+
+![1719803383116-9962df9b-9471-4882-8543-72bf34c4d95e.png](./img/sGshZJl12v0kEmKG/1719803383116-9962df9b-9471-4882-8543-72bf34c4d95e-200895.png)
+
+##### **3.3.1.4.2 蜂窝拨号状态信息**
+
+蜂窝拨号状态页面显示当前拨号使用的sim卡，IMIE，IMSI，ICCID，信号强度，以及拨号获取的IP地址，DNS等信息。
+
+![1719803383115-ac5bbcd7-788b-4fbb-a19a-a4d9b8c33d21.png](./img/sGshZJl12v0kEmKG/1719803383115-ac5bbcd7-788b-4fbb-a19a-a4d9b8c33d21-352155.png)\
+
+##### **3.3.1.4.3 Wi-Fi状态信息**
+
+Wi-Fi状态页面显示Wi-Fi连接成功后获取的IP地址，网关以及DNS等信息。
+
+![1719803383242-14e85e19-6d3f-46ba-9373-2d5872a9b4a8.png](./img/sGshZJl12v0kEmKG/1719803383242-14e85e19-6d3f-46ba-9373-2d5872a9b4a8-314552.png)
+
+##### **3.3.1.4.4 DHCP Server状态信息**
+
+DHCP Server状态页面显示设备做为DHCP Server，分配出去的IP地址，客户端主机名，客户端主机mac以及过期时间。
+
+![1719803383346-0e034bed-eaaf-4fed-a968-ddb644d26cf1.png](./img/sGshZJl12v0kEmKG/1719803383346-0e034bed-eaaf-4fed-a968-ddb644d26cf1-828716.png)
+
+##### **3.3.1.4.5 路由状态信息**
+
+路由状态页面显示IPv4直连路由，静态路由以及路由邻居等信息。
+
+![1719803383448-e86d11fa-0627-4690-9d3b-af7355804d65.png](./img/sGshZJl12v0kEmKG/1719803383448-e86d11fa-0627-4690-9d3b-af7355804d65-148526.png)
+
+##### **3.3.1.4.6 防火墙状态信息**
+
+防火墙状态信息显示过滤规则，IP地址映射规则等信息。
+
+![1719803384166-02b57910-3c04-4437-9346-8233ec900ecc.png](./img/sGshZJl12v0kEmKG/1719803384166-02b57910-3c04-4437-9346-8233ec900ecc-612513.png)
+
+##### **3.3.1.4.7 日志信息**
+
+日志页面可以查看系统日志，用户日志以及设置查看的日志等级，包括Error，Info，Debug等级别。日志也可以下载到本地。
+
+![1719803383892-ea967680-cddd-466a-840d-3ba187041f2c.png](./img/sGshZJl12v0kEmKG/1719803383892-ea967680-cddd-466a-840d-3ba187041f2c-416211.png)
+
+##### **3.3.1.4.8 OpenVPN状态信息**
+
+###### 3.3.1.4.8.1 OpenVPN服务器状态信息
+
+在OpenVPN服务器状态页面可以查看状态更新时间，已连接的OpenVPN客户端等信息。
+
+![1750736381165-6895499c-40f8-4197-9df3-36a3c12f8cf7.png](./img/sGshZJl12v0kEmKG/1750736381165-6895499c-40f8-4197-9df3-36a3c12f8cf7-623073.png)
+
+###### 3.3.1.4.8.2 OpenVPN客户端状态信息
+
+在OpenVPN客户端状态页面可以查看客户端获取的虚IP地址以及隧道连接时长等信息。
+
+![1750739947573-0679f0e8-a5c0-43b4-b6df-04f4abe33a0a.png](./img/sGshZJl12v0kEmKG/1750739947573-0679f0e8-a5c0-43b4-b6df-04f4abe33a0a-334086.png)
+
+### **3.3.2 基于Linux的命令行管理**
+
+使用Linux命令行进行网络配置和系统配置的时候，首先需要关闭IEOS程序。IEOS是通过systemctl来管理的，
+
+关闭IEOS的方式如下：
+
+```json
+systemctl stop ieos_daemon
+```
+
+这种关闭只针对本次启动生效，系统重启后，IEOS程序依然会启动，禁止IEOS程序开机启动的方式如下：
+
+```json
+systemctl disable ieos_daemon
+```
+
+重要说明：关闭IEOS之后，拨号，Wi-Fi等无线联网功能需要用户基于Linux原生命令来实现，而且也无法实现对接DeviceLive平台对设备进行远程管理。
+
+#### **3.3.2.1 网络管理**
+
+##### **3.3.2.1.1 设置一个静态IP地址**
+
+如果要为EC300设置静态IP地址，通过命令 vim /etc/network/interfaces.d/eth1或 vim /etc/network/interfaces.d/eth2修改对应的网络配置文件来对以太网接口的默认网关，地址，网络以及子网掩码进行设置。这里以给eth2口设置静态IP来举例说明：
+
+![1719803383921-d3762a8e-a201-456f-9a46-9a50033429f9.png](./img/sGshZJl12v0kEmKG/1719803383921-d3762a8e-a201-456f-9a46-9a50033429f9-809749.png)
+
+修改接口IP配置后，执行/etc/init.d/networking restart，重启网络服务，使配置生效。
+
+##### **3.3.2.1.2 设置一个动态IP地址**
+
+如果要为EC300设置动态IP地址，通过命令vim /etc/network/interfaces.d/eth1或 vim /etc/network/interfaces.d/eth2修改对应的网络配置文件，在inet后设置为DHCP将自动获取IP地址。
+
+这里以给eth1口设置动态IP来举例说明。
+
+![1719803384171-242b58a1-a3b4-4364-9de5-4825688641ab.png](./img/sGshZJl12v0kEmKG/1719803384171-242b58a1-a3b4-4364-9de5-4825688641ab-590458.png)
+
+修改接口IP配置后，执行/etc/init.d/networking restart，重启网络服务，使配置生效。
+
+#### **3.3.2.3 系统管理**
+
+##### **3.3.2.3.1 查询固件版本**
+
+要检查EC300的计算机固件版本，请键入：
+
+![1719803384071-dd4f895b-46ce-4b6d-8ac4-23a04eb1e0d4.png](./img/sGshZJl12v0kEmKG/1719803384071-dd4f895b-46ce-4b6d-8ac4-23a04eb1e0d4-408646.png)
+
+##### **3.3.2.3.2 查看可用磁盘空间**
+
+要确定可用驱动器空间的量，请使用带有-h选项的df命令。系统将返回按文件系统分解的驱动器空间量。EC300产品，用户可用的磁盘分区是/dev/mmcblk0p8。下面是一个示例：
+
+![1719803384625-6bade474-f0d3-48f0-b8aa-eec25f5ebcfe.png](./img/sGshZJl12v0kEmKG/1719803384625-6bade474-f0d3-48f0-b8aa-eec25f5ebcfe-385001.png)
+
+##### **3.3.2.3.3 调整时间**
+
+EC300有两个时间设置。一个是系统时间，另一个是由EC300的硬件所保持的RTC（实时时钟）时间。使用date命令来查询当前的系统时间或设置一个新的系统时间。使用hwclock命令查询当前的RTC时间或设置一个新的RTC时间。
+
+使用命令date MMDDhhmmYYYY来设置系统时间：
+
+MM： 月
+
+DD： 日
+
+hh： 时
+
+mm： 分
+
+YYYY： 年
+
+![1719803384615-bebf3c95-8ab9-4d29-bad1-47a5637602dd.png](./img/sGshZJl12v0kEmKG/1719803384615-bebf3c95-8ab9-4d29-bad1-47a5637602dd-006463.png)
+
+使用以下命令可以将RTC时间设置为系统时间
+
+![1719803384613-bcc71dbd-1433-45a1-aa4a-d2436a9717a5.png](./img/sGshZJl12v0kEmKG/1719803384613-bcc71dbd-1433-45a1-aa4a-d2436a9717a5-690141.png)
+
+点击以下的链接来获取更多有关日期和时间的详细信息：
+
+[https://www.debian.org/doc/manuals/system-administrator/ch-sysadmin-time.html](https://www.debian.org/doc/manuals/system-administrator/ch-sysadmin-time.html%20/h)
+
+[https://wiki.debian.org/DateTime](https://wiki.debian.org/DateTime%20/h)
+
+##### **3.3.2.3.4 设置时区**
+
+有两种方法可以配置EC300的时区。一个是使用命令tzselect。另一个是使用/etc/localtime文件。
+
+##### **3.3.2.3.5 使用tzselect命令**
+
+当键入tzselect命令后，会进入到选择地区的界面先选择大致的区域（按大洲大洋划分）输入大洲或大洋前面的数字
+
+![1719803384845-25490da1-ed04-4cea-b4fa-4ba2d5bd8e27.png](./img/sGshZJl12v0kEmKG/1719803384845-25490da1-ed04-4cea-b4fa-4ba2d5bd8e27-679951.png)
+
+再选择该大洲或大洋下的国家
+
+![1719803384890-a6b859e6-68ae-4332-b365-92ab0c19575a.png](./img/sGshZJl12v0kEmKG/1719803384890-a6b859e6-68ae-4332-b365-92ab0c19575a-515999.png)
+
+按照以上步骤获取到中国时区关键字Asia/Shanghai，执行以下命令设置时区
+
+![1719803385015-52ec6453-aa1e-4161-ad5f-e5b073f1c1ce.png](./img/sGshZJl12v0kEmKG/1719803385015-52ec6453-aa1e-4161-ad5f-e5b073f1c1ce-690234.png)
+
+##### **3.3.2.3.6 使用localtime文件**
+
+localtime文件存储在 /etc/localtime 中，如果没有为 TZ 环境变量设置值，那么该文件由 GNU 库用于 C（glibc）。localtime文件要么是 /usr/share/zoneinfo/file 的副本，要么是指向 /usr/share/zoneinfo/file的符号链接。如果 EC300 找不到 /usr/share/zoneinfo/ 文件，您可以从 <https://www.iana.org/time-zones> 这个网站下载所需的时区信息文件，并在 EC300 中重新链接到localtime文件。
+
+**注意**
+
+成功下载所需要的时区信息文件后，进行解压，之后使用zic命令编译生成对应的二进制文件，生成的时区文件为“/usr/share/zoneinfo/自定义时区文件名”。
+
+## **4 外设接口的高级配置**
+
+在本章中，我们将介绍基于Arm结构的边缘计算机EC300的外设接口的高级配置。
+
+本章包括以下内容：
+
+### **4.1串口**
+
+EC300有4个串口，一路串口支持RS485，三路串口支持RS-232或RS-485模式。
+
+COM1对应的设备节点是/dev/ttyS4
+
+COM2对应的设备节点是/dev/ttyS5
+
+COM3对应的设备节点是/dev/ttyS6
+
+COM4对应的设备节点是/dev/ttyS8
+
+### **4.1.1 更改串口设置**
+
+用stty命令查看和设置串口
+
+通过键入sudo stty --help查看详细命令内容：
+
+![1719803385088-28bb9b2f-f921-44cc-a73c-fa898ede7689.png](./img/sGshZJl12v0kEmKG/1719803385088-28bb9b2f-f921-44cc-a73c-fa898ede7689-403861.png)
+
+![1719803385149-c84d00eb-474c-4ace-bd30-a06bbb7b4de8.png](./img/sGshZJl12v0kEmKG/1719803385149-c84d00eb-474c-4ace-bd30-a06bbb7b4de8-981017.png)
+
+![1719803385367-7e4bad09-4ec1-4b07-b0f6-37f4d0618a7d.png](./img/sGshZJl12v0kEmKG/1719803385367-7e4bad09-4ec1-4b07-b0f6-37f4d0618a7d-985978.png)
+
+![1719803385423-46cc8860-e80d-41c7-880a-25a7c1613769.png](./img/sGshZJl12v0kEmKG/1719803385423-46cc8860-e80d-41c7-880a-25a7c1613769-339348.png)
+
+![1719803385631-63a47226-59be-4628-966f-0d652fe5d3e3.png](./img/sGshZJl12v0kEmKG/1719803385631-63a47226-59be-4628-966f-0d652fe5d3e3-583895.png)
+
+### **4.1.2 查看串口信息**
+
+![1719803385694-a76d4298-16f9-492e-bd9f-96dd4ff4019e.png](./img/sGshZJl12v0kEmKG/1719803385694-a76d4298-16f9-492e-bd9f-96dd4ff4019e-874253.png)
+
+### **4.1.3 设置COM1串口的波特率**
+
+![1719803385712-e117c672-ae3d-49f8-829e-dd8c5e75c53c.png](./img/sGshZJl12v0kEmKG/1719803385712-e117c672-ae3d-49f8-829e-dd8c5e75c53c-975456.png)
+
+### **4.2 USB接口**
+
+EC300提供一个USB 2.0 Host接口，主要用于扩展存储设备
+
+EC300支持USB存储设备热插拔。
+
+**注意**
+
+在断开USB大容量存储设备之前，请记住输入sync同步命令，以防止数据丢失。当您断开存储设备的连接时，请从挂载目录下退出。
+
+### **4.3 micro SD卡挂载**
+
+需要将SD卡的分区格式化为FAT32格式，格式化的方法如下：
+
+- SD卡容量 <= 32GB：SD卡插入读卡器，然后将读卡器插入使用Windows系统的电脑。大部分Windows系统只支持将容量小于32GB的SD卡格式为FAT32系统，格式化的时候会自动创建一个分区；也可以在Linux系统下格式化为FAT32文件系统，方法同SD卡容量 > 32GB。
+- SD卡容量  >   32GB：SD卡容量大于32GB时，需要在Linux下格式化FAT32格式。SD卡插入读卡器，然后将读卡器插入使用Linux系统的电脑或者安装虚拟机Linux虚拟机的电脑。
+
+a. 执行fdisk -l查看SD卡对应的设备节点，示例中是/dev/sda
+
+b. 执行fdisk /dev/sda进行分区(p查看当前分区，d删除已有分区，n新创建分区，w保存更改)，创建分区
+
+```
+/dev/sda1
+```
+
+c. 执行 sudo mkfs.vfat -F 32 /dev/sda1将分区格式化为FAT32格式。
+
+d. 格式化之后，将sd卡从读卡器上取下来，在设备断电的情况下插入设备。
+
+EC300支持micro SD存储卡不支持热插拔。挂载参考<https://www.man7.org/linux/man-pages/man8/mount.8.html>
+
+### 4.4 超级电容
+
+### 4.4.1 规格
+
+#### 4.4.1.1 电容规格
+
+超级电容的规格为：10.8V/5F。
+
+#### 4.4.1.2 掉电保持
+
+掉电保持模块可根据负载情况在掉电后维持系统运行20-30S。
+
+### 4.4.2 功能
+
+#### 4.4.2.1 断电告警
+
+EC300支持断电告警功能，当外部电源断电后系统将向IP地址255.255.255.255的9107端口发送UDP广播报文`{"type":"power_down","sn":"<序列号>"}`。
+
+#### 4.4.2.2 安全关机
+
+断电特指外部电源持续断开超过0.5秒，在发送UDP广播报文后系统等待3秒并主动执行poweroff。
+
+## **5 安全**
+
+在本章中，我们将介绍基于ARM结构的边缘计算机EC300的安全机制。
+
+### **5.1 sudo机制**
+
+在EC300中，为了获得更好的安全性，根用户被禁止使用。Sudo是一个程序，让系统管理员允许被同意的用户作为根用户或其他用户执行一些命令。最基础的准则是给予尽可能少的特权完成工作。使用sudo比使用root身份的会话打开更安全，原因有很多，包括：
+
+• 不用知道root密钥（sudo会提示当前用户的密钥），可授予普通用户特权
+
+• 通过sudo运行需要特权的命令很容易，其余时间，都作为无特权用户工作，从而降低由于错误操作可能造成的损害。
+
+### **5.2 防火墙**
+
+Netfileter/iptables (以下简称iptables)是nuix/linux 系统自带的优秀且完全免费的基于包过滤的防火墙工具、它的功能十分强大、使用非常灵活、可以对流入、流出及流经服务器的数据包进行精细的控制。
+
+### **5.3 TPM2.0**
+
+TPM代表“Trusted Platform Module”（可信平台模块），它是一种硬件安全模块，旨在提供计算机系统的安全和加密功能。它是一个安全微控制器，可以在计算机系统中嵌入或作为独立硬件设备出售。它包含一个加密协处理器，用于存储加密密钥、数字证书和其他安全数据，以及支持多种加密算法和安全协议。在EC300上，已经集成了标准的TPM2协议栈和TPM2工具供用户使用。
+
+## **6 系统恢复出厂设置**
+
+在本章中，我们将介绍基于Arm结构的边缘计算机EC300如何恢复出厂设置及更新。
+
+本章包括以下内容：
+
+### **6.1 恢复出厂设置**
+
+有两种方法可以恢复出厂设置：
+
+1、通过键入命令，系统会自动重启并恢复出厂设置。
+
+![1719803386710-456311b5-ab25-4c6d-a7d7-b3b6f68d1285.png](./img/sGshZJl12v0kEmKG/1719803386710-456311b5-ab25-4c6d-a7d7-b3b6f68d1285-344788.png)
+
+2、通过按键恢复出厂设置：
+
+（1）长按恢复出厂设置按钮10-20s，看到警告灯为常亮状态。
+
+（2）当警告灯常亮时，释放恢复出厂设置按钮。
+
+**注意：**
+
+（1）系统复位是Arm计算机的一项重要功能。系统复位后，Arm计算机将恢复到默认状态，所有用户数据和配置将丢失。
+
+（2）重置Arm计算机系统前，请确保关键数据已有效备份并传输到外部存储介质（如可移动磁盘）
+
+## **7 编程指南**
+
+EC300提供了一个JSON格式的设备信息描述文件，需要操作IO，LED，串口等外设的客户，可以通过查询设备描述信息文件获取这些外设的设备节点信息。
+
+设备描述信息文件路径：/tmp/ieos/etc/system\_info.json, 内容如下：
+
+```json
+{
+ "device_info": {
+   "model_info": {
+     "model": "EC312",
+     "pn": "H-LQA3-LC4D",
+     "sn": "CL3124050000001",
+     "oem": "inhand",
+     "features": ";std;cell-LQA3;wlan;"
+   },
+   "software_info": {
+     "boot_loader": "V1.0.2",
+     "kernel": "5.10.168",
+     "version": "V1.0.1-beta1",
+     "os": "Debian GNU/Linux 11 (bullseye)"
+   },
+   "hardware_info": {
+     "arch": "armv8",
+     "soc": "AM6231",
+     "interface": {
+       "eth": [
+         {
+           "iface_name": "eth1",
+           "iface_mac": "00:08:5f:17:04:00"
+         },
+         {
+           "iface_name": "eth2",
+           "iface_mac": "00:18:5f:17:04:02"
+         }
+       ],
+       "wlan": [
+         {
+           "iface_name": "wlan0",
+           "iface_mac": "f4:3c:3b:ca:e9:36"
+         },
+         {
+           "iface_name": "wlan1",
+           "iface_mac": "f6:3c:3b:ca:e9:36"
+         }
+       ]
+     },
+     "gpio": [
+       {
+         "gpio_name": "cellular_power",
+         "dev_node": "/sys/class/gpio/gpio401"
+       },
+       {
+         "gpio_name": "sim_switch",
+         "dev_node": "/sys/class/gpio/gpio405"
+       }
+     ],
+     "user_key": [
+       {
+         "user_key_name": "user1",
+         "dev_node": "/dev/input/event2"
+       }
+     ],
+     "uart": [
+       {
+         "uart_name": "com1",
+         "dev_node": "/dev/ttyS4"
+       },
+       {
+         "uart_name": "com2",
+         "dev_node": "/dev/ttyS5"
+       }
+     ],
+     "led": [
+       {
+         "led_name": "user1",
+         "dev_node": "/sys/class/leds/user1"
+       },
+       {
+         "led_name": "user2",
+         "dev_node": "/sys/class/leds/user2"
+       },
+       {
+         "led_name": "user3",
+         "dev_node": "/sys/class/leds/user3"
+       },
+       {
+         "led_name": "user4",
+         "dev_node": "/sys/class/leds/user4"
+       },
+       {
+         "led_name": "cell",
+         "dev_node": "/sys/class/leds/cell"
+       },
+       {
+         "led_name": "warn",
+         "dev_node": "/sys/class/leds/warn"
+       },
+       {
+         "led_name": "status",
+         "dev_node": "/sys/class/leds/status"
+       }
+     ],
+     "io": {
+       "di": [
+         {
+           "di_name": "di1",
+           "dev_node": "/sys/class/gpio/gpio454"
+         },
+         {
+           "di_name": "di2",
+           "dev_node": "/sys/class/gpio/gpio455"
+         },
+         {
+           "di_name": "di3",
+           "dev_node": "/sys/class/gpio/gpio456"
+         },
+         {
+           "di_name": "di4",
+           "dev_node": "/sys/class/gpio/gpio457"
+         }
+       ],
+       "do": [
+         {
+           "do_name": "do1",
+           "dev_node": "/sys/class/gpio/gpio323"
+         },
+         {
+           "do_name": "do2",
+           "dev_node": "/sys/class/gpio/gpio453"
+         },
+         {
+           "do_name": "do3",
+           "dev_node": "/sys/class/gpio/gpio465"
+         },
+         {
+           "do_name": "do4",
+           "dev_node": "/sys/class/gpio/gpio461"
+         }
+       ]
+     }
+   }
+ }
+}
+
+```
+
+### **7.1 IO编程指南**
+
+目前设备上一共8个IO接口：如设备面板上DI1~DI4为4个输入管脚；DO1~DO4为4个输出管脚。
+
+根据设备描述信息文件/tmp/ieos/etc/system\_info.json可以获取到IO设备节点为：
+
+当您需要对IO接口进行编程时，直接操作后台设备节点下面的value值即可（**sys/class/gpio/gpioxxx/value**）
+
+案例：
+
+当DO1需要输出高电平时，可以直接向**sys/class/gpio/gpio323/value写入1**
+
+echo 1 > /sys/class/gpio/gpio323/value
+
+当需要查看DI1的电平是，同样可以直接查看**sys/class/gpio/gpio454/value** 的值
+
+cat /sys/class/gpio/gpio454/value
+
+完整shell脚本：
+
+```json
+#!/bin/bash
+
+gpio323="/sys/class/gpio/gpio323/value"
+gpio453="/sys/class/gpio/gpio453/value"
+gpio465="/sys/class/gpio/gpio465/value"
+gpio461="/sys/class/gpio/gpio461/value"
+## 当DO1需要输出高电平时，可以直接向sys/class/gpio/gpio323/value写入1
+if [ -f "$gpio323" ]; then
+   echo 1 > /sys/class/gpio/gpio323/value
+else
+   echo "no file exit "$gpio323
+fi
+
+## 当DO1需要输出低电平时，可以直接向sys/class/gpio/gpio323/value写入1
+if [ -f "$gpio323" ]; then
+   echo 0 > $gpio323
+else
+   echo "no file exit "$gpio323
+fi
+
+gpio454="/sys/class/gpio/gpio454/value"
+gpio455="/sys/class/gpio/gpio455/value"
+gpio456="/sys/class/gpio/gpio456/value"
+gpio457="/sys/class/gpio/gpio457/value"
+## 当需要查看DI1的电平是，同样可以直接查看sys/class/gpio/gpio454/value的值
+if [ -f "$gpio454" ]; then
+   cat $gpio454
+else
+   echo "no file exit "$gpio454
+fi
+```
+
+### **7.2 Led编程指南**
+
+设备上用户可以使用USER1，USER2，USER3和USER4四个灯进行状态提示，请查看灯签确认灯的位置。
+
+根据设备描述信息文件/tmp/ieos/etc/system\_info.json可以获取到LED对应的设备节点为：
+
+user1：/sys/class/leds/user1
+
+user2：/sys/class/leds/user2
+
+user3：/sys/class/leds/user3
+
+user4：/sys/class/leds/user4
+
+/sys/class/leds/user1目录下有一些控制文件用于控制LED的属性和状态：
+
+/sys/class/leds/user1/brightness：该文件用于控制USER1灯的亮或者灭。写入1即是常亮，写入0即是常灭。
+
+/sys/class/leds/user1/trigger：LED灯的触发器，可写入timer表示定时器触发，写入none表示取消触发器。
+
+/sys/class/leds/user1/delay\_on：该文件表示led灯亮的时间，以ms为单位。
+
+/sys/class/leds/user1/delay\_off：该文件表示led灯灭的时间，以ms为单位。
+
+若配置了trigger为定时触发，则brightness中的值将不再生效，会自动变为0。
+
+将文件路径中user1替换为user2即为控制USER2灯的操作，USER3和USER4同理。
+
+案例：
+
+当需要USER1灯常亮时，将1写入brightness文件
+
+echo 1 > /sys/class/leds/user1/brightness
+
+当需要USER1灯闪烁时，将timer写入trigger文件，通过delay\_on和delay\_off控制亮和灭的时间
+
+```json
+## 开始定时器
+echo timer > /sys/class/leds/user1/trigger
+
+## 亮1秒钟
+echo 1000 > /sys/class/leds/user1/delay_on
+
+## 灭1秒钟
+echo 1000 > /sys/class/leds/user1/delay_off
+
+```
+
+完整shell脚本：
+
+```json
+#!/bin/bash
+
+USER1_BRIGTHNESS="/sys/class/leds/user1/brightness"
+USER1_TRIGGER="/sys/class/leds/user1/trigger"
+USER1_DELAY_ON="/sys/class/leds/user1/delay_on"
+USER1_DELAY_OFF="/sys/class/leds/user1/delay_off"
+
+## 点亮USER1灯
+if [ -f "$USER1_BRIGTHNESS" ]; then
+   echo 1 > $USER1_BRIGTHNESS
+else
+   echo "no file exit "$USER1_BRIGTHNESS
+fi
+
+## 设置USER1灯闪烁
+if [ -f "$USER1_TRIGGER" ]; then
+   echo timer > $USER1_TRIGGER
+else
+   echo "no file exit "$USER1_TRIGGER
+fi
+
+## 设置USER1灯亮1000ms
+if [ -f "$USER1_DELAY_ON" ]; then
+   echo 1000 > $USER1_DELAY_ON
+else
+   echo "no file exit "$USER1_DELAY_ON
+fi
+
+## 设置USER1灯灭1000ms
+if [ -f "$USER1_DELAY_OFF" ]; then
+   echo 1000 > $USER1_DELAY_OFF
+else
+   echo "no file exit "$USER1_DELAY_OFF
+fi
+
+## 关闭USER1闪烁
+if [ -f "$USER1_TRIGGER" ]; then
+   echo none > $USER1_TRIGGER
+else
+   echo "no file exit "$USER1_TRIGGER
+fi
+
+```
+
+### **7.3 交叉编译**
+
+用户自己的c/c++程序可以通过在开发机器上使用交叉编译工具链进行交叉编译，然后将目标文件上传到EC300设备上执行。
+
+交叉编译工具压缩包：gcc-linaro-6.3.1-2017.05-x86\_64\_aarch64-linux-gnu.tar.gz
+
+为交叉编译工具链配置环境变量的方法：
+
+（1）在开发机上将gcc-linaro-6.3.1-2017.05-x86\_64\_aarch64-linux-gnu.tar.gz解压到/opt路径下(也可以解压到其他路径，步骤2中设置PATH环境变量的时候做相应的调整)
+
+（2）编辑~/.bashrc文件，在文件最后添加一行PATH=$PATH:/opt/gcc-linaro-6.3.1-2017.05-x86\_64\_aarch64-linux-gnu/bin
+
+（3）执行source ~/.bashrc使环境变量在当前终端生效；新打开的终端会自动生效。
+
+以经典的hello world程序为示例进行说明，创建如下目录和文件
+
+```json
+mkdir ~/example
+touch ~/example/hello.c
+touch ~/example/Makefile
+
+```
+
+~/example/hello.c文件的内容如下：
+
+```json
+#include <stdio.h>
+
+int main(void) 
+{
+       printf("hello, world!\n");
+       return 0;
+}
+```
+
+~/example/Makefile文件的内容如下：
+
+```json
+## 定义目标文件名和源文件名
+TARGET  := hellworld
+DIRS    := $(shell find . -maxdepth 3 -type d) 
+SRCS    := $(foreach dir,$(DIRS),$(wildcard $(dir)/*.c))
+OBJS    := $(SRCS:.c=.o)
+
+
+CC=aarch64-linux-gnu-gcc
+
+## 定义编译器和编译选项
+CFLAGS  := -Wall -Wextra -g -Wno-unused-parameter
+
+## 定义默认目标
+all: $(TARGET)
+
+## 定义目标文件的依赖关系和编译命令
+$(TARGET): $(OBJS)
+       $(CC) $(CFLAGS) $(LIBS) $^ -o $@ 
+
+## 定义将源文件编译成目标文件的命令
+%.o: %.c
+       $(CC) $(CFLAGS) $(LIBS) -c $< -o $@
+
+## 定义清除临时文件的命令
+clean:
+       rm -f $(TARGET) $(OBJS)
+
+## 声明伪目标 ".PHONY"
+.PHONY: all clean
+
+```
+
+在~/example目录下执行make，生成目标文件helloworld
+
+### 7.4 Watchdog 编程
+
+设备上有一个外部硬件看门狗，60秒没有喂狗设备会重启；
+
+可以通过命令<code>systemctl stop watchdog</code>禁用系统的喂狗服务，在用户自己的程序中实现喂狗；
+
+watchdog程序示例：
+
+```c
+#include <fcntl.h>
+#include <unistd.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+#include <signal.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+
+static int fd = 0;
+
+/* 信号处理函数 */
+void signal_handler(int signal)
+{
+    /* 关闭watchdog，关闭后如果不喂狗设备60秒后会重启 */
+    write(fd, "V", 1);
+    close(fd);
+    exit(0);
+}
+
+int main(int argc, char **argv)
+{
+    /* 通过open来打开watchdog */
+    fd = open("/dev/watchdog0", O_WRONLY);
+
+    /* 注册Kill信号 */
+    signal(SIGTERM, signal_handler);
+    
+    while (1) {
+        /* 通过write来喂狗 */
+        write(fd, "\0", 1); 
+
+        /* 每10秒执行一次喂狗 */
+        sleep(10);
+    }
+}
+
+```

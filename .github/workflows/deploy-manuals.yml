@@ -53,19 +53,13 @@ jobs:
           pip install requests
           python scripts/upload_specs_to_cloud.py --dist-dir docs
 
-      # 2. Create .pages files for awesome-pages plugin
-      - name: Create .pages files
-        if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
-        run: |
-          python scripts/create_pages_files.py
-
-      # 3. Generate product index pages
+      # 2. Generate product index pages
       - name: Generate Product Index Pages
         if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
         run: |
           python scripts/generate_product_index.py --report
 
-      # 4. Build sites
+      # 3. Build sites
       - name: Build (zh)
         if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
         run: |
@@ -76,7 +70,7 @@ jobs:
         run: |
           python -m mkdocs build -f mkdocs.en.yml -d site-en --clean
 
-      # 5. Clean cloud-storage files from build output (keep only site assets)
+      # 4. Clean cloud-storage files from build output (keep only site assets)
       - name: Clean cloud-storage files from site output
         if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
         run: |
@@ -107,7 +101,7 @@ jobs:
           done
           echo "Cleaned cloud-storage files from site output"
 
-      # 6. Deploy
+      # 5. Deploy
       - name: Copy Chinese site to Domestic Server
         if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
         uses: appleboy/scp-action@v0.1.7
@@ -147,7 +141,7 @@ jobs:
           rm: false
           overwrite: true
 
-      # 7. Sync paths to resource center (validate)
+      # 6. Sync paths to resource center (validate)
       - name: Sync docs paths
         env:
           PLM_API_ZHENG_ZH_URL: ${{ secrets.PLM_API_ZHENG_ZH_URL }}
@@ -165,7 +159,7 @@ jobs:
             python scripts/validate_docs.py --diff
           fi
 
-      # 8. Forbid deleted files
+      # 7. Forbid deleted files
       - name: Forbid deleted docs
         if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
         env:

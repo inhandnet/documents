@@ -49,9 +49,16 @@ jobs:
           PLM_API_ZHENG_ZH_TOKEN: ${{ secrets.PLM_API_ZHENG_ZH_TOKEN }}
           PLM_API_ZHENG_EN_URL: ${{ secrets.PLM_API_ZHENG_EN_URL }}
           PLM_API_ZHENG_EN_TOKEN: ${{ secrets.PLM_API_ZHENG_EN_TOKEN }}
+          GITHUB_EVENT_BEFORE: ${{ github.event.before }}
         run: |
           pip install requests
-          python scripts/upload_specs_to_cloud.py --dist-dir docs
+          if [ "${{ github.event_name }}" = "push" ]; then
+            echo "增量上传（只传变更文件）"
+            python scripts/upload_specs_to_cloud.py --dist-dir docs --incremental
+          else
+            echo "全量上传"
+            python scripts/upload_specs_to_cloud.py --dist-dir docs
+          fi
 
       # 2. Generate product index pages
       - name: Generate Product Index Pages

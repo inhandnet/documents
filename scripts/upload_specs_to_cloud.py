@@ -280,45 +280,75 @@ def _rollback_upload(file_path: Path, normalized_path: str, config: dict, is_cli
         print(f"  [SKIP DELETE] 服务端错误/超时，保留本地文件: {file_path}")
 
 
-def find_upload_files(directory: Path) -> List[Path]:
-    """递归查找目录下所有需要上传的文件（只处理 zh/ 和 en/ 子目录）。
+def _should_upload(file_path: Path) -> bool:
+    """判断单个文件是否符合上传规则。"""
+    if not file_path.is_file():
+        return False
+    # 跳过 redirects 目录
+    if "redirects" in file_path.parts:
+        return False
+    # 跳过 Developer Documentation 下的 series.txt
+    if file_path.name == "series.txt" and "Developer Documentation" in file_path.parts:
+        return False
+    ext = file_path.suffix.lower()
+    if ext in EXCLUDED_EXTENSIONS:
+        return False
+    # 排除 Manuals 目录下的所有文件
+    if any(p.lower() == "manuals" for p in file_path.parts):
+        return False
+    # Datasheets 目录下只保留 PDF
+    if any(p.lower() == "datasheets" for p in file_path.parts) and ext != ".pdf":
+        return False
+    return True
 
-    规则：
-    - 只处理 zh/ 和 en/ 子目录下的文件
-    - 排除 .md 文件（Markdown 是源文件）
-    - 排除图片文件（.png, .jpg, .jpeg, .gif, .svg, .webp 等）
-    - 排除 Developer Documentation/series.txt
-    - 排除 Manuals 目录下的所有文件（手册由 MkDocs 构建部署，不走云存储）
-    - Datasheets 目录下只上传 PDF
-    - 其他目录上传 PDF、压缩包、文档等非图片文件
-    """
+
+def find_upload_files(directory: Path) -> List[Path]:
+    """递归查找目录下所有需要上传的文件（全量，只处理 zh/ 和 en/ 子目录）。"""
     if not directory.exists():
         return []
 
     upload_files = []
-
-    # 只处理 zh/ 和 en/ 子目录，跳过 redirects 目录
     for lang_dir in ["zh", "en"]:
         lang_path = directory / lang_dir
         if lang_path.exists():
             for file_path in lang_path.rglob("*"):
-                # 跳过 redirects 目录
-                if "redirects" in file_path.parts:
-                    continue
-                # 跳过 Developer Documentation 下的 series.txt
-                if file_path.name == "series.txt" and "Developer Documentation" in file_path.parts:
-                    continue
-                if file_path.is_file():
-                    ext = file_path.suffix.lower()
-                    if ext not in EXCLUDED_EXTENSIONS:
-                        # 排除 Manuals 目录下的所有文件
-                        if any(p.lower() == "manuals" for p in file_path.parts):
-                            continue
-                        # Datasheets 目录下只保留 PDF
-                        if any(p.lower() == "datasheets" for p in file_path.parts) and ext != ".pdf":
-                            continue
-                        upload_files.append(file_path)
+                if _should_upload(file_path):
+                    upload_files.append(file_path)
+    return upload_files
 
+
+def find_changed_files(directory: Path) -> List[Path]:
+    """基于 git diff 只获取本次变更的文件（增量）。
+
+    读取 GITHUB_EVENT_BEFORE 环境变量，执行 git diff --name-only。
+    如果环境变量不存在，则回退到全量上传。
+    """
+    before = os.environ.get("GITHUB_EVENT_BEFORE", "").strip()
+    if not before:
+        print("[INFO] GITHUB_EVENT_BEFORE 未设置，回退到全量上传")
+        return find_upload_files(directory)
+
+    try:
+        result = subprocess.run(
+            ["git", "diff", "--name-only", "--diff-filter=ACMRT", before, "HEAD"],
+            capture_output=True, text=True, check=True, cwd=directory.parent if directory.exists() else "."
+        )
+        changed_paths = [p.strip() for p in result.stdout.strip().split("\n") if p.strip()]
+    except subprocess.CalledProcessError as e:
+        print(f"[WARN] git diff 失败: {e}")
+        print("[INFO] 回退到全量上传")
+        return find_upload_files(directory)
+
+    upload_files = []
+    for rel_path in changed_paths:
+        file_path = directory.parent / rel_path if directory.exists() else Path(rel_path)
+        if file_path.exists() and _should_upload(file_path):
+            upload_files.append(file_path)
+
+    if not upload_files:
+        print("[INFO] 本次变更中没有需要上传的文件")
+    else:
+        print(f"[INFO] 本次变更涉及 {len(changed_paths)} 个文件，其中 {len(upload_files)} 个需要上传")
     return upload_files
 
 
@@ -342,11 +372,18 @@ def main():
         action="store_true",
         help="预览模式，只打印不上传"
     )
+    parser.add_argument(
+        "--incremental",
+        action="store_true",
+        help="增量模式，只上传 git diff 中有变更的文件（默认全量）"
+    )
     args = parser.parse_args()
 
     # 确定要上传的文件列表
     if args.file:
         upload_files_list = [args.file]
+    elif args.incremental:
+        upload_files_list = find_changed_files(args.dist_dir)
     else:
         upload_files_list = find_upload_files(args.dist_dir)
 

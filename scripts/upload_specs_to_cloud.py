@@ -308,9 +308,6 @@ def find_upload_files(directory: Path) -> List[Path]:
                 # 跳过 Developer Documentation 下的 series.txt
                 if file_path.name == "series.txt" and "Developer Documentation" in file_path.parts:
                     continue
-                # 跳过 .pages 文件（awesome-pages 插件配置）
-                if file_path.name == ".pages":
-                    continue
                 if file_path.is_file():
                     ext = file_path.suffix.lower()
                     if ext not in EXCLUDED_EXTENSIONS:

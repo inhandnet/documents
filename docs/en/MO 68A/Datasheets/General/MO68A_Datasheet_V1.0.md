@@ -42,7 +42,7 @@
 | Technical Indicator | Specification |
 |---|---|
 | OS | Debian 13 (Embedded Linux) |
-| AI Accelerator | C7x DSP + Deep Learning Accelerator, 8 TOPS |
+| AI Accelerator | 2 x C7 x DSP + Deep Learning Accelerator, 8 TOPS |
 | AI Runtime | TI TIDL, supports TFLite / ONNX |
 | Vision | VPAC, DMPAC, 4K@60fps H.265 / H.264 codec |
 | Security | Secure Boot, TrustZone, OP-TEE, Hardware AES-256 |

@@ -36,7 +36,7 @@
 - **Flexible access:** Cellular, wired, and Wi-Fi uplink options for diverse deployment scenarios
 - **Reliable connectivity:** 4G/wired/Wi-Fi backup, dual SIM switching, VRRP, and multi-layer link detection
 - **Security by design:** Firewall policies, ACL, VPN, encryption, and Wi-Fi security
-- **Industrial-grade build:** Wide voltage input and -20~70℃ operation for harsh environments
+- **Industrial-grade build:** Wide voltage input (9~36V DC) and -35~70°C normal operation (-40~75°C extended) for harsh environments
 - **Cloud operations:** Device Manager platform for large-scale remote fleet management
 
 ## <span style="color: green;">Core Technical Specifications</span>
@@ -55,6 +55,7 @@
 | Power Input | DC 9~36V, over-current and reverse polarity protection |
 | Operating Temperature | Normal: -35°C to +70°C<br/>Extended:-40°C to +75°C |
 | Protection Level | IP30 |
+
 
 # <span style="color: green;">2. Product Dimensions</span>
 
@@ -163,6 +164,10 @@
 | Maintenance Tools | Ping, route tracking, network speed test |
 | Status Query | System status, modem status, network connection status, and routing status |
 
+
+<div style="page-break-after: always;"></div>
+
+
 # <span style="color: green;">5. Ordering Information</span>
 
 ## <span style="color: green;">Model Rule</span>
@@ -175,18 +180,104 @@
 
 ## <span style="color: green;">Model List</span>
 
-| Model Pattern | Region | Network Type | \<WMNN\>: Cellular Type & Module | \<WLAN/NA\> | \<IO/S/NA\> |
-|---------------|--------|--------------|-----------------------------------|-------------|-------------|
-| IR302-FQ58-\<WLAN/NA\>-\<IO/S/NA\> | Europe & APAC | LTE CAT4 | FDD B1/B3/B7/B8/B20/B28A; WCDMA B1/B8; GSM B3/B8 | WLAN or NA | IO / S / NA |
-| IR302-FQ58-\<WLAN/NA\>-\<IO/S/NA\>-L | Europe, APAC, Australia | LTE CAT4 | FDD B1/B3/B5/B7/B8/B20/B28; TDD B38/B40/B41; WCDMA B1/B5/B8; GSM/EDGE B3/B8 | WLAN or NA | IO / S / NA |
-| IR302-FQ53-\<WLAN/NA\>-\<IO/S/NA\> | EMEA | LTE CAT1 | FDD B1/B3/B7/B8/B20/B28; WCDMA B1/B8; GSM/EDGE B3/B8 | WLAN or NA | IO / S / NA |
-| IR302-FQ38-\<WLAN/NA\>-\<IO/S\> | North America (AT&T/Verizon) | LTE CAT4 | FDD B2/B4/B5/B12/B13/B14/B66/B71; WCDMA B2/B4/B5 | WLAN or NA | IO / S |
-| IR302-FQ33-\<WLAN/NA\>-\<IO/S\> | North America (AT&T/Verizon) | LTE CAT1 | FDD B2/B4/B5/B12/B13/B25/B26; WCDMA B2/B4/B5 | WLAN or NA | IO / S |
-| IR302-FQ68-\<WLAN/NA\>-\<IO/S\> | Latin America | LTE CAT4 | FDD B1/B2/B3/B4/B5/B7/B8/B28/B66; TDD B40; WCDMA B1/B2/B4/B5/B8; GSM B2/B3/B5/B8 | WLAN or NA | IO / S |
-| IR302-FQ88-\<WLAN/NA\>-S | Japan | LTE CAT4 | FDD B1/B3/B8/B18/B19/B26; TDD B41; WCDMA B1/B6/B8/B19 | WLAN or NA | S |
-| IR302-EN00-WLAN | Global | NA | No cellular module | WLAN | NA |
-| IR302-LQ28-\<WLAN/NA\>-\<S/NA\> | China | LTE CAT4 | FDD B1/B3/B5/B8; TDD B34/B38/B39/B40/B41; WCDMA B1/B8; TD-SCDMA B34/B39; EVDO/CDMA BC0; GSM B3/B8 | WLAN or NA | S / NA |
-| IR302-LQ28-\<WLAN/NA\>-\<S/NA\>-L | China | LTE CAT4 | FDD B1/B3/B5/B8; TDD B34/B38/B39/B40/B41; WCDMA B1/B5/B8; GSM/EDGE B3/B8 | WLAN or NA | S / NA |
+<table style="width:100%; table-layout:fixed; font-size:8px;">
+  <colgroup>
+    <col style="width:26%;">
+    <col style="width:14%;">
+    <col style="width:12%;">
+    <col style="width:28%;">
+    <col style="width:10%;">
+    <col style="width:10%;">
+  </colgroup>
+  <tr>
+    <th>Model Pattern</th>
+    <th>Region</th>
+    <th>Network Type</th>
+    <th>&lt;WMNN&gt;: Cellular Type &amp; Module</th>
+    <th>&lt;WLAN/NA&gt;</th>
+    <th>&lt;IO/S/NA&gt;</th>
+  </tr>
+  <tr>
+    <td style="white-space:nowrap;">IR302-FQ58-&lt;WLAN/NA&gt;-&lt;IO/S/NA&gt;</td>
+    <td>Europe &amp; APAC</td>
+    <td>LTE CAT4</td>
+    <td>FDD B1/B3/B7/B8/B20/B28A;<br>WCDMA B1/B8;<br>GSM B3/B8</td>
+    <td>WLAN or NA</td>
+    <td>IO / S / NA</td>
+  </tr>
+  <tr>
+    <td style="white-space:nowrap;">IR302-FQ58-&lt;WLAN/NA&gt;-&lt;IO/S/NA&gt;-L</td>
+    <td>Europe, APAC, Australia</td>
+    <td>LTE CAT4</td>
+    <td>FDD B1/B3/B5/B7/B8/B20/B28;<br>TDD B38/B40/B41;<br>WCDMA B1/B5/B8; GSM/EDGE B3/B8</td>
+    <td>WLAN or NA</td>
+    <td>IO / S / NA</td>
+  </tr>
+  <tr>
+    <td style="white-space:nowrap;">IR302-FQ53-&lt;WLAN/NA&gt;-&lt;IO/S/NA&gt;</td>
+    <td>EMEA</td>
+    <td>LTE CAT1</td>
+    <td>FDD B1/B3/B7/B8/B20/B28;<br>WCDMA B1/B8;<br>GSM/EDGE B3/B8</td>
+    <td>WLAN or NA</td>
+    <td>IO / S / NA</td>
+  </tr>
+  <tr>
+    <td style="white-space:nowrap;">IR302-FQ38-&lt;WLAN/NA&gt;-&lt;IO/S&gt;</td>
+    <td>North America (AT&amp;T/Verizon)</td>
+    <td>LTE CAT4</td>
+    <td>FDD B2/B4/B5/B12/B13/B14/B66/B71;<br>WCDMA B2/B4/B5</td>
+    <td>WLAN or NA</td>
+    <td>IO / S</td>
+  </tr>
+  <tr>
+    <td style="white-space:nowrap;">IR302-FQ33-&lt;WLAN/NA&gt;-&lt;IO/S&gt;</td>
+    <td>North America (AT&amp;T/Verizon)</td>
+    <td>LTE CAT1</td>
+    <td>FDD B2/B4/B5/B12/B13/B25/B26;<br>WCDMA B2/B4/B5</td>
+    <td>WLAN or NA</td>
+    <td>IO / S</td>
+  </tr>
+  <tr>
+    <td style="white-space:nowrap;">IR302-FQ68-&lt;WLAN/NA&gt;-&lt;IO/S&gt;</td>
+    <td>Latin America</td>
+    <td>LTE CAT4</td>
+    <td>FDD B1/B2/B3/B4/B5/B7/B8/B28/B66; TDD B40;<br>WCDMA B1/B2/B4/B5/B8;<br>GSM B2/B3/B5/B8</td>
+    <td>WLAN or NA</td>
+    <td>IO / S</td>
+  </tr>
+  <tr>
+    <td style="white-space:nowrap;">IR302-FQ88-&lt;WLAN/NA&gt;-S</td>
+    <td>Japan</td>
+    <td>LTE CAT4</td>
+    <td>FDD B1/B3/B8/B18/B19/B26; TDD B41;<br>WCDMA B1/B6/B8/B19</td>
+    <td>WLAN or NA</td>
+    <td>S</td>
+  </tr>
+  <tr>
+    <td style="white-space:nowrap;">IR302-EN00-WLAN</td>
+    <td>Global</td>
+    <td>NA</td>
+    <td>No cellular module</td>
+    <td>WLAN</td>
+    <td>NA</td>
+  </tr>
+  <tr>
+    <td style="white-space:nowrap;">IR302-LQ28-&lt;WLAN/NA&gt;-&lt;S/NA&gt;</td>
+    <td>China</td>
+    <td>LTE CAT4</td>
+    <td>FDD B1/B3/B5/B8; TDD B34/B38/B39/B40/B41;<br>WCDMA B1/B8; TD-SCDMA B34/B39;<br>EVDO/CDMA BC0; GSM B3/B8</td>
+    <td>WLAN or NA</td>
+    <td>S / NA</td>
+  </tr>
+  <tr>
+    <td style="white-space:nowrap;">IR302-LQ28-&lt;WLAN/NA&gt;-&lt;S/NA&gt;-L</td>
+    <td>China</td>
+    <td>LTE CAT4</td>
+    <td>FDD B1/B3/B5/B8; TDD B34/B38/B39/B40/B41;<br>WCDMA B1/B5/B8;<br>GSM/EDGE B3/B8</td>
+    <td>WLAN or NA</td>
+    <td>S / NA</td>
+  </tr>
+</table>
 
 # <span style="color: green;">6. Contact Us</span>
 

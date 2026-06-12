@@ -47,7 +47,7 @@
 | Network Features | TCP / UDP / HTTP / MQTT transport; SMS or FlexAPI reporting |
 | Vehicle Data Access | OBD-II / J1939 / J1979 / J1708 |
 | Security | Certificate-based access capability; model-dependent operator certifications |
-| Dimensions | Approximately 158 × 100 × 44 mm |
+| Dimensions | Approximately 157.15 × 100 × 43.73 mm |
 | Vehicle Interfaces | 2 × CAN, RS232, RS485, DI/DO, 1-Wire, analog input, dual SIM |
 | Power Supply | 9-48 V DC |
 | Operating Temperature | -40 C to 85 C |

@@ -52,7 +52,7 @@
 |Processing Platform|ARM Cortex-A7 quad-core 717 MHz, 1 GB DDR3L, 8 GB eMMC|
 |Interface Capability|4 x Gigabit Ethernet (M12 X-coded), CAN, RS232, RS485, USB 3.0, 11DI/4DO|
 |Power Supply and Consumption|9-48 VDC, typical power consumption 6.240 W, peak 15.192 W|
-|Mechanical Dimensions|223 x 66.2 x 181.36 mm, 1340 g, wall mounting|
+|Mechanical Dimensions|223 x 66.2 x 171.6 mm, 1340 g, wall mounting|
 |Environmental Adaptation|-30 C to +70 C operating, -40 C to +85 C storage, 95% RH @ 40 C|
 |Protection and Certifications|IP53, ECE R10/R118, EN45545-2/EN50155/EN50121/EN61373, CE/UKCA/RoHS/E-Mark/ITxPT|
 
@@ -123,7 +123,7 @@
 | Typical Operating Power | 6.240 W |
 | Peak Power | 15.192 W |
 | <span style="color: green;">**Mechanical & Environment**</span> | |
-| Dimensions (W x H x D) | 223 x 66.2 x 181.36 mm |
+| Dimensions (W x H x D) | 223 x 66.2 x 171.6 mm |
 | Weight | 1340 g |
 | Mounting | Wall mounting |
 | Protection Rating | IP53 |

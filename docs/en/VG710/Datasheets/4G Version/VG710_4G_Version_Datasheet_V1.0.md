@@ -50,7 +50,7 @@
 | Cloud & IoT Integration | Supports MQTT, DDS, AMQP, REST, and CoAP; compatible with Azure and third-party platforms |
 | VPN | Supports IPSec/OpenVPN/L2TP/GRE |
 | Wireless Access | Dual-band Wi-Fi 5 (AP/Client) + Bluetooth 4.1 |
-| Dimensions | 188.1 x 104.5 x 48.8 mm |
+| Dimensions | 236 × 172.5 × 58.5 mm |
 | Weight | 775 g |
 | Vehicle Interfaces | 4 x Gigabit Ethernet, CAN, RS485, DI/DO/AI, RS232, USB 2.0 |
 | Input Voltage Range | 9-36 V DC (configurable to 7-36 V DC) |
@@ -129,7 +129,7 @@
 | Protection Rating | IP64 |
 | Cooling | Radiation cooling |
 | Housing | Die-cast aluminum |
-| Dimensions (W × D × H) | 188.1 × 104.5 × 48.8 mm |
+| Dimensions (W × D × H) | 236 × 172.5 × 58.5 mm |
 | Weight | 775 g |
 | RTC | Supported |
 | SIM | Dual SIM, 2FF |

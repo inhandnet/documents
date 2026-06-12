@@ -47,7 +47,7 @@
 | VPN & Security | Supports IPSec/L2TP/GRE/OpenVPN, with SPI firewall, ACL, AAA, and certificate management |
 | WLAN & Bluetooth | Dual-band Wi-Fi 5 (AP/Client) + Bluetooth 4.1 |
 | Edge Computing | Supports Python, C/C++, and Docker; provides Python 3, Docker, and Azure IoT Edge SDKs |
-| Dimensions | 188.1 × 104.5 × 48.8 mm |
+| Dimensions | 188.1 × 140.5 × 48.8 mm |
 | Weight | 775 g |
 | Interface Capability | 4× Gigabit Ethernet, 2× CAN, J1708, LIN, RS232, RS485, DI/DO/AI, 1-WIRE |
 | Input Voltage Range | 9-36 V DC (configurable to 7-36 V DC) |
@@ -125,7 +125,7 @@
 | Protection Rating | IP64 |
 | Cooling | Radiation cooling |
 | Housing | Die-cast aluminum |
-| Dimensions (W × D × H) | 188.1 × 104.5 × 48.8 mm |
+| Dimensions (W × D × H) | 188.1 × 140.5 × 48.8 mm |
 | Weight | 775 g |
 | SIM | Dual SIM, 2FF |
 | Operating Temp. | -30 °C ~ +70 °C |

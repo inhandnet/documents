@@ -49,7 +49,7 @@
 |VPN & Security|IPsec/OpenVPN/L2TP/GRE, SPI firewall, ACL, AAA|
 |Network Features|APN/VPDN, static routing/RIP/OSPF/BGP, VRRP, link backup|
 |Edge Computing|C/C++, Python, Docker, MQTT/HTTP/TCP FlexAPI|
-|Dimensions|223 x 178 x 66.2 mm|
+|Dimensions|223 x 177.76 x 66.2 mm|
 |Weight|1438 g|
 |Interfaces|4 x Gigabit Ethernet, 2 x RS232, 1 x RS485, 1 x USB 3.0, 2 x CAN, 11DI/4DO|
 |Power Input|9-36 VDC (M12 A-coded)|
@@ -124,7 +124,7 @@
 | Operating Power | 16.00 W (average, RF full load) |
 | Peak Power | 20.0 W (RF full load) |
 | <span style="color: green;">**Mechanical & Environment**</span> | |
-| Dimensions (W x H x D) | 223 x 178 x 66.2 mm |
+| Dimensions (W x H x D) | 223 x 177.76 x 66.2 mm |
 | Weight | 1438 g |
 | Mounting | Wall mounting |
 | Ingress Protection | IP53 |

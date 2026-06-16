@@ -2978,7 +2978,7 @@ Parameter description, see [General Information](#211-general-information) & [Fl
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | starts\_at | Event start time | number | | s | Optional | UNIX timestamp, in seconds since the epoch |
 | ends\_at | Event end time | number | | s | Optional | UNIX timestamp, in seconds since the epoch.   When the event is cleared, it is added to the event message body |
-| status | Event status | string | `raise\|clear` | | | raise：event  occur   clear：event recovery |
+| status | Event status | string | `raise/clear` | | | raise：event  occur   clear：event recovery |
 | type | Event type | string | | | | see [Event Types](#52-event-types) |
 | level | Event level | number | | | | see [Event Level](#51-event-level) |
 | gnss.xxx | Additional location information(if any) | | | | Optional | Location information associated with the event. see [GNSS Parameters](#a2-gnss-parameters) |
@@ -3680,7 +3680,7 @@ Currently, the Summary group parameters include the relevant parameters in A2-A6
 | Parameter Name | Description | Type | Range | Units | Optional | Note |
 | :--- | :--- | :--- | :--- | :--- | :--- | --- |
 | sysinfo.ts | The last time the modem1 info was updated | int | | s | | UNIX timestamp, in seconds since the epoch |
-| sysinfo.language | language | string | | | | Chinese\|English<br/>Only for VG. |
+| sysinfo.language | language | string | | | | Chinese/English<br/>Only for VG. |
 | sysinfo.hostname | hostname | string | | | | Only for VG. |
 | sysinfo.timezone | timezone | string | | | | Only for VG. |
 | sysinfo.model\_name | model name | string | | | | |

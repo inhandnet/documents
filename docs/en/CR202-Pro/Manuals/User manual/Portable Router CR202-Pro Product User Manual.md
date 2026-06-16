@@ -583,7 +583,7 @@ After this function is enabled, the device will reboot at the scheduled time. Th
 
 From the navigation tree, select 【System】→【Scheduler】, then enter the "Scheduler" page.
 
-| **Scheduler** |
+| **Scheduler** | | |
 | --- | --- | --- |
 | Function description: Set scheduler for system reboot. |     |     |
 | **Parameters** | **Description** | **Default** |

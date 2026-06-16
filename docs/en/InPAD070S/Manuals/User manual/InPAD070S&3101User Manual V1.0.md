@@ -38,10 +38,10 @@ The following symbols are used throughout this manual:
 | **Bold** | Command keywords (the part that should remain unchanged in a command and be entered as-is) |
 | *Italic* | Command parameters (the part that must be replaced with the actual value in a command) |
 | `[ ]` | Indicates that the part in "[ ]" is optional in command configuration |
-| `{ x \| y \| ... }` | Indicates to select one from multiple options |
-| `[ x \| y \| ... ]` | Indicates to select one or not to select from multiple options |
-| `{ x \| y \| ... } *` | Indicates to select at least one from multiple options |
-| `[ x \| y \| ... ] *` | Indicates to select one or more or not to select from multiple options |
+| `{ x / y / ... }` | Indicates to select one from multiple options |
+| `[ x / y / ... ]` | Indicates to select one or not to select from multiple options |
+| `{ x / y / ... }` * | Indicates to select at least one from multiple options |
+| `[ x / y / ... ]` * | Indicates to select one or more or not to select from multiple options |
 
 ### Warning Signs
 

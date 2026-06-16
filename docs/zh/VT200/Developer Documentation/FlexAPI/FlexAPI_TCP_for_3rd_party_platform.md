@@ -1544,7 +1544,7 @@ Parameter description, see [General Information](#211-general-information) & [Fl
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | starts\_at | Event start time | number |  | s |  | UNIX timestamp, in seconds since the epoch |
 | ends\_at | Event end time | number |  | s | Optional | UNIX timestamp, in seconds since the epoch.   When the event is cleared, it is added to the event message body |
-| status | Event status | string | `raise\|clear` |  |  | raise：event  occur   clear：event recovery |
+| status | Event status | string | `raise/clear` |  |  | raise：event  occur   clear：event recovery |
 | type | Event type | string |  |  |  | see [Event Types](#52-event-types) |
 | level | Event level | number |  |  |  | see [Event Level](#51-event-level) |
 | gnss.xxx | Additional location information(if any) |  |  |  | Optional | Location information associated with the event. see [GNSS Parameters](#a1-gnss-parameters) |

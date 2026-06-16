@@ -419,21 +419,21 @@ IPsec is a group of open network security protocols developed by IETF. At the IP
 
 The following table lists the IPsec parameter configuration for gateway A and gateway B:
 
-| **Gateway A** | | | **Gateway B** |
-| :--- | --- | --- | :--- |
-| **Set IKEv1/v2 parameters** | | | **Set IKEv1/v2 parameters** |
+| **Gateway A** | | | **Gateway B** | |
+| :--- | :--- | :--- | :--- | :--- |
+| **Set IKEv1/v2 parameters** | | | **Set IKEv1/v2 parameters** | |
 | ID | Custom | | ID | Custom |
 | Encryption algorithm | AES128 | | Encryption algorithm | Same as that of gateway A |
 | Hash algorithm | SHA1 | | Hash algorithm | |
 | Diffie-Hellman key exchange | Group2 | | Diffie-Hellman key exchange | |
 | Lifecycle | 86400 | | Lifecycle | |
-| **IPsec policy** | | | **IPsec policy** |
+| **IPsec policy** | | | **IPsec policy** | |
 | Name | Custom | | Name | Custom |
 | Encapsulation | ESP | | Encapsulation | Same as that of gateway A |
 | Encryption algorithm | AES128 | | Encryption algorithm | |
 | Authentication method | SHA1 | | Authentication method | |
 | IPsec mode | Tunnel mode | | IPsec mode | |
-| **IPsec tunnel configuration** | | | **IPsec tunnel configuration** |
+| **IPsec tunnel configuration** | | | **IPsec tunnel configuration** | |
 | Peer address | Address where gateway B establishes the IPsec service | | Peer address | Address where gateway A establishes the IPsec service |
 | Interface | Interface for establishing the IPsec service | | Interface | Interface for establishing the IPsec service |
 | IKE version | IKE version used | | IKE version | Same as that of gateway A |
@@ -861,21 +861,21 @@ IPsec is a group of open network security protocols developed by IETF. At the IP
 
 **Parameter settings:**
 
-| **Gateway A** | | | **Gateway B** |
-| :--- | --- | --- | :--- |
-| **Set IKEv1/v2 parameters** | | | **Set IKEv1/v2 parameters** |
+| **Gateway A** | | | **Gateway B** | |
+| :--- | :--- | :--- | :--- | :--- |
+| **Set IKEv1/v2 parameters** | | | **Set IKEv1/v2 parameters** | |
 | ID | Custom | | ID | Custom |
 | Encryption algorithm | AES128 | | Encryption algorithm | Same as that of gateway A |
 | Hash algorithm | SHA1 | | Hash algorithm | |
 | Diffie-Hellman key exchange | Group2 | | Diffie-Hellman key exchange | |
 | Lifecycle | 86400 | | Lifecycle | |
-| **IPsec policy** | | | **IPsec policy** |
+| **IPsec policy** | | | **IPsec policy** | |
 | Name | Custom | | Name | Custom |
 | Encapsulation | ESP | | Encapsulation | Same as that of gateway A |
 | Encryption algorithm | AES128 | | Encryption algorithm | |
 | Authentication method | SHA1 | | Authentication method | |
 | IPsec mode | Tunnel mode | | IPsec mode | |
-| **IPsec tunnel configuration** | | | **IPsec tunnel configuration** |
+| **IPsec tunnel configuration** | | | **IPsec tunnel configuration** | |
 | Peer address | Address where gateway B establishes the IPsec service | | Peer address | Address where gateway A establishes the IPsec service |
 | Interface | Interface for establishing the IPsec service | | Interface | Interface for establishing the IPsec service |
 | IKE version | IKE version used | | IKE version | Same as that of gateway A |

@@ -1365,9 +1365,7 @@ On the "**Subscriptions>> Overview**" page, you can view statistical information
 | Function Modules | Description |
 | --- | --- |
 | **Device Overview** | View the number of devices in different service statuses, click to apply filter conditions, and navigate to the "Devices" page:    1.  **Total**: Total count of devices under the current account.  1.  **Available**: Devices capable of connecting to the platform and using its functionalities (determined by applied device licenses).  1.  **Unavailable**: Devices unable to connect to the platform due to expired or unapplied licenses. Licensing required for these devices.  1.  **Anomaly**: After a device license expires, the device might retain partial platform functionality, but it may lack expected features. |
-|  |
 | **License Overview** | To view the total number of licenses and statistics for different license statuses, click to apply filter conditions and navigate to the "Licenses" page:    1.  **Total**:The total count of licenses under the current account.  1.  **Active Used**: Licenses in an activated state and already applied to devices.  1.  **Expiring Soon**: The number of licenses expiring within 30 days. You can extend the remaining duration of these licenses to reduce adverse impacts on your business due to license expiration.  1.  **Active Unused**: Licenses in an activated state but not yet applied to any devices. These licenses still consume remaining duration. To avoid waste, prioritize applying these licenses to devices.  1.  **Expired**: Number of licenses that have expired. |
-|  |
 | **Recent License Alerts** | View license alarm information for all devices, and click "**View More**" to jump to the alarm menu. |
 | **License Distribution** | View the percentage of different types of licenses in the account. |
 

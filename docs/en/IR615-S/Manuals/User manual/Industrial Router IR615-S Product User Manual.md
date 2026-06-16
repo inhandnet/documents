@@ -22,7 +22,7 @@ The following symbols and conventions are used throughout this manual.
 | `" "` | Indicates text labels on the interface | Click the "Save" button |
 | `→` | Indicates menu hierarchy or operation sequence | 【Network】→【Cellular】 |
 | `【 】` | Indicates a menu or page name | Enter the 【System Settings】page |
-| `>` | A multi-level menu is separated by the angle bracket ">". For example, File > New > Folder indicates the menu item [Folder] under the sub-menu [New], which is under the menu [File]. |
+| `>` | A multi-level menu is separated by the angle bracket ">". For example, File > New > Folder indicates the menu item [Folder] under the sub-menu [New], which is under the menu [File]. | See the example in the Meaning column |
 
 Additional symbols used in this manual:
 

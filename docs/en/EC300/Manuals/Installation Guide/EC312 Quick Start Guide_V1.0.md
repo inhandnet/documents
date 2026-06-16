@@ -322,10 +322,7 @@ EC300 has a 3-way CAN bus interface and supports the CAN 2.0A/B standard. It is 
 
 | Interface identification | Features | Description |
 |:------------------------:|:---------|:------------|
-| GND | Power reference ground | 4 digital input DI, wet contact state  
-"1": +10~+30 V / -30 ~ -10 V DC  
-"0": 0 ~ +3 V / -3 ~ 0 V  
-Isolate 3000 VDC |
+| GND | Power reference ground | 4 digital input DI, wet contact state<br>"1": +10~+30 V / -30 ~ -10 V DC<br>"0": 0 ~ +3 V / -3 ~ 0 V<br>Isolate 3000 VDC |
 | DICOM | Input public side | — |
 | DI0 | Digital input port 0 | — |
 | DI1 | Digital input port 1 | — |

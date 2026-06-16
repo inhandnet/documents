@@ -307,14 +307,10 @@ The 4-digit DIP switch enables or disables the pull-up/down resistors for A/B of
 
 | Identification | Description |
 |----------------|-------------|
-| PU1 | ON: Enable pull-up resistor for COM1 RS-485 A  
-OFF: Disable pull-up resistor for COM1 RS-485 A (default) |
-| PD1 | ON: Enable pull-down resistor for COM1 RS-485 B  
-OFF: Disable pull-down resistor for COM1 RS-485 B (default) |
-| PU2 | ON: Enable pull-up resistor for COM2 RS-485 A  
-OFF: Disable pull-up resistor for COM2 RS-485 A (default) |
-| PD2 | ON: Enable pull-down resistor for COM2 RS-485 B  
-OFF: Disable pull-down resistor for COM2 RS-485 B (default) |
+| PU1 | ON: Enable pull-up resistor for COM1 RS-485 A<br>OFF: Disable pull-up resistor for COM1 RS-485 A (default) |
+| PD1 | ON: Enable pull-down resistor for COM1 RS-485 B<br>OFF: Disable pull-down resistor for COM1 RS-485 B (default) |
+| PU2 | ON: Enable pull-up resistor for COM2 RS-485 A<br>OFF: Disable pull-up resistor for COM2 RS-485 A (default) |
+| PD2 | ON: Enable pull-down resistor for COM2 RS-485 B<br>OFF: Disable pull-down resistor for COM2 RS-485 B (default) |
 
 > **Note:** Enabling the RS-485 pull-up/down resistors reduces the maximum number of access devices allowed on the RS-485 bus.
 
@@ -324,14 +320,7 @@ OFF: Disable pull-down resistor for COM2 RS-485 B (default) |
 
 | PIN Number | Name | Definition | Instruction |
 |------------|------|------------|-------------|
-| 1 | PCOM | Dry contact access terminal | 4 digital/pulse inputs DI, 2 dry contact control interfaces.  
-Dry contact status "1": closed  
-Dry contact status "0": disconnected  
-Wet contact state "1": +10~+30 V / -30~-10 V DC  
-Wet contact status "0": 0~+3 V / -3~0 V DC  
-Isolated 3000 VDC  
-Support pulse signal counter function.  
-Supports up to 100 Hz pulse signals (32-bit counter + 1-bit overflow flag) |
+| 1 | PCOM |Dry contact access terminal | 4 digital/pulse inputs DI, 2 dry contact control interfaces.<br>Dry contact status "1": closed<br>Dry contact status "0": disconnected<br>Wet contact state "1": +10~+30 V / -30~-10 V DC<br>Wet contact status "0": 0~+3 V / -3~0 V DC<br>Isolated 3000 VDC<br>Support pulse signal counter function.<br>Supports up to 100 Hz pulse signals (32-bit counter + 1-bit overflow flag) |
 | 2 | DGND | Dry contact grounding terminal | |
 | 3 | DICOM | Input common terminal | |
 | 4 | DI0 | Digital/Pulse Input 0 Connector | |

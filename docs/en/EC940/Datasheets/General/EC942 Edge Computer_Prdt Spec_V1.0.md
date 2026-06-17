@@ -102,8 +102,7 @@
 | SIM Card Holders | 2×MicroSIM |
 | LED Indicators | 4G/5G, Signal Strength (L1, L2, L3), SIM1, SIM2, User1, User2, PWR, STATUS, WARN, ERR |
 | USB | USB2.0 (2×Type-A + 1×Type-C) |
-| TF | Supports MicroSD cards up to 32GB (recommended maximum 
-capacity) |
+| TF | Supports MicroSD cards up to 32GB (recommended maximum capacity) |
 | Expansion Interfaces |  1x mSATA, supports mSATA SSD |
 | HDMI | HDMI2.0 |
 | WiFi (Optional) |  STA, 802.11ac/a/b/g/n, 2.4G/5G dual band |

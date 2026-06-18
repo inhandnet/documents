@@ -86,7 +86,7 @@
 |--------------------------|------|
 | <span style="color: green;">**Hardware Platform**</span> | |
 | CPU | TI AM68A, 2 × Cortex-A72 @ 2.0 GHz |
-| AI Accelerator | C7x DSP + Deep Learning Accelerator, 8 TOPS |
+| AI Accelerator | 2 x C7 x DSP + Deep Learning Accelerator, 8 TOPS |
 | ISP / Vision | On-chip ISP + VPAC (RGB-IR, WDR, LDC) |
 | RAM | LPDDR4 4 GB / 8 GB (default) |
 | <span style="color: green;">**Interface**</span> | |

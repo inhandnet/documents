@@ -47,7 +47,7 @@
 |Cloud Platform Integration|Supports AWS IoT, Azure IoT, Aliyun IoT, Wialon, Traccar, and other platforms|
 |Transport Protocols|TCP / UDP / HTTP / MQTT|
 |Events and Alarms|Supports collision, motion, overspeed, IO change, ignition detection, and other alarms|
-|Device Dimensions|Approx. 141.14 × 82 × 35 mm|
+|Device Dimensions| 141.14 × 82 × 35 mm|
 |Ingress Protection|IP66|
 |Power Input Range|9-48 V DC|
 |Interface Capability|Dual CAN, RS232, RS485, DI/DO, 1-Wire, and analog input|

@@ -55,8 +55,6 @@
 | Protection Rating | IP30 |
 
 
-<div style="page-break-after: always;"></div>
-
 
 # <span style="color: green;">2. Product Dimensions</span>
 
@@ -167,6 +165,10 @@
 | Remote Management | DeviceLive / HTTP / HTTPS / SSH |
 | DeviceLive Cloud | supports cloud-based parameter configuration, container management, application and firmware management |
 
+
+<div style="page-break-after: always;"></div>
+
+
 # <span style="color: green;">5. Ordering Information</span>
 
 ## <span style="color: green;">Model Rule</span>
@@ -180,16 +182,24 @@
 
 ## <span style="color: green;">Base Models</span>
 
-| Model | \<B/H\> | Region | \<WMNN\>: Cellular Type & Module | Memory/Flash | Ethernet/Serial |
-|------|---------|--------|----------------------------------|--------------|-----------------|
-| EC312-B-LQA3 | NO | China | Cat1, FDD: B1/B3/B5/B8, TDD: B34/B38/B39/B40/B41 | 1GB/8GB | 2×10/100M, 1×RS232/485 + 1×RS485 |
-| EC312-H-LQA3 | YES | China | Cat1, FDD: B1/B3/B5/B8, TDD: B34/B38/B39/B40/B41 | 1GB/8GB | 2×10/100M, 1×RS232/485 + 1×RS485 |
-| EC312-B-FQ53 | NO | EMEA & APAC | Cat1, FDD: B1/B3/B7/B8/B20/B28, TDD: B38/B40/B41, GSM: B2/B3/B5/B8 | 1GB/8GB | 2×10/100M, 1×RS232/485 + 1×RS485 |
-| EC312-H-FQ53 | YES | EMEA & APAC | Cat1, FDD: B1/B3/B7/B8/B20/B28, TDD: B38/B40/B41, GSM: B2/B3/B5/B8 | 1GB/8GB | 2×10/100M, 1×RS232/485 + 1×RS485 |
-| EC312-H-FQ33 | YES | North America | Cat1, FDD: B2/B4/B5/B12/B13/B25/B26, WCDMA: B2/B4/B5 | 1GB/8GB | 2×10/100M, 1×RS232/485 + 1×RS485 |
-| EC312-H-FQ39 | YES | North America | Cat6, FDD: B2/B4/B5/B7/B12/B13/B14/B17/B25/B26/B29/B30/B66/B71, TDD: B41/B48 | 1GB/8GB | 2×10/100M, 1×RS232/485 + 1×RS485 |
-| EC312-H-FQ73 | YES | Australia & Latin America | Cat1, FDD: B1/B2/B3/B4/B5/B7/B8/B28/B66, TDD: B38/B40/B41, GSM: B2/B3/B5/B8 | 1GB/8GB | 2×10/100M, 1×RS232/485 + 1×RS485 |
-| EC312-H-EN00 | YES (GNSS not supported) | No Cellular | No cellular | 1GB/8GB | 2×10/100M, 1×RS232/485 + 1×RS485 |
+<table style="width:100%; table-layout:fixed;">
+  <colgroup>
+    <col style="width:20%;">
+    <col style="width:10%;">
+    <col style="width:14%;">
+    <col style="width:38%;">
+    <col style="width:18%;">
+  </colgroup>
+  <tr><th>Model</th><th>&lt;B/H&gt;</th><th>Region</th><th>Cellular Bands</th><th>Ethernet/Serial</th></tr>
+  <tr><td style="white-space: nowrap;">EC312-B-LQA3</td><td>NO</td><td>China</td><td>Cat1, FDD: B1/B3/B5/B8,<br> TDD: B34/B38/B39/B40/B41</td><td>2×10/100M, 1×RS232/485 + 1×RS485</td></tr>
+  <tr><td style="white-space: nowrap;">EC312-H-LQA3</td><td>YES</td><td>China</td><td>Cat1, FDD: B1/B3/B5/B8,<br> TDD: B34/B38/B39/B40/B41</td><td>2×10/100M, 1×RS232/485 + 1×RS485</td></tr>
+  <tr><td style="white-space: nowrap;">EC312-B-FQ53</td><td>NO</td><td>EMEA &amp; APAC</td><td>Cat1, FDD: B1/B3/B7/B8/B20/B28,<br> TDD: B38/B40/B41, GSM: B2/B3/B5/B8</td><td>2×10/100M, 1×RS232/485 + 1×RS485</td></tr>
+  <tr><td style="white-space: nowrap;">EC312-H-FQ53</td><td>YES</td><td>EMEA &amp; APAC</td><td>Cat1, FDD: B1/B3/B7/B8/B20/B28, <br>TDD: B38/B40/B41, GSM: B2/B3/B5/B8</td><td>2×10/100M, 1×RS232/485 + 1×RS485</td></tr>
+  <tr><td style="white-space: nowrap;">EC312-H-FQ33</td><td>YES</td><td>North America</td><td>Cat1, FDD: B2/B4/B5/B12/B13/B25/B26,<br> WCDMA: B2/B4/B5</td><td>2×10/100M, 1×RS232/485 + 1×RS485</td></tr>
+  <tr><td style="white-space: nowrap;">EC312-H-FQ39</td><td>YES</td><td>North America</td><td>Cat6, FDD: B2/B4/B5/B7/B12/B13/B14/B17/B25/B26/B29/B30/B66/B71,<br> TDD: B41/B48</td><td>2×10/100M, 1×RS232/485 + 1×RS485</td></tr>
+  <tr><td style="white-space: nowrap;">EC312-H-FQ73</td><td>YES</td><td>Australia &amp; Latin America</td><td>Cat1, FDD: B1/B2/B3/B4/B5/B7/B8/B28/B66,<br> TDD: B38/B40/B41, GSM: B2/B3/B5/B8</td><td>2×10/100M, 1×RS232/485 + 1×RS485</td></tr>
+  <tr><td style="white-space: nowrap;">EC312-H-EN00</td><td>YES</td><td>No Cellular</td><td>No cellular</td><td>2×10/100M, 1×RS232/485 + 1×RS485</td></tr>
+</table>
 
 ## <span style="color: green;">Extension Module (Optional)</span>
 

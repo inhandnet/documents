@@ -143,13 +143,19 @@
 
 ## <span style="color: green;">Product Models</span>
 
-| Model | Region | Specification |
-| --- | --- | --- |
-| EAP600-LITE | Global | Enterprise entry-level indoor Wi-Fi 6 AP, 2.4GHz/5GHz dual RF, max speed 2974 Mbps, 1 × Gigabit Ethernet port |
+<table style="width:100%; table-layout:fixed;">
+  <colgroup>
+    <col style="width:30%;">
+    <col style="width:20%;">
+    <col style="width:50%;">
+  </colgroup>
+  <tr><th>Model</th><th>Region</th><th>Specification</th></tr>
+  <tr><td style="white-space: nowrap;">EAP600-LITE</td><td>Global</td><td>Enterprise entry-level indoor Wi-Fi 6 AP, 2.4GHz/5GHz dual RF, max speed 2974 Mbps, 1 × Gigabit Ethernet port</td></tr>
+</table>
 
 <div style="page-break-after: always;"></div>
 
 # <span style="color: green;">6. Contact Us</span>
 
-- **Website:** [InHand Networks](https://www.inhand.com.cn)
+- **Website:** [InHand Networks](https://www.inhand.com)
 - **Copyright:** © InHand Networks. All rights reserved.

@@ -56,6 +56,10 @@
 | Operating Temperature | Normal: -35°C to +70°C<br/>Extended:-40°C to +75°C |
 | Protection Rating | IP30 |
 
+
+<div style="page-break-after: always;"></div>
+
+
 # <span style="color: green;">2. Product Dimensions</span>
 
 <div style="display: flex; align-items: end; flex-wrap: wrap; justify-content: space-between;row-gap: 16px;">
@@ -153,6 +157,10 @@
 | Maintenance Tools |  Support Ping, Traceroute and network packet capture tools |
 | Monitoring | Dashboard-Device information, interface status, and refined traffic statistics<br/>link monitoring- Link delay, jitter, packet loss, and throughput |
 
+
+<div style="page-break-after: always;"></div>
+
+
 # <span style="color: green;">5. Ordering Information</span>
 
 ## <span style="color: green;">Model Rule</span>
@@ -165,14 +173,22 @@
 
 ## <span style="color: green;">Model List</span>
 
-| Model Pattern | Region | \<WMNN\>: Cellular Type & Module / Bands | \<WLAN/NA\> | Serial |
-|---------------|--------|-------------------------------------------|-------------|--------|
-| IR624-NRQ3-\<WLAN/NA\>-S | North America (5G) | 5G NR NSA n1/2/3/5/7/8/12/13/14/18/20/25/26/28/29/30/38/40/41/48/66/70/71/75/76/77/78/79; SA same set; LTE FDD B1/2/3/4/5/7/8/12/13/14/17/18/19/20/25/26/28/29/30/32/66/71; LTE TDD B34/38/39/40/41/42/43/48; LAA B46; WCDMA B1/2/4/5/8/19 | WLAN or NA | S |
-| IR624-NRF4-\<WLAN/NA\>-S | Europe & APAC (5G) | 5G NR n1/3/5/7/8/20/28/38/40/41/71/77/78/66; LTE FDD B1/3/5/7/8/20/28/71/66; LTE TDD B38/40/41; WCDMA B1/3/5/8 | WLAN or NA | S |
-| IR624-FQ58-\<WLAN/NA\>-S | Europe & APAC (4G CAT4) | LTE-FDD B1/3/5/7/8/20/28; LTE-TDD B34/38/39/40/41; WCDMA B1/5/8; GSM B3/8 | WLAN or NA | S |
-| IR624-EN00-\<WLAN/NA\>-S | Global (No Cellular) | No cellular module | WLAN or NA | S |
-| IR624-NRF2-\<WLAN/NA\>-S | China (5G) | 5G NR n1/3*/5/8/28/41/78/79; LTE FDD B1/3/5/7*/8; LTE TDD B34/38/39/40/41; WCDMA B1/5/8 | WLAN or NA | S |
-| IR624-LQ20-\<WLAN/NA\>-S | China (4G CAT4) | FDD B1/3/5/8; TDD B34/38/39/40/41; WCDMA B1/5/8; GSM/EDGE B3/8 | WLAN or NA | S |
+<table style="width:100%; table-layout:fixed; font-size:10px;">
+  <colgroup>
+    <col style="width:24%;">
+    <col style="width:18%;">
+    <col style="width:40%;">
+    <col style="width:12%;">
+    <col style="width:8%;">
+  </colgroup>
+  <tr><th>Model Pattern</th><th>Region</th><th>&lt;WMNN&gt; / Bands</th><th>&lt;WLAN/NA&gt;</th><th>Serial</th></tr>
+  <tr><td style="white-space: nowrap;">IR624-NRQ3-&lt;WLAN/NA&gt;-S</td><td>North America (5G)</td><td>5G NR NSA n1/2/3/5/7/8/12/13/14/18/20/25/26/28/29/30/38/40/41/48/66/70/71/75/76/77/78/79; SA same set; LTE FDD B1/2/3/4/5/7/8/12/13/14/17/18/19/20/25/26/28/29/30/32/66/71; LTE TDD B34/38/39/40/41/42/43/48; LAA B46; WCDMA B1/2/4/5/8/19</td><td>WLAN or NA</td><td>S</td></tr>
+  <tr><td style="white-space: nowrap;">IR624-NRF4-&lt;WLAN/NA&gt;-S</td><td>Europe &amp; APAC (5G)</td><td>5G NR n1/3/5/7/8/20/28/38/40/41/71/77/78/66; LTE FDD B1/3/5/7/8/20/28/71/66; LTE TDD B38/40/41; WCDMA B1/3/5/8</td><td>WLAN or NA</td><td>S</td></tr>
+  <tr><td style="white-space: nowrap;">IR624-FQ58-&lt;WLAN/NA&gt;-S</td><td>Europe &amp; APAC (4G CAT4)</td><td>LTE-FDD B1/3/5/7/8/20/28; LTE-TDD B34/38/39/40/41; WCDMA B1/5/8; GSM B3/8</td><td>WLAN or NA</td><td>S</td></tr>
+  <tr><td style="white-space: nowrap;">IR624-EN00-&lt;WLAN/NA&gt;-S</td><td>Global (No Cellular)</td><td>No cellular module</td><td>WLAN or NA</td><td>S</td></tr>
+  <tr><td style="white-space: nowrap;">IR624-NRF2-&lt;WLAN/NA&gt;-S</td><td>China (5G)</td><td>5G NR n1/3*/5/8/28/41/78/79; LTE FDD B1/3/5/7*/8; LTE TDD B34/38/39/40/41; WCDMA B1/5/8</td><td>WLAN or NA</td><td>S</td></tr>
+  <tr><td style="white-space: nowrap;">IR624-LQ20-&lt;WLAN/NA&gt;-S</td><td>China (4G CAT4)</td><td>FDD B1/3/5/8; TDD B34/38/39/40/41; WCDMA B1/5/8; GSM/EDGE B3/8</td><td>WLAN or NA</td><td>S</td></tr>
+</table>
 
 # <span style="color: green;">6. Contact Us</span>
 

@@ -39,7 +39,7 @@
 
 <div style="margin-top: 32px;"></div>
 
-## <span style="color: green;">Function List</span>
+
 
 # <span style="color: green;">Core Technical Specifications</span>
 
@@ -173,5 +173,5 @@
 
 # <span style="color: green;">6. Contact Us</span>
 
-- **Website:** [InHand Networks](https://www.inhand.com.cn)
+- **Website:** [InHand Networks](https://www.inhand.com)
 - **Copyright:** © InHand Networks. All rights reserved.

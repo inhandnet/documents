@@ -45,7 +45,6 @@
 | --- | --- |
 | Cellular | 4G LTE (CAT4/CAT6); up to 300 Mbps DL / 50 Mbps UL (CAT6) |
 | Cloud Management | InHand Device Manager |
-| VPN | IPsec, OpenVPN, WireGuard |
 | Network & Security | NAT, static routing; SPI firewall, DoS, ACL, URL filtering |
 | Wi-Fi | 2.4 GHz 802.11 b/g/n, 300 Mbps; AP / STA |
 | Throughput / Users | 100 Mbps; up to 32 users |
@@ -53,8 +52,8 @@
 | Ethernet / Antenna | 2 × 10/100 Mbps (WAN/LAN, dual-LAN); 2 × 4G external + 2 × Wi-Fi internal |
 | Power / Battery | USB-C 5 V / 2 A; optional 3000 mAh, up to 8 h |
 | Dimensions / Weight | 122 × 90.8 × 26.4 mm; 235 g |
-| Installation / Environment | Desktop / wall; -10 °C ~ +50 °C op.; -20 °C ~ +60 °C stg.; IP30 |
-| Certification / Warranty | FCC, IC, PTCRB, Verizon, AT&T, FirstNet*, T-MOBILE, CE, UN38.3; 3 y (battery 1 y) |
+| Installation  | Desktop / wall; -10 °C ~ +50 °C op.; -20 °C ~ +60 °C stg. |
+| Certification  | FCC, IC, PTCRB, Verizon, AT&T, FirstNet*, T-MOBILE, CE, UN38.3 |
 
 
 # <span style="color: green;">2. Product Dimensions</span>
@@ -139,8 +138,6 @@
 | Firewall | SPI, DoS protection |
 | Access Control | ACL, URL filtering |
 | Other | NAT, DMZ, port mapping |
-| <span style="color: green;">**VPN**</span> | |
-| VPN | IPSec VPN, OpenVPN, WireGuard VPN |
 | <span style="color: green;">**Reliability**</span> | |
 | Link Backup | Hot backup, cold backup, load balancing |
 | Dual SIM Failover | Supports dual SIM failover (North American model only) |
@@ -171,12 +168,22 @@ WLAN: Wi-Fi
 
 \u003cB/NA\u003e: B = Battery, NA = No battery
 
+
+<div style="page-break-after: always;"></div>
+
+
 ## <span style="color: green;">Product Models</span>
 
-| Model | Region | Specification |
-| --- | --- | --- |
-| CR202-NAC6-WLAN-\u003cB/NA\u003e-Lite | North America | LTE CAT6; LTE-FDD B2/B4/B5/B7/B12/B13/B14/B25/B26/B29/B30/B66/B71; LTE-TDD B41/B48; WLAN Wi-Fi; B with battery, NA without battery; Support eSIM and external Nano SIM |
-| CR202-EUC4-WLAN-\u003cB/NA\u003e-Lite | Europe/APAC | LTE CAT4; LTE-FDD B1/B3/B5/B7/B8/B20/B28; LTE-TDD B38/B40/B41; WCDMA B1/B5/B8; GSM/EDGE B3/B8; WLAN Wi-Fi; B with battery, NA without battery; External Nano SIM only |
+<table style="width:100%; table-layout:fixed;">
+  <colgroup>
+    <col style="width:42%;">
+    <col style="width:14%;">
+    <col style="width:44%;">
+  </colgroup>
+  <tr><th>Model</th><th>Region</th><th>Specification</th></tr>
+  <tr><td style="white-space: nowrap;">CR202-NAC6-WLAN-&lt;B/NA&gt;-Lite</td><td>North America</td><td>LTE CAT6;<br>  LTE-FDD B2/B4/B5/B7/B12/B13/B14/B25/B26/B29/B30/B66/B71;<br> LTE-TDD B41/B48;<br>  WLAN Wi-Fi; B with battery, NA without battery; Support eSIM and external Nano SIM</td></tr>
+  <tr><td style="white-space: nowrap;">CR202-EUC4-WLAN-&lt;B/NA&gt;-Lite</td><td>Europe/APAC</td><td>LTE CAT4;<br>  LTE-FDD B1/B3/B5/B7/B8/B20/B28;<br>  LTE-TDD B38/B40/B41;<br>  WCDMA B1/B5/B8;<br>  GSM/EDGE B3/B8;<br>  WLAN Wi-Fi;<br>  B with battery, NA without battery; External Nano SIM only</td></tr>
+</table>
 
 **Example:** CR202-NAC6-WLAN-B-Lite: CR202 series cellular router, supporting FDD, TDD networks, with Wi-Fi AP & Client modes, equipped with battery, supporting eSIM and external SIM card simultaneously.
 
@@ -186,5 +193,5 @@ WLAN: Wi-Fi
 
 # <span style="color: green;">6. Contact Us</span>
 
-- **Website:** [InHand Networks](https://www.inhand.com.cn)
+- **Website:** [InHand Networks](https://www.inhand.com)
 - **Copyright:** © InHand Networks. All rights reserved.

@@ -61,16 +61,25 @@
 
 # <span style="color: green;">2. Product Dimensions</span>
 
-<div style="display: flex; align-items: end; flex-wrap: wrap; justify-content: space-between; row-gap: 16px;">
+<div style="display: flex; align-items: flex-start; flex-wrap: wrap; justify-content: space-between; row-gap: 16px;">
   <div style="width: 45%; flex-shrink: 0;">
-    <img src="images/media_1_5.png" alt="Front View" style="width: 100%; display: block; margin: 0 auto;"/>
+    <div style="height: 280px; display: flex; align-items: center; justify-content: center;">
+      <img src="images/media_1_5.png" alt="Front View" style="max-width: 100%; max-height: 280px; object-fit: contain; display: block;" />
+    </div>
     <div style="width: 100%; text-align: center; font-size: 12px;">Front View</div>
   </div>
   <div style="width: 45%; flex-shrink: 0;">
-    <img src="images/media_1_6.png" alt="Interface" style="width: 100%; display: block; margin: 0 auto;"/>
+    <div style="height: 280px; display: flex; align-items: center; justify-content: center;">
+      <img src="images/media_1_6.png" alt="Interface" style="max-width: 100%; max-height: 280px; object-fit: contain; display: block;" />
+    </div>
     <div style="width: 100%; text-align: center; font-size: 12px;">Interface Dimensions</div>
   </div>
 </div>
+
+
+<div style="page-break-after: always;"></div>
+
+
   <div style="width: 100%;">
     <div>Note:</div>
     <div>1. All dimensions are in millimeters (mm).</div>
@@ -157,15 +166,26 @@
 
 \<WMNN\>: Cellular Type & Module
 
+
+<div style="page-break-after: always;"></div>
+
+
 ## <span style="color: green;">Product Models</span>
 
-| Model | Region | 5G Sub-6 | LTE-FDD | LTE-TDD | Ethernet | Wi-Fi |
-| --- | --- | --- | --- | --- | --- | --- |
-| CPE02-NANR | US | SA n1/n2/n3/n5/n7/n8/n12/n13/n14/n18/n20/n25/n26/n28/n29/n30/n38/n40/n41/n48/n66/n70/n71/n75/n76/n77/n78/n79; NSA same | B1/B2/B3/B4/B5/B7/B8/B12/B13/B14/B17/B18/B19/B20/B25/B26/B28/B29/B30/B32/B66/B71 | B34/B38/B39/B40/B41/B42/B43/B48 | 1 × 2.5G + 1 × 1G | AX5400 |
-| CPE02-EUNR | EU & APAC | SA n1/n3/n5/n7/n8/n20/n28/n38/n40/n41/n66/n77/n78; NSA n1/n3/n7/n28/n38/n40/n41/n77/n78 | B1/B2/B3/B4/B5/B7/B8/B20/B28/B66 | B34/B40/B41 | 2 × GbE | AX5400 |
+<table style="width:100%; table-layout:fixed;">
+  <colgroup>
+    <col style="width:20%;">
+    <col style="width:16%;">
+    <col style="width:50%;">
+    <col style="width:24%;">
+  </colgroup>
+  <tr><th>Model</th><th>Region</th><th>Cellular Bands</th><th>Ethernet</th></tr>
+  <tr><td style="white-space: nowrap;">CPE02-NANR</td><td>US</td><td>5G Sub-6: SA n1/n2/n3/n5/n7/n8/n12/n13/n14/n18/n20/n25/n26/n28/n29/n30/n38/n40/n41/n48/n66/n70/n71/n75/n76/n77/n78/n79; NSA same<br>LTE-FDD: B1/B2/B3/B4/B5/B7/B8/B12/B13/B14/B17/B18/B19/B20/B25/B26/B28/B29/B30/B32/B66/B71<br>LTE-TDD: B34/B38/B39/B40/B41/B42/B43/B48</td><td>1 × 2.5G + 1 × 1G</td></tr>
+  <tr><td style="white-space: nowrap;">CPE02-EUNR</td><td>EU &amp; APAC</td><td>5G Sub-6: SA n1/n3/n5/n7/n8/n20/n28/n38/n40/n41/n66/n77/n78; NSA n1/n3/n7/n28/n38/n40/n41/n77/n78<br>LTE-FDD: B1/B2/B3/B4/B5/B7/B8/B20/B28/B66<br>LTE-TDD: B34/B40/B41</td><td>2 × GbE</td></tr>
+</table>
 
 
 # <span style="color: green;">6. Contact Us</span>
 
-- **Website:** [InHand Networks](https://www.inhand.com.cn)
+- **Website:** [InHand Networks](https://www.inhand.com)
 - **Copyright:** © InHand Networks. All rights reserved.

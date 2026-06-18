@@ -179,12 +179,19 @@
 
 ## <span style="color: green;">Model List</span>
 
-| Model | Region | \<WMNN\>: Cellular Type & Module | \<Lxxx\>: LoRaWAN Band |
-|-------|--------|----------------------------------|-------------------------|
-| EC312-H-FQ53-L868 | EMEA | CAT1<br/>FDD: B1/B3/B7/B8/B20/B28<br/>TDD: B38/B40/B41<br/>GSM: B2/B3/B5/B8 | EU868 |
-| EC312-H-FQ33-L915 | North America | CAT1<br/>FDD: B2/B4/B5/B12/B13/B25/B26<br/>WCDMA: B2/B4/B5 | US915/AS923 |
-| EC312-H-FQ53-L915 | EMEA | CAT1<br/>FDD: B1/B3/B7/B8/B20/B28<br/>TDD: B38/B40/B41<br/>GSM: B2/B3/B5/B8 | US915/AS923 |
-| EC312-H-LQA3-L470 | China | CAT1<br/>LTE-FDD: B1/B3/B5/B8<br/>LTE-TDD: B34/B38/B39/B40/B41 | CN470 |
+<table style="width:100%; table-layout:fixed;">
+  <colgroup>
+    <col style="width:30%;">
+    <col style="width:14%;">
+    <col style="width:36%;">
+    <col style="width:20%;">
+  </colgroup>
+  <tr><th>Model</th><th>Region</th><th>&lt;WMNN&gt;</th><th>&lt;Lxxx&gt;: LoRaWAN Band</th></tr>
+  <tr><td style="white-space: nowrap;">EC312-H-FQ53-L868</td><td>EMEA</td><td>CAT1<br/>FDD: B1/B3/B7/B8/B20/B28<br/>TDD: B38/B40/B41<br/>GSM: B2/B3/B5/B8</td><td>EU868</td></tr>
+  <tr><td style="white-space: nowrap;">EC312-H-FQ33-L915</td><td>North America</td><td>CAT1<br/>FDD: B2/B4/B5/B12/B13/B25/B26<br/>WCDMA: B2/B4/B5</td><td>US915/AS923</td></tr>
+  <tr><td style="white-space: nowrap;">EC312-H-FQ53-L915</td><td>EMEA</td><td>CAT1<br/>FDD: B1/B3/B7/B8/B20/B28<br/>TDD: B38/B40/B41<br/>GSM: B2/B3/B5/B8</td><td>US915/AS923</td></tr>
+  <tr><td style="white-space: nowrap;">EC312-H-LQA3-L470</td><td>China</td><td>CAT1<br/>LTE-FDD: B1/B3/B5/B8<br/>LTE-TDD: B34/B38/B39/B40/B41</td><td>CN470</td></tr>
+</table>
 
 # <span style="color: green;">6. Contact Us</span>
 

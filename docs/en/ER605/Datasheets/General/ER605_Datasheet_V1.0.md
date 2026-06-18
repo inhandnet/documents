@@ -174,9 +174,9 @@
 <table style="width:100%; table-layout:fixed;">
   <colgroup>
     <col style="width:30%;">
-    <col style="width:12%;">
+    <col style="width:15%;">
     <col style="width:13%;">
-    <col style="width:45%;">
+    <col style="width:42%;">
   </colgroup>
   <tr><th>Model</th><th>Region</th><th>Cellular</th><th>Specification</th></tr>
   <tr><td>ER605-NRF2-&lt;WLAN/NA&gt;</td><td>China</td><td>5G</td><td>5G NR n1/n3/n5/n8/n28/n41/n78/n79;<br> LTE-FDD B1/B3/B5/B7*/B8; <br>LTE-TDD B34/B38/B39/B40/B41;<br> WCDMA B1/B5/B8</td></tr>
@@ -192,5 +192,5 @@
 
 # <span style="color: green;">6. Contact Us</span>
 
-- **Website:** [InHand Networks](https://www.inhand.com.cn)
+- **Website:** [InHand Networks](https://www.inhand.com)
 - **Copyright:** © InHand Networks. All rights reserved.

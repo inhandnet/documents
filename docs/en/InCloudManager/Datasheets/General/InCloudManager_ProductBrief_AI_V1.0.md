@@ -13,12 +13,12 @@
     </div>
     <div style="text-align: center;">
       <div style="display: flex; flex-wrap: wrap; gap: 16px; ">
-        <div style="width: 250px;background-color: #4CAF50; color: white; padding: 8px 8px; border-radius: 6px; font-size: 18px;">· AI Network Assistant</div>
-        <div style="width: 250px;background-color: #4CAF50; color: white; padding: 8px 8px; border-radius: 6px; font-size: 18px;">· Zero-Touch Cloud Management</div>
+        <div style="width: 300px;background-color: #4CAF50; color: white; padding: 8px 8px; border-radius: 6px; font-size: 18px;">· AI Network Assistant</div>
+        <div style="width: 300px;background-color: #4CAF50; color: white; padding: 8px 8px; border-radius: 6px; font-size: 18px;">· Zero-Touch Cloud Management</div>
       </div>
       <div style="display: flex; flex-wrap: wrap; gap: 16px;margin-top:16px">
-        <div style="width: 250px;background-color: #4CAF50; color: white; padding: 8px 8px; border-radius: 6px; font-size: 18px;">· Cloud-Native Management</div>
-        <div style="width: 250px;background-color: #4CAF50; color: white; padding: 8px 8px; border-radius: 6px; font-size: 18px; ">· Remote Deployment</div>
+        <div style="width: 300px;background-color: #4CAF50; color: white; padding: 8px 8px; border-radius: 6px; font-size: 18px;">· Cloud-Native Management</div>
+        <div style="width: 300px;background-color: #4CAF50; color: white; padding: 8px 8px; border-radius: 6px; font-size: 18px; ">· Remote Deployment</div>
       </div>
     </div>
   </div>
@@ -26,7 +26,7 @@
 
 <div style="page-break-after: always;"></div>
 
-# <span style="color: green;">1. Cloud Platform Overview</span>
+# <span style="color: green;">1. Product Overview</span>
 
 **Intelligent Management. Seamless Connectivity.**
 

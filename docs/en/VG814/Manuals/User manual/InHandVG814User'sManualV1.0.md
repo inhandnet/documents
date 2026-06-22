@@ -19,11 +19,9 @@ Due to ongoing updates in product technology and specifications, the company can
 | Note | Supplement and provide necessary explanations for the description of the operation |
 
 ### Technical Support
+Email: support@inhandnetworks.com
 
-T: +1 (703) 348-2988  
-43671 Trade Center Place, Suite 100, Dulles, VA 20166  
-Inquiry: [info@inhandnetworks.com](mailto:info@inhandnetworks.com) | Support: [support@inhandnetworks.com](mailto:support@inhandnetworks.com)  
-URL: [www.inhandnetworks.com](http://www.inhandnetworks.com/)
+URL: www.inhand.com
 
 ### How to Use This Manual
 

@@ -19,8 +19,9 @@ Due to ongoing updates in product technology and specifications, the company can
 | Note | Supplement and provide necessary explanations for the description of the operation |
 
 ### Technical Support
+Email: support@inhandnetworks.com
 
-For more information, visit [www.inhandnetworks.com](https://www.inhandnetworks.com/).
+URL: www.inhand.com
 
 ### How to Use This Manual
 

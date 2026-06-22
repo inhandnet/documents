@@ -32,34 +32,9 @@ Additional symbols used in this manual:
 | Note | Notes contain detailed descriptions and helpful suggestions. |
 
 ### Technical Support
+Email: support@inhandnetworks.com
 
-**InHand Networks (Headquarters)**
-
-Address: 43671 Trade Center Place, Suite 100, Dulles, VA 20166 USA
-
-E-mail: support@inhandnetworks.com
-
-Tel: +1 (703) 348-2988
-
-URL: [www.inhand.com](http://www.inhandnetworks.com/)
-
-**UL MARKINGS:**
-
-1. UL File: E364742, E509340.
-2. Electrical ratings: Input: 9-26V DC, 0.2-0.6A. (Optional)
-3. Model number: IR615-S-x-y-z
-4. Ambient temperature range: -20 ℃ to +70 ℃
-5. Temperature class: T-5
-6. Class I, Division 2, Groups A, B, C and D Hazardous Locations
-
-**UL INSTALLATION AND OPERATING INSTRUCTIONS:**
-
-1. These devices are open-type devices that are to be installed in an enclosure suitable for the environment and where the internal compartment is only accessible by the use of tool.
-2. "Suitable for use in Class I, Division 2, Groups A, B, C and D Hazardous Locations, or Nonhazardous Locations only."
-3. Warning - explosion hazard - do not disconnect equipment while the circuit is live or unless the area is known to be free of ignitable concentration.
-
-   AVERTISSEMENT - RISQUE D'EXPLOSION - NE DÉBRANCHEZ PAS L'ÉQUIPEMENT PENDANT QUE LE CIRCUIT SOIT VIVANT OU À MOINS QUE LA ZONE NE SOIT SANS PROBLÈME DE CONCENTRATIONS IGNITABLES.
-4. The unit shall be powered by a UL listed external AC adapter, output rated 9-26V DC, MINIMUM: 0.2-0.6A, marked LPS or CLASS 2.
+URL: www.inhand.com
 
 ### How to Use This Manual
 

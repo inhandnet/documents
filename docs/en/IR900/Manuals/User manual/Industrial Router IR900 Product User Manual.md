@@ -29,18 +29,9 @@ The following symbols and conventions are used throughout this manual:
 ---
 
 ## Technical Support
+Email: support@inhandnetworks.com
 
-**InHand Networks (Headquarters)**
-
-Add: 43671 Trade Center Place, Suite 100, Dulles, VA 20166 USA
-
-E-mail: support@inhandneworks.com
-
-T: +1 (703) 348-2988
-
-URL: [www.inhandnetworks.com](http://www.inhandnetworks.com/)
-
----
+URL: www.inhand.com
 
 ## How to Use This Manual
 

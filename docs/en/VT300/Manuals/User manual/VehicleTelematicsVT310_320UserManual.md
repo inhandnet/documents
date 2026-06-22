@@ -19,8 +19,9 @@ Due to ongoing updates in product technology and specifications, the company can
 | Note | Supplement and provide necessary explanations for the description of the operation |
 
 ### Technical Support
+Email: support@inhandnetworks.com
 
-For more information, visit [www.inhand.com](https://www.inhand.com/en/resources-center/#/Mobility/InVehicleTelematicsGateways/VT300).
+URL: www.inhand.com
 
 ### How to Use This Manual
 

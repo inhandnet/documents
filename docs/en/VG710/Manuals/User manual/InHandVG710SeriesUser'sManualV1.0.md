@@ -20,14 +20,9 @@ The contents of this manual cannot be copied or reproduced in any form without t
 | ![1690880111626-19f0e794-a520-428a-978b-5b50fbabf8e4.png](./img/Gs3dvISjhRc0qruU/1690880111626-19f0e794-a520-428a-978b-5b50fbabf8e4-827017.webp) | Notes contain detailed descriptions and helpful suggestions. | - |
 
 ## Technical Support
+Email: support@inhandnetworks.com
 
-3650 Concorde Pkwy Suite 200  Chantilly, VA, 20151
-
-T: +1 (703) 348-2988
-
-<www.inhandnetworks.com>
-
-Inquiry: <info@inhandnetworks.com> | Support: <support@inhandnetworks.com>
+URL: www.inhand.com
 
 ## How to Use This Manual
 

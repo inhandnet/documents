@@ -48,36 +48,9 @@ The following symbols and conventions are used throughout this manual to facilit
 | `【 】` | Indicates a menu or page name | Go to the 【System Settings】page |
 
 ### Technical Support
+Email: support@inhandnetworks.com
 
-**InHand Networks (Headquarters)**
-
-Phone: +86 10 8417 0010
-
-Address: 5/F, Building 3, No.18 Ziyue Road, Chaoyang District, Beijing, China
-
-**Chengdu Office**
-
-Phone: +86 28 8679 8244
-
-Address: 14/F, China Taiping Financial Tower, No.1777 North Tianfu Avenue, Wuhou District, Chengdu, Sichuan, China
-
-**Guangzhou Office**
-
-Phone: +86 20 8562 9571
-
-Address: Unit B-130, Yuanyang New Third Board Creative Park, No.5 Taidong East Road, Tianhe District, Guangzhou, China
-
-**Wuhan Office**
-
-Phone: +86 27 8716 3566
-
-Address: Room 2001, Building 11, Bali Haoting, No.2 Luoyu East Road, Hongshan District, Wuhan, Hubei, China
-
-**Shanghai Office**
-
-Phone: +86 21 5480 8501
-
-Address: Room 1103, No.18 Shunyi Road, Putuo District, Shanghai, China
+URL: www.inhand.com
 
 ### How to Use This Manual
 

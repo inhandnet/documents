@@ -1,2081 +1,2161 @@
-Chapter 1  Basic Configuration
+﻿# InSwitch Series Web Configuration Manual
 
-## 1.1  HTTP protocol configuration
+## Declaration
 
-Switches support not only can be configured by CLI and SNMP protocol, it also supports being configured by web. HTTP service port configuration and time configuration of abnormal message overtime and etc are also supported.
+Thank you for choosing our product. Before using the product, read this manual carefully.
 
-### 1.1.1  Language Selection 
+The contents of this manual cannot be copied or reproduced in any form without the written permission of InHand. Due to continuous updating, InHand cannot promise that the contents are consistent with the actual product information, and does not assume any disputes caused by the inconsistency of technical parameters. The information in this document is subject to change without notice. InHand reserves the right of final change and interpretation.
 
-Currently, there are two languages in the Industrial Switch: you may choose English or Chinese. User can set the language in the global configuration mode through the command line as below: 
+漏 2024 InHand Networks. All rights reserved.
 
-  
+## Conventions
 
-Enter the command as shown as below in global configuration mode and then system language changed.
+| Symbol | Indication | Example |
+|:---:|------|------|
+| `< >` | Indicates a variable or parameter to be replaced with an actual value | `<IP address>` indicates a specific IP is required |
+| `" "` | Indicates a window name or menu name | Click the "Save" button |
+| `>>` | Separates a multi-level menu | Security >> User Management |
+| `>` | Indicates a button name | Click the >Set< button |
+| `[ ]` | Indicates optional parameters in CLI commands | `[no] ip http language {english}` |
+| `{ }` | Indicates required parameters in CLI commands | `ip http port {portNumber}` |
 
-  
+## Technical Support
+
+Email: support@inhandnetworks.com
+
+URL: www.inhand.com
+
+## How to Use This Manual
+
+**Finding the Right Section**:
+
+- First-time users: Read sequentially: "Getting to Know the Device" >> "Installation and First Use" >> "Common Scenario Configurations" >> "Feature Descriptions and Parameter Reference"
+- Existing device users: Refer directly to "Feature Descriptions and Parameter Reference" or "Appendix A Troubleshooting"
+- Network administrators: Refer to "Common Scenario Configurations" for task-based guidance
+
+**Quick Navigation by Task**:
+
+| Task | Chapter | Estimated Time |
+|------|----------|----------|
+| Learn about InSwitch appearance and interfaces | [1 Getting to Know the Device](#chapter-1-getting-to-know-the-device) | ~5 min |
+| Access the switch Web interface for the first time | [2 Installation and First Use](#chapter-2-installation-and-first-use) | ~5 min |
+| Configure HTTPS secure access | [3.2 HTTPS Secure Access](#scenario-2-configuring-https-secure-access) | ~10 min |
+| Create and configure VLANs | [3.3 VLAN Network Segmentation](#scenario-3-vlan-network-segmentation) | ~10 min |
+| Set up port security (IP-MAC binding) | [3.4 Port Security](#scenario-4-port-security-with-ip-mac-binding) | ~10 min |
+| Configure Spanning Tree redundancy | [3.5 Spanning Tree Redundancy](#scenario-5-spanning-tree-redundancy) | ~15 min |
+| Set up DHCP server | [3.6 DHCP Server Setup](#scenario-6-dhcp-server-setup) | ~10 min |
+| View feature parameter details | [4 Feature Descriptions](#chapter-4-feature-descriptions-and-parameter-reference) | As needed |
+| Troubleshoot common issues | [Appendix A Troubleshooting](#appendix-a-troubleshooting) | As needed |
+| CLI command reference | [Appendix C CLI Reference](#appendix-c-cli-reference) | As needed |
+
+---
+
+## Chapter 1 Getting to Know the Device
+
+### 1.1 Overview
+
+The InSwitch Series is a family of industrial-grade managed Ethernet switches designed for demanding environments in industrial automation, transportation, energy, and smart city applications. These switches provide comprehensive Layer 2 and Layer 3 networking capabilities, including VLAN management, Spanning Tree Protocol (STP), link aggregation, QoS/priority management, and multiple redundancy ring protocols (EAPS, MEAPS, ERPS). The devices support Web-based management, CLI (Command Line Interface), and SNMP for flexible configuration and monitoring. Security features include 802.1X port authentication, RADIUS, ACL, DHCP Snooping, and DoS prevention.
+
+### 1.2 Factory Reset
+
+The switch can be restored to factory settings via the Web interface.
+
+Navigate to Basic Setting >> Factory Settings. The factory reset page is displayed.
+
+<p align="center"><img src="images/img_b949a0aa.webp" alt="Factory Settings Page"></p>
+
+<p align="center"><strong>Figure 1-1 Factory Settings Page</strong></p>
+
+Click the "Restore" button to reset the device to factory settings.
+
+> **Note**: Restoring factory settings erases all custom configurations. Ensure the current configuration is backed up before performing this operation.
+
+### 1.3 Default Settings
+
+| Parameter | Default Value |
+|-----------|---------------|
+| Management IP Address | 192.168.2.1 |
+| Subnet Mask | 255.255.255.0 |
+| Username | admin |
+| Password | admin |
+| HTTP Port | 80 |
+| HTTPS Port | 443 |
+| HTTP Service | Enabled |
+| Max VLAN Display | 100 |
+| Max IGMP Groups Display | 15 |
+
+---
+
+## Chapter 2 Installation and First Use
+
+### 2.1 Pre-installation Preparation
+
+(Physical installation instructions not detailed in source document, to be supplemented)
+
+Before accessing the switch via Web browser, verify the following requirements are met:
+
+| Requirement | Details |
+|-------------|---------|
+| Browser compatibility | HTML 4.0, HTTP 1.1, JavaScript 1.5 or above |
+| Network connectivity | The computer must be connected to the same network as the switch |
+| Switch firmware | The main program file running on the switch must support Web access |
+
+> **Note**: Ensure the switch firmware supports Web access. If the switch was upgraded to a Web-supported version during operation, additional steps may be required. See [Upgrading to Web-Supported Version](#424-upgrading-to-web-supported-version) for details.
+
+### 2.2 Installation Guide
+
+(Physical installation steps 鈥?DIN rail mounting, wall mounting, power connection, network cabling 鈥?not detailed in source document, to be supplemented)
+
+#### 2.2.1 Initial Web Access
+
+To access the switch Web interface for the first time:
+
+1. Set the computer's network adapter IP address to 192.168.2.2 and subnet mask to 255.255.255.0.
+2. Open a Web browser and enter `192.168.2.1` in the address bar. This is the default management address of the switch.
+3. Enter the username and password in the authentication dialog box. Both the default username and password are `admin` (case-sensitive).
+
+<p align="center"><img src="images/img_b78ebb87.webp" alt="Web Login Authentication Dialog"></p>
+
+<p align="center"><strong>Figure 2-1 Web Login Authentication Dialog</strong></p>
+
+4. After successful authentication, the system information page of the switch is displayed.
+
+### 2.3 Quick Check
+
+After completing the initial access, verify the following:
+
+- [ ] The Web login page loads correctly at `http://192.168.2.1`
+- [ ] Authentication succeeds with the default credentials (admin/admin)
+- [ ] The system information page displays the switch model and firmware version
+- [ ] The navigation bar on the left side lists all configuration categories
+- [ ] The "Save" button on the top control bar is accessible
+
+---
+
+## Chapter 3 Common Scenario Configurations
+
+### Scenario 1: Initial Web Access to the Switch
+
+**Objective**: Access the switch management Web interface from a computer for the first time.
+
+**Prerequisites**: The computer is connected to the same network as the switch. The switch is powered on.
+
+**Estimated Time**: ~5 minutes.
+
+**Steps**:
+
+1. Configure the computer's network adapter with IP address 192.168.2.2 and subnet mask 255.255.255.0.
+2. Open a Web browser (Chrome, Firefox, or Internet Explorer) and enter `http://192.168.2.1` in the address bar.
+3. In the authentication dialog, enter username `admin` and password `admin`.
+4. After successful login, the switch system information page is displayed.
+5. Click "Save" on the top control bar to save any configuration changes.
+
+**Verification**:
+
+1. Confirm the system information page displays correctly with device model and firmware version.
+2. Navigate through the menu items to verify all configuration pages are accessible.
+
+**Common Issues**:
+
+- Unable to load the login page: Verify the computer IP address is in the 192.168.2.x range and the subnet mask is 255.255.255.0.
+- Authentication failure: Confirm the username and password are entered in the correct case. The default credentials are `admin`/`admin`.
+
+### Scenario 2: Configuring HTTPS Secure Access
+
+**Objective**: Enable HTTPS encrypted access to the switch Web interface and disable insecure HTTP access.
+
+**Prerequisites**: The switch is accessible via CLI (Console or Telnet). A management IP address is configured.
+
+**Estimated Time**: ~10 minutes.
+
+**Steps**:
+
+1. Connect to the switch via Console port or Telnet to the management address.
+2. Enter global configuration mode (prompt: `Switch_config#`).
+3. If the management IP address is not configured, create the VLAN interface and assign an IP address.
+4. Enter `ip http server` to enable the Web service.
+5. Set the username and password using the `username` command (refer to the Security Configuration section).
+6. Enter `ip http ssl-access enable` to enable HTTPS secure access.
+7. Enter `no ip http http-access enable` to disable insecure HTTP access.
+8. Enter `write` to save the configuration.
+9. Open a Web browser on the connected computer and enter `https://192.168.2.1` (replace with the actual management IP) in the address bar.
+
+**Verification**:
+
+1. Confirm that `https://192.168.2.1` loads the login page with a secure connection indicator.
+2. Confirm that `http://192.168.2.1` is no longer accessible.
+
+**Common Issues**:
+
+- Browser shows a certificate warning: This is expected for self-signed certificates. Proceed by accepting the security exception.
+- HTTPS page does not load: Verify that `ip http ssl-access enable` was entered in global configuration mode and the configuration was saved.
+
+### Scenario 3: VLAN Network Segmentation
+
+**Objective**: Create VLANs and assign ports to separate network segments for traffic isolation.
+
+**Prerequisites**: The switch is accessible via the Web interface. Login credentials are available.
+
+**Estimated Time**: ~10 minutes.
+
+**Steps**:
+
+1. Navigate to Switching >> VLAN and select the "VLAN configuration" tab.
+2. Click "Create" at the bottom control bar to create a new VLAN.
+3. Enter a VLAN ID (e.g., 10) and an optional VLAN name (e.g., "Engineering").
+4. In the port list, configure each port's default VLAN, VLAN mode (Trunk or Access), and whether to allow current VLAN packets.
+5. Click "Set" to apply the configuration.
+6. Repeat steps 2鈥? for additional VLANs as needed.
+7. Click "Save" on the top control bar to save the configuration.
+
+**Verification**:
+
+1. Navigate to the VLAN configuration page and confirm the newly created VLANs appear in the list.
+2. Verify that port assignments match the intended configuration.
+3. Test network connectivity between devices in the same VLAN and confirm isolation between different VLANs.
+
+**Common Issues**:
+
+- VLAN list does not display all VLANs: The default maximum display is 100 VLANs. Use CLI command `ip http web max-vlan` to increase the limit.
+- Port mode configuration error: When a port in Trunk mode serves as an egress port, it untags the default VLAN by default.
+
+### Scenario 4: Port Security with IP-MAC Binding
+
+**Objective**: Bind specific IP and MAC addresses to switch ports to prevent unauthorized network access.
+
+**Prerequisites**: The switch is accessible via the Web interface. The IP and MAC addresses of authorized devices are known.
+
+**Estimated Time**: ~10 minutes.
+
+**Steps**:
+
+1. Navigate to Security >> Port Security and click "IP MAC Binding".
+2. Click "Detail" next to the target port to view existing binding information.
+3. Click "Create" to add a new IP-MAC binding entry.
+4. Enter the IP address, MAC address, and select the target port.
+5. Click "Set" to apply the binding.
+6. Repeat for additional binding entries as needed.
+7. Click "Save" on the top control bar to save the configuration.
+
+**Verification**:
+
+1. Navigate back to the IP-MAC Binding page and confirm the new entries appear in the list.
+2. Test that authorized devices can access the network through the configured port.
+3. Test that unauthorized devices (with different IP/MAC combinations) are blocked.
+
+**Common Issues**:
+
+- Binding entry not taking effect: Verify that the DHCP Snooping protocol is enabled if using dynamic bindings.
+- Devices losing connectivity: Ensure the bound IP and MAC addresses match the actual device parameters exactly.
+
+### Scenario 5: Spanning Tree Redundancy
+
+**Objective**: Enable Spanning Tree Protocol (STP) to prevent network loops and provide link redundancy.
+
+**Prerequisites**: The switch is accessible via the Web interface. The network topology includes redundant links.
+
+**Estimated Time**: ~15 minutes.
+
+**Steps**:
+
+1. Navigate to Redundancy >> Spanning Tree >> Global.
+2. Select the protocol type (STP, RSTP, or MSTP) and configure the spanning tree priority.
+3. Click "Set" to apply the global configuration.
+4. Navigate to Redundancy >> Spanning Tree >> Ports and select the "Port Configuration" tab.
+5. Configure per-port parameters: protocol status, priority, path cost, edge port, BPDU guard, and BPDU filter.
+6. Click "Set" to apply the port configuration.
+7. Click "Save" on the top control bar to save the configuration.
+
+**Verification**:
+
+1. Navigate to the "Port Status" tab under Spanning Tree Ports and verify port roles (Root, Designated, Blocking, etc.).
+2. Confirm that the network operates without loops.
+3. Disconnect a primary link and verify that traffic fails over to the secondary link.
+
+**Common Issues**:
+
+- Spanning tree not converging: Verify that all switches in the network have compatible STP configurations.
+- Port stuck in blocking state: Check port priority and path cost settings.
+
+### Scenario 6: DHCP Server Setup
+
+**Objective**: Configure the switch as a DHCP server to automatically assign IP addresses to connected devices.
+
+**Prerequisites**: The switch is accessible via the Web interface. A VLAN interface with an IP address is configured.
+
+**Estimated Time**: ~10 minutes.
+
+**Steps**:
+
+1. Navigate to Advanced >> DHCP Server >> Global.
+2. Enable the DHCP server feature. Configure ICMP packet count and timeout as needed (defaults: 2 packets, 5 seconds).
+3. Click "Set" to apply the global configuration.
+4. Navigate to Advanced >> DHCP Server >> Pool.
+5. Click "Create" to add a new DHCP address pool.
+6. Configure pool parameters: pool name, network address, subnet mask, default gateway, DNS server, and lease time.
+7. Click "Set" to apply the pool configuration.
+8. Click "Save" on the top control bar to save the configuration.
+
+**Verification**:
+
+1. Connect a client device to a switch port associated with the DHCP pool's VLAN.
+2. Verify the client automatically receives an IP address within the configured pool range.
+3. Confirm the client can reach the default gateway and DNS server.
+
+**Common Issues**:
+
+- Client not receiving an IP address: Verify the DHCP server is enabled globally and the pool network matches the VLAN interface subnet.
+- IP address conflict: Ensure the DHCP pool range does not overlap with statically assigned addresses.
+
+---
+
+## Chapter 4 Feature Descriptions and Parameter Reference
+
+### 4.1 HTTP/HTTPS Protocol Configuration
+
+The switch supports configuration via CLI, SNMP, and Web interface. This section describes the HTTP and HTTPS protocol configuration options.
+
+#### 4.1.1 Language Selection
+
+The Web interface supports English and Chinese. The language setting can be configured in global configuration mode via CLI.
 
 | Command | Description |
-| --- | --- |
-| \[no\] ip http language {english} | Setting the Web language to English. The Web interface will turn into the English version. |
+|---------|-------------|
+| `[no] ip http language {english}` | Set the Web language to English. The Web interface displays in the English version. |
 
-### 1.1.2  HTTP service port configuration 
+#### 4.1.2 HTTP Service Port Configuration
 
-Generally, the HTTP port is port 80 by default, and users can access a switch by entering the IP address directly; however, switches also support users to change the service port and after the service port is changed you have to use the IP address and the changed port to access switches. For example, if you set the IP address and the service port to 192.168.2.1 and 1234 respectively, the HTTP access address should be changed to http:// 192.168.2.1:1234. You’d better not use other common protocols’ ports so that access collision would not happen. For example, ftp-20，telnet-23，dns-53，snmp-161. Because the ports used by a lot of protocols are hard to remember, you’d better use port IDs following port 1024.
+The default HTTP port is 80. Users can access the switch by entering the IP address directly. The service port can be changed; after modification, the IP address and new port must be used together to access the switch. For example, if the IP address is 192.168.2.1 and the port is changed to 1234, the access address becomes `http://192.168.2.1:1234`.
 
-  
-
-| Command | Purpose |
-| --- | --- |
-| ip http port { portNumber } | Configuring HTTP service port |
-
-### 1.1.3  Enabling the HTTP service
-
-Switches support to control the HTTP access. Only when the HTTP service is enabled can HTTP exchange happen between switch and PC and, when the HTTP service is closed, HTTP exchange stops. Configure global mode by the following command:
-
-| Command | Purpose |
-| --- | --- |
-| ip http server | Enabling HTTP service |
-
-### 1.1.4  HTTP access mode Configuration 
-
-You can access a switch through two access modes: HTTP access and HTTPS access, and you can use the following command to set the access mode to HTTP.
-
-  
-
-| Command | Purpose |
-| --- | --- |
-| ip http http-access enable | Configuring HTTP access mode |
-
-  
-
-### 1.1.5  Setting the Max-VLAN number to display in Web page
-
-Setting a value between 1 and 4094 in the global configuration mode ( 4094 which is the max value, default max-vlan value is 100) .
-
-  
+> **Note**: Avoid using well-known protocol ports (e.g., FTP-20, Telnet-23, DNS-53, SNMP-161). Ports above 1024 are recommended.
 
 | Command | Description |
-| --- | --- |
-| ip http web max-vlan { max-vlan } | Setting the Max-VLAN numbers to display in Web page |
+|---------|-------------|
+| `ip http port {portNumber}` | Configure the HTTP service port |
 
-### 1.1.6  Setting the IGMP-Groups number to display in Web page 
+#### 4.1.3 Enabling the HTTP Service
 
-Setting a value between 1 and 100 in the global configuration mode (100 is the max value, default value is 15).
-
-  
+HTTP access is controlled by enabling or disabling the HTTP service. When disabled, HTTP communication between the switch and PC stops.
 
 | Command | Description |
-| --- | --- |
-| ip http web igmp-groups { igmp-groups } | Setting the IGMP-Groups number to display in Web page |
+|---------|-------------|
+| `ip http server` | Enable the HTTP service |
 
-## 1.2  HTTPS Configuration 
+#### 4.1.4 HTTP Access Mode Configuration
 
-In order to improve the security of communications, switches support not only the HTTP protocol but also the HTTPS protocol. HTTPS is a security-purposed HTTP channel and it is added to the SSL layer under HTTP.
-
-### 1.2.1  HTTPS Access Configuration 
-
-You can run the following command to set the access mode to HTTPS at global configuration mode.
+The switch supports two access modes: HTTP and HTTPS.
 
 | Command | Description |
-| --- | --- |
-| ip http ssl-access enable | Enable the HTTPS access mode |
+|---------|-------------|
+| `ip http http-access enable` | Configure HTTP access mode |
 
-### 1.2.2  HTTPS Service Port Configuration
+#### 4.1.5 Max-VLAN Display Setting
 
-As same as the HTTP service port, the service port in HTTPS is number 443. User can change the port number through command line in global configuration mode. Suggesting the port number is bigger than 1024 so as to avoid the port number collision. 
+Configure the maximum number of VLANs displayed on the Web page. Valid range: 1鈥?094 (default: 100).
 
 | Command | Description |
-| --- | --- |
-| ip http secure-port {portNumber} | Setting the HTTPS port number |
+|---------|-------------|
+| `ip http web max-vlan {max-vlan}` | Set the maximum VLAN count displayed on the Web page |
 
-# Chapter 2   Accessing Switch
+#### 4.1.6 IGMP-Groups Display Setting
 
-## 2.1      Accessing the Switch Through Web 
+Configure the maximum number of IGMP groups displayed on the Web page. Valid range: 1鈥?00 (default: 15).
 
-When accessing the switch through Web browser, please make sure that the applied browser complies with the following requirements:
+| Command | Description |
+|---------|-------------|
+| `ip http web igmp-groups {igmp-groups}` | Set the maximum IGMP group count displayed on the Web page |
 
-  
+#### 4.1.7 HTTPS Access Configuration
 
-HTML of version 4.0 
+| Command | Description |
+|---------|-------------|
+| `ip http ssl-access enable` | Enable HTTPS access mode |
 
-HTTP of version 1.1 
+#### 4.1.8 HTTPS Service Port Configuration
 
-JavaScriptTM of version 1.5 
+The default HTTPS port is 443. The port can be changed via CLI. Ports above 1024 are recommended to avoid collision.
 
-  
+| Command | Description |
+|---------|-------------|
+| `ip http secure-port {portNumber}` | Set the HTTPS port number |
 
-What's more, please ensure that the main program file, which is running on the switch, supports Web access and your computer has already connected to the network which the switch is located.
+### 4.2 Web Interface Overview
 
-  
+After login, the Web homepage consists of four areas: the top control bar, the navigation bar, the configuration display area, and the bottom control bar.
 
-## 2.2  Initially Accessing the Switch
+#### 4.2.1 Top Control Bar
 
-When the switch is initially used, you can use the Web access without any extra settings:
+<p align="center"><img src="images/img_17fdf544.png" alt="Top Control Bar"></p>
 
-1.  Modify the IP address of the network adapter and subnet mask of your computer to 192.168.2.2 and 255.255.255.0 respectively.
-2.  Open the Web browser and enter 192.168.2.1 in the address bar. It is noted that 192.168.2.1 is the default management address of the switch.
-3.  If the IE browser is used, please enter the username and the password in the ID authentication dialog box. Both the original username and the password are “admin”, which is capital sensitive.
+<p align="center"><strong>Figure 4-1 Top Control Bar</strong></p>
 
- ![](images/img_b78ebb87.png)
+| Button | Function |
+|--------|----------|
+| Save | Write the current settings to the device configuration file. Equivalent to the `write` command. Configuration changes made via Web are not automatically saved. Unsaved configuration is lost after reboot. |
+| English | Switch the interface to English. |
+| Chinese | Switch the interface to Chinese. |
 
-  
+#### 4.2.2 Navigation Bar
 
-4.  After successful authentication, the systematic information about the switch will appear on the IE browser.
+<p align="center"><img src="images/img_a8ff52c2.webp" alt="Navigation Bar"></p>
 
-  
+<p align="center"><strong>Figure 4-2 Navigation Bar</strong></p>
 
-### 2.2.1  Upgrading to the Web-Supported Version 
+The navigation bar displays configuration categories in a list format, classified by type. The default view opens at "System". To configure a specific item, click the group name and then the sub-item. For example, to view port traffic statistics, navigate to "Diagnostics" >> "Ports" >> "Statistics Table".
 
-If your switch is upgraded to the Web-supported version during its operation and the switch has already stored its configuration files, then Web visit cannot be directly applied on the switch. Perform the following steps one by one to enable the Web visit on the switch:
+> **Note**: A limited user can only view the device state and cannot modify configuration. When logged in with limited user permissions, only "System" is displayed.
 
-1.  Connect the console port of the switch with the accessory cable, or telnet to the management address of the switch through computer.
-2.  Enter the global configuration mode of the switch through the command line, the DOS prompt of which is similar to “Switch\_config#”. 
-3.  If the management address of the switch is not configured, please create the VLAN interface and configure the IP address.
-4.  Enter the ip http server command in global configuration mode and start the Web service.
-5.  Run username to set the username and password of the switch. For how to use this command, refer to the “Security Configuration” section in the user manual.
+#### 4.2.3 Configuration Display Area
 
-After the above-mentioned steps are performed, you can enter the address of the switch in the Web browser to access the switch.
+<p align="center"><img src="images/img_283522d9.png" alt="Configuration Display Area"></p>
 
-6.  Enter write to save the current configuration to the configuration file.
+<p align="center"><strong>Figure 4-3 Configuration Display Area</strong></p>
 
-  
+The configuration display area shows the device state and configuration. The content changes based on the selected navigation bar item.
 
-## 2.3      Accessing Switch Through Secure Links
+#### 4.2.4 Bottom Control Bar
 
-The data between the WEB browser and the switch will not be encrypted if you access switch through common HTTP. To encrypt these data, you can use the secure links, which are based on the secure sockets layer, to access the switch.
+<p align="center"><img src="images/img_f77e1498.png" alt="Bottom Control Bar - Set and Reload"></p>
 
-  
+<p align="center"><strong>Figure 4-4 Bottom Control Bar - Set and Reload</strong></p>
 
-To do this, you should follow the following steps:
+<p align="center"><img src="images/img_80ed2036.webp" alt="Bottom Control Bar - Create and Delete"></p>
 
-  
+<p align="center"><strong>Figure 4-5 Bottom Control Bar - Create and Delete</strong></p>
 
-1.  Connect the console port of the switch with the accessory cable, or telnet to the management address of the switch through computer.
-2.  Enter the global configuration mode of the switch through the command line, the DOS prompt of which is similar to “Switch\_config#”.
-3.  If the management address of the switch is not configured, please create the VLAN interface and configure the IP address.
-4.  Enter the ip http server command at global configuration mode and start the Web service.
-5.  Run username to set the username and password of the switch. For how to use this command, please refer to the “Security Configuration” section in the user manual.
-6.  Run ip http ssl-access enable to enable the secure link access of the switch.
-7.  Run no ip http http-access enable to forbid to access the switch through insecure links.
-8.  Enter write to store the current configuration to the configuration file.
-9.  Open the WEB browser on PC that the switch connects, enter https://192.168.2.1 on the address bar (192.168.2.1 stands for the management IP address of the switch) and then press the Enter key. Then the switch can be accessed through the secure links.
+<p align="center"><img src="images/img_ea1499e7.png" alt="Bottom Control Bar - Go Back and Clear"></p>
 
-## 2.4  Introduction of Web Interface 
+<p align="center"><strong>Figure 4-6 Bottom Control Bar - Go Back and Clear</strong></p>
 
-The Web homepage appears after login, the whole homepage consists of the top control bar, the navigation bar, the configuration display area and the bottom control bar.
+| Button | Function |
+|--------|----------|
+| Set | Apply the modified configuration to the device. Applying configuration does not save it to the configuration file. To save, click "Save" on the top control bar. |
+| Reload | Refresh the content displayed in the current configuration area. |
+| Create | Create a new list item (e.g., a VLAN or a new user). |
+| Delete | Delete a selected item from the list. |
+| Go Back | Return to the previous-level configuration page. |
+| Clear | Clear current configuration content (e.g., port statistics). |
 
-  
+#### 4.2.5 Upgrading to Web-Supported Version
 
-### 2.4.1  Top Control Bar 
+If the switch is upgraded to a Web-supported firmware version during operation and has stored configuration files, Web access may not be directly available. Perform the following steps to enable Web access:
 
-![](images/img_17fdf544.png)
+1. Connect to the console port of the switch with the accessory cable, or Telnet to the management address.
+2. Enter global configuration mode (`Switch_config#`).
+3. If the management address is not configured, create the VLAN interface and configure the IP address.
+4. Enter `ip http server` in global configuration mode to start the Web service.
+5. Run the `username` command to set the username and password. Refer to the Security Configuration section.
+6. Enter `write` to save the configuration.
 
-| Save | Write the current settings to the configuration file of the device. It is equivalent to the execution of the write command.The configuration that is made through Web will not be promptly written to the configuration file after validation. If you click “Save”, the unsaved configuration will be lost after rebooting. |
-| --- | --- |
-| English | The interface will turn into the English version. |
-| Chinese | The interface will turn into the Chinese version. |
+After these steps, enter the switch address in a Web browser to access the device.
 
-  
+### 4.3 Basic Settings
 
-### 2.4.2  Navigation Bar
+<p align="center"><img src="images/img_9f63d12f.webp" alt="Basic Setting Navigation"></p>
 
-![](images/img_a8ff52c2.png)
+<p align="center"><strong>Figure 4-7 Basic Setting Navigation Menu</strong></p>
 
-The contents in the navigation bar are shown in a form of list and classified according to types. By default, the list is located at “system”. If a certain item need be configured, please click the group name and then the sub-item. For example, to browse the flux of the current port, you have to click “Diagnostics" and then “Ports”, “Statistics Table”.
+#### 4.3.1 System
 
-Note:
+Navigate to Basic Setting >> System.
 
-The limited user can only browse the state of the device and cannot modify the configuration of the device. If you log on to the Web with limited user’s permissions, only “System” will appear.
+<p align="center"><img src="images/img_9d814ddd.webp" alt="System Information Page"></p>
 
-### 2.4.3  Configuration Display Area
+<p align="center"><strong>Figure 4-8 System Information Page</strong></p>
 
-  
+<p align="center"><img src="images/img_cef4a8fa.webp" alt="System Configuration Page"></p>
 
-![](images/img_283522d9.png)
+<p align="center"><strong>Figure 4-9 System Configuration Page</strong></p>
 
-  
+This page displays system messages and allows configuration of the device hostname. The default hostname is "Switch". Enter a new hostname in the text box and click "Set" in the bottom control bar to apply.
 
-The configuration display area shows the state and configuration of the device. The contents of this area can be modified by the clicking of the items in the navigation bar.
+#### 4.3.2 Global Network Configuration (Management Interface)
 
-  
+Navigate to Basic Setting >> Global Network Config.
 
-### 2.4.4  Bottom Control Bar
+<p align="center"><img src="images/img_9d0e36b1.png" alt="Global Network Configuration Page"></p>
 
-![](images/img_f77e1498.png)![](images/img_80ed2036.png)![](images/img_ea1499e7.png)
+<p align="center"><strong>Figure 4-10 Global Network Configuration Page</strong></p>
 
-The configuration area always contains one or more buttons, and their functions are listed in the following table:
+This page configures the IP address of Interface VLAN 1 for switch management access. In the initial state, the device MAC address, interface IP address, subnet mask, and gateway are displayed.
 
-| Set | Apply the modified configuration to the device.The application of the configuration does not mean that the configuration is saved in the configuration file. To save the configuration, you have to click “Save” on the top control bar. |
-| --- | --- |
-| Reload | Refresh the content shown in the current configuration area. |
-| Create | Create a list item. For example, you can create a VLAN item or a new user. |
-| Delete | Delete an item in the list. |
-| Go Back | Go back to the previous-level configuration page. |
-| Clear | Clear the content of current configuration, such as statistics of port. |
+#### 4.3.3 Port Configuration
 
-  
+Navigate to Basic Setting >> Port Configuration.
 
-  
+<p align="center"><img src="images/img_ffbafdd6.webp" alt="Port Configuration Page"></p>
 
-# Chapter 3    Basic Configuration 
+<p align="center"><strong>Figure 4-11 Port Configuration Page</strong></p>
 
-![](images/img_9f63d12f.png)
+This page allows modification of port status, speed, duplex mode, and flow control.
 
-## 3.1  System
+> **Note**: Modifying a port's speed or duplex mode may cause link switching, which can affect network communication.
 
-If you click Basic Setting -> System in the navigation bar, the page appears as shown as below：
+#### 4.3.4 Auto-Shutdown
 
- ![](images/img_9d814ddd.png)
+Navigate to Basic Setting >> Auto-Shutdown.
 
- ![](images/img_cef4a8fa.png)
+<p align="center"><img src="images/img_b87b8073.webp" alt="Auto-Shutdown Configuration Page"></p>
 
-  
+<p align="center"><strong>Figure 4-12 Auto-Shutdown Configuration Page</strong></p>
 
-The system message will be displayed in the dialog box.
+This page configures the auto-shutdown port and shutdown delay time. Click "Set" to apply the configuration, then click "Save" on the top control bar. The corresponding port shuts down after the configured delay time following switch power-on.
 
-The default name of the device is “Switch”. You can enter the new hostname in the text box and then click “Set” in the bottom control bar.
+#### 4.3.5 Software Management
 
-  
+Navigate to Basic Setting >> Software.
 
-## 3.2  Global Configuration Mode (Management Interface) 
+<p align="center"><img src="images/img_57a79dc4.webp" alt="Software Management Page"></p>
 
-If you click Basic Setting -> Global Network Config in the navigation bar, the page appears as shown as below: 
+<p align="center"><strong>Figure 4-13 Software Management Page</strong></p>
 
-![](images/img_9d0e36b1.png)
+This page displays the current running version and ROM version. Click "Export" to export the current running version to a computer. In the Software Update section, select the firmware file to update and click "Update" to change the system software version.
 
-2.  Setting the IP address of Interface VLAN 1 , in order to access the switch
-3.  This page is used to set the IP address of Interface Vlan 1 in the management interface of the device. In initial conditions, the MAC address of the device, the IP address, mask and gateway of the interface will appear on this page. 
+> **Note**: The updated software takes effect only after the device is restarted.
 
-  
+#### 4.3.6 Load/Save Configuration
 
-## 3.3  Port Configuration 
+Navigate to Basic Setting >> Load/Save.
 
-If you click Basic Setting -> Port Configuration in the navigation bar, the Port Configuration page appears, as shown as below figure:
+<p align="center"><img src="images/img_a8ded63c.webp" alt="Load/Save Configuration Page"></p>
 
-![](images/img_ffbafdd6.png)
+<p align="center"><strong>Figure 4-14 Load/Save Configuration Page</strong></p>
 
-  
+Click "Export" to export the current system configuration to a computer. Click "Import" to import a configuration file to the switch.
 
-You can change the status, speed, duplex mode and flow control of a port on this page.
+#### 4.3.7 Restart
 
-Note: 
+Navigate to Basic Setting >> Restart.
 
-Port link switching might happen if modifying port’s speed or duplex mode. Network communication might be affected.
+<p align="center"><img src="images/img_c1c5546d.png" alt="Restart Page"></p>
 
-  
+<p align="center"><strong>Figure 4-15 Restart Page</strong></p>
 
-## 3.4  Auto-Shutdown
+Options available on this page:
+- **Reboot**: Restart the switch.
+- **Clear MAC Address Table**: Clear the MAC address table.
+- **Clear ARP Table**: Clear the ARP table.
+- **Clear port counters**: Reset all port statistics counters.
 
-Click Basic Setting -> auto-shutdown in the navigation bar, the auto-shutdown page appears, as shown as bellow:
+#### 4.3.8 Factory Settings
 
-![](images/img_b87b8073.png)
+Navigate to Basic Setting >> Factory Settings.
 
-This page set the auto-shutdown port and delay time of shutdown. Click the Set in the bottom control bar to complete the configuration, and click the Save on the top. The corresponding port will be shutdown in delayed time after the switch turned on.
+<p align="center"><img src="images/img_b949a0aa.webp" alt="Factory Settings Page"></p>
 
-## 3.5  Software 
+<p align="center"><strong>Figure 4-16 Factory Settings Page</strong></p>
 
-If you click Basic Setting -> Software in the navigation bar, the Software management page appears, as shown as below figure:
+Click the "Restore" button to reset the device to factory settings.
 
-![](images/img_57a79dc4.png)
+### 4.4 Security
 
-  
+<p align="center"><img src="images/img_1c2c1fc0.webp" alt="Security Navigation Menu"></p>
 
-Current running version and ROM version could be checked at this page. Click Export to export current running version to computer. Choose the to-be-updated software version and click Update to change system’s software version on Software Update Column.
+<p align="center"><strong>Figure 4-17 Security Navigation Menu</strong></p>
 
-  
+#### 4.4.1 User Management
 
-Note: The updated system’s software will be valid only if the device is restarted.
+**User Management**
 
-  
+Navigate to Security >> User Management.
 
-## 3.6  Load/Save 
+<p align="center"><img src="images/img_85de11ca.png" alt="User Management Page"></p>
 
-If you click Basic Setting -> Load/Save in the navigation bar, the page appears as shown as below figure:
+<p align="center"><strong>Figure 4-18 User Management Page</strong></p>
 
-![](images/img_a8ded63c.png)
+Click "Modify" to change a user's configuration. Select a user and click "Delete" to remove the selected user.
 
-Click the “Export” then the current configuration of system will be exported to computer, click the “ Import” then related configuration document will be imported to switch.
+Click "Create" to open the user creation page:
 
-## 3.7  Restart 
+<p align="center"><img src="images/img_7cca1841.png" alt="Create User Page"></p>
 
-If you click Basic Setting -> Restart in the navigation bar, the page appears as shown as below figure:
+<p align="center"><strong>Figure 4-19 Create User Page</strong></p>
 
-![](images/img_c1c5546d.png)
+Fill in the configuration fields and click "Set" to create a new user. Click "Reload" to refresh user information. Click "Go Back" to return to the previous page.
 
-You can choose “Reboot” to reboot the switch, or choose “Clear MAC Address Table” , “Clear ARP Table”, “Clear port counters”.
+**Group Management**
 
-## 3.8  Factory Settings
+Navigate to Security >> User Management, then click "Group Management".
 
-![](images/img_b949a0aa.png)
+<p align="center"><img src="images/img_2d178f38.png" alt="Group Management Page"></p>
 
-On this page you can reset the equipment to factory setting, click the “Restore” button to reset to factory setting.
+<p align="center"><strong>Figure 4-20 Group Management Page</strong></p>
 
-# Chapter 4  Security 
+Click "Modify" to change a user group's configuration. Select a group and click "Delete" to remove it. Click "Detail" to view and configure group members:
 
-![](images/img_1c2c1fc0.png)
+<p align="center"><img src="images/img_f19f8071.png" alt="Group Detail Page"></p>
 
-## 4.1  User Management 
+<p align="center"><strong>Figure 4-21 Group Detail Page</strong></p>
 
-### 4.1.1  User Management 
+Click "Create" to open the group creation page:
 
-If you click Security -> User Management in the navigation bar, the page appears as shown as below figure:
+<p align="center"><img src="images/img_e0060077.png" alt="Create Group Page"></p>
 
-  
+<p align="center"><strong>Figure 4-22 Create Group Page</strong></p>
 
-![](images/img_85de11ca.png)
+Fill in the configuration fields and click "Set" to create a new user group.
 
-Click Modify to change user’s configuration at this page, and click Delete at the bottom bar to delete the selected user.
+**Password Rule Management**
 
-  
+Navigate to Security >> User Management, then click "Pass Management".
 
-Click Create at the bottom bar to enter the following page:
+<p align="center"><img src="images/img_85798d5f.png" alt="Password Rule Management Page"></p>
 
-  
+<p align="center"><strong>Figure 4-23 Password Rule Management Page</strong></p>
 
-![](images/img_7cca1841.png)
+Click "Modify" to change password rules. Click "Delete" to remove a password rule.
 
-Fill in configuration at every configuration column and click Set at the bottom bar to create new user. Click Reload to refresh the user information. And click Go Back to go back to previous level page.
+Click "Create" to open the password rule creation page:
 
-  
+<p align="center"><img src="images/img_a0a152c4.png" alt="Create Password Rule Page"></p>
 
-### 4.1.2  Group Management
+<p align="center"><strong>Figure 4-24 Create Password Rule Page</strong></p>
 
-Click Security -> User Management in order and then click Group Management to open configuration page as following:
+Fill in the configuration fields and click "Set" to create a new password rule.
 
-![](images/img_2d178f38.png)
+**Authorization Rule Management**
 
-Click Modify to change user group’s configuration at this page. Select user and click Delete at the bottom bar to delete the selected user group. Click Detail to check and configure members of group as following:
+Navigate to Security >> User Management, then click "Author Management".
 
-![](images/img_f19f8071.png)
+<p align="center"><img src="images/img_9aeaedbd.png" alt="Authorization Rule Management Page"></p>
 
-  
+<p align="center"><strong>Figure 4-25 Authorization Rule Management Page</strong></p>
 
-Click Create at the bottom bar of group management page to enter the following page:
+Click "Modify" to change authorization rules. Click "Delete" to remove authorization rules.
 
-![](images/img_e0060077.png)
+Click "Create" to open the authorization rule creation page:
 
-Fill in configuration at every configuration column and click Set at the bottom bar to create a new user group.
+<p align="center"><img src="images/img_1a3a003d.png" alt="Create Authorization Rule Page"></p>
 
-  
+<p align="center"><strong>Figure 4-26 Create Authorization Rule Page</strong></p>
 
-### 4.1.3  Password Rule Management
+Fill in the configuration fields and click "Set" to create new authorization rules.
 
-Click Security -> User Management in order and then click Pass Management to open configuration page as following:
+**Authentication Rule Management**
 
-  
+Navigate to Security >> User Management, then click "Authen Management".
 
-![](images/img_85798d5f.png)
+<p align="center"><img src="images/img_9693193c.png" alt="Authentication Rule Management Page"></p>
 
-Click Modify to change password regulation at this page. Click Delete at the bottom bar to delete password regulation. 
+<p align="center"><strong>Figure 4-27 Authentication Rule Management Page</strong></p>
 
-  
+Click "Modify" to change authentication rules. Click "Delete" to remove authentication rules.
 
-Click Create at the bottom bar to enter the following configuration page:
+Click "Create" to open the authentication rule creation page:
 
-![](images/img_a0a152c4.png)
+<p align="center"><img src="images/img_e5eafb9e.png" alt="Create Authentication Rule Page"></p>
 
-Fill in configuration at every configuration column and click Set at the bottom bar to create new password regulation.
+<p align="center"><strong>Figure 4-28 Create Authentication Rule Page</strong></p>
 
-  
+Fill in the configuration fields and click "Set" to create new authentication rules.
 
-### 4.1.4  Author Rule Management
+#### 4.4.2 Management Access
 
-Click Security -> User Management in order and then click Author Management to open configuration page as following:
+**Server Configuration**
 
-  
+Navigate to Security >> Management Access >> Server. This page allows configuration of HTTP, HTTPS, SSH, and SNMP services.
 
-![](images/img_9aeaedbd.png)
+Click "HTTP" to configure HTTP settings:
 
-Click Modify to change author rules at this page. Click Delete at the bottom bar to delete author rules. 
+<p align="center"><img src="images/img_4f7a6eaf.webp" alt="HTTP Server Configuration"></p>
 
-Click Create at the bottom bar to enter the following page:
+<p align="center"><strong>Figure 4-29 HTTP Server Configuration</strong></p>
 
-  
+Click "HTTPS" to configure HTTPS settings:
 
-![](images/img_1a3a003d.png)
+<p align="center"><img src="images/img_321336f4.webp" alt="HTTPS Configuration"></p>
 
-Fill in configuration at every configuration column and click Set at the bottom bar to create new author rules.
+<p align="center"><strong>Figure 4-30 HTTPS Configuration</strong></p>
 
-  
+Click "SSH" to configure SSH settings.
 
-### 4.1.5  Authentication Rule Management
+Click "SNMP" to configure SNMP settings:
 
-Click Security -> User Management in order and then click Authen Management to open configuration page as following:
+<p align="center"><img src="images/img_6128304c.png" alt="SNMP Configuration - Part 1"></p>
 
-![](images/img_9693193c.png)
+<p align="center"><strong>Figure 4-31 SNMP Configuration - Part 1</strong></p>
 
-Click Modify to change authentication rules at this page. Click Delete at the bottom bar to delete the selected authentication rules. 
+<p align="center"><img src="images/img_17e8f478.webp" alt="SNMP Configuration - Part 2"></p>
 
-Click Create at the bottom bar to enter the following page:
+<p align="center"><strong>Figure 4-32 SNMP Configuration - Part 2</strong></p>
 
-![](images/img_e5eafb9e.png)
+**SNMP Community Management (SNMPv1/v2)**
 
-Fill in configuration at every configuration column and click Setup at the bottom bar to create new authentication rules。
+Navigate to Security >> Management Access >> SNMPv1/v2 Community.
 
-  
+<p align="center"><img src="images/img_6764247b.png" alt="SNMP Community Management Page"></p>
 
-## 4.2  Management Access
+<p align="center"><strong>Figure 4-33 SNMP Community Management Page</strong></p>
 
-### 4.2.1  Server 
+Click "Modify" to change SNMP Community properties. Click "Delete" to remove a selected community.
 
-HTTP, HTTPS, SSH and SNMP could be configured at this page. Click Security -> Management Access -> Server at navigation bar in order to enter service configuration page. Click HTTP at this page to enter HTTP configuration.
+Click "Create" to create a new SNMP Community:
 
-![](images/img_4f7a6eaf.png)
+<p align="center"><img src="images/img_e3f93b67.png" alt="Create SNMP Community Page"></p>
 
-Click HTTPS to configure HTTPS related:
+<p align="center"><strong>Figure 4-34 Create SNMP Community Page</strong></p>
 
-![](images/img_321336f4.png)
+Click "SNMP Host" to switch to the SNMP Host configuration page:
 
-Click SSH to configure SSH related:
+<p align="center"><img src="images/img_ff88d873.png" alt="SNMP Host Configuration Page"></p>
 
-  
+<p align="center"><strong>Figure 4-35 SNMP Host Configuration Page</strong></p>
 
-  
+Click "Create" to create a new SNMP Host:
 
-Click SNMP to configure SNMP related:
+<p align="center"><img src="images/img_ef6b393b.png" alt="Create SNMP Host Page"></p>
 
-![](images/img_6128304c.png)![](images/img_17e8f478.png)
+<p align="center"><strong>Figure 4-36 Create SNMP Host Page</strong></p>
 
-### 4.2.2  SNMP Community Management (SNMPv1/v2 community)
+Click "Modify" to modify SNMP Host properties. Click "Delete" to remove a selected SNMP Host.
 
-Click Security -> Management Access -> SNMPv1/v2 Community at navigation bar in order to enter configuration page as following:
+**SNMPv3 Configuration**
 
-  
+Navigate to Security >> Management Access >> SNMPv3 Configuration.
 
-![](images/img_6764247b.png)
+<p align="center"><img src="images/img_4de8e9d1.webp" alt="SNMPv3 Group Configuration Page"></p>
 
-Click Modify to change the feature of SNMP Community.
+<p align="center"><strong>Figure 4-37 SNMPv3 Group Configuration Page</strong></p>
 
-Click Create to create a new SNMP Community:
+Click "Modify" to change SNMPv3 Group configuration properties. Click "Reload" to refresh the information. Click "Delete" to remove a selected group.
 
-![](images/img_e3f93b67.png)
+Click "Create" to create a new SNMPv3 Group:
 
-Click Delete to delete the selected SNMP Community.
+<p align="center"><img src="images/img_9acf8701.webp" alt="Create SNMPv3 Group Page"></p>
 
-Click SNMP Host to switch to the SNMP Host configuration page:
+<p align="center"><strong>Figure 4-38 Create SNMPv3 Group Page</strong></p>
 
-  
+Click "SNMPv3 User Config" to enter the user configuration page:
 
-![](images/img_ff88d873.png)
+<p align="center"><img src="images/img_92f718e0.webp" alt="SNMPv3 User Configuration Page"></p>
 
-Click Create to create a new SNMP Host:
+<p align="center"><strong>Figure 4-39 SNMPv3 User Configuration Page</strong></p>
 
-![](images/img_ef6b393b.png)
+Click "Modify" to change SNMPv3 User configuration properties. Click "Reload" to refresh the information.
 
-  
+Click "Create" to create a new SNMPv3 User:
 
-Click Modify to modify feature of SNMP Host;
+<p align="center"><img src="images/img_722cd8ee.webp" alt="Create SNMPv3 User Page"></p>
 
-Click Delete to delete the selected SNMP Host.
+<p align="center"><strong>Figure 4-40 Create SNMPv3 User Page</strong></p>
 
-  
+**CLI (Command Line Interface)**
 
-### 4.2.3  SNMPv3 Configuration
+Navigate to Security >> Management Access >> CLI.
 
-Click Security -> Management Access -> SNMPv3 Configuration at navigation bar in order to enter configuration page as following:
+<p align="center"><img src="images/img_69a2143d.png" alt="CLI Global Configuration Page"></p>
 
-![](images/img_4de8e9d1.png)
+<p align="center"><strong>Figure 4-41 CLI Global Configuration Page</strong></p>
 
-Click the Modify to change the features of SNMPv3 Group Configuration.
+This page configures the terminal timeout. A value of 0 disables the timeout (no automatic disconnection).
 
-Click the Reload at the bottom control bar to refresh the configuration information of SNMPv3 Group.
+Click "Login Banner" to configure the terminal login banner:
 
-Click Create to create a new configuration for SNMPv3 Group:
+<p align="center"><img src="images/img_de5c1a84.png" alt="Login Banner Configuration Page"></p>
 
-![](images/img_9acf8701.png)
+<p align="center"><strong>Figure 4-42 Login Banner Configuration Page</strong></p>
 
-Click SNMPv3 User Config to enter the following configuration page:
+#### 4.4.3 Port Security
 
-![](images/img_92f718e0.png)
+**IP MAC Binding**
 
-Click Modify to change the features of SNMPv3 User Configuration.
+Navigate to Security >> Port Security, then click "IP MAC Binding".
 
-Click Reload at the bottom control bar to refresh the information of SNMPv3 User Configuration.
+<p align="center"><img src="images/img_f3318b29.webp" alt="IP MAC Binding Page"></p>
 
-Click Create to create new configuration of SNMPv3:
+<p align="center"><strong>Figure 4-43 IP MAC Binding Page</strong></p>
 
-![](images/img_722cd8ee.png)
+Click "Detail" to view the IP-MAC binding information for a specific port:
 
-Click Delete at bottom control bar to delete the selected configuration information of SNMPv3 Group.
+<p align="center"><img src="images/img_de4b16c5.png" alt="IP MAC Binding Detail Page"></p>
 
-  
+<p align="center"><strong>Figure 4-44 IP MAC Binding Detail Page</strong></p>
 
-### 4.2.4  CLI ( Command Line Interface )
+Click "Modify" to change selected binding items. Click "Reload" to refresh the binding configuration.
 
-Click Security -> Management Access -> CLI at navigation bar in order to enter GLOBAL configuration page as following:
+Click "Create" to create a new IP-MAC binding entry:
 
-  
+<p align="center"><img src="images/img_aa53aa2b.png" alt="Create IP MAC Binding Page"></p>
 
-![](images/img_69a2143d.png)
+<p align="center"><strong>Figure 4-45 Create IP MAC Binding Page</strong></p>
 
-Terminal’s overtime time could be configured at this page, and if configured as 0, it means there would be never overtime.
+Click "Delete" to remove a selected binding entry.
 
-  
+**Static MAC Filter Mode**
 
-Click Login Banner to enter the following page:
+Navigate to Security >> Port Security, then click "Static MAC Filter Mode".
 
-![](images/img_de5c1a84.png)
+<p align="center"><img src="images/img_2fbf983c.webp" alt="Static MAC Filter Mode Page"></p>
 
-  
+<p align="center"><strong>Figure 4-46 Static MAC Filter Mode Page</strong></p>
 
-Terminal’s Login Banner could be configured at this page.
+This page configures the static MAC filtration mode for each interface.
 
-  
+**Static MAC Filter**
 
-  
+Navigate to Security >> Port Security, then click "Static MAC Filter".
 
-  
+<p align="center"><img src="images/img_589d6882.webp" alt="Static MAC Filter Page"></p>
 
-## 4.3  Port Security
+<p align="center"><strong>Figure 4-47 Static MAC Filter Page</strong></p>
 
-  
+Click "Detail" to view the static MAC filtration entries for a specific interface:
 
-### 4.3.1  IP MAC Binding
+<p align="center"><img src="images/img_1687770f.png" alt="Static MAC Filter Detail Page"></p>
 
-Click Security -> Port Security at navigation bar in order, and then click IP MAC Binding to enter configuration page as following:
+<p align="center"><strong>Figure 4-48 Static MAC Filter Detail Page</strong></p>
 
-![](images/img_f3318b29.png)
+Click "Modify" to modify static MAC filtration entries. Click "Create" to add new entries:
 
-Click Detail to check the IP MAC binding information of that port.
+<p align="center"><img src="images/img_98f91d3f.png" alt="Create Static MAC Filter Page"></p>
 
-![](images/img_de4b16c5.png)
+<p align="center"><strong>Figure 4-49 Create Static MAC Filter Page</strong></p>
 
-Click Modify to change the selected binding items of the IP MAC.
+Click "Delete" to remove selected static MAC filtration entries.
 
-Click Reload to refresh the configuration of the IP MAC binding.
+**Dynamic MAC Mode**
 
-Click Create to create a new IP MAC binding item.
+Navigate to Security >> Port Security, then click "Dynamic MAC Mode".
 
-![](images/img_aa53aa2b.png)
+<p align="center"><img src="images/img_de8aed3f.webp" alt="Dynamic MAC Mode Page"></p>
 
-Click Delete at the bottom control bar to delete the selected IP MAC binding item.
+<p align="center"><strong>Figure 4-50 Dynamic MAC Mode Page</strong></p>
 
-  
+This page configures the dynamic MAC mode for each interface.
 
-### 4.3.2  Static MAC Filter Mode
+#### 4.4.4 Switchport Protect
 
-Click Security -> Port Security at navigation bar in order, and then click Static MAC Filter Mode to enter configuration page as following:
+Navigate to Security >> Switchport Protect.
 
-  
+<p align="center"><img src="images/img_a4ba3ba6.webp" alt="Switchport Protect Page"></p>
 
-![](images/img_2fbf983c.png)
+<p align="center"><strong>Figure 4-51 Switchport Protect Page</strong></p>
 
-Interface’s Static MAC Filtration Mode could be configured at this page.
+Configure the port protection group on this page. Click "Set" to apply the configuration. Click "Reload" to refresh the information.
 
-  
+Click "Port Protect List" to enter the group management page:
 
-### 4.3.3  Static MAC Filter
+<p align="center"><img src="images/img_1de1944c.webp" alt="Port Protect List Page"></p>
 
-Click Security -> Port Security at navigation bar in order, and then click Static MAC Filter to enter configuration page as following:
+<p align="center"><strong>Figure 4-52 Port Protect List Page</strong></p>
 
-![](images/img_589d6882.png)
+Click "Reload" to refresh the information. Click "Delete" to remove a selected protection group.
 
-  
+Click "Create" to create a new port protection group:
 
-Click Detail to check the interface’s static MAC filtration items.
+<p align="center"><img src="images/img_debbf69a.webp" alt="Create Port Protect Group Page"></p>
 
-![](images/img_1687770f.png)
+<p align="center"><strong>Figure 4-53 Create Port Protect Group Page</strong></p>
 
-Click Modify to modify static MAC filtration items.
+Click "Set" to apply the configuration. Click "Go Back" to return to the Port Protect List page.
 
-Click Create to create new static MAC filtration items.
+#### 4.4.5 Keepalive
 
-![](images/img_98f91d3f.png)
+Navigate to Security >> Keepalive.
 
-Click Delete at bottom control bar to delete the selected static MAC filtration items.
+<p align="center"><img src="images/img_399d3ead.webp" alt="Keepalive Configuration Page"></p>
 
-  
+<p align="center"><strong>Figure 4-54 Keepalive Configuration Page</strong></p>
 
-### 4.3.4  Dynamic MAC Mode
+Configure port keepalive status on this page. Click "Set" to apply the configuration. Click "Reload" to refresh the information.
 
-Click Security -> Port Security at navigation bar in order, and then click Dynamic MAC Mode to enter configuration page as following:
+#### 4.4.6 802.1X Port Authentication
 
-![](images/img_de8aed3f.png)
+**Global Configuration**
 
-Interface’s Dynamic MAC Mode could be configured at this page.
+Navigate to Security >> 802.1X Port Authentication >> Global.
 
-  
+<p align="center"><img src="images/img_3a022304.png" alt="802.1X Global Configuration Page"></p>
 
-## 4.4  Switchport Protect
+<p align="center"><strong>Figure 4-55 802.1X Global Configuration Page</strong></p>
 
-Click Security -> Switchport Protect at navigation bar in order to enter configuration page as following:
+This page enables or disables 802.1X port authentication globally.
 
-![](images/img_a4ba3ba6.png)
+**Authentication List**
 
-Set the Port Protect Group at this page, click Set at the bottom control bar to finish the setting.
+Navigate to Security >> 802.1X Port Authentication >> Authentication List.
 
-Click Reload to refresh the port protection group information.
+<p align="center"><img src="images/img_f826041d.png" alt="802.1X Authentication List Page"></p>
 
-  
+<p align="center"><strong>Figure 4-56 802.1X Authentication List Page</strong></p>
 
-Click “Port Protect List”, enter the Port Protect Group Creating page:
+Click "Reload" to refresh the authentication list. Click "Delete" to remove a selected entry.
 
-![](images/img_1de1944c.png)
+Click "Create" to create a new authentication entry:
 
-Click Reload at the bottom control bar, refresh the Port Protect Group information.
+<p align="center"><img src="images/img_4c305dff.png" alt="Create Authentication Entry Page"></p>
 
-Click Delete at the bottom control bar, delete the selected port protect group.
+<p align="center"><strong>Figure 4-57 Create Authentication Entry Page</strong></p>
 
-Click Create at the bottom control bar, enter the Port Protect Group Creating page:
+**Port Configuration**
 
-![](images/img_debbf69a.png)
+Navigate to Security >> 802.1X Port Authentication >> Port Configuration.
 
-Click Set at the bottom control bar, to finish the setting.
+<p align="center"><img src="images/img_10416bd4.webp" alt="802.1X Port Configuration Page"></p>
 
-Click Reload at the bottom control bar, refresh the Port Protect Group Creating page.
+<p align="center"><strong>Figure 4-58 802.1X Port Configuration Page</strong></p>
 
-Click Go Back at the bottom control bar, go back to the “Port Protect List” page.
+This page configures per-interface 802.1X port authentication settings, including: enable/disable, authentication type, authentication mode, and method.
 
-  
+> **Note**: Some configuration options are available only when 802.1X port authentication is enabled.
 
-## 4.5  Keepalive
+**Statistics**
 
-Click Security -> Keepalivel at navigation bar in order to enter port status configuration page as following:
+Navigate to Security >> 802.1X Port Authentication >> Statistics.
 
-![](images/img_399d3ead.png)
+<p align="center"><img src="images/img_eee57c40.webp" alt="802.1X Statistics Page"></p>
 
-Click Set at the bottom control bar after configuration, to finish the port status setting.
+<p align="center"><strong>Figure 4-59 802.1X Statistics Page</strong></p>
 
-Click Reload at the bottom control bar, refresh the port setting information.
+This page displays 802.1X message statistics for all ports.
 
-  
+#### 4.4.7 RADIUS
 
-## 4.6  802.1X Port Authentication
+**Global Configuration**
 
-### 4.6.1  Global
+Navigate to Security >> RADIUS >> Global.
 
-Click Security -> 802.1X Port Authentication -> Global at navigation bar in order to enter configuration page as following:
+<p align="center"><img src="images/img_80c213aa.png" alt="RADIUS Global Configuration Page"></p>
 
-  
+<p align="center"><strong>Figure 4-60 RADIUS Global Configuration Page</strong></p>
 
-![](images/img_3a022304.png)
+This page configures: maximum retransmit count, timeout, NAS settings, and RADIUS server key.
 
-Configure the enabling/disabling operations of 802.1X port authentication at this page.
+**Service Configuration**
 
-  
+Navigate to Security >> RADIUS >> Service.
 
-### 4.6.2  Authentication List
+<p align="center"><img src="images/img_23839e2b.webp" alt="RADIUS Service Configuration Page"></p>
 
-Click Security -> 802.1X Port Authentication -> Authentication List at navigation bar in order to enter configuration page as following:
+<p align="center"><strong>Figure 4-61 RADIUS Service Configuration Page</strong></p>
 
-![](images/img_f826041d.png)
+This page configures the RADIUS server authentication port and accounting port. Click "Set" to apply. Click "Reload" to refresh. Click "Delete" to remove a selected server entry.
 
-Click Reload at the bottom control bar, to refresh the authentication list.
+Click "Create" to create a new RADIUS server entry:
 
-Click Delete at the bottom control bar, to delete the selected port authentication list.
+<p align="center"><img src="images/img_11b8701b.png" alt="Create RADIUS Server Page"></p>
 
-Click Create to create new authentication entry:
+<p align="center"><strong>Figure 4-62 Create RADIUS Server Page</strong></p>
 
-![](images/img_4c305dff.png)
+### 4.5 Time Configuration
 
-### 4.4.3  Port Configuration
+<p align="center"><img src="images/img_f247d6cb.webp" alt="Time Navigation Menu"></p>
 
-Click Security -> 802.1X Port Authentication -> Port Configuration at navigation bar in order to enter configuration page as following:
+<p align="center"><strong>Figure 4-63 Time Navigation Menu</strong></p>
 
-![](images/img_10416bd4.png)
+#### 4.5.1 Basic Setting
 
-You could configure interface’s enabling/disabling 802.1x port authentication, authentication type, authentication mode, method and etc at this page.
+Navigate to Time >> Basic Setting.
 
-  
+<p align="center"><img src="images/img_c19c92a8.png" alt="Time Basic Setting Page"></p>
 
-Note:
+<p align="center"><strong>Figure 4-64 Time Basic Setting Page</strong></p>
 
-Some configurations can only be configured when 802.1x port authentication is enabled.
+Click "Reload" to refresh the displayed system time. Configure the system time zone on this page. Select "Set Time Manually" to set the system time manually.
 
-  
+#### 4.5.2 NTP
 
-### 4.6.4  Statistics
+Navigate to Time >> NTP.
 
-Click Security -> 802.1X Port Authentication -> Statistics at navigation bar in order to enter configuration page as following:
+<p align="center"><img src="images/img_3ec40caf.webp" alt="NTP Configuration Page"></p>
 
-![](images/img_eee57c40.png)
+<p align="center"><strong>Figure 4-65 NTP Configuration Page</strong></p>
 
-All ports’ statistic information of 802.1x messages could be checked at this page.
+This page configures the NTP (Network Time Protocol) server IP address for time synchronization.
 
-  
+#### 4.5.3 PTP Configuration
 
-## 4.7  RADIUS
+**Global**
 
-### 4.7.1  Global
+Navigate to Time >> PTP >> Global.
 
-Click Security -> RADIUS -> Global at navigation bar in order to enter configuration page as following: 
+<p align="center"><img src="images/img_16b1952e.png" alt="PTP Global Configuration - Part 1"></p>
 
-  
+<p align="center"><strong>Figure 4-66 PTP Global Configuration - Part 1</strong></p>
 
-![](images/img_80c213aa.png)
+<p align="center"><img src="images/img_aefc8df1.png" alt="PTP Global Configuration - Part 2"></p>
 
-Max. Number of retransmits of radius, overtime, NAS and Radius-Server Key could be configured at this page.
+<p align="center"><strong>Figure 4-67 PTP Global Configuration - Part 2</strong></p>
 
-### 4.7.2  Service
+This page configures: PTP enable/disable, PTP basic settings, default PTP data set, PTP time properties, regulator settings, sync process mechanism, and clock frequency synchronization. Click "Set" to apply. Click "Reload" to refresh.
 
-Click Security -> RADIUS -> Service at navigation bar in order to enter configuration page as following:
+**Port Configuration**
 
-![](images/img_23839e2b.png)
+Navigate to Time >> PTP >> Port Configuration.
 
-  
+<p align="center"><img src="images/img_80787b68.webp" alt="PTP Port Configuration Page"></p>
 
-Radius server’s authentication port and accounting port can be configured at this page.
+<p align="center"><strong>Figure 4-68 PTP Port Configuration Page</strong></p>
 
-Click Set at the bottom control bar, to finish the setting.
+This page configures PTP port settings, including: IEEE 1588 transport protocol type and delay measurement mechanism. Click "Reload" to refresh the configuration.
 
-Click Reload at the bottom control bar, refresh the authentication port and accounting port information.
+> **Note**: This page can only be configured after PTP protocol is enabled.
 
-Click Delete at the bottom control bar, to delete the selected authentication port and accounting port information of RADIUS Server.
+**Unicast**
 
-Click Create to create new radius server items:
+Navigate to Time >> PTP >> Unicast.
 
-![](images/img_11b8701b.png)
+<p align="center"><img src="images/img_5c2994d9.webp" alt="PTP Unicast Configuration Page"></p>
 
-# Chapter 5   Time
+<p align="center"><strong>Figure 4-69 PTP Unicast Configuration Page</strong></p>
 
-![](images/img_f247d6cb.png)
+This page displays the unicast status and IP address of each port, and allows modification of the unicast state.
 
-## 5.1  Basic Setting
+### 4.6 Network Security
 
-Click Time -> Basic Setting at navigation bar in order to enter configuration page as following:
+<p align="center"><img src="images/img_80cec7aa.webp" alt="Network Security Navigation Menu"></p>
 
-![](images/img_c19c92a8.png)
+<p align="center"><strong>Figure 4-70 Network Security Navigation Menu</strong></p>
 
-  
+#### 4.6.1 DoS Configuration
 
-Click Reload to refresh the current displayed system time.
+**DoS Global Configuration**
 
-System’s time-zone could be configured at this page. Select Set Time Manually to set system time manually.
+Navigate to Network Security >> DOS >> Global.
 
-  
+<p align="center"><img src="images/img_f4633e47.webp" alt="DoS Global Configuration Page"></p>
 
-## 5.2  NTP
+<p align="center"><strong>Figure 4-71 DoS Global Configuration Page</strong></p>
 
-Click Time -> NTP at navigation bar in order to enter configuration page as following:
+Enable or disable specific DoS attack prevention mechanisms as needed. Click "Set" to save the configuration.
 
-  
+#### 4.6.2 DHCP Snooping Configuration
 
-![](images/img_3ec40caf.png)
+**DHCP Snooping Global Configuration**
 
-NTP server’s IP address of NTP (Network Time Synchronization) could be configured at this page.
+Navigate to Network Security >> DHCP Snooping >> Global.
 
-  
+<p align="center"><img src="images/img_6c257c9a.webp" alt="DHCP Snooping Global Configuration Page"></p>
 
-  
+<p align="center"><strong>Figure 4-72 DHCP Snooping Global Configuration Page</strong></p>
 
-  
+Enabling global DHCP Snooping detects all DHCP messages and forms corresponding binding relationships. If a client obtains an address before DHCP Snooping is enabled, the switch cannot add the binding relationship.
 
-## 5.3  PTP Configuration
+After saving the switch configuration and restarting, all previously configured interface binding relationships are cleared. When IP source address monitoring is enabled and no binding relationship exists for an interface, the switch denies forwarding of all IP messages on that interface. To prevent this, configure a TFTP backup server for binding relationships, which allows the switch to download the binding list from the TFTP server automatically after restart.
 
-### 5.3.1  Global
+When configuring backup interface binding relationships, different switches can copy their binding lists to the same TFTP server by using different filenames.
 
-Click Time -> PTP -> Global at navigation bar in order to enter configuration page as following:
+The binding relationship list of interface MAC and IP addresses is dynamic. The default update interval is 30 minutes.
 
-  
+**DHCP Snooping VLAN Configuration**
 
-![](images/img_16b1952e.png)![](images/img_aefc8df1.png)
+Navigate to Network Security >> DHCP Snooping >> VLAN Config.
 
-  
+<p align="center"><img src="images/img_3217ad6d.png" alt="DHCP Snooping VLAN Configuration Page"></p>
 
-Enabling/disabling PTP and PTP basic setting, default PTP data set, PTP Time Properties Settings, Regulator Settings, Sync Process Mechanism and Clock Frequency Synchronization can be configured at this page. Click Set at the bottom control bar at settings, to finish the setting.
+<p align="center"><strong>Figure 4-73 DHCP Snooping VLAN Configuration Page</strong></p>
 
-Click Reload at the bottom control bar, refresh the PTP Global Configuration.
+When DHCP Snooping is enabled on a VLAN, all DHCP messages received by untrusted physical ports on that VLAN are inspected. Any DHCP response messages received by untrusted ports are dropped to prevent forged messages or rogue DHCP servers from assigning addresses. DHCP requests from untrusted ports where the MAC address does not match the hardware address field are treated as DoS attack messages and are discarded.
 
-  
+ARP dynamic monitoring inspects ARP messages on all physical ports of a VLAN. If the source MAC and IP addresses do not match the configured binding relations, the messages are not processed. Binding relations may be dynamically configured via DHCP or manually configured.
 
-### 5.3.2  Port Configuration
+IP source address monitoring functions similarly for IP messages within the VLAN.
 
-Click Time -> PTP -> Port Configuration at navigation bar in order to enter configuration page as following:
+**DHCP Snooping Interface Configuration**
 
-![](images/img_80787b68.png)
+Navigate to Network Security >> DHCP Snooping >> Interface Config.
 
-  
+<p align="center"><img src="images/img_66b8a86d.png" alt="DHCP Snooping Interface Configuration Page"></p>
 
-PTP port’s creation, IEEE1588 Transport Protocol type, delay measurement mechanism, and etc, all of which are under port, could be configured at this page. Click Reload at the bottom control bar, refresh the configuration of each port.
+<p align="center"><strong>Figure 4-74 DHCP Snooping Interface Configuration Page</strong></p>
 
-Note：
+- **DHCP-trusted port**: DHCP messages received on this port are not inspected.
+- **ARP-trusted port**: ARP monitoring is not applied. Ports are untrusted by default.
+- **IP source trusted port**: Source address inspection is not applied.
 
-This page could only be configured after PTP protocol is enable。
+**DHCP Snooping Bindings**
 
-  
+Navigate to Network Security >> DHCP Snooping >> Bindings.
 
-  
+<p align="center"><img src="images/img_352167ef.webp" alt="DHCP Snooping Bindings Page"></p>
 
-### 5.3.3  Unicast
+<p align="center"><strong>Figure 4-75 DHCP Snooping Bindings Page</strong></p>
 
-Click Time -> PTP -> Unicast at navigation bar in order to enter configuration page as following:
+For hosts that do not use DHCP, manually add binding entries at switch ports to allow network access. Manually configured entries take precedence over dynamically configured bindings. If the MAC address of a manual entry matches a dynamic entry, the dynamic entry is updated based on the manual configuration. The MAC address is the unique index for binding entries on a port.
 
-  
+Click "Create" to create a manually configured binding entry:
 
-![](images/img_5c2994d9.png)
+<p align="center"><img src="images/img_7b4d9492.png" alt="Create DHCP Snooping Binding Page"></p>
 
-Unicast status and IP address of each port could be checked and the unicast state of each port could be changed at this page. 
+<p align="center"><strong>Figure 4-76 Create DHCP Snooping Binding Page</strong></p>
 
-  
+> **Note**: Binding entries can only be created when DHCP Snooping protocol is enabled.
 
-  
+#### 4.6.3 Access Control List
 
-  
+**IPv4 Rules**
 
-# Chapter 6   Network Security
+Navigate to Network Security >> Access Control List >> IPv4 Rules.
 
-![](images/img_80cec7aa.png)
+<p align="center"><img src="images/img_81cc4508.webp" alt="IPv4 Rules Page"></p>
 
-6.1  DOS Configuration
+<p align="center"><strong>Figure 4-77 IPv4 Rules Page</strong></p>
 
-6.1.1  DOS Global Configuration
+Click "Delete" to remove a selected access control list. Click "Detail" to view the IP Access Control List entries:
 
-Click Network Security -> DOS \-> Global at navigation bar in order to enter DOS global configuration page as following:
+<p align="center"><img src="images/img_8ff5dad3.webp" alt="IP Access Control List Detail Page"></p>
 
-![](images/img_f4633e47.png)
+<p align="center"><strong>Figure 4-78 IP Access Control List Detail Page</strong></p>
 
-You could set or cancel the related Preventing DOS Attack according to needs. Click Set to save configuration.
+Click "Modify" to configure the rules of the corresponding IP Access Control List. Click "Go Back" to return to the IPv4 Rules page.
 
-  
+Click "Create" to create an IP access control list:
 
-6.2      DHCP Snooping Configuration
+<p align="center"><img src="images/img_2356ce4a.png" alt="Create IP Access Control List Page"></p>
 
-6.2.1  DHCP Snooping Global Configuration
+<p align="center"><strong>Figure 4-79 Create IP Access Control List Page</strong></p>
 
-Click Network Security -> DHCP Snooping -> Global at navigation bar in order to enter DHCP Snooping global configuration page as following:
+**MAC Rules**
 
-![](images/img_6c257c9a.png)
+Navigate to Network Security >> Access Control List >> MAC Rules.
 
-  
+<p align="center"><img src="images/img_b5fed931.webp" alt="MAC Rules Page"></p>
 
-Enable global DHCP Snooping protocol to detect all DHCP messages. Relative binding relationships forms. If client obtains addresses by the switch before the command is configured previously, switch cannot add relative binding relationships.
+<p align="center"><strong>Figure 4-80 MAC Rules Page</strong></p>
 
-  
+Click "Create" to create a MAC access control list. Click "Delete" to remove a selected list.
 
-After switch’s configuration is saved, restart the switch. All previous configured interface binding relationship would be dropped. At the meantime, the interface has no binding relationship, and switch would denying the forwarding of all IP messages after IP source address monitoring function is enabled. After the interface binding relationship’s backup TFTP server is configured, binding relationship would be copied to server by TFTP protocol. After switch restarted, it would download binding list from TFTP server automatically to ensure network’s normal operation.
+<p align="center"><img src="images/img_a97fd762.png" alt="Create MAC Access Control List Page"></p>
 
-  
+<p align="center"><strong>Figure 4-81 Create MAC Access Control List Page</strong></p>
 
-When configuring backup interface binding relationships, save file name on TFTP server. Therefore, different switches can copy their interface binding relationship list to the same TFTP server.
+**Assignment**
 
-  
+Navigate to Network Security >> Access Control List >> Assignment.
 
-The binding relationship list of interface’s MAC address and IP address is dynamic. It is required to check whether the binding is updated. If there is (like binding items are added or deleted), backup should be done again. The default time interval is 30 minutes.
+<p align="center"><img src="images/img_d8c6a8fb.png" alt="ACL Assignment Page"></p>
 
-  
+<p align="center"><strong>Figure 4-82 ACL Assignment Page</strong></p>
 
-  
+This page assigns access control lists to interfaces.
 
-  
+#### 4.6.4 Filter Function
 
-6.2.2  DHCP Snooping VLAN Configuration
+Navigate to Network Security >> Filter Function.
 
-Click Network Security -> DHCP Snooping -> VLAN Config at navigation bar in order to enter DHCP Snooping VLAN configuration page as following:
+<p align="center"><img src="images/img_8051e0b9.webp" alt="Filter Function Global Configuration Page"></p>
 
-  
+<p align="center"><strong>Figure 4-83 Filter Function Global Configuration Page</strong></p>
 
-![](images/img_3217ad6d.png)
+Click "Set" to apply the global filter configuration. Click "Reload" to refresh.
 
-After the DHCP Snooping function is enabled on the VLAN, the DHCP messages received by all untrusted physical ports on the entire VLAN will be legally inspected. Any responded DHCP messages received by untrusted physical ports within a VLAN will be lost to prevent users from counterfeiting messages or prevent a mistaken DHCP server from assigning addresses. For the DHCP requests from untrusted ports, if the MAC address does not match the hardware address field in the messages, the requests will be considered as attacking messages counterfeited by users for the purpose of DHCP DOS (denial of service) and the switch will be abandoned too.
+Click "Port Configuration" to enter the per-port filter configuration page:
 
-Monitor the ARP dynamics of all physical ports of a VLAN. If the source MAC and IP addresses of the ARP messages received by the ports do not match the MAC and IP address binding relations configured for the ports, the messages cannot be processed. The binding relations configured for the ports may be dynamic along with the DHCP or manually configured. If no MAC and IP address binding relations are configured for a physical port, the switch will refuse to forward all the ARP messages.
+<p align="center"><img src="images/img_647f5343.webp" alt="Filter Function Port Configuration Page"></p>
 
-In a VLAN where IP source addresses are monitored, if the source MAC and IP addresses of the IP messages received by all the physical ports in the VLAN do not match the MAC and IP address binding relations configured for the ports, the messages cannot be processed. The binding relations configured for the ports may be dynamic along with the DHCP or manually configured. If no MAC and IP address binding relations are configured for a physical port, the switch will refuse to forward all the IP messages received by all the ports.
+<p align="center"><strong>Figure 4-84 Filter Function Port Configuration Page</strong></p>
 
-  
+Click "Set" to apply port filter configuration. Click "Reload" to refresh.
 
-  
+Click "Statistics" to view filter blocking and counting statistics:
 
-6.2.3  DHCP Snooping Interface Configuration
+<p align="center"><img src="images/img_90bbd533.webp" alt="Filter Function Statistics Page"></p>
 
-Click Network Security -> DHCP Snooping -> Interface Config at navigation bar in order to enter DHCP Snooping Port configuration page as following:
+<p align="center"><strong>Figure 4-85 Filter Function Statistics Page</strong></p>
 
-  
+Click "Reload" to refresh the statistics.
 
-![](images/img_66b8a86d.png)
+### 4.7 Switching
 
-  
+<p align="center"><img src="images/img_e160ef2b.webp" alt="Switching Navigation Menu"></p>
 
-If a port is configured as the DHCP-trusted port, the DHCP messaged received by this port will not be inspected.
+<p align="center"><strong>Figure 4-86 Switching Navigation Menu</strong></p>
 
-The ARP monitoring function will not be enabled for ARP-trusted ports. Ports are untrusted by default.
+#### 4.7.1 Storm Control
 
-The source address inspection function is not enabled for ports trusted by IP source addresses.
+**Broadcast Storm Control**
 
-  
+Navigate to Switching >> Storm Control, select the Broadcast tab.
 
-  
+<p align="center"><img src="images/img_a277020c.png" alt="Broadcast Storm Control Page"></p>
 
-6.2.4  DHCP Snooping Bindings
+<p align="center"><strong>Figure 4-87 Broadcast Storm Control Page</strong></p>
 
-Click Network Security -> DHCP Snooping -> Bindings at navigation bar in order to enter DHCP Snooping Binding configuration page as following:
+Use the Status column dropdown to enable or disable broadcast storm control per port. Enter the threshold value for broadcast packets in the Threshold column. The valid threshold range for each port is displayed.
 
-![](images/img_352167ef.png)
+**Multicast Storm Control**
 
-For hosts that do not use DHCP to obtain addresses, users can manually add entries for binding at the switch ports to enable the host to smoothly access to the network. The “no” command can be used to delete the binding entries.
+<p align="center"><img src="images/img_8693ed72.png" alt="Multicast Storm Control Page"></p>
 
-Entries bound manually proceed over those bindings through dynamic configuration. If the MAC address of the configured entry is the same as the MAC address of the dynamically configured entry, the latter will be updated based on the former. The MAC address is the only one index for binding entries of a port.
+<p align="center"><strong>Figure 4-88 Multicast Storm Control Page</strong></p>
 
-Click "Create" to create entries for binding manually configured DHCP Snooping ports.
+Use the Status column dropdown to enable or disable multicast storm control per port. Enter the threshold value for multicast packets in the Threshold column.
 
-  
+**Unicast Storm Control**
 
-![](images/img_7b4d9492.png)
+<p align="center"><img src="images/img_914fe949.png" alt="Unicast Storm Control Page"></p>
 
-Note：
+<p align="center"><strong>Figure 4-89 Unicast Storm Control Page</strong></p>
 
-Binding entries can be created only if enabling DHCP Snooping protocol.
+Use the Status column dropdown to enable or disable unicast storm control per port. Enter the threshold value for unicast packets in the Threshold column.
 
-  
+#### 4.7.2 Port Rate Limits
 
-  
+Navigate to Switching >> Port Rate Limits.
 
-6.3  Access Control List
+<p align="center"><img src="images/img_8ad957aa.png" alt="Port Rate Limits Page"></p>
 
-6.3.1  IPv4 Rules
+<p align="center"><strong>Figure 4-90 Port Rate Limits Page</strong></p>
 
-Click Network Security -> Access Control List -> IPv4 Rules at navigation bar in order to enter IPv4 rules’ page as following:
+Configure rate limits on port receive and transmit speeds. By default, all ports have no speed limit. Receive and transmit speeds can be configured by ratio or by the switch's defined unit.
 
-![](images/img_81cc4508.png)
+#### 4.7.3 MAC Address Table
 
-Click Delete at the bottom control bar, delete the selected access control list.
+Navigate to Switching >> MAC Address Table.
 
-Click Detail on the right of the table to enter the IP Access Control List page.
+<p align="center"><img src="images/img_d42cf915.webp" alt="Static MAC Address Table Page"></p>
 
-![](images/img_8ff5dad3.png)
+<p align="center"><strong>Figure 4-91 Static MAC Address Table Page</strong></p>
 
-Click Modify on this page, to configure the rules of corresponding IP Access Control list.
+This page displays the static MAC address, VLAN ID, and index. Click "Modify" or "Create" to enter the static MAC address configuration page:
 
-Click Go Back on the IP Access Control List page to go back to IPv4 Rules’ Page. 
+<p align="center"><img src="images/img_8fe81002.png" alt="Static MAC Address Configuration Page"></p>
 
-Click Create to create an IP access control list. 
+<p align="center"><strong>Figure 4-92 Static MAC Address Configuration Page</strong></p>
 
-![](images/img_2356ce4a.png)
+Click "Aging Configuration" to enter the aging time configuration page:
 
-Click Delete to delete the access control list.
+<p align="center"><img src="images/img_721a8ec3.webp" alt="MAC Address Aging Configuration Page"></p>
 
-  
+<p align="center"><strong>Figure 4-93 MAC Address Aging Configuration Page</strong></p>
 
-6.3.2  MAC Rules
+#### 4.7.4 IGMP Snooping
 
-Click Network Security -> Access Control List -> MAC Rules at navigation bar in order to enter MAC rules’ page as following:
+**IGMP Snooping Configuration**
 
-![](images/img_b5fed931.png)
+Navigate to Switching >> IGMP Snooping, select the "IGMP Snooping" tab.
 
-Click Create at the bottom control bar to create a MAC access control list. Click Delete to delete the selected access control list.
+<p align="center"><img src="images/img_a358d707.png" alt="IGMP Snooping Configuration Page"></p>
 
-![](images/img_a97fd762.png)
+<p align="center"><strong>Figure 4-94 IGMP Snooping Configuration Page</strong></p>
 
-  
+This page configures: unknown multicast forwarding behavior, IGMP Snooping enable/disable, and IGMP Querier designation.
 
-6.3.3  Assignment
+**IGMP Snooping VLAN**
 
-Click Network Security -> Access Control List -> Assignment at navigation bar in order to enter distribution page of access control list as following:
+Navigate to Switching >> IGMP Snooping, select the "IGMP Snooping VLAN" tab.
 
-![](images/img_d8c6a8fb.png)
+<p align="center"><img src="images/img_c05610ea.webp" alt="IGMP Snooping VLAN Page"></p>
 
-  
+<p align="center"><strong>Figure 4-95 IGMP Snooping VLAN Page</strong></p>
 
-6.4  Filter Function
+Click "Modify" to modify member ports, running status, and immediate-leave settings. Click "Create" to add IGMP Snooping VLAN configuration (up to 8 physical ports per VLAN via Web). Click "Delete" to remove a selected entry.
 
-Click Network Security -> Filter Function at navigation bar in order to enter the filter function global page as following:
+<p align="center"><img src="images/img_9e62b949.png" alt="IGMP Snooping VLAN Configuration Page"></p>
 
-![](images/img_8051e0b9.png)
+<p align="center"><strong>Figure 4-96 IGMP Snooping VLAN Configuration Page</strong></p>
 
-Click Set at the bottom control bar to finish the global configuration of filter function.
+When creating an IGMP Snooping VLAN, the VLAN ID can be modified; when editing an existing entry, the VLAN ID cannot be changed. Use ">>" and "<<" buttons to add and remove routing ports.
 
-Click Reload at the bottom control bar to refresh the global configuration of filter function.
+**Static Multicast MAC Address Configuration**
 
-  
+Navigate to Switching >> IGMP Snooping, select the "Static Multicast Address" tab.
 
-Click “Port Configuration” on the right of “Global”, enter the port configuration page as follows:
+<p align="center"><img src="images/img_de2ad0d7.webp" alt="Static Multicast Address Page"></p>
 
-![](images/img_647f5343.png)
+<p align="center"><strong>Figure 4-97 Static Multicast Address Page</strong></p>
 
-Click Set at the bottom control bar, to finish the configuration of port.
+This page displays existing static multicast groups and port groups. Click "Reload" to refresh.
 
-Click Reload at the bottom control bar, refresh the port configuration of filter function.
+**Multicast List**
 
-  
+Navigate to Switching >> IGMP Snooping, select the "Multicast List" tab.
 
-Click “Statistics” on the right of “Port Configuration” enter the statistics page of filters blocked and filters counting as following:
+<p align="center"><img src="images/img_3c4005b6.png" alt="Multicast List Page"></p>
 
-![](images/img_90bbd533.png)
+<p align="center"><strong>Figure 4-98 Multicast List Page</strong></p>
 
-Click Reload at the bottom control bar, refresh the filters blocked and filters accounting information.
+This page displays multicast groups in the current network and the port set for each group member as counted by IGMP Snooping. Click "Reload" to refresh.
 
-# Chapter 7   Switching
+> **Note**: By default, up to 15 VLAN items are displayed. Modify the count using `ip http web igmp-groups` via Console or Telnet.
 
-![](images/img_e160ef2b.png)
+#### 4.7.5 VLAN
 
-  
+**VLAN Configuration**
 
-7.1  Storm Control
+Navigate to Switching >> VLAN, select the "VLAN configuration" tab.
 
-Click Switching \-> Storm Control at navigation bar in order to enter broadcast storm control, multicast storm control and unicast storm control configuration pages.
+<p align="center"><img src="images/img_ff702b49.png" alt="VLAN Configuration Page"></p>
 
-  
+<p align="center"><strong>Figure 4-99 VLAN Configuration Page</strong></p>
 
-7.1.1  Broadcast Storm Control
+Click "Modify" to change VLAN name and port properties. Select a VLAN and click "Delete" to remove it.
 
-![](images/img_a277020c.png)
+> **Note**: The default maximum VLAN display count is 100. To configure more VLANs via Web, use `ip http web max-vlan` via Console or Telnet.
 
-Through the dropdown boxes in the Status column, you can decide whether to enable broadcast storm control on a port. In the Threshold column you can enter the threshold value of the broadcast packets. The legal threshold range for each port is given behind the threshold.
+Click "Create" or "Modify" to enter the VLAN configuration page:
 
-  
+<p align="center"><img src="images/img_c63a6630.png" alt="VLAN Detail Configuration Page"></p>
 
-7.1.2  Multicast Storm Control
+<p align="center"><strong>Figure 4-100 VLAN Detail Configuration Page</strong></p>
 
-![](images/img_8693ed72.png)
+When creating a new VLAN, enter a VLAN ID and optional VLAN name. The port list allows configuration of: default VLAN, VLAN mode (Trunk or Access), whether to allow current VLAN packets, and whether to untag the current VLAN on egress.
 
-  
+> **Note**: When a port in Trunk mode serves as an egress port, it untags the default VLAN by default.
 
-Through the dropdown boxes in the Status column, you can decide whether to enable multicast storm control on a port. In the Threshold column you can enter the threshold value of the multicast packets. The legal threshold range for each port is given behind the threshold.
+**VLAN Batch Configuration**
 
-  
+Navigate to Switching >> VLAN, select the "VLAN Batch Configuration" tab.
 
-  
+<p align="center"><img src="images/img_8810757e.webp" alt="VLAN Batch Configuration Page"></p>
 
-7.1.3  Unicast Storm Control
+<p align="center"><strong>Figure 4-101 VLAN Batch Configuration Page</strong></p>
 
-  
+> **Note**: A VLAN must be created before it can be deleted via batch operations.
 
-![](images/img_914fe949.png)
+**Port VLAN Configuration**
 
-  
+Navigate to Switching >> VLAN, select the "Port VLAN" tab.
 
-Through the dropdown boxes in the Status column, you can decide whether to enable unicast storm control on a port. In the Threshold column you can enter the threshold value of the unicast packets. The legal threshold range for each port is given behind the threshold.
+<p align="center"><img src="images/img_b82ab1d6.png" alt="Port VLAN Configuration Page"></p>
 
-  
+<p align="center"><strong>Figure 4-102 Port VLAN Configuration Page</strong></p>
 
-  
+This page displays all ports' PVIDs, modes, allowed VLAN ranges, and untagged VLAN ranges. Click "Modify" to change port VLAN properties:
 
-7.2  Port Rate Limits 
+<p align="center"><img src="images/img_9e83403f.webp" alt="Port VLAN Feature Configuration Page"></p>
 
-Click Switching \-> Port Rate Limits at navigation bar in order to enter port rate limit page as following:
+<p align="center"><strong>Figure 4-103 Port VLAN Feature Configuration Page</strong></p>
 
-  
+<p align="center"><img src="images/img_dc3f4b2e.webp" alt="Port VLAN Allowed/Untagged Configuration Page"></p>
 
-  
+<p align="center"><strong>Figure 4-104 Port VLAN Allowed/Untagged Configuration Page</strong></p>
 
-![](images/img_8ad957aa.png)
+> **Note**: For VLAN-allowed and VLAN-untagged operations, add VLANs before performing delete operations. Do not use the Enter key during configuration.
 
-  
+#### 4.7.6 GMRP
 
-Set rate\-limit on ports receive speed and send speed of port at this page. By default all ports’ speed is not limited. Receive speed and send speed can be configured according to ratio or switch’s defined unit.
+**VLAN List**
 
-  
+Navigate to Switching >> GMRP >> VLAN List.
 
-7.3  MAC Address Table 
+<p align="center"><img src="images/img_7eddd17f.webp" alt="GMRP VLAN List Page"></p>
 
-Click Switching -> MAC Address Table at navigation bar in order to enter static MAC address table as following:
+<p align="center"><strong>Figure 4-105 GMRP VLAN List Page</strong></p>
 
-![](images/img_d42cf915.png)
+This page displays GMRP VLAN ID list information. Click "Reload" to refresh.
 
-Static MAC address, VLAN ID and index are shown on the page. Click Modify or Create to enter static MAC address configuration page and do modifications on configured static MAC address table.
+Click "Create" to create a GMRP VLAN configuration:
 
-![](images/img_8fe81002.png)
+<p align="center"><img src="images/img_2e2a0cc5.png" alt="Create GMRP VLAN Page"></p>
 
-Click “Aging Configuration” on the right of “Static MAC Address Table”, enter the aging configuration page:
+<p align="center"><strong>Figure 4-106 Create GMRP VLAN Page</strong></p>
 
-![](images/img_721a8ec3.png)
+**Port Configuration**
 
-  
+Navigate to Switching >> GMRP >> Port Configuration.
 
-  
+<p align="center"><img src="images/img_3558cafc.webp" alt="GMRP Port Configuration Page"></p>
 
-7.4      IGMP Snooping
+<p align="center"><strong>Figure 4-107 GMRP Port Configuration Page</strong></p>
 
-7.4.1  IGMP Snooping Configuration
+Click "Set" to apply the configuration.
 
-Click Switching -> IGMP Snooping, at navigation bar in order, and select “IGMP Snooping” tab page to enter IGMP Snooping configuration page as following:
+**Multicast List**
 
-![](images/img_a358d707.png)
+Navigate to Switching >> GMRP >> Multicast List.
 
-  
+<p align="center"><img src="images/img_267cfa3d.webp" alt="GMRP Multicast List Page"></p>
 
-Whether switch forwarding unknown multicast, whether enabling IGMP-Snooping and whether taken as IGMP’s Querier can be configured at this page.
+<p align="center"><strong>Figure 4-108 GMRP Multicast List Page</strong></p>
 
-  
+This page displays VLAN ID, multicast MAC address, and member port information. Click "Reload" to refresh.
 
-### 7.4.2  IGMP-Snooping VLAN
+### 4.8 Routing
 
-Click Switching -> IGMP Snooping, at navigation bar in order, and select “IGMP Snooping VLAN” tab page to enter IGMP Snooping VLAN configuration page as following:
+<p align="center"><img src="images/img_0baf1bc5.webp" alt="Routing Navigation Menu"></p>
 
-![](images/img_c05610ea.png)
+<p align="center"><strong>Figure 4-109 Routing Navigation Menu</strong></p>
 
-Click Modify, you can modify the member port, running status and immediate-leave of IGMP-Snooping VLAN. Click Create, IGMP-snooping VLAN configuration can be done. Through Web up to 8 physical ports can be set on each IGMP snooping VLAN. Click Delete, a selected IGMP-Snooping VLAN can be deleted.
+#### 4.8.1 VLAN Interface and IP Address Configuration
 
-![](images/img_9e62b949.png)
+Navigate to Routing >> VLAN Interface and IP Address.
 
-  
+<p align="center"><img src="images/img_57b217c6.png" alt="VLAN Interface Configuration Page"></p>
 
-When an IGMP-Snooping VLAN is created, its VLAN ID can be modified; but when the IGMP-Snooping VLAN is modified, its VLAN ID cannot be modified.
+<p align="center"><strong>Figure 4-110 VLAN Interface Configuration Page</strong></p>
 
-You can click “\>>” and “<<” to delete and add a routing port.
+Click "Modify" to edit VLAN interface items. Click "Create" to add a new VLAN interface. Click "Delete" to remove a selected entry.
 
-### 7.4.3  Static Multicast Mac Address Configuration
+When creating a new entry, the VLAN name can be changed. When modifying an existing entry, the VLAN name cannot be changed 鈥?only related items can be modified.
 
-Click Switching -> IGMP Snooping, at navigation bar in order, and select “Static Multicast Address” tab page to enter static multicast address page as following:
+<p align="center"><img src="images/img_9719d1c2.webp" alt="VLAN Interface Detail Configuration Page"></p>
 
-![](images/img_de2ad0d7.png)
+<p align="center"><strong>Figure 4-111 VLAN Interface Detail Configuration Page</strong></p>
 
-  
+> **Note**: Before setting the VLAN secondary IP address, the primary IP address must be configured first.
 
-On this page, the currently existing static multicast groups and port groups in each static multicast group are shown.
+#### 4.8.2 VRRP Configuration
 
-  
+Navigate to Routing >> VRRP Configuration.
 
-Click Reload to refresh the contents in the list.
+<p align="center"><img src="images/img_291d2f80.webp" alt="VRRP List Page"></p>
 
-  
+<p align="center"><strong>Figure 4-112 VRRP List Page</strong></p>
 
-### 7.4.4  Multicast list
+Click "Reload" to refresh the VRRP list. Click "Delete" to remove a selected VRRP entry.
 
-Click Switching -> IGMP Snooping, at navigation bar in order, and select “Multicast List” tab page to enter multicast member list configuration page as following:
+Click "Create" to enter the VRRP configuration page:
 
-![](images/img_3c4005b6.png)
+<p align="center"><img src="images/img_00ada6aa.webp" alt="VRRP Configuration Page"></p>
 
-The multicast groups in current network and ports’ set where every group member exists counted by IGMP-Snooping, are shown on this page.
+<p align="center"><strong>Figure 4-113 VRRP Configuration Page</strong></p>
 
-Click Reload to refresh the contents in the list.
+Click "Set" to apply the VRRP configuration. Click "Go Back" to return to the VRRP List page.
 
-Note:
+#### 4.8.3 IP Express Forwarding
 
-By default, a multicast list can display up to 15 VLAN items. You can modify the number of multicast items by running ip http web igmp-groups after you log on to the device through the Console port or Telnet.
+Navigate to Routing >> IP Express Forwarding.
 
-  
+<p align="center"><img src="images/img_b085cfb2.webp" alt="IP Express Forwarding Page"></p>
 
-  
+<p align="center"><strong>Figure 4-114 IP Express Forwarding Page</strong></p>
 
-  
+Click "Set" to apply the IP Express Forwarding configuration. Click "Reload" to refresh.
 
-7.5  VLAN
+#### 4.8.4 Static ARP
 
-7.5.1  VLAN configuration
+Navigate to Routing >> Static ARP.
 
-Click Switching -> VLAN, at navigation bar in order, and select “VLAN configuration” tab page to enter VLAN configuration page as following:
+<p align="center"><img src="images/img_2234d43c.png" alt="Static ARP Page"></p>
 
-![](images/img_ff702b49.png)
+<p align="center"><strong>Figure 4-115 Static ARP Page</strong></p>
 
-Click Modify after VLAN entry to change VLAN name and the VLAN’s port feature.
+Click "Modify" to edit a static ARP entry. Click "Delete" to remove selected entries.
 
-Select the check box before item and click Delete at the bottom control bar to delete the selected VLAN.
+Click "New" to create a new static ARP entry:
 
-Note: 
+<p align="center"><img src="images/img_4783e15e.png" alt="Create Static ARP Page"></p>
 
-By default, the maximum quantity of shown items of VLAN list is 100. If you want to configure more VLAN through Web, please login switch by Console port or Telnet to enter global configuration mode and use command ip http web max-vlan to modify maximum shown VLAN quantity.
+<p align="center"><strong>Figure 4-116 Create Static ARP Page</strong></p>
 
-  
+#### 4.8.5 Static Route
 
-Click Create or Modify to enter VLAN configuration page.
+Navigate to Routing >> Static Route.
 
-![](images/img_c63a6630.png)
+<p align="center"><img src="images/img_14b03b84.png" alt="Static Route Page"></p>
 
-  
+<p align="center"><strong>Figure 4-117 Static Route Page</strong></p>
 
-If you want to create a new VLAN, enter a VLAN ID and a VLAN name; the VLAN name can be null.
+Click "Modify" to edit a static route. Click "Reload" to refresh. Click "Delete" to remove selected entries.
 
-  
+Click "Create" to create a new static route:
 
-Through the port list, you can set for each port the default VLAN, the VLAN mode (Trunk or Access), whether to allow the entrance of current VLAN packets and whether to execute the untagging of the current VLAN when the port works as the egress port.
+<p align="center"><img src="images/img_479af6f0.png" alt="Create Static Route Page"></p>
 
-  
+<p align="center"><strong>Figure 4-118 Create Static Route Page</strong></p>
 
-  
+> **Note**: The static route configuration page is available only on Layer 3 switches.
 
-Note:
+#### 4.8.6 RIP Configuration
 
-When a port in Trunk mode serves as an egress port, it will untag the default VLAN by default.
+**RIP Process**
 
-  
+Navigate to Routing >> RIP Configuration.
 
-  
+<p align="center"><img src="images/img_70a5ab03.webp" alt="RIP Configuration Page"></p>
 
-  
+<p align="center"><strong>Figure 4-119 RIP Configuration Page</strong></p>
 
-7.5.2  VLAN Batch Configuration
+A RIP process must be created before configuring RIP entries. Click "Create" to create a new RIP process:
 
-Click Switching -> VLAN, at navigation bar in order, and select “VLAN Batch Configuration” tab page to enter VLAN configuration page as following:
+<p align="center"><img src="images/img_02f3f952.png" alt="Create RIP Process Page"></p>
 
-![](images/img_8810757e.png)
+<p align="center"><strong>Figure 4-120 Create RIP Process Page</strong></p>
 
-  
+**RIP Router Entries**
 
-  
+Navigate to Routing >> RIP Configuration, then click "RIP Router Entries".
 
-Note:
+<p align="center"><img src="images/img_af60516a.png" alt="RIP Router Entries Page"></p>
 
-Before VLAN to be deleted, it should be added first.
+<p align="center"><strong>Figure 4-121 RIP Router Entries Page</strong></p>
 
-  
+Enter the RIP process ID and click "Set" to view the entries for the selected process:
 
-  
+<p align="center"><img src="images/img_43714194.png" alt="RIP Router Entries Detail Page"></p>
 
-7.5.3  Port VLAN Configuration
+<p align="center"><strong>Figure 4-122 RIP Router Entries Detail Page</strong></p>
 
-Click Switching -> VLAN, at navigation bar in order, and select “Port VLAN” tab page to enter port VLAN configuration page as following:
+Click "Create" to add a new RIP router entry:
 
-![](images/img_b82ab1d6.png)
+<p align="center"><img src="images/img_de535d01.png" alt="Create RIP Router Entry Page"></p>
 
-This page shows all ports’ PVIDs, modes, allowed VLAN range and VLAN range without tag. Click Modify to change port’s VLAN feature configuration, VLAN-allowed configuration and VLAN-untagged configuration.
+<p align="center"><strong>Figure 4-123 Create RIP Router Entry Page</strong></p>
 
-![](images/img_9e83403f.png)
+#### 4.8.7 OSPF Configuration
 
-![](images/img_dc3f4b2e.png)
+**OSPF Process**
 
-  
+Navigate to Routing >> OSPF Configuration, then click "OSPF Process".
 
-  
+<p align="center"><img src="images/img_292718cc.png" alt="OSPF Process Page"></p>
 
-Note:
+<p align="center"><strong>Figure 4-124 OSPF Process Page</strong></p>
 
-VLAN-allowed and VLAN-untagged: Please add first before do delete operation.
+An OSPF process must be created before configuring OSPF router entries.
 
-Please do not use Enter key.
+Click "Create" to create a new OSPF process:
 
-  
+<p align="center"><img src="images/img_06b75fea.png" alt="Create OSPF Process Page"></p>
 
-7.6  GMRP
+<p align="center"><strong>Figure 4-125 Create OSPF Process Page</strong></p>
 
-7.6.1  VLAN List
+**OSPF Router Entries**
 
-Click Switching -> GMRP \-> VLAN List at navigation bar in order, to enter port VLAN configuration page as following:
+Navigate to Routing >> OSPF Configuration, then click "OSPF Router Entries".
 
-![](images/img_7eddd17f.png)
+<p align="center"><img src="images/img_2a1cbf82.png" alt="OSPF Router Entries Page"></p>
 
-This page shows the ID list information of GMRP VLAN. Click Reload at the bottom control bar to refresh the list.
+<p align="center"><strong>Figure 4-126 OSPF Router Entries Page</strong></p>
 
-Click Create at the bottom control bar, create GMRP VLAN configuration.
+Enter the OSPF process ID and click "Set" to view entries for the selected process:
 
-![](images/img_2e2a0cc5.png)
+<p align="center"><img src="images/img_77eea547.png" alt="OSPF Router Entries Detail Page"></p>
 
-  
+<p align="center"><strong>Figure 4-127 OSPF Router Entries Detail Page</strong></p>
 
-7.6.2  Port Configuration
+Click "Create" to add a new OSPF router entry:
 
-Click Switching -> GMRP \-> Port Configuration at navigation bar in order, to enter Port Configuration page as following:
+<p align="center"><img src="images/img_8caccbde.png" alt="Create OSPF Router Entry Page"></p>
 
-![](images/img_3558cafc.png)
+<p align="center"><strong>Figure 4-128 Create OSPF Router Entry Page</strong></p>
 
-Click Set at the bottom control bar, finish the configuration.
+> **Note**: The Area column accepts both integer and IP address formats.
 
-  
+### 4.9 QoS/Priority
 
-7.6.3  Multicast List
+<p align="center"><img src="images/img_02631d8f.webp" alt="QoS/Priority Navigation Menu"></p>
 
-Click Switching -> GMRP \-> Multicast List at navigation bar in order, to enter Multicast List page as following:
+<p align="center"><strong>Figure 4-129 QoS/Priority Navigation Menu</strong></p>
 
-![](images/img_267cfa3d.png)
+#### 4.9.1 Global Configuration
 
-This page shows the VLAN ID, multicast MAC address and member port information of GMRP multicast list. Click Reload at the bottom control bar, refresh the multicast list information.
+Navigate to QoS/Priority >> Global.
 
-# Chapter 8  Routing
+<p align="center"><img src="images/img_bc0aef99.webp" alt="QoS Global Configuration Page"></p>
 
-![](images/img_0baf1bc5.png)
+<p align="center"><strong>Figure 4-130 QoS Global Configuration Page</strong></p>
 
-  
+This page configures: Schedule Policy, Default CoS Value, and Trust Priority.
 
-## 8.1      VLAN Interface and IP Address Configuration
+#### 4.9.2 Port Configuration
 
-Click Routing -> VLAN Interface and IP Address at navigation bar in order, and then enter  configuration page as following：
+Navigate to QoS/Priority >> Port Configuration.
 
-![](images/img_57b217c6.png)
+<p align="center"><img src="images/img_4eae4974.png" alt="QoS Port Configuration Page"></p>
 
-Click Modify to enter relative VLAN interface items to do the modification.
+<p align="center"><strong>Figure 4-131 QoS Port Configuration Page</strong></p>
 
-Click Create to create a new VLAN interface items.
+Configure the Port CoS value per port. Click "Set" to save changes.
 
-Click Delete to delete the selected VLAN interface items.
+#### 4.9.3 802.1D/p Mapping
 
-You can change the VLAN name when you click the “Create” bottom. It’s cannot change VLAN name when click “Modify” just can do the VLAN related items modification.
+Navigate to QoS/Priority >> 802.1D/p Mapping.
 
-![](images/img_9719d1c2.png)
+<p align="center"><img src="images/img_65ba6b8f.png" alt="802.1D/p Mapping Page"></p>
 
-Note：
+<p align="center"><strong>Figure 4-132 802.1D/p Mapping Page</strong></p>
 
-Before setting the VLAN secondary IP address, you need to set the Primary IP Address first。
+Click "Set" to save all 802.1D/p mapping configurations.
 
-  
+#### 4.9.4 IP DSCP Mapping
 
-  
+Navigate to QoS/Priority >> IP DSCP Mapping.
 
-## 8.2  VRRP Configuration 
+<p align="center"><img src="images/img_532837a9.png" alt="IP DSCP Mapping Page"></p>
 
-Click Routing -> VRRP Configuration at navigation bar in order, and then enter VRRP List page as following:
+<p align="center"><strong>Figure 4-133 IP DSCP Mapping Page</strong></p>
 
-![](images/img_291d2f80.png)
+This page lists 64 DSCP values with configurable mapping values for each. Click "Clear" to reset all DSCP mapping configurations.
 
-Click Reload at the bottom control bar, refresh VRRP list information.
+> **Note**: The number of table parameters may vary between device models.
 
-Click Delete at the bottom control bar, delete the selected VRRP configuration information.
+#### 4.9.5 Queue Management
 
-Click Create at the bottom control bar, to enter new VRRP configuration page:
+Navigate to QoS/Priority >> Queue Management.
 
-![](images/img_00ada6aa.png)
+<p align="center"><img src="images/img_33d772d7.png" alt="Queue Management Page"></p>
 
-Click Set at the bottom control bar, finish the configuration of VRRP and other information.
+<p align="center"><strong>Figure 4-134 Queue Management Page</strong></p>
 
-Click Go Back at the bottom control bar, back to the VRRP List Page.
+Click "Set" to save all configurations.
 
-  
+> **Note**: If one Queue ID has its bandwidth weight set to zero, all other Queue IDs must also have their weight values set to zero.
 
-8.3  IP Express Forwarding
+### 4.10 Redundancy
 
-Click Routing -> IP Express Forwarding at navigation bar in order, and then enter IP Express Forwarding switch page as following:
+<p align="center"><img src="images/img_e16882b1.webp" alt="Redundancy Navigation Menu - Part 1"></p>
 
-![](images/img_b085cfb2.png)
+<p align="center"><strong>Figure 4-135 Redundancy Navigation Menu - Part 1</strong></p>
 
-Click Set at the bottom control bar, to finish the setting of IP Express Forwarding.
+<p align="center"><img src="images/img_2ad2da74.webp" alt="Redundancy Navigation Menu - Part 2"></p>
 
-Click Reload at the bottom control bar, refresh the information of IP Express Forwarding information.
+<p align="center"><strong>Figure 4-136 Redundancy Navigation Menu - Part 2</strong></p>
 
-  
+#### 4.10.1 Link Aggregation Configuration
 
-## 8.4  Static ARP
+**Port Aggregation Configuration**
 
-Click Routing -> Static ARP at navigation bar in order, and then enter configuration page as following
+Navigate to Redundancy >> Link Aggregation.
 
-![](images/img_2234d43c.png)
+<p align="center"><img src="images/img_b796b99c.webp" alt="Port Aggregation Configuration Page"></p>
 
-Click Modify to modify the current Static ARP.
+<p align="center"><strong>Figure 4-137 Port Aggregation Configuration Page</strong></p>
 
-Click Delete to delete the selected Static ARP items.
+Click "Modify" to change the member ports and aggregation mode. Click "Create" to create a new aggregation group (up to 32 groups via Web, each with up to 8 physical ports). Click "Delete" to remove a selected group.
 
-Click New to create a new Static ARP.
+<p align="center"><img src="images/img_fdc256fd.webp" alt="Aggregation Group Configuration Page"></p>
 
-![](images/img_4783e15e.png)
+<p align="center"><strong>Figure 4-138 Aggregation Group Configuration Page</strong></p>
 
-  
+The aggregation group ID is selectable during creation but not during modification. When member ports exist, the aggregation mode can be set to: Static, LACP Active, or LACP Passive. Use "<<" and ">>" buttons to add or remove member ports.
 
-## 8.5  Static Route
+**Port Channel Global Load Balancing**
 
-Click Routing -> Static Route at navigation bar in order, and then enter configuration page as following: 
+Some models support link aggregation load balancing configuration. Layer 3 switches support per-group load balancing configuration:
 
-![](images/img_14b03b84.png)
+<p align="center"><img src="images/img_34db1112.png" alt="Port Channel Load Balancing Page"></p>
 
-Click Modify to modify the current Static Route.
+<p align="center"><strong>Figure 4-139 Port Channel Load Balancing Page</strong></p>
 
-Click Reload to refresh the static route information.
+Different aggregation groups can use different load balancing modes.
 
-Click Delete to delete the selected Static Route items.
+#### 4.10.2 Backup Link
 
-Click Create to create a new Static Route.
+**Backup Link Global Configuration**
 
-![](images/img_479af6f0.png)
+Navigate to Redundancy >> Backuplink >> Global.
 
-  
+<p align="center"><img src="images/img_079e7881.webp" alt="Backup Link Global Configuration Page"></p>
 
-Note:
+<p align="center"><strong>Figure 4-140 Backup Link Global Configuration Page</strong></p>
 
-Only the Layer3 switches have the static route configuration page.
+This page lists configured link backup groups with preemption mode and delay settings. Click "Modify" to configure. Click "Create" to create a new backup group:
 
-  
+<p align="center"><img src="images/img_c601d18c.png" alt="Create Backup Link Group Page"></p>
 
-## 8.6  RIP Configuration
+<p align="center"><strong>Figure 4-141 Create Backup Link Group Page</strong></p>
 
-### 8.6.1  RIP Configuration 
+> **Note**:
+> 1. The system supports up to 8 link backup group numbers.
+> 2. The preemption mode determines the policy for selecting between primary and backup ports for forwarding packets.
 
-Click Routing -> RIP Configuration at navigation bar in order, and then enter RIP configuration page as following:
+**Backup Link Port Configuration**
 
-![](images/img_70a5ab03.png)
+Navigate to Redundancy >> Backuplink >> Port Configuration.
 
-You should have created a RIP process firstly, before do the RIP entry configuration. When Edit the RIP process can create the new RIP process or delete it also.
+<p align="center"><img src="images/img_ea017e25.webp" alt="Backup Link Port Configuration Page"></p>
 
-Click Create to create a new RIP process.
+<p align="center"><strong>Figure 4-142 Backup Link Port Configuration Page</strong></p>
 
-![](images/img_02f3f952.png)
+This page lists member ports in backup link groups with port attributes, MMU attributes, and load balance VLANs. MMU sender transmits messages to MMU receiver for fast MAC address table updates.
 
-### 8.6.2  RIP Router Entries 
+Click "Modify" to configure port settings:
 
-Click Routing -> RIP Configuration at navigation bar in order, and then click RIP Router Entries to enter RIP Router Entries configuration page as following：
+<p align="center"><img src="images/img_cfab24ee.png" alt="Backup Link Port Detail Configuration Page"></p>
 
-![](images/img_af60516a.png)
+<p align="center"><strong>Figure 4-143 Backup Link Port Detail Configuration Page</strong></p>
 
-  
+A link backup group configured with a primary port cannot assign another port as primary. Similarly, a group with a configured backup port cannot assign another port as backup.
 
-Enter the created RIP process ID, Click Set to enter the selected RIP Router Entries page.
+#### 4.10.3 Spanning Tree
 
-![](images/img_43714194.png)
+**Global Configuration**
 
-  
+Navigate to Redundancy >> Spanning Tree >> Global.
 
-Click Create to create a new RIP Router Entries of selected RIP process.
+<p align="center"><img src="images/img_c2ea5591.webp" alt="Spanning Tree Global Configuration Page"></p>
 
-![](images/img_de535d01.png)
+<p align="center"><strong>Figure 4-144 Spanning Tree Global Configuration Page</strong></p>
 
-  
+This page configures the local STP protocol settings: protocol type, spanning tree priorities, and other parameters. Click "Set" to save.
 
-## 8.7  OSPF Configuration 
+**MSTP Configuration**
 
-### 8.7.1  OSPF process 
+*MST Global*
 
-Click Routing -> OSPF Configuration at navigation bar in order, and then click OSPF Process to enter configuration page as following:
+Navigate to Redundancy >> Spanning Tree >> MSTP, then click "MST Global".
 
-  
+<p align="center"><img src="images/img_feddc735.webp" alt="MST Global Configuration Page"></p>
 
-![](images/img_292718cc.png)
+<p align="center"><strong>Figure 4-145 MST Global Configuration Page</strong></p>
 
-  
+Configure the MST Global Revision Level. Click "Set" to save.
 
-You should have created a OSPF process firstly, before to do the OSPF Router Entries  configuration otherwise cannot do any editing. 
+*MST Instance*
 
-  
+Navigate to Redundancy >> Spanning Tree >> MSTP, then click "MST Instance".
 
-Click Create to entry the RIP process creating page。
+<p align="center"><img src="images/img_6c97edc5.webp" alt="MST Instance Page"></p>
 
-![](images/img_06b75fea.png)
+<p align="center"><strong>Figure 4-146 MST Instance Page</strong></p>
 
-  
+This page displays VLAN mapping, priority, and other settings for each instance. Click "Reload" to refresh. Click "Modify" to configure:
 
-### 8.7.2  OSPF Router Entries 
+<p align="center"><img src="images/img_d769f050.webp" alt="MST Instance Configuration Page"></p>
 
-Click Routing -> OSPF Configuration at navigation bar in order, and then click OSPF Router Entries to enter OSPF Router Entries configuration page as following:
+<p align="center"><strong>Figure 4-147 MST Instance Configuration Page</strong></p>
 
-![](images/img_2a1cbf82.png)
+Configure path cost and priority on this page. Click "Set" to save.
 
-  
+**Spanning Tree Ports**
 
-Enter the OSPF process ID which was created already, click Set to enter the selected OSPF Router Entries configuration page.
+*Port Configuration*
 
-![](images/img_77eea547.png)
+Navigate to Redundancy >> Spanning Tree >> Ports, then click "Port Configuration".
 
-  
+<p align="center"><img src="images/img_7b3302dd.webp" alt="Spanning Tree Port Configuration Page"></p>
 
-Click Create to create the OSPF Router Entries of OSPF process selected.
+<p align="center"><strong>Figure 4-148 Spanning Tree Port Configuration Page</strong></p>
 
-![](images/img_8caccbde.png)
+This page displays and allows configuration of: protocol status, priority, path cost, edge port, RSTP ring, guard, BPDU guard, and BPDU filter. Click "Set" to save.
 
-The format that the Area column can accept is an integer or IP address。
+*Port Status*
 
-# Chapter 9  QoS/Priority
+Navigate to Redundancy >> Spanning Tree >> Ports, then click "Port Status".
 
-![](images/img_02631d8f.png)
+<p align="center"><img src="images/img_4482531b.webp" alt="Spanning Tree Port Status Page"></p>
 
-  
+<p align="center"><strong>Figure 4-149 Spanning Tree Port Status Page</strong></p>
 
-## 9.1  Global 
+This page lists port information and spanning tree usage status. Click "Reload" to refresh.
 
-Click QoS/Priority -> Global at navigation bar in order, and then enter the global configuration page as following：
+#### 4.10.4 EAPS (Ether-Ring)
 
-![](images/img_bc0aef99.png)
+Navigate to Redundancy >> EAPS (ether-ring).
 
-You can do the setting of Schedule Policy, Default CoS Value and Trust Priority in the QoS Global page.
+<p align="center"><img src="images/img_fc70c983.png" alt="EAPS Ring List Page"></p>
 
-  
+<p align="center"><strong>Figure 4-150 EAPS Ring List Page</strong></p>
 
-## 9.2  Port Configuration 
+This page displays EAPS ring configuration: ring ID, node type, description, CONTROL VLAN, status, Hello Time, Fail Time, Pre Forward Time, and primary/secondary ports.
 
-Click QoS/Priority -> Port Configuration at navigation bar in order, and then enter the configuration page as following: 
+Click "Modify" to change time and port configuration. Click "Create" to create a new EAPS ring:
 
-  
+<p align="center"><img src="images/img_562f0a85.webp" alt="EAPS Ring Configuration Page"></p>
 
-  
+<p align="center"><strong>Figure 4-151 EAPS Ring Configuration Page</strong></p>
 
-![](images/img_4eae4974.png)
+Select the primary and secondary ports from the dropdown lists, or select "None".
 
-  
+> **Note**:
+> 1. The system supports up to 32 EAPS rings.
+> 2. After an EAPS ring is configured, the ring ID, node type, and CONTROL VLAN cannot be changed. To modify these, delete the ring and recreate it.
 
-You can set the Port CoS value by port, and then click Set to save the changes.
+#### 4.10.5 MEAPS
 
-  
+Navigate to Redundancy >> MEAPS.
 
-## 9.3  802.1D/p Mapping 
+<p align="center"><img src="images/img_5b9dc1e6.png" alt="MEAPS List Page"></p>
 
-Click QoS/Priority -> 802.1D/p Mapping at navigation bar in order, and then enter the configuration page as following: 
+<p align="center"><strong>Figure 4-152 MEAPS List Page</strong></p>
 
-![](images/img_65ba6b8f.png)
+This page lists configured MEAPS rings: Domain ID, Ring ID, Ring Type, Control VLAN, Hello Time, Failed Time, Pre Forward Time, and primary/secondary ports.
 
-Click Set to save all 802.1D/p mapping configurations.
+Click "Modify" to configure time and port parameters. Click "Create" to create a new MEAPS ring:
 
-  
+<p align="center"><img src="images/img_d59f8c23.png" alt="MEAPS Configuration Page"></p>
 
-## 9.4  IP DSCP Mapping
+<p align="center"><strong>Figure 4-153 MEAPS Configuration Page</strong></p>
 
-Click QoS/Priority -> IP DSCP Mapping at navigation bar in order, and then enter the configuration page as following:
+- Master node and transit node can only be configured in the primary ring.
+- Primary node, transit node, and edge node can be configured in the secondary ring.
+- Primary node and transit node can exist in only one ring; edge node and assistant edge node can exist in multiple rings simultaneously.
 
-  
+Select ports as ring ports or "None" in the Primary Port and Secondary Port fields.
 
-  
+> **Note**:
+> 1. Up to 4 MEAPS domains (0鈥?) are supported.
+> 2. Up to 8 rings per domain (0鈥?) are supported.
+> 3. After configuration, Domain ID, Ring ID, Ring Type, Node Type, and Control VLAN cannot be changed. Delete and recreate the ring to modify these parameters.
 
-![](images/img_532837a9.png)
+#### 4.10.6 ERPS
 
-  
+Navigate to Redundancy >> ERPS.
 
-There are listed the 64 values of DSCP in the IP DSCP mapping page, you can set the mapping value per each DSCP.
+<p align="center"><img src="images/img_3db61254.webp" alt="ERPS List Page"></p>
 
-Click Clear and then clean all of the DSCP mapping configuration.
+<p align="center"><strong>Figure 4-154 ERPS List Page</strong></p>
 
-Note:
+This page displays configured ERPS rings: ring ID, control VLAN, Ring-Node version, Ring-state, Signal Fail, WTR-time, guard time, send-time, and primary/secondary ports.
 
-    The number of table parameter may be different between different device model.
+Click "Modify" to configure time and port parameters. Click "Create" to create a new ERPS ring:
 
-  
+<p align="center"><img src="images/img_3fbb86e2.webp" alt="ERPS Configuration Page"></p>
 
-## 9.5  Queue Management 
+<p align="center"><strong>Figure 4-155 ERPS Configuration Page</strong></p>
 
-Click QoS/Priority -> Queue Management at navigation bar in order, and then enter the configuration page as following:
+The ring ID range is 1鈥?. After configuring Port 1 and Port 2, assign the corresponding port roles.
 
-Click Set to save all configuration.
+> **Note**:
+> 1. The system supports ERPS single ring configuration only.
+> 2. Up to 8 ERPS ring nodes are supported.
+> 3. After configuration, the ID, ring ID, and control VLAN cannot be changed. Delete and recreate to modify.
 
-![](images/img_33d772d7.png)
+#### 4.10.7 CFM Function
 
-  
+**Global Configuration**
 
-Note:
+Navigate to Redundancy >> CFM Function >> GLOBAL.
 
-        If one Queue ID set the bandwidth weight to Zero value. then the weight value of the other queue ID must must be set to Zero.
+<p align="center"><img src="images/img_5777e676.webp" alt="CFM Enable Configuration Page"></p>
 
-# Chapter 10  Redundancy 
+<p align="center"><strong>Figure 4-156 CFM Enable Configuration Page</strong></p>
 
-![](images/img_e16882b1.png)
+Click "Set" to apply.
 
-![](images/img_2ad2da74.png)
+Click "CFM List" to view the CFM list:
 
-10.1  Link Aggregation Configuration
+<p align="center"><img src="images/img_63211f5d.webp" alt="CFM List Page"></p>
 
-### 10.1.1  Port Aggregation Configuration 
+<p align="center"><strong>Figure 4-157 CFM List Page</strong></p>
 
-Click Redundancy -> Link Aggregation at navigation bar in order, and then enter the link aggregation configuration port channel page as following:
+Click "Create" to enter the CFM global configuration page:
 
-  
+<p align="center"><img src="images/img_09c72172.webp" alt="CFM Global Configuration Page"></p>
 
-  
+<p align="center"><strong>Figure 4-158 CFM Global Configuration Page</strong></p>
 
-![](images/img_b796b99c.png)
+Click "Set" to apply. Click "Go Back" to return to the CFM List page.
 
-Click Modify to modify the member port and aggregation mode of the aggregation port.
+**Interface Configuration**
 
-Click Create to create a new aggregation group. As much as 32 aggregation groups can be configured through Web. Each group can configure at most 8 physical port aggregations. 
+Navigate to Redundancy >> CFM Function >> Interface Configuration.
 
-Click Delete to delete the selected aggregation group. 
+<p align="center"><img src="images/img_d43bb843.webp" alt="CFM Port List Page"></p>
 
-![](images/img_fdc256fd.png)
+<p align="center"><strong>Figure 4-159 CFM Port List Page</strong></p>
 
-An aggregation group is selectable when it is created but is not selectable when it is modified. 
+Click "Set" to apply. Click "Reload" to refresh. Click "Delete" to remove selected entries.
 
-When a member port exists on the aggregation port, you can choose the aggregation mode to be Static, LACP Active or LACP Passive. 
+Click "Create" to enter the CFM port configuration page:
 
-You can add or delete the aggregation group member port by buttons “<<” or “>>”. 
+<p align="center"><img src="images/img_38fcb34a.webp" alt="CFM Port Configuration Page"></p>
 
-  
+<p align="center"><strong>Figure 4-160 CFM Port Configuration Page</strong></p>
 
-### 10.1.2  Port Channel Global Loading Balance
+Click "Set" to apply. Click "Go Back" to return to the CFM port list page.
 
-Some models support link aggregation load balancing configuration and others not, but the configuration can be done in the global configuration mode. 
+### 4.11 Diagnostics
 
-Layer 3 model switch can support the aggregation group based load balancing configuration:
+<p align="center"><img src="images/img_5b3e7c7c.webp" alt="Diagnostics Navigation Menu"></p>
 
-  
+<p align="center"><strong>Figure 4-161 Diagnostics Navigation Menu</strong></p>
 
-![](images/img_34db1112.png)
+#### 4.11.1 System Information
 
-You can use different aggregation groups to set different aggregation modes。
+Navigate to Diagnostics >> System >> System Information.
 
-  
+<p align="center"><img src="images/img_21e53474.webp" alt="System Information Page - Part 1"></p>
 
-## 10.2  Backup Link 
+<p align="center"><strong>Figure 4-162 System Information Page - Part 1</strong></p>
 
-### 10.2.1  Backup Link Global Configuration 
+<p align="center"><img src="images/img_cebed037.webp" alt="System Information Page - Part 2"></p>
 
-Click Redundancy -> Backuplink -> Global at navigation bar in order, and then enter the link backup global configuration page as following：
+<p align="center"><strong>Figure 4-163 System Information Page - Part 2</strong></p>
 
-![](images/img_079e7881.png)
+<p align="center"><img src="images/img_2d57c0f0.webp" alt="System Information Page - Part 3"></p>
 
-Click Modify on the right of the entry and configure the preemption mode and the preemption delay mode of the link backup group.
+<p align="center"><strong>Figure 4-164 System Information Page - Part 3</strong></p>
 
-The page lists current configured link backup group, including the preemption mode and the preemption delay mode. Click Create to create a new link backup group.
+This page displays: system information, redundancy protocol state, port configuration, port statistics, and user management ports. Click "Display More" to view additional information such as CPU utilization and task information:
 
-  
+<p align="center"><img src="images/img_993e51ef.png" alt="CPU Utilization and Task Information Page"></p>
 
-![](images/img_c601d18c.png)
+<p align="center"><strong>Figure 4-165 CPU Utilization and Task Information Page</strong></p>
 
-Note：
+#### 4.11.2 Report
 
-1.  There are supported 8 group numbers of link backup group in this system.
-2.  The preemption mode of the link backup group decides the policy of the primary port and the backup port selecting forwarding packets.
+**Log Management**
 
-  
+Navigate to Diagnostics >> Report >> Log Manage.
 
-### 10.2.2  Link Backup Protocol Port Configuration 
+<p align="center"><img src="images/img_57e18c93.png" alt="Log Management Page"></p>
 
-Click Redundancy -> Backuplink -> Port Configuration at navigation bar in order, and then enter the backup link protocol port configuration page as following:
+<p align="center"><strong>Figure 4-166 Log Management Page</strong></p>
 
-![](images/img_ea017e25.png)
+- **Log server**: When enabled, the device transmits log information to the designated server. Enter the server address and select the log grade (grade 9 鈥?debugging is the lowest).
+- **Log buffer**: When enabled, log information is recorded to memory. Use `show log` via Console or Telnet to view buffered logs. Log information in memory is lost upon device restart. Configure buffer size and cache log grade.
 
-The page lists the member port has joined the backup link group, port attribute of the member port, MMU attribute, load balance vlan. MMU sender can transmit the message to MMU receiver to make the receiver quickly update the mac address table. 
+**Log Query**
 
-Click Modify on the right of the entry and configure the link backup protocol of the port.
+Navigate to Diagnostics >> Report >> Log Query.
 
-![](images/img_cfab24ee.png)
+<p align="center"><img src="images/img_5f424c03.png" alt="Log Query Page"></p>
 
-The link backup group which has been configured to be primary port cannot be configured other port as the primary. In the same way, the link backup group which has been configured backup port cannot be configured other port as backup.
+<p align="center"><strong>Figure 4-167 Log Query Page</strong></p>
 
-  
+Filter logs by log level and time range. Leaving time fields empty queries all timestamps. Setting only a start time queries from that time onward; setting only an end time queries up to that time.
 
-10.3  Spanning Tree
+#### 4.11.3 Ports
 
-### 10.3.1  Global
+**Statistics Table**
 
-Click Redundancy -> Spanning Tree -> Global at navigation bar in order, and then enter the spanning tree global configuration page as following: 
+Navigate to Diagnostics >> Ports >> Statistics Table.
 
-![](images/img_c2ea5591.png)
+<p align="center"><img src="images/img_80e66947.png" alt="Port Statistics Table Page"></p>
 
-The page can configure the local STP protocol, such as protocol type, spanning tree priorities etc. Click Set to save configuration.
+<p align="center"><strong>Figure 4-168 Port Statistics Table Page</strong></p>
 
-  
+This page displays port statistics: Receive Packets, Receive Bytes, Received Unicast Packets, Received Multicast Packets, Received Broadcast Packets, and others.
 
-### 10.3.2  MSTP 
+**Error Packet Statistics**
 
-10.3.2.1 MST Global
+Navigate to Diagnostics >> Ports >> Error Packet Statistics.
 
-Click Redundancy -> Spanning Tree -> MSTP at navigation bar in order, and then click the MST Global to enter the configuration page as following:
+<p align="center"><img src="images/img_11c00fbf.webp" alt="Error Packet Statistics Page"></p>
 
-![](images/img_feddc735.png)
+<p align="center"><strong>Figure 4-169 Error Packet Statistics Page</strong></p>
 
-You can configure the MST Global Revision Level in this page.
+This page displays: received discard, received error packets, FCS packets, Jabber packets, received oversize packets, received undersize packets, transmitted discard, transmitted error packets, and transmitted oversize packets. Click "Clear" to reset all error packet statistics.
 
-Click Set to save configuration.
+**SFP**
 
-10.3.2.2 MST Instance
+Navigate to Diagnostics >> Ports >> SFP.
 
-Click Redundancy -> Spanning Tree -> MSTP at navigation bar in order, and then click the MST Instance to enter the configuration page as following:
+<p align="center"><img src="images/img_86a08e3e.png" alt="SFP Information Page"></p>
 
-![](images/img_6c97edc5.png)
+<p align="center"><strong>Figure 4-170 SFP Information Page</strong></p>
 
-This page shows the VLAN Mapping, priority and etc. of every instance.
+> **Note**: SFP port information is readable only when DDM (Digital Diagnostics Monitoring) is enabled.
 
-Click Reload at the bottom control bar, refresh the MST Instance information.
+**Cable Diagnosis**
 
-Click Modify on the right of the table, configure the instance. 
+Navigate to Diagnostics >> Ports >> Cable Diagnosis.
 
-![](images/img_d769f050.png)
+<p align="center"><img src="images/img_f3304613.webp" alt="Cable Diagnosis Page"></p>
 
-On this page, the path cost and priority can be configured. And click Set at the bottom control bar to save the configuration.
+<p align="center"><strong>Figure 4-171 Cable Diagnosis Page</strong></p>
 
-  
+Enable or disable cable diagnosis per port and configure the diagnosis period. Click "Set" to view diagnosis results.
 
-### 10.3.3  Spanning Tree Ports
+**Port Mirroring**
 
-10.3.3.1 Port Configuration
+Navigate to Diagnostics >> Ports >> Port Mirroring.
 
-Click Redundancy -> Spanning Tree -> Ports at navigation bar in order, and then click the Port Configuration to enter the configuration page as following:
+<p align="center"><img src="images/img_41fa7d97.webp" alt="Port Mirroring Page"></p>
 
-![](images/img_7b3302dd.png)
+<p align="center"><strong>Figure 4-172 Port Mirroring Page</strong></p>
 
-This page shows the protocol status, priority, path cost, edge port, RSTP ring, guard, BPDU guard and BPDU filter enabling status, which can be configured. After configuration, click Set at the bottom control bar to save the configuration.
+Select a destination (mirror) port from the dropdown. Configure mirroring source ports by selecting:
+- **RX**: Received packets are mirrored to the destination port.
+- **TX**: Transmitted packets are mirrored to the destination port.
+- **RX & TX**: Both received and transmitted packets are mirrored simultaneously.
 
-10.3.3.2 Port Status
+#### 4.11.4 LLDP Configuration
 
-Click Redundancy -> Spanning Tree -> Ports at navigation bar in order, and then click the Port Status tab to enter the status page as following:
+**LLDP Basic Configuration**
 
-![](images/img_4482531b.png)
+Navigate to Diagnostics >> LLDP >> Configuration.
 
-The page lists the port information and usage status of spanning tree, Click Reload can refresh the data.
+<p align="center"><img src="images/img_910acc6d.png" alt="LLDP Basic Configuration Page"></p>
 
-  
+<p align="center"><strong>Figure 4-173 LLDP Basic Configuration Page</strong></p>
 
-## 10.4  EAPS (ether-ring)
+Enable or disable the LLDP protocol. Port-level LLDP configuration is not available when LLDP is disabled.
 
-Click Redundancy -> EAPS(ether-ring) at navigation bar in order, and then enter the EAPS ring (Ether-ring) list configuration page as following:
+- **HoldTime**: TTL value for LLDP messages. Default: 120 seconds.
+- **Reinit**: LLDP transmission delay. Default: 2 seconds.
 
-![](images/img_fc70c983.png)
+**LLDP Interface**
 
-This page shows the configuration of EAPS ring (ether-ring), including ring ID, node type, ring description, CONTROL VLAN, status, Hello Time, Fail Time, Pre Forward Time and primary and secondary port on the ring.
+Navigate to Diagnostics >> LLDP >> LLDP Interface.
 
-Click Modify on the right, change the time, primary and secondary port configuration on the EAPS (ether-ring).
+<p align="center"><img src="images/img_c9d6930b.png" alt="LLDP Interface Configuration Page"></p>
 
-Click Create at the bottom control bar, create new EAPS (ether-ring).
+<p align="center"><strong>Figure 4-174 LLDP Interface Configuration Page</strong></p>
 
-Note:
+Configure per-port LLDP packet transmission (receive/send). Default: both receive and send are disabled. MED-TLV is enabled by default.
 
-1.  The EAPS ring (ether-ring) number the system supported is 32.
-2.  After the EAPS ring (ether-ring) configured, the ring ID, node type and CONTROL VLAN cannot be changed. If they needed to be changed, please delete the EAPS (ether-ring) and create new.
+**Topology Discovery**
 
-  
+Navigate to Diagnostics >> LLDP >> Topology Discovery.
 
-Click Create at the bottom control bar on the EAPS (ether-ring) page, or click Modify on the right, enter the EAPS ring (ether-ring) configuration page:
+<p align="center"><img src="images/img_cc8a74d7.png" alt="LLDP Topology Discovery Page"></p>
 
-![](images/img_562f0a85.png)
+<p align="center"><strong>Figure 4-175 LLDP Topology Discovery Page</strong></p>
 
-In the drop-down list on the right of primary and secondary port, port of the ring can be chosen, or “None” can be chosen.
+This page lists devices discovered by the local switch via LLDP.
 
-Note:
+### 4.12 Advanced Features
 
-If configure the existed EAPS ring (ether-ring), the ring ID, node type and CONTROL VLAN cannot be changed.
+<p align="center"><img src="images/img_1d674445.webp" alt="Advanced Navigation Menu"></p>
 
-  
+<p align="center"><strong>Figure 4-176 Advanced Navigation Menu</strong></p>
 
-## 10.5  MEAPS   
+#### 4.12.1 DHCP Server
 
-Click Redundancy -> MEAPS at navigation bar in order, and then enter the MEAPS list configuration page as following:
+**DHCP Server Global Configuration**
 
-![](images/img_5b9dc1e6.png)
+Navigate to Advanced >> DHCP Server >> Global.
 
-The list displays the currently configured MEAPS ring, including the Domain ID、Ring ID、Ring Type、Control VLAN、Hello Time、Failed Time、Pre Forward Time and the Primary/Secondary Port on the ring.
+<p align="center"><img src="images/img_9e823141.png" alt="DHCP Server Global Configuration Page"></p>
 
-Click Modify right of the entry to configure the time parameter and the Primary and Secondary port of the MEAPS ring network.
+<p align="center"><strong>Figure 4-177 DHCP Server Global Configuration Page</strong></p>
 
-Click Create to create MEAPS ring network.
+Enable or disable the DHCP server feature. Default ICMP packet count: 2; default ICMP timeout: 5 seconds. DHCP database parameters can also be configured: server IP address, database file name, and timestamp appended to filename.
 
-  
+**DHCP Server Pool Configuration**
 
-Note：
+Navigate to Advanced >> DHCP Server >> Pool.
 
-1.  Supporting max four MEAPS domains (0-3).
-2.  Supporting max eight Rings in one domain (0-7).
-3.  Once one MEAPS has configured, its Domain ID, Ring ID, Ring Type, Node Type and Control VLAN cannot be changed. If these parameters need to be configured, please delete this ring and re-create it. 
+<p align="center"><img src="images/img_0e978eef.png" alt="DHCP Server Pool List Page"></p>
 
-  
+<p align="center"><strong>Figure 4-178 DHCP Server Pool List Page</strong></p>
 
-Click New or Modify on the right of the entry in MEAPS network ring list, and enter MEAPS configuration page.
+This page lists configured DHCP server pools. Click "Modify" to edit pool parameters.
 
-![](images/img_d59f8c23.png)
+Click "Create" to create a new DHCP server pool:
 
-Master node and the transit node can only be configured in the the primary ring.
+<p align="center"><img src="images/img_b4ab4426.png" alt="Create DHCP Server Pool Page"></p>
 
-Primary node, transit node and edge node can be configured in the secondary ring.
+<p align="center"><strong>Figure 4-179 Create DHCP Server Pool Page</strong></p>
 
-The primary node and the transit node can only be exited in one ring, and the edge node and the assistant edge node can be existed in many rings simultaneously.
+#### 4.12.2 SFlow
 
-In the text boxes of “Primary Port” and “Secondary Port”, select a port as the ring port respectively or select “None”.
+**SFlow Global Configuration**
 
-Note:
+Navigate to Advanced >> SFlow >> Configuration, select the "Global" tab.
 
-Once one MEAPS has configured, its ID, ring ID, ring type, node type and control Vlan cannot be configured.
+<p align="center"><img src="images/img_a1851459.webp" alt="SFlow Global Configuration Page"></p>
 
-  
+<p align="center"><strong>Figure 4-180 SFlow Global Configuration Page</strong></p>
 
-## 10.6  ERPS
+Configure the Agent IP address. Default SFlow version: 5. Default Maximum Header Size: 20 (maximum: 128).
 
-Click Redundancy -> ERPS at navigation bar in order, and then enter the ERPS list configuration page as following:
+Click the "Port" tab to enter the SFlow port configuration:
 
-![](images/img_3db61254.png)
+<p align="center"><img src="images/img_2d47f21d.webp" alt="SFlow Port Configuration Page"></p>
 
-This page shows the configured ERPS ring, including ring ID, control vlan, Ring-Node version, Ring-state, Signal Fail, WTR-time, guard time, send-time, primary and secondary port.
+<p align="center"><strong>Figure 4-181 SFlow Port Configuration Page</strong></p>
 
-Click Modify on the right of the list, configure the time and primary and secondary port.
+This page lists SFlow enable/disable status per port. Default Egress/Ingress Sampling Rate: 500. The rate is configurable when SFlow is enabled on a port.
 
-Click Create at the bottom control bar, create new ERPS ring.
+**SFlow Statistics**
 
-Note:
+Navigate to Advanced >> SFlow >> Statistics, select the "Poller" tab:
 
-1.  This system only supports ERPS single ring configuration.
-2.  Max 8 ERPS ring node.
-3.  Once one ERPS has been configured, its ID, ring ID and control Vlan cannot be configured. If these parameters need to be configured, please delete this ring and re-create it.
+<p align="center"><img src="images/img_9c4d3f71.webp" alt="SFlow Poller Statistics Page"></p>
 
-Click Create at the bottom control bar or click Modify on the right of the item, enter the ERPS configuration page as following:
+<p align="center"><strong>Figure 4-182 SFlow Poller Statistics Page</strong></p>
 
-![](images/img_3fbb86e2.png)
+Select the "Sampler" tab:
 
-The ring ID of ERPS can be from 1 to 7.
+<p align="center"><img src="images/img_c343b71d.webp" alt="SFlow Sampler Statistics Page"></p>
 
-After the port 1 and port 2 configured, the corresponding port role should be configured.
+<p align="center"><strong>Figure 4-183 SFlow Sampler Statistics Page</strong></p>
 
-In the text boxes of “Port 1” and “Port 2”, select a port as the ring port respectively or select “None”.
+---
 
-Note:
+## Chapter 5 Typical Applications
 
-Once one MEAPS has been configured, its ID, ring ID, ring type, node type and control Vlan cannot be configured
+### Case 1: Industrial Network with VLAN Segmentation and Redundancy
 
-  
+**Scenario Description**: (Not detailed in source document, to be supplemented)
 
-## 10.7  CFM Function
+**Network Topology**: (Not detailed in source document, to be supplemented)
 
-10.7.1  Global
+**Device Role**: (Not detailed in source document, to be supplemented)
 
-Click Redundancy -> CFM Function -> GLOBAL at navigation bar in order, and then enter the cfm enable configuration page as following:
+**Configuration Steps**: (Not detailed in source document, to be supplemented)
 
-![](images/img_5777e676.png)
+**Reference Sections**:
+- [VLAN Configuration](#475-vlan)
+- [Spanning Tree](#4103-spanning-tree)
+- [EAPS (Ether-Ring)](#4104-eaps-ether-ring)
 
-Click Set at the bottom control bar, finish the setting.
+---
 
-  
+## Appendix A Troubleshooting
 
-Click the “cfm list” on the top, enter the CFM list page:
+### 1 Web Access Issues
 
-![](images/img_63211f5d.png)
+| Symptom | Possible Cause | Troubleshooting Steps | Reference Section |
+|---------|---------------|----------------------|-------------------|
+| Cannot open Web interface | IP address mismatch | 1. Verify the computer IP is in the 192.168.2.x subnet<br>2. Confirm the switch management IP is 192.168.2.1 (default) | [Initial Web Access](#221-initial-web-access) |
+| Cannot open Web interface | HTTP service disabled | 1. Connect via Console or Telnet<br>2. Enter `ip http server` in global configuration mode | [HTTP Service Configuration](#413-enabling-the-http-service) |
+| Cannot open Web interface | HTTP port changed | 1. If the port was changed, use `http://<IP>:<port>` format<br>2. Verify the port via Console using `show running-config` | [HTTP Service Port Configuration](#412-http-service-port-configuration) |
+| Cannot open Web interface | Browser incompatibility | 1. Use a browser supporting HTML 4.0, HTTP 1.1, JavaScript 1.5<br>2. Try Chrome or Firefox | [Pre-installation Preparation](#21-pre-installation-preparation) |
+| Login authentication fails | Incorrect credentials | 1. Verify username and password (case-sensitive)<br>2. Default credentials: admin/admin | [Initial Web Access](#221-initial-web-access) |
+| HTTPS connection fails | HTTPS not enabled | 1. Enable HTTPS via CLI: `ip http ssl-access enable`<br>2. Save configuration with `write` | [HTTPS Access Configuration](#417-https-access-configuration) |
 
-Click Create at the bottom control bar, enter the CFM Global configuration page:
+### 2 Configuration Issues
 
-![](images/img_09c72172.png)
+| Symptom | Possible Cause | Troubleshooting Steps | Reference Section |
+|---------|---------------|----------------------|-------------------|
+| Configuration lost after reboot | Configuration not saved | 1. Click "Save" on the top control bar after making changes<br>2. This is equivalent to the `write` CLI command | [Top Control Bar](#421-top-control-bar) |
+| VLAN list incomplete | Max-VLAN display limit reached | 1. Default maximum is 100 VLANs<br>2. Increase via CLI: `ip http web max-vlan <value>` | [Max-VLAN Display Setting](#415-max-vlan-display-setting) |
+| Cannot modify some settings | Logged in as limited user | 1. Log out and log in with an admin account<br>2. Limited users can only view device state | [Navigation Bar](#422-navigation-bar) |
+| Software update not effective | Device not restarted | 1. Navigate to Basic Setting >> Restart<br>2. Click "Reboot" to restart the switch | [Restart](#437-restart) |
 
-After configuration, click Set at the bottom control bar to finish the setting.
+### 3 Network Issues
 
-Click Go Back at the bottom control bar, back to the CFM List page.
+| Symptom | Possible Cause | Troubleshooting Steps | Reference Section |
+|---------|---------------|----------------------|-------------------|
+| Network loop detected | STP not configured | 1. Enable Spanning Tree Protocol globally<br>2. Configure port-level STP settings | [Spanning Tree](#4103-spanning-tree) |
+| Broadcast storm | Storm control not enabled | 1. Navigate to Switching >> Storm Control<br>2. Enable broadcast storm control and set threshold | [Storm Control](#471-storm-control) |
+| Port not forwarding traffic | Port disabled or speed mismatch | 1. Check port status in Basic Setting >> Port Configuration<br>2. Verify speed and duplex mode settings | [Port Configuration](#433-port-configuration) |
+| DHCP clients not receiving addresses | DHCP server not enabled | 1. Enable DHCP server globally<br>2. Create a DHCP server pool with correct parameters | [DHCP Server](#4121-dhcp-server) |
 
-  
+---
 
-10.7.2  Interface Configuration
+## Appendix B Safety Notices
 
-Click Redundancy -> CFM Function -> interface configuration at navigation bar in order, and then enter the cfm port list page as following:
+1. The switch should be operated within the specified temperature and humidity ranges as indicated in the product datasheet.
+2. Do not use the device in flammable or explosive environments.
+3. Verify that the power supply voltage matches the device specifications before connecting power.
+4. Use only approved power adapters and accessories provided with the device.
+5. Ensure proper ventilation around the device to prevent overheating.
+6. Do not block the ventilation openings of the device.
 
-![](images/img_d43bb843.png)
+> **Warning**: Do not open the device enclosure. There is a risk of electric shock. All maintenance and repair work should be performed by qualified personnel.
 
-Click Set at the bottom control bar, finish the cfm port list configuration.
+---
 
-Click Reload at the bottom control bar, refresh cfm port list information.
+## Appendix C CLI Reference
 
-Click Delete at the bottom control bar, delete the selected cfm port configuration.
+### 1 HTTP/HTTPS Commands
 
-Click Create at the bottom control bar, enter the cfm port configuration page:
+| Command | Function | Example |
+|---------|----------|---------|
+| `ip http server` | Enable HTTP service | `ip http server` |
+| `ip http port {portNumber}` | Set HTTP port | `ip http port 8080` |
+| `ip http http-access enable` | Enable HTTP access | `ip http http-access enable` |
+| `ip http ssl-access enable` | Enable HTTPS access | `ip http ssl-access enable` |
+| `ip http secure-port {portNumber}` | Set HTTPS port | `ip http secure-port 8443` |
+| `[no] ip http language {english}` | Set Web language | `ip http language english` |
+| `ip http web max-vlan {max-vlan}` | Set max VLAN display count | `ip http web max-vlan 200` |
+| `ip http web igmp-groups {igmp-groups}` | Set max IGMP group display count | `ip http web igmp-groups 50` |
 
-![](images/img_38fcb34a.png)
+### 2 Usage Examples
 
-Click Set to finish the cfm port configuration.
+**Example 1: Enable HTTP Service and Set Custom Port**
 
-Click Go Back, back to the cfm port list page.
+```
+Switch_config# ip http server
+Switch_config# ip http port 8080
+Switch_config# write
+```
 
-# Chapter 11  Diagnostics
+After this configuration, access the switch at `http://192.168.2.1:8080`.
 
-![](images/img_5b3e7c7c.png)
+**Example 2: Enable HTTPS and Disable HTTP**
 
-  
+```
+Switch_config# ip http server
+Switch_config# ip http ssl-access enable
+Switch_config# no ip http http-access enable
+Switch_config# write
+```
 
-11.1  System 
+After this configuration, access the switch at `https://192.168.2.1`. HTTP access is disabled.
 
-11.1.1  System Information
+**Example 3: Increase VLAN Display Limit**
 
-Click Diagnostics -> System -> System Information at navigation bar in order, and then enter the configuration page as following：
+```
+Switch_config# ip http web max-vlan 500
+Switch_config# write
+```
 
-![](images/img_21e53474.png)
-
-![](images/img_cebed037.png)
-
-![](images/img_2d57c0f0.png)
-
-The page lists the system information, state of redundancy protocol, port configuration, port statistics, user management port. Click Display More can check more information such as CPU utilization, task information and etc.
-
-![](images/img_993e51ef.png)
-
-  
-
-11.2  Report 
-
-11.2.1  Log Management
-
-Click Diagnostics -> Report -> Log Manage at navigation bar in order, and then enter the configuration page as following：
-
-![](images/img_57e18c93.png)
-
-  
-
-When Enabling the log server was selected, the device will transmit the log information to the designated server. In this case, you need enter the address of the server in the Web Configuration “Address of the system log server” textbox and select the log's grade in the “Grade of the system log information” dropdown box (grade 9 – debugging is the lowest grade of log).
-
-When enabling the log buffer was selected, the device will record the log information to the memory. By logging on to the device through the Console port or Telnet, you can run the command “show log” to browse the logs which are saved on the device. The log information saved in the memory will lost when restarting the device. Please enter the size of the buffer area in the “Size of the system log buffer” textbox and select the grade of the cached log in the “Grade of the cache log information” dropdown box.
-
-  
-
-11.2.2  Log Query
-
-Click Diagnostics -> Report -> Log Query at navigation bar in order, and then enter the configuration page as following:
-
-![](images/img_5f424c03.png)
-
-Note:
-
-If you need more information, you can Query it by setting the log level and log time. Do not set the log time means that the query log of all time. Only set the starting time of log queries are expressed by the time for starting time log of all, only set the end time means queries are expressed by the time as the end time of all log.
-
-11.3  Ports  
-
-11.3.1  Statistics Table  
-
-Click Diagnostics -> Ports -> Statistics Table at navigation bar in order, and then enter the configuration page as following:
-
-  
-
-  
-
-![](images/img_80e66947.png)
-
-The page lists the port information, including the Receive Packets, Receive Bytes, Received Unicast Packets, Received Multicast Packets, Received Broadcast Packets …etc.
-
-  
-
-10.3.2  Error Packet Statistics
-
-Click Diagnostics -> Port -> Error Packet Statistics at navigation bar in order, and then enter the error packet statistics page as following:
-
-![](images/img_11c00fbf.png)
-
-This page shows the communication data, including received discard, received error packets, FCS packets, Jabber packets, received oversize packets, received undersize packets, transmitted discard, transmitted error packets, transmitted oversize packets etc. 
-
-Click Clear at the bottom control bar, to clean all the error packet statistics information.
-
-  
-
-11.3.3  SFP 
-
-Click Diagnostics -> Port -> SFP at navigation bar in order, and then enter the configuration page as following:
-
-  
-
-![](images/img_86a08e3e.png)
-
-  
-
-Note: SFP port information can be read when the DDM has been enabled.
-
-  
-
-  
-
-11.3.4  Cable Diagnosis   
-
-Click Diagnostics -> Port -> Cable Diagnosis at navigation bar in order, and then enter the configuration page as following：
-
-![](images/img_f3304613.png)
-
-You can configure each port of cable diagnosis is enable or disable, and also can configure the diagnosis period.
-
-Click Set to view the results of the diagnosis。
-
-### 11.3.5  Port Mirroring   
-
-Click Diagnostics -> Port -> Port Mirroring at navigation bar in order, and then enter the configuration page as following:
-
-![](images/img_41fa7d97.png)
-
-  
-
-Click the dropdown box right of the Mirror Port and select a port to be the destination port of mirror.
-
-Click the checkbox and select the mirroring source port:
-
-RX The received packets will be mirrored to the destination port 。
-
-TX The transmitted packets will be mirrored to a destination port。
-
-RX & TX The received and transmitted packets will be mirrored simultaneously。
-
-  
-
-  
-
-11.4  LLDP Configuration   
-
-11.4.1  LLDP Basic Configuration 
-
-Click Diagnostics -> LLDP -> Configuration at navigation bar in order, and then enter the basic configuration page of LLDP protocol as following：
-
-  
-
-![](images/img_910acc6d.png)
-
-You can enable or disable the LLDP protocol. You cannot configure the LLDP protocol of the port when LLDP is disabled.
-
-HoldTime refers to the ttl value for transmitting the LLDP message. The default value is 120s.
-
-Reinit refers to the transmission delay of LLDP. The default value is 2s.
-
-  
-
-11.4.2  LLDP Interface 
-
-Click Diagnostics -> LLDP -> LLDP Interface at navigation bar in order, and then enter the LLDP port configuration page as following:
-
-![](images/img_c9d6930b.png)
-
-LLDP port configuration can enable or disable the port transmitting LLDP packets, the default value was disable both of receive and send LLDP packet. The default of MED-TLV is enabled.
-
-  
-
-11.4.3  Topology Discovery
-
-Click Diagnostics -> LLDP -> Topology Discovery at navigation bar in order, and then enter the LLDP topology discovery and configuration page as following:
-
-![](images/img_cc8a74d7.png)
-
-The page lists the devices that have been found by this device.
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-# Chapter 12  Advanced  
-
-![](images/img_1d674445.png)
-
-12.1  DHCP Server   
-
-12.1.1  DHCP Server Global Configuration 
-
-Click Advanced -> DHCP Server -> Global at navigation bar in order, and then enter the DHCP server global configuration page as following:
-
-  
-
-![](images/img_9e823141.png)
-
-You can enable or disable the DHCP server feature in this page. The default value is 2 for Number of ICMP packets, ICMP timeout default value is 5 seconds. BTW you also can configure the DHCP database parameters such as server IP address, database file name, time stamp appends to filename.
-
-  
-
-12.1.2  DHCP Server Pool Configuration  
-
-Click Advanced -> DHCP Server -> Pool at navigation bar in order, and then enter the DHCP server pool configuration page as following: 
-
-  
-
-![](images/img_0e978eef.png)
-
-The page lists the DHCP server pool information that have been configured.
-
-Click Modify on the right of the entry and configure the parameter of DHCP server pool.
-
-Click Create to create a new DHCP server pool, page as following:
-
-![](images/img_b4ab4426.png)
-
-  
-
-  
-
-12.2  SFlow
-
-12.2.1  SFlow Global Configuration
-
-Click Advanced -> SFlow -> Configuration at navigation bar in order, and then click the Global tab page enter the SFlow global configuration page as following:
-
-![](images/img_a1851459.png)
-
-You can configure the Agent IP address on this page, the default value of SFlow Version is 5, default value of Maximum Header Size is 20 (maximum number is 128).
-
-Click Port tab to enter the SFlow port configuration page as following:
-
-![](images/img_2d47f21d.png)
-
-The page lists the port of SFlow enable/disable status, the default value of Egress/Ingress Sampling Rate is 500. You can configure the rate upon your requirement when it is setting to be enabled.
-
-  
-
-12.2.2  SFlow Statistics 
-
-Click Advanced -> SFlow -> Statistics at navigation bar in order, and then click the Poller tab page enter the SFlow poller information page as following:
-
-![](images/img_9c4d3f71.png)
-
-  
-
-Click Advanced -> SFlow -> Statistics at navigation bar in order, and then click the Sampler tab page enter the SFlow poller information page as following:
-
-![](images/img_c343b71d.png)
-
-  
-
-  
-
-  
-
-\--- End of File ---
+The Web interface now displays up to 500 VLANs.

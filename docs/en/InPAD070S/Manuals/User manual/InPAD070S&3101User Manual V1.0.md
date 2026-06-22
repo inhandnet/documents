@@ -54,14 +54,9 @@ The following symbols are used throughout this manual:
 ---
 
 ## Technical Support
+Email: support@inhandnetworks.com
 
-**E-mail**: [support@inhandnetworks.com](mailto:support@inhandnetworks.com)
-
-**Information Feedback**: [info@inhandnetworks.com](mailto:info@inhandnetworks.com)
-
-Thanks for your feedback to let us do better!
-
----
+URL: www.inhand.com
 
 ## How to Use This Manual
 

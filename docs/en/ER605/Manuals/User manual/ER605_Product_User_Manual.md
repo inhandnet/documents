@@ -27,36 +27,9 @@ The content of this user manual is protected by copyright laws. Copyright belong
 | `>` | Separates multiple levels of menus | 【Status】>【Link Monitor】 |
 
 ## Technical Support
+Email: support@inhandnetworks.com
 
-**Beijing InHand Networks Technology Co., Ltd. (Headquarters)**
-
-Tel: 010-8417 0010
-
-Address: 5F, Building 3, No.18 Ziyue Road, Chaoyang District, Beijing
-
-**Chengdu Office**
-
-Tel: 028-8679 8244
-
-Address: 14F, China Taiping Financial Tower, No.1777 North Tianfu Avenue, Wuhou District, Chengdu, Sichuan
-
-**Guangzhou Office**
-
-Tel: 020-8562 9571
-
-Address: Unit B-130, Yuanyang New Third Board Creative Park, No.5 Tangdong East Road, Tianhe District, Guangzhou
-
-**Wuhan Office**
-
-Tel: 027-8716 3566
-
-Address: Room 2001, Building 11, Bali Haoting, No.2 Luoyu East Road, Hongshan District, Wuhan, Hubei
-
-**Shanghai Office**
-
-Tel: 021-5480 8501
-
-Address: Room 1103, No.18 Shunyi Road, Putuo District, Shanghai
+URL: www.inhand.com
 
 ## How to Use This Manual
 

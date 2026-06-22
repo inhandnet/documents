@@ -27,17 +27,11 @@ Due to continuous updating, InHand cannot promise that the contents are consiste
 
 ---
 
-## Contact Us
+## Technical Support
 
-**InHand Networks (Headquarters)**
+Email: support@inhandnetworks.com
 
-Add: 3650 Concorde Pkwy, Suite 200, Chantilly, VA 20151, USA
-
-E-mail: support@inhandneworks.com
-
-T: +1 (703) 348-2988
-
-URL: [www.inhand.com](http://www.inhandnetworks.com/)
+URL: www.inhand.com
 
 ---
 

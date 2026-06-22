@@ -495,7 +495,7 @@ The ODU12 is powered by the InCloud Manager AI cloud management platform. Throug
 | Certification Type | North America Edition |
 |----------|--------|
 | **Mandatory** | FCC / IC / PTCRB |
-| **Carrier** | Verizon / AT&T / T-Mobile |
+| **Carrier** | Verizon / AT&T / T-Mobile(coming soon) |
 | **Environmental** | RoHS / REACH |
 
 

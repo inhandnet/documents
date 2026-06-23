@@ -10,6 +10,7 @@ Usage:
 """
 
 import argparse
+import hashlib
 import os
 import subprocess
 import sys
@@ -296,6 +297,68 @@ def forbid_files(file_list: List[Path]) -> bool:
     return True
 
 
+def _cert_file_match_score(path: Path) -> int:
+    """Score how well a certification file path matches its filename.
+
+    Prefer paths where directory product names appear in the filename.
+    Example: ISM5012D/.../IEC61850-3-ISM5012D.pdf scores higher than
+             ISM5020D/.../IEC61850-3-ISM5012D.pdf.
+    """
+    filename = path.stem.lower().replace("&", " ").replace("-", " ").replace("_", " ")
+    parts = [p.lower() for p in path.parts]
+    # Look for product-like tokens (alphanumeric, often containing model numbers)
+    score = 0
+    for part in parts:
+        token = part.replace("-", " ").replace("_", " ")
+        for sub in token.split():
+            if len(sub) >= 2 and sub in filename:
+                score += 1
+    return score
+
+
+def deduplicate_certification_files(file_list: List[Path]) -> List[Path]:
+    """Deduplicate files under Certification Documents by content hash.
+
+    For files with identical content, keep only the path whose product directory
+    best matches the filename. Non-certification files are returned unchanged.
+    """
+    cert_files = []
+    other_files = []
+    for f in file_list:
+        if "Certification Documents" in f.parts:
+            cert_files.append(f)
+        else:
+            other_files.append(f)
+
+    if not cert_files:
+        return other_files
+
+    # Group by content hash
+    by_hash: dict[str, List[Path]] = {}
+    for f in cert_files:
+        try:
+            h = hashlib.sha256(f.read_bytes()).hexdigest()
+        except (OSError, IOError) as e:
+            print(f"  [WARN] Cannot read {f}: {e}")
+            continue
+        by_hash.setdefault(h, []).append(f)
+
+    unique_certs: List[Path] = []
+    for h, paths in by_hash.items():
+        if len(paths) == 1:
+            unique_certs.append(paths[0])
+            continue
+        # Keep the path that best matches the filename
+        best = max(paths, key=_cert_file_match_score)
+        print(f"  [DEDUP] {len(paths)} duplicate certification files, keeping: {best}")
+        for p in paths:
+            if p != best:
+                print(f"    - skip: {p}")
+        unique_certs.append(best)
+
+    return other_files + unique_certs
+
+
 def validate_files(file_list: List[Path]) -> bool:
     """Validate files via API.
 
@@ -305,6 +368,9 @@ def validate_files(file_list: List[Path]) -> bool:
     Returns:
         True if all files are valid, False otherwise
     """
+    # Deduplicate shared certification files (same content in multiple product dirs)
+    file_list = deduplicate_certification_files(file_list)
+
     # Normalize paths and group by language
     by_lang = {}  # lang -> [{"path": norm, "size": size}]
     file_map = {}  # norm -> Path

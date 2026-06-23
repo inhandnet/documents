@@ -215,7 +215,7 @@
 
 ## <span style="color: green;">IO 20PIN Definition</span>
 
-| PIN | 定义 | PIN | 定义 |
+| PIN | Definition | PIN | Definition |
 |-----|------|-----|------|
 | 1 | L_Channel | 11 | R_Channel |
 | 2 | Mic_IN | 12 | GND |
@@ -230,7 +230,7 @@
 
 ## <span style="color: green;">EXT 10PIN Definition</span>
 
-| PIN | 定义 | PIN | 定义 |
+| PIN | Definition | PIN | Definition |
 |-----|------|-----|------|
 | 1 | K_LINE | 6 | L_LINE |
 | 2 | CAN1_H | 7 | CAN1_L |

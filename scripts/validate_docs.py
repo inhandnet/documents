@@ -94,7 +94,7 @@ def get_changed_files() -> List[Path]:
 def get_deleted_files() -> List[Path]:
     """Get deleted files in docs/ directory.
 
-    Returns files with status 'D' (deleted) from git diff.
+    Returns files with status 'D' (deleted) or 'R' (renamed, old path) from git diff.
     """
     base_ref = os.environ.get("GITHUB_BASE_REF")
     head_ref = os.environ.get("GITHUB_HEAD_REF")
@@ -119,12 +119,19 @@ def get_deleted_files() -> List[Path]:
         for line in result.stdout.strip().split("\n"):
             if not line:
                 continue
-            # Format: "D\tfilepath" or "M\tfilepath" or "A\tfilepath"
-            parts = line.split("\t", 1)
-            if len(parts) == 2:
-                status, filepath = parts
-                if status == "D" and filepath.startswith("docs/"):
+            # Format: "D\tfilepath" or "R100\toldpath\tnewpath" or "M\tfilepath" or "A\tfilepath"
+            parts = line.split("\t")
+            if not parts:
+                continue
+            status = parts[0]
+            if status == "D" and len(parts) >= 2:
+                filepath = parts[1]
+                if filepath.startswith("docs/"):
                     deleted.append(Path(filepath))
+            elif status.startswith("R") and len(parts) >= 3:
+                oldpath = parts[1]
+                if oldpath.startswith("docs/"):
+                    deleted.append(Path(oldpath))
         return deleted
     except subprocess.CalledProcessError:
         return []

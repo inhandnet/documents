@@ -9,7 +9,7 @@
   </div>
   <div style="padding-left: 40px;">
     <div style="font-size: 40px; font-weight: bold; color:#000;margin-bottom: 30px;">
-      MO 62A AI Single Board Computer
+      Mo 62A AI Single Board Computer
     </div>
     <div style="text-align: center;">
       <div style="display: flex; flex-wrap: wrap; gap: 16px; ">
@@ -28,7 +28,7 @@
 
 # <span style="color: green;">1. Product Overview</span>
 
-**The MO-62A is a 2 TOPS edge AI single-board computer based on the TI AM62A74 SoC, designed for AI vision boxes, intelligent cameras, and edge AI inference terminals.**
+**The Mo-62A is a 2 TOPS edge AI single-board computer based on the TI AM62A74 SoC, designed for AI vision boxes, intelligent cameras, and edge AI inference terminals.**
 
 **Product Features:**
 - **Edge AI Acceleration:** 2 TOPS on-device AI inference with C7x DSP and deep-learning accelerator
@@ -152,7 +152,7 @@
 
 ## <span style="color: green;">Model Code Rule</span>
 
-**Model code:** MO-62A-\<Memory\>
+**Model code:** Mo-62A-\<Memory\>
 
 \<Memory\>: RAM Capacity
 
@@ -160,9 +160,9 @@
 
 | Model | \<Memory\>: RAM Capacity |
 |-------|--------------------------|
-| MO-62A-2G | 2 GB |
-| MO-62A-4G | 4 GB |
-| MO-62A-8G | 8 GB |
+| Mo-62A-2G | 2 GB |
+| Mo-62A-4G | 4 GB |
+| Mo-62A-8G | 8 GB |
 
 # <span style="color: green;">6. Contact Us</span>
 

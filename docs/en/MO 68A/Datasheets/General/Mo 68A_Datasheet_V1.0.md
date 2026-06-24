@@ -9,7 +9,7 @@
   </div>
   <div style="padding-left: 40px;">
     <div style="font-size: 40px; font-weight: bold; color:#000;margin-bottom: 30px;">
-      MO 68A AI Single Board Computer
+      Mo 68A AI Single Board Computer
     </div>
     <div style="text-align: center;">
       <div style="display: flex; flex-wrap: wrap; gap: 16px; ">
@@ -28,7 +28,7 @@
 
 # <span style="color: green;">1. Product Overview</span>
 
-**The MO-68A is an 8 TOPS edge AI single-board computer based on the TI AM68A SoC, designed for AI vision boxes, intelligent cameras, and edge AI inference terminals.**
+**The Mo-68A is an 8 TOPS edge AI single-board computer based on the TI AM68A SoC, designed for AI vision boxes, intelligent cameras, and edge AI inference terminals.**
 
 **Product Features:**
 - **Edge AI Acceleration:** 8 TOPS on-device AI inference with TI TIDL runtime supporting TFLite / ONNX
@@ -162,12 +162,12 @@
 
 | Base Model | -x | Memory |
 |---------|-------|-----------|
-| MO-62A | 4G | 4GB |
-| MO-62A | 8G | 8GB |
+| Mo-62A | 4G | 4GB |
+| Mo-62A | 8G | 8GB |
 
 **Example**<br/>
-Model：MO-68A-8G<br/> 
-"MO-62A" means Base Model<br/>
+Model：Mo-68A-8G<br/> 
+"Mo-62A" means Base Model<br/>
 "-8G" means 8GB memory
 
 # <span style="color: green;">6. Contact Us</span>

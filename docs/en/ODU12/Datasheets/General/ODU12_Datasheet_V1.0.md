@@ -192,14 +192,14 @@ AI Agent cloud management enables unified remote operations and maintenance:
 | **Power Supply** | IEEE 802.3at PoE powered (802.3af compatible) |
 | **Power Consumption** | ≤ 18 W |
 | **Reset Button** | 1 × Reset button |
-| **Cooling** | Structure-thermal integrated passive cooling, fanless design |
+| **Cooling** | Structure-thermal integrated passive cooling, fanless design |f
 | **Protection Rating** | IP65 |
 | **Enclosure Material** | Die-cast aluminum heat sink + UV-stabilized polymer shell |
 | **Color** | White |
 | **Operating Temperature** | -30 °C ~ +70 °C |
 | **Storage Temperature** | -40 °C ~ +85 °C |
 | **Relative Humidity** | 5% ~ 95%, non-condensing |
-| **Dimensions** | 350 mm × 300 mm × 50 mm (reference) |
+| **Dimensions** | 235 mm x 167.93 mm x 81.93 mm |
 | **Weight** | Approx. 1.5 kg (reference) |
 | **Mounting** | Wall, pole, and roof mounting |
 

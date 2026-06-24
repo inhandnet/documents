@@ -78,4 +78,8 @@ plugins:
       glob:
         - "**/Datasheets/**"
         - "**/datasheets/**"
+        - "**/Certification Documents/**"
+        - "**/certification documents/**"
+        - "**/Drawings/**"
+        - "**/drawings/**"
 

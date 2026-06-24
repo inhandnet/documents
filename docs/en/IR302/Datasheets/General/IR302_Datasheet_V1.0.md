@@ -38,7 +38,7 @@ The IR302 adopts a fanless cooling design, supports wide temperature and wide vo
 # <span style="color: green;">2. Key Features</span>
 
 ## <span style="color: green;">2.1 Industrial-Grade Reliability</span>
-- **Wide Temperature Design**: Operating temperature range of -20°C ~ +70°C
+- **Wide Temperature Design**: Operating temperature range of Normal:-35℃to70℃，Extended:-40℃ to 75℃
 - **Wide Voltage Power Supply**: Supports 9~36V DC input, compatible with 12V DC adapters, with reverse polarity protection and surge protection
 - **Fanless Design**: Full metal enclosure with natural convection cooling, no moving parts, significantly improved MTBF
 - **Electromagnetic Compatibility**: Passes industrial-grade EMC testing, adaptable to strong electromagnetic interference environments
@@ -83,7 +83,7 @@ The IR302 adopts a fanless cooling design, supports wide temperature and wide vo
 | Serial Interface | 1× RS232/RS485 combo terminal, DTU transparent transmission (TCP Server/Client/UDP/MQTT) |
 | Power Supply | 9&#126;36V DC wide voltage input, typical power consumption 2~5W, peak &lt; 10W, reverse polarity protection |
 | Dimensions | Approx. 100 mm × 30 mm × 100 mm (L × W × H, excluding mounting ears and antennas) |
-| Operating Temperature / Protection | -20°C ~ +70°C, IP30, full metal fanless natural convection cooling |
+| Operating Temperature / Protection | Normal:-35℃ to 70℃，Extended:-40℃ to 75℃, IP30, full metal fanless natural convection cooling |
 
 # <span style="color: green;">3. Typical Application Scenarios</span>
 
@@ -106,10 +106,6 @@ The IR302 adopts a fanless cooling design, supports wide temperature and wide vo
 - Environmental water quality/air station data backhaul
 - Smart streetlight centralized control
 - Self-service terminal (Smart ATM) networking
-
-
-<div style="page-break-after: always;"></div>
-
 
 ## <span style="color: green;">3.5 New Energy</span>
 - Distributed photovoltaic power station remote monitoring
@@ -151,6 +147,10 @@ The IR302 adopts a fanless cooling design, supports wide temperature and wide vo
 - Compared to the IR615 in the same series, the IR302 is more compact, adopting a **1x1 Wi-Fi antenna solution** to achieve balance between cost and performance. It still provides stable throughput of 31 Mbps within 10 meters, meeting the vast majority of industrial inspection and SCADA data interaction requirements
 
 
+
+<div style="page-break-after: always;"></div>
+
+
 # <span style="color: green;">5. Hardware Specifications</span>
 
 | Item | Specification |
@@ -186,7 +186,6 @@ The IR302 adopts a fanless cooling design, supports wide temperature and wide vo
 1. All dimensions are in millimeters (mm).
 2. Dimensions (L × W × H): 92 × 90 × 24 mm.
 3. All dimensions are approximate values and for reference only.
-
 
 # <span style="color: green;">6. Network Connectivity</span>
 
@@ -287,7 +286,7 @@ The IR302 adopts a fanless cooling design, supports wide temperature and wide vo
 - **IP Rate Limiting**: Uplink/downlink bandwidth rate limiting based on IP address
 - **Traffic Statistics**: Interface-level traffic statistics, supports traffic alarm thresholds
 
-## <span style="color: green;">7.5.1 Scheduled Tasks</span>
+### <span style="color: green;">7.5.1 Scheduled Tasks</span>
 
 - **Scheduled Reboot**: Supports daily/advanced rule scheduled device reboot
 - **Cellular Scheduled Redial**: Supports planned triggering of cellular interface redial
@@ -337,8 +336,6 @@ IR302 - [4G Module] - [Wi-Fi] - [Other Options]
 | | IO | 2×IO |
 | | (blank) | No serial/IO (omitted) |
 
-
-
 ## <span style="color: green;">8.2 Standard Model List</span>
 
 | Model | 4G | Wi-Fi | Serial/IO | Description |
@@ -351,7 +348,7 @@ IR302 - [4G Module] - [Wi-Fi] - [Other Options]
 | IR302-FQ58-IO | ✓ | — | 2×IO | Europe/APAC/Australia, no Wi-Fi |
 | IR302-FQ53-WLAN | ✓ | ✓ | — | Europe/Middle East/Africa (LTE CAT1), no serial/IO |
 | IR302-FQ53 | ✓ | — | — | Europe/Middle East/Africa (LTE CAT1), no Wi-Fi, no serial/IO |
-| **IR302-FQ38-WLAN-S** | ✓ | ✓ | 1×RS232 | North America (LTE CAT4) |
+| IR302-FQ38-WLAN-S | ✓ | ✓ | 1×RS232 | North America (LTE CAT4) |
 | IR302-FQ38-WLAN-IO | ✓ | ✓ | 2×IO | North America (LTE CAT4) |
 | IR302-FQ38-S | ✓ | — | 1×RS232 | North America (LTE CAT4), no Wi-Fi |
 | IR302-FQ38-IO | ✓ | — | 2×IO | North America (LTE CAT4), no Wi-Fi |
@@ -369,6 +366,10 @@ IR302 - [4G Module] - [Wi-Fi] - [Other Options]
 | IR302-FQ68-WLAN-S | ✓ | ✓ | 1×RS232 | Latin America (LTE CAT4) |
 | IR302-FQ68-S | ✓ | — | 1×RS232 | Latin America (LTE CAT4), no Wi-Fi |
 
+
+<div style="page-break-after: always;"></div>
+
+
 ## <span style="color: green;">8.3 Accessories List (Per Unit Standard)</span>
 
 | Accessory Name | Quantity | Remarks |
@@ -382,7 +383,6 @@ IR302 - [4G Module] - [Wi-Fi] - [Other Options]
 | Product Warranty Card | 1 pc | 1 year warranty |
 | Certificate of Conformity | 1 pc | — |
 
-
 ## <span style="color: green;">8.4 Optional Accessories</span>
 
 - DIN rail mounting kit (1 set)
@@ -391,13 +391,17 @@ IR302 - [4G Module] - [Wi-Fi] - [Other Options]
 - High-gain 4G/Wi-Fi antenna (extension cable 3m/5m/10m)
 
 
+
+<div style="page-break-after: always;"></div>
+
+
 # <span style="color: green;">9. Reliability Standards and Certifications</span>
 
 ## <span style="color: green;">9.1 Environmental Adaptability</span>
 
 | Item | Parameter |
 |------|-----------|
-| **Operating Temperature** | -20°C ~ +70°C (standard version) |
+| **Operating Temperature** | Normal:-35℃ to 70℃，Extended:-40℃ to 75℃ |
 | **Storage Temperature** | -40°C ~ +85°C |
 | **Operating Humidity** | 5% ~ 95% RH (non-condensing) |
 | **Storage Humidity** | 5% ~ 95% RH (non-condensing) |
@@ -433,6 +437,7 @@ IR302 - [4G Module] - [Wi-Fi] - [Other Options]
 | **Warranty Period** | 1 year (standard terms) |
 
 
-**Beijing InHand Networks Technology Co., Ltd.**
+# <span style="color: green;">10. Contact Us</span>
 
-*The contents of this specification are for reference only and are subject to change without notice. The final interpretation right belongs to Beijing InHand Networks Technology Co., Ltd.*
+- **Official Website:** [InHand Networks](https://www.inhand.com.cn)
+- **Copyright Notice:** © InHand Networks. All rights reserved.

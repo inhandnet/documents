@@ -304,8 +304,8 @@ def forbid_files(file_list: List[Path]) -> bool:
     return True
 
 
-def _cert_file_match_score(path: Path) -> int:
-    """Score how well a certification file path matches its filename.
+def _asset_file_match_score(path: Path) -> int:
+    """Score how well an asset file path matches its filename.
 
     Prefer paths where directory product names appear in the filename.
     Example: ISM5012D/.../IEC61850-3-ISM5012D.pdf scores higher than
@@ -323,26 +323,30 @@ def _cert_file_match_score(path: Path) -> int:
     return score
 
 
-def deduplicate_certification_files(file_list: List[Path]) -> List[Path]:
-    """Deduplicate files under Certification Documents by content hash.
+SHARED_ASSET_DIRS = {"Certification Documents", "Drawings"}
 
+
+def deduplicate_shared_asset_files(file_list: List[Path]) -> List[Path]:
+    """Deduplicate files under shared asset dirs by content hash.
+
+    Shared asset dirs: Certification Documents and Drawings.
     For files with identical content, keep only the path whose product directory
-    best matches the filename. Non-certification files are returned unchanged.
+    best matches the filename. Other files are returned unchanged.
     """
-    cert_files = []
+    asset_files = []
     other_files = []
     for f in file_list:
-        if "Certification Documents" in f.parts:
-            cert_files.append(f)
+        if any(d in f.parts for d in SHARED_ASSET_DIRS):
+            asset_files.append(f)
         else:
             other_files.append(f)
 
-    if not cert_files:
+    if not asset_files:
         return other_files
 
     # Group by content hash
     by_hash: dict[str, List[Path]] = {}
-    for f in cert_files:
+    for f in asset_files:
         try:
             h = hashlib.sha256(f.read_bytes()).hexdigest()
         except (OSError, IOError) as e:
@@ -350,20 +354,21 @@ def deduplicate_certification_files(file_list: List[Path]) -> List[Path]:
             continue
         by_hash.setdefault(h, []).append(f)
 
-    unique_certs: List[Path] = []
+    unique_assets: List[Path] = []
     for h, paths in by_hash.items():
         if len(paths) == 1:
-            unique_certs.append(paths[0])
+            unique_assets.append(paths[0])
             continue
         # Keep the path that best matches the filename
-        best = max(paths, key=_cert_file_match_score)
-        print(f"  [DEDUP] {len(paths)} duplicate certification files, keeping: {best}")
+        best = max(paths, key=_asset_file_match_score)
+        dir_label = "Certification Documents" if any("Certification Documents" in p.parts for p in paths) else "Drawings"
+        print(f"  [DEDUP] {len(paths)} duplicate {dir_label} files, keeping: {best}")
         for p in paths:
             if p != best:
                 print(f"    - skip: {p}")
-        unique_certs.append(best)
+        unique_assets.append(best)
 
-    return other_files + unique_certs
+    return other_files + unique_assets
 
 
 def validate_files(file_list: List[Path]) -> bool:
@@ -375,8 +380,8 @@ def validate_files(file_list: List[Path]) -> bool:
     Returns:
         True if all files are valid, False otherwise
     """
-    # Deduplicate shared certification files (same content in multiple product dirs)
-    file_list = deduplicate_certification_files(file_list)
+    # Deduplicate shared asset files (same content in multiple product dirs)
+    file_list = deduplicate_shared_asset_files(file_list)
 
     # Normalize paths and group by language
     by_lang = {}  # lang -> [{"path": norm, "size": size}]

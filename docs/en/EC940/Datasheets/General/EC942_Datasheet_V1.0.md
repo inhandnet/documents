@@ -54,8 +54,6 @@
 | Dimensions (W × D × H) | 47.3 × 162.7 × 148.3 mm |
 | Protection Rating | IP30 |
 
-
-
 # <span style="color: green;">2. Product Dimensions</span>
 
 <div style="display: flex; align-items: end; justify-content: space-between; column-gap: 2%;">
@@ -69,11 +67,11 @@
     <img src="images/prod_3.png" alt="Side View" style="display: block; margin: 0 auto;" />
     <div style="width: 100%; text-align: center; font-size: 12px;">Side View</div>
   </div>
-  <div style="width: 45%;">
+  <div style="width: 40%;">
     <img src="images/prod_2.png" alt="Interface Diagram" style="display: block; margin: 0 auto;" />
     <div style="width: 100%; text-align: center; font-size: 12px;">Interface Diagram</div>
   </div>
-  <div style="width: 45%;">
+  <div style="width: 80%;">
     <div>Note:</div><div>1. All dimensions are in millimeters (mm).</div><div>2. All dimensions are approximate and for reference only.</div><div>3. Dimensioned drawings are not intended for machining.</div><div>4. Dimensions are subject to part and manufacturing tolerances.</div><div>5. Specifications may change without prior notice.</div>
   </div>
 </div>
@@ -102,7 +100,8 @@
 | SIM Card Holders | 2×MicroSIM |
 | LED Indicators | 4G/5G, Signal Strength (L1, L2, L3), SIM1, SIM2, User1, User2, PWR, STATUS, WARN, ERR |
 | USB | USB2.0 (2×Type-A + 1×Type-C) |
-| TF | Supports MicroSD cards up to 32GB (recommended maximum capacity) |
+| TF | Supports MicroSD cards up to 32GB (recommended maximum 
+capacity) |
 | Expansion Interfaces |  1x mSATA, supports mSATA SSD |
 | HDMI | HDMI2.0 |
 | WiFi (Optional) |  STA, 802.11ac/a/b/g/n, 2.4G/5G dual band |
@@ -158,47 +157,34 @@
 | Remote Management | DeviceLive / HTTP / HTTPS / SSH remote management |
 | DeviceLive Cloud | Supports cloud-based parameter configuration, container management, application and firmware management |
 
-
-
-
 # <span style="color: green;">5. Ordering Information</span>
 
 ## <span style="color: green;">Model Rule</span>
 
 **Model code:** EC942-\<B/H\>-\<WMNN\>-B-[X]
 
-\<B/H\>: Hardware option — **B** = without Wi-Fi/GPS/CAN/TPM & I/O · **H** = with Wi-Fi/GPS/CAN/TPM & I/O  
+\<B/H\>: WiFi/GPS/CAN/TPM & I/O capability (B=NO, H=YES)  
 \<WMNN\>: Cellular Type & Frequency Band  
 [X]: OS option (Optional)
 
 ## <span style="color: green;">Model List</span>
 
-<table style="width:100%; table-layout:fixed;">
-  <colgroup>
-    <col style="width:27%;">
-    <col style="width:21%;">
-    <col style="width:52%;">
-  </colgroup>
-  <tr><th>Model</th><th>Region</th><th>Cellular Type & Frequency Band</th></tr>
-  <tr><td>EC942-B-LQA8-B</td><td>China</td><td>LTE CAT4<br/>LTE-FDD B1/B3/B5/B8; LTE-TDD B34/B38/B39/B40/B41; WCDMA B1/B8; TD-SCDMA B34/B39; CDMA BC0; GSM 900/1800MHz</td></tr>
-  <tr><td>EC942-H-LQA8-B</td><td>China</td><td>LTE CAT4<br/>LTE-FDD B1/B3/B5/B8; LTE-TDD B34/B38/B39/B40/B41; WCDMA B1/B8; TD-SCDMA B34/B39; CDMA BC0; GSM 900/1800MHz</td></tr>
-  <tr><td>EC942-B-NRQ1-B</td><td>China</td><td>5G NR<br/>NSA n78/n79; SA n1/n3/n5/n8/n28/n41/n77/n78/n79; LTE-FDD B1/B3/B5/B8; LTE-TDD B34/B38/B39/B40/B41; WCDMA B1/B8</td></tr>
-  <tr><td>EC942-H-NRQ1-B</td><td>China</td><td>5G NR<br/>NSA n78/n79; SA n1/n3/n5/n8/n28/n41/n77/n78/n79; LTE-FDD B1/B3/B5/B8; LTE-TDD B34/B38/B39/B40/B41; WCDMA B1/B8</td></tr>
-  <tr><td>EC942-B-NRQ3-B</td><td>Global (excluding China)</td><td>5G NR<br/>NSA/SA n1/n2/n3/n5/n7/n8/n12/n20/n25/n28/n38/n40/n41/n48/n66/n71/n77/n78/n79; LTE FDD B1/B2/B3/B5/B7/B8/B12(B17)/B13/B14/B18/B19/B20/B25/B26/B28/B29/B30/B32/B66/B71; LTE TDD B34/B38/B39/B40/B41/B42/B48; LAA B46; WCDMA B1/B2/B3/B4/B5/B6/B8/B19</td></tr>
-  <tr><td>EC942-H-NRQ3-B</td><td>Global (excluding China)</td><td>5G NR<br/>NSA/SA n1/n2/n3/n5/n7/n8/n12/n20/n25/n28/n38/n40/n41/n48/n66/n71/n77/n78/n79; LTE FDD B1/B2/B3/B5/B7/B8/B12(B17)/B13/B14/B18/B19/B20/B25/B26/B28/B29/B30/B32/B66/B71; LTE TDD B34/B38/B39/B40/B41/B42/B48; LAA B46; WCDMA B1/B2/B3/B4/B5/B6/B8/B19</td></tr>
-  <tr><td>EC942-B-FQ58-B</td><td>EMEA</td><td>LTE CAT4<br/>LTE-FDD B1/B3/B7/B8/B20/B28A; LTE-TDD B38/B40/B41; WCDMA B1/B8; GSM B3/B8</td></tr>
-  <tr><td>EC942-H-FQ58-B</td><td>EMEA</td><td>LTE CAT4<br/>LTE-FDD B1/B3/B7/B8/B20/B28A; LTE-TDD B38/B40/B41; WCDMA B1/B8; GSM B3/B8</td></tr>
-  <tr><td>EC942-B-FQ38-B</td><td>North America</td><td>LTE CAT4<br/>LTE-FDD B2/B4/B5/B12/B13/B14/B66/B71; WCDMA B2/B4/B5</td></tr>
-  <tr><td>EC942-H-FQ38-B</td><td>North America</td><td>LTE CAT4<br/>LTE-FDD B2/B4/B5/B12/B13/B14/B66/B71; WCDMA B2/B4/B5</td></tr>
-  <tr><td>EC942-B-FQ78-B</td><td>Australia & Latin America</td><td>LTE CAT4<br/>LTE-FDD B1/B2/B3/B4/B5/B7/B8/B28; LTE-TDD B40; UMTS B1/B2/B5/B8; EDGE/GPRS/GSM 850/900/1800/1900MHz</td></tr>
-  <tr><td>EC942-H-FQ78-B</td><td>Australia & Latin America</td><td>LTE CAT4<br/>LTE-FDD B1/B2/B3/B4/B5/B7/B8/B28; LTE-TDD B40; UMTS B1/B2/B5/B8; EDGE/GPRS/GSM 850/900/1800/1900MHz</td></tr>
-  <tr><td>EC942-B-EN00-B</td><td>Global</td><td>No Cellular</td></tr>
-  <tr><td>EC942-H-EN00-B</td><td>Global</td><td>No Cellular</td></tr>
-</table>
-
-
-<div style="page-break-after: always;"></div>
-
+| Model | Region | \<B/H\> | \<WMNN\>: Cellular Type & Frequency Band | WiFi/GPS/CAN/TPM | I/O |
+|------|--------|---------|-------------------------------------------|------------------|-----|
+| EC942-B-LQA8-B | China | NO | LTE CAT4: LTE-FDD B1/B3/B5/B8; LTE-TDD B34/B38/B39/B40/B41; WCDMA B1/B8; TD-SCDMA B34/B39; CDMA BC0; GSM 900/1800MHz | NO | NO |
+| EC942-H-LQA8-B | China | YES | LTE CAT4: LTE-FDD B1/B3/B5/B8; LTE-TDD B34/B38/B39/B40/B41; WCDMA B1/B8; TD-SCDMA B34/B39; CDMA BC0; GSM 900/1800MHz | YES | YES |
+| EC942-B-NRQ1-B | China | NO | 5G NR NSA n78/n79; 5G NR SA n1/n3/n5/n8/n28/n41/n77/n78/n79; LTE-FDD B1/B3/B5/B8; LTE-TDD B34/B38/B39/B40/B41; WCDMA B1/B8 | NO | NO |
+| EC942-H-NRQ1-B | China | YES | 5G NR NSA n78/n79; 5G NR SA n1/n3/n5/n8/n28/n41/n77/n78/n79; LTE-FDD B1/B3/B5/B8; LTE-TDD B34/B38/B39/B40/B41; WCDMA B1/B8 | YES | YES |
+| EC942-B-NRQ3-B | Global (excluding China) | NO | 5G NR NSA/SA n1/n2/n3/n5/n7/n8/n12/n20/n25/n28/n38/n40/n41/n48/n66/n71/n77/n78/n79; LTE FDD B1/B2/B3/B5/B7/B8/B12(B17)/B13/B14/B18/B19/B20/B25/B26/B28/B29/B30/B32/B66/B71; LTE TDD B34/B38/B39/B40/B41/B42/B48; LAA B46; WCDMA B1/B2/B3/B4/B5/B6/B8/B19 | NO | NO |
+| EC942-H-NRQ3-B | Global (excluding China) | YES | 5G NR NSA/SA n1/n2/n3/n5/n7/n8/n12/n20/n25/n28/n38/n40/n41/n48/n66/n71/n77/n78/n79; LTE FDD B1/B2/B3/B5/B7/B8/B12(B17)/B13/B14/B18/B19/B20/B25/B26/B28/B29/B30/B32/B66/B71; LTE TDD B34/B38/B39/B40/B41/B42/B48; LAA B46; WCDMA B1/B2/B3/B4/B5/B6/B8/B19 | YES | YES |
+| EC942-B-FQ58-B | EMEA | NO | LTE CAT4: LTE-FDD B1/B3/B7/B8/B20/B28A; LTE-TDD B38/B40/B41; WCDMA B1/B8; GSM B3/B8 | NO | NO |
+| EC942-H-FQ58-B | EMEA | YES | LTE CAT4: LTE-FDD B1/B3/B7/B8/B20/B28A; LTE-TDD B38/B40/B41; WCDMA B1/B8; GSM B3/B8 | YES | YES |
+| EC942-B-FQ38-B | North America | NO | LTE CAT4: LTE-FDD B2/B4/B5/B12/B13/B14/B66/B71; WCDMA B2/B4/B5 | NO | NO |
+| EC942-H-FQ38-B | North America | YES | LTE CAT4: LTE-FDD B2/B4/B5/B12/B13/B14/B66/B71; WCDMA B2/B4/B5 | YES | YES |
+| EC942-B-FQ78-B | Australia & Latin America | NO | CAT4: LTE-FDD B1/B2/B3/B4/B5/B7/B8/B28; LTE-TDD B40; UMTS B1/B2/B5/B8; EDGE/GPRS/GSM 850/900/1800/1900MHz | NO | NO |
+| EC942-H-FQ78-B | Australia & Latin America | YES | CAT4: LTE-FDD B1/B2/B3/B4/B5/B7/B8/B28; LTE-TDD B40; UMTS B1/B2/B5/B8; EDGE/GPRS/GSM 850/900/1800/1900MHz | YES | YES |
+| EC942-B-EN00-B | Global | NO | No Cellular | NO | NO |
+| EC942-H-EN00-B | Global | YES | No Cellular | YES | YES |
 
 ## <span style="color: green;">OS Option (Optional)</span>
 

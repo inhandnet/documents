@@ -190,22 +190,25 @@
 
 <table style="width:100%; table-layout:fixed;">
   <colgroup>
-    <col style="width:32%;">
     <col style="width:28%;">
-    <col style="width:40%;">
+    <col style="width:25%;">
+    <col style="width:47%;">
   </colgroup>
   <tr><th>Model</th><th>Region</th><th>&lt;WMNN&gt;: Cellular Type &amp; Module</th></tr>
   <tr><td>VG814-FS59-W-G-R</td><td>Europe, Africa, APAC, Oceania</td><td>LTE-FDD: B1/3/5/7/8/18/19/20/26/28A/28B<br/>LTE-TDD: B38/39/40/41<br/>TD-SCDMA: B34/B39<br/>UMTS/HSPA+: B1/3/5/6/8<br/>GSM/GPRS/EDGE: 900/1800 MHz</td></tr>
-  <tr><td>VG814-FQ59-W-G-R</td><td>Europe, APAC</td><td>LTE-FDD: B1/3/5/7/8/20/28/32<br/>LTE-TDD: B38/40/41<br/>WCDMA: B1/3/5/8</td></tr>
+  <tr><td>VG814-FQ09-W-G-R</td><td>Europe, APAC</td><td>LTE-FDD: B1/2/3/4/5/7/8/12/13/14/17/18/19/20/25/26/28/29/30/32/66/71<br/>LTE-TDD: B34/38/39/40/41/42/43/46(LAA)/48(CBRS)<br/>WCDMA: B1/2/3/4/5/6/8/19</td></tr>
   <tr><td>VG814-NRQ3-W-G-R</td><td>Global</td><td>5G NSA: n1/2/3/5/7/8/12/20/25/28/38/40/41/48/66/71/77/78/79<br/>5G SA: n1/2/3/5/7/8/12/20/25/28/38/40/41/48/66/71/77/78/79<br/>LTE-FDD: B1/2/3/4/5/7/8/9/12(17)/13/14/18/19/20/25/26/28/29/30/32/66/71<br/>LTE-TDD: B34/38/39/40/41/42/43/48<br/>LAA: B46<br/>WCDMA: B1/2/3/4/5/6/8/19</td></tr>
 </table>
+
+
+<div style="page-break-after: always;"></div>
+
 
 # <span style="color: green;">6. Contact Us</span>
 
 - **Website:** [InHand Networks](https://www.inhand.com)
 - **Copyright:** © InHand Networks. All rights reserved.
 
-<div style="page-break-after: always;"></div>
 
 # <span style="color: green;">7. Terminal Definition</span>
 

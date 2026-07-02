@@ -330,7 +330,7 @@ def find_changed_files(directory: Path) -> List[Path]:
 
     try:
         result = subprocess.run(
-            ["git", "diff", "--name-only", "--diff-filter=ACMRT", before, "HEAD"],
+            ["git", "-c", "core.quotePath=false", "diff", "--name-only", "--diff-filter=ACMRT", before, "HEAD"],
             capture_output=True, text=True, check=True, cwd=directory.parent if directory.exists() else "."
         )
         changed_paths = [p.strip() for p in result.stdout.strip().split("\n") if p.strip()]

@@ -124,7 +124,7 @@ def normalize_upload_path(file_path: Path, base_dir: Path = DIST_DIR) -> str:
 
 
 def upload_file(file_path: Path, dry_run: bool = False, commit_id: Optional[str] = None,
-                base_dir: Path = DIST_DIR):
+                base_dir: Path = DIST_DIR, timeout: int = 60) -> dict:
     """上传单个文件到云存储 API。
 
     Args:
@@ -132,16 +132,16 @@ def upload_file(file_path: Path, dry_run: bool = False, commit_id: Optional[str]
         dry_run: 如果为 True，只打印不实际上传
         commit_id: Git commit ID（可选）
         base_dir: 基础目录，用于计算相对路径
+        timeout: 请求超时时间（秒）
 
     Returns:
-        True: 上传成功
-        "cleaned": 上传失败(4xx)，已回滚并删除本地文件
-        "skipped": 上传失败(5xx/超时)，已回滚，保留本地文件
-        False: 其他错误（文件不存在等）
+        {"success": bool, "error": str}
     """
+    result = {"success": False, "error": ""}
     if not file_path.exists():
         print(f"  [FAIL] 文件不存在: {file_path}")
-        return False
+        result["error"] = "文件不存在"
+        return result
 
     # 从路径提取产品名（倒数第二级目录）
     parts = file_path.parts
@@ -187,7 +187,9 @@ def upload_file(file_path: Path, dry_run: bool = False, commit_id: Optional[str]
 
     if dry_run:
         print(f"  [DRY RUN] 跳过实际上传")
-        return True
+        files["file"][1].close()
+        result["success"] = True
+        return result
 
     try:
         response = requests.post(
@@ -195,21 +197,23 @@ def upload_file(file_path: Path, dry_run: bool = False, commit_id: Optional[str]
             headers=headers,
             params=params,
             files=files,
-            timeout=60
+            timeout=timeout
         )
         response.raise_for_status()
 
-        result = response.json()
+        resp_result = response.json()
 
         # 检查是否有错误
-        if 'error' in result:
-            print(f"  [FAIL] 上传失败: {result.get('error')}")
-            print(f"  完整响应: {result}")
-            return False
+        if 'error' in resp_result:
+            print(f"  [FAIL] 上传失败: {resp_result.get('error')}")
+            print(f"  完整响应: {resp_result}")
+            result["error"] = resp_result.get('error', 'API 返回错误')
+            return result
 
         print(f"  [OK] 上传成功")
-        print(f"  完整响应: {result}")
-        return True
+        print(f"  完整响应: {resp_result}")
+        result["success"] = True
+        return result
 
     except requests.exceptions.RequestException as e:
         print(f"  [FAIL] 上传失败")
@@ -223,61 +227,10 @@ def upload_file(file_path: Path, dry_run: bool = False, commit_id: Optional[str]
         if hasattr(e, 'request') and e.request:
             print(f"    Request method: {e.request.method}")
             print(f"    Request full URL: {e.request.url}")
-
-        # 回滚：禁用资源中心记录并删除本地文件
-        is_client_error = False
-        if e.response is not None and 400 <= e.response.status_code < 500:
-            is_client_error = True
-        _rollback_upload(file_path, normalized_path, config, is_client_error)
-
-        return "cleaned" if is_client_error else "skipped"
+        result["error"] = f"{type(e).__name__}: {e}"
+        return result
     finally:
         files["file"][1].close()
-
-
-def _rollback_upload(file_path: Path, normalized_path: str, config: dict, is_client_error: bool) -> None:
-    """上传失败时回滚：禁用资源中心记录，并根据错误类型决定是否删除本地文件。
-
-    Args:
-        file_path: 本地文件路径
-        normalized_path: 用于 API 的规范化路径
-        config: API 配置（含 url, key, token）
-        is_client_error: 是否为 4xx 客户端错误（是则删除本地文件）
-    """
-    # 1. 调用 forbid API 禁用资源中心记录
-    if config.get("token"):
-        forbid_url = f"{config['url']}/api/plm/github/product/published-files/forbid"
-        headers = {
-            "Authorization": f"Bearer {config['token']}",
-            "Content-Type": "application/json",
-        }
-        try:
-            response = requests.put(
-                forbid_url,
-                headers=headers,
-                json={"path": normalized_path},
-                timeout=30,
-            )
-            response.raise_for_status()
-            print(f"  [ROLLBACK] 已禁用资源中心记录: {normalized_path}")
-        except requests.exceptions.RequestException as forbid_e:
-            print(f"  [WARN] 回滚资源中心记录失败")
-            print(f"    URL: {forbid_url}")
-            print(f"    Path: {normalized_path}")
-            print(f"    Error type: {type(forbid_e).__name__}")
-            print(f"    Error detail: {forbid_e}")
-    else:
-        print(f"  [WARN] 未设置对应语言的 API token，无法回滚资源中心记录")
-
-    # 2. 4xx 客户端错误时删除本地文件（文件本身有问题，留着还会失败）
-    if is_client_error:
-        try:
-            file_path.unlink()
-            print(f"  [DELETE] 已删除本地文件: {file_path}")
-        except OSError as del_e:
-            print(f"  [WARN] 删除本地文件失败: {del_e}")
-    else:
-        print(f"  [SKIP DELETE] 服务端错误/超时，保留本地文件: {file_path}")
 
 
 def _should_upload(file_path: Path) -> bool:
@@ -401,34 +354,49 @@ def main():
 
     print(f"=== 准备上传 {len(upload_files_list)} 个文件 ===\n")
 
-    # 上传文件
+    # 第一轮上传
     success_count = 0
-    cleaned_count = 0   # 4xx 错误：已回滚并删除
-    skipped_count = 0   # 5xx/超时：已回滚，保留文件
+    failed_first_round = []
 
     for upload_file_path in upload_files_list:
         result = upload_file(upload_file_path, dry_run=args.dry_run, commit_id=commit_id,
-                             base_dir=args.dist_dir)
-        if result is True:
+                             base_dir=args.dist_dir, timeout=60)
+        if result.get("success"):
             success_count += 1
-        elif result == "cleaned":
-            cleaned_count += 1
-        elif result == "skipped":
-            skipped_count += 1
+        else:
+            failed_first_round.append(upload_file_path)
         print()
+
+    # 第二轮：重试第一轮失败的，使用更长超时
+    failed_second_round = []
+    if failed_first_round and not args.dry_run:
+        print(f"=== 第二轮重试 {len(failed_first_round)} 个失败文件（超时 180 秒）===\n")
+        for upload_file_path in failed_first_round:
+            print(f"  [RETRY] {upload_file_path.name}")
+            result = upload_file(upload_file_path, dry_run=args.dry_run, commit_id=commit_id,
+                                 base_dir=args.dist_dir, timeout=180)
+            if result.get("success"):
+                success_count += 1
+            else:
+                failed_second_round.append(upload_file_path)
+            print()
 
     # 汇总
     print("=" * 50)
     if args.dry_run:
         print(f"[DRY RUN] 预览完成，实际将上传: {success_count} 个文件")
     else:
-        total_processed = success_count + cleaned_count + skipped_count
-        print(f"上传完成: {success_count} 成功, {cleaned_count} 清理(4xx), {skipped_count} 跳过(5xx/超时)")
-        print(f"总计处理: {total_processed}/{len(upload_files_list)}")
+        total_failed = len(failed_second_round)
+        print(f"上传完成: {success_count} 成功, {total_failed} 失败")
+        print(f"总计处理: {success_count + total_failed}/{len(upload_files_list)}")
+        if total_failed > 0:
+            print("\n最终失败的文件:")
+            for f in failed_second_round:
+                print(f"  - {f}")
     print("=" * 50)
 
-    # 只有全部失败才退出报错；有成功的就继续（让 CI 后续步骤正常执行）
-    if success_count == 0 and (cleaned_count > 0 or skipped_count > 0):
+    # 只有全部失败才退出报错
+    if success_count == 0 and len(upload_files_list) > 0:
         print("[ERROR] 全部上传失败")
         sys.exit(1)
 

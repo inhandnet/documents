@@ -9,7 +9,7 @@
   </div>
   <div style="padding-left: 40px;">
     <div style="font-size: 40px; font-weight: bold; color:#000;margin-bottom: 30px;">
-      MO 62A AI 单板计算机
+      Mo 62A AI 单板计算机
     </div>
     <div style="text-align: center;">
       <div style="display: flex; flex-wrap: wrap; gap: 16px; ">
@@ -28,7 +28,7 @@
 
 # <span style="color: green;">1. 产品概述</span>
 
-**MO 62A 是基于 TI AM62A74 SoC 的 2 TOPS 边缘 AI 单板计算机，兼容标准 SBC 外形规格，适用于 AI 视觉及边缘推理终端。**
+**Mo 62A 是基于 TI AM62A74 SoC 的 2 TOPS 边缘 AI 单板计算机，兼容标准 SBC 外形规格，适用于 AI 视觉及边缘推理终端。**
 
 **产品特点：**
 - **AI 加速:** 内置 C7x DSP 与深度学习加速器，2 TOPS 端侧 AI 推理
@@ -79,6 +79,10 @@
     <div>5.尺寸如有变更，恕不另行通知。</div>
   </div>
 </div>
+
+
+<div style="page-break-after: always;"></div>
+
 
 # <span style="color: green;">3. 硬件规格</span>
 
@@ -152,7 +156,7 @@
 
 ## <span style="color: green;">型号规则</span>
 
-**Model code:** MO-62A-\<x\>
+**Model code:** Mo-62A-\<x\>
 
 \<x\>: 内存
 
@@ -160,13 +164,13 @@
 
 | 基础型号 | -x | 内存 |
 |---------|-------|-----------|
-| MO-62A | 2G | 2GB |
-| MO-62A | 4G | 4GB |
-| MO-62A | 8G | 8GB |
+| Mo-62A | 2G | 2GB |
+| Mo-62A | 4G | 4GB |
+| Mo-62A | 8G | 8GB |
 
 **示例**<br/>
-型号：MO-62A-4G<br/> 
-“MO-62A” 为基础型号。<br/>
+型号：Mo-62A-4G<br/> 
+“Mo-62A” 为基础型号。<br/>
 “–4G”  代表 4GB 内存。
 
 # <span style="color: green;">6. 联系我们</span>

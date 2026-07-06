@@ -9,7 +9,7 @@
   </div>
   <div style="padding-left: 40px;">
     <div style="font-size: 40px; font-weight: bold; color:#000;margin-bottom: 30px;">
-      MO 68A AI 单板计算机
+      Mo 68A AI 单板计算机
     </div>
     <div style="text-align: center;">
       <div style="display: flex; flex-wrap: wrap; gap: 16px; ">
@@ -28,7 +28,7 @@
 
 # <span style="color: green;">1. 产品概述</span>
 
-**MO 68A 是基于 TI AM68A SoC 的 8 TOPS 边缘 AI 单板计算机，采用兼容标准 SBC 外形规格，适用于 AI 视觉盒子、智能摄像头及边缘 AI 推理终端。**
+**Mo 68A 是基于 TI AM68A SoC 的 8 TOPS 边缘 AI 单板计算机，采用兼容标准 SBC 外形规格，适用于 AI 视觉盒子、智能摄像头及边缘 AI 推理终端。**
 
 **产品特点：**
 - **边缘 AI：** 8 TOPS 端侧 AI 加速，TI TIDL 支持 TFLite / ONNX
@@ -78,6 +78,10 @@
     <div>5.尺寸如有变更，恕不另行通知。</div>
   </div>
 </div>
+
+
+<div style="page-break-after: always;"></div>
+
 
 # <span style="color: green;">3. 硬件规格</span>
 
@@ -145,25 +149,29 @@
 | 固件升级 | SD 卡烧录 |
 | 调试 | UART 控制台 |
 
+
+<div style="page-break-after: always;"></div>
+
+
 # <span style="color: green;">5. 订购信息</span>
 
 ## <span style="color: green;">型号规则</span>
 
-**Model code:** MO-68A-x
+**Model code:** Mo-68A-x
 
-MO-68A: Base Model
+Mo-68A: Base Model
 -x: Memory
 
 ## <span style="color: green;">产品型号</span>
 
 | 基础型号 | -x | 内存 |
 |---------|-------|-----------|
-| MO-68A-4G | 4G | 4 GB |
-| MO-68A-8G | 8G | 8 GB |
+| Mo-68A-4G | 4G | 4 GB |
+| Mo-68A-8G | 8G | 8 GB |
 
 **示例**<br/>
-型号：MO-68A-8G<br/> 
-“MO-68A” 为基础型号。<br/>
+型号：Mo-68A-8G<br/> 
+“Mo-68A” 为基础型号。<br/>
 “–8G”  代表 8GB 内存。
 
 # <span style="color: green;">6. 联系我们</span>

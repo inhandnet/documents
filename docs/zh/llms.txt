@@ -1,0 +1,288 @@
+# 映翰通产品文档
+
+> 映翰通产品文档的机器可读索引，按产品分组。每条指向一篇文档并附一句话描述。由 docs/zh 自动生成，请勿手工编辑。
+
+## CPE02
+
+- [映翰通5G CPE02用户手册](CPE02/Manuals/用户手册/CPE02用户手册_V1.0.md): CPE02 用户手册 v1.0
+- [CPE02 通用 v1.0](CPE02/Datasheets/通用/CPE02规格书_V1.0.md): CPE02 通用 v1.0
+
+## CR202
+
+- [北京映翰通4G蜂窝路由器CR202用户手册](CR202/Manuals/用户手册/CR202用户手册_V1.0.md): CR202 用户手册 v1.0
+
+## CR202-Lite
+
+- [北京映翰通4G蜂窝路由器CR202-Lite用户手册](CR202-Lite/Manuals/用户手册/CR202-Lite用户手册_V1.0.md): CR202-Lite 用户手册 v1.0
+- [CR202-Lite 通用 v1.0](CR202-Lite/Datasheets/通用/CR202-Lite规格书_V1.0.md): CR202-Lite 通用 v1.0
+
+## CR602
+
+- [CR602 通用 v2.0](CR602/Datasheets/通用/CR602规格书_V2.0.md): CR602 通用 v2.0
+
+## DeviceLive
+
+- [DeviceLive 用户手册](DeviceLive/Manuals/用户手册/DeviceLive用户手册.md): DeviceLive 用户手册
+
+## DeviceSupervisor Agent
+
+- [DSA 用户手册 V2.0](DeviceSupervisor Agent/Manuals/用户手册/DSA用户手册_V1.0.md): DeviceSupervisor Agent 用户手册 v1.0
+
+## EAP600
+
+- [映翰通企业级无线接入点EAP600用户手册](EAP600/Manuals/用户手册/EAP600用户手册_V1.0.md): EAP600 用户手册 v1.0
+- [EAP600 通用 v2.4](EAP600/Datasheets/通用/EAP600规格书_V2.4.md): EAP600 通用 v2.4
+
+## EC300
+
+- [EC300边缘计算机用户手册](EC300/Manuals/用户手册/EC300用户手册_V1.0.md): EC300 用户手册 v1.0
+- [DSA API文档V1.0](EC300/Developer Documentation/FlexAPI/DSAAPI文档V1.0.md): EC300 FlexAPI v1.0
+- [EC系列API文档V1.0](EC300/Developer Documentation/FlexAPI/EC系列API文档V1.0.md): EC300 FlexAPI v1.0
+- [EC系列Linux软件用户手册V1.0](EC300/Developer Documentation/FlexAPI/EC系列Linux软件用户手册V1.0.md): EC300 FlexAPI v1.0
+- [EC300 通用 v1.0](EC300/Datasheets/通用/EC300规格书_V1.0.md): EC300 通用 v1.0
+
+## EC300-LoRaWAN
+
+- [EC300-LoRAWAN边缘计算机用户手册](EC300-LoRaWAN/Manuals/用户手册/EC300-LoRaWAN用户手册_V1.0.md): EC300-LoRaWAN 用户手册 v1.0
+- [EC300-LoRaWAN 通用 v1.0](EC300-LoRaWAN/Datasheets/通用/EC300-LoRaWAN规格书_V1.0.md): EC300-LoRaWAN 通用 v1.0
+
+## EC3000
+
+- [EC3000用户手册](EC3000/Manuals/用户手册/EC3000用户手册_V1.0.md): EC3000 用户手册 v1.0
+- [DSA API文档V1.0](EC3000/Developer Documentation/FlexAPI/DSAAPI文档V1.0.md): EC3000 FlexAPI v1.0
+- [EC系列API文档V1.0](EC3000/Developer Documentation/FlexAPI/EC系列API文档V1.0.md): EC3000 FlexAPI v1.0
+- [EC系列Linux软件用户手册V1.0](EC3000/Developer Documentation/FlexAPI/EC系列Linux软件用户手册V1.0.md): EC3000 FlexAPI v1.0
+- [EC3000 通用 v1.0](EC3000/Datasheets/通用/EC3000规格书_V1.0.md): EC3000 通用 v1.0
+
+## EC5000
+
+- [EC5000系列边缘AI计算机 用户手册](EC5000/Manuals/用户手册/EC5000用户手册_V1.0.md): EC5000 用户手册 v1.0
+- [DSA API文档V1.0](EC5000/Developer Documentation/FlexAPI/DSAAPI文档V1.0.md): EC5000 FlexAPI v1.0
+- [EC系列API文档V1.0](EC5000/Developer Documentation/FlexAPI/EC系列API文档V1.0.md): EC5000 FlexAPI v1.0
+- [EC系列Linux软件用户手册V1.0](EC5000/Developer Documentation/FlexAPI/EC系列Linux软件用户手册V1.0.md): EC5000 FlexAPI v1.0
+- [EC5000 通用 v1.0](EC5000/Datasheets/通用/EC5000规格书_V1.0.md): EC5000 通用 v1.0
+
+## EC940
+
+- [EC942系列边缘计算机用户手册](EC940/Manuals/用户手册/EC940用户手册_V1.0.md): EC940 用户手册 v1.0
+- [DSA API文档V1.0](EC940/Developer Documentation/FlexAPI/DSAAPI文档V1.0.md): EC940 FlexAPI v1.0
+- [EC系列API文档V1.0](EC940/Developer Documentation/FlexAPI/EC系列API文档V1.0.md): EC940 FlexAPI v1.0
+- [EC系列Linux软件用户手册V1.0](EC940/Developer Documentation/FlexAPI/EC系列Linux软件用户手册V1.0.md): EC940 FlexAPI v1.0
+- [EC940 通用 v1.0](EC940/Datasheets/通用/EC940规格书_V1.0.md): EC940 通用 v1.0
+
+## EC950
+
+- [EC954边缘计算机用户手册](EC950/Manuals/用户手册/EC950用户手册_V1.0.md): EC950 用户手册 v1.0
+- [DSA API文档V1.0](EC950/Developer Documentation/FlexAPI/DSAAPI文档V1.0.md): EC950 FlexAPI v1.0
+- [EC系列API文档V1.0](EC950/Developer Documentation/FlexAPI/EC系列API文档V1.0.md): EC950 FlexAPI v1.0
+- [EC系列Linux软件用户手册V1.0](EC950/Developer Documentation/FlexAPI/EC系列Linux软件用户手册V1.0.md): EC950 FlexAPI v1.0
+- [EC950 通用 v1.0](EC950/Datasheets/通用/EC950规格书_V1.0.md): EC950 通用 v1.0
+
+## ER2000
+
+- [映翰通企业级汇聚路由器ER2000用户手册](ER2000/Manuals/用户手册/ER2000用户手册_V1.0.md): ER2000 用户手册 v1.0
+- [ER2000 通用 v1.0](ER2000/Datasheets/通用/ER2000规格书_V1.0.md): ER2000 通用 v1.0
+
+## ER605
+
+- [映翰通边缘路由器ER605用户手册](ER605/Manuals/用户手册/ER605用户手册_V1.0.md): ER605 用户手册 v1.0
+- [ER605 通用 v1.0](ER605/Datasheets/通用/ER605规格书_V1.0.md): ER605 通用 v1.0
+
+## ER615
+
+- [映翰通高性价比Wi-Fi6路由器ER615用户手册](ER615/Manuals/用户手册/ER615用户手册_V1.0.md): ER615 用户手册 v1.0
+- [ER615 通用 v1.0](ER615/Datasheets/通用/ER615规格书_V1.0.md): ER615 通用 v1.0
+
+## ER805
+
+- [映翰通边缘路由器ER805用户手册](ER805/Manuals/用户手册/ER805用户手册_V1.0.md): ER805 用户手册 v1.0
+- [ER805 通用 v1.0](ER805/Datasheets/通用/ER805规格书_V1.0.md): ER805 通用 v1.0
+
+## ER815
+
+- [映翰通高性能Wi-Fi6路由器ER815用户手册](ER815/Manuals/用户手册/ER815用户手册_V1.0.md): ER815 用户手册 v1.0
+- [ER815 通用 v1.0](ER815/Datasheets/通用/ER815规格书_V1.0.md): ER815 通用 v1.0
+
+## ES220
+
+- [ES220 通用 v1.0](ES220/Datasheets/通用/ES220规格书_V1.0.md): ES220 通用 v1.0
+
+## ES620
+
+- [映翰通二层网管交换机ES620用户手册](ES620/Manuals/用户手册/ES620用户手册_V1.0.md): ES620 用户手册 v1.0
+- [ES620 通用 v1.0](ES620/Datasheets/通用/ES620规格书_V1.0.md): ES620 通用 v1.0
+
+## FWA02
+
+- [FWA02 通用 v1.0](FWA02/Datasheets/通用/FWA02规格书_V1.0.md): FWA02 通用 v1.0
+
+## IG101
+
+- [IG系列用户手册V1.0](IG101/Manuals/用户手册/IG101用户手册_V1.0.md): IG101 用户手册 v1.0
+- [IG101 通用 v1.0](IG101/Datasheets/通用/IG101规格书_V1.0.md): IG101 通用 v1.0
+
+## IG502
+
+- [IG502 边缘计算网关用户手册](IG502/Manuals/用户手册/IG502用户手册_V1.0.md): IG502 用户手册 v1.0
+- [IG支持IEC.API文档V1.0](IG502/Developer Documentation/FlexAPI/IG支持IEC.API文档V1.0.md): IG502 FlexAPI v1.0
+- [IG系列API文档V1.0](IG502/Developer Documentation/FlexAPI/IG系列API文档V1.0.md): IG502 FlexAPI v1.0
+- [IG502 通用 v4.0](IG502/Datasheets/通用/IG502规格书_V4.0.md): IG502 通用 v4.0
+
+## IG502-LITE
+
+- [IG502-LITE 通用 v1.0](IG502-LITE/Datasheets/通用/IG502-LITE规格书_V1.0.md): IG502-LITE 通用 v1.0
+
+## IG504
+
+- [IG系列用户手册V1.0](IG504/Manuals/用户手册/IG504用户手册_V1.0.md): IG504 用户手册 v1.0
+- [IG504 通用 v3.2](IG504/Datasheets/通用/IG504规格书_V3.2.md): IG504 通用 v3.2
+
+## IG532
+
+- [IG532 通用 v2.8](IG532/Datasheets/通用/IG532规格书_V2.8.md): IG532 通用 v2.8
+
+## IG902
+
+- [IG系列用户手册V1.0](IG902/Manuals/用户手册/IG902用户手册_V1.0.md): IG902 用户手册 v1.0
+- [IG支持IEC.API文档V1.0](IG902/Developer Documentation/FlexAPI/IG支持IEC.API文档V1.0.md): IG902 FlexAPI v1.0
+- [IG系列API文档V1.0](IG902/Developer Documentation/FlexAPI/IG系列API文档V1.0.md): IG902 FlexAPI v1.0
+- [IG902 通用 v5.0](IG902/Datasheets/通用/IG902规格书_V5.0.md): IG902 通用 v5.0
+
+## IG974
+
+- [IG974 通用 v1.9](IG974/Datasheets/通用/IG974规格书_V1.9.md): IG974 通用 v1.9
+
+## IR302
+
+- [北京映翰通工业路由器IR302系列产品用户手册](IR302/Manuals/用户手册/IR302用户手册_V1.0.md): IR302 用户手册 v1.0
+- [IR302 通用 v1.1](IR302/Datasheets/通用/IR302规格书_V1.1.md): IR302 通用 v1.1
+
+## IR305
+
+- [北京映翰通工业路由器IR305系列产品用户手册](IR305/Manuals/用户手册/IR305用户手册_V1.0.md): IR305 用户手册 v1.0
+- [IR305 通用 v1.14](IR305/Datasheets/通用/IR305规格书_V1.14.md): IR305 通用 v1.14
+
+## IR315
+
+- [北京映翰通工业路由器IR315系列产品用户手册](IR315/Manuals/用户手册/IR315用户手册_V1.0.md): IR315 用户手册 v1.0
+- [IR315 通用 v1.1](IR315/Datasheets/通用/IR315规格书_V1.1.md): IR315 通用 v1.1
+
+## IR624
+
+- [北京映翰通工业路由器IR624产品系列用户手册](IR624/Manuals/用户手册/IR624用户手册_V1.0.md): IR624 用户手册 v1.0
+- [IR624 通用 v1.6](IR624/Datasheets/通用/IR624规格书_V1.6.md): IR624 通用 v1.6
+
+## IR900
+
+- [北京映翰通工业级路由器IR900系列产品用户手册](IR900/Manuals/用户手册/IR900用户手册_V1.0.md): IR900 用户手册 v1.0
+
+## IR925
+
+- [北京映翰通工业路由器IR925产品系列用户手册](IR925/Manuals/用户手册/IR925用户手册_V1.0.md): IR925 用户手册 v1.0
+- [IR925 通用 v1.0](IR925/Datasheets/通用/IR925规格书_V1.0.md): IR925 通用 v1.0
+
+## ISM 网管型
+
+- [B系列交换机WEB操作手册](ISM 网管型/Manuals/用户手册/ISM 网管型用户手册_V1.0.md): ISM 网管型 用户手册 v1.0
+
+## InBOX710 人脸识别安卓工控机
+
+- [InBOX710 人脸识别安卓工控机 通用 v1.0](InBOX710 人脸识别安卓工控机/Datasheets/通用/InBOX710规格书_V1.0.md): InBOX710 人脸识别安卓工控机 通用 v1.0
+
+## InBOX712 人脸识别安卓工控机
+
+- [InBOX712 人脸识别安卓工控机 通用 v1.0](InBOX712 人脸识别安卓工控机/Datasheets/通用/InBOX712规格书_V1.0.md): InBOX712 人脸识别安卓工控机 通用 v1.0
+
+## InBOX732
+
+- [InBOX732 通用 v1.0](InBOX732/Datasheets/通用/InBOX732规格书_V1.0.md): InBOX732 通用 v1.0
+
+## InCloudManager
+
+- [小星云管家用户手册](InCloudManager/Manuals/用户手册/小星云管家用户手册.md): InCloudManager 用户手册
+
+## InConnect
+
+- [InConnect 通用 v3.3](InConnect/Datasheets/通用/InConnect规格书_V3.3.md): InConnect 通用 v3.3
+
+## InLink
+
+- [InLink用户手册](InLink/Manuals/用户手册/InLink用户手册.md): InLink 用户手册
+
+## InPAD070S
+
+- [InPAD070S 通用 v1.0](InPAD070S/Datasheets/通用/InPAD070S规格书_V1.0.md): InPAD070S 通用 v1.0
+
+## InPAD3101
+
+- [InPAD3101 通用 v1.0](InPAD3101/Datasheets/通用/InPAD3101规格书_V1.0.md): InPAD3101 通用 v1.0
+
+## LoRaWAN Terminals
+
+- [LoRaWAN Terminals 通用 v1.0](LoRaWAN Terminals/Datasheets/通用/LT312规格书_V1.0.md): LoRaWAN Terminals 通用 v1.0
+
+## MDT600
+
+- [MDT600 通用 v1.0](MDT600/Datasheets/通用/MDT600规格书_V1.0.md): MDT600 通用 v1.0
+
+## MO 62A
+
+- [Mo 62A 快速入门指南](MO 62A/Manuals/快速用户手册/Mo 62A快速入门.md): MO 62A 快速用户手册
+- [MO 62A 通用 v1.0](MO 62A/Datasheets/通用/Mo 62A规格书_V1.0.md): MO 62A 通用 v1.0
+
+## MO 68A
+
+- [MO68A 硬件参考手册](MO 68A/Manuals/安装指南/MO68A_硬件参考手册_V1.0.md): MO 68A 安装指南 v1.0
+- [Mo 68A 用户指南](MO 68A/Manuals/安装指南/Mo 68A_用户指南_V1.0.md): MO 68A 安装指南 v1.0
+- [Mo 68A 快速入门指南](MO 68A/Manuals/快速用户手册/Mo 68A_快速入门指南_V1.0.md): MO 68A 快速用户手册 v1.0
+- [MO68A 用户指南](MO 68A/Manuals/用户手册/MO68A_用户指南_V1.0.md): MO 68A 用户手册 v1.0
+- [Mo 68A 硬件参考手册](MO 68A/Manuals/用户手册/Mo 68A用户手册_V1.0.md): MO 68A 用户手册 v1.0
+- [MO 68A 通用 v1.0](MO 68A/Datasheets/通用/Mo 68A规格书_V1.0.md): MO 68A 通用 v1.0
+
+## ODU2002
+
+- [5G室外单元ODU2002用户手册](ODU2002/Manuals/用户手册/ODU2002用户手册_V1.0.md): ODU2002 用户手册 v1.0
+- [ODU2002 通用 v1.0](ODU2002/Datasheets/通用/ODU2002规格书_V1.0.md): ODU2002 通用 v1.0
+
+## VG710
+
+- [InHand VG710系列车载网关用户手册](VG710/Manuals/用户手册/VG710用户手册_V1.0.md): VG710 用户手册 v1.0
+- [VG710 4G版 v1.0](VG710/Datasheets/4G版/VG710-4G规格书_V1.0.md): VG710 4G版 v1.0
+- [VG710 5G版 v1.0](VG710/Datasheets/5G版/VG710-5G规格书_V1.0.md): VG710 5G版 v1.0
+- [VG710 通用 v1.0](VG710/Datasheets/通用/VG710-M12规格书_V1.0.md): VG710 通用 v1.0
+
+## VG814
+
+- [InHand VG814 用户手册 V1.0](VG814/Manuals/用户手册/VG814用户手册_V1.0.md): VG814 用户手册 v1.0
+- [VG814 通用 v1.0](VG814/Datasheets/通用/VG814规格书_V1.0.md): VG814 通用 v1.0
+
+## VR624
+
+- [VR624 通用 v1.0](VR624/Datasheets/通用/VR624规格书_V1.0.md): VR624 通用 v1.0
+
+## VT200
+
+- [车载追踪网关 VT200系列用户手册](VT200/Manuals/用户手册/VT200用户手册_V1.0.md): VT200 用户手册 v1.0
+- [FlexAPI_MQTT_for_3rd_party_platform](VT200/Developer Documentation/FlexAPI/FlexAPI_MQTT_for_3rd_party_platform.md): VT200 FlexAPI
+- [FlexAPI_TCP_for_3rd_party_platform](VT200/Developer Documentation/FlexAPI/FlexAPI_TCP_for_3rd_party_platform.md): VT200 FlexAPI
+- [VT200 通用 v1.0](VT200/Datasheets/通用/VT200规格书_V1.0.md): VT200 通用 v1.0
+
+## VT300
+
+- [车载追踪网关VT300系列用户手册](VT300/Manuals/用户手册/VT300用户手册_V1.0.md): VT300 用户手册 v1.0
+- [FlexAPI_MQTT_for_3rd_party_platform](VT300/Developer Documentation/FlexAPI/FlexAPI_MQTT_for_3rd_party_platform.md): VT300 FlexAPI
+- [FlexAPI_TCP_for_3rd_party_platform](VT300/Developer Documentation/FlexAPI/FlexAPI_TCP_for_3rd_party_platform.md): VT300 FlexAPI
+- [VT300 通用 v1.0](VT300/Datasheets/通用/VT300规格书_V1.0.md): VT300 通用 v1.0
+
+## develop
+
+- [FlexAPI_MQTT_for_3rd_party_platform](develop/VT/FlexAPI/FlexAPI_MQTT_for_3rd_party_platform.md): develop FlexAPI
+- [FlexAPI_TCP_for_3rd_party_platform](develop/VT/FlexAPI/FlexAPI_TCP_for_3rd_party_platform.md): develop FlexAPI
+
+## 小星云管家
+
+- [小星云管家 通用 v1.0](小星云管家/Datasheets/通用/小星云管家规格书_V1.0.md): 小星云管家 通用 v1.0
+
+## 白鹰能源管家
+
+- [白鹰能源管家用户手册（规范版）](白鹰能源管家/Manuals/用户手册/白鹰能源管家用户手册-V1.1.md): 白鹰能源管家 用户手册 v1.1

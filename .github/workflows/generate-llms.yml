@@ -1,0 +1,52 @@
+name: Generate llms.txt
+
+# Isolated, additive workflow. It does NOT touch the deploy pipeline
+# (deploy-manuals.yml): if this job ever fails, deployment is unaffected.
+#
+# Trigger: only Markdown changes under docs/ (NOT *.txt), so the llms.txt
+# commit this job pushes never re-triggers itself. The commit message also
+# carries "[skip ci]", which makes GitHub skip deploy-manuals.yml for that
+# commit — the refreshed llms.txt is picked up and published on the next
+# real docs change (mkdocs copies *.txt as static assets).
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - "docs/**/*.md"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: generate-llms-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      # Standard-library only — no pip install, cannot break the build env.
+      - name: Generate llms.txt
+        run: python scripts/generate_llms_txt.py
+
+      - name: Commit if changed
+        run: |
+          if git diff --quiet -- docs/en/llms.txt docs/zh/llms.txt; then
+            echo "llms.txt already up to date; nothing to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/en/llms.txt docs/zh/llms.txt
+          git commit -m "chore: regenerate llms.txt [skip ci]"
+          git push

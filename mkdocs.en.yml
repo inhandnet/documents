@@ -74,6 +74,7 @@ extra_javascript:
 
 plugins:
   - search
+  - awesome-nav
   - exclude:
       glob:
         - "**/Datasheets/**"

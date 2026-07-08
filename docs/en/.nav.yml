@@ -1,0 +1,17 @@
+# Top-level navigation order for the English site (plugin: awesome-nav).
+# Docs: https://lukasgeiter.github.io/mkdocs-awesome-nav/
+#
+# Each entry is a product directory name (or "index.md"). "*" is a wildcard
+# that expands to everything NOT explicitly listed, in default (alphabetical)
+# order — so unlisted products still show up, just after the pinned ones.
+#
+# To pin flagship products first, list them above "*", e.g.:
+#   - index.md
+#   - IG502
+#   - EC5000
+#   - "*"
+#
+# Current config preserves the existing order: home page first, rest alphabetical.
+nav:
+  - index.md
+  - "*"

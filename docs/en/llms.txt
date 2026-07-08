@@ -345,18 +345,24 @@
 
 ## MO 62A
 
-- [Mo 62A Hardware Interface Description](MO 62A/Manuals/Installation Guide/Mo 62A Hardware Interface Description-V1 0.md): MO 62A Installation Guide v1
-- [Mo 62A Quick Start Guide](MO 62A/Manuals/Installation Guide/Mo 62A Quick Start Guide.md): MO 62A Installation Guide
-- [Mo 62A Quick Start Guide](MO 62A/Manuals/Quick user manual/Mo 62A quickstart.md): MO 62A Quick user manual
-- [Mo 62A Single Board Computer SDK User Guide](MO 62A/Manuals/User manual/Mo 62A_User manual_V1.0.md): MO 62A User manual v1.0
 - [MO 62A Datasheet v1.0](MO 62A/Datasheets/General/Mo 62A_Datasheet_V1.0.md): MO 62A Datasheet v1.0
 
 ## MO 68A
 
-- [Mo 68A Hardware Reference Manual](MO 68A/Manuals/Installation Guide/Mo 68A_Hardware_Reference_Manual_V1.0.md): MO 68A Installation Guide v1.0
-- [Mo 68A Quick Start Guide](MO 68A/Manuals/Installation Guide/Mo 68A_Quick_Start_Guide_V1.0.md): MO 68A Installation Guide v1.0
-- [Mo 68A User Guide](MO 68A/Manuals/User manual/Mo 68A_User manual_V1.0.md): MO 68A User manual v1.0
 - [MO 68A Datasheet v1.0](MO 68A/Datasheets/General/Mo 68A_Datasheet_V1.0.md): MO 68A Datasheet v1.0
+
+## Mo 62A
+
+- [Mo 62A Hardware Interface Description](Mo 62A/Manuals/Installation Guide/Mo 62A Hardware Interface Description-V1 0.md): Mo 62A Installation Guide v1
+- [Mo 62A Quick Start Guide](Mo 62A/Manuals/Installation Guide/Mo 62A Quick Start Guide.md): Mo 62A Installation Guide
+- [Mo 62A Quick Start Guide](Mo 62A/Manuals/Quick user manual/Mo 62A quickstart.md): Mo 62A Quick user manual
+- [Mo 62A Single Board Computer SDK User Guide](Mo 62A/Manuals/User manual/Mo 62A_User manual_V1.0.md): Mo 62A User manual v1.0
+
+## Mo 68A
+
+- [Mo 68A Hardware Reference Manual](Mo 68A/Manuals/Installation Guide/Mo 68A_Hardware_Reference_Manual_V1.0.md): Mo 68A Installation Guide v1.0
+- [Mo 68A Quick Start Guide](Mo 68A/Manuals/Installation Guide/Mo 68A_Quick_Start_Guide_V1.0.md): Mo 68A Installation Guide v1.0
+- [Mo 68A User Guide](Mo 68A/Manuals/User manual/Mo 68A_User manual_V1.0.md): Mo 68A User manual v1.0
 
 ## ODU12
 

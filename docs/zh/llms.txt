@@ -227,17 +227,23 @@
 
 ## MO 62A
 
-- [Mo 62A 快速入门指南](MO 62A/Manuals/快速用户手册/Mo 62A快速入门.md): MO 62A 快速用户手册
 - [MO 62A 通用 v1.0](MO 62A/Datasheets/通用/Mo 62A规格书_V1.0.md): MO 62A 通用 v1.0
 
 ## MO 68A
 
 - [MO68A 硬件参考手册](MO 68A/Manuals/安装指南/MO68A_硬件参考手册_V1.0.md): MO 68A 安装指南 v1.0
-- [Mo 68A 用户指南](MO 68A/Manuals/安装指南/Mo 68A_用户指南_V1.0.md): MO 68A 安装指南 v1.0
-- [Mo 68A 快速入门指南](MO 68A/Manuals/快速用户手册/Mo 68A_快速入门指南_V1.0.md): MO 68A 快速用户手册 v1.0
 - [MO68A 用户指南](MO 68A/Manuals/用户手册/MO68A_用户指南_V1.0.md): MO 68A 用户手册 v1.0
-- [Mo 68A 硬件参考手册](MO 68A/Manuals/用户手册/Mo 68A用户手册_V1.0.md): MO 68A 用户手册 v1.0
 - [MO 68A 通用 v1.0](MO 68A/Datasheets/通用/Mo 68A规格书_V1.0.md): MO 68A 通用 v1.0
+
+## Mo 62A
+
+- [Mo 62A 快速入门指南](Mo 62A/Manuals/快速用户手册/Mo 62A快速入门.md): Mo 62A 快速用户手册
+
+## Mo 68A
+
+- [Mo 68A 用户指南](Mo 68A/Manuals/安装指南/Mo 68A_用户指南_V1.0.md): Mo 68A 安装指南 v1.0
+- [Mo 68A 快速入门指南](Mo 68A/Manuals/快速用户手册/Mo 68A_快速入门指南_V1.0.md): Mo 68A 快速用户手册 v1.0
+- [Mo 68A 硬件参考手册](Mo 68A/Manuals/用户手册/Mo 68A用户手册_V1.0.md): Mo 68A 用户手册 v1.0
 
 ## ODU2002
 

@@ -416,19 +416,28 @@ Suitable for atmospheric monitoring, water quality monitoring, noise monitoring,
 
 ### Quick Selection Table
 
-| Model | Region | Cellular Network | Wi-Fi | Serial/IO | GNSS |
-|------|------|----------|-------|---------|------|
-| IR315-NRQ2-<WLAN/NA>-<S/NA> | China | 5G NR SA/NSA | Optional | Optional | — |
-| IR315-LQ20-<WLAN/NA>-S | China | CAT4 | Optional | S | — |
-| IR315-FQ58-<WLAN/NA>-<S/NA> | Europe/APAC/Australia/NZ | CAT4 | Optional | Optional | — |
-| IR315-FQ58-WLAN-<S/NA>-G | Europe/APAC | CAT4 | Standard | Optional | Supported |
-| IR315-FQ78-<WLAN/NA>-<S/NA> | Australia/New Zealand | CAT4 | Optional | Optional | — |
-| IR315-FQ78-WLAN-G | Australia/New Zealand | CAT4 | Standard | IO | Supported |
-| IR315-FQ88-<WLAN/NA>-S | Japan | CAT4 | Optional | S | — |
-| IR315-FQ38-<WLAN/NA> | North America | CAT4 | Optional | IO | — |
-| IR315-FF39-<WLAN/NA>-<S/NA> | North America | CAT6 | Optional | Optional | — |
-| IR315-FF39-WLAN-<S/NA>-G | North America | CAT6 | Standard | Optional | Supported |
-| IR315-EN00-<WLAN/NA>-S | Global | No cellular | Optional | S | — |
+<table style="width:100%; table-layout:fixed; font-size:10px;">
+  <colgroup>
+    <col style="width:28%;">
+    <col style="width:18%;">
+    <col style="width:16%;">
+    <col style="width:12%;">
+    <col style="width:14%;">
+    <col style="width:12%;">
+  </colgroup>
+  <tr><th>Model</th><th>Region</th><th>Cellular Network</th><th>Wi-Fi</th><th>Serial/IO</th><th>GNSS</th></tr>
+  <tr><td style="white-space: nowrap;">IR315-NRQ2-&lt;WLAN/NA&gt;-&lt;S/NA&gt;</td><td>China</td><td>5G NR SA/NSA</td><td>Optional</td><td>Optional</td><td>—</td></tr>
+  <tr><td style="white-space: nowrap;">IR315-LQ20-&lt;WLAN/NA&gt;-S</td><td>China</td><td>CAT4</td><td>Optional</td><td>S</td><td>—</td></tr>
+  <tr><td style="white-space: nowrap;">IR315-FQ58-&lt;WLAN/NA&gt;-&lt;S/NA&gt;</td><td>Europe/APAC/Australia/NZ</td><td>CAT4</td><td>Optional</td><td>Optional</td><td>—</td></tr>
+  <tr><td style="white-space: nowrap;">IR315-FQ58-WLAN-&lt;S/NA&gt;-G</td><td>Europe/APAC</td><td>CAT4</td><td>Standard</td><td>Optional</td><td>Supported</td></tr>
+  <tr><td style="white-space: nowrap;">IR315-FQ78-&lt;WLAN/NA&gt;-&lt;S/NA&gt;</td><td>Australia/New Zealand</td><td>CAT4</td><td>Optional</td><td>Optional</td><td>—</td></tr>
+  <tr><td style="white-space: nowrap;">IR315-FQ78-WLAN-G</td><td>Australia/New Zealand</td><td>CAT4</td><td>Standard</td><td>IO</td><td>Supported</td></tr>
+  <tr><td style="white-space: nowrap;">IR315-FQ88-&lt;WLAN/NA&gt;-S</td><td>Japan</td><td>CAT4</td><td>Optional</td><td>S</td><td>—</td></tr>
+  <tr><td style="white-space: nowrap;">IR315-FQ38-&lt;WLAN/NA&gt;</td><td>North America</td><td>CAT4</td><td>Optional</td><td>IO</td><td>—</td></tr>
+  <tr><td style="white-space: nowrap;">IR315-FF39-&lt;WLAN/NA&gt;-&lt;S/NA&gt;</td><td>North America</td><td>CAT6</td><td>Optional</td><td>Optional</td><td>—</td></tr>
+  <tr><td style="white-space: nowrap;">IR315-FF39-WLAN-&lt;S/NA&gt;-G</td><td>North America</td><td>CAT6</td><td>Standard</td><td>Optional</td><td>Supported</td></tr>
+  <tr><td style="white-space: nowrap;">IR315-EN00-&lt;WLAN/NA&gt;-S</td><td>Global</td><td>No cellular</td><td>Optional</td><td>S</td><td>—</td></tr>
+</table>
 
 > **Note:**
 > - `Optional` = This position is optional (e.g., `<WLAN/NA>` can be WLAN or NA, `<S/NA>` can be S or NA)
@@ -437,16 +446,16 @@ Suitable for atmospheric monitoring, water quality monitoring, noise monitoring,
 
 ### Frequency Band Specification Details
 
-| Module | Region | 5G NR | LTE-FDD | LTE-TDD | WCDMA | GSM |
-|------|------|-------|---------|---------|-------|-----|
-| NRQ2 | China | NSA: n41/n77/n78/n79<br/>SA: n1/n3/n5*/n8/n28/n41/n77/n78/n79 | B1/B3/B5/B8 | B34/B38/B39/B40/B41 | B1/B5/B8 | — |
-| LQ20 | China | — | B1/B3/B5/B8 | B34/B38/B39/B40/B41 | B1/B5/B8 | B3/B8 |
-| FQ58 | Europe/APAC/Australia/NZ | — | B1/B3/B5/B7/B8/B20/B28 | B38/B40/B41 | B1/B5/B8 | B3/B8 |
-| FQ78 | Australia/New Zealand | — | B1/B2/B3/B4/B5/B7/B8/B28 | B40 | B1/B2/B5/B8 | B2/B3/B5/B8 |
-| FQ88 | Japan | — | B1/B3/B8/B18/B19/B26 | B41 | B1/B6/B8/B19 | — |
-| FQ38 | North America | — | B2/B4/B5/B12/B13/B14/B66/B71 | — | B2/B4/B5 | — |
-| FF39 | North America | — | B2/B4/B5/B7/B12/B13/B14/B17/B25/B26/B29/B30/B66/B71 | B41/B42/B43/B46/B48 | B2/B4/B5 | — |
-| EN00 | Global | — | — | — | — | — |
+| Module | Region | Cellular Type |
+|------|------|---------------|
+| NRQ2 | China | 5G NR NSA: n41/n77/n78/n79<br/>SA: n1/n3/n5*/n8/n28/n41/n77/n78/n79<br/>LTE-FDD: B1/B3/B5/B8<br/>LTE-TDD: B34/B38/B39/B40/B41<br/>WCDMA: B1/B5/B8 |
+| LQ20 | China | LTE-FDD: B1/B3/B5/B8<br/>LTE-TDD: B34/B38/B39/B40/B41<br/>WCDMA: B1/B5/B8<br/>GSM: B3/B8 |
+| FQ58 | Europe/APAC/Australia/NZ | LTE-FDD: B1/B3/B5/B7/B8/B20/B28<br/>LTE-TDD: B38/B40/B41<br/>WCDMA: B1/B5/B8<br/>GSM: B3/B8 |
+| FQ78 | Australia/New Zealand | LTE-FDD: B1/B2/B3/B4/B5/B7/B8/B28<br/>LTE-TDD: B40<br/>WCDMA: B1/B2/B5/B8<br/>GSM: B2/B3/B5/B8 |
+| FQ88 | Japan | LTE-FDD: B1/B3/B8/B18/B19/B26<br/>LTE-TDD: B41<br/>WCDMA: B1/B6/B8/B19 |
+| FQ38 | North America | LTE-FDD: B2/B4/B5/B12/B13/B14/B66/B71<br/>WCDMA: B2/B4/B5 |
+| FF39 | North America | LTE-FDD: B2/B4/B5/B7/B12/B13/B14/B17/B25/B26/B29/B30/B66/B71<br/>LTE-TDD: B41/B42/B43/B46/B48<br/>WCDMA: B2/B4/B5 |
+| EN00 | Global | — |
 
 # <span style="color: green;">9. Contact Us</span>
 

@@ -166,10 +166,13 @@ def list_markdown_files(lang_root: Path) -> list[Path]:
         ).stdout.decode("utf-8")
         paths = [REPO_ROOT / p for p in out.split("\0") if p]
         if paths:
-            return sorted(paths)
+            # Sort by posix string: Windows Path comparison is
+            # case-insensitive and would order case-variant dirs
+            # differently than CI (Linux).
+            return sorted(paths, key=Path.as_posix)
     except (subprocess.CalledProcessError, FileNotFoundError):
         pass
-    return sorted(lang_root.rglob("*.md"))
+    return sorted(lang_root.rglob("*.md"), key=Path.as_posix)
 
 
 def collect(lang: str, base_url: str | None) -> list[Doc]:

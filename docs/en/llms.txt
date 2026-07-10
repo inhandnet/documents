@@ -99,7 +99,6 @@
 
 - [Enterprise Router ER2000 Product User Manual](ER2000/Manuals/User manual/ER2000_User manual_V1.0.md): ER2000 User manual v1.0
 - [ER2000 Datasheet v1.0](ER2000/Datasheets/General/ER2000_Datasheet_V1.0.md): ER2000 Datasheet v1.0
-- [ER2000 Datasheet v1.0](ER2000/Datasheets/General/images/ER2000_Datasheet_V1.0.md): ER2000 Datasheet v1.0
 
 ## ER605
 

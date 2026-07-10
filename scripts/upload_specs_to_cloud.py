@@ -243,6 +243,10 @@ def _should_upload(file_path: Path) -> bool:
     # 跳过 Developer Documentation 下的 series.txt
     if file_path.name == "series.txt" and "Developer Documentation" in file_path.parts:
         return False
+    # 跳过语言根目录下的站点级索引文件（llms.txt 等）：
+    # 它们不属于产品文件，PLM API 也不接受产品目录之外的 path
+    if file_path.name == "llms.txt":
+        return False
     ext = file_path.suffix.lower()
     if ext in EXCLUDED_EXTENSIONS:
         return False

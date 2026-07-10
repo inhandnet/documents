@@ -1,4 +1,4 @@
-name: Generate llms.txt
+name: Generate llms.txt and homepage
 
 # Isolated, additive workflow. It does NOT touch the deploy pipeline
 # (deploy-manuals.yml): if this job ever fails, deployment is unaffected.
@@ -39,14 +39,20 @@ jobs:
       - name: Generate llms.txt
         run: python scripts/generate_llms_txt.py
 
+      # Homepage product directory is derived from the same scan as llms.txt,
+      # so it can never drift from the actual content.
+      - name: Generate homepage
+        run: python scripts/generate_home_index.py
+
       - name: Commit if changed
         run: |
-          if git diff --quiet -- docs/en/llms.txt docs/zh/llms.txt; then
-            echo "llms.txt already up to date; nothing to commit."
+          FILES="docs/en/llms.txt docs/zh/llms.txt docs/en/index.md docs/zh/index.md"
+          if git diff --quiet -- $FILES; then
+            echo "llms.txt and homepage already up to date; nothing to commit."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/en/llms.txt docs/zh/llms.txt
-          git commit -m "chore: regenerate llms.txt [skip ci]"
+          git add $FILES
+          git commit -m "chore: regenerate llms.txt and homepage [skip ci]"
           git push

@@ -37,6 +37,7 @@ from __future__ import annotations
 
 import argparse
 import re
+import subprocess
 import sys
 from pathlib import Path
 
@@ -148,10 +149,33 @@ class Doc:
         self.link = link
 
 
+def list_markdown_files(lang_root: Path) -> list[Path]:
+    """Enumerate *.md via the git index, falling back to the filesystem.
+
+    The git index is the source of truth for paths: the repo contains
+    directories differing only by case (e.g. "MO 62A" vs "Mo 62A"), which a
+    case-insensitive filesystem (Windows) merges into one folder.  Scanning
+    the filesystem there yields paths that do not exist in the repo / on the
+    Linux-built site.
+    """
+    rel_root = lang_root.relative_to(REPO_ROOT).as_posix()
+    try:
+        out = subprocess.run(
+            ["git", "-C", str(REPO_ROOT), "ls-files", "-z", "--", f"{rel_root}/**/*.md"],
+            capture_output=True, check=True,
+        ).stdout.decode("utf-8")
+        paths = [REPO_ROOT / p for p in out.split("\0") if p]
+        if paths:
+            return sorted(paths)
+    except (subprocess.CalledProcessError, FileNotFoundError):
+        pass
+    return sorted(lang_root.rglob("*.md"))
+
+
 def collect(lang: str, base_url: str | None) -> list[Doc]:
     lang_root = DOCS_DIR / lang
     docs: list[Doc] = []
-    for md in sorted(lang_root.rglob("*.md")):
+    for md in list_markdown_files(lang_root):
         if md.name in SKIP_FILENAMES:
             continue
         rel = md.relative_to(lang_root)
@@ -246,7 +270,8 @@ def main() -> int:
                 stale = True
                 print(f"STALE: {out.relative_to(REPO_ROOT).as_posix()}")
             continue
-        out.write_text(content, encoding="utf-8")
+        # newline="\n": identical output on Windows and CI (Linux)
+        out.write_text(content, encoding="utf-8", newline="\n")
         print(f"wrote {out.relative_to(REPO_ROOT).as_posix()} "
               f"({len(docs)} docs)")
 

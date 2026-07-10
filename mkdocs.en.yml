@@ -1,8 +1,8 @@
 site_name: InHand Documentation
 site_description: InHand Networks Product Documentation
-site_url: https://inhand.com.cn/docs/en/
-# English site will be published under /en (set real URL when deploying)
-# site_url: ""
+# Actual deploy location (CI scp to overseas server /data/wordpress/manuals/);
+# sitemap.xml and per-page canonical URLs are generated from this value
+site_url: https://www.inhand.com/manuals/
 
 repo_url: https://github.com/inhandnet/documents
 repo_name: inhandnet/documents

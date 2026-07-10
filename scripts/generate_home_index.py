@@ -85,7 +85,9 @@ def build_cards(lang: str) -> str:
         by_product.setdefault(d.product, []).append(d)
 
     cards: list[str] = []
-    for product in sorted(by_product, key=str.lower):
+    # Secondary key breaks the tie between case-variant product dirs
+    # (e.g. "MO 68A" vs "Mo 68A") identically on all platforms.
+    for product in sorted(by_product, key=lambda p: (p.lower(), p)):
         group = sorted(by_product[product], key=lambda d: (d.category, d.subcategory, d.link))
         labels = [doc_label(d) for d in group]
         items = []

@@ -103,10 +103,26 @@ jobs:
                 ! -name "*.json" \
                 ! -name "*.xml" \
                 ! -name "*.txt" \
+                ! -name "*.md" \
                 -delete
             fi
           done
           echo "Cleaned cloud-storage files from site output"
+
+      # 4.5 Publish markdown twins: every X.html gets its X.md source next
+      # to it (llms.txt links point at these .md paths — clean markdown is
+      # what AI crawlers consume). Pure additive copy; existing HTML URLs
+      # are untouched.
+      - name: Copy markdown twins into site output
+        if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+        run: |
+          for pair in "zh:site-zh" "en:site-en"; do
+            lang="${pair%%:*}"; site="${pair##*:}"
+            if [ -d "$site" ]; then
+              (cd "docs/$lang" && find . -name "*.md" -exec cp --parents {} "../../$site/" \;)
+              echo "$site: copied $(find "$site" -name '*.md' | wc -l) markdown twins"
+            fi
+          done
 
       # 5. Deploy
       - name: Copy Chinese site to Domestic Server

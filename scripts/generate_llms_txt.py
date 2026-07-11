@@ -40,6 +40,7 @@ import re
 import subprocess
 import sys
 from pathlib import Path
+from urllib.parse import quote
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 DOCS_DIR = REPO_ROOT / "docs"
@@ -245,7 +246,11 @@ def render(lang: str, docs: list[Doc]) -> str:
         lines.append(f"## {product}")
         lines.append("")
         for d in group:
-            lines.append(f"- [{d.title}]({d.link}): {d.description}")
+            # Percent-encode: spaces/CJK in raw paths break CommonMark
+            # link parsing (the destination ends at the first space).
+            # ":" is kept for absolute --base-url links.
+            link = quote(d.link, safe="/:")
+            lines.append(f"- [{d.title}]({link}): {d.description}")
         lines.append("")
     return "\n".join(lines).rstrip() + "\n"
 

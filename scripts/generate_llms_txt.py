@@ -160,8 +160,12 @@ def list_markdown_files(lang_root: Path) -> list[Path]:
     """
     rel_root = lang_root.relative_to(REPO_ROOT).as_posix()
     try:
+        # --others --exclude-standard: also include freshly generated,
+        # not-yet-committed pages (e.g. asset registry pages in CI),
+        # while still honoring .gitignore.
         out = subprocess.run(
-            ["git", "-C", str(REPO_ROOT), "ls-files", "-z", "--", f"{rel_root}/**/*.md"],
+            ["git", "-C", str(REPO_ROOT), "ls-files", "-z", "--cached",
+             "--others", "--exclude-standard", "--", f"{rel_root}/**/*.md"],
             capture_output=True, check=True,
         ).stdout.decode("utf-8")
         paths = [REPO_ROOT / p for p in out.split("\0") if p]

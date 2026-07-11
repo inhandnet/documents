@@ -1,19 +1,19 @@
-name: Generate llms.txt and homepage
+name: Generate llms.txt, homepage and asset pages
 
 # Isolated, additive workflow. It does NOT touch the deploy pipeline
 # (deploy-manuals.yml): if this job ever fails, deployment is unaffected.
 #
-# Trigger: only Markdown changes under docs/ (NOT *.txt), so the llms.txt
-# commit this job pushes never re-triggers itself. The commit message also
-# carries "[skip ci]", which makes GitHub skip deploy-manuals.yml for that
-# commit — the refreshed llms.txt is picked up and published on the next
-# real docs change (mkdocs copies *.txt as static assets).
+# Trigger: any docs/ change (md for llms/homepage; pdf/zip/stp feed the
+# certification/drawing registry pages). The commit this job pushes
+# carries "[skip ci]", so it never re-triggers itself and never triggers
+# deploy-manuals.yml — regenerated files are published on the next real
+# docs change.
 
 on:
   push:
     branches: [master]
     paths:
-      - "docs/**/*.md"
+      - "docs/**"
   workflow_dispatch:
 
 permissions:
@@ -35,7 +35,12 @@ jobs:
         with:
           python-version: "3.11"
 
-      # Standard-library only — no pip install, cannot break the build env.
+      # All generators are standard-library only — no pip install, cannot
+      # break the build env. Order matters: asset pages must exist before
+      # llms.txt / homepage generation so they get indexed.
+      - name: Generate certification/drawing registry pages
+        run: python scripts/generate_asset_pages.py
+
       - name: Generate llms.txt
         run: python scripts/generate_llms_txt.py
 
@@ -46,13 +51,12 @@ jobs:
 
       - name: Commit if changed
         run: |
-          FILES="docs/en/llms.txt docs/zh/llms.txt docs/en/index.md docs/zh/index.md"
-          if git diff --quiet -- $FILES; then
-            echo "llms.txt and homepage already up to date; nothing to commit."
+          git add docs/en docs/zh
+          if git diff --cached --quiet; then
+            echo "Generated files already up to date; nothing to commit."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add $FILES
-          git commit -m "chore: regenerate llms.txt and homepage [skip ci]"
+          git commit -m "chore: regenerate llms.txt, homepage and asset pages [skip ci]"
           git push

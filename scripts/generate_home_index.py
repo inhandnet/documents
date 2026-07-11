@@ -68,6 +68,10 @@ GENERATED_MARKER = (
 def doc_label(doc) -> str:
     """Short link label: subcategory (falling back to category) + version."""
     base = doc.subcategory or doc.category or doc.title
+    # The card is already titled with the product name — drop the
+    # redundant prefix from title-derived labels ("ER805 认证证书" -> "认证证书").
+    if base == doc.title and base.startswith(doc.product + " "):
+        base = base[len(doc.product) + 1:]
     version = parse_version(doc.link)
     return f"{base} V{version}" if version else base
 

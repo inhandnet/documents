@@ -30,6 +30,8 @@ hide:
       <div class="pm-card__body">
         <div class="pm-card__title">CPE02</div>
         <ul class="pm-card__links">
+        <li><a href="CPE02/certifications.html" title="CPE02 Certifications">Certifications</a></li>
+        <li><a href="CPE02/drawings.html" title="CPE02 Drawings">Drawings</a></li>
         <li><a href="CPE02/Manuals/User%20manual/CPE02_User%20manual_V1.0.html" title="5G CPE02 User Manual">User manual V1.0</a></li>
         </ul>
       </div>
@@ -38,6 +40,8 @@ hide:
       <div class="pm-card__body">
         <div class="pm-card__title">CR202</div>
         <ul class="pm-card__links">
+        <li><a href="CR202/certifications.html" title="CR202 Certifications">Certifications</a></li>
+        <li><a href="CR202/drawings.html" title="CR202 Drawings">Drawings</a></li>
         <li><a href="CR202/Manuals/User%20manual/CR202_User%20manual_V1.0.html" title="Portable Router CR202 Product User Manual">User manual V1.0</a></li>
         </ul>
       </div>
@@ -46,6 +50,8 @@ hide:
       <div class="pm-card__body">
         <div class="pm-card__title">CR202-Lite</div>
         <ul class="pm-card__links">
+        <li><a href="CR202-Lite/certifications.html" title="CR202-Lite Certifications">Certifications</a></li>
+        <li><a href="CR202-Lite/drawings.html" title="CR202-Lite Drawings">Drawings</a></li>
         <li><a href="CR202-Lite/Manuals/User%20manual/CR202-Lite_User%20manual_V1.0.html" title="Portable Router CR202-Lite Product User Manual">User manual V1.0</a></li>
         </ul>
       </div>
@@ -54,6 +60,8 @@ hide:
       <div class="pm-card__body">
         <div class="pm-card__title">CR202-Pro</div>
         <ul class="pm-card__links">
+        <li><a href="CR202-Pro/certifications.html" title="CR202-Pro Certifications">Certifications</a></li>
+        <li><a href="CR202-Pro/drawings.html" title="CR202-Pro Drawings">Drawings</a></li>
         <li><a href="CR202-Pro/Manuals/User%20manual/CR202-Pro_User%20manual_V1.0.html" title="Portable Router CR202-Pro Product User Manual">User manual V1.0</a></li>
         </ul>
       </div>
@@ -62,6 +70,8 @@ hide:
       <div class="pm-card__body">
         <div class="pm-card__title">CR602</div>
         <ul class="pm-card__links">
+        <li><a href="CR602/certifications.html" title="CR602 Certifications">Certifications</a></li>
+        <li><a href="CR602/drawings.html" title="CR602 Drawings">Drawings</a></li>
         <li><a href="CR602/Manuals/User%20manual/CR602_User%20manual_V1.0.html" title="CR602 User Manual">User manual V1.0</a></li>
         </ul>
       </div>
@@ -78,6 +88,8 @@ hide:
       <div class="pm-card__body">
         <div class="pm-card__title">EAP600</div>
         <ul class="pm-card__links">
+        <li><a href="EAP600/certifications.html" title="EAP600 Certifications">Certifications</a></li>
+        <li><a href="EAP600/drawings.html" title="EAP600 Drawings">Drawings</a></li>
         <li><a href="EAP600/Manuals/User%20manual/EAP600_User%20manual_V1.0.html" title="EAP600 Product User Manual">User manual V1.0</a></li>
         </ul>
       </div>
@@ -149,6 +161,8 @@ hide:
       <div class="pm-card__body">
         <div class="pm-card__title">ER605</div>
         <ul class="pm-card__links">
+        <li><a href="ER605/certifications.html" title="ER605 Certifications">Certifications</a></li>
+        <li><a href="ER605/drawings.html" title="ER605 Drawings">Drawings</a></li>
         <li><a href="ER605/Manuals/User%20manual/ER605_User%20manual_V1.0.html" title="Edge Router 605 Product User Manual">User manual V1.0</a></li>
         </ul>
       </div>
@@ -163,8 +177,18 @@ hide:
     </div>
     <div class="pm-card">
       <div class="pm-card__body">
+        <div class="pm-card__title">ER615X</div>
+        <ul class="pm-card__links">
+        <li><a href="ER615X/drawings.html" title="ER615X Drawings">Drawings</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pm-card">
+      <div class="pm-card__body">
         <div class="pm-card__title">ER805</div>
         <ul class="pm-card__links">
+        <li><a href="ER805/certifications.html" title="ER805 Certifications">Certifications</a></li>
+        <li><a href="ER805/drawings.html" title="ER805 Drawings">Drawings</a></li>
         <li><a href="ER805/Manuals/User%20manual/ER805_User%20manual_V1.0.html" title="Edge Router 805 Product User Manual">User manual V1.0</a></li>
         </ul>
       </div>
@@ -173,7 +197,18 @@ hide:
       <div class="pm-card__body">
         <div class="pm-card__title">ER815</div>
         <ul class="pm-card__links">
+        <li><a href="ER815/certifications.html" title="ER815 Certifications">Certifications</a></li>
+        <li><a href="ER815/drawings.html" title="ER815 Drawings">Drawings</a></li>
         <li><a href="ER815/Manuals/User%20manual/ER815_User%20manual_V1.0.html" title="Edge Router 815 Product User Manual">User manual V1.0</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pm-card">
+      <div class="pm-card__body">
+        <div class="pm-card__title">ES220</div>
+        <ul class="pm-card__links">
+        <li><a href="ES220/certifications.html" title="ES220 Certifications">Certifications</a></li>
+        <li><a href="ES220/drawings.html" title="ES220 Drawings">Drawings</a></li>
         </ul>
       </div>
     </div>
@@ -189,6 +224,8 @@ hide:
       <div class="pm-card__body">
         <div class="pm-card__title">FWA02</div>
         <ul class="pm-card__links">
+        <li><a href="FWA02/certifications.html" title="FWA02 Certifications">Certifications</a></li>
+        <li><a href="FWA02/drawings.html" title="FWA02 Drawings">Drawings</a></li>
         <li><a href="FWA02/Manuals/User%20manual/FWA02_User%20manual_V1.0.html" title="5G FWA02 Product User Manual">User manual V1.0</a></li>
         </ul>
       </div>
@@ -197,6 +234,8 @@ hide:
       <div class="pm-card__body">
         <div class="pm-card__title">FWA12</div>
         <ul class="pm-card__links">
+        <li><a href="FWA12/certifications.html" title="FWA12 Certifications">Certifications</a></li>
+        <li><a href="FWA12/drawings.html" title="FWA12 Drawings">Drawings</a></li>
         <li><a href="FWA12/Manuals/User%20manual/FWA12_User%20manual_V1.0.html" title="5G FWA12 Product User Manual">User manual V1.0</a></li>
         </ul>
       </div>
@@ -249,6 +288,8 @@ hide:
       <div class="pm-card__body">
         <div class="pm-card__title">IR302</div>
         <ul class="pm-card__links">
+        <li><a href="IR302/certifications.html" title="IR302 Certifications">Certifications</a></li>
+        <li><a href="IR302/drawings.html" title="IR302 Drawings">Drawings</a></li>
         <li><a href="IR302/Manuals/User%20manual/IR302_User%20manual_V1.0.html" title="Industrial Router IR302 Product User Manual">User manual V1.0</a></li>
         </ul>
       </div>
@@ -257,6 +298,8 @@ hide:
       <div class="pm-card__body">
         <div class="pm-card__title">IR305</div>
         <ul class="pm-card__links">
+        <li><a href="IR305/certifications.html" title="IR305 Certifications">Certifications</a></li>
+        <li><a href="IR305/drawings.html" title="IR305 Drawings">Drawings</a></li>
         <li><a href="IR305/Manuals/User%20manual/IR305_User%20manual_V1.0.html" title="Industrial Router IR305 Product User Manual">User manual V1.0</a></li>
         </ul>
       </div>
@@ -265,6 +308,8 @@ hide:
       <div class="pm-card__body">
         <div class="pm-card__title">IR315</div>
         <ul class="pm-card__links">
+        <li><a href="IR315/certifications.html" title="IR315 Certifications">Certifications</a></li>
+        <li><a href="IR315/drawings.html" title="IR315 Drawings">Drawings</a></li>
         <li><a href="IR315/Manuals/User%20manual/IR315_User%20manual_V1.0.html" title="Industrial Router IR315 Product User Manual">User manual V1.0</a></li>
         </ul>
       </div>
@@ -273,6 +318,8 @@ hide:
       <div class="pm-card__body">
         <div class="pm-card__title">IR615-S</div>
         <ul class="pm-card__links">
+        <li><a href="IR615-S/certifications.html" title="IR615-S Certifications">Certifications</a></li>
+        <li><a href="IR615-S/drawings.html" title="IR615-S Drawings">Drawings</a></li>
         <li><a href="IR615-S/Manuals/User%20manual/IR615-S_User%20manual_V1.0.html" title="Industrial Router IR615-S Product User Manual">User manual V1.0</a></li>
         </ul>
       </div>
@@ -281,6 +328,8 @@ hide:
       <div class="pm-card__body">
         <div class="pm-card__title">IR624</div>
         <ul class="pm-card__links">
+        <li><a href="IR624/certifications.html" title="IR624 Certifications">Certifications</a></li>
+        <li><a href="IR624/drawings.html" title="IR624 Drawings">Drawings</a></li>
         <li><a href="IR624/Manuals/User%20manual/IR624_User%20manual_V1.0.html" title="Chapter 1 Getting to Know the Device">User manual V1.0</a></li>
         </ul>
       </div>
@@ -295,9 +344,73 @@ hide:
     </div>
     <div class="pm-card">
       <div class="pm-card__body">
+        <div class="pm-card__title">IR925</div>
+        <ul class="pm-card__links">
+        <li><a href="IR925/drawings.html" title="IR925 Drawings">Drawings</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pm-card">
+      <div class="pm-card__body">
+        <div class="pm-card__title">ISE2008D</div>
+        <ul class="pm-card__links">
+        <li><a href="ISE2008D/certifications.html" title="ISE2008D Certifications">Certifications</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pm-card">
+      <div class="pm-card__body">
+        <div class="pm-card__title">ISE2016D</div>
+        <ul class="pm-card__links">
+        <li><a href="ISE2016D/certifications.html" title="ISE2016D Certifications">Certifications</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pm-card">
+      <div class="pm-card__body">
+        <div class="pm-card__title">ISE3018D</div>
+        <ul class="pm-card__links">
+        <li><a href="ISE3018D/certifications.html" title="ISE3018D Certifications">Certifications</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pm-card">
+      <div class="pm-card__body">
+        <div class="pm-card__title">ISE5005D</div>
+        <ul class="pm-card__links">
+        <li><a href="ISE5005D/certifications.html" title="ISE5005D Certifications">Certifications</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pm-card">
+      <div class="pm-card__body">
         <div class="pm-card__title">ISM managed</div>
         <ul class="pm-card__links">
         <li><a href="ISM%20managed/Manuals/User%20manual/ISM%20managed_User%20manual_V1.0.html" title="ISM managed User manual v1.0">User manual V1.0</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pm-card">
+      <div class="pm-card__body">
+        <div class="pm-card__title">ISM5012D</div>
+        <ul class="pm-card__links">
+        <li><a href="ISM5012D/certifications.html" title="ISM5012D Certifications">Certifications</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pm-card">
+      <div class="pm-card__body">
+        <div class="pm-card__title">ISM5020D</div>
+        <ul class="pm-card__links">
+        <li><a href="ISM5020D/certifications.html" title="ISM5020D Certifications">Certifications</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pm-card">
+      <div class="pm-card__body">
+        <div class="pm-card__title">ISM7028U-P</div>
+        <ul class="pm-card__links">
+        <li><a href="ISM7028U-P/certifications.html" title="ISM7028U-P Certifications">Certifications</a></li>
         </ul>
       </div>
     </div>
@@ -309,6 +422,14 @@ hide:
         <li><a href="Mo%2062A/Manuals/Installation%20Guide/Mo%2062A%20Quick%20Start%20Guide.html" title="Mo 62A Quick Start Guide">Installation Guide</a></li>
         <li><a href="Mo%2062A/Manuals/Quick%20user%20manual/Mo%2062A%20quickstart.html" title="Mo 62A Quick Start Guide">Quick user manual</a></li>
         <li><a href="Mo%2062A/Manuals/User%20manual/Mo%2062A_User%20manual_V1.0.html" title="Mo 62A Single Board Computer SDK User Guide">User manual V1.0</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pm-card">
+      <div class="pm-card__body">
+        <div class="pm-card__title">MO 68A</div>
+        <ul class="pm-card__links">
+        <li><a href="MO%2068A/drawings.html" title="MO 68A Drawings">Drawings</a></li>
         </ul>
       </div>
     </div>
@@ -326,6 +447,8 @@ hide:
       <div class="pm-card__body">
         <div class="pm-card__title">ODU2002</div>
         <ul class="pm-card__links">
+        <li><a href="ODU2002/certifications.html" title="ODU2002 Certifications">Certifications</a></li>
+        <li><a href="ODU2002/drawings.html" title="ODU2002 Drawings">Drawings</a></li>
         <li><a href="ODU2002/Manuals/User%20manual/ODU2002_User%20manual_V1.0.html" title="5G ODU2002 Product User Manual">User manual V1.0</a></li>
         </ul>
       </div>
@@ -351,6 +474,7 @@ hide:
       <div class="pm-card__body">
         <div class="pm-card__title">VG814</div>
         <ul class="pm-card__links">
+        <li><a href="VG814/certifications.html" title="VG814 Certifications">Certifications</a></li>
         <li><a href="VG814/Manuals/User%20manual/InHandVG814User%27sManualV1.2.html" title="InHand VG814 User Manual (Standard Edition) V1.2">User manual V1.2</a></li>
         <li><a href="VG814/Manuals/User%20manual/VG814_User%20manual_V1.0.html" title="InHand VG814 User Manual (Standard Edition) V1.2">User manual V1.0</a></li>
         </ul>

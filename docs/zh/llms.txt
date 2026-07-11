@@ -6,19 +6,27 @@
 
 - [映翰通5G CPE02用户手册](CPE02/Manuals/用户手册/CPE02用户手册_V1.0.md): CPE02 用户手册 v1.0
 - [CPE02 通用 v1.0](CPE02/Datasheets/通用/CPE02规格书_V1.0.md): CPE02 通用 v1.0
+- [CPE02 结构图纸](CPE02/drawings.md): CPE02 结构图纸登记（2D、3D），含图纸原件文件链接
+- [CPE02 认证证书](CPE02/certifications.md): CPE02 已获认证清单（CE、EN18031、FCC、IC、PTCRB），含证书原件文件链接
 
 ## CR202
 
 - [北京映翰通4G蜂窝路由器CR202用户手册](CR202/Manuals/用户手册/CR202用户手册_V1.0.md): CR202 用户手册 v1.0
+- [CR202 结构图纸](CR202/drawings.md): CR202 结构图纸登记（2D、3D），含图纸原件文件链接
+- [CR202 认证证书](CR202/certifications.md): CR202 已获认证清单（CE、FCC、IC、PTCRB、UKCA），含证书原件文件链接
 
 ## CR202-Lite
 
 - [北京映翰通4G蜂窝路由器CR202-Lite用户手册](CR202-Lite/Manuals/用户手册/CR202-Lite用户手册_V1.0.md): CR202-Lite 用户手册 v1.0
 - [CR202-Lite 通用 v1.0](CR202-Lite/Datasheets/通用/CR202-Lite规格书_V1.0.md): CR202-Lite 通用 v1.0
+- [CR202-Lite 结构图纸](CR202-Lite/drawings.md): CR202-Lite 结构图纸登记（2D、3D），含图纸原件文件链接
+- [CR202-Lite 认证证书](CR202-Lite/certifications.md): CR202-Lite 已获认证清单（CE、FCC、IC、PTCRB），含证书原件文件链接
 
 ## CR602
 
 - [CR602 通用 v2.0](CR602/Datasheets/通用/CR602规格书_V2.0.md): CR602 通用 v2.0
+- [CR602 结构图纸](CR602/drawings.md): CR602 结构图纸登记（2D、3D），含图纸原件文件链接
+- [CR602 认证证书](CR602/certifications.md): CR602 已获认证清单（EN18031、FCC、IC、PTCRB），含证书原件文件链接
 
 ## DeviceLive
 
@@ -32,6 +40,8 @@
 
 - [映翰通企业级无线接入点EAP600用户手册](EAP600/Manuals/用户手册/EAP600用户手册_V1.0.md): EAP600 用户手册 v1.0
 - [EAP600 通用 v2.4](EAP600/Datasheets/通用/EAP600规格书_V2.4.md): EAP600 通用 v2.4
+- [EAP600 结构图纸](EAP600/drawings.md): EAP600 结构图纸登记（2D、3D），含图纸原件文件链接
+- [EAP600 认证证书](EAP600/certifications.md): EAP600 已获认证清单（CE、FCC、IC），含证书原件文件链接
 
 ## EC300
 
@@ -87,6 +97,8 @@
 
 - [映翰通边缘路由器ER605用户手册](ER605/Manuals/用户手册/ER605用户手册_V1.0.md): ER605 用户手册 v1.0
 - [ER605 通用 v1.0](ER605/Datasheets/通用/ER605规格书_V1.0.md): ER605 通用 v1.0
+- [ER605 结构图纸](ER605/drawings.md): ER605 结构图纸登记（2D、3D），含图纸原件文件链接
+- [ER605 认证证书](ER605/certifications.md): ER605 已获认证清单（CE、EN18031、FCC、IC、PTCRB、UKCA），含证书原件文件链接
 
 ## ER615
 
@@ -97,15 +109,21 @@
 
 - [映翰通边缘路由器ER805用户手册](ER805/Manuals/用户手册/ER805用户手册_V1.0.md): ER805 用户手册 v1.0
 - [ER805 通用 v1.0](ER805/Datasheets/通用/ER805规格书_V1.0.md): ER805 通用 v1.0
+- [ER805 结构图纸](ER805/drawings.md): ER805 结构图纸登记（2D、3D），含图纸原件文件链接
+- [ER805 认证证书](ER805/certifications.md): ER805 已获认证清单（CE、EN18031、FCC、IC、PTCRB），含证书原件文件链接
 
 ## ER815
 
 - [映翰通高性能Wi-Fi6路由器ER815用户手册](ER815/Manuals/用户手册/ER815用户手册_V1.0.md): ER815 用户手册 v1.0
 - [ER815 通用 v1.0](ER815/Datasheets/通用/ER815规格书_V1.0.md): ER815 通用 v1.0
+- [ER815 结构图纸](ER815/drawings.md): ER815 结构图纸登记（2D、3D），含图纸原件文件链接
+- [ER815 认证证书](ER815/certifications.md): ER815 已获认证清单（EN18031、FCC、IC、PTCRB），含证书原件文件链接
 
 ## ES220
 
 - [ES220 通用 v1.0](ES220/Datasheets/通用/ES220规格书_V1.0.md): ES220 通用 v1.0
+- [ES220 结构图纸](ES220/drawings.md): ES220 结构图纸登记（2D、3D），含图纸原件文件链接
+- [ES220 认证证书](ES220/certifications.md): ES220 已获认证清单（CE、FCC），含证书原件文件链接
 
 ## ES620
 
@@ -115,6 +133,8 @@
 ## FWA02
 
 - [FWA02 通用 v1.0](FWA02/Datasheets/通用/FWA02规格书_V1.0.md): FWA02 通用 v1.0
+- [FWA02 结构图纸](FWA02/drawings.md): FWA02 结构图纸登记（2D、3D），含图纸原件文件链接
+- [FWA02 认证证书](FWA02/certifications.md): FWA02 已获认证清单（CE、EN18031、FCC、IC、PTCRB），含证书原件文件链接
 
 ## IG101
 
@@ -156,21 +176,29 @@
 
 - [北京映翰通工业路由器IR302系列产品用户手册](IR302/Manuals/用户手册/IR302用户手册_V1.0.md): IR302 用户手册 v1.0
 - [IR302 通用 v1.1](IR302/Datasheets/通用/IR302规格书_V1.1.md): IR302 通用 v1.1
+- [IR302 结构图纸](IR302/drawings.md): IR302 结构图纸登记（2D、3D），含图纸原件文件链接
+- [IR302 认证证书](IR302/certifications.md): IR302 已获认证清单（ANATEL、CB、CE、E-Mark、ECER118、EN18031、FCC、IC、ICASA、IEC62443、IFETEL、MIC_JATE、NOM、NRCS、PTCRB、RCM、UKCA、UL），含证书原件文件链接
 
 ## IR305
 
 - [北京映翰通工业路由器IR305系列产品用户手册](IR305/Manuals/用户手册/IR305用户手册_V1.0.md): IR305 用户手册 v1.0
 - [IR305 通用 v1.14](IR305/Datasheets/通用/IR305规格书_V1.14.md): IR305 通用 v1.14
+- [IR305 结构图纸](IR305/drawings.md): IR305 结构图纸登记（2D、3D），含图纸原件文件链接
+- [IR305 认证证书](IR305/certifications.md): IR305 已获认证清单（ANATEL、CB、CE、E-Mark、ECER118、EN18031、FCC、IC、PTCRB、UKCA），含证书原件文件链接
 
 ## IR315
 
 - [北京映翰通工业路由器IR315系列产品用户手册](IR315/Manuals/用户手册/IR315用户手册_V1.0.md): IR315 用户手册 v1.0
 - [IR315 通用 v1.1](IR315/Datasheets/通用/IR315规格书_V1.1.md): IR315 通用 v1.1
+- [IR315 结构图纸](IR315/drawings.md): IR315 结构图纸登记（2D、3D），含图纸原件文件链接
+- [IR315 认证证书](IR315/certifications.md): IR315 已获认证清单（C1D2、CE、E-Mark、ECER118、EN18031、FCC、IC、IMDA、MIC_JATE、PTCRB、RCM、UL），含证书原件文件链接
 
 ## IR624
 
 - [北京映翰通工业路由器IR624产品系列用户手册](IR624/Manuals/用户手册/IR624用户手册_V1.0.md): IR624 用户手册 v1.0
 - [IR624 通用 v1.6](IR624/Datasheets/通用/IR624规格书_V1.6.md): IR624 通用 v1.6
+- [IR624 结构图纸](IR624/drawings.md): IR624 结构图纸登记（2D、3D），含图纸原件文件链接
+- [IR624 认证证书](IR624/certifications.md): IR624 已获认证清单（ANATEL、CE、E-Mark、ECER118、EN18031、FCC、IC、PTCRB），含证书原件文件链接
 
 ## IR900
 
@@ -180,6 +208,7 @@
 
 - [北京映翰通工业路由器IR925产品系列用户手册](IR925/Manuals/用户手册/IR925用户手册_V1.0.md): IR925 用户手册 v1.0
 - [IR925 通用 v1.0](IR925/Datasheets/通用/IR925规格书_V1.0.md): IR925 通用 v1.0
+- [IR925 结构图纸](IR925/drawings.md): IR925 结构图纸登记（2D、3D），含图纸原件文件链接
 
 ## ISM 网管型
 
@@ -234,6 +263,7 @@
 - [MO68A 硬件参考手册](MO 68A/Manuals/安装指南/MO68A_硬件参考手册_V1.0.md): MO 68A 安装指南 v1.0
 - [MO68A 用户指南](MO 68A/Manuals/用户手册/MO68A_用户指南_V1.0.md): MO 68A 用户手册 v1.0
 - [MO 68A 通用 v1.0](MO 68A/Datasheets/通用/Mo 68A规格书_V1.0.md): MO 68A 通用 v1.0
+- [MO 68A 结构图纸](MO 68A/drawings.md): MO 68A 结构图纸登记（2D），含图纸原件文件链接
 
 ## Mo 62A
 
@@ -249,6 +279,8 @@
 
 - [5G室外单元ODU2002用户手册](ODU2002/Manuals/用户手册/ODU2002用户手册_V1.0.md): ODU2002 用户手册 v1.0
 - [ODU2002 通用 v1.0](ODU2002/Datasheets/通用/ODU2002规格书_V1.0.md): ODU2002 通用 v1.0
+- [ODU2002 结构图纸](ODU2002/drawings.md): ODU2002 结构图纸登记（2D、3D），含图纸原件文件链接
+- [ODU2002 认证证书](ODU2002/certifications.md): ODU2002 已获认证清单（CE、EN18031、FCC、IC、PTCRB），含证书原件文件链接
 
 ## VG710
 
@@ -261,6 +293,7 @@
 
 - [InHand VG814 用户手册 V1.0](VG814/Manuals/用户手册/VG814用户手册_V1.0.md): VG814 用户手册 v1.0
 - [VG814 通用 v1.0](VG814/Datasheets/通用/VG814规格书_V1.0.md): VG814 通用 v1.0
+- [VG814 认证证书](VG814/certifications.md): VG814 已获认证清单（CE、E-Mark、E-mark），含证书原件文件链接
 
 ## VR624
 

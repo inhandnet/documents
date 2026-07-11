@@ -5,7 +5,7 @@ site_url: https://www.inhand.com.cn/manuals/
 
 repo_url: https://github.com/inhandnet/documents
 repo_name: inhandnet/documents
-edit_uri: edit/main/docs/zh/
+edit_uri: edit/master/docs/zh/
 
 # 方案 B：中文/英文各自独立 docs_dir，构建两次输出到 / 与 /en
 docs_dir: docs/zh

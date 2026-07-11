@@ -10,24 +10,34 @@
 
 - [5G CPE02 User Manual](CPE02/Manuals/User manual/CPE02_User manual_V1.0.md): CPE02 User manual v1.0
 - [CPE02 Datasheet v1.0](CPE02/Datasheets/General/CPE02_Datasheet_V1.0.md): CPE02 Datasheet v1.0
+- [CPE02 Certifications](CPE02/certifications.md): CPE02 certification list (CE, EN18031, FCC, IC, PTCRB) with links to the original certificate files
+- [CPE02 Drawings](CPE02/drawings.md): CPE02 mechanical drawings (2D, 3D) with links to the original drawing files
 
 ## CR202
 
 - [Portable Router CR202 Product User Manual](CR202/Manuals/User manual/CR202_User manual_V1.0.md): CR202 User manual v1.0
+- [CR202 Certifications](CR202/certifications.md): CR202 certification list (CE, FCC, IC, PTCRB, UKCA) with links to the original certificate files
+- [CR202 Drawings](CR202/drawings.md): CR202 mechanical drawings (2D, 3D) with links to the original drawing files
 
 ## CR202-Lite
 
 - [Portable Router CR202-Lite Product User Manual](CR202-Lite/Manuals/User manual/CR202-Lite_User manual_V1.0.md): CR202-Lite User manual v1.0
 - [CR202-Lite Datasheet v1.0](CR202-Lite/Datasheets/General/CR202-Lite_Datasheet_V1.0.md): CR202-Lite Datasheet v1.0
+- [CR202-Lite Certifications](CR202-Lite/certifications.md): CR202-Lite certification list (CE, FCC, IC, PTCRB) with links to the original certificate files
+- [CR202-Lite Drawings](CR202-Lite/drawings.md): CR202-Lite mechanical drawings (2D, 3D) with links to the original drawing files
 
 ## CR202-Pro
 
 - [Portable Router CR202-Pro Product User Manual](CR202-Pro/Manuals/User manual/CR202-Pro_User manual_V1.0.md): CR202-Pro User manual v1.0
+- [CR202-Pro Certifications](CR202-Pro/certifications.md): CR202-Pro certification list (FCC, IC, PTCRB) with links to the original certificate files
+- [CR202-Pro Drawings](CR202-Pro/drawings.md): CR202-Pro mechanical drawings (2D, 3D) with links to the original drawing files
 
 ## CR602
 
 - [CR602 User Manual](CR602/Manuals/User manual/CR602_User manual_V1.0.md): CR602 User manual v1.0
 - [CR602 Datasheet v1.1](CR602/Datasheets/General/CR602_Datasheet_V1.1.md): CR602 Datasheet v1.1
+- [CR602 Certifications](CR602/certifications.md): CR602 certification list (EN18031, FCC, IC, PTCRB) with links to the original certificate files
+- [CR602 Drawings](CR602/drawings.md): CR602 mechanical drawings (2D, 3D) with links to the original drawing files
 
 ## Device Manager
 
@@ -42,6 +52,8 @@
 
 - [EAP600 Product User Manual](EAP600/Manuals/User manual/EAP600_User manual_V1.0.md): EAP600 User manual v1.0
 - [EAP600 Datasheet v1.0](EAP600/Datasheets/General/EAP600_Datasheet_V1.0.md): EAP600 Datasheet v1.0
+- [EAP600 Certifications](EAP600/certifications.md): EAP600 certification list (CE, FCC, IC) with links to the original certificate files
+- [EAP600 Drawings](EAP600/drawings.md): EAP600 mechanical drawings (2D, 3D) with links to the original drawing files
 
 ## EC300
 
@@ -104,25 +116,37 @@
 
 - [Edge Router 605 Product User Manual](ER605/Manuals/User manual/ER605_User manual_V1.0.md): ER605 User manual v1.0
 - [ER605 Datasheet v1.0](ER605/Datasheets/General/ER605_Datasheet_V1.0.md): ER605 Datasheet v1.0
+- [ER605 Certifications](ER605/certifications.md): ER605 certification list (CE, EN18031, FCC, IC, PTCRB, UKCA) with links to the original certificate files
+- [ER605 Drawings](ER605/drawings.md): ER605 mechanical drawings (2D, 3D) with links to the original drawing files
 
 ## ER615
 
 - [Edge Router 615 Product User Manual](ER615/Manuals/User manual/ER615_User manual_V1.0.md): ER615 User manual v1.0
 - [ER615 Datasheet v1.0](ER615/Datasheets/General/ER615_Datasheet_V1.0.md): ER615 Datasheet v1.0
 
+## ER615X
+
+- [ER615X Drawings](ER615X/drawings.md): ER615X mechanical drawings (2D, 3D) with links to the original drawing files
+
 ## ER805
 
 - [Edge Router 805 Product User Manual](ER805/Manuals/User manual/ER805_User manual_V1.0.md): ER805 User manual v1.0
 - [ER805 Datasheet v1.0](ER805/Datasheets/General/ER805_Datasheet_V1.0.md): ER805 Datasheet v1.0
+- [ER805 Certifications](ER805/certifications.md): ER805 certification list (CE, EN18031, FCC, IC, PTCRB) with links to the original certificate files
+- [ER805 Drawings](ER805/drawings.md): ER805 mechanical drawings (2D, 3D) with links to the original drawing files
 
 ## ER815
 
 - [Edge Router 815 Product User Manual](ER815/Manuals/User manual/ER815_User manual_V1.0.md): ER815 User manual v1.0
 - [ER815 Datasheet v1.0](ER815/Datasheets/General/ER815_Datasheet_V1.0.md): ER815 Datasheet v1.0
+- [ER815 Certifications](ER815/certifications.md): ER815 certification list (EN18031, FCC, IC, PTCRB) with links to the original certificate files
+- [ER815 Drawings](ER815/drawings.md): ER815 mechanical drawings (2D, 3D) with links to the original drawing files
 
 ## ES220
 
 - [ES220 Datasheet v1.0](ES220/Datasheets/General/ES220_Datasheet_V1.0.md): ES220 Datasheet v1.0
+- [ES220 Certifications](ES220/certifications.md): ES220 certification list (CE, FCC) with links to the original certificate files
+- [ES220 Drawings](ES220/drawings.md): ES220 mechanical drawings (2D, 3D) with links to the original drawing files
 
 ## ES620
 
@@ -141,11 +165,15 @@
 
 - [5G FWA02 Product User Manual](FWA02/Manuals/User manual/FWA02_User manual_V1.0.md): FWA02 User manual v1.0
 - [FWA02 Datasheet v1.0](FWA02/Datasheets/General/FWA02_Datasheet_V1.0.md): FWA02 Datasheet v1.0
+- [FWA02 Certifications](FWA02/certifications.md): FWA02 certification list (CE, EN18031, FCC, IC, PTCRB) with links to the original certificate files
+- [FWA02 Drawings](FWA02/drawings.md): FWA02 mechanical drawings (2D, 3D) with links to the original drawing files
 
 ## FWA12
 
 - [5G FWA12 Product User Manual](FWA12/Manuals/User manual/FWA12_User manual_V1.0.md): FWA12 User manual v1.0
 - [FWA12 Datasheet v1.0](FWA12/Datasheets/General/FWA12_Datasheet_V1.0.md): FWA12 Datasheet v1.0
+- [FWA12 Certifications](FWA12/certifications.md): FWA12 certification list (EN18031, FCC, IC, PTCRB) with links to the original certificate files
+- [FWA12 Drawings](FWA12/drawings.md): FWA12 mechanical drawings (2D, 3D) with links to the original drawing files
 
 ## IG101
 
@@ -169,28 +197,42 @@
 
 - [Industrial Router IR302 Product User Manual](IR302/Manuals/User manual/IR302_User manual_V1.0.md): IR302 User manual v1.0
 - [IR302 Datasheet v1.1](IR302/Datasheets/General/IR302_Datasheet_V1.1.md): IR302 Datasheet v1.1
+- [IR302 Certifications](IR302/certifications.md): IR302 certification list (ANATEL, CB, CE, E-Mark, ECER118, EN18031, FCC, IC, ICASA, IEC62443, IFETEL, MIC_JATE, NOM, NRCS, PTCRB, RCM, UKCA, UL) with links to the original certificate files
+- [IR302 Drawings](IR302/drawings.md): IR302 mechanical drawings (2D, 3D) with links to the original drawing files
 
 ## IR305
 
 - [Industrial Router IR305 Product User Manual](IR305/Manuals/User manual/IR305_User manual_V1.0.md): IR305 User manual v1.0
+- [IR305 Certifications](IR305/certifications.md): IR305 certification list (ANATEL, CB, CE, E-Mark, ECER118, EN18031, FCC, IC, PTCRB, UKCA) with links to the original certificate files
+- [IR305 Drawings](IR305/drawings.md): IR305 mechanical drawings (2D, 3D) with links to the original drawing files
 
 ## IR315
 
 - [Industrial Router IR315 Product User Manual](IR315/Manuals/User manual/IR315_User manual_V1.0.md): IR315 User manual v1.0
 - [IR315 Datasheet v1.1](IR315/Datasheets/General/IR315_Datasheet_V1.1.md): IR315 Datasheet v1.1
+- [IR315 Certifications](IR315/certifications.md): IR315 certification list (C1D2, CE, E-Mark, ECER118, EN18031, FCC, IC, IMDA, MIC_JATE, PTCRB, RCM, UL) with links to the original certificate files
+- [IR315 Drawings](IR315/drawings.md): IR315 mechanical drawings (2D, 3D) with links to the original drawing files
 
 ## IR615-S
 
 - [Industrial Router IR615-S Product User Manual](IR615-S/Manuals/User manual/IR615-S_User manual_V1.0.md): IR615-S User manual v1.0
+- [IR615-S Certifications](IR615-S/certifications.md): IR615-S certification list (C1D2, E-Mark, EN18031, FCC, IC, MIC_JATE, PTCRB, SDPPI, UKCA, UL) with links to the original certificate files
+- [IR615-S Drawings](IR615-S/drawings.md): IR615-S mechanical drawings (2D, 3D) with links to the original drawing files
 
 ## IR624
 
 - [Chapter 1 Getting to Know the Device](IR624/Manuals/User manual/IR624_User manual_V1.0.md): IR624 User manual v1.0
 - [IR624 Datasheet v1.0](IR624/Datasheets/General/IR624_Datasheet_V1.0.md): IR624 Datasheet v1.0
+- [IR624 Certifications](IR624/certifications.md): IR624 certification list (ANATEL, CE, E-Mark, ECER118, EN18031, FCC, IC, PTCRB) with links to the original certificate files
+- [IR624 Drawings](IR624/drawings.md): IR624 mechanical drawings (2D, 3D) with links to the original drawing files
 
 ## IR900
 
 - [Industrial Router IR900 Product User Manual](IR900/Manuals/User manual/IR900_User manual_V1.0.md): IR900 User manual v1.0
+
+## IR925
+
+- [IR925 Drawings](IR925/drawings.md): IR925 mechanical drawings (2D, 3D) with links to the original drawing files
 
 ## ISE2003D
 
@@ -203,18 +245,22 @@
 ## ISE2008D
 
 - [ISE2008D Datasheet v1.0](ISE2008D/Datasheets/General/ISE2008D_Datasheet_V1.0.md): ISE2008D Datasheet v1.0
+- [ISE2008D Certifications](ISE2008D/certifications.md): ISE2008D certification list (CE) with links to the original certificate files
 
 ## ISE2016D
 
 - [ISE2016D Datasheet v1.0](ISE2016D/Datasheets/General/ISE2016D_Datasheet_V1.0.md): ISE2016D Datasheet v1.0
+- [ISE2016D Certifications](ISE2016D/certifications.md): ISE2016D certification list (UL) with links to the original certificate files
 
 ## ISE3018D
 
 - [ISE3018D Datasheet v1.0](ISE3018D/Datasheets/General/ISE3018D_Datasheet_V1.0.md): ISE3018D Datasheet v1.0
+- [ISE3018D Certifications](ISE3018D/certifications.md): ISE3018D certification list (UL) with links to the original certificate files
 
 ## ISE5005D
 
 - [ISE5005D Datasheet v1.0](ISE5005D/Datasheets/General/ISE5005D_Datasheet_V1.0.md): ISE5005D Datasheet v1.0
+- [ISE5005D Certifications](ISE5005D/certifications.md): ISE5005D certification list (UL) with links to the original certificate files
 
 ## ISE5006D
 
@@ -259,10 +305,12 @@
 ## ISM5012D
 
 - [ISM5012D Datasheet v1.0](ISM5012D/Datasheets/General/ISM5012D_Datasheet_V1.0.md): ISM5012D Datasheet v1.0
+- [ISM5012D Certifications](ISM5012D/certifications.md): ISM5012D certification list (CE, UL) with links to the original certificate files
 
 ## ISM5020D
 
 - [ISM5020D Datasheet v1.0](ISM5020D/Datasheets/General/ISM5020D_Datasheet_V1.0.md): ISM5020D Datasheet v1.0
+- [ISM5020D Certifications](ISM5020D/certifications.md): ISM5020D certification list (CE) with links to the original certificate files
 
 ## ISM5026U-P
 
@@ -291,6 +339,7 @@
 ## ISM7028U-P
 
 - [ISM7028U-P Datasheet v1.0](ISM7028U-P/Datasheets/General/ISM7028U-P_Datasheet_V1.0.md): ISM7028U-P Datasheet v1.0
+- [ISM7028U-P Certifications](ISM7028U-P/certifications.md): ISM7028U-P certification list (CE) with links to the original certificate files
 
 ## ISM7312D
 
@@ -349,6 +398,7 @@
 ## MO 68A
 
 - [MO 68A Datasheet v1.0](MO 68A/Datasheets/General/Mo 68A_Datasheet_V1.0.md): MO 68A Datasheet v1.0
+- [MO 68A Drawings](MO 68A/drawings.md): MO 68A mechanical drawings (2D) with links to the original drawing files
 
 ## Mo 62A
 
@@ -371,6 +421,8 @@
 
 - [5G ODU2002 Product User Manual](ODU2002/Manuals/User manual/ODU2002_User manual_V1.0.md): ODU2002 User manual v1.0
 - [ODU2002 Datasheet v1.0](ODU2002/Datasheets/General/ODU2002_Datasheet_V1.0.md): ODU2002 Datasheet v1.0
+- [ODU2002 Certifications](ODU2002/certifications.md): ODU2002 certification list (CE, EN18031, FCC, IC, PTCRB) with links to the original certificate files
+- [ODU2002 Drawings](ODU2002/drawings.md): ODU2002 mechanical drawings (2D, 3D) with links to the original drawing files
 
 ## ODU302
 
@@ -390,6 +442,7 @@
 - [InHand VG814 User Manual (Standard Edition) V1.2](VG814/Manuals/User manual/VG814_User manual_V1.0.md): VG814 User manual v1.0
 - [VG814 Rail v1.0](VG814/Datasheets/Rail/VG814-Railway_Datasheet_V1.0.md): VG814 Rail v1.0
 - [VG814 Road v1.0](VG814/Datasheets/Road/VG814-Road_Datasheet_V1.0.md): VG814 Road v1.0
+- [VG814 Certifications](VG814/certifications.md): VG814 certification list (CE, E-Mark, E-mark) with links to the original certificate files
 
 ## VR624
 

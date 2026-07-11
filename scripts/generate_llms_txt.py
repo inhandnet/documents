@@ -123,13 +123,29 @@ def looks_like_section_heading(title: str) -> bool:
     return title.strip().lower() in _GENERIC_TITLES
 
 
-def derive_doc_type(category: str, subcategory: str, filename: str) -> str:
+# Subcategory names that carry no type information ("General" folders).
+_GENERIC_SUBCATEGORIES = {"general", "通用"}
+
+# Category directory names are English even in the zh tree — localize the
+# fallback label for zh readers.
+_ZH_CATEGORY_LABELS = {
+    "Manuals": "手册",
+    "Datasheets": "规格书",
+    "Developer Documentation": "开发文档",
+    "Solutions": "解决方案",
+}
+
+
+def derive_doc_type(category: str, subcategory: str, filename: str,
+                    lang: str = "en") -> str:
     """Human-ish document type label from path segments."""
-    if subcategory and subcategory.lower() != "general":
+    if subcategory and subcategory.lower() not in _GENERIC_SUBCATEGORIES:
         return subcategory
     if category:
+        if lang == "zh" and category in _ZH_CATEGORY_LABELS:
+            return _ZH_CATEGORY_LABELS[category]
         return category.rstrip("s") if category.endswith("s") else category
-    return "Document"
+    return "Document" if lang == "en" else "文档"
 
 
 def parse_version(filename: str) -> str | None:
@@ -137,17 +153,110 @@ def parse_version(filename: str) -> str | None:
     return m.group(1) if m else None
 
 
+# --- Body-derived description fallback (until source frontmatter arrives) ---
+
+# Lines that mark copyright / declaration boilerplate, not real content.
+_BOILERPLATE_RE = re.compile(
+    r"声明|版权|保留一切权利|保留所有权利|商标|著作权|恕不提前通知"
+    r"|更改权|解释权|不承担|争议"
+    r"|declaration|copyright|all rights reserved|trademark|disclaimer",
+    re.IGNORECASE,
+)
+
+# Description may only be taken from an intro-like section (or text before
+# any heading).  A keyword blocklist alone is whack-a-mole: legal boilerplate
+# is endlessly creative.
+_INTRO_HEADINGS_RE = re.compile(
+    r"^(产品概述|概述|简介|产品简介|产品介绍|功能特点"
+    r"|overview|introduction|product overview|about)\s*$",
+    re.IGNORECASE,
+)
+
+
+def first_meaningful_paragraph(body: str, max_len: int = 120) -> str | None:
+    """First substantive prose paragraph from an intro-like section.
+
+    Whitelist strategy: only text appearing before any heading, or under a
+    heading like 概述/简介/Overview/Introduction, qualifies. Returns None
+    when the document has no such prose (caller falls back to a synthesized
+    description) — a missing description beats a wrong one.
+    """
+    in_intro = True  # text before the first heading counts as intro
+    checked = 0
+    for raw in body.splitlines():
+        line = raw.strip()
+        if not line:
+            continue
+        m = re.match(r"^#{1,6}\s+(.*\S)\s*$", line)
+        if m:
+            heading = re.sub(r"^\d+(\.\d+)*[.、\s]+", "", clean_oneline(m.group(1)))
+            in_intro = bool(_INTRO_HEADINGS_RE.match(heading))
+            continue
+        if not in_intro:
+            continue
+        checked += 1
+        if checked > 40:  # don't fish for prose deep inside the document
+            return None
+        if line.startswith(("|", ">", "!", "<", "-", "*", "```", "[")):
+            continue
+        text = clean_oneline(line)
+        if len(text) < 20 or _BOILERPLATE_RE.search(text):
+            continue
+        return text[:max_len].rstrip() + ("…" if len(text) > max_len else "")
+    return None
+
+
+# --- Section deep links for long documents (llms.txt §6.5 plan B) ---
+
+SECTION_BODY_THRESHOLD = 50_000   # only documents larger than this get anchors
+SECTION_MAX = 15                  # cap per document to keep the index lean
+
+# H2 headings that are boilerplate, not navigable content chapters.
+_SECTION_SKIP_RE = re.compile(
+    r"^(声明|版权.*|技术支持|图形界面约定|如何使用本手册|前置信息|目录|前言|修订历史"
+    r"|declaration|copyright.*|technical support|conventions?"
+    r"|revision history|preface|table of contents)\s*$",
+    re.IGNORECASE,
+)
+
+
+def slugify(text: str) -> str:
+    """Approximation of pymdownx uslugify (mkdocs toc anchors): lowercase,
+    punctuation dropped, whitespace to dashes, CJK preserved."""
+    t = text.strip().lower()
+    t = re.sub(r"[^\w一-鿿\- ]", "", t, flags=re.UNICODE)
+    return re.sub(r"\s+", "-", t).strip("-")
+
+
+def extract_sections(body: str) -> list[tuple[str, str]]:
+    """(heading, anchor) pairs for content H2 headings of a long document."""
+    if len(body) < SECTION_BODY_THRESHOLD:
+        return []
+    sections: list[tuple[str, str]] = []
+    for m in re.finditer(r"^##\s+(.+?)\s*$", body, flags=re.MULTILINE):
+        heading = clean_oneline(m.group(1))
+        if not heading or _SECTION_SKIP_RE.match(heading):
+            continue
+        sections.append((heading, slugify(heading)))
+        if len(sections) >= SECTION_MAX:
+            break
+    return sections
+
+
 class Doc:
     __slots__ = ("product", "category", "subcategory", "title",
-                 "description", "link", "sort_key")
+                 "description", "link", "sections", "body")
 
-    def __init__(self, product, category, subcategory, title, description, link):
+    def __init__(self, product, category, subcategory, title, description,
+                 link, sections=None, body=""):
         self.product = product
         self.category = category
         self.subcategory = subcategory
         self.title = title
         self.description = description
         self.link = link
+        self.sections = sections or []
+        self.body = body
 
 
 def list_markdown_files(lang_root: Path) -> list[Path]:
@@ -200,7 +309,8 @@ def collect(lang: str, base_url: str | None) -> list[Doc]:
             text = md.read_text(encoding="utf-8", errors="replace")
         fm, body = split_frontmatter(text)
 
-        doc_type = fm.get("doc_type") or derive_doc_type(category, subcategory, md.name)
+        doc_type = fm.get("doc_type") or derive_doc_type(category, subcategory,
+                                                         md.name, lang)
         version = fm.get("version") or parse_version(md.name)
 
         synthesized = f"{product} {doc_type}"
@@ -215,12 +325,18 @@ def collect(lang: str, base_url: str | None) -> list[Doc]:
             # A numbered/generic section heading is not a real title -> synthesize.
             title = h1 if (h1 and not looks_like_section_heading(h1)) else synthesized
 
-        description = clean_oneline(fm["description"]) if fm.get("description") else synthesized
+        # description: frontmatter > first substantive paragraph > synthesized
+        if fm.get("description"):
+            description = clean_oneline(fm["description"])
+        else:
+            paragraph = first_meaningful_paragraph(body)
+            description = f"{synthesized} — {paragraph}" if paragraph else synthesized
 
         rel_posix = rel.as_posix()
         link = (base_url.rstrip("/") + "/" + rel_posix) if base_url else rel_posix
 
-        docs.append(Doc(product, category, subcategory, title, description, link))
+        docs.append(Doc(product, category, subcategory, title, description,
+                        link, sections=extract_sections(body), body=body))
     return docs
 
 
@@ -251,8 +367,50 @@ def render(lang: str, docs: list[Doc]) -> str:
             # ":" is kept for absolute --base-url links.
             link = quote(d.link, safe="/:")
             lines.append(f"- [{d.title}]({link}): {d.description}")
+            # Section deep links let an agent fetch only the chapter it
+            # needs instead of a whole multi-hundred-KB manual.
+            for heading, anchor in d.sections:
+                lines.append(f"  - [{heading}]({link}#{quote(anchor, safe='')})")
         lines.append("")
     return "\n".join(lines).rstrip() + "\n"
+
+
+# --- llms-full.txt: whole corpus in one file --------------------------------
+
+_IMG_MD_RE = re.compile(r"!\[([^\]]*)\]\([^)]*\)")
+_IMG_TAG_RE = re.compile(r"<img\b[^>]*?\balt=[\"']([^\"']*)[\"'][^>]*>|<img\b[^>]*>",
+                         re.IGNORECASE)
+
+
+def clean_body_for_full(body: str) -> str:
+    """Strip images (keep alt text) — image URLs are dead weight for LLMs."""
+    body = _IMG_MD_RE.sub(lambda m: f"[图片: {m.group(1)}]" if m.group(1) else "", body)
+    body = _IMG_TAG_RE.sub(lambda m: f"[图片: {m.group(1)}]" if m.group(1) else "", body)
+    return body.strip()
+
+
+def render_full(lang: str, docs: list[Doc]) -> str:
+    """Concatenate every document body, with attribution separators, in the
+    same product order as llms.txt."""
+    sep = "=" * 78
+    parts = [f"# {LANG_TITLES.get(lang, lang)} — full text",
+             "",
+             f"> {LANG_INTRO.get(lang, '')}",
+             ""]
+    products = sorted({d.product for d in docs})
+    for product in products:
+        group = [d for d in docs if d.product == product]
+        group.sort(key=lambda d: (category_rank(d.category), d.category,
+                                   d.subcategory, d.title))
+        for d in group:
+            parts.append(sep)
+            parts.append(f"# {d.title}")
+            parts.append(f"Source: {quote(d.link, safe='/:')}")
+            parts.append(sep)
+            parts.append("")
+            parts.append(clean_body_for_full(d.body))
+            parts.append("")
+    return "\n".join(parts).rstrip() + "\n"
 
 
 def main() -> int:
@@ -264,6 +422,9 @@ def main() -> int:
                          "language-root-relative paths.")
     ap.add_argument("--check", action="store_true",
                     help="Do not write; exit non-zero if any llms.txt is stale.")
+    ap.add_argument("--full", action="store_true",
+                    help="Also write llms-full.txt (whole corpus in one file; "
+                         "deploy-time artifact, not committed).")
     args = ap.parse_args()
 
     langs = args.lang or ["en", "zh"]
@@ -286,6 +447,14 @@ def main() -> int:
         out.write_text(content, encoding="utf-8", newline="\n")
         print(f"wrote {out.relative_to(REPO_ROOT).as_posix()} "
               f"({len(docs)} docs)")
+        if args.full:
+            # llms-full.txt is a deploy-time artifact (gitignored): 6+ MB
+            # per language would bloat git history if committed.
+            full_out = lang_root / "llms-full.txt"
+            full_content = render_full(lang, docs)
+            full_out.write_text(full_content, encoding="utf-8", newline="\n")
+            print(f"wrote {full_out.relative_to(REPO_ROOT).as_posix()} "
+                  f"({len(full_content) // 1024} KB)")
 
     if args.check and stale:
         print("llms.txt is out of date; run scripts/generate_llms_txt.py",

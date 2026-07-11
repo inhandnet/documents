@@ -1,18 +1,25 @@
 {% extends "base.html" %}
 {% block header %}
+{#- Global nav above the Material header. Only links that actually exist on
+    each WordPress site are included (verified 2026-07-11: .cn has /products/
+    and /support/; .com has /support/ only). Labels follow the site language. -#}
 <nav class="wp-global-nav"
   style="background:#fff;border-bottom:1px solid #e0e0e0;padding:0 24px;display:flex;align-items:center;height:56px;font-size:14px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;position:relative;z-index:100;">
   <div class="wp-nav-inner" style="display:flex;align-items:center;gap:24px;max-width:1400px;width:100%;margin:0 auto;">
-    <a href="{% if config.theme.language == 'zh' %}https://www.inhand.com.cn{% else %}https://www.inhand.com{% endif %}"
-      class="wp-logo" style="display:flex;align-items:center;text-decoration:none;margin-right:16px;">
-      <img src="https://www.inhand.com.cn/wp-content/uploads/2024/09/logo.png" alt="InHand" style="height:28px;">
+    {% if config.theme.language == 'zh' %}
+    <a href="https://www.inhand.com.cn" class="wp-logo" style="display:flex;align-items:center;text-decoration:none;margin-right:16px;">
+      <img src="{{ base_url }}/assets/logo.png" alt="InHand" style="height:28px;">
     </a>
-    <a href="/products/" style="color:#333;text-decoration:none;font-weight:500;">产品</a>
-    <a href="/docs/" style="color:#333;text-decoration:none;font-weight:500;">文档</a>
-    <a href="/downloads/" style="color:#333;text-decoration:none;font-weight:500;">下载</a>
-    <a href="/kb/" style="color:#333;text-decoration:none;font-weight:500;">知识库</a>
-    <a href="/developers/" style="color:#333;text-decoration:none;font-weight:500;">开发者</a>
-    <a href="/support/" style="color:#333;text-decoration:none;font-weight:500;">支持</a>
+    <a href="https://www.inhand.com.cn/products/" style="color:#333;text-decoration:none;font-weight:500;">产品</a>
+    <a href="{{ base_url }}/index.html" style="color:#333;text-decoration:none;font-weight:500;">文档</a>
+    <a href="https://www.inhand.com.cn/support/" style="color:#333;text-decoration:none;font-weight:500;">支持</a>
+    {% else %}
+    <a href="https://www.inhand.com" class="wp-logo" style="display:flex;align-items:center;text-decoration:none;margin-right:16px;">
+      <img src="{{ base_url }}/assets/logo.png" alt="InHand" style="height:28px;">
+    </a>
+    <a href="{{ base_url }}/index.html" style="color:#333;text-decoration:none;font-weight:500;">Docs</a>
+    <a href="https://www.inhand.com/support/" style="color:#333;text-decoration:none;font-weight:500;">Support</a>
+    {% endif %}
   </div>
 </nav>
 {{ super() }}

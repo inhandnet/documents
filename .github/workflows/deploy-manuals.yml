@@ -66,6 +66,13 @@ jobs:
         run: |
           python scripts/generate_product_index.py --report
 
+      # 2.5 Generate llms-full.txt (deploy-time artifact, gitignored:
+      # whole corpus in one file for one-shot AI ingestion; mkdocs copies
+      # *.txt into the site output as static assets)
+      - name: Generate llms-full.txt
+        if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+        run: python scripts/generate_llms_txt.py --full
+
       # 3. Build sites
       - name: Build (zh)
         if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
@@ -195,3 +202,33 @@ jobs:
         run: |
           pip install requests
           python scripts/validate_docs.py --forbid-deleted
+
+      # 8. Post-deploy health check: the AI/crawler entry points must be
+      # live and correct after every deploy (site_url regressions, dead
+      # sitemap, missing llms.txt would otherwise go unnoticed).
+      - name: Post-deploy health check
+        if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+        run: |
+          set -e
+          check() {
+            code=$(curl -s -o /dev/null -w "%{http_code}" --retry 3 --retry-delay 5 "$1")
+            if [ "$code" != "200" ]; then echo "FAIL $code $1"; exit 1; fi
+            echo "OK $1"
+          }
+          for base in "https://www.inhand.com.cn/manuals" "https://www.inhand.com/manuals"; do
+            check "$base/index.html"
+            check "$base/sitemap.xml"
+            check "$base/llms.txt"
+            check "$base/llms-full.txt"
+            # homepage must be the generated product directory
+            curl -s "$base/index.html" | grep -q "AUTO-GENERATED" \
+              || { echo "FAIL homepage marker $base"; exit 1; }
+            echo "OK homepage marker $base"
+            # first sitemap URL must resolve (catches wrong site_url)
+            u=$(curl -s "$base/sitemap.xml" | grep -o "<loc>[^<]*" | head -1 | sed 's/<loc>//')
+            check "$u"
+            # first llms.txt document link must resolve (md twins present)
+            rel=$(grep -o "](.*\.md)" <(curl -s "$base/llms.txt") | head -1 | sed 's/^](//;s/)$//')
+            check "$base/$rel"
+          done
+          echo "All health checks passed."

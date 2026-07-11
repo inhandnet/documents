@@ -4,125 +4,396 @@
 
 ## AE510
 
-- [AE510 Datasheet v1.0](AE510/Datasheets/General/AE510_Datasheet_V1.0.md): AE510 Datasheet v1.0
+- [AE510 Datasheet v1.0](AE510/Datasheets/General/AE510_Datasheet_V1.0.md): AE510 Datasheet v1.0 — Edge-side AI Recognition, Accurate and Fast Settlement
 
 ## CPE02
 
-- [5G CPE02 User Manual](CPE02/Manuals/User%20manual/CPE02_User%20manual_V1.0.md): CPE02 User manual v1.0
-- [CPE02 Datasheet v1.0](CPE02/Datasheets/General/CPE02_Datasheet_V1.0.md): CPE02 Datasheet v1.0
+- [5G CPE02 User Manual](CPE02/Manuals/User%20manual/CPE02_User%20manual_V1.0.md): CPE02 User manual v1.0 — The 5G CPE02 series leverages the high-speed connectivity of 5G cellular networks to significantly enhance network flexi…
+  - [Front Matter](CPE02/Manuals/User%20manual/CPE02_User%20manual_V1.0.md#front-matter)
+  - [1.1 Overview](CPE02/Manuals/User%20manual/CPE02_User%20manual_V1.0.md#11-overview)
+  - [1.2 Package Contents](CPE02/Manuals/User%20manual/CPE02_User%20manual_V1.0.md#12-package-contents)
+  - [1.3 Appearance and Interfaces](CPE02/Manuals/User%20manual/CPE02_User%20manual_V1.0.md#13-appearance-and-interfaces)
+  - [1.4 Indicator Description](CPE02/Manuals/User%20manual/CPE02_User%20manual_V1.0.md#14-indicator-description)
+  - [1.5 Restoring Factory Settings](CPE02/Manuals/User%20manual/CPE02_User%20manual_V1.0.md#15-restoring-factory-settings)
+  - [1.6 Default Settings](CPE02/Manuals/User%20manual/CPE02_User%20manual_V1.0.md#16-default-settings)
+  - [2.1 Pre-Installation Preparation](CPE02/Manuals/User%20manual/CPE02_User%20manual_V1.0.md#21-pre-installation-preparation)
+  - [2.2 Installation Guide](CPE02/Manuals/User%20manual/CPE02_User%20manual_V1.0.md#22-installation-guide)
+  - [2.3 Quick Check](CPE02/Manuals/User%20manual/CPE02_User%20manual_V1.0.md#23-quick-check)
+  - [Scenario 1: Cellular Internet Access](CPE02/Manuals/User%20manual/CPE02_User%20manual_V1.0.md#scenario-1-cellular-internet-access)
+  - [Scenario 2: Wired Broadband Access](CPE02/Manuals/User%20manual/CPE02_User%20manual_V1.0.md#scenario-2-wired-broadband-access)
+  - [Scenario 3: Wi-Fi Configuration](CPE02/Manuals/User%20manual/CPE02_User%20manual_V1.0.md#scenario-3-wi-fi-configuration)
+  - [Scenario 4: VPN Configuration](CPE02/Manuals/User%20manual/CPE02_User%20manual_V1.0.md#scenario-4-vpn-configuration)
+  - [Scenario 5: Cloud Platform Management](CPE02/Manuals/User%20manual/CPE02_User%20manual_V1.0.md#scenario-5-cloud-platform-management)
+- [CPE02 Datasheet v1.0](CPE02/Datasheets/General/CPE02_Datasheet_V1.0.md): CPE02 Datasheet v1.0 — Simple Connectivity, Convenient Life
 - [CPE02 Certifications](CPE02/certifications.md): CPE02 certification list (CE, EN18031, FCC, IC, PTCRB) with links to the original certificate files
 - [CPE02 Drawings](CPE02/drawings.md): CPE02 mechanical drawings (2D, 3D) with links to the original drawing files
 
 ## CR202
 
-- [Portable Router CR202 Product User Manual](CR202/Manuals/User%20manual/CR202_User%20manual_V1.0.md): CR202 User manual v1.0
+- [Portable Router CR202 Product User Manual](CR202/Manuals/User%20manual/CR202_User%20manual_V1.0.md): CR202 User manual v1.0 — The CR202 is a portable 4G cellular router designed to provide reliable Internet connectivity for remote offices, mobile…
+  - [1.1 Overview](CR202/Manuals/User%20manual/CR202_User%20manual_V1.0.md#11-overview)
+  - [1.2 Packing List](CR202/Manuals/User%20manual/CR202_User%20manual_V1.0.md#12-packing-list)
+  - [1.3 Appearance and Interfaces](CR202/Manuals/User%20manual/CR202_User%20manual_V1.0.md#13-appearance-and-interfaces)
+  - [1.4 LED Indication](CR202/Manuals/User%20manual/CR202_User%20manual_V1.0.md#14-led-indication)
+  - [1.5 Restore Factory Settings](CR202/Manuals/User%20manual/CR202_User%20manual_V1.0.md#15-restore-factory-settings)
+  - [1.6 Default Settings](CR202/Manuals/User%20manual/CR202_User%20manual_V1.0.md#16-default-settings)
+  - [2.1 Pre-Installation Preparation](CR202/Manuals/User%20manual/CR202_User%20manual_V1.0.md#21-pre-installation-preparation)
+  - [2.2 Installation Guide](CR202/Manuals/User%20manual/CR202_User%20manual_V1.0.md#22-installation-guide)
+  - [2.3 Quick Check](CR202/Manuals/User%20manual/CR202_User%20manual_V1.0.md#23-quick-check)
+  - [Scenario 1: Cellular Networking](CR202/Manuals/User%20manual/CR202_User%20manual_V1.0.md#scenario-1-cellular-networking)
+  - [Scenario 2: Wired WAN Access](CR202/Manuals/User%20manual/CR202_User%20manual_V1.0.md#scenario-2-wired-wan-access)
+  - [Scenario 3: Wi-Fi AP Configuration](CR202/Manuals/User%20manual/CR202_User%20manual_V1.0.md#scenario-3-wi-fi-ap-configuration)
+  - [Scenario 4: Wi-Fi STA Relay](CR202/Manuals/User%20manual/CR202_User%20manual_V1.0.md#scenario-4-wi-fi-sta-relay)
+  - [Scenario 5: Device Manager Remote Management](CR202/Manuals/User%20manual/CR202_User%20manual_V1.0.md#scenario-5-device-manager-remote-management)
+  - [4.1 System](CR202/Manuals/User%20manual/CR202_User%20manual_V1.0.md#41-system)
 - [CR202 Certifications](CR202/certifications.md): CR202 certification list (CE, FCC, IC, PTCRB, UKCA) with links to the original certificate files
 - [CR202 Drawings](CR202/drawings.md): CR202 mechanical drawings (2D, 3D) with links to the original drawing files
 
 ## CR202-Lite
 
-- [Portable Router CR202-Lite Product User Manual](CR202-Lite/Manuals/User%20manual/CR202-Lite_User%20manual_V1.0.md): CR202-Lite User manual v1.0
-- [CR202-Lite Datasheet v1.0](CR202-Lite/Datasheets/General/CR202-Lite_Datasheet_V1.0.md): CR202-Lite Datasheet v1.0
+- [Portable Router CR202-Lite Product User Manual](CR202-Lite/Manuals/User%20manual/CR202-Lite_User%20manual_V1.0.md): CR202-Lite User manual v1.0 — CR202-Lite is a portable 4G cellular router designed to provide reliable Internet connectivity for remote office, mobile…
+  - [Chapter 1 Understanding the Device](CR202-Lite/Manuals/User%20manual/CR202-Lite_User%20manual_V1.0.md#chapter-1-understanding-the-device)
+  - [Chapter 2 Installation and First Use](CR202-Lite/Manuals/User%20manual/CR202-Lite_User%20manual_V1.0.md#chapter-2-installation-and-first-use)
+  - [Chapter 3 Common Scenario Configuration](CR202-Lite/Manuals/User%20manual/CR202-Lite_User%20manual_V1.0.md#chapter-3-common-scenario-configuration)
+  - [Chapter 4 Function Description and Parameter Reference](CR202-Lite/Manuals/User%20manual/CR202-Lite_User%20manual_V1.0.md#chapter-4-function-description-and-parameter-reference)
+  - [Appendix Troubleshooting](CR202-Lite/Manuals/User%20manual/CR202-Lite_User%20manual_V1.0.md#appendix-troubleshooting)
+  - [Appendix Safety Precautions](CR202-Lite/Manuals/User%20manual/CR202-Lite_User%20manual_V1.0.md#appendix-safety-precautions)
+  - [Appendix Command Line Reference](CR202-Lite/Manuals/User%20manual/CR202-Lite_User%20manual_V1.0.md#appendix-command-line-reference)
+  - [FAQ](CR202-Lite/Manuals/User%20manual/CR202-Lite_User%20manual_V1.0.md#faq)
+- [CR202-Lite Datasheet v1.0](CR202-Lite/Datasheets/General/CR202-Lite_Datasheet_V1.0.md): CR202-Lite Datasheet v1.0 — Stay Connected Anywhere
 - [CR202-Lite Certifications](CR202-Lite/certifications.md): CR202-Lite certification list (CE, FCC, IC, PTCRB) with links to the original certificate files
 - [CR202-Lite Drawings](CR202-Lite/drawings.md): CR202-Lite mechanical drawings (2D, 3D) with links to the original drawing files
 
 ## CR202-Pro
 
-- [Portable Router CR202-Pro Product User Manual](CR202-Pro/Manuals/User%20manual/CR202-Pro_User%20manual_V1.0.md): CR202-Pro User manual v1.0
+- [Portable Router CR202-Pro Product User Manual](CR202-Pro/Manuals/User%20manual/CR202-Pro_User%20manual_V1.0.md): CR202-Pro User manual v1.0 — The CR202-Pro is a portable 4G cellular router designed to provide reliable Internet connectivity for remote office, mob…
+  - [Chapter 1 Understanding the Device](CR202-Pro/Manuals/User%20manual/CR202-Pro_User%20manual_V1.0.md#chapter-1-understanding-the-device)
+  - [Chapter 2 Installation and First Use](CR202-Pro/Manuals/User%20manual/CR202-Pro_User%20manual_V1.0.md#chapter-2-installation-and-first-use)
+  - [Chapter 3 Common Scenario Configuration](CR202-Pro/Manuals/User%20manual/CR202-Pro_User%20manual_V1.0.md#chapter-3-common-scenario-configuration)
+  - [Chapter 4 Function Description and Parameter Reference](CR202-Pro/Manuals/User%20manual/CR202-Pro_User%20manual_V1.0.md#chapter-4-function-description-and-parameter-reference)
+  - [Chapter 5 Typical Applications](CR202-Pro/Manuals/User%20manual/CR202-Pro_User%20manual_V1.0.md#chapter-5-typical-applications)
+  - [Appendix Troubleshooting](CR202-Pro/Manuals/User%20manual/CR202-Pro_User%20manual_V1.0.md#appendix-troubleshooting)
+  - [Appendix Safety Precautions](CR202-Pro/Manuals/User%20manual/CR202-Pro_User%20manual_V1.0.md#appendix-safety-precautions)
+  - [Appendix Command Line Reference](CR202-Pro/Manuals/User%20manual/CR202-Pro_User%20manual_V1.0.md#appendix-command-line-reference)
+  - [FAQ](CR202-Pro/Manuals/User%20manual/CR202-Pro_User%20manual_V1.0.md#faq)
 - [CR202-Pro Certifications](CR202-Pro/certifications.md): CR202-Pro certification list (FCC, IC, PTCRB) with links to the original certificate files
 - [CR202-Pro Drawings](CR202-Pro/drawings.md): CR202-Pro mechanical drawings (2D, 3D) with links to the original drawing files
 
 ## CR602
 
-- [CR602 User Manual](CR602/Manuals/User%20manual/CR602_User%20manual_V1.0.md): CR602 User manual v1.0
-- [CR602 Datasheet v1.1](CR602/Datasheets/General/CR602_Datasheet_V1.1.md): CR602 Datasheet v1.1
+- [CR602 User Manual](CR602/Manuals/User%20manual/CR602_User%20manual_V1.0.md): CR602 User manual v1.0 — The CR602 is a cloud-managed 5G CPE that provides high-speed, secure, and user-friendly 5G network access for business e…
+  - [Front Matter](CR602/Manuals/User%20manual/CR602_User%20manual_V1.0.md#front-matter)
+  - [1.1 Overview](CR602/Manuals/User%20manual/CR602_User%20manual_V1.0.md#11-overview)
+  - [1.2 Indicator Description](CR602/Manuals/User%20manual/CR602_User%20manual_V1.0.md#12-indicator-description)
+  - [1.3 Restoring Factory Settings](CR602/Manuals/User%20manual/CR602_User%20manual_V1.0.md#13-restoring-factory-settings)
+  - [1.4 Default Settings](CR602/Manuals/User%20manual/CR602_User%20manual_V1.0.md#14-default-settings)
+  - [2.1 Pre-Installation Preparation](CR602/Manuals/User%20manual/CR602_User%20manual_V1.0.md#21-pre-installation-preparation)
+  - [2.2 Installation Guide](CR602/Manuals/User%20manual/CR602_User%20manual_V1.0.md#22-installation-guide)
+  - [2.3 Quick Check](CR602/Manuals/User%20manual/CR602_User%20manual_V1.0.md#23-quick-check)
+  - [Scenario 1: Cellular Network Access](CR602/Manuals/User%20manual/CR602_User%20manual_V1.0.md#scenario-1-cellular-network-access)
+  - [Scenario 2: Accessing the Web Management Interface](CR602/Manuals/User%20manual/CR602_User%20manual_V1.0.md#scenario-2-accessing-the-web-management-interface)
+  - [Scenario 3: Configuring Wi-Fi](CR602/Manuals/User%20manual/CR602_User%20manual_V1.0.md#scenario-3-configuring-wi-fi)
+  - [Scenario 4: Configuring VPN](CR602/Manuals/User%20manual/CR602_User%20manual_V1.0.md#scenario-4-configuring-vpn)
+  - [4.1 Dashboard](CR602/Manuals/User%20manual/CR602_User%20manual_V1.0.md#41-dashboard)
+  - [4.2 Status](CR602/Manuals/User%20manual/CR602_User%20manual_V1.0.md#42-status)
+  - [4.3 Internet](CR602/Manuals/User%20manual/CR602_User%20manual_V1.0.md#43-internet)
+- [CR602 Datasheet v1.1](CR602/Datasheets/General/CR602_Datasheet_V1.1.md): CR602 Datasheet v1.1 — High-Speed Connectivity, Smart on the Go
 - [CR602 Certifications](CR602/certifications.md): CR602 certification list (EN18031, FCC, IC, PTCRB) with links to the original certificate files
 - [CR602 Drawings](CR602/drawings.md): CR602 mechanical drawings (2D, 3D) with links to the original drawing files
 
 ## Device Manager
 
-- [Device Manager Datasheet v1.0](Device%20Manager/Datasheets/General/DeviceManager_Datasheet_V1.0.md): Device Manager Datasheet v1.0
+- [Device Manager Datasheet v1.0](Device%20Manager/Datasheets/General/DeviceManager_Datasheet_V1.0.md): Device Manager Datasheet v1.0 — Simple and efficient device management solution
 
 ## DeviceLive
 
 - [**About the Platform**](DeviceLive/Manuals/User%20manual/DeviceLive%20User%20Manual.md): DeviceLive User manual
-- [DeviceLive Datasheet v1.0](DeviceLive/Datasheets/General/DeviceLive_Datasheet_V1.0.md): DeviceLive Datasheet v1.0
+  - [**2.1 Registration**](DeviceLive/Manuals/User%20manual/DeviceLive%20User%20Manual.md#21-registration)
+  - [**2.2 Login**](DeviceLive/Manuals/User%20manual/DeviceLive%20User%20Manual.md#22-login)
+  - [**3.1 Accounts**](DeviceLive/Manuals/User%20manual/DeviceLive%20User%20Manual.md#31-accounts)
+  - [**3.2 My Profile**](DeviceLive/Manuals/User%20manual/DeviceLive%20User%20Manual.md#32-my-profile)
+  - [**3.3 System Settings**](DeviceLive/Manuals/User%20manual/DeviceLive%20User%20Manual.md#33-system-settings)
+  - [**3.4 Organizations**](DeviceLive/Manuals/User%20manual/DeviceLive%20User%20Manual.md#34-organizations)
+  - [**3.5 Company Profile**](DeviceLive/Manuals/User%20manual/DeviceLive%20User%20Manual.md#35-company-profile)
+  - [**3.6 External Users**](DeviceLive/Manuals/User%20manual/DeviceLive%20User%20Manual.md#36-external-users)
+  - [4.1 **Configuring an Internet Connection**](DeviceLive/Manuals/User%20manual/DeviceLive%20User%20Manual.md#41-configuring-an-internet-connection)
+  - [**4.2 Adding Devices to the Platform**](DeviceLive/Manuals/User%20manual/DeviceLive%20User%20Manual.md#42-adding-devices-to-the-platform)
+  - [**5****.1 Summary**](DeviceLive/Manuals/User%20manual/DeviceLive%20User%20Manual.md#51-summary)
+  - [**5.2 Data Usage**](DeviceLive/Manuals/User%20manual/DeviceLive%20User%20Manual.md#52-data-usage)
+  - [**5.3 Uplink**](DeviceLive/Manuals/User%20manual/DeviceLive%20User%20Manual.md#53-uplink)
+  - [**5.4 Map**](DeviceLive/Manuals/User%20manual/DeviceLive%20User%20Manual.md#54-map)
+  - [**6****.1 Device Management**](DeviceLive/Manuals/User%20manual/DeviceLive%20User%20Manual.md#61-device-management)
+- [DeviceLive Datasheet v1.0](DeviceLive/Datasheets/General/DeviceLive_Datasheet_V1.0.md): DeviceLive Datasheet v1.0 — IoT Device Management and Operations Platform
 
 ## EAP600
 
-- [EAP600 Product User Manual](EAP600/Manuals/User%20manual/EAP600_User%20manual_V1.0.md): EAP600 User manual v1.0
-- [EAP600 Datasheet v1.0](EAP600/Datasheets/General/EAP600_Datasheet_V1.0.md): EAP600 Datasheet v1.0
+- [EAP600 Product User Manual](EAP600/Manuals/User%20manual/EAP600_User%20manual_V1.0.md): EAP600 User manual v1.0 — The EAP600 is a Wi-Fi 6 Access Point developed by InHand Networks for the commercial sector. It delivers secure and high…
+  - [Front Matter](EAP600/Manuals/User%20manual/EAP600_User%20manual_V1.0.md#front-matter)
+  - [Chapter 1: Understanding the Device](EAP600/Manuals/User%20manual/EAP600_User%20manual_V1.0.md#chapter-1-understanding-the-device)
+  - [Chapter 2: Installation and First Use](EAP600/Manuals/User%20manual/EAP600_User%20manual_V1.0.md#chapter-2-installation-and-first-use)
+  - [Chapter 3: Common Scenario Configuration](EAP600/Manuals/User%20manual/EAP600_User%20manual_V1.0.md#chapter-3-common-scenario-configuration)
+  - [Chapter 4: Function Description and Parameter Reference](EAP600/Manuals/User%20manual/EAP600_User%20manual_V1.0.md#chapter-4-function-description-and-parameter-reference)
+  - [Chapter 5: Typical Application](EAP600/Manuals/User%20manual/EAP600_User%20manual_V1.0.md#chapter-5-typical-application)
+  - [Appendix: Troubleshooting](EAP600/Manuals/User%20manual/EAP600_User%20manual_V1.0.md#appendix-troubleshooting)
+  - [Appendix: Security Precautions](EAP600/Manuals/User%20manual/EAP600_User%20manual_V1.0.md#appendix-security-precautions)
+  - [FAQ](EAP600/Manuals/User%20manual/EAP600_User%20manual_V1.0.md#faq)
+- [EAP600 Datasheet v1.0](EAP600/Datasheets/General/EAP600_Datasheet_V1.0.md): EAP600 Datasheet v1.0 — Stay Ahead with Wi-Fi 6: Fast, Reliable, and Secure
 - [EAP600 Certifications](EAP600/certifications.md): EAP600 certification list (CE, FCC, IC) with links to the original certificate files
 - [EAP600 Drawings](EAP600/drawings.md): EAP600 mechanical drawings (2D, 3D) with links to the original drawing files
 
 ## EC300
 
-- [EC300 Series Edge Computer User Manual](EC300/Manuals/User%20manual/EC300_User%20manual_V1.0.md): EC300 User manual v1.0
+- [EC300 Series Edge Computer User Manual](EC300/Manuals/User%20manual/EC300_User%20manual_V1.0.md): EC300 User manual v1.0 — The EC300 series edge computers are Arm architecture-based industrial computing platforms designed for lightweight edge…
+  - [GUI Conventions](EC300/Manuals/User%20manual/EC300_User%20manual_V1.0.md#gui-conventions)
+  - [How to Use This Manual](EC300/Manuals/User%20manual/EC300_User%20manual_V1.0.md#how-to-use-this-manual)
+  - [1.1 Overview](EC300/Manuals/User%20manual/EC300_User%20manual_V1.0.md#11-overview)
+  - [1.2 Packing List](EC300/Manuals/User%20manual/EC300_User%20manual_V1.0.md#12-packing-list)
+  - [1.3 Appearance and Interfaces](EC300/Manuals/User%20manual/EC300_User%20manual_V1.0.md#13-appearance-and-interfaces)
+  - [1.4 Indicator Lights](EC300/Manuals/User%20manual/EC300_User%20manual_V1.0.md#14-indicator-lights)
+  - [1.5 Factory Reset](EC300/Manuals/User%20manual/EC300_User%20manual_V1.0.md#15-factory-reset)
+  - [1.6 Default Settings](EC300/Manuals/User%20manual/EC300_User%20manual_V1.0.md#16-default-settings)
+  - [2.1 Pre-Installation Preparation](EC300/Manuals/User%20manual/EC300_User%20manual_V1.0.md#21-pre-installation-preparation)
+  - [2.2 Installation Guide](EC300/Manuals/User%20manual/EC300_User%20manual_V1.0.md#22-installation-guide)
+  - [2.3 Quick Check](EC300/Manuals/User%20manual/EC300_User%20manual_V1.0.md#23-quick-check)
+  - [Scenario 1: Connect to the Device via Ethernet](EC300/Manuals/User%20manual/EC300_User%20manual_V1.0.md#scenario-1-connect-to-the-device-via-ethernet)
+  - [Scenario 2: Cellular Network Configuration](EC300/Manuals/User%20manual/EC300_User%20manual_V1.0.md#scenario-2-cellular-network-configuration)
+  - [Scenario 3: Wi-Fi Configuration](EC300/Manuals/User%20manual/EC300_User%20manual_V1.0.md#scenario-3-wi-fi-configuration)
+  - [Scenario 4: OpenVPN Configuration](EC300/Manuals/User%20manual/EC300_User%20manual_V1.0.md#scenario-4-openvpn-configuration)
 - [DSA API Documentation V1.0](EC300/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md): EC300 FlexAPI v1.0
+  - [1 fast function API reference](EC300/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#1-fast-function-api-reference)
+  - [Enter your python code.](EC300/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#enter-your-python-code)
+  - [Enter your python code.](EC300/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#enter-your-python-code)
+  - [Returns True online](EC300/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#returns-true-online)
+  - [Return False offline](EC300/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#return-false-offline)
+  - [Global profile information](EC300/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#global-profile-information)
+  - [success returned: success](EC300/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#success-returned-success)
+  - [failed to return: failed](EC300/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#failed-to-return-failed)
+  - [Enter your python code.](EC300/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#enter-your-python-code)
+  - [The string of all the contents of the file; If there is an error, an exception will be thrown](EC300/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#the-string-of-all-the-contents-of-the-file-if-there-is-an-error-an-exception-will-be-thrown)
+  - [Enter your python code.](EC300/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#enter-your-python-code)
+  - [Enter your python code.](EC300/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#enter-your-python-code)
+  - [Enter your python code.](EC300/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#enter-your-python-code)
 - [EC Series API Documentation V1.0](EC300/Developer%20Documentation/FlexAPI/ECSeriesAPIDocumentationV1.0.md): EC300 FlexAPI v1.0
-- [EC Series Linux Software User's Manual V1.0](EC300/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md): EC300 FlexAPI v1.0
-- [EC300 Datasheet v1.0](EC300/Datasheets/General/EC300_Datasheet_V1.0.md): EC300 Datasheet v1.0
+- [EC Series Linux Software User's Manual V1.0](EC300/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md): EC300 FlexAPI v1.0 — This user manual is for the Inhand Arm-based edge computers listed below and covers instructions for all supported model…
+  - [1.Introduction](EC300/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#1introduction)
+  - [2.Quick boot](EC300/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#2quick-boot)
+  - [3.Peripheral configuration](EC300/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#3peripheral-configuration)
+  - [4.Wireless connections](EC300/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#4wireless-connections)
+  - [5.Safety](EC300/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#5safety)
+  - [6.Start, recover and update](EC300/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#6start-recover-and-update)
+  - [7.Programming instructions](EC300/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#7programming-instructions)
+- [EC300 Datasheet v1.0](EC300/Datasheets/General/EC300_Datasheet_V1.0.md): EC300 Datasheet v1.0 — Embrace edge computing, Empower Industrial Digitalization
 
 ## EC300-LoRaWAN
 
-- [EC300-LoRaWAN Datasheet v1.0](EC300-LoRaWAN/Datasheets/General/EC300-LoRaWAN_Datasheet_V1.0.md): EC300-LoRaWAN Datasheet v1.0
+- [EC300-LoRaWAN Datasheet v1.0](EC300-LoRaWAN/Datasheets/General/EC300-LoRaWAN_Datasheet_V1.0.md): EC300-LoRaWAN Datasheet v1.0 — Embrace LPWAN, Empower Industrial Digitalization
 
 ## EC3000
 
-- [EC3000 Series AI Edge Computer User Manual](EC3000/Manuals/User%20manual/EC3000_User%20manual_V1.0.md): EC3000 User manual v1.0
+- [EC3000 Series AI Edge Computer User Manual](EC3000/Manuals/User%20manual/EC3000_User%20manual_V1.0.md): EC3000 User manual v1.0 — The EC3000 Series AI Edge Computer is an industrial computing platform based on the Rockchip RK3588 platform with Hailo-…
 - [DSA API Documentation V1.0](EC3000/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md): EC3000 FlexAPI v1.0
+  - [1 fast function API reference](EC3000/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#1-fast-function-api-reference)
+  - [Enter your python code.](EC3000/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#enter-your-python-code)
+  - [Enter your python code.](EC3000/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#enter-your-python-code)
+  - [Returns True online](EC3000/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#returns-true-online)
+  - [Return False offline](EC3000/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#return-false-offline)
+  - [Global profile information](EC3000/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#global-profile-information)
+  - [success returned: success](EC3000/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#success-returned-success)
+  - [failed to return: failed](EC3000/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#failed-to-return-failed)
+  - [Enter your python code.](EC3000/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#enter-your-python-code)
+  - [The string of all the contents of the file; If there is an error, an exception will be thrown](EC3000/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#the-string-of-all-the-contents-of-the-file-if-there-is-an-error-an-exception-will-be-thrown)
+  - [Enter your python code.](EC3000/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#enter-your-python-code)
+  - [Enter your python code.](EC3000/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#enter-your-python-code)
+  - [Enter your python code.](EC3000/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#enter-your-python-code)
 - [EC Series API Documentation V1.0](EC3000/Developer%20Documentation/FlexAPI/ECSeriesAPIDocumentationV1.0.md): EC3000 FlexAPI v1.0
-- [EC Series Linux Software User's Manual V1.0](EC3000/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md): EC3000 FlexAPI v1.0
-- [EC3000 Datasheet v1.0](EC3000/Datasheets/General/EC3000_Datasheet_V1.0.md): EC3000 Datasheet v1.0
+- [EC Series Linux Software User's Manual V1.0](EC3000/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md): EC3000 FlexAPI v1.0 — This user manual is for the Inhand Arm-based edge computers listed below and covers instructions for all supported model…
+  - [1.Introduction](EC3000/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#1introduction)
+  - [2.Quick boot](EC3000/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#2quick-boot)
+  - [3.Peripheral configuration](EC3000/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#3peripheral-configuration)
+  - [4.Wireless connections](EC3000/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#4wireless-connections)
+  - [5.Safety](EC3000/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#5safety)
+  - [6.Start, recover and update](EC3000/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#6start-recover-and-update)
+  - [7.Programming instructions](EC3000/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#7programming-instructions)
+- [EC3000 Datasheet v1.0](EC3000/Datasheets/General/EC3000_Datasheet_V1.0.md): EC3000 Datasheet v1.0 — Embrace Edge AI, Empower Industrial Digitalization
 
 ## EC3576-C
 
-- [EC3576-C Datasheet v1.0](EC3576-C/Datasheets/General/EC3576-C_Datasheet_V1.0.md): EC3576-C Datasheet v1.0
+- [EC3576-C Datasheet v1.0](EC3576-C/Datasheets/General/EC3576-C_Datasheet_V1.0.md): EC3576-C Datasheet v1.0 — Embrace Edge AI, Empower Industrial Digitalization
 
 ## EC3588-C
 
-- [EC3588-C Datasheet v1.0](EC3588-C/Datasheets/General/EC3588-C_Datasheet_V1.0.md): EC3588-C Datasheet v1.0
+- [EC3588-C Datasheet v1.0](EC3588-C/Datasheets/General/EC3588-C_Datasheet_V1.0.md): EC3588-C Datasheet v1.0 — Embrace Edge AI, Empower Industrial Digitalization
 
 ## EC5000
 
-- [EC5000 Series AI Edge Computer User Manual](EC5000/Manuals/User%20manual/EC5000_User%20manual_V1.0.md): EC5000 User manual v1.0
+- [EC5000 Series AI Edge Computer User Manual](EC5000/Manuals/User%20manual/EC5000_User%20manual_V1.0.md): EC5000 User manual v1.0 — The EC5000 series AI edge computer is pre-integrated with NVIDIA Jetson Orin NX or Orin Nano modules, making it suitable…
+  - [Front Matter](EC5000/Manuals/User%20manual/EC5000_User%20manual_V1.0.md#front-matter)
+  - [Chapter 1 Device Overview](EC5000/Manuals/User%20manual/EC5000_User%20manual_V1.0.md#chapter-1-device-overview)
+  - [Chapter 2 Installation and First Use](EC5000/Manuals/User%20manual/EC5000_User%20manual_V1.0.md#chapter-2-installation-and-first-use)
+  - [Chapter 3 Common Scenario Configuration](EC5000/Manuals/User%20manual/EC5000_User%20manual_V1.0.md#chapter-3-common-scenario-configuration)
+  - [Chapter 4 Function Description and Parameter Reference](EC5000/Manuals/User%20manual/EC5000_User%20manual_V1.0.md#chapter-4-function-description-and-parameter-reference)
+  - [4.1 User Management](EC5000/Manuals/User%20manual/EC5000_User%20manual_V1.0.md#41-user-management)
+  - [4.2 Web Management based on IEOS](EC5000/Manuals/User%20manual/EC5000_User%20manual_V1.0.md#42-web-management-based-on-ieos)
+  - [4.3 Ubuntu Graphical Interface Management](EC5000/Manuals/User%20manual/EC5000_User%20manual_V1.0.md#43-ubuntu-graphical-interface-management)
+  - [4.6 Advanced Configuration of the Peripheral Interface](EC5000/Manuals/User%20manual/EC5000_User%20manual_V1.0.md#46-advanced-configuration-of-the-peripheral-interface)
+  - [4.5 Advanced](EC5000/Manuals/User%20manual/EC5000_User%20manual_V1.0.md#45-advanced)
+  - [4.6 Security](EC5000/Manuals/User%20manual/EC5000_User%20manual_V1.0.md#46-security)
+  - [4.7 Programming Guide](EC5000/Manuals/User%20manual/EC5000_User%20manual_V1.0.md#47-programming-guide)
+  - [Chapter 5 Typical Applications](EC5000/Manuals/User%20manual/EC5000_User%20manual_V1.0.md#chapter-5-typical-applications)
+  - [Appendix A Troubleshooting](EC5000/Manuals/User%20manual/EC5000_User%20manual_V1.0.md#appendix-a-troubleshooting)
+  - [Appendix B Safety Precautions](EC5000/Manuals/User%20manual/EC5000_User%20manual_V1.0.md#appendix-b-safety-precautions)
 - [DSA API Documentation V1.0](EC5000/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md): EC5000 FlexAPI v1.0
+  - [1 fast function API reference](EC5000/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#1-fast-function-api-reference)
+  - [Enter your python code.](EC5000/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#enter-your-python-code)
+  - [Enter your python code.](EC5000/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#enter-your-python-code)
+  - [Returns True online](EC5000/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#returns-true-online)
+  - [Return False offline](EC5000/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#return-false-offline)
+  - [Global profile information](EC5000/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#global-profile-information)
+  - [success returned: success](EC5000/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#success-returned-success)
+  - [failed to return: failed](EC5000/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#failed-to-return-failed)
+  - [Enter your python code.](EC5000/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#enter-your-python-code)
+  - [The string of all the contents of the file; If there is an error, an exception will be thrown](EC5000/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#the-string-of-all-the-contents-of-the-file-if-there-is-an-error-an-exception-will-be-thrown)
+  - [Enter your python code.](EC5000/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#enter-your-python-code)
+  - [Enter your python code.](EC5000/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#enter-your-python-code)
+  - [Enter your python code.](EC5000/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#enter-your-python-code)
 - [EC Series API Documentation V1.0](EC5000/Developer%20Documentation/FlexAPI/ECSeriesAPIDocumentationV1.0.md): EC5000 FlexAPI v1.0
-- [EC Series Linux Software User's Manual V1.0](EC5000/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md): EC5000 FlexAPI v1.0
-- [EC5000 Datasheet v1.0](EC5000/Datasheets/General/EC5000_Datasheet_V1.0.md): EC5000 Datasheet v1.0
+- [EC Series Linux Software User's Manual V1.0](EC5000/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md): EC5000 FlexAPI v1.0 — This user manual is for the Inhand Arm-based edge computers listed below and covers instructions for all supported model…
+  - [1.Introduction](EC5000/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#1introduction)
+  - [2.Quick boot](EC5000/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#2quick-boot)
+  - [3.Peripheral configuration](EC5000/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#3peripheral-configuration)
+  - [4.Wireless connections](EC5000/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#4wireless-connections)
+  - [5.Safety](EC5000/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#5safety)
+  - [6.Start, recover and update](EC5000/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#6start-recover-and-update)
+  - [7.Programming instructions](EC5000/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#7programming-instructions)
+- [EC5000 Datasheet v1.0](EC5000/Datasheets/General/EC5000_Datasheet_V1.0.md): EC5000 Datasheet v1.0 — Embrace Edge AI, Empower Industrial Digitalization
 
 ## EC940
 
-- [EC942 Edge Computer User Manual](EC940/Manuals/User%20manual/EC940_User%20manual_V1.0.md): EC940 User manual v1.0
+- [EC942 Edge Computer User Manual](EC940/Manuals/User%20manual/EC940_User%20manual_V1.0.md): EC940 User manual v1.0 — The EC942 series edge computer is a lightweight AI-accelerated edge computing device developed by InHand Networks for in…
+  - [Chapter 1 Understanding the Device](EC940/Manuals/User%20manual/EC940_User%20manual_V1.0.md#chapter-1-understanding-the-device)
+  - [Chapter 2 Installation and First Use](EC940/Manuals/User%20manual/EC940_User%20manual_V1.0.md#chapter-2-installation-and-first-use)
+  - [Chapter 3 Common Scenario Configuration](EC940/Manuals/User%20manual/EC940_User%20manual_V1.0.md#chapter-3-common-scenario-configuration)
+  - [Chapter 4 Feature Description and Parameter Reference](EC940/Manuals/User%20manual/EC940_User%20manual_V1.0.md#chapter-4-feature-description-and-parameter-reference)
+  - [4.1 User Account Management](EC940/Manuals/User%20manual/EC940_User%20manual_V1.0.md#41-user-account-management)
+  - [4.2 Web Management based on IEOS](EC940/Manuals/User%20manual/EC940_User%20manual_V1.0.md#42-web-management-based-on-ieos)
+  - [4.3 Linux-based Command-Line Management](EC940/Manuals/User%20manual/EC940_User%20manual_V1.0.md#43-linux-based-command-line-management)
+  - [4.4 Peripheral Interfaces](EC940/Manuals/User%20manual/EC940_User%20manual_V1.0.md#44-peripheral-interfaces)
+  - [4.5 Safety](EC940/Manuals/User%20manual/EC940_User%20manual_V1.0.md#45-safety)
+  - [4.6 Factory Restore and System Upgrade](EC940/Manuals/User%20manual/EC940_User%20manual_V1.0.md#46-factory-restore-and-system-upgrade)
+  - [4.7 Programming Guidelines](EC940/Manuals/User%20manual/EC940_User%20manual_V1.0.md#47-programming-guidelines)
+  - [Appendix A Troubleshooting](EC940/Manuals/User%20manual/EC940_User%20manual_V1.0.md#appendix-a-troubleshooting)
+  - [Appendix B Safety Precautions](EC940/Manuals/User%20manual/EC940_User%20manual_V1.0.md#appendix-b-safety-precautions)
+  - [FAQ](EC940/Manuals/User%20manual/EC940_User%20manual_V1.0.md#faq)
 - [DSA API Documentation V1.0](EC940/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md): EC940 FlexAPI v1.0
+  - [1 fast function API reference](EC940/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#1-fast-function-api-reference)
+  - [Enter your python code.](EC940/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#enter-your-python-code)
+  - [Enter your python code.](EC940/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#enter-your-python-code)
+  - [Returns True online](EC940/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#returns-true-online)
+  - [Return False offline](EC940/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#return-false-offline)
+  - [Global profile information](EC940/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#global-profile-information)
+  - [success returned: success](EC940/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#success-returned-success)
+  - [failed to return: failed](EC940/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#failed-to-return-failed)
+  - [Enter your python code.](EC940/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#enter-your-python-code)
+  - [The string of all the contents of the file; If there is an error, an exception will be thrown](EC940/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#the-string-of-all-the-contents-of-the-file-if-there-is-an-error-an-exception-will-be-thrown)
+  - [Enter your python code.](EC940/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#enter-your-python-code)
+  - [Enter your python code.](EC940/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#enter-your-python-code)
+  - [Enter your python code.](EC940/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#enter-your-python-code)
 - [EC Series API Documentation V1.0](EC940/Developer%20Documentation/FlexAPI/ECSeriesAPIDocumentationV1.0.md): EC940 FlexAPI v1.0
-- [EC Series Linux Software User's Manual V1.0](EC940/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md): EC940 FlexAPI v1.0
-- [EC940 Datasheet v1.0](EC940/Datasheets/General/EC942_Datasheet_V1.0.md): EC940 Datasheet v1.0
+- [EC Series Linux Software User's Manual V1.0](EC940/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md): EC940 FlexAPI v1.0 — This user manual is for the Inhand Arm-based edge computers listed below and covers instructions for all supported model…
+  - [1.Introduction](EC940/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#1introduction)
+  - [2.Quick boot](EC940/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#2quick-boot)
+  - [3.Peripheral configuration](EC940/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#3peripheral-configuration)
+  - [4.Wireless connections](EC940/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#4wireless-connections)
+  - [5.Safety](EC940/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#5safety)
+  - [6.Start, recover and update](EC940/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#6start-recover-and-update)
+  - [7.Programming instructions](EC940/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#7programming-instructions)
+- [EC940 Datasheet v1.0](EC940/Datasheets/General/EC942_Datasheet_V1.0.md): EC940 Datasheet v1.0 — Embrace Edge AI, Empower Industrial Digitalization
 
 ## EC950
 
-- [EC954 Edge Computer User Manual](EC950/Manuals/User%20manual/EC950_User%20manual_V1.0.md): EC950 User manual v1.0
+- [EC954 Edge Computer User Manual](EC950/Manuals/User%20manual/EC950_User%20manual_V1.0.md): EC950 User manual v1.0 — EC954 is a high-performance multi-interface edge computer featuring AI computation up to 26 TOPS and supporting TensorRT…
+  - [Front Matter](EC950/Manuals/User%20manual/EC950_User%20manual_V1.0.md#front-matter)
+  - [Chapter 1: Device Overview](EC950/Manuals/User%20manual/EC950_User%20manual_V1.0.md#chapter-1-device-overview)
+  - [Chapter 2: Installation and First Use](EC950/Manuals/User%20manual/EC950_User%20manual_V1.0.md#chapter-2-installation-and-first-use)
+  - [Chapter 3: Common Scenario Configuration](EC950/Manuals/User%20manual/EC950_User%20manual_V1.0.md#chapter-3-common-scenario-configuration)
+  - [4.1 User Account Management](EC950/Manuals/User%20manual/EC950_User%20manual_V1.0.md#41-user-account-management)
+  - [4.2 Web management based on IEOS](EC950/Manuals/User%20manual/EC950_User%20manual_V1.0.md#42-web-management-based-on-ieos)
+  - [4.3 Linux Command Line Network Management](EC950/Manuals/User%20manual/EC950_User%20manual_V1.0.md#43-linux-command-line-network-management)
+  - [4.4 Peripheral Interfaces](EC950/Manuals/User%20manual/EC950_User%20manual_V1.0.md#44-peripheral-interfaces)
+  - [4.5 Security Mechanisms](EC950/Manuals/User%20manual/EC950_User%20manual_V1.0.md#45-security-mechanisms)
+  - [4.6 Programming Guide](EC950/Manuals/User%20manual/EC950_User%20manual_V1.0.md#46-programming-guide)
+  - [Chapter 5: Typical Applications](EC950/Manuals/User%20manual/EC950_User%20manual_V1.0.md#chapter-5-typical-applications)
+  - [Appendix A: Troubleshooting](EC950/Manuals/User%20manual/EC950_User%20manual_V1.0.md#appendix-a-troubleshooting)
+  - [Appendix B: Safety Precautions](EC950/Manuals/User%20manual/EC950_User%20manual_V1.0.md#appendix-b-safety-precautions)
+  - [Appendix C: Command Line Reference](EC950/Manuals/User%20manual/EC950_User%20manual_V1.0.md#appendix-c-command-line-reference)
+  - [FAQ](EC950/Manuals/User%20manual/EC950_User%20manual_V1.0.md#faq)
 - [DSA API Documentation V1.0](EC950/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md): EC950 FlexAPI v1.0
+  - [1 fast function API reference](EC950/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#1-fast-function-api-reference)
+  - [Enter your python code.](EC950/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#enter-your-python-code)
+  - [Enter your python code.](EC950/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#enter-your-python-code)
+  - [Returns True online](EC950/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#returns-true-online)
+  - [Return False offline](EC950/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#return-false-offline)
+  - [Global profile information](EC950/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#global-profile-information)
+  - [success returned: success](EC950/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#success-returned-success)
+  - [failed to return: failed](EC950/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#failed-to-return-failed)
+  - [Enter your python code.](EC950/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#enter-your-python-code)
+  - [The string of all the contents of the file; If there is an error, an exception will be thrown](EC950/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#the-string-of-all-the-contents-of-the-file-if-there-is-an-error-an-exception-will-be-thrown)
+  - [Enter your python code.](EC950/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#enter-your-python-code)
+  - [Enter your python code.](EC950/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#enter-your-python-code)
+  - [Enter your python code.](EC950/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#enter-your-python-code)
 - [EC Series API Documentation V1.0](EC950/Developer%20Documentation/FlexAPI/ECSeriesAPIDocumentationV1.0.md): EC950 FlexAPI v1.0
-- [EC Series Linux Software User's Manual V1.0](EC950/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md): EC950 FlexAPI v1.0
-- [EC950 Datasheet v1.0](EC950/Datasheets/General/EC950_Datasheet_V1.0.md): EC950 Datasheet v1.0
+- [EC Series Linux Software User's Manual V1.0](EC950/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md): EC950 FlexAPI v1.0 — This user manual is for the Inhand Arm-based edge computers listed below and covers instructions for all supported model…
+  - [1.Introduction](EC950/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#1introduction)
+  - [2.Quick boot](EC950/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#2quick-boot)
+  - [3.Peripheral configuration](EC950/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#3peripheral-configuration)
+  - [4.Wireless connections](EC950/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#4wireless-connections)
+  - [5.Safety](EC950/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#5safety)
+  - [6.Start, recover and update](EC950/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#6start-recover-and-update)
+  - [7.Programming instructions](EC950/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#7programming-instructions)
+- [EC950 Datasheet v1.0](EC950/Datasheets/General/EC950_Datasheet_V1.0.md): EC950 Datasheet v1.0 — Embrace Edge AI, Empower Industrial Digitalization
 
 ## ER2000
 
-- [Enterprise Router ER2000 Product User Manual](ER2000/Manuals/User%20manual/ER2000_User%20manual_V1.0.md): ER2000 User manual v1.0
-- [ER2000 Datasheet v1.0](ER2000/Datasheets/General/ER2000_Datasheet_V1.0.md): ER2000 Datasheet v1.0
+- [Enterprise Router ER2000 Product User Manual](ER2000/Manuals/User%20manual/ER2000_User%20manual_V1.0.md): ER2000 User manual v1.0 — ER2000 is a high-performance enterprise router/gateway designed for mid-to-large retail sites, branch offices, and small…
+  - [Chapter 1 Getting to Know the Device](ER2000/Manuals/User%20manual/ER2000_User%20manual_V1.0.md#chapter-1-getting-to-know-the-device)
+  - [Chapter 2 Installation and First Use](ER2000/Manuals/User%20manual/ER2000_User%20manual_V1.0.md#chapter-2-installation-and-first-use)
+  - [Chapter 3 Common Scenario Configuration](ER2000/Manuals/User%20manual/ER2000_User%20manual_V1.0.md#chapter-3-common-scenario-configuration)
+  - [Chapter 4 Function Description and Parameter Reference](ER2000/Manuals/User%20manual/ER2000_User%20manual_V1.0.md#chapter-4-function-description-and-parameter-reference)
+  - [Chapter 5 Typical Applications](ER2000/Manuals/User%20manual/ER2000_User%20manual_V1.0.md#chapter-5-typical-applications)
+  - [Appendix: Troubleshooting](ER2000/Manuals/User%20manual/ER2000_User%20manual_V1.0.md#appendix-troubleshooting)
+  - [Appendix: Safety Precautions](ER2000/Manuals/User%20manual/ER2000_User%20manual_V1.0.md#appendix-safety-precautions)
+  - [FAQ](ER2000/Manuals/User%20manual/ER2000_User%20manual_V1.0.md#faq)
+- [ER2000 Datasheet v1.0](ER2000/Datasheets/General/ER2000_Datasheet_V1.0.md): ER2000 Datasheet v1.0 — Speed · Security · Stability · Simplicity
 
 ## ER605
 
-- [Edge Router 605 Product User Manual](ER605/Manuals/User%20manual/ER605_User%20manual_V1.0.md): ER605 User manual v1.0
-- [ER605 Datasheet v1.0](ER605/Datasheets/General/ER605_Datasheet_V1.0.md): ER605 Datasheet v1.0
+- [Edge Router 605 Product User Manual](ER605/Manuals/User%20manual/ER605_User%20manual_V1.0.md): ER605 User manual v1.0 — The ER605 is a next-generation 5G edge router designed for commercial networking. It integrates 4G/5G wireless networks…
+  - [GUI Conventions](ER605/Manuals/User%20manual/ER605_User%20manual_V1.0.md#gui-conventions)
+  - [How to Use This Manual](ER605/Manuals/User%20manual/ER605_User%20manual_V1.0.md#how-to-use-this-manual)
+  - [Chapter 1 Getting to Know the Device](ER605/Manuals/User%20manual/ER605_User%20manual_V1.0.md#chapter-1-getting-to-know-the-device)
+  - [Chapter 2 Installation and First Use](ER605/Manuals/User%20manual/ER605_User%20manual_V1.0.md#chapter-2-installation-and-first-use)
+  - [Chapter 3 Common Scenario Configuration](ER605/Manuals/User%20manual/ER605_User%20manual_V1.0.md#chapter-3-common-scenario-configuration)
+  - [Chapter 4 Function Description and Parameter Reference](ER605/Manuals/User%20manual/ER605_User%20manual_V1.0.md#chapter-4-function-description-and-parameter-reference)
+  - [Chapter 5 Typical Applications](ER605/Manuals/User%20manual/ER605_User%20manual_V1.0.md#chapter-5-typical-applications)
+  - [Appendix Troubleshooting](ER605/Manuals/User%20manual/ER605_User%20manual_V1.0.md#appendix-troubleshooting)
+  - [Appendix Safety Precautions](ER605/Manuals/User%20manual/ER605_User%20manual_V1.0.md#appendix-safety-precautions)
+  - [FAQ](ER605/Manuals/User%20manual/ER605_User%20manual_V1.0.md#faq)
+- [ER605 Datasheet v1.0](ER605/Datasheets/General/ER605_Datasheet_V1.0.md): ER605 Datasheet v1.0 — Speed · Security · Stability · Simplicity
 - [ER605 Certifications](ER605/certifications.md): ER605 certification list (CE, EN18031, FCC, IC, PTCRB, UKCA) with links to the original certificate files
 - [ER605 Drawings](ER605/drawings.md): ER605 mechanical drawings (2D, 3D) with links to the original drawing files
 
 ## ER615
 
-- [Edge Router 615 Product User Manual](ER615/Manuals/User%20manual/ER615_User%20manual_V1.0.md): ER615 User manual v1.0
-- [ER615 Datasheet v1.0](ER615/Datasheets/General/ER615_Datasheet_V1.0.md): ER615 Datasheet v1.0
+- [Edge Router 615 Product User Manual](ER615/Manuals/User%20manual/ER615_User%20manual_V1.0.md): ER615 User manual v1.0 — The ER615 is a next-generation 5G edge router developed by InHand Networks for commercial networking applications. It tr…
+  - [Front Matter](ER615/Manuals/User%20manual/ER615_User%20manual_V1.0.md#front-matter)
+  - [Chapter 1 Know the Device](ER615/Manuals/User%20manual/ER615_User%20manual_V1.0.md#chapter-1-know-the-device)
+  - [Chapter 2 Installation and First Use](ER615/Manuals/User%20manual/ER615_User%20manual_V1.0.md#chapter-2-installation-and-first-use)
+  - [Chapter 3 Common Scenario Configuration](ER615/Manuals/User%20manual/ER615_User%20manual_V1.0.md#chapter-3-common-scenario-configuration)
+  - [Chapter 4 Function Description and Parameter Reference](ER615/Manuals/User%20manual/ER615_User%20manual_V1.0.md#chapter-4-function-description-and-parameter-reference)
+  - [Appendix A Troubleshooting](ER615/Manuals/User%20manual/ER615_User%20manual_V1.0.md#appendix-a-troubleshooting)
+  - [Appendix B Safety Precautions](ER615/Manuals/User%20manual/ER615_User%20manual_V1.0.md#appendix-b-safety-precautions)
+  - [FAQ](ER615/Manuals/User%20manual/ER615_User%20manual_V1.0.md#faq)
+- [ER615 Datasheet v1.0](ER615/Datasheets/General/ER615_Datasheet_V1.0.md): ER615 Datasheet v1.0 — Speed · Security · Stability · Simplicity
 
 ## ER615X
 
@@ -130,105 +401,277 @@
 
 ## ER805
 
-- [Edge Router 805 Product User Manual](ER805/Manuals/User%20manual/ER805_User%20manual_V1.0.md): ER805 User manual v1.0
-- [ER805 Datasheet v1.0](ER805/Datasheets/General/ER805_Datasheet_V1.0.md): ER805 Datasheet v1.0
+- [Edge Router 805 Product User Manual](ER805/Manuals/User%20manual/ER805_User%20manual_V1.0.md): ER805 User manual v1.0 — The Edge Router 805 (ER805) is a next-generation 5G edge router developed by InHand Networks for commercial networking a…
+  - [Preliminary Information](ER805/Manuals/User%20manual/ER805_User%20manual_V1.0.md#preliminary-information)
+  - [Chapter 1 Getting to Know the Device](ER805/Manuals/User%20manual/ER805_User%20manual_V1.0.md#chapter-1-getting-to-know-the-device)
+  - [Chapter 2 Installation and First Use](ER805/Manuals/User%20manual/ER805_User%20manual_V1.0.md#chapter-2-installation-and-first-use)
+  - [Chapter 3 Common Scenario Configuration](ER805/Manuals/User%20manual/ER805_User%20manual_V1.0.md#chapter-3-common-scenario-configuration)
+  - [Chapter 4 Feature Description and Parameter Reference](ER805/Manuals/User%20manual/ER805_User%20manual_V1.0.md#chapter-4-feature-description-and-parameter-reference)
+  - [Chapter 5 Typical Applications](ER805/Manuals/User%20manual/ER805_User%20manual_V1.0.md#chapter-5-typical-applications)
+  - [Appendix: Troubleshooting](ER805/Manuals/User%20manual/ER805_User%20manual_V1.0.md#appendix-troubleshooting)
+  - [Appendix: Safety Precautions](ER805/Manuals/User%20manual/ER805_User%20manual_V1.0.md#appendix-safety-precautions)
+  - [FAQ](ER805/Manuals/User%20manual/ER805_User%20manual_V1.0.md#faq)
+- [ER805 Datasheet v1.0](ER805/Datasheets/General/ER805_Datasheet_V1.0.md): ER805 Datasheet v1.0 — Speed · Security · Stability · Simplicity
 - [ER805 Certifications](ER805/certifications.md): ER805 certification list (CE, EN18031, FCC, IC, PTCRB) with links to the original certificate files
 - [ER805 Drawings](ER805/drawings.md): ER805 mechanical drawings (2D, 3D) with links to the original drawing files
 
 ## ER815
 
-- [Edge Router 815 Product User Manual](ER815/Manuals/User%20manual/ER815_User%20manual_V1.0.md): ER815 User manual v1.0
-- [ER815 Datasheet v1.0](ER815/Datasheets/General/ER815_Datasheet_V1.0.md): ER815 Datasheet v1.0
+- [Edge Router 815 Product User Manual](ER815/Manuals/User%20manual/ER815_User%20manual_V1.0.md): ER815 User manual v1.0 — The Edge Router 815 (ER815) is a next-generation 5G edge router developed by InHand Networks for the commercial networki…
+  - [Chapter 1: Getting to Know the Device](ER815/Manuals/User%20manual/ER815_User%20manual_V1.0.md#chapter-1-getting-to-know-the-device)
+  - [Chapter 2: Installation and First Use](ER815/Manuals/User%20manual/ER815_User%20manual_V1.0.md#chapter-2-installation-and-first-use)
+  - [Chapter 3: Common Scenario Configuration](ER815/Manuals/User%20manual/ER815_User%20manual_V1.0.md#chapter-3-common-scenario-configuration)
+  - [Chapter 4: Function Description and Parameter Reference](ER815/Manuals/User%20manual/ER815_User%20manual_V1.0.md#chapter-4-function-description-and-parameter-reference)
+  - [Chapter 5: Typical Applications](ER815/Manuals/User%20manual/ER815_User%20manual_V1.0.md#chapter-5-typical-applications)
+  - [Appendix: Troubleshooting](ER815/Manuals/User%20manual/ER815_User%20manual_V1.0.md#appendix-troubleshooting)
+  - [Appendix: Safety Precautions](ER815/Manuals/User%20manual/ER815_User%20manual_V1.0.md#appendix-safety-precautions)
+  - [FAQ](ER815/Manuals/User%20manual/ER815_User%20manual_V1.0.md#faq)
+- [ER815 Datasheet v1.0](ER815/Datasheets/General/ER815_Datasheet_V1.0.md): ER815 Datasheet v1.0 — Advanced 5G Cellular Router
 - [ER815 Certifications](ER815/certifications.md): ER815 certification list (EN18031, FCC, IC, PTCRB) with links to the original certificate files
 - [ER815 Drawings](ER815/drawings.md): ER815 mechanical drawings (2D, 3D) with links to the original drawing files
 
 ## ES220
 
-- [ES220 Datasheet v1.0](ES220/Datasheets/General/ES220_Datasheet_V1.0.md): ES220 Datasheet v1.0
+- [ES220 Datasheet v1.0](ES220/Datasheets/General/ES220_Datasheet_V1.0.md): ES220 Datasheet v1.0 — Compact and Agile, Easy to Deploy
 - [ES220 Certifications](ES220/certifications.md): ES220 certification list (CE, FCC) with links to the original certificate files
 - [ES220 Drawings](ES220/drawings.md): ES220 mechanical drawings (2D, 3D) with links to the original drawing files
 
 ## ES620
 
-- [Enterprise Switch ES620 Product User Manual](ES620/Manuals/User%20manual/ES620_User%20manual_V1.0.md): ES620 User manual v1.0
-- [ES620 Datasheet v1.0](ES620/Datasheets/General/ES620_Datasheet_V1.0.md): ES620 Datasheet v1.0
+- [Enterprise Switch ES620 Product User Manual](ES620/Manuals/User%20manual/ES620_User%20manual_V1.0.md): ES620 User manual v1.0 — The InHand ES620 is a high-performance Layer 2 cloud-managed enterprise switch featuring 24 Gigabit PoE (Power over Ethe…
+- [ES620 Datasheet v1.0](ES620/Datasheets/General/ES620_Datasheet_V1.0.md): ES620 Datasheet v1.0 — Powerful Connectivity, Convenient Management
 
 ## Eagle Energy Management
 
-- [Eagle Energy Management Datasheet v1.0](Eagle%20Energy%20Management/Datasheets/General/xEnergy_Datasheet_V1.0.md): Eagle Energy Management Datasheet v1.0
+- [Eagle Energy Management Datasheet v1.0](Eagle%20Energy%20Management/Datasheets/General/xEnergy_Datasheet_V1.0.md): Eagle Energy Management Datasheet v1.0 — Monitor · Analyze · Save · Reduce Emissions
 
 ## FV680
 
-- [FV680 Datasheet v680](FV680/Datasheets/General/FV680_Datasheet_V1.0.md): FV680 Datasheet v680
+- [FV680 Datasheet v680](FV680/Datasheets/General/FV680_Datasheet_V1.0.md): FV680 Datasheet v680 — Share happiness with your friends
 
 ## FWA02
 
-- [5G FWA02 Product User Manual](FWA02/Manuals/User%20manual/FWA02_User%20manual_V1.0.md): FWA02 User manual v1.0
-- [FWA02 Datasheet v1.0](FWA02/Datasheets/General/FWA02_Datasheet_V1.0.md): FWA02 Datasheet v1.0
+- [5G FWA02 Product User Manual](FWA02/Manuals/User%20manual/FWA02_User%20manual_V1.0.md): FWA02 User manual v1.0 — The 5G FWA02 is a cloud-managed 5G fixed wireless access device developed by InHand Networks. It delivers high-speed, se…
+  - [How to Use This Manual](FWA02/Manuals/User%20manual/FWA02_User%20manual_V1.0.md#how-to-use-this-manual)
+  - [1.1 Overview](FWA02/Manuals/User%20manual/FWA02_User%20manual_V1.0.md#11-overview)
+  - [1.2 Packing List](FWA02/Manuals/User%20manual/FWA02_User%20manual_V1.0.md#12-packing-list)
+  - [1.3 Appearance and Interfaces](FWA02/Manuals/User%20manual/FWA02_User%20manual_V1.0.md#13-appearance-and-interfaces)
+  - [1.4 LED Indicators](FWA02/Manuals/User%20manual/FWA02_User%20manual_V1.0.md#14-led-indicators)
+  - [1.5 Restoring Factory Settings](FWA02/Manuals/User%20manual/FWA02_User%20manual_V1.0.md#15-restoring-factory-settings)
+  - [1.6 Default Settings](FWA02/Manuals/User%20manual/FWA02_User%20manual_V1.0.md#16-default-settings)
+  - [2.1 Pre-Installation Preparation](FWA02/Manuals/User%20manual/FWA02_User%20manual_V1.0.md#21-pre-installation-preparation)
+  - [2.2 Installation Guide](FWA02/Manuals/User%20manual/FWA02_User%20manual_V1.0.md#22-installation-guide)
+  - [2.3 Quick Check](FWA02/Manuals/User%20manual/FWA02_User%20manual_V1.0.md#23-quick-check)
+  - [3.1 Cellular Internet Access](FWA02/Manuals/User%20manual/FWA02_User%20manual_V1.0.md#31-cellular-internet-access)
+  - [3.2 Wired Internet Access](FWA02/Manuals/User%20manual/FWA02_User%20manual_V1.0.md#32-wired-internet-access)
+  - [3.3 Cloud Platform Management](FWA02/Manuals/User%20manual/FWA02_User%20manual_V1.0.md#33-cloud-platform-management)
+  - [4.1 Monitoring](FWA02/Manuals/User%20manual/FWA02_User%20manual_V1.0.md#41-monitoring)
+  - [4.2 Internet](FWA02/Manuals/User%20manual/FWA02_User%20manual_V1.0.md#42-internet)
+- [FWA02 Datasheet v1.0](FWA02/Datasheets/General/FWA02_Datasheet_V1.0.md): FWA02 Datasheet v1.0 — Instant 5G Connectivity Starts Here
 - [FWA02 Certifications](FWA02/certifications.md): FWA02 certification list (CE, EN18031, FCC, IC, PTCRB) with links to the original certificate files
 - [FWA02 Drawings](FWA02/drawings.md): FWA02 mechanical drawings (2D, 3D) with links to the original drawing files
 
 ## FWA12
 
-- [5G FWA12 Product User Manual](FWA12/Manuals/User%20manual/FWA12_User%20manual_V1.0.md): FWA12 User manual v1.0
-- [FWA12 Datasheet v1.0](FWA12/Datasheets/General/FWA12_Datasheet_V1.0.md): FWA12 Datasheet v1.0
+- [5G FWA12 Product User Manual](FWA12/Manuals/User%20manual/FWA12_User%20manual_V1.0.md): FWA12 User manual v1.0 — The 5G cellular network significantly enhances network flexibility and convenience, enabling enterprises to establish a…
+  - [Chapter 1 Getting to Know the Device](FWA12/Manuals/User%20manual/FWA12_User%20manual_V1.0.md#chapter-1-getting-to-know-the-device)
+  - [Chapter 2 Installation and First Use](FWA12/Manuals/User%20manual/FWA12_User%20manual_V1.0.md#chapter-2-installation-and-first-use)
+  - [Chapter 3 Common Scenario Configuration](FWA12/Manuals/User%20manual/FWA12_User%20manual_V1.0.md#chapter-3-common-scenario-configuration)
+  - [Chapter 4 Feature Description and Parameter Reference](FWA12/Manuals/User%20manual/FWA12_User%20manual_V1.0.md#chapter-4-feature-description-and-parameter-reference)
+  - [Chapter 5 Typical Applications](FWA12/Manuals/User%20manual/FWA12_User%20manual_V1.0.md#chapter-5-typical-applications)
+  - [Appendix: Troubleshooting](FWA12/Manuals/User%20manual/FWA12_User%20manual_V1.0.md#appendix-troubleshooting)
+  - [Appendix: Safety Precautions](FWA12/Manuals/User%20manual/FWA12_User%20manual_V1.0.md#appendix-safety-precautions)
+  - [FAQ](FWA12/Manuals/User%20manual/FWA12_User%20manual_V1.0.md#faq)
+- [FWA12 Datasheet v1.0](FWA12/Datasheets/General/FWA12_Datasheet_V1.0.md): FWA12 Datasheet v1.0 — Transform Connectivity, Unlock Possibilities
 - [FWA12 Certifications](FWA12/certifications.md): FWA12 certification list (EN18031, FCC, IC, PTCRB) with links to the original certificate files
 - [FWA12 Drawings](FWA12/drawings.md): FWA12 mechanical drawings (2D, 3D) with links to the original drawing files
 
 ## IG101
 
-- [IG101 Datasheet v1.0](IG101/Datasheets/General/IG101_Datasheet_V1.0.md): IG101 Datasheet v1.0
+- [IG101 Datasheet v1.0](IG101/Datasheets/General/IG101_Datasheet_V1.0.md): IG101 Datasheet v1.0 — Compact Edge Gateway, Reliable Connectivity, Industrial Design
 
 ## IG502
 
-- [InGateway502 Edge Computing Gateway User Manual](IG502/Manuals/User%20manual/IG502_User%20manual_V1.0.md): IG502 User manual v1.0
+- [InGateway502 Edge Computing Gateway User Manual](IG502/Manuals/User%20manual/IG502_User%20manual_V1.0.md): IG502 User manual v1.0 — InGateway502 (IG502) is a cost-effective edge computing gateway designed by InHand Networks for industrial IoT applicati…
+  - [Front Matter](IG502/Manuals/User%20manual/IG502_User%20manual_V1.0.md#front-matter)
+  - [Chapter 1 Knowing the Device](IG502/Manuals/User%20manual/IG502_User%20manual_V1.0.md#chapter-1-knowing-the-device)
+  - [Chapter 2 Installation and First Use](IG502/Manuals/User%20manual/IG502_User%20manual_V1.0.md#chapter-2-installation-and-first-use)
+  - [Chapter 3 Common Scenario Configuration](IG502/Manuals/User%20manual/IG502_User%20manual_V1.0.md#chapter-3-common-scenario-configuration)
+  - [Chapter 4 Function Description and Parameter Reference](IG502/Manuals/User%20manual/IG502_User%20manual_V1.0.md#chapter-4-function-description-and-parameter-reference)
+  - [Chapter 5 Typical Applications](IG502/Manuals/User%20manual/IG502_User%20manual_V1.0.md#chapter-5-typical-applications)
+  - [Appendix: Troubleshooting](IG502/Manuals/User%20manual/IG502_User%20manual_V1.0.md#appendix-troubleshooting)
+  - [Appendix: Safety Precautions](IG502/Manuals/User%20manual/IG502_User%20manual_V1.0.md#appendix-safety-precautions)
+  - [FAQ](IG502/Manuals/User%20manual/IG502_User%20manual_V1.0.md#faq)
 - [IG Series API Documentation V1.0](IG502/Developer%20Documentation/FlexAPI/IGSeriesAPIDocumentationV1.0.md): IG502 FlexAPI v1.0
+  - [API usage instructions](IG502/Developer%20Documentation/FlexAPI/IGSeriesAPIDocumentationV1.0.md#api-usage-instructions)
+  - [obtain authentication](IG502/Developer%20Documentation/FlexAPI/IGSeriesAPIDocumentationV1.0.md#obtain-authentication)
+  - [network Interface](IG502/Developer%20Documentation/FlexAPI/IGSeriesAPIDocumentationV1.0.md#network-interface)
+  - [network Services](IG502/Developer%20Documentation/FlexAPI/IGSeriesAPIDocumentationV1.0.md#network-services)
+  - [host List](IG502/Developer%20Documentation/FlexAPI/IGSeriesAPIDocumentationV1.0.md#host-list)
+  - [routing](IG502/Developer%20Documentation/FlexAPI/IGSeriesAPIDocumentationV1.0.md#routing)
+  - [Firewall](IG502/Developer%20Documentation/FlexAPI/IGSeriesAPIDocumentationV1.0.md#firewall)
+  - [edge Computing](IG502/Developer%20Documentation/FlexAPI/IGSeriesAPIDocumentationV1.0.md#edge-computing)
+  - [system Management](IG502/Developer%20Documentation/FlexAPI/IGSeriesAPIDocumentationV1.0.md#system-management)
 - [IG supports IEC.API Documentation V1.0](IG502/Developer%20Documentation/FlexAPI/IGsupportsIEC.APIDocumentationV1.0.md): IG502 FlexAPI v1.0
-- [IG502 Datasheet v1.0](IG502/Datasheets/General/IG502_Datasheet_V1.0.md): IG502 Datasheet v1.0
+- [IG502 Datasheet v1.0](IG502/Datasheets/General/IG502_Datasheet_V1.0.md): IG502 Datasheet v1.0 — Embrace edge computing to empower industrial digitization
 
 ## IG902
 
-- [InGateway902 User Manual](IG902/Manuals/User%20manual/IG902_User%20manual_V1.0.md): IG902 User manual v1.0
+- [InGateway902 User Manual](IG902/Manuals/User%20manual/IG902_User%20manual_V1.0.md): IG902 User manual v1.0 — The InGateway902 (IG902) series is a new-generation 4G edge computing gateway developed by InHand Networks for the Indus…
+  - [GUI Conventions](IG902/Manuals/User%20manual/IG902_User%20manual_V1.0.md#gui-conventions)
+  - [How to Use This Manual](IG902/Manuals/User%20manual/IG902_User%20manual_V1.0.md#how-to-use-this-manual)
+  - [1.1 Overview](IG902/Manuals/User%20manual/IG902_User%20manual_V1.0.md#11-overview)
+  - [1.2 Packing List](IG902/Manuals/User%20manual/IG902_User%20manual_V1.0.md#12-packing-list)
+  - [1.3 Appearance and Interfaces](IG902/Manuals/User%20manual/IG902_User%20manual_V1.0.md#13-appearance-and-interfaces)
+  - [1.4 Indicator Lights](IG902/Manuals/User%20manual/IG902_User%20manual_V1.0.md#14-indicator-lights)
+  - [1.5 Factory Reset](IG902/Manuals/User%20manual/IG902_User%20manual_V1.0.md#15-factory-reset)
+  - [1.6 Default Settings](IG902/Manuals/User%20manual/IG902_User%20manual_V1.0.md#16-default-settings)
+  - [2.1 Pre-installation Preparation](IG902/Manuals/User%20manual/IG902_User%20manual_V1.0.md#21-pre-installation-preparation)
+  - [2.2 Installation Guide](IG902/Manuals/User%20manual/IG902_User%20manual_V1.0.md#22-installation-guide)
+  - [2.3 Quick Check](IG902/Manuals/User%20manual/IG902_User%20manual_V1.0.md#23-quick-check)
+  - [Scene 1: Web Access and Login](IG902/Manuals/User%20manual/IG902_User%20manual_V1.0.md#scene-1-web-access-and-login)
+  - [Scene 2: Cellular Networking](IG902/Manuals/User%20manual/IG902_User%20manual_V1.0.md#scene-2-cellular-networking)
+  - [Scene 3: Ethernet Networking](IG902/Manuals/User%20manual/IG902_User%20manual_V1.0.md#scene-3-ethernet-networking)
+  - [Scene 4: Software Update](IG902/Manuals/User%20manual/IG902_User%20manual_V1.0.md#scene-4-software-update)
 - [IG Series API Documentation V1.0](IG902/Developer%20Documentation/FlexAPI/IGSeriesAPIDocumentationV1.0.md): IG902 FlexAPI v1.0
+  - [API usage instructions](IG902/Developer%20Documentation/FlexAPI/IGSeriesAPIDocumentationV1.0.md#api-usage-instructions)
+  - [obtain authentication](IG902/Developer%20Documentation/FlexAPI/IGSeriesAPIDocumentationV1.0.md#obtain-authentication)
+  - [network Interface](IG902/Developer%20Documentation/FlexAPI/IGSeriesAPIDocumentationV1.0.md#network-interface)
+  - [network Services](IG902/Developer%20Documentation/FlexAPI/IGSeriesAPIDocumentationV1.0.md#network-services)
+  - [host List](IG902/Developer%20Documentation/FlexAPI/IGSeriesAPIDocumentationV1.0.md#host-list)
+  - [routing](IG902/Developer%20Documentation/FlexAPI/IGSeriesAPIDocumentationV1.0.md#routing)
+  - [Firewall](IG902/Developer%20Documentation/FlexAPI/IGSeriesAPIDocumentationV1.0.md#firewall)
+  - [edge Computing](IG902/Developer%20Documentation/FlexAPI/IGSeriesAPIDocumentationV1.0.md#edge-computing)
+  - [system Management](IG902/Developer%20Documentation/FlexAPI/IGSeriesAPIDocumentationV1.0.md#system-management)
 - [IG supports IEC.API Documentation V1.0](IG902/Developer%20Documentation/FlexAPI/IGsupportsIEC.APIDocumentationV1.0.md): IG902 FlexAPI v1.0
-- [IG902 Datasheet v1.0](IG902/Datasheets/General/IG902_Datasheet_V1.0.md): IG902 Datasheet v1.0
+- [IG902 Datasheet v1.0](IG902/Datasheets/General/IG902_Datasheet_V1.0.md): IG902 Datasheet v1.0 — Break down protocol barriers and make industrial digitization more convenient and efficient
 
 ## IR302
 
-- [Industrial Router IR302 Product User Manual](IR302/Manuals/User%20manual/IR302_User%20manual_V1.0.md): IR302 User manual v1.0
-- [IR302 Datasheet v1.1](IR302/Datasheets/General/IR302_Datasheet_V1.1.md): IR302 Datasheet v1.1
+- [Industrial Router IR302 Product User Manual](IR302/Manuals/User%20manual/IR302_User%20manual_V1.0.md): IR302 User manual v1.0 — The InRouter302 is the next generation of industrial cellular routers, integrating 3G, 4G LTE, and advanced security fea…
+  - [1.1 Overview](IR302/Manuals/User%20manual/IR302_User%20manual_V1.0.md#11-overview)
+  - [1.2 Packing List](IR302/Manuals/User%20manual/IR302_User%20manual_V1.0.md#12-packing-list)
+  - [1.3 Appearance and Interfaces](IR302/Manuals/User%20manual/IR302_User%20manual_V1.0.md#13-appearance-and-interfaces)
+  - [1.4 LED Indicators](IR302/Manuals/User%20manual/IR302_User%20manual_V1.0.md#14-led-indicators)
+  - [1.5 Restoring Factory Settings](IR302/Manuals/User%20manual/IR302_User%20manual_V1.0.md#15-restoring-factory-settings)
+  - [1.6 Default Settings](IR302/Manuals/User%20manual/IR302_User%20manual_V1.0.md#16-default-settings)
+  - [2.1 Pre-Installation Preparation](IR302/Manuals/User%20manual/IR302_User%20manual_V1.0.md#21-pre-installation-preparation)
+  - [2.2 Installation Guide](IR302/Manuals/User%20manual/IR302_User%20manual_V1.0.md#22-installation-guide)
+  - [2.3 Quick Check](IR302/Manuals/User%20manual/IR302_User%20manual_V1.0.md#23-quick-check)
+  - [Scenario 1: Cellular Internet Access](IR302/Manuals/User%20manual/IR302_User%20manual_V1.0.md#scenario-1-cellular-internet-access)
+  - [Scenario 2: Wired Internet Access](IR302/Manuals/User%20manual/IR302_User%20manual_V1.0.md#scenario-2-wired-internet-access)
+  - [Scenario 3: Wi-Fi Internet Access](IR302/Manuals/User%20manual/IR302_User%20manual_V1.0.md#scenario-3-wi-fi-internet-access)
+  - [Scenario 4: DM Cloud Platform Access](IR302/Manuals/User%20manual/IR302_User%20manual_V1.0.md#scenario-4-dm-cloud-platform-access)
+  - [4.1 System](IR302/Manuals/User%20manual/IR302_User%20manual_V1.0.md#41-system)
+  - [4.2 Network](IR302/Manuals/User%20manual/IR302_User%20manual_V1.0.md#42-network)
+- [IR302 Datasheet v1.1](IR302/Datasheets/General/IR302_Datasheet_V1.1.md): IR302 Datasheet v1.1 — Compact Industrial Cellular Router for IoT
 - [IR302 Certifications](IR302/certifications.md): IR302 certification list (ANATEL, CB, CE, E-Mark, ECER118, EN18031, FCC, IC, ICASA, IEC62443, IFETEL, MIC_JATE, NOM, NRCS, PTCRB, RCM, UKCA, UL) with links to the original certificate files
 - [IR302 Drawings](IR302/drawings.md): IR302 mechanical drawings (2D, 3D) with links to the original drawing files
 
 ## IR305
 
-- [Industrial Router IR305 Product User Manual](IR305/Manuals/User%20manual/IR305_User%20manual_V1.0.md): IR305 User manual v1.0
+- [Industrial Router IR305 Product User Manual](IR305/Manuals/User%20manual/IR305_User%20manual_V1.0.md): IR305 User manual v1.0 — The InRouter305 (IR305) is an IoT cellular router that integrates 4G LTE, Wi-Fi, and VPN technologies to provide easy, r…
+  - [How to Use This Manual](IR305/Manuals/User%20manual/IR305_User%20manual_V1.0.md#how-to-use-this-manual)
+  - [1.1 Overview](IR305/Manuals/User%20manual/IR305_User%20manual_V1.0.md#11-overview)
+  - [1.2 Packing List](IR305/Manuals/User%20manual/IR305_User%20manual_V1.0.md#12-packing-list)
+  - [1.3 Appearance and Interfaces](IR305/Manuals/User%20manual/IR305_User%20manual_V1.0.md#13-appearance-and-interfaces)
+  - [1.4 LED Indicator Description](IR305/Manuals/User%20manual/IR305_User%20manual_V1.0.md#14-led-indicator-description)
+  - [1.5 Restore Factory Settings](IR305/Manuals/User%20manual/IR305_User%20manual_V1.0.md#15-restore-factory-settings)
+  - [1.6 Default Settings](IR305/Manuals/User%20manual/IR305_User%20manual_V1.0.md#16-default-settings)
+  - [2.1 Preparations](IR305/Manuals/User%20manual/IR305_User%20manual_V1.0.md#21-preparations)
+  - [2.2 Installation Guide](IR305/Manuals/User%20manual/IR305_User%20manual_V1.0.md#22-installation-guide)
+  - [2.3 Quick Check](IR305/Manuals/User%20manual/IR305_User%20manual_V1.0.md#23-quick-check)
+  - [Scenario 1: Cellular Networking](IR305/Manuals/User%20manual/IR305_User%20manual_V1.0.md#scenario-1-cellular-networking)
+  - [Scenario 2: Wired WAN Networking](IR305/Manuals/User%20manual/IR305_User%20manual_V1.0.md#scenario-2-wired-wan-networking)
+  - [Scenario 3: Wi-Fi Client (STA) Networking](IR305/Manuals/User%20manual/IR305_User%20manual_V1.0.md#scenario-3-wi-fi-client-sta-networking)
+  - [Scenario 4: Connect to InHand Device Manager (Cloud)](IR305/Manuals/User%20manual/IR305_User%20manual_V1.0.md#scenario-4-connect-to-inhand-device-manager-cloud)
+  - [4.1 System](IR305/Manuals/User%20manual/IR305_User%20manual_V1.0.md#41-system)
 - [IR305 Certifications](IR305/certifications.md): IR305 certification list (ANATEL, CB, CE, E-Mark, ECER118, EN18031, FCC, IC, PTCRB, UKCA) with links to the original certificate files
 - [IR305 Drawings](IR305/drawings.md): IR305 mechanical drawings (2D, 3D) with links to the original drawing files
 
 ## IR315
 
-- [Industrial Router IR315 Product User Manual](IR315/Manuals/User%20manual/IR315_User%20manual_V1.0.md): IR315 User manual v1.0
-- [IR315 Datasheet v1.1](IR315/Datasheets/General/IR315_Datasheet_V1.1.md): IR315 Datasheet v1.1
+- [Industrial Router IR315 Product User Manual](IR315/Manuals/User%20manual/IR315_User%20manual_V1.0.md): IR315 User manual v1.0 — The InRouter315 (IR315) is an IoT cellular router that integrates 4G LTE, Wi-Fi, and VPN technologies to provide easy, r…
+  - [GUI Conventions](IR315/Manuals/User%20manual/IR315_User%20manual_V1.0.md#gui-conventions)
+  - [How to Use This Manual](IR315/Manuals/User%20manual/IR315_User%20manual_V1.0.md#how-to-use-this-manual)
+  - [1.1 Overview](IR315/Manuals/User%20manual/IR315_User%20manual_V1.0.md#11-overview)
+  - [1.2 Packing List](IR315/Manuals/User%20manual/IR315_User%20manual_V1.0.md#12-packing-list)
+  - [1.3 Appearance and Interfaces](IR315/Manuals/User%20manual/IR315_User%20manual_V1.0.md#13-appearance-and-interfaces)
+  - [1.4 LED Indicators](IR315/Manuals/User%20manual/IR315_User%20manual_V1.0.md#14-led-indicators)
+  - [1.5 Restore to Factory Settings](IR315/Manuals/User%20manual/IR315_User%20manual_V1.0.md#15-restore-to-factory-settings)
+  - [1.6 Default Settings](IR315/Manuals/User%20manual/IR315_User%20manual_V1.0.md#16-default-settings)
+  - [2.1 Preparation Before Installation](IR315/Manuals/User%20manual/IR315_User%20manual_V1.0.md#21-preparation-before-installation)
+  - [2.2 Installation Guide](IR315/Manuals/User%20manual/IR315_User%20manual_V1.0.md#22-installation-guide)
+  - [2.3 Quick Check](IR315/Manuals/User%20manual/IR315_User%20manual_V1.0.md#23-quick-check)
+  - [Scenario 1: Cellular Networking](IR315/Manuals/User%20manual/IR315_User%20manual_V1.0.md#scenario-1-cellular-networking)
+  - [Scenario 2: Wired Access to Internet](IR315/Manuals/User%20manual/IR315_User%20manual_V1.0.md#scenario-2-wired-access-to-internet)
+  - [Scenario 3: Wi-Fi Networking](IR315/Manuals/User%20manual/IR315_User%20manual_V1.0.md#scenario-3-wi-fi-networking)
+  - [Scenario 4: Connect to InHand Device Manager](IR315/Manuals/User%20manual/IR315_User%20manual_V1.0.md#scenario-4-connect-to-inhand-device-manager)
+- [IR315 Datasheet v1.1](IR315/Datasheets/General/IR315_Datasheet_V1.1.md): IR315 Datasheet v1.1 — 5G Cost-Effective Multi-Port Industrial Router for Secure Networking and Cloud O&M
 - [IR315 Certifications](IR315/certifications.md): IR315 certification list (C1D2, CE, E-Mark, ECER118, EN18031, FCC, IC, IMDA, MIC_JATE, PTCRB, RCM, UL) with links to the original certificate files
 - [IR315 Drawings](IR315/drawings.md): IR315 mechanical drawings (2D, 3D) with links to the original drawing files
 
 ## IR615-S
 
-- [Industrial Router IR615-S Product User Manual](IR615-S/Manuals/User%20manual/IR615-S_User%20manual_V1.0.md): IR615-S User manual v1.0
+- [Industrial Router IR615-S Product User Manual](IR615-S/Manuals/User%20manual/IR615-S_User%20manual_V1.0.md): IR615-S User manual v1.0 — The InRouter615-S is the next generation of the InRouter600 series cellular router, integrating 3G, 4G LTE, and advanced…
+  - [1.1 Overview](IR615-S/Manuals/User%20manual/IR615-S_User%20manual_V1.0.md#11-overview)
+  - [1.2 Packing List](IR615-S/Manuals/User%20manual/IR615-S_User%20manual_V1.0.md#12-packing-list)
+  - [1.3 Appearance and Interfaces](IR615-S/Manuals/User%20manual/IR615-S_User%20manual_V1.0.md#13-appearance-and-interfaces)
+  - [1.4 LED Indicator Description](IR615-S/Manuals/User%20manual/IR615-S_User%20manual_V1.0.md#14-led-indicator-description)
+  - [1.5 Restore Factory Settings](IR615-S/Manuals/User%20manual/IR615-S_User%20manual_V1.0.md#15-restore-factory-settings)
+  - [1.6 Default Settings](IR615-S/Manuals/User%20manual/IR615-S_User%20manual_V1.0.md#16-default-settings)
+  - [2.1 Pre-Installation Preparation](IR615-S/Manuals/User%20manual/IR615-S_User%20manual_V1.0.md#21-pre-installation-preparation)
+  - [2.2 Installation Guide](IR615-S/Manuals/User%20manual/IR615-S_User%20manual_V1.0.md#22-installation-guide)
+  - [2.3 Quick Check](IR615-S/Manuals/User%20manual/IR615-S_User%20manual_V1.0.md#23-quick-check)
+  - [Scenario 1: Cellular Internet Access](IR615-S/Manuals/User%20manual/IR615-S_User%20manual_V1.0.md#scenario-1-cellular-internet-access)
+  - [Scenario 2: Wired Internet Access](IR615-S/Manuals/User%20manual/IR615-S_User%20manual_V1.0.md#scenario-2-wired-internet-access)
+  - [Scenario 3: Wi-Fi Internet Access](IR615-S/Manuals/User%20manual/IR615-S_User%20manual_V1.0.md#scenario-3-wi-fi-internet-access)
+  - [Scenario 4: VPN Tunnel Configuration](IR615-S/Manuals/User%20manual/IR615-S_User%20manual_V1.0.md#scenario-4-vpn-tunnel-configuration)
+  - [Scenario 5: Device Manager Connection](IR615-S/Manuals/User%20manual/IR615-S_User%20manual_V1.0.md#scenario-5-device-manager-connection)
+  - [4.1 System](IR615-S/Manuals/User%20manual/IR615-S_User%20manual_V1.0.md#41-system)
 - [IR615-S Certifications](IR615-S/certifications.md): IR615-S certification list (C1D2, E-Mark, EN18031, FCC, IC, MIC_JATE, PTCRB, SDPPI, UKCA, UL) with links to the original certificate files
 - [IR615-S Drawings](IR615-S/drawings.md): IR615-S mechanical drawings (2D, 3D) with links to the original drawing files
 
 ## IR624
 
-- [Chapter 1 Getting to Know the Device](IR624/Manuals/User%20manual/IR624_User%20manual_V1.0.md): IR624 User manual v1.0
-- [IR624 Datasheet v1.0](IR624/Datasheets/General/IR624_Datasheet_V1.0.md): IR624 Datasheet v1.0
+- [Chapter 1 Getting to Know the Device](IR624/Manuals/User%20manual/IR624_User%20manual_V1.0.md): IR624 User manual v1.0 — First and foremost, thank you for choosing our company's product. Before use, carefully read this user manual. Complianc…
+  - [Graphical Interface Conventions](IR624/Manuals/User%20manual/IR624_User%20manual_V1.0.md#graphical-interface-conventions)
+  - [How to Use This Manual](IR624/Manuals/User%20manual/IR624_User%20manual_V1.0.md#how-to-use-this-manual)
+  - [1.1 Overview](IR624/Manuals/User%20manual/IR624_User%20manual_V1.0.md#11-overview)
+  - [1.2 LED Indicators](IR624/Manuals/User%20manual/IR624_User%20manual_V1.0.md#12-led-indicators)
+  - [1.3 Restore Factory Defaults](IR624/Manuals/User%20manual/IR624_User%20manual_V1.0.md#13-restore-factory-defaults)
+  - [1.4 Default Settings](IR624/Manuals/User%20manual/IR624_User%20manual_V1.0.md#14-default-settings)
+  - [2.1 Pre-installation Preparation](IR624/Manuals/User%20manual/IR624_User%20manual_V1.0.md#21-pre-installation-preparation)
+  - [2.2 Installation Guide](IR624/Manuals/User%20manual/IR624_User%20manual_V1.0.md#22-installation-guide)
+  - [2.3 Quick Check](IR624/Manuals/User%20manual/IR624_User%20manual_V1.0.md#23-quick-check)
+  - [Scenario 1: Cellular Networking](IR624/Manuals/User%20manual/IR624_User%20manual_V1.0.md#scenario-1-cellular-networking)
+  - [Scenario 2: Wired Networking](IR624/Manuals/User%20manual/IR624_User%20manual_V1.0.md#scenario-2-wired-networking)
+  - [Scenario 3: Wi-Fi STA Networking](IR624/Manuals/User%20manual/IR624_User%20manual_V1.0.md#scenario-3-wi-fi-sta-networking)
+  - [4.1 Dashboard](IR624/Manuals/User%20manual/IR624_User%20manual_V1.0.md#41-dashboard)
+  - [4.2 Status](IR624/Manuals/User%20manual/IR624_User%20manual_V1.0.md#42-status)
+  - [4.3 Internet](IR624/Manuals/User%20manual/IR624_User%20manual_V1.0.md#43-internet)
+- [IR624 Datasheet v1.0](IR624/Datasheets/General/IR624_Datasheet_V1.0.md): IR624 Datasheet v1.0 — Embrace 5G, Co-Create the Digital Era
 - [IR624 Certifications](IR624/certifications.md): IR624 certification list (ANATEL, CE, E-Mark, ECER118, EN18031, FCC, IC, PTCRB) with links to the original certificate files
 - [IR624 Drawings](IR624/drawings.md): IR624 mechanical drawings (2D, 3D) with links to the original drawing files
 
 ## IR900
 
-- [Industrial Router IR900 Product User Manual](IR900/Manuals/User%20manual/IR900_User%20manual_V1.0.md): IR900 User manual v1.0
+- [Industrial Router IR900 Product User Manual](IR900/Manuals/User%20manual/IR900_User%20manual_V1.0.md): IR900 User manual v1.0 — IR900 is a new generation of 4G LTE VPN industrial router developed by InHand Networks. Integrating 4G LTE and various b…
+  - [How to Use This Manual](IR900/Manuals/User%20manual/IR900_User%20manual_V1.0.md#how-to-use-this-manual)
+  - [1.1 Overview](IR900/Manuals/User%20manual/IR900_User%20manual_V1.0.md#11-overview)
+  - [1.2 Packing List](IR900/Manuals/User%20manual/IR900_User%20manual_V1.0.md#12-packing-list)
+  - [1.3 Panel Introduction](IR900/Manuals/User%20manual/IR900_User%20manual_V1.0.md#13-panel-introduction)
+  - [1.4 LED Indicator Description](IR900/Manuals/User%20manual/IR900_User%20manual_V1.0.md#14-led-indicator-description)
+  - [1.5 Restore Factory Settings](IR900/Manuals/User%20manual/IR900_User%20manual_V1.0.md#15-restore-factory-settings)
+  - [1.6 Default Settings](IR900/Manuals/User%20manual/IR900_User%20manual_V1.0.md#16-default-settings)
+  - [2.1 Pre-Installation Preparation](IR900/Manuals/User%20manual/IR900_User%20manual_V1.0.md#21-pre-installation-preparation)
+  - [2.2 Installation Guide](IR900/Manuals/User%20manual/IR900_User%20manual_V1.0.md#22-installation-guide)
+  - [2.3 First Login](IR900/Manuals/User%20manual/IR900_User%20manual_V1.0.md#23-first-login)
+  - [2.4 Quick Check](IR900/Manuals/User%20manual/IR900_User%20manual_V1.0.md#24-quick-check)
+  - [Scenario 1: Cellular Internet Access](IR900/Manuals/User%20manual/IR900_User%20manual_V1.0.md#scenario-1-cellular-internet-access)
+  - [Scenario 2: Connect to Device Manager](IR900/Manuals/User%20manual/IR900_User%20manual_V1.0.md#scenario-2-connect-to-device-manager)
+  - [Scenario 3: Configure Dynamic Domain Name (DDNS)](IR900/Manuals/User%20manual/IR900_User%20manual_V1.0.md#scenario-3-configure-dynamic-domain-name-ddns)
+  - [Scenario 4: Import/Export Configuration](IR900/Manuals/User%20manual/IR900_User%20manual_V1.0.md#scenario-4-importexport-configuration)
 
 ## IR925
 
@@ -236,139 +679,163 @@
 
 ## ISE2003D
 
-- [ISE2003D Datasheet v1.0](ISE2003D/Datasheets/General/ISE2003D_Datasheet_V1.0.md): ISE2003D Datasheet v1.0
+- [ISE2003D Datasheet v1.0](ISE2003D/Datasheets/General/ISE2003D_Datasheet_V1.0.md): ISE2003D Datasheet v1.0 — Simple, highly reliable network communication system
 
 ## ISE2005D
 
-- [ISE2005D Datasheet v1.0](ISE2005D/Datasheets/General/ISE2005D_Datasheet_V1.0.md): ISE2005D Datasheet v1.0
+- [ISE2005D Datasheet v1.0](ISE2005D/Datasheets/General/ISE2005D_Datasheet_V1.0.md): ISE2005D Datasheet v1.0 — Simple, highly reliable network communication system
 
 ## ISE2008D
 
-- [ISE2008D Datasheet v1.0](ISE2008D/Datasheets/General/ISE2008D_Datasheet_V1.0.md): ISE2008D Datasheet v1.0
+- [ISE2008D Datasheet v1.0](ISE2008D/Datasheets/General/ISE2008D_Datasheet_V1.0.md): ISE2008D Datasheet v1.0 — Simple, highly reliable network communication system
 - [ISE2008D Certifications](ISE2008D/certifications.md): ISE2008D certification list (CE) with links to the original certificate files
 
 ## ISE2016D
 
-- [ISE2016D Datasheet v1.0](ISE2016D/Datasheets/General/ISE2016D_Datasheet_V1.0.md): ISE2016D Datasheet v1.0
+- [ISE2016D Datasheet v1.0](ISE2016D/Datasheets/General/ISE2016D_Datasheet_V1.0.md): ISE2016D Datasheet v1.0 — Simple, highly reliable network communication system
 - [ISE2016D Certifications](ISE2016D/certifications.md): ISE2016D certification list (UL) with links to the original certificate files
 
 ## ISE3018D
 
-- [ISE3018D Datasheet v1.0](ISE3018D/Datasheets/General/ISE3018D_Datasheet_V1.0.md): ISE3018D Datasheet v1.0
+- [ISE3018D Datasheet v1.0](ISE3018D/Datasheets/General/ISE3018D_Datasheet_V1.0.md): ISE3018D Datasheet v1.0 — Simple, Highly Reliable Industrial Network Communication
 - [ISE3018D Certifications](ISE3018D/certifications.md): ISE3018D certification list (UL) with links to the original certificate files
 
 ## ISE5005D
 
-- [ISE5005D Datasheet v1.0](ISE5005D/Datasheets/General/ISE5005D_Datasheet_V1.0.md): ISE5005D Datasheet v1.0
+- [ISE5005D Datasheet v1.0](ISE5005D/Datasheets/General/ISE5005D_Datasheet_V1.0.md): ISE5005D Datasheet v1.0 — Simple, highly reliable network communication system
 - [ISE5005D Certifications](ISE5005D/certifications.md): ISE5005D certification list (UL) with links to the original certificate files
 
 ## ISE5006D
 
-- [ISE5006D Datasheet v1.0](ISE5006D/Datasheets/General/ISE5006D_Datasheet_V1.0.md): ISE5006D Datasheet v1.0
+- [ISE5006D Datasheet v1.0](ISE5006D/Datasheets/General/ISE5006D_Datasheet_V1.0.md): ISE5006D Datasheet v1.0 — Simple, highly reliable network communication system
 
 ## ISE5008D
 
-- [ISE5008D Datasheet v1.0](ISE5008D/Datasheets/General/ISE5008D_Datasheet_V1.0.md): ISE5008D Datasheet v1.0
+- [ISE5008D Datasheet v1.0](ISE5008D/Datasheets/General/ISE5008D_Datasheet_V1.0.md): ISE5008D Datasheet v1.0 — Simple, Highly Reliable Industrial Network Communication
 
 ## ISE5010D
 
-- [ISE5010D Datasheet v1.0](ISE5010D/Datasheets/General/ISE5010D_Datasheet_V1.0.md): ISE5010D Datasheet v1.0
+- [ISE5010D Datasheet v1.0](ISE5010D/Datasheets/General/ISE5010D_Datasheet_V1.0.md): ISE5010D Datasheet v1.0 — Simple, highly reliable network communication system
 
 ## ISE5306D
 
-- [ISE5306D Datasheet v1.0](ISE5306D/Datasheets/General/ISE5306D_Datasheet_V1.0.md): ISE5306D Datasheet v1.0
+- [ISE5306D Datasheet v1.0](ISE5306D/Datasheets/General/ISE5306D_Datasheet_V1.0.md): ISE5306D Datasheet v1.0 — Simple, highly reliable network communication system
 
 ## ISE5310D
 
-- [ISE5310D Datasheet v1.0](ISE5310D/Datasheets/General/ISE5310D_Datasheet_V1.0.md): ISE5310D Datasheet v1.0
+- [ISE5310D Datasheet v1.0](ISE5310D/Datasheets/General/ISE5310D_Datasheet_V1.0.md): ISE5310D Datasheet v1.0 — Simple, highly reliable network communication system
 
 ## ISE5X06D
 
-- [ISE5X06D Datasheet v1.0](ISE5X06D/Datasheets/General/ISE5X06D_Datasheet_V1.0.md): ISE5X06D Datasheet v1.0
+- [ISE5X06D Datasheet v1.0](ISE5X06D/Datasheets/General/ISE5X06D_Datasheet_V1.0.md): ISE5X06D Datasheet v1.0 — Simple, highly reliable network communication system
 
 ## ISE5X10D
 
-- [ISE5X10D Datasheet v1.0](ISE5X10D/Datasheets/General/ISE5X10D_Datasheet_V1.0.md): ISE5X10D Datasheet v1.0
+- [ISE5X10D Datasheet v1.0](ISE5X10D/Datasheets/General/ISE5X10D_Datasheet_V1.0.md): ISE5X10D Datasheet v1.0 — Simple, highly reliable network communication system
 
 ## ISM managed
 
-- [ISM managed User manual v1.0](ISM%20managed/Manuals/User%20manual/ISM%20managed_User%20manual_V1.0.md): ISM managed User manual v1.0
+- [ISM managed User manual v1.0](ISM%20managed/Manuals/User%20manual/ISM%20managed_User%20manual_V1.0.md): ISM managed User manual v1.0 — ﻿# InSwitch Series Web Configuration Manual
+  - [How to Use This Manual](ISM%20managed/Manuals/User%20manual/ISM%20managed_User%20manual_V1.0.md#how-to-use-this-manual)
+  - [Chapter 1 Getting to Know the Device](ISM%20managed/Manuals/User%20manual/ISM%20managed_User%20manual_V1.0.md#chapter-1-getting-to-know-the-device)
+  - [Chapter 2 Installation and First Use](ISM%20managed/Manuals/User%20manual/ISM%20managed_User%20manual_V1.0.md#chapter-2-installation-and-first-use)
+  - [Chapter 3 Common Scenario Configurations](ISM%20managed/Manuals/User%20manual/ISM%20managed_User%20manual_V1.0.md#chapter-3-common-scenario-configurations)
+  - [Chapter 4 Feature Descriptions and Parameter Reference](ISM%20managed/Manuals/User%20manual/ISM%20managed_User%20manual_V1.0.md#chapter-4-feature-descriptions-and-parameter-reference)
+  - [Chapter 5 Typical Applications](ISM%20managed/Manuals/User%20manual/ISM%20managed_User%20manual_V1.0.md#chapter-5-typical-applications)
+  - [Appendix A Troubleshooting](ISM%20managed/Manuals/User%20manual/ISM%20managed_User%20manual_V1.0.md#appendix-a-troubleshooting)
+  - [Appendix B Safety Notices](ISM%20managed/Manuals/User%20manual/ISM%20managed_User%20manual_V1.0.md#appendix-b-safety-notices)
+  - [Appendix C CLI Reference](ISM%20managed/Manuals/User%20manual/ISM%20managed_User%20manual_V1.0.md#appendix-c-cli-reference)
 
 ## ISM5006D
 
-- [ISM5006D Datasheet v1.0](ISM5006D/Datasheets/General/ISM5006D_Datasheet_V1.0.md): ISM5006D Datasheet v1.0
+- [ISM5006D Datasheet v1.0](ISM5006D/Datasheets/General/ISM5006D_Datasheet_V1.0.md): ISM5006D Datasheet v1.0 — Build advanced and highly reliable industrial Ethernet communication system
 
 ## ISM5010D
 
-- [ISM5010D Datasheet v1.0](ISM5010D/Datasheets/General/ISM5010D_Datasheet_V1.0.md): ISM5010D Datasheet v1.0
+- [ISM5010D Datasheet v1.0](ISM5010D/Datasheets/General/ISM5010D_Datasheet_V1.0.md): ISM5010D Datasheet v1.0 — Build advanced and highly reliable industrial Ethernet communication system
 
 ## ISM5012D
 
-- [ISM5012D Datasheet v1.0](ISM5012D/Datasheets/General/ISM5012D_Datasheet_V1.0.md): ISM5012D Datasheet v1.0
+- [ISM5012D Datasheet v1.0](ISM5012D/Datasheets/General/ISM5012D_Datasheet_V1.0.md): ISM5012D Datasheet v1.0 — Build advanced and highly reliable industrial Ethernet communication system
 - [ISM5012D Certifications](ISM5012D/certifications.md): ISM5012D certification list (CE, UL) with links to the original certificate files
 
 ## ISM5020D
 
-- [ISM5020D Datasheet v1.0](ISM5020D/Datasheets/General/ISM5020D_Datasheet_V1.0.md): ISM5020D Datasheet v1.0
+- [ISM5020D Datasheet v1.0](ISM5020D/Datasheets/General/ISM5020D_Datasheet_V1.0.md): ISM5020D Datasheet v1.0 — Build advanced and highly reliable industrial Ethernet communication system
 - [ISM5020D Certifications](ISM5020D/certifications.md): ISM5020D certification list (CE) with links to the original certificate files
 
 ## ISM5026U-P
 
-- [ISM5026U-P Datasheet v1.0](ISM5026U-P/Datasheets/General/ISM5026U-P_Datasheet_V1.0.md): ISM5026U-P Datasheet v1.0
+- [ISM5026U-P Datasheet v1.0](ISM5026U-P/Datasheets/General/ISM5026U-P_Datasheet_V1.0.md): ISM5026U-P Datasheet v1.0 — Build advanced and highly reliable industrial Ethernet communication system
 
 ## ISM5306D
 
-- [ISM5306D Datasheet v1.0](ISM5306D/Datasheets/General/ISM5306D_Datasheet_V1.0.md): ISM5306D Datasheet v1.0
+- [ISM5306D Datasheet v1.0](ISM5306D/Datasheets/General/ISM5306D_Datasheet_V1.0.md): ISM5306D Datasheet v1.0 — Build advanced and highly reliable industrial Ethernet communication system
 
 ## ISM5310D
 
-- [ISM5310D Datasheet v1.0](ISM5310D/Datasheets/General/ISM5310D_Datasheet_V1.0.md): ISM5310D Datasheet v1.0
+- [ISM5310D Datasheet v1.0](ISM5310D/Datasheets/General/ISM5310D_Datasheet_V1.0.md): ISM5310D Datasheet v1.0 — Build advanced and highly reliable industrial Ethernet communication system
 
 ## ISM5X06D
 
-- [ISM5X06D Datasheet v1.0](ISM5X06D/Datasheets/General/ISM5X06D_Datasheet_V1.0.md): ISM5X06D Datasheet v1.0
+- [ISM5X06D Datasheet v1.0](ISM5X06D/Datasheets/General/ISM5X06D_Datasheet_V1.0.md): ISM5X06D Datasheet v1.0 — Build advanced and highly reliable industrial Ethernet communication system
 
 ## ISM5X10D
 
-- [ISM5X10D Datasheet v1.0](ISM5X10D/Datasheets/General/ISM5X10D_Datasheet_V1.0.md): ISM5X10D Datasheet v1.0
+- [ISM5X10D Datasheet v1.0](ISM5X10D/Datasheets/General/ISM5X10D_Datasheet_V1.0.md): ISM5X10D Datasheet v1.0 — Build advanced and highly reliable industrial Ethernet communication system
 
 ## ISM7012D
 
-- [ISM7012D Datasheet v1.0](ISM7012D/Datasheets/General/ISM7012D_Datasheet_V1.0.md): ISM7012D Datasheet v1.0
+- [ISM7012D Datasheet v1.0](ISM7012D/Datasheets/General/ISM7012D_Datasheet_V1.0.md): ISM7012D Datasheet v1.0 — Build Advanced and Highly Reliable Industrial Ethernet Communication Systems
 
 ## ISM7028U-P
 
-- [ISM7028U-P Datasheet v1.0](ISM7028U-P/Datasheets/General/ISM7028U-P_Datasheet_V1.0.md): ISM7028U-P Datasheet v1.0
+- [ISM7028U-P Datasheet v1.0](ISM7028U-P/Datasheets/General/ISM7028U-P_Datasheet_V1.0.md): ISM7028U-P Datasheet v1.0 — Build advanced and highly reliable industrial Ethernet communication system
 - [ISM7028U-P Certifications](ISM7028U-P/certifications.md): ISM7028U-P certification list (CE) with links to the original certificate files
 
 ## ISM7312D
 
-- [ISM7312D Datasheet v1.0](ISM7312D/Datasheets/General/ISM7312D_Datasheet_V1.0.md): ISM7312D Datasheet v1.0
+- [ISM7312D Datasheet v1.0](ISM7312D/Datasheets/General/ISM7312D_Datasheet_V1.0.md): ISM7312D Datasheet v1.0 — Build advanced and highly reliable industrial Ethernet communication system
 
 ## InBOX710 Industrial Computer
 
-- [InBOX710 Industrial Computer Datasheet v1.0](InBOX710%20Industrial%20Computer/Datasheets/General/InBOX710_Datasheet_V1.0.md): InBOX710 Industrial Computer Datasheet v1.0
+- [InBOX710 Industrial Computer Datasheet v1.0](InBOX710%20Industrial%20Computer/Datasheets/General/InBOX710_Datasheet_V1.0.md): InBOX710 Industrial Computer Datasheet v1.0 — High-Performance, Stable, ARM Industrial Computer
 
 ## InBOX712 Industrial Computer
 
-- [InBOX712 Industrial Computer Datasheet v1.0](InBOX712%20Industrial%20Computer/Datasheets/General/InBOX712_Datasheet_V1.0.md): InBOX712 Industrial Computer Datasheet v1.0
+- [InBOX712 Industrial Computer Datasheet v1.0](InBOX712%20Industrial%20Computer/Datasheets/General/InBOX712_Datasheet_V1.0.md): InBOX712 Industrial Computer Datasheet v1.0 — High-Performance, Stable, ARM Industrial Computer
 
 ## InBOX732
 
-- [InBOX732 Datasheet v1.0](InBOX732/Datasheets/General/InBOX732_Datasheet_V1.0.md): InBOX732 Datasheet v1.0
+- [InBOX732 Datasheet v1.0](InBOX732/Datasheets/General/InBOX732_Datasheet_V1.0.md): InBOX732 Datasheet v1.0 — High-Performance, Stable, and Interface-Rich ARM Industrial PC
 
 ## InCloudManager
 
-- [**About the platform**](InCloudManager/Manuals/User%20manual/InCloud%20Manager%20User%20Manual.md): InCloudManager User manual
-- [InCloudManager Datasheet v1.0](InCloudManager/Datasheets/General/InCloudManager_Datasheet_V1.0.md): InCloudManager Datasheet v1.0
+- [**About the platform**](InCloudManager/Manuals/User%20manual/InCloud%20Manager%20User%20Manual.md): InCloudManager User manual — You can view statistics for the current group, including distribution of device configuration status, firmware upgrade s…
+  - [**1.1 Registration**](InCloudManager/Manuals/User%20manual/InCloud%20Manager%20User%20Manual.md#11-registration)
+  - [**1.2 Login**](InCloudManager/Manuals/User%20manual/InCloud%20Manager%20User%20Manual.md#12-login)
+  - [**2.1 Accounts**](InCloudManager/Manuals/User%20manual/InCloud%20Manager%20User%20Manual.md#21-accounts)
+  - [**2.2 My Profile**](InCloudManager/Manuals/User%20manual/InCloud%20Manager%20User%20Manual.md#22-my-profile)
+  - [**2.3 System Settings**](InCloudManager/Manuals/User%20manual/InCloud%20Manager%20User%20Manual.md#23-system-settings)
+  - [**2.4 Organizations**](InCloudManager/Manuals/User%20manual/InCloud%20Manager%20User%20Manual.md#24-organizations)
+  - [**2.5 Company Profile**](InCloudManager/Manuals/User%20manual/InCloud%20Manager%20User%20Manual.md#25-company-profile)
+  - [**2.6 External Users**](InCloudManager/Manuals/User%20manual/InCloud%20Manager%20User%20Manual.md#26-external-users)
+  - [**3.1** **Configuring an Internet Connection**](InCloudManager/Manuals/User%20manual/InCloud%20Manager%20User%20Manual.md#31-configuring-an-internet-connection)
+  - [**3.2 Adding Devices to the Platform**](InCloudManager/Manuals/User%20manual/InCloud%20Manager%20User%20Manual.md#32-adding-devices-to-the-platform)
+  - [**4.1 Summary**](InCloudManager/Manuals/User%20manual/InCloud%20Manager%20User%20Manual.md#41-summary)
+  - [**4.2 Data Usage**](InCloudManager/Manuals/User%20manual/InCloud%20Manager%20User%20Manual.md#42-data-usage)
+  - [**4.3 Uplink**](InCloudManager/Manuals/User%20manual/InCloud%20Manager%20User%20Manual.md#43-uplink)
+  - [**4.4 Map**](InCloudManager/Manuals/User%20manual/InCloud%20Manager%20User%20Manual.md#44-map)
+  - [**5.1 Device Management**](InCloudManager/Manuals/User%20manual/InCloud%20Manager%20User%20Manual.md#51-device-management)
+- [InCloudManager Datasheet v1.0](InCloudManager/Datasheets/General/InCloudManager_Datasheet_V1.0.md): InCloudManager Datasheet v1.0 — Intelligent Management. Seamless Connectivity.
 
 ## InConnect
 
-- [InConnect Datasheet v1.0](InConnect/Datasheets/General/InConnect_Datasheet_V1.0.md): InConnect Datasheet v1.0
+- [InConnect Datasheet v1.0](InConnect/Datasheets/General/InConnect_Datasheet_V1.0.md): InConnect Datasheet v1.0 — Simple and Secure Remote Connection
 
 ## InConnect Service
 
-- [InConnect Service Datasheet v1.0](InConnect%20Service/Datasheets/General/InConnectService_Datasheet_V1.0.md): InConnect Service Datasheet v1.0
+- [InConnect Service Datasheet v1.0](InConnect%20Service/Datasheets/General/InConnectService_Datasheet_V1.0.md): InConnect Service Datasheet v1.0 — Simple and Secure Remote Connection
 
 ## InLink
 
@@ -376,28 +843,28 @@
 
 ## InPAD070S
 
-- [InPAD070S/3101 User Manual](InPAD070S/Manuals/User%20manual/InPAD070S_User%20manual_V1.0.md): InPAD070S User manual v1.0
-- [InPAD070S Datasheet v1.0](InPAD070S/Datasheets/General/InPAD070S_Datasheet_V1.0.md): InPAD070S Datasheet v1.0
+- [InPAD070S/3101 User Manual](InPAD070S/Manuals/User%20manual/InPAD070S_User%20manual_V1.0.md): InPAD070S User manual v1.0 — The InPAD series is a new generation of 4G smart terminal products designed for smart business applications. Powered by…
+- [InPAD070S Datasheet v1.0](InPAD070S/Datasheets/General/InPAD070S_Datasheet_V1.0.md): InPAD070S Datasheet v1.0 — 7'' All-in-One Android Tablet
 
 ## InPAD3101
 
-- [InPAD3101 Datasheet v1.0](InPAD3101/Datasheets/General/InPAD3101_Datasheet_V1.0.md): InPAD3101 Datasheet v1.0
+- [InPAD3101 Datasheet v1.0](InPAD3101/Datasheets/General/InPAD3101_Datasheet_V1.0.md): InPAD3101 Datasheet v1.0 — 10.1'' All-in-One Android Tablet
 
 ## LoRaWAN Terminals
 
-- [LoRaWAN Terminals Datasheet v1.0](LoRaWAN%20Terminals/Datasheets/General/LT312_Datasheet_V1.0.md): LoRaWAN Terminals Datasheet v1.0
+- [LoRaWAN Terminals Datasheet v1.0](LoRaWAN%20Terminals/Datasheets/General/LT312_Datasheet_V1.0.md): LoRaWAN Terminals Datasheet v1.0 — Industrial LoRaWAN DTU for robust serial data connectivity
 
 ## MDT600
 
-- [MDT600 Datasheet v1.0](MDT600/Datasheets/General/MDT600_Datasheet_V1.0.md): MDT600 Datasheet v1.0
+- [MDT600 Datasheet v1.0](MDT600/Datasheets/General/MDT600_Datasheet_V1.0.md): MDT600 Datasheet v1.0 — Vehicle HMI &amp; Edge AI · 5G &amp; Wi-Fi 6 Connectivity
 
 ## MO 62A
 
-- [MO 62A Datasheet v1.0](MO%2062A/Datasheets/General/Mo%2062A_Datasheet_V1.0.md): MO 62A Datasheet v1.0
+- [MO 62A Datasheet v1.0](MO%2062A/Datasheets/General/Mo%2062A_Datasheet_V1.0.md): MO 62A Datasheet v1.0 — Edge AI Computing, Open SDK, Debian Linux, HAT-Compatible
 
 ## MO 68A
 
-- [MO 68A Datasheet v1.0](MO%2068A/Datasheets/General/Mo%2068A_Datasheet_V1.0.md): MO 68A Datasheet v1.0
+- [MO 68A Datasheet v1.0](MO%2068A/Datasheets/General/Mo%2068A_Datasheet_V1.0.md): MO 68A Datasheet v1.0 — Embrace Edge AI, Empower Intelligent Vision
 - [MO 68A Drawings](MO%2068A/drawings.md): MO 68A mechanical drawings (2D) with links to the original drawing files
 
 ## Mo 62A
@@ -405,62 +872,120 @@
 - [Mo 62A Hardware Interface Description](Mo%2062A/Manuals/Installation%20Guide/Mo%2062A%20Hardware%20Interface%20Description-V1%200.md): Mo 62A Installation Guide v1
 - [Mo 62A Quick Start Guide](Mo%2062A/Manuals/Installation%20Guide/Mo%2062A%20Quick%20Start%20Guide.md): Mo 62A Installation Guide
 - [Mo 62A Quick Start Guide](Mo%2062A/Manuals/Quick%20user%20manual/Mo%2062A%20quickstart.md): Mo 62A Quick user manual
-- [Mo 62A Single Board Computer SDK User Guide](Mo%2062A/Manuals/User%20manual/Mo%2062A_User%20manual_V1.0.md): Mo 62A User manual v1.0
+- [Mo 62A Single Board Computer SDK User Guide](Mo%2062A/Manuals/User%20manual/Mo%2062A_User%20manual_V1.0.md): Mo 62A User manual v1.0 — Mo 62A is a single-board computer based on the TI AM62A7 processor, designed for edge AI inference, machine vision, and…
 
 ## Mo 68A
 
-- [Mo 68A Hardware Reference Manual](Mo%2068A/Manuals/Installation%20Guide/Mo%2068A_Hardware_Reference_Manual_V1.0.md): Mo 68A Installation Guide v1.0
+- [Mo 68A Hardware Reference Manual](Mo%2068A/Manuals/Installation%20Guide/Mo%2068A_Hardware_Reference_Manual_V1.0.md): Mo 68A Installation Guide v1.0 — This manual summarizes the Mo 68A system architecture, power and boot behavior, on-board peripheral interfaces, expansio…
 - [Mo 68A Quick Start Guide](Mo%2068A/Manuals/Installation%20Guide/Mo%2068A_Quick_Start_Guide_V1.0.md): Mo 68A Installation Guide v1.0
-- [Mo 68A User Guide](Mo%2068A/Manuals/User%20manual/Mo%2068A_User%20manual_V1.0.md): Mo 68A User manual v1.0
+- [Mo 68A User Guide](Mo%2068A/Manuals/User%20manual/Mo%2068A_User%20manual_V1.0.md): Mo 68A User manual v1.0 — Mo 68A is a single-board computer built around the TDA4VE / AM68A SoC (TI J721S2 family). It features dual Cortex-A72 ap…
 
 ## ODU12
 
-- [ODU12 Datasheet v1.0](ODU12/Datasheets/General/ODU12_Datasheet_V1.0.md): ODU12 Datasheet v1.0
+- [ODU12 Datasheet v1.0](ODU12/Datasheets/General/ODU12_Datasheet_V1.0.md): ODU12 Datasheet v1.0 — Minimalist Design, Powerful Connectivity
 
 ## ODU2002
 
-- [5G ODU2002 Product User Manual](ODU2002/Manuals/User%20manual/ODU2002_User%20manual_V1.0.md): ODU2002 User manual v1.0
-- [ODU2002 Datasheet v1.0](ODU2002/Datasheets/General/ODU2002_Datasheet_V1.0.md): ODU2002 Datasheet v1.0
+- [5G ODU2002 Product User Manual](ODU2002/Manuals/User%20manual/ODU2002_User%20manual_V1.0.md): ODU2002 User manual v1.0 — The ODU2002 is a 5G outdoor unit (ODU) in the InHand cloud-managed 5G ODU 2000 series. It is designed to provide high-sp…
+  - [Front Matter](ODU2002/Manuals/User%20manual/ODU2002_User%20manual_V1.0.md#front-matter)
+  - [1.1 Overview](ODU2002/Manuals/User%20manual/ODU2002_User%20manual_V1.0.md#11-overview)
+  - [1.2 Packing List](ODU2002/Manuals/User%20manual/ODU2002_User%20manual_V1.0.md#12-packing-list)
+  - [1.3 Appearance and Interfaces](ODU2002/Manuals/User%20manual/ODU2002_User%20manual_V1.0.md#13-appearance-and-interfaces)
+  - [1.4 LED Indicators](ODU2002/Manuals/User%20manual/ODU2002_User%20manual_V1.0.md#14-led-indicators)
+  - [1.5 Restoring Factory Settings](ODU2002/Manuals/User%20manual/ODU2002_User%20manual_V1.0.md#15-restoring-factory-settings)
+  - [1.6 Default Settings](ODU2002/Manuals/User%20manual/ODU2002_User%20manual_V1.0.md#16-default-settings)
+  - [2.1 Pre-Installation Preparation](ODU2002/Manuals/User%20manual/ODU2002_User%20manual_V1.0.md#21-pre-installation-preparation)
+  - [2.2 Installation Guide](ODU2002/Manuals/User%20manual/ODU2002_User%20manual_V1.0.md#22-installation-guide)
+  - [2.3 Quick Check](ODU2002/Manuals/User%20manual/ODU2002_User%20manual_V1.0.md#23-quick-check)
+  - [3.1 Cellular Internet Access](ODU2002/Manuals/User%20manual/ODU2002_User%20manual_V1.0.md#31-cellular-internet-access)
+  - [3.2 Wired Internet Access](ODU2002/Manuals/User%20manual/ODU2002_User%20manual_V1.0.md#32-wired-internet-access)
+  - [3.3 Cloud Platform Management](ODU2002/Manuals/User%20manual/ODU2002_User%20manual_V1.0.md#33-cloud-platform-management)
+  - [4.1 Monitoring](ODU2002/Manuals/User%20manual/ODU2002_User%20manual_V1.0.md#41-monitoring)
+  - [4.2 Internet](ODU2002/Manuals/User%20manual/ODU2002_User%20manual_V1.0.md#42-internet)
+- [ODU2002 Datasheet v1.0](ODU2002/Datasheets/General/ODU2002_Datasheet_V1.0.md): ODU2002 Datasheet v1.0 — Connect Beyond Boundaries
 - [ODU2002 Certifications](ODU2002/certifications.md): ODU2002 certification list (CE, EN18031, FCC, IC, PTCRB) with links to the original certificate files
 - [ODU2002 Drawings](ODU2002/drawings.md): ODU2002 mechanical drawings (2D, 3D) with links to the original drawing files
 
 ## ODU302
 
-- [Industrial Router ODU302 Product User Manual](ODU302/Manuals/User%20manual/ODU302%20Product%20User%20Manual.md): ODU302 User manual
+- [Industrial Router ODU302 Product User Manual](ODU302/Manuals/User%20manual/ODU302%20Product%20User%20Manual.md): ODU302 User manual — The ODU302 is the outdoor cellular routers, integrating 3G, 4G LTE, and advanced security features. With embedded hardwa…
+  - [1.1 Overview](ODU302/Manuals/User%20manual/ODU302%20Product%20User%20Manual.md#11-overview)
+  - [1.2 Packing List](ODU302/Manuals/User%20manual/ODU302%20Product%20User%20Manual.md#12-packing-list)
+  - [1.3 Appearance and Interfaces](ODU302/Manuals/User%20manual/ODU302%20Product%20User%20Manual.md#13-appearance-and-interfaces)
+  - [1.4 LED Indicators](ODU302/Manuals/User%20manual/ODU302%20Product%20User%20Manual.md#14-led-indicators)
+  - [1.5 Restoring Factory Settings](ODU302/Manuals/User%20manual/ODU302%20Product%20User%20Manual.md#15-restoring-factory-settings)
+  - [1.6 Default Settings](ODU302/Manuals/User%20manual/ODU302%20Product%20User%20Manual.md#16-default-settings)
+  - [2.1 Pre-Installation Preparation](ODU302/Manuals/User%20manual/ODU302%20Product%20User%20Manual.md#21-pre-installation-preparation)
+  - [2.2 Installation Guide](ODU302/Manuals/User%20manual/ODU302%20Product%20User%20Manual.md#22-installation-guide)
+  - [Scenario 1: Cellular Internet Access](ODU302/Manuals/User%20manual/ODU302%20Product%20User%20Manual.md#scenario-1-cellular-internet-access)
+  - [Scenario 2: Wired Internet Access](ODU302/Manuals/User%20manual/ODU302%20Product%20User%20Manual.md#scenario-2-wired-internet-access)
+  - [Scenario 3: DM Cloud Platform Access](ODU302/Manuals/User%20manual/ODU302%20Product%20User%20Manual.md#scenario-3-dm-cloud-platform-access)
+  - [4.1 System](ODU302/Manuals/User%20manual/ODU302%20Product%20User%20Manual.md#41-system)
+  - [4.2 Network](ODU302/Manuals/User%20manual/ODU302%20Product%20User%20Manual.md#42-network)
+  - [4.3 Service](ODU302/Manuals/User%20manual/ODU302%20Product%20User%20Manual.md#43-service)
+  - [4.4 Firewall](ODU302/Manuals/User%20manual/ODU302%20Product%20User%20Manual.md#44-firewall)
 
 ## VG710
 
-- [InHand VG710 Series In-Vehicle Gateway User's Manual](VG710/Manuals/User%20manual/VG710_User%20manual_V1.0.md): VG710 User manual v1.0
-- [InHand VG710 Series User's Manual V1.4](VG710/Manuals/User%20manual/InHandVG710SeriesUser%27sManualV1.4.md): VG710 User manual v1.4
-- [VG710 4G Version v1.0](VG710/Datasheets/4G%20Version/VG710_Datasheet_V1.0.md): VG710 4G Version v1.0
-- [VG710 5G Version v1.0](VG710/Datasheets/5G%20Version/VG710_Datasheet_V1.0.md): VG710 5G Version v1.0
-- [VG710 Datasheet v1.0](VG710/Datasheets/General/VG710_Datasheet_V1.0.md): VG710 Datasheet v1.0
+- [InHand VG710 Series In-Vehicle Gateway User's Manual](VG710/Manuals/User%20manual/VG710_User%20manual_V1.0.md): VG710 User manual v1.0 — The InHand VG710 series is a new-generation 4G/5G in-vehicle gateway oriented at the Internet of Vehicles (IoV). It prov…
+  - [How to Use This Manual](VG710/Manuals/User%20manual/VG710_User%20manual_V1.0.md#how-to-use-this-manual)
+  - [1.1 Overview](VG710/Manuals/User%20manual/VG710_User%20manual_V1.0.md#11-overview)
+  - [1.2 Appearance and Interfaces](VG710/Manuals/User%20manual/VG710_User%20manual_V1.0.md#12-appearance-and-interfaces)
+  - [1.3 Indicator Description](VG710/Manuals/User%20manual/VG710_User%20manual_V1.0.md#13-indicator-description)
+  - [1.4 Restoring Default Settings](VG710/Manuals/User%20manual/VG710_User%20manual_V1.0.md#14-restoring-default-settings)
+  - [1.5 Default Settings](VG710/Manuals/User%20manual/VG710_User%20manual_V1.0.md#15-default-settings)
+  - [2.1 Pre-Installation Preparation](VG710/Manuals/User%20manual/VG710_User%20manual_V1.0.md#21-pre-installation-preparation)
+  - [2.2 Installation Guide](VG710/Manuals/User%20manual/VG710_User%20manual_V1.0.md#22-installation-guide)
+  - [2.3 Quick Check](VG710/Manuals/User%20manual/VG710_User%20manual_V1.0.md#23-quick-check)
+  - [3.1 Scenario 1: Cellular Networking](VG710/Manuals/User%20manual/VG710_User%20manual_V1.0.md#31-scenario-1-cellular-networking)
+  - [3.2 Scenario 2: Wi-Fi Networking](VG710/Manuals/User%20manual/VG710_User%20manual_V1.0.md#32-scenario-2-wi-fi-networking)
+  - [3.3 Scenario 3: IPsec VPN Tunnel](VG710/Manuals/User%20manual/VG710_User%20manual_V1.0.md#33-scenario-3-ipsec-vpn-tunnel)
+  - [3.4 Scenario 4: Connecting to the Cloud Management Platform](VG710/Manuals/User%20manual/VG710_User%20manual_V1.0.md#34-scenario-4-connecting-to-the-cloud-management-platform)
+  - [3.5 Scenario 5: OBD Vehicle Diagnostics](VG710/Manuals/User%20manual/VG710_User%20manual_V1.0.md#35-scenario-5-obd-vehicle-diagnostics)
+  - [4.1 Network](VG710/Manuals/User%20manual/VG710_User%20manual_V1.0.md#41-network)
+- [InHand VG710 Series User's Manual V1.4](VG710/Manuals/User%20manual/InHandVG710SeriesUser%27sManualV1.4.md): VG710 User manual v1.4 — InHand VG710 is a new-generation 4G in-vehicle gateway oriented at the Internet of Vehicles (IoV). It provides fast and…
+  - [Chapter I](VG710/Manuals/User%20manual/InHandVG710SeriesUser%27sManualV1.4.md#chapter-i)
+  - [Overview](VG710/Manuals/User%20manual/InHandVG710SeriesUser%27sManualV1.4.md#overview)
+  - [Hardware](VG710/Manuals/User%20manual/InHandVG710SeriesUser%27sManualV1.4.md#hardware)
+  - [Default Settings](VG710/Manuals/User%20manual/InHandVG710SeriesUser%27sManualV1.4.md#default-settings)
+  - [Login and Network Access](VG710/Manuals/User%20manual/InHandVG710SeriesUser%27sManualV1.4.md#login-and-network-access)
+  - [Network](VG710/Manuals/User%20manual/InHandVG710SeriesUser%27sManualV1.4.md#network)
+  - [APP Management](VG710/Manuals/User%20manual/InHandVG710SeriesUser%27sManualV1.4.md#app-management)
+  - [Connecting the Gateway to a Cloud Platform](VG710/Manuals/User%20manual/InHandVG710SeriesUser%27sManualV1.4.md#connecting-the-gateway-to-a-cloud-platform)
+  - [Industrial Ports (Serial Ports)](VG710/Manuals/User%20manual/InHandVG710SeriesUser%27sManualV1.4.md#industrial-ports-serial-ports)
+  - [System Management](VG710/Manuals/User%20manual/InHandVG710SeriesUser%27sManualV1.4.md#system-management)
+  - [Diagnostic Tools](VG710/Manuals/User%20manual/InHandVG710SeriesUser%27sManualV1.4.md#diagnostic-tools)
+  - [Chapter II Edge calculation](VG710/Manuals/User%20manual/InHandVG710SeriesUser%27sManualV1.4.md#chapter-ii-edge-calculation)
+  - [Chapter III Accessories](VG710/Manuals/User%20manual/InHandVG710SeriesUser%27sManualV1.4.md#chapter-iii-accessories)
+- [VG710 4G Version v1.0](VG710/Datasheets/4G%20Version/VG710_Datasheet_V1.0.md): VG710 4G Version v1.0 — High-performance, Powerful, Programmable
+- [VG710 5G Version v1.0](VG710/Datasheets/5G%20Version/VG710_Datasheet_V1.0.md): VG710 5G Version v1.0 — High-performance, Powerful, Programmable
+- [VG710 Datasheet v1.0](VG710/Datasheets/General/VG710_Datasheet_V1.0.md): VG710 Datasheet v1.0 — High-performance, Powerful, Programmable
 
 ## VG814
 
-- [InHand VG814 User Manual (Standard Edition) V1.2](VG814/Manuals/User%20manual/InHandVG814User%27sManualV1.2.md): VG814 User manual v1.2
-- [InHand VG814 User Manual (Standard Edition) V1.2](VG814/Manuals/User%20manual/VG814_User%20manual_V1.0.md): VG814 User manual v1.0
-- [VG814 Rail v1.0](VG814/Datasheets/Rail/VG814-Railway_Datasheet_V1.0.md): VG814 Rail v1.0
-- [VG814 Road v1.0](VG814/Datasheets/Road/VG814-Road_Datasheet_V1.0.md): VG814 Road v1.0
+- [InHand VG814 User Manual (Standard Edition) V1.2](VG814/Manuals/User%20manual/InHandVG814User%27sManualV1.2.md): VG814 User manual v1.2 — The InHand VG814 is a new-generation 4G in-vehicle gateway oriented at the Internet of Vehicles (IoV). It provides fast…
+- [InHand VG814 User Manual (Standard Edition) V1.2](VG814/Manuals/User%20manual/VG814_User%20manual_V1.0.md): VG814 User manual v1.0 — The InHand VG814 is a new-generation 4G in-vehicle gateway oriented at the Internet of Vehicles (IoV). It provides fast…
+- [VG814 Rail v1.0](VG814/Datasheets/Rail/VG814-Railway_Datasheet_V1.0.md): VG814 Rail v1.0 — All-in-one, high-performance, rugged rail cellular gateway
+- [VG814 Road v1.0](VG814/Datasheets/Road/VG814-Road_Datasheet_V1.0.md): VG814 Road v1.0 — High-performance, all-in-one, open vehicle gateway
 - [VG814 Certifications](VG814/certifications.md): VG814 certification list (CE, E-Mark, E-mark) with links to the original certificate files
 
 ## VR624
 
-- [VR624 Datasheet v1.0](VR624/Datasheets/General/VR624_Datasheet_V1.0.md): VR624 Datasheet v1.0
+- [VR624 Datasheet v1.0](VR624/Datasheets/General/VR624_Datasheet_V1.0.md): VR624 Datasheet v1.0 — High-speed 5G, Wi-Fi 6, Cloud-managed
 
 ## VT200
 
-- [Vehicle Telematics 200 User Manual (Standard Edition) V1.0](VT200/Manuals/User%20manual/VT200_User%20manual_V1.0.md): VT200 User manual v1.0
-- [VT200 Datasheet v1.0](VT200/Datasheets/General/VT200_Datasheet_V1.0.md): VT200 Datasheet v1.0
+- [Vehicle Telematics 200 User Manual (Standard Edition) V1.0](VT200/Manuals/User%20manual/VT200_User%20manual_V1.0.md): VT200 User manual v1.0 — The VT200 series vehicle tracking gateway is an asset tracking product that features cost-effectiveness, rich interfaces…
+- [VT200 Datasheet v1.0](VT200/Datasheets/General/VT200_Datasheet_V1.0.md): VT200 Datasheet v1.0 — Lightweight Vehicle Tracking, Reliable Connectivity, Precise Positioning
 
 ## VT300
 
-- [Vehicle Telematics VT310/320 User Manual (Standard Edition)](VT300/Manuals/User%20manual/VT300_User%20manual_V1.0.md): VT300 User manual v1.0
+- [Vehicle Telematics VT310/320 User Manual (Standard Edition)](VT300/Manuals/User%20manual/VT300_User%20manual_V1.0.md): VT300 User manual v1.0 — The VT310/320 series vehicle tracking gateway is an asset tracking product that features cost-effectiveness, rich interf…
 
 ## VT310
 
-- [VT310 Datasheet v1.0](VT310/Datasheets/General/VT310_Datasheet_V1.0.md): VT310 Datasheet v1.0
+- [VT310 Datasheet v1.0](VT310/Datasheets/General/VT310_Datasheet_V1.0.md): VT310 Datasheet v1.0 — High Precision Tracking, Rugged for Harsh Environments
 
 ## VT320
 
-- [VT320 Datasheet v1.0](VT320/Datasheets/General/VT320_Datasheet_V1.0.md): VT320 Datasheet v1.0
+- [VT320 Datasheet v1.0](VT320/Datasheets/General/VT320_Datasheet_V1.0.md): VT320 Datasheet v1.0 — Reliable Tracking, Rugged Design, Open Interfaces

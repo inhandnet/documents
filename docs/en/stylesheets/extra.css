@@ -621,3 +621,52 @@ input.md-nav__toggle + label.md-nav__link svg {
 .wp-global-nav {
   display: none !important;
 }
+
+/* =========================
+   PDF 分页规则（预生成 PDF 与浏览器打印共用）
+   ========================= */
+@media print {
+  /* 打印背景图/色：手册封面是 background-image，默认不打印会输出空白页 */
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* 标题不落页尾：与后续内容绑定进下一页 */
+  .md-typeset h1,
+  .md-typeset h2,
+  .md-typeset h3,
+  .md-typeset h4,
+  .md-typeset h5 {
+    break-after: avoid-page;
+    page-break-after: avoid;
+  }
+
+  /* 表格：单行不跨页劈开；长表跨页时每页重复表头 */
+  .md-typeset table tr {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  .md-typeset table thead {
+    display: table-header-group;
+  }
+
+  /* 图片：适应页宽、整图不跨页劈开 */
+  .md-typeset img {
+    max-width: 100% !important;
+    height: auto !important;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  /* 提示框/折叠块不劈开 */
+  .md-typeset .admonition,
+  .md-typeset details {
+    break-inside: avoid;
+  }
+
+  /* 隐藏标题旁的锚点符号 */
+  .md-typeset .headerlink {
+    display: none !important;
+  }
+}

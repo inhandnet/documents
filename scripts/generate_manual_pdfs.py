@@ -269,6 +269,11 @@ def main() -> int:
         browser.close()
     httpd.shutdown()
 
+    # prune entries for pages that no longer exist (renamed/removed manuals),
+    # otherwise the manifest accumulates stale keys forever
+    current = {p.relative_to(site_dir).as_posix() for p in
+               find_manual_pages(site_dir, None)}
+    manifest = {k: v for k, v in manifest.items() if k in current}
     manifest_path.write_text(
         json.dumps(manifest, ensure_ascii=False, indent=1, sort_keys=True),
         encoding="utf-8", newline="\n")

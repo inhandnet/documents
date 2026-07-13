@@ -1,12 +1,12 @@
 site_name: InHand Documentation
 site_description: InHand Networks Product Documentation
-site_url: https://inhand.com.cn/docs/en/
-# English site will be published under /en (set real URL when deploying)
-# site_url: ""
+# Actual deploy location (CI scp to overseas server /data/wordpress/manuals/);
+# sitemap.xml and per-page canonical URLs are generated from this value
+site_url: https://www.inhand.com/manuals/
 
 repo_url: https://github.com/inhandnet/documents
 repo_name: inhandnet/documents
-edit_uri: edit/main/docs/en/
+edit_uri: edit/master/docs/en/
 
 # 方案 B：英文站点使用独立 docs_dir
 docs_dir: docs/en
@@ -74,6 +74,7 @@ extra_javascript:
 
 plugins:
   - search
+  - awesome-nav
   - exclude:
       glob:
         - "**/Datasheets/**"

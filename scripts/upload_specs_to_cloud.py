@@ -243,6 +243,10 @@ def _should_upload(file_path: Path) -> bool:
     # 跳过 Developer Documentation 下的 series.txt
     if file_path.name == "series.txt" and "Developer Documentation" in file_path.parts:
         return False
+    # 跳过语言根目录下的站点级索引文件（llms.txt 等）：
+    # 它们不属于产品文件，PLM API 也不接受产品目录之外的 path
+    if file_path.name == "llms.txt":
+        return False
     ext = file_path.suffix.lower()
     if ext in EXCLUDED_EXTENSIONS:
         return False
@@ -292,8 +296,14 @@ def find_changed_files(directory: Path) -> List[Path]:
         print("[INFO] 回退到全量上传")
         return find_upload_files(directory)
 
+    # 与全量模式(find_upload_files)保持一致：只处理 {dist_dir}/zh、{dist_dir}/en
+    # 下的文件。仓库其他位置的变更（scripts/、workflow 等）没有对应的语言 API。
+    lang_prefixes = tuple(f"{directory.as_posix()}/{lang}/" for lang in ("zh", "en"))
+
     upload_files = []
     for rel_path in changed_paths:
+        if not rel_path.replace("\\", "/").startswith(lang_prefixes):
+            continue
         file_path = directory.parent / rel_path if directory.exists() else Path(rel_path)
         if file_path.exists() and _should_upload(file_path):
             upload_files.append(file_path)

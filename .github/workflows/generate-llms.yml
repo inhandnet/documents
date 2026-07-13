@@ -1,0 +1,62 @@
+name: Generate llms.txt, homepage and asset pages
+
+# Isolated, additive workflow. It does NOT touch the deploy pipeline
+# (deploy-manuals.yml): if this job ever fails, deployment is unaffected.
+#
+# Trigger: any docs/ change (md for llms/homepage; pdf/zip/stp feed the
+# certification/drawing registry pages). The commit this job pushes
+# carries "[skip ci]", so it never re-triggers itself and never triggers
+# deploy-manuals.yml — regenerated files are published on the next real
+# docs change.
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - "docs/**"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: generate-llms-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      # All generators are standard-library only — no pip install, cannot
+      # break the build env. Order matters: asset pages must exist before
+      # llms.txt / homepage generation so they get indexed.
+      - name: Generate certification/drawing registry pages
+        run: python scripts/generate_asset_pages.py
+
+      - name: Generate llms.txt
+        run: python scripts/generate_llms_txt.py
+
+      # Homepage product directory is derived from the same scan as llms.txt,
+      # so it can never drift from the actual content.
+      - name: Generate homepage
+        run: python scripts/generate_home_index.py
+
+      - name: Commit if changed
+        run: |
+          git add docs/en docs/zh
+          if git diff --cached --quiet; then
+            echo "Generated files already up to date; nothing to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore: regenerate llms.txt, homepage and asset pages [skip ci]"
+          git push

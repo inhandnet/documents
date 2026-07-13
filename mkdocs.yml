@@ -1,12 +1,11 @@
 site_name: 映翰通在线文档
 site_description: 映翰通产品文档中心
-site_url: https://inhand.com.cn/docs/
-# 本地预览保持为空，避免资源被错误前缀；发布时改成你的 GitHub Pages 地址
-# site_url: ""
+# 实际部署地址（CI scp 到国内服务器 /data/wordpress/manuals/）；sitemap.xml 与 canonical 均由此生成
+site_url: https://www.inhand.com.cn/manuals/
 
 repo_url: https://github.com/inhandnet/documents
 repo_name: inhandnet/documents
-edit_uri: edit/main/docs/zh/
+edit_uri: edit/master/docs/zh/
 
 # 方案 B：中文/英文各自独立 docs_dir，构建两次输出到 / 与 /en
 docs_dir: docs/zh
@@ -74,6 +73,7 @@ extra_javascript:
 
 plugins:
   - search
+  - awesome-nav
   - exclude:
       glob:
         - "**/Datasheets/**"

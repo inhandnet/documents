@@ -84,6 +84,11 @@
   margin-left: 0.1rem;
 }
 
+/* 临时隐藏下载 PDF 按钮（后续需要时删除此行即可恢复） */
+.md-header .pdf-download-header {
+  display: none !important;
+}
+
 @media print {
   /* 隐藏导航/侧边栏/页脚，只保留正文 */
   .md-header,

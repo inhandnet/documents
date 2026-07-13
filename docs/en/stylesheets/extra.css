@@ -665,6 +665,14 @@ input.md-nav__toggle + label.md-nav__link svg {
     break-inside: avoid;
   }
 
+
+  /* 图片高度上限：超高截图等比缩小，减少"整图挪下页"造成的页尾留白 */
+  .md-typeset img {
+    max-height: 170mm;
+    width: auto;
+    object-fit: contain;
+  }
+
   /* 隐藏标题旁的锚点符号 */
   .md-typeset .headerlink {
     display: none !important;

@@ -159,7 +159,8 @@
   }
 
   /* 重置全局 min-width，避免列被撑开触发横向滚动 */
-  .md-typeset table th {
+  .md-typeset table:not([class]) th,
+  .md-typeset__scrollwrap .md-typeset__table table:not([class]) th {
     min-width: auto !important;
   }
 

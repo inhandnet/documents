@@ -159,7 +159,8 @@
   }
 
   /* Reset global min-width to prevent columns from triggering horizontal scroll */
-  .md-typeset table th {
+  .md-typeset table:not([class]) th,
+  .md-typeset__scrollwrap .md-typeset__table table:not([class]) th {
     min-width: auto !important;
   }
 

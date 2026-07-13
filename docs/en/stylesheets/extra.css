@@ -145,6 +145,19 @@
     overflow: visible !important;
   }
 
+  /* 打印时打破 Material 横向滚动包裹，防止表格左右被截断 */
+  .md-typeset__scrollwrap {
+    overflow: visible !important;
+    display: block !important;
+    max-width: 100% !important;
+  }
+
+  .md-typeset__scrollwrap > .md-typeset__table {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
 }
 
 /* =========================

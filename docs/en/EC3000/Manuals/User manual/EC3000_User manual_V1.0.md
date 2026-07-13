@@ -8,7 +8,7 @@ Version 1.0, September 2024
 
 [www.inhand.com](http://www.inhand.com)
 
-<p align="center"><img src="./img/0b_5TcsjlSVgGHCY/1726018467339-3527d076-a1c3-4211-9350-672d5dae822c-666457.webp" alt="EC3000 Series AI Edge Computer"></p>
+<p align="center"><img style="max-width:100%;width:150px;height:auto;" src="./img/0b_5TcsjlSVgGHCY/1726018467339-3527d076-a1c3-4211-9350-672d5dae822c-666457.webp" alt="EC3000 Series AI Edge Computer"></p>
 
 <p align="center"><strong>Figure 1 EC3000 Series AI Edge Computer</strong></p>
 

@@ -8,7 +8,7 @@ Version 1.2, October 2024
 
 ---
 
-<p align="center"><img src="./img/sJjMR0G-wgzWVDLu/1719214938396-91377e65-0c78-4a96-bba0-c47acc4cacd9-362310.webp" alt="IG502"></p>
+<p align="center"><img style="max-width:100%;width:150px;height:auto;" src="./img/sJjMR0G-wgzWVDLu/1719214938396-91377e65-0c78-4a96-bba0-c47acc4cacd9-362310.webp" alt="IG502"></p>
 
 ---
 

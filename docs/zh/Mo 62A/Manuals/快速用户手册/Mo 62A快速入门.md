@@ -19,36 +19,36 @@
 
 ### 1.1 关于 Mo 62A
 
-Mo 62A 是一款专为边缘 AI 推理、机器视觉和工业控制应用设计的单板计算机。搭载 **TI AM62A7** 处理器——四核 Arm Cortex-A53 SoC，内置专用 MMA（矩阵乘法加速器），AI 推理性能高达 **2 TOPS** 。
+Mo 62A 是一款专为边缘 AI 推理、机器视觉和工业控制应用设计的单板计算机。搭载 **TI AM62A7** 处理器——四核 Arm Cortex-A53 SoC，内置专用 MMA（矩阵乘法加速器），AI 推理性能高达 **2 TOPS**。
 
 ### 1.2 主要规格
 
-| 参数      | 规格                                                 |
-| --------- | ---------------------------------------------------- |
-| SoC       | TI AM62A74（四核 Cortex-A53 @ 1.4 GHz + Cortex-R5F） |
-| AI 加速器 | MMA，2 TOPS                                          |
-| 内存      | LPDDR4（32-bit）                                     |
-| 存储      | Micro SD（启动 / 存储）                              |
-| 显示      | Micro HDMI（最高 1080p，via SiI9022ACNU）            |
-| 网络      | 1 × 千兆以太网 RJ45                                  |
-| 无线      | Wi-Fi + 蓝牙（FG6221A，U.FL 天线接口）               |
-| USB       | 1 × USB Type-C（供电 + USB 2.0），4 × USB 2.0 Type-A |
-| 摄像头    | 22-pin FPC CSI（4-lane MIPI CSI-2）                  |
-| 音频      | 3.5 mm 耳机麦克风二合一接口                          |
-| 扩展接口  | 40-pin（GPIO / I2C / SPI / UART / PWM）              |
-| RTC       | PCF85263ATL，带纽扣电池接口                          |
-| 风扇      | PWM 风扇接口（PWM + TACH）                           |
-| 供电      | USB Type-C 5 V（建议 ≥ 3 A）                         |
-| 指示灯    | 红色（电源），绿色（活动）                           |
-| 调试接口  | UART0 串口控制台（3-pin SH1.0 接口）                 |
-| 操作系统  | Debian 13（Trixie）+ XFCE 桌面                       |
+| 参数         | 规格                                                              |
+|--------------|-------------------------------------------------------------------|
+| SoC          | TI AM62A74（四核 Cortex-A53 @ 1.4 GHz + Cortex-R5F）             |
+| AI 加速器    | MMA，2 TOPS                                                       |
+| 内存         | LPDDR4（32-bit）                                                   |
+| 存储         | Micro SD（启动 / 存储）                                            |
+| 显示         | Micro HDMI（最高 1080p，via SiI9022ACNU）                         |
+| 网络         | 1 × 千兆以太网 RJ45                                               |
+| 无线         | Wi-Fi + 蓝牙（FG6221A，U.FL 天线接口）                            |
+| USB          | 1 × USB Type-C（供电 + USB 2.0），4 × USB 2.0 Type-A             |
+| 摄像头       | 22-pin FPC CSI（4-lane MIPI CSI-2）                               |
+| 音频         | 3.5 mm 耳机麦克风二合一接口                                       |
+| 扩展接口     | 40-pin（GPIO / I2C / SPI / UART / PWM）                           |
+| RTC          | PCF85263ATL，带纽扣电池接口                                        |
+| 风扇         | PWM 风扇接口（PWM + TACH）                                         |
+| 供电         | USB Type-C 5 V（建议 ≥ 3 A）                                      |
+| 指示灯       | 红色（电源），绿色（活动）                                         |
+| 调试接口     | UART0 串口控制台（3-pin SH1.0 接口）                               |
+| 操作系统     | Debian 13（Trixie）+ XFCE 桌面                                    |
 
 ### 1.3 板卡布局
 
 ![Mo 62A 板卡](images/interface.png)
 
 | 接口 / 元件                  | 位置         |
-| ---------------------------- | ------------ |
+|------------------------------|--------------|
 | USB Type-C（供电 + USB 2.0） | 顶边左侧     |
 | 4 × USB 2.0 Type-A           | 顶边右侧     |
 | Micro HDMI                   | 右边上方     |
@@ -68,7 +68,7 @@ Mo 62A 是一款专为边缘 AI 推理、机器视觉和工业控制应用设计
 以下物品为必备：
 
 | 物品                  | 说明                                  |
-| --------------------- | ------------------------------------- |
+|-----------------------|---------------------------------------|
 | Mo 62A 开发板         |                                       |
 | USB Type-C 电源适配器 | 5 V，≥ 3 A                            |
 | Micro SD 卡           | ≥ 16 GB，Class 10 / UHS-I (U1) 或更快 |
@@ -78,14 +78,14 @@ Mo 62A 是一款专为边缘 AI 推理、机器视觉和工业控制应用设计
 
 以下物品为可选但推荐：
 
-| 物品                  | 说明                     |
-| --------------------- | ------------------------ |
-| IMX219 CSI 摄像头模块 |                          |
-| USB 键盘和鼠标        | 用于直接操作桌面         |
-| 3.5 mm 耳机           | 耳机输出 + 麦克风输入    |
-| CR1220 纽扣电池       | RTC 掉电保持             |
-| Wi-Fi 天线（U.FL）    | 显著提升无线信号覆盖范围 |
-| PWM 风扇              | 4-pin，5 V               |
+| 物品                      | 说明                         |
+|---------------------------|------------------------------|
+| IMX219 CSI 摄像头模块     |                              |
+| USB 键盘和鼠标            | 用于直接操作桌面             |
+| 3.5 mm 耳机               | 耳机输出 + 麦克风输入        |
+| CR1220 纽扣电池           | RTC 掉电保持                 |
+| Wi-Fi 天线（U.FL）        | 显著提升无线信号覆盖范围     |
+| PWM 风扇                  | 4-pin，5 V                   |
 
 ---
 
@@ -167,9 +167,9 @@ Mo 62A 是一款专为边缘 AI 推理、机器视觉和工业控制应用设计
 
 XFCE 桌面自动加载，默认凭据如下：
 
-| 字段   | 值       |
-| ------ | -------- |
-| 用户名 | `debian` |
+| 字段   | 值        |
+|--------|-----------|
+| 用户名 | `debian`  |
 | 密码   | `123456` |
 
 ### 5.3 串口控制台（UART0 调试接口）
@@ -177,7 +177,7 @@ XFCE 桌面自动加载，默认凭据如下：
 如无显示器，可通过 3-pin UART0 调试接口（SH1.0，1.0 mm 间距）访问板卡。
 
 | 引脚 | 信号 |
-| ---- | ---- |
+|------|------|
 | 1    | RXD  |
 | 2    | TXD  |
 | 3    | GND  |
@@ -273,7 +273,7 @@ sudo GAIN=232 imx219-preview.sh 5
 ### 7.3 调节参数
 
 | 变量       | 默认值 | 范围         | 说明                                 |
-| ---------- | ------ | ------------ | ------------------------------------ |
+|------------|--------|--------------|--------------------------------------|
 | `FPS`      | `15`   | 5/8/10/15/30 | 帧率（作为第一个参数传入）           |
 | `WB_R`     | `0.5`  | 0.0 – 1.0    | 白平衡红色通道参考值                 |
 | `WB_B`     | `0.6`  | 0.0 – 1.0    | 白平衡蓝色通道参考值                 |
@@ -320,13 +320,13 @@ edgeai-demo status                                 # 查看当前摄像头
 
 系统预装了完整的 C/C++ AI SDK，可直接在板上编译自己的推理程序，**无需交叉编译环境**：
 
-| 内容          | 位置                                          |
-| ------------- | --------------------------------------------- |
-| 头文件        | `/usr/include/edgeai/`                        |
-| 库 + CMake 包 | `/usr/lib/edgeai/`、`/usr/lib/cmake/EdgeAI/`  |
-| 示例工程      | `/usr/share/edgeai-cpp-examples/`             |
-| 模型库        | `/opt/model_zoo/`                             |
-| 开发指南      | `/usr/share/edgeai-cpp-examples/DEV_GUIDE.md` |
+| 内容 | 位置 |
+|---|---|
+| 头文件 | `/usr/include/edgeai/` |
+| 库 + CMake 包 | `/usr/lib/edgeai/`、`/usr/lib/cmake/EdgeAI/` |
+| 示例工程 | `/usr/share/edgeai-cpp-examples/` |
+| 模型库 | `/opt/model_zoo/` |
+| 开发指南 | `/usr/share/edgeai-cpp-examples/DEV_GUIDE.md` |
 
 一个 `CMakeLists.txt` 即可链接整套 SDK（无需手动指定头文件/库路径）：
 
@@ -366,50 +366,50 @@ sudo LD_LIBRARY_PATH=/opt/ti/edgeai/lib ./hello_inference \
 
 以下为全部 40 针的完整对照表，GPIO 引脚可通过 `gpioset` / `gpioget`（软件包 `gpiod`）控制。
 
-| 引脚 | 名称     | 默认功能             | gpiochip  | Line | 可选功能             |
-| ---- | -------- | -------------------- | --------- | ---- | -------------------- |
-| 1    | 3V3      | 3.3 V 电源           | —         | —    | —                    |
-| 2    | 5V       | 5 V 电源             | —         | —    | —                    |
-| 3    | GPIO2    | GPIO（MCU_GPIO0_20） | gpiochip0 | 20   | WKUP_I2C0_SDA        |
-| 4    | 5V       | 5 V 电源             | —         | —    | —                    |
-| 5    | GPIO3    | GPIO（MCU_GPIO0_19） | gpiochip0 | 19   | WKUP_I2C0_SCL        |
-| 6    | GND      | 地                   | —         | —    | —                    |
-| 7    | GPIO4    | GPIO（GPIO0_39）     | gpiochip1 | 39   | —                    |
-| 8    | GPIO14   | GPIO（GPIO1_25）     | gpiochip2 | 25   | UART5_TXD            |
-| 9    | GND      | 地                   | —         | —    | —                    |
-| 10   | GPIO15   | GPIO（GPIO1_24）     | gpiochip2 | 24   | UART5_RXD            |
-| 11   | GPIO23   | GPIO（GPIO1_23）     | gpiochip2 | 23   | —                    |
-| 12   | GPIO18   | GPIO（GPIO1_0）      | gpiochip2 | 0    | MCASP2_ACLKX         |
-| 13   | GPIO27   | GPIO（GPIO0_42）     | gpiochip1 | 42   | —                    |
-| 14   | GND      | 地                   | —         | —    | —                    |
-| 15   | GPIO22   | GPIO（GPIO1_22）     | gpiochip2 | 22   | —                    |
-| 16   | GPIO17   | GPIO（GPIO0_38）     | gpiochip1 | 38   | —                    |
-| 17   | 3V3      | 3.3 V 电源           | —         | —    | —                    |
-| 18   | GPIO24   | GPIO（GPIO0_40）     | gpiochip1 | 40   | —                    |
-| 19   | GPIO10   | GPIO（GPIO1_18）     | gpiochip2 | 18   | SPI0_D0（MOSI）      |
-| 20   | GND      | 地                   | —         | —    | —                    |
-| 21   | GPIO9    | GPIO（GPIO1_19）     | gpiochip2 | 19   | SPI0_D1（MISO）      |
-| 22   | GPIO25   | GPIO（GPIO0_14）     | gpiochip1 | 14   | —                    |
-| 23   | GPIO11   | GPIO（GPIO1_17）     | gpiochip2 | 17   | SPI0_CLK             |
-| 24   | GPIO8    | GPIO（GPIO1_15）     | gpiochip2 | 15   | SPI0_CS0             |
-| 25   | GND      | 地                   | —         | —    | —                    |
-| 26   | GPIO7    | GPIO（GPIO1_16）     | gpiochip2 | 16   | SPI0_CS1             |
-| 27   | I2C2_SDA | I2C2 SDA（`i2c-2`）  | —         | —    | （摄像头总线，固定） |
-| 28   | I2C2_SCL | I2C2 SCL（`i2c-2`）  | —         | —    | （摄像头总线，固定） |
-| 29   | GPIO5    | GPIO（GPIO0_36）     | gpiochip1 | 36   | —                    |
-| 30   | GND      | 地                   | —         | —    | —                    |
-| 31   | GPIO6    | GPIO（GPIO0_33）     | gpiochip1 | 33   | —                    |
-| 32   | GPIO12   | GPIO（GPIO1_14）     | gpiochip2 | 14   | EHRPWM0_B            |
-| 33   | GPIO13   | GPIO（GPIO1_13）     | gpiochip2 | 13   | EHRPWM0_A            |
-| 34   | GND      | 地                   | —         | —    | —                    |
-| 35   | GPIO19   | GPIO（GPIO0_91）     | gpiochip1 | 91   | MCASP2_AFSX          |
-| 36   | GPIO16   | GPIO（GPIO1_9）      | gpiochip2 | 9    | EHRPWM1_A            |
-| 37   | GPIO26   | GPIO（GPIO0_41）     | gpiochip1 | 41   | —                    |
-| 38   | GPIO20   | GPIO（GPIO1_5）      | gpiochip2 | 5    | MCASP2_AXR0          |
-| 39   | GND      | 地                   | —         | —    | —                    |
-| 40   | GPIO21   | GPIO（GPIO1_2）      | gpiochip2 | 2    | MCASP2_AXR1          |
+| 引脚 | 名称        | 默认功能                  | gpiochip  | Line | 可选功能             |
+|------|-------------|---------------------------|-----------|------|----------------------|
+|  1   | 3V3         | 3.3 V 电源                | —         | —    | —                    |
+|  2   | 5V          | 5 V 电源                  | —         | —    | —                    |
+|  3   | GPIO2       | GPIO（MCU\_GPIO0\_20）    | gpiochip0 | 20   | WKUP\_I2C0\_SDA      |
+|  4   | 5V          | 5 V 电源                  | —         | —    | —                    |
+|  5   | GPIO3       | GPIO（MCU\_GPIO0\_19）    | gpiochip0 | 19   | WKUP\_I2C0\_SCL      |
+|  6   | GND         | 地                        | —         | —    | —                    |
+|  7   | GPIO4       | GPIO（GPIO0\_39）         | gpiochip1 | 39   | —                    |
+|  8   | GPIO14      | GPIO（GPIO1\_25）         | gpiochip2 | 25   | UART5\_TXD           |
+|  9   | GND         | 地                        | —         | —    | —                    |
+| 10   | GPIO15      | GPIO（GPIO1\_24）         | gpiochip2 | 24   | UART5\_RXD           |
+| 11   | GPIO23      | GPIO（GPIO1\_23）         | gpiochip2 | 23   | —                    |
+| 12   | GPIO18      | GPIO（GPIO1\_0）          | gpiochip2 |  0   | MCASP2\_ACLKX        |
+| 13   | GPIO27      | GPIO（GPIO0\_42）         | gpiochip1 | 42   | —                    |
+| 14   | GND         | 地                        | —         | —    | —                    |
+| 15   | GPIO22      | GPIO（GPIO1\_22）         | gpiochip2 | 22   | —                    |
+| 16   | GPIO17      | GPIO（GPIO0\_38）         | gpiochip1 | 38   | —                    |
+| 17   | 3V3         | 3.3 V 电源                | —         | —    | —                    |
+| 18   | GPIO24      | GPIO（GPIO0\_40）         | gpiochip1 | 40   | —                    |
+| 19   | GPIO10      | GPIO（GPIO1\_18）         | gpiochip2 | 18   | SPI0\_D0（MOSI）     |
+| 20   | GND         | 地                        | —         | —    | —                    |
+| 21   | GPIO9       | GPIO（GPIO1\_19）         | gpiochip2 | 19   | SPI0\_D1（MISO）     |
+| 22   | GPIO25      | GPIO（GPIO0\_14）         | gpiochip1 | 14   | —                    |
+| 23   | GPIO11      | GPIO（GPIO1\_17）         | gpiochip2 | 17   | SPI0\_CLK            |
+| 24   | GPIO8       | GPIO（GPIO1\_15）         | gpiochip2 | 15   | SPI0\_CS0            |
+| 25   | GND         | 地                        | —         | —    | —                    |
+| 26   | GPIO7       | GPIO（GPIO1\_16）         | gpiochip2 | 16   | SPI0\_CS1            |
+| 27   | I2C2\_SDA   | I2C2 SDA（`i2c-2`）      | —         | —    | （摄像头总线，固定）  |
+| 28   | I2C2\_SCL   | I2C2 SCL（`i2c-2`）      | —         | —    | （摄像头总线，固定）  |
+| 29   | GPIO5       | GPIO（GPIO0\_36）         | gpiochip1 | 36   | —                    |
+| 30   | GND         | 地                        | —         | —    | —                    |
+| 31   | GPIO6       | GPIO（GPIO0\_33）         | gpiochip1 | 33   | —                    |
+| 32   | GPIO12      | GPIO（GPIO1\_14）         | gpiochip2 | 14   | EHRPWM0\_B           |
+| 33   | GPIO13      | GPIO（GPIO1\_13）         | gpiochip2 | 13   | EHRPWM0\_A           |
+| 34   | GND         | 地                        | —         | —    | —                    |
+| 35   | GPIO19      | GPIO（GPIO0\_91）         | gpiochip1 | 91   | MCASP2\_AFSX         |
+| 36   | GPIO16      | GPIO（GPIO1\_9）          | gpiochip2 |  9   | EHRPWM1\_A           |
+| 37   | GPIO26      | GPIO（GPIO0\_41）         | gpiochip1 | 41   | —                    |
+| 38   | GPIO20      | GPIO（GPIO1\_5）          | gpiochip2 |  5   | MCASP2\_AXR0         |
+| 39   | GND         | 地                        | —         | —    | —                    |
+| 40   | GPIO21      | GPIO（GPIO1\_2）          | gpiochip2 |  2   | MCASP2\_AXR1         |
 
-> `gpiochip0` = `mcu_gpio0`（MCU 域）；`gpiochip1` = `main_gpio0`（GPIO0_x）；`gpiochip2` = `main_gpio1`（GPIO1_x）。
+> `gpiochip0` = `mcu_gpio0`（MCU 域）；`gpiochip1` = `main_gpio0`（GPIO0\_x）；`gpiochip2` = `main_gpio1`（GPIO1\_x）。
 
 ### 9.3 电平说明
 
@@ -494,7 +494,6 @@ echo 1 | sudo tee /sys/class/pwm/pwmchip0/pwm0/enable
 **SPI 回环测试（引脚 19 MOSI ↔ 引脚 21 MISO 短接，CS0 = 引脚 24）：**
 
 > 前提条件：
->
 > 1. extlinux.conf 使用 `microSD-periph` 条目（已启用 40-pin 外设模式 overlay）
 > 2. 安装 `python3-spidev`：`sudo apt-get install -y python3-spidev`
 
@@ -555,10 +554,11 @@ media-ctl -d /dev/media0 --print-topology
 
 ### 启动时找不到 SD 卡
 
-- 请确认 SD 卡已完全插入（应听到咔哒声）。
+- 确认 SD 卡已完全插入（应听到咔哒声）。
 - 更换其他 SD 卡，容量小于 16 GB 或速度低于 Class 10 的卡可能无法稳定工作。
 - 重新烧录镜像并确认写入过程无错误。
 
 ### Wi-Fi 天线
 
 板卡上的 U.FL 接口需外接天线才能获得可靠的 Wi-Fi 性能，不接天线时信号覆盖范围将非常有限。
+

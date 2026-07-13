@@ -30,6 +30,7 @@ import subprocess
 import sys
 import threading
 import urllib.parse
+import urllib.request
 from pathlib import Path
 
 import fitz  # pymupdf
@@ -177,6 +178,9 @@ def main() -> int:
     ap.add_argument("--only", help="substring filter on page path")
     ap.add_argument("--channel", default="", help="browser channel, e.g. msedge")
     ap.add_argument("--force", action="store_true", help="ignore manifest, regenerate")
+    ap.add_argument("--reuse-base", default="",
+                    help="deployed site base URL; unchanged PDFs are downloaded "
+                         "from there instead of re-rendered (prod as cache)")
     args = ap.parse_args()
 
     site_dir = args.site_dir.resolve()
@@ -197,6 +201,15 @@ def main() -> int:
     manifest: dict[str, str] = {}
     if manifest_path.is_file():
         manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    reuse_base = args.reuse_base.rstrip("/") + "/" if args.reuse_base else ""
+    if reuse_base and not manifest and not args.force:
+        try:
+            with urllib.request.urlopen(reuse_base + "pdf-manifest.json",
+                                        timeout=30) as r:
+                manifest = json.loads(r.read().decode("utf-8"))
+            log(f"reuse manifest from {reuse_base}: {len(manifest)} entries")
+        except Exception as exc:  # noqa: BLE001 - any failure => full generation
+            log(f"no reusable manifest ({exc.__class__.__name__}); generating all")
 
     httpd, port = serve(site_dir)
     local_base = f"http://127.0.0.1:{port}/"
@@ -211,9 +224,26 @@ def main() -> int:
             rel = html.relative_to(site_dir).as_posix()
             pdf_path = html.with_suffix(".pdf")
             fp = fingerprint(site_dir, html, docs_dir, shared_assets)
-            if not args.force and manifest.get(rel) == fp and pdf_path.is_file():
-                skipped += 1
-                continue
+            if not args.force and manifest.get(rel) == fp:
+                if pdf_path.is_file():
+                    skipped += 1
+                    continue
+                if reuse_base:
+                    # fingerprint unchanged: pull the deployed PDF instead of
+                    # re-rendering. Magic-byte check guards against the
+                    # WordPress 200-HTML fallback for unknown paths.
+                    try:
+                        with urllib.request.urlopen(
+                                reuse_base + urllib.parse.quote(
+                                    rel[:-5] + ".pdf"), timeout=60) as r:
+                            data = r.read()
+                        if data.startswith(b"%PDF"):
+                            pdf_path.write_bytes(data)
+                            skipped += 1
+                            log(f"reuse {rel} ({len(data)/1048576:.1f}MB)")
+                            continue
+                    except Exception:  # noqa: BLE001 - fall through to render
+                        pass
             url = local_base + urllib.parse.quote(rel)
             log(f"render {rel}")
             page.goto(url, wait_until="networkidle", timeout=120_000)

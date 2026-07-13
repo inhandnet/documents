@@ -145,35 +145,6 @@
     overflow: visible !important;
   }
 
-  /* 打印时打破 Material 横向滚动包裹，防止表格左右被截断 */
-  .md-typeset__scrollwrap {
-    overflow: visible !important;
-    display: block !important;
-    max-width: 100% !important;
-  }
-
-  .md-typeset__scrollwrap > .md-typeset__table {
-    display: block !important;
-    width: 100% !important;
-    max-width: 100% !important;
-  }
-
-  /* Reset global min-width to prevent columns from triggering horizontal scroll */
-  .md-typeset table:not([class]) th,
-  .md-typeset__scrollwrap .md-typeset__table table:not([class]) th {
-    min-width: auto !important;
-  }
-
-  /* Hide scrollbars when printing */
-  .md-typeset__scrollwrap::-webkit-scrollbar {
-    display: none !important;
-  }
-
-  .md-typeset__scrollwrap {
-    -ms-overflow-style: none !important;
-    scrollbar-width: none !important;
-  }
-
 }
 
 /* =========================
@@ -535,11 +506,6 @@ input.md-nav__toggle + label.md-nav__link svg {
 .md-typeset table tbody td a {
   display: inline;
   word-break: break-word;
-}
-
-/* Increase header min-width to prevent cramped tables */
-.md-typeset table:not([class]) th {
-  min-width: 10rem;
 }
 
 .md-typeset table.table-compact th,

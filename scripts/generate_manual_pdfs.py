@@ -5,7 +5,7 @@ Renders each Manuals page through Chromium's print pipeline (honours the
 site's @media print rules), then post-processes and quality-checks the result:
 
   render (eager images, footer w/ page numbers) -> rewrite localhost links ->
-  set metadata -> optional ghostscript compression -> quality gate ->
+  set metadata -> image recompression (300dpi cap) -> quality gate ->
   write X.pdf next to X.html + update pdf-manifest.json
 
 Incremental: a fingerprint of (source md + sibling images listing + print CSS
@@ -16,7 +16,7 @@ Usage:
     python scripts/generate_manual_pdfs.py --site-dir site --lang zh \
         [--only ER805] [--channel msedge]
 
-Deps: playwright (chromium or msedge channel), pymupdf, pikepdf.
+Deps: playwright (chromium or msedge channel), pymupdf.
 """
 from __future__ import annotations
 
@@ -26,9 +26,7 @@ import hashlib
 from html import escape as html_escape
 import http.server
 import json
-import shutil
 import socket
-import subprocess
 import sys
 import threading
 import urllib.parse
@@ -140,18 +138,23 @@ def rewrite_links_and_meta(pdf_path: Path, local_base: str, prod_base: str,
 
 
 def compress(pdf_path: Path) -> None:
-    gs = shutil.which("gs") or shutil.which("gswin64c")
-    if not gs:
-        log(f"  [compress] ghostscript not found, skipping for {pdf_path.name}")
+    """Re-encode embedded images (JPEG q85, ~300dpi cap) to shrink the file.
+
+    Replaces the earlier ghostscript /ebook pass: its 150dpi downsampling
+    made small text in full-width UI screenshots illegible. pymupdf keeps
+    the effective resolution while roughly halving the size.
+    """
+    tmp = pdf_path.with_suffix(".cmp.pdf")
+    try:
+        doc = fitz.open(pdf_path)
+        doc.rewrite_images(dpi_threshold=301, dpi_target=300, quality=85)
+        doc.save(tmp, garbage=2, deflate=True)
+        doc.close()
+    except Exception as exc:  # noqa: BLE001 - keep the uncompressed original
+        log(f"  [compress] skipped ({exc.__class__.__name__}: {exc})")
+        tmp.unlink(missing_ok=True)
         return
-    tmp = pdf_path.with_suffix(".gs.pdf")
-    r = subprocess.run(
-        [gs, "-sDEVICE=pdfwrite", "-dPDFSETTINGS=/ebook", "-dNOPAUSE",
-         "-dBATCH", "-dQUIET", "-dCompatibilityLevel=1.5",
-         f"-sOutputFile={tmp}", str(pdf_path)],
-        capture_output=True,
-    )
-    if r.returncode == 0 and tmp.is_file() and 0 < tmp.stat().st_size < pdf_path.stat().st_size:
+    if tmp.is_file() and 0 < tmp.stat().st_size < pdf_path.stat().st_size:
         tmp.replace(pdf_path)
     else:
         tmp.unlink(missing_ok=True)

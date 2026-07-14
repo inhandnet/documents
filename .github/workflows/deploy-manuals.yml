@@ -125,7 +125,7 @@ jobs:
         if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
         run: |
           sudo apt-get update -q
-          sudo apt-get install -y -q fonts-noto-cjk ghostscript
+          sudo apt-get install -y -q fonts-noto-cjk
           pip install playwright pymupdf
           python -m playwright install --with-deps chromium
           python scripts/generate_manual_pdfs.py --site-dir site-zh --lang zh \

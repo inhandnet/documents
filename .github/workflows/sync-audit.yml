@@ -1,0 +1,96 @@
+name: Sync Audit (read-only orphan inventory)
+
+# Phase 0 of the scp -> rsync migration (TODO #23).
+# Builds the site exactly like deploy, then runs rsync in DRY-RUN mode
+# against all three servers: prints the files that a real mirror sync
+# WOULD delete (server-side orphans), without changing a single byte.
+# PDFs are excluded from the comparison (not rebuilt here; their names
+# never diverge — they are overwritten in place by deploys).
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          sudo apt-get update -q
+          sudo apt-get install -y -q sshpass rsync
+
+      - name: Build sites exactly like deploy (minus PDFs)
+        run: |
+          python scripts/generate_product_index.py --report
+          python scripts/generate_llms_txt.py --full
+          python -m mkdocs build -f mkdocs.yml -d site-zh --clean
+          python -m mkdocs build -f mkdocs.en.yml -d site-en --clean
+          # replicate deploy step 4 (clean cloud-storage files)
+          for site in site-zh site-en; do
+            find "$site" -type f \
+              ! -name "*.html" ! -name "*.css" ! -name "*.js" \
+              ! -name "*.png" ! -name "*.jpg" ! -name "*.jpeg" \
+              ! -name "*.gif" ! -name "*.svg" ! -name "*.webp" \
+              ! -name "*.ico" ! -name "*.woff" ! -name "*.woff2" \
+              ! -name "*.ttf" ! -name "*.eot" ! -name "*.json" \
+              ! -name "*.xml" ! -name "*.txt" ! -name "*.md" \
+              -delete
+          done
+          # replicate deploy step 4.5 (markdown twins)
+          for pair in "zh:site-zh" "en:site-en"; do
+            lang="${pair%%:*}"; site="${pair##*:}"
+            (cd "docs/$lang" && find . -name "*.md" -exec cp --parents {} "../../$site/" \;)
+          done
+          echo "zh files: $(find site-zh -type f | wc -l), en files: $(find site-en -type f | wc -l)"
+
+      - name: Dry-run audit
+        env:
+          CN_HOST: ${{ secrets.CN_OVERSEAS_HOST }}
+          CN_USER: ${{ secrets.CN_OVERSEAS_USER }}
+          CN_PASS: ${{ secrets.CN_OVERSEAS_PASS }}
+          OS_HOST: ${{ secrets.OVERSEAS_HOST }}
+          OS_HOST_NEW: ${{ secrets.OVERSEAS_HOST_NEW }}
+          OS_USER: ${{ secrets.OVERSEAS_USER }}
+          OS_PASS: ${{ secrets.OVERSEAS_PASS }}
+        run: |
+          set -e
+          mkdir -p audit
+          audit_one() { # label, site dir, host, user, pass
+            label="$1"; site="$2"; host="$3"; user="$4"; pass="$5"
+            echo "=== [$label] dry-run (no writes) ==="
+            sshpass -p "$pass" rsync -azcn -v --delete-after \
+              --exclude='*.pdf' --exclude='pdf-manifest.json' \
+              -e "ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" \
+              "$site"/ "$user@$host:/data/wordpress/manuals/" \
+              > "audit/$label-full.log" 2>&1 || { echo "[$label] rsync exited non-zero"; tail -5 "audit/$label-full.log"; }
+            grep '^deleting ' "audit/$label-full.log" | sed 's/^deleting //' \
+              > "audit/$label-would-delete.txt" || true
+            echo "[$label] would-delete: $(wc -l < "audit/$label-would-delete.txt") files"
+            echo "[$label] first 40:"
+            head -40 "audit/$label-would-delete.txt"
+          }
+          audit_one cn        site-zh "$CN_HOST" "$CN_USER" "$CN_PASS"
+          audit_one overseas  site-en "$OS_HOST" "$OS_USER" "$OS_PASS"
+          audit_one overseas-new site-en "$OS_HOST_NEW" "$OS_USER" "$OS_PASS"
+
+      - name: Upload would-delete lists
+        uses: actions/upload-artifact@v4
+        with:
+          name: sync-audit-would-delete
+          path: audit/*-would-delete.txt
+          retention-days: 14

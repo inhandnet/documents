@@ -63,10 +63,10 @@ markdown_extensions:
   - pymdownx.mark
 
 extra_css:
-  - stylesheets/extra.css
+  - stylesheets/extra-v2.css
 
 extra_javascript:
-  - javascripts/pdf.js
+  - javascripts/pdf-download.js
   - javascripts/embed-bridge.js
   - javascripts/sidebar-search.js
   - javascripts/edit-under-title.js

@@ -199,7 +199,7 @@ def main() -> int:
     docs_dir = Path("docs") / args.lang
     prod_base = PROD_BASES[args.lang]
     shared_assets = [
-        docs_dir / "stylesheets" / "extra.css",
+        docs_dir / "stylesheets" / "extra-v2.css",
         Path(__file__),
     ]
 

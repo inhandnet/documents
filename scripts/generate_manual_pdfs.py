@@ -23,6 +23,7 @@ from __future__ import annotations
 import argparse
 import datetime
 import hashlib
+from html import escape as html_escape
 import http.server
 import json
 import shutil
@@ -50,7 +51,7 @@ PROD_BASES = {
 FOOTER = (
     '<div style="width:100%;font-size:8px;color:#888;'
     'padding:0 10mm;display:flex;justify-content:space-between;">'
-    '<span class="title"></span>'
+    "<span>{title}</span>"
     "<span>© InHand Networks · {site} · {date}</span>"
     '<span><span class="pageNumber"></span> / <span class="totalPages"></span></span>'
     "</div>"
@@ -263,6 +264,7 @@ def main() -> int:
                 outline=True, tagged=True,
                 display_header_footer=True, header_template="<span></span>",
                 footer_template=FOOTER.format(
+                    title=html_escape(title),
                     site=prod_base.split("//")[1].rstrip("/"),
                     date=datetime.date.today().isoformat()),
                 margin={"top": "14mm", "bottom": "16mm",

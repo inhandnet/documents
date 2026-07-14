@@ -21,6 +21,7 @@ Deps: playwright (chromium or msedge channel), pymupdf, pikepdf.
 from __future__ import annotations
 
 import argparse
+import datetime
 import hashlib
 import http.server
 import json
@@ -37,7 +38,7 @@ import fitz  # pymupdf
 import pikepdf
 from playwright.sync_api import sync_playwright
 
-SCRIPT_VERSION = "1"
+SCRIPT_VERSION = "2"  # bump to force full regeneration on behavior changes
 
 SIZE_MIN = 50 * 1024
 SIZE_MAX = 30 * 1024 * 1024
@@ -51,7 +52,7 @@ FOOTER = (
     '<div style="width:100%;font-size:8px;color:#888;'
     'padding:0 10mm;display:flex;justify-content:space-between;">'
     '<span class="title"></span>'
-    "<span>{site}</span>"
+    "<span>© InHand Networks · {site} · {date}</span>"
     '<span><span class="pageNumber"></span> / <span class="totalPages"></span></span>'
     "</div>"
 )
@@ -252,8 +253,11 @@ def main() -> int:
             title = page.title().split(" - ")[0].strip()
             page.pdf(
                 path=str(pdf_path), format="A4", print_background=True,
+                outline=True, tagged=True,
                 display_header_footer=True, header_template="<span></span>",
-                footer_template=FOOTER.format(site=prod_base.split("//")[1].rstrip("/")),
+                footer_template=FOOTER.format(
+                    site=prod_base.split("//")[1].rstrip("/"),
+                    date=datetime.date.today().isoformat()),
                 margin={"top": "14mm", "bottom": "16mm",
                         "left": "10mm", "right": "10mm"},
             )

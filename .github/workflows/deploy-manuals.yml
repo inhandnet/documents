@@ -249,7 +249,9 @@ jobs:
             check "$base/$rel"
             # first manual PDF from the manifest must resolve and be a real PDF
             check "$base/pdf-manifest.json"
-            pdfrel=$(curl -s "$base/pdf-manifest.json" | grep -o '"[^"]*\.html"' | head -1 | tr -d '"' | sed 's/\.html$/.pdf/')
+            # URL-encode spaces: en paths contain them (e.g. "User manual/")
+            # and curl rejects unencoded-space URLs, false-failing the check
+            pdfrel=$(curl -s "$base/pdf-manifest.json" | grep -o '"[^"]*\.html"' | head -1 | tr -d '"' | sed 's/\.html$/.pdf/;s/ /%20/g')
             magic=$(curl -s --retry 3 "$base/$pdfrel" | head -c 4)
             if [ "$magic" != "%PDF" ]; then echo "FAIL pdf magic $base/$pdfrel"; exit 1; fi
             echo "OK manual pdf $base/$pdfrel"

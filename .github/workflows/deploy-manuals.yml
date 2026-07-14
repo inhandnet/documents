@@ -116,6 +116,23 @@ jobs:
           done
           echo "Cleaned cloud-storage files from site output"
 
+      # 4.3 Pre-generate downloadable PDFs for manual pages (X.html -> X.pdf).
+      # Must run AFTER step 4: the clean step deletes *.pdf from the build
+      # output, which would wipe these. Incremental: unchanged manuals are
+      # downloaded back from the live site instead of re-rendered
+      # (fingerprint manifest, see scripts/generate_manual_pdfs.py).
+      - name: Generate manual PDFs
+        if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+        run: |
+          sudo apt-get update -q
+          sudo apt-get install -y -q fonts-noto-cjk ghostscript
+          pip install playwright pymupdf
+          python -m playwright install --with-deps chromium
+          python scripts/generate_manual_pdfs.py --site-dir site-zh --lang zh \
+            --reuse-base https://www.inhand.com.cn/manuals/
+          python scripts/generate_manual_pdfs.py --site-dir site-en --lang en \
+            --reuse-base https://www.inhand.com/manuals/
+
       # 4.5 Publish markdown twins: every X.html gets its X.md source next
       # to it (llms.txt links point at these .md paths — clean markdown is
       # what AI crawlers consume). Pure additive copy; existing HTML URLs
@@ -230,5 +247,11 @@ jobs:
             # first llms.txt document link must resolve (md twins present)
             rel=$(grep -o "](.*\.md)" <(curl -s "$base/llms.txt") | head -1 | sed 's/^](//;s/)$//')
             check "$base/$rel"
+            # first manual PDF from the manifest must resolve and be a real PDF
+            check "$base/pdf-manifest.json"
+            pdfrel=$(curl -s "$base/pdf-manifest.json" | grep -o '"[^"]*\.html"' | head -1 | tr -d '"' | sed 's/\.html$/.pdf/')
+            magic=$(curl -s --retry 3 "$base/$pdfrel" | head -c 4)
+            if [ "$magic" != "%PDF" ]; then echo "FAIL pdf magic $base/$pdfrel"; exit 1; fi
+            echo "OK manual pdf $base/$pdfrel"
           done
           echo "All health checks passed."

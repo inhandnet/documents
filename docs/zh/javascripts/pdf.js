@@ -1,56 +1,58 @@
-// Inject a "Download PDF" button that triggers browser print (Save as PDF)
+// "Download PDF" header button.
+// Manual pages (…/Manuals/…/X.html) link straight to the pre-generated PDF
+// twin (X.pdf, produced at deploy time by scripts/generate_manual_pdfs.py).
+// All other pages get no button.
 (function () {
-  function cleanupOldButtons() {
-    // Remove older in-content button if it exists (from previous versions)
-    var old = document.querySelectorAll(".pdf-download");
-    if (!old || !old.length) return;
+  function isManualPage() {
+    return /\/Manuals\//.test(decodeURIComponent(location.pathname)) &&
+      /\.html$/.test(location.pathname);
+  }
+
+  function cleanupButtons() {
+    var old = document.querySelectorAll(".pdf-download, .pdf-download-header");
     old.forEach(function (el) {
       if (el && el.parentNode) el.parentNode.removeChild(el);
     });
   }
 
   function ensureHeaderButton() {
+    if (!isManualPage()) return;
     var headerInner = document.querySelector(".md-header__inner");
     if (!headerInner) return;
-
-    // Avoid duplicates (instant navigation)
     if (headerInner.querySelector(".pdf-download-header")) return;
 
     var target = headerInner.querySelector('label[for="__search"]') || headerInner.lastElementChild;
 
-    var btn = document.createElement("button");
-    btn.type = "button";
-    btn.className = "md-header__button md-icon pdf-download-header";
-    btn.title = "下载 PDF";
-    btn.setAttribute("aria-label", "下载 PDF");
-    btn.innerHTML =
+    var a = document.createElement("a");
+    a.className = "md-header__button md-icon pdf-download-header";
+    a.title = "下载 PDF";
+    a.setAttribute("aria-label", "下载 PDF");
+    a.href = location.pathname.replace(/\.html$/, ".pdf");
+    // Empty download attr => browser names the file after the URL's last
+    // segment, i.e. the source filename (e.g. ER805用户手册_V1.0.pdf)
+    a.setAttribute("download", "");
+    a.innerHTML =
       '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">' +
       '<path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>' +
       "</svg>";
-    btn.addEventListener("click", function () {
-      window.print();
-    });
 
     if (target && target.parentNode) {
-      target.parentNode.insertBefore(btn, target);
+      target.parentNode.insertBefore(a, target);
     } else {
-      headerInner.appendChild(btn);
+      headerInner.appendChild(a);
     }
   }
 
   function boot() {
-    // Initial render
-    cleanupOldButtons();
+    cleanupButtons();
     ensureHeaderButton();
 
     // Material for MkDocs (with navigation.instant) exposes document$ observable.
-    // This is the most reliable hook after each page render.
     var doc$ = window.document$;
     if (doc$ && typeof doc$.subscribe === "function") {
       doc$.subscribe(function () {
-        // allow DOM to settle
         requestAnimationFrame(function () {
-          cleanupOldButtons();
+          cleanupButtons();
           ensureHeaderButton();
         });
       });
@@ -59,7 +61,7 @@
 
     // Fallback for older setups
     document.addEventListener("navigation:complete", function () {
-      cleanupOldButtons();
+      cleanupButtons();
       ensureHeaderButton();
     });
   }
@@ -70,4 +72,3 @@
     boot();
   }
 })();
-

@@ -75,6 +75,8 @@ def find_manual_pages(site_dir: Path, only: str | None) -> list[Path]:
     pages = sorted(
         p for p in site_dir.rglob("*.html")
         if "/Manuals/" in p.relative_to(site_dir).as_posix()
+        # generated product-index navigation stubs are not manuals
+        and p.name.lower() != "index.html"
     )
     if only:
         needle = only.lower()

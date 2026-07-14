@@ -5,7 +5,8 @@
 (function () {
   function isManualPage() {
     return /\/Manuals\//.test(decodeURIComponent(location.pathname)) &&
-      /\.html$/.test(location.pathname);
+      /\.html$/.test(location.pathname) &&
+      !/\/index\.html$/i.test(location.pathname); // index stubs have no PDF
   }
 
   function cleanupButtons() {

@@ -28,10 +28,9 @@
     a.title = "Download PDF";
     a.setAttribute("aria-label", "Download PDF");
     a.href = location.pathname.replace(/\.html$/, ".pdf");
-    // Download name = page title without the " - site name" suffix,
-    // e.g. 映翰通边缘路由器ER805用户手册.pdf
-    var name = (document.title || "").split(" - ")[0].trim();
-    a.setAttribute("download", name ? name + ".pdf" : "");
+    // Empty download attr => browser names the file after the URL's last
+    // segment, i.e. the source filename (e.g. ER805用户手册_V1.0.pdf)
+    a.setAttribute("download", "");
     a.innerHTML =
       '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">' +
       '<path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>' +

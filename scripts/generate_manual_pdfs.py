@@ -248,7 +248,8 @@ def main() -> int:
             log(f"render {rel}")
             page.goto(url, wait_until="networkidle", timeout=120_000)
             n_imgs = page.evaluate(EAGER_IMAGES_JS)
-            title = page.title()
+            # strip the " - site name" suffix mkdocs appends to <title>
+            title = page.title().split(" - ")[0].strip()
             page.pdf(
                 path=str(pdf_path), format="A4", print_background=True,
                 display_header_footer=True, header_template="<span></span>",

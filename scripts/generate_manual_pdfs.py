@@ -35,10 +35,9 @@ import urllib.request
 from pathlib import Path
 
 import fitz  # pymupdf
-import pikepdf
 from playwright.sync_api import sync_playwright
 
-SCRIPT_VERSION = "2"  # bump to force full regeneration on behavior changes
+SCRIPT_VERSION = "3"  # bump to force full regeneration on behavior changes
 
 SIZE_MIN = 50 * 1024
 SIZE_MAX = 30 * 1024 * 1024
@@ -115,20 +114,26 @@ def serve(site_dir: Path) -> tuple[http.server.ThreadingHTTPServer, int]:
 
 def rewrite_links_and_meta(pdf_path: Path, local_base: str, prod_base: str,
                            title: str) -> None:
-    with pikepdf.open(pdf_path, allow_overwriting_input=True) as pdf:
-        for page in pdf.pages:
-            for annot in page.get("/Annots") or []:
-                a = annot.get("/A")
-                if a is None:
-                    continue
-                uri = a.get("/URI")
-                if uri is not None and str(uri).startswith(local_base):
-                    a["/URI"] = pikepdf.String(
-                        str(uri).replace(local_base, prod_base, 1))
-        with pdf.open_metadata() as meta:
-            meta["dc:title"] = title
-            meta["dc:creator"] = ["InHand Networks"]
-        pdf.save(pdf_path)
+    """Rewrite localhost URI links to the production URL and set metadata.
+
+    Note: same-document anchor links need no handling — tagged PDF generation
+    already emits them as internal named destinations (verified: they jump
+    within the PDF). Only cross-document/external links are URI actions.
+    """
+    doc = fitz.open(pdf_path)
+    for pno in range(doc.page_count):
+        page = doc[pno]
+        for link in page.get_links():
+            uri = link.get("uri") or ""
+            if uri.startswith(local_base):
+                link["uri"] = uri.replace(local_base, prod_base, 1)
+                page.update_link(link)
+    doc.set_metadata({"title": title, "author": "InHand Networks",
+                      "producer": "InHand docs pipeline"})
+    tmp = pdf_path.with_suffix(".tmp.pdf")
+    doc.save(tmp, garbage=2, deflate=True)
+    doc.close()
+    tmp.replace(pdf_path)
 
 
 def compress(pdf_path: Path) -> None:

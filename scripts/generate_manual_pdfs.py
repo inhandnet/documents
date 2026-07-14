@@ -23,6 +23,7 @@ from __future__ import annotations
 import argparse
 import datetime
 import hashlib
+from html import escape as html_escape
 import http.server
 import json
 import shutil
@@ -50,7 +51,7 @@ PROD_BASES = {
 FOOTER = (
     '<div style="width:100%;font-size:8px;color:#888;'
     'padding:0 10mm;display:flex;justify-content:space-between;">'
-    '<span class="title"></span>'
+    "<span>{title}</span>"
     "<span>© InHand Networks · {site} · {date}</span>"
     '<span><span class="pageNumber"></span> / <span class="totalPages"></span></span>'
     "</div>"
@@ -75,6 +76,8 @@ def find_manual_pages(site_dir: Path, only: str | None) -> list[Path]:
     pages = sorted(
         p for p in site_dir.rglob("*.html")
         if "/Manuals/" in p.relative_to(site_dir).as_posix()
+        # generated product-index navigation stubs are not manuals
+        and p.name.lower() != "index.html"
     )
     if only:
         needle = only.lower()
@@ -261,6 +264,7 @@ def main() -> int:
                 outline=True, tagged=True,
                 display_header_footer=True, header_template="<span></span>",
                 footer_template=FOOTER.format(
+                    title=html_escape(title),
                     site=prod_base.split("//")[1].rstrip("/"),
                     date=datetime.date.today().isoformat()),
                 margin={"top": "14mm", "bottom": "16mm",

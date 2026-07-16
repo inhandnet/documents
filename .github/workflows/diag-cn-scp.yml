@@ -33,6 +33,6 @@ jobs:
           source: "site-zh/*"
           target: /data/wordpress/manuals/
           strip_components: 1
-          rm: false
+          rm: true
           overwrite: true
           debug: true

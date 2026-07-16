@@ -1,10 +1,9 @@
 name: Diag CN scp (debug)
 
-# Throwaway fast diagnostic for the CN scp failure. Builds ONLY the zh site
-# (~20s, no PDFs) and pushes to the CN server with scp-action debug ON, so
-# the real remote error (currently hidden behind "Process exited with
-# status 1") is printed. ~2 min total vs a 15-min full deploy. Delete once
-# the CN deploy is fixed.
+# Throwaway fast diagnostic for the CN deploy. Builds ONLY zh (~20s) and
+# pushes via rsync over SSH (the method the server's ForceCommand wrapper
+# explicitly allows: `rsync --server ... /data/wordpress/manuals`). Prints
+# rsync's own error if any. ~2 min. Delete once the real deploy is fixed.
 
 on:
   workflow_dispatch:
@@ -21,18 +20,22 @@ jobs:
         with:
           python-version: "3.11"
       - name: Install deps
-        run: pip install -r requirements.txt
+        run: |
+          pip install -r requirements.txt
+          sudo apt-get update -q && sudo apt-get install -y -q sshpass rsync
       - name: Build zh only
         run: python -m mkdocs build -f mkdocs.yml -d site-zh --clean
-      - name: scp to CN with debug
-        uses: appleboy/scp-action@v0.1.7
-        with:
-          host: ${{ secrets.CN_OVERSEAS_HOST }}
-          username: ${{ secrets.CN_OVERSEAS_USER }}
-          password: ${{ secrets.CN_OVERSEAS_PASS }}
-          source: "site-zh/*"
-          target: /data/wordpress/manuals/
-          strip_components: 1
-          rm: true
-          overwrite: true
-          debug: true
+      - name: rsync to CN (verbose)
+        env:
+          H: ${{ secrets.CN_OVERSEAS_HOST }}
+          U: ${{ secrets.CN_OVERSEAS_USER }}
+          P: ${{ secrets.CN_OVERSEAS_PASS }}
+        run: |
+          echo "=== try 1: rsync -az --delete ==="
+          sshpass -p "$P" rsync -az --delete -v \
+            -e "ssh -p 22 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" \
+            site-zh/ "$U@$H:/data/wordpress/manuals/" 2>&1 | tail -20 && echo "DELETE-OK" && exit 0
+          echo "=== try 2: rsync -az (no --delete) ==="
+          sshpass -p "$P" rsync -az -v \
+            -e "ssh -p 22 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" \
+            site-zh/ "$U@$H:/data/wordpress/manuals/" 2>&1 | tail -20 && echo "NODELETE-OK"

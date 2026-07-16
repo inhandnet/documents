@@ -1,0 +1,42 @@
+name: Diag CN Deploy Permissions
+
+# Throwaway diagnostic: logs into the CN server with the SAME deploy
+# credentials the scp step uses, and reports which user it is, the target
+# dir ownership, and whether that user can actually write there. ~30s.
+# Delete this workflow once the permission issue is resolved.
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  diag:
+    runs-on: ubuntu-latest
+    steps:
+      - name: SSH as the deploy user and probe
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.CN_OVERSEAS_HOST }}
+          username: ${{ secrets.CN_OVERSEAS_USER }}
+          password: ${{ secrets.CN_OVERSEAS_PASS }}
+          script: |
+            echo "=== whoami ==="; whoami
+            echo "=== id ==="; id
+            echo "=== target dir ==="; ls -ld /data/wordpress/manuals/
+            echo "=== a few entries ==="; ls -la /data/wordpress/manuals/ | head -6
+            echo "=== write test at top level ==="
+            if touch /data/wordpress/manuals/.deploy-write-test 2>/dev/null; then
+              echo "TOP: WRITABLE"; rm -f /data/wordpress/manuals/.deploy-write-test
+            else
+              echo "TOP: DENIED"
+            fi
+            echo "=== write test into an existing subdir (EC3000) ==="
+            if touch "/data/wordpress/manuals/EC3000/.deploy-write-test" 2>/dev/null; then
+              echo "SUBDIR: WRITABLE"; rm -f "/data/wordpress/manuals/EC3000/.deploy-write-test"
+            else
+              echo "SUBDIR: DENIED"
+            fi
+            echo "=== not owned by me (should be empty if chown worked) ==="
+            find /data/wordpress/manuals/ ! -user "$(whoami)" 2>/dev/null | head -10

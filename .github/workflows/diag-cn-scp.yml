@@ -1,0 +1,38 @@
+name: Diag CN scp (debug)
+
+# Throwaway fast diagnostic for the CN scp failure. Builds ONLY the zh site
+# (~20s, no PDFs) and pushes to the CN server with scp-action debug ON, so
+# the real remote error (currently hidden behind "Process exited with
+# status 1") is printed. ~2 min total vs a 15-min full deploy. Delete once
+# the CN deploy is fixed.
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  debug:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install deps
+        run: pip install -r requirements.txt
+      - name: Build zh only
+        run: python -m mkdocs build -f mkdocs.yml -d site-zh --clean
+      - name: scp to CN with debug
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.CN_OVERSEAS_HOST }}
+          username: ${{ secrets.CN_OVERSEAS_USER }}
+          password: ${{ secrets.CN_OVERSEAS_PASS }}
+          source: "site-zh/*"
+          target: /data/wordpress/manuals/
+          strip_components: 1
+          rm: false
+          overwrite: true
+          debug: true

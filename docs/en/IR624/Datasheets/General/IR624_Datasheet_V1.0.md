@@ -182,7 +182,7 @@
     <col style="width:8%;">
   </colgroup>
   <tr><th>Model Pattern</th><th>Region</th><th>&lt;WMNN&gt; / Bands</th><th>&lt;WLAN/NA&gt;</th><th>Serial</th></tr>
-  <tr><td style="white-space: nowrap;">IR624-NRQ3-&lt;WLAN/NA&gt;-S</td><td>North America (5G)</td><td>5G NR NSA n1/2/3/5/7/8/12/13/14/18/20/25/26/28/29/30/38/40/41/48/66/70/71/75/76/77/78/79; SA same set; LTE FDD B1/2/3/4/5/7/8/12/13/14/17/18/19/20/25/26/28/29/30/32/66/71; LTE TDD B34/38/39/40/41/42/43/48; LAA B46; WCDMA B1/2/4/5/8/19</td><td>WLAN or NA</td><td>S</td></tr>
+  <tr><td style="white-space: nowrap;">IR624-NRQ3-&lt;WLAN/NA&gt;-S</td><td>Global</td><td>5G NR NSA n1/2/3/5/7/8/12/13/14/18/20/25/26/28/29/30/38/40/41/48/66/70/71/75/76/77/78/79; SA same set; LTE FDD B1/2/3/4/5/7/8/12/13/14/17/18/19/20/25/26/28/29/30/32/66/71; LTE TDD B34/38/39/40/41/42/43/48; LAA B46; WCDMA B1/2/4/5/8/19</td><td>WLAN or NA</td><td>S</td></tr>
   <tr><td style="white-space: nowrap;">IR624-NRF4-&lt;WLAN/NA&gt;-S</td><td>Europe &amp; APAC (5G)</td><td>5G NR n1/3/5/7/8/20/28/38/40/41/71/77/78/66; LTE FDD B1/3/5/7/8/20/28/71/66; LTE TDD B38/40/41; WCDMA B1/3/5/8</td><td>WLAN or NA</td><td>S</td></tr>
   <tr><td style="white-space: nowrap;">IR624-FQ58-&lt;WLAN/NA&gt;-S</td><td>Europe &amp; APAC (4G CAT4)</td><td>LTE-FDD B1/3/5/7/8/20/28; LTE-TDD B34/38/39/40/41; WCDMA B1/5/8; GSM B3/8</td><td>WLAN or NA</td><td>S</td></tr>
   <tr><td style="white-space: nowrap;">IR624-EN00-&lt;WLAN/NA&gt;-S</td><td>Global (No Cellular)</td><td>No cellular module</td><td>WLAN or NA</td><td>S</td></tr>

@@ -148,45 +148,60 @@ jobs:
             fi
           done
 
-      # 5. Deploy
-      - name: Copy Chinese site to Domestic Server
+      # 5. Deploy via rsync --delete (mirror sync).
+      # Switched from scp-action: the servers' ForceCommand wrapper blocks
+      # drone-scp's remote tar exec but explicitly allows `rsync --server ...
+      # /data/wordpress/manuals`. rsync also gives incremental transfer
+      # (seconds, not minutes) and --delete removes server-side orphans
+      # (fixes the scp rm:false accumulation, TODO #23).
+      - name: Install rsync tooling
         if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
-        uses: appleboy/scp-action@v0.1.7
-        with:
-          host: ${{ secrets.CN_OVERSEAS_HOST }}
-          username: ${{ secrets.CN_OVERSEAS_USER }}
-          password: ${{ secrets.CN_OVERSEAS_PASS }}
-          source: "site-zh/*"
-          target: /data/wordpress/manuals/
-          strip_components: 1
-          rm: false
-          overwrite: true
+        run: sudo apt-get update -q && sudo apt-get install -y -q sshpass rsync
 
-      - name: Copy English site to Overseas Server
+      # Empty-build fuse: never let a broken/empty build wipe a server via
+      # --delete. Require index.html + a sane file count for each site.
+      - name: Guard against empty build
         if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
-        uses: appleboy/scp-action@v0.1.7
-        with:
-          host: ${{ secrets.OVERSEAS_HOST }}
-          username: ${{ secrets.OVERSEAS_USER }}
-          password: ${{ secrets.OVERSEAS_PASS }}
-          source: "site-en/*"
-          target: /data/wordpress/manuals/
-          strip_components: 1
-          rm: false
-          overwrite: true
+        run: |
+          for s in site-zh site-en; do
+            test -f "$s/index.html" || { echo "FUSE: $s/index.html missing"; exit 1; }
+            n=$(find "$s" -type f | wc -l)
+            [ "$n" -gt 200 ] || { echo "FUSE: $s has only $n files"; exit 1; }
+            echo "$s: $n files, ok"
+          done
 
-      - name: Copy English site to Overseas Server (NEW)
+      - name: Deploy Chinese site to Domestic Server
         if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
-        uses: appleboy/scp-action@v0.1.7
-        with:
-          host: ${{ secrets.OVERSEAS_HOST_NEW }}
-          username: ${{ secrets.OVERSEAS_USER }}
-          password: ${{ secrets.OVERSEAS_PASS }}
-          source: "site-en/*"
-          target: /data/wordpress/manuals/
-          strip_components: 1
-          rm: false
-          overwrite: true
+        env:
+          H: ${{ secrets.CN_OVERSEAS_HOST }}
+          U: ${{ secrets.CN_OVERSEAS_USER }}
+          P: ${{ secrets.CN_OVERSEAS_PASS }}
+        run: |
+          sshpass -p "$P" rsync -az --delete \
+            -e "ssh -p 22 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" \
+            site-zh/ "$U@$H:/data/wordpress/manuals/"
+
+      - name: Deploy English site to Overseas Server
+        if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+        env:
+          H: ${{ secrets.OVERSEAS_HOST }}
+          U: ${{ secrets.OVERSEAS_USER }}
+          P: ${{ secrets.OVERSEAS_PASS }}
+        run: |
+          sshpass -p "$P" rsync -az --delete \
+            -e "ssh -p 22 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" \
+            site-en/ "$U@$H:/data/wordpress/manuals/"
+
+      - name: Deploy English site to Overseas Server (NEW)
+        if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+        env:
+          H: ${{ secrets.OVERSEAS_HOST_NEW }}
+          U: ${{ secrets.OVERSEAS_USER }}
+          P: ${{ secrets.OVERSEAS_PASS }}
+        run: |
+          sshpass -p "$P" rsync -az --delete \
+            -e "ssh -p 22 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" \
+            site-en/ "$U@$H:/data/wordpress/manuals/"
 
       # 6. Sync paths to resource center (validate)
       - name: Sync docs paths

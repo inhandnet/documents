@@ -1,0 +1,481 @@
+!
+#system config
+language Chinese
+hostname VG710
+ip domain-name vg.com.cn
+clock timezone UTC-8
+service password-encryption
+!
+#log config
+!
+#user config
+username adm privilege 15 password $1$Xfx5p.9D$mDNg5U05ESjgUMtzbXGj6.
+!
+enable password $1$nX.NS8mb$ENySiVrzI1XNuj90CsEhN0
+!
+#aaa config
+!
+#cron config
+remote-login retry 20
+!
+#alarm config
+!
+#loopback config
+interface loopback 1
+!
+!
+#ethernet interface config
+!
+#Ethernet sub interface config
+!
+#switch virtual interface config
+interface vlan 1
+  #IPv6 config
+!
+!
+#ethernet config
+interface gigabitethernet 1/1
+  switchport mode trunk
+!
+interface gigabitethernet 1/2
+!
+interface gigabitethernet 1/3
+!
+interface gigabitethernet 1/4
+!
+!
+#cellular config
+cellular 1 gsm profile 1 3gnet *99***1#  ipv4 auto gprs $AES$1AECAFF97D1C43422E0186407306E5AA
+cellular 1 dial interval 10
+cellular 1 signal interval 120
+cellular 1 network auto
+cellular 1 nr5g-mode auto
+cellular 1 sim 1 operator auto
+cellular 1 sim 2 operator auto
+cellular 1 sms mode text
+cellular 1 sms interval 30
+!
+interface cellular 1
+  dialer profile auto
+  dialer profile auto secondary
+  dialer timeout 120
+  ipv6 address share-prefix cellular-1
+  dialer activate auto
+  ip address static peer 1.1.1.3
+  ip address static netmask 255.255.255.255
+  no ip address static local
+  ip mru 1500
+  ip mtu 1500
+  dhcp option mtu request
+  ppp ipcp dns request
+  ppp keepalive 55 5
+!
+!
+#dot11 config
+interface dot11radio 1
+  shutdown
+  ip address dhcp
+  station-role workgroup-bridge
+  radio-type dot11ng
+  client-mode authentication-method open
+  client-mode default-route
+!
+interface dot11radio 2
+  shutdown
+  ip address dhcp
+  station-role workgroup-bridge
+  radio-type dot11ac
+!
+!
+#bridge config
+!
+bridge 1
+!
+interface bridge 1
+  ip address 192.168.2.1 255.255.255.0
+  #IPv6 config
+!
+interface vlan 1
+  bridge-group 1
+!
+!
+!
+#bridge mode gateway information
+!
+#dialer config
+interface bridge 1
+  pppoe-client dial-pool-number 1
+!
+!
+#ipsec config
+crypto ipsec-daemon stop
+!
+#l2tp config
+!
+#openvpn config
+!
+#openvpn server config
+!
+
+#dockerd config
+!
+
+#Azure IoT Edge config
+!
+#web config
+ip web-access timeout 300
+ip http server port 8000
+ip https access enable
+!
+#telnet server config
+no ip telnet server
+no ip telnet access enable
+!
+#ssh server config
+!
+#dhcp-relay config
+!
+#dns-relay config
+ip dns-relay server
+!
+#dhcp server config
+interface bridge 1
+  ip dhcp-server enable
+  ip dhcp-server range 192.168.2.2 192.168.2.100
+  ip dhcp-server lease 1440
+!
+!
+#dns config
+!
+#ip host config
+!
+#ddns config
+!
+#snmp config
+
+#ovdp config
+!
+#portal config
+!
+portal interface bridge 1
+portal external-interface cellular 1
+!
+#ntp server config
+  ntp master 2
+  ntp server 0.pool.ntp.org
+  ntp server 1.pool.ntp.org
+  ntp server 2.pool.ntp.org
+  ntp server 3.pool.ntp.org
+!
+!
+#email config
+!
+#sntp client config
+sntp-client
+sntp-client server 0.pool.ntp.org port 123
+sntp-client server 1.pool.ntp.org port 123
+sntp-client server 2.pool.ntp.org port 123
+sntp-client server 3.pool.ntp.org port 123
+!
+#gre config
+!
+#static route config
+ip route 0.0.0.0 0.0.0.0 cellular 1 255
+!
+#rip config
+!
+!
+#ospf config
+!
+!
+#filtering config
+!
+#static route6 config
+!
+#bgp config
+!
+!
+#firewall config
+!
+!
+!
+!
+interface cellular 1
+  ip access-group 192 admin
+!
+access-list 100 permit ip any any 
+access-list 192 deny tcp any any eq 6000 
+access-list 192 deny tcp any any eq 60000 
+access-list 192 deny tcp any any eq 1085 
+access-list 192 deny tcp any any eq 53 
+access-list 192 deny udp any any eq 53 
+access-list 192 deny tcp any any eq 8000 log
+access-list 192 permit tcp any any eq 443 log
+access-list 192 deny tcp any any eq 23 log
+access-list 192 deny tcp any any eq 22 log
+access-list 198 permit ip any any 
+access-list 199 permit ip any any 
+interface dot11radio 2
+  ip nat outside
+!
+interface cellular 1
+  ip nat outside
+!
+interface bridge 1
+  ip nat inside
+!
+interface dot11radio 1
+  ip nat outside
+!
+!
+ip snat inside list 100 interface cellular 1 
+ip snat inside list 199 interface dot11radio 2 
+ip snat inside list 198 interface dot11radio 1 
+!
+!
+!
+!
+!
+#tcp mss config
+ip tcp adjust-mss 1360
+!
+!
+!
+#netwatcher config
+!
+!
+#sla config
+!
+#track config
+!
+#vrrpd config
+!
+#backup config
+!
+#ippassth config
+!
+!
+!
+#mroute config
+!
+#cert config
+!
+!
+#cert enroll config
+crypto key generate rsa general-keys modulus 1024
+!
+!
+#dls config
+dls request-timeout 60
+!
+#powerMgmt config
+ power-management shutdown-delay 30
+ power-management standby-check-interval 20
+ power-management standby-voltage 90 standby-resume-voltage 105
+ power-management standby-wakeup-interval 60 runtime 5
+ power-management standby-interval-wakeup-voltage 60
+ power-management standby-igt-shutdown-delay 15
+ power-management standby-mode 1
+ power-management standby-timer-wakeup 5
+ power-management standby-di-shutdown-delay 10
+!
+!
+#io config
+ no io pull-up digital-input 1
+ no io pull-up digital-input 2
+ no io pull-up digital-input 3
+ no io pull-up digital-input 4
+ io output set 1 low
+ no io pull-up digital-output 1
+ io output set 2 low
+ no io pull-up digital-output 2
+ io output set 3 low
+ no io pull-up digital-output 3
+ io output set 4 low
+ no io pull-up digital-output 4
+!
+!
+#vagent config
+report gnss 1
+report motion 1
+report io 10
+report obdii 1
+report sensor 10
+!
+!
+#j1939 config
+j1939-group basic
+  enable
+  interval 1
+  pgn 65269 src-addr 0
+  pgn 65262 src-addr 0
+  pgn 65265 src-addr 0
+  pgn 65270 src-addr 0
+  pgn 61443 src-addr 0
+  pgn 61444 src-addr 0
+  pgn 61449 src-addr 62
+  pgn 65276 src-addr 23
+  pgn 65266 src-addr 0
+  pgn 65271 src-addr 0
+  pgn 64929 src-addr 81
+  pgn 65272 src-addr 3
+  pgn 65247 src-addr 0
+  pgn 65263 src-addr 0
+  pgn 65257 src-addr 0
+  pgn 65248 src-addr 0
+  pgn 64695 src-addr 254
+  pgn 65110 src-addr 0
+  pgn 65253 src-addr 0
+  pgn 64765 src-addr 0
+!
+j1939-group listen
+  enable
+!
+!
+#obdii config
+  obdii service01 interval 1
+  obdii service01 pid 1
+  obdii service01 pid 3
+  obdii service01 pid 4
+  obdii service01 pid 5
+  obdii service01 pid a
+  obdii service01 pid b
+  obdii service01 pid c
+  obdii service01 pid d
+  obdii service01 pid f
+  obdii service01 pid 11
+  obdii service01 pid 1c
+  obdii service01 pid 1f
+  obdii service01 pid 21
+  obdii service01 pid 23
+  obdii service01 pid 2f
+  obdii service01 pid 31
+  obdii service01 pid 33
+  obdii service01 pid 42
+  obdii service01 pid 46
+  obdii service01 pid 4d
+  obdii service01 pid 4e
+  obdii service01 pid 51
+  obdii service01 pid 5b
+  obdii service01 pid 5c
+  obdii service01 pid 5e
+  obdii service01 pid 62
+  obdii service01 pid 63
+  obdii service01 pid 8e
+  obdii service03 interval 10
+  obdii service09 infotype-id 2
+!
+#j1587 config
+j1587-group basic
+  enable
+  interval 10
+!
+#can interface config
+!
+interface can 0
+  bind user
+  bitrate 500000
+!
+interface can 1
+  bind obd
+  no bitrate
+!
+#obd config
+!
+#daq config
+report io 10
+report sensor 10
+!
+#3rd-part platform config
+3rd enable
+3rd host smartfleet.inhandcloud.com
+3rd port 1883
+3rd topic-prefix CN300001/
+3rd client_id VN7102202004109
+3rd keepalive 60
+3rd tls version tlsv1.2
+3rd tls cert-verify
+3rd auth admin $AES$C3CED91D3D09FB991475F71D0DA3835B6C22E2C1D492698B5CED59CB4CCDD01E
+3rd adv-rpt summary basic 30 200 2 3600 7 15 0
+3rd adv-rpt summary acc 0 0 0 0 0 0
+!
+#flexapi-tcp config
+no flexapi-tcp enable
+flexapi-tcp port 8000
+flexapi-tcp client-id VN7102202004109
+flexapi-tcp keepalive-idle 600
+flexapi-tcp keepalive-interval 30
+flexapi-tcp keepalive-count 5
+flexapi-tcp user-timeout 3
+flexapi-tcp protocol tcp
+flexapi-tcp data-format json
+flexapi-tcp adv-rpt summary basic 30 200 2 3600 7 15 0
+flexapi-tcp adv-rpt summary acc 0 0 0 0 0 0
+flexapi-tcp adv-rpt summary io 0 1 0 0
+flexapi-tcp nmea-msg filter all 
+flexapi-tcp nmea-msg interval 10
+#itxptd config
+itxptd fmstoip spn
+#local broker config
+!
+#bluetooth config
+#http flexapi config
+!
+!
+#captive portal config
+#devicealive config
+!
+devicelive server-type device.nezha.inhand.design 
+devicelive keepalive 60
+devicelive log
+devicelive expire-certs 1051920
+#devicealive aws cert start
+!
+nm-crypto chain-aws
+!
+#devicealive aws cert end
+#record config
+!
+#lqm config
+!
+!
+#gps config
+  gps enable
+  gnss filter 6 4 10 100 3
+!
+#gps serial config
+!
+#gps server config
+!
+#gps client config
+!
+#Serial Configuration
+serial 1
+!
+serial 2
+!
+serial 3
+!
+!
+#python config
+python enable
+python app 1 off
+python appcmd 1 logsize 1
+odbsim
+quit
+!
+python vartab off
+python vartab protocol Modbus
+!
+#mqtt config
+no mqtt enable
+!
+#Modbus TCP
+!
+#traffic-stated config
+interface cellular 1
+    traffic-stated statistic
+!
+!
+#data-usage config
+#end of configuration

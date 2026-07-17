@@ -247,6 +247,8 @@ hide:
         <li><a href="IG502/Developer%20Documentation/FlexAPI/IGSeriesAPIDocumentationV1.0.html" title="IG Series API Documentation V1.0">IG Series API Documentation V1.0</a></li>
         <li><a href="IG502/Developer%20Documentation/FlexAPI/IGsupportsIEC.APIDocumentationV1.0.html" title="IG supports IEC.API Documentation V1.0">IG supports IEC.API Documentation V1.0</a></li>
         <li><a href="IG502/Manuals/User%20manual/IG502_User%20manual_V1.0.html" title="InGateway502 Edge Computing Gateway User Manual">User manual V1.0</a></li>
+        <li><a href="IG502/Use%20Cases/Smart%20Low-Voltage%20Power%20Distribution%20Solution/case-manual.html" title="Smart Low-Voltage Power Distribution Networking Solution">Smart Low-Voltage Power Distribution Networking Solution</a></li>
+        <li><a href="IG502/Use%20Cases/Smart%20Low-Voltage%20Power%20Distribution%20Solution/config-manual.html" title="Smart Low-Voltage Power Distribution — Configuration Guide">Smart Low-Voltage Power Distribution — Configuration Guide</a></li>
         </ul>
       </div>
     </div>

@@ -216,8 +216,11 @@ def main() -> int:
     reuse_base = args.reuse_base.rstrip("/") + "/" if args.reuse_base else ""
     if reuse_base and not manifest and not args.force:
         try:
-            with urllib.request.urlopen(reuse_base + "pdf-manifest.json",
-                                        timeout=30) as r:
+            # cache-buster: the en site sits behind Cloudflare, which may
+            # serve a stale cached manifest and defeat reuse entirely
+            nc = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
+            with urllib.request.urlopen(
+                    f"{reuse_base}pdf-manifest.json?nc={nc}", timeout=30) as r:
                 manifest = json.loads(r.read().decode("utf-8"))
             log(f"reuse manifest from {reuse_base}: {len(manifest)} entries")
         except Exception as exc:  # noqa: BLE001 - any failure => full generation
@@ -243,11 +246,14 @@ def main() -> int:
                 if reuse_base:
                     # fingerprint unchanged: pull the deployed PDF instead of
                     # re-rendering. Magic-byte check guards against the
-                    # WordPress 200-HTML fallback for unknown paths.
+                    # WordPress 200-HTML fallback; the ?v=<fingerprint> query
+                    # keys any CDN cache by content version, so a stale
+                    # Cloudflare copy can never be mistaken for the current one.
                     try:
                         with urllib.request.urlopen(
                                 reuse_base + urllib.parse.quote(
-                                    rel[:-5] + ".pdf"), timeout=60) as r:
+                                    rel[:-5] + ".pdf") + "?v=" + fp[:16],
+                                timeout=60) as r:
                             data = r.read()
                         if data.startswith(b"%PDF"):
                             pdf_path.write_bytes(data)

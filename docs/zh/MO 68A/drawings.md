@@ -11,7 +11,5 @@ description: "MO 68A 结构图纸登记（2D），含图纸原件文件链接"
 
 | 类型 | 文件 | 原件 |
 |---|---|---|
-| 2D | Mo68A_MB_ASM_V1.0.pdf | [查看](https://github.com/inhandnet/documents/blob/master/docs/en/MO%2068A/Drawings/2D/Mo68A_MB_ASM_V1.0.pdf) |
 | 2D | Mo68A_MB_ASM_V1.0.pdf | [查看](https://github.com/inhandnet/documents/blob/master/docs/zh/MO%2068A/Drawings/2D/Mo68A_MB_ASM_V1.0.pdf) |
-| 2D | Mo68A_MB_FAB_V1.0.pdf | [查看](https://github.com/inhandnet/documents/blob/master/docs/en/MO%2068A/Drawings/2D/Mo68A_MB_FAB_V1.0.pdf) |
 | 2D | Mo68A_MB_FAB_V1.0.pdf | [查看](https://github.com/inhandnet/documents/blob/master/docs/zh/MO%2068A/Drawings/2D/Mo68A_MB_FAB_V1.0.pdf) |

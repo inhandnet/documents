@@ -14,9 +14,12 @@ The pages carry frontmatter (title/description), so the llms.txt and
 homepage generators pick them up automatically.  Original files are linked
 via GitHub blob URLs — they are not published on the static site.
 
-Certificates live only in the docs/en tree (they are language-neutral);
-for zh, a page is generated whenever the zh product directory exists,
-sourcing the file list from both trees.
+Per-tree: each language's registry lists only the assets present in that
+language's own tree (docs/zh certs for the CN site, docs/en certs for the
+overseas site) — certifications are region-specific, so they are placed
+per market upstream.  A registry page is written only when that product
+actually has assets in that tree; products with none get no page, and any
+previously-generated page whose backing files are gone is removed.
 
 Standard library only; deterministic output (LF, sorted); --check mode.
 """
@@ -115,23 +118,14 @@ def scan(files: list[str]):
     return certs, drawings, product_dirs
 
 
-def merged_assets(assets: dict, lang: str, product_dirs: dict) -> dict:
-    """Asset lists for one language.
+def assets_for_lang(assets: dict, lang: str) -> dict:
+    """Asset lists for one language, from that language's own tree only.
 
-    en: en tree only.  zh: zh tree, plus en-tree assets for products whose
-    zh directory exists (certificates/drawings are language-neutral).
+    Certifications/drawings are region-specific and placed per market
+    upstream (docs/zh for CN, docs/en for overseas), so no cross-tree
+    merge: a product only appears if it has assets in this tree.
     """
-    if lang == "en":
-        return dict(assets["en"])
-    merged: dict = {}
-    for product, items in assets["zh"].items():
-        merged.setdefault(product, []).extend(items)
-    for product, items in assets["en"].items():
-        if product in product_dirs["zh"]:
-            existing = {i[2] for i in merged.get(product, [])}
-            merged.setdefault(product, []).extend(
-                i for i in items if i[2] not in existing)
-    return {p: sorted(v) for p, v in merged.items() if v}
+    return {p: sorted(v) for p, v in assets[lang].items() if v}
 
 
 def blob_link(repo_path: str) -> str:
@@ -190,13 +184,17 @@ def main() -> int:
 
     stale = False
     written = 0
+    removed = 0
     for lang in langs:
         for kind, assets, filename in (
-            ("cert", merged_assets(certs, lang, product_dirs), "certifications.md"),
-            ("drawing", merged_assets(drawings, lang, product_dirs), "drawings.md"),
+            ("cert", assets_for_lang(certs, lang), "certifications.md"),
+            ("drawing", assets_for_lang(drawings, lang), "drawings.md"),
         ):
+            # pages we should have for this (lang, kind) after this run
+            expected = set()
             for product, items in sorted(assets.items()):
                 out = DOCS_DIR / lang / product / filename
+                expected.add(out)
                 content = render_page(lang, product, kind, items)
                 if args.check:
                     existing = out.read_text(encoding="utf-8") if out.exists() else ""
@@ -208,13 +206,29 @@ def main() -> int:
                 out.write_text(content, encoding="utf-8", newline="\n")
                 written += 1
 
+            # remove orphaned generated pages whose backing files are gone
+            lang_dir = DOCS_DIR / lang
+            if lang_dir.is_dir():
+                for existing_page in sorted(lang_dir.glob(f"*/{filename}")):
+                    if existing_page in expected:
+                        continue
+                    if GENERATED_MARKER not in existing_page.read_text(encoding="utf-8"):
+                        continue  # never touch a hand-authored file
+                    rel = existing_page.relative_to(REPO_ROOT).as_posix()
+                    if args.check:
+                        stale = True
+                        print(f"ORPHAN: {rel}")
+                    else:
+                        existing_page.unlink()
+                        removed += 1
+
     if args.check:
         if stale:
             print("asset pages out of date; run scripts/generate_asset_pages.py",
                   file=sys.stderr)
             return 1
         return 0
-    print(f"wrote {written} asset registry page(s)")
+    print(f"wrote {written} asset registry page(s), removed {removed} orphan(s)")
     return 0
 
 

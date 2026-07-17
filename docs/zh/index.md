@@ -30,8 +30,6 @@ hide:
       <div class="pm-card__body">
         <div class="pm-card__title">CPE02</div>
         <ul class="pm-card__links">
-        <li><a href="CPE02/certifications.html" title="CPE02 认证证书">认证证书</a></li>
-        <li><a href="CPE02/drawings.html" title="CPE02 结构图纸">结构图纸</a></li>
         <li><a href="CPE02/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/CPE02%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="映翰通5G CPE02用户手册">用户手册 V1.0</a></li>
         </ul>
       </div>
@@ -40,8 +38,6 @@ hide:
       <div class="pm-card__body">
         <div class="pm-card__title">CR202</div>
         <ul class="pm-card__links">
-        <li><a href="CR202/certifications.html" title="CR202 认证证书">认证证书</a></li>
-        <li><a href="CR202/drawings.html" title="CR202 结构图纸">结构图纸</a></li>
         <li><a href="CR202/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/CR202%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="北京映翰通4G蜂窝路由器CR202用户手册">用户手册 V1.0</a></li>
         </ul>
       </div>
@@ -50,18 +46,7 @@ hide:
       <div class="pm-card__body">
         <div class="pm-card__title">CR202-Lite</div>
         <ul class="pm-card__links">
-        <li><a href="CR202-Lite/certifications.html" title="CR202-Lite 认证证书">认证证书</a></li>
-        <li><a href="CR202-Lite/drawings.html" title="CR202-Lite 结构图纸">结构图纸</a></li>
         <li><a href="CR202-Lite/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/CR202-Lite%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="北京映翰通4G蜂窝路由器CR202-Lite用户手册">用户手册 V1.0</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="pm-card">
-      <div class="pm-card__body">
-        <div class="pm-card__title">CR602</div>
-        <ul class="pm-card__links">
-        <li><a href="CR602/certifications.html" title="CR602 认证证书">认证证书</a></li>
-        <li><a href="CR602/drawings.html" title="CR602 结构图纸">结构图纸</a></li>
         </ul>
       </div>
     </div>
@@ -94,8 +79,6 @@ hide:
       <div class="pm-card__body">
         <div class="pm-card__title">EAP600</div>
         <ul class="pm-card__links">
-        <li><a href="EAP600/certifications.html" title="EAP600 认证证书">认证证书</a></li>
-        <li><a href="EAP600/drawings.html" title="EAP600 结构图纸">结构图纸</a></li>
         <li><a href="EAP600/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/EAP600%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="映翰通企业级无线接入点EAP600用户手册">用户手册 V1.0</a></li>
         </ul>
       </div>
@@ -175,8 +158,6 @@ hide:
       <div class="pm-card__body">
         <div class="pm-card__title">ER605</div>
         <ul class="pm-card__links">
-        <li><a href="ER605/certifications.html" title="ER605 认证证书">认证证书</a></li>
-        <li><a href="ER605/drawings.html" title="ER605 结构图纸">结构图纸</a></li>
         <li><a href="ER605/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/ER605%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="映翰通边缘路由器ER605用户手册">用户手册 V1.0</a></li>
         </ul>
       </div>
@@ -193,8 +174,6 @@ hide:
       <div class="pm-card__body">
         <div class="pm-card__title">ER805</div>
         <ul class="pm-card__links">
-        <li><a href="ER805/certifications.html" title="ER805 认证证书">认证证书</a></li>
-        <li><a href="ER805/drawings.html" title="ER805 结构图纸">结构图纸</a></li>
         <li><a href="ER805/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/ER805%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="映翰通边缘路由器ER805用户手册">用户手册 V1.0</a></li>
         </ul>
       </div>
@@ -203,18 +182,7 @@ hide:
       <div class="pm-card__body">
         <div class="pm-card__title">ER815</div>
         <ul class="pm-card__links">
-        <li><a href="ER815/certifications.html" title="ER815 认证证书">认证证书</a></li>
-        <li><a href="ER815/drawings.html" title="ER815 结构图纸">结构图纸</a></li>
         <li><a href="ER815/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/ER815%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="映翰通高性能Wi-Fi6路由器ER815用户手册">用户手册 V1.0</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="pm-card">
-      <div class="pm-card__body">
-        <div class="pm-card__title">ES220</div>
-        <ul class="pm-card__links">
-        <li><a href="ES220/certifications.html" title="ES220 认证证书">认证证书</a></li>
-        <li><a href="ES220/drawings.html" title="ES220 结构图纸">结构图纸</a></li>
         </ul>
       </div>
     </div>
@@ -223,15 +191,6 @@ hide:
         <div class="pm-card__title">ES620</div>
         <ul class="pm-card__links">
         <li><a href="ES620/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/ES620%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="映翰通二层网管交换机ES620用户手册">用户手册 V1.0</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="pm-card">
-      <div class="pm-card__body">
-        <div class="pm-card__title">FWA02</div>
-        <ul class="pm-card__links">
-        <li><a href="FWA02/certifications.html" title="FWA02 认证证书">认证证书</a></li>
-        <li><a href="FWA02/drawings.html" title="FWA02 结构图纸">结构图纸</a></li>
         </ul>
       </div>
     </div>
@@ -295,8 +254,6 @@ hide:
       <div class="pm-card__body">
         <div class="pm-card__title">IR302</div>
         <ul class="pm-card__links">
-        <li><a href="IR302/certifications.html" title="IR302 认证证书">认证证书</a></li>
-        <li><a href="IR302/drawings.html" title="IR302 结构图纸">结构图纸</a></li>
         <li><a href="IR302/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/IR302%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="北京映翰通工业路由器IR302系列产品用户手册">用户手册 V1.0</a></li>
         <li><a href="IR302/Use%20Cases/%E5%8C%BB%E7%96%97%E8%AE%BE%E5%A4%87%E8%81%94%E7%BD%91%E6%A1%88%E4%BE%8B/%E6%96%B9%E6%A1%88%E6%89%8B%E5%86%8C.html" title="医疗设备联网解决方案">医疗设备联网解决方案</a></li>
         <li><a href="IR302/Use%20Cases/%E5%8C%BB%E7%96%97%E8%AE%BE%E5%A4%87%E8%81%94%E7%BD%91%E6%A1%88%E4%BE%8B/%E9%85%8D%E7%BD%AE%E6%89%8B%E5%86%8C.html" title="医疗设备联网案例配置指导手册">医疗设备联网案例配置指导手册</a></li>
@@ -311,8 +268,6 @@ hide:
       <div class="pm-card__body">
         <div class="pm-card__title">IR305</div>
         <ul class="pm-card__links">
-        <li><a href="IR305/certifications.html" title="IR305 认证证书">认证证书</a></li>
-        <li><a href="IR305/drawings.html" title="IR305 结构图纸">结构图纸</a></li>
         <li><a href="IR305/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/IR305%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="北京映翰通工业路由器IR305系列产品用户手册">用户手册 V1.0</a></li>
         </ul>
       </div>
@@ -321,8 +276,6 @@ hide:
       <div class="pm-card__body">
         <div class="pm-card__title">IR315</div>
         <ul class="pm-card__links">
-        <li><a href="IR315/certifications.html" title="IR315 认证证书">认证证书</a></li>
-        <li><a href="IR315/drawings.html" title="IR315 结构图纸">结构图纸</a></li>
         <li><a href="IR315/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/IR315%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="北京映翰通工业路由器IR315系列产品用户手册">用户手册 V1.0</a></li>
         <li><a href="IR315/Use%20Cases/4G5G%E9%A9%BE%E8%80%83%E7%BB%84%E7%BD%91%E6%A1%88%E4%BE%8B/%E6%A1%88%E4%BE%8B%E6%89%8B%E5%86%8C.html" title="驾考科目三4G/5G组网方案">驾考科目三4G/5G组网方案</a></li>
         <li><a href="IR315/Use%20Cases/4G5G%E9%A9%BE%E8%80%83%E7%BB%84%E7%BD%91%E6%A1%88%E4%BE%8B/%E9%A9%BE%E8%80%83%E8%81%94%E7%BD%91%E9%85%8D%E7%BD%AE%E6%89%8B%E5%86%8C.html" title="驾考联网路由器配置手册">驾考联网路由器配置手册</a></li>
@@ -335,8 +288,6 @@ hide:
       <div class="pm-card__body">
         <div class="pm-card__title">IR624</div>
         <ul class="pm-card__links">
-        <li><a href="IR624/certifications.html" title="IR624 认证证书">认证证书</a></li>
-        <li><a href="IR624/drawings.html" title="IR624 结构图纸">结构图纸</a></li>
         <li><a href="IR624/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/IR624%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="北京映翰通工业路由器IR624产品系列用户手册">用户手册 V1.0</a></li>
         </ul>
       </div>
@@ -353,7 +304,6 @@ hide:
       <div class="pm-card__body">
         <div class="pm-card__title">IR925</div>
         <ul class="pm-card__links">
-        <li><a href="IR925/drawings.html" title="IR925 结构图纸">结构图纸</a></li>
         <li><a href="IR925/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/IR925%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="北京映翰通工业路由器IR925产品系列用户手册">用户手册 V1.0</a></li>
         </ul>
       </div>
@@ -398,8 +348,6 @@ hide:
       <div class="pm-card__body">
         <div class="pm-card__title">ODU2002</div>
         <ul class="pm-card__links">
-        <li><a href="ODU2002/certifications.html" title="ODU2002 认证证书">认证证书</a></li>
-        <li><a href="ODU2002/drawings.html" title="ODU2002 结构图纸">结构图纸</a></li>
         <li><a href="ODU2002/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/ODU2002%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="5G室外单元ODU2002用户手册">用户手册 V1.0</a></li>
         </ul>
       </div>
@@ -418,7 +366,6 @@ hide:
       <div class="pm-card__body">
         <div class="pm-card__title">VG814</div>
         <ul class="pm-card__links">
-        <li><a href="VG814/certifications.html" title="VG814 认证证书">认证证书</a></li>
         <li><a href="VG814/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/VG814%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="InHand VG814 用户手册 V1.0">用户手册 V1.0</a></li>
         </ul>
       </div>

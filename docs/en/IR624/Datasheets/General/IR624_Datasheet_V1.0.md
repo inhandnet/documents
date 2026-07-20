@@ -45,7 +45,7 @@
 |------|---------------|
 | Cellular Network | 5G NR SA/NSA or LTE fallback (model-dependent), with dual SIM support |
 | Wi-Fi (Optional) | Dual-band 2.4G/5G, IEEE 802.11 ac/a/b/g/n Wave2 MU-MIMO, up to 300/867 Mbps |
-| Security Stack | Firewall, policy-based routing, 802.1X access control, IPSec VPN, L2TP VPN |
+| Security Stack | Firewall, policy-based routing, 802.1X access control, IPSec VPN, L2TP VPN, OpenVPN, WireGuard VPN |
 | Reliability | Interface backup, dual SIM failover, heartbeat link detection, embedded watchdog |
 | Cloud Management | DeviceLive platform for batch management and remote O&M |
 | DTU and Data Interoperability | TCP/UDP transparent mode, Modbus RTU-to-TCP bridge |
@@ -136,7 +136,7 @@
 | NAT Functions | NAT, port mapping |
 | <span style="color: green;">**Security**</span> |  |
 | Network Security | Access control, firewall filtering (MAC/IP/port/protocol), policy-based routing, 802.1X |
-| Data Security | IPsec VPN, L2TP VPN |
+| Data Security | IPsec VPN, L2TP VPN, OpenVPN, WireGuard VPN |
 | CA Certificates | Not specified |
 | <span style="color: green;">**Reliability**</span> |  |
 | Link Detection | Heartbeat link detection with auto-redial |

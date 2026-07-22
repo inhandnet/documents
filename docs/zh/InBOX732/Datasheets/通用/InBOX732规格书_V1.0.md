@@ -144,12 +144,21 @@
 
 ## <span style="color: green;">产品型号</span>
 
-| 型号              | 国家   | \<WMNN\>: Cellular Networks                                                                                                                                                                                            | \<STD/PLAT/L\>: OS | \<A\> | \<S\>: Serial port type |
-| --------------- | ---- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ |:-----:|:-----------------------:|
-| InBOX732-DQ20-L | 中国   | LTE-FDD: B1/B3/B5/B8<br/>LTE-TDD: B34/B38/B39/B40/B41<br/>WCDMA: B1/B8<br/>TD-SCDMA: B34/B39<br/>CDMA/EVDO: BC0<br/>GSM/EDGE: 900/1800 MHz                                                                             | Debian             | —     | —                       |
-| InBOX732-FQ58-L | EMEA | LTE-FDD: B1/B3/B7/B8/B20/B28A<br/>WCDMA: B1/B8<br/>GSM/EDGE: B3/B8                                                                                                                                                     | Debian             | —     | —                       |
-| InBOX732-FQ39-L | 北美   | LTE-FDD: B2/B4/B5/B7/B12/B13/B25/B26/B29/B30/B66 2×CA<br/>B2+B2/B5/B12/B13/B29; B4+B4/B5/B12/B13/B29;<br/>B7+B5/B7/B12/B26;<br/>B25+B5/B12/B25/B26;<br/>B30+B5/B12/B29;<br/>B66+B5/B12/B13/B29/B66<br/>WCDMA: B2/B4/B5 | Debian             | —     | —                       |
-| InBOX732-EN00-L | —    | —                                                                                                                                                                                                                      | Debian             | —     | —                       |
+<table style="width:100%; table-layout:fixed; font-size:11px;">
+  <colgroup>
+    <col style="width:20%;">
+    <col style="width:9%;">
+    <col style="width:40%;">
+    <col style="width:17%;">
+    <col style="width:7%;">
+    <col style="width:7%;">
+  </colgroup>
+  <tr><th>型号</th><th>国家</th><th>&lt;WMNN&gt;: Cellular Networks</th><th>&lt;STD/PLAT/L&gt;</th><th>&lt;A&gt;</th><th>&lt;S&gt;</th></tr>
+  <tr><td style="white-space: nowrap;">InBOX732-DQ20-L</td><td>中国</td><td>LTE-FDD: B1/B3/B5/B8<br/>LTE-TDD: B34/B38/B39/B40/B41<br/>WCDMA: B1/B8<br/>TD-SCDMA: B34/B39<br/>CDMA/EVDO: BC0<br/>GSM/EDGE: 900/1800 MHz</td><td>Debian</td><td>—</td><td>—</td></tr>
+  <tr><td style="white-space: nowrap;">InBOX732-FQ58-L</td><td>EMEA</td><td>LTE-FDD: B1/B3/B7/B8/B20/B28A<br/>WCDMA: B1/B8<br/>GSM/EDGE: B3/B8</td><td>Debian</td><td>—</td><td>—</td></tr>
+  <tr><td style="white-space: nowrap;">InBOX732-FQ39-L</td><td>北美</td><td>LTE-FDD: B2/B4/B5/B7/B12/B13/B25/B26/B29/B30/B66 2×CA<br/>B2+B2/B5/B12/B13/B29; B4+B4/B5/B12/B13/B29;<br/>B7+B5/B7/B12/B26;<br/>B25+B5/B12/B25/B26;<br/>B30+B5/B12/B29;<br/>B66+B5/B12/B13/B29/B66<br/>WCDMA: B2/B4/B5</td><td>Debian</td><td>—</td><td>—</td></tr>
+  <tr><td style="white-space: nowrap;">InBOX732-EN00-L</td><td>—</td><td>—</td><td>Debian</td><td>—</td><td>—</td></tr>
+</table>
 
 # <span style="color: green;">6. 联系我们</span>
 

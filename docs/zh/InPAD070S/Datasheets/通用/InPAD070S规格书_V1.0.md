@@ -148,12 +148,21 @@
 
 ## <span style="color: green;">产品型号</span>
 
-| 型号                      | 区域   | \<WMNN\>: Cellular Networks                                                                                                                                                                                            | \<STD/PLAT/L\>: OS | \<A\> | \<S\>: Serial port type |
-| ----------------------- | ---- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ |:-----:|:-----------------------:|
-| InPAD070S-DQ20-STD/PLAT | 中国   | LTE-FDD: B1/B3/B5/B8<br/>LTE-TDD: B34/B38/B39/B40/B41<br/>WCDMA: B1/B8<br/>TD-SCDMA: B34/B39<br/>CDMA/EVDO: BC0<br/>GSM/EDGE: 900/1800 MHz                                                                             | STD/PLAT           | —     | —                       |
-| InPAD070S-FQ58-STD/PLAT | EMEA | LTE-FDD: B1/B3/B7/B8/B20/B28A<br/>WCDMA: B1/B8<br/>GSM/EDGE: B3/B8                                                                                                                                                     | STD/PLAT           | —     | —                       |
-| InPAD070S-FQ39-STD/PLAT | 北美   | LTE-FDD: B2/B4/B5/B7/B12/B13/B25/B26/B29/B30/B66 2×CA<br/>B2+B2/B5/B12/B13/B29; B4+B4/B5/B12/B13/B29;<br/>B7+B5/B7/B12/B26;<br/>B25+B5/B12/B25/B26;<br/>B30+B5/B12/B29;<br/>B66+B5/B12/B13/B29/B66<br/>WCDMA: B2/B4/B5 | STD/PLAT           | —     | —                       |
-| InPAD070S-EN00-STD/PLAT | —    | —                                                                                                                                                                                                                      | STD/PLAT           | —     | —                       |
+<table style="width:100%; table-layout:fixed; font-size:11px;">
+  <colgroup>
+    <col style="width:28%;">
+    <col style="width:10%;">
+    <col style="width:34%;">
+    <col style="width:16%;">
+    <col style="width:6%;">
+    <col style="width:6%;">
+  </colgroup>
+  <tr><th>型号</th><th>区域</th><th>&lt;WMNN&gt;: Cellular Networks</th><th>&lt;STD/PLAT/L&gt;</th><th>&lt;A&gt;</th><th>&lt;S&gt;</th></tr>
+  <tr><td style="white-space: nowrap;">InPAD070S-DQ20-STD/PLAT</td><td>中国</td><td>LTE-FDD: B1/B3/B5/B8<br/>LTE-TDD: B34/B38/B39/B40/B41<br/>WCDMA: B1/B8<br/>TD-SCDMA: B34/B39<br/>CDMA/EVDO: BC0<br/>GSM/EDGE: 900/1800 MHz</td><td>STD/PLAT</td><td>—</td><td>—</td></tr>
+  <tr><td style="white-space: nowrap;">InPAD070S-FQ58-STD/PLAT</td><td>EMEA</td><td>LTE-FDD: B1/B3/B7/B8/B20/B28A<br/>WCDMA: B1/B8<br/>GSM/EDGE: B3/B8</td><td>STD/PLAT</td><td>—</td><td>—</td></tr>
+  <tr><td style="white-space: nowrap;">InPAD070S-FQ39-STD/PLAT</td><td>北美</td><td>LTE-FDD: B2/B4/B5/B7/B12/B13/B25/B26/B29/B30/B66 2×CA<br/>B2+B2/B5/B12/B13/B29; B4+B4/B5/B12/B13/B29;<br/>B7+B5/B7/B12/B26;<br/>B25+B5/B12/B25/B26;<br/>B30+B5/B12/B29;<br/>B66+B5/B12/B13/B29/B66<br/>WCDMA: B2/B4/B5</td><td>STD/PLAT</td><td>—</td><td>—</td></tr>
+  <tr><td style="white-space: nowrap;">InPAD070S-EN00-STD/PLAT</td><td>—</td><td>—</td><td>STD/PLAT</td><td>—</td><td>—</td></tr>
+</table>
 
 # <span style="color: green;">6. 联系我们</span>
 

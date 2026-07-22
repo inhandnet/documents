@@ -45,9 +45,9 @@
 | Type | Layer 2 unmanaged, plug-and-play |
 | Ports | 2×SFP + 4×Gigabit RJ45 (IEEE 802.3af/at PoE, up to 30 W per port) |
 | Switching | Store-and-forward, 20 Gbps backplane, 4K MAC |
-| Dimensions / Weight | 52 × 140 × 110 mm (W × D × H), 0.7 kg |
+| Dimensions / Weight | 52 × 140 × 110 mm (W × D × H), 0.7 kg (1.54 lb) |
 | Power | Redundant dual inputs: 48–54 VDC |
-| Environment | −40 °C \~ +75 °C; IP30 |
+| Environment | -40 °C ~ +75 °C (-40 °F ~ +167 °F); IP30 |
 | EMC | IEC 61000-4-x, Class 3–5 |
 | Certifications | CE, FCC; MTBF 35 years; 5-year warranty |
 
@@ -60,7 +60,7 @@
   </div>
   <div style="width: 100%;">
     <div>Note:</div>
-    <div>1. All dimensions are in millimeters (mm).</div>
+    <div>1. All dimensions are in millimeters (mm), with inches (in) in parentheses.</div>
     <div>2. All dimensions are approximate and <span style="font-weight: bold;">for reference only</span>.</div>
     <div>3. The dimensions shown in the figure <span style="font-weight: bold;">shall not be used for production or processing</span>.</div>
     <div>4. Dimensions must comply with part and manufacturing tolerance requirements.</div>
@@ -78,18 +78,18 @@
 | <span style="color: green;">**Physical Performance**</span> | |
 | Enclosure | Fully enclosed seamless metal enclosure |
 | Dimensions (W × D × H) | 52 mm × 140 mm × 110 mm |
-| Weight | 0.7 kg |
+| Weight | 0.7 kg (1.54 lb) |
 | Mounting Method | DIN-rail mounting |
 | Protection Grade | IP30 |
 | Cooling Method | Fanless cooling |
-| Storage Temperature | -40 °C \~ +85 °C |
-| Operating Temperature | -40 °C \~ +75 °C |
+| Storage Temperature | -40 °C ~ +85 °C (-40 °F ~ +185 °F) |
+| Operating Temperature | -40 °C ~ +75 °C (-40 °F ~ +167 °F) |
 | Humidity | 5 \~ 95% (non-condensing) |
 | <span style="color: green;">**Hardware Performance**</span> | |
 | Backplane Bandwidth| 20 Gbps |
 | Processing Type | Store-and-Forward |
 | MAC Table Size | 4K |
-| Packet Buffer Size | 1.5 Mbits |
+| Packet Buffer Size | 2 Mbits |
 | Exchange Rate | 148,800 pps / 100M ports; 1,488,000 pps / 1000M ports |
 | <span style="color: green;">**Power Parameters**</span> | |
 | Operating Voltage | 48-54 VDC, Redundant dual inputs |
@@ -110,7 +110,7 @@ table:last-of-type td:first-child { white-space: nowrap; max-width: none; }
 
 | Model | Description |
 |-------|--------|
-| ISE5306D-P-2GSFP-4GT-48 | Layer 2 unmanaged Industrial Switch. 2 *100/ 1000BaseX SFP Ports (SFP module not included), 4* 802.3af/at PoE 10/100/1000 BaseT Ports. IP30 Protection Class, Operating Temperature from -40°C to +75°C. Isolated Dual 48-54VDC Power Inputs.|
+| ISE5306D-P-2GSFP-4GT-48 | Layer 2 unmanaged Industrial Switch. 2 *100/ 1000BaseX SFP Ports (SFP module not included), 4* 802.3af/at PoE 10/100/1000 BaseT Ports. IP30 Protection Class, Operating Temperature from -40 °C to +75 °C (-40 °F to +167 °F). Isolated Dual 48-54VDC Power Inputs.|
 
 # <span style="color: green;">5. Contact Us</span>
 

@@ -44,10 +44,10 @@
 |-----------|---------------|
 | Type | Layer 2 Unmanaged Industrial Ethernet Switch |
 | Ports | 1 x Fixed Fiber (SC) + 2 x 10/100BaseT |
-| Switching Performance | 16 Gbps backplane, Store-and-Forward, 4K MAC |
-| Dimensions / Weight | 24 x 100 x 61.8 mm / 0.23 kg |
+| Switching Performance | 1.6 Gbps backplane, Store-and-Forward, 1K MAC |
+| Dimensions / Weight | 24 × 100 × 61.8 mm (0.94 × 3.94 × 2.43 in) / 0.23 kg (0.51 lb) |
 | Power | 9.6-60 VDC & 18-30 VAC, 5 W |
-| Environment | -40 to +75 C operating, IP30 |
+| Environment | -40 °C ~ +75 °C (-40 °F ~ +167 °F) operating, IP30 |
 | EMC | IEC 61000-4-2/3/4/5/6/18 Class 3, IEC 61000-4-8 Class 5 |
 | Certifications | CE, FCC, UL (ISE2003D-P-S203-2T-SC-24) |
 
@@ -60,7 +60,7 @@
   </div>
   <div style="width: 100%;">
     <div>Note:</div>
-    <div>1. All dimensions are in millimeters (mm).</div>
+    <div>1. All dimensions are in millimeters (mm), with inches (in) in parentheses.</div>
     <div>2. All dimensions are approximate and <span style="font-weight: bold;">for reference only</span>.</div>
     <div>3. The dimensions shown in the figure <span style="font-weight: bold;">shall not be used for production or processing</span>.</div>
     <div>4. Dimensions must comply with part and manufacturing tolerance requirements.</div>
@@ -79,18 +79,18 @@
 | <span style="color: green;">**Physical Performance**</span> | |
 | Enclosure | Fully enclosed seamless metal enclosure |
 | Dimensions (W × D × H) | 24 mm × 100 mm × 61.8 mm |
-| Weight | 0.23 kg |
+| Weight | 0.23 kg (0.51 lb) |
 | Mounting Method | DIN-rail mounting |
 | Cooling Method | Fanless cooling |
 | Protection Grade | IP30 |
-| Storage Temperature | -40 °C \~ +85 °C |
-| Operating Temperature | -40 °C \~ +75 °C |
+| Storage Temperature | -40 °C ~ +85 °C (-40 °F ~ +185 °F) |
+| Operating Temperature | -40 °C ~ +75 °C (-40 °F ~ +167 °F) |
 | Humidity | 5 \~ 95% (non-condensing) |
 | <span style="color: green;">**Hardware Performance**</span> | |
-| Backplane Bandwidth | 16 Gbps |
+| Backplane Bandwidth | 1.6 Gbps |
 | Processing Type | Store-and-Forward |
-| MAC Table Size | 4K |
-| Packet Buffer Size | 1.5 Mbits |
+| MAC Table Size | 1K |
+| Packet Buffer Size | 448 Kbit |
 | Switching Delay | <10 μs |
 | DIP Switch | Quality of Service (QoS), Broadcast Storm Protection (BSP) |
 | <span style="color: green;">**Power Parameters**</span> | |
@@ -118,8 +118,8 @@ table:last-of-type td:first-child { white-space: nowrap; max-width: none; }
 
 | Model | Description |
 |-------|--------|
-| ISE2003D-P-S203-2T-SC-24 | 3-port Layer 2 unmanaged Industrial Ethernet. 1 × Fixed Fiber Port (MultiMode, 5KM, SC), and 2 × 10/100 BaseT Ports. IP30 Protection Class, Operating Temperature from -40°C to +75°C. Single power input: 12/24/48 VDC (9.6\~60VDC) or 24 VAC (18\~30 VAC) (Only connect to class 2 power supply). |
-| ISE2003D-P-M3-2T-SC-24 | 3-port Layer 2 unmanaged Industrial Ethernet. 1 × Fixed Fiber Port (SingleMode, 20KM, SC), and 2 × 10/100 BaseT Ports. IP30 Protection Class, Operating Temperature from -40°C to +75°C. Single power input: 12/24/48 VDC (9.6\~60VDC) or 24 VAC (18\~30 VAC) (Only connect to class 2 power supply). |
+| ISE2003D-P-S203-2T-SC-24 | 3-port Layer 2 unmanaged Industrial Ethernet. 1 × Fixed Fiber Port (MultiMode, 5KM, SC), and 2 × 10/100 BaseT Ports. IP30 Protection Class, Operating Temperature from -40 °C to +75 °C (-40 °F to +167 °F). Single power input: 12/24/48 VDC (9.6\~60VDC) or 24 VAC (18\~30 VAC) (Only connect to class 2 power supply). |
+| ISE2003D-P-M3-2T-SC-24 | 3-port Layer 2 unmanaged Industrial Ethernet. 1 × Fixed Fiber Port (SingleMode, 20KM, SC), and 2 × 10/100 BaseT Ports. IP30 Protection Class, Operating Temperature from -40 °C to +75 °C (-40 °F to +167 °F). Single power input: 12/24/48 VDC (9.6\~60VDC) or 24 VAC (18\~30 VAC) (Only connect to class 2 power supply). |
 
 # <span style="color: green;">5. Contact Us</span>
 

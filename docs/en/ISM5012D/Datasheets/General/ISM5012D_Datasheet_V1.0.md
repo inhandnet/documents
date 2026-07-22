@@ -32,7 +32,7 @@
 
 **Product Features:**
 
-- **Reliability & Resilience:** Fanless design, IP40 protection rating, dust and dirt resistance, and wide temperature operation (-40°C to 85°C).
+- **Reliability & Resilience:** Fanless design, IP40 protection rating, dust and dirt resistance, and wide temperature operation (-40 °C ~ 85 °C (-40 °F ~ 185 °F)).
 - **Redundancy Protocols:** Supports STP/RSTP/MSTP ring redundancy protocols, offering flexible choices for intricate industrial networks.
 - **Network Management:** Supports SNMP for integrated network management and RMON for effective network monitoring and fault prediction.
 - **Enhanced Security & Control:** Port-based VLAN, IEEE 802.1Q VLAN, GVRP, IGMP Snooping, and QoS to process critical data.
@@ -44,10 +44,10 @@
 |-----------|---------------|
 | Type | Layer 2 Managed Industrial Ethernet Switch |
 | Ports | 4 x 100/1000BaseX SFP + 8 x 10/100/1000BaseT |
-| Switching Performance | 56 Gbps backplane bandwidth; 8K MAC table |
-| Dimensions / Weight | 72 mm x 140 mm x 110 mm; 1 kg |
+| Switching Performance | 55 Gbps backplane bandwidth; 8K MAC table |
+| Dimensions / Weight | 72 mm x 140 mm x 110 mm; 1 kg (2.2 lb) |
 | Power | 18\~60 VDC dual redundant input |
-| Environment | -40 to +85 °C operating; IP40 |
+| Environment | -40 °C ~ +85 °C (-40 °F ~ +185 °F) operating; IP40 |
 | EMC | FCC Part 15 Class A; IEC 61000-4-2/3/4/5/6/9 |
 | Management | Web, CLI, SNMPv1/v2c/v3, RMON; STP/RSTP/MSTP, IGMP Snooping, VLAN |
 | Certifications | CE, FCC, IEC61850-3 |
@@ -62,7 +62,7 @@
 </div>
   <div style="width: 100%;">
     <div>Note:</div>
-    <div>1. All dimensions are in millimeters (mm).</div>
+    <div>1. All dimensions are in millimeters (mm), with inches (in) in parentheses.</div>
     <div>2. All dimensions are approximate and <span style="font-weight: bold;">for reference only</span>.</div>
     <div>3. The dimensions shown in the figure <span style="font-weight: bold;">shall not be used for production or processing</span>.</div>
     <div>4. Dimensions must comply with part and manufacturing tolerance requirements.</div>
@@ -134,15 +134,15 @@
 | <span style="color: green;">**Physical Performance**</span> | |
 | Enclosure | Fully enclosed seamless metal enclosure |
 | Dimensions (W × D × H) | 72 mm × 140 mm × 110 mm |
-| Weight | 1 kg |
+| Weight | 1 kg (2.2 lb) |
 | Mounting Method | DIN-rail mounting |
 | Cooling Method | Fanless cooling |
 | Ingress Protection | IP40 |
-| Storage Temperature | -40 °C \~ +85 °C |
-| Operating Temperature | -40 °C \~ +85 °C |
+| Storage Temperature | -40 °C ~ +85 °C (-40 °F ~ +185 °F) |
+| Operating Temperature | -40 °C ~ +85 °C (-40 °F ~ +185 °F) |
 | Humidity | 5 \~ 95% (non-condensing) |
 | <span style="color: green;">**Hardware Performance**</span> | |
-| Backplane Bandwidth | 56 Gbps |
+| Backplane Bandwidth | 55 Gbps |
 | Transmission Mode | Parallel Storage Forwarding |
 | MAC Table Size | 8K |
 | Packet Buffer Size | 4 Mbits |

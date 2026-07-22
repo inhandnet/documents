@@ -32,7 +32,7 @@
 
 **Product Features:**
 
-- **Reliability & Resilience:** Fanless design, IP40 protection rating, robust metal casing, dust and dirt resistance, and wide temperature operation (-40°C to +85°C). Industrial-grade dual redundant high-voltage power supply design.
+- **Reliability & Resilience:** Fanless design, IP40 protection rating, robust metal casing, dust and dirt resistance, and wide temperature operation (-40 °C ~ +85 °C (-40 °F ~ +185 °F)). Industrial-grade dual redundant high-voltage power supply design.
 - **Redundancy Protocols:** Supports STP/RSTP/MSTP ring redundancy protocols offering flexible choices for constructing intricate communication systems. Includes data packet dropout protection and quick recovery.
 - **Network Management:** Supports SNMP for integrated network management and RMON for effective monitoring. Plug-and-play rack mounting allows for unified and quick deployment.
 - **Enhanced Security & Control:** QoS supported, including IEEE 802.1p/1Q and TOS/DiffServ, to process priorities and increase network determinism. Advanced IGMP Snooping, VLAN network segmentation, and bandwidth management to prevent unpredictable statuses.
@@ -43,10 +43,10 @@
 |-----------|---------------|
 | Type | Layer 2 Managed Industrial Ethernet Switch |
 | Ports | 20x 10/100/1000BaseT + 4x 100/1000Base(X/T) COMBO + 2x 100/1000BaseX SFP |
-| Switching Performance | 56 Gbps backplane bandwidth; 8K MAC table; 4 Mbit buffer |
-| Dimensions / Weight | 442 x 335 x 43.8 mm / 2.7 kg |
+| Switching Performance | 55 Gbps backplane bandwidth; 8K MAC table; 4 Mbit buffer |
+| Dimensions / Weight | 442 × 335 × 43.8 mm (17.4 × 13.19 × 1.72 in) / 2.7 kg (5.95 lb) |
 | Power | 100-240V AC dual-isolated inputs, overload and reverse polarity protection |
-| Environment | -40 to +85 °C operating; IP40; fanless |
+| Environment | -40 °C ~ +85 °C (-40 °F ~ +185 °F) operating; IP40; fanless |
 | Management | Web, CLI, SSH, HTTPS, Telnet, SNMPv1/v2c/v3, RMON |
 | Protocols | STP/RSTP/MSTP, IGMP Snooping, 4K VLANs, QoS (802.1p, DiffServ), Port Trunking |
 | EMC / Certifications | FCC Part 15 Class A; EN55022 Class A; IEC 61000-4 series; CE, FCC |
@@ -66,7 +66,7 @@
 
   <div style="width: 100%;">
     <div>Note:</div>
-    <div>1. All dimensions are in millimeters (mm).</div>
+    <div>1. All dimensions are in millimeters (mm), with inches (in) in parentheses.</div>
     <div>2. All dimensions are approximate and <span style="font-weight: bold;">for reference only</span>.</div>
     <div>3. The dimensions shown in the figure <span style="font-weight: bold;">shall not be used for production or processing</span>.</div>
     <div>4. Dimensions must comply with part and manufacturing tolerance requirements.</div>
@@ -143,15 +143,15 @@
 | <span style="color: green;">**Physical Performance**</span> | |
 | Enclosure | Fully enclosed seamless metal enclosure |
 | Dimensions (W × D × H) | 442 mm × 335 mm × 43.8 mm |
-| Weight | 2.7 kg |
+| Weight | 2.7 kg (5.95 lb) |
 | Mounting Method | Rack mounting |
 | Cooling Method | Fanless cooling |
 | Ingress Protection | IP40 |
-| Storage Temperature | -40 °C \~ +85 °C |
-| Operating Temperature | -40 °C \~ +85 °C |
+| Storage Temperature | -40 °C ~ +85 °C (-40 °F ~ +185 °F) |
+| Operating Temperature | -40 °C ~ +85 °C (-40 °F ~ +185 °F) |
 | Humidity | 5 \~ 95% (non-condensing) |
 | <span style="color: green;">**Hardware Performance**</span> | |
-| Backplane Bandwidth | 56 Gbps |
+| Backplane Bandwidth | 55 Gbps |
 | Transmission Mode | Parallel Storage Forwarding |
 | MAC Table Size | 8K |
 | Packet Buffer Size | 4 Mbits |
@@ -193,7 +193,7 @@ table:last-of-type td:first-child { white-space: nowrap; max-width: none; }
 
 | Model | Description |
 |-------|-------------|
-| ISM5026U-P-4GC-2GSFP-20GT-HV-HV | 26-port Layer 2 managed Industrial Switch. 20 *10/100/1000 BaseT Ports + 4* 100/1000 Base(X/T) COMBO Ports + 2 * 100/1000 BaseX SFP Ports (SFP module not included). 1 Management Serial CLI Port, 1 Alarm Relay Port. IP40 Protection Class, Operating Temperature from -40°C to +85°C. Dual Isolated 100-240V Power Inputs. |
+| ISM5026U-P-4GC-2GSFP-20GT-HV-HV | 26-port Layer 2 managed Industrial Switch. 20 *10/100/1000 BaseT Ports + 4* 100/1000 Base(X/T) COMBO Ports + 2 * 100/1000 BaseX SFP Ports (SFP module not included). 1 Management Serial CLI Port, 1 Alarm Relay Port. IP40 Protection Class, Operating Temperature from -40 °C to +85 °C (-40 °F to +185 °F). Dual Isolated 100-240V Power Inputs. |
 
 
 <div style="page-break-after: always;"></div>

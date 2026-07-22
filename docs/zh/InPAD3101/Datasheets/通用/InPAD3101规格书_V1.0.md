@@ -191,13 +191,22 @@
 
 ## <span style="color: green;">产品型号</span>
 
-| 型号                      | 区域       | \<WMNN\>: Cellular Networks                                                                                                                | \<STD/PLAT/L\>: 操作系统                | \<A\>: 天线 | \<S\>: 串口 |
-| ----------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------- |:---------:|:---------:|
-| InPAD3101-DQ20-STD/PLAT | 中国       | LTE-FDD: B1/B3/B5/B8<br/>LTE-TDD: B34/B38/B39/B40/B41<br/>WCDMA: B1/B8<br/>TD-SCDMA: B34/B39<br/>CDMA/EVDO: BC0<br/>GSM/EDGE: 900/1800 MHz | STD: Android<br/>PLAT: Android（平台版） | —         | —         |
-| InPAD3101-FQ58-STD/PLAT | 欧洲、中东、非洲 | LTE-FDD: B1/B3/B7/B8/B20/B28A<br/>WCDMA: B1/B8<br/>GSM/EDGE: B3/B8                                                                         | STD: Android<br/>PLAT: Android（平台版） | —         | —         |
-| InPAD3101-FQ39-STD/PLAT | 北美       | LTE-FDD: B2/B4/B5/B7/B12/B13/B25/B26/B29/B30/B66 2×CA<br/>WCDMA: B2/B4/B5                                                                  | STD: Android<br/>PLAT: Android（平台版） | —         | —         |
-| InPAD3101-EN00-STD/PLAT | —        | —                                                                                                                                          | STD: Android<br/>PLAT: Android（平台版） | —         | —         |
-| InPAD3101-FQ88-STD/PLAT | 日本       | LTE-FDD: B1/B3/B8/B18/B19/B26<br/>LTE-TDD: B41<br/>WCDMA: B1/B6/B8/B19                                                                     | STD: Android<br/>PLAT: Android（平台版） | —         | —         |
+<table style="width:100%; table-layout:fixed; font-size:11px;">
+  <colgroup>
+    <col style="width:28%;">
+    <col style="width:10%;">
+    <col style="width:36%;">
+    <col style="width:16%;">
+    <col style="width:5%;">
+    <col style="width:5%;">
+  </colgroup>
+  <tr><th>型号</th><th>区域</th><th>&lt;WMNN&gt;: Cellular Networks</th><th>&lt;STD/PLAT/L&gt;</th><th>&lt;A&gt;</th><th>&lt;S&gt;</th></tr>
+  <tr><td style="white-space: nowrap;">InPAD3101-DQ20-STD/PLAT</td><td>中国</td><td>LTE-FDD: B1/B3/B5/B8<br/>LTE-TDD: B34/B38/B39/B40/B41<br/>WCDMA: B1/B8<br/>TD-SCDMA: B34/B39<br/>CDMA/EVDO: BC0<br/>GSM/EDGE: 900/1800 MHz</td><td>STD: Android<br/>PLAT: Android（平台版）</td><td>—</td><td>—</td></tr>
+  <tr><td style="white-space: nowrap;">InPAD3101-FQ58-STD/PLAT</td><td>欧洲、中东、非洲</td><td>LTE-FDD: B1/B3/B7/B8/B20/B28A<br/>WCDMA: B1/B8<br/>GSM/EDGE: B3/B8</td><td>STD: Android<br/>PLAT: Android（平台版）</td><td>—</td><td>—</td></tr>
+  <tr><td style="white-space: nowrap;">InPAD3101-FQ39-STD/PLAT</td><td>北美</td><td>LTE-FDD: B2/B4/B5/B7/B12/B13/B25/B26/B29/B30/B66 2×CA<br/>WCDMA: B2/B4/B5</td><td>STD: Android<br/>PLAT: Android（平台版）</td><td>—</td><td>—</td></tr>
+  <tr><td style="white-space: nowrap;">InPAD3101-EN00-STD/PLAT</td><td>—</td><td>—</td><td>STD: Android<br/>PLAT: Android（平台版）</td><td>—</td><td>—</td></tr>
+  <tr><td style="white-space: nowrap;">InPAD3101-FQ88-STD/PLAT</td><td>日本</td><td>LTE-FDD: B1/B3/B8/B18/B19/B26<br/>LTE-TDD: B41<br/>WCDMA: B1/B6/B8/B19</td><td>STD: Android<br/>PLAT: Android（平台版）</td><td>—</td><td>—</td></tr>
+</table>
 
 # <span style="color: green;">6. 联系我们</span>
 

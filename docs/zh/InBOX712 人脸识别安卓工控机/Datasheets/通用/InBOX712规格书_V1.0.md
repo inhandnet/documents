@@ -146,14 +146,22 @@
 
 ## <span style="color: green;">产品型号</span>
 
-| 型号                     | 区域            | \<WMNN\>: 蜂窝网络                                                                                                                             | \<STD/PLAT\>: 版本 | \<S\>: 串口类型    |
-| ---------------------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ---------------- | -------------- |
-| InBOX712-DQ20-STD      | 中国            | LTE-FDD: B1/B3/B5/B8<br/>LTE-TDD: B34/B38/B39/B40/B41<br/>WCDMA: B1/B8<br/>TD-SCDMA: B34/B39<br/>CDMA/EVDO: BC0<br/>GSM/EDGE: 900/1800 MHz | STD: 安卓7.1       | NA: 普通版本       |
-| InBOX712-DQ20-PLAT     | 中国            | LTE-FDD: B1/B3/B5/B8<br/>LTE-TDD: B34/B38/B39/B40/B41<br/>WCDMA: B1/B8<br/>TD-SCDMA: B34/B39<br/>CDMA/EVDO: BC0<br/>GSM/EDGE: 900/1800 MHz | PLAT: 支持智能售货机平台  | NA: 普通版本       |
-| InBOX712-DQ20-STD-485  | 中国            | LTE-FDD: B1/B3/B5/B8<br/>LTE-TDD: B34/B38/B39/B40/B41<br/>WCDMA: B1/B8<br/>TD-SCDMA: B34/B39<br/>CDMA/EVDO: BC0<br/>GSM/EDGE: 900/1800 MHz | STD: 安卓7.1       | 485: RS485接口版本 |
-| InBOX712-DQ20-PLAT-485 | 中国            | LTE-FDD: B1/B3/B5/B8<br/>LTE-TDD: B34/B38/B39/B40/B41<br/>WCDMA: B1/B8<br/>TD-SCDMA: B34/B39<br/>CDMA/EVDO: BC0<br/>GSM/EDGE: 900/1800 MHz | PLAT: 支持智能售货机平台  | 485: RS485接口版本 |
-| InBOX712-DQ25-STD      | EMEA/韩国/泰国/印度 | LTE-FDD: B1/B3/B7/B8/B20/B28A<br/>WCDMA: B1/B8<br/>GSM/EDGE: B3/B8                                                                         | STD: 安卓7.1       | NA: 普通版本       |
-| InBOX712-DQ25-PLAT     | EMEA/韩国/泰国/印度 | LTE-FDD: B1/B3/B7/B8/B20/B28A<br/>WCDMA: B1/B8<br/>GSM/EDGE: B3/B8                                                                         | PLAT: 支持智能售货机平台  | NA: 普通版本       |
+<table style="width:100%; table-layout:fixed; font-size:11px;">
+  <colgroup>
+    <col style="width:26%;">
+    <col style="width:14%;">
+    <col style="width:34%;">
+    <col style="width:16%;">
+    <col style="width:10%;">
+  </colgroup>
+  <tr><th>型号</th><th>区域</th><th>&lt;WMNN&gt;: 蜂窝网络</th><th>&lt;STD/PLAT&gt;</th><th>&lt;S&gt;</th></tr>
+  <tr><td style="white-space: nowrap;">InBOX712-DQ20-STD</td><td>中国</td><td>LTE-FDD: B1/B3/B5/B8<br/>LTE-TDD: B34/B38/B39/B40/B41<br/>WCDMA: B1/B8<br/>TD-SCDMA: B34/B39<br/>CDMA/EVDO: BC0<br/>GSM/EDGE: 900/1800 MHz</td><td>STD: 安卓7.1</td><td>NA: 普通版本</td></tr>
+  <tr><td style="white-space: nowrap;">InBOX712-DQ20-PLAT</td><td>中国</td><td>LTE-FDD: B1/B3/B5/B8<br/>LTE-TDD: B34/B38/B39/B40/B41<br/>WCDMA: B1/B8<br/>TD-SCDMA: B34/B39<br/>CDMA/EVDO: BC0<br/>GSM/EDGE: 900/1800 MHz</td><td>PLAT: 支持智能售货机平台</td><td>NA: 普通版本</td></tr>
+  <tr><td style="white-space: nowrap;">InBOX712-DQ20-STD-485</td><td>中国</td><td>LTE-FDD: B1/B3/B5/B8<br/>LTE-TDD: B34/B38/B39/B40/B41<br/>WCDMA: B1/B8<br/>TD-SCDMA: B34/B39<br/>CDMA/EVDO: BC0<br/>GSM/EDGE: 900/1800 MHz</td><td>STD: 安卓7.1</td><td>485: RS485接口版本</td></tr>
+  <tr><td style="white-space: nowrap;">InBOX712-DQ20-PLAT-485</td><td>中国</td><td>LTE-FDD: B1/B3/B5/B8<br/>LTE-TDD: B34/B38/B39/B40/B41<br/>WCDMA: B1/B8<br/>TD-SCDMA: B34/B39<br/>CDMA/EVDO: BC0<br/>GSM/EDGE: 900/1800 MHz</td><td>PLAT: 支持智能售货机平台</td><td>485: RS485接口版本</td></tr>
+  <tr><td style="white-space: nowrap;">InBOX712-DQ25-STD</td><td>EMEA/韩国/泰国/印度</td><td>LTE-FDD: B1/B3/B7/B8/B20/B28A<br/>WCDMA: B1/B8<br/>GSM/EDGE: B3/B8</td><td>STD: 安卓7.1</td><td>NA: 普通版本</td></tr>
+  <tr><td style="white-space: nowrap;">InBOX712-DQ25-PLAT</td><td>EMEA/韩国/泰国/印度</td><td>LTE-FDD: B1/B3/B7/B8/B20/B28A<br/>WCDMA: B1/B8<br/>GSM/EDGE: B3/B8</td><td>PLAT: 支持智能售货机平台</td><td>NA: 普通版本</td></tr>
+</table>
 
 # <span style="color: green;">6. 联系我们</span>
 

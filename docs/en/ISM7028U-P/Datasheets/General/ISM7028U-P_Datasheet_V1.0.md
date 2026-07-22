@@ -32,7 +32,7 @@
 
 **Product Features:**
 
-- **Reliability & Resilience:** Fanless design, IP40 protection rating, robust metal casing, dust and dirt resistance, and wide temperature operation (-40°C to +85°C). Industrial-grade dual redundant high-voltage power supply design.
+- **Reliability & Resilience:** Fanless design, IP40 protection rating, robust metal casing, dust and dirt resistance, and wide temperature operation (-40 °C ~ +85 °C (-40 °F ~ +185 °F)). Industrial-grade dual redundant high-voltage power supply design.
 - **Redundancy Protocols:** Supports STP/RSTP/MSTP ring redundancy protocols offering flexible choices for constructing intricate communication systems. Any two ports can establish an independent self-recovery ring.
 - **Network Management:** Supports SNMP for integrated network management and RMON for effective monitoring. Allows unified and quick deployment in rack mount formats.
 - **Enhanced Security & Control:** Comprehensive linear industrial switch functions, offering high performance, data packet dropout protection, and intelligent features such as VLAN network segmentation and advanced multicast protection mechanisms.
@@ -43,10 +43,10 @@
 |-----------|---------------|
 | Type | Layer 3 Managed Industrial Ethernet Switch |
 | Ports | 16x 10/100/1000BaseT + 8x 100/1000Base(X/T) COMBO + 4x 1000/2500BaseX SFP |
-| Switching Performance | 144 Gbps backplane bandwidth; 16K MAC table; 1.5 Mbit buffer |
-| Dimensions / Weight | 440 x 321 x 44.4 mm / 4.1 kg |
+| Switching Performance | 128 Gbps backplane bandwidth; 16K MAC table; 12 Mbit buffer |
+| Dimensions / Weight | 440 × 321 × 44.4 mm (17.32 × 12.64 × 1.75 in) / 4.1 kg (9.04 lb) |
 | Power | 100-240V AC dual-isolated inputs |
-| Environment | -40 to +85 °C operating; IP40; fanless |
+| Environment | -40 °C ~ +85 °C (-40 °F ~ +185 °F) operating; IP40; fanless |
 | Management | Web, CLI, SNMPv1/v2c/v3, RMON |
 | Protocols | STP/RSTP/MSTP, IGMP Snooping, OSPF, VRRP, PIM-SM/DM, BGP, Port Trunking |
 | EMC / Certifications | FCC Part 15 Class A; EN55022 Class A; IEC 61000-4 series; IEC61850-3 |
@@ -61,7 +61,7 @@
 </div>
   <div style="width: 100%;">
     <div>Note:</div>
-    <div>1. All dimensions are in millimeters (mm).</div>
+    <div>1. All dimensions are in millimeters (mm), with inches (in) in parentheses.</div>
     <div>2. All dimensions are approximate and <span style="font-weight: bold;">for reference only</span>.</div>
     <div>3. The dimensions shown in the figure <span style="font-weight: bold;">shall not be used for production or processing</span>.</div>
     <div>4. Dimensions must comply with part and manufacturing tolerance requirements.</div>
@@ -142,18 +142,18 @@
 | <span style="color: green;">**Physical Performance**</span> | |
 | Enclosure | Fully enclosed seamless metal enclosure |
 | Dimensions (W × D × H) | 440 mm × 321 mm × 44.4 mm |
-| Weight | 4.1 kg |
+| Weight | 4.1 kg (9.04 lb) |
 | Mounting Method | Rack mounting |
 | Cooling Method | Fanless cooling |
 | Ingress Protection | IP40 |
-| Storage Temperature | -40 °C \~ +85 °C |
-| Operating Temperature | -40 °C \~ +85 °C |
+| Storage Temperature | -40 °C ~ +85 °C (-40 °F ~ +185 °F) |
+| Operating Temperature | -40 °C ~ +85 °C (-40 °F ~ +185 °F) |
 | Humidity | 5 \~ 95% (non-condensing) |
 | <span style="color: green;">**Hardware Performance**</span> | |
-| Backplane Bandwidth | 144 Gbps |
+| Backplane Bandwidth | 128 Gbps |
 | Transmission Mode | Parallel Storage Forwarding |
 | MAC Table Size | 16K |
-| Packet Buffer Size | 1.5 Mbits |
+| Packet Buffer Size | 12 Mbits |
 | Exchange Rate | 148,800 pps/100M ports; 1,488,000 pps/1000M ports |
 | <span style="color: green;">**Power Parameters**</span> | |
 | Input Voltage | 100-240V dual-isolated power inputs |

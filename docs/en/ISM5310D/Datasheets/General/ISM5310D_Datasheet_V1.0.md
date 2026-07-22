@@ -45,9 +45,9 @@
 | Type | Layer 2 Managed Industrial Ethernet Switch |
 | Ports | 2 x 100/1000/2500BaseX SFP + 8 x 10/100/1000BaseT PoE (802.3af/at) |
 | Switching Performance | 44 Gbps backplane bandwidth; 8K MAC table |
-| Dimensions / Weight | 52 mm x 140 mm x 110 mm; 0.7 kg |
+| Dimensions / Weight | 52 mm x 140 mm x 110 mm; 0.7 kg (1.54 lb) |
 | Power | 48\~57 VDC dual redundant input |
-| Environment | -40 to +75 °C operating; IP30 |
+| Environment | -40 °C ~ +75 °C (-40 °F ~ +167 °F) operating; IP30 |
 | Management | Web, CLI, SNMPv1/v2c/v3, RMON; STP/RSTP/MSTP, IGMP Snooping, VLAN |
 | Certifications | CE, FCC |
 
@@ -60,7 +60,7 @@
   </div>
   <div style="width: 100%;">
     <div>Note:</div>
-    <div>1. All dimensions are in millimeters (mm).</div>
+    <div>1. All dimensions are in millimeters (mm), with inches (in) in parentheses.</div>
     <div>2. All dimensions are approximate and <span style="font-weight: bold;">for reference only</span>.</div>
     <div>3. The dimensions shown in the figure <span style="font-weight: bold;">shall not be used for production or processing</span>.</div>
     <div>4. Dimensions must comply with part and manufacturing tolerance requirements.</div>
@@ -130,19 +130,19 @@
 | <span style="color: green;">**Physical Performance**</span> | |
 | Enclosure | Fully enclosed seamless metal enclosure |
 | Dimensions (W × D × H) | 52 mm × 140 mm × 110 mm |
-| Weight | 0.7 kg |
+| Weight | 0.7 kg (1.54 lb) |
 | Mounting Method | DIN-rail mounting |
 | Cooling Method | Fanless cooling |
 | Ingress Protection | IP30 |
-| Storage Temperature | -40 °C \~ +85 °C |
-| Operating Temperature | -40 °C \~ +75 °C |
+| Storage Temperature | -40 °C ~ +85 °C (-40 °F ~ +185 °F) |
+| Operating Temperature | -40 °C ~ +75 °C (-40 °F ~ +167 °F) |
 | Humidity | 5 \~ 95% (non-condensing) |
 | <span style="color: green;">**Hardware Performance**</span> | |
 | Backplane Bandwidth | 44 Gbps |
 | Transmission Mode | Parallel Storage Forwarding |
 | MAC Table Size | 8K |
 | RAM | 128 MB |
-| Packet Buffer Size | 1.5 Mbits |
+| Packet Buffer Size | 4 Mbits |
 | Exchange Rate | 148,800 pps/100M ports; 1,488,000 pps/1000M ports |
 | <span style="color: green;">**Power Parameters**</span> | |
 | Input Voltage | 48\~57 VDC dual redundant input |
@@ -184,7 +184,7 @@ table:last-of-type td:first-child { white-space: nowrap; max-width: none; }
 
 | Model | Description |
 |-------|-------------|
-| ISM5310D-P-2GSFP-8GT-48 | 10-port Layer2 managed Industrial Switch. 2 \* 100/1000/2500BaseX SFP Ports (SFP module not included), 8 \* 802.3af/at PoE 10/100/1000BaseT Ports. 1 Management Serial CLI Port, IP30 Protection Class, Operating Temperature from -40°C to +75°C. Dual 48-57VDC Power Inputs. |
+| ISM5310D-P-2GSFP-8GT-48 | 10-port Layer2 managed Industrial Switch. 2 \* 100/1000/2500BaseX SFP Ports (SFP module not included), 8 \* 802.3af/at PoE 10/100/1000BaseT Ports. 1 Management Serial CLI Port, IP30 Protection Class, Operating Temperature from -40 °C to +75 °C (-40 °F to +167 °F). Dual 48-57VDC Power Inputs. |
 
 # <span style="color: green;">6. Contact Us</span>
 

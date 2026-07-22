@@ -467,7 +467,6 @@ hide:
       <div class="pm-card__body">
         <div class="pm-card__title">VG710</div>
         <ul class="pm-card__links">
-        <li><a href="VG710/Manuals/User%20manual/InHandVG710SeriesUser%27sManualV1.4.html" title="InHand VG710 Series User&#x27;s Manual V1.4">User manual V1.4</a></li>
         <li><a href="VG710/Manuals/User%20manual/VG710_User%20manual_V1.0.html" title="InHand VG710 Series In-Vehicle Gateway User&#x27;s Manual">User manual V1.0</a></li>
         </ul>
       </div>
@@ -477,7 +476,6 @@ hide:
         <div class="pm-card__title">VG814</div>
         <ul class="pm-card__links">
         <li><a href="VG814/certifications.html" title="VG814 Certifications">Certifications</a></li>
-        <li><a href="VG814/Manuals/User%20manual/InHandVG814User%27sManualV1.2.html" title="InHand VG814 User Manual (Standard Edition) V1.2">User manual V1.2</a></li>
         <li><a href="VG814/Manuals/User%20manual/VG814_User%20manual_V1.0.html" title="InHand VG814 User Manual (Standard Edition) V1.2">User manual V1.0</a></li>
         </ul>
       </div>

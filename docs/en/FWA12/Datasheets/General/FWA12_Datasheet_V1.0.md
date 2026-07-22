@@ -173,9 +173,9 @@
 
 ## <span style="color: green;">Model Code</span>
 
-**Model code:** FWA12-\u003cWMNN\u003e
+**Model code:** FWA12-\WMNN\
 
-\u003cWMNN\u003e: Type & Module
+\WMNN\: Type & Module
 
 ## <span style="color: green;">Product Models</span>
 
@@ -187,6 +187,7 @@
   </colgroup>
   <tr><th>Model</th><th>Region</th><th>Specification</th></tr>
   <tr><td style="white-space: nowrap;">FWA12-NANR</td><td>North America</td><td>5G Sub-6: n2/5/7/12/13/14/25/26/29/30/38/41/48/66/70/71/77/78<br> LTE-FDD B2/4/5/7/12/13/14/17/25/26/29/30/66/71;<br> LTE-TDD B38/41/42/43/48</td></tr>
+  <tr><td style="white-space: nowrap;">FWA12-EUNR</td><td>Europe, APAC</td><td>5G Sub-6: n1/3/5/7/8/20/28/38/40/41/75/76/77/78<br> LTE: B1/3/5/7/8/20/28/32/38/40/41/42/43/46(LAA)<br> WCDMA: B1/5/8</td></tr>
 </table>
 
 

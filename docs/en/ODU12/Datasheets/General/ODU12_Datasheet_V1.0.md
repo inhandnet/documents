@@ -454,11 +454,18 @@ The ODU12 is powered by the InCloud Manager AI cloud management platform. Throug
 
 # <span style="color: green;">10. Ordering Information</span>
 
-## <span style="color: green;">10.1 Model Description</span>
+## <span style="color: green;">10.1 Product Models</span>
 
-| Model | Description | Target Market |
-| -------- | ------ | ---------------------- |
-| ODU12-NANR | North America Edition | North America (US, Canada, etc.) |
+<table style="width:100%; table-layout:fixed; font-size:11px;">
+  <colgroup>
+    <col style="width:18%;">
+    <col style="width:16%;">
+    <col style="width:66%;">
+  </colgroup>
+  <tr><th>Model</th><th>Region</th><th>Cellular Bands</th></tr>
+  <tr><td style="white-space: nowrap;">ODU12-NANR</td><td>North America</td><td>5G Sub-6: n2/5/7/12/13/14/25/26/29/30/38/41/48/66/70/71/77/78<br/>LTE: B2/4/5/7/12(B17)/13/14/25/26/29/30/38/41/42/43/46/48/66/70/71</td></tr>
+  <tr><td style="white-space: nowrap;">ODU12-EUNR</td><td>Europe, APAC</td><td>5G Sub-6: n1/3/5/7/8/20/28/38/40/41/75/76/77/78<br/>LTE: B1/3/5/7/8/20/28/32/38/40/41/42/43/46(LAA)<br/>WCDMA: B1/5/8</td></tr>
+</table>
 
 ## <span style="color: green;">10.2 Package Contents</span>
 
@@ -497,6 +504,10 @@ The ODU12 is powered by the InCloud Manager AI cloud management platform. Throug
 | **Mandatory** | FCC / IC / PTCRB |
 | **Carrier** | Verizon / AT&T / T-Mobile(coming soon) |
 | **Environmental** | RoHS / REACH |
+
+
+
+<div style="page-break-after: always;"></div>
 
 
 

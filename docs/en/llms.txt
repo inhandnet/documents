@@ -870,6 +870,7 @@
 ## ODU12
 
 - [ODU12 Datasheet v1.0](ODU12/Datasheets/General/ODU12_Datasheet_V1.0.md): ODU12 Datasheet v1.0 — Minimalist Design, Powerful Connectivity
+- [ODU12 Drawings](ODU12/drawings.md): ODU12 mechanical drawings (2D, 3D) with links to the original drawing files
 
 ## ODU2002
 

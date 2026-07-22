@@ -447,6 +447,14 @@ hide:
     </div>
     <div class="pm-card">
       <div class="pm-card__body">
+        <div class="pm-card__title">ODU12</div>
+        <ul class="pm-card__links">
+        <li><a href="ODU12/drawings.html" title="ODU12 Drawings">Drawings</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pm-card">
+      <div class="pm-card__body">
         <div class="pm-card__title">ODU2002</div>
         <ul class="pm-card__links">
         <li><a href="ODU2002/certifications.html" title="ODU2002 Certifications">Certifications</a></li>

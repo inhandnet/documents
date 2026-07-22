@@ -364,6 +364,7 @@
   - [Appendix: Safety Precautions](ER2000/Manuals/User%20manual/ER2000_User%20manual_V1.0.md#appendix-safety-precautions)
   - [FAQ](ER2000/Manuals/User%20manual/ER2000_User%20manual_V1.0.md#faq)
 - [ER2000 Datasheet v1.0](ER2000/Datasheets/General/ER2000_Datasheet_V1.0.md): ER2000 Datasheet v1.0 — Speed · Security · Stability · Simplicity
+- [ER2000 Datasheet v1.0](ER2000/Datasheets/General/images/ER2000_Datasheet_V1.0.md): ER2000 Datasheet v1.0 — Speed · Security · Stability · Simplicity
 
 ## ER605
 
@@ -943,9 +944,9 @@
   - [Diagnostic Tools](VG710/Manuals/User%20manual/InHandVG710SeriesUser%27sManualV1.4.md#diagnostic-tools)
   - [Chapter II Edge calculation](VG710/Manuals/User%20manual/InHandVG710SeriesUser%27sManualV1.4.md#chapter-ii-edge-calculation)
   - [Chapter III Accessories](VG710/Manuals/User%20manual/InHandVG710SeriesUser%27sManualV1.4.md#chapter-iii-accessories)
-- [VG710 4G Version v1.0](VG710/Datasheets/4G%20Version/VG710_Datasheet_V1.0.md): VG710 4G Version v1.0 — High-performance, Powerful, Programmable
-- [VG710 5G Version v1.0](VG710/Datasheets/5G%20Version/VG710_Datasheet_V1.0.md): VG710 5G Version v1.0 — High-performance, Powerful, Programmable
-- [VG710 Datasheet v1.0](VG710/Datasheets/General/VG710_Datasheet_V1.0.md): VG710 Datasheet v1.0 — High-performance, Powerful, Programmable
+- [VG710 4G Version v1.0](VG710/Datasheets/4G%20Version/VG710_4G_Datasheet_V1.0.md): VG710 4G Version v1.0 — High-performance, Powerful, Programmable
+- [VG710 5G Version v1.0](VG710/Datasheets/5G%20Version/VG710_5G_Datasheet_V1.0.md): VG710 5G Version v1.0 — High-performance, Powerful, Programmable
+- [VG710 Datasheet v1.0](VG710/Datasheets/General/VG710_M12_Datasheet_V1.0.md): VG710 Datasheet v1.0 — High-performance, Powerful, Programmable
 
 ## VG814
 

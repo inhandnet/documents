@@ -51,9 +51,9 @@
 | CPU                    | Octa-core, up to 2.7 GHz                    |
 | RAM / Storage          | 8 GB / 128 GB                               |
 | Ethernet               | 4 × 10/100 Mbps (PoE) + 2 × 10/100 Mbps     |
-| Dimensions (W × D × H) | 199 × 152 × 43 mm                           |
+| Dimensions (W × D × H) | 199 × 152 × 43 mm (7.83 × 5.98 × 1.69 in)                           |
 | Power Input            | 12 V DC                                     |
-| Operating Temperature  | -10 ~ 60 °C                                 |
+| Operating Temperature  | -10 °C ~ 60 °C (14 °F ~ 140 °F)                                 |
 
 # <span style="color: green;">2. Product Dimensions</span>
 
@@ -94,7 +94,7 @@
 
 <div style="text-align: left; margin-top: 16px;">
   <div>Note:</div>
-  <div>1. All dimensions are in millimeters (mm).</div>
+  <div>1. All dimensions are in millimeters (mm), with inches (in) in parentheses.</div>
   <div>2. All dimensions are approximate and <span style="font-weight: bold;">for reference only</span>.</div>
   <div>3. Illustrated dimensions <span style="font-weight: bold;">must not be used for production</span>.</div>
   <div>4. Dimensions are subject to component and manufacturing tolerances.</div>
@@ -109,9 +109,9 @@
 |:-------------------:|:--------:|:------------------------------------------ |
 | Ethernet            | 4        | 10/100 Mbps RJ45 with PoE (for IP cameras) |
 | Ethernet            | 2        | 10/100 Mbps RJ45                           |
-| SIM                 | 2        | Nano SIM Slot                              |
-| RS232               | 2        | DB9                                        |
-| RS485               | 2        | 15EDGRC-3.81 / HX25035-4WAP2               |
+| SIM                 | 2        | Nano-SIM Slot                              |
+| RS-232               | 2        | DB9                                        |
+| RS-485               | 2        | 15EDGRC-3.81 / HX25035-4WAP2               |
 | USB Type-A          | 2        | —                                          |
 | USB Type-C          | 1        | —                                          |
 | HDMI                | 1        | —                                          |
@@ -139,9 +139,9 @@
 | Storage                                                     | 128 GB                                                               |
 | OS                                                          | Android 12                                                           |
 | <span style="color: green;">**Interface**</span>            |                                                                      |
-| SIM                                                         | 2 × Nano SIM Slot                                                    |
+| SIM                                                         | 2 × Nano-SIM Slot                                                    |
 | Ethernet                                                    | 4 × 10/100 Mbps RJ45 (PoE for IP cameras) + 2 × 10/100 Mbps RJ45     |
-| Serial Port                                                 | 2 × RS232 (DB9), 1 × RS485 (15EDGRC-3.81), 1 × RS485 (HX25035-4WAP2) |
+| Serial Port                                                 | 2 × RS-232 (DB9), 1 × RS-485 (15EDGRC-3.81), 1 × RS-485 (HX25035-4WAP2) |
 | USB                                                         | 2 × Type-A, 1 × Type-C                                               |
 | HDMI                                                        | 1 × HDMI                                                             |
 | Lock Interface                                              | 2 × HX25035-7Y                                                       |
@@ -170,26 +170,26 @@
 | Protocol                                                    | ONVIF                                                                |
 | Power Input                                                 | 12 V DC                                                              |
 | Power Consumption                                           | ≤ 1.8 W                                                              |
-| Operating Temperature                                       | -10 ~ 50 °C                                                          |
+| Operating Temperature                                       | -10 °C ~ 50 °C (14 °F ~ 122 °F)                                                          |
 | <span style="color: green;">**Smart Lock**</span>           |                                                                      |
 | Working Voltage                                             | 12 V DC ± 10%                                                        |
 | Working Current                                             | Start 1.2 A, Steady 0.13 A                                           |
-| Panel Size                                                  | 190 × 25 × 3 mm                                                      |
-| Lock Dimensions                                             | 190 × 25 × 37 mm                                                     |
+| Panel Size                                                  | 190 × 25 × 3 mm (7.48 × 0.98 × 0.12 in)                                                      |
+| Lock Dimensions                                             | 190 × 25 × 37 mm (7.48 × 0.98 × 1.46 in)                                                     |
 | LED Indicator                                               | Green (unlock), Red (lock)                                           |
 | Mechanical Life                                             | ≥ 300,000 cycles, failure rate < 3%                                  |
 | <span style="color: green;">**Speaker**</span>              |                                                                      |
-| Dimensions                                                  | Φ100 × 45 mm                                                         |
-| Magnet                                                      | Φ12.5 × 4.0 mm Nd-Fe-B                                               |
+| Dimensions                                                  | Φ100 × 45 mm (3.94 × 1.77 in)                                                         |
+| Magnet                                                      | Φ12.5 × 4.0 mm (0.49 × 0.16 in) Nd-Fe-B                                               |
 | Nominal Power                                               | 3.0 W                                                                |
 | Max Power                                                   | 5.0 W                                                                |
 | <span style="color: green;">**Backup Battery**</span>       |                                                                      |
-| Dimensions                                                  | 70 × 57 × 20 mm                                                      |
+| Dimensions                                                  | 70 × 57 × 20 mm (2.76 × 2.24 × 0.79 in)                                                      |
 | Typical Capacity                                            | 2000 mAh                                                             |
 | Nominal Voltage                                             | 11.1 ~ 12.6 V                                                        |
 | Max Discharge Current                                       | 2 A                                                                  |
 | Cycle Life                                                  | ≥ 300 cycles @ 80% capacity retention                                |
-| Operating Temperature                                       | Charging: 0 ~ 45 °C, Discharging: -20 ~ 60 °C                        |
+| Operating Temperature                                       | Charging: 0 °C ~ 45 °C (32 °F ~ 113 °F), Discharging: -20 °C ~ 60 °C (-4 °F ~ 140 °F)                        |
 | Protection                                                  | Overcharge, overdischarge, overcurrent, short circuit                |
 | <span style="color: green;">**Mechanical**</span>           |                                                                      |
 | Dimensions (W × D × H)                                      | 199 × 152 × 43 mm (including installation parts)                     |
@@ -197,8 +197,8 @@
 | Cooling                                                     | Fanless                                                              |
 | Protection Rating                                           | IP40                                                                 |
 | <span style="color: green;">**Environmental**</span>        |                                                                      |
-| Operating Temperature                                       | -10 ~ 60 °C                                                          |
-| Storage Temperature                                         | -40 ~ 85 °C                                                          |
+| Operating Temperature                                       | -10 °C ~ 60 °C (14 °F ~ 140 °F)                                                          |
+| Storage Temperature                                         | -40 °C ~ 85 °C (-40 °F ~ 185 °F)                                                          |
 | Humidity                                                    | 5 ~ 95% (non-condensing)                                             |
 | <span style="color: green;">**Compliance**</span>           |                                                                      |
 | EMC                                                         | ESD / EFT / Surge: Level 2                                           |

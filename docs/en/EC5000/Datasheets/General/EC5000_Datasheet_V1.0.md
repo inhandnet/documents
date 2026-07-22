@@ -33,7 +33,7 @@
 **Key features:**
 - **NVIDIA AI platform:** Supports Jetson Orin Nano 8GB and Orin NX 16GB modules
 - **Rich industrial interfaces:** 2×GE, 2×serial, 6×USB3.2, HDMI, DI/DO, CAN FD, audio, GMSL2
-- **Flexible expansion:** M.2 B/E/M key slots, dual SIM, Micro SD, NVMe storage
+- **Flexible expansion:** M.2 B/E/M key slots, dual-SIM, microSD, NVMe storage
 - **Reliable operation:** Fanless metal design, watchdog, link self-healing, wide-voltage input
 - **Cloud-native operations:** DeviceLive remote management and DSA data integration
 
@@ -41,8 +41,8 @@
 
 | Technical Indicator | Specification |
 |------|---------------|
-| Cellular Network | 5G NR / LTE Cat6 (model-dependent) |
-| Network Features | Dual SIM backup, multi-level link detection, auto-redial |
+| Cellular Network | 5G NR / LTE Cat.6 (model-dependent) |
+| Network Features | Dual-SIM backup, multi-level link detection, auto-redial |
 | Security | TPM2.0, Secure Boot |
 | Cloud Management | DeviceLive cloud parameter, container, app, and firmware lifecycle management |
 | Data Acquisition | Modbus RTU/TCP, EtherNet/IP, OPC UA, DNP3.0, IEC 61850-MMS, BACnet, CNC |
@@ -50,7 +50,7 @@
 | AI Module | Jetson Orin Nano 8GB / Orin NX 16GB |
 | AI Performance | Up to 40 TOPS (EC5350) / 100 TOPS (EC5550) |
 | Interfaces | 2×GE, 2×RS-232/485/422, DI/DO, CAN FD, USB3.2, HDMI, audio, GMSL2 |
-| Storage | Built-in 128GB NVMe, Micro SD support |
+| Storage | Built-in 128GB NVMe, microSD support |
 | Power Input | 9~36V DC, polarity reversal protection |
 | Protection Rating | IP30 |
 
@@ -77,7 +77,7 @@
 
 <div style="margin-top: 12px;">
   <div style="width: 80%;">
-    <div>Note:</div><div>1. All dimensions are in millimeters (mm).</div><div>2. All dimensions are approximate and for reference only.</div><div>3. Dimensioned drawings are not intended for machining.</div><div>4. Dimensions are subject to part and manufacturing tolerances.</div><div>5. Specifications may change without prior notice.</div>
+    <div>Note:</div><div>1. All dimensions are in millimeters (mm), with inches (in) in parentheses.</div><div>2. All dimensions are approximate and for reference only.</div><div>3. Dimensioned drawings are not intended for machining.</div><div>4. Dimensions are subject to part and manufacturing tolerances.</div><div>5. Specifications may change without prior notice.</div>
   </div>
 </div>
 
@@ -96,7 +96,7 @@
 | RAM | 8GB (EC5350) / 16GB (EC5550) |
 | FLASH |  1 x M.2 NVMe M-Key 2280 (128GB built-in) |
 | <span style="color: green;">**Connectivity & Interfaces**</span> |  |
-| Ethernet Ports | 2×10/100/1000Mbps, PoE PSE 15W per port |
+| Ethernet Ports | 2×10/100/1000 Mbps, PoE PSE 15W per port |
 | I/O Ports | 4×DI + 4×DO |
 | Serial Ports | 2×RS-232/RS-485/RS-422 (DB9) |
 | CAN | 1×CAN FD |
@@ -104,13 +104,13 @@
 | SIM Card Holders | 2×standard SIM |
 | LED Indicators | 1×Power, 1×Status, 4×User |
 | USB | 6×USB3.2 Gen2 + 1×OTG Type-C |
-| TF (Micro SD) | Micro SD support |
+| microSD (microSD) | microSD support |
 | MIC | 3.5 mm microphone audio jack |
 | Audio | 3.5 mm type line-out |
 | GMSL | 2-channel GMSL2.0 (FAKRA) |
 | Expansion Interfaces | 1×M.2 B-Key (LTE/5G)<br/> 1×M.2 E-Key (Wi-Fi/BT)<br/>M.2 NVMe M-Key 2280 |
 | HDMI | 1×HDMI2.0 (up to 3840×2160@60Hz) |
-| WiFi | 802.11b/g/n/ac (RTL8822CE-CG) |
+| Wi-Fi | 802.11b/g/n/ac (RTL8822CE-CG) |
 | Bluetooth | BLE5.0 |
 | GPS | Supported (cellular module required) |
 | <span style="color: green;">**Power & Power Consumption**</span> |  |
@@ -119,14 +119,14 @@
 | Typical Value (OS Idle State) | 10W |
 | Maximum Value (Full Load) | 60W |
 | <span style="color: green;">**Mechanical Specifications**</span> |  |
-| Product Dimensions | 180×160×60 mm |
+| Product Dimensions | 180 × 160 × 60 mm (7.09 × 6.3 × 2.36 in) |
 | Mounting Method (Wall-mount Optional) | DIN-rail (default) / wall-mount |
 | Protection Rating | IP30 |
 | Enclosure & Heat Dissipation | Metal housing, fanless design |
 | TPM | TPM2.0 |
 | <span style="color: green;">**Environment & Certifications**</span> |  |
-| Storage Temperature | -40~85℃ |
-| Operating Temperature | -20~60℃ |
+| Storage Temperature | -40 °C ~ 85 °C (-40 °F ~ 185 °F) |
+| Operating Temperature | -20 °C ~ 60 °C (-4 °F ~ 140 °F) |
 | Environmental Humidity | 5~95% RH (non-condensing) |
 | Physical Characteristics | IEC60068-2-27 shock resistance<br>IEC60068-2-6 vibration resistance<br>IEC60068-2-32 drop resistance |
 | EMC Standard | EN61000-4-2, level 3, Static<br>EN61000-4-3, level 3, Radiation Electric Field<br>EN61000-4-4, level 3, Pulsed Electric Field<br>EN61000-4-5, level 3, Surge<br>EN61000-4-6, level 3, Conducted Disturbance Immunity<br>EN61000-4-8, Power Frequency Field Resistance, horizontal / vertical 400A/m (>level 2)<br>EN61000-4-12, level 3, Shock Wave Resistance |
@@ -138,14 +138,14 @@
 | <span style="color: green;">**Operating System**</span> |  |
 | Operating System | Linux (JetPack 5.1 and above) |
 | <span style="color: green;">**Network Features**</span> |  |
-| Network Access | 5G or LTE Cat6 (model-dependent), Ethernet |
-| Network Standards | 5G, LTE Cat6 (different models for different networks) |
+| Network Access | 5G or LTE Cat.6 (model-dependent), Ethernet |
+| Network Standards | 5G, LTE Cat.6 (different models for different networks) |
 | <span style="color: green;">**Security**</span> |  |
 | Secure Boot | Supported |
 | <span style="color: green;">**Reliability**</span> |  |
 | Link Detection | Multi-level link detection with auto-redial |
 | Built-in Watchdog | Embedded watchdog self-recovery |
-| Dual SIM Switchover | Supported |
+| Dual-SIM Switchover | Supported |
 | <span style="color: green;">**Data Acquisition Protocols (DSA)**</span> |  |
 | Industrial Protocols | Modbus RTU Master/Slave, Modbus TCP Master/Slave, EtherNet/IP, ISO on TCP, OPC UA Client/Server, Mitsubishi MC 3C/3E/3C OverTCP, Mitsubishi CPU Port, FINSUDP, HostLink, PPI |
 | Power Protocols | DLT645-2007, IEC101/104, DNP3.0, IEC 61850-MMS |
@@ -170,20 +170,20 @@
 
 <table style="width:100%; table-layout:fixed; font-size:10px;">
   <colgroup>
-    <col style="width:12%;">
     <col style="width:14%;">
-    <col style="width:33%;">
+    <col style="width:14%;">
+    <col style="width:31%;">
     <col style="width:17%;">
     <col style="width:16%;">
     <col style="width:8%;">
   </colgroup>
   <tr><th>Model</th><th>NVIDIA Module</th><th>Cellular Bands</th><th>Memory/Storage</th><th>Ethernet/Serial</th><th>GPS</th></tr>
-  <tr><td style="white-space: nowrap;">EC5550-NRQ3</td><td>Orin NX 16GB</td><td>5G NR NSA/SA: n1/n2/n3/n5/n7/n8/n12/n20/n25/n28/n38/n40/n41/n48/n66/n71/n77/n78/n79<br/>LTE FDD: B1/B2/B3/B5/B7/B8/B12(B17)/B13/B14/B18/B19/B20/B25/B26/B28/B29/B30/B32/B66/B71<br/>LTE TDD: B34/B38/B39/B40/B41/B42/B48<br/>LAA: B46<br/>WCDMA: B1/B2/B3/B4/B5/B6/B8/B19</td><td>16GB/128GB</td><td>2×1000Mbps; 2×RS232/RS485/RS422 configurable</td><td>YES</td></tr>
-  <tr><td style="white-space: nowrap;">EC5350-NRQ3</td><td>Orin Nano 8GB</td><td>5G NR NSA/SA: n1/n2/n3/n5/n7/n8/n12/n20/n25/n28/n38/n40/n41/n48/n66/n71/n77/n78/n79<br/>LTE FDD: B1/B2/B3/B5/B7/B8/B12(B17)/B13/B14/B18/B19/B20/B25/B26/B28/B29/B30/B32/B66/B71<br/>LTE TDD: B34/B38/B39/B40/B41/B42/B48<br/>LAA: B46<br/>WCDMA: B1/B2/B3/B4/B5/B6/B8/B19</td><td>8GB/128GB</td><td>2×1000Mbps; 2×RS232/RS485/RS422 configurable</td><td>YES</td></tr>
-  <tr><td style="white-space: nowrap;">EC5550-FQ09</td><td>Orin NX 16GB</td><td>4G CAT6<br/>LTE FDD: B1/B2/B3/B4/B5/B7/B8/B12/B13/B14/B17/B18/B19/B20/B25/B26/B28/B29/B30/B32/B66/B71<br/>LTE TDD: B34/B38/B39/B40/B41/B42/B43/B46(LAA)/B48(CBRS)</td><td>16GB/128GB</td><td>2×1000Mbps; 2×RS232/RS485/RS422 configurable</td><td>YES</td></tr>
-  <tr><td style="white-space: nowrap;">EC5350-FQ09</td><td>Orin Nano 8GB</td><td>4G CAT6<br/>LTE FDD: B1/B2/B3/B4/B5/B7/B8/B12/B13/B14/B17/B18/B19/B20/B25/B26/B28/B29/B30/B32/B66/B71<br/>LTE TDD: B34/B38/B39/B40/B41/B42/B43/B46(LAA)/B48(CBRS)</td><td>8GB/128GB</td><td>2×1000Mbps; 2×RS232/RS485/RS422 configurable</td><td>YES</td></tr>
-  <tr><td style="white-space: nowrap;">EC5550-EN00</td><td>Orin NX 16GB</td><td>No Cellular</td><td>16GB/128GB</td><td>2×1000Mbps; 2×RS232/RS485/RS422 configurable</td><td>NO</td></tr>
-  <tr><td style="white-space: nowrap;">EC5350-EN00</td><td>Orin Nano 8GB</td><td>No Cellular</td><td>8GB/128GB</td><td>2×1000Mbps; 2×RS232/RS485/RS422 configurable</td><td>NO</td></tr>
+  <tr><td style="white-space: nowrap;">EC5550-NRQ3</td><td>Orin NX 16GB</td><td>5G NR SA/NSA: n1/n2/n3/n5/n7/n8/n12/n20/n25/n28/n38/n40/n41/n48/n66/n71/n77/n78/n79<br/>LTE FDD: B1/B2/B3/B5/B7/B8/B12(B17)/B13/B14/B18/B19/B20/B25/B26/B28/B29/B30/B32/B66/B71<br/>LTE TDD: B34/B38/B39/B40/B41/B42/B48<br/>LAA: B46<br/>WCDMA: B1/B2/B3/B4/B5/B6/B8/B19</td><td>16GB/128GB</td><td>2×1000Mbps; 2×RS-232/RS-485/RS422 configurable</td><td>YES</td></tr>
+  <tr><td style="white-space: nowrap;">EC5350-NRQ3</td><td>Orin Nano 8GB</td><td>5G NR SA/NSA: n1/n2/n3/n5/n7/n8/n12/n20/n25/n28/n38/n40/n41/n48/n66/n71/n77/n78/n79<br/>LTE FDD: B1/B2/B3/B5/B7/B8/B12(B17)/B13/B14/B18/B19/B20/B25/B26/B28/B29/B30/B32/B66/B71<br/>LTE TDD: B34/B38/B39/B40/B41/B42/B48<br/>LAA: B46<br/>WCDMA: B1/B2/B3/B4/B5/B6/B8/B19</td><td>8GB/128GB</td><td>2×1000Mbps; 2×RS-232/RS-485/RS422 configurable</td><td>YES</td></tr>
+  <tr><td style="white-space: nowrap;">EC5550-FQ09</td><td>Orin NX 16GB</td><td>4G Cat.6<br/>LTE FDD: B1/B2/B3/B4/B5/B7/B8/B12/B13/B14/B17/B18/B19/B20/B25/B26/B28/B29/B30/B32/B66/B71<br/>LTE TDD: B34/B38/B39/B40/B41/B42/B43/B46(LAA)/B48(CBRS)</td><td>16GB/128GB</td><td>2×1000Mbps; 2×RS-232/RS-485/RS422 configurable</td><td>YES</td></tr>
+  <tr><td style="white-space: nowrap;">EC5350-FQ09</td><td>Orin Nano 8GB</td><td>4G Cat.6<br/>LTE FDD: B1/B2/B3/B4/B5/B7/B8/B12/B13/B14/B17/B18/B19/B20/B25/B26/B28/B29/B30/B32/B66/B71<br/>LTE TDD: B34/B38/B39/B40/B41/B42/B43/B46(LAA)/B48(CBRS)</td><td>8GB/128GB</td><td>2×1000Mbps; 2×RS-232/RS-485/RS422 configurable</td><td>YES</td></tr>
+  <tr><td style="white-space: nowrap;">EC5550-EN00</td><td>Orin NX 16GB</td><td>No Cellular</td><td>16GB/128GB</td><td>2×1000Mbps; 2×RS-232/RS-485/RS422 configurable</td><td>NO</td></tr>
+  <tr><td style="white-space: nowrap;">EC5350-EN00</td><td>Orin Nano 8GB</td><td>No Cellular</td><td>8GB/128GB</td><td>2×1000Mbps; 2×RS-232/RS-485/RS422 configurable</td><td>NO</td></tr>
 </table>
 
 # <span style="color: green;">6. Contact Us</span>

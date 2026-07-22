@@ -45,9 +45,9 @@
 | Type | Unmanaged Industrial Ethernet Switch, Layer 2, Store-and-Forward |
 | Ports | 16 x 10/100 BaseT + 2 x 100/1000Base(X/T) Gigabit Combo (SFP not included) |
 | Switching Performance | 8.8 Gbps backplane bandwidth, 8K MAC, 4 Mbit buffer, <10 us latency |
-| Dimensions / Weight | 72 x 140 x 110 mm / 1.2 kg |
+| Dimensions / Weight | 72 × 140 × 110 mm (2.83 × 5.51 × 4.33 in) / 1.2 kg (2.65 lb) |
 | Power | 9.6-60 VDC & 18-30 VAC, redundant dual inputs, 10 W |
-| Environment | -40 to +75 C operating, IP30, fanless |
+| Environment | -40 °C ~ +75 °C (-40 °F ~ +167 °F) operating, IP30, fanless |
 | EMC | IEC 61000-4-2/3/4/5/6/8/18, Class 3-5 |
 | Certifications | CE, FCC, UL |
 
@@ -60,7 +60,7 @@
   </div>
   <div style="width: 100%;">
     <div>Note:</div>
-    <div>1. All dimensions are in millimeters (mm).</div>
+    <div>1. All dimensions are in millimeters (mm), with inches (in) in parentheses.</div>
     <div>2. All dimensions are approximate and <span style="font-weight: bold;">for reference only</span>.</div>
     <div>3. The dimensions shown in the figure <span style="font-weight: bold;">shall not be used for production or processing</span>.</div>
     <div>4. Dimensions must comply with part and manufacturing tolerance requirements.</div>
@@ -75,12 +75,12 @@
 | <span style="color: green;">**Physical Performance**</span> | |
 | Enclosure | Fully enclosed seamless metal enclosure |
 | Dimensions (W × D × H) | 72 mm × 140 mm × 110 mm |
-| Weight | 1.2 kg |
+| Weight | 1.2 kg (2.65 lb) |
 | Mounting Method | DIN-rail mounting |
 | Cooling Method | Fanless cooling |
 | Protection Grade | IP30 |
-| Storage Temperature | -40 °C \~ +85 °C |
-| Operating Temperature | -40 °C \~ +75 °C |
+| Storage Temperature | -40 °C ~ +85 °C (-40 °F ~ +185 °F) |
+| Operating Temperature | -40 °C ~ +75 °C (-40 °F ~ +167 °F) |
 | Humidity | 5 \~ 95% (non-condensing) |
 | <span style="color: green;">**Hardware Performance**</span> | |
 | Backplane Bandwidth | 8.8 Gbps |
@@ -108,7 +108,7 @@ table:last-of-type td:first-child { white-space: nowrap; max-width: none; }
 
 | Model | Description |
 |-------|--------|
-| ISE3018D-P-2GC-16T-24 | 18-port Layer 2 unmanaged Industrial Switch. 16 × 10/100BaseT Ports + 2 × 100/1000Base(X/T) Combo Ports (SFP not included). DIP-enabled Sound & Light Alarm Output & 1 Alarm Relay port (1A@24VDC). IP30 Protection Class, Operating Temperature from -40°C to +75°C. Dual 12/24/48 VDC (9.6–60 VDC) & 24VAC (18–30 VAC) Power Input (Only connect to class 2 power supply). |
+| ISE3018D-P-2GC-16T-24 | 18-port Layer 2 unmanaged Industrial Switch. 16 × 10/100BaseT Ports + 2 × 100/1000Base(X/T) Combo Ports (SFP not included). DIP-enabled Sound & Light Alarm Output & 1 Alarm Relay port (1A@24VDC). IP30 Protection Class, Operating Temperature from -40 °C to +75 °C (-40 °F to +167 °F). Dual 12/24/48 VDC (9.6–60 VDC) & 24VAC (18–30 VAC) Power Input (Only connect to class 2 power supply). |
 
 # <span style="color: green;">5. Contact Us</span>
 

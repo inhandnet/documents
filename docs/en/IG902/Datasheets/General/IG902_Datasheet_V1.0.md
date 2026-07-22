@@ -32,8 +32,8 @@
 
 **Key features:**
 - **High-performance edge compute:** ARM Cortex-A8 1GHz with 1GB DDR3 and 8GB eMMC
-- **Rich industrial interfaces:** GE ports, serial, optional DI/DO/relay, USB, MicroSD, optional Wi-Fi/GPS
-- **Reliable industrial networking:** Wired/cellular/Wi-Fi backup, dual SIM failover, watchdog, link self-healing
+- **Rich industrial interfaces:** GE ports, serial, optional DI/DO/relay, USB, microSD, optional Wi-Fi/GPS
+- **Reliable industrial networking:** Wired/cellular/Wi-Fi backup, dual-SIM failover, watchdog, link self-healing
 - **Open development:** Python and Docker-based secondary development platform
 - **Cloud O&M readiness:** DeviceLive + DSA for remote management and low-code data integration
 
@@ -41,18 +41,18 @@
 
 | Specification Item | Value |
 |---|---|
-| Cellular Network | LTE Cat4/Cat6 (model dependent) |
+| Cellular Network | LTE Cat.4/Cat.6 (model dependent) |
 | Network Features | APN, VPDN, CHAP/PAP/MS-CHAP/MS-CHAPV2; DHCP Server/Relay/Client; DNS Relay; DDNS; static routing |
-| Security | SPI firewall, ACL, NAT/PAT/DMZ, AAA (Local/Radius/Tacacs+/LDAP), IPSec/GRE/L2TP/OpenVPN/CA |
+| Security | SPI firewall, ACL, NAT/PAT/DMZ, AAA (Local/Radius/Tacacs+/LDAP), IPsec/GRE/L2TP/OpenVPN/CA |
 | Cloud Management | DeviceLive remote configuration, upgrades, and operations |
 | Secondary Development | Python and Docker secondary development |
 | Data Acquisition Protocols | Modbus RTU/TCP, EtherNet/IP, OPC UA, IEC101/104, DNP3.0, BACnet, CNC |
 | Processor and Memory | ARM Cortex-A8 @1GHz, 1GB DDR3 |
-| Storage | 8GB eMMC, MicroSD up to 32GB |
-| Ethernet Ports | 2 × 10/100/1000Mbps |
-| Serial and I/O | 1×RS232/RS485 + 1×RS485 (2×RS485 on some models); optional 4DI+4DO or 4DI+3DO+1 relay |
+| Storage | 8GB eMMC, microSD up to 32GB |
+| Ethernet Ports | 2 × 10/100/1000 Mbps |
+| Serial and I/O | 1×RS-232/RS-485 + 1×RS-485 (2×RS-485 on some models); optional 4DI+4DO or 4DI+3DO+1 relay |
 | Power Supply | 12~48V DC, reverse polarity and overcurrent protection |
-| Operating Temperature and Protection | -25~70℃, IP30 |
+| Operating Temperature and Protection | -25 °C ~ 70 °C (-13 °F ~ 158 °F), IP30 |
 
 # <span style="color: green;">2. Product Dimensions & PIN Definition</span>
 
@@ -76,7 +76,7 @@
 
 <div style="margin-top: 12px;">
   <div style="width: 80%;">
-    <div>Note:</div><div>1. All dimensions are in millimeters (mm).</div><div>2. All dimensions are approximate and for reference only.</div><div>3. Dimensioned drawings are not intended for machining.</div><div>4. Dimensions are subject to part and manufacturing tolerances.</div><div>5. Specifications may change without prior notice.</div>
+    <div>Note:</div><div>1. All dimensions are in millimeters (mm), with inches (in) in parentheses.</div><div>2. All dimensions are approximate and for reference only.</div><div>3. Dimensioned drawings are not intended for machining.</div><div>4. Dimensions are subject to part and manufacturing tolerances.</div><div>5. Specifications may change without prior notice.</div>
   </div>
 </div>
 
@@ -91,11 +91,11 @@
   <tr><th align="center">PIN</th><th align="center">Definition</th><th align="left">Description</th></tr>
   <tr><td align="center">1</td><td align="center">V+</td><td>Positive electrode</td></tr>
   <tr><td align="center">2</td><td align="center">V-</td><td>Negative electrode</td></tr>
-  <tr><td align="center">3</td><td align="center">TXD/A</td><td>Serial RS232 send / Serial RS485+</td></tr>
-  <tr><td align="center">4</td><td align="center">RXD/B</td><td>Serial RS232 receive / Serial RS485-</td></tr>
-  <tr><td align="center">5</td><td align="center">GND</td><td>Serial RS232 signal ground</td></tr>
-  <tr><td align="center">6</td><td align="center">A</td><td>Serial RS485+</td></tr>
-  <tr><td align="center">7</td><td align="center">B</td><td>Serial RS485-</td></tr>
+  <tr><td align="center">3</td><td align="center">TXD/A</td><td>Serial RS-232 send / Serial RS-485+</td></tr>
+  <tr><td align="center">4</td><td align="center">RXD/B</td><td>Serial RS-232 receive / Serial RS-485-</td></tr>
+  <tr><td align="center">5</td><td align="center">GND</td><td>Serial RS-232 signal ground</td></tr>
+  <tr><td align="center">6</td><td align="center">A</td><td>Serial RS-485+</td></tr>
+  <tr><td align="center">7</td><td align="center">B</td><td>Serial RS-485-</td></tr>
 </table>
 
 ## I/O Definition
@@ -151,14 +151,14 @@
 | RAM | IG902-B: 512MB DDR3<br/> IG902-H: 1GB DDR3 RAM |
 | Flash | 8GB eMMC |
 | <span style="color: green;">**Connectivity and Interfaces**</span> | |
-| Ethernet Ports | 2×10/100/1000Mbps Ethernet ports (WAN/LAN or 2×LAN) |
+| Ethernet Ports | 2×10/100/1000 Mbps Ethernet ports (WAN/LAN or 2×LAN) |
 | I/O Ports | None / 4×DI + 3×DO + 1×Relay output DO or digital/pulse output DO |
-| Serial Ports | 1×RS232/RS485 + 1×RS485 |
+| Serial Ports | 1×RS-232/RS-485 + 1×RS-485 |
 | SIM Card Slot | 1.8V/3V, 2×drawer-type slot |
-| LED Indicators | POWER, STATUS, WARN, ERROR, MODEM, SIM1, SIM2, TF, PYTHON, USER1, USER2, WIFI, GPS, SIGNAL |
-| Console Port | 1×console RS232 (RJ45) |
+| LED Indicators | POWER, STATUS, WARN, ERROR, MODEM, SIM1, SIM2, microSD, PYTHON, USER1, USER2, Wi-Fi, GPS, SIGNAL |
+| Console Port | 1×console RS-232 (RJ45) |
 | USB Port | 1×USB 2.0 port |
-| TF | MicroSD expansion up to 32GB |
+| microSD | microSD expansion up to 32GB |
 | Wi-Fi(optional) | 2.4G/5G Wi-Fi (802.11 ac/a/b/g/n) |
 | GNSS(optional) | GPS and BeiDou |
 | Reset Button | Pinhole button |
@@ -172,8 +172,8 @@
 | Housing and Cooling | Metal housing, fanless |
 | RTC (Optional) | Embedded RTC powered by super capacitor |
 | <span style="color: green;">**Environment and Certifications**</span> | |
-| Storage Temperature | -40~85℃ |
-| Operating Temperature | -25~70℃ |
+| Storage Temperature | -40 °C ~ 85 °C (-40 °F ~ 185 °F) |
+| Operating Temperature | -25 °C ~ 70 °C (-13 °F ~ 158 °F) |
 | Ambient Humidity | 5~95% RH non-condensing |
 | Physical Characteristics | IEC60068-2-27 shock resistance<br/>IEC60068-2-6 vibration resistance<br/>IEC60068-2-32 drop resistance |
 | EMC Standard | EN61000-4-2, level 3, Static<br/>EN61000-4-3, level 3, Radiation Electric Field<br/>EN61000-4-4, level 3, Pulsed Electric Field<br/>EN61000-4-5, level 3, Surge<br/>EN61000-4-6, level 3, Conducted Distubance Immunity<br/>EN61000-4-8, Power Frequency Field Resistance, horizontal / vertical 400A/m (>level 3)<br/>EN61000-4-12, level 3, Shock Wave Resistance |
@@ -194,7 +194,7 @@
 | <span style="color: green;">**Security**</span> | |
 | User Management | Multi-level users |
 | Network Security | SPI firewall, anti-DoS attack, multicast/ping filter, ACL, NAT, PAT, DMZ, port mapping, virtual server |
-| Data Security | IPSec VPN, GRE, L2TP, OpenVPN, CA |
+| Data Security | IPsec VPN, GRE, L2TP, OpenVPN, CA |
 | CA Certificates | Supported (may auto apply) |
 | AAA (Authentication, Authorization, Accounting) | Local/Radius/Tacacs+/LDAP |
 | <span style="color: green;">**Reliability**</span> | |
@@ -245,21 +245,21 @@
     <col style="width:8%;">
   </colgroup>
   <tr><th>Model</th><th>Version</th><th>Region</th><th>&lt;WMNN&gt;: Cellular Type &amp; Band</th><th>Serial Port</th><th>&lt;IO/RIO/NA&gt;</th><th>&lt;DW/NA&gt;</th><th>&lt;G/NA&gt;</th></tr>
-  <tr><td style="white-space: nowrap;">IG902-H-LQA8</td><td>High-config</td><td>China</td><td>LTE CAT4; LTE-FDD B1/B3/B5/B8; LTE-TDD B34/B38/B39/B40/B41; TD-SCDMA B34/B39; WCDMA B1/B8; CDMA BC0; GSM 900/1800MHz</td><td>RS232×1 + RS485×1</td><td>IO</td><td>NA</td><td>NA</td></tr>
-  <tr><td style="white-space: nowrap;">IG902-H-LQA8-IO-DW-G</td><td>High-config</td><td>China</td><td>LTE CAT4; LTE-FDD B1/B3/B5/B8; LTE-TDD B34/B38/B39/B40/B41; TD-SCDMA B34/B39; WCDMA B1/B8; CDMA BC0; GSM 900/1800MHz</td><td>RS232×1 + RS485×1</td><td>IO</td><td>DW</td><td>G</td></tr>
-  <tr><td style="white-space: nowrap;">IG902-H-FQ58</td><td>High-config</td><td>Europe & APAC</td><td>LTE CAT4; LTE-FDD B1/B2/B3/B5/B7/B8/B20; LTE-TDD B38/B40/B41; UMTS B1/B5/B8; GSM B3/B8</td><td>RS232×1 + RS485×1</td><td>IO</td><td>NA</td><td>NA</td></tr>
-  <tr><td style="white-space: nowrap;">IG902-H-FQ58-IO-DW-G</td><td>High-config</td><td>Europe & APAC</td><td>LTE CAT4; LTE-FDD B1/B2/B3/B5/B7/B8/B20; LTE-TDD B38/B40/B41; UMTS B1/B5/B8; GSM B3/B8</td><td>RS232×1 + RS485×1</td><td>IO</td><td>DW</td><td>G</td></tr>
-  <tr><td style="white-space: nowrap;">IG902-H-FQ58-D485-RIO-DW-G</td><td>High-config</td><td>Europe & APAC</td><td>LTE CAT4; LTE-FDD B1/B2/B3/B5/B7/B8/B20; LTE-TDD B38/B40/B41; UMTS B1/B5/B8; GSM B3/B8</td><td>RS485×2</td><td>RIO</td><td>DW</td><td>G</td></tr>
-  <tr><td style="white-space: nowrap;">IG902-H-FS39-IO</td><td>High-config</td><td>North America</td><td>LTE CAT6; LTE-FDD B2/B4/B5/B13/B17; UMTS B2/B5</td><td>RS232×1 + RS485×1</td><td>IO</td><td>NA</td><td>NA</td></tr>
-  <tr><td style="white-space: nowrap;">IG902-H-FS39-IO-DW-G</td><td>High-config</td><td>North America</td><td>LTE CAT6; LTE-FDD B2/B4/B5/B13/B17; UMTS B2/B5</td><td>RS232×1 + RS485×1</td><td>IO</td><td>DW</td><td>G</td></tr>
-  <tr><td style="white-space: nowrap;">IG902-H-FQ78</td><td>High-config</td><td>Australia & South America</td><td>LTE CAT4; LTE-FDD B1/B2/B3/B4/B5/B7/B8/B28; LTE-TDD B40; UMTS B1/B2/B5/B8; EDGE/GPRS/GSM 850/900/1800/1900MHz</td><td>RS232×1 + RS485×1</td><td>NA</td><td>NA</td><td>NA</td></tr>
-  <tr><td style="white-space: nowrap;">IG902-H-FQ78-IO-DW-G</td><td>High-config</td><td>Australia & South America</td><td>LTE CAT4; LTE-FDD B1/B2/B3/B4/B5/B7/B8/B28; LTE-TDD B40; UMTS B1/B2/B5/B8; EDGE/GPRS/GSM 850/900/1800/1900MHz</td><td>RS232×1 + RS485×1</td><td>IO</td><td>DW</td><td>G</td></tr>
-  <tr><td style="white-space: nowrap;">IG902-H-FQ88</td><td>High-config</td><td>Japan</td><td>LTE CAT4; LTE-FDD B1/B3/B8/B18/B19/B26; LTE-TDD B41; WCDMA B1/B6/B8/B19</td><td>RS232×1 + RS485×1</td><td>IO</td><td>NA</td><td>NA</td></tr>
-  <tr><td style="white-space: nowrap;">IG902-H-FQ88-IO-DW-G</td><td>High-config</td><td>Japan</td><td>LTE CAT4; LTE-FDD B1/B3/B8/B18/B19/B26; LTE-TDD B41; WCDMA B1/B6/B8/B19</td><td>RS232×1 + RS485×1</td><td>IO</td><td>DW</td><td>G</td></tr>
-  <tr><td style="white-space: nowrap;">IG902-H-FQ98</td><td>High-config</td><td>South Korea</td><td>LTE CAT4; LTE-FDD B1/B3/B5/B7/B8/B20; LTE-TDD B38/B40/B41; WCDMA B1/B5/B8; EDGE/GSM B3/B8</td><td>RS232×1 + RS485×1</td><td>IO</td><td>NA</td><td>NA</td></tr>
-  <tr><td style="white-space: nowrap;">IG902-H-FQ98-IO-DW-G</td><td>High-config</td><td>South Korea</td><td>LTE CAT4; LTE-FDD B1/B3/B5/B7/B8/B20; LTE-TDD B38/B40/B41; WCDMA B1/B5/B8; EDGE/GSM B3/B8</td><td>RS232×1 + RS485×1</td><td>IO</td><td>DW</td><td>G</td></tr>
-  <tr><td style="white-space: nowrap;">IG902-H-EN00</td><td>High-config</td><td>Global (No Cellular)</td><td>No 3G/4G module</td><td>RS232×1 + RS485×1</td><td>IO</td><td>NA</td><td>NA</td></tr>
-  <tr><td style="white-space: nowrap;">IG902-H-EN00-IO-DW-G</td><td>High-config</td><td>Global (No Cellular)</td><td>No 3G/4G module</td><td>RS232×1 + RS485×1</td><td>IO</td><td>DW</td><td>G</td></tr>
+  <tr><td style="white-space: nowrap;">IG902-H-LQA8</td><td>High-config</td><td>China</td><td>LTE Cat.4; LTE-FDD B1/B3/B5/B8; LTE-TDD B34/B38/B39/B40/B41; TD-SCDMA B34/B39; WCDMA B1/B8; CDMA BC0; GSM 900/1800MHz</td><td>RS-232×1 + RS-485×1</td><td>IO</td><td>NA</td><td>NA</td></tr>
+  <tr><td style="white-space: nowrap;">IG902-H-LQA8-IO-DW-G</td><td>High-config</td><td>China</td><td>LTE Cat.4; LTE-FDD B1/B3/B5/B8; LTE-TDD B34/B38/B39/B40/B41; TD-SCDMA B34/B39; WCDMA B1/B8; CDMA BC0; GSM 900/1800MHz</td><td>RS-232×1 + RS-485×1</td><td>IO</td><td>DW</td><td>G</td></tr>
+  <tr><td style="white-space: nowrap;">IG902-H-FQ58</td><td>High-config</td><td>Europe & APAC</td><td>LTE Cat.4; LTE-FDD B1/B2/B3/B5/B7/B8/B20; LTE-TDD B38/B40/B41; UMTS B1/B5/B8; GSM B3/B8</td><td>RS-232×1 + RS-485×1</td><td>IO</td><td>NA</td><td>NA</td></tr>
+  <tr><td style="white-space: nowrap;">IG902-H-FQ58-IO-DW-G</td><td>High-config</td><td>Europe & APAC</td><td>LTE Cat.4; LTE-FDD B1/B2/B3/B5/B7/B8/B20; LTE-TDD B38/B40/B41; UMTS B1/B5/B8; GSM B3/B8</td><td>RS-232×1 + RS-485×1</td><td>IO</td><td>DW</td><td>G</td></tr>
+  <tr><td style="white-space: nowrap;">IG902-H-FQ58-D485-RIO-DW-G</td><td>High-config</td><td>Europe & APAC</td><td>LTE Cat.4; LTE-FDD B1/B2/B3/B5/B7/B8/B20; LTE-TDD B38/B40/B41; UMTS B1/B5/B8; GSM B3/B8</td><td>RS-485×2</td><td>RIO</td><td>DW</td><td>G</td></tr>
+  <tr><td style="white-space: nowrap;">IG902-H-FS39-IO</td><td>High-config</td><td>North America</td><td>LTE Cat.6; LTE-FDD B2/B4/B5/B13/B17; UMTS B2/B5</td><td>RS-232×1 + RS-485×1</td><td>IO</td><td>NA</td><td>NA</td></tr>
+  <tr><td style="white-space: nowrap;">IG902-H-FS39-IO-DW-G</td><td>High-config</td><td>North America</td><td>LTE Cat.6; LTE-FDD B2/B4/B5/B13/B17; UMTS B2/B5</td><td>RS-232×1 + RS-485×1</td><td>IO</td><td>DW</td><td>G</td></tr>
+  <tr><td style="white-space: nowrap;">IG902-H-FQ78</td><td>High-config</td><td>Australia & South America</td><td>LTE Cat.4; LTE-FDD B1/B2/B3/B4/B5/B7/B8/B28; LTE-TDD B40; UMTS B1/B2/B5/B8; EDGE/GPRS/GSM 850/900/1800/1900MHz</td><td>RS-232×1 + RS-485×1</td><td>NA</td><td>NA</td><td>NA</td></tr>
+  <tr><td style="white-space: nowrap;">IG902-H-FQ78-IO-DW-G</td><td>High-config</td><td>Australia & South America</td><td>LTE Cat.4; LTE-FDD B1/B2/B3/B4/B5/B7/B8/B28; LTE-TDD B40; UMTS B1/B2/B5/B8; EDGE/GPRS/GSM 850/900/1800/1900MHz</td><td>RS-232×1 + RS-485×1</td><td>IO</td><td>DW</td><td>G</td></tr>
+  <tr><td style="white-space: nowrap;">IG902-H-FQ88</td><td>High-config</td><td>Japan</td><td>LTE Cat.4; LTE-FDD B1/B3/B8/B18/B19/B26; LTE-TDD B41; WCDMA B1/B6/B8/B19</td><td>RS-232×1 + RS-485×1</td><td>IO</td><td>NA</td><td>NA</td></tr>
+  <tr><td style="white-space: nowrap;">IG902-H-FQ88-IO-DW-G</td><td>High-config</td><td>Japan</td><td>LTE Cat.4; LTE-FDD B1/B3/B8/B18/B19/B26; LTE-TDD B41; WCDMA B1/B6/B8/B19</td><td>RS-232×1 + RS-485×1</td><td>IO</td><td>DW</td><td>G</td></tr>
+  <tr><td style="white-space: nowrap;">IG902-H-FQ98</td><td>High-config</td><td>South Korea</td><td>LTE Cat.4; LTE-FDD B1/B3/B5/B7/B8/B20; LTE-TDD B38/B40/B41; WCDMA B1/B5/B8; EDGE/GSM B3/B8</td><td>RS-232×1 + RS-485×1</td><td>IO</td><td>NA</td><td>NA</td></tr>
+  <tr><td style="white-space: nowrap;">IG902-H-FQ98-IO-DW-G</td><td>High-config</td><td>South Korea</td><td>LTE Cat.4; LTE-FDD B1/B3/B5/B7/B8/B20; LTE-TDD B38/B40/B41; WCDMA B1/B5/B8; EDGE/GSM B3/B8</td><td>RS-232×1 + RS-485×1</td><td>IO</td><td>DW</td><td>G</td></tr>
+  <tr><td style="white-space: nowrap;">IG902-H-EN00</td><td>High-config</td><td>Global (No Cellular)</td><td>No 3G/4G module</td><td>RS-232×1 + RS-485×1</td><td>IO</td><td>NA</td><td>NA</td></tr>
+  <tr><td style="white-space: nowrap;">IG902-H-EN00-IO-DW-G</td><td>High-config</td><td>Global (No Cellular)</td><td>No 3G/4G module</td><td>RS-232×1 + RS-485×1</td><td>IO</td><td>DW</td><td>G</td></tr>
 </table>
 
 

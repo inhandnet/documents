@@ -52,8 +52,8 @@
 | Interfaces & PoE | 28 × GbE RJ45; 24 × 802.3 af/at PoE; 1 × Console; 1 × Reset |
 | Cooling  | 4 × built-in fans |
 | Power | 100–240 V AC, 50–60 Hz; 400 W total consumption (370 W PoE) |
-| Mechanical | 440 × 315 × 44 mm; metal; 1U rack; IP20 |
-| Environment | Operating 0 °C ~ +45 °C; storage -40 °C ~ +70 °C; humidity 95 % RH @ 40 °C |
+| Mechanical | 440 × 315 × 44 mm (17.32 × 12.4 × 1.73 in); metal; 1U rack; IP20 |
+| Environment | Operating 0 °C ~ +45 °C (32 °F ~ +113 °F); storage -40 °C ~ +70 °C (-40 °F ~ +158 °F); humidity 95 % RH @ 40 °C |
 | Compliance | In planning: CE, FCC, IC; EMC Level 2 |
 
 
@@ -86,8 +86,8 @@
   </div>
   <div style="width: 100%;">
     <div>Note:</div>
-    <div>1. All dimensions are in millimeters (mm).</div>
-    <div>2. Dimensions (L × W × H): 440 × 315 × 44 mm.</div>
+    <div>1. All dimensions are in millimeters (mm), with inches (in) in parentheses.</div>
+    <div>2. Dimensions (L × W × H): 440 × 315 × 44 mm (17.32 × 12.4 × 1.73 in).</div>
     <div>3. All dimensions are approximate, <span style="font-weight: bold;">for reference only</span>.</div>
     <div>4. Dimensions shown <span style="font-weight: bold;">shall not be used for production</span>.</div>
   </div>
@@ -118,13 +118,13 @@
 | Input | 100–240 V AC, 50–60 Hz |
 | Power Consumption | 400 W total (370 W PoE) |
 | <span style="color: green;">**Mechanical**</span> | |
-| Dimensions | 440 × 315 × 44 mm |
+| Dimensions | 440 × 315 × 44 mm (17.32 × 12.4 × 1.73 in) |
 | Material | Metal |
 | Installation | 1U Rack |
 | Protection | IP20 |
 | <span style="color: green;">**Environment**</span> | |
-| Operating Temperature | 0 °C ~ +45 °C |
-| Storage Temperature | -40 °C ~ +70 °C |
+| Operating Temperature | 0 °C ~ +45 °C (32 °F ~ +113 °F) |
+| Storage Temperature | -40 °C ~ +70 °C (-40 °F ~ +158 °F) |
 | Humidity | 95 % RH @ 40 °C |
 | <span style="color: green;">**Certification**</span> | |
 | Certification | In planning: CE, FCC, IC |

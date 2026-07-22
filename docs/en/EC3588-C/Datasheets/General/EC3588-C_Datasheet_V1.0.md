@@ -51,8 +51,8 @@
 | Memory / Storage | 16 GB LPDDR4 / 64 GB eMMC |
 | Display Interface | HDMI/eDP TX, DP TX, MIPI DSI, quad independent display |
 | Connectivity | 2×GMAC, USB 3.1, PCIe 3.0, SATA, MIPI-CSI |
-| Dimensions (W × D × H) | 68 × 60 × 4.6 mm |
-| Operating Temperature | 0 °C ~ +80 °C |
+| Dimensions (W × D × H) | 68 × 60 × 4.6 mm (2.68 × 2.36 × 0.18 in) |
+| Operating Temperature | 0 °C ~ +80 °C (32 °F ~ +176 °F) |
 
 
 # <span style="color: green;">2. Product Dimensions</span>
@@ -76,7 +76,7 @@
 
 <div style="margin-top: 12px;">
   <div style="width: 80%;">
-    <div>Note:</div><div>1. All dimensions are in millimeters (mm).</div><div>2. All dimensions are approximate and for reference only.</div><div>3. Dimensioned drawings are not intended for machining.</div><div>4. Dimensions are subject to part and manufacturing tolerances.</div><div>5. Specifications may change without prior notice.</div>
+    <div>Note:</div><div>1. All dimensions are in millimeters (mm), with inches (in) in parentheses.</div><div>2. All dimensions are approximate and for reference only.</div><div>3. Dimensioned drawings are not intended for machining.</div><div>4. Dimensions are subject to part and manufacturing tolerances.</div><div>5. Specifications may change without prior notice.</div>
   </div>
 </div>
 
@@ -122,11 +122,11 @@
 | <span style="color: green;">**Power**</span> | |
 | Input Power | DC 4V |
 | <span style="color: green;">**Mechanical**</span> | |
-| Dimensions (W × D × H) | 68 × 60 × 4.6 mm |
+| Dimensions (W × D × H) | 68 × 60 × 4.6 mm (2.68 × 2.36 × 0.18 in) |
 | Package | Board-to-board connector (4 × 100-pin, 0.4 mm pitch, combined height 1.5 mm) |
 | Mounting Holes | 4 × φ2.5 mm |
 | <span style="color: green;">**Environment**</span> | |
-| Operating Temperature | 0 °C ~ +80 °C |
+| Operating Temperature | 0 °C ~ +80 °C (32 °F ~ +176 °F) |
 
 
 # <span style="color: green;">4. Software Specifications</span>
@@ -158,15 +158,15 @@
 
 ## <span style="color: green;">Product Model</span>
 
-<table style="width:100%; table-layout:fixed;">
+<table style="width:100%; table-layout:fixed;font-size:11px;">
   <colgroup>
-    <col style="width:22%;">
+    <col style="width:12%;">
     <col style="width:22%;">
     <col style="width:36%;">
-    <col style="width:20%;">
+    <col style="width:30%;">
   </colgroup>
   <tr><th>Model</th><th>CPU</th><th>CPU Clock Speed</th><th>Operating Temperature</th></tr>
-  <tr><td style="white-space: nowrap;">EC3588-C</td><td>4 × A76 + 4 × A55</td><td>A76 @ 2.4 GHz, A55 @ 1.8 GHz</td><td>0 °C ~ +80 °C</td></tr>
+  <tr><td style="white-space: nowrap;">EC3588-C</td><td>4 × A76 + 4 × A55</td><td>A76 @ 2.4 GHz, A55 @ 1.8 GHz</td><td>0 °C ~ +80 °C (32 °F ~ +176 °F)</td></tr>
 </table>
 
 # <span style="color: green;">6. Contact Us</span>

@@ -34,14 +34,14 @@
 - **Performance platform:** Quad-core Cortex-A55@2.0GHz with Mali-G52 and RKNN
 - **Industrial security:** Secure Boot, TPM2.0, TrustZone, firewall and VPN
 - **Rich interfaces:** Gigabit Ethernet, serial, CAN, USB, HDMI, mSATA, DI/DO
-- **Reliable networking:** 5G/4G/Wi-Fi/GbE backup, dual SIM failover, watchdog
+- **Reliable networking:** 5G/4G/Wi-Fi/GbE backup, dual-SIM failover, watchdog
 - **Cloud operations:** DeviceLive remote monitoring and edge app/container management
 
 ## <span style="color: green;">Core Technical Specifications</span>
 
 | Technical Indicator | Specification |
 |------|---------------|
-| Cellular Network | 5G SA/NSA or LTE Cat4/Cat6 (model-dependent) |
+| Cellular Network | 5G SA/NSA or LTE Cat.4/Cat.6 (model-dependent) |
 | Network Features | APN/VPDN, CHAP/PAP, ARP/Ethernet, static IP/DHCP |
 | Security (TPM2.0 Optional) | Secure Boot, TPM2.0, firewall, VPN |
 | Cloud Management | DeviceLive, HTTP/HTTPS/SSH remote management |
@@ -49,9 +49,9 @@
 | Open Platform | Yocto/Linux and Debian 10, Debian package manager |
 | CPU/GPU | Quad-core Cortex-A55@2.0GHz / Mali-G52 2EE |
 | RAM/Storage | 4GB / 16GB eMMC |
-| Interfaces | 2×GE, 2×RS-232/485/422, USB2.0, HDMI2.0, mSATA, MicroSD |
+| Interfaces | 2×GE, 2×RS-232/485/422, USB2.0, HDMI2.0, mSATA, microSD |
 | Power Input | DC 12~48V (8W) |
-| Dimensions (W × D × H) | 47.3 × 162.7 × 148.3 mm |
+| Dimensions (W × D × H) | 47.3 × 162.7 × 148.3 mm (1.86 × 6.41 × 5.84 in) |
 | Protection Rating | IP30 |
 
 # <span style="color: green;">2. Product Dimensions</span>
@@ -72,7 +72,7 @@
     <div style="width: 100%; text-align: center; font-size: 12px;">Interface Diagram</div>
   </div>
   <div style="width: 80%;">
-    <div>Note:</div><div>1. All dimensions are in millimeters (mm).</div><div>2. All dimensions are approximate and for reference only.</div><div>3. Dimensioned drawings are not intended for machining.</div><div>4. Dimensions are subject to part and manufacturing tolerances.</div><div>5. Specifications may change without prior notice.</div>
+    <div>Note:</div><div>1. All dimensions are in millimeters (mm), with inches (in) in parentheses.</div><div>2. All dimensions are approximate and for reference only.</div><div>3. Dimensioned drawings are not intended for machining.</div><div>4. Dimensions are subject to part and manufacturing tolerances.</div><div>5. Specifications may change without prior notice.</div>
   </div>
 </div>
 
@@ -92,7 +92,7 @@
 | RAM | 4GB |
 | FLASH | 16GB eMMC |
 | <span style="color: green;">**Connectivity & Interfaces**</span> |  |
-| Ethernet Ports | 2×10/100/1000Mbps GE |
+| Ethernet Ports | 2×10/100/1000 Mbps GE |
 | I/O Ports (Optional) | 4×DI + 4×DO |
 | Serial Ports | 2×RS-232/485/422 (DB9) |
 | CAN (Optional) | CAN2.0A/B |
@@ -100,11 +100,11 @@
 | SIM Card Holders | 2×MicroSIM |
 | LED Indicators | 4G/5G, Signal Strength (L1, L2, L3), SIM1, SIM2, User1, User2, PWR, STATUS, WARN, ERR |
 | USB | USB2.0 (2×Type-A + 1×Type-C) |
-| TF | Supports MicroSD cards up to 32GB (recommended maximum 
+| microSD | Supports microSD cards up to 32GB (recommended maximum 
 capacity) |
 | Expansion Interfaces |  1x mSATA, supports mSATA SSD |
 | HDMI | HDMI2.0 |
-| WiFi (Optional) |  STA, 802.11ac/a/b/g/n, 2.4G/5G dual band |
+| Wi-Fi (Optional) |  STA, 802.11ac/a/b/g/n, 2.4G/5G dual band |
 | Bluetooth (Optional) | BLE4.2 |
 | GPS (Optional) | GPS/Beidou/GLONASS |
 | <span style="color: green;">**Power & Power Consumption**</span> |  |
@@ -112,15 +112,15 @@ capacity) |
 | Power Interface | DC terminal input |
 | Maximum Value (Full Load) | 8W |
 | <span style="color: green;">**Mechanical Specifications**</span> |  |
-| Product Dimensions | 47.3×162.7×148.3mm |
-| Product Weight | 810g |
+| Product Dimensions | 47.3 × 162.7 × 148.3 mm (1.86 × 6.41 × 5.84 in) |
+| Product Weight | 810 g (1.79 lb) |
 | Mounting Method | DIN-rail / wall mounting |
 | Protection Rating | IP30 |
 | Enclosure & Heat Dissipation | Metal housing, fanless design |
 | TPM (Optional) | TPM2.0 |
 | <span style="color: green;">**Environment & Certifications**</span> |  |
-| Storage Temperature | -40~85℃ |
-| Operating Temperature | -20~70℃ |
+| Storage Temperature | -40 °C ~ 85 °C (-40 °F ~ 185 °F) |
+| Operating Temperature | -20 °C ~ 70 °C (-4 °F ~ 158 °F) |
 | Environmental Humidity | 5~95% RH (non-condensing) |
 | Physical Characteristics | IEC60068-2-27 shock resistance<br>IEC60068-2-6 vibration resistance<br>IEC60068-2-32 drop resistance |
 | EMC Standard | EN61000-4-2, level 3, Static<br>EN61000-4-3, level 3, Radiation Electric Field<br>EN61000-4-4, level 3, Pulsed Electric Field<br>EN61000-4-5, level 3, Surge<br>EN61000-4-6, level 3, Conducted Disturbance Immunity<br>EN61000-4-8, Power Frequency Field Resistance, horizontal / vertical 400A/m (>level 2)<br>EN61000-4-12, level 3, Shock Wave Resistance |
@@ -135,7 +135,7 @@ capacity) |
 | File System | Debian core root filesystem |
 | Package Manager | Debian package manager |
 | <span style="color: green;">**Network Features**</span> |  |
-| Network Access | 5G / LTE Cat4 / LTE Cat6 (model-dependent), Ethernet |
+| Network Access | 5G / LTE Cat.4 / LTE Cat.6 (model-dependent), Ethernet |
 | Access Authentication | APN, VPDN, CHAP/PAP |
 | WAN Protocols | static IP, DHCP |
 | LAN Protocols | ARP, Ethernet  |
@@ -145,8 +145,8 @@ capacity) |
 | <span style="color: green;">**Reliability**</span> |  |
 | Link Detection | Multi-level link detection and auto-redial |
 | Built-in Watchdog | Embedded watchdog |
-| Backup Mechanism | Dual SIM backup |
-| Dual SIM Switchover | Supported |
+| Backup Mechanism | Dual-SIM backup |
+| Dual-SIM Switchover | Supported |
 | <span style="color: green;">**Data Acquisition Protocols (DSA)**</span> |  |
 | Industrial Protocols | Modbus RTU Master/Slave, Modbus TCP Master/Slave, EtherNet/IP, ISO on TCP, OPC UA, Mitsubishi family, FINSUDP, HostLink, PPI |
 | Electricity Protocols | DLT645-2007, IEC101/104, DNP3.0 |
@@ -163,28 +163,37 @@ capacity) |
 
 **Model code:** EC942-\<B/H\>-\<WMNN\>-B-[X]
 
-\<B/H\>: WiFi/GPS/CAN/TPM & I/O capability (B=NO, H=YES)  
+\<B/H\>: Wi-Fi/GPS/CAN/TPM & I/O capability (B=NO, H=YES)  
 \<WMNN\>: Cellular Type & Frequency Band  
 [X]: OS option (Optional)
 
 ## <span style="color: green;">Model List</span>
 
-| Model | Region | \<B/H\> | \<WMNN\>: Cellular Type & Frequency Band | WiFi/GPS/CAN/TPM | I/O |
-|------|--------|---------|-------------------------------------------|------------------|-----|
-| EC942-B-LQA8-B | China | NO | LTE CAT4: LTE-FDD B1/B3/B5/B8; LTE-TDD B34/B38/B39/B40/B41; WCDMA B1/B8; TD-SCDMA B34/B39; CDMA BC0; GSM 900/1800MHz | NO | NO |
-| EC942-H-LQA8-B | China | YES | LTE CAT4: LTE-FDD B1/B3/B5/B8; LTE-TDD B34/B38/B39/B40/B41; WCDMA B1/B8; TD-SCDMA B34/B39; CDMA BC0; GSM 900/1800MHz | YES | YES |
-| EC942-B-NRQ1-B | China | NO | 5G NR NSA n78/n79; 5G NR SA n1/n3/n5/n8/n28/n41/n77/n78/n79; LTE-FDD B1/B3/B5/B8; LTE-TDD B34/B38/B39/B40/B41; WCDMA B1/B8 | NO | NO |
-| EC942-H-NRQ1-B | China | YES | 5G NR NSA n78/n79; 5G NR SA n1/n3/n5/n8/n28/n41/n77/n78/n79; LTE-FDD B1/B3/B5/B8; LTE-TDD B34/B38/B39/B40/B41; WCDMA B1/B8 | YES | YES |
-| EC942-B-NRQ3-B | Global (excluding China) | NO | 5G NR NSA/SA n1/n2/n3/n5/n7/n8/n12/n20/n25/n28/n38/n40/n41/n48/n66/n71/n77/n78/n79; LTE FDD B1/B2/B3/B5/B7/B8/B12(B17)/B13/B14/B18/B19/B20/B25/B26/B28/B29/B30/B32/B66/B71; LTE TDD B34/B38/B39/B40/B41/B42/B48; LAA B46; WCDMA B1/B2/B3/B4/B5/B6/B8/B19 | NO | NO |
-| EC942-H-NRQ3-B | Global (excluding China) | YES | 5G NR NSA/SA n1/n2/n3/n5/n7/n8/n12/n20/n25/n28/n38/n40/n41/n48/n66/n71/n77/n78/n79; LTE FDD B1/B2/B3/B5/B7/B8/B12(B17)/B13/B14/B18/B19/B20/B25/B26/B28/B29/B30/B32/B66/B71; LTE TDD B34/B38/B39/B40/B41/B42/B48; LAA B46; WCDMA B1/B2/B3/B4/B5/B6/B8/B19 | YES | YES |
-| EC942-B-FQ58-B | EMEA | NO | LTE CAT4: LTE-FDD B1/B3/B7/B8/B20/B28A; LTE-TDD B38/B40/B41; WCDMA B1/B8; GSM B3/B8 | NO | NO |
-| EC942-H-FQ58-B | EMEA | YES | LTE CAT4: LTE-FDD B1/B3/B7/B8/B20/B28A; LTE-TDD B38/B40/B41; WCDMA B1/B8; GSM B3/B8 | YES | YES |
-| EC942-B-FQ38-B | North America | NO | LTE CAT4: LTE-FDD B2/B4/B5/B12/B13/B14/B66/B71; WCDMA B2/B4/B5 | NO | NO |
-| EC942-H-FQ38-B | North America | YES | LTE CAT4: LTE-FDD B2/B4/B5/B12/B13/B14/B66/B71; WCDMA B2/B4/B5 | YES | YES |
-| EC942-B-FQ78-B | Australia & Latin America | NO | CAT4: LTE-FDD B1/B2/B3/B4/B5/B7/B8/B28; LTE-TDD B40; UMTS B1/B2/B5/B8; EDGE/GPRS/GSM 850/900/1800/1900MHz | NO | NO |
-| EC942-H-FQ78-B | Australia & Latin America | YES | CAT4: LTE-FDD B1/B2/B3/B4/B5/B7/B8/B28; LTE-TDD B40; UMTS B1/B2/B5/B8; EDGE/GPRS/GSM 850/900/1800/1900MHz | YES | YES |
-| EC942-B-EN00-B | Global | NO | No Cellular | NO | NO |
-| EC942-H-EN00-B | Global | YES | No Cellular | YES | YES |
+<table style="width:100%; table-layout:fixed; font-size:11px;">
+  <colgroup>
+    <col style="width:18%;">
+    <col style="width:12%;">
+    <col style="width:8%;">
+    <col style="width:35%;">
+    <col style="width:17%;">
+    <col style="width:10%;">
+  </colgroup>
+  <tr><th>Model</th><th>Region</th><th>&lt;B/H&gt;</th><th>&lt;WMNN&gt;</th><th>Wi-Fi/GPS/CAN</th><th>I/O</th></tr>
+  <tr><td style="white-space: nowrap;">EC942-B-LQA8-B</td><td>China</td><td>NO</td><td>LTE Cat.4: LTE-FDD B1/B3/B5/B8; LTE-TDD B34/B38/B39/B40/B41; WCDMA B1/B8; TD-SCDMA B34/B39; CDMA BC0; GSM 900/1800MHz</td><td>NO</td><td>NO</td></tr>
+  <tr><td style="white-space: nowrap;">EC942-H-LQA8-B</td><td>China</td><td>YES</td><td>LTE Cat.4: LTE-FDD B1/B3/B5/B8; LTE-TDD B34/B38/B39/B40/B41; WCDMA B1/B8; TD-SCDMA B34/B39; CDMA BC0; GSM 900/1800MHz</td><td>YES</td><td>YES</td></tr>
+  <tr><td style="white-space: nowrap;">EC942-B-NRQ1-B</td><td>China</td><td>NO</td><td>5G NR NSA n78/n79; 5G NR SA n1/n3/n5/n8/n28/n41/n77/n78/n79; LTE-FDD B1/B3/B5/B8; LTE-TDD B34/B38/B39/B40/B41; WCDMA B1/B8</td><td>NO</td><td>NO</td></tr>
+  <tr><td style="white-space: nowrap;">EC942-H-NRQ1-B</td><td>China</td><td>YES</td><td>5G NR NSA n78/n79; 5G NR SA n1/n3/n5/n8/n28/n41/n77/n78/n79; LTE-FDD B1/B3/B5/B8; LTE-TDD B34/B38/B39/B40/B41; WCDMA B1/B8</td><td>YES</td><td>YES</td></tr>
+  <tr><td style="white-space: nowrap;">EC942-B-NRQ3-B</td><td>Global (excluding China)</td><td>NO</td><td>5G NR SA/NSA n1/n2/n3/n5/n7/n8/n12/n20/n25/n28/n38/n40/n41/n48/n66/n71/n77/n78/n79; LTE FDD B1/B2/B3/B5/B7/B8/B12(B17)/B13/B14/B18/B19/B20/B25/B26/B28/B29/B30/B32/B66/B71; LTE TDD B34/B38/B39/B40/B41/B42/B48; LAA B46; WCDMA B1/B2/B3/B4/B5/B6/B8/B19</td><td>NO</td><td>NO</td></tr>
+  <tr><td style="white-space: nowrap;">EC942-H-NRQ3-B</td><td>Global (excluding China)</td><td>YES</td><td>5G NR SA/NSA n1/n2/n3/n5/n7/n8/n12/n20/n25/n28/n38/n40/n41/n48/n66/n71/n77/n78/n79; LTE FDD B1/B2/B3/B5/B7/B8/B12(B17)/B13/B14/B18/B19/B20/B25/B26/B28/B29/B30/B32/B66/B71; LTE TDD B34/B38/B39/B40/B41/B42/B48; LAA B46; WCDMA B1/B2/B3/B4/B5/B6/B8/B19</td><td>YES</td><td>YES</td></tr>
+  <tr><td style="white-space: nowrap;">EC942-B-FQ58-B</td><td>EMEA</td><td>NO</td><td>LTE Cat.4: LTE-FDD B1/B3/B7/B8/B20/B28A; LTE-TDD B38/B40/B41; WCDMA B1/B8; GSM B3/B8</td><td>NO</td><td>NO</td></tr>
+  <tr><td style="white-space: nowrap;">EC942-H-FQ58-B</td><td>EMEA</td><td>YES</td><td>LTE Cat.4: LTE-FDD B1/B3/B7/B8/B20/B28A; LTE-TDD B38/B40/B41; WCDMA B1/B8; GSM B3/B8</td><td>YES</td><td>YES</td></tr>
+  <tr><td style="white-space: nowrap;">EC942-B-FQ38-B</td><td>North America</td><td>NO</td><td>LTE Cat.4: LTE-FDD B2/B4/B5/B12/B13/B14/B66/B71; WCDMA B2/B4/B5</td><td>NO</td><td>NO</td></tr>
+  <tr><td style="white-space: nowrap;">EC942-H-FQ38-B</td><td>North America</td><td>YES</td><td>LTE Cat.4: LTE-FDD B2/B4/B5/B12/B13/B14/B66/B71; WCDMA B2/B4/B5</td><td>YES</td><td>YES</td></tr>
+  <tr><td style="white-space: nowrap;">EC942-B-FQ78-B</td><td>Australia &amp; Latin America</td><td>NO</td><td>Cat.4: LTE-FDD B1/B2/B3/B4/B5/B7/B8/B28; LTE-TDD B40; UMTS B1/B2/B5/B8; EDGE/GPRS/GSM 850/900/1800/1900MHz</td><td>NO</td><td>NO</td></tr>
+  <tr><td style="white-space: nowrap;">EC942-H-FQ78-B</td><td>Australia &amp; Latin America</td><td>YES</td><td>Cat.4: LTE-FDD B1/B2/B3/B4/B5/B7/B8/B28; LTE-TDD B40; UMTS B1/B2/B5/B8; EDGE/GPRS/GSM 850/900/1800/1900MHz</td><td>YES</td><td>YES</td></tr>
+  <tr><td style="white-space: nowrap;">EC942-B-EN00-B</td><td>Global</td><td>NO</td><td>No Cellular</td><td>NO</td><td>NO</td></tr>
+  <tr><td style="white-space: nowrap;">EC942-H-EN00-B</td><td>Global</td><td>YES</td><td>No Cellular</td><td>YES</td><td>YES</td></tr>
+</table>
 
 ## <span style="color: green;">OS Option (Optional)</span>
 

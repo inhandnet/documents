@@ -41,17 +41,17 @@
 
 | Technical Indicator | Specification |
 |------|------|
-| Cellular Network | Supports 5G / LTE CAT6 / LTE CAT4 (model dependent) |
+| Cellular Network | Supports 5G / LTE Cat.6 / LTE Cat.4 (model dependent) |
 | Positioning Capability | Supports GPS + BDS + Galileo + GLONASS + QZSS, with inertial navigation |
 | Cloud | Supports MQTT, DDS, AMQP, REST, and CoAP |
-| VPN | Supports IPSec/L2TP/GRE/OpenVPN |
+| VPN | Supports IPsec/L2TP/GRE/OpenVPN |
 | WLAN | Dual-band Wi-Fi 5 (2.4/5 GHz, AP/Client) |
 | Edge Computing | Supports Python, C/C++, and Docker |
-| Dimensions | 188.1 × 144.9 × 48.8 mm |
-| Weight | 974 g |
+| Dimensions | 188.1 × 144.9 × 48.8 mm (7.41 × 5.7 × 1.92 in) |
+| Weight | 974 g (2.15 lb) |
 | Interface Capability | 3× M12 10/100 + 1× M12 10/100/1000, Ethernet/CAN/AI-DI |
 | Input Voltage Range | 9-36 V DC (configurable to 7-36 V DC) |
-| Operating Temperature | -30 °C to +70 °C |
+| Operating Temperature | -30 °C ~ +70 °C (-22 °F ~ +158 °F) |
 | Protection Rating | IP64 |
 
 # <span style="color: green;">2. Product Dimensions</span>
@@ -71,7 +71,7 @@
   </div>
   <div style="width: 45%;">
     <div>Notes:</div>
-    <div>1. All dimensions are in millimeters (mm).</div>
+    <div>1. All dimensions are in millimeters (mm), with inches (in) in parentheses.</div>
     <div>2. All dimensions are approximate and <span style="font-weight: bold;">for reference only</span>.</div>
     <div>3. Drawings <span style="font-weight: bold;">must not be used for manufacturing</span>.</div>
     <div>4. Dimensions are subject to part and manufacturing tolerances.</div>
@@ -91,8 +91,8 @@
 | RAM | 1 GB DDR3 |
 | Storage | 8 GB eMMC |
 | <span style="color: green;">**Connectivity**</span> | |
-| Cellular | 5G, LTE CAT6, LTE CAT4 |
-| SIM | Dual SIM, 2FF |
+| Cellular | 5G, LTE Cat.6, LTE Cat.4 |
+| SIM | Dual-SIM, 2FF |
 | Ethernet | 3 × M12 D-coded 10/100 Mbps; 1 × M12 X-coded 10/100/1000 Mbps |
 | Antenna | Cellular: 4 or 2 × FAKRA D-coded; Wi-Fi: 2 × FAKRA I-coded; GNSS: 1 × FAKRA C-coded |
 | <span style="color: green;">**Satellite Navigation**</span> | |
@@ -117,14 +117,14 @@
 | Protection | Built-in voltage transient protection, delayed ignition induction |
 | Average Power | 6.44 W (RF module not at full load) |
 | <span style="color: green;">**Mechanical & Environment**</span> | |
-| Dimensions (W × D × H) | 188.1 × 144.9 × 48.8 mm |
-| Weight | 974 g |
+| Dimensions (W × D × H) | 188.1 × 144.9 × 48.8 mm (7.41 × 5.7 × 1.92 in) |
+| Weight | 974 g (2.15 lb) |
 | Installation | Wall-mounting |
 | Cooling | Radiation cooling |
 | Housing | Die-cast aluminum |
 | Protection Rating | IP64 |
-| Operating Temp. | -30 °C ~ +70 °C |
-| Storage Temp. | -40 °C ~ +85 °C |
+| Operating Temp. | -30 °C ~ +70 °C (-22 °F ~ +158 °F) |
+| Storage Temp. | -40 °C ~ +85 °C (-40 °F ~ +185 °F) |
 | Humidity | 95% RH @ 60 °C |
 | <span style="color: green;">**Standards & Certifications**</span> | |
 | Vehicle Standard | ECE-R10, R118 |
@@ -152,7 +152,7 @@
 | User Level | Administrator and read-only user |
 | AAA | Local authentication, Radius, Tacacs+, LDAP |
 | CA Certificate | PEM, PKCS12, SCEP |
-| VPN | IPSec VPN, L2TP, GRE, OpenVPN, CA |
+| VPN | IPsec VPN, L2TP, GRE, OpenVPN, CA |
 | <span style="color: green;">**Reliability**</span> | |
 | Backup | Floating routing, VRRP, interface backup |
 | Link Detection | Heartbeat detection, auto redial when disconnected |
@@ -186,17 +186,17 @@
 
 ## <span style="color: green;">Product Models</span>
 
-<table style="width:100%; table-layout:fixed;">
+<table style="width:100%; table-layout:fixed;font-size:11px;">
   <colgroup>
-    <col style="width:28%;">
-    <col style="width:45%;">
-    <col style="width:15%;">
-    <col style="width:12%;">
+    <col style="width:20%;">
+    <col style="width:47%;">
+    <col style="width:18%;">
+    <col style="width:16%;">
   </colgroup>
   <tr><th>Model</th><th>Cellular Type</th><th>UE Category</th><th>Region</th></tr>
-  <tr><td>VG710-M-NRQ5</td><td>5G NSA/SA; LTE-FDD; LTE-TDD; WCDMA (global multi-band)</td><td>5G</td><td>Global</td></tr>
-  <tr><td>VG710-M-FQ09</td><td>LTE-FDD; LTE-TDD; WCDMA (global multi-band)</td><td>LTE CAT6</td><td>Global</td></tr>
-  <tr><td>VG710-M-FQ58</td><td>LTE-FDD B1/B3/B7/B8/B20/B28A; LTE-TDD B38/B40/B41; WCDMA B1/B8; GSM B3/B8</td><td>LTE CAT4</td><td>EMEA / APAC</td></tr>
+  <tr><td>VG710-M-NRQ5</td><td>5G SA/NSA; LTE-FDD; LTE-TDD; WCDMA (global multi-band)</td><td>5G</td><td>Global</td></tr>
+  <tr><td>VG710-M-FQ09</td><td>LTE-FDD; LTE-TDD; WCDMA (global multi-band)</td><td>LTE Cat.6</td><td>Global</td></tr>
+  <tr><td>VG710-M-FQ58</td><td>LTE-FDD B1/B3/B7/B8/B20/B28A; LTE-TDD B38/B40/B41; WCDMA B1/B8; GSM B3/B8</td><td>LTE Cat.4</td><td>EMEA / APAC</td></tr>
   <tr><td>VG710-M-EN00</td><td>NONE</td><td>-</td><td>Global</td></tr>
 </table>
 

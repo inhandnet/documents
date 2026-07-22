@@ -51,8 +51,8 @@
 | One-Click VLAN | ES220-4P-1T: ports 1–4 isolated, uplink to port 5 |
 | Gigabit Ethernet | 5 / 8 / 9 × 10/100/1000 Mbps; Auto MDI/MDIX |
 | Power | Non-PoE: 5 V / 1 A DC; PoE: 55 V DC (Icc per model) |
-| Mechanical / Install | Metal; fanless; desktop / wall; 84 × 47.8 × 25.6 mm ~ 178 × 104 × 26 mm |
-| Environment | Op. 0 °C ~ +40 °C; stg. -10 °C ~ +70 °C; 10–90% RH |
+| Mechanical / Install | Metal; fanless; desktop / wall; 84 × 47.8 × 25.6 mm (3.31 × 1.88 × 1.01 in) ~ 178 × 104 × 26 mm (7.01 × 4.09 × 1.02 in) |
+| Environment | Op. 0 °C ~ +40 °C (32 °F ~ +104 °F); stg. -10 °C ~ +70 °C (14 °F ~ +158 °F); 10–90% RH |
 | Compliance | CE, FCC; 1-year warranty |
 
 <div style="margin-top: 32px;"></div>
@@ -82,7 +82,7 @@
   </div>
   <div style="width: 100%;">
     <div>Note:</div>
-    <div>1. All dimensions are in millimeters (mm).</div>
+    <div>1. All dimensions are in millimeters (mm), with inches (in) in parentheses.</div>
     <div>2. Dimensions vary by model; see product specifications.</div>
     <div>3. All dimensions are approximate, <span style="font-weight: bold;">for reference only</span>.</div>
     <div>4. Dimensions shown <span style="font-weight: bold;">shall not be used for production</span>.</div>
@@ -118,8 +118,8 @@
 | Dimensions (mm) | 84 × 47.8 × 25.6 | 100 × 99.4 × 26 | 126 × 53 × 25.6 | 178 × 104 × 26 |
 | Installation | Desktop, wall-mounted | Desktop, wall-mounted | Desktop, wall-mounted | Desktop, wall-mounted |
 | <span style="color: green;">**Environment**</span> | | | | |
-| Operating Temperature | 0 °C ~ +40 °C | 0 °C ~ +40 °C | 0 °C ~ +40 °C | 0 °C ~ +40 °C |
-| Storage Temperature | -10 °C ~ +70 °C | -10 °C ~ +70 °C | -10 °C ~ +70 °C | -10 °C ~ +70 °C |
+| Operating Temperature | 0 °C ~ +40 °C (32 °F ~ +104 °F) | 0 °C ~ +40 °C (32 °F ~ +104 °F) | 0 °C ~ +40 °C (32 °F ~ +104 °F) | 0 °C ~ +40 °C (32 °F ~ +104 °F) |
+| Storage Temperature | -10 °C ~ +70 °C (14 °F ~ +158 °F) | -10 °C ~ +70 °C (14 °F ~ +158 °F) | -10 °C ~ +70 °C (14 °F ~ +158 °F) | -10 °C ~ +70 °C (14 °F ~ +158 °F) |
 | Humidity | 10–90 % | 10–90 % | 10–90 % | 10–90 % |
 | <span style="color: green;">**Certification**</span> | | | | |
 | Certification | CE, FCC | CE, FCC | CE, FCC | CE, FCC |

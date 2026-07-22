@@ -35,7 +35,7 @@
 - **10.1" Industrial Display:** High-brightness 450 cd/m² capacitive touch screen, 1280 × 800 resolution, full viewing angle, IP65 front panel
 - **Flexible OS:** Android 7.1 operating system, deeply optimized for long-term application stability
 - **Rich Interfaces:** 2 × RS-232, 2 × RS-485, 4 × USB 2.0, Ethernet, audio output for peripheral expansion
-- **Industrial Reliability:** Metal housing, fanless, -10~60°C, EMC protection, watchdog, auto-start on power
+- **Industrial Reliability:** Metal housing, fanless, -10 °C ~ 60 °C (14 °F ~ 140 °F), EMC protection, watchdog, auto-start on power
 - **Seamless Connectivity:** 4G, Wi-Fi 802.11b/g/n, Bluetooth 4.2 for flexible network access
 
 ## <span style="color: green;">Core Specifications</span>
@@ -52,8 +52,8 @@
 | Serial              | 2 × RS-232, 2 × RS-485                        |
 | USB                 | 4 × USB 2.0                                   |
 | Front Protection    | IP65                                          |
-| Working Temperature | -10 ~ 60°C                                    |
-| Dimensions          | 258 × 172 × 36 mm                             |
+| Working Temperature | -10 °C ~ 60 °C (14 °F ~ 140 °F)                                    |
+| Dimensions          | 258 × 172 × 36 mm (10.16 × 6.77 × 1.42 in)                             |
 
 # <span style="color: green;">2. Product Dimensions</span>
 
@@ -63,7 +63,7 @@
 
 <div style="text-align: left; margin-top: 16px;">
     <div>Note:</div>
-    <div>1. All dimensions are in millimeters (mm).</div>
+    <div>1. All dimensions are in millimeters (mm), with inches (in) in parentheses.</div>
     <div>2. All dimensions are approximate, <span style="font-weight: bold;">for reference only</span>.</div>
     <div>3. Illustrated dimensions <span style="font-weight: bold;">must not be used for production processing</span>.</div>
     <div>4. Dimensions must comply with component and manufacturing tolerances.</div>
@@ -102,14 +102,14 @@
 | Power Input                                          | 12 V DC (circular interface), auto-start on power                                                                                       |
 | Power Consumption                                    | < 10 W                                                                                                                                  |
 | <span style="color: green;">**Mechanical**</span>    |                                                                                                                                         |
-| Dimensions (W × D × H)                               | 258 × 172 × 36 mm                                                                                                                       |
+| Dimensions (W × D × H)                               | 258 × 172 × 36 mm (10.16 × 6.77 × 1.42 in)                                                                                                                       |
 | Installation                                         | Wall Mounting                                                                                                                           |
 | Protection Rating                                    | IP65 (front screen)                                                                                                                     |
 | Housing                                              | Metal                                                                                                                                   |
 | Cooling                                              | Fanless                                                                                                                                 |
 | <span style="color: green;">**Environmental**</span> |                                                                                                                                         |
-| Working Temperature                                  | -10 ~ 60°C                                                                                                                              |
-| Storage Temperature                                  | -40 ~ 85°C                                                                                                                              |
+| Working Temperature                                  | -10 °C ~ 60 °C (14 °F ~ 140 °F)                                                                                                                              |
+| Storage Temperature                                  | -40 °C ~ 85 °C (-40 °F ~ 185 °F)                                                                                                                              |
 | Humidity                                             | 5 ~ 95% (non-condensing)                                                                                                                |
 | <span style="color: green;">**Reliability**</span>   |                                                                                                                                         |
 | RTC                                                  | Built-in Real Time Clock (RTC)                                                                                                          |
@@ -162,11 +162,19 @@
 
 ## <span style="color: green;">Product Models</span>
 
-| Model              | Region                             | \<WMNN\>: Cellular Networks                                          | \<STD/PLAT/L\>: OS | \<S\>: Serial Port Type |
-| ------------------ | ---------------------------------- | -------------------------------------------------------------------- | ------------------ | ----------------------- |
-| InPAD3101-FQ58-STD | EMEA, South Korea, Thailand, India | LTE-FDD: B1/B3/B7/B8/B20/B28A<br/>WCDMA: B1/B8<br/>GSM/EDGE: B3/B8   | STD: Android 7.1   | —                       |
-| InPAD3101-FQ39-STD | North America                      | LTE-FDD: B2/B4/B5/B7/B12/B13/B25/B26/B29/B30/B66<br/>WCDMA: B2/B4/B5 | STD: Android 7.1   | —                       |
-| InPAD3101-EN00-STD | Global                             | —                                                                    | STD: Android 7.1   | —                       |
+<table style="width:100%; table-layout:fixed; font-size:11px;">
+  <colgroup>
+    <col style="width:20%;">
+    <col style="width:18%;">
+    <col style="width:38%;">
+    <col style="width:14%;">
+    <col style="width:10%;">
+  </colgroup>
+  <tr><th>Model</th><th>Region</th><th>&lt;WMNN&gt;: Cellular Networks</th><th>&lt;STD/PLAT/L&gt;</th><th>&lt;S&gt;</th></tr>
+  <tr><td style="white-space: nowrap;">InPAD3101-FQ58-STD</td><td>EMEA, South Korea, Thailand, India</td><td>LTE-FDD: B1/B3/B7/B8/B20/B28A<br/>WCDMA: B1/B8<br/>GSM/EDGE: B3/B8</td><td>STD: Android 7.1</td><td>—</td></tr>
+  <tr><td style="white-space: nowrap;">InPAD3101-FQ39-STD</td><td>North America</td><td>LTE-FDD: B2/B4/B5/B7/B12/B13/B25/B26/B29/B30/B66<br/>WCDMA: B2/B4/B5</td><td>STD: Android 7.1</td><td>—</td></tr>
+  <tr><td style="white-space: nowrap;">InPAD3101-EN00-STD</td><td>Global</td><td>—</td><td>STD: Android 7.1</td><td>—</td></tr>
+</table>
 
 # <span style="color: green;">6. Contact Us</span>
 

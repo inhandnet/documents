@@ -14,7 +14,7 @@
     <div style="text-align: center;">
       <div style="display: flex; flex-wrap: wrap; gap: 16px; ">
         <div style="width: 200px;background-color: #4CAF50; color: white; padding: 8px 8px; border-radius: 6px; font-size: 18px;">· LoRaWAN 1.0.3</div>
-        <div style="width: 200px;background-color: #4CAF50; color: white; padding: 8px 8px; border-radius: 6px; font-size: 18px;">· RS232/RS485</div>
+        <div style="width: 200px;background-color: #4CAF50; color: white; padding: 8px 8px; border-radius: 6px; font-size: 18px;">· RS-232/RS-485</div>
       </div>
       <div style="display: flex; flex-wrap: wrap; gap: 16px;margin-top:16px">
         <div style="width: 200px;background-color: #4CAF50; color: white; padding: 8px 8px; border-radius: 6px; font-size: 18px;">· Modbus-RTU</div>
@@ -31,7 +31,7 @@
 **LT312 is a versatile industrial LoRaWAN DTU for serial data acquisition and transparent transmission across building, campus, and factory scenarios.**
 
 **Key Features:**
-- **Industrial serial robustness:** Isolated RS232/RS485 with built-in 15 kV ESD protection
+- **Industrial serial robustness:** Isolated RS-232/RS-485 with built-in 15 kV ESD protection
 - **Flexible LoRaWAN operation:** LoRaWAN 1.0.3, Class A/C, OTAA/ABP, ADR or fixed SF
 - **Strong RF coverage:** Up to 22 dBm Tx power and -135 dBm sensitivity at SF12/BW125 kHz
 - **Multi-region deployment:** EU433/CN470/CN779/EU868/AS923/AU915/KR920 coverage
@@ -49,7 +49,7 @@
 | Cloud Integration Capability | End-to-cloud data forwarding through LoRaWAN gateways/platforms |
 | Frequency Bands | EU433/CN470/CN779/EU868/AS923/AU915/KR920 |
 | Transmit Power | Up to 22 dBm transmit power, -135 dBm sensitivity @ SF12/BW125kHz |
-| Serial Interfaces | 1 x RS232 (DB9) + 1 x RS485 (3.81 mm 2-pin) |
+| Serial Interfaces | 1 x RS-232 (DB9) + 1 x RS-485 (3.81 mm 2-pin) |
 | Power Input | DC12V/1A |
 | Power Consumption  | Average power consumption <= 0.5 W |
 | Humidity | 5 to 95% RH (non-condensing) |
@@ -67,7 +67,7 @@
   </div>
   <div style="width: 100%;">
     <div>Notes:</div>
-    <div>1. All dimensions are in millimeters (mm).</div>
+    <div>1. All dimensions are in millimeters (mm), with inches (in) in parentheses.</div>
     <div>2. All dimensions are approximate and <span style="font-weight: bold;">for reference only</span>.</div>
     <div>3. Drawings <span style="font-weight: bold;">must not be used for manufacturing</span>.</div>
     <div>4. Dimensions are subject to part and manufacturing tolerances.</div>
@@ -90,26 +90,26 @@
 | Spreading factor | SF7-SF12, 6 levels adjustable |
 | Data rate (typical) | 5.5 / 3.1 / 1.8 / 1.0 / 0.6 / 0.3 kbps |
 | <span style="color: green;">**Serial Interfaces**</span> | |
-| RS485 quantity/type | 1 x 3.81 mm 2-pin terminal |
-| RS485 baud rate | 2400-115200 bps, default 9600 bps, 8N1 |
-| RS485 protection | Fully isolated, built-in 15 kV ESD |
-| RS232 quantity/type | 1 x DB9 |
-| RS232 baud rate | 2400-115200 bps, default 115200 bps, 8N1 |
-| RS232 protection | Fully isolated, built-in 15 kV ESD |
+| RS-485 quantity/type | 1 x 3.81 mm 2-pin terminal |
+| RS-485 baud rate | 2400-115200 bps, default 9600 bps, 8N1 |
+| RS-485 protection | Fully isolated, built-in 15 kV ESD |
+| RS-232 quantity/type | 1 x DB9 |
+| RS-232 baud rate | 2400-115200 bps, default 115200 bps, 8N1 |
+| RS-232 protection | Fully isolated, built-in 15 kV ESD |
 | <span style="color: green;">**Power**</span> | |
 | Input | DC12V, 1A |
 | Connector type | Port 1: 3.81 mm 2-pin terminal; Port 2: DC 5.5 x 2.1 mm |
 | Power consumption | Average <= 0.5 W |
 | <span style="color: green;">**Mechanical & Environment**</span> | |
-| Storage temperature | -40 to 85 C |
-| Operating temperature | -20 to 70 C |
+| Storage temperature | -40 °C ~ 85 °C (-40 °F ~ 185 °F) |
+| Operating temperature | -20 °C ~ 70 °C (-4 °F ~ 158 °F) |
 | Ambient humidity | 5 to 95% (non-condensing) |
 | <span style="color: green;">**Indicators**</span> | |
 | POWER indicator | On: normal power; Off: undervoltage or fault |
 | RUN indicator | Blinks: normal operation; steady on/off: fault |
 | LoRa indicator | On: LoRa data transmitting; Off: idle |
-| RS232 indicator | Blinks: RS232 data received; Off: idle |
-| RS485 indicator | Blinks: RS485 data received; Off: idle |
+| RS-232 indicator | Blinks: RS-232 data received; Off: idle |
+| RS-485 indicator | Blinks: RS-485 data received; Off: idle |
 
 # <span style="color: green;">4. Software Specifications</span>
 
@@ -150,18 +150,18 @@
 
 ## <span style="color: green;">Product Models</span>
 
-<table style="width:100%; table-layout:fixed;">
+<table style="width:100%; table-layout:fixed;font-size:11px;">
   <colgroup>
-    <col style="width:20%;">
-    <col style="width:20%;">
+    <col style="width:18%;">
+    <col style="width:18%;">
     <col style="width:35%;">
-    <col style="width:25%;">
+    <col style="width:29%;">
   </colgroup>
   <tr><th>Model</th><th>Region</th><th>&lt;REGION&gt;</th><th>Serial Port</th></tr>
-  <tr><td>LT312-US915</td><td>North America</td><td>US915, Tx power: 22 dBm</td><td>1 x RS232 + 1 x RS485</td></tr>
-  <tr><td>LT312-EU868</td><td>Europe</td><td>EU868, Tx power: 22 dBm</td><td>1 x RS232 + 1 x RS485</td></tr>
-  <tr><td>LT312-CN470</td><td>China</td><td>CN470, Tx power: 22 dBm</td><td>1 x RS232 + 1 x RS485</td></tr>
-  <tr><td>LT312-AS923</td><td>Asia-Pacific (except KR/IN)</td><td>AS923, Tx power: 22 dBm</td><td>1 x RS232 + 1 x RS485</td></tr>
+  <tr><td>LT312-US915</td><td>North America</td><td>US915, Tx power: 22 dBm</td><td>1 x RS-232 + 1 x RS-485</td></tr>
+  <tr><td>LT312-EU868</td><td>Europe</td><td>EU868, Tx power: 22 dBm</td><td>1 x RS-232 + 1 x RS-485</td></tr>
+  <tr><td>LT312-CN470</td><td>China</td><td>CN470, Tx power: 22 dBm</td><td>1 x RS-232 + 1 x RS-485</td></tr>
+  <tr><td>LT312-AS923</td><td>Asia-Pacific (except KR/IN)</td><td>AS923, Tx power: 22 dBm</td><td>1 x RS-232 + 1 x RS-485</td></tr>
 </table>
 
 # <span style="color: green;">6. Contact Us</span>

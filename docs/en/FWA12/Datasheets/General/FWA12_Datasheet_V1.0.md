@@ -31,9 +31,9 @@
 **The FWA12 5G router delivers ultra-fast connectivity with up to 7.01 Gbps downlink and 2.5 Gbps uplink. Supporting Wi-Fi 7 speeds up to 5000 Mbps and 128 device connections, it ensures seamless performance for business networks with enterprise-grade firewall, VPN security, and AI-powered cloud management.**
 
 **Features and Advantages:** 
-- **High-Performance 5G:** Quad-core A55, 5G R16 (NSA/SA), 7.01 Gbps DL / 2.5 Gbps UL, 4 DL CA + 2 UL CA, 300 MHz bandwidth
+- **High-Performance 5G:** Quad-core A55, 5G R16 (SA/NSA), 7.01 Gbps DL / 2.5 Gbps UL, 4 DL CA + 2 UL CA, 300 MHz bandwidth
 - **Next-Gen Wi-Fi 7:** Dual-band 2.4 / 5.8 GHz, 5000 Mbps peak rate, 128 concurrent connections, enhanced MU-MIMO
-- **Enterprise Security:** IPSec and L2TP VPN, advanced firewall, traffic management, security logs, anomaly detection
+- **Enterprise Security:** IPsec and L2TP VPN, advanced firewall, traffic management, security logs, anomaly detection
 - **AI-Driven Cloud Management:** InCloud Manager with zero-touch provisioning, AI assistant with 7×24 support
 - **Built for Enterprise Agility:** Abundant features, flexible configuration, high network resilience
 
@@ -49,11 +49,11 @@
 | Network | IPv4/IPv6 |
 | Wi-Fi | Wi-Fi 7 (802.11be), 2.4/5.8 GHz, 5000 Mbps |
 | Throughput / Users | Stateful firewall 2 Gbps; up to 220 users (128 Wi-Fi) |
-| SIM | 1 × eSIM + 2 × Nano SIM (hot-swap) |
+| SIM | 1 × eSIM + 2 × Nano-SIM (hot-swap) |
 | Ethernet / USB | 2 × 2.5 GbE (WAN/LAN, dual-LAN); USB-C 2.0 |
 | Antennas | 6 × external + 2 × internal cellular; 3 × internal Wi-Fi |
 | Power | 12 V / 3 A; ≤24 W |
-| Dimensions | 236 × 172.5 × 58.5 mm |
+| Dimensions | 236 × 172.5 × 58.5 mm (9.29 × 6.79 × 2.3 in) |
 | Certification | FCC, IC, PTCRB, Verizon, T-Mobile, AT&T |
 
 
@@ -74,7 +74,7 @@
   </div>
   <div style="width: 100%;">
     <div>Note:</div>
-    <div>1. All dimensions are in millimeters (mm).</div>
+    <div>1. All dimensions are in millimeters (mm), with inches (in) in parentheses.</div>
     <div>2. Dimensions (L × W × H): 236 × 172.5 × 58.5 mm (9.29 × 6.79 × 2.3 in).</div>
     <div>3. All dimensions are approximate, <span style="font-weight: bold;">for reference only</span>.</div>
     <div>4. Dimensions shown <span style="font-weight: bold;">shall not be used for production</span>.</div>
@@ -96,7 +96,7 @@
 | <span style="color: green;">**Interfaces**</span> | |
 | Ethernet | 2 × 2.5 GbE RJ45, WAN/LAN switchable, dual-LAN |
 | USB | 1 × Type-C 2.0, HOST and SLAVE modes |
-| SIM | 1 × eSIM; 2 × Nano SIM, hot plug |
+| SIM | 1 × eSIM; 2 × Nano-SIM, hot plug |
 | Reset | Reset button |
 | Power Switch | 1 × button |
 | LED | System, Cellular, Signal, WAN, LAN, Wi-Fi |
@@ -115,12 +115,12 @@
 | Input | Circular interface, 12 V / 3 A |
 | Power Consumption | ≤ 24 W |
 | <span style="color: green;">**Mechanical**</span> | |
-| Dimensions | 236 × 172.5 × 58.5 mm |
+| Dimensions | 236 × 172.5 × 58.5 mm (9.29 × 6.79 × 2.3 in) |
 | Weight | 2.2 lbs |
 | Installation | Wall mounting, desktop mounting |
 | <span style="color: green;">**Environment**</span> | |
-| Operating Temperature | -10 °C ~ +50 °C |
-| Storage Temperature | -40 °C ~ +85 °C |
+| Operating Temperature | -10 °C ~ +50 °C (14 °F ~ +122 °F) |
+| Storage Temperature | -40 °C ~ +85 °C (-40 °F ~ +185 °F) |
 | Humidity | 5–95 % RH (non-condensing) |
 | Protection | IP20 |
 | <span style="color: green;">**Physical**</span> | |
@@ -143,14 +143,14 @@
 | AI Assistant | 7×24 support, context-aware problem solving |
 | <span style="color: green;">**Network Features**</span> | |
 | Access | 5G/4G cellular, Ethernet |
-| Dialing | PPPoE, cellular auto redial, dual SIM switching, APN configuration |
+| Dialing | PPPoE, cellular auto redial, dual-SIM switching, APN configuration |
 | Link Backup | Packet-by-packet load balancing, link priority adjustment |
 | Link Monitoring | Real-time delay, jitter, packet loss, throughput monitoring |
 | IP Protocol | IPv4 / IPv6 |
 | Applications | VLAN, DHCP Server/Client, DNS, DDNS, Fixed Address, IP Passthrough |
 | Interface | Duplex mode, link negotiation, interface enable |
 | <span style="color: green;">**Security**</span> | |
-| VPN | IPSec VPN, L2TP VPN |
+| VPN | IPsec VPN, L2TP VPN |
 | Firewall | Access control, port mapping, port forwarding, MAC/IP/port/protocol filtering |
 | <span style="color: green;">**Monitoring**</span> | |
 | Dashboard | Device info, interface status, traffic analysis |
@@ -181,12 +181,12 @@
 
 <table style="width:100%; table-layout:fixed;">
   <colgroup>
-    <col style="width:24%;">
     <col style="width:20%;">
-    <col style="width:56%;">
+    <col style="width:16%;">
+    <col style="width:64%;">
   </colgroup>
   <tr><th>Model</th><th>Region</th><th>Specification</th></tr>
-  <tr><td style="white-space: nowrap;">FWA12-NANR</td><td>North America</td><td>5G Sub-6: n2/5/7/12/13/14/25/26/29/30/38/41/48/66/70/71/77/78;<br> LTE-FDD B2/4/5/7/12/13/14/17/25/26/29/30/66/71;<br> LTE-TDD B38/41/42/43/48</td></tr>
+  <tr><td style="white-space: nowrap;">FWA12-NANR</td><td>North America</td><td>5G Sub-6: n2/5/7/12/13/14/25/26/29/30/38/41/48/66/70/71/77/78<br> LTE-FDD B2/4/5/7/12/13/14/17/25/26/29/30/66/71;<br> LTE-TDD B38/41/42/43/48</td></tr>
 </table>
 
 

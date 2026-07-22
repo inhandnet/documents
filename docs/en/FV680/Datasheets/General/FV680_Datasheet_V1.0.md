@@ -47,7 +47,7 @@
 | Remote Management | Cloud monitoring, pricing, and promotions |
 | Cellular Connectivity | LTE module (FQ09 variant, model dependent) |
 | Analytics | Sales trends, customer behavior |
-| Dimensions | 775 × 788 × 1982 mm |
+| Dimensions | 775 × 788 × 1982 mm (30.51 × 31.02 × 78.03 in) |
 | Capacity | 680 L (24 cu.ft); 6 open shelves |
 | Power Supply | 115 V AC, 60 Hz, 10 A; NEMA 5-15P |
 | Compressor | 1/3 HP|
@@ -65,7 +65,7 @@
   <div style="width: 40%;">
     <div>Note:</div>
     <div>1. All dimensions are in millimeters (mm); imperial units shown on drawing for reference.</div>
-    <div>2. Body dimensions (W × D × H): 775 × 788 × 1982 mm.</div>
+    <div>2. Body dimensions (W × D × H): 775 × 788 × 1982 mm (30.51 × 31.02 × 78.03 in).</div>
     <div>3. Door width: 745 mm; depth with door open 90°: 1533 mm.</div>
     <div>4. Base clearance: 10 mm (3/8″).</div>
     <div>5. All dimensions are approximate, <span style="font-weight: bold;">for reference only</span>.</div>
@@ -99,7 +99,7 @@
 | Current | 10 A |
 | NEMA Configuration | 5-15P |
 | <span style="color: green;">**Mechanical**</span> | |
-| Dimensions (W × D × H) | 775 × 788 × 1982 mm |
+| Dimensions (W × D × H) | 775 × 788 × 1982 mm (30.51 × 31.02 × 78.03 in) |
 | Door Width | 745 mm |
 | Depth (door open 90°) | 1533 mm |
 | Ship Weight | 164 kg (362 lbs) |

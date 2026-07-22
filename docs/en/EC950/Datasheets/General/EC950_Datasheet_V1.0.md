@@ -33,7 +33,7 @@
 **Key features:**
 - **Scalable AI performance:** RKNN 1.0 TOPS, expandable up to 26 TOPS with Hailo-8 module
 - **Rich industrial interfaces:** 4×GE, 12 serial channels, CAN, DI/DO, HDMI, USB, mSATA
-- **Reliable connectivity:** Wired/cellular/Wi-Fi backup with dual SIM failover
+- **Reliable connectivity:** Wired/cellular/Wi-Fi backup with dual-SIM failover
 - **Security architecture:** Secure Boot, TPM2.0, TrustZone, firewall, VPN
 - **Cloud operations:** DeviceLive remote monitoring and edge app/container management
 
@@ -41,7 +41,7 @@
 
 | Technical Indicator | Specification |
 |------|---------------|
-| Cellular Network | LTE Cat4 / 5G (model-dependent) |
+| Cellular Network | LTE Cat.4 / 5G (model-dependent) |
 | Network Features | APN/VPDN, CHAP/PAP, ARP/Ethernet, static IP/DHCP |
 | Security | Secure Boot, TPM2.0, TrustZone, firewall, VPN |
 | Cloud Management | DeviceLive, HTTP/HTTPS/SSH remote management |
@@ -50,9 +50,9 @@
 | CPU/GPU | Quad-core Cortex-A55 @ 2.0GHz / Mali-G52 2EE |
 | NPU | RKNN 1.0 TOPS (up to 26 TOPS with Hailo-8) |
 | Memory/Storage | 4GB / 16GB eMMC |
-| Interfaces | 4×GE, 4×RS232/485/422 + 8×RS485, CAN, DI/DO, USB, HDMI, mSATA |
+| Interfaces | 4×GE, 4×RS-232/485/422 + 8×RS-485, CAN, DI/DO, USB, HDMI, mSATA |
 | Power Input | DC 12~48V (4W typical / 8W max) |
-| Dimensions (W × D × H) | 203 × 122 × 49 mm |
+| Dimensions (W × D × H) | 203 × 122 × 49 mm (7.99 × 4.8 × 1.93 in) |
 
 # <span style="color: green;">2. Product Dimensions</span>
 
@@ -74,7 +74,7 @@
   </div>
   <div style="width: 45%; font-size: 12px;">
     <div><strong>Note:</strong></div>
-    <div>1. All dimensions are in millimeters (mm).</div>
+    <div>1. All dimensions are in millimeters (mm), with inches (in) in parentheses.</div>
     <div>2. All dimensions are approximate and <span style="font-weight: bold;">for reference only</span>.</div>
     <div>3. Drawings <span style="font-weight: bold;">must not be used for manufacturing</span>.</div>
     <div>4. Dimensions are subject to part and manufacturing tolerances.</div>
@@ -97,18 +97,18 @@
 | RAM | 4GB |
 | FLASH | 16GB eMMC |
 | <span style="color: green;">**Connectivity & Interfaces**</span> |  |
-| Ethernet Ports | 4×10/100/1000Mbps GE |
+| Ethernet Ports | 4×10/100/1000 Mbps GE |
 | I/O Ports | 4×DI + 4×DO |
-| Serial Ports | 4×RS232/485/422 + 8×RS485 |
+| Serial Ports | 4×RS-232/485/422 + 8×RS-485 |
 | CAN | 2×CAN2.0A/B |
 | Buttons | Pinhole reset button |
-| SIM Card Holders | Dual SIM |
+| SIM Card Holders | Dual-SIM |
 | LED Indicators | 4G, SignalStrength (L1, L2, L3), SIM1, SIM2, User1, User2, PWR, STATUS, WARN, ERR |
 | USB | USB2.0 (2×Type-A + 1×Type-C) |
-| TF | Supports Micro SD |
+| microSD | Supports microSD |
 | Expansion Interfaces | 1×mSATA, B-Key 3042 (Hailo AI module) |
 | HDMI | HDMI2.0 |
-| WiFi | STA, 802.11ac/a/b/g/n, 2.4G/5G dual band |
+| Wi-Fi | STA, 802.11ac/a/b/g/n, 2.4G/5G dual band |
 | Bluetooth | BLE 5.0 |
 | GPS | GPS/Beidou/GLONASS |
 | <span style="color: green;">**Power & Power Consumption**</span> |  |
@@ -117,14 +117,14 @@
 | Typical Value (OS Idle State) | 4W |
 | Maximum Value (Full Load) | 8W |
 | <span style="color: green;">**Mechanical Specifications**</span> |  |
-| Product Dimensions | 203×122×49mm |
+| Product Dimensions | 203 × 122 × 49 mm (7.99 × 4.8 × 1.93 in) |
 | Mounting Method | DIN-rail / wall mounting |
 | Protection Rating | IP30 |
 | Enclosure & Heat Dissipation | Metal housing, fanless design |
 | TPM | TPM 2.0 |
 | <span style="color: green;">**Environment & Certifications**</span> |  |
-| Storage Temperature | -40~85℃ |
-| Operating Temperature | -20~70℃ |
+| Storage Temperature | -40 °C ~ 85 °C (-40 °F ~ 185 °F) |
+| Operating Temperature | -20 °C ~ 70 °C (-4 °F ~ 158 °F) |
 | Environmental Humidity | 5~95% RH (non-condensing) |
 | Physical Characteristics | IEC60068-2-27 shock resistance<br>IEC60068-2-6 vibration resistance<br>IEC60068-2-32 drop resistance |
 | EMC Standard | EN61000-4-2, level 3, Static<br>EN61000-4-3, level 3, Radiation Electric Field<br>EN61000-4-4, level 3, Pulsed Electric Field<br>EN61000-4-5, level 3, Surge<br>EN61000-4-6, level 3, Conducted Disturbance Immunity<br>EN61000-4-12, level 3, Shock Wave Resistance |
@@ -139,7 +139,7 @@
 | File System | Debian core root filesystem |
 | Package Manager | Debian package manager |
 | <span style="color: green;">**Network Features**</span> |  |
-| Network Tpye | LTE Cat4 (5G by model) |
+| Network Tpye | LTE Cat.4 (5G by model) |
 | Network Access | APN, VPDN |
 | Access Authentication | CHAP/PAP |
 | WAN Protocols | Static IP, DHCP |
@@ -152,8 +152,8 @@
 | <span style="color: green;">**Reliability**</span> |  |
 | Link Detection | Multi-level link detection, auto-redial |
 | Built-in Watchdog | Device self-diagnosing, auto-recovers from operation faults |
-| Backup Mechanism | Dual SIM backup |
-| Dual SIM Switchover | Supported |
+| Backup Mechanism | Dual-SIM backup |
+| Dual-SIM Switchover | Supported |
 | <span style="color: green;">**Data Acquisition Protocols (DSA)**</span> |  |
 | Industrial Protocols | Modbus RTU Master/Slave, Modbus TCP Master/Slave, EtherNet/IP, ISO on TCP, OPC UA Client/Server, Mitsubishi MC 3C/3E/3C OverTCP, Mitsubishi CPU Port, FINSUDP, HostLink, PPI |
 | Electricity Protocols | DLT645-2007, IEC101/104, DNP3.0 |
@@ -172,7 +172,7 @@
 **Model code:** EC954-\<WMNN\>-B-[XY]-[Z]
 
 \<WMNN\>: Cellular Type & Frequency Band (mandatory)  
-**Standard configuration (all models):** Memory/Storage 4GB/16GB · Ethernet/Serial 4×1000Mbps; 4×RS232/485/422 + 4×RS485 · Wi-Fi/BT/GPS/CAN/TPM & I/O included  
+**Standard configuration (all models):** Memory/Storage 4GB/16GB · Ethernet/Serial 4×1000Mbps; 4×RS-232/485/422 + 4×RS-485 · Wi-Fi/BT/GPS/CAN/TPM & I/O included  
 [XY] (Optional): AI Expansion Module  
 [Z] (Optional): OS option
 
@@ -189,10 +189,10 @@
     <col style="width:52%;">
   </colgroup>
   <tr><th>Model</th><th>Region</th><th>Cellular Type & Frequency Band</th></tr>
-  <tr><td>EC954-LQA8-B</td><td>China</td><td>LTE CAT4<br/>LTE-FDD B1/B3/B5/B8; LTE-TDD B34/B38/B39/B40/B41; WCDMA B1/B8; TD-SCDMA B34/B39; CDMA BC0; GSM 900/1800MHz</td></tr>
+  <tr><td>EC954-LQA8-B</td><td>China</td><td>LTE Cat.4<br/>LTE-FDD B1/B3/B5/B8; LTE-TDD B34/B38/B39/B40/B41; WCDMA B1/B8; TD-SCDMA B34/B39; CDMA BC0; GSM 900/1800MHz</td></tr>
   <tr><td>EC954-NRQ1-B</td><td>China</td><td>5G NR<br/>NSA n78/n79; SA n1/n3/n5/n8/n28/n41/n77/n78/n79; LTE-FDD B1/B3/B5/B8; LTE-TDD B34/B38/B39/B40/B41; WCDMA B1/B8</td></tr>
-  <tr><td>EC954-FQ58-B</td><td>EMEA</td><td>LTE CAT4<br/>LTE-FDD B1/B3/B7/B8/B20/B28A; LTE-TDD B38/B40/B41; WCDMA B1/B8; GSM B3/B8</td></tr>
-  <tr><td>EC954-FQ38-B</td><td>North America</td><td>LTE CAT4<br/>LTE-FDD B2/B4/B5/B12/B13/B14/B66/B71; WCDMA B2/B4/B5</td></tr>
+  <tr><td>EC954-FQ58-B</td><td>EMEA</td><td>LTE Cat.4<br/>LTE-FDD B1/B3/B7/B8/B20/B28A; LTE-TDD B38/B40/B41; WCDMA B1/B8; GSM B3/B8</td></tr>
+  <tr><td>EC954-FQ38-B</td><td>North America</td><td>LTE Cat.4<br/>LTE-FDD B2/B4/B5/B12/B13/B14/B66/B71; WCDMA B2/B4/B5</td></tr>
   <tr><td>EC954-EN00-B</td><td>Global</td><td>No Cellular</td></tr>
 </table>
 

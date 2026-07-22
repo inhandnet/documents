@@ -49,11 +49,11 @@
 | Network & Security | IPv4/IPv6; VLAN, DHCP, static routing; NAT; 3L firewall; PPPoE; dual-SIM |
 | Wi-Fi | Wi-Fi 6 (802.11ax), 2.4/5 GHz, 3000 Mbps; multi-SSID, VLAN, guest |
 | Throughput / Users | 1 Gbps; IPsec 100 Mbps; 200 users (128 Wi-Fi) |
-| SIM | Dual Nano SIM; eSIM optional |
+| SIM | Dual Nano-SIM; eSIM optional |
 | Ethernet | 5 × GbE (WAN/LAN, dual WAN) |
 | Antennas | 4G: SMA ×2; 5G: SMA ×4; Wi-Fi: RP-SMA ×2; ≤5 dBi |
 | Power | 12 V / 2 A; peak ≤24 W |
-| Dimensions / Environment | 198 × 137 × 25 mm; 848 g; wall / desktop; -10 °C ~ +50 °C op.; -40 °C ~ +85 °C stg.; 5–95% RH; IP20 |
+| Dimensions / Environment | 198 × 137 × 25 mm (7.8 × 5.39 × 0.98 in); 848 g (1.87 lb); wall / desktop; -10 °C ~ +50 °C (14 °F ~ +122 °F) op.; -40 °C ~ +85 °C (-40 °F ~ +185 °F) stg.; 5–95% RH; IP20 |
 | EMC | EMC Level 2 |
 
 
@@ -75,8 +75,8 @@
   </div>
   <div style="width: 45%;">
     <div>Note:</div>
-    <div>1. All dimensions are in millimeters (mm).</div>
-    <div>2. Dimensions (L × W × H): 198 × 137 × 25 mm.</div>
+    <div>1. All dimensions are in millimeters (mm), with inches (in) in parentheses.</div>
+    <div>2. Dimensions (L × W × H): 198 × 137 × 25 mm (7.8 × 5.39 × 0.98 in).</div>
     <div>3. All dimensions are approximate, <span style="font-weight: bold;">for reference only</span>.</div>
     <div>4. Dimensions shown <span style="font-weight: bold;">shall not be used for production</span>.</div>
   </div>
@@ -97,7 +97,7 @@
 | <span style="color: green;">**Interfaces**</span> | |
 | Cellular | 5G SA: 2 Gbps DL / 766 Mbps UL; 5G NSA: 2.6 Gbps DL / 458 Mbps UL; 4G LTE: 150 Mbps DL / 50 Mbps UL |
 | Ethernet | 5 × 10/100/1000 Mbps, WAN/LAN switching, dual WAN |
-| SIM Card | Dual Nano SIM (eSIM optional) |
+| SIM Card | Dual Nano-SIM (eSIM optional) |
 | Reset | Pinhole reset button |
 | Antenna | 4G: SMA × 2, Wi-Fi: RP-SMA × 2; 5G: SMA × 4, Wi-Fi: RP-SMA × 2 |
 | <span style="color: green;">**Wi-Fi**</span> | |
@@ -111,13 +111,13 @@
 | <span style="color: green;">**LEDs**</span> | |
 | LED | Power, Network, Signal, Wi-Fi |
 | <span style="color: green;">**Mechanical**</span> | |
-| Dimensions | 198 × 137 × 25 mm |
-| Weight | 848 g |
+| Dimensions | 198 × 137 × 25 mm (7.8 × 5.39 × 0.98 in) |
+| Weight | 848 g (1.87 lb) |
 | Installation | Wall mounting, desktop |
 | Protection | IP20 |
 | <span style="color: green;">**Environment**</span> | |
-| Operating Temperature | -10 °C ~ +50 °C |
-| Storage Temperature | -40 °C ~ +85 °C |
+| Operating Temperature | -10 °C ~ +50 °C (14 °F ~ +122 °F) |
+| Storage Temperature | -40 °C ~ +85 °C (-40 °F ~ +185 °F) |
 | Humidity | 5–95 % RH (non-condensing) |
 | <span style="color: green;">**EMC**</span> | |
 | EMC | EMC level 2 |
@@ -134,10 +134,10 @@
 | Dashboard | WAN/access/application visibility, traffic statistics, cellular signal, interface status, client analysis |
 | <span style="color: green;">**Network Features**</span> | |
 | Access | 5G/4G, wired, Wi-Fi |
-| Dialing | PPPoE, cellular auto redial, dual SIM switching, APN configuration |
+| Dialing | PPPoE, cellular auto redial, dual-SIM switching, APN configuration |
 | IP Protocols | IPv4, IPv6 |
 | Protocols | VLAN, DHCP (Server/Client), DHCP Snooping, DNS, DDNS, IP Passthrough, STP, ARP, ICMP |
-| VPN | IPSec VPN, L2TP VPN |
+| VPN | IPsec VPN, L2TP VPN |
 | SD-WAN | SD-WAN (Spoke) |
 | Routing | Static routing |
 | <span style="color: green;">**Wi-Fi**</span> | |
@@ -170,7 +170,7 @@
 
 ## <span style="color: green;">Product Models</span>
 
-<table style="width:100%; table-layout:fixed;">
+<table style="width:100%; table-layout:fixed;font-size:11px;">
   <colgroup>
     <col style="width:30%;">
     <col style="width:12%;">

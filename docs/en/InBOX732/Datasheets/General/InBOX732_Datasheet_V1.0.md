@@ -13,7 +13,7 @@
     </div>
     <div style="text-align: center;">
       <div style="display: flex; flex-wrap: wrap; gap: 16px; ">
-        <div style="width: 200px;background-color: #4CAF50; color: white; padding: 8px 8px; border-radius: 6px; font-size: 18px;">· 4G/WiFi/Bluetooth</div>
+        <div style="width: 200px;background-color: #4CAF50; color: white; padding: 8px 8px; border-radius: 6px; font-size: 18px;">· 4G/Wi-Fi/Bluetooth</div>
         <div style="width: 200px;background-color: #4CAF50; color: white; padding: 8px 8px; border-radius: 6px; font-size: 18px;">· Hexa-Core Processor</div>
       </div>
       <div style="display: flex; flex-wrap: wrap; gap: 16px;margin-top:16px">
@@ -34,9 +34,9 @@
 
 - **Powerful Configuration:** Hexa-core processor, 2GB/16GB storage, 4K output, rich interfaces
 - **Multi-OS Support:** Optional Android/Linux systems, deeply optimized for long-term stability
-- **Seamless Networking:** Supports 4G/WiFi/Wired connections to ensure uninterrupted device communication
-- **Industrial Design:** Metal chassis IP40, Level 3 EMC, -20°C~70°C wide temperature range
-- **Rich Interfaces:** 4×RS232, 2×RS485, 5×USB, HDMI, dual Ethernet ports, etc.
+- **Seamless Networking:** Supports 4G/Wi-Fi/Wired connections to ensure uninterrupted device communication
+- **Industrial Design:** Metal chassis IP40, Level 3 EMC, -20 °C ~ 70 °C (-4 °F ~ 158 °F) wide temperature range
+- **Rich Interfaces:** 4×RS-232, 2×RS-485, 5×USB, HDMI, dual Ethernet ports, etc.
 
 ## <span style="color: green;">Key Technical Specifications</span>
 
@@ -47,12 +47,12 @@
 | Bluetooth        | Bluetooth 5.0                                         |
 | Operating System | Linux(Debian9) / Android10                            |
 | Video Output     | HDMI2.0, supports 4K@60fps                            |
-| Network Access   | 4G / WiFi / Wired                                     |
-| Dimensions (W × D × H) | 190.2 × 160.2 × 43.6 mm                       |
+| Network Access   | 4G / Wi-Fi / Wired                                     |
+| Dimensions (W × D × H) | 190.2 × 160.2 × 43.6 mm (7.49 × 6.31 × 1.72 in)                       |
 | Mounting         | Wall Mount                                            |
-| Interfaces       | 4×RS232, 2×RS485, 5×USB, 2×Gigabit Ethernet, HDMI, CAN, GPIO |
+| Interfaces       | 4×RS-232, 2×RS-485, 5×USB, 2×Gigabit Ethernet, HDMI, CAN, GPIO |
 | Power Supply     | 9–24 V DC                                             |
-| Operating Temperature | -20 °C ~ +70 °C                                  |
+| Operating Temperature | -20 °C ~ +70 °C (-4 °F ~ +158 °F)                                  |
 | Protection Level | IP40                                                  |
 
 
@@ -65,7 +65,7 @@
 </p>
 
 <div style="text-align: left; margin-top: 16px;">
-    <div>1. All dimensions are in millimeters (mm).</div>
+    <div>1. All dimensions are in millimeters (mm), with inches (in) in parentheses.</div>
     <div>2. All dimensions are approximate values, <span style="font-weight: bold;">for reference only</span>.</div>
     <div>3. The dimensions shown <span style="font-weight: bold;">shall not be used for production or processing</span>.</div>
     <div>4. Dimensions must meet part and manufacturing tolerance requirements.</div>
@@ -86,8 +86,8 @@
 | SD Card Slot                                      | SD card slot × 1                                      |
 | Antenna Interface                                 | 3G/4G: SMA × 1; Wi-Fi: RP-SMA × 2                     |
 | <span style="color: green;">**Interfaces**</span> |                                                       |
-| Ethernet                                          | 2 × 10/100/1000 Mbps, LAN/WAN                         |
-| Serial Ports                                      | 4 × RS232 (DB9 Male); 2 × RS485 (3-pin Terminal)      |
+| Ethernet                                          | 2 × 10/100/1000 Mbps, WAN/LAN                         |
+| Serial Ports                                      | 4 × RS-232 (DB9 Male); 2 × RS-485 (3-pin Terminal)      |
 | USB                                               | 4 × USB 2.0; 1 × USB 3.0                              |
 | HDMI                                              | HDMI 2.0 × 1, supports 4K@60fps                       |
 | CAN                                               | CAN × 1                                               |
@@ -110,8 +110,8 @@
 | Cooling                                           | Fanless Cooling                                       |
 | Chassis Material                                  | Metal                                                 |
 | <span style="color: green;">**Environmental**</span> |                                                     |
-| Operating Temperature                             | -20 °C ~ +70 °C                                       |
-| Storage Temperature                               | -40 °C ~ +85 °C                                       |
+| Operating Temperature                             | -20 °C ~ +70 °C (-4 °F ~ +158 °F)                                       |
+| Storage Temperature                               | -40 °C ~ +85 °C (-40 °F ~ +185 °F)                                       |
 | Humidity                                          | 5 ~ 95 % RH (non-condensing)                          |
 | <span style="color: green;">**EMC**</span>      |                                                       |
 | EMC Specifications                                | ESD Level 3; EFT Level 3; Surge Level 3               |
@@ -150,12 +150,21 @@
 
 ## <span style="color: green;">Product Models</span>
 
-| Model              | Region | \<WMNN\>: Cellular Networks                                                                                                                                                                                            | \<STD/PLAT/L\>: OS | \<A\> | \<S\>: Serial port type |
-| ------------------ | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- |:-----:|:-----------------------:|
-| InBOX732-DQ20-L    | China  | LTE-FDD: B1/B3/B5/B8<br/>LTE-TDD: B34/B38/B39/B40/B41<br/>WCDMA: B1/B8<br/>TD-SCDMA: B34/B39<br/>CDMA/EVDO: BC0<br/>GSM/EDGE: 900/1800 MHz                                                                           | Debian              | —     | —                       |
-| InBOX732-FQ58-L    | EMEA   | LTE-FDD: B1/B3/B7/B8/B20/B28A<br/>WCDMA: B1/B8<br/>GSM/EDGE: B3/B8                                                                                                                                                    | Debian              | —     | —                       |
-| InBOX732-FQ39-L    | North America | LTE-FDD: B2/B4/B5/B7/B12/B13/B25/B26/B29/B30/B66 2×CA<br/>B2+B2/B5/B12/B13/B29; B4+B4/B5/B12/B13/B29;<br/>B7+B5/B7/B12/B26;<br/>B25+B5/B12/B25/B26;<br/>B30+B5/B12/B29;<br/>B66+B5/B12/B13/B29/B66<br/>WCDMA: B2/B4/B5 | Debian              | —     | —                       |
-| InBOX732-EN00-L    | —      | —                                                                                                                                                                                                                      | Debian              | —     | —                       |
+<table style="width:100%; table-layout:fixed; font-size:11px;">
+  <colgroup>
+    <col style="width:20%;">
+    <col style="width:12%;">
+    <col style="width:38%;">
+    <col style="width:14%;">
+    <col style="width:6%;">
+    <col style="width:10%;">
+  </colgroup>
+  <tr><th>Model</th><th>Region</th><th>&lt;WMNN&gt;: Cellular Networks</th><th>&lt;STD/PLAT/L&gt;</th><th>&lt;A&gt;</th><th>&lt;S&gt;</th></tr>
+  <tr><td style="white-space: nowrap;">InBOX732-DQ20-L</td><td>China</td><td>LTE-FDD: B1/B3/B5/B8<br/>LTE-TDD: B34/B38/B39/B40/B41<br/>WCDMA: B1/B8<br/>TD-SCDMA: B34/B39<br/>CDMA/EVDO: BC0<br/>GSM/EDGE: 900/1800 MHz</td><td>Debian</td><td>—</td><td>—</td></tr>
+  <tr><td style="white-space: nowrap;">InBOX732-FQ58-L</td><td>EMEA</td><td>LTE-FDD: B1/B3/B7/B8/B20/B28A<br/>WCDMA: B1/B8<br/>GSM/EDGE: B3/B8</td><td>Debian</td><td>—</td><td>—</td></tr>
+  <tr><td style="white-space: nowrap;">InBOX732-FQ39-L</td><td>North America</td><td>LTE-FDD: B2/B4/B5/B7/B12/B13/B25/B26/B29/B30/B66 2×CA<br/>B2+B2/B5/B12/B13/B29; B4+B4/B5/B12/B13/B29;<br/>B7+B5/B7/B12/B26;<br/>B25+B5/B12/B25/B26;<br/>B30+B5/B12/B29;<br/>B66+B5/B12/B13/B29/B66<br/>WCDMA: B2/B4/B5</td><td>Debian</td><td>—</td><td>—</td></tr>
+  <tr><td style="white-space: nowrap;">InBOX732-EN00-L</td><td>—</td><td>—</td><td>Debian</td><td>—</td><td>—</td></tr>
+</table>
 
 
 <div style="page-break-after: always;"></div>

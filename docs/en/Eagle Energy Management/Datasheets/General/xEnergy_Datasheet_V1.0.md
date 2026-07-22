@@ -88,7 +88,7 @@ The architecture spans (top → bottom):
 
 ## <span style="color: green;">Hardware Features</span>
 
-**Rich Hardware Interfaces** — Multiple networking options including cellular, Ethernet, and WiFi. Various interfaces such as serial port, LoRa, and IO, allowing flexible expansion.
+**Rich Hardware Interfaces** — Multiple networking options including cellular, Ethernet, and Wi-Fi. Various interfaces such as serial port, LoRa, and IO, allowing flexible expansion.
 
 **Rich Product Selection** — Diverse selection of energy gateways, switches, smart meters, and sensor devices to effortlessly meet various requirements.
 

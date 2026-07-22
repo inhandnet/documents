@@ -34,8 +34,8 @@
 
 - **High Performance:** RK3399 six-core processor at 1.8 GHz, 2 GB RAM / 16 GB storage
 - **Multi-OS Support:** Optional Android or Linux (Debian) operating systems, deeply optimized for stability
-- **Rich Interfaces:** RS232, RS485, USB 2.0/3.0, HDMI 2.0 (4K), Ethernet, Bluetooth 4.2
-- **Industrial Reliability:** Metal housing, IP40, fanless, -20~70°C wide temperature, EMC Level 3 protection
+- **Rich Interfaces:** RS-232, RS-485, USB 2.0/3.0, HDMI 2.0 (4K), Ethernet, Bluetooth 4.2
+- **Industrial Reliability:** Metal housing, IP40, fanless, -20 °C ~ 70 °C (-4 °F ~ 158 °F) wide temperature, EMC Level 3 protection
 - **Seamless Connectivity:** 4G, Wi-Fi, and wired network with multi-level link detection
 
 ## <span style="color: green;">Core Specifications</span>
@@ -52,8 +52,8 @@
 | Serial              | 2 × RS-232, 1 × RS-232/RS-485 |
 | USB                 | 2 × USB 2.0, 1 × USB 3.0      |
 | Power Input         | 12 V DC                       |
-| Working Temperature | -20 ~ 70°C                    |
-| Dimensions          | 170 × 150 × 26 mm             |
+| Working Temperature | -20 °C ~ 70 °C (-4 °F ~ 158 °F)                    |
+| Dimensions          | 170 × 150 × 26 mm (6.69 × 5.91 × 1.02 in)             |
 
 # <span style="color: green;">2. Product Dimensions</span>
 
@@ -63,7 +63,7 @@
 
 <div style="text-align: left; margin-top: 16px;">
   <div>Note:</div>
-  <div>1. All dimensions are in millimeters (mm).</div>
+  <div>1. All dimensions are in millimeters (mm), with inches (in) in parentheses.</div>
   <div>2. All dimensions are approximate, <span style="font-weight: bold;">for reference only</span>.</div>
   <div>3. Illustrated dimensions <span style="font-weight: bold;">must not be used for production processing</span>.</div>
   <div>4. Dimensions must comply with component and manufacturing tolerances.</div>
@@ -79,7 +79,7 @@
 | RAM                                                  | 2 GB                                             |
 | FLASH                                                | 16 GB eMMC                                       |
 | <span style="color: green;">**Interfaces**</span>    |                                                  |
-| Ethernet                                             | 1 × 10/100 Mbps, LAN/WAN                         |
+| Ethernet                                             | 1 × 10/100 Mbps, WAN/LAN                         |
 | Serial                                               | 2 × RS-232 (DB9); 1 × RS-232/RS-485 (DB9)        |
 | USB                                                  | 2 × USB 2.0; 1 × USB 3.0                         |
 | HDMI                                                 | 1 × HDMI 2.0, up to 4096 × 2160 (4K), with audio |
@@ -102,8 +102,8 @@
 | Housing                                              | Metal                                            |
 | Cooling                                              | Fanless                                          |
 | <span style="color: green;">**Environmental**</span> |                                                  |
-| Working Temperature                                  | -20 ~ 70°C                                       |
-| Storage Temperature                                  | -40 ~ 85°C                                       |
+| Working Temperature                                  | -20 °C ~ 70 °C (-4 °F ~ 158 °F)                                       |
+| Storage Temperature                                  | -40 °C ~ 85 °C (-40 °F ~ 185 °F)                                       |
 | Humidity                                             | 5 ~ 95% (non-condensing)                         |
 | <span style="color: green;">**Reliability**</span>   |                                                  |
 | RTC                                                  | Embedded RTC with button battery                 |
@@ -153,16 +153,24 @@
 
 ## <span style="color: green;">Product Models</span>
 
-| Model                   | Region        | \<WMNN\>: Cellular Networks                                                                                                                | \<STD/PLAT/L\>: OS         | \<S\>: Serial Port Type |
-| ----------------------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------- | ----------------------- |
-| InBOX710-DQ20-L/STD     | China         | LTE-FDD: B1/B3/B5/B8<br/>LTE-TDD: B34/B38/B39/B40/B41<br/>WCDMA: B1/B8<br/>TD-SCDMA: B34/B39<br/>CDMA/EVDO: BC0<br/>GSM/EDGE: 900/1800 MHz | L: Debian<br/>STD: Android | —                       |
-| InBOX710-DQ20-L/STD-485 | China         | LTE-FDD: B1/B3/B5/B8<br/>LTE-TDD: B34/B38/B39/B40/B41<br/>WCDMA: B1/B8<br/>TD-SCDMA: B34/B39<br/>CDMA/EVDO: BC0<br/>GSM/EDGE: 900/1800 MHz | L: Debian<br/>STD: Android | RS-485 × 1              |
-| InBOX710-FQ58-L/STD     | EMEA          | LTE-FDD: B1/B3/B7/B8/B20/B28A<br/>WCDMA: B1/B8<br/>GSM/EDGE: B3/B8                                                                         | L: Debian<br/>STD: Android | —                       |
-| InBOX710-FQ58-L/STD-485 | EMEA          | LTE-FDD: B1/B3/B7/B8/B20/B28A<br/>WCDMA: B1/B8<br/>GSM/EDGE: B3/B8                                                                         | L: Debian<br/>STD: Android | RS-485 × 1              |
-| InBOX710-FQ39-L/STD     | North America | LTE-FDD: B2/B4/B5/B7/B12/B13/B25/B26/B29/B30/B66<br/>WCDMA: B2/B4/B5                                                                       | L: Debian<br/>STD: Android | —                       |
-| InBOX710-FQ39-L/STD-485 | North America | LTE-FDD: B2/B4/B5/B7/B12/B13/B25/B26/B29/B30/B66<br/>WCDMA: B2/B4/B5                                                                       | L: Debian<br/>STD: Android | RS-485 × 1              |
-| InBOX710-EN00-L/STD     | Global        | —                                                                                                                                          | L: Debian<br/>STD: Android | —                       |
-| InBOX710-EN00-L/STD-485 | Global        | —                                                                                                                                          | L: Debian<br/>STD: Android | RS-485 × 1              |
+<table style="width:100%; table-layout:fixed; font-size:11px;">
+  <colgroup>
+    <col style="width:24%;">
+    <col style="width:12%;">
+    <col style="width:32%;">
+    <col style="width:16%;">
+    <col style="width:16%;">
+  </colgroup>
+  <tr><th>Model</th><th>Region</th><th>&lt;WMNN&gt;: Cellular Networks</th><th>&lt;STD/PLAT/L&gt;</th><th>&lt;S&gt;</th></tr>
+  <tr><td style="white-space: nowrap;">InBOX710-DQ20-L/STD</td><td>China</td><td>LTE-FDD: B1/B3/B5/B8<br/>LTE-TDD: B34/B38/B39/B40/B41<br/>WCDMA: B1/B8<br/>TD-SCDMA: B34/B39<br/>CDMA/EVDO: BC0<br/>GSM/EDGE: 900/1800 MHz</td><td>L: Debian<br/>STD: Android</td><td>—</td></tr>
+  <tr><td style="white-space: nowrap;">InBOX710-DQ20-L/STD-485</td><td>China</td><td>LTE-FDD: B1/B3/B5/B8<br/>LTE-TDD: B34/B38/B39/B40/B41<br/>WCDMA: B1/B8<br/>TD-SCDMA: B34/B39<br/>CDMA/EVDO: BC0<br/>GSM/EDGE: 900/1800 MHz</td><td>L: Debian<br/>STD: Android</td><td>RS-485 × 1</td></tr>
+  <tr><td style="white-space: nowrap;">InBOX710-FQ58-L/STD</td><td>EMEA</td><td>LTE-FDD: B1/B3/B7/B8/B20/B28A<br/>WCDMA: B1/B8<br/>GSM/EDGE: B3/B8</td><td>L: Debian<br/>STD: Android</td><td>—</td></tr>
+  <tr><td style="white-space: nowrap;">InBOX710-FQ58-L/STD-485</td><td>EMEA</td><td>LTE-FDD: B1/B3/B7/B8/B20/B28A<br/>WCDMA: B1/B8<br/>GSM/EDGE: B3/B8</td><td>L: Debian<br/>STD: Android</td><td>RS-485 × 1</td></tr>
+  <tr><td style="white-space: nowrap;">InBOX710-FQ39-L/STD</td><td>North America</td><td>LTE-FDD: B2/B4/B5/B7/B12/B13/B25/B26/B29/B30/B66<br/>WCDMA: B2/B4/B5</td><td>L: Debian<br/>STD: Android</td><td>—</td></tr>
+  <tr><td style="white-space: nowrap;">InBOX710-FQ39-L/STD-485</td><td>North America</td><td>LTE-FDD: B2/B4/B5/B7/B12/B13/B25/B26/B29/B30/B66<br/>WCDMA: B2/B4/B5</td><td>L: Debian<br/>STD: Android</td><td>RS-485 × 1</td></tr>
+  <tr><td style="white-space: nowrap;">InBOX710-EN00-L/STD</td><td>Global</td><td>—</td><td>L: Debian<br/>STD: Android</td><td>—</td></tr>
+  <tr><td style="white-space: nowrap;">InBOX710-EN00-L/STD-485</td><td>Global</td><td>—</td><td>L: Debian<br/>STD: Android</td><td>RS-485 × 1</td></tr>
+</table>
 
 # <span style="color: green;">6. Contact Us</span>
 

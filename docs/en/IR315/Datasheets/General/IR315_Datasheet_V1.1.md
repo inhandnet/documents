@@ -36,17 +36,17 @@ The IR315 provides uninterrupted multi-network access with comprehensive securit
 
 | Technical Specification | Specification |
 |---------|------|
-| Cellular Network | 5G NR (SA/NSA) or LTE (depending on model); dual Nano SIM; supports PDP configuration (IPv4/IPv4V6) |
-| VPN | IPSec (IKEv2, AES256-SHA512), PPTP, L2TP, GRE, DMVPN, OpenVPN, WireGuard, ZeroTier |
+| Cellular Network | 5G NR (SA/NSA) or LTE (depending on model); dual Nano-SIM; supports PDP configuration (IPv4/IPv4V6) |
+| VPN | IPsec (IKEv2, AES256-SHA512), PPTP, L2TP, GRE, DMVPN, OpenVPN, WireGuard, ZeroTier |
 | Wi-Fi (optional) | 2.4 GHz, IEEE 802.11 b/g/n, up to 300 Mbps |
 | Firewall and Access Control | SPI stateful inspection, DoS protection, ACL, content filtering (domain auto-refresh), 802.1x, IP-MAC binding, MAC address filtering, etc. |
 | Cloud Management and Network Management | Device Manager/ICS platform; SNMP v1/v2c/v3 (supports custom communication port), SNMP TRAP |
-| Dynamic Routing and High Availability | Static/OSPF routing; VRRP (supports virtual MAC), link online detection, dual SIM switching, SIM switching policy, embedded watchdog |
+| Dynamic Routing and High Availability | Static/OSPF routing; VRRP (supports virtual MAC), link online detection, dual-SIM switching, SIM switching policy, embedded watchdog |
 | Ethernet Interface | 5 × 10/100 Mbps RJ45, supports WAN/LAN/VLAN, 1.5KV network isolation transformer protection |
-| Serial Port and IO (optional) | 1×RS232+1×RS485 or 4×IO (depending on model) |
+| Serial Port and IO (optional) | 1×RS-232+1×RS-485 or 4×IO (depending on model) |
 | Power Supply | DC 9~36 V, overcurrent/reverse polarity protection, 2-pin industrial terminal |
-| Dimensions and Weight | 127 × 108.2 × 35 mm; 454 g |
-| Operating Temperature | Standard: -35 ~ 70 ℃; Extended: -40 ~ 75 ℃ |
+| Dimensions and Weight | 127 × 108.2 × 35 mm (5 × 4.26 × 1.38 in); 454 g (1 lb) |
+| Operating Temperature | Standard: -35 °C ~ 70 °C (-31 °F ~ 158 °F); Extended: -40 °C ~ 75 °C (-40 °F ~ 167 °F) |
 | Protection Rating | IP30 |
 
 # <span style="color: green;">2. Core Features</span>
@@ -56,18 +56,18 @@ The IR315 provides uninterrupted multi-network access with comprehensive securit
 - **Cellular Network:** Supports 5G NR (SA/NSA) or LTE (depending on model), covering global mainstream operator frequency bands, adaptable to diverse field network environments
 - **Wired Network:** 5 × 10/100 Mbps RJ45 Ethernet ports, supports flexible WAN/LAN/VLAN configuration, 1.5KV network isolation transformer protection
 - **Wi-Fi Access:** 2.4 GHz IEEE 802.11 b/g/n, up to 300 Mbps, supports AP/Client/WDS three working modes
-- **Dual SIM Card Slots:** Drawer-type slot supports 2 × Nano SIM, dual-SIM hot backup ensures network continuity
+- **Dual-SIM Card Slots:** Drawer-type slot supports 2 × Nano-SIM, dual-SIM hot backup ensures network continuity
 
 ## <span style="color: green;">2.2 Reliable Online Connectivity</span>
 
-- **Dual SIM Switching:** Supports SIM switching policies triggered by signal threshold, packet loss threshold, dial failure count, and other conditions
+- **Dual-SIM Switching:** Supports SIM switching policies triggered by signal threshold, packet loss threshold, dial failure count, and other conditions
 - **VRRP Hot Backup:** Supports Virtual Router Redundancy Protocol (virtual MAC), seamless master/backup gateway switching
 - **Multi-Level Link Detection:** ICMP probing, link online detection, supports hot backup/cold backup/load balancing modes
 - **Embedded Watchdog:** Hardware and software watchdog dual protection, automatically recovers abnormal systems
 
 ## <span style="color: green;">2.3 Security Protection</span>
 
-- **Multiple VPNs:** Supports IPSec (IKEv2, AES256-SHA512), PPTP, L2TP, GRE, DMVPN, OpenVPN, WireGuard, ZeroTier
+- **Multiple VPNs:** Supports IPsec (IKEv2, AES256-SHA512), PPTP, L2TP, GRE, DMVPN, OpenVPN, WireGuard, ZeroTier
 - **Firewall System:** SPI stateful inspection, DoS protection, ACL, port mapping, virtual IP mapping, DMZ, NAT
 - **Access Control:** 802.1x authentication, IP-MAC binding, MAC address filtering, device local access control
 - **User Security:** User permission management, PAM authentication parameter configuration, login failure lockout, system password protection mechanism
@@ -81,10 +81,10 @@ The IR315 provides uninterrupted multi-network access with comprehensive securit
 
 ## <span style="color: green;">2.5 Industrial Expansion</span>
 
-- **Rich Interfaces:** Five Ethernet port design, optional RS232+RS485 serial port or 4×IO (DI/DO configurable)
+- **Rich Interfaces:** Five Ethernet port design, optional RS-232+RS-485 serial port or 4×IO (DI/DO configurable)
 - **GNSS Positioning:** Some models support GPS/BeiDou positioning functions
 - **Industrial-Grade Design:** Metal enclosure fanless cooling, DIN rail mounting, IP30 protection rating
-- **Wide-Temperature Operation:** Standard -35 ~ 70 ℃, extended models support -40 ~ 75 ℃
+- **Wide-Temperature Operation:** Standard -35 °C ~ 70 °C (-31 °F ~ 158 °F), extended models support -40 °C ~ 75 °C (-40 °F ~ 167 °F)
 
 # <span style="color: green;">3. Typical Application Scenarios</span>
 
@@ -94,7 +94,7 @@ The IR315 provides stable network access for factory automation production lines
 
 ## <span style="color: green;">3.2 Smart Energy</span>
 
-Suitable for distribution automation, charging pile monitoring, photovoltaic power station monitoring, and other scenarios. The IR315 supports State Grid encryption (IEC101/IEC104), meeting the communication security requirements of the power industry; dual SIM switching and VRRP mechanisms ensure the continuity and reliability of power communication.
+Suitable for distribution automation, charging pile monitoring, photovoltaic power station monitoring, and other scenarios. The IR315 supports State Grid encryption (IEC101/IEC104), meeting the communication security requirements of the power industry; dual-SIM switching and VRRP mechanisms ensure the continuity and reliability of power communication.
 
 ## <span style="color: green;">3.3 Smart Transportation</span>
 
@@ -115,15 +115,15 @@ Suitable for atmospheric monitoring, water quality monitoring, noise monitoring,
 | Innovation Direction | Innovation Point | Core Capability/Value |
 |---------|--------|--------------|
 | Multi-Mode Cellular Communication | Intelligent Dialing Mode Adaptation | Supports QMI / PPP / ECM multiple dialing modes, automatically selects the optimal method according to module and network environment |
-| | Dual SIM Intelligent Switching | Supports automatic SIM switching based on signal quality, ICMP detection, packet loss rate, dial failure count, and other strategies |
+| | Dual-SIM Intelligent Switching | Supports automatic SIM switching based on signal quality, ICMP detection, packet loss rate, dial failure count, and other strategies |
 | | 5G / RedCap Support | Supports NRQ2, NRR0, NRR2 and other 5G modules, as well as NRF2/NRF4 and other RedCap modules |
 | | Global Operator Adaptation | Automatically matches APN, BAND, IMS configurations for operators such as Verizon / AT&T / T-Mobile |
 | Link Reliability | Link Backup and Hot Backup | Automatic master/backup link switching, supports hot backup + policy routing, actively reports alarms when switching |
 | | Load Balancing | Multi-link load balancing optimization, improving bandwidth utilization and business continuity |
-| VPN Technology Matrix | Full-Protocol VPN Support | Supports IPSec (IKEv1/v2), OpenVPN (TAP/TUN), L2TP, PPTP, GRE |
+| VPN Technology Matrix | Full-Protocol VPN Support | Supports IPsec (IKEv1/v2), OpenVPN (TAP/TUN), L2TP, PPTP, GRE |
 | | Modern VPN Protocols | Added WireGuard, ZeroTier to meet flexible networking needs |
 | | Enhanced Tunnel Management | Supports peer domain name, multiple remote subnets, independent start/stop control of single tunnel |
-| Industrial IoT Protocols | Industrial Serial Port / DTU | RS232/RS485 independent configuration, DTU supports TCP/UDP/domain name/multi-channel/DC protocol |
+| Industrial IoT Protocols | Industrial Serial Port / DTU | RS-232/RS-485 independent configuration, DTU supports TCP/UDP/domain name/multi-channel/DC protocol |
 | | State Grid Encryption | Supports IEC101/IEC104/DC protocol state cryptography encryption, model 305NRQ2-SEC |
 | | I/O Edge Control | 4-channel digital I/O, relay output, I/O status reporting to cloud platform, alarm triggering |
 | Cloud Platform Management | Multi-Cloud Platform Adaptation | Supports InHand DM, InConnect, Smart-EMS, ICS and other platform access |
@@ -178,7 +178,7 @@ Suitable for atmospheric monitoring, water quality monitoring, noise monitoring,
 
 <div style="margin-top: 12px;">
   <div>Note:</div>
-  <div>1. All dimensions are in millimeters (mm).</div>
+  <div>1. All dimensions are in millimeters (mm), with inches (in) in parentheses.</div>
   <div>2. All dimensions are approximate values, <span style="font-weight: bold;">for reference only</span>.</div>
   <div>3. The dimensions shown <span style="font-weight: bold;">shall not be used for production and processing</span>.</div>
   <div>4. Dimensions must meet part and manufacturing tolerance requirements.</div>
@@ -197,9 +197,9 @@ Suitable for atmospheric monitoring, water quality monitoring, noise monitoring,
 | Ethernet Ports | 5 × 10/100 Mbps RJ45, supports WAN/LAN/VLAN, 1.5KV network isolation transformer protection |
 | Power Interface | DC 9~36V, overcurrent/reverse polarity protection, 2-pin industrial terminal |
 | I/O Port (optional) | 4 × IO (DI/DO configurable) |
-| Serial Port (optional) | 1 × RS232 + 1 × RS485 |
+| Serial Port (optional) | 1 × RS-232 + 1 × RS-485 |
 | Reset Button | Pinhole reset button |
-| SIM Card Slot | Drawer-type slot ×1, supports 2 × Nano SIM |
+| SIM Card Slot | Drawer-type slot ×1, supports 2 × Nano-SIM |
 | Antenna Connectors | 5G: SMA ×2; 4G: SMA ×1 (overseas 4G models are SMA ×2); Wi-Fi: RP-SMA ×2 |
 | Grounding Terminal | Supported |
 | LED Indicators | Power, System, Network, Wi-Fi, Signal |
@@ -221,14 +221,14 @@ Suitable for atmospheric monitoring, water quality monitoring, noise monitoring,
 | Operating Power | 150~320 mA@12V |
 | Peak Power | 320 mA@12V |
 | <span style="color: green;">**Mechanical Specifications**</span> | |
-| Product Dimensions (W × D × H) | 127 × 108.2 × 35 mm |
-| Product Weight | 454 g |
+| Product Dimensions (W × D × H) | 127 × 108.2 × 35 mm (5 × 4.26 × 1.38 in) |
+| Product Weight | 454 g (1 lb) |
 | Mounting Method | DIN rail |
 | Protection Rating | IP30 |
 | Enclosure and Cooling | Metal shell, fanless cooling |
 | <span style="color: green;">**Environment and Certifications**</span> | |
-| Storage Temperature | -40~85 ℃ |
-| Operating Temperature | Standard: -35 ~ 70 ℃<br/>Extended: -40 ~ 75 ℃ |
+| Storage Temperature | -40 °C ~ 85 °C (-40 °F ~ 185 °F) |
+| Operating Temperature | Standard: -35 °C ~ 70 °C (-31 °F ~ 158 °F)<br/>Extended: -40 °C ~ 75 °C (-40 °F ~ 167 °F) |
 | Ambient Humidity | 5~95% (non-condensing) |
 | Physical Characteristics | Shock IEC60068-2-27<br/>Vibration IEC60068-2-6<br/>Drop IEC60068-2-32 |
 | EMC Indicators | EN61000-4-2, level 3, ESD<br/>EN61000-4-3, level 3, Radiated Electric Field<br/>EN61000-4-4, level 3, Burst Electric Field<br/>EN61000-4-5, level 3, Surge<br/>EN61000-4-6, level 3, Conducted Disturbance Immunity<br/>EN61000-4-8, >level 2, Power Frequency Magnetic Field Immunity, horizontal/vertical 400A/m<br/>EN61000-4-12, level 3, Oscillatory Wave Immunity |
@@ -245,13 +245,13 @@ Suitable for atmospheric monitoring, water quality monitoring, noise monitoring,
 | Parameter | Specification |
 |------|------|
 | Network Standard | GSM/GPRS/EDGE, UMTS/HSPA+/EVDO/TD-SCDMA, TDD LTE/FDD LTE, 5G NR (SA/NSA) |
-| SIM Card | Dual Nano SIM, drawer-type slot |
+| SIM Card | Dual Nano-SIM, drawer-type slot |
 | Dialing Mode | PPP, QMI, ECM (depending on model) |
 | PDP Configuration | Supports IPv4/IPv4V6 |
 | Network Access | APN, VPDN |
 | Access Authentication | CHAP/PAP |
 | Connection Mode | Always online, on-demand dialing, manual dialing |
-| Dual SIM Switching | Supports SIM switching policies triggered by signal threshold, packet loss threshold, dial failure count, etc. |
+| Dual-SIM Switching | Supports SIM switching policies triggered by signal threshold, packet loss threshold, dial failure count, etc. |
 | Operator Configuration | Built-in global mainstream operator APN configurations, supports T-Mobile, AT&T, Verizon, etc. |
 | Signal Reporting | Supports RSRP, RSRQ, SINR, RSSI, RSCP, Ec/Io, PCI, BAND and other parameter reporting |
 
@@ -310,9 +310,9 @@ Suitable for atmospheric monitoring, water quality monitoring, noise monitoring,
 
 | VPN Type | Function Description |
 |----------|----------|
-| IPSec VPN | Supports IKEv1/IKEv2, AES256-SHA512 encryption algorithm, up to 10 tunnels, supports peer domain name configuration |
+| IPsec VPN | Supports IKEv1/IKEv2, AES256-SHA512 encryption algorithm, up to 10 tunnels, supports peer domain name configuration |
 | PPTP | Supports client/server mode |
-| L2TP | Supports L2TP over IPSec, supports NAT traversal |
+| L2TP | Supports L2TP over IPsec, supports NAT traversal |
 | GRE | Generic Routing Encapsulation tunnel |
 | DMVPN | Dynamic Multipoint VPN |
 | OpenVPN | Supports TAP/TUN mode, TLS-auth/tls-crypt options, AES-256-GCM/SHA256 encryption |
@@ -376,7 +376,7 @@ Suitable for atmospheric monitoring, water quality monitoring, noise monitoring,
 | Function | Description |
 |------|------|
 | DTU | TCP/UDP transparent transmission, DCTCP/DCUDP mode, supports domain name configuration |
-| Serial Port Traffic Statistics | Supports RS232/RS485 serial port traffic statistics, TCP connection status display |
+| Serial Port Traffic Statistics | Supports RS-232/RS-485 serial port traffic statistics, TCP connection status display |
 | Modbus Bridge | Modbus RTU to Modbus TCP |
 | State Grid Encryption | Supports IEC101/IEC104 power protocol encryption (specific models) |
 | I/O Control | 4 × IO (DI/DO configurable), supports edge-triggered status reporting |
@@ -427,21 +427,21 @@ Suitable for atmospheric monitoring, water quality monitoring, noise monitoring,
   </colgroup>
   <tr><th>Model</th><th>Region</th><th>Cellular Network</th><th>Wi-Fi</th><th>Serial/IO</th><th>GNSS</th></tr>
   <tr><td style="white-space: nowrap;">IR315-NRQ2-&lt;WLAN/NA&gt;-&lt;S/NA&gt;</td><td>China</td><td>5G NR SA/NSA</td><td>Optional</td><td>Optional</td><td>—</td></tr>
-  <tr><td style="white-space: nowrap;">IR315-LQ20-&lt;WLAN/NA&gt;-S</td><td>China</td><td>CAT4</td><td>Optional</td><td>S</td><td>—</td></tr>
-  <tr><td style="white-space: nowrap;">IR315-FQ58-&lt;WLAN/NA&gt;-&lt;S/NA&gt;</td><td>Europe/APAC/Australia/NZ</td><td>CAT4</td><td>Optional</td><td>Optional</td><td>—</td></tr>
-  <tr><td style="white-space: nowrap;">IR315-FQ58-WLAN-&lt;S/NA&gt;-G</td><td>Europe/APAC</td><td>CAT4</td><td>Standard</td><td>Optional</td><td>Supported</td></tr>
-  <tr><td style="white-space: nowrap;">IR315-FQ78-&lt;WLAN/NA&gt;-&lt;S/NA&gt;</td><td>Australia/New Zealand</td><td>CAT4</td><td>Optional</td><td>Optional</td><td>—</td></tr>
-  <tr><td style="white-space: nowrap;">IR315-FQ78-WLAN-G</td><td>Australia/New Zealand</td><td>CAT4</td><td>Standard</td><td>IO</td><td>Supported</td></tr>
-  <tr><td style="white-space: nowrap;">IR315-FQ88-&lt;WLAN/NA&gt;-S</td><td>Japan</td><td>CAT4</td><td>Optional</td><td>S</td><td>—</td></tr>
-  <tr><td style="white-space: nowrap;">IR315-FQ38-&lt;WLAN/NA&gt;</td><td>North America</td><td>CAT4</td><td>Optional</td><td>IO</td><td>—</td></tr>
-  <tr><td style="white-space: nowrap;">IR315-FF39-&lt;WLAN/NA&gt;-&lt;S/NA&gt;</td><td>North America</td><td>CAT6</td><td>Optional</td><td>Optional</td><td>—</td></tr>
-  <tr><td style="white-space: nowrap;">IR315-FF39-WLAN-&lt;S/NA&gt;-G</td><td>North America</td><td>CAT6</td><td>Standard</td><td>Optional</td><td>Supported</td></tr>
+  <tr><td style="white-space: nowrap;">IR315-LQ20-&lt;WLAN/NA&gt;-S</td><td>China</td><td>Cat.4</td><td>Optional</td><td>S</td><td>—</td></tr>
+  <tr><td style="white-space: nowrap;">IR315-FQ58-&lt;WLAN/NA&gt;-&lt;S/NA&gt;</td><td>Europe/APAC/Australia/NZ</td><td>Cat.4</td><td>Optional</td><td>Optional</td><td>—</td></tr>
+  <tr><td style="white-space: nowrap;">IR315-FQ58-WLAN-&lt;S/NA&gt;-G</td><td>Europe/APAC</td><td>Cat.4</td><td>Standard</td><td>Optional</td><td>Supported</td></tr>
+  <tr><td style="white-space: nowrap;">IR315-FQ78-&lt;WLAN/NA&gt;-&lt;S/NA&gt;</td><td>Australia/New Zealand</td><td>Cat.4</td><td>Optional</td><td>Optional</td><td>—</td></tr>
+  <tr><td style="white-space: nowrap;">IR315-FQ78-WLAN-G</td><td>Australia/New Zealand</td><td>Cat.4</td><td>Standard</td><td>IO</td><td>Supported</td></tr>
+  <tr><td style="white-space: nowrap;">IR315-FQ88-&lt;WLAN/NA&gt;-S</td><td>Japan</td><td>Cat.4</td><td>Optional</td><td>S</td><td>—</td></tr>
+  <tr><td style="white-space: nowrap;">IR315-FQ38-&lt;WLAN/NA&gt;</td><td>North America</td><td>Cat.4</td><td>Optional</td><td>IO</td><td>—</td></tr>
+  <tr><td style="white-space: nowrap;">IR315-FF39-&lt;WLAN/NA&gt;-&lt;S/NA&gt;</td><td>North America</td><td>Cat.6</td><td>Optional</td><td>Optional</td><td>—</td></tr>
+  <tr><td style="white-space: nowrap;">IR315-FF39-WLAN-&lt;S/NA&gt;-G</td><td>North America</td><td>Cat.6</td><td>Standard</td><td>Optional</td><td>Supported</td></tr>
   <tr><td style="white-space: nowrap;">IR315-EN00-&lt;WLAN/NA&gt;-S</td><td>Global</td><td>No cellular</td><td>Optional</td><td>S</td><td>—</td></tr>
 </table>
 
 > **Note:**
 > - `Optional` = This position is optional (e.g., `<WLAN/NA>` can be WLAN or NA, `<S/NA>` can be S or NA)
-> - `S` = 1×RS232 + 1×RS485; `IO` = 4×IO
+> - `S` = 1×RS-232 + 1×RS-485; `IO` = 4×IO
 > - `—` = Not supported
 
 ### Frequency Band Specification Details

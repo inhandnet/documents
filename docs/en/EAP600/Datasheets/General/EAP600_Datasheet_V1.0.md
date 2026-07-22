@@ -52,7 +52,7 @@
 | Ethernet Interface | 1 × Gigabit Ethernet port, 1 × Reset button, 4 × LEDs (PWR/WAN/2.4G/5G) |
 | Radio & Antenna | 2 × 2 MU-MIMO, 2 × built-in dual-frequency antenna, no Bluetooth |
 | Power Supply | 12 V / 2 A DC, 802.3af PoE |
-| Environment & Compliance | Operating 0 °C to +45 °C, storage -40 °C to +70 °C, 5%~95% RH, IP30, CE/IC/FCC |
+| Environment & Compliance | Operating 0 °C ~ +45 °C (32 °F ~ +113 °F), storage -40 °C ~ +70 °C (-40 °F ~ +158 °F), 5%~95% RH, IP30, CE/IC/FCC |
 
 
 
@@ -73,7 +73,7 @@
   </div>
   <div style="width: 100%;">
     <div>Note:</div>
-    <div>1. All dimensions are in millimeters (mm).</div>
+    <div>1. All dimensions are in millimeters (mm), with inches (in) in parentheses.</div>
     <div>2. All dimensions are approximate, <span style="font-weight: bold;">for reference only</span>.</div>
     <div>3. Dimensions shown <span style="font-weight: bold;">shall not be used for production</span>.</div>
   </div>
@@ -102,8 +102,8 @@
 | <span style="color: green;">**Power**</span> | |
 | Power Supply | 12 V/2 A DC; 802.3af PoE |
 | <span style="color: green;">**Environment**</span> | |
-| Operating Temperature | 0 °C ~ +45 °C |
-| Storage Temperature | -40 °C ~ +70 °C |
+| Operating Temperature | 0 °C ~ +45 °C (32 °F ~ +113 °F) |
+| Storage Temperature | -40 °C ~ +70 °C (-40 °F ~ +158 °F) |
 | Humidity | 5% ~ 95% |
 | IP Level | IP30 |
 | <span style="color: green;">**Certification**</span> | |

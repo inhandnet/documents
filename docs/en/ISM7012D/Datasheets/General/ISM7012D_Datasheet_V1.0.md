@@ -43,13 +43,13 @@
 
 | Item | Specification |
 |------|---------------|
-| Dimensions (W × D × H) | 52 × 140 × 110 mm |
-| Weight | 0.7 kg |
+| Dimensions (W × D × H) | 52 × 140 × 110 mm (2.05 × 5.51 × 4.33 in) |
+| Weight | 0.7 kg (1.54 lb) |
 | Mounting | DIN-rail mounting |
 | Ports | 4 × 1000Base-X SFP + 8 × 10/100/1000Base-T |
 | Switching Capacity | 68 Gbps backplane bandwidth |
 | Power Supply | 18–60 V DC, redundant dual input |
-| Operating Temperature | -40 °C \~ +75 °C |
+| Operating Temperature | -40 °C ~ +75 °C (-40 °F ~ +167 °F) |
 | Ingress Protection | IP40 |
 
 # <span style="color: green;">2. Product Dimensions</span>
@@ -57,11 +57,11 @@
 <div style="display: flex; align-items: end; flex-wrap: wrap; justify-content: space-between;row-gap: 16px;">
   <div style="width: 100%;">
     <img src="images/media_1_6.png" width="80%" style="display: block; margin: 0 auto;" alt="ISM7012D-P Dimensions" />
-    <div style="width: 100%; text-align: center; font-size: 12px; margin-top: 8px;">ISM7012D-P (52 × 140 × 110 mm)</div>
+    <div style="width: 100%; text-align: center; font-size: 12px; margin-top: 8px;">ISM7012D-P (52 × 140 × 110 mm (2.05 × 5.51 × 4.33 in))</div>
   </div>
   <div style="width: 100%;">
     <div>Note:</div>
-    <div>1. All dimensions are in millimeters (mm).</div>
+    <div>1. All dimensions are in millimeters (mm), with inches (in) in parentheses.</div>
     <div>2. All dimensions are approximate and <span style="font-weight: bold;">for reference only</span>.</div>
     <div>3. The dimensions shown in the figure <span style="font-weight: bold;">shall not be used for production or processing</span>.</div>
     <div>4. Dimensions must comply with part and manufacturing tolerance requirements.</div>
@@ -90,15 +90,15 @@
 | Reverse Polarity Protection | Supported |
 | Power Consumption | 10 W |
 | <span style="color: green;">**Mechanical**</span> | |
-| Dimensions (W × D × H) | 52 × 140 × 110 mm |
-| Weight | 0.7 kg |
+| Dimensions (W × D × H) | 52 × 140 × 110 mm (2.05 × 5.51 × 4.33 in) |
+| Weight | 0.7 kg (1.54 lb) |
 | Enclosure | Fully enclosed seamless metal enclosure |
 | Ingress Protection | IP40 |
 | Cooling Method | Fanless |
 | Mounting | DIN-rail mounting |
 | <span style="color: green;">**Environmental**</span> | |
-| Operating Temperature | -40 °C \~ +75 °C |
-| Storage Temperature | -40 °C \~ +85 °C |
+| Operating Temperature | -40 °C ~ +75 °C (-40 °F ~ +167 °F) |
+| Storage Temperature | -40 °C ~ +85 °C (-40 °F ~ +185 °F) |
 | Humidity | 5 \~ 95 % RH (non-condensing) |
 | <span style="color: green;">**EMC**</span> | |
 | EMI | FCC 47 CFR Part 15 Class A; EN55022 Class A; EN55035 Class A |
@@ -164,7 +164,7 @@ table:last-of-type td:first-child { white-space: nowrap; max-width: none; }
 
 | Model | Region | Description |
 |-------|--------|-------------|
-| ISM7012D-P-4GSFP-8GT-24 | Global | 12-Port Layer 2+ Managed Industrial Switch. 4 × 1000Base-X SFP Ports (SFP module not included), 8 × 10/100/1000Base-T Ports, 1 × Management Serial CLI Port. IP40 Protection Class, Operating Temperature -40 °C \~ +75 °C, Isolated Dual 18–60 V DC Power Inputs. |
+| ISM7012D-P-4GSFP-8GT-24 | Global | 12-Port Layer 2+ Managed Industrial Switch. 4 × 1000Base-X SFP Ports (SFP module not included), 8 × 10/100/1000Base-T Ports, 1 × Management Serial CLI Port. IP40 Protection Class, Operating Temperature -40 °C ~ +75 °C (-40 °F ~ +167 °F), Isolated Dual 18–60 V DC Power Inputs. |
 
 # <span style="color: green;">6. Contact Us</span>
 

@@ -33,7 +33,7 @@
 **Positioning:** Rugged all-in-one vehicle gateway with high-speed WAN, Wi-Fi, GNSS, and edge computing
 
 **Key Features:**
-- **High-speed connectivity:** 5G/LTE-A with dual SIM and link backup for always-on access
+- **High-speed connectivity:** 5G/LTE-A with dual-SIM and link backup for always-on access
 - **Vehicle-ready design:** FAKRA RF and M12 connectors built for harsh mobile environments
 - **Integrated vehicle interfaces:** Supports OBD-II, J1939, CAN, serial, USB, and rich I/O
 - **Open edge platform:** Supports Python, C/C++, Docker, and cloud integration
@@ -43,17 +43,17 @@
 
 |Technical Indicator|Specification|
 |---|---|
-|Cellular Network|4G Cat6 / 5G / 5G+5G RedCap (model-dependent)|
+|Cellular Network|4G Cat.6 / 5G / 5G+5G RedCap (model-dependent)|
 |Network Features|APN, VPDN, DHCP, DNS, DDNS, static routing/RIP/OSPF/BGP|
 |Positioning Capability|GPS/GLONASS/Galileo/Beidou, 2.5 m CEP accuracy, up to 10 Hz|
 |Security Capability|SPI firewall, ACL, NAT/NAPT, IPsec/OpenVPN/L2TP/GRE|
 |Wi-Fi Capability|Wi-Fi 5 dual-band (2.4/5 GHz), AP/Client, multi-SSID, Captive Portal|
 |Edge and Cloud|Supports C/C++, Python, Docker; compatible with Azure/AWS IoT; FlexAPI|
 |Processing Platform|ARM Cortex-A7 quad-core 717 MHz, 1 GB DDR3L, 8 GB eMMC|
-|Interface Capability|4 x Gigabit Ethernet (M12 X-coded), CAN, RS232, RS485, USB 3.0, 11DI/4DO|
+|Interface Capability|4 x Gigabit Ethernet (M12 X-coded), CAN, RS-232, RS-485, USB 3.0, 11DI/4DO|
 |Power Supply and Consumption|9-48 VDC, typical power consumption 6.240 W, peak 15.192 W|
-|Mechanical Dimensions|223 x 66.2 x 171.6 mm, 1340 g, wall mounting|
-|Environmental Adaptation|-30 C to +70 C operating, -40 C to +85 C storage, 95% RH @ 40 C|
+|Mechanical Dimensions|223 × 66.2 × 171.6 mm (8.78 × 2.61 × 6.76 in), 1340 g (2.95 lb), wall mounting|
+|Environmental Adaptation|-30 °C ~ +70 °C (-22 °F ~ +158 °F) operating, -40 °C ~ +85 °C (-40 °F ~ +185 °F) storage, 95% RH @ 40 C|
 |Protection and Certifications|IP53, ECE R10/R118, EN45545-2/EN50155/EN50121/EN61373, CE/UKCA/RoHS/E-Mark/ITxPT|
 
 <div style="page-break-after: always;"></div>
@@ -75,7 +75,7 @@
   </div>
   <div style="width: 45%;">
     <div>Notes:</div>
-    <div>1. All dimensions are in millimeters (mm).</div>
+    <div>1. All dimensions are in millimeters (mm), with inches (in) in parentheses.</div>
     <div>2. All dimensions are approximate and <span style="font-weight: bold;">for reference only</span>.</div>
     <div>3. Drawings <span style="font-weight: bold;">must not be used for manufacturing</span>.</div>
     <div>4. Dimensions are subject to part and manufacturing tolerances.</div>
@@ -94,7 +94,7 @@
 | RAM | 1 GB DDR3L |
 | Flash | 8 GB eMMC |
 | <span style="color: green;">**Cellular & Networking**</span> | |
-| Cellular | 4G Cat6 / 5G / 5G+5G RedCap (model dependent) |
+| Cellular | 4G Cat.6 / 5G / 5G+5G RedCap (model dependent) |
 | SIM | 2 x SIM (2FF) |
 | Ethernet | 4 x Gigabit Ethernet, M12 X-coded female |
 | Antenna Connector | Cellular: FAKRA D-coded; Wi-Fi: FAKRA I-coded |
@@ -106,7 +106,7 @@
 | Update Rate | Up to 10 Hz |
 | <span style="color: green;">**Vehicle Interfaces**</span> | |
 | CAN Bus | 1 x CAN 2.0B + 1 x CAN 2.0B FMS |
-| Serial | 1 x RS232, 1 x RS485 |
+| Serial | 1 x RS-232, 1 x RS-485 |
 | USB | 1 x USB 3.0 (Type-A) |
 | I/O | 11 x DI, 4 x DO |
 | Audio | Left/Right channel, Mic In |
@@ -123,14 +123,14 @@
 | Typical Operating Power | 6.240 W |
 | Peak Power | 15.192 W |
 | <span style="color: green;">**Mechanical & Environment**</span> | |
-| Dimensions (W x H x D) | 223 x 66.2 x 171.6 mm |
-| Weight | 1340 g |
+| Dimensions (W x H x D) | 223 × 66.2 × 171.6 mm (8.78 × 2.61 × 6.76 in) |
+| Weight | 1340 g (2.95 lb) |
 | Mounting | Wall mounting |
 | Protection Rating | IP53 |
 | Cooling | Fanless |
 | Enclosure | Aluminum |
-| Operating Temperature | -30 C to +70 C |
-| Storage Temperature | -40 C to +85 C |
+| Operating Temperature | -30 °C ~ +70 °C (-22 °F ~ +158 °F) |
+| Storage Temperature | -40 °C ~ +85 °C (-40 °F ~ +185 °F) |
 | Humidity | 95% RH @ 40 C |
 | <span style="color: green;">**Compliance & Certifications**</span> | |
 | Vehicle Standard | ECE R10, ECE R118 |
@@ -195,7 +195,7 @@
     <col style="width:45%;">
   </colgroup>
   <tr><th>Model</th><th>Cellular Type</th><th>&lt;WMNN&gt;: Cellular Type &amp; Module</th></tr>
-  <tr><td>VG814-FQ09-W-G-V</td><td>LTE Cat 6</td><td>LTE-FDD: B1/2/3/4/5/7/8/12/13/14/17/18/19/20/25/26/28/29/30/32/66/71<br/>LTE-TDD: B34/38/39/40/41/42/43/46(LAA)/48(CBRS)<br/>WCDMA: B1/2/3/4/5/6/8/19</td></tr>
+  <tr><td>VG814-FQ09-W-G-V</td><td>LTE Cat.6</td><td>LTE-FDD: B1/2/3/4/5/7/8/12/13/14/17/18/19/20/25/26/28/29/30/32/66/71<br/>LTE-TDD: B34/38/39/40/41/42/43/46(LAA)/48(CBRS)<br/>WCDMA: B1/2/3/4/5/6/8/19</td></tr>
   <tr><td>VG814-NRQ5-W-G-V</td><td>5G Sub6<br/>LTE CAT19</td><td>5G SA/NSA: n1/2/3/5/7/8/12/13/14/18/20/25/26/28/29/30/38/40/41/48/66/70/71/75/76/77/78/79<br/>5G SA: n1/2/3/5/7/8/12/13/14/18/20/25/26/28/29/30/38/40/41/48/66/70/71/75/76/77/78/79<br/>LTE-FDD: B1/2/3/4/5/7/8/12/13/14/17/18/19/20/25/26/28/29/30/32/66/71<br/>LTE-TDD: B34/38/39/40/41/42/43/48<br/>LAA: B46<br/>WCDMA: B1/2/4/5/8/19</td></tr>
   <tr><td>VG814-NRQ3-W-G-V</td><td>5G Sub6<br/>LTE CAT20</td><td>5G NR NSA: n1/2/3/5/7/8/12/20/25/28/38/40/41/48/66/71/77/78/79<br/>5G NR SA: n1/2/3/5/7/8/12/20/25/28/38/40/41/48*/66/71/77/78/79<br/>LTE-FDD: B1/2/3/4/5/7/8/9/12(17)/13/14/18/19/20/25/26/28/29/30/32/66/71<br/>LTE-TDD: B34/38/39/40/41/42/43/48<br/>LAA: B46<br/>WCDMA: B1/2/3/4/5/6/8/19</td></tr>
   <tr><td>VG814-NRQ5RC25-W-G-V</td><td>5G Sub6 + 5G Redcap</td><td>5G SA/NSA: n1/2/3/5/7/8/12/13/14/18/20/25/26/28/29/30/38/40/41/48/66/70/71/75/76/77/78/79<br/>5G SA: n1/2/3/5/7/8/12/13/14/18/20/25/26/28/29/30/38/40/41/48/66/70/71/75/76/77/78/79<br/>LTE-FDD: B1/2/3/4/5/7/8/12/13/14/17/18/19/20/25/26/28/29/30/32/66/71<br/>LTE-TDD: B34/38/39/40/41/42/43/48<br/>LAA: B46<br/>WCDMA: B1/2/4/5/8/19<br/>RedCap RC25 SA: n1/2/3/5/7/8/12/13/14/18/20/25/26/28/30/38/40/41/48/66/70/71/77/78/79<br/>LTE-FDD: B1/2/3/4/5/7/8/12/13/14/17/18/19/20/25/26/28/30/66/70/71<br/>LTE-TDD: B34/38/39/40/41/42/43/48</td></tr>

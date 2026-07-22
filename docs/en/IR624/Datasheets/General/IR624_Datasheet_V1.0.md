@@ -34,7 +34,7 @@
 
 **Key features:**
 - **5G-ready connectivity:** Up to 3.4Gbps downlink with backward compatibility to 4G/3G
-- **Always-on communication:** Link backup, dual SIM failover, watchdog, and multi-level link detection
+- **Always-on communication:** Link backup, dual-SIM failover, watchdog, and multi-level link detection
 - **Enterprise security stack:** Multi-layer VPN, firewall, policy routing, and 802.1X access security
 - **Cloud-native management:** DeviceLive enables remote monitoring, diagnostics, and maintenance
 - **Industrial robustness:** Wide voltage, fanless metal design, and industrial compliance for unattended sites
@@ -43,17 +43,17 @@
 
 | Technical Item | Specification |
 |------|---------------|
-| Cellular Network | 5G NR SA/NSA or LTE fallback (model-dependent), with dual SIM support |
+| Cellular Network | 5G NR SA/NSA or LTE fallback (model-dependent), with dual-SIM support |
 | Wi-Fi (Optional) | Dual-band 2.4G/5G, IEEE 802.11 ac/a/b/g/n Wave2 MU-MIMO, up to 300/867 Mbps |
-| Security Stack | Firewall, policy-based routing, 802.1X access control, IPSec VPN, L2TP VPN, OpenVPN, WireGuard VPN |
-| Reliability | Interface backup, dual SIM failover, heartbeat link detection, embedded watchdog |
+| Security Stack | Firewall, policy-based routing, 802.1X access control, IPsec VPN, L2TP VPN, OpenVPN, WireGuard VPN |
+| Reliability | Interface backup, dual-SIM failover, heartbeat link detection, embedded watchdog |
 | Cloud Management | DeviceLive platform for batch management and remote O&M |
 | DTU and Data Interoperability | TCP/UDP transparent mode, Modbus RTU-to-TCP bridge |
 | Ethernet Interfaces | 4×10/100/1000 Mbps Ethernet, WAN/LAN/VLAN, 1.5kV isolation protection |
-| Serial Interfaces | 1×RS232 + 1×RS485 |
+| Serial Interfaces | 1×RS-232 + 1×RS-485 |
 | CPU / Memory / Flash | 880MHz CPU, 256MB RAM, 128MB Flash |
 | Power Input | DC 9~48V, with over-current and reverse-polarity protection |
-| Operating Temperature | Normal: -35°C to +70°C<br/>Extended:-40°C to +75°C |
+| Operating Temperature | Normal: -35 °C ~ +70 °C (-31 °F ~ +158 °F)<br/>Extended:-40 °C ~ +75 °C (-40 °F ~ +167 °F) |
 | Protection Rating | IP30 |
 
 
@@ -77,7 +77,7 @@
     <div style="width: 100%; text-align: center; font-size: 12px;">Interface Diagram</div>
   </div>
   <div style="width: 80%;">
-    <div>Note:</div><div>1. All dimensions are in millimeters (mm).</div><div>2. All dimensions are approximate and for reference only.</div><div>3. Dimensioned drawings are not intended for machining.</div><div>4. Dimensions are subject to part and manufacturing tolerances.</div><div>5. Specifications may change without prior notice.</div>
+    <div>Note:</div><div>1. All dimensions are in millimeters (mm), with inches (in) in parentheses.</div><div>2. All dimensions are approximate and for reference only.</div><div>3. Dimensioned drawings are not intended for machining.</div><div>4. Dimensions are subject to part and manufacturing tolerances.</div><div>5. Specifications may change without prior notice.</div>
   </div>
 </div>
 </div>
@@ -91,9 +91,9 @@
 | RAM | 256MB |
 | Flash | 128MB |
 | <span style="color: green;">**Connectivity and Interfaces**</span> |  |
-| Ethernet Ports | 4 x 10/100/1000Mbps Ethernet (WAN/LAN/VLAN), 1.5kV isolation |
+| Ethernet Ports | 4 x 10/100/1000 Mbps Ethernet (WAN/LAN/VLAN), 1.5kV isolation |
 | Power Interface | DC 9~48V with over-current and reverse-polarity protection |
-| Serial Port |  1 x RS232 and 1 x RS485<br/>ESD protection: 15KV |
+| Serial Port |  1 x RS-232 and 1 x RS-485<br/>ESD protection: 15KV |
 | Reset Button | Supported |
 | SIM Slot | Dual Nano-SIM drawer slot (1.8V/3V), optional eSIM |
 | Antenna Connectors |  4 x SMA for 5G or 2 x SMA for 4G , 2 x RP-SMA for Wi-Fi |
@@ -108,14 +108,14 @@
 | Working Power | 415-530mA@12V |
 | Peak Power |  530mA@12V |
 | <span style="color: green;">**Mechanical Specifications**</span> |  |
-| Product Dimensions | 127 x 108.2 x 35 mm |
-| Product Weight | 544g |
+| Product Dimensions | 127 × 108.2 × 35 mm (5 × 4.26 × 1.38 in) |
+| Product Weight | 544 g (1.2 lb) |
 | Mounting Method | DIN-rail mounting |
 | Protection Rating | IP30 |
 | Housing and Cooling | Fanless metal housing |
 | <span style="color: green;">**Environment and Compliance**</span> |  |
-| Storage Temperature | -40~85℃ |
-| Operating Temperature | Normal: -35°C to +70°C<br/>Extended:-40°C to +75°C |
+| Storage Temperature | -40 °C ~ 85 °C (-40 °F ~ 185 °F) |
+| Operating Temperature | Normal: -35 °C ~ +70 °C (-31 °F ~ +158 °F)<br/>Extended:-40 °C ~ +75 °C (-40 °F ~ +167 °F) |
 | Ambient Humidity | 5~95% RH, non-condensing |
 | Physical Characteristics | IEC60068-2-27 Shockproof;<br/>IEC60068-2-6 Vibration Resistance;<br/>IEC60068-2-32 Free Fall |
 | EMC Standard | EN61000-4-2, level 3, Static<br/>EN61000-4-3, level 3, Radiation Electric Field<br/>EN61000-4-4, level 3, Pulsed Electric Field<br/>EN61000-4-5, level 3, Surge<br/>EN61000-4-6, level 3, Conducted Distubance Immunity<br/>EN61000-4-8, Power Frequency Field Resistance, horizontal / vertical 400A/m (>level 2)<br/>EN61000-4-12, level 3, Shock Wave Resistance |
@@ -142,7 +142,7 @@
 | Link Detection | Heartbeat link detection with auto-redial |
 | Embedded Watchdog | Supported |
 | Backup | Interface backup |
-| Dual-SIM Switching | Dual SIM failover |
+| Dual-SIM Switching | Dual-SIM failover |
 | <span style="color: green;">**WLAN**</span> |  |
 | Operating Mode | AP/Client modes |
 | Security Features | WPA/WPA2, WEP/TKIP/AES, Wi-Fi Portal support |
@@ -169,7 +169,7 @@
 
 \<WMNN\>: Cellular Type & Module  
 \<WLAN/NA\>: Wi-Fi option  
-`S`: 1×RS232 + 1×RS485
+`S`: 1×RS-232 + 1×RS-485
 
 ## <span style="color: green;">Model List</span>
 
@@ -177,17 +177,17 @@
   <colgroup>
     <col style="width:24%;">
     <col style="width:18%;">
-    <col style="width:40%;">
-    <col style="width:12%;">
+    <col style="width:38%;">
+    <col style="width:14%;">
     <col style="width:8%;">
   </colgroup>
   <tr><th>Model Pattern</th><th>Region</th><th>&lt;WMNN&gt; / Bands</th><th>&lt;WLAN/NA&gt;</th><th>Serial</th></tr>
   <tr><td style="white-space: nowrap;">IR624-NRQ3-&lt;WLAN/NA&gt;-S</td><td>Global</td><td>5G NR NSA n1/2/3/5/7/8/12/13/14/18/20/25/26/28/29/30/38/40/41/48/66/70/71/75/76/77/78/79; SA same set; LTE FDD B1/2/3/4/5/7/8/12/13/14/17/18/19/20/25/26/28/29/30/32/66/71; LTE TDD B34/38/39/40/41/42/43/48; LAA B46; WCDMA B1/2/4/5/8/19</td><td>WLAN or NA</td><td>S</td></tr>
   <tr><td style="white-space: nowrap;">IR624-NRF4-&lt;WLAN/NA&gt;-S</td><td>Europe &amp; APAC (5G)</td><td>5G NR n1/3/5/7/8/20/28/38/40/41/71/77/78/66; LTE FDD B1/3/5/7/8/20/28/71/66; LTE TDD B38/40/41; WCDMA B1/3/5/8</td><td>WLAN or NA</td><td>S</td></tr>
-  <tr><td style="white-space: nowrap;">IR624-FQ58-&lt;WLAN/NA&gt;-S</td><td>Europe &amp; APAC (4G CAT4)</td><td>LTE-FDD B1/3/5/7/8/20/28; LTE-TDD B34/38/39/40/41; WCDMA B1/5/8; GSM B3/8</td><td>WLAN or NA</td><td>S</td></tr>
+  <tr><td style="white-space: nowrap;">IR624-FQ58-&lt;WLAN/NA&gt;-S</td><td>Europe &amp; APAC (4G Cat.4)</td><td>LTE-FDD B1/3/5/7/8/20/28; LTE-TDD B34/38/39/40/41; WCDMA B1/5/8; GSM B3/8</td><td>WLAN or NA</td><td>S</td></tr>
   <tr><td style="white-space: nowrap;">IR624-EN00-&lt;WLAN/NA&gt;-S</td><td>Global (No Cellular)</td><td>No cellular module</td><td>WLAN or NA</td><td>S</td></tr>
   <tr><td style="white-space: nowrap;">IR624-NRF2-&lt;WLAN/NA&gt;-S</td><td>China (5G)</td><td>5G NR n1/3*/5/8/28/41/78/79; LTE FDD B1/3/5/7*/8; LTE TDD B34/38/39/40/41; WCDMA B1/5/8</td><td>WLAN or NA</td><td>S</td></tr>
-  <tr><td style="white-space: nowrap;">IR624-LQ20-&lt;WLAN/NA&gt;-S</td><td>China (4G CAT4)</td><td>FDD B1/3/5/8; TDD B34/38/39/40/41; WCDMA B1/5/8; GSM/EDGE B3/8</td><td>WLAN or NA</td><td>S</td></tr>
+  <tr><td style="white-space: nowrap;">IR624-LQ20-&lt;WLAN/NA&gt;-S</td><td>China (4G Cat.4)</td><td>FDD B1/3/5/8; TDD B34/38/39/40/41; WCDMA B1/5/8; GSM/EDGE B3/8</td><td>WLAN or NA</td><td>S</td></tr>
 </table>
 
 # <span style="color: green;">6. Contact Us</span>

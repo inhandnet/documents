@@ -13,7 +13,7 @@
     </div>
     <div style="text-align: center;">
       <div style="display: flex; flex-wrap: wrap; gap: 16px; ">
-        <div style="width: 250px;background-color: #4CAF50; color: white; padding: 8px 8px; border-radius: 6px; font-size: 18px;">· LTE CAT6/CAT4</div>
+        <div style="width: 250px;background-color: #4CAF50; color: white; padding: 8px 8px; border-radius: 6px; font-size: 18px;">· LTE Cat.6/Cat.4</div>
         <div style="width: 250px;background-color: #4CAF50; color: white; padding: 8px 8px; border-radius: 6px; font-size: 18px;">· Wi-Fi 5</div>
       </div>
       <div style="display: flex; flex-wrap: wrap; gap: 16px;margin-top:16px">
@@ -33,9 +33,9 @@
 **Positioning:** Rugged LTE in-vehicle gateway for fleet telemetry and edge intelligence
 
 **Key Features:**
-- **Reliable LTE networking:** LTE CAT6/CAT4 with broad global and regional band coverage
+- **Reliable LTE networking:** LTE Cat.6/Cat.4 with broad global and regional band coverage
 - **Vehicle-grade robustness:** IP64 protection, wide input voltage, and industrial design
-- **Rich telematics interfaces:** CAN, RS485, DI/DO/AI, and serial ports for vehicle integration
+- **Rich telematics interfaces:** CAN, RS-485, DI/DO/AI, and serial ports for vehicle integration
 - **Accurate tracking:** GNSS + inertial navigation for stable positioning in complex environments
 - **Open edge architecture:** Python/C/C++/Docker with cloud integration APIs
 
@@ -44,17 +44,17 @@
 
 | Technical Indicator | Specification |
 |------|------|
-| Cellular Network | LTE CAT6/CAT4, supporting global and regional band variants |
+| Cellular Network | LTE Cat.6/Cat.4, supporting global and regional band variants |
 | Positioning Capability | GNSS (GPS/GLONASS/Galileo/Beidou) + inertial DR |
 | Edge Computing | Supports Python, C/C++, and Docker application development and deployment |
 | Cloud & IoT Integration | Supports MQTT, DDS, AMQP, REST, and CoAP; compatible with Azure and third-party platforms |
-| VPN | Supports IPSec/OpenVPN/L2TP/GRE |
+| VPN | Supports IPsec/OpenVPN/L2TP/GRE |
 | Wireless Access | Dual-band Wi-Fi 5 (AP/Client) + Bluetooth 4.1 |
-| Dimensions | 188.1 × 140.5 × 48.8 mm |
-| Weight | 775 g |
-| Vehicle Interfaces | 4 x Gigabit Ethernet, CAN, RS485, DI/DO/AI, RS232, USB 2.0 |
+| Dimensions | 188.1 × 140.5 × 48.8 mm (7.41 × 5.53 × 1.92 in) |
+| Weight | 775 g (1.71 lb) |
+| Vehicle Interfaces | 4 x Gigabit Ethernet, CAN, RS-485, DI/DO/AI, RS-232, USB 2.0 |
 | Input Voltage Range | 9-36 V DC (configurable to 7-36 V DC) |
-| Operating Temperature | -30 C to +70 C |
+| Operating Temperature | -30 °C ~ +70 °C (-22 °F ~ +158 °F) |
 | Protection Rating | IP64 |
 
 
@@ -82,7 +82,7 @@
 </div>
 <div style="margin-top: 12px; font-size: 12px;">
   <div><strong>Notes:</strong></div>
-    <div>1. All dimensions are in millimeters (mm).</div>
+    <div>1. All dimensions are in millimeters (mm), with inches (in) in parentheses.</div>
     <div>2. All dimensions are approximate and <span style="font-weight: bold;">for reference only</span>.</div>
     <div>3. Drawings <span style="font-weight: bold;">must not be used for manufacturing</span>.</div>
     <div>4. Dimensions are subject to part and manufacturing tolerances.</div>
@@ -103,11 +103,11 @@
 | RAM | 1 GB / 512 MB DDR3 (model dependent) |
 | Storage | 8 GB eMMC |
 | <span style="color: green;">**Connectivity**</span> | |
-| Cellular | LTE CAT6 / CAT4 |
+| Cellular | LTE Cat.6 / Cat.4 |
 | Ethernet | 4 × 10/100/1000 Mbps RJ45 |
-| Serial Port | RS232 (DB-9) |
+| Serial Port | RS-232 (DB-9) |
 | USB Port | USB 2.0 Micro-B (up to 480 Mbps) |
-| MicroSD | Up to 32 GB, 20 MB/s |
+| microSD | Up to 32 GB, 20 MB/s |
 | Bluetooth | Bluetooth 4.1 |
 | Antenna | SMA-K: Cellular/GNSS/Diversity; RP-SMA-K: 2 × Wi-Fi + BLE |
 | <span style="color: green;">**Satellite Navigation**</span> | |
@@ -124,7 +124,7 @@
 | <span style="color: green;">**Automotive Interfaces**</span> | |
 | Diagnostics Interface | CAN bus |
 | DI/DO/AI | 6 × DI, 4 × DO, 6 × AI |
-| RS485 | RS485 serial (A+, B-, GND) |
+| RS-485 | RS-485 serial (A+, B-, GND) |
 | Other | 1-WIRE (driver ID / temperature) |
 | <span style="color: green;">**Power**</span> | |
 | Input Voltage | 9–36 V DC (configurable to 7–36 V DC) |
@@ -138,12 +138,12 @@
 | Protection Rating | IP64 |
 | Cooling | Radiation cooling |
 | Housing | Die-cast aluminum |
-| Dimensions (W × D × H) | 188.1 × 140.5 × 48.8 mm |
-| Weight | 775 g |
+| Dimensions (W × D × H) | 188.1 × 140.5 × 48.8 mm (7.41 × 5.53 × 1.92 in) |
+| Weight | 775 g (1.71 lb) |
 | RTC | Supported |
-| SIM | Dual SIM, 2FF |
-| Operating Temp. | -30 °C ~ +70 °C |
-| Storage Temp. | -40 °C ~ +85 °C |
+| SIM | Dual-SIM, 2FF |
+| Operating Temp. | -30 °C ~ +70 °C (-22 °F ~ +158 °F) |
+| Storage Temp. | -40 °C ~ +85 °C (-40 °F ~ +185 °F) |
 | Humidity | 95% RH @ 60 °C |
 | <span style="color: green;">**Standards & Certifications**</span> | |
 | Vehicle Standard | ECE-R10, R118 |
@@ -168,7 +168,7 @@
 | User Level | Administrator / read-only |
 | AAA | Local authentication, Radius, Tacacs+, LDAP |
 | CA Certificate | PEM, PKCS12, SCEP |
-| VPN | IPSec VPN, L2TP, GRE, OpenVPN, CA |
+| VPN | IPsec VPN, L2TP, GRE, OpenVPN, CA |
 | <span style="color: green;">**Reliability**</span> | |
 | Backup | Floating routing, VRRP, interface backup |
 | Link Detection | Heartbeat detection, auto redial |
@@ -212,19 +212,19 @@
 
 ## <span style="color: green;">Product Models</span>
 
-<table style="width:100%; table-layout:fixed;">
+<table style="width:100%; table-layout:fixed;font-size:11px;">
   <colgroup>
-    <col style="width:22%;">
-    <col style="width:30%;">
-    <col style="width:20%;">
+    <col style="width:16%;">
+    <col style="width:40%;">
+    <col style="width:16%;">
     <col style="width:10%;">
     <col style="width:18%;">
   </colgroup>
   <tr><th>Model</th><th>Cellular Type</th><th>UE Category</th><th>RAM</th><th>Region</th></tr>
-  <tr><td>VG710-L-FQ09</td><td>LTE-FDD/LTE-TDD/WCDMA (global bands)</td><td>LTE CAT6</td><td>1 GB</td><td>Global</td></tr>
-  <tr><td>VG710-L-FQ78</td><td>LTE-FDD/TDD + WCDMA + GSM/EDGE</td><td>LTE CAT4</td><td>1 GB</td><td>Latin America, Australia, New Zealand</td></tr>
-  <tr><td>VG710-FQ09</td><td>LTE-FDD/LTE-TDD/WCDMA (global bands)</td><td>LTE CAT6</td><td>512 MB</td><td>Global</td></tr>
-  <tr><td>VG710-FQ78</td><td>LTE-FDD/TDD + WCDMA + GSM/EDGE</td><td>LTE CAT4</td><td>512 MB</td><td>Latin America, Australia, New Zealand</td></tr>
+  <tr><td>VG710-L-FQ09</td><td>LTE-FDD/LTE-TDD/WCDMA (global bands)</td><td>LTE Cat.6</td><td>1 GB</td><td>Global</td></tr>
+  <tr><td>VG710-L-FQ78</td><td>LTE-FDD/TDD + WCDMA + GSM/EDGE</td><td>LTE Cat.4</td><td>1 GB</td><td>Latin America, Australia, New Zealand</td></tr>
+  <tr><td>VG710-FQ09</td><td>LTE-FDD/LTE-TDD/WCDMA (global bands)</td><td>LTE Cat.6</td><td>512 MB</td><td>Global</td></tr>
+  <tr><td>VG710-FQ78</td><td>LTE-FDD/TDD + WCDMA + GSM/EDGE</td><td>LTE Cat.4</td><td>512 MB</td><td>Latin America, Australia, New Zealand</td></tr>
   <tr><td>VG710-EN00</td><td>NONE</td><td>NONE</td><td>512 MB</td><td>Global</td></tr>
 </table>
 
@@ -238,8 +238,8 @@
   </colgroup>
   <tr><th>Antenna</th><th>Order Code</th><th>Specifications</th></tr>
   <tr><td>LTE 4G Antenna</td><td>AANT090025</td><td>LTE/GSM/CDMA multi-band antenna, SMA-J1.5 connector, RG-174, 2000±20 mm</td></tr>
-  <tr><td>GNSS Antenna</td><td>AANT040005</td><td>GPS/GALILEO/GLONASS GNSS antenna, dimensions 55.6 × 50.5 mm</td></tr>
-  <tr><td>GNSS Antenna</td><td>AANT040006</td><td>GPS/GALILEO/GLONASS GNSS antenna, dimensions 50 × 38.5 mm</td></tr>
+  <tr><td>GNSS Antenna</td><td>AANT040005</td><td>GPS/GALILEO/GLONASS GNSS antenna, dimensions 55.6 × 50.5 mm (2.19 × 1.99 in)</td></tr>
+  <tr><td>GNSS Antenna</td><td>AANT040006</td><td>GPS/GALILEO/GLONASS GNSS antenna, dimensions 50 × 38.5 mm (1.97 × 1.52 in)</td></tr>
   <tr><td>Wi-Fi Antenna (Rubber Ducky)</td><td>AANT060016</td><td>2400–2500 MHz / 4900–5850 MHz, peak gain 5±0.5 dBi</td></tr>
   <tr><td>Wi-Fi Antenna (Adhesive)</td><td>AANT060018</td><td>2400–2500 MHz / 4900–5850 MHz, peak gain ≤3 dBi, 2000±20 mm</td></tr>
   <tr><td>Bluetooth Antenna (Rubber Ducky)</td><td>AANT060017</td><td>2.4 GHz, peak gain ≤2 dBi</td></tr>

@@ -34,7 +34,7 @@
 
 **Key Features:**
 - **Rail-ready hardware:** TNC RF and M12 connectors for vibration and harsh environments
-- **High-speed connectivity:** 5G/LTE-A, dual SIM, and link backup for uninterrupted service
+- **High-speed connectivity:** 5G/LTE-A, dual-SIM, and link backup for uninterrupted service
 - **Global positioning:** Multi-constellation GNSS with ADR and up to 10 Hz update rate
 - **Open edge platform:** Supports C/C++, Python, Docker, and cloud SDK integration
 - **Fleet operation enablement:** Supports diagnostics collection and OTA lifecycle management
@@ -43,17 +43,17 @@
 
 |Technical Metric|Specification|
 |---|---|
-|Cellular Network|5G SA/NSA (Sub-6) + LTE Cat6/Cat4, dual SIM (2 x Mini SIM)|
+|Cellular Network|5G SA/NSA (Sub-6) + LTE Cat.6/Cat.4, dual-SIM (2 x Mini SIM)|
 |Positioning|GPS/GLONASS/Galileo/Beidou, 10 Hz, ADR support|
 |Cloud Management|InHand Device Manager for remote O&M|
 |VPN & Security|IPsec/OpenVPN/L2TP/GRE, SPI firewall, ACL, AAA|
 |Network Features|APN/VPDN, static routing/RIP/OSPF/BGP, VRRP, link backup|
 |Edge Computing|C/C++, Python, Docker, MQTT/HTTP/TCP FlexAPI|
-|Dimensions|223 x 177.76 x 66.2 mm|
-|Weight|1438 g|
-|Interfaces|4 x Gigabit Ethernet, 2 x RS232, 1 x RS485, 1 x USB 3.0, 2 x CAN, 11DI/4DO|
+|Dimensions|223 × 177.76 × 66.2 mm (8.78 × 7 × 2.61 in)|
+|Weight|1438 g (3.17 lb)|
+|Interfaces|4 x Gigabit Ethernet, 2 x RS-232, 1 x RS-485, 1 x USB 3.0, 2 x CAN, 11DI/4DO|
 |Power Input|9-36 VDC (M12 A-coded)|
-|Operating Environment|-30 C to +70 C; storage -40 C to +85 C; 95% RH @ 40 C|
+|Operating Environment|-30 °C ~ +70 °C (-22 °F ~ +158 °F); storage -40 °C ~ +85 °C (-40 °F ~ +185 °F); 95% RH @ 40 C|
 |Protection & Structure|IP53, aluminum enclosure, fanless|
 
 # <span style="color: green;">2. Product Dimensions</span>
@@ -76,7 +76,7 @@
   </div>
   <div style="width: 45%;">
     <div>Notes:</div>
-    <div>1. All dimensions are in millimeters (mm).</div>
+    <div>1. All dimensions are in millimeters (mm), with inches (in) in parentheses.</div>
     <div>2. All dimensions are approximate and <span style="font-weight: bold;">for reference only</span>.</div>
     <div>3. Drawings <span style="font-weight: bold;">must not be used for manufacturing</span>.</div>
     <div>4. Dimensions are subject to part and manufacturing tolerances.</div>
@@ -94,7 +94,7 @@
 | RAM | 1 GB DDR3L |
 | Flash | 8 GB eMMC |
 | <span style="color: green;">**Cellular & Networking**</span> | |
-| Cellular | 5G SA/NSA (Sub-6), LTE Cat6/Cat4 |
+| Cellular | 5G SA/NSA (Sub-6), LTE Cat.6/Cat.4 |
 | SIM | 2 x Mini SIM (2FF) |
 | Ethernet | 4 x Gigabit Ethernet, M12 X-coded female |
 | Antenna Connector | TNC |
@@ -107,7 +107,7 @@
 | ADR | 2% of distance traveled without GNSS |
 | <span style="color: green;">**Vehicle Interfaces**</span> | |
 | CAN Bus | 1 x CAN 2.0B + 1 x CAN 2.0B (FMS) |
-| Serial | 2 x RS232, 1 x RS485 |
+| Serial | 2 x RS-232, 1 x RS-485 |
 | USB | 1 x USB 3.0 (Type-A) |
 | I/O | 11 x DI, 4 x DO |
 | <span style="color: green;">**Wi-Fi**</span> | |
@@ -124,14 +124,14 @@
 | Operating Power | 16.00 W (average, RF full load) |
 | Peak Power | 20.0 W (RF full load) |
 | <span style="color: green;">**Mechanical & Environment**</span> | |
-| Dimensions (W x H x D) | 223 x 177.76 x 66.2 mm |
-| Weight | 1438 g |
+| Dimensions (W x H x D) | 223 × 177.76 × 66.2 mm (8.78 × 7 × 2.61 in) |
+| Weight | 1438 g (3.17 lb) |
 | Mounting | Wall mounting |
 | Ingress Protection | IP53 |
 | Cooling | Fanless cooling |
 | Enclosure | Aluminum |
-| Operating Temperature | -30 C to +70 C |
-| Storage Temperature | -40 C to +85 C |
+| Operating Temperature | -30 °C ~ +70 °C (-22 °F ~ +158 °F) |
+| Storage Temperature | -40 °C ~ +85 °C (-40 °F ~ +185 °F) |
 | Humidity | 95% RH @ 40 C |
 | <span style="color: green;">**Compliance & Certifications**</span> | |
 | Rail Standard | EN50155, EN50121-3-2, EN61373, EN45545-2 |

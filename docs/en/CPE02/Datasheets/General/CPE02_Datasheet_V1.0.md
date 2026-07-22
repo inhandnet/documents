@@ -52,9 +52,9 @@
 | Throughput / Users | Firewall 1 Gbps; up to 200 users (128 Wi-Fi) |
 | SIM | 1 × Nano 4FF + optional eSIM |
 | Ethernet | 2 × GbE (EU/APAC) or 2.5G + 1G (US); WAN/LAN, dual LAN |
-| Dimensions / Mount | 105 × 105 × 217 mm; 800 g; desktop / wall-mount |
+| Dimensions / Mount | 105 × 105 × 217 mm (4.13 × 4.13 × 8.54 in); 800 g (1.76 lb); desktop / wall-mount |
 | Power | 12 V / 2 A; ≤ 15 W |
-| Environment | -10 °C ~ +40 °C op.; -40 °C ~ +85 °C stg.; 5%–95% RH; IP20 |
+| Environment | -10 °C ~ +40 °C (14 °F ~ 104 °F) op.; -40 °C ~ +85 °C (-40 °F ~ 185 °F) stg.; 5%–95% RH; IP20 |
 | Certification | CE, FCC, IC, PTCRB, AT&T, Verizon, T-Mobile; EMC Level 2 |
 
 <div style="margin-top: 32px;"></div>
@@ -82,8 +82,8 @@
 
   <div style="width: 100%;">
     <div>Note:</div>
-    <div>1. All dimensions are in millimeters (mm).</div>
-    <div>2. Dimensions (L × W × H): 105 × 105 × 217 mm.</div>
+    <div>1. All dimensions are in millimeters (mm), with inches (in) in parentheses.</div>
+    <div>2. Dimensions (L × W × H): 105 × 105 × 217 mm (4.13 × 4.13 × 8.54 in).</div>
     <div>3. Mounting bracket optional.</div>
     <div>4. All dimensions are approximate, <span style="font-weight: bold;">for reference only</span>.</div>
     <div>5. Dimensions shown <span style="font-weight: bold;">shall not be used for production</span>.</div>
@@ -118,13 +118,13 @@
 | <span style="color: green;">**LEDs**</span> | |
 | LED | 5G, Wi-Fi, Signal, Power |
 | <span style="color: green;">**Mechanical**</span> | |
-| Dimensions (L × W × H) | 105 × 105 × 217 mm |
-| Weight | 800 g |
+| Dimensions (L × W × H) | 105 × 105 × 217 mm (4.13 × 4.13 × 8.54 in) |
+| Weight | 800 g (1.76 lb) |
 | Installation | Desktop, wall-mount |
 | Protection | IP20 |
 | <span style="color: green;">**Environment**</span> | |
-| Operating Temperature | -10 °C ~ +40 °C |
-| Storage Temperature | -40 °C ~ +85 °C |
+| Operating Temperature | -10 °C ~ +40 °C (14 °F ~ 104 °F) |
+| Storage Temperature | -40 °C ~ +85 °C (-40 °F ~ 185 °F) |
 | Humidity | 5 % ~ 95 % RH (non-condensing) |
 | <span style="color: green;">**Certification**</span> | |
 | Certification | CE, FCC, IC, PTCRB, AT&T, Verizon, T-Mobile |
@@ -141,7 +141,7 @@
 | Dashboard | Device connectivity status, traffic statistics, cellular signal statistics, interface status, client statistics and analysis, uplink management |
 | <span style="color: green;">**Network Features**</span> | |
 | Access | 5G/4G, wired |
-| Dialing | PPPoE, cellular automatic redial, dual SIM switching policy, APN configuration |
+| Dialing | PPPoE, cellular automatic redial, dual-SIM switching policy, APN configuration |
 | Intelligent Links | Real-time link detection |
 | IP Protocols | IPv4, IPv6 |
 | Network Protocols | VLAN, DHCP, DNS, URL Filtering, DDNS, Fixed Address allocation, IP Passthrough, STP, ARP, ICMP |

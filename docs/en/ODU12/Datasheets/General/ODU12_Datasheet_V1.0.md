@@ -29,7 +29,7 @@
 
 # <span style="color: green;">1. Product Overview</span>
 
-The ODU12 is an innovative outdoor 5G router—a high-performance, cloud-managed network access device built on a groundbreaking structure-thermal integration design. It seamlessly combines high-performance connectivity with architectural aesthetics, purpose-built for residential and light commercial applications. Advanced capabilities including 5G NSA/SA dual-mode cellular, Wi-Fi 7 dual-band wireless, and 2.5 Gbps wired networking are integrated into a compact IP65-rated enclosure.
+The ODU12 is an innovative outdoor 5G router—a high-performance, cloud-managed network access device built on a groundbreaking structure-thermal integration design. It seamlessly combines high-performance connectivity with architectural aesthetics, purpose-built for residential and light commercial applications. Advanced capabilities including 5G SA/NSA dual-mode cellular, Wi-Fi 7 dual-band wireless, and 2.5 Gbps wired networking are integrated into a compact IP65-rated enclosure.
 
 The ODU12 moves beyond the bulky appearance and cluttered external antennas of traditional outdoor routers. Its minimalist all-in-one design features fully integrated 360° omnidirectional antennas, delivering reliable performance in extreme weather while minimizing visual impact and blending harmoniously with the built environment.
 
@@ -37,7 +37,7 @@ The ODU12 is a true AI Agent-native router, designed for the digital workplace o
 
 ## <span style="color: green;">Key Features</span>
 
-- **Ultra-Fast 5G Connectivity:** 5G NSA/SA dual-mode support with downlink speeds up to 7.01 Gbps
+- **Ultra-Fast 5G Connectivity:** 5G SA/NSA dual-mode support with downlink speeds up to 7.01 Gbps
 - **Next-Gen Wi-Fi 7 Wireless:** BE5000 dual-band concurrent, up to 128 connected clients
 - **Agent-Native Router:** Agent CLI support for intent-based configuration
 - **Rich Skills Library:** Intelligent diagnostics support
@@ -118,7 +118,7 @@ The ODU12 is a true AI Agent-native router, designed for the digital workplace o
 
 <div style="margin-top: 12px; font-size: 12px;">
   <div><strong>Notes:</strong></div>
-  <div>1. All dimensions are in millimeters (mm).</div>
+  <div>1. All dimensions are in millimeters (mm), with inches (in) in parentheses.</div>
   <div>2. All dimensions are approximate and <span style="font-weight: bold;">for reference only</span>.</div>
   <div>3. Drawings <span style="font-weight: bold;">must not be used for manufacturing</span>.</div>
   <div>4. Dimensions are subject to part and manufacturing tolerances.</div>
@@ -196,11 +196,11 @@ AI Agent cloud management enables unified remote operations and maintenance:
 | **Protection Rating** | IP65 |
 | **Enclosure Material** | Die-cast aluminum heat sink + UV-stabilized polymer shell |
 | **Color** | White |
-| **Operating Temperature** | -30 °C ~ +70 °C |
-| **Storage Temperature** | -40 °C ~ +85 °C |
+| **Operating Temperature** | -30 °C ~ +70 °C (-22 °F ~ +158 °F) |
+| **Storage Temperature** | -40 °C ~ +85 °C (-40 °F ~ +185 °F) |
 | **Relative Humidity** | 5% ~ 95%, non-condensing |
 | **Dimensions** | 235 mm x 167.93 mm x 81.93 mm |
-| **Weight** | Approx. 1.5 kg (reference) |
+| **Weight** | Approx. 1.5 kg (3.31 lb) (reference) |
 | **Mounting** | Wall, pole, and roof mounting |
 
 
@@ -218,7 +218,7 @@ The ODU12 features 4 multi-color LEDs (red/blue/green) for System, Wi-Fi, Signal
   - 5G: NR SA/NSA, Sub-6 GHz, 3GPP Release 16
   - 4G: LTE-FDD/LTE-TDD, Cat.19
 - **Speed Specifications:**
-  - 5G SA & NSA: 7.01 Gbps DL / 2.5 Gbps UL
+  - 5G SA/NSA: 7.01 Gbps DL / 2.5 Gbps UL
   - 4G Cat.19: 1.6 Gbps DL / 200 Mbps UL
 
 | Network Type | Supported Bands |
@@ -228,7 +228,7 @@ The ODU12 features 4 multi-color LEDs (red/blue/green) for System, Wi-Fi, Signal
 
 ## <span style="color: green;">4.2 SIM Management</span>
 
-- **Dual SIM Dual Standby:** Dual Nano-SIM hot backup support
+- **Dual-SIM Dual Standby:** Dual Nano-SIM hot backup support
 - **eSIM Support:** Reserved eSIM design with remote provisioning
 - **Smart Switching:**
   - Automatic SIM switch on data threshold
@@ -312,7 +312,7 @@ The ODU12 features 4 multi-color LEDs (red/blue/green) for System, Wi-Fi, Signal
 
 ## <span style="color: green;">6.4 VPN Support</span>
 
-- IPSec VPN
+- IPsec VPN
 
 - L2TP VPN
 

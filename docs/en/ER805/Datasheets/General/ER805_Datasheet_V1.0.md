@@ -49,11 +49,11 @@
 | Network & Security | IPv4/IPv6; VLAN, DHCP, static routing; NAT |
 | Wi-Fi | 802.11ac dual-band (2.4/5 GHz), 1200 Mbps; multi-SSID |
 | Throughput / Users | 600 Mbps; IPsec 100 Mbps; 100–150 users |
-| SIM | Dual Nano SIM |
+| SIM | Dual Nano-SIM |
 | Ethernet / USB | 5 × GbE (WAN/LAN, dual WAN); USB 3.0 (debug) |
 | Antennas | 4G: SMA ×2; 5G: SMA ×4; Wi-Fi: RP-SMA ×2; ≤5 dBi |
 | Power | 9–36 V DC (2 A @ 12 V); peak ≤24 W |
-| Dimensions / Environment | 210 × 140 × 35 mm; 1.06 kg; bracket / wall; -20 °C ~ +70 °C op.; -40 °C ~ +85 °C stg.; 5–95% RH; IP30 |
+| Dimensions / Environment | 210 × 140 × 35 mm (8.27 × 5.51 × 1.38 in); 1.06 kg (2.34 lb); bracket / wall; -20 °C ~ +70 °C (-4 °F ~ +158 °F) op.; -40 °C ~ +85 °C (-40 °F ~ +185 °F) stg.; 5–95% RH; IP30 |
 | EMC / Certification | EMC Level 2; CE, FCC, IC, PTCRB, AT&T, Verizon, T-Mobile |
 
 
@@ -74,8 +74,8 @@
   </div>
   <div style="width: 100%;">
     <div>Note:</div>
-    <div>1. All dimensions are in millimeters (mm).</div>
-    <div>2. Dimensions (L × W × H): 210 × 140 × 35 mm.</div>
+    <div>1. All dimensions are in millimeters (mm), with inches (in) in parentheses.</div>
+    <div>2. Dimensions (L × W × H): 210 × 140 × 35 mm (8.27 × 5.51 × 1.38 in).</div>
     <div>3. All dimensions are approximate, <span style="font-weight: bold;">for reference only</span>.</div>
     <div>4. Dimensions shown <span style="font-weight: bold;">shall not be used for production</span>.</div>
   </div>
@@ -95,7 +95,7 @@
 | <span style="color: green;">**Interfaces**</span> | |
 | Cellular | 5G SA: Sub-6 DL 4.2 Gbps / UL 450 Mbps; 5G NSA: Sub-6 DL 5.0 Gbps / UL 650 Mbps; LTE DL 2.0 Gbps / UL 200 Mbps |
 | Ethernet | 5 × 10/100/1000 Mbps, WAN/LAN switching, dual WAN |
-| SIM Card | Dual Nano SIM |
+| SIM Card | Dual Nano-SIM |
 | USB | USB 3.0 (debug) |
 | Reset | Pinhole reset button |
 | Antenna | 4G: SMA × 2, Wi-Fi: RP-SMA × 2; 5G: SMA × 4, Wi-Fi: RP-SMA × 2 |
@@ -110,13 +110,13 @@
 | <span style="color: green;">**LEDs**</span> | |
 | LED | Power, Network, Signal, Wi-Fi |
 | <span style="color: green;">**Mechanical**</span> | |
-| Dimensions | 210 × 140 × 35 mm |
-| Weight | 1.06 kg |
+| Dimensions | 210 × 140 × 35 mm (8.27 × 5.51 × 1.38 in) |
+| Weight | 1.06 kg (2.34 lb) |
 | Installation | Bracket mount, wall mount |
 | Protection | IP30 |
 | <span style="color: green;">**Environment**</span> | |
-| Operating Temperature | -20 °C ~ +70 °C |
-| Storage Temperature | -40 °C ~ +85 °C |
+| Operating Temperature | -20 °C ~ +70 °C (-4 °F ~ +158 °F) |
+| Storage Temperature | -40 °C ~ +85 °C (-40 °F ~ +185 °F) |
 | Humidity | 5–95 % RH (non-condensing) |
 | <span style="color: green;">**Certification**</span> | |
 | Certification | CE, FCC, IC, PTCRB, AT&T, Verizon, T-Mobile |
@@ -133,11 +133,11 @@
 | Dashboard | Device connectivity, traffic statistics, cellular signal, interface status, client analysis, uplink management |
 | <span style="color: green;">**Network Features**</span> | |
 | Access | 5G/4G, wired, Wi-Fi |
-| Dialing | PPPoE, cellular auto redial, dual SIM switching, APN configuration |
+| Dialing | PPPoE, cellular auto redial, dual-SIM switching, APN configuration |
 | Intelligent Links | Real-time link detection |
 | IP Protocols | IPv4, IPv6 |
 | Protocols | VLAN, DHCP (Server/Client), DHCP Snooping, DNS, URL Filtering, DDNS, Fixed Address, IP Passthrough, STP, ARP, ICMP |
-| VPN | IPSec VPN, L2TP VPN, VXLAN, GRE*, OpenVPN* |
+| VPN | IPsec VPN, L2TP VPN, VXLAN, GRE*, OpenVPN* |
 | SD-WAN | SD-WAN networking |
 | Routing | Static routing |
 | <span style="color: green;">**Wi-Fi**</span> | |
@@ -169,20 +169,20 @@
 
 ## <span style="color: green;">Product Models</span>
 
-<table style="width:100%; table-layout:fixed;">
+<table style="width:100%; table-layout:fixed;font-size:11px;">
   <colgroup>
-    <col style="width:35%;">
+    <col style="width:30%;">
+    <col style="width:17%;">
     <col style="width:15%;">
-    <col style="width:12%;">
     <col style="width:38%;">
   </colgroup>
   <tr><th>Model</th><th>Region</th><th>Cellular</th><th>Specification</th></tr>
   <tr><td style="white-space: nowrap;">ER805-NRQ2-&lt;WLAN/NA&gt;</td><td>China</td><td>5G</td><td>5G NR SA n1/n28*/n41/n77/n78/n79;<br> NSA n41/n78/n79;<br> LTE-FDD B1/B2/B3/B5/B7/B8/B20/B28;<br> LTE-TDD B34/B38/B39/B40/B41;<br> WCDMA B1/B2/B5/B8</td></tr>
   <tr><td style="white-space: nowrap;">ER805-NRQ3-&lt;WLAN/NA&gt;</td><td>Global</td><td>5G</td><td>5G NR n1/n2/n3/n5/n7/n8/n12/n20/n25/n28/n38/n40/n41/n48*/n66/n71/n77/n78/n79;<br> LTE-FDD B1/B2/B3/B4/B5/B7/B8/B12(B17)/B13/B14/B18/B19/B20/B25/B26/B28/B29/B30/B32/B66/B71;<br> LTE-TDD B34/B38/B39/B40/B41/B42/B43/B48;<br> WCDMA B1/B2/B3/B4/B5/B6/B8/B19</td></tr>
-  <tr><td style="white-space: nowrap;">ER805-LQ20-&lt;WLAN/NA&gt;</td><td>China</td><td>CAT4</td><td>LTE-FDD B1/B3/B5/B8;<br> LTE-TDD B34/B38/B39/B40/B41;<br> TD-SCDMA B34/B39;<br> WCDMA B1/B8;<br> CDMA BC0;<br> GSM 900/1800 MHz</td></tr>
-  <tr><td style="white-space: nowrap;">ER805-FQ39-&lt;WLAN/NA&gt;</td><td>North America</td><td>CAT6</td><td>LTE-FDD B2/B4/B5/B7/B12/B13/B25/B26/B29/B30/B66;<br> WCDMA B2/B4/B5</td></tr>
-  <tr><td style="white-space: nowrap;">ER805-FQ58-&lt;WLAN/NA&gt;</td><td>EU &amp; APAC</td><td>CAT4</td><td>LTE-FDD B1/B3/B7/B8/B20/B28A;<br> LTE-TDD B38/B40/B41;<br> WCDMA B1/B8</td></tr>
-  <tr><td style="white-space: nowrap;">ER805-FQ78-&lt;WLAN/NA&gt;</td><td>Australia</td><td>CAT4</td><td>LTE-FDD B1/B3/B7/B8/B20/B28A;<br> LTE-TDD B38/B40/B41;<br> WCDMA B1/B8</td></tr>
+  <tr><td style="white-space: nowrap;">ER805-LQ20-&lt;WLAN/NA&gt;</td><td>China</td><td>Cat.4</td><td>LTE-FDD B1/B3/B5/B8;<br> LTE-TDD B34/B38/B39/B40/B41;<br> TD-SCDMA B34/B39;<br> WCDMA B1/B8;<br> CDMA BC0;<br> GSM 900/1800 MHz</td></tr>
+  <tr><td style="white-space: nowrap;">ER805-FQ39-&lt;WLAN/NA&gt;</td><td>North America</td><td>Cat.6</td><td>LTE-FDD B2/B4/B5/B7/B12/B13/B25/B26/B29/B30/B66;<br> WCDMA B2/B4/B5</td></tr>
+  <tr><td style="white-space: nowrap;">ER805-FQ58-&lt;WLAN/NA&gt;</td><td>EU &amp; APAC</td><td>Cat.4</td><td>LTE-FDD B1/B3/B7/B8/B20/B28A;<br> LTE-TDD B38/B40/B41;<br> WCDMA B1/B8</td></tr>
+  <tr><td style="white-space: nowrap;">ER805-FQ78-&lt;WLAN/NA&gt;</td><td>Australia</td><td>Cat.4</td><td>LTE-FDD B1/B3/B7/B8/B20/B28A;<br> LTE-TDD B38/B40/B41;<br> WCDMA B1/B8</td></tr>
   <tr><td style="white-space: nowrap;">ER805-EN00-&lt;WLAN/NA&gt;</td><td>—</td><td>No Module</td><td>No cellular module</td></tr>
 </table>
 

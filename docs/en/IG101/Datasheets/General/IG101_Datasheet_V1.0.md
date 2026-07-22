@@ -13,7 +13,7 @@
     </div>
     <div style="text-align: center;">
       <div style="display: flex; flex-wrap: wrap; gap: 16px; ">
-        <div style="width: 200px;background-color: #4CAF50; color: white; padding: 8px 8px; border-radius: 6px; font-size: 18px;">· LTE Cat1</div>
+        <div style="width: 200px;background-color: #4CAF50; color: white; padding: 8px 8px; border-radius: 6px; font-size: 18px;">· LTE Cat.1</div>
         <div style="width: 200px;background-color: #4CAF50; color: white; padding: 8px 8px; border-radius: 6px; font-size: 18px;">· Modbus to MQTT</div>
       </div>
       <div style="display: flex; flex-wrap: wrap; gap: 16px;margin-top:16px">
@@ -31,7 +31,7 @@
 **IG101 is a compact industrial edge gateway for IIoT applications, delivering cost-effective LTE connectivity and flexible edge data processing for large-scale device networking.**
 
 **Product Highlights:**
-- **Reliable Cellular Access:** LTE Cat1 connectivity for always-on remote access
+- **Reliable Cellular Access:** LTE Cat.1 connectivity for always-on remote access
 - **Edge Data Processing:** Supports customized edge computing and data preprocessing
 - **Industrial Reliability:** Metal housing, watchdog, and multi-level link detection
 - **Cloud Integration:** Supports MQTT and fast integration with third-party cloud platforms
@@ -41,7 +41,7 @@
 
 | Item | Specification |
 |---|---|
-| Cellular Network | LTE Cat1 |
+| Cellular Network | LTE Cat.1 |
 | Network Access and Authentication | APN, VPDN; CHAP/PAP |
 | Industrial Protocol | Modbus RTU |
 | Cloud Connectivity | Standard MQTT protocol, connects to third-party cloud platforms |
@@ -50,8 +50,8 @@
 | Memory and Flash | 4 MB RAM + 8 MB Flash |
 | Interface Set | 1 x RS-485, 1 x RS-232, 1 x SIM, 7-PIN terminal |
 | Power and Consumption | DC 7-38V; standby 150 mA @ 12V, working 280 mA @ 12V, peak 340 mA @ 12V |
-| Operating Temperature | -20 ~ 70 ℃ |
-| Dimensions and Protection | 76 x 108 x 37.5 mm, IP30 |
+| Operating Temperature | -20 °C ~ 70 °C (-4 °F ~ 158 °F) |
+| Dimensions and Protection | 76 × 108 × 37.5 mm (2.99 × 4.25 × 1.48 in), IP30 |
 
 # <span style="color: green;">2. Product Dimensions & Terminal Definition</span>
 
@@ -73,7 +73,7 @@
   </div>
   <div style="width: 45%;">
     <div>Notes:</div>
-    <div>1. All dimensions are in millimeters (mm).</div>
+    <div>1. All dimensions are in millimeters (mm), with inches (in) in parentheses.</div>
     <div>2. All dimensions are approximate and for reference only.</div>
     <div>3. Drawing dimensions are not intended for manufacturing.</div>
     <div>4. Dimensions are subject to part and process tolerances.</div>
@@ -95,8 +95,8 @@
   <tr><td align="center">3</td><td align="center">B</td><td>RS-485- of serial 1</td></tr>
   <tr><td align="center">4</td><td align="center">A</td><td>RS-485+ of serial 1</td></tr>
   <tr><td align="center">5</td><td align="center">GND</td><td>Signal ground</td></tr>
-  <tr><td align="center">6</td><td align="center">TXD</td><td>Serial RS232 send</td></tr>
-  <tr><td align="center">7</td><td align="center">RXD</td><td>Serial RS232 receive</td></tr>
+  <tr><td align="center">6</td><td align="center">TXD</td><td>Serial RS-232 send</td></tr>
+  <tr><td align="center">7</td><td align="center">RXD</td><td>Serial RS-232 receive</td></tr>
 </table>
 
 # <span style="color: green;">3. Hardware Specifications</span>
@@ -112,7 +112,7 @@
 | SIM Card Slot | 1 x SIM, 1.8V/3V |
 | Reset Button | Pinhole reset button |
 | LED Indicators | PWR, NET, STATUS, WARN, Signal Strength (3) |
-| TF Card Slot (Micro SD) | Micro SD, up to 32 GB |
+| microSD card Slot (microSD) | microSD, up to 32 GB |
 | <span style="color: green;">**Power and Power Consumption**</span> | |
 | Power Input | DC 7-38V, reverse polarity protection |
 | Power Interface | Industrial terminal block |
@@ -120,14 +120,14 @@
 | Working Power | 280 mA @ 12V |
 | Peak Power | 340 mA @ 12V |
 | <span style="color: green;">**Mechanical Specifications**</span> | |
-| Dimensions (L x W x H) | 76 x 108 x 37.5 mm |
+| Dimensions (L x W x H) | 76 × 108 × 37.5 mm (2.99 × 4.25 × 1.48 in) |
 | Mounting Method | DIN-rail, wall mounting |
 | Protection Rating | IP30 |
 | Housin | Metal housing |
 | Hardware Watchdog | Device self-diagnosis and auto-recovery (fuzzy-mapped from Embedded Watchdog) |
 | <span style="color: green;">**Environment and Certifications**</span> | |
-| Storage Temperature | -40 ~ 85 C |
-| Operating Temperature | -20 ~ 70 C |
+| Storage Temperature | -40 ~ 85 C (-40 °F ~ 185 °F) |
+| Operating Temperature | -20 ~ 70 C (-4 °F ~ 158 °F) |
 | Ambient Humidity | 5 ~ 95% (non-condensing) |
 | Physical Characteristics | IEC60068-2-27 shock resistance;<br/>IEC60068-2-6 vibration resistance;<br/>IEC60068-2-32 drop resistance |
 | EMC Standard | EN61000-4-2, level 3, Static<br/>EN61000-4-3, level 3, Radiation Electric Field<br/>EN61000-4-4, level 3, Pulsed Electric Field<br/>EN61000-4-5, level 3, Surge<br/>EN61000-4-6, level 3, Conducted Distubance Immunity<br/>EN61000-4-8, Power Frequency Field Resistance, horizontal / vertical 400A/m (>level 3)<br/>EN61000-4-12, level 3, Shock Wave Resistance |
@@ -141,7 +141,7 @@
 | <span style="color: green;">**Network Features**</span> | |
 | Network Access | APN, VPDN |
 | Access Authentication | CHAP/PAP |
-| Network Types/Standards | LTE Cat1 |
+| Network Types/Standards | LTE Cat.1 |
 | IP Applications | ICMP, DNS, TCP/UDP, TCP Server |
 | <span style="color: green;">**Security**</span> | |
 | User Management | Multi-level user authorization |
@@ -172,16 +172,16 @@
 
 ## <span style="color: green;">Model List</span>
 
-<table style="width:100%; table-layout:fixed;">
+<table style="width:100%; table-layout:fixed; font-size:11px;">
   <colgroup>
-    <col style="width:28%;">
+    <col style="width:18%;">
     <col style="width:12%;">
     <col style="width:42%;">
-    <col style="width:18%;">
+    <col style="width:28%;">
   </colgroup>
   <tr><th>Model</th><th>Region</th><th>&lt;WMNN&gt;: WLAN &amp; MODULE</th><th>&lt;IO/NA&gt;</th></tr>
-  <tr><td style="white-space: nowrap;">IG101-LQA3-STD</td><td>China</td><td>LTE-FDD: B1/B3/B5/B8<br/>LTE-TDD: B34/B38/B39/B40/B41<br/>GSM: B3/B5/B8</td><td>1 x RS485 + 1 x RS232, no I/O</td></tr>
-  <tr><td style="white-space: nowrap;">IG101-FQ53-STD</td><td>EMEA</td><td>LTE-FDD: B1/B3/B5/B7/B8/B20/B28<br/>LTE-TDD: B38/B40/B41<br/>GSM: B2/B3/B5/B8</td><td>1 x RS485 + 1 x RS232, no I/O</td></tr>
+  <tr><td style="white-space: nowrap;">IG101-LQA3-STD</td><td>China</td><td>LTE-FDD: B1/B3/B5/B8<br/>LTE-TDD: B34/B38/B39/B40/B41<br/>GSM: B3/B5/B8</td><td>1 x RS-485 + 1 x RS-232, no I/O</td></tr>
+  <tr><td style="white-space: nowrap;">IG101-FQ53-STD</td><td>EMEA</td><td>LTE-FDD: B1/B3/B5/B7/B8/B20/B28<br/>LTE-TDD: B38/B40/B41<br/>GSM: B2/B3/B5/B8</td><td>1 x RS-485 + 1 x RS-232, no I/O</td></tr>
 </table>
 
 # <span style="color: green;">6. Contact Us</span>

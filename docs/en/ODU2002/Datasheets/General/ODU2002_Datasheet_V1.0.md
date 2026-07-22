@@ -32,8 +32,8 @@
 
 **Features and Advantages:** 
 - **Unleash the Power of 5G:** Up to 4.76 Gbps DL / 1.25 Gbps UL, LTE CAT 19 fallback
-- **Worry-free Connectivity:** 5G/wired backup, cellular failover, dual SIM switching, optional eSIM, fault self-recovery
-- **Harsh Outdoor Environments:** IP67 rating, wide temperature (-30 °C ~ +70 °C), GPS, PoE power, wall/pole mounting
+- **Worry-free Connectivity:** 5G/wired backup, cellular failover, dual-SIM switching, optional eSIM, fault self-recovery
+- **Harsh Outdoor Environments:** IP67 rating, wide temperature (-30 °C ~ +70 °C (-22 °F ~ +158 °F)), GPS, PoE power, wall/pole mounting
 - **Cloud-Managed:** InCloud Manager for zero-touch deployment, remote configuration, visualized monitoring
 - **Security:** Robust protection for reliable outdoor deployment
 
@@ -43,18 +43,18 @@
 
 |Technical Item|Specification|
 | --- | --- |
-| Cellular | 5G SA/NSA + LTE Cat19; up to 4.76 Gbps DL / 1.25 Gbps UL (5G); dual SIM / optional eSIM |
+| Cellular | 5G SA/NSA + LTE Cat19; up to 4.76 Gbps DL / 1.25 Gbps UL (5G); dual-SIM / optional eSIM |
 | GNSS | GPS, GLONASS, Beidou, Galileo, QZSS |
 | Cloud Management | InCloud Manager |
 | VPN | IPsec, L2TP |
 | Network & Security | IPv4/IPv6; VLAN, DHCP, DDNS; PPPoE; dual-SIM; link backup; NAT; firewall, ACL |
 | Wi-Fi | 802.11 b/g/n, 2.4 GHz AP, 150 Mbps |
 | Throughput / Users | Up to 2 Gbps; up to 200 users |
-| SIM | 2 × Nano SIM (hot-swap); eSIM optional |
+| SIM | 2 × Nano-SIM (hot-swap); eSIM optional |
 | Ethernet / PoE / USB | 2 × 2.5 GbE (WAN/LAN); PoE 802.3af/at in; USB-C 2.0 |
 | Antennas | TNC: 6 × Sub-6 + 1 × GNSS + 1 × Wi-Fi |
-| Power / Mechanical | PoE 802.3at; ≤15 W; 360 × 220 × 72 mm; 2.87 kg; metal; fanless; wall/pole; IP67 |
-| Environment | -30 °C ~ +70 °C op.; IEC 60068 salt mist / shock / vibration / drop |
+| Power / Mechanical | PoE 802.3at; ≤15 W; 360 × 220 × 72 mm (14.17 × 8.66 × 2.83 in); 2.87 kg (6.33 lb); metal; fanless; wall/pole; IP67 |
+| Environment | -30 °C ~ +70 °C (-22 °F ~ +158 °F) op.; IEC 60068 salt mist / shock / vibration / drop |
 
 
 # <span style="color: green;">2. Product Dimensions</span>
@@ -74,8 +74,8 @@
   </div>
   <div style="width: 100%;">
     <div>Note:</div>
-    <div>1. All dimensions are in millimeters (mm).</div>
-    <div>2. Dimensions (L × W × H): 360 × 220 × 72 mm.</div>
+    <div>1. All dimensions are in millimeters (mm), with inches (in) in parentheses.</div>
+    <div>2. Dimensions (L × W × H): 360 × 220 × 72 mm (14.17 × 8.66 × 2.83 in).</div>
     <div>3. All dimensions are approximate, <span style="font-weight: bold;">for reference only</span>.</div>
     <div>4. Dimensions shown <span style="font-weight: bold;">shall not be used for production</span>.</div>
   </div>
@@ -111,13 +111,13 @@
 | Input | Power over Ethernet (PoE) 802.3at |
 | Power Consumption | ≤ 15 W |
 | <span style="color: green;">**Mechanical**</span> | |
-| Dimensions | 360 × 220 × 72 mm |
-| Weight | 2.87 kg |
+| Dimensions | 360 × 220 × 72 mm (14.17 × 8.66 × 2.83 in) |
+| Weight | 2.87 kg (6.33 lb) |
 | Installation | Wall mounting, pole mounting |
 | Housing | Metal, fanless |
 | <span style="color: green;">**Environment**</span> | |
-| Operating Temperature | -30 °C ~ +70 °C |
-| Storage Temperature | -40 °C ~ +85 °C |
+| Operating Temperature | -30 °C ~ +70 °C (-22 °F ~ +158 °F) |
+| Storage Temperature | -40 °C ~ +85 °C (-40 °F ~ +185 °F) |
 | Humidity | 5–95 % RH (non-condensing) |
 | Protection | IP67 |
 | Salt Mist | IEC 60068-2-52 |
@@ -146,7 +146,7 @@
 | Features | Centralized management, dashboard, batch upgrade, uplink management |
 | <span style="color: green;">**Network Features**</span> | |
 | Access | 5G/4G, Ethernet |
-| Dialing | PPPoE, cellular auto redial, dual SIM switching, APN configuration |
+| Dialing | PPPoE, cellular auto redial, dual-SIM switching, APN configuration |
 | Link Backup | Packet-by-packet load balancing |
 | Link Monitoring | Real-time delay, jitter, packet loss detection |
 | Link Priority | Link priority adjustment |
@@ -154,7 +154,7 @@
 | Applications | VLAN, DHCP Server/Client, DNS, DDNS, Fixed Address, IP Passthrough |
 | Interface | Duplex mode, link negotiation |
 | <span style="color: green;">**Security**</span> | |
-| VPN | IPSec VPN, L2TP VPN |
+| VPN | IPsec VPN, L2TP VPN |
 | Firewall | Access control, port mapping, port forwarding, MAC filtering |
 | <span style="color: green;">**Monitoring**</span> | |
 | Dashboard | Device info, interface status, traffic statistics |

@@ -32,7 +32,7 @@
 
 **Product Features:**
 
-- **Reliability & Resilience:** Fanless design, IP30 protection rating, robust metal casing with protective coating, dust and dirt resistance, and wide temperature operation (-40°C to +75°C). Industrial-grade redundant dual input power supply design. MTBF over 35 years.
+- **Reliability & Resilience:** Fanless design, IP30 protection rating, robust metal casing with protective coating, dust and dirt resistance, and wide temperature operation (-40 °C ~ +75 °C (-40 °F ~ +167 °F)). Industrial-grade redundant dual input power supply design. MTBF over 35 years.
 - **PoE Power Supply:** Supports PoE (Power over Ethernet), compatible with IEEE 802.3af/at standards. Each PoE port provides up to 30 W output power across 8 Gigabit ports.
 - **Redundancy Protocols:** Supports STP/RSTP/MSTP ring redundancy protocols, offering flexible choices for constructing intricate industrial Ethernet communication systems.
 - **Network Management:** Supports SNMPv1/v2c/v3 for integrated network management and RMON for effective monitoring and fault prediction. DIN-rail installation, small size, plug-and-play for quick deployment.
@@ -46,9 +46,9 @@
 | Ports | 8 × 10/100/1000BaseT PoE + 4 × 1000BaseX SFP + 1 × Management Serial CLI |
 | PoE | IEEE 802.3af/at, up to 30 W per port (8 ports) |
 | Switching Performance | 68 Gbps backplane bandwidth; 16K MAC table; 4 Mbit buffer |
-| Dimensions / Weight | 52 × 140 × 110 mm / 0.7 kg |
+| Dimensions / Weight | 52 × 140 × 110 mm (2.05 × 5.51 × 4.33 in) / 0.7 kg (1.54 lb) |
 | Power | 48–54V DC redundant dual inputs |
-| Environment | -40 to +75 °C operating; IP30; fanless |
+| Environment | -40 °C ~ +75 °C (-40 °F ~ +167 °F) operating; IP30; fanless |
 | Management | Web, CLI, SNMPv1/v2c/v3, RMON |
 | Protocols | STP/RSTP/MSTP, IGMP Snooping, VLAN, GVRP, QoS |
 | EMC / Certifications | FCC Part 15 Class A; EN55022 / EN55035 Class A; IEC 61000-4 series |
@@ -62,12 +62,12 @@
 <div style="display: flex; align-items: end; flex-wrap: wrap; justify-content: space-between;row-gap: 16px;">
   <div style="width: 100%;">
     <img src="images/media_1_6.png" width="80%" style="display: block; margin: 0 auto;" alt="ISM7312D Dimensions" />
-    <div style="width: 100%; text-align: center; font-size: 12px; margin-top: 8px;">ISM7312D (52 × 140 × 110 mm)</div>
+    <div style="width: 100%; text-align: center; font-size: 12px; margin-top: 8px;">ISM7312D (52 × 140 × 110 mm (2.05 × 5.51 × 4.33 in))</div>
   </div>
 </div>
   <div style="width: 100%;">
     <div>Note:</div>
-    <div>1. All dimensions are in millimeters (mm).</div>
+    <div>1. All dimensions are in millimeters (mm), with inches (in) in parentheses.</div>
     <div>2. All dimensions are approximate and <span style="font-weight: bold;">for reference only</span>.</div>
     <div>3. The dimensions shown in the figure <span style="font-weight: bold;">shall not be used for production or processing</span>.</div>
     <div>4. Dimensions must comply with part and manufacturing tolerance requirements.</div>
@@ -152,12 +152,12 @@
 | <span style="color: green;">**Physical Performance**</span> | |
 | Enclosure | Fully enclosed seamless metal enclosure |
 | Dimensions (W × D × H) | 52 mm × 140 mm × 110 mm |
-| Weight | 0.7 kg |
+| Weight | 0.7 kg (1.54 lb) |
 | Mounting Method | DIN-rail mounting |
 | Cooling Method | Fanless cooling |
 | Ingress Protection | IP30 |
-| Storage Temperature | -40 °C \~ +85 °C |
-| Operating Temperature | -40 °C \~ +75 °C |
+| Storage Temperature | -40 °C ~ +85 °C (-40 °F ~ +185 °F) |
+| Operating Temperature | -40 °C ~ +75 °C (-40 °F ~ +167 °F) |
 | Humidity | 5 \~ 95% (non-condensing) |
 | <span style="color: green;">**Hardware Performance**</span> | |
 | Backplane Bandwidth | 68 Gbps |
@@ -205,7 +205,7 @@ table:last-of-type td:first-child { white-space: nowrap; max-width: none; }
 
 | Model | Description |
 |-------|-------------|
-| ISM7312D-P-4GSFP-8GT-48 | 12-Port Layer 2+ Managed Industrial Switch. 4 × 1000BaseX SFP Ports (SFP module not included), 8 × 802.3af/at PoE 10/100/1000BaseT Ports. 1 Management Serial CLI Port, IP30 Protection Class, Operating Temperature from -40°C to +75°C. Dual 48-54VDC Power Inputs. CLI and power cables are ordered separately. |
+| ISM7312D-P-4GSFP-8GT-48 | 12-Port Layer 2+ Managed Industrial Switch. 4 × 1000BaseX SFP Ports (SFP module not included), 8 × 802.3af/at PoE 10/100/1000BaseT Ports. 1 Management Serial CLI Port, IP30 Protection Class, Operating Temperature from -40 °C to +75 °C (-40 °F to +167 °F). Dual 48-54VDC Power Inputs. CLI and power cables are ordered separately. |
 
 # <span style="color: green;">6. Contact Us</span>
 

@@ -33,7 +33,7 @@
 **Key features:**
 - **High-capacity LoRaWAN:** Semtech SX1302, up to 2,000 node access
 - **Wide coverage:** Up to 15 km LOS / 2 km NLOS (deployment dependent)
-- **Reliable communications:** Ethernet/cellular/Wi-Fi backup with dual SIM failover
+- **Reliable communications:** Ethernet/cellular/Wi-Fi backup with dual-SIM failover
 - **Security architecture:** Secure Boot, TPM 2.0, TrustZone, firewall, VPN
 - **Open edge platform:** Debian 11 + Docker + DeviceLive remote management
 
@@ -42,16 +42,16 @@
 | Technical Indicator | Specification |
 |------|---------------|
 | LoRaWAN Capability | SX1302, 8-channel half-duplex, up to 2,000 nodes |
-| Cellular Access | LTE Cat1, APN/VPDN, CHAP/PAP |
+| Cellular Access | LTE Cat.1, APN/VPDN, CHAP/PAP |
 | Network Features | ARP/Ethernet, static IP/DHCP, ICMP, DNS, TCP/UDP, static routing |
-| Security | Multi-level user roles, firewall, OpenVPN, IPSec VPN |
+| Security | Multi-level user roles, firewall, OpenVPN, IPsec VPN |
 | Open Platform | Debian 11 + Docker, cloud integration for AWS/Azure/AliCloud |
 | Device Management | Web/Telnet/SSH, FOTA/DFOTA, local/remote logs, DeviceLive remote operations |
-| Dimensions (W x D x H) | 145 x 106 x 36 mm |
-| Weight | 339 g |
-| Interfaces | 2xFE, 1xRS-232/485 + 1xRS-485, USB2.0 Type-A, Nano SIM x2 |
+| Dimensions (W x D x H) | 145 × 106 × 36 mm (5.71 × 4.17 × 1.42 in) |
+| Weight | 339 g (0.75 lb) |
+| Interfaces | 2xFE, 1xRS-232/485 + 1xRS-485, USB2.0 Type-A, Nano-SIM x2 |
 | Power Input | 9 to 48 V DC |
-| Operating Temperature | -20 to 70 C |
+| Operating Temperature | -20 °C ~ 70 °C (-4 °F ~ 158 °F) |
 | Protection and Certifications | IP30, CE/FCC/IC/PTCRB |
 
 # <span style="color: green;">2. Product Dimensions</span>
@@ -74,7 +74,7 @@
     <div style="width: 100%; text-align: center; font-size: 12px;">Side View</div>
   </div>  
   <div style="width: 45%;">
-    <div>Note:</div><div>1. All dimensions are in millimeters (mm).</div><div>2. All dimensions are approximate and for reference only.</div><div>3. Dimensioned drawings are not intended for machining.</div><div>4. Dimensions are subject to part and manufacturing tolerances.</div><div>5. Specifications may change without prior notice.</div>
+    <div>Note:</div><div>1. All dimensions are in millimeters (mm), with inches (in) in parentheses.</div><div>2. All dimensions are approximate and for reference only.</div><div>3. Dimensioned drawings are not intended for machining.</div><div>4. Dimensions are subject to part and manufacturing tolerances.</div><div>5. Specifications may change without prior notice.</div>
   </div>
 </div>
 
@@ -97,13 +97,13 @@
 | <span style="color: green;">**Connectivity & Interfaces**</span> |  |
 | Ethernet Ports | 2 x 10/100 Mbps FE |
 | Serial Ports | 1 x RS-232/485 + 1 x RS-485 (isolated) |
-| SIM Card Holders | Nano SIM x2 |
+| SIM Card Holders | Nano-SIM x2 |
 | Antenna Connectors | LTE: SMA x1, Wi-Fi: SMA x1, GPS: SMA x1, LoRaWAN: SMA x1 (North American LTE model: SMA x2) |
 | USB | USB 2.0 Type-A |
 | Buttons | Pinhole reset button x1; programmable button x1 |
-| TF Card | MicroSD support, up to 32GB expansion |
+| microSD card | microSD support, up to 32GB expansion |
 | LED Indicators | PWR, STATUS, WARN, NET, USER x4 |
-| WiFi | Wi-Fi STA (802.11ac/a/b/g/n, 2.4/5 GHz) |
+| Wi-Fi | Wi-Fi STA (802.11ac/a/b/g/n, 2.4/5 GHz) |
 | Bluetooth | BLE 4.2 |
 | GPS | Satellite location GPS, 1 x SMA |
 | <span style="color: green;">**Power & Power Consumption**</span> |  |
@@ -112,8 +112,8 @@
 | Power Failure Protection | Hold for 20 seconds after power failure (safe shutdown) |
 | Power Failure Alarm | Power failure alarms when power failure happens |
 | <span style="color: green;">**Mechanical Specifications**</span> |  |
-| Product Dimensions | 145 x 106 x 36 mm |
-| Product Weight | 339 g |
+| Product Dimensions | 145 × 106 × 36 mm (5.71 × 4.17 × 1.42 in) |
+| Product Weight | 339 g (0.75 lb) |
 | Mounting Method | Panel mounting / DIN-rail mounting |
 | Protection Rating | IP30 |
 | Enclosure & Heat Dissipation | Metal + plastic enclosure, fanless design |
@@ -121,8 +121,8 @@
 | Hardware Watchdog | Supported |
 | TPM | TPM 2.0 |
 | <span style="color: green;">**Environment & Certifications**</span> |  |
-| Storage Temperature | -40 to 85 ℃ |
-| Operating Temperature | -20 to 70 ℃ |
+| Storage Temperature | -40 to 85 ℃ (-40 °F ~ 185 °F) |
+| Operating Temperature | -20 to 70 ℃ (-4 °F ~ 158 °F) |
 | Environmental Humidity | 5 to 95% RH (non-condensing) |
 | Physical Characteristics | IEC60068-2-27 shock resistance<br>IEC60068-2-6 vibration resistance<br>IEC60068-2-32 drop resistance |
 | EMC Standard | EN61000-4-2, level 3, Static<br>EN61000-4-3, level 3, Radiation Electric Field<br>EN61000-4-4, level 3, Pulsed Electric Field<br>EN61000-4-5, level 3, Surge<br>EN61000-4-6, level 3, Conducted Distubance Immunity<br>EN61000-4-8, Power Frequency Field Resistance, horizontal / vertical 400A/m (>level 2)<br>EN61000-4-12,level 3,Shock Wave Resistance |
@@ -138,7 +138,7 @@
 | LoRaWAN LNS | Built-in LoRaWAN network server, compatible with The Things Stack and ChirpStack |
 | LoRaWAN Protocol | LoRaWAN 1.0/1.0.2, Class A/B/C |
 | <span style="color: green;">**Network Features**</span> |  |
-| Network Type | LTE Cat1 |
+| Network Type | LTE Cat.1 |
 | Network Access | APN, VPDN |
 | Access Authentication | CHAP, PAP |
 | WAN Protocols | Static IP, DHCP |
@@ -149,12 +149,12 @@
 | Secure Boot | Supported |
 | Trust Zone | TrustZone supported |
 | Network Security | Firewall |
-| Data Security |  OpenVPN, IPSec VPN |
+| Data Security |  OpenVPN, IPsec VPN |
 | User Management | Multi-level user roles / management rights |
 | <span style="color: green;">**Reliability**</span> |  |
 | Link Detection | Heartbeat-based link detection with auto reconnect |
 | Built-in Watchdog | Embedded watchdog |
-| Dual SIM Switchover | Supported |
+| Dual-SIM Switchover | Supported |
 | <span style="color: green;">**Open Platform & Data Acquisition Protocols (DSA)**</span> |  |
 | Secondary Development Environment | multi-programming language development platform |
 | Access Cloud Platform | AWS, Azure, Ali and other cloud platforms |
@@ -181,16 +181,16 @@
 
 <table style="width:100%; table-layout:fixed;">
   <colgroup>
-    <col style="width:30%;">
+    <col style="width:28%;">
     <col style="width:14%;">
     <col style="width:36%;">
-    <col style="width:20%;">
+    <col style="width:22%;">
   </colgroup>
-  <tr><th>Model</th><th>Region</th><th>&lt;WMNN&gt;</th><th>&lt;Lxxx&gt;: LoRaWAN Band</th></tr>
-  <tr><td style="white-space: nowrap;">EC312-H-FQ53-L868</td><td>EMEA</td><td>CAT1<br/>FDD: B1/B3/B7/B8/B20/B28<br/>TDD: B38/B40/B41<br/>GSM: B2/B3/B5/B8</td><td>EU868</td></tr>
-  <tr><td style="white-space: nowrap;">EC312-H-FQ33-L915</td><td>North America</td><td>CAT1<br/>FDD: B2/B4/B5/B12/B13/B25/B26<br/>WCDMA: B2/B4/B5</td><td>US915/AS923</td></tr>
-  <tr><td style="white-space: nowrap;">EC312-H-FQ53-L915</td><td>EMEA</td><td>CAT1<br/>FDD: B1/B3/B7/B8/B20/B28<br/>TDD: B38/B40/B41<br/>GSM: B2/B3/B5/B8</td><td>US915/AS923</td></tr>
-  <tr><td style="white-space: nowrap;">EC312-H-LQA3-L470</td><td>China</td><td>CAT1<br/>LTE-FDD: B1/B3/B5/B8<br/>LTE-TDD: B34/B38/B39/B40/B41</td><td>CN470</td></tr>
+  <tr><th>Model</th><th>Region</th><th>&lt;WMNN&gt;</th><th>&lt;Lxxx&gt;</th></tr>
+  <tr><td style="white-space: nowrap;">EC312-H-FQ53-L868</td><td>EMEA</td><td>Cat.1<br/>FDD: B1/B3/B7/B8/B20/B28<br/>TDD: B38/B40/B41<br/>GSM: B2/B3/B5/B8</td><td>EU868</td></tr>
+  <tr><td style="white-space: nowrap;">EC312-H-FQ33-L915</td><td>North America</td><td>Cat.1<br/>FDD: B2/B4/B5/B12/B13/B25/B26<br/>WCDMA: B2/B4/B5</td><td>US915/AS923</td></tr>
+  <tr><td style="white-space: nowrap;">EC312-H-FQ53-L915</td><td>EMEA</td><td>Cat.1<br/>FDD: B1/B3/B7/B8/B20/B28<br/>TDD: B38/B40/B41<br/>GSM: B2/B3/B5/B8</td><td>US915/AS923</td></tr>
+  <tr><td style="white-space: nowrap;">EC312-H-LQA3-L470</td><td>China</td><td>Cat.1<br/>LTE-FDD: B1/B3/B5/B8<br/>LTE-TDD: B34/B38/B39/B40/B41</td><td>CN470</td></tr>
 </table>
 
 # <span style="color: green;">6. Contact Us</span>

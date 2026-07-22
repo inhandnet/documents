@@ -27,12 +27,12 @@
 <div style="page-break-after: always;"></div>
 
 # <span style="color: #3eb044;">1. Product Overview</span>
-The VR624 is a robust 5G router engineered for in-vehicle networking, featuring 4×M12 X-code Gigabit Ethernet ports, RS232 serial, and DC 9-48 V input with reverse-polarity protection. It delivers 5G NR SA/NSA speeds up to 3.4 Gbps, dual Nano-SIM with eSIM optional, Wi-Fi 6 3000 Mbps, and multi-constellation GNSS. Operating from -30°C to +70°C fanless cooling, the VR624 is certified to CE, E-Mark (ECE R10/ECE R118), FCC, PTCRB, and ITxPT standards. With TPM 2.0 hardware encryption and M12 vibration-resistant connectors, the device ensures secure, reliable connectivity for transportation fleets. Compatible with DeviceLive for centralized fleet management and remote diagnostics.
+The VR624 is a robust 5G router engineered for in-vehicle networking, featuring 4×M12 X-code Gigabit Ethernet ports, RS-232 serial, and DC 9-48 V input with reverse-polarity protection. It delivers 5G NR SA/NSA speeds up to 3.4 Gbps, dual Nano-SIM with eSIM optional, Wi-Fi 6 3000 Mbps, and multi-constellation GNSS. Operating from -30 °C to +70 °C (-22 °F to +158 °F) fanless cooling, the VR624 is certified to CE, E-Mark (ECE R10/ECE R118), FCC, PTCRB, and ITxPT standards. With TPM 2.0 hardware encryption and M12 vibration-resistant connectors, the device ensures secure, reliable connectivity for transportation fleets. Compatible with DeviceLive for centralized fleet management and remote diagnostics.
 
 ## <span style="color: #3eb044;">1.1 Feature and Advantage</span>
 | Value Dimension | Description |
 | :--- | :--- |
-| **High-Speed Connectivity** | 5G NSA/SA support with downlink speeds up to 3.4 Gbps, Wi-Fi 6 throughput 3000Mbps, enabling gigabit-class data transmissionfor real-time video, telemetry, and fleet communications |
+| **High-Speed Connectivity** | 5G SA/NSA support with downlink speeds up to 3.4 Gbps, Wi-Fi 6 throughput 3000Mbps, enabling gigabit-class data transmissionfor real-time video, telemetry, and fleet communications |
 | **Robust Design** | M12 X-Coded connectors with vibration resistance, certified to ECE R10, ECE R118, and EN 50155 standards for EMC compliance, fire safety, and railway-grade reliability |
 | **Integrated Positioning** | Built-in GNSS support (GPS, BDS, Galileo, GLONASS, QZSS) with  <1.5m positioning accuracy for real-time fleet tracking and route optimization |
 | **Enterprise-Grade Security** | Hardware TPM 2.0 encryption chip combined with multi-layer software security policies  (firewall, VPN, access control) for comprehensive threat protection, WPA3 Enterprise level secure encryption |
@@ -80,8 +80,8 @@ The VR624 is a robust 5G router engineered for in-vehicle networking, featuring 
 
 **Note:**
 
-1. All dimensions are in millimeters (mm).
-2. Dimensions (L × W × H): 177 × 144.25 × 43 mm.
+1. All dimensions are in millimeters (mm), with inches (in) in parentheses.
+2. Dimensions (L × W × H): 177 × 144.25 × 43 mm (6.97 × 5.68 × 1.69 in).
 3. All dimensions are approximate, for reference only.
 4. Dimensions shown shall not be used for production.
 
@@ -115,10 +115,10 @@ Each vehicle is equipped with one VR624 router in a standard configuration:
 | **Processor** | 1.3 GHz industrial-grade CPU |
 | **Memory** | 512 MB DDR4 |
 | **Storage** | 8 GB eMMC |
-| **Cellular Module** | 5G NR NSA/SA, downlink up to 3.4 Gbps |
+| **Cellular Module** | 5G NR SA/NSA, downlink up to 3.4 Gbps |
 | **SIM Card Slots** | 1× drawer-type dual Nano-SIM slot + 1× eSIM (optional) |
 | **Ethernet Ports** | 4× M12 X-code 8-pin female, 10/100/1000 Mbps |
-| **Serial Port** | 1× RS232 with 15 KV ESD protection |
+| **Serial Port** | 1× RS-232 with 15 KV ESD protection |
 | **I/O Interfaces** | 2× Input (ignition detection / low battery) |
 | **Wi-Fi** | IEEE802.11 ax/ac/a/b/g/n, Wi-Fi 6, 2.4GHz + 5GHz, 3000 Mbps |
 | **Wi-Fi Security** | WPA3-Enterprise, WPA2-Enterprise, WEP/TKIP/AES encryption |
@@ -139,11 +139,11 @@ Each vehicle is equipped with one VR624 router in a standard configuration:
 | **Housing** | Metal enclosure |
 | **Cooling** | Fanless passive cooling |
 | **Protection Rating** | IP30 |
-| **Operating Temperature** | -30°C ~ +70°C |
-| **Storage Temperature** | -40°C ~ +85°C |
+| **Operating Temperature** | -30 °C ~ +70 °C (-22 °F ~ +158 °F) |
+| **Storage Temperature** | -40 °C ~ +85 °C (-40 °F ~ +185 °F) |
 | **Ambient Humidity** | 5% ~ 95% (non-condensing) |
-| **Dimensions** | 177 × 144.25 × 43 mm |
-| **Weight** | 810 g |
+| **Dimensions** | 177 × 144.25 × 43 mm (6.97 × 5.68 × 1.69 in) |
+| **Weight** | 810 g (1.79 lb) |
 | **Installation** | Wall-mounting |
 | **MTBF** | MIL-HDBK-217F N2, GM @ 20°C: 17.8 years<br>MIL-HDBK-217F N2, GM @ 40°C: 12.5 years |
 
@@ -155,7 +155,7 @@ Each vehicle is equipped with one VR624 router in a standard configuration:
 - Vibration-resistant design for mobile environments
 
 **Serial Port (×1)**
-- RS232 interface with 15 KV ESD protection
+- RS-232 interface with 15 KV ESD protection
 - For legacy device integration
 
 **I/O Interfaces (×2)**
@@ -184,7 +184,7 @@ Each vehicle is equipped with one VR624 router in a standard configuration:
 | Advantage | Description |
 | :--- | :--- |
 | **M12 X-Coded Connectors** | Vibration-resistant, corrosion-resistant, ensuring reliable wired connections<br> in harsh mobile environments, flow  ITxPT standards |
-| **Wide-Temperature Design** | -30°C to +70°C operating range for extreme weather conditions |
+| **Wide-Temperature Design** | -30 °C ~ +70 °C (-22 °F ~ +158 °F) operating range for extreme weather conditions |
 | **TPM 2.0 Security** | Hardware-level encryption for enterprise-grade security |
 | **Dual-SIM Failover** | Automatic SIM switching for uninterrupted connectivity |
 | **Multi-Constellation GNSS** | GPS + BDS + Galileo + GLONASS + QZSS for global positioning |

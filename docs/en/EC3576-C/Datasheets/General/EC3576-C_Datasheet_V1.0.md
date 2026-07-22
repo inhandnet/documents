@@ -35,7 +35,7 @@
 - **Powerful AI NPU:** 6.0 TOPS INT8, multi-format support
 - **Advanced Graphics:** Mali-G52 MC3, 8K codec, triple display
 - **Rich Interfaces:** PCIe, USB 3.2, CAN-FD, GMAC, MIPI
-- **Industrial Grade:** -40 °C ~ +85 °C, ultra-thin connector
+- **Industrial Grade:** -40 °C ~ +85 °C (-40 °F ~ +185 °F), ultra-thin connector
 
 ## <span style="color: green;">Core Technical Specifications</span>
 
@@ -51,8 +51,8 @@
 | Memory / Storage | 8 GB LPDDR4 / 256 GB UFS |
 | Display Interface | HDMI/eDP/DSI/DP, triple independent display |
 | Connectivity | 2×GMAC, USB 3.2, CAN-FD, MIPI-CSI×5, UART×12 |
-| Dimensions (W × D × H) | 55 × 68 × 3 mm |
-| Operating Temperature | -40 °C ~ +85 °C |
+| Dimensions (W × D × H) | 55 × 68 × 3 mm (2.17 × 2.68 × 0.12 in) |
+| Operating Temperature | -40 °C ~ +85 °C (-40 °F ~ +185 °F) |
 
 
 # <span style="color: green;">2. Product Dimensions</span>
@@ -76,7 +76,7 @@
 
 <div style="margin-top: 12px;">
   <div style="width: 80%;">
-    <div>Note:</div><div>1. All dimensions are in millimeters (mm).</div><div>2. All dimensions are approximate and for reference only.</div><div>3. Dimensioned drawings are not intended for machining.</div><div>4. Dimensions are subject to part and manufacturing tolerances.</div><div>5. Specifications may change without prior notice.</div>
+    <div>Note:</div><div>1. All dimensions are in millimeters (mm), with inches (in) in parentheses.</div><div>2. All dimensions are approximate and for reference only.</div><div>3. Dimensioned drawings are not intended for machining.</div><div>4. Dimensions are subject to part and manufacturing tolerances.</div><div>5. Specifications may change without prior notice.</div>
   </div>
 </div>
 
@@ -108,7 +108,7 @@
 | SDIO | ≤2, SDIO v3.0, 4-bit |
 | USB 3.2 | 2 (1 × Type-C supports DP Alt mode; 1 × combo high speed interface) |
 | USB 2.0 OTG | 2 |
-| UART | ≤12, 64-bit FIFO for TX/RX; Supports 5/6/7/8-bit serial transceiving, up to 4 Mbps; All 12 UARTs support flow control and RS485 |
+| UART | ≤12, 64-bit FIFO for TX/RX; Supports 5/6/7/8-bit serial transceiving, up to 4 Mbps; All 12 UARTs support flow control and RS-485 |
 | CAN-FD | ≤2, compliant with CAN and CAN-FD; Supports standard and extended frames; 8192-bit FIFO |
 | SPI | ≤5, master and slave mode, each supports two chip selections |
 | I2C | ≤9, 7-bit and 10-bit address modes; Standard mode 100 kbps, HS mode 400 kbps |
@@ -116,11 +116,11 @@
 | <span style="color: green;">**Power**</span> | |
 | Input Power | DC 5V |
 | <span style="color: green;">**Mechanical**</span> | |
-| Dimensions (W × D × H) | 55 × 68 × 3 mm |
+| Dimensions (W × D × H) | 55 × 68 × 3 mm (2.17 × 2.68 × 0.12 in) |
 | Package | Board-to-board connector (4 × 100-pin, 0.4 mm pitch, combined height 1.5 mm) |
 | Mounting Holes | 4 × φ3.5 mm |
 | <span style="color: green;">**Environment**</span> | |
-| Operating Temperature | -40 °C ~ +85 °C |
+| Operating Temperature | -40 °C ~ +85 °C (-40 °F ~ +185 °F) |
 
 # <span style="color: green;">4. Software Specifications</span>
 
@@ -147,9 +147,18 @@
 
 ## <span style="color: green;">Product Model</span>
 
-| Model | CPU | CPU Clock Speed | RAM | ROM | Operating Temperature |
-|---|---|---|---|---|---|
-| EC3576-C | 4 × A72 + 4 × A53 | A7 @ 2.3 GHz, A53 @ 2.2 GHz | 8 GB | 256 GB | -40 °C ~ +85 °C |
+<table style="width:100%; table-layout:fixed; font-size:11px;">
+  <colgroup>
+    <col style="width:10%;">
+    <col style="width:18%;">
+    <col style="width:28%;">
+    <col style="width:10%;">
+    <col style="width:10%;">
+    <col style="width:24%;">
+  </colgroup>
+  <tr><th>Model</th><th>CPU</th><th>CPU Clock Speed</th><th>RAM</th><th>ROM</th><th>Operating Temperature</th></tr>
+  <tr><td style="white-space: nowrap;">EC3576-C</td><td>4 × A72 + 4 × A53</td><td>A7 @ 2.3 GHz, A53 @ 2.2 GHz</td><td>8 GB</td><td>256 GB</td><td>-40 °C ~ +85 °C (-40 °F ~ +185 °F)</td></tr>
+</table>
 
 # <span style="color: green;">6. Contact Us</span>
 

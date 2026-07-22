@@ -34,8 +34,8 @@
 
 - **Dual HDMI Display:** Two HDMI ports for dual-screen extended display, HDMI1 with audio, supports up to 4K decoding
 - **High Performance:** RK3399 six-core processor at 1.8 GHz, 2 GB RAM / 16 GB storage
-- **Rich Interfaces:** 4 × USB 2.0, 1 × USB 3.0, RS232, RS485, Gigabit Ethernet, Bluetooth 4.1
-- **Industrial Reliability:** Metal housing, IP40, fanless, -20~70°C wide temperature, EMC Level 3
+- **Rich Interfaces:** 4 × USB 2.0, 1 × USB 3.0, RS-232, RS-485, Gigabit Ethernet, Bluetooth 4.1
+- **Industrial Reliability:** Metal housing, IP40, fanless, -20 °C ~ 70 °C (-4 °F ~ 158 °F) wide temperature, EMC Level 3
 - **Android Optimized:** Deeply optimized Android 7.1, stable long-term operation for digital signage and kiosks
 
 ## <span style="color: green;">Core Specifications</span>
@@ -52,8 +52,8 @@
 | Serial              | 2 × RS-232, 1 × RS-232/RS-485 |
 | USB                 | 4 × USB 2.0, 1 × USB 3.0      |
 | Power Input         | 12 V DC                       |
-| Working Temperature | -20 ~ 70°C                    |
-| Dimensions          | 170 × 150 × 26 mm             |
+| Working Temperature | -20 °C ~ 70 °C (-4 °F ~ 158 °F)                    |
+| Dimensions          | 170 × 150 × 26 mm (6.69 × 5.91 × 1.02 in)             |
 
 # <span style="color: green;">2. Product Dimensions</span>
 <p align="center">
@@ -62,7 +62,7 @@
 
 <div style="text-align: left; margin-top: 16px;">
     <div>Note:</div>
-    <div>1. All dimensions are in millimeters (mm).</div>
+    <div>1. All dimensions are in millimeters (mm), with inches (in) in parentheses.</div>
     <div>2. All dimensions are approximate, <span style="font-weight: bold;">for reference only</span>.</div>
     <div>3. Illustrated dimensions <span style="font-weight: bold;">must not be used for production processing</span>.</div>
     <div>4. Dimensions must comply with component and manufacturing tolerances.</div>
@@ -78,7 +78,7 @@
 | RAM                                                  | 2 GB                                                                                                |
 | FLASH                                                | 16 GB eMMC                                                                                          |
 | <span style="color: green;">**Interfaces**</span>    |                                                                                                     |
-| Ethernet                                             | 1 × 10/100/1000 Mbps, LAN/WAN                                                                       |
+| Ethernet                                             | 1 × 10/100/1000 Mbps, WAN/LAN                                                                       |
 | Serial                                               | 2 × RS-232 (DB9); 1 × RS-232/RS-485 (DB9)                                                           |
 | USB                                                  | 4 × USB 2.0; 1 × USB 3.0                                                                            |
 | HDMI                                                 | HDMI1: Default 1366 × 768, resolution modifiable, with audio<br/>HDMI2: Fixed 1920 × 1080, no audio |
@@ -101,8 +101,8 @@
 | Housing                                              | Metal                                                                                               |
 | Cooling                                              | Fanless                                                                                             |
 | <span style="color: green;">**Environmental**</span> |                                                                                                     |
-| Working Temperature                                  | -20 ~ 70°C                                                                                          |
-| Storage Temperature                                  | -40 ~ 85°C                                                                                          |
+| Working Temperature                                  | -20 °C ~ 70 °C (-4 °F ~ 158 °F)                                                                                          |
+| Storage Temperature                                  | -40 °C ~ 85 °C (-40 °F ~ 185 °F)                                                                                          |
 | Humidity                                             | 5 ~ 95% (non-condensing)                                                                            |
 | <span style="color: green;">**Reliability**</span>   |                                                                                                     |
 | RTC                                                  | Embedded RTC with button battery                                                                    |
@@ -152,13 +152,21 @@
 
 ## <span style="color: green;">Product Models</span>
 
-| Model                 | Region        | \<WMNN\>: Cellular Networks                                                                                                                | \<STD/PLAT/L\>: OS | \<S\>: Serial Port Type |
-| --------------------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------ | ----------------------- |
-| InBOX712-DQ20-STD     | China         | LTE-FDD: B1/B3/B5/B8<br/>LTE-TDD: B34/B38/B39/B40/B41<br/>WCDMA: B1/B8<br/>TD-SCDMA: B34/B39<br/>CDMA/EVDO: BC0<br/>GSM/EDGE: 900/1800 MHz | STD: Android       | —                       |
-| InBOX712-DQ20-STD-485 | China         | LTE-FDD: B1/B3/B5/B8<br/>LTE-TDD: B34/B38/B39/B40/B41<br/>WCDMA: B1/B8<br/>TD-SCDMA: B34/B39<br/>CDMA/EVDO: BC0<br/>GSM/EDGE: 900/1800 MHz | STD: Android       | RS-485 × 1              |
-| InBOX712-FQ58-STD-485 | EMEA          | LTE-FDD: B1/B3/B7/B8/B20/B28A<br/>WCDMA: B1/B8<br/>GSM/EDGE: B3/B8                                                                         | STD: Android       | RS-485 × 1              |
-| InBOX712-FQ39-STD     | North America | LTE-FDD: B2/B4/B5/B7/B12/B13/B25/B26/B29/B30/B66<br/>WCDMA: B2/B4/B5                                                                       | STD: Android       | —                       |
-| InBOX712-EN00-STD     | Global        | —                                                                                                                                          | STD: Android       | —                       |
+<table style="width:100%; table-layout:fixed; font-size:11px;">
+  <colgroup>
+    <col style="width:24%;">
+    <col style="width:12%;">
+    <col style="width:36%;">
+    <col style="width:14%;">
+    <col style="width:14%;">
+  </colgroup>
+  <tr><th>Model</th><th>Region</th><th>&lt;WMNN&gt;: Cellular Networks</th><th>&lt;STD/PLAT/L&gt;</th><th>&lt;S&gt;</th></tr>
+  <tr><td style="white-space: nowrap;">InBOX712-DQ20-STD</td><td>China</td><td>LTE-FDD: B1/B3/B5/B8<br/>LTE-TDD: B34/B38/B39/B40/B41<br/>WCDMA: B1/B8<br/>TD-SCDMA: B34/B39<br/>CDMA/EVDO: BC0<br/>GSM/EDGE: 900/1800 MHz</td><td>STD: Android</td><td>—</td></tr>
+  <tr><td style="white-space: nowrap;">InBOX712-DQ20-STD-485</td><td>China</td><td>LTE-FDD: B1/B3/B5/B8<br/>LTE-TDD: B34/B38/B39/B40/B41<br/>WCDMA: B1/B8<br/>TD-SCDMA: B34/B39<br/>CDMA/EVDO: BC0<br/>GSM/EDGE: 900/1800 MHz</td><td>STD: Android</td><td>RS-485 × 1</td></tr>
+  <tr><td style="white-space: nowrap;">InBOX712-FQ58-STD-485</td><td>EMEA</td><td>LTE-FDD: B1/B3/B7/B8/B20/B28A<br/>WCDMA: B1/B8<br/>GSM/EDGE: B3/B8</td><td>STD: Android</td><td>RS-485 × 1</td></tr>
+  <tr><td style="white-space: nowrap;">InBOX712-FQ39-STD</td><td>North America</td><td>LTE-FDD: B2/B4/B5/B7/B12/B13/B25/B26/B29/B30/B66<br/>WCDMA: B2/B4/B5</td><td>STD: Android</td><td>—</td></tr>
+  <tr><td style="white-space: nowrap;">InBOX712-EN00-STD</td><td>Global</td><td>—</td><td>STD: Android</td><td>—</td></tr>
+</table>
 
 # <span style="color: green;">6. Contact Us</span>
 

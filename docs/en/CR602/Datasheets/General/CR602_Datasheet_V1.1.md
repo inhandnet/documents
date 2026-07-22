@@ -41,7 +41,7 @@ The CR602 features an all-in-one compact design supporting triple-SIM (dual Nano
 | **Triple SIM Intelligent Switching** | Dual Nano-SIM + pre-provisioned eSIM; Primary/Backup1/Backup2 priority configurable; second-level failover switching | Network redundancy backup, critical business never offline, flexible carrier selection |
 | **eSIM Factory Pre-activated** | Ready to use out of box, no waiting for physical SIM card delivery | Ready to use out of box, quick deployment, save time cost |
 | **10000mAh Large Battery** | Up to 15 hours continuous operation in 5G mode; supports USB-C, power bank and other charging methods | All-day normal use without charging, worry-free for outdoor work and travel |
-| **Compact All-in-One Design** | Compact body (167×102×36.5mm); foldable external antenna; IP30 protection rating | Compact and portable, easy to store, carry for business travel |
+| **Compact All-in-One Design** | Compact body (167 × 102 × 36.5 mm (6.57 × 4.02 × 1.44 in)); foldable external antenna; IP30 protection rating | Compact and portable, easy to store, carry for business travel |
 | **InCloud Cloud Management** | Unified cloud platform management, mobile APP anytime anywhere O&M | No on-site maintenance needed, remote monitoring device status, worry-free |
 
 
@@ -66,9 +66,9 @@ The CR602 features an all-in-one compact design supporting triple-SIM (dual Nano
 | **Large Capacity Battery** | 10000mAh large battery provides extended runtime, supports removal and replacement | Up to 15 hours continuous operation in 5G mode; removable and replaceable battery; smart power management; fast charging support; overcharge/discharge protection; USB-C/power bank and other charging methods |
 | **Wi-Fi 7 Next-Generation Wireless** | Wi-Fi 7 BE3000 delivers ultimate wireless experience | 2.4GHz + 5GHz dual-band concurrent, total rate up to 3000Mbps; 5GHz supports 160MHz channel width; 4K QAM modulation technology; supports up to 32 devices simultaneously |
 | **High-Performance Antenna Design** | Dual design of external foldable and built-in LDS antenna ensures stable signal | External antenna foldable design, convenient storage; built-in high-performance LDS antenna, 6× cellular antenna + 3× Wi-Fi antenna; smart antenna switching optimizes signal quality |
-| **Smart SIM Management** | Dual Nano SIM + eSIM triple-card design provides flexible connectivity | Triple-card hot standby, second-level failover switching; eSIM factory pre-activated, online upon power-on; flexible triple-card priority configuration; smart switching strategy (dial failure/link detection/traffic threshold) |
-| **Reliable Thermal Design** | Built-in metal heatsink combined with smart temperature control ensures long-term stable operation | Built-in metal heatsink for efficient heat conduction; smart temperature control mechanism, dynamic power adjustment; passive cooling design, quiet and disturbance-free; -10℃~+40℃ wide temperature operation |
-| **Compact All-in-One** | Compact design for easy carrying | Compact body size (167×102×36.5mm); foldable external antenna design; all interfaces centrally designed; supports desktop placement, fixed installation; IP30 protection rating |
+| **Smart SIM Management** | Dual Nano-SIM + eSIM triple-card design provides flexible connectivity | Triple-card hot standby, second-level failover switching; eSIM factory pre-activated, online upon power-on; flexible triple-card priority configuration; smart switching strategy (dial failure/link detection/traffic threshold) |
+| **Reliable Thermal Design** | Built-in metal heatsink combined with smart temperature control ensures long-term stable operation | Built-in metal heatsink for efficient heat conduction; smart temperature control mechanism, dynamic power adjustment; passive cooling design, quiet and disturbance-free; -10 °C ~ +40 °C (14 °F ~ +104 °F) wide temperature operation |
+| **Compact All-in-One** | Compact design for easy carrying | Compact body size (167 × 102 × 36.5 mm (6.57 × 4.02 × 1.44 in)); foldable external antenna design; all interfaces centrally designed; supports desktop placement, fixed installation; IP30 protection rating |
 
 <div style="page-break-after: always;"></div>
 
@@ -76,13 +76,13 @@ The CR602 features an all-in-one compact design supporting triple-SIM (dual Nano
 
 <div style="display: flex; align-items: end; flex-wrap: wrap; justify-content: space-between; row-gap: 16px;">
   <div style="width: 100%;">
-    <img src="images/尺寸图.png" width="100%" alt="CR602" />
+    <img src="images/demension.png" width="100%" alt="CR602" />
     <div style="width: 100%; text-align: center; font-size: 12px;"></div>
   </div>
   </div>
   <div style="width: 100%;">
     <div>Note:</div>
-    <div>1. All dimensions are in millimeters (mm).</div>
+    <div>1. All dimensions are in millimeters (mm), with inches (in) in parentheses.</div>
     <div>2. Illustrated dimensions are approximate values, <span style="font-weight: bold;">for reference only</span>.</div>
     <div>3. Dimensions in the drawing <span style="font-weight: bold;">shall not be used directly for production</span>.</div>
     <div>4. Actual dimensions must meet component and process tolerance requirements.</div>
@@ -116,11 +116,11 @@ The CR602 features an all-in-one compact design supporting triple-SIM (dual Nano
 | **Protection Rating** | IP30 |
 | **Housing Material** | High-strength engineering plastic |
 | **Device Color** | Black |
-| **Operating Temperature** | -10℃ ~ +40℃ |
-| **Storage Temperature** | -20℃ ~ +60℃ |
+| **Operating Temperature** | -10 °C ~ +40 °C (14 °F ~ +104 °F) |
+| **Storage Temperature** | -20 °C ~ +60 °C (-4 °F ~ +140 °F) |
 | **Relative Humidity** | 5%~95% non-condensing |
 | **Dimensions** | 167 × 102 × 36.5 mm (6.57 × 4.02 × 1.44 in) |
-| **Weight** | Approx. 550g (with battery) |
+| **Weight** | Approx. 550 g (1.21 lb) (with battery) |
 
 
 ## <span style="color: green;">LED Indicator Definition</span>

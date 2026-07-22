@@ -34,7 +34,7 @@
 - **Multi-application fusion:** Dispatch, ticketing, navigation, and fleet apps on one device
 - **Edge intelligence:** 6 TOPS NPU for ADAS, DMS, and multi-camera analytics
 - **High-speed connectivity:** 5G/4G (optional), Wi-Fi 6, Bluetooth 5.0, multi-constellation GNSS
-- **Vehicle-grade design:** 10.1″ display, IP65 &amp; IK08, 9–48 VDC, −30 °C ~ +70 °C
+- **Vehicle-grade design:** 10.1″ display, IP65 &amp; IK08, 9–48 VDC, -30 °C ~ +70 °C (-22 °F ~ +158 °F)
 - **Open platform:** Android 14 or Linux; ITxPT-aligned for integrators
 
 <div style="margin-top: 32px;"></div>
@@ -45,15 +45,15 @@
 | --- | --- |
 | Cellular | 5G/4G or non-cellular (per SKU) |
 | Wireless / Positioning | Wi-Fi 6 (AP/STA); Bluetooth 5.0; multi-constellation GNSS |
-| Network & Security | IPv4/IPv6; NAT; IPSec/L2TP, OpenVPN |
+| Network & Security | IPv4/IPv6; NAT; IPsec/L2TP, OpenVPN |
 | System / Standards | Android 14 / Linux; ITxPT-aligned |
 | AI / Display | 6 TOPS NPU; 10.1″ 1280×800 G+G touch |
 | CPU / Storage | A72+A53 up to 2.0 GHz; 8 GB LPDDR4; 256 GB UFS (default) |
-| Interfaces | M12 GbE; CAN/RS232/485, DI/DO; USB-C; up to 8×AHD |
+| Interfaces | M12 GbE; CAN/RS-232/485, DI/DO; USB-C; up to 8×AHD |
 | SIM | 2 × Nano-SIM; eSIM optional |
 | Power | 9–48 VDC |
-| Dimensions / Mount | 300 × 182 × 38 mm; VESA 75 × 75 mm |
-| Environment / Protection | −30 °C ~ +70 °C op.; −40 °C ~ +85 °C stg.; IP65, IK08 |
+| Dimensions / Mount | 300 × 182 × 38 mm (11.81 × 7.17 × 1.5 in); VESA 75 × 75 mm (2.95 × 2.95 in) |
+| Environment / Protection | -30 °C ~ +70 °C (-22 °F ~ +158 °F) op.; -40 °C ~ +85 °C (-40 °F ~ +185 °F) stg.; IP65, IK08 |
 | Certification | CE, E-Mark, UKCA, FCC (*in progress) |
 
 <div style="margin-top: 32px;"></div>
@@ -77,7 +77,7 @@
   </div>
   <div style="width: 100%; margin-top: 16px;">
     <div>Note:</div>
-    <div>1. All dimensions are in millimeters (mm).</div>
+    <div>1. All dimensions are in millimeters (mm), with inches (in) in parentheses.</div>
     <div>2. All dimensions are approximate, <span style="font-weight: bold;">for reference only</span>.</div>
     <div>3. Drawings <span style="font-weight: bold;">shall not be used for production</span> without released engineering data.</div>
     <div>4. Subject to manufacturing tolerances.</div>
@@ -118,15 +118,15 @@
 | USB | 1 × USB Type-C |
 | Cameras | 1 × built-in 5 MP; 8 × external AHD via 26-pin interface |
 | Expansion | 1 × M.2 SATA SSD (up to 4 TB) |
-| SD | 1 × Micro SD (up to 256 GB) |
+| SD | 1 × microSD (up to 256 GB) |
 | Audio / Mic | L, R, GND, Mic-in on 26-pin multi-function interface |
 | CAN | 1 × CAN 2.0 on 26-pin multi-function interface |
-| I/O &amp; Serial | 1 × RS232/RS485, 5 × DI, 4 × DO on 26-pin multi-function interface |
+| I/O &amp; Serial | 1 × RS-232/RS-485, 5 × DI, 4 × DO on 26-pin multi-function interface |
 | <span style="color: green;">**Mechanical &amp; Environment**</span> | |
-| Mounting | VESA 75 × 75 mm |
-| Dimensions (W × D × H) | 300 × 182 × 38 mm |
-| Operating temperature | −30 °C ~ +70 °C |
-| Storage temperature | −40 °C ~ +85 °C |
+| Mounting | VESA 75 × 75 mm (2.95 × 2.95 in) |
+| Dimensions (W × D × H) | 300 × 182 × 38 mm (11.81 × 7.17 × 1.5 in) |
+| Operating temperature | -30 °C ~ +70 °C (-22 °F ~ +158 °F) |
+| Storage temperature | -40 °C ~ +85 °C (-40 °F ~ +185 °F) |
 | Humidity | 95% RH @ 60 °C (non-condensing) |
 | Protection | IP65 |
 | Impact | IK08 |
@@ -144,7 +144,7 @@
 | Platform | Android 14 or Linux |
 | <span style="color: green;">**Network Features**</span> | |
 | IP protocols | IPv4 / IPv6 |
-| Network services | NAT, routing, IPSec/L2TP VPN, OpenVPN, etc. |
+| Network services | NAT, routing, IPsec/L2TP VPN, OpenVPN, etc. |
 | Cellular | 5G/4G (per SKU) |
 | Wi-Fi | Wi-Fi 6, AP/STA |
 | Bluetooth | Bluetooth 5.0 |
@@ -170,7 +170,7 @@
 
 ## <span style="color: green;">Product Models</span>
 
-<table style="width:100%; table-layout:fixed;">
+<table style="width:100%; table-layout:fixed;font-size:11px;">
   <colgroup>
     <col style="width:30%;">
     <col style="width:12%;">
@@ -179,7 +179,7 @@
   </colgroup>
   <tr><th>Model</th><th>Region</th><th>&lt;W&gt;: Type &amp; Module</th><th>&lt;M&gt;: Storage</th></tr>
   <tr><td>MDT600-NRQ5-&lt;M&gt;</td><td>Global</td><td>Cellular 5G</td><td>Optional 256GB / 512GB / 1TB</td></tr>
-  <tr><td>MDT600-FQ09-&lt;M&gt;</td><td>Global</td><td>Cellular CAT6</td><td>Optional 256GB / 512GB / 1TB</td></tr>
+  <tr><td>MDT600-FQ09-&lt;M&gt;</td><td>Global</td><td>Cellular Cat.6</td><td>Optional 256GB / 512GB / 1TB</td></tr>
   <tr><td>MDT600-EN00-&lt;M&gt;</td><td>Global</td><td>No cellular</td><td>Optional 256GB / 512GB / 1TB</td></tr>
 </table>
 
@@ -197,9 +197,9 @@
   <tr><td>AETH050002</td><td>M12 X-coded to RJ45 cable, 1000 mm</td></tr>
   <tr><td>SCAB000601</td><td>MDT600 multi-function cable — 26-pin waterproof, audio, pull cord, 1000 mm</td></tr>
   <tr><td>SCAB000600</td><td>MDT600 camera test cable — 26-pin waterproof, pull cord, 1000 mm</td></tr>
-  <tr><td>SMDM060045</td><td>DSM camera — AHD 1080P PAL, 1920×1080, IR, M12, DC 12 V, −30~70 °C (see datasheet for full spec)</td></tr>
-  <tr><td>SMDM060044</td><td>ADAS camera — AHD 1080P PAL, 1920×1080, M12, DC 12 V, −20~70 °C</td></tr>
-  <tr><td>SMDM060043</td><td>Panoramic camera IN-813-A200H — AHD 1080P PAL, 360°, M12, DC 12 V, −20~70 °C</td></tr>
+  <tr><td>SMDM060045</td><td>DSM camera — AHD 1080P PAL, 1920×1080, IR, M12, DC 12 V, -30 °C ~ 70 °C (-22 °F ~ 158 °F) (see datasheet for full spec)</td></tr>
+  <tr><td>SMDM060044</td><td>ADAS camera — AHD 1080P PAL, 1920×1080, M12, DC 12 V, -20 °C ~ 70 °C (-4 °F ~ 158 °F)</td></tr>
+  <tr><td>SMDM060043</td><td>Panoramic camera IN-813-A200H — AHD 1080P PAL, 360°, M12, DC 12 V, -20 °C ~ 70 °C (-4 °F ~ 158 °F)</td></tr>
 </table>
 
 # <span style="color: green;">6. Contact Us</span>

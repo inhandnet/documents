@@ -51,8 +51,8 @@
 | RAM | LPDDR4 4 GB / 8 GB (default) |
 | Interface | 1 × GbE, 4 × USB 3.0, PCIe 3.0, mini DP, MIPI DSI/CSI-2 |
 | Power | USB Type-C 5 V / 5 A DC; ≤ 25 W |
-| Dimensions (W × D × H) | 85 × 56 mm |
-| Operating Temperature | 0 °C ~ +50 °C |
+| Dimensions (W × D × H) | 85 × 56 mm (3.35 × 2.2 in) |
+| Operating Temperature | 0 °C ~ +50 °C (32 °F ~ +122 °F) |
 
 # <span style="color: green;">2. Product Dimensions</span>
 
@@ -72,7 +72,7 @@
   
   <div style="width: 45%;">
     <div>Note:</div>
-    <div>1. All dimensions are in millimeters (mm).</div>
+    <div>1. All dimensions are in millimeters (mm), with inches (in) in parentheses.</div>
     <div>2. All dimensions are approximate values for <span style="font-weight: bold;">reference only</span>.</div>
     <div>3. The dimensions shown <span style="font-weight: bold;">shall not be used for production or processing</span>.</div>
     <div>4. Dimensions shall comply with part and manufacturing tolerance requirements.</div>
@@ -99,21 +99,21 @@
 | 40-pin Connector | GPIO / I²C / I²S / SPI / UART / PCM, HAT-compatible |
 | Fan Connector | 1 × 4-pin fan connector (5 V, PWM, GND, TACH) |
 | Button | 1 × Reset button |
-| Storage | Micro SD |
+| Storage | microSD |
 | Debug | 1 × TTL UART |
 | LED | PWR, STATUS |
 | <span style="color: green;">**Power**</span> | |
 | Power Input | USB Type-C 5 V / 5 A DC |
 | Power Consumption | 25 W (MAX) |
 | <span style="color: green;">**Mechanical**</span> | |
-| Dimensions (W × D × H) | 85 × 56 mm |
-| Weight | 53 g |
+| Dimensions (W × D × H) | 85 × 56 mm (3.35 × 2.2 in) |
+| Weight | 53 g (0.12 lb) |
 | Housing | PCB |
 | Cooling | Active fan (optional) |
 | RTC | Support (battery backup) |
 | <span style="color: green;">**Environmental**</span> | |
-| Operating Temperature | 0 °C ~ +50 °C |
-| Storage Temperature | -20 °C ~ +70 °C |
+| Operating Temperature | 0 °C ~ +50 °C (32 °F ~ +122 °F) |
+| Storage Temperature | -20 °C ~ +70 °C (-4 °F ~ +158 °F) |
 
 
 # <span style="color: green;">4. Software Specifications</span>

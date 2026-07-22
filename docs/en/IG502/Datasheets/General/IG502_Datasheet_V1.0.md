@@ -31,8 +31,8 @@
 **IG502 is a compact and cost-effective industrial edge gateway for global cellular connectivity, protocol conversion, and cloud-managed remote operations.**
 
 **Key features:**
-- **Flexible connectivity:** Supports cellular, Ethernet, Wi-Fi backup, and dual SIM failover
-- **Industrial interfaces:** 2×FE, serial, USB, MicroSD, optional DI/DO and GPS/Wi-Fi/BLE
+- **Flexible connectivity:** Supports cellular, Ethernet, Wi-Fi backup, and dual-SIM failover
+- **Industrial interfaces:** 2×FE, serial, USB, microSD, optional DI/DO and GPS/Wi-Fi/BLE
 - **Edge intelligence:** Python secondary development with built-in DSA service
 - **Reliable design:** Hardware/software watchdog and multi-level link self-healing
 - **Cloud operations:** DeviceLive remote access, batch management, and DSA lifecycle control
@@ -41,18 +41,18 @@
 
 | Specification Item | Value |
 |---|---|
-| Cellular Network | 5G SA/NSA (China models) and LTE Cat1/Cat4 (model dependent) |
+| Cellular Network | 5G SA/NSA (China models) and LTE Cat.1/Cat.4 (model dependent) |
 | Network Features | APN, VPDN, CHAP/PAP; Static IP/DHCP; ICMP, DNS, TCP/UDP, TCP Server, static routing |
-| Security | Multi-level user permissions, firewall, OpenVPN, IPSec VPN |
+| Security | Multi-level user permissions, firewall, OpenVPN, IPsec VPN |
 | Cloud Management | DeviceLive remote access, batch operations, and remote upgrades |
 | Secondary Development | Python development environment |
 | Industrial Protocols | Modbus RTU/TCP, OPC UA, EtherNet/IP, IEC101/104, DNP3.0, etc. |
-| Dimensions (W × D × H) | 110 × 127 × 35 mm |
-| Weight | 420 g |
-| Ethernet Ports | 2 × 10/100Mbps |
-| Serial Interfaces | 1 × RS232 + 1 × RS485, or 2 × RS485 (model dependent) |
+| Dimensions (W × D × H) | 110 × 127 × 35 mm (4.33 × 5 × 1.38 in) |
+| Weight | 420 g (0.93 lb) |
+| Ethernet Ports | 2 × 10/100 Mbps |
+| Serial Interfaces | 1 × RS-232 + 1 × RS-485, or 2 × RS-485 (model dependent) |
 | Power Supply | 12~48V DC, industrial terminal block |
-| Operating Temperature & Protection | -20~70℃, IP30 |
+| Operating Temperature & Protection | -20 °C ~ 70 °C (-4 °F ~ 158 °F), IP30 |
 
 
 
@@ -78,7 +78,7 @@
 
 <div style="margin-top: 12px;">
   <div style="width: 80%;">
-    <div>Note:</div><div>1. All dimensions are in millimeters (mm).</div><div>2. All dimensions are approximate and for reference only.</div><div>3. Dimensioned drawings are not intended for machining.</div><div>4. Dimensions are subject to part and manufacturing tolerances.</div><div>5. Specifications may change without prior notice.</div>
+    <div>Note:</div><div>1. All dimensions are in millimeters (mm), with inches (in) in parentheses.</div><div>2. All dimensions are approximate and for reference only.</div><div>3. Dimensioned drawings are not intended for machining.</div><div>4. Dimensions are subject to part and manufacturing tolerances.</div><div>5. Specifications may change without prior notice.</div>
   </div>
 </div>
 
@@ -93,11 +93,11 @@
   <tr><th align="center">PIN</th><th align="center">Definition</th><th align="left">Description</th></tr>
   <tr><td align="center">1</td><td align="center">V+</td><td>Positive electrode</td></tr>
   <tr><td align="center">2</td><td align="center">V-</td><td>Negative electrode</td></tr>
-  <tr><td align="center">3</td><td align="center">TXD or 1A</td><td>Serial RS232 send or RS485+</td></tr>
-  <tr><td align="center">4</td><td align="center">RXD or 1B</td><td>Serial RS232 receive or RS485-</td></tr>
-  <tr><td align="center">5</td><td align="center">GND</td><td>Serial RS232 signal ground</td></tr>
-  <tr><td align="center">6</td><td align="center">A or 2A</td><td>Serial RS485+</td></tr>
-  <tr><td align="center">7</td><td align="center">B or 2B</td><td>Serial RS485-</td></tr>
+  <tr><td align="center">3</td><td align="center">TXD or 1A</td><td>Serial RS-232 send or RS-485+</td></tr>
+  <tr><td align="center">4</td><td align="center">RXD or 1B</td><td>Serial RS-232 receive or RS-485-</td></tr>
+  <tr><td align="center">5</td><td align="center">GND</td><td>Serial RS-232 signal ground</td></tr>
+  <tr><td align="center">6</td><td align="center">A or 2A</td><td>Serial RS-485+</td></tr>
+  <tr><td align="center">7</td><td align="center">B or 2B</td><td>Serial RS-485-</td></tr>
 </table>
 
 ## I/O Definition
@@ -158,13 +158,13 @@
 | RAM | 512MB |
 | Flash | 8GB eMMC |
 | <span style="color: green;">**Connectivity and Interfaces**</span> | |
-| Ethernet Ports | 2×10/100Mbps Ethernet |
+| Ethernet Ports | 2×10/100 Mbps Ethernet |
 | I/O Ports | Up to 4×DI + 4×DO (optional) |
-| Serial Ports | 1×RS232 + 1×RS485, or 2×RS485, industrial terminal block, ordering guide for details |
+| Serial Ports | 1×RS-232 + 1×RS-485, or 2×RS-485, industrial terminal block, ordering guide for details |
 | SIM Card Slot | Dual Micro SIM |
 | Antenna Connectors | LTE：SMA x 1, Wi-Fi：SMA x 1, GNSS：SMA x 1, <br/>Note: North America models: 2 x SMA 4G antenna connectors. |
 | USB | USB2.0 Type-A |
-| TF | MicroSD up to 32GB |
+| microSD | microSD up to 32GB |
 | Wi-Fi(optional) | Wi-Fi STA 802.11 b/g/n 2.4G |
 | Bluetooth(optional) | BLE4.2 (optional) |
 | GNSS(optional) | Satellite location GPS |
@@ -173,16 +173,16 @@
 | Power Interface | Industrial terminal block |
 | Power | 250mA@12V |
 | <span style="color: green;">**Mechanical Specifications**</span> | |
-| Product Dimensions | 110×127×35mm |
-| Product Weight | 420g |
+| Product Dimensions | 110 × 127 × 35 mm (4.33 × 5 × 1.38 in) |
+| Product Weight | 420 g (0.93 lb) |
 | Mounting Method | Panel, DIN-rail mounting |
 | Protection Rating | IP30 |
 | Housing and Cooling | Fanless metal housing |
 | RTC | Support (button battery backup) |
 | Hardware Watchdog | support |
 | <span style="color: green;">**Environment and Certifications**</span> | |
-| Storage Temperature | -40~85℃ |
-| Operating Temperature | -20~70℃ |
+| Storage Temperature | -40 °C ~ 85 °C (-40 °F ~ 185 °F) |
+| Operating Temperature | -20 °C ~ 70 °C (-4 °F ~ 158 °F) |
 | Ambient Humidity | 5~95% RH non-condensing |
 | Physical Characteristics | IEC60068-2-27 shock resistance<br/>IEC60068-2-6 vibration resistance<br/>IEC60068-2-32 drop resistance |
 | EMC Standard | EN61000-4-2, level 3, Static<br/>EN61000-4-3, level 3, Radiation Electric Field<br/>EN61000-4-4, level 3, Pulsed Electric Field<br/>EN61000-4-5, level 3, Surge<br/>EN61000-4-6, level 3, Conducted Distubance Immunity<br/>EN61000-4-8, Power Frequency Field Resistance, horizontal / vertical 400A/m (>level 2)<br/>EN61000-4-12, level 3, Shock Wave Resistance |
@@ -196,7 +196,7 @@
 | <span style="color: green;">**Network Features**</span> | |
 | Network Access | APN, VPDN |
 | Access Authentication | CHAP/PAP |
-| Network Types/Standards | 5G SA/NSA and LTE Cat1/Cat4 by model |
+| Network Types/Standards | 5G SA/NSA and LTE Cat.1/Cat.4 by model |
 | WAN Protocols | Static IP, DHCP |
 | LAN Protocols | ARP, Ethernet |
 | IP Applications | ICMP, DNS, TCP/UDP, TCP Server, DHCP |
@@ -204,11 +204,11 @@
 | <span style="color: green;">**Security**</span> | |
 | User Management | Multi-level user permissions |
 | Network Security | Firewall |
-| Data Security | OpenVPN, IPSec VPN |
+| Data Security | OpenVPN, IPsec VPN |
 | <span style="color: green;">**Reliability**</span> | |
 | Link Detection | Sends heartbeat packets to detect, auto redials when disconnected |
 | Embedded Watchdog | Embedded watchdog auto-recovery |
-| Dual-SIM Switching | Dual SIM failover |
+| Dual-SIM Switching | Dual-SIM failover |
 | <span style="color: green;">**Open Platform and Data Acquisition Protocols (DSA)**</span> | |
 | Development Environment| Python development environment |
 | Cloud Integration | AWS, Azure, AliCloud and other cloud platforms |
@@ -229,7 +229,7 @@
 **Model code:** IG502-\<WMNN\>-\<S\>-\<IO/NA\>-\<W/NA\>-\<G/NA\>[-TH]
 
 \<WMNN\>: Cellular Type & Frequency Band (or EN00 for no cellular)  
-\<S\>: Serial option (`S`=RS232×1+RS485×1, `D485`=RS485×2)  
+\<S\>: Serial option (`S`=RS-232×1+RS-485×1, `D485`=RS-485×2)  
 \<IO/NA\>: DI/DO option (`IO`=4DI+4DO)  
 \<W/NA\>: WLAN & BLE option  
 \<G/NA\>: GPS option  
@@ -237,7 +237,7 @@
 
 ## <span style="color: green;">Model List</span>
 
-<table style="width:100%; table-layout:fixed; font-size:11px;">
+<table style="width:100%; table-layout:fixed; font-size:10px;">
   <colgroup>
     <col style="width:24%;">
     <col style="width:11%;">
@@ -248,41 +248,41 @@
     <col style="width:10%;">
   </colgroup>
   <tr><th>Model</th><th>Region</th><th>&lt;WMNN&gt;</th><th>&lt;S&gt;</th><th>&lt;IO/NA&gt;</th><th>&lt;W/NA&gt;</th><th>&lt;G/NA&gt;</th></tr>
-  <tr><td style="white-space: nowrap;">IG502-LQA3</td><td>China</td><td>CAT1; LTE-FDD B1/B3/B5/B8; LTE-TDD B34/B38/B39/B40/B41; GSM 900/1800</td><td>S</td><td>NA</td><td>NA</td><td>NA</td></tr>
-  <tr><td style="white-space: nowrap;">IG502-LQA3-IO</td><td>China</td><td>CAT1; LTE-FDD B1/B3/B5/B8; LTE-TDD B34/B38/B39/B40/B41; GSM 900/1800</td><td>S</td><td>IO</td><td>NA</td><td>NA</td></tr>
-  <tr><td style="white-space: nowrap;">IG502-LQA3-W-G</td><td>China</td><td>CAT1; LTE-FDD B1/B3/B5/B8; LTE-TDD B34/B38/B39/B40/B41; GSM 900/1800</td><td>S</td><td>NA</td><td>W</td><td>G</td></tr>
-  <tr><td style="white-space: nowrap;">IG502-LQA3-IO-W-G</td><td>China</td><td>CAT1; LTE-FDD B1/B3/B5/B8; LTE-TDD B34/B38/B39/B40/B41; GSM 900/1800</td><td>S</td><td>IO</td><td>W</td><td>G</td></tr>
-  <tr><td style="white-space: nowrap;">IG502-LQA3-D485</td><td>China</td><td>CAT1; LTE-FDD B1/B3/B5/B8; LTE-TDD B34/B38/B39/B40/B41; GSM 900/1800</td><td>D485</td><td>NA</td><td>NA</td><td>NA</td></tr>
-  <tr><td style="white-space: nowrap;">IG502-LQA3-D485-IO</td><td>China</td><td>CAT1; LTE-FDD B1/B3/B5/B8; LTE-TDD B34/B38/B39/B40/B41; GSM 900/1800</td><td>D485</td><td>IO</td><td>NA</td><td>NA</td></tr>
-  <tr><td style="white-space: nowrap;">IG502-LQA3-D485-W-G</td><td>China</td><td>CAT1; LTE-FDD B1/B3/B5/B8; LTE-TDD B34/B38/B39/B40/B41; GSM 900/1800</td><td>D485</td><td>NA</td><td>W</td><td>G</td></tr>
-  <tr><td style="white-space: nowrap;">IG502-LQA3-D485-IO-W-G</td><td>China</td><td>CAT1; LTE-FDD B1/B3/B5/B8; LTE-TDD B34/B38/B39/B40/B41; GSM 900/1800</td><td>D485</td><td>IO</td><td>W</td><td>G</td></tr>
+  <tr><td style="white-space: nowrap;">IG502-LQA3</td><td>China</td><td>Cat.1; LTE-FDD B1/B3/B5/B8; LTE-TDD B34/B38/B39/B40/B41; GSM 900/1800</td><td>S</td><td>NA</td><td>NA</td><td>NA</td></tr>
+  <tr><td style="white-space: nowrap;">IG502-LQA3-IO</td><td>China</td><td>Cat.1; LTE-FDD B1/B3/B5/B8; LTE-TDD B34/B38/B39/B40/B41; GSM 900/1800</td><td>S</td><td>IO</td><td>NA</td><td>NA</td></tr>
+  <tr><td style="white-space: nowrap;">IG502-LQA3-W-G</td><td>China</td><td>Cat.1; LTE-FDD B1/B3/B5/B8; LTE-TDD B34/B38/B39/B40/B41; GSM 900/1800</td><td>S</td><td>NA</td><td>W</td><td>G</td></tr>
+  <tr><td style="white-space: nowrap;">IG502-LQA3-IO-W-G</td><td>China</td><td>Cat.1; LTE-FDD B1/B3/B5/B8; LTE-TDD B34/B38/B39/B40/B41; GSM 900/1800</td><td>S</td><td>IO</td><td>W</td><td>G</td></tr>
+  <tr><td style="white-space: nowrap;">IG502-LQA3-D485</td><td>China</td><td>Cat.1; LTE-FDD B1/B3/B5/B8; LTE-TDD B34/B38/B39/B40/B41; GSM 900/1800</td><td>D485</td><td>NA</td><td>NA</td><td>NA</td></tr>
+  <tr><td style="white-space: nowrap;">IG502-LQA3-D485-IO</td><td>China</td><td>Cat.1; LTE-FDD B1/B3/B5/B8; LTE-TDD B34/B38/B39/B40/B41; GSM 900/1800</td><td>D485</td><td>IO</td><td>NA</td><td>NA</td></tr>
+  <tr><td style="white-space: nowrap;">IG502-LQA3-D485-W-G</td><td>China</td><td>Cat.1; LTE-FDD B1/B3/B5/B8; LTE-TDD B34/B38/B39/B40/B41; GSM 900/1800</td><td>D485</td><td>NA</td><td>W</td><td>G</td></tr>
+  <tr><td style="white-space: nowrap;">IG502-LQA3-D485-IO-W-G</td><td>China</td><td>Cat.1; LTE-FDD B1/B3/B5/B8; LTE-TDD B34/B38/B39/B40/B41; GSM 900/1800</td><td>D485</td><td>IO</td><td>W</td><td>G</td></tr>
   <tr><td style="white-space: nowrap;">IG502-NRQ1</td><td>China</td><td>5G NR NSA n41/n78/n79; SA n1/n28/n41/n77/n78/n79; LTE-FDD B1/B3/B5/B8; LTE-TDD B34/B38/B39/B40/B41; WCDMA B1/B5/B8</td><td>S</td><td>NA</td><td>NA</td><td>NA</td></tr>
   <tr><td style="white-space: nowrap;">IG502-NRQ1-D485</td><td>China</td><td>5G NR NSA n41/n78/n79; SA n1/n28/n41/n77/n78/n79; LTE-FDD B1/B3/B5/B8; LTE-TDD B34/B38/B39/B40/B41; WCDMA B1/B5/B8</td><td>D485</td><td>NA</td><td>NA</td><td>NA</td></tr>
-  <tr><td style="white-space: nowrap;">IG502-FQ33</td><td>North America</td><td>CAT1; LTE-FDD B2/B4/B5/B12/B13/B25/B26; WCDMA B2/B4/B5</td><td>S</td><td>NA</td><td>NA</td><td>NA</td></tr>
-  <tr><td style="white-space: nowrap;">IG502-FQ33-IO</td><td>North America</td><td>CAT1; LTE-FDD B2/B4/B5/B12/B13/B25/B26; WCDMA B2/B4/B5</td><td>S</td><td>IO</td><td>NA</td><td>NA</td></tr>
-  <tr><td style="white-space: nowrap;">IG502-FQ33-W-G</td><td>North America</td><td>CAT1; LTE-FDD B2/B4/B5/B12/B13/B25/B26; WCDMA B2/B4/B5</td><td>S</td><td>NA</td><td>W</td><td>G</td></tr>
-  <tr><td style="white-space: nowrap;">IG502-FQ33-IO-W-G</td><td>North America</td><td>CAT1; LTE-FDD B2/B4/B5/B12/B13/B25/B26; WCDMA B2/B4/B5</td><td>S</td><td>IO</td><td>W</td><td>G</td></tr>
-  <tr><td style="white-space: nowrap;">IG502-FQ33-D485-IO-W-G</td><td>North America</td><td>CAT1; LTE-FDD B2/B4/B5/B12/B13/B25/B26; WCDMA B2/B4/B5</td><td>D485</td><td>IO</td><td>W</td><td>G</td></tr>
-  <tr><td style="white-space: nowrap;">IG502-FF53</td><td>EMEA</td><td>CAT1; LTE-FDD B1/B3/B7/B8/B20/B28; GSM/GPRS/EDGE B3/B8</td><td>S</td><td>NA</td><td>NA</td><td>NA</td></tr>
-  <tr><td style="white-space: nowrap;">IG502-FF53-IO</td><td>EMEA</td><td>CAT1; LTE-FDD B1/B3/B7/B8/B20/B28; GSM/GPRS/EDGE B3/B8</td><td>S</td><td>IO</td><td>NA</td><td>NA</td></tr>
-  <tr><td style="white-space: nowrap;">IG502-FF53-W-G</td><td>EMEA</td><td>CAT1; LTE-FDD B1/B3/B7/B8/B20/B28; GSM/GPRS/EDGE B3/B8</td><td>S</td><td>NA</td><td>W</td><td>G</td></tr>
-  <tr><td style="white-space: nowrap;">IG502-FF53-IO-W-G</td><td>EMEA</td><td>CAT1; LTE-FDD B1/B3/B7/B8/B20/B28; GSM/GPRS/EDGE B3/B8</td><td>S</td><td>IO</td><td>W</td><td>G</td></tr>
-  <tr><td style="white-space: nowrap;">IG502-FF53-D485-IO-W-G</td><td>EMEA</td><td>CAT1; LTE-FDD B1/B3/B7/B8/B20/B28; GSM/GPRS/EDGE B3/B8</td><td>D485</td><td>IO</td><td>W</td><td>G</td></tr>
-  <tr><td style="white-space: nowrap;">IG502-FQ58</td><td>EMEA</td><td>CAT4; LTE-FDD B1/B3/B7/B8/B20/B28A; WCDMA B1/B8; GSM B3/B8</td><td>S</td><td>NA</td><td>NA</td><td>NA</td></tr>
-  <tr><td style="white-space: nowrap;">IG502-FQ58-IO</td><td>EMEA</td><td>CAT4; LTE-FDD B1/B3/B7/B8/B20/B28A; WCDMA B1/B8; GSM B3/B8</td><td>S</td><td>IO</td><td>NA</td><td>NA</td></tr>
-  <tr><td style="white-space: nowrap;">IG502-FQ58-W-G</td><td>EMEA</td><td>CAT4; LTE-FDD B1/B3/B7/B8/B20/B28A; WCDMA B1/B8; GSM B3/B8</td><td>S</td><td>NA</td><td>W</td><td>G</td></tr>
-  <tr><td style="white-space: nowrap;">IG502-FQ58-IO-W-G</td><td>EMEA</td><td>CAT4; LTE-FDD B1/B3/B7/B8/B20/B28A; WCDMA B1/B8; GSM B3/B8</td><td>S</td><td>IO</td><td>W</td><td>G</td></tr>
-  <tr><td style="white-space: nowrap;">IG502-FQ58-D485-IO-W-G</td><td>EMEA</td><td>CAT4; LTE-FDD B1/B3/B7/B8/B20/B28A; WCDMA B1/B8; GSM B3/B8</td><td>D485</td><td>IO</td><td>W</td><td>G</td></tr>
-  <tr><td style="white-space: nowrap;">IG502-FQ58-TH</td><td>Thailand</td><td>CAT4; LTE-FDD B1/B3/B7/B8/B20; WCDMA B1/B8; GSM B3/B8</td><td>S</td><td>NA</td><td>NA</td><td>NA</td></tr>
-  <tr><td style="white-space: nowrap;">IG502-FQ58-IO-TH</td><td>Thailand</td><td>CAT4; LTE-FDD B1/B3/B7/B8/B20; WCDMA B1/B8; GSM B3/B8</td><td>S</td><td>IO</td><td>NA</td><td>NA</td></tr>
-  <tr><td style="white-space: nowrap;">IG502-FQ58-W-G-TH</td><td>Thailand</td><td>CAT4; LTE-FDD B1/B3/B7/B8/B20; WCDMA B1/B8; GSM B3/B8</td><td>S</td><td>NA</td><td>W</td><td>G</td></tr>
-  <tr><td style="white-space: nowrap;">IG502-FQ58-IO-W-G-TH</td><td>Thailand</td><td>CAT4; LTE-FDD B1/B3/B7/B8/B20; WCDMA B1/B8; GSM B3/B8</td><td>S</td><td>IO</td><td>W</td><td>G</td></tr>
-  <tr><td style="white-space: nowrap;">IG502-FQ58-D485-IO-W-G-TH</td><td>Thailand</td><td>CAT4; LTE-FDD B1/B3/B7/B8/B20; WCDMA B1/B8; GSM B3/B8</td><td>D485</td><td>IO</td><td>W</td><td>G</td></tr>
-  <tr><td style="white-space: nowrap;">IG502-FQ78</td><td>Australia & Latin America</td><td>CAT4; LTE-FDD B1/B2/B3/B4/B5/B7/B8/B28; LTE-TDD B40; UMTS B1/B2/B5/B8; GSM 850/900/1800/1900</td><td>S</td><td>NA</td><td>NA</td><td>NA</td></tr>
-  <tr><td style="white-space: nowrap;">IG502-FQ78-IO</td><td>Australia & Latin America</td><td>CAT4; LTE-FDD B1/B2/B3/B4/B5/B7/B8/B28; LTE-TDD B40; UMTS B1/B2/B5/B8; GSM 850/900/1800/1900</td><td>S</td><td>IO</td><td>NA</td><td>NA</td></tr>
-  <tr><td style="white-space: nowrap;">IG502-FQ78-W-G</td><td>Australia & Latin America</td><td>CAT4; LTE-FDD B1/B2/B3/B4/B5/B7/B8/B28; LTE-TDD B40; UMTS B1/B2/B5/B8; GSM 850/900/1800/1900</td><td>S</td><td>NA</td><td>W</td><td>G</td></tr>
-  <tr><td style="white-space: nowrap;">IG502-FQ78-IO-W-G</td><td>Australia & Latin America</td><td>CAT4; LTE-FDD B1/B2/B3/B4/B5/B7/B8/B28; LTE-TDD B40; UMTS B1/B2/B5/B8; GSM 850/900/1800/1900</td><td>S</td><td>IO</td><td>W</td><td>G</td></tr>
-  <tr><td style="white-space: nowrap;">IG502-FQ78-D485-IO-W-G</td><td>Australia & Latin America</td><td>CAT4; LTE-FDD B1/B2/B3/B4/B5/B7/B8/B28; LTE-TDD B40; UMTS B1/B2/B5/B8; GSM 850/900/1800/1900</td><td>D485</td><td>IO</td><td>W</td><td>G</td></tr>
+  <tr><td style="white-space: nowrap;">IG502-FQ33</td><td>North America</td><td>Cat.1; LTE-FDD B2/B4/B5/B12/B13/B25/B26; WCDMA B2/B4/B5</td><td>S</td><td>NA</td><td>NA</td><td>NA</td></tr>
+  <tr><td style="white-space: nowrap;">IG502-FQ33-IO</td><td>North America</td><td>Cat.1; LTE-FDD B2/B4/B5/B12/B13/B25/B26; WCDMA B2/B4/B5</td><td>S</td><td>IO</td><td>NA</td><td>NA</td></tr>
+  <tr><td style="white-space: nowrap;">IG502-FQ33-W-G</td><td>North America</td><td>Cat.1; LTE-FDD B2/B4/B5/B12/B13/B25/B26; WCDMA B2/B4/B5</td><td>S</td><td>NA</td><td>W</td><td>G</td></tr>
+  <tr><td style="white-space: nowrap;">IG502-FQ33-IO-W-G</td><td>North America</td><td>Cat.1; LTE-FDD B2/B4/B5/B12/B13/B25/B26; WCDMA B2/B4/B5</td><td>S</td><td>IO</td><td>W</td><td>G</td></tr>
+  <tr><td style="white-space: nowrap;">IG502-FQ33-D485-IO-W-G</td><td>North America</td><td>Cat.1; LTE-FDD B2/B4/B5/B12/B13/B25/B26; WCDMA B2/B4/B5</td><td>D485</td><td>IO</td><td>W</td><td>G</td></tr>
+  <tr><td style="white-space: nowrap;">IG502-FF53</td><td>EMEA</td><td>Cat.1; LTE-FDD B1/B3/B7/B8/B20/B28; GSM/GPRS/EDGE B3/B8</td><td>S</td><td>NA</td><td>NA</td><td>NA</td></tr>
+  <tr><td style="white-space: nowrap;">IG502-FF53-IO</td><td>EMEA</td><td>Cat.1; LTE-FDD B1/B3/B7/B8/B20/B28; GSM/GPRS/EDGE B3/B8</td><td>S</td><td>IO</td><td>NA</td><td>NA</td></tr>
+  <tr><td style="white-space: nowrap;">IG502-FF53-W-G</td><td>EMEA</td><td>Cat.1; LTE-FDD B1/B3/B7/B8/B20/B28; GSM/GPRS/EDGE B3/B8</td><td>S</td><td>NA</td><td>W</td><td>G</td></tr>
+  <tr><td style="white-space: nowrap;">IG502-FF53-IO-W-G</td><td>EMEA</td><td>Cat.1; LTE-FDD B1/B3/B7/B8/B20/B28; GSM/GPRS/EDGE B3/B8</td><td>S</td><td>IO</td><td>W</td><td>G</td></tr>
+  <tr><td style="white-space: nowrap;">IG502-FF53-D485-IO-W-G</td><td>EMEA</td><td>Cat.1; LTE-FDD B1/B3/B7/B8/B20/B28; GSM/GPRS/EDGE B3/B8</td><td>D485</td><td>IO</td><td>W</td><td>G</td></tr>
+  <tr><td style="white-space: nowrap;">IG502-FQ58</td><td>EMEA</td><td>Cat.4; LTE-FDD B1/B3/B7/B8/B20/B28A; WCDMA B1/B8; GSM B3/B8</td><td>S</td><td>NA</td><td>NA</td><td>NA</td></tr>
+  <tr><td style="white-space: nowrap;">IG502-FQ58-IO</td><td>EMEA</td><td>Cat.4; LTE-FDD B1/B3/B7/B8/B20/B28A; WCDMA B1/B8; GSM B3/B8</td><td>S</td><td>IO</td><td>NA</td><td>NA</td></tr>
+  <tr><td style="white-space: nowrap;">IG502-FQ58-W-G</td><td>EMEA</td><td>Cat.4; LTE-FDD B1/B3/B7/B8/B20/B28A; WCDMA B1/B8; GSM B3/B8</td><td>S</td><td>NA</td><td>W</td><td>G</td></tr>
+  <tr><td style="white-space: nowrap;">IG502-FQ58-IO-W-G</td><td>EMEA</td><td>Cat.4; LTE-FDD B1/B3/B7/B8/B20/B28A; WCDMA B1/B8; GSM B3/B8</td><td>S</td><td>IO</td><td>W</td><td>G</td></tr>
+  <tr><td style="white-space: nowrap;">IG502-FQ58-D485-IO-W-G</td><td>EMEA</td><td>Cat.4; LTE-FDD B1/B3/B7/B8/B20/B28A; WCDMA B1/B8; GSM B3/B8</td><td>D485</td><td>IO</td><td>W</td><td>G</td></tr>
+  <tr><td style="white-space: nowrap;">IG502-FQ58-TH</td><td>Thailand</td><td>Cat.4; LTE-FDD B1/B3/B7/B8/B20; WCDMA B1/B8; GSM B3/B8</td><td>S</td><td>NA</td><td>NA</td><td>NA</td></tr>
+  <tr><td style="white-space: nowrap;">IG502-FQ58-IO-TH</td><td>Thailand</td><td>Cat.4; LTE-FDD B1/B3/B7/B8/B20; WCDMA B1/B8; GSM B3/B8</td><td>S</td><td>IO</td><td>NA</td><td>NA</td></tr>
+  <tr><td style="white-space: nowrap;">IG502-FQ58-W-G-TH</td><td>Thailand</td><td>Cat.4; LTE-FDD B1/B3/B7/B8/B20; WCDMA B1/B8; GSM B3/B8</td><td>S</td><td>NA</td><td>W</td><td>G</td></tr>
+  <tr><td style="white-space: nowrap;">IG502-FQ58-IO-W-G-TH</td><td>Thailand</td><td>Cat.4; LTE-FDD B1/B3/B7/B8/B20; WCDMA B1/B8; GSM B3/B8</td><td>S</td><td>IO</td><td>W</td><td>G</td></tr>
+  <tr><td style="white-space: nowrap;">IG502-FQ58-D485-IO-W-G-TH</td><td>Thailand</td><td>Cat.4; LTE-FDD B1/B3/B7/B8/B20; WCDMA B1/B8; GSM B3/B8</td><td>D485</td><td>IO</td><td>W</td><td>G</td></tr>
+  <tr><td style="white-space: nowrap;">IG502-FQ78</td><td>Australia & Latin America</td><td>Cat.4; LTE-FDD B1/B2/B3/B4/B5/B7/B8/B28; LTE-TDD B40; UMTS B1/B2/B5/B8; GSM 850/900/1800/1900</td><td>S</td><td>NA</td><td>NA</td><td>NA</td></tr>
+  <tr><td style="white-space: nowrap;">IG502-FQ78-IO</td><td>Australia & Latin America</td><td>Cat.4; LTE-FDD B1/B2/B3/B4/B5/B7/B8/B28; LTE-TDD B40; UMTS B1/B2/B5/B8; GSM 850/900/1800/1900</td><td>S</td><td>IO</td><td>NA</td><td>NA</td></tr>
+  <tr><td style="white-space: nowrap;">IG502-FQ78-W-G</td><td>Australia & Latin America</td><td>Cat.4; LTE-FDD B1/B2/B3/B4/B5/B7/B8/B28; LTE-TDD B40; UMTS B1/B2/B5/B8; GSM 850/900/1800/1900</td><td>S</td><td>NA</td><td>W</td><td>G</td></tr>
+  <tr><td style="white-space: nowrap;">IG502-FQ78-IO-W-G</td><td>Australia & Latin America</td><td>Cat.4; LTE-FDD B1/B2/B3/B4/B5/B7/B8/B28; LTE-TDD B40; UMTS B1/B2/B5/B8; GSM 850/900/1800/1900</td><td>S</td><td>IO</td><td>W</td><td>G</td></tr>
+  <tr><td style="white-space: nowrap;">IG502-FQ78-D485-IO-W-G</td><td>Australia & Latin America</td><td>Cat.4; LTE-FDD B1/B2/B3/B4/B5/B7/B8/B28; LTE-TDD B40; UMTS B1/B2/B5/B8; GSM 850/900/1800/1900</td><td>D485</td><td>IO</td><td>W</td><td>G</td></tr>
   <tr><td style="white-space: nowrap;">IG502-EN00</td><td>Global (No Cellular)</td><td>No cellular</td><td>S</td><td>NA</td><td>NA</td><td>NA</td></tr>
   <tr><td style="white-space: nowrap;">IG502-EN00-IO</td><td>Global (No Cellular)</td><td>No cellular</td><td>S</td><td>IO</td><td>NA</td><td>NA</td></tr>
   <tr><td style="white-space: nowrap;">IG502-EN00-W-G</td><td>Global (No Cellular)</td><td>No cellular</td><td>S</td><td>NA</td><td>W</td><td>G</td></tr>

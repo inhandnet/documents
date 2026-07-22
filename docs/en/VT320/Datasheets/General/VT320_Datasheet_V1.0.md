@@ -41,16 +41,16 @@
 
 | Metric | Spec |
 |---|---|
-| Cellular Network | LTE Cat1 / LTE Cat-M1 |
+| Cellular Network | LTE Cat.1 / LTE Cat-M1 |
 | Positioning | GPS / Galileo / Beidou / GLONASS + inertial navigation (DR) |
 | Cloud Integration | AWS IoT, Azure IoT, Aliyun IoT, Wialon, Traccar, GPSWox, ThingsBoard |
 | Network Features | TCP / UDP / HTTP / MQTT transport; SMS or FlexAPI reporting |
 | Vehicle Data Access | OBD-II / J1939 / J1979 / J1708 |
 | Security | Certificate-based access capability; model-dependent operator certifications |
-| Dimensions | Approximately 157.15 × 100 × 43.73 mm |
-| Vehicle Interfaces | 2 × CAN, RS232, RS485, DI/DO, 1-Wire, analog input, dual SIM |
+| Dimensions | Approximately 157.15 × 100 × 43.73 mm (6.19 × 3.94 × 1.72 in) |
+| Vehicle Interfaces | 2 × CAN, RS-232, RS-485, DI/DO, 1-Wire, analog input, dual-SIM |
 | Power Supply | 9-48 V DC |
-| Operating Temperature | -40 C to 85 C |
+| Operating Temperature | -40 °C ~ 85 °C (-40 °F ~ 185 °F) |
 | Protection Rating | IP66 |
 | Battery | 1200 mAh Ni-MH |
 
@@ -69,7 +69,7 @@
   </div>
   <div style="width: 90%;">
     <div>Notes:</div>
-    <div>1. All dimensions are in millimeters (mm).</div>
+    <div>1. All dimensions are in millimeters (mm), with inches (in) in parentheses.</div>
     <div>2. All dimensions are approximate and <span style="font-weight: bold;">for reference only</span>.</div>
     <div>3. Drawings <span style="font-weight: bold;">must not be used for manufacturing</span>.</div>
     <div>4. Dimensions are subject to part and manufacturing tolerances.</div>
@@ -84,7 +84,7 @@
 | Category / Parameter | Specification |
 |---|---|
 | <span style="color: green;">**Cellular & GNSS**</span> | |
-| Network Type | LTE Cat1 / Cat-M1 |
+| Network Type | LTE Cat.1 / Cat-M1 |
 | Antenna | LTE FPC built-in or external SMA (model dependent); GNSS ceramic built-in or external SMA |
 | Satellite Support | GPS / Galileo / Beidou / GLONASS |
 | Channels | 72 channels |
@@ -99,20 +99,20 @@
 | Inertial Navigation | Supports dead-reckoning (DR) |
 | <span style="color: green;">**Working Conditions**</span> | |
 | Working Voltage | 9–48 V DC |
-| Operating Temperature | -40 °C ~ 85 °C |
+| Operating Temperature | -40 °C ~ 85 °C (-40 °F ~ 185 °F) |
 | Humidity | 95% RH @ 50 °C (non-condensing) |
 | ESD | IEC 61000-4-2 (4 kV test) |
 | Protection Rating | IP66 |
 | Battery Capacity | 1200 mAh |
 | Battery Material | Ni-MH |
-| Battery Temperature Range | Charging: 0 °C ~ 45 °C; Discharging: -40 °C ~ 85 °C |
-| Storage Temperature | For 1 month: -40 °C ~ 55 °C; For 1 year: -40 °C ~ 35 °C |
+| Battery Temperature Range | Charging: 0 °C ~ 45 °C (32 °F ~ 113 °F); Discharging: -40 °C ~ 85 °C (-40 °F ~ 185 °F) |
+| Storage Temperature | For 1 month: -40 °C ~ 55 °C (-40 °F ~ 131 °F); For 1 year: -40 °C ~ 35 °C (-40 °F ~ 95 °F) |
 | Shell Material | Engineering plastic + engineering plastic alloy (PC + ABS) |
 | <span style="color: green;">**Vehicle Interfaces**</span> | |
 | CAN Bus | 2 channels |
 | Diagnostics | J1708 / OBD-II / J1939 supported (vehicle protocols) |
-| RS485 | 1 channel |
-| RS232 | 1 channel |
+| RS-485 | 1 channel |
+| RS-232 | 1 channel |
 | Ignition Signal | 1 channel |
 | Digital Input | 4 channels |
 | Digital Output | 3 channels (max 300 mA) |
@@ -133,14 +133,14 @@
 | Transport Protocols | TCP / UDP / HTTP / MQTT |
 | <span style="color: green;">**Vehicle Data & Transparent Transmission**</span> | |
 | Vehicle Data | OBD-II, J1939, J1979 and J1708 |
-| Transparent Transmission | RS232/RS485 transparent; Modbus RTU to Modbus (data acquisition) |
+| Transparent Transmission | RS-232/RS-485 transparent; Modbus RTU to Modbus (data acquisition) |
 | <span style="color: green;">**Event Alarm & Reporting**</span> | |
 | Event Alarm | Collision detection, motion detection, overspeed, IO change, ignition signal detection |
 | Reporting Support | SMS or FlexAPI over TCP/UDP/MQTT |
 | ELD | Supported |
 | BLE Forwarding | Forward vehicle data via BLE |
 | <span style="color: green;">**Configuration Interface**</span> | |
-| Configuration | RS232 or Bluetooth; USB Type-C |
+| Configuration | RS-232 or Bluetooth; USB Type-C |
 | <span style="color: green;">**Certificate (as listed)**</span> | |
 | Certifications* | FCC / IC / PTCRB / AT&T / Verizon (model-dependent) |
 
@@ -154,18 +154,30 @@
 
 ## <span style="color: green;">Product Models</span>
 
-| Model | Type / Region | Frequency / Bands (as listed) |
-|---|---|---|
-| VT320-FQ02 | LTE Cat-M1 / Global | LTE-FDD: B1/B2/B3/B4/B5/B8/B12/B13/B14/B18/B19/B20/B25/B26/B27/B28/B66/B85 |
+<table style="width:100%; table-layout:fixed; font-size:11px;">
+  <colgroup>
+    <col style="width:22%;">
+    <col style="width:22%;">
+    <col style="width:56%;">
+  </colgroup>
+  <tr><th>Model</th><th>Type / Region</th><th>Frequency / Bands (as listed)</th></tr>
+  <tr><td style="white-space: nowrap;">VT320-FQ02</td><td>LTE Cat-M1 / Global</td><td>LTE-FDD: B1/B2/B3/B4/B5/B8/B12/B13/B14/B18/B19/B20/B25/B26/B27/B28/B66/B85</td></tr>
+</table>
 
 ## <span style="color: green;">Cable Accessories</span>
 
-| Cable | Order Code | Specifications |
-|---|---|---|
-| 26 PIN Cable | SCAB000370 | P1 is 26 PIN female connected to VT320; P2 is open end requiring 9–48 V adaptor (engineering environments / indoor tests) |
-| OBD 16 PIN Test Cable | SCAB000399 | OBD 16 PIN interface test line; UL2464; wire length 1500 mm |
-| J1939 6 PIN Test Cable | SCAB000409 | J1939 6 PIN interface test line; UL2464; wire length 1500 mm |
-| J1939 9 PIN Test Cable | SCAB000410 | J1939 9 PIN interface test line; UL2464; wire length 1500 mm |
+<table style="width:100%; table-layout:fixed; font-size:11px;">
+  <colgroup>
+    <col style="width:24%;">
+    <col style="width:16%;">
+    <col style="width:60%;">
+  </colgroup>
+  <tr><th>Cable</th><th>Order Code</th><th>Specifications</th></tr>
+  <tr><td style="white-space: nowrap;">26 PIN Cable</td><td>SCAB000370</td><td>P1 is 26 PIN female connected to VT320; P2 is open end requiring 9–48 V adaptor (engineering environments / indoor tests)</td></tr>
+  <tr><td style="white-space: nowrap;">OBD 16 PIN Test Cable</td><td>SCAB000399</td><td>OBD 16 PIN interface test line; UL2464; wire length 1500 mm</td></tr>
+  <tr><td style="white-space: nowrap;">J1939 6 PIN Test Cable</td><td>SCAB000409</td><td>J1939 6 PIN interface test line; UL2464; wire length 1500 mm</td></tr>
+  <tr><td style="white-space: nowrap;">J1939 9 PIN Test Cable</td><td>SCAB000410</td><td>J1939 9 PIN interface test line; UL2464; wire length 1500 mm</td></tr>
+</table>
 
 # <span style="color: green;">6. Contact Us</span>
 
@@ -175,13 +187,19 @@
 
 # <span style="color: green;">7. Accessories</span>
 
-| Accessory | Order Code | Specifications |
-|---|---|---|
-| 26 PIN Cable | SCAB000370 | The cable has P1 and P2 ends: P1 is 26PIN female, connected to VT320; P2 is open end, which requires a 9-48V adaptor. Suitable for engineering environments and indoor tests. |
-| OBD 16PIN Test Cable | SCAB000399 | OBD 16PIN interface test line; cable standard UL2464; wire length 1500 mm. |
-| J1939 6PIN Test Cable | SCAB000409 | J1939 6PIN interface test line; cable standard UL2464; wire length 1500 mm. |
-| J1939 9PIN Test Cable | SCAB000410 | J1939 9PIN interface test line; cable standard UL2464; wire length 1500 mm. |
-| Quick terminal -3in3out | ECON060255 | Rated voltage 600V, rated current 30A, 40*18.6*14.5 mm, flame retardant grade V0. |
-| Power adapter 12V/2A (EU standard) | APWR000121 | Switching power supply - 12V/2A - round connector - vertical (European standard) - DC line length 1.5 m, office test use. |
-| Power adapter 12V/2A (US standard) | APWR000122 | Switching power supply - 12V/2A - round connector - vertical (US standard) - DC line length 1.5 m, office test use. |
+<table style="width:100%; table-layout:fixed; font-size:11px;">
+  <colgroup>
+    <col style="width:34%;">
+    <col style="width:16%;">
+    <col style="width:50%;">
+  </colgroup>
+  <tr><th>Accessory</th><th>Order Code</th><th>Specifications</th></tr>
+  <tr><td style="white-space: nowrap;">26 PIN Cable</td><td>SCAB000370</td><td>The cable has P1 and P2 ends: P1 is 26PIN female, connected to VT320; P2 is open end, which requires a 9-48V adaptor. Suitable for engineering environments and indoor tests.</td></tr>
+  <tr><td style="white-space: nowrap;">OBD 16PIN Test Cable</td><td>SCAB000399</td><td>OBD 16PIN interface test line; cable standard UL2464; wire length 1500 mm.</td></tr>
+  <tr><td style="white-space: nowrap;">J1939 6PIN Test Cable</td><td>SCAB000409</td><td>J1939 6PIN interface test line; cable standard UL2464; wire length 1500 mm.</td></tr>
+  <tr><td style="white-space: nowrap;">J1939 9PIN Test Cable</td><td>SCAB000410</td><td>J1939 9PIN interface test line; cable standard UL2464; wire length 1500 mm.</td></tr>
+  <tr><td style="white-space: nowrap;">Quick terminal -3in3out</td><td>ECON060255</td><td>Rated voltage 600V, rated current 30A, 40*18.6*14.5 mm, flame retardant grade V0.</td></tr>
+  <tr><td style="white-space: nowrap;">Power adapter 12V/2A (EU standard)</td><td>APWR000121</td><td>Switching power supply - 12V/2A - round connector - vertical (European standard) - DC line length 1.5 m, office test use.</td></tr>
+  <tr><td style="white-space: nowrap;">Power adapter 12V/2A (US standard)</td><td>APWR000122</td><td>Switching power supply - 12V/2A - round connector - vertical (US standard) - DC line length 1.5 m, office test use.</td></tr>
+</table>
 

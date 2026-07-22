@@ -33,7 +33,7 @@
 **Key Features:**
 - **Robust 5G access:** Supports SA/NSA with high throughput and backward compatibility
 - **Vehicle-ready ruggedness:** IP64 protection with wide temperature and voltage operation
-- **Rich telematics I/O:** CAN/J1708/LIN/RS232/RS485/DI-DO-AI for multi-system integration
+- **Rich telematics I/O:** CAN/J1708/LIN/RS-232/RS-485/DI-DO-AI for multi-system integration
 - **Accurate positioning:** GNSS multi-constellation plus inertial navigation support
 - **Cloud and edge ready:** Python/C/C++/Docker with mainstream cloud connectivity
 
@@ -44,14 +44,14 @@
 | Cellular Network | 5G SA/NSA Sub-6, with LTE/3G fallback (model dependent) |
 | Positioning Capability | GPS/GLONASS/Galileo/Beidou + inertial navigation (DR) |
 | Cloud & IoT Integration | Supports MQTT, DDS, AMQP, REST, and CoAP; compatible with Azure and third-party platforms |
-| VPN & Security | Supports IPSec/L2TP/GRE/OpenVPN, with SPI firewall, ACL, AAA, and certificate management |
+| VPN & Security | Supports IPsec/L2TP/GRE/OpenVPN, with SPI firewall, ACL, AAA, and certificate management |
 | WLAN & Bluetooth | Dual-band Wi-Fi 5 (AP/Client) + Bluetooth 4.1 |
 | Edge Computing | Supports Python, C/C++, and Docker; provides Python 3, Docker, and Azure IoT Edge SDKs |
-| Dimensions | 188.1 × 140.5 × 48.8 mm |
-| Weight | 775 g |
-| Interface Capability | 4× Gigabit Ethernet, 2× CAN, J1708, LIN, RS232, RS485, DI/DO/AI, 1-WIRE |
+| Dimensions | 188.1 × 140.5 × 48.8 mm (7.41 × 5.53 × 1.92 in) |
+| Weight | 775 g (1.71 lb) |
+| Interface Capability | 4× Gigabit Ethernet, 2× CAN, J1708, LIN, RS-232, RS-485, DI/DO/AI, 1-WIRE |
 | Input Voltage Range | 9-36 V DC (configurable to 7-36 V DC) |
-| Operating Temperature | -30 °C to +70 °C (minimum startup at -35 °C) |
+| Operating Temperature | -30 °C ~ +70 °C (-22 °F ~ +158 °F) (minimum startup at -35 °C) |
 | Protection Rating | IP64 |
 
 # <span style="color: green;">2. Product Dimensions</span>
@@ -71,7 +71,7 @@
   </div>
   <div style="width: 90%;">
     <div>Notes:</div>
-    <div>1. All dimensions are in millimeters (mm).</div>
+    <div>1. All dimensions are in millimeters (mm), with inches (in) in parentheses.</div>
     <div>2. All dimensions are approximate and <span style="font-weight: bold;">for reference only</span>.</div>
     <div>3. Drawings <span style="font-weight: bold;">must not be used for manufacturing</span>.</div>
     <div>4. Dimensions are subject to part and manufacturing tolerances.</div>
@@ -91,9 +91,9 @@
 | RAM | 1 GB DDR3 |
 | Storage | 8 GB eMMC |
 | <span style="color: green;">**Connectivity**</span> | |
-| Cellular | 5G SA/NSA Sub-6 or LTE CAT6 (model dependent) |
+| Cellular | 5G SA/NSA Sub-6 or LTE Cat.6 (model dependent) |
 | Ethernet | 4 × 10/100/1000 Mbps RJ45 |
-| MicroSD | Up to 32 GB |
+| microSD | Up to 32 GB |
 | Bluetooth | Bluetooth 4.1 |
 | Antenna | SMA-K: Cellular/GNSS; RP-SMA-K: 2 × Wi-Fi + BLE |
 | <span style="color: green;">**Satellite Navigation**</span> | |
@@ -111,7 +111,7 @@
 | Diagnostics | 2 × CAN bus, 1 × J1708, 1 × LIN bus |
 | DO/DI/AI | 2 × DO, 4 × DI/AI or 2 × DI/AI |
 | Audio/Voice | R, L, Mic |
-| Serial Port | 1 × RS232, 1 × RS485 |
+| Serial Port | 1 × RS-232, 1 × RS-485 |
 | Other | 1-WIRE (driver ID / temperature) |
 | <span style="color: green;">**Power**</span> | |
 | Input Voltage | 9–36 V DC (configurable to 7–36 V DC) |
@@ -125,11 +125,11 @@
 | Protection Rating | IP64 |
 | Cooling | Radiation cooling |
 | Housing | Die-cast aluminum |
-| Dimensions (W × D × H) | 188.1 × 140.5 × 48.8 mm |
-| Weight | 775 g |
-| SIM | Dual SIM, 2FF |
-| Operating Temp. | -30 °C ~ +70 °C |
-| Storage Temp. | -40 °C ~ +85 °C |
+| Dimensions (W × D × H) | 188.1 × 140.5 × 48.8 mm (7.41 × 5.53 × 1.92 in) |
+| Weight | 775 g (1.71 lb) |
+| SIM | Dual-SIM, 2FF |
+| Operating Temp. | -30 °C ~ +70 °C (-22 °F ~ +158 °F) |
+| Storage Temp. | -40 °C ~ +85 °C (-40 °F ~ +185 °F) |
 | Humidity | 95% RH @ 60 °C |
 | Startup Temp. | -35 °C |
 | <span style="color: green;">**Standards & Certifications**</span> | |
@@ -159,7 +159,7 @@
 | User Level | Administrator / read-only |
 | AAA | Local authentication, Radius, Tacacs+, LDAP |
 | CA Certificate | PEM, PKCS12, SCEP |
-| VPN | IPSec VPN, L2TP, GRE, OpenVPN, CA |
+| VPN | IPsec VPN, L2TP, GRE, OpenVPN, CA |
 | <span style="color: green;">**Reliability**</span> | |
 | Backup | Floating routing, VRRP, interface backup |
 | Link Detection | Heartbeat detection, auto redial |
@@ -200,8 +200,8 @@
     <col style="width:12%;">
   </colgroup>
   <tr><th>Model</th><th>3GPP / Cellular Type</th><th>Region</th></tr>
-  <tr><td>VG710-H-NRQ5</td><td>5G NR NSA/SA + LTE-FDD/LTE-TDD + WCDMA (global multiband), 3GPP Rel-16</td><td>Global</td></tr>
-  <tr><td>VG710-H-NRQ3</td><td>5G NR NSA/SA + LTE-FDD/LTE-TDD + LAA + WCDMA (global multiband), 3GPP Rel-15</td><td>Global</td></tr>
+  <tr><td>VG710-H-NRQ5</td><td>5G NR SA/NSA + LTE-FDD/LTE-TDD + WCDMA (global multiband), 3GPP Rel-16</td><td>Global</td></tr>
+  <tr><td>VG710-H-NRQ3</td><td>5G NR SA/NSA + LTE-FDD/LTE-TDD + LAA + WCDMA (global multiband), 3GPP Rel-15</td><td>Global</td></tr>
 </table>
 
 

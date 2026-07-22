@@ -1,32 +1,33 @@
-<div style="width: 100%;height: 100%;background: url(images/er2000.jpg); background-size: 100% 100%;">
-  <div style="height:75%;">
-    <div style="width:35%; padding: 40px 40px">
-      <img src="images/logo.png" alt="logo" />
+<div style="height: 100vh;background-color: #fff;">
+  <div style="height: 75%;background: url(images/cover_bg.png); background-size: 100% 100%; padding-top: 8%;"> 
+    <div style="width: 90%; margin: 0 auto;">
+      <img src="images/media_1_23.png" alt="Product" style="width: 100%; display: block; margin: 0 auto;"/>
     </div>
-    <div style="font-size: 28px; font-weight: bold; color:#000;text-align: center; margin-bottom: 60px;">
+    <div style="font-size: 32px;font-weight: bold;color: #fff;text-align: center;">
       Speed · Security · Stability · Simplicity
     </div>
   </div>
-  <div style="padding-left: 40px;">
-    <div style="font-size: 40px; font-weight: bold; color:#000;margin-bottom: 30px;">
-      ER2000 Enterprise SD-WAN Router
+  <div style="height: 20%; display: flex; justify-content: space-between; align-items: center; margin: 0 20px;">
+    <div>
+      <div style="margin-bottom: 30px; font-size: 32px; font-weight: bold; color: #2ECC40; white-space: nowrap;">
+        ER2000 Enterprise SD-WAN Router
+      </div>
+      <div style="display: flex; align-items: center; gap: 10px;">
+        <div style="background: #2ECC40;color: #fff;border-radius: 12px;padding: 2px 16px;">· Enterprise</div>
+        <div style="background: #2ECC40;color: #fff;border-radius: 12px;padding: 2px 16px;">· High Performance</div>
+        <div style="background: #2ECC40;color: #fff;border-radius: 12px;padding: 2px 16px;">· Cloud-Managed</div>
+        <div style="background: #2ECC40;color: #fff;border-radius: 12px;padding: 2px 16px;">· SD-WAN</div>
+      </div>
     </div>
-    <div style="text-align: center;">
-      <div style="display: flex; flex-wrap: wrap; gap: 16px; ">
-        <div style="width: 200px;background-color: #4CAF50; color: white; padding: 8px 8px; border-radius: 6px; font-size: 18px;">· Enterprise</div>
-        <div style="width: 200px;background-color: #4CAF50; color: white; padding: 8px 8px; border-radius: 6px; font-size: 18px;">· High Performance</div>
-      </div>
-      <div style="display: flex; flex-wrap: wrap; gap: 16px;margin-top:16px">
-        <div style="width: 200px;background-color: #4CAF50; color: white; padding: 8px 8px; border-radius: 6px; font-size: 18px;">· Cloud-Managed</div>
-        <div style="width: 200px;background-color: #4CAF50; color: white; padding: 8px 8px; border-radius: 6px; font-size: 18px; ">· SD-WAN</div>
-      </div>
+    <div style="width: 150px; flex-shrink: 0;">
+      <img src="images/logo_little.png" alt="InHand" style="width: 100%;"/>
     </div>
   </div>
 </div>
 
 <div style="page-break-after: always;"></div>
 
-# <span style="color: green;">1. Product Overview</span>
+## <span style="color: green;">1. Product Overview</span>
 
 **ER2000 is a cloud-managed SD-WAN enterprise-grade router designed for business branches and enterprise offices. Serving as the cornerstone of enterprise digitization, the ER2000 features high-performance data processing capabilities and supports large-scale data transmission and stable operation in complex network environments, offering reliable and convenient central-end network access for enterprise business interconnections.**
 
@@ -42,25 +43,23 @@
 
 ## <span style="color: green;">Core Technical Specifications</span>
 
-|Technical Item|Specification|
+| Technical Item | Specification |
 | --- | --- |
-| SD-WAN | Hub mode; branch interconnect; 500+ branch sites |
-| Cloud Management | InCloud Manager |
-| VPN | IPsec, L2TP, VXLAN, GRE*, OpenVPN*; 500+ entries |
-| Network| IPv4/IPv6|
-| Throughput / Scale | 6 Gbps; IPsec 1 Gbps; 1000+ clients |
-| WAN Access | Multiple wired links; PPPoE; real-time link detection |
-| Ethernet | WAN: 1 × 10G SFP+ + 1 × GbE SFP + 2 × GbE RJ45 (PoE); LAN: 2 × 10G SFP+ + 2 × GbE Combo + 8 × GbE RJ45 (PoE); 1 × USB 3.0 |
-| PoE | 10 × PoE output, 802.3at, 150 W |
-| Power | 100–240 V AC, 50/60 Hz, 2 A; peak ≤200 W |
-| Dimensions / Install | 440 × 290 × 44 mm (17.32 × 11.42 × 1.73 in); rack-mounted |
-| Environment | -10 °C ~ +50 °C (14 °F ~ +122 °F) op.; -40 °C ~ +85 °C (-40 °F ~ +185 °F) stg.; 5–95% RH; IP20 |
-| EMC / Certification | EMC Level 2; CE, FCC, IC (under plan) |
+| SD-WAN & Scale | Hub mode and branch interconnectivity; 500+ branch site connections, 1000+ client connections |
+| Cloud Management | InCloud Manager: unified device access, zero-touch remote deployment, bulk remote upgrades, configuration deployment, SD-WAN networking, Connector remote maintenance, two-factor authentication |
+| VPN | IPSec VPN, L2TP VPN, VXLAN, GRE*, OpenVPN*; 500+ VPN entries |
+| Throughput & Capacity | Throughput 6 Gbps; IPsec VPN throughput 1 Gbps; recommended users 1000+ |
+| Interfaces & PoE | WAN: 1 × 10G SFP+ + 1 × GbE SFP + 2 × GbE RJ45 (PoE); LAN: 2 × 10G SFP+ + 2 × GbE Combo + 8 × GbE RJ45 (PoE); 10 × PoE output, 802.3at, 150 W |
+| Memory & Storage | 4 GB DDR4 RAM; 8 GB eMMC Flash; 1 × USB 3.0 |
+| Power | 100–240 V AC, 50/60 Hz, 2 A; peak power ≤ 200 W |
+| Mechanical & Environment | 440 × 290 × 44 mm; rack-mounted; IP20; operating -10 °C ~ +50 °C; storage -40 °C ~ +85 °C; 5–95% RH non-condensing |
+| Compliance | Under plan: CE, FCC, IC; EMC level 2 |
 
 <div style="margin-top: 32px;"></div>
 
 
-# <span style="color: green;">2. Product Dimensions</span>
+
+## <span style="color: green;">2. Product Dimensions</span>
 
 <div style="display: flex; align-items: end; flex-wrap: wrap; justify-content: space-between; row-gap: 16px;">
   <div style="width: 32%; flex-shrink: 0;">
@@ -77,8 +76,8 @@
   </div>
   <div style="width: 100%;">
     <div>Note:</div>
-    <div>1. All dimensions are in millimeters (mm), with inches (in) in parentheses.</div>
-    <div>2. Dimensions (L × W × H): 440 × 290 × 44 mm (17.32 × 11.42 × 1.73 in).</div>
+    <div>1. All dimensions are in millimeters (mm).</div>
+    <div>2. Dimensions (L × W × H): 440 × 290 × 44 mm.</div>
     <div>3. All dimensions are approximate, <span style="font-weight: bold;">for reference only</span>.</div>
     <div>4. Dimensions shown <span style="font-weight: bold;">shall not be used for production</span>.</div>
   </div>
@@ -86,7 +85,7 @@
 
 <div style="page-break-after: always;"></div>
 
-# <span style="color: green;">3. Hardware Specifications</span>
+## <span style="color: green;">3. Hardware Specifications</span>
 
 | Category/Parameter | Specification |
 | --- | --- |
@@ -108,19 +107,20 @@
 | Input | 100–240 V AC, 50/60 Hz, 2 A |
 | Peak Power | ≤ 200 W |
 | <span style="color: green;">**Mechanical**</span> | |
-| Dimensions | 440 × 290 × 44 mm (17.32 × 11.42 × 1.73 in) |
+| Dimensions | 440 × 290 × 44 mm |
 | Installation | Rack-mounted |
 | Protection | IP20 |
 | <span style="color: green;">**Environment**</span> | |
-| Operating Temperature | -10 °C ~ +50 °C (14 °F ~ +122 °F) |
-| Storage Temperature | -40 °C ~ +85 °C (-40 °F ~ +185 °F) |
+| Operating Temperature | -10 °C ~ +50 °C |
+| Storage Temperature | -40 °C ~ +85 °C |
 | Humidity | 5–95 % RH (non-condensing) |
 | <span style="color: green;">**Certification**</span> | |
 | Certification | Under plan: CE, FCC, IC |
 | EMC | EMC level 2 |
 
 
-# <span style="color: green;">4. Software Specifications</span>
+
+## <span style="color: green;">4. Software Specifications</span>
 
 | Category/Parameter | Specification |
 | --- | --- |
@@ -134,7 +134,7 @@
 | Intelligent Links | Real-time link detection |
 | IP Protocols | IPv4, IPv6 |
 | Protocols | VLAN, DHCP (Server/Client), DNS, DDNS, Fixed Address, IP Passthrough, STP, ARP, ICMP |
-| VPN | IPsec VPN, L2TP VPN, VXLAN, GRE*, OpenVPN* |
+| VPN | IPSec VPN, L2TP VPN, VXLAN, GRE*, OpenVPN* |
 | SD-WAN | SD-WAN networking |
 | Routing | Static routing |
 | <span style="color: green;">**Security**</span> | |
@@ -152,29 +152,24 @@
 
 **Note:** Features marked with * are under development.
 
+<div style="page-break-after: always;"></div>
 
-# <span style="color: green;">5. Ordering Information</span>
+## <span style="color: green;">5. Ordering Information</span>
 
-## <span style="color: green;">Model Code</span>
+### <span style="color: green;">Model Code</span>
 
 **Model code:** ER2000-\u003cWMNN\u003e
 
 \u003cWMNN\u003e: Hardware Specifications
 
-## <span style="color: green;">Product Models</span>
+### <span style="color: green;">Product Models</span>
 
-<table style="width:100%; table-layout:fixed;">
-  <colgroup>
-    <col style="width:32%;">
-    <col style="width:12%;">
-    <col style="width:56%;">
-  </colgroup>
-  <tr><th>Model</th><th>Region</th><th>Specification</th></tr>
-  <tr><td style="white-space: nowrap;">ER2000-PLUS</td><td>Global</td><td>Throughput: 6 Gbps;<br> VPN throughput: 1 Gbps;<br> 500+ branch site connections, 1000+ client connections;<br> WAN: 1 × 10G SFP+ + 1 × GbE SFP + 2 × GbE RJ45 (PoE);<br> LAN: 2 × 10G SFP+ + 2 × GbE Combo + 8 × GbE RJ45 (PoE)</td></tr>
-</table>
+| Model | Region | Specification |
+| --- | --- | --- |
+| ER2000-PLUS | Global | Throughput: 6 Gbps; VPN throughput: 1 Gbps; 500+ branch site connections, 1000+ client connections; WAN: 1 × 10G SFP+ + 1 × GbE SFP + 2 × GbE RJ45 (PoE); LAN: 2 × 10G SFP+ + 2 × GbE Combo + 8 × GbE RJ45 (PoE) |
 
 
-# <span style="color: green;">6. Contact Us</span>
+## <span style="color: green;">6. Contact Us</span>
 
 - **Website:** [InHand Networks](https://www.inhand.com)
 - **Copyright:** © InHand Networks. All rights reserved.

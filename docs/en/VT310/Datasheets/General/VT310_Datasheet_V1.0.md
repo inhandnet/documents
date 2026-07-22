@@ -41,17 +41,17 @@
 
 |Technical Indicator|Specification|
 |---|---|
-|Cellular Network|LTE CAT-M / CAT1 / CAT4|
+|Cellular Network|LTE CAT-M / Cat.1 / Cat.4|
 |Positioning Capability|GNSS multi-constellation positioning with inertial navigation (DR)|
 |Vehicle Diagnostics|Supports OBD-II / J1939 / J1708|
 |Cloud Platform Integration|Supports AWS IoT, Azure IoT, Aliyun IoT, Wialon, Traccar, and other platforms|
 |Transport Protocols|TCP / UDP / HTTP / MQTT|
 |Events and Alarms|Supports collision, motion, overspeed, IO change, ignition detection, and other alarms|
-|Device Dimensions| 141.14 × 82 × 35 mm|
+|Device Dimensions| 141.14 × 82 × 35 mm (5.56 × 3.23 × 1.38 in)|
 |Ingress Protection|IP66|
 |Power Input Range|9-48 V DC|
-|Interface Capability|Dual CAN, RS232, RS485, DI/DO, 1-Wire, and analog input|
-|Operating Temperature|-40 to 85 C (external power); -20 to 60 C (battery)|
+|Interface Capability|Dual CAN, RS-232, RS-485, DI/DO, 1-Wire, and analog input|
+|Operating Temperature|-40 °C ~ 85 °C (-40 °F ~ 185 °F) (external power); -20 °C ~ 60 °C (-4 °F ~ 140 °F) (battery)|
 |Cache and Endurance|Supports 30K+ track record caching with built-in 1200 mAh battery|
 
 
@@ -78,7 +78,7 @@
   </div>
   <div style="width: 90%;">
     <div>Notes:</div>
-    <div>1. All dimensions are in millimeters (mm).</div>
+    <div>1. All dimensions are in millimeters (mm), with inches (in) in parentheses.</div>
     <div>2. All dimensions are approximate and <span style="font-weight: bold;">for reference only</span>.</div>
     <div>3. Drawings <span style="font-weight: bold;">must not be used for manufacturing</span>.</div>
     <div>4. Dimensions are subject to part and manufacturing tolerances.</div>
@@ -93,7 +93,7 @@
 | Category / Parameter | Specification |
 |---|---|
 | <span style="color: green;">**Network & Computing**</span> | |
-| Network Type | LTE CAT-M / CAT1 / CAT4 |
+| Network Type | LTE CAT-M / Cat.1 / Cat.4 |
 | CPU / Main Platform | Rugged multi-task system |
 | Battery | 1200 mAh |
 | Protection Rating | IP66 |
@@ -111,8 +111,8 @@
 | <span style="color: green;">**Vehicle Interfaces**</span> | |
 | CAN bus | 2 channels |
 | OBD & Diagnostics | J1708 / J1939 support |
-| Serial Port | RS232 (1 channel) |
-| RS485 | RS485 (1 channel) |
+| Serial Port | RS-232 (1 channel) |
+| RS-485 | RS-485 (1 channel) |
 | Ignition Signal | 1 channel |
 | Digital Input | 4 channels |
 | Digital Output | 3 channels (max 300 mA) |
@@ -125,11 +125,11 @@
 | Power Consumption | 0.45 W / 0.55 W / 0.77 W (scenario-dependent) |
 | Battery Rated Voltage | 3.7 V |
 | Battery Cut-off Voltage | 4.2 V |
-| Charging/Discharging Temp. | Charging: 0–45 ℃; Discharging: -20–60 ℃ |
+| Charging/Discharging Temp. | Charging: 0 °C ~ 45 °C (32 °F ~ 113 °F); Discharging: -20 °C ~ 60 °C (-4 °F ~ 140 °F) |
 | <span style="color: green;">**Mechanical & Environment**</span> | |
 | Shell Material | PC + ABS (engineering plastic + alloy) |
-| Dimensions | Approximately 141 × 82 × 35 mm |
-| Operating Temperature | -40 ~ 85 ℃ (connected to main power); -20 ~ 60 ℃ (battery) |
+| Dimensions | Approximately 141 × 82 × 35 mm (5.55 × 3.23 × 1.38 in) |
+| Operating Temperature | -40 ~ 85 ℃ (connected to main power); -20 °C ~ 60 °C (-4 °F ~ 140 °F) (battery) |
 | Humidity | 95% RH @ 50 ℃ (non-condensing) |
 | ESD | IEC 61000-4-2 (4 kV test) |
 | <span style="color: green;">**Certifications**</span> | |
@@ -147,14 +147,14 @@
 | Network Diagnostics | (as listed) connectivity / ping / traceroute / tcpdump / speed test (when supported) |
 | <span style="color: green;">**Vehicle Data & Transparent Transmission**</span> | |
 | Vehicle Data | OBD-II, J1939, J1708 |
-| Transparent Transmission | RS232/RS485 transparent + Modbus protocol data acquisition |
+| Transparent Transmission | RS-232/RS-485 transparent + Modbus protocol data acquisition |
 | <span style="color: green;">**Event Alarm & Reporting**</span> | |
 | Event Alarm | Collision detection, motion detection, overspeed, IO change, ignition signal detection |
 | Reporting | Support SMS or FlexAPI over TCP/UDP/MQTT |
 | ELD | Supported |
 | BLE Forwarding | Forward vehicle data via BLE |
 | <span style="color: green;">**Configuration & Diagnostics**</span> | |
-| Configuration Tool | RS232 or Bluetooth |
+| Configuration Tool | RS-232 or Bluetooth |
 
 
 
@@ -180,7 +180,7 @@
   </colgroup>
   <tr><th>Model</th><th>Cellular Type</th><th>Region</th></tr>
   <tr><td>VT310-FQ58-B</td><td>LTE FDD: B1/B3/B5/B8;<br> LTE TDD: B34/B38/B39/B40/B41;<br> WCDMA: B1/B8; <br>GSM: 900/1800 MHz</td><td>China / India</td></tr>
-  <tr><td>VT310-FQ53-B</td><td>LTE FDD: B1/B3/B5/B8/B20/B28;<br> LTE CAT1</td><td>Europe / APAC</td></tr>
+  <tr><td>VT310-FQ53-B</td><td>LTE FDD: B1/B3/B5/B8/B20/B28;<br> LTE Cat.1</td><td>Europe / APAC</td></tr>
   <tr><td>VT310-FQ08-B</td><td>LTE-FDD: B1/B2/B3/B4/B5/B7/B8/B12/B13/B18/B19/B20/B25/B26/B28/66; <br>LTE-TDD: B34/38/39/40/41; <br>WCDMA: B1/2/4/5/6/8/19;<br> GSM/EDGE: B2/3/5/8</td><td>Global</td></tr>
 </table>
 
@@ -195,7 +195,7 @@
   <tr><th>Cable</th><th>Order Code</th><th>Specifications</th></tr>
   <tr><td>26 PIN All-in-one Test Cable</td><td>SCAB000229</td><td>P1: 26 PIN female to connect to VT310; P2: open end requiring 9–48V adaptor. Suitable for engineering environments and indoor tests.</td></tr>
   <tr><td>OBD-II 7 PIN All-in-one Cable</td><td>SCAB000231</td><td>P1: 26 PIN female to VT310; P2: OBD-II male to vehicle; P3: ignition signal terminal. Suitable for heavy trucks with OBD-II interface and powers VT310 via interfaces.</td></tr>
-  <tr><td>OBD-II 26 PIN All-in-one Cable</td><td>SCAB000232</td><td>P1: 26 PIN female to VT310; P2: OBD-II male to vehicle; includes I/O, RS232-1 and 1-Wire; P4: ignition signal terminal. Recommended for customers needing DI/DO/AI/1-Wire devices or vehicle-mounted controllers.</td></tr>
+  <tr><td>OBD-II 26 PIN All-in-one Cable</td><td>SCAB000232</td><td>P1: 26 PIN female to VT310; P2: OBD-II male to vehicle; includes I/O, RS-232-1 and 1-Wire; P4: ignition signal terminal. Recommended for customers needing DI/DO/AI/1-Wire devices or vehicle-mounted controllers.</td></tr>
 </table>
 
 # <span style="color: green;">6. Contact Us</span>
@@ -221,7 +221,7 @@
   <tr><td align="center">6</td><td align="center">DO2</td><td>Digital output 2</td></tr>
   <tr><td align="center">7</td><td align="center">AI</td><td>Analog input</td></tr>
   <tr><td align="center">8</td><td align="center">1-Wire</td><td>1-Wire interface</td></tr>
-  <tr><td align="center">9</td><td align="center">RS232_RX</td><td>RS232 receive</td></tr>
+  <tr><td align="center">9</td><td align="center">RS232_RX</td><td>RS-232 receive</td></tr>
   <tr><td align="center">10</td><td align="center">GND</td><td>Ground</td></tr>
   <tr><td align="center">11</td><td align="center">CAN1_L</td><td>CAN1 low level</td></tr>
   <tr><td align="center">12</td><td align="center">CAN2_L</td><td>CAN2 low level</td></tr>
@@ -234,7 +234,7 @@
   <tr><td align="center">19</td><td align="center">DO1</td><td>Digital output 1</td></tr>
   <tr><td align="center">20</td><td align="center">DO3</td><td>Digital output 3</td></tr>
   <tr><td align="center">21</td><td align="center">GND</td><td>Ground</td></tr>
-  <tr><td align="center">22</td><td align="center">RS232_TX</td><td>RS232 transmit</td></tr>
+  <tr><td align="center">22</td><td align="center">RS232_TX</td><td>RS-232 transmit</td></tr>
   <tr><td align="center">23</td><td align="center">GND</td><td>Ground</td></tr>
   <tr><td align="center">24</td><td align="center">CAN1_H</td><td>CAN1 high level</td></tr>
   <tr><td align="center">25</td><td align="center">CAN2_H</td><td>CAN2 high level</td></tr>

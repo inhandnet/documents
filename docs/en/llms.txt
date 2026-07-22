@@ -727,14 +727,6 @@
 
 - [ISE5310D Datasheet v1.0](ISE5310D/Datasheets/General/ISE5310D_Datasheet_V1.0.md): ISE5310D Datasheet v1.0 — Simple, highly reliable network communication system
 
-## ISE5X06D
-
-- [ISE5X06D Datasheet v1.0](ISE5X06D/Datasheets/General/ISE5X06D_Datasheet_V1.0.md): ISE5X06D Datasheet v1.0 — Simple, highly reliable network communication system
-
-## ISE5X10D
-
-- [ISE5X10D Datasheet v1.0](ISE5X10D/Datasheets/General/ISE5X10D_Datasheet_V1.0.md): ISE5X10D Datasheet v1.0 — Simple, highly reliable network communication system
-
 ## ISM managed
 
 - [ISM managed User manual v1.0](ISM%20managed/Manuals/User%20manual/ISM%20managed_User%20manual_V1.0.md): ISM managed User manual v1.0 — ﻿# InSwitch Series Web Configuration Manual
@@ -777,14 +769,6 @@
 ## ISM5310D
 
 - [ISM5310D Datasheet v1.0](ISM5310D/Datasheets/General/ISM5310D_Datasheet_V1.0.md): ISM5310D Datasheet v1.0 — Build advanced and highly reliable industrial Ethernet communication system
-
-## ISM5X06D
-
-- [ISM5X06D Datasheet v1.0](ISM5X06D/Datasheets/General/ISM5X06D_Datasheet_V1.0.md): ISM5X06D Datasheet v1.0 — Build advanced and highly reliable industrial Ethernet communication system
-
-## ISM5X10D
-
-- [ISM5X10D Datasheet v1.0](ISM5X10D/Datasheets/General/ISM5X10D_Datasheet_V1.0.md): ISM5X10D Datasheet v1.0 — Build advanced and highly reliable industrial Ethernet communication system
 
 ## ISM7012D
 

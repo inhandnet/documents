@@ -870,6 +870,7 @@
 ## ODU12
 
 - [ODU12 Datasheet v1.0](ODU12/Datasheets/General/ODU12_Datasheet_V1.0.md): ODU12 Datasheet v1.0 — Minimalist Design, Powerful Connectivity
+- [ODU12 Drawings](ODU12/drawings.md): ODU12 mechanical drawings (2D, 3D) with links to the original drawing files
 
 ## ODU2002
 
@@ -930,27 +931,12 @@
   - [3.4 Scenario 4: Connecting to the Cloud Management Platform](VG710/Manuals/User%20manual/VG710_User%20manual_V1.0.md#34-scenario-4-connecting-to-the-cloud-management-platform)
   - [3.5 Scenario 5: OBD Vehicle Diagnostics](VG710/Manuals/User%20manual/VG710_User%20manual_V1.0.md#35-scenario-5-obd-vehicle-diagnostics)
   - [4.1 Network](VG710/Manuals/User%20manual/VG710_User%20manual_V1.0.md#41-network)
-- [InHand VG710 Series User's Manual V1.4](VG710/Manuals/User%20manual/InHandVG710SeriesUser%27sManualV1.4.md): VG710 User manual v1.4 — InHand VG710 is a new-generation 4G in-vehicle gateway oriented at the Internet of Vehicles (IoV). It provides fast and…
-  - [Chapter I](VG710/Manuals/User%20manual/InHandVG710SeriesUser%27sManualV1.4.md#chapter-i)
-  - [Overview](VG710/Manuals/User%20manual/InHandVG710SeriesUser%27sManualV1.4.md#overview)
-  - [Hardware](VG710/Manuals/User%20manual/InHandVG710SeriesUser%27sManualV1.4.md#hardware)
-  - [Default Settings](VG710/Manuals/User%20manual/InHandVG710SeriesUser%27sManualV1.4.md#default-settings)
-  - [Login and Network Access](VG710/Manuals/User%20manual/InHandVG710SeriesUser%27sManualV1.4.md#login-and-network-access)
-  - [Network](VG710/Manuals/User%20manual/InHandVG710SeriesUser%27sManualV1.4.md#network)
-  - [APP Management](VG710/Manuals/User%20manual/InHandVG710SeriesUser%27sManualV1.4.md#app-management)
-  - [Connecting the Gateway to a Cloud Platform](VG710/Manuals/User%20manual/InHandVG710SeriesUser%27sManualV1.4.md#connecting-the-gateway-to-a-cloud-platform)
-  - [Industrial Ports (Serial Ports)](VG710/Manuals/User%20manual/InHandVG710SeriesUser%27sManualV1.4.md#industrial-ports-serial-ports)
-  - [System Management](VG710/Manuals/User%20manual/InHandVG710SeriesUser%27sManualV1.4.md#system-management)
-  - [Diagnostic Tools](VG710/Manuals/User%20manual/InHandVG710SeriesUser%27sManualV1.4.md#diagnostic-tools)
-  - [Chapter II Edge calculation](VG710/Manuals/User%20manual/InHandVG710SeriesUser%27sManualV1.4.md#chapter-ii-edge-calculation)
-  - [Chapter III Accessories](VG710/Manuals/User%20manual/InHandVG710SeriesUser%27sManualV1.4.md#chapter-iii-accessories)
 - [VG710 4G Version v1.0](VG710/Datasheets/4G%20Version/VG710_4G_Datasheet_V1.0.md): VG710 4G Version v1.0 — High-performance, Powerful, Programmable
 - [VG710 5G Version v1.0](VG710/Datasheets/5G%20Version/VG710_5G_Datasheet_V1.0.md): VG710 5G Version v1.0 — High-performance, Powerful, Programmable
 - [VG710 Datasheet v1.0](VG710/Datasheets/General/VG710_M12_Datasheet_V1.0.md): VG710 Datasheet v1.0 — High-performance, Powerful, Programmable
 
 ## VG814
 
-- [InHand VG814 User Manual (Standard Edition) V1.2](VG814/Manuals/User%20manual/InHandVG814User%27sManualV1.2.md): VG814 User manual v1.2 — The InHand VG814 is a new-generation 4G in-vehicle gateway oriented at the Internet of Vehicles (IoV). It provides fast…
 - [InHand VG814 User Manual (Standard Edition) V1.2](VG814/Manuals/User%20manual/VG814_User%20manual_V1.0.md): VG814 User manual v1.0 — The InHand VG814 is a new-generation 4G in-vehicle gateway oriented at the Internet of Vehicles (IoV). It provides fast…
 - [VG814 Rail v1.0](VG814/Datasheets/Rail/VG814-Railway_Datasheet_V1.0.md): VG814 Rail v1.0 — All-in-one, high-performance, rugged rail cellular gateway
 - [VG814 Road v1.0](VG814/Datasheets/Road/VG814-Road_Datasheet_V1.0.md): VG814 Road v1.0 — High-performance, all-in-one, open vehicle gateway

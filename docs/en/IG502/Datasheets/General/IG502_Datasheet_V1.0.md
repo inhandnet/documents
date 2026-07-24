@@ -52,7 +52,7 @@
 | Ethernet Ports | 2 × 10/100 Mbps |
 | Serial Interfaces | 1 × RS-232 + 1 × RS-485, or 2 × RS-485 (model dependent) |
 | Power Supply | 12~48V DC, industrial terminal block |
-| Operating Temperature & Protection | -20 °C ~ 70 °C (-4 °F ~ 158 °F), IP30 |
+| Operating Temperature & Protection | Models with Wi-Fi: -20 °C ~ 70 °C (-4 °F ~ 158 °F) / Models without Wi-Fi: -40 °C ~ 70 °C (-40 °F ~ 158 °F), IP30 |
 
 
 

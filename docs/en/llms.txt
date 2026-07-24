@@ -946,6 +946,7 @@
 ## VR624
 
 - [VR624 Datasheet v1.0](VR624/Datasheets/General/VR624_Datasheet_V1.0.md): VR624 Datasheet v1.0 — High-speed 5G, Wi-Fi 6, Cloud-managed
+- [VR624 Datasheet v1.1](VR624/Datasheets/General/VR624_Datasheet_V1.1.md): VR624 Datasheet v1.1 — High-speed 5G, Wi-Fi 6, Cloud-managed
 
 ## VT200
 

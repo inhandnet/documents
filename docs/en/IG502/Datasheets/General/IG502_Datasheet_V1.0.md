@@ -52,29 +52,21 @@
 | Ethernet Ports | 2 × 10/100 Mbps |
 | Serial Interfaces | 1 × RS-232 + 1 × RS-485, or 2 × RS-485 (model dependent) |
 | Power Supply | 12~48V DC, industrial terminal block |
-| Operating Temperature & Protection | Models with Wi-Fi: -20 °C ~ 70 °C (-4 °F ~ 158 °F) / Models without Wi-Fi: -40 °C ~ 70 °C (-40 °F ~ 158 °F), IP30 |
+| Operating Temperature & Protection | Models with Wi-Fi: -20 °C ~ 70 °C (-4 °F ~ 158 °F) <br> Models without Wi-Fi: -40 °C ~ 70 °C (-40 °F ~ 158 °F), IP30 |
 
 
 
 # <span style="color: green;">2. Product Dimensions & Terminal Definition</span>
 
-<div style="display: flex; align-items: end; justify-content: space-evenly; column-gap: 1.5%; transform: translateX(-7%);">
 
-  <div style="width: 36%;">
-    <img src="images/prod_1.png" alt="Front View" />
-    <div style="width: 100%; text-align: center; font-size: 12px;">Front View</div>
+  <div style="width: 70%; margin: 0 auto;">
+    <img src="四图/带IO尺寸图.png" alt="Dimension Diagram (With I/O)" style="display: block; margin: 0 auto;" />
+    <div style="width: 100%; text-align: center; font-size: 12px;">Dimension Diagram (With I/O)</div>
   </div>
-
-  <div style="width: 13%;">
-    <img src="images/prod_3.png" alt="Side View" style="display: block; margin: 0 auto;" />
-    <div style="width: 100%; text-align: center; font-size: 12px;">Side View</div>
+  <div style="width: 70%; margin: 0 auto;">
+    <img src="四图/不带IO尺寸图.png" alt="Dimension Diagram (Without I/O)" style="display: block; margin: 0 auto;" />
+    <div style="width: 100%; text-align: center; font-size: 12px;">Dimension Diagram (Without I/O)</div>
   </div>
-  <div style="width: 14%;">
-    <img src="images/prod_2.png" alt="Interface Diagram" style="display: block; margin: 0 auto;" />
-    <div style="width: 100%; text-align: center; font-size: 12px;">Interface Diagram</div>
-  </div>
-</div>
-
 
 <div style="margin-top: 12px;">
   <div style="width: 80%;">

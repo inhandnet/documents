@@ -57,10 +57,6 @@
 | Compliance | In planning: CE, FCC, IC; EMC Level 2 |
 
 
-
-<div style="page-break-after: always;"></div>
-
-
 # <span style="color: green;">2. Product Dimensions</span>
 
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between; row-gap: 16px;">
@@ -155,7 +151,12 @@
 
 ## <span style="color: green;">Model Code</span>
 
-**Model code:** ES620-\u003cWMNN\u003e\u003cWMNN\u003e: Hardware Specifications
+**Model code:** ES620-WMNN
+WMNN: Hardware Specifications
+
+
+
+<div style="page-break-after: always;"></div>
 
 
 ## <span style="color: green;">Product Models</span>

@@ -65,11 +65,11 @@
   </div>
 
   <div style="width: 30%;">
-    <img src="images/prod_3.png" alt="Side View" style="display: block; margin: 0 auto;" />
+    <img src="images/图二.png" alt="Side View" style="display: block; margin: 0 auto;" />
     <div style="width: 100%; text-align: center; font-size: 12px;">Side View</div>
   </div>
   <div style="width: 29%;">
-    <img src="images/prod_2.png" alt="Bottom View" style="display: block; margin: 0 auto;" />
+    <img src="images/图三.jpg" alt="Bottom View" style="display: block; margin: 0 auto;" />
     <div style="width: 100%; text-align: center; font-size: 12px;">Bottom View</div>
   </div>
 </div>

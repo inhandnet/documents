@@ -80,7 +80,7 @@
     <div>4. Dimensions shown <span style="font-weight: bold;">shall not be used for production</span>.</div>
   </div>
 </div>
-<div style="page-break-after: always;"></div>
+
 
 # <span style="color: green;">3. Hardware Specifications</span>
 
@@ -122,7 +122,7 @@
 | <span style="color: green;">**Certification**</span> | |
 | Certification | CE, T-Mobile, Verizon, AT&T |
 
-<div style="page-break-after: always;"></div>
+
 
 # <span style="color: green;">4. Software Specifications</span>
 

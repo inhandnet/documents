@@ -140,7 +140,11 @@
 
 ## <span style="color: green;">Model Code</span>
 
-**Model code:** ES220-\u003cWMNN\u003e\u003cT\u003e: Gigabit Ethernet; \u003cP\u003e: PoE
+**Model code:** ES220-WMNN-T: Gigabit Ethernet; P: PoE
+
+
+<div style="page-break-after: always;"></div>
+
 
 ## <span style="color: green;">Product Models</span>
 

@@ -165,9 +165,9 @@
 
 <table style="width:100%; table-layout:fixed;">
   <colgroup>
-    <col style="width:32%;">
-    <col style="width:12%;">
-    <col style="width:56%;">
+    <col style="width:26%;">
+    <col style="width:15%;">
+    <col style="width:59%;">
   </colgroup>
   <tr><th>Model</th><th>Region</th><th>Specification</th></tr>
   <tr><td style="white-space: nowrap;">ER2000-PLUS</td><td>Global</td><td>Throughput: 6 Gbps;<br> VPN throughput: 1 Gbps;<br> 500+ branch site connections, 1000+ client connections;<br> WAN: 1 × 10G SFP+ + 1 × GbE SFP + 2 × GbE RJ45 (PoE);<br> LAN: 2 × 10G SFP+ + 2 × GbE Combo + 8 × GbE RJ45 (PoE)</td></tr>

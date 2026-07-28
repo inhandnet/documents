@@ -154,6 +154,10 @@
 
 \<S\>: Serial Port Type
 
+
+<div style="page-break-after: always;"></div>
+
+
 ## <span style="color: green;">Product Models</span>
 
 <table style="width:100%; table-layout:fixed; font-size:11px;">

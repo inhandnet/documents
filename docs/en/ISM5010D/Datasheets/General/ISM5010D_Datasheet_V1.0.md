@@ -68,6 +68,10 @@
   </div>
 </div>
 
+
+<div style="page-break-after: always;"></div>
+
+
 # <span style="color: green;">3. Technical Specifications</span>
 
 ## <span style="color: green;">3.1 Protocol Compliance List</span>
@@ -162,7 +166,7 @@
 | Warranty Period | 5 years |
 | MTBF | 35 years |
 
-<div style="page-break-after: always;"></div>
+
 
 # <span style="color: green;">4. Software Specifications</span>
 

@@ -138,7 +138,6 @@
 - Isolation: 3000VDC
 
 
-<div style="page-break-after: always;"></div>
 
 
 # <span style="color: green;">3. Hardware Specifications</span>

@@ -115,7 +115,6 @@ Users can use the DIP switch on the device panel to enable/disable Quality of Se
 | Broadcast Storm Protection (BSP) – On | Enables broadcast storm protection for all ports (allows max 200 broadcast packets per second) |
 | Broadcast Storm Protection (BSP) – Off | Disables the broadcast storm protection function |
 
-<div style="page-break-after: always;"></div>
 
 # <span style="color: green;">4. Ordering Guide</span>
 

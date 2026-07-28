@@ -126,8 +126,6 @@
 
 
 
-<div style="page-break-after: always;"></div>
-
 
 # <span style="color: green;">4. Software Specifications</span>
 
@@ -159,6 +157,10 @@
 \<A\>: Reserved
 
 \<S\>: Serial Port Type
+
+
+<div style="page-break-after: always;"></div>
+
 
 ## <span style="color: green;">Product Models</span>
 

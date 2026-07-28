@@ -173,9 +173,9 @@
 
 ## <span style="color: green;">Model Code</span>
 
-**Model code:** ODU2002-\u003cWMNN\u003e
+**Model code:** ODU2002-\WMNN\
 
-\u003cWMNN\u003e: Type & Module
+\WMNN\: Type & Module
 
 ## <span style="color: green;">Product Models</span>
 

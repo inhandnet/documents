@@ -72,14 +72,14 @@
     <img src="三图/侧视图.png" alt="Front View" style="width: 100%; max-height: 220px; object-fit: contain; display: block; margin: 0 auto;"/>
     <div style="width: 100%; text-align: center; font-size: 12px;">Side View</div>
   </div>
-  <div style="width: 100%;">
+</div>
+<div style="width: 100%;">
     <div>Note:</div>
     <div>1. All dimensions are in millimeters (mm), with inches (in) in parentheses.</div>
     <div>2. Dimensions (L × W × H): 210 × 140 × 35 mm (8.27 × 5.51 × 1.38 in).</div>
     <div>3. All dimensions are approximate, <span style="font-weight: bold;">for reference only</span>.</div>
     <div>4. Dimensions shown <span style="font-weight: bold;">shall not be used for production</span>.</div>
   </div>
-</div>
 
 
 # <span style="color: green;">3. Hardware Specifications</span>

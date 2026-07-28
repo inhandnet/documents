@@ -68,6 +68,10 @@
   </div>
 </div>
 
+
+<div style="page-break-after: always;"></div>
+
+
 # <span style="color: green;">3. Hardware Specifications</span>
 
 | Category/Parameter | Specification |

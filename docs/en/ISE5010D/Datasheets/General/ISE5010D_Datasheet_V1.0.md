@@ -99,7 +99,6 @@
 | Warranty Period | 5 years |
 | MTBF | 35 years |
 
-<div style="page-break-after: always;"></div>
 
 # <span style="color: green;">4. Ordering Guide</span>
 

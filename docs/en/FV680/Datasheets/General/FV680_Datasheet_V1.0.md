@@ -126,8 +126,6 @@
 | Decision Support | Data-driven decisions for smarter retail operations |
 
 
-<div style="page-break-after: always;"></div>
-
 
 # <span style="color: green;">5. Ordering Information</span>
 

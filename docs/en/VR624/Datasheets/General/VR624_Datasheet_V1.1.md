@@ -79,7 +79,7 @@ The VR624 is a robust 5G router engineered for in-vehicle networking, featuring 
 <div align="center">
 <img src="./images/VR624 Dimensions.png" alt="VR624 Dimensions" style="zoom:50%;"/>
 </div>
-**Note:**
+Note:
 
 1. All dimensions are in millimeters (mm), with inches (in) in parentheses.
 2. Dimensions (L × W × H): 177 × 144.4 × 42 mm (6.97 × 5.69 × 1.65 in).
@@ -108,6 +108,10 @@ Each vehicle is equipped with one VR624 router in a standard configuration:
 | SIM Cards | 1 | Dual Nano-SIM with failover support |
 | Power Supply | 1 | DC 9-48V input with protection |
 | Ethernet Connections | Up to 4 | M12 X-code connectors for in-vehicle devices |
+
+
+<div style="page-break-after: always;"></div>
+
 
 # <span style="color: #3eb044;">3. Hardware Specifications</span>
 ## <span style="color: #3eb044;">3.1 Hardware Overview</span>
@@ -186,7 +190,6 @@ Each vehicle is equipped with one VR624 router in a standard configuration:
 | **Multi-Constellation GNSS** | GPS + BDS + Galileo + GLONASS + QZSS for global positioning |
 | **Fanless Cooling** | No moving parts for enhanced reliability and maintenance-free operation |
 
-<div style="page-break-after: always;"></div>
 
 
 # <span style="color: #3eb044;">4. Software Features</span>
@@ -203,6 +206,10 @@ Each vehicle is equipped with one VR624 router in a standard configuration:
 | **DNS Services** | DNS proxy, DNS filtering, custom DNS servers |
 | **DDNS** | Dynamic DNS, multi-provider support |
 
+
+<div style="page-break-after: always;"></div>
+
+
 ## <span style="color: #3eb044;">4.2 Network Security</span>
 | Security Feature | Description |
 | :--- | :--- |
@@ -213,7 +220,7 @@ Each vehicle is equipped with one VR624 router in a standard configuration:
 | **TPM 2.0** | Trusted Platform Module for hardware-level encryption |
 | **Traffic Shaping (QoS)** | Interface-level bandwidth control, queue-based traffic management |
 
-<div style="page-break-after: always;"></div>
+
 
 ## <span style="color: #3eb044;">4.3 Link Management & Backup</span>
 **Interface Backup**
@@ -260,6 +267,10 @@ Each vehicle is equipped with one VR624 router in a standard configuration:
 **Transparent Transmission**
 - TCP/UDP transparent transmission mode
 - Modbus RTU to Modbus TCP bridge conversion
+
+
+<div style="page-break-after: always;"></div>
+
 
 ## <span style="color: #3eb044;">4.6 System Management</span>
 **Dashboard**
@@ -309,7 +320,7 @@ Each vehicle is equipped with one VR624 router in a standard configuration:
 - Geofencing alerts
 - Historical route playback
 
-<div style="page-break-after: always;"></div>
+
 
 
 # <span style="color: #3eb044;">5. Cloud Management & Fleet Operations</span>
@@ -331,10 +342,23 @@ VR624 integrates seamlessly with InHand Networks DeviceLive IoT device managemen
 
 # <span style="color: #3eb044;">6. Ordering Guide</span>
 ## <span style="color: #3eb044;">6.1 Model Code Structure</span>
-| Model          |                                                              | Region     |
-| :------------- | :----------------------------------------------------------- | ---------- |
-| **VR624-GLNR** | **5G NR NSA** n1/2/3/5/7/8/12/13/14/18/20/25/26/28/29/30/38/40/41/48/66/<br/>70/71/75/76/77/78/79<br>**5G NR SA** n1/2/3/5/7/8/12/13/14/18/20/25/26/28/29/30/38/40/41/48/66/<br/>70/71/75/76/77/78/79 <br>**LTE FDD** B1/2/3/4/5/7/8/12/13/14/17/18/19/20/25/26/28/29/30/32/66/71<br>**LTE TDD** B34/38/39/40/41/42/43/48<br>**LTE LAA** B46 **WCDMA **B1/2/4/5/8/19 | **Global** |
-| **VR624-GLC6** | **LTE-FDD** B1/2/3/4/5/7/8/12/13/14/17/18/19/20/25/26/28/29/30/32/66/71<br>**LTE-TDD** B34/38/39/40/41/42/43/46(LAA)/48(CBRS)<br>**WCDMA** B1/2/3/4/5/6/8/19 | **Global** |
+<table>
+  <tr>
+    <th style="width: 160px; white-space: nowrap;">Model</th>
+    <th></th>
+    <th style="width: 80px; white-space: nowrap;">Region</th>
+  </tr>
+  <tr>
+    <td style="width: 160px; white-space: nowrap;"><strong>VR624-GLNR</strong></td>
+    <td><strong>5G NR NSA</strong> n1/2/3/5/7/8/12/13/14/18/20/25/26/28/29/30/38/40/41/48/66/<br/>70/71/75/76/77/78/79<br/><strong>5G NR SA</strong> n1/2/3/5/7/8/12/13/14/18/20/25/26/28/29/30/38/40/41/48/66/<br/>70/71/75/76/77/78/79<br/><strong>LTE FDD</strong> B1/2/3/4/5/7/8/12/13/14/17/18/19/20/25/26/28/29/30/32/66/71<br/><strong>LTE TDD</strong> B34/38/39/40/41/42/43/48<br/><strong>LTE LAA</strong> B46 <strong>WCDMA</strong> B1/2/4/5/8/19</td>
+    <td style="white-space: nowrap;"><strong>Global</strong></td>
+  </tr>
+  <tr>
+    <td style="width: 160px; white-space: nowrap;"><strong>VR624-GLC6</strong></td>
+    <td><strong>LTE-FDD</strong> B1/2/3/4/5/7/8/12/13/14/17/18/19/20/25/26/28/29/30/32/66/71<br/><strong>LTE-TDD</strong> B34/38/39/40/41/42/43/46(LAA)/48(CBRS)<br/><strong>WCDMA</strong> B1/2/3/4/5/6/8/19</td>
+    <td style="white-space: nowrap;"><strong>Global</strong></td>
+  </tr>
+</table>
 
 ## <span style="color: #3eb044;">6.2 Package Contents</span>
 **Standard Package**

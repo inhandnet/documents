@@ -190,6 +190,10 @@
   <tr><td style="white-space: nowrap;">IR624-LQ20-&lt;WLAN/NA&gt;-S</td><td>China (4G Cat.4)</td><td>FDD B1/3/5/8; TDD B34/38/39/40/41; WCDMA B1/5/8; GSM/EDGE B3/8</td><td>WLAN or NA</td><td>S</td></tr>
 </table>
 
+
+<div style="page-break-after: always;"></div>
+
+
 # <span style="color: green;">6. Contact Us</span>
 
 - **Website:** [InHand Networks](https://www.inhand.com)

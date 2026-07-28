@@ -25,6 +25,7 @@
   - [Scenario 4: VPN Configuration](CPE02/Manuals/User%20manual/CPE02_User%20manual_V1.0.md#scenario-4-vpn-configuration)
   - [Scenario 5: Cloud Platform Management](CPE02/Manuals/User%20manual/CPE02_User%20manual_V1.0.md#scenario-5-cloud-platform-management)
 - [CPE02 Datasheet v1.0](CPE02/Datasheets/General/CPE02_Datasheet_V1.0.md): CPE02 Datasheet v1.0 — Simple Connectivity, Convenient Life
+- [Test file - will not be validated](CPE02/Datasheets/General/special/README.md): CPE02 Datasheet
 - [CPE02 Certifications](CPE02/certifications.md): CPE02 certification list (CE, EN18031, FCC, IC, PTCRB) with links to the original certificate files
 - [CPE02 Drawings](CPE02/drawings.md): CPE02 mechanical drawings (2D, 3D) with links to the original drawing files
 

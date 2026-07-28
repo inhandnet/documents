@@ -44,7 +44,7 @@ def get_api_config(lang: str) -> dict:
 
 # Excluded files
 EXCLUDED_FILES = {".gitkeep", "index.md"}
-EXCLUDED_DIRS = {"img", "images", "assets", "javascripts", "stylesheets", "special"}
+EXCLUDED_DIRS = {"img", "images", "assets", "javascripts", "stylesheets"}
 
 
 def get_git_commit_id() -> Optional[str]:
@@ -177,6 +177,12 @@ def normalize_path(file_path: Path) -> Optional[str]:
     if any(p.lower() == "datasheets" for p in parts) and ext != ".pdf":
         return None
 
+    # Datasheets/special/: skip regardless of file type
+    # Used for files synced from sub-repo that should just sit in the repo
+    lower_parts = [p.lower() for p in parts]
+    if "datasheets" in lower_parts and "special" in lower_parts:
+        return None
+
     # Join remaining parts (remove docs/ and language prefix)
     return "/".join(parts[2:])
 
@@ -253,6 +259,9 @@ def forbid_files(file_list: List[Path]) -> bool:
                     continue
                 # Datasheets directory: only PDF files go through forbid
                 if any(p.lower() == "datasheets" for p in parts) and ext != ".pdf":
+                    continue
+                # Datasheets/special/: skip regardless of file type
+                if "datasheets" in [p.lower() for p in parts] and "special" in [p.lower() for p in parts]:
                     continue
                 # Remove lang prefix: FWA02-NAVA/FAQ/xxx.md (without zh/)
                 norm = "/".join(parts[2:])

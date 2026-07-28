@@ -253,6 +253,9 @@ def _should_upload(file_path: Path) -> bool:
     # 排除 Manuals 目录下的所有文件
     if any(p.lower() == "manuals" for p in file_path.parts):
         return False
+    # 排除 special 目录：用于存放不走校验/上传的附属文件
+    if any(p.lower() == "special" for p in file_path.parts):
+        return False
     # 排除 Use Cases（方案）目录：PowerIS 无 product.use.cases 类目
     # （会返回 "No Provider for product.use.cases" 404）；方案内容
     # （md 页面 + 示例配置文件）随文档站发布，不进 PLM 云存储。

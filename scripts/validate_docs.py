@@ -44,7 +44,7 @@ def get_api_config(lang: str) -> dict:
 
 # Excluded files
 EXCLUDED_FILES = {".gitkeep", "index.md"}
-EXCLUDED_DIRS = {"img", "images", "assets", "javascripts", "stylesheets"}
+EXCLUDED_DIRS = {"img", "images", "assets", "javascripts", "stylesheets", "special"}
 
 
 def get_git_commit_id() -> Optional[str]:

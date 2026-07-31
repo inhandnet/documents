@@ -266,7 +266,6 @@
   <tr><td style="white-space: nowrap;">IG502-FQ58-D485-IO-W-G</td><td>EMEA</td><td>Cat.4; LTE-FDD B1/B3/B7/B8/B20/B28A; WCDMA B1/B8; GSM B3/B8</td><td>D485</td><td>IO</td><td>W</td><td>G</td></tr>
   <tr><td style="white-space: nowrap;">IG502-FQ58-TH</td><td>Thailand</td><td>Cat.4; LTE-FDD B1/B3/B7/B8/B20; WCDMA B1/B8; GSM B3/B8</td><td>S</td><td>NA</td><td>NA</td><td>NA</td></tr>
   <tr><td style="white-space: nowrap;">IG502-FQ58-IO-TH</td><td>Thailand</td><td>Cat.4; LTE-FDD B1/B3/B7/B8/B20; WCDMA B1/B8; GSM B3/B8</td><td>S</td><td>IO</td><td>NA</td><td>NA</td></tr>
-  <tr><td style="white-space: nowrap;">IG502-FQ58-W-G-TH</td><td>Thailand</td><td>Cat.4; LTE-FDD B1/B3/B7/B8/B20; WCDMA B1/B8; GSM B3/B8</td><td>S</td><td>NA</td><td>W</td><td>G</td></tr>
   <tr><td style="white-space: nowrap;">IG502-FQ58-IO-W-G-TH</td><td>Thailand</td><td>Cat.4; LTE-FDD B1/B3/B7/B8/B20; WCDMA B1/B8; GSM B3/B8</td><td>S</td><td>IO</td><td>W</td><td>G</td></tr>
   <tr><td style="white-space: nowrap;">IG502-FQ58-D485-IO-W-G-TH</td><td>Thailand</td><td>Cat.4; LTE-FDD B1/B3/B7/B8/B20; WCDMA B1/B8; GSM B3/B8</td><td>D485</td><td>IO</td><td>W</td><td>G</td></tr>
   <tr><td style="white-space: nowrap;">IG502-FQ78</td><td>Australia & Latin America</td><td>Cat.4; LTE-FDD B1/B2/B3/B4/B5/B7/B8/B28; LTE-TDD B40; UMTS B1/B2/B5/B8; GSM 850/900/1800/1900</td><td>S</td><td>NA</td><td>NA</td><td>NA</td></tr>

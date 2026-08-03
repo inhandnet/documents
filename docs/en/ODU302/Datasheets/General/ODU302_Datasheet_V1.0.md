@@ -1,4 +1,4 @@
-<div style="width: 100%;height: 100%;background: url(images/cover_bg.png); background-size: 100% 100%;">
+<div style="width: 100%;height: 100%;background: url(四图/ODU302.jpg); background-size: 100% 100%;">
   <div style="height:75%;">
     <div style="width:35%; padding: 40px 40px">
       <img src="images/logo.png" alt="logo" />
@@ -43,6 +43,10 @@ The ODU302 is a fully integrated 4G industrial outdoor router that combines a hi
 | **Cloud-Managed** | InHand Device Manager for remote monitoring, configuration, and OTA firmware upgrades |
 | **Built for Outdoors** | IP65 protection, -20 °C ~ +70 °C operating range |
 
+
+<div style="page-break-after: always;"></div>
+
+
 ## <span style="color: green;">Typical Application Scenarios</span>
 
 ### <span style="color: green;">Financial Self-Service (ATM)</span>
@@ -56,6 +60,10 @@ Fast rollout, vandal-resistant placement, and minimal internal cable clutter. On
 
 ### <span style="color: green;">Industrial Control (Outdoor Cabinets)</span>
 Multiple penetrations for power, Ethernet, and coax create sealing complexity. The ODU302 needs only one Ethernet drop into the cabinet, plus 2× configurable digital I/O for signal acquisition and control.
+
+
+<div style="page-break-after: always;"></div>
+
 
 ## <span style="color: green;">Product Dimensions</span>
 
@@ -76,7 +84,7 @@ Multiple penetrations for power, Ethernet, and coax create sealing complexity. T
     <img src="images/back_view.png" alt="Back View" style="width: 100%; max-height: 250px; object-fit: contain; display: block; margin: 0 auto;"/>
     <div style="width: 100%; text-align: center; font-size: 14px;">Back View</div>
   </div>
-  <div style="width: 45%;">
+  <div style="width: 90%;">
     <div>Notes:</div>
     <div>1. All dimensions are in millimeters (mm), with inches (in) in parentheses.</div>
     <div>2. Dimensions (L × W × H): 164 × 50 × 129.7 mm (6.46 × 1.97 × 5.11 in).</div>
@@ -102,6 +110,10 @@ The ODU302 accepts IEEE 802.3af PoE input. From the top-mounted unit to the cabi
 
 ## <span style="color: green;">Innovation 4: Built for Demanding Outdoor Environments</span>
 The IP65 enclosure is rated against dust ingress and high-pressure water jets, with an operating temperature range of -20 °C to +70 °C. Tested to IEC 60068-2-27 shock, IEC 60068-2-6 vibration, and EN 61000-4-x EMC Level 2. The unit installs directly on top of the equipment with full outdoor exposure — no extra hood required for standard rain and dust.
+
+
+<div style="page-break-after: always;"></div>
+
 
 ## <span style="color: green;">Innovation 5: Proven IR302 Software Platform</span>
 ODU302 runs the same software stack as the field-proven InRouter302. Dual-SIM failover, enterprise firewall, VPN, link backup, digital I/O, and InHand Device Manager cloud management — all carried over with zero learning curve. Existing IR302 customers can migrate their configurations and workflows seamlessly.
@@ -167,6 +179,10 @@ ODU302 runs the same software stack as the field-proven InRouter302. Dual-SIM fa
 | Left | IO1 (DI/DO1, configurable) | GND |
 | Right | IO2 (DI/DO2, configurable) | DC 9–36 V Input (Positive) |
 
+
+<div style="page-break-after: always;"></div>
+
+
 ## <span style="color: green;">3.3 Environment & Reliability</span>
 
 | Test Item | Standard | Level/Result |
@@ -182,7 +198,7 @@ ODU302 runs the same software stack as the field-proven InRouter302. Dual-SIM fa
 | **Vibration** | IEC 60068-2-6 | Compliant |
 | **Free Fall** | IEC 60068-2-32 | Compliant |
 
-<div style="page-break-after: always;"></div>
+
 
 
 # <span style="color: green;">4. Network Connectivity</span>
@@ -194,6 +210,10 @@ ODU302 runs the same software stack as the field-proven InRouter302. Dual-SIM fa
 - **Authentication:** CHAP/PAP
 - **Connection Modes:** Always-on, on-demand, manual dial
 - **Activation:** Data trigger, SMS trigger
+
+
+<div style="page-break-after: always;"></div>
+
 
 ## <span style="color: green;">4.2 SIM Management</span>
 
@@ -300,7 +320,6 @@ ODU302 runs the same software stack as the field-proven InRouter302. Dual-SIM fa
 - **Bridge Mode:** WAN/dial-up IP pass-through to downstream device
 - **Flexible Configuration:** Passthrough mode on dial-up and WAN ports
 
-<div style="page-break-after: always;"></div>
 
 
 # <span style="color: green;">8. Cloud Management & Operations</span>
@@ -318,6 +337,10 @@ The ODU302 is powered by the InHand Device Manager cloud management platform, en
 | **Traffic Management** | Traffic thresholds, statistics, and alarms |
 | **Alert Types** | System reboot, LAN port up/down, traffic alarm, SIM card fault |
 | **Notification** | Email alerts (configurable) |
+
+
+<div style="page-break-after: always;"></div>
+
 
 
 # <span style="color: green;">9. System Management & Maintenance</span>
@@ -345,6 +368,10 @@ The ODU302 is powered by the InHand Device Manager cloud management platform, en
 - **Dial-on-Demand:** On-demand dial; data/SMS activation
 - **Status Query:** System status, modem status, network connection status, routing status
 - **Scheduled Maintenance:** NTP time synchronization; auto-recovery on fault (built-in watchdog)
+
+
+<div style="page-break-after: always;"></div>
+
 
 
 # <span style="color: green;">10. Ordering Information</span>
@@ -375,8 +402,6 @@ The ODU302 is powered by the InHand Device Manager cloud management platform, en
 - Mounting kit (wall/pole/top-mount) × 1
 - Quick Start Guide × 1
 
-<div style="page-break-after: always;"></div>
-
 
 # <span style="color: green;">11. Reliability Standards & Certifications</span>
 
@@ -391,6 +416,10 @@ The ODU302 is powered by the InHand Device Manager cloud management platform, en
 | Shock | IEC 60068-2-27 |
 | Vibration | IEC 60068-2-6 |
 | Free Fall | IEC 60068-2-32 |
+
+
+<div style="page-break-after: always;"></div>
+
 
 ## <span style="color: green;">11.3 EMC Immunity</span>
 
@@ -416,6 +445,10 @@ The ODU302 is powered by the InHand Device Manager cloud management platform, en
 | T-Mobile | Completed |
 
 > Note: Certification status is current as of publication. Check with InHand sales for the latest updates.
+
+
+
+<div style="page-break-after: always;"></div>
 
 
 # <span style="color: green;">12. Contact Us</span>

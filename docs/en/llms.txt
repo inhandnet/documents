@@ -692,22 +692,18 @@
 ## ISE2008D
 
 - [ISE2008D Datasheet v1.0](ISE2008D/Datasheets/General/ISE2008D_Datasheet_V1.0.md): ISE2008D Datasheet v1.0 — Simple, highly reliable network communication system
-- [ISE2008D Certifications](ISE2008D/certifications.md): ISE2008D certification list (CE) with links to the original certificate files
 
 ## ISE2016D
 
 - [ISE2016D Datasheet v1.0](ISE2016D/Datasheets/General/ISE2016D_Datasheet_V1.0.md): ISE2016D Datasheet v1.0 — Simple, highly reliable network communication system
-- [ISE2016D Certifications](ISE2016D/certifications.md): ISE2016D certification list (UL) with links to the original certificate files
 
 ## ISE3018D
 
 - [ISE3018D Datasheet v1.0](ISE3018D/Datasheets/General/ISE3018D_Datasheet_V1.0.md): ISE3018D Datasheet v1.0 — Simple, Highly Reliable Industrial Network Communication
-- [ISE3018D Certifications](ISE3018D/certifications.md): ISE3018D certification list (UL) with links to the original certificate files
 
 ## ISE5005D
 
 - [ISE5005D Datasheet v1.0](ISE5005D/Datasheets/General/ISE5005D_Datasheet_V1.0.md): ISE5005D Datasheet v1.0 — Simple, highly reliable network communication system
-- [ISE5005D Certifications](ISE5005D/certifications.md): ISE5005D certification list (UL) with links to the original certificate files
 
 ## ISE5006D
 
@@ -753,12 +749,10 @@
 ## ISM5012D
 
 - [ISM5012D Datasheet v1.0](ISM5012D/Datasheets/General/ISM5012D_Datasheet_V1.0.md): ISM5012D Datasheet v1.0 — Build advanced and highly reliable industrial Ethernet communication system
-- [ISM5012D Certifications](ISM5012D/certifications.md): ISM5012D certification list (CE, UL) with links to the original certificate files
 
 ## ISM5020D
 
 - [ISM5020D Datasheet v1.0](ISM5020D/Datasheets/General/ISM5020D_Datasheet_V1.0.md): ISM5020D Datasheet v1.0 — Build advanced and highly reliable industrial Ethernet communication system
-- [ISM5020D Certifications](ISM5020D/certifications.md): ISM5020D certification list (CE) with links to the original certificate files
 
 ## ISM5026U-P
 
@@ -779,7 +773,6 @@
 ## ISM7028U-P
 
 - [ISM7028U-P Datasheet v1.0](ISM7028U-P/Datasheets/General/ISM7028U-P_Datasheet_V1.0.md): ISM7028U-P Datasheet v1.0 — Build advanced and highly reliable industrial Ethernet communication system
-- [ISM7028U-P Certifications](ISM7028U-P/certifications.md): ISM7028U-P certification list (CE) with links to the original certificate files
 
 ## ISM7312D
 

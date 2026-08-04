@@ -354,65 +354,9 @@ hide:
     </div>
     <div class="pm-card">
       <div class="pm-card__body">
-        <div class="pm-card__title">ISE2008D</div>
-        <ul class="pm-card__links">
-        <li><a href="ISE2008D/certifications.html" title="ISE2008D Certifications">Certifications</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="pm-card">
-      <div class="pm-card__body">
-        <div class="pm-card__title">ISE2016D</div>
-        <ul class="pm-card__links">
-        <li><a href="ISE2016D/certifications.html" title="ISE2016D Certifications">Certifications</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="pm-card">
-      <div class="pm-card__body">
-        <div class="pm-card__title">ISE3018D</div>
-        <ul class="pm-card__links">
-        <li><a href="ISE3018D/certifications.html" title="ISE3018D Certifications">Certifications</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="pm-card">
-      <div class="pm-card__body">
-        <div class="pm-card__title">ISE5005D</div>
-        <ul class="pm-card__links">
-        <li><a href="ISE5005D/certifications.html" title="ISE5005D Certifications">Certifications</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="pm-card">
-      <div class="pm-card__body">
         <div class="pm-card__title">ISM managed</div>
         <ul class="pm-card__links">
         <li><a href="ISM%20managed/Manuals/User%20manual/ISM%20managed_User%20manual_V1.0.html" title="ISM managed User manual v1.0">User manual V1.0</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="pm-card">
-      <div class="pm-card__body">
-        <div class="pm-card__title">ISM5012D</div>
-        <ul class="pm-card__links">
-        <li><a href="ISM5012D/certifications.html" title="ISM5012D Certifications">Certifications</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="pm-card">
-      <div class="pm-card__body">
-        <div class="pm-card__title">ISM5020D</div>
-        <ul class="pm-card__links">
-        <li><a href="ISM5020D/certifications.html" title="ISM5020D Certifications">Certifications</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="pm-card">
-      <div class="pm-card__body">
-        <div class="pm-card__title">ISM7028U-P</div>
-        <ul class="pm-card__links">
-        <li><a href="ISM7028U-P/certifications.html" title="ISM7028U-P Certifications">Certifications</a></li>
         </ul>
       </div>
     </div>

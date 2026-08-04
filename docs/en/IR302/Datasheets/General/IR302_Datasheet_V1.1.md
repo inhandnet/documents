@@ -316,7 +316,7 @@ The IR302 adopts a fanless cooling design, supports wide temperature and wide vo
 ## <span style="color: green;">8.1 Model Naming Convention</span>
 
 ```
-IR302 - [4G Module] - [Wi-Fi] - [Other Options]
+IR302 - [4G Module] - [Wi-Fi] - [IO/S] - [L]
 ```
 
 | Field | Code | Description |
@@ -347,14 +347,24 @@ IR302 - [4G Module] - [Wi-Fi] - [Other Options]
     <col style="width:40%;">
   </colgroup>
   <tr><th>Model</th><th>4G</th><th>Wi-Fi</th><th>Serial/IO</th><th>Description</th></tr>
-  <tr><td style="white-space: nowrap;">IR302-LQ28-WLAN-S</td><td>✓</td><td>✓</td><td>1×RS-232</td><td>China (LTE Cat.4)</td></tr>
-  <tr><td style="white-space: nowrap;">IR302-LQ28-S</td><td>✓</td><td>—</td><td>1×RS-232</td><td>China, no Wi-Fi</td></tr>
+  <tr><td style="white-space: nowrap;">IR302-LQ28-WLAN-S-L</td><td>✓</td><td>✓</td><td>1×RS-232</td><td>China (LTE Cat.4)</td></tr>
+  <tr><td style="white-space: nowrap;">IR302-LQ28-S-L</td><td>✓</td><td>—</td><td>1×RS-232</td><td>China, no Wi-Fi</td></tr>
   <tr><td style="white-space: nowrap;">IR302-FQ58-WLAN-S</td><td>✓</td><td>✓</td><td>1×RS-232</td><td>Europe/APAC/Australia (LTE Cat.4)</td></tr>
   <tr><td style="white-space: nowrap;">IR302-FQ58-WLAN-IO</td><td>✓</td><td>✓</td><td>2×IO</td><td>Europe/APAC/Australia (LTE Cat.4)</td></tr>
   <tr><td style="white-space: nowrap;">IR302-FQ58-S</td><td>✓</td><td>—</td><td>1×RS-232</td><td>Europe/APAC/Australia, no Wi-Fi</td></tr>
   <tr><td style="white-space: nowrap;">IR302-FQ58-IO</td><td>✓</td><td>—</td><td>2×IO</td><td>Europe/APAC/Australia, no Wi-Fi</td></tr>
+  <tr><td style="white-space: nowrap;">IR302-FQ58-WLAN-S-L</td><td>✓</td><td>✓</td><td>1×RS-232</td><td>Europe/APAC/Australia (LTE Cat.4)</td></tr>
+  <tr><td style="white-space: nowrap;">IR302-FQ58-WLAN-IO-L</td><td>✓</td><td>✓</td><td>2×IO</td><td>Europe/APAC/Australia (LTE Cat.4)</td></tr>
+  <tr><td style="white-space: nowrap;">IR302-FQ58-S-L</td><td>✓</td><td>—</td><td>1×RS-232</td><td>Europe/APAC/Australia, no Wi-Fi</td></tr>
+  <tr><td style="white-space: nowrap;">IR302-FQ58-IO-L</td><td>✓</td><td>—</td><td>2×IO</td><td>Europe/APAC/Australia, no Wi-Fi</td></tr>
   <tr><td style="white-space: nowrap;">IR302-FQ53-WLAN</td><td>✓</td><td>✓</td><td>—</td><td>Europe/Middle East/Africa (LTE Cat.1), no serial/IO</td></tr>
   <tr><td style="white-space: nowrap;">IR302-FQ53</td><td>✓</td><td>—</td><td>—</td><td>Europe/Middle East/Africa (LTE Cat.1), no Wi-Fi, no serial/IO</td></tr>
+  <tr><td style="white-space: nowrap;">IR302-FQ53-WLAN-S</td><td>✓</td><td>✓</td><td>1×RS-232</td><td>Europe/Middle East/Africa (LTE Cat.1)</td></tr>
+  <tr><td style="white-space: nowrap;">IR302-FQ53-WLAN-IO</td><td>✓</td><td>✓</td><td>2×IO</td><td>Europe/Middle East/Africa (LTE Cat.1)</td></tr>
+  <tr><td style="white-space: nowrap;">IR302-FQ53-WLAN-L</td><td>✓</td><td>✓</td><td>—</td><td>Europe/Middle East/Africa (LTE Cat.1), no serial/IO</td></tr>
+  <tr><td style="white-space: nowrap;">IR302-FQ53-L</td><td>✓</td><td>—</td><td>—</td><td>Europe/Middle East/Africa (LTE Cat.1), no Wi-Fi, no serial/IO</td></tr>
+  <tr><td style="white-space: nowrap;">IR302-FQ53-WLAN-S-L</td><td>✓</td><td>✓</td><td>1×RS-232</td><td>Europe/Middle East/Africa (LTE Cat.1)</td></tr>
+  <tr><td style="white-space: nowrap;">IR302-FQ53-WLAN-IO-L</td><td>✓</td><td>✓</td><td>2×IO</td><td>Europe/Middle East/Africa (LTE Cat.1)</td></tr>
   <tr><td style="white-space: nowrap;">IR302-FQ38-WLAN-S</td><td>✓</td><td>✓</td><td>1×RS-232</td><td>North America (LTE Cat.4)</td></tr>
   <tr><td style="white-space: nowrap;">IR302-FQ38-WLAN-IO</td><td>✓</td><td>✓</td><td>2×IO</td><td>North America (LTE Cat.4)</td></tr>
   <tr><td style="white-space: nowrap;">IR302-FQ38-S</td><td>✓</td><td>—</td><td>1×RS-232</td><td>North America (LTE Cat.4), no Wi-Fi</td></tr>

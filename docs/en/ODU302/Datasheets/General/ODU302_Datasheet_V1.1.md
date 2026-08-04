@@ -4,21 +4,21 @@
       <img src="images/logo.png" alt="logo" />
     </div>
     <div style="font-size: 28px; font-weight: bold; color:#000;text-align: center; margin-bottom: 60px;">
-      Flexible Deployment, Reliable Connectivity
+      All-in-One. No External Antenna.
     </div>
   </div>
   <div style="padding-left: 40px;">
     <div style="font-size: 40px; font-weight: bold; color:#000;margin-bottom: 30px;">
-      ODU302 4G Outdoor Router
+      ODU302 4G Industrial Outdoor Router
     </div>
     <div style="text-align: center;">
       <div style="display: flex; flex-wrap: wrap; gap: 16px; ">
         <div style="width: 200px;background-color: #4CAF50; color: white; padding: 8px 8px; border-radius: 6px; font-size: 18px;">· 4G LTE</div>
-        <div style="width: 200px;background-color: #4CAF50; color: white; padding: 8px 8px; border-radius: 6px; font-size: 18px;">· Wi-Fi</div>
+        <div style="width: 200px;background-color: #4CAF50; color: white; padding: 8px 8px; border-radius: 6px; font-size: 18px;">· All-in-One</div>
       </div>
       <div style="display: flex; flex-wrap: wrap; gap: 16px;margin-top:16px">
-        <div style="width: 200px;background-color: #4CAF50; color: white; padding: 8px 8px; border-radius: 6px; font-size: 18px;">· IP65 Rated</div>
-        <div style="width: 200px;background-color: #4CAF50; color: white; padding: 8px 8px; border-radius: 6px; font-size: 18px; ">· Cloud Managed</div>
+        <div style="width: 200px;background-color: #4CAF50; color: white; padding: 8px 8px; border-radius: 6px; font-size: 18px;">· Outdoor IP65</div>
+        <div style="width: 200px;background-color: #4CAF50; color: white; padding: 8px 8px; border-radius: 6px; font-size: 18px; ">· Link Backup</div>
       </div>
     </div>
   </div>
@@ -29,35 +29,37 @@
 
 # <span style="color: green;">1. Product Overview</span>
 
-The ODU302 is an all-in-one outdoor cellular router that combines field-proven reliability with a clean, modern design. Its smooth, streamlined enclosure fully houses all antennas, doing away with the clutter of external antennas for a neat, coordinated appearance that blends naturally into a wide range of outdoor commercial settings and open areas. The device integrates 4G cellular WAN, 2.4 GHz Wi-Fi LAN, dual wired Ethernet ports, multi-layer link redundancy, a full suite of encrypted VPNs, and unified cloud-based operations — delivering three core advantages: minimal on-site installation, reliable 24/7 operation in any weather, and large-scale batch deployment. Designed to address four key industry pain points — areas with no fixed broadband coverage, indoor cellular signal blockage, tight installation spaces, and the heavy burden of managing many distributed sites — the ODU302 is ideal for retail stores, self-service kiosks, warehouses and parks, outdoor surveillance, and small venues, providing a standardized all-in-one outdoor networking solution.
+The ODU302 is a fully integrated 4G industrial outdoor router that combines a high-performance router and high-gain antennas in one IP65 enclosure. Designed for ATMs, EV chargers, vending machines, and outdoor control cabinets, it mounts directly on top of equipment — eliminating the need for indoor routers, long coax feeders, and separate outdoor antennas. The ODU302 simplifies installation to a single Ethernet cable with PoE support, delivering enterprise-grade connectivity with minimal deployment complexity.
 
-## <span style="color: green;">Core Features</span>
+## <span style="color: green;">Key Features</span>
 
-- **4G High-Speed Access:** Supports 4G high-speed cellular access with built-in omnidirectional antennas for full, seamless signal coverage — greatly simplifying on-site deployment and ensuring a stable connection.
-- **Wi-Fi:** Supports IEEE 802.11 b/g/n for reliable wireless networking.
-- **Always Online:** Link backup, dual-SIM link switching, heartbeat monitoring, and a hardware watchdog keep communications uninterrupted.
-- **Secure & Trustworthy:** Enterprise-grade firewall and a full suite of mainstream VPN tunnel protocols meet compliance requirements for encrypted commercial and transaction data.
-- **Environmental Reliability:** IP65 all-weather protection and a wide operating range of -20 °C to +70 °C withstand scorching sun, extreme cold, dust, and rain.
-- **Cloud Managed:** Connects to the Device Manager cloud platform for bulk remote management and operations.
-- **Flexible Installation:** Compact and lightweight design supports wall, pole, and top mounting to suit every scenario.
-- **Dual Redundant Power:** Supports both IEEE 802.3af PoE power over Ethernet and DC 9–36 V wide-voltage terminal power.
+| Value Dimension | Description |
+| :--- | :--- |
+| **Router + Antenna Integrated** | One SKU, one top-mount installation — no separate outdoor antenna to source or match |
+| **Zero Feeder Loss** | RF module adjacent to the antenna eliminates coax attenuation for stronger 4G signal |
+| **PoE Single-Cable** | IEEE 802.3af PoE input delivers power and data over one Ethernet cable; DC 9–36 V also available |
+| **Dual SIM 4G LTE Redundancy** | Dual Nano SIM failover with intelligent switching for 24/7 uptime |
+| **Enterprise Security** | SPI firewall, ACL, IPsec, OpenVPN, WireGuard, ZeroTier |
+| **Cloud-Managed** | InHand Device Manager for remote monitoring, configuration, and OTA firmware upgrades |
+| **Built for Outdoors** | IP65 protection, -20 °C ~ +70 °C operating range |
+
+
+<div style="page-break-after: always;"></div>
+
 
 ## <span style="color: green;">Typical Application Scenarios</span>
 
-### <span style="color: green;">Small Parks & Public Amenities</span>
-Small parks and outdoor public facilities typically have many scattered sites, where running wired cabling everywhere is prohibitively expensive and operations require centralized remote management. The ODU302 supports wall, pole, and top mounting to flexibly adapt to building walls and poles across various deployment sites. Its multi-layer link redundancy keeps services online 24/7. Compatible with the InHand cloud management platform, it enables centralized monitoring, batch configuration, and unified firmware pushes for up to thousands of terminals — combined with VPN tunnels to build a private remote network, it fully meets the needs of centralized operations for large-scale, distributed sites.
+### <span style="color: green;">Financial Self-Service (ATM)</span>
+Limited cabinet space and long feeder runs degrade 4G signal. The ODU302 top-mount design frees the cabinet interior and delivers zero-feeder-loss RF performance for more stable transactions.
 
-### <span style="color: green;">Warehouses & Logistics Parks</span>
-Steel-framed warehouse buildings tend to block cellular signals, limiting indoor router speeds, while on-site scanners and surveillance equipment need a mix of wired and wireless networking. The device mounts on exterior walls, rooftops, or park poles, connecting to the 4G network through built-in omnidirectional antennas and providing stable connectivity to on-site devices via Ethernet and Wi-Fi.
+### <span style="color: green;">Smart Energy (EV Charging)</span>
+Outdoor exposure, waterproof wiring, and harsh climate are constant challenges. IP65 + wide-temp rating, PoE single-cable design, and Device Manager fleet ops keep charging networks online.
 
-### <span style="color: green;">Street Retail Stores</span>
-Many storefronts along the street lack fiber access. Indoor 4G routers often suffer signal attenuation from wall blockage, and traditional external-antenna solutions disrupt the storefront's overall appearance. The ODU302 features a sleek, streamlined body that blends seamlessly into its surroundings and supports discreet wall or pole mounting outdoors with no protruding external structure. PoE delivers power and data over a single cable, simplifying on-site installation. Combining high-speed 4G cellular with 2.4 GHz Wi-Fi, it simultaneously carries POS systems, surveillance cameras, and guest Wi-Fi. Its web-based visual management interface is easy to use, so stores don't need dedicated IT staff for maintenance.
+### <span style="color: green;">Self-Service Retail (Vending)</span>
+Fast rollout, vandal-resistant placement, and minimal internal cable clutter. One integrated unit means no separate outdoor antenna sourcing and reduced in-cabinet wiring.
 
-### <span style="color: green;">Outdoor Self-Service Kiosks</span>
-Outdoor terminals such as ATM kiosks and fuel dispensers have tight internal space. Traditional routers with external antennas take up valuable cabinet space and require additional cutouts and cabling. The ODU302 supports top mounting and is inherently IP65-rated for dust and water resistance, so it can be mounted directly on the outside of the equipment for a seamlessly integrated installation. Its built-in omnidirectional cellular antenna captures signals from all directions, ensuring stable, sustained network quality.
-
-### <span style="color: green;">Outdoor Security Surveillance</span>
-Outdoor surveillance points are typically deployed on exposed poles, where wired broadband is usually unavailable. Traditional approaches place the router in a separate waterproof enclosure, which can shield cellular signals and degrade network quality. The ODU302 has native IP65 dust and water resistance and a wide operating range of -20 °C to +70 °C, so no additional enclosure is needed — it can be mounted outdoors directly. Outdoor deployment with built-in omnidirectional antennas yields stronger cellular signals, keeping surveillance video streams uploaded reliably.
+### <span style="color: green;">Industrial Control (Outdoor Cabinets)</span>
+Multiple penetrations for power, Ethernet, and coax create sealing complexity. The ODU302 needs only one Ethernet drop into the cabinet, plus 2× configurable digital I/O for signal acquisition and control.
 
 
 <div style="page-break-after: always;"></div>
@@ -95,22 +97,26 @@ Outdoor surveillance points are typically deployed on exposed poles, where wired
 <div style="page-break-after: always;"></div>
 
 
-# <span style="color: green;">2. Product Highlights</span>
+# <span style="color: green;">2. Product Innovations</span>
 
-## <span style="color: green;">Highlight 1: Reliability Meets Aesthetics</span>
-The ODU302 is engineered for reliable all-weather outdoor operation, wrapped in a sleek, fully sealed, streamlined design with all antennas built in to eliminate the clutter of external accessories. Its soft, minimalist body blends naturally into storefronts, self-service kiosks, and park environments — striking a balance between hard-core networking capability and visual fit for each setting.
+## <span style="color: green;">Innovation 1: Router + Antenna in One Top-Mount Unit</span>
+The router is built directly into the antenna enclosure and installs on top of ATMs, EV chargers, and control cabinets. No separate outdoor antenna to source or match. No wall penetrations for feeder cable. One SKU, one mount — dramatically reducing on-site labor and system integration complexity.
 
-## <span style="color: green;">Highlight 2: Lightweight Multi-Mode Installation for Every Scenario</span>
-The compact, lightweight body supports three mounting options — wall, pole, and top — covering storefront exteriors, park poles, and outdoor self-service equipment. For ATM and similar kiosks, a dedicated top-mount solution attaches the unit to the outside of the equipment, taking up none of the cabinet's tight interior space, reducing cabinet cutouts and internal cabling, and keeping the terminal's exterior clean and consistent without disturbing the site's appearance.
+## <span style="color: green;">Innovation 2: Zero Feeder Loss, Stronger Signal</span>
+With the RF module and antenna integrated as one, the signal travels with zero feeder attenuation — a major advantage on high LTE bands where coax loss is significant. You also eliminate the cost and sourcing effort of a separate outdoor-rated antenna, since the ODU302 ships with optimized built-in antennas and IP65 protection.
 
-## <span style="color: green;">Highlight 3: Enterprise-Grade Security & Cloud Operations at Scale</span>
-An enterprise-grade stateful inspection firewall and a full suite of mainstream VPN tunnel protocols meet compliance requirements for encrypted commercial transactions and remote private network data. Backed by the InHand Device Manager cloud platform, hundreds to thousands of distributed devices can be managed centrally — remote configuration, firmware upgrades, traffic statistics, and fault alerts — dramatically cutting manual on-site maintenance costs across multiple locations.
+## <span style="color: green;">Innovation 3: PoE Single-Cable Deployment</span>
+The ODU302 accepts IEEE 802.3af PoE input. From the top-mounted unit to the cabinet interior, only one Ethernet cable is needed for both power and data. The wiring bundle shrinks from "power + Ethernet + feeder" down to a single drop. DC 9–36 V terminal input is also available as an alternative.
 
-## <span style="color: green;">Highlight 4: Multi-Layer Link Redundancy for Uninterrupted Uptime</span>
-Three layers of protection work together: hardware watchdog self-recovery, dual-SIM cellular backup, and cellular/wired dual-link redundancy. Weak SIM signals, dial failures, or wired broadband outages all trigger seamless failover to the backup channel, keeping business running without interruption — ideal for transaction terminals, warehouse equipment, and outdoor surveillance that demand high uptime.
+## <span style="color: green;">Innovation 4: Built for Demanding Outdoor Environments</span>
+The IP65 enclosure is rated against dust ingress and high-pressure water jets, with an operating temperature range of -20 °C to +70 °C. Tested to IEC 60068-2-27 shock, IEC 60068-2-6 vibration, and EN 61000-4-x EMC Level 2. The unit installs directly on top of the equipment with full outdoor exposure — no extra hood required for standard rain and dust.
 
-## <span style="color: green;">Highlight 5: Dual Redundant Power, No Single Point of Failure</span>
-The device supports both IEEE 802.3af PoE and DC 9–36 V wide-voltage terminal power, with the two inputs monitored in parallel and millisecond-level automatic switching if either fails. It adapts to storefront network-cable power, equipment low-voltage cabinets, and solar power setups — perfectly suited to unattended, always-on deployments.
+
+<div style="page-break-after: always;"></div>
+
+
+## <span style="color: green;">Innovation 5: Proven IR302 Software Platform</span>
+ODU302 runs the same software stack as the field-proven InRouter302. Dual-SIM failover, enterprise firewall, VPN, link backup, digital I/O, and InHand Device Manager cloud management — all carried over with zero learning curve. Existing IR302 customers can migrate their configurations and workflows seamlessly.
 
 
 # <span style="color: green;">3. Hardware Specifications</span>
@@ -133,18 +139,65 @@ The device supports both IEEE 802.3af PoE and DC 9–36 V wide-voltage terminal 
 | **Wi-Fi TX Power** | 802.11b: 16 dBm ± 2 dBm (11 Mbps)<br/>802.11g: 16 dBm ± 2 dBm (54 Mbps)<br/>802.11n@2.4 GHz HT20 MCS7: 16 dBm ± 2 dBm<br/>802.11n@2.4 GHz HT40 MCS7: 16 dBm ± 2 dBm |
 | **LED Indicators** | System, Wi-Fi, Cellular, Ethernet |
 | **Reset Button** | Pinhole reset button |
-| **Power Supply** | DC 9–36 V (4-pin 2×2 combined power & I/O terminal, over-current / reverse-polarity protected)<br/>IEEE 802.3af PoE input |
+| **Power Supply** | DC 9–36 V (4-pin 2×2 combined power & I/O terminal, over-current / reverse-polarity protected)<br/>IEEE 802.3af PoE input (Mode A or Mode B) |
 | **Standby Power** | 90~110 mA @ 12 V |
 | **Operating Power** | 280~300 mA @ 12 V |
 | **Peak Power** | 340~360 mA @ 12 V |
 | **Protection Rating** | IP65 |
-| **Enclosure Material** | Plastic |
+| **Enclosure Material** | Industrial-grade plastic |
 | **Operating Temperature** | -20 °C ~ +70 °C (-4 °F ~ +158 °F) |
 | **Storage Temperature** | -40 °C ~ +85 °C (-40 °F ~ +185 °F) |
 | **Relative Humidity** | 5% ~ 95%, non-condensing |
 | **Dimensions** | 164 × 50 × 129.7 mm (6.46 × 1.97 × 5.11 in) |
 | **Weight** | Approx. 500 g (1.10 lb) |
 | **Mounting** | Wall, pole, top-mount |
+
+## <span style="color: green;">3.2 Interface Overview</span>
+
+### RJ45 Ports
+
+| Port | Default | Description |
+| :---: | :---: | :--- |
+| WAN/LAN1 (Left) | WAN/LAN | 10/100 Mbps, software switchable |
+| LAN2 (Middle) | LAN | 10/100 Mbps, PoE PD (Powered Device), accepts power on data pairs (1/2, 3/6) for Mode A, or on spare pairs (4/5, 7/8) for Mode B. IEEE 802.3af compliant |
+
+### SIM Card Slots
+
+| Slot | Description |
+| :---: | :--- |
+| SIM1 (Top) | Primary SIM card (Nano SIM, drawer-style) |
+| SIM2 (Bottom) | Backup SIM card (Nano SIM, drawer-style) |
+
+### Reset Button
+
+- **Hardware RST:** Pinhole reset button
+
+### Power & I/O Terminal (4-Pin, 2×2)
+
+| Position | Top Pin | Bottom Pin |
+| :---: | :---: | :---: |
+| Left | IO1 (DI/DO1, configurable) | GND |
+| Right | IO2 (DI/DO2, configurable) | DC 9–36 V Input (Positive) |
+
+
+<div style="page-break-after: always;"></div>
+
+
+## <span style="color: green;">3.3 Environment & Reliability</span>
+
+| Test Item | Standard | Level/Result |
+| :--- | :--- | :--- |
+| **ESD** | EN 61000-4-2 | Level 2 |
+| **Radiated RF** | EN 61000-4-3 | Level 2 |
+| **EFT/Burst** | EN 61000-4-4 | Level 2 |
+| **Surge** | EN 61000-4-5 | Level 2 |
+| **Conducted RF** | EN 61000-4-6 | Level 2 |
+| **Oscillatory Wave** | EN 61000-4-12 | Level 2 |
+| **Power Frequency Magnetic** | EN 61000-4-8 | 400 A/m (≥ Level 2) |
+| **Shock** | IEC 60068-2-27 | Compliant |
+| **Vibration** | IEC 60068-2-6 | Compliant |
+| **Free Fall** | IEC 60068-2-32 | Compliant |
+
 
 
 
@@ -157,6 +210,10 @@ The device supports both IEEE 802.3af PoE and DC 9–36 V wide-voltage terminal 
 - **Authentication:** CHAP/PAP
 - **Connection Modes:** Always-on, on-demand, manual dial
 - **Activation:** Data trigger, SMS trigger
+
+
+<div style="page-break-after: always;"></div>
+
 
 ## <span style="color: green;">4.2 SIM Management</span>
 
@@ -235,10 +292,6 @@ The device supports both IEEE 802.3af PoE and DC 9–36 V wide-voltage terminal 
 - **QoS Policy:** Bandwidth and rate limit policies
 
 
-<div style="page-break-after: always;"></div>
-
-
-
 # <span style="color: green;">7. Local Network Services</span>
 
 ## <span style="color: green;">7.1 DHCP Service</span>
@@ -267,7 +320,6 @@ The device supports both IEEE 802.3af PoE and DC 9–36 V wide-voltage terminal 
 - **Bridge Mode:** WAN/dial-up IP pass-through to downstream device
 - **Flexible Configuration:** Passthrough mode on dial-up and WAN ports
 
-<div style="page-break-after: always;"></div>
 
 
 # <span style="color: green;">8. Cloud Management & Operations</span>
@@ -285,6 +337,10 @@ The ODU302 is powered by the InHand Device Manager cloud management platform, en
 | **Traffic Management** | Traffic thresholds, statistics, and alarms |
 | **Alert Types** | System reboot, LAN port up/down, traffic alarm, SIM card fault |
 | **Notification** | Email alerts (configurable) |
+
+
+<div style="page-break-after: always;"></div>
+
 
 
 # <span style="color: green;">9. System Management & Maintenance</span>
@@ -320,23 +376,31 @@ The ODU302 is powered by the InHand Device Manager cloud management platform, en
 
 # <span style="color: green;">10. Ordering Information</span>
 
-## <span style="color: green;">10.1 Product Models</span>
+## <span style="color: green;">10.1 Model Code Structure</span>
+
+**Model code:** ODU302-<WMNN>
+
+| Field | Code | Description |
+| :--- | :--- | :--- |
+| Type & Module | CNC4 | China, 4G LTE Cat.4, Wi-Fi, I/O |
+| | NAC4 | North America, 4G LTE Cat.4, Wi-Fi, I/O |
+| | EUC4 | Europe/APAC, 4G LTE Cat.4, Wi-Fi, I/O |
+
+## <span style="color: green;">10.2 Product Models</span>
 
 | Model | Region | Description |
 | :---: | :---: | :--- |
-| **ODU302-CNC4** | China | LTE-FDD: B1/B3/B5/B8<br/>LTE-TDD: B34/B38/B39/B40/B41<br/>WCDMA: B1/B8<br/>GSM: B3/B8<br/>CDMA: BC0<br/>TD-SCDMA: B34/B39 |
-| **ODU302-NAC4** | North America | LTE-FDD: B2/B4/B5/B12/B13/B14/B66/B71<br/>WCDMA: B2/B4/B5 |
-| **ODU302-EUC4** | Europe/APAC | LTE-FDD: B1/B3/B5/B7/B8/B20/B28<br/>LTE-TDD: B38/B40/B41<br/>WCDMA: B1/B5/B8<br/>GSM/EDGE: B3/B8 |
+| **ODU302-CNC4** | China | LTE-FDD: B1/B3/B5/B8<br/>LTE-TDD: B34/B38/B39/B40/B41<br/>WCDMA: B1/B8<br/>GSM: B3/B8<br/>CDMA: BC0<br/>TD-SCDMA: B34/B39<br/>Wi-Fi: 802.11 b/g/n<br/>I/O: 2× configurable DI/DO |
+| **ODU302-NAC4** | North America | LTE-FDD: B2/B4/B5/B12/B13/B14/B66/B71<br/>WCDMA: B2/B4/B5<br/>Wi-Fi: 802.11 b/g/n<br/>I/O: 2× configurable DI/DO |
+| **ODU302-EUC4** | Europe/APAC | LTE-FDD: B1/B3/B5/B7/B8/B20/B28<br/>LTE-TDD: B38/B40/B41<br/>WCDMA: B1/B5/B8<br/>GSM/EDGE: B3/B8<br/>Wi-Fi: 802.11 b/g/n<br/>I/O: 2× configurable DI/DO |
 
-## <span style="color: green;">10.2 Package Components</span>
+## <span style="color: green;">10.3 Package Contents</span>
 
 - ODU302 outdoor unit × 1
 - IEEE 802.3af PoE power adapter × 1
 - 1 m RJ45 cable × 1
 - Mounting kit (wall/pole/top-mount) × 1
 - Quick Start Guide × 1
-
-<div style="page-break-after: always;"></div>
 
 
 # <span style="color: green;">11. Reliability Standards & Certifications</span>
@@ -353,6 +417,10 @@ The ODU302 is powered by the InHand Device Manager cloud management platform, en
 | Vibration | IEC 60068-2-6 |
 | Free Fall | IEC 60068-2-32 |
 
+
+<div style="page-break-after: always;"></div>
+
+
 ## <span style="color: green;">11.3 EMC Immunity</span>
 
 | Test Item | Standard |
@@ -365,21 +433,22 @@ The ODU302 is powered by the InHand Device Manager cloud management platform, en
 | Oscillatory Wave | EN 61000-4-12, Level 2 |
 | Power Frequency Magnetic | EN 61000-4-8, 400 A/m |
 
-
-<div style="page-break-after: always;"></div>
-
-
 ## <span style="color: green;">11.4 Certifications & Compliance</span>
 
-- FCC
-- IC
-- CE
-- PTCRB
-- AT&T
-- Verizon
-- T-Mobile
+| Certification | Status |
+| :--- | :--- |
+| FCC | Completed |
+| IC | Completed |
+| PTCRB | Completed |
+| AT&T | Completed |
+| Verizon | Completed |
+| T-Mobile | Completed |
 
 > Note: Certification status is current as of publication. Check with InHand sales for the latest updates.
+
+
+
+<div style="page-break-after: always;"></div>
 
 
 # <span style="color: green;">12. Contact Us</span>

@@ -906,7 +906,8 @@
   - [4.2 Network](ODU302/Manuals/User%20manual/ODU302%20Product%20User%20Manual.md#42-network)
   - [4.3 Service](ODU302/Manuals/User%20manual/ODU302%20Product%20User%20Manual.md#43-service)
   - [4.4 Firewall](ODU302/Manuals/User%20manual/ODU302%20Product%20User%20Manual.md#44-firewall)
-- [ODU302 Datasheet v1.0](ODU302/Datasheets/General/ODU302_Datasheet_V1.0.md): ODU302 Datasheet v1.0 — All-in-One. No External Antenna.
+- [ODU302 Datasheet v1.0](ODU302/Datasheets/General/ODU302_Datasheet_V1.0.md): ODU302 Datasheet v1.0 — Flexible Deployment, Reliable Connectivity
+- [ODU302 Datasheet v1.1](ODU302/Datasheets/General/ODU302_Datasheet_V1.1.md): ODU302 Datasheet v1.1 — All-in-One. No External Antenna.
 - [ODU302 Drawings](ODU302/drawings.md): ODU302 mechanical drawings (2D, 3D) with links to the original drawing files
 
 ## VG710

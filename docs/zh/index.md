@@ -254,6 +254,7 @@ hide:
       <div class="pm-card__body">
         <div class="pm-card__title">IR302</div>
         <ul class="pm-card__links">
+        <li><a href="IR302/certifications.html" title="IR302 认证证书">认证证书</a></li>
         <li><a href="IR302/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/IR302%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="北京映翰通工业路由器IR302系列产品用户手册">用户手册 V1.0</a></li>
         <li><a href="IR302/Use%20Cases/%E5%8C%BB%E7%96%97%E8%AE%BE%E5%A4%87%E8%81%94%E7%BD%91%E6%A1%88%E4%BE%8B/%E6%96%B9%E6%A1%88%E6%89%8B%E5%86%8C.html" title="医疗设备联网解决方案">医疗设备联网解决方案</a></li>
         <li><a href="IR302/Use%20Cases/%E5%8C%BB%E7%96%97%E8%AE%BE%E5%A4%87%E8%81%94%E7%BD%91%E6%A1%88%E4%BE%8B/%E9%85%8D%E7%BD%AE%E6%89%8B%E5%86%8C.html" title="医疗设备联网案例配置指导手册">医疗设备联网案例配置指导手册</a></li>

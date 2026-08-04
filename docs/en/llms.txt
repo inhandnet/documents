@@ -684,26 +684,32 @@
 ## ISE2003D
 
 - [ISE2003D Datasheet v1.0](ISE2003D/Datasheets/General/ISE2003D_Datasheet_V1.0.md): ISE2003D Datasheet v1.0 — Simple, highly reliable network communication system
+- [ISE2003D Certifications](ISE2003D/certifications.md): ISE2003D certification list (CE) with links to the original certificate files
 
 ## ISE2005D
 
 - [ISE2005D Datasheet v1.0](ISE2005D/Datasheets/General/ISE2005D_Datasheet_V1.0.md): ISE2005D Datasheet v1.0 — Simple, highly reliable network communication system
+- [ISE2005D Certifications](ISE2005D/certifications.md): ISE2005D certification list (CE) with links to the original certificate files
 
 ## ISE2008D
 
 - [ISE2008D Datasheet v1.0](ISE2008D/Datasheets/General/ISE2008D_Datasheet_V1.0.md): ISE2008D Datasheet v1.0 — Simple, highly reliable network communication system
+- [ISE2008D Certifications](ISE2008D/certifications.md): ISE2008D certification list (CE) with links to the original certificate files
 
 ## ISE2016D
 
 - [ISE2016D Datasheet v1.0](ISE2016D/Datasheets/General/ISE2016D_Datasheet_V1.0.md): ISE2016D Datasheet v1.0 — Simple, highly reliable network communication system
+- [ISE2016D Certifications](ISE2016D/certifications.md): ISE2016D certification list (CE) with links to the original certificate files
 
 ## ISE3018D
 
 - [ISE3018D Datasheet v1.0](ISE3018D/Datasheets/General/ISE3018D_Datasheet_V1.0.md): ISE3018D Datasheet v1.0 — Simple, Highly Reliable Industrial Network Communication
+- [ISE3018D Certifications](ISE3018D/certifications.md): ISE3018D certification list (CE) with links to the original certificate files
 
 ## ISE5005D
 
 - [ISE5005D Datasheet v1.0](ISE5005D/Datasheets/General/ISE5005D_Datasheet_V1.0.md): ISE5005D Datasheet v1.0 — Simple, highly reliable network communication system
+- [ISE5005D Certifications](ISE5005D/certifications.md): ISE5005D certification list (CE) with links to the original certificate files
 
 ## ISE5006D
 
@@ -712,18 +718,22 @@
 ## ISE5008D
 
 - [ISE5008D Datasheet v1.0](ISE5008D/Datasheets/General/ISE5008D_Datasheet_V1.0.md): ISE5008D Datasheet v1.0 — Simple, Highly Reliable Industrial Network Communication
+- [ISE5008D Certifications](ISE5008D/certifications.md): ISE5008D certification list (CE) with links to the original certificate files
 
 ## ISE5010D
 
 - [ISE5010D Datasheet v1.0](ISE5010D/Datasheets/General/ISE5010D_Datasheet_V1.0.md): ISE5010D Datasheet v1.0 — Simple, highly reliable network communication system
+- [ISE5010D Certifications](ISE5010D/certifications.md): ISE5010D certification list (CE) with links to the original certificate files
 
 ## ISE5306D
 
 - [ISE5306D Datasheet v1.0](ISE5306D/Datasheets/General/ISE5306D_Datasheet_V1.0.md): ISE5306D Datasheet v1.0 — Simple, highly reliable network communication system
+- [ISE5306D Certifications](ISE5306D/certifications.md): ISE5306D certification list (CE) with links to the original certificate files
 
 ## ISE5310D
 
 - [ISE5310D Datasheet v1.0](ISE5310D/Datasheets/General/ISE5310D_Datasheet_V1.0.md): ISE5310D Datasheet v1.0 — Simple, highly reliable network communication system
+- [ISE5310D Certifications](ISE5310D/certifications.md): ISE5310D certification list (CE) with links to the original certificate files
 
 ## ISM managed
 
@@ -745,14 +755,21 @@
 ## ISM5010D
 
 - [ISM5010D Datasheet v1.0](ISM5010D/Datasheets/General/ISM5010D_Datasheet_V1.0.md): ISM5010D Datasheet v1.0 — Build advanced and highly reliable industrial Ethernet communication system
+- [ISM5010D Certifications](ISM5010D/certifications.md): ISM5010D certification list (CE) with links to the original certificate files
 
 ## ISM5012D
 
 - [ISM5012D Datasheet v1.0](ISM5012D/Datasheets/General/ISM5012D_Datasheet_V1.0.md): ISM5012D Datasheet v1.0 — Build advanced and highly reliable industrial Ethernet communication system
+- [ISM5012D Certifications](ISM5012D/certifications.md): ISM5012D certification list (CE) with links to the original certificate files
 
 ## ISM5020D
 
 - [ISM5020D Datasheet v1.0](ISM5020D/Datasheets/General/ISM5020D_Datasheet_V1.0.md): ISM5020D Datasheet v1.0 — Build advanced and highly reliable industrial Ethernet communication system
+- [ISM5020D Certifications](ISM5020D/certifications.md): ISM5020D certification list (CE) with links to the original certificate files
+
+## ISM5026U
+
+- [ISM5026U Certifications](ISM5026U/certifications.md): ISM5026U certification list (CE) with links to the original certificate files
 
 ## ISM5026U-P
 
@@ -765,10 +782,16 @@
 ## ISM5310D
 
 - [ISM5310D Datasheet v1.0](ISM5310D/Datasheets/General/ISM5310D_Datasheet_V1.0.md): ISM5310D Datasheet v1.0 — Build advanced and highly reliable industrial Ethernet communication system
+- [ISM5310D Certifications](ISM5310D/certifications.md): ISM5310D certification list (CE) with links to the original certificate files
 
 ## ISM7012D
 
 - [ISM7012D Datasheet v1.0](ISM7012D/Datasheets/General/ISM7012D_Datasheet_V1.0.md): ISM7012D Datasheet v1.0 — Build Advanced and Highly Reliable Industrial Ethernet Communication Systems
+- [ISM7012D Certifications](ISM7012D/certifications.md): ISM7012D certification list (CE) with links to the original certificate files
+
+## ISM7028U
+
+- [ISM7028U Certifications](ISM7028U/certifications.md): ISM7028U certification list (CE) with links to the original certificate files
 
 ## ISM7028U-P
 

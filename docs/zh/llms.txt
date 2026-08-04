@@ -7,19 +7,27 @@
 - [映翰通5G CPE02用户手册](CPE02/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/CPE02%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.md): CPE02 用户手册 v1.0 — CPE02是北京映翰通网络技术股份有限公司推出的新一代5G简单联网路由器，专为便捷联网场景设计，具备1Gbps转发能力和3000Mbps Wi-Fi 6覆盖。设备支持即插即用，无需布线，通过小星云平台实时监控门店网络状态、流量使用和客户端连…
 - [CPE02 规格书 v1.0](CPE02/Datasheets/%E9%80%9A%E7%94%A8/CPE02%E8%A7%84%E6%A0%BC%E4%B9%A6_V1.0.md): CPE02 规格书 v1.0
 - [测试文件 - 不走校验](CPE02/Datasheets/%E9%80%9A%E7%94%A8/special/README.md): CPE02 规格书
+- [CPE02 认证证书](CPE02/certifications.md): CPE02 已获认证清单（CE、EN18031、FCC、IC、PTCRB），含证书原件文件链接
 
 ## CR202
 
 - [北京映翰通4G蜂窝路由器CR202用户手册](CR202/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/CR202%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.md): CR202 用户手册 v1.0 — CR202是一款集4G蜂窝网络、Wi-Fi、VPN技术于一体的移动无线路由器，能够为室内场景、户外场景以及移动场景提供可靠稳定的网络连接。该设备适用于中小型分支机构和自助服务终端等场景，具备链路检测机制以保障网络连续性。部分型号内置电池，支…
+- [CR202 认证证书](CR202/certifications.md): CR202 已获认证清单（CE、FCC、IC、PTCRB、UKCA），含证书原件文件链接
 
 ## CR202-Lite
 
 - [北京映翰通4G蜂窝路由器CR202-Lite用户手册](CR202-Lite/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/CR202-Lite%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.md): CR202-Lite 用户手册 v1.0 — CR202-Lite是一款集4G蜂窝网络、Wi-Fi、VPN技术于一体的移动无线路由器，能够在室内、户外及移动场景下提供稳定可靠的网络连接。该设备支持有线以太网接入，提高了入网的多样性；内置链路检测机制可有效保障网络连续性。部分型号配备内置…
 - [CR202-Lite 规格书 v1.0](CR202-Lite/Datasheets/%E9%80%9A%E7%94%A8/CR202-Lite%E8%A7%84%E6%A0%BC%E4%B9%A6_V1.0.md): CR202-Lite 规格书 v1.0
+- [CR202-Lite 认证证书](CR202-Lite/certifications.md): CR202-Lite 已获认证清单（CE、FCC、IC、PTCRB），含证书原件文件链接
+
+## CR202-Pro
+
+- [CR202-Pro 认证证书](CR202-Pro/certifications.md): CR202-Pro 已获认证清单（FCC、IC、PTCRB），含证书原件文件链接
 
 ## CR602
 
 - [CR602 规格书 v2.0](CR602/Datasheets/%E9%80%9A%E7%94%A8/CR602%E8%A7%84%E6%A0%BC%E4%B9%A6_V2.0.md): CR602 规格书 v2.0 — CR602是一款创新的5G紧凑型蜂窝路由器，专为商铺门店、小企业办公、临时工作、户外出行、家庭娱乐场景设计的高性能移动网络接入设备。产品将先进的5G蜂窝连接技术、Wi-Fi 7无线技术、大容量电池等丰富功能集成于紧凑的外壳内，为用户提供随时…
+- [CR602 认证证书](CR602/certifications.md): CR602 已获认证清单（EN18031、FCC、IC、PTCRB），含证书原件文件链接
 
 ## DeviceLive
 
@@ -53,6 +61,7 @@
 
 - [映翰通企业级无线接入点EAP600用户手册](EAP600/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/EAP600%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.md): EAP600 用户手册 v1.0 — EAP600是北京映翰通网络技术股份有限公司面向商业领域推出的Wi-Fi 6无线接入点（AP）产品。该产品可为小型商业场所、企业分支机构和酒店等需要无线覆盖的场景提供高速、安全的无线网络接入。EAP600支持Wi-Fi 6标准，具备强大的网…
 - [EAP600 规格书 v2.4](EAP600/Datasheets/%E9%80%9A%E7%94%A8/EAP600%E8%A7%84%E6%A0%BC%E4%B9%A6_V2.4.md): EAP600 规格书 v2.4 — Wi-Fi 6 高性能接入, 云管理, 企业级安全
+- [EAP600 认证证书](EAP600/certifications.md): EAP600 已获认证清单（CE、FCC、IC），含证书原件文件链接
 
 ## EC300
 
@@ -170,6 +179,7 @@
 
 - [映翰通边缘路由器ER605用户手册](ER605/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/ER605%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.md): ER605 用户手册 v1.0 — ER605（Edge Router 605）是北京映翰通面向商业联网领域推出的新一代5G边缘路由器产品。该设备融合4G/5G无线网络与多种宽带服务，为各行业提供高速且安全的网络接入。无论何时何地，用户均可享受不间断的互联网连接，同时受益于全…
 - [ER605 规格书 v1.0](ER605/Datasheets/%E9%80%9A%E7%94%A8/ER605%E8%A7%84%E6%A0%BC%E4%B9%A6_V1.0.md): ER605 规格书 v1.0
+- [ER605 认证证书](ER605/certifications.md): ER605 已获认证清单（CE、EN18031、FCC、IC、PTCRB、UKCA），含证书原件文件链接
 
 ## ER615
 
@@ -180,15 +190,18 @@
 
 - [映翰通边缘路由器ER805用户手册](ER805/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/ER805%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.md): ER805 用户手册 v1.0 — ER805是北京映翰通面向商业联网领域推出的新一代高性能Wi-Fi5边缘路由器，具备650Mbps的转发能力和多网口设计，支持多种VPN组网协议，最大VPN吞吐100Mbps。通过小星云平台，IT人员可轻松了解每个门店的网络状态、流量使用、…
 - [ER805 规格书 v1.0](ER805/Datasheets/%E9%80%9A%E7%94%A8/ER805%E8%A7%84%E6%A0%BC%E4%B9%A6_V1.0.md): ER805 规格书 v1.0
+- [ER805 认证证书](ER805/certifications.md): ER805 已获认证清单（CE、EN18031、FCC、IC、PTCRB），含证书原件文件链接
 
 ## ER815
 
 - [映翰通高性能Wi-Fi6路由器ER815用户手册](ER815/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/ER815%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.md): ER815 用户手册 v1.0 — ER815是北京映翰通面向商业联网领域推出的新一代高性能Wi-Fi6路由器，具备1Gbps的转发能力和多网口设计，支持300Mbps VPN能力。通过搭配分支站点的ER815，可实现分支间组网。通过小星云平台，IT管理人员可了解每个门店的网…
 - [ER815 规格书 v1.0](ER815/Datasheets/%E9%80%9A%E7%94%A8/ER815%E8%A7%84%E6%A0%BC%E4%B9%A6_V1.0.md): ER815 规格书 v1.0
+- [ER815 认证证书](ER815/certifications.md): ER815 已获认证清单（EN18031、FCC、IC、PTCRB），含证书原件文件链接
 
 ## ES220
 
 - [ES220 规格书 v1.0](ES220/Datasheets/%E9%80%9A%E7%94%A8/ES220%E8%A7%84%E6%A0%BC%E4%B9%A6_V1.0.md): ES220 规格书 v1.0
+- [ES220 认证证书](ES220/certifications.md): ES220 已获认证清单（CE、FCC），含证书原件文件链接
 
 ## ES620
 
@@ -198,6 +211,11 @@
 ## FWA02
 
 - [FWA02 规格书 v1.0](FWA02/Datasheets/%E9%80%9A%E7%94%A8/FWA02%E8%A7%84%E6%A0%BC%E4%B9%A6_V1.0.md): FWA02 规格书 v1.0
+- [FWA02 认证证书](FWA02/certifications.md): FWA02 已获认证清单（CE、EN18031、FCC、IC、PTCRB），含证书原件文件链接
+
+## FWA12
+
+- [FWA12 认证证书](FWA12/certifications.md): FWA12 已获认证清单（EN18031、FCC、IC、PTCRB），含证书原件文件链接
 
 ## IG101
 
@@ -274,6 +292,10 @@
 
 - [IG974 规格书 v1.9](IG974/Datasheets/%E9%80%9A%E7%94%A8/IG974%E8%A7%84%E6%A0%BC%E4%B9%A6_V1.9.md): IG974 规格书 v1.9 — 工业化设计，安全可靠，助力企业数字化升级
 
+## IR202
+
+- [IR202 认证证书](IR202/certifications.md): IR202 已获认证清单（CE、CTA、FCC、IC、PTCRB、SRRC），含证书原件文件链接
+
 ## IR202-Lite
 
 - [IR202-Lite special v1.0](IR202-Lite/Datasheets/special/IR202-Lite%E8%A7%84%E6%A0%BC%E4%B9%A6_V1.0.md): IR202-Lite special v1.0 — 映翰通 InRouter202-Lite（IR202-Lite）是一款极简型工业无线路由器，集成 4G 无线广域网与 Wi-Fi 无线局域网，提供不间断的多种网络接入能力。凭借完备的安全策略与快捷无线连接，为物联网终端设备提供便捷、可靠且安…
@@ -308,6 +330,7 @@
   - [附录 故障处理](IR305/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/IR305%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.md#%E9%99%84%E5%BD%95-%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86)
   - [附录 命令行参考](IR305/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/IR305%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.md#%E9%99%84%E5%BD%95-%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%8F%82%E8%80%83)
 - [IR305 规格书 v1.14](IR305/Datasheets/%E9%80%9A%E7%94%A8/IR305%E8%A7%84%E6%A0%BC%E4%B9%A6_V1.14.md): IR305 规格书 v1.14 — 5G经济型多网口蜂窝路由器，安全互联与云端运维
+- [IR305 认证证书](IR305/certifications.md): IR305 已获认证清单（ANATEL、CB、CE、E-Mark、ECER118、EN18031、FCC、IC、PTCRB、UKCA），含证书原件文件链接
 
 ## IR315
 
@@ -328,15 +351,21 @@
   - [场景5：链路备份](IR315/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/IR315%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.md#%E5%9C%BA%E6%99%AF5%E9%93%BE%E8%B7%AF%E5%A4%87%E4%BB%BD)
   - [场景6：VRRP热备份](IR315/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/IR315%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.md#%E5%9C%BA%E6%99%AF6vrrp%E7%83%AD%E5%A4%87%E4%BB%BD)
 - [IR315 规格书 v1.1](IR315/Datasheets/%E9%80%9A%E7%94%A8/IR315%E8%A7%84%E6%A0%BC%E4%B9%A6_V1.1.md): IR315 规格书 v1.1 — 5G经济型多网口工业路由器，安全联网与云端运维
+- [IR315 认证证书](IR315/certifications.md): IR315 已获认证清单（ANATEL、C1D2、CE、E-Mark、ECER118、EN18031、FCC、IC、IMDA、MIC_JATE、PTCRB、RCM、SRRC、UL），含证书原件文件链接
 - [驾考科目三4G/5G组网方案](IR315/Use%20Cases/4G5G%E9%A9%BE%E8%80%83%E7%BB%84%E7%BD%91%E6%A1%88%E4%BE%8B/%E6%A1%88%E4%BE%8B%E6%89%8B%E5%86%8C.md): IR315 4G5G驾考组网案例
 - [驾考联网路由器配置手册](IR315/Use%20Cases/4G5G%E9%A9%BE%E8%80%83%E7%BB%84%E7%BD%91%E6%A1%88%E4%BE%8B/%E9%A9%BE%E8%80%83%E8%81%94%E7%BD%91%E9%85%8D%E7%BD%AE%E6%89%8B%E5%86%8C.md): IR315 4G5G驾考组网案例 — 在此场景下路由器产品主要用于驾考联网场景下现场**车辆驾考设备联网**、**自建L2TP-VPN隧道**
 - [工厂数字化NAT组网案例](IR315/Use%20Cases/%E5%B7%A5%E5%8E%82%E6%95%B0%E5%AD%97%E5%8C%96NAT%E7%BB%84%E7%BD%91/%E6%A1%88%E4%BE%8B%E6%89%8B%E5%86%8C.md): IR315 工厂数字化NAT组网
 - [工厂数字化NAT路由器配置手册](IR315/Use%20Cases/%E5%B7%A5%E5%8E%82%E6%95%B0%E5%AD%97%E5%8C%96NAT%E7%BB%84%E7%BD%91/%E9%85%8D%E7%BD%AE%E6%89%8B%E5%86%8C.md): IR315 工厂数字化NAT组网 — 在此场景下路由器产品主要用于工厂中生产设备组网**NAT网络地址转换**、**实现生产控制网络与办公网络隔离**
 
+## IR615-S
+
+- [IR615-S 认证证书](IR615-S/certifications.md): IR615-S 已获认证清单（C1D2、E-Mark、EN18031、FCC、IC、MIC_JATE、PTCRB、SDPPI、UKCA、UL），含证书原件文件链接
+
 ## IR624
 
 - [北京映翰通工业路由器IR624产品系列用户手册](IR624/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/IR624%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.md): IR624 用户手册 v1.0 — IR624 系列工业级蜂窝路由器，集成 4G/5G、Wi-Fi、虚拟专用网络（VPN）等核心技术，不仅能提供不间断网络访问能力与全面安全防护功能，还可通过内置的物联网行业智能软件服务，为各类场景构建安全可靠的业务数据链路，助力企业推进数字化…
 - [IR624 规格书 v1.6](IR624/Datasheets/%E9%80%9A%E7%94%A8/IR624%E8%A7%84%E6%A0%BC%E4%B9%A6_V1.6.md): IR624 规格书 v1.6 — 拥抱5G时代，网络新体验，安全可靠云管理
+- [IR624 认证证书](IR624/certifications.md): IR624 已获认证清单（ANATEL、CE、E-Mark、ECER118、EN18031、FCC、IC、PTCRB、SRRC），含证书原件文件链接
 
 ## IR900
 
@@ -429,6 +458,7 @@
 
 - [5G室外单元ODU2002用户手册](ODU2002/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/ODU2002%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.md): ODU2002 用户手册 v1.0 — 5G室外单元ODU2002是北京映翰通网络技术股份有限公司推出的蜂窝网关系列产品之一，定位于为企业提供室外场景下的高速5G网络接入。设备支持千兆蜂窝上行、双SIM卡切换、PoE受电、Wi-Fi覆盖等功能，适用于需要快速部署超高速5G网络且环…
 - [ODU2002 规格书 v1.0](ODU2002/Datasheets/%E9%80%9A%E7%94%A8/ODU2002%E8%A7%84%E6%A0%BC%E4%B9%A6_V1.0.md): ODU2002 规格书 v1.0
+- [ODU2002 认证证书](ODU2002/certifications.md): ODU2002 已获认证清单（CE、EN18031、FCC、IC、PTCRB），含证书原件文件链接
 
 ## ODU302
 

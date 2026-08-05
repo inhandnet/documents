@@ -760,7 +760,7 @@
 ## ISM5012D
 
 - [ISM5012D Datasheet v1.0](ISM5012D/Datasheets/General/ISM5012D_Datasheet_V1.0.md): ISM5012D Datasheet v1.0 — Build advanced and highly reliable industrial Ethernet communication system
-- [ISM5012D Certifications](ISM5012D/certifications.md): ISM5012D certification list (CE) with links to the original certificate files
+- [ISM5012D Certifications](ISM5012D/certifications.md): ISM5012D certification list (CE, IEC61850-3) with links to the original certificate files
 
 ## ISM5020D
 

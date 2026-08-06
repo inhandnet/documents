@@ -118,6 +118,14 @@ hide:
     </div>
     <div class="pm-card">
       <div class="pm-card__body">
+        <div class="pm-card__title">EC3320</div>
+        <ul class="pm-card__links">
+        <li><a href="EC3320/certifications.html" title="EC3320 Certifications">Certifications</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pm-card">
+      <div class="pm-card__body">
         <div class="pm-card__title">EC5000</div>
         <ul class="pm-card__links">
         <li><a href="EC5000/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.html" title="DSA API Documentation V1.0">DSA API Documentation V1.0</a></li>
@@ -256,6 +264,7 @@ hide:
       <div class="pm-card__body">
         <div class="pm-card__title">IG902</div>
         <ul class="pm-card__links">
+        <li><a href="IG902/certifications.html" title="IG902 Certifications">Certifications</a></li>
         <li><a href="IG902/Developer%20Documentation/FlexAPI/IGSeriesAPIDocumentationV1.0.html" title="IG Series API Documentation V1.0">IG Series API Documentation V1.0</a></li>
         <li><a href="IG902/Developer%20Documentation/FlexAPI/IGsupportsIEC.APIDocumentationV1.0.html" title="IG supports IEC.API Documentation V1.0">IG supports IEC.API Documentation V1.0</a></li>
         <li><a href="IG902/Manuals/User%20manual/IG902_User%20manual_V1.0.html" title="InGateway902 User Manual">User manual V1.0</a></li>

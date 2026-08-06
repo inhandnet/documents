@@ -217,6 +217,10 @@
   - [7.Programming instructions](EC3000/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#7programming-instructions)
 - [EC3000 Datasheet v1.0](EC3000/Datasheets/General/EC3000_Datasheet_V1.0.md): EC3000 Datasheet v1.0 — Embrace Edge AI, Empower Industrial Digitalization
 
+## EC3320
+
+- [EC3320 Certifications](EC3320/certifications.md): EC3320 certification list (CE, FCC) with links to the original certificate files
+
 ## EC3576-C
 
 - [EC3576-C Datasheet v1.0](EC3576-C/Datasheets/General/EC3576-C_Datasheet_V1.0.md): EC3576-C Datasheet v1.0 — Embrace Edge AI, Empower Industrial Digitalization
@@ -549,6 +553,7 @@
   - [system Management](IG902/Developer%20Documentation/FlexAPI/IGSeriesAPIDocumentationV1.0.md#system-management)
 - [IG supports IEC.API Documentation V1.0](IG902/Developer%20Documentation/FlexAPI/IGsupportsIEC.APIDocumentationV1.0.md): IG902 FlexAPI v1.0
 - [IG902 Datasheet v1.0](IG902/Datasheets/General/IG902_Datasheet_V1.0.md): IG902 Datasheet v1.0 — Break down protocol barriers and make industrial digitization more convenient and efficient
+- [IG902 Certifications](IG902/certifications.md): IG902 certification list (PTCRB) with links to the original certificate files
 
 ## IR302
 

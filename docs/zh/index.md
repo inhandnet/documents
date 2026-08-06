@@ -283,6 +283,14 @@ hide:
     </div>
     <div class="pm-card">
       <div class="pm-card__body">
+        <div class="pm-card__title">IG974</div>
+        <ul class="pm-card__links">
+        <li><a href="IG974/certifications.html" title="IG974 认证证书">认证证书</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pm-card">
+      <div class="pm-card__body">
         <div class="pm-card__title">InCloudManager</div>
         <ul class="pm-card__links">
         <li><a href="InCloudManager/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/%E5%B0%8F%E6%98%9F%E4%BA%91%E7%AE%A1%E5%AE%B6%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C.html" title="小星云管家用户手册">用户手册</a></li>

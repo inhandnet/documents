@@ -291,6 +291,7 @@
 ## IG974
 
 - [IG974 规格书 v1.9](IG974/Datasheets/%E9%80%9A%E7%94%A8/IG974%E8%A7%84%E6%A0%BC%E4%B9%A6_V1.9.md): IG974 规格书 v1.9 — 工业化设计，安全可靠，助力企业数字化升级
+- [IG974 认证证书](IG974/certifications.md): IG974 已获认证清单（CE、FCC、PTCRB），含证书原件文件链接
 
 ## IR202
 

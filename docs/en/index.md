@@ -574,6 +574,7 @@ hide:
         <div class="pm-card__title">VG814</div>
         <ul class="pm-card__links">
         <li><a href="VG814/certifications.html" title="VG814 Certifications">Certifications</a></li>
+        <li><a href="VG814/drawings.html" title="VG814 Drawings">Drawings</a></li>
         <li><a href="VG814/Manuals/User%20manual/VG814_User%20manual_V1.0.html" title="InHand VG814 User Manual (Standard Edition) V1.2">User manual V1.0</a></li>
         </ul>
       </div>

@@ -29,6 +29,10 @@
 - [CR602 规格书 v2.0](CR602/Datasheets/%E9%80%9A%E7%94%A8/CR602%E8%A7%84%E6%A0%BC%E4%B9%A6_V2.0.md): CR602 规格书 v2.0 — CR602是一款创新的5G紧凑型蜂窝路由器，专为商铺门店、小企业办公、临时工作、户外出行、家庭娱乐场景设计的高性能移动网络接入设备。产品将先进的5G蜂窝连接技术、Wi-Fi 7无线技术、大容量电池等丰富功能集成于紧凑的外壳内，为用户提供随时…
 - [CR602 认证证书](CR602/certifications.md): CR602 已获认证清单（EN18031、FCC、IC、PTCRB），含证书原件文件链接
 
+## Device Manager
+
+- [Device Manager 规格书 v1.0](Device%20Manager/Datasheets/%E9%80%9A%E7%94%A8/Device%20Manager%E8%A7%84%E6%A0%BC%E4%B9%A6_V1.0.md): Device Manager 规格书 v1.0
+
 ## DeviceLive
 
 - [DeviceLive 用户手册](DeviceLive/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/DeviceLive%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C.md): DeviceLive 用户手册
@@ -40,6 +44,7 @@
   - [第6章 系统管理](DeviceLive/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/DeviceLive%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C.md#%E7%AC%AC6%E7%AB%A0-%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86)
   - [附录 故障处理](DeviceLive/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/DeviceLive%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C.md#%E9%99%84%E5%BD%95-%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86)
   - [FAQ 常见问题解答](DeviceLive/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/DeviceLive%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C.md#faq-%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E8%A7%A3%E7%AD%94)
+- [DeviceLive 规格书 v1.0](DeviceLive/Datasheets/%E9%80%9A%E7%94%A8/DeviceLive%E8%A7%84%E6%A0%BC%E4%B9%A6_V1.0.md): DeviceLive 规格书 v1.0 — 物联网的快速发展带来了海量设备与业务数据。工业领域应用数字技术与信息技术，实现 **IT/OT 融合**，以提高生产效率、优化生产流程并改进产品质量。DeviceLive 采用云端部署，无需本地服务器，用户可通过任意浏览器随时随地访问并管理…
 
 ## DeviceSupervisor Agent
 
@@ -564,3 +569,4 @@
 ## 白鹰能源管家
 
 - [白鹰能源管家用户手册（规范版）](%E7%99%BD%E9%B9%B0%E8%83%BD%E6%BA%90%E7%AE%A1%E5%AE%B6/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/%E7%99%BD%E9%B9%B0%E8%83%BD%E6%BA%90%E7%AE%A1%E5%AE%B6%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C-V1.1.md): 白鹰能源管家 用户手册 v1.1 — 白鹰能源管家专为光伏储能管理、配电房监控、生产能耗监测和办公空间节能等关键领域设计。该平台提供客制化的关键指标看板、高效的节能策略设置、直观的 WEB 组态界面、深度的能效分析、全面的运维管理以及灵活的权限管理。搭配映翰通能源网关等智能硬件…
+- [白鹰能源管家 规格书 v1.0](%E7%99%BD%E9%B9%B0%E8%83%BD%E6%BA%90%E7%AE%A1%E5%AE%B6/Datasheets/%E9%80%9A%E7%94%A8/%E7%99%BD%E9%B9%B0%E8%83%BD%E6%BA%90%E7%AE%A1%E5%AE%B6%E8%A7%84%E6%A0%BC%E4%B9%A6_V1.0.md): 白鹰能源管家 规格书 v1.0 — 全球能源供应面临多重挑战。随着气候变化与环境污染加剧，节能减碳已成为国际共识。为有效应对这些挑战，亟需高效的节能减碳解决方案。

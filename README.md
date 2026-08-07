@@ -14,6 +14,7 @@ This repository contains the source files for InHand Networks product documentat
 │   ├── en/              # English documentation
 │   └── zh/              # Chinese documentation
 │
+├── data/                # Structured data synced to the website (EOL list)
 ├── scripts/             # Build and validation scripts
 ├── overrides/           # MkDocs theme customizations
 ├── mkdocs.yml           # Chinese site configuration
@@ -66,6 +67,34 @@ python -m mkdocs serve -f mkdocs.en.yml
 ```bash
 python -m mkdocs build -f mkdocs.yml -d site-zh --clean
 python -m mkdocs build -f mkdocs.en.yml -d site-en --clean
+```
+
+## EOL Product List
+
+The EOL tables on the corporate site are driven by two hand-editable Markdown
+tables — the Chinese and English lists are maintained independently because
+their contents legitimately differ:
+
+| File | Website page |
+|------|--------------|
+| [`data/eol-products.zh.md`](data/eol-products.zh.md) | https://www.inhand.com.cn/support/eol-products |
+| [`data/eol-products.en.md`](data/eol-products.en.md) | https://www.inhand.com/en/support/eol-products |
+
+Edit the table, open a PR — CI prints a dry-run of exactly which rows would be
+created, updated or deleted on the website. Merging to `master` syncs the list
+to the WordPress EOL REST API via `.github/workflows/sync-eol.yml`. The sync is
+incremental and idempotent; rows that exist only on the website are reported but
+never deleted unless the workflow is dispatched with `prune`.
+
+Endpoints are configured per site as repo variables `EOL_API_ZH_URL` /
+`EOL_API_EN_URL` plus secrets `EOL_API_ZH_TOKEN` / `EOL_API_EN_TOKEN`, so moving
+from a staging host to production is a variable change, not a code change.
+
+```bash
+# local preview
+export EOL_API_ZH_URL="https://<host>/wp-json/eol/v1"
+export EOL_API_ZH_TOKEN="..."
+python scripts/sync_eol_products.py --site zh --dry-run
 ```
 
 ## Contributing

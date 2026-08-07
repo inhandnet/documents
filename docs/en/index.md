@@ -128,6 +128,7 @@ hide:
       <div class="pm-card__body">
         <div class="pm-card__title">EC5000</div>
         <ul class="pm-card__links">
+        <li><a href="EC5000/certifications.html" title="EC5000 Certifications">Certifications</a></li>
         <li><a href="EC5000/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.html" title="DSA API Documentation V1.0">DSA API Documentation V1.0</a></li>
         <li><a href="EC5000/Developer%20Documentation/FlexAPI/ECSeriesAPIDocumentationV1.0.html" title="EC Series API Documentation V1.0">EC Series API Documentation V1.0</a></li>
         <li><a href="EC5000/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.html" title="EC Series Linux Software User&#x27;s Manual V1.0">EC Series Linux Software User&#x27;s Manual V1.0</a></li>
@@ -252,6 +253,7 @@ hide:
       <div class="pm-card__body">
         <div class="pm-card__title">IG502</div>
         <ul class="pm-card__links">
+        <li><a href="IG502/certifications.html" title="IG502 Certifications">Certifications</a></li>
         <li><a href="IG502/Developer%20Documentation/FlexAPI/IGSeriesAPIDocumentationV1.0.html" title="IG Series API Documentation V1.0">IG Series API Documentation V1.0</a></li>
         <li><a href="IG502/Developer%20Documentation/FlexAPI/IGsupportsIEC.APIDocumentationV1.0.html" title="IG supports IEC.API Documentation V1.0">IG supports IEC.API Documentation V1.0</a></li>
         <li><a href="IG502/Manuals/User%20manual/IG502_User%20manual_V1.0.html" title="InGateway502 Edge Computing Gateway User Manual">User manual V1.0</a></li>

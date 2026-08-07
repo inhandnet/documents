@@ -135,8 +135,17 @@ hide:
     </div>
     <div class="pm-card">
       <div class="pm-card__body">
+        <div class="pm-card__title">EC3320</div>
+        <ul class="pm-card__links">
+        <li><a href="EC3320/certifications.html" title="EC3320 认证证书">认证证书</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pm-card">
+      <div class="pm-card__body">
         <div class="pm-card__title">EC5000</div>
         <ul class="pm-card__links">
+        <li><a href="EC5000/certifications.html" title="EC5000 认证证书">认证证书</a></li>
         <li><a href="EC5000/Developer%20Documentation/FlexAPI/DSAAPI%E6%96%87%E6%A1%A3V1.0.html" title="DSA API文档V1.0">DSA API文档V1.0</a></li>
         <li><a href="EC5000/Developer%20Documentation/FlexAPI/EC%E7%B3%BB%E5%88%97API%E6%96%87%E6%A1%A3V1.0.html" title="EC系列API文档V1.0">EC系列API文档V1.0</a></li>
         <li><a href="EC5000/Developer%20Documentation/FlexAPI/EC%E7%B3%BB%E5%88%97Linux%E8%BD%AF%E4%BB%B6%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8CV1.0.html" title="EC系列Linux软件用户手册V1.0">EC系列Linux软件用户手册V1.0</a></li>
@@ -253,6 +262,7 @@ hide:
       <div class="pm-card__body">
         <div class="pm-card__title">IG502</div>
         <ul class="pm-card__links">
+        <li><a href="IG502/certifications.html" title="IG502 认证证书">认证证书</a></li>
         <li><a href="IG502/Developer%20Documentation/FlexAPI/IG%E6%94%AF%E6%8C%81IEC.API%E6%96%87%E6%A1%A3V1.0.html" title="IG支持IEC.API文档V1.0">IG支持IEC.API文档V1.0</a></li>
         <li><a href="IG502/Developer%20Documentation/FlexAPI/IG%E7%B3%BB%E5%88%97API%E6%96%87%E6%A1%A3V1.0.html" title="IG系列API文档V1.0">IG系列API文档V1.0</a></li>
         <li><a href="IG502/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/IG502%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="IG502 边缘计算网关用户手册">用户手册 V1.0</a></li>
@@ -275,6 +285,7 @@ hide:
       <div class="pm-card__body">
         <div class="pm-card__title">IG902</div>
         <ul class="pm-card__links">
+        <li><a href="IG902/certifications.html" title="IG902 认证证书">认证证书</a></li>
         <li><a href="IG902/Developer%20Documentation/FlexAPI/IG%E6%94%AF%E6%8C%81IEC.API%E6%96%87%E6%A1%A3V1.0.html" title="IG支持IEC.API文档V1.0">IG支持IEC.API文档V1.0</a></li>
         <li><a href="IG902/Developer%20Documentation/FlexAPI/IG%E7%B3%BB%E5%88%97API%E6%96%87%E6%A1%A3V1.0.html" title="IG系列API文档V1.0">IG系列API文档V1.0</a></li>
         <li><a href="IG902/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/IG902%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="IG系列用户手册V1.0">用户手册 V1.0</a></li>

@@ -107,6 +107,7 @@ hide:
       <div class="pm-card__body">
         <div class="pm-card__title">EC300</div>
         <ul class="pm-card__links">
+        <li><a href="EC300/certifications.html" title="EC300 认证证书">认证证书</a></li>
         <li><a href="EC300/Developer%20Documentation/FlexAPI/DSAAPI%E6%96%87%E6%A1%A3V1.0.html" title="DSA API文档V1.0">DSA API文档V1.0</a></li>
         <li><a href="EC300/Developer%20Documentation/FlexAPI/EC%E7%B3%BB%E5%88%97API%E6%96%87%E6%A1%A3V1.0.html" title="EC系列API文档V1.0">EC系列API文档V1.0</a></li>
         <li><a href="EC300/Developer%20Documentation/FlexAPI/EC%E7%B3%BB%E5%88%97Linux%E8%BD%AF%E4%BB%B6%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8CV1.0.html" title="EC系列Linux软件用户手册V1.0">EC系列Linux软件用户手册V1.0</a></li>
@@ -157,6 +158,7 @@ hide:
       <div class="pm-card__body">
         <div class="pm-card__title">EC940</div>
         <ul class="pm-card__links">
+        <li><a href="EC940/certifications.html" title="EC940 认证证书">认证证书</a></li>
         <li><a href="EC940/Developer%20Documentation/FlexAPI/DSAAPI%E6%96%87%E6%A1%A3V1.0.html" title="DSA API文档V1.0">DSA API文档V1.0</a></li>
         <li><a href="EC940/Developer%20Documentation/FlexAPI/EC%E7%B3%BB%E5%88%97API%E6%96%87%E6%A1%A3V1.0.html" title="EC系列API文档V1.0">EC系列API文档V1.0</a></li>
         <li><a href="EC940/Developer%20Documentation/FlexAPI/EC%E7%B3%BB%E5%88%97Linux%E8%BD%AF%E4%BB%B6%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8CV1.0.html" title="EC系列Linux软件用户手册V1.0">EC系列Linux软件用户手册V1.0</a></li>
@@ -168,6 +170,7 @@ hide:
       <div class="pm-card__body">
         <div class="pm-card__title">EC950</div>
         <ul class="pm-card__links">
+        <li><a href="EC950/certifications.html" title="EC950 认证证书">认证证书</a></li>
         <li><a href="EC950/Developer%20Documentation/FlexAPI/DSAAPI%E6%96%87%E6%A1%A3V1.0.html" title="DSA API文档V1.0">DSA API文档V1.0</a></li>
         <li><a href="EC950/Developer%20Documentation/FlexAPI/EC%E7%B3%BB%E5%88%97API%E6%96%87%E6%A1%A3V1.0.html" title="EC系列API文档V1.0">EC系列API文档V1.0</a></li>
         <li><a href="EC950/Developer%20Documentation/FlexAPI/EC%E7%B3%BB%E5%88%97Linux%E8%BD%AF%E4%BB%B6%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8CV1.0.html" title="EC系列Linux软件用户手册V1.0">EC系列Linux软件用户手册V1.0</a></li>

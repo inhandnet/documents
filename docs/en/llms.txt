@@ -184,6 +184,7 @@
   - [6.Start, recover and update](EC300/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#6start-recover-and-update)
   - [7.Programming instructions](EC300/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#7programming-instructions)
 - [EC300 Datasheet v1.0](EC300/Datasheets/General/EC300_Datasheet_V1.0.md): EC300 Datasheet v1.0 — Embrace edge computing, Empower Industrial Digitalization
+- [EC300 Certifications](EC300/certifications.md): EC300 certification list (CE, EN18031, FCC, IC, PTCRB, UL) with links to the original certificate files
 
 ## EC300-LoRaWAN
 
@@ -314,6 +315,7 @@
   - [6.Start, recover and update](EC940/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#6start-recover-and-update)
   - [7.Programming instructions](EC940/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#7programming-instructions)
 - [EC940 Datasheet v1.0](EC940/Datasheets/General/EC942_Datasheet_V1.0.md): EC940 Datasheet v1.0 — Embrace Edge AI, Empower Industrial Digitalization
+- [EC940 Certifications](EC940/certifications.md): EC940 certification list (CE, FCC) with links to the original certificate files
 
 ## EC950
 
@@ -357,6 +359,7 @@
   - [6.Start, recover and update](EC950/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#6start-recover-and-update)
   - [7.Programming instructions](EC950/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#7programming-instructions)
 - [EC950 Datasheet v1.0](EC950/Datasheets/General/EC950_Datasheet_V1.0.md): EC950 Datasheet v1.0 — Embrace Edge AI, Empower Industrial Digitalization
+- [EC950 Certifications](EC950/certifications.md): EC950 certification list (IC, PTCRB) with links to the original certificate files
 
 ## ER2000
 

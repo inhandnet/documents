@@ -98,6 +98,7 @@ hide:
       <div class="pm-card__body">
         <div class="pm-card__title">EC300</div>
         <ul class="pm-card__links">
+        <li><a href="EC300/certifications.html" title="EC300 Certifications">Certifications</a></li>
         <li><a href="EC300/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.html" title="DSA API Documentation V1.0">DSA API Documentation V1.0</a></li>
         <li><a href="EC300/Developer%20Documentation/FlexAPI/ECSeriesAPIDocumentationV1.0.html" title="EC Series API Documentation V1.0">EC Series API Documentation V1.0</a></li>
         <li><a href="EC300/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.html" title="EC Series Linux Software User&#x27;s Manual V1.0">EC Series Linux Software User&#x27;s Manual V1.0</a></li>
@@ -140,6 +141,7 @@ hide:
       <div class="pm-card__body">
         <div class="pm-card__title">EC940</div>
         <ul class="pm-card__links">
+        <li><a href="EC940/certifications.html" title="EC940 Certifications">Certifications</a></li>
         <li><a href="EC940/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.html" title="DSA API Documentation V1.0">DSA API Documentation V1.0</a></li>
         <li><a href="EC940/Developer%20Documentation/FlexAPI/ECSeriesAPIDocumentationV1.0.html" title="EC Series API Documentation V1.0">EC Series API Documentation V1.0</a></li>
         <li><a href="EC940/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.html" title="EC Series Linux Software User&#x27;s Manual V1.0">EC Series Linux Software User&#x27;s Manual V1.0</a></li>
@@ -151,6 +153,7 @@ hide:
       <div class="pm-card__body">
         <div class="pm-card__title">EC950</div>
         <ul class="pm-card__links">
+        <li><a href="EC950/certifications.html" title="EC950 Certifications">Certifications</a></li>
         <li><a href="EC950/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.html" title="DSA API Documentation V1.0">DSA API Documentation V1.0</a></li>
         <li><a href="EC950/Developer%20Documentation/FlexAPI/ECSeriesAPIDocumentationV1.0.html" title="EC Series API Documentation V1.0">EC Series API Documentation V1.0</a></li>
         <li><a href="EC950/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.html" title="EC Series Linux Software User&#x27;s Manual V1.0">EC Series Linux Software User&#x27;s Manual V1.0</a></li>

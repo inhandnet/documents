@@ -90,6 +90,7 @@
 - [EC系列API文档V1.0](EC300/Developer%20Documentation/FlexAPI/EC%E7%B3%BB%E5%88%97API%E6%96%87%E6%A1%A3V1.0.md): EC300 FlexAPI v1.0
 - [EC系列Linux软件用户手册V1.0](EC300/Developer%20Documentation/FlexAPI/EC%E7%B3%BB%E5%88%97Linux%E8%BD%AF%E4%BB%B6%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8CV1.0.md): EC300 FlexAPI v1.0 — 本用户手册适用于以下列出的Inhand基于Arm架构的边缘计算机，涵盖了适用于所有受支持型号的说明。有关配置高级设置的详细说明在手册的第3章和第4章中有介绍。在参考这些章节之前，确认您的计算机型号的硬件规格支持所涵盖的功能和配置。
 - [EC300 规格书 v1.0](EC300/Datasheets/%E9%80%9A%E7%94%A8/EC300%E8%A7%84%E6%A0%BC%E4%B9%A6_V1.0.md): EC300 规格书 v1.0
+- [EC300 认证证书](EC300/certifications.md): EC300 已获认证清单（CE、EN18031、FCC、IC、PTCRB、UL），含证书原件文件链接
 
 ## EC300-LoRaWAN
 
@@ -162,6 +163,7 @@
 - [EC系列API文档V1.0](EC940/Developer%20Documentation/FlexAPI/EC%E7%B3%BB%E5%88%97API%E6%96%87%E6%A1%A3V1.0.md): EC940 FlexAPI v1.0
 - [EC系列Linux软件用户手册V1.0](EC940/Developer%20Documentation/FlexAPI/EC%E7%B3%BB%E5%88%97Linux%E8%BD%AF%E4%BB%B6%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8CV1.0.md): EC940 FlexAPI v1.0 — 本用户手册适用于以下列出的Inhand基于Arm架构的边缘计算机，涵盖了适用于所有受支持型号的说明。有关配置高级设置的详细说明在手册的第3章和第4章中有介绍。在参考这些章节之前，确认您的计算机型号的硬件规格支持所涵盖的功能和配置。
 - [EC940 规格书 v1.0](EC940/Datasheets/%E9%80%9A%E7%94%A8/EC940%E8%A7%84%E6%A0%BC%E4%B9%A6_V1.0.md): EC940 规格书 v1.0 — EC942 系列轻量级 AI 边缘计算机
+- [EC940 认证证书](EC940/certifications.md): EC940 已获认证清单（CE、FCC），含证书原件文件链接
 
 ## EC950
 
@@ -179,6 +181,7 @@
 - [EC系列API文档V1.0](EC950/Developer%20Documentation/FlexAPI/EC%E7%B3%BB%E5%88%97API%E6%96%87%E6%A1%A3V1.0.md): EC950 FlexAPI v1.0
 - [EC系列Linux软件用户手册V1.0](EC950/Developer%20Documentation/FlexAPI/EC%E7%B3%BB%E5%88%97Linux%E8%BD%AF%E4%BB%B6%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8CV1.0.md): EC950 FlexAPI v1.0 — 本用户手册适用于以下列出的Inhand基于Arm架构的边缘计算机，涵盖了适用于所有受支持型号的说明。有关配置高级设置的详细说明在手册的第3章和第4章中有介绍。在参考这些章节之前，确认您的计算机型号的硬件规格支持所涵盖的功能和配置。
 - [EC950 规格书 v1.0](EC950/Datasheets/%E9%80%9A%E7%94%A8/EC950%E8%A7%84%E6%A0%BC%E4%B9%A6_V1.0.md): EC950 规格书 v1.0 — EC954 系列多接口型 AI 边缘计算机
+- [EC950 认证证书](EC950/certifications.md): EC950 已获认证清单（IC、PTCRB），含证书原件文件链接
 
 ## ER2000
 

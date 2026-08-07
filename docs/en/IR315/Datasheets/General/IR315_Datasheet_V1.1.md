@@ -426,7 +426,6 @@ Suitable for atmospheric monitoring, water quality monitoring, noise monitoring,
     <col style="width:12%;">
   </colgroup>
   <tr><th>Model</th><th>Region</th><th>Cellular Network</th><th>Wi-Fi</th><th>Serial/IO</th><th>GNSS</th></tr>
-  <tr><td style="white-space: nowrap;">IR315-NRQ2-&lt;WLAN/NA&gt;-&lt;S/NA&gt;</td><td>China</td><td>5G NR SA/NSA</td><td>Optional</td><td>Optional</td><td>—</td></tr>
   <tr><td style="white-space: nowrap;">IR315-LQ20-&lt;WLAN/NA&gt;-S</td><td>China</td><td>Cat.4</td><td>Optional</td><td>S</td><td>—</td></tr>
   <tr><td style="white-space: nowrap;">IR315-FQ58-&lt;WLAN/NA&gt;-&lt;S/NA&gt;</td><td>Europe/APAC/Australia/NZ</td><td>Cat.4</td><td>Optional</td><td>Optional</td><td>—</td></tr>
   <tr><td style="white-space: nowrap;">IR315-FQ58-WLAN-&lt;S/NA&gt;-G</td><td>Europe/APAC</td><td>Cat.4</td><td>Standard</td><td>Optional</td><td>Supported</td></tr>
@@ -448,7 +447,6 @@ Suitable for atmospheric monitoring, water quality monitoring, noise monitoring,
 
 | Module | Region | Cellular Type |
 |------|------|---------------|
-| NRQ2 | China | 5G NR NSA: n41/n77/n78/n79<br/>SA: n1/n3/n5*/n8/n28/n41/n77/n78/n79<br/>LTE-FDD: B1/B3/B5/B8<br/>LTE-TDD: B34/B38/B39/B40/B41<br/>WCDMA: B1/B5/B8 |
 | LQ20 | China | LTE-FDD: B1/B3/B5/B8<br/>LTE-TDD: B34/B38/B39/B40/B41<br/>WCDMA: B1/B5/B8<br/>GSM: B3/B8 |
 | FQ58 | Europe/APAC/Australia/NZ | LTE-FDD: B1/B3/B5/B7/B8/B20/B28<br/>LTE-TDD: B38/B40/B41<br/>WCDMA: B1/B5/B8<br/>GSM: B3/B8 |
 | FQ78 | Australia/New Zealand | LTE-FDD: B1/B2/B3/B4/B5/B7/B8/B28<br/>LTE-TDD: B40<br/>WCDMA: B1/B2/B5/B8<br/>GSM: B2/B3/B5/B8 |

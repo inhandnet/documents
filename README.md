@@ -86,6 +86,15 @@ to the WordPress EOL REST API via `.github/workflows/sync-eol.yml`. The sync is
 incremental and idempotent; rows that exist only on the website are reported but
 never deleted unless the workflow is dispatched with `prune`.
 
+The same data also feeds the documentation site: `scripts/generate_eol_pages.py`
+renders `docs/<lang>/EOL Products/EOL Products.md`, which is published with the
+manuals and indexed in `llms.txt` (so the docs QA agent and AI crawlers can
+answer EOL questions). Those pages are generated — edit the `data/` files.
+
+If a sync run fails, the workflow opens (or comments on) a GitHub issue labelled
+`eol-sync`, because a failure means the repo and the website have drifted. The
+sync is idempotent: fix the cause and re-run the workflow.
+
 Endpoints are configured per site as repo variables `EOL_API_ZH_URL` /
 `EOL_API_EN_URL` plus secrets `EOL_API_ZH_TOKEN` / `EOL_API_EN_TOKEN`, so moving
 from a staging host to production is a variable change, not a code change.

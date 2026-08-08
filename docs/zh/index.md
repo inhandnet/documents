@@ -180,6 +180,14 @@ hide:
     </div>
     <div class="pm-card">
       <div class="pm-card__body">
+        <div class="pm-card__title">EOL Products</div>
+        <ul class="pm-card__links">
+        <li><a href="EOL%20Products/EOL%20Products.html" title="EOL 产品清单">EOL 产品清单</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pm-card">
+      <div class="pm-card__body">
         <div class="pm-card__title">ER2000</div>
         <ul class="pm-card__links">
         <li><a href="ER2000/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/ER2000%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="映翰通企业级汇聚路由器ER2000用户手册">用户手册 V1.0</a></li>

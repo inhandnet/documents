@@ -43,6 +43,7 @@ on:
 
 permissions:
   contents: read
+  issues: write # 同步失败时开 issue 通知
 
 concurrency:
   group: sync-eol
@@ -64,6 +65,7 @@ jobs:
         run: pip install requests
 
       - name: Sync
+        id: sync
         env:
           EOL_API_ZH_URL: ${{ vars.EOL_API_ZH_URL }}
           EOL_API_ZH_TOKEN: ${{ secrets.EOL_API_ZH_TOKEN }}
@@ -78,4 +80,61 @@ jobs:
             ARGS="$ARGS --prune"
           fi
           echo "sync_eol_products.py $ARGS"
-          python scripts/sync_eol_products.py $ARGS
+          python scripts/sync_eol_products.py $ARGS 2>&1 | tee sync.log
+          exit "${PIPESTATUS[0]}"
+
+      # 同步失败 = 仓库已经改了、官网没跟上，必须有人知道。
+      # 开一个 issue（不需要额外的 SMTP/webhook 密钥，GitHub 会按各人的
+      # 通知设置发邮件），同一次故障不会重复开：已有未关闭的就追加评论。
+      # 脚本是幂等的，修好后重跑 workflow 即可补上差异。
+      - name: Notify on failure
+        if: failure() && github.event_name != 'pull_request'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            let log = '';
+            try {
+              log = fs.readFileSync('sync.log', 'utf8').split('\n').slice(-40).join('\n');
+            } catch (e) {
+              log = '(没有拿到日志，见 run 链接)';
+            }
+            const runUrl = `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
+            const title = 'EOL 清单同步到官网失败';
+            const body = [
+              `同步 run：${runUrl}`,
+              `触发：${context.eventName} @ ${context.sha.substring(0, 8)}`,
+              '',
+              '仓库里的 EOL 清单已经变更，但官网没有同步成功，两边现在不一致。',
+              '脚本是幂等的：修掉原因后重新跑一次 workflow 即可补上差异，不会重复创建记录。',
+              '',
+              '<details><summary>日志末尾</summary>',
+              '',
+              '```',
+              log,
+              '```',
+              '',
+              '</details>',
+            ].join('\n');
+            const existing = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: 'eol-sync',
+            });
+            if (existing.data.length > 0) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: existing.data[0].number,
+                body,
+              });
+            } else {
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title,
+                body,
+                labels: ['eol-sync'],
+              });
+            }

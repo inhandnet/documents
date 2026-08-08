@@ -16,6 +16,11 @@ file. See [eol-products.zh.md](eol-products.zh.md) for the Chinese site.
    accidents); it is only reported. To really delete, dispatch the workflow with
    `prune` checked.
 
+This table also feeds the documentation site: CI renders
+`docs/en/EOL Products/EOL Products.md` from it, published with the manuals and
+indexed in `llms.txt` (so AI assistants and crawlers can answer EOL questions).
+That page is generated — never edit it by hand, edit this table.
+
 Local preview: `python scripts/sync_eol_products.py --site en --dry-run`
 
 ## List

@@ -13,6 +13,10 @@
 4. 删掉某一行**不会**自动删除官网上的记录（防误删），只会在日志里提示；确实要删就手动
    触发 workflow 并勾选 `prune`。
 
+这张表同时也是文档站 EOL 页面的来源：CI 会由它生成
+`docs/zh/EOL Products/EOL Products.md`，随手册站发布并进 `llms.txt`（AI 问答/爬虫可查）。
+那个页面是自动生成的，别去手改，改这里。
+
 本地预演：`python scripts/sync_eol_products.py --site zh --dry-run`
 
 ## 清单

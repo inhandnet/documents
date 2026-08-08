@@ -11,6 +11,8 @@ on:
       - "overrides/**"
       - "mkdocs.yml"
       - "mkdocs.en.yml"
+      # EOL 清单：页面在构建期由 data/ 生成，改清单要重新发布站点
+      - "data/eol-products.*.md"
   workflow_dispatch:
     inputs:
       validate_all:
@@ -59,6 +61,16 @@ jobs:
             echo "全量上传"
             python scripts/upload_specs_to_cloud.py --dist-dir docs
           fi
+
+      # 1.5 Regenerate the EOL pages from data/eol-products.{zh,en}.md.
+      # generate-llms.yml also commits them, but its commit carries
+      # "[skip ci]" and therefore never triggers this workflow — building
+      # them here keeps the published site current on the same run.
+      # Deterministic and .md-only, so it cannot affect the cloud upload
+      # (step 1 runs first and skips .md) or the git-diff based validation.
+      - name: Generate EOL pages
+        if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+        run: python scripts/generate_eol_pages.py
 
       # 2. Generate product index pages
       - name: Generate Product Index Pages

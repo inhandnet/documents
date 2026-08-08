@@ -14,6 +14,7 @@ on:
     branches: [master]
     paths:
       - "docs/**"
+      - "data/eol-products.*.md"
   workflow_dispatch:
 
 permissions:
@@ -38,6 +39,11 @@ jobs:
       # All generators are standard-library only — no pip install, cannot
       # break the build env. Order matters: asset pages must exist before
       # llms.txt / homepage generation so they get indexed.
+      # EOL 页面由 data/eol-products.{zh,en}.md 生成，必须排在 llms.txt /
+      # 首页生成之前，否则新增的 EOL 内容当次不会被索引。
+      - name: Generate EOL pages
+        run: python scripts/generate_eol_pages.py
+
       - name: Generate certification/drawing registry pages
         run: python scripts/generate_asset_pages.py
 

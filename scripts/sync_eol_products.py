@@ -28,156 +28,25 @@ URL 填到 /wp-json/eol/v1 为止，例如 https://<host>/wp-json/eol/v1
 
 import argparse
 import os
-import re
 import sys
 from pathlib import Path
 from typing import Dict, List, Tuple
 
 import requests
 
-REPO_ROOT = Path(__file__).resolve().parent.parent
-DATA_DIR = REPO_ROOT / "data"
-
-SITES = ("zh", "en")
-DATE_FIELDS = ("order_stop_date", "production_stop_date", "support_stop_date")
-API_FIELDS = ("discontinued_series", "replacement_series") + DATE_FIELDS
-
-# 表头 → API 字段。中英文两套写法都认，大小写和空格不敏感。
-HEADER_ALIASES = {
-    "discontinued_series": ("停产产品系列", "停产产品", "eol product", "eol products", "discontinued"),
-    "replacement_series": ("替代产品系列", "替代产品", "replacement", "replacement product"),
-    "order_stop_date": ("停止订购日期", "停止订购", "end of ordering", "last order date"),
-    "production_stop_date": ("停止生产日期", "停止生产", "end of production"),
-    "support_stop_date": ("停止支持日期", "停止支持", "end of support"),
-}
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from eol_data import (  # noqa: E402
+    FIELDS,
+    SITES,
+    EolDataError,
+    data_file,
+    load_entries,
+    match_key,
+)
 
 TIMEOUT = 30
 PER_PAGE = 100
 
-
-# --------------------------------------------------------------------------
-# 解析 Markdown 表格
-# --------------------------------------------------------------------------
-
-def data_file(site: str) -> Path:
-    return DATA_DIR / f"eol-products.{site}.md"
-
-
-def normalize_header(cell: str) -> str:
-    text = re.sub(r"[\s*`|]+", "", cell).strip().lower()
-    text = text.replace("（", "(").replace("）", ")")
-    for field, aliases in HEADER_ALIASES.items():
-        for alias in aliases:
-            if text == re.sub(r"\s+", "", alias).lower():
-                return field
-    return ""
-
-
-def clean_cell(cell: str) -> str:
-    """去掉 Markdown 强调符号和多余空白，中文「系列」前不留空格。"""
-    text = cell.replace(" ", " ").strip()
-    text = re.sub(r"^\*\*(.*)\*\*$", r"\1", text).strip()
-    text = re.sub(r"\s+", " ", text)
-    text = re.sub(r"\s*系列$", "系列", text)
-    return text
-
-
-def parse_date(value: str, where: str) -> str:
-    """接受 YYYY-MM-DD 和官网上的 M/D/YYYY，统一输出 ISO 8601。"""
-    text = value.strip()
-    if not text or text in {"-", "—", "TBD", "待定"}:
-        return ""
-    iso = re.fullmatch(r"(\d{4})-(\d{1,2})-(\d{1,2})", text)
-    if iso:
-        y, m, d = iso.groups()
-    else:
-        us = re.fullmatch(r"(\d{1,2})/(\d{1,2})/(\d{4})", text)
-        if not us:
-            raise SystemExit(f"[错误] {where} 日期格式无法识别：{value!r}（用 YYYY-MM-DD）")
-        m, d, y = us.groups()
-    if not (1 <= int(m) <= 12 and 1 <= int(d) <= 31):
-        raise SystemExit(f"[错误] {where} 日期不合法：{value!r}")
-    return f"{int(y):04d}-{int(m):02d}-{int(d):02d}"
-
-
-def split_row(line: str) -> List[str]:
-    return [c.strip() for c in line.strip().strip("|").split("|")]
-
-
-def parse_markdown_table(path: Path) -> List[Dict[str, str]]:
-    """取文件里第一张能认出表头的 Markdown 表格。"""
-    lines = path.read_text(encoding="utf-8").splitlines()
-    columns: List[str] = []
-    rows: List[Dict[str, str]] = []
-    in_table = False
-
-    for lineno, line in enumerate(lines, 1):
-        stripped = line.strip()
-        if not stripped.startswith("|"):
-            if in_table:
-                break  # 表格结束
-            continue
-        cells = split_row(stripped)
-
-        if not in_table:
-            mapped = [normalize_header(c) for c in cells]
-            if mapped.count("discontinued_series") == 1 and mapped.count("replacement_series") == 1:
-                columns = mapped
-                in_table = True
-            continue
-
-        if all(re.fullmatch(r":?-{2,}:?", c) for c in cells if c):
-            continue  # 分隔行
-
-        if len(cells) != len(columns):
-            raise SystemExit(
-                f"[错误] {path.name}:{lineno} 有 {len(cells)} 列，表头是 {len(columns)} 列：{stripped}"
-            )
-
-        record = {f: "" for f in API_FIELDS}
-        for field, cell in zip(columns, cells):
-            if not field:
-                continue
-            value = clean_cell(cell)
-            record[field] = (
-                parse_date(value, f"{path.name}:{lineno}") if field in DATE_FIELDS else value
-            )
-        if not record["discontinued_series"]:
-            raise SystemExit(f"[错误] {path.name}:{lineno} 缺少停产产品系列")
-        rows.append(record)
-
-    if not in_table:
-        raise SystemExit(f"[错误] {path} 里没找到 EOL 表格（表头需含「停产产品系列/EOL Product」列）")
-    if not rows:
-        raise SystemExit(f"[错误] {path} 的表格是空的")
-    return rows
-
-
-def match_key(text: str) -> str:
-    """匹配用的归一化键：忽略空格与大小写差异。"""
-    return re.sub(r"\s+", "", str(text)).strip().lower()
-
-
-def load_entries(site: str) -> List[Dict[str, str]]:
-    path = data_file(site)
-    if not path.exists():
-        raise SystemExit(f"[错误] 找不到数据文件 {path}")
-    rows = parse_markdown_table(path)
-    seen: Dict[str, int] = {}
-    for i, row in enumerate(rows, 1):
-        key = match_key(row["discontinued_series"])
-        if key in seen:
-            raise SystemExit(
-                f"[错误] {path.name} 里 {row['discontinued_series']} 重复"
-                f"（第 {seen[key]} 行和第 {i} 行）"
-            )
-        seen[key] = i
-    return rows
-
-
-# --------------------------------------------------------------------------
-# 远端 API
-# --------------------------------------------------------------------------
 
 class EolApi:
     def __init__(self, base_url: str, token: str):
@@ -219,10 +88,6 @@ class EolApi:
         return self._request("DELETE", f"/products/{item_id}")
 
 
-# --------------------------------------------------------------------------
-# 对账
-# --------------------------------------------------------------------------
-
 def diff(
     entries: List[dict], remote: List[dict]
 ) -> Tuple[List[dict], List[Tuple[dict, dict, dict]], List[dict]]:
@@ -242,9 +107,7 @@ def diff(
         if item is None:
             to_create.append(entry)
             continue
-        changes = {
-            f: entry[f] for f in API_FIELDS if (entry.get(f) or "") != str(item.get(f) or "")
-        }
+        changes = {f: entry[f] for f in FIELDS if (entry.get(f) or "") != str(item.get(f) or "")}
         if changes:
             to_update.append((item, entry, changes))
 
@@ -319,7 +182,11 @@ def main() -> int:
     args = parser.parse_args()
 
     sites = SITES if args.site == "all" else (args.site,)
-    failures = sum(sync_site(s, args.dry_run, args.prune) for s in sites)
+    try:
+        failures = sum(sync_site(s, args.dry_run, args.prune) for s in sites)
+    except EolDataError as exc:
+        print(f"[错误] {exc}", file=sys.stderr)
+        return 2
     if failures:
         print(f"\n共 {failures} 个操作失败", file=sys.stderr)
         return 1

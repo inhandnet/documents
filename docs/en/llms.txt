@@ -970,6 +970,7 @@
 - [InHand VG814 User Manual (Standard Edition) V1.2](VG814/Manuals/User%20manual/VG814_User%20manual_V1.0.md): VG814 User manual v1.0 — The InHand VG814 is a new-generation 4G in-vehicle gateway oriented at the Internet of Vehicles (IoV). It provides fast…
 - [VG814 Rail v1.0](VG814/Datasheets/Rail/VG814-Railway_Datasheet_V1.0.md): VG814 Rail v1.0 — All-in-one, high-performance, rugged rail cellular gateway
 - [VG814 Road v1.0](VG814/Datasheets/Road/VG814-Road_Datasheet_V1.0.md): VG814 Road v1.0 — High-performance, all-in-one, open vehicle gateway
+- [VG814 Road v1.1](VG814/Datasheets/Road/VG814-Road_Datasheet_V1.1.md): VG814 Road v1.1 — High-performance, all-in-one, open vehicle gateway
 - [VG814 Certifications](VG814/certifications.md): VG814 certification list (CE, E-Mark, E-mark, ECER118, EN18031, EN45545, EN50155, EN61373, ISO16750, RoHS) with links to the original certificate files
 - [VG814 Drawings](VG814/drawings.md): VG814 mechanical drawings (2D, 3D) with links to the original drawing files
 

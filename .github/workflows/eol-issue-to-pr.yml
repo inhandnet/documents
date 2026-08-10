@@ -1,0 +1,150 @@
+name: EOL Change Request to PR
+
+# 产品/市场同事用 Issue 表单（.github/ISSUE_TEMPLATE/eol-change.yml）提交一条
+# EOL 变更申请，这个工作流把它写进 data/eol-products.*.md 并开一个 PR，
+# 由维护人核对后合并。填表人不接触 Markdown，也不需要 Git 权限。
+#
+# 说明：由 GITHUB_TOKEN 创建的 PR 不会触发别的工作流（GitHub 的防递归规则），
+# 所以同步预演在这里直接跑，结果写进 PR 正文，而不是等 sync-eol.yml 的 PR 检查。
+on:
+  issues:
+    types: [opened, edited]
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+concurrency:
+  group: eol-issue-${{ github.event.issue.number }}
+  cancel-in-progress: false
+
+jobs:
+  apply:
+    # 只处理带 eol-change 标签的 Issue（模板会自动打上），
+    # 且只接受本仓库有写权限的人提交——公开仓库任何人都能开 Issue，
+    # 不设这道闸就等于把数据文件的写入口开给了所有人。
+    if: >
+      contains(github.event.issue.labels.*.name, 'eol-change') &&
+      contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.issue.author_association)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Apply the request to the data files
+        id: apply
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
+        run: python scripts/apply_eol_issue.py
+
+      # 申请被拒（型号重复、日期写错、要改的型号不存在……）：
+      # 把脚本给出的中文说明回帖给填表人，让他自己就能改对。
+      - name: Explain the rejection on the issue
+        if: failure() && steps.apply.conclusion == 'failure'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const runUrl = `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: [
+                '这份申请没能自动处理，多半是表单里某项填得不对。',
+                '',
+                `具体原因见运行日志的「Apply the request」这一步：${runUrl}`,
+                '',
+                '改好上面的问题后，**直接编辑这个 Issue**（右上角 ··· → Edit）保存，会自动重试。',
+              ].join('\n'),
+            });
+
+      - name: Regenerate the docs-site EOL pages
+        run: python scripts/generate_eol_pages.py
+
+      - name: Preview what the website sync would do
+        id: preview
+        env:
+          EOL_API_ZH_URL: ${{ vars.EOL_API_ZH_URL }}
+          EOL_API_ZH_TOKEN: ${{ secrets.EOL_API_ZH_TOKEN }}
+          EOL_API_EN_URL: ${{ vars.EOL_API_EN_URL }}
+          EOL_API_EN_TOKEN: ${{ secrets.EOL_API_EN_TOKEN }}
+        run: |
+          python scripts/sync_eol_products.py --dry-run > preview.txt 2>&1 || true
+          cat preview.txt
+
+      - name: Open the pull request
+        id: pr
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SUMMARY: ${{ steps.apply.outputs.summary }}
+          ACTION: ${{ steps.apply.outputs.action }}
+          SLUG: ${{ steps.apply.outputs.slug }}
+          ISSUE: ${{ github.event.issue.number }}
+          REQUESTER: ${{ github.event.issue.user.login }}
+        run: |
+          set -e
+          BRANCH="eol-request/${ISSUE}-${SLUG}"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -B "$BRANCH"
+          git add data docs
+          if git diff --cached --quiet; then
+            echo "没有实际改动，跳过开 PR。"
+            exit 0
+          fi
+          git commit -m "eol: ${SUMMARY} (#${ISSUE})"
+          git push -f origin "$BRANCH"
+
+          {
+            echo "本 PR 由 #${ISSUE} 的变更申请自动生成，申请人 @${REQUESTER}。"
+            echo
+            echo "**变更**：${SUMMARY}"
+            echo
+            echo "合并后官网的 EOL 表格会自动更新；文档站的 EOL 页面已在本 PR 里一并更新。"
+            echo
+            echo "<details><summary>同步预演（合并后官网会发生什么）</summary>"
+            echo
+            echo '```'
+            cat preview.txt
+            echo '```'
+            echo
+            echo "</details>"
+          } > pr-body.md
+
+          URL=$(gh pr create --base master --head "$BRANCH" \
+            --title "EOL: ${SUMMARY}" --body-file pr-body.md 2>/dev/null \
+            || gh pr view "$BRANCH" --json url -q .url)
+          echo "url=$URL" >> "$GITHUB_OUTPUT"
+          echo "PR: $URL"
+
+      - name: Link the PR back to the issue
+        if: steps.pr.outputs.url != ''
+        uses: actions/github-script@v7
+        env:
+          PR_URL: ${{ steps.pr.outputs.url }}
+          SUMMARY: ${{ steps.apply.outputs.summary }}
+        with:
+          script: |
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: [
+                `已按申请生成变更：${process.env.SUMMARY}`,
+                '',
+                `请维护人核对并合并：${process.env.PR_URL}`,
+                '',
+                '合并后官网的 EOL 表格会自动更新，本 Issue 可以关掉了。',
+              ].join('\n'),
+            });

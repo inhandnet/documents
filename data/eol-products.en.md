@@ -6,6 +6,13 @@ file. See [eol-products.zh.md](eol-products.zh.md) for the Chinese site.
 
 ## How to edit
 
+**The easy way: don't edit this file — file a change request instead.**
+On the repository's Issues tab choose New issue → "EOL 产品变更申请", fill in the
+form (operation, model, dates) and submit. A bot edits this table for you and
+opens a PR for a maintainer to review. No Markdown, no Git needed.
+
+Editing the file directly, for maintainers comfortable with Git:
+
 1. Edit the table below: add / change / remove a row, keep the five columns.
 2. Write dates as `YYYY-MM-DD` (the `7/24/2026` style used on the website is
    accepted too and converted automatically).

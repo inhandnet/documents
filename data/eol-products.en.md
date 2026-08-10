@@ -12,9 +12,9 @@ file. See [eol-products.zh.md](eol-products.zh.md) for the Chinese site.
 3. Open a PR. CI runs a dry-run and prints exactly which rows would be created,
    updated or deleted on the website — merge to `master` once that looks right,
    and the site updates itself. No WordPress admin work needed.
-4. Removing a row here does **not** delete it on the website (guard against
-   accidents); it is only reported. To really delete, dispatch the workflow with
-   `prune` checked.
+4. **Removing a row here deletes the matching record on the website too**, on the
+   next merge — deletion is permanent and cannot be undone, so double-check before
+   removing a model. Preview the effect with `--no-delete` first if unsure.
 
 This table also feeds the documentation site: CI renders
 `docs/en/EOL Products/EOL Products.md` from it, published with the manuals and

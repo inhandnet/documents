@@ -2,9 +2,10 @@
 """把 data/eol-products.{zh,en}.md 里的表格同步到官网的 WordPress EOL REST API。
 
 数据源是两份 Markdown 文件（中英文各一份，内容本来就不一样，各自独立维护），
-官网 EOL 页面是下游。脚本按「停产产品系列」做增量对账：
+官网 EOL 页面是下游。脚本按「停产产品系列」做增量对账，全自动双向同步：
 本地有远端没有 → POST，两边都有但字段不同 → PUT，
-远端有本地没有 → 默认只报告，加 --prune 才 DELETE。重复跑是幂等的。
+远端有本地没有 → DELETE（数据文件删一行 = 官网删一条）。
+重复跑是幂等的。加 --no-delete 可临时只增改不删（比如演练时）。
 
 接口约定（见 WordPress 后台 EOL 管理 → API Token 页面）：
     GET    {base}/products?page=&per_page=
@@ -21,8 +22,8 @@ URL 填到 /wp-json/eol/v1 为止，例如 https://<host>/wp-json/eol/v1
 
 用法：
     python scripts/sync_eol_products.py --site zh --dry-run   # 只打印计划
-    python scripts/sync_eol_products.py --site zh             # 执行新增/更新
-    python scripts/sync_eol_products.py --site zh --prune     # 同时删除远端多余记录
+    python scripts/sync_eol_products.py --site zh             # 执行新增/更新/删除
+    python scripts/sync_eol_products.py --site zh --no-delete # 只增改，不删
     python scripts/sync_eol_products.py --site all
 """
 
@@ -114,7 +115,7 @@ def diff(
     return to_create, to_update, extra + list(by_key.values())
 
 
-def sync_site(site: str, dry_run: bool, prune: bool) -> int:
+def sync_site(site: str, dry_run: bool, do_delete: bool) -> int:
     base_url = os.environ.get(f"EOL_API_{site.upper()}_URL", "").strip()
     token = os.environ.get(f"EOL_API_{site.upper()}_TOKEN", "").strip()
     if not base_url or not token:
@@ -129,7 +130,7 @@ def sync_site(site: str, dry_run: bool, prune: bool) -> int:
     print(f"\n=== {site}（{data_file(site).name} → {base_url}）===")
     print(
         f"本地 {len(entries)} 条，远端 {len(remote)} 条 → 新增 {len(to_create)}，"
-        f"更新 {len(to_update)}，{'删除' if prune else '多余（未删）'} {len(to_delete)}"
+        f"更新 {len(to_update)}，{'删除' if do_delete else '多余（未删）'} {len(to_delete)}"
     )
     for entry in to_create:
         print(f"  + {entry['discontinued_series']}")
@@ -137,7 +138,7 @@ def sync_site(site: str, dry_run: bool, prune: bool) -> int:
         detail = ", ".join(f"{f}: {item.get(f) or '(空)'} → {changes[f] or '(空)'}" for f in changes)
         print(f"  ~ {entry['discontinued_series']}  [{detail}]")
     for item in to_delete:
-        print(f"  {'-' if prune else '!'} {item.get('discontinued_series')} (id={item.get('id')})")
+        print(f"  {'-' if do_delete else '!'} {item.get('discontinued_series')} (id={item.get('id')})")
     if not (to_create or to_update or to_delete):
         print("  已一致，无需变更")
 
@@ -160,7 +161,7 @@ def sync_site(site: str, dry_run: bool, prune: bool) -> int:
         except RuntimeError as exc:
             failures += 1
             print(f"  [失败] 更新 {entry['discontinued_series']}：{exc}", file=sys.stderr)
-    if prune:
+    if do_delete:
         for item in to_delete:
             try:
                 api.delete(item["id"])
@@ -169,7 +170,7 @@ def sync_site(site: str, dry_run: bool, prune: bool) -> int:
                 failures += 1
                 print(f"  [失败] 删除 {item.get('discontinued_series')}：{exc}", file=sys.stderr)
     elif to_delete:
-        print("  提示：远端多余记录未处理，确认无误后加 --prune 删除（不可恢复）")
+        print("  提示：--no-delete 生效，远端记录未删除")
 
     return failures
 
@@ -178,12 +179,14 @@ def main() -> int:
     parser = argparse.ArgumentParser(description="同步 EOL 产品清单到官网 API")
     parser.add_argument("--site", choices=[*SITES, "all"], default="all")
     parser.add_argument("--dry-run", action="store_true", help="只打印计划，不写入")
-    parser.add_argument("--prune", action="store_true", help="删除远端多余记录（永久删除）")
+    parser.add_argument(
+        "--no-delete", action="store_true", help="只新增/更新，不删除远端多余记录"
+    )
     args = parser.parse_args()
 
     sites = SITES if args.site == "all" else (args.site,)
     try:
-        failures = sum(sync_site(s, args.dry_run, args.prune) for s in sites)
+        failures = sum(sync_site(s, args.dry_run, not args.no_delete) for s in sites)
     except EolDataError as exc:
         print(f"[错误] {exc}", file=sys.stderr)
         return 2

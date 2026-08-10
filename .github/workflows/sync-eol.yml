@@ -1,8 +1,8 @@
 name: Sync EOL Products to Website
 
 # data/eol-products.zh.md / .en.md 是官网 EOL 页面的唯一数据源。
-# 合并到 master 后自动增量同步到 WordPress EOL API；PR 上只做 dry-run 预演，
-# 让 review 时能看到这次改动会对官网产生什么增删改。
+# 合并到 master 后自动增量同步到 WordPress EOL API（新增/更新/删除全自动）；
+# PR 上只做 dry-run 预演，让 review 时能看到这次改动会对官网产生什么增删改。
 #
 # 需要在仓库里配置（Settings → Secrets and variables → Actions）：
 #   Variables : EOL_API_ZH_URL / EOL_API_EN_URL
@@ -32,11 +32,6 @@ on:
         options: ["all", "zh", "en"]
       dry_run:
         description: "只预演，不写入官网"
-        required: false
-        default: false
-        type: boolean
-      prune:
-        description: "删除官网上本地没有的记录（永久删除，慎用）"
         required: false
         default: false
         type: boolean
@@ -75,9 +70,6 @@ jobs:
           ARGS="--site ${{ github.event.inputs.site || 'all' }}"
           if [ "${{ github.event_name }}" = "pull_request" ] || [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
             ARGS="$ARGS --dry-run"
-          fi
-          if [ "${{ github.event.inputs.prune }}" = "true" ]; then
-            ARGS="$ARGS --prune"
           fi
           echo "sync_eol_products.py $ARGS"
           python scripts/sync_eol_products.py $ARGS 2>&1 | tee sync.log

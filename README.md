@@ -83,8 +83,8 @@ their contents legitimately differ:
 Edit the table, open a PR — CI prints a dry-run of exactly which rows would be
 created, updated or deleted on the website. Merging to `master` syncs the list
 to the WordPress EOL REST API via `.github/workflows/sync-eol.yml`. The sync is
-incremental and idempotent; rows that exist only on the website are reported but
-never deleted unless the workflow is dispatched with `prune`.
+incremental, idempotent and fully bidirectional: rows created, changed or removed
+in the table are created, updated or deleted on the website.
 
 The same data also feeds the documentation site: `scripts/generate_eol_pages.py`
 renders `docs/<lang>/EOL Products/EOL Products.md`, which is published with the

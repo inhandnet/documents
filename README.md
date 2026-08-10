@@ -15,7 +15,9 @@ This repository contains the source files for InHand Networks product documentat
 │   └── zh/              # Chinese documentation
 │
 ├── data/                # Structured data synced to the website (EOL list)
-├── scripts/             # Build and validation scripts
+├── scripts/             # Build, validation, EOL sync scripts
+│   ├── sync_eol_products.py   # push data/*.md tables to the website API
+│   └── generate_eol_pages.py # render the docs-site EOL pages from data/
 ├── overrides/           # MkDocs theme customizations
 ├── mkdocs.yml           # Chinese site configuration
 └── mkdocs.en.yml        # English site configuration

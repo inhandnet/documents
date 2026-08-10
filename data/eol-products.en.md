@@ -23,6 +23,38 @@ That page is generated — never edit it by hand, edit this table.
 
 Local preview: `python scripts/sync_eol_products.py --site en --dry-run`
 
+## Editing alongside others
+
+Each row is an independent product, so **edits to different rows merge cleanly** —
+Git handles them automatically. Only two situations actually collide: two people
+both **appending to the end of the table**, or two people editing **the same row**.
+
+Two habits that avoid most collisions:
+
+- **Insert a new row inside its product group** (an IR model among the IR rows, an
+  ER model among the ER rows) instead of everyone appending at the bottom.
+- **Sync before you edit** (`git pull`, or reopen the file on the web) and open the
+  PR promptly — long-lived branches collide more.
+
+**If Git reports a conflict, don't worry — two new rows is the easiest kind to fix**,
+because both sides are correct and you simply keep both. The file will show three
+marker lines:
+
+```
+<<<<<<< HEAD
+| IR999-XX Series | IR315-FF39 Series | 2027-01-01 | 2027-03-01 | 2030-01-01 |
+=======
+| ER888-YY | ER815-NRQ1 | 2027-02-01 | 2027-04-01 | 2030-02-01 |
+>>>>>>> their branch
+```
+
+Fix it by **deleting the `<<<<<<<`, `=======` and `>>>>>>>` marker lines and keeping
+both product rows**, then commit. GitHub's "Resolve conflicts" button lets you do this
+in the browser — no command line needed. If the conflict is on the *same* row with
+different values, check with the other person instead of picking one yourself.
+
+The PR dry-run prints the final result, so you can verify before merging.
+
 ## List
 
 | EOL Product | Replacement | End of Ordering | End of Production | End of Support |

@@ -7,7 +7,7 @@
 远端有本地没有 → DELETE（数据文件删一行 = 官网删一条）。
 重复跑是幂等的。加 --no-delete 可临时只增改不删（比如演练时）。
 
-接口约定（见 WordPress 后台 EOL 管理 → API Token 页面）：
+接口约定（端点与令牌由官网维护方提供，配置见下）：
     GET    {base}/products?page=&per_page=
     POST   {base}/products
     PUT    {base}/products/{id}

@@ -8,7 +8,7 @@ name: Sync EOL Products to Website
 #   Variables : EOL_API_ZH_URL / EOL_API_EN_URL
 #               填到 /wp-json/eol/v1 为止，例如 https://<host>/wp-json/eol/v1
 #               测试站换正式站只改这两个变量，脚本和工作流都不写死域名。
-#   Secrets   : EOL_API_ZH_TOKEN / EOL_API_EN_TOKEN（后台 EOL 管理 → API Token）
+#   Secrets   : EOL_API_ZH_TOKEN / EOL_API_EN_TOKEN（向官网维护方索取）
 # 任一站点缺 URL 或 TOKEN 时该站点自动跳过，不会让流水线变红。
 on:
   pull_request:

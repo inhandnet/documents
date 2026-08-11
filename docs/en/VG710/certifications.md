@@ -12,9 +12,9 @@ This page registers the certification files for VG710. Originals are PDF / archi
 | Standard | File | Original |
 |---|---|---|
 | CE | VG710_CE_EN50121-4-EMC.pdf | [View](https://github.com/inhandnet/documents/blob/master/docs/en/VG710/Certification%20Documents/CE/VG710_CE_EN50121-4-EMC.pdf) |
-| CE | VG710_CE_FQ09.pdf | [View](https://github.com/inhandnet/documents/blob/master/docs/en/VG710/Certification%20Documents/CE/VG710_CE_FQ09.pdf) |
-| CE | VG710_CE_NRQ3.pdf | [View](https://github.com/inhandnet/documents/blob/master/docs/en/VG710/Certification%20Documents/CE/VG710_CE_NRQ3.pdf) |
-| CE | VG710_CE_NRQ5.pdf | [View](https://github.com/inhandnet/documents/blob/master/docs/en/VG710/Certification%20Documents/CE/VG710_CE_NRQ5.pdf) |
+| CE | VG710_FQ09_CE.pdf | [View](https://github.com/inhandnet/documents/blob/master/docs/en/VG710/Certification%20Documents/CE/VG710_FQ09_CE.pdf) |
+| CE | VG710_NRQ3_CE.pdf | [View](https://github.com/inhandnet/documents/blob/master/docs/en/VG710/Certification%20Documents/CE/VG710_NRQ3_CE.pdf) |
+| CE | VG710_NRQ5_CE.pdf | [View](https://github.com/inhandnet/documents/blob/master/docs/en/VG710/Certification%20Documents/CE/VG710_NRQ5_CE.pdf) |
 | E-Mark | VG710_E-Mark_E24.pdf | [View](https://github.com/inhandnet/documents/blob/master/docs/en/VG710/Certification%20Documents/E-Mark/VG710_E-Mark_E24.pdf) |
 | ECER118 | VG710_ECER118.zip | [View](https://github.com/inhandnet/documents/blob/master/docs/en/VG710/Certification%20Documents/ECER118/VG710_ECER118.zip) |
 | EN18031 | VG710_EN18031.pdf | [View](https://github.com/inhandnet/documents/blob/master/docs/en/VG710/Certification%20Documents/EN18031/VG710_EN18031.pdf) |

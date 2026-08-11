@@ -12,9 +12,9 @@ description: "VG710 已获认证清单（CE、E-Mark、ECER118、EN18031、EN455
 | 认证/标准 | 文件 | 原件 |
 |---|---|---|
 | CE | VG710_CE_EN50121-4-EMC.pdf | [查看](https://github.com/inhandnet/documents/blob/master/docs/zh/VG710/Certification%20Documents/CE/VG710_CE_EN50121-4-EMC.pdf) |
-| CE | VG710_CE_FQ09.pdf | [查看](https://github.com/inhandnet/documents/blob/master/docs/zh/VG710/Certification%20Documents/CE/VG710_CE_FQ09.pdf) |
-| CE | VG710_CE_NRQ3.pdf | [查看](https://github.com/inhandnet/documents/blob/master/docs/zh/VG710/Certification%20Documents/CE/VG710_CE_NRQ3.pdf) |
-| CE | VG710_CE_NRQ5.pdf | [查看](https://github.com/inhandnet/documents/blob/master/docs/zh/VG710/Certification%20Documents/CE/VG710_CE_NRQ5.pdf) |
+| CE | VG710_FQ09_CE.pdf | [查看](https://github.com/inhandnet/documents/blob/master/docs/zh/VG710/Certification%20Documents/CE/VG710_FQ09_CE.pdf) |
+| CE | VG710_NRQ3_CE.pdf | [查看](https://github.com/inhandnet/documents/blob/master/docs/zh/VG710/Certification%20Documents/CE/VG710_NRQ3_CE.pdf) |
+| CE | VG710_NRQ5_CE.pdf | [查看](https://github.com/inhandnet/documents/blob/master/docs/zh/VG710/Certification%20Documents/CE/VG710_NRQ5_CE.pdf) |
 | E-Mark | VG710_E-Mark_E24.pdf | [查看](https://github.com/inhandnet/documents/blob/master/docs/zh/VG710/Certification%20Documents/E-Mark/VG710_E-Mark_E24.pdf) |
 | ECER118 | VG710_ECER118.zip | [查看](https://github.com/inhandnet/documents/blob/master/docs/zh/VG710/Certification%20Documents/ECER118/VG710_ECER118.zip) |
 | EN18031 | VG710_EN18031.pdf | [查看](https://github.com/inhandnet/documents/blob/master/docs/zh/VG710/Certification%20Documents/EN18031/VG710_EN18031.pdf) |

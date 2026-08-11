@@ -361,6 +361,10 @@
 - [EC950 Datasheet v1.0](EC950/Datasheets/General/EC950_Datasheet_V1.0.md): EC950 Datasheet v1.0 — Embrace Edge AI, Empower Industrial Digitalization
 - [EC950 Certifications](EC950/certifications.md): EC950 certification list (IC, PTCRB) with links to the original certificate files
 
+## EOL Products
+
+- [EOL Product List](EOL%20Products/EOL%20Products.md): InHand Networks end-of-life (EOL) products with their replacement series and end-of-ordering, end-of-production and end-of-support dates
+
 ## ER2000
 
 - [Enterprise Router ER2000 Product User Manual](ER2000/Manuals/User%20manual/ER2000_User%20manual_V1.0.md): ER2000 User manual v1.0 — ER2000 is a high-performance enterprise router/gateway designed for mid-to-large retail sites, branch offices, and small…

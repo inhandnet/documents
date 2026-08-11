@@ -163,6 +163,14 @@ hide:
     </div>
     <div class="pm-card">
       <div class="pm-card__body">
+        <div class="pm-card__title">EOL Products</div>
+        <ul class="pm-card__links">
+        <li><a href="EOL%20Products/EOL%20Products.html" title="EOL Product List">EOL Product List</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pm-card">
+      <div class="pm-card__body">
         <div class="pm-card__title">ER2000</div>
         <ul class="pm-card__links">
         <li><a href="ER2000/Manuals/User%20manual/ER2000_User%20manual_V1.0.html" title="Enterprise Router ER2000 Product User Manual">User manual V1.0</a></li>

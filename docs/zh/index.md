@@ -454,6 +454,7 @@ hide:
       <div class="pm-card__body">
         <div class="pm-card__title">VG710</div>
         <ul class="pm-card__links">
+        <li><a href="VG710/certifications.html" title="VG710 认证证书">认证证书</a></li>
         <li><a href="VG710/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/VG710%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="InHand VG710系列车载网关用户手册">用户手册 V1.0</a></li>
         <li><a href="VG710/Use%20Cases/%E8%88%AA%E7%A9%BA%E5%9C%B0%E5%8B%A4%E8%BD%A6%E8%BE%86%E7%9B%91%E6%8E%A7/%E6%A1%88%E4%BE%8B%E6%89%8B%E5%86%8C.html" title="航空地勤车辆数字化解决方案">航空地勤车辆数字化解决方案</a></li>
         <li><a href="VG710/Use%20Cases/%E8%88%AA%E7%A9%BA%E5%9C%B0%E5%8B%A4%E8%BD%A6%E8%BE%86%E7%9B%91%E6%8E%A7/%E9%85%8D%E7%BD%AE%E6%89%8B%E5%86%8C.html" title="航空地勤车VG710车载网关配置手册">航空地勤车VG710车载网关配置手册</a></li>

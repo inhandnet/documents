@@ -546,6 +546,7 @@
 - [VG710 4G版 v1.0](VG710/Datasheets/4G%E7%89%88/VG710-4G%E8%A7%84%E6%A0%BC%E4%B9%A6_V1.0.md): VG710 4G版 v1.0
 - [VG710 5G版 v1.0](VG710/Datasheets/5G%E7%89%88/VG710-5G%E8%A7%84%E6%A0%BC%E4%B9%A6_V1.0.md): VG710 5G版 v1.0 — 高性能车域网络，强劲数据处理，灵活开发扩展
 - [VG710 规格书 v1.0](VG710/Datasheets/%E9%80%9A%E7%94%A8/VG710-M12%E8%A7%84%E6%A0%BC%E4%B9%A6_V1.0.md): VG710 规格书 v1.0 — 极速5G互联，航空级加固，开放可编程网关
+- [VG710 认证证书](VG710/certifications.md): VG710 已获认证清单（CE、E-Mark、ECER118、EN18031、EN45545、EN50155、EN61373、FCC、PTCRB、RCM、RoHS、UKCA），含证书原件文件链接
 - [航空地勤车VG710车载网关配置手册](VG710/Use%20Cases/%E8%88%AA%E7%A9%BA%E5%9C%B0%E5%8B%A4%E8%BD%A6%E8%BE%86%E7%9B%91%E6%8E%A7/%E9%85%8D%E7%BD%AE%E6%89%8B%E5%86%8C.md): VG710 航空地勤车辆监控 — InVehicle G710⻋载⽹关是⾯向⻋联⽹领域推出的新⼀代⻋载⽹关，该产品为
 - [航空地勤车辆数字化解决方案](VG710/Use%20Cases/%E8%88%AA%E7%A9%BA%E5%9C%B0%E5%8B%A4%E8%BD%A6%E8%BE%86%E7%9B%91%E6%8E%A7/%E6%A1%88%E4%BE%8B%E6%89%8B%E5%86%8C.md): VG710 航空地勤车辆监控
 

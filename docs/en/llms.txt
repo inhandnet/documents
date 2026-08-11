@@ -528,7 +528,7 @@
   - [system Management](IG502/Developer%20Documentation/FlexAPI/IGSeriesAPIDocumentationV1.0.md#system-management)
 - [IG supports IEC.API Documentation V1.0](IG502/Developer%20Documentation/FlexAPI/IGsupportsIEC.APIDocumentationV1.0.md): IG502 FlexAPI v1.0
 - [IG502 Datasheet v1.0](IG502/Datasheets/General/IG502_Datasheet_V1.0.md): IG502 Datasheet v1.0 — Embrace edge computing to empower industrial digitization
-- [IG502 Certifications](IG502/certifications.md): IG502 certification list (ANATEL, C1D2, CE, FCC, IC, MIC_JATE, PTCRB, UL) with links to the original certificate files
+- [IG502 Certifications](IG502/certifications.md): IG502 certification list (ANATEL, C1D2, CE, FCC, IC, MIC_JATE, PTCRB, RCM, UKCA, UL) with links to the original certificate files
 - [Smart Low-Voltage Power Distribution Networking Solution](IG502/Use%20Cases/Smart%20Low-Voltage%20Power%20Distribution%20Solution/case-manual.md): IG502 Smart Low-Voltage Power Distribution Solution
 - [Smart Low-Voltage Power Distribution — Configuration Guide](IG502/Use%20Cases/Smart%20Low-Voltage%20Power%20Distribution%20Solution/config-manual.md): IG502 Smart Low-Voltage Power Distribution Solution
 

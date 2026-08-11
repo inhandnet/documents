@@ -968,6 +968,7 @@
 - [VG710 4G Version v1.0](VG710/Datasheets/4G%20Version/VG710_4G_Datasheet_V1.0.md): VG710 4G Version v1.0 — High-performance, Powerful, Programmable
 - [VG710 5G Version v1.0](VG710/Datasheets/5G%20Version/VG710_5G_Datasheet_V1.0.md): VG710 5G Version v1.0 — High-performance, Powerful, Programmable
 - [VG710 Datasheet v1.0](VG710/Datasheets/General/VG710_M12_Datasheet_V1.0.md): VG710 Datasheet v1.0 — High-performance, Powerful, Programmable
+- [VG710 Certifications](VG710/certifications.md): VG710 certification list (CE, E-Mark, ECER118, EN18031, EN45545, EN50155, EN61373, FCC, PTCRB, RCM, RoHS, UKCA) with links to the original certificate files
 
 ## VG814
 

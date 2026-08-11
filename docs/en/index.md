@@ -578,6 +578,7 @@ hide:
       <div class="pm-card__body">
         <div class="pm-card__title">VG710</div>
         <ul class="pm-card__links">
+        <li><a href="VG710/certifications.html" title="VG710 Certifications">Certifications</a></li>
         <li><a href="VG710/Manuals/User%20manual/VG710_User%20manual_V1.0.html" title="InHand VG710 Series In-Vehicle Gateway User&#x27;s Manual">User manual V1.0</a></li>
         </ul>
       </div>

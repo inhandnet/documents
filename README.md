@@ -82,12 +82,12 @@ their contents legitimately differ:
 | [`data/eol-products.zh.md`](data/eol-products.zh.md) | https://www.inhand.com.cn/support/eol-products |
 | [`data/eol-products.en.md`](data/eol-products.en.md) | https://www.inhand.com/en/support/eol-products |
 
-**Non-technical contributors don't edit these files.** They open an issue with the
-"EOL 产品变更申请" form; `.github/workflows/eol-issue-to-pr.yml` applies the request
-to the tables and opens a PR for a maintainer to review. The form only accepts
-submissions from repository collaborators.
+**These two files are mirrors — don't edit them here.** The lists are maintained in
+the internal `device-hw-docs` repository (marketing and product staff file a change
+request there through an issue form) and synced into this repository automatically;
+edits made here are overwritten by the next sync.
 
-Maintainers can also edit the table directly, open a PR — CI prints a dry-run of exactly which rows would be
+When a sync lands, CI prints a dry-run of exactly which rows would be
 created, updated or deleted on the website. Merging to `master` syncs the list
 to the WordPress EOL REST API via `.github/workflows/sync-eol.yml`. The sync is
 incremental, idempotent and fully bidirectional: rows created, changed or removed

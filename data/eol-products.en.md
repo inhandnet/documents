@@ -1,66 +1,17 @@
 # EOL Product List (English site)
 
-Single source of truth for the table on <https://www.inhand.com/en/support/eol-products>.
-**The Chinese and English lists are intentionally different** — each site has its own
-file. See [eol-products.zh.md](eol-products.zh.md) for the Chinese site.
+<!-- Synced automatically from the device-hw-docs repository — do not edit here -->
 
-## How to edit
+Source data for the table on <https://www.inhand.com/en/support/eol-products>.
 
-**The easy way: don't edit this file — file a change request instead.**
-On the repository's Issues tab choose New issue → "EOL 产品变更申请", fill in the
-form (operation, model, dates) and submit. A bot edits this table for you and
-opens a PR for a maintainer to review. No Markdown, no Git needed.
+**This file is a mirror.** The list is maintained in the internal `device-hw-docs`
+repository and synced here; edits made in this repository are overwritten on the
+next sync. To add, change or remove an entry, file an "EOL 产品变更申请" in
+`device-hw-docs`.
 
-Editing the file directly, for maintainers comfortable with Git:
-
-1. Edit the table below: add / change / remove a row, keep the five columns.
-2. Write dates as `YYYY-MM-DD` (the `7/24/2026` style used on the website is
-   accepted too and converted automatically).
-3. Open a PR. CI runs a dry-run and prints exactly which rows would be created,
-   updated or deleted on the website — merge to `master` once that looks right,
-   and the site updates itself. No WordPress admin work needed.
-4. **Removing a row here deletes the matching record on the website too**, on the
-   next merge — deletion is permanent and cannot be undone, so double-check before
-   removing a model. Preview the effect with `--no-delete` first if unsure.
-
-This table also feeds the documentation site: CI renders
-`docs/en/EOL Products/EOL Products.md` from it, published with the manuals and
-indexed in `llms.txt` (so AI assistants and crawlers can answer EOL questions).
-That page is generated — never edit it by hand, edit this table.
-
-Local preview: `python scripts/sync_eol_products.py --site en --dry-run`
-
-## Editing alongside others
-
-Each row is an independent product, so **edits to different rows merge cleanly** —
-Git handles them automatically. Only two situations actually collide: two people
-both **appending to the end of the table**, or two people editing **the same row**.
-
-Two habits that avoid most collisions:
-
-- **Insert a new row inside its product group** (an IR model among the IR rows, an
-  ER model among the ER rows) instead of everyone appending at the bottom.
-- **Sync before you edit** (`git pull`, or reopen the file on the web) and open the
-  PR promptly — long-lived branches collide more.
-
-**If Git reports a conflict, don't worry — two new rows is the easiest kind to fix**,
-because both sides are correct and you simply keep both. The file will show three
-marker lines:
-
-```
-<<<<<<< HEAD
-| IR999-XX Series | IR315-FF39 Series | 2027-01-01 | 2027-03-01 | 2030-01-01 |
-=======
-| ER888-YY | ER815-NRQ1 | 2027-02-01 | 2027-04-01 | 2030-02-01 |
->>>>>>> their branch
-```
-
-Fix it by **deleting the `<<<<<<<`, `=======` and `>>>>>>>` marker lines and keeping
-both product rows**, then commit. GitHub's "Resolve conflicts" button lets you do this
-in the browser — no command line needed. If the conflict is on the *same* row with
-different values, check with the other person instead of picking one yourself.
-
-The PR dry-run prints the final result, so you can verify before merging.
+This repository uses it for two things: rendering the docs-site EOL page (indexed
+in `llms.txt`) and syncing the table on the website. The Chinese and English lists
+are intentionally different and maintained separately.
 
 ## List
 

@@ -79,11 +79,11 @@ python -m mkdocs build -f mkdocs.en.yml -d site-en --clean
 | [`data/eol-products.zh.md`](data/eol-products.zh.md) | https://www.inhand.com.cn/support/eol-products |
 | [`data/eol-products.en.md`](data/eol-products.en.md) | https://www.inhand.com/en/support/eol-products |
 
-**产品/市场同事不用改文件**：在 Issues 页点 New issue → 选「EOL 产品变更申请」，
-填表单提交，机器人会自动改好数据文件并开 PR（`.github/workflows/eol-issue-to-pr.yml`），
-维护人核对合并即可。表单只接受本仓库协作者提交。
+**这两个文件是镜像，不要在本仓库编辑**：清单在内部仓库 `device-hw-docs` 维护
+（市场/产品同事在那边用 Issue 表单提变更申请），合并后自动同步到这里，在本仓库
+的修改会被下次同步覆盖。
 
-维护人也可以直接改表格 → 提 PR → CI 会跑一次预演，打印这次改动会让官网**新增/更新/删除**
+同步进来后 → CI 会跑一次预演，打印这次改动会让官网**新增/更新/删除**
 哪些记录。合并到 `master` 后由 `.github/workflows/sync-eol.yml` 自动同步到
 WordPress EOL REST API，双向且幂等：表格里新增/修改/删除的一行，会对应
 在官网上新增/更新/删除。**删除是永久、不可恢复的**，删型号前先看 PR 预演，

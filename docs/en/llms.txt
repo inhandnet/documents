@@ -562,7 +562,7 @@
   - [system Management](IG902/Developer%20Documentation/FlexAPI/IGSeriesAPIDocumentationV1.0.md#system-management)
 - [IG supports IEC.API Documentation V1.0](IG902/Developer%20Documentation/FlexAPI/IGsupportsIEC.APIDocumentationV1.0.md): IG902 FlexAPI v1.0
 - [IG902 Datasheet v1.0](IG902/Datasheets/General/IG902_Datasheet_V1.0.md): IG902 Datasheet v1.0 — Break down protocol barriers and make industrial digitization more convenient and efficient
-- [IG902 Certifications](IG902/certifications.md): IG902 certification list (ANATEL, CE, FCC, IC, IMDA, PTCRB, RCM, UKCA) with links to the original certificate files
+- [IG902 Certifications](IG902/certifications.md): IG902 certification list (ANATEL, CE, FCC, IC, IMDA, MIC_JATE, PTCRB, RCM, UKCA) with links to the original certificate files
 
 ## IR302
 

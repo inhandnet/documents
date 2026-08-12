@@ -968,7 +968,7 @@
 - [VG710 4G Version v1.0](VG710/Datasheets/4G%20Version/VG710_4G_Datasheet_V1.0.md): VG710 4G Version v1.0 — High-performance, Powerful, Programmable
 - [VG710 5G Version v1.0](VG710/Datasheets/5G%20Version/VG710_5G_Datasheet_V1.0.md): VG710 5G Version v1.0 — High-performance, Powerful, Programmable
 - [VG710 Datasheet v1.0](VG710/Datasheets/General/VG710_M12_Datasheet_V1.0.md): VG710 Datasheet v1.0 — High-performance, Powerful, Programmable
-- [VG710 Certifications](VG710/certifications.md): VG710 certification list (CE, E-Mark, ECER118, EN18031, EN45545, EN50155, EN61373, FCC, PTCRB, RCM, RoHS, UKCA) with links to the original certificate files
+- [VG710 Certifications](VG710/certifications.md): VG710 certification list (CE, E-Mark, ECER118, EN18031, EN45545, EN50155, EN61373, FCC, ITxPT, PTCRB, RCM, RoHS, UKCA) with links to the original certificate files
 
 ## VG814
 
@@ -976,7 +976,7 @@
 - [VG814 Rail v1.0](VG814/Datasheets/Rail/VG814-Railway_Datasheet_V1.0.md): VG814 Rail v1.0 — All-in-one, high-performance, rugged rail cellular gateway
 - [VG814 Road v1.0](VG814/Datasheets/Road/VG814-Road_Datasheet_V1.0.md): VG814 Road v1.0 — High-performance, all-in-one, open vehicle gateway
 - [VG814 Road v1.1](VG814/Datasheets/Road/VG814-Road_Datasheet_V1.1.md): VG814 Road v1.1 — High-performance, all-in-one, open vehicle gateway
-- [VG814 Certifications](VG814/certifications.md): VG814 certification list (CE, E-Mark, E-mark, ECER118, EN18031, EN45545, EN50155, EN61373, ISO16750, RoHS, UKCA) with links to the original certificate files
+- [VG814 Certifications](VG814/certifications.md): VG814 certification list (CE, E-Mark, E-mark, ECER118, EN18031, EN45545, EN50155, EN61373, ISO16750, ITxPT, RoHS, UKCA) with links to the original certificate files
 - [VG814 Drawings](VG814/drawings.md): VG814 mechanical drawings (2D, 3D) with links to the original drawing files
 
 ## VR624

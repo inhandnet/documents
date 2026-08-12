@@ -465,6 +465,8 @@ hide:
       <div class="pm-card__body">
         <div class="pm-card__title">VG814</div>
         <ul class="pm-card__links">
+        <li><a href="VG814/certifications.html" title="VG814 认证证书">认证证书</a></li>
+        <li><a href="VG814/drawings.html" title="VG814 结构图纸">结构图纸</a></li>
         <li><a href="VG814/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/VG814%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="InHand VG814 用户手册 V1.0">用户手册 V1.0</a></li>
         </ul>
       </div>

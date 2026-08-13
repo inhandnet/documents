@@ -15,9 +15,6 @@ This page registers the mechanical drawings for VG814. 2D drawings are PDF, 3D m
 | 2D | VG814-Fakra-Road-5G-Version.pdf | [View](https://github.com/inhandnet/documents/blob/master/docs/en/VG814/Drawings/2D/VG814-Fakra-Road-5G-Version.pdf) |
 | 2D | VG814-TNC-Railway-4G-Version.pdf | [View](https://github.com/inhandnet/documents/blob/master/docs/en/VG814/Drawings/2D/VG814-TNC-Railway-4G-Version.pdf) |
 | 2D | VG814-TNC-Railway-5G-Version.pdf | [View](https://github.com/inhandnet/documents/blob/master/docs/en/VG814/Drawings/2D/VG814-TNC-Railway-5G-Version.pdf) |
-| 3D | VG814-Fakra-Road-4G-Version-3D_V2.stp | [View](https://github.com/inhandnet/documents/blob/master/docs/en/VG814/Drawings/3D/VG814-Fakra-Road-4G-Version-3D_V2.stp) |
 | 3D | VG814-Fakra-Road-4G-Version-3D_V2.zip | [View](https://github.com/inhandnet/documents/blob/master/docs/en/VG814/Drawings/3D/VG814-Fakra-Road-4G-Version-3D_V2.zip) |
-| 3D | VG814-Fakra-Road-5G-Version-3D_V2.stp | [View](https://github.com/inhandnet/documents/blob/master/docs/en/VG814/Drawings/3D/VG814-Fakra-Road-5G-Version-3D_V2.stp) |
 | 3D | VG814-Fakra-Road-5G-Version-3D_V2.zip | [View](https://github.com/inhandnet/documents/blob/master/docs/en/VG814/Drawings/3D/VG814-Fakra-Road-5G-Version-3D_V2.zip) |
-| 3D | VG814-TNC-Railway-5G-Version-3D.stp | [View](https://github.com/inhandnet/documents/blob/master/docs/en/VG814/Drawings/3D/VG814-TNC-Railway-5G-Version-3D.stp) |
 | 3D | VG814-TNC-Railway-5G-Version-3D.zip | [View](https://github.com/inhandnet/documents/blob/master/docs/en/VG814/Drawings/3D/VG814-TNC-Railway-5G-Version-3D.zip) |

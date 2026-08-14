@@ -193,6 +193,20 @@ jobs:
             -e "ssh -p 22 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" \
             site-zh/ "$U@$H:/data/wordpress/manuals/"
 
+      # 新中文站（CN_OVERSEAS_HOST_NEW）。用与现有中文站相同的账密和路径。
+      # continue-on-error：部署失败不阻塞现有流程，便于先验证新站是否可用。
+      - name: Deploy Chinese site to New Server
+        if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+        continue-on-error: true
+        env:
+          H: ${{ secrets.CN_OVERSEAS_HOST_NEW }}
+          U: ${{ secrets.CN_OVERSEAS_USER }}
+          P: ${{ secrets.CN_OVERSEAS_PASS }}
+        run: |
+          sshpass -p "$P" rsync -az --delete \
+            -e "ssh -p 22 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" \
+            site-zh/ "$U@$H:/data/wordpress/manuals/"
+
       - name: Deploy English site to Overseas Server
         if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
         env:

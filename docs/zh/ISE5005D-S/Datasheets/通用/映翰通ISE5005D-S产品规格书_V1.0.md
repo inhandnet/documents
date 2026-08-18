@@ -1,4 +1,4 @@
-<div style="width: 100%;height: 100%;background: url(images/ISE5005D.png); background-size: 100% 100%;">
+<div style="width: 100%;height: 100%;background: url(images/ISE5005D-S-cover.jpg); background-size: 100% 100%;">
   <div style="height:75%;">
     <div style="width:35%; padding: 40px 40px">
       <img src="images/logo.png" alt="logo" />
@@ -51,13 +51,12 @@ ISE5005D-S-5GT-24 是 1 路千兆上联电口 + 4 路千兆下联电口的工业
 | 电源 | DC 12-52 V，双电源冗余备份，< 3 W |
 | 环境 | 工作温度 -40 至 +80 ℃，IP40 |
 | 电磁兼容 | EN61000-4-2/3/4/5/6 Level 3；EMI：FCC Part 15、CISPR (EN55032) Class A |
-| 认证 | CE、FCC、ROHS |
 
 # <span style="color: green;">2. 产品尺寸</span>
 
 <div style="display: flex; align-items: end; flex-wrap: wrap; justify-content: space-between;row-gap: 16px;">
   <div style="width: 100%;">
-    <img src="images/dimension.png" width="100%" alt="ISE5005D-S 尺寸图" />
+    <img src="images/dimension.png" width="80%" alt="ISE5005D-S 尺寸图" />
     <div style="width: 100%; text-align: center; font-size: 12px;">ISE5005D-S</div>
   </div>
   <div style="width: 100%;">
@@ -114,8 +113,6 @@ ISE5005D-S-5GT-24 是 1 路千兆上联电口 + 4 路千兆下联电口的工业
 | 冲击 | IEC 60068-2-27 |
 | 自由落体 | IEC 60068-2-32 |
 | 震动 | IEC 60068-2-6 |
-| <span style="color: green;">**认证**</span> | |
-| 认证 | CE、FCC、ROHS |
 | <span style="color: green;">**质量保证**</span> | |
 | 质保期 | 5 年 |
 | MTBF | 300,000 小时 |

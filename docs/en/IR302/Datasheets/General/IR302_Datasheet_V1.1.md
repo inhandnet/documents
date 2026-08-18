@@ -38,7 +38,7 @@ The IR302 adopts a fanless cooling design, supports wide temperature and wide vo
 # <span style="color: green;">2. Key Features</span>
 
 ## <span style="color: green;">2.1 Industrial-Grade Reliability</span>
-- **Wide Temperature Design**: Operating temperature range of Normal:-35℃ to 70℃ (-31 °F ~ 158 °F)，Extended:-40℃ to 75℃ (-40 °F ~ 167 °F)
+- **Wide Temperature Design**: Operating temperature range of Normal:-35℃to70℃，Extended:-40℃ to 75℃
 - **Wide Voltage Power Supply**: Supports 9~36V DC input, compatible with 12V DC adapters, with reverse polarity protection and surge protection
 - **Fanless Design**: Full metal enclosure with natural convection cooling, no moving parts, significantly improved MTBF
 - **Electromagnetic Compatibility**: Passes industrial-grade EMC testing, adaptable to strong electromagnetic interference environments
@@ -48,10 +48,10 @@ The IR302 adopts a fanless cooling design, supports wide temperature and wide vo
 - **Wi-Fi**: Supports 802.11 b/g/n, can function as both AP and STA simultaneously, meeting on-site wireless coverage and bridging requirements
 - **Ethernet**: 1 x 100 Mbps WAN/LAN switchable port + 1 x 100 Mbps LAN port, supports dual-port isolation and link backup
 - **Link Backup**: Intelligent switching among cellular/wired/Wi-Fi multi-link connections to ensure business continuity
-- **Dual-SIM Redundancy**: Supports dual-SIM card network backup, ICCID binding, and signal threshold automatic switching
+- **Dual SIM Redundancy**: Supports dual SIM card network backup, ICCID binding, and signal threshold automatic switching
 
 ## <span style="color: green;">2.3 Enterprise-Grade Security and VPN</span>
-- **VPN Protocols**: IPsec (IKEv1/v2), GRE, L2TP, PPTP, OpenVPN, WireGuard, ZeroTier
+- **VPN Protocols**: IPSec (IKEv1/v2), GRE, L2TP, PPTP, OpenVPN, WireGuard, ZeroTier
 - **Advanced Encryption**: Supports AES256 / SHA512 / ECP521 (DH21) and other military-grade encryption algorithms
 - **Firewall**: Access control, port forwarding (50 rules), virtual IP mapping, DMZ, MAC-IP binding (20 rules), NAT, content filtering, SIP ALG
 - **Wi-Fi Security**: 802.1X authentication, Portal authentication (captive portal), AP whitelist/blacklist / MAC filtering, Wi-Fi client isolation, Wi-Fi password encrypted storage
@@ -60,7 +60,7 @@ The IR302 adopts a fanless cooling design, supports wide temperature and wide vo
 
 ## <span style="color: green;">2.4 Intelligent Operations and Maintenance Management</span>
 - **Remote Management Platform**: Supports Device Manager (DM) batch management and InConnect Service (ICS) cloud management platform
-- **DTU Function**: Supports serial RS-232/RS-485 and Ethernet DTU modes for transparent data transmission
+- **DTU Function**: Supports serial RS232/RS485 and Ethernet DTU modes for transparent data transmission
 - **SNMP/Trap**: Standard SNMP v1/v2c/v3 and Trap alarms, compatible with mainstream network management systems
 - **WebUI/CLI**: Graphical Chinese interface + complete command line (show/ping/telnet/traceroute/reboot/arping, etc.)
 - **SSH Client**: Device can act as SSH client to connect to remote servers
@@ -74,16 +74,16 @@ The IR302 adopts a fanless cooling design, supports wide temperature and wide vo
 |---|---|
 | Cellular | 4G LTE Cat.4/Cat.1/3G/2G, multi-band coverage, dual-SIM redundancy, ICCID binding and RSRP threshold auto-switching |
 | Wi-Fi | IEEE 802.11 b/g/n, 2.4 GHz, AP/STA/AP+STA mixed mode, up to 32 clients |
-| VPN | IPsec (IKEv1/v2), GRE, L2TP, PPTP, OpenVPN, WireGuard, ZeroTier |
+| VPN | IPSec (IKEv1/v2), GRE, L2TP, PPTP, OpenVPN, WireGuard, ZeroTier |
 | Security | Firewall, ACL access contro/l, MAC-IP binding (200 entries), content filtering, SIP ALG, attack protection |
 | Cloud Management | Device Manager (DM) batch configuration and firmware upgrade; InConnect Service (ICS) cloud management |
 | Remote Management | SNMP v1/v2c/v3, WebUI, CLI, SSH Client, HTTP/HTTPS API |
 | Processor | 580MHz industrial-grade embedded processor, 128 MB DDR, 32 MB SPI Flash |
 | Ethernet | 1× 10/100 Mbps WAN/LAN switchable + 1× 10/100 Mbps LAN |
-| Serial Interface | 1× RS-232/RS-485 combo terminal, DTU transparent transmission (TCP Server/Client/UDP/MQTT) |
+| Serial Interface | 1× RS232/RS485 combo terminal, DTU transparent transmission (TCP Server/Client/UDP/MQTT) |
 | Power Supply | 9&#126;36V DC wide voltage input, typical power consumption 2~5W, peak &lt; 10W, reverse polarity protection |
 | Dimensions | Approx. 100 mm × 30 mm × 100 mm (L × W × H, excluding mounting ears and antennas) |
-| Operating Temperature / Protection | Normal:-35℃ to 70℃ (-31 °F ~ 158 °F)，Extended:-40℃ to 75℃ (-40 °F ~ 167 °F), IP30, full metal fanless natural convection cooling |
+| Operating Temperature / Protection | Normal:-35℃ to 70℃，Extended:-40℃ to 75℃, IP30, full metal fanless natural convection cooling |
 
 # <span style="color: green;">3. Typical Application Scenarios</span>
 
@@ -115,7 +115,7 @@ The IR302 adopts a fanless cooling design, supports wide temperature and wide vo
 
 # <span style="color: green;">4. Product Innovations</span>
 
-## <span style="color: green;">4.1 Dual-SIM Intelligent Redundancy and Cellular Refined Operations</span>
+## <span style="color: green;">4.1 Dual SIM Intelligent Redundancy and Cellular Refined Operations</span>
 
 - **ICCID Binding + Multi-Dimensional SIM Switching Strategy**: Supports signal strength (RSRP) threshold switching, packet loss rate triggered switching, and maximum dial attempt limit, achieving truly intelligent dual-SIM network backup, eliminating simple polling-based SIM switching
 - **Cellular Signal Parameters Real-Time Cloud Upload**: Key RF metrics such as RSRP, RSRQ, SINR, PCI, and BAND are reported in real-time through the DM platform, allowing remote monitoring of on-site network quality without dispatching engineers
@@ -128,7 +128,7 @@ The IR302 adopts a fanless cooling design, supports wide temperature and wide vo
 
 ## <span style="color: green;">4.3 Military-Grade VPN Encryption Upgrade</span>
 
-- IPsec VPN supports **AES256 / SHA512 / ECP521 (DH21)** advanced encryption suites, meeting Grade Protection 2.0 and power/military industry compliance requirements
+- IPSec VPN supports **AES256 / SHA512 / ECP521 (DH21)** advanced encryption suites, meeting Grade Protection 2.0 and power/military industry compliance requirements
 - Provides pre-quantum computing era security assurance for cross-border data channels and sensitive business
 
 ## <span style="color: green;">4.4 Box-Free Intelligent Operations and Maintenance Toolkit</span>
@@ -156,14 +156,12 @@ The IR302 adopts a fanless cooling design, supports wide temperature and wide vo
 | Item | Specification |
 |------|---------------|
 | **Processor** | 580MHz industrial-grade embedded processor |
-| **Hardware Version** | IR302_P_MB_V12 |
 | **Memory** | 128 MB DDR |
 | **Storage** | 32 MB SPI Flash |
-| **Bootloader** | 1.1.3.r4956 |
 | **4G Module** | Depends on model configuration, covering Quectel, Fibocom, MeiG and other mainstream industrial modules (see Ordering Information for details) |
 | **Ethernet Interfaces** | 1 x 10/100 Mbps WAN/LAN switchable port<br>1 x 10/100 Mbps LAN port |
-| **Serial Port** | 1 x RS-232 / RS-485 combo terminal (supports DTU transparent transmission) |
-| **SIM Card Slots** | 2 x dual-SIM card slots (drawer type / Nano-SIM, supports dual-SIM network backup) |
+| **Serial Port** | 1 x RS232 / RS485 combo terminal (supports DTU transparent transmission) |
+| **SIM Card Slots** | 2 x dual SIM card slots (drawer type / Nano-SIM, supports dual-SIM network backup) |
 | **Antenna Interfaces** | 2 x 4G main/diversity antennas (SMA female)<br>1 x Wi-Fi antenna (SMA female, FQ38-WLAN configuration) |
 | **Power Interface** | 2-pin industrial terminal (9~36V DC)<br>Optional 12V DC adapter |
 | **Power Consumption** | Typical 2~5W, peak &lt;10W |
@@ -172,19 +170,21 @@ The IR302 adopts a fanless cooling design, supports wide temperature and wide vo
 | **Enclosure Material** | Full metal enclosure, IP30 protection rating |
 | **Mounting** | DIN rail mounting / Wall mounting |
 | **Product Dimensions** | Approx. 100 mm x 30 mm x 100 mm (L x W x H, excluding mounting ears and antennas) |
-| **Total Weight** | Approx. 250 g (0.55 lb) |
+| **Total Weight** | Approx. 250g |
 
-
-<div style="page-break-after: always;"></div>
 
 
 ## <span style="color: green;">5.1 Product Size</span>
 
 <img src="images/page_1.jpg" alt="IR300 Product Size" style="max-width: 100%;" />
 
+
+<div style="page-break-after: always;"></div>
+
+
 **Notes:**
 1. All dimensions are in millimeters (mm), with inches (in) in parentheses.
-2. Dimensions (L × W × H): 92 × 90 × 24 mm (3.62 × 3.54 × 0.94 in).
+2. Dimensions (L × W × H): 92 × 90 × 24 mm(3.62 × 3.54 × 0.94 in).
 3. All dimensions are approximate values and for reference only.
 
 # <span style="color: green;">6. Network Connectivity</span>
@@ -192,7 +192,7 @@ The IR302 adopts a fanless cooling design, supports wide temperature and wide vo
 ## <span style="color: green;">6.1 Cellular Network</span>
 - **Standard Support**: Depends on selected cellular module, covering 4G LTE Cat.4 (DL 150 Mbps / UL 50 Mbps), 4G LTE Cat.1, 3G WCDMA, 2G GSM/EDGE, etc.
 - **Frequency Bands**: Varies by module, see [8.1 Ordering Information Model Naming Convention](#81-model-naming-convention)
-- **Dual-SIM Management**: Supports dual-SIM card network backup, ICCID binding, signal strength threshold (RSRP) automatic switching, packet loss rate triggered switching, maximum dial attempt limit, minimum connection time control
+- **Dual SIM Management**: Supports dual SIM card network backup, ICCID binding, signal strength threshold (RSRP) automatic switching, packet loss rate triggered switching, maximum dial attempt limit, minimum connection time control
 - **SIM Functions**: Supports operator private network APN, PIN code lock, traffic statistics
 - **IMS Configuration**: Supports cellular dial IMS parameter configuration
 - **SMS**: SMS remote reboot/dial control, custom commands, access whitelist/blacklist
@@ -249,16 +249,20 @@ The IR302 adopts a fanless cooling design, supports wide temperature and wide vo
 | **Static Routing** | Supports multiple static routes and policy routes, supports route priority configuration |
 | **NAT** | SNAT/DNAT, NAPT, port forwarding (100 rules), virtual IP mapping, DMZ |
 | **TCP Checksum** | Supports TCP checksum option configuration |
-| **Dual-SIM Management** | Dual-SIM network backup, ICCID binding, signal threshold (RSRP) automatic switching, packet loss rate triggered switching, maximum dial attempt limit, minimum connection time control |
+| **Dual SIM Management** | Dual-SIM network backup, ICCID binding, signal threshold (RSRP) automatic switching, packet loss rate triggered switching, maximum dial attempt limit, minimum connection time control |
 | **SMS Management** | SMS remote reboot/dial control, custom commands, access whitelist |
+
+
+<div style="page-break-after: always;"></div>
+
 
 ## <span style="color: green;">7.2 VPN Tunnels</span>
 
 | VPN Type | Support Details |
 |----------|-----------------|
-| **IPsec** | IKEv1 / IKEv2, supports pre-shared key/certificate authentication, encryption algorithms include AES128/192/256, 3DES, DES; hash algorithms include MD5, SHA1, SHA256, SHA384, SHA512; DH groups include Group1/2/5/14/15/16/17/18/19/20/21 (ECP521); supports AES256+SHA512+ECP521 combination |
-| **GRE** | Standard GRE tunnel, supports over IPsec |
-| **L2TP** | L2TP over IPsec, supports MS-CHAPv2 authentication |
+| **IPSec** | IKEv1 / IKEv2, supports pre-shared key/certificate authentication, encryption algorithms include AES128/192/256, 3DES, DES; hash algorithms include MD5, SHA1, SHA256, SHA384, SHA512; DH groups include Group1/2/5/14/15/16/17/18/19/20/21 (ECP521); supports AES256+SHA512+ECP521 combination |
+| **GRE** | Standard GRE tunnel, supports over IPSec |
+| **L2TP** | L2TP over IPSec, supports MS-CHAPv2 authentication |
 | **PPTP** | PPTP client/server |
 | **OpenVPN** | Supports TUN/TAP mode, UDP/TCP transport, TLS/SSL encryption |
 | **WireGuard** | Next-generation high-performance VPN protocol, simple configuration, high encryption strength |
@@ -272,11 +276,15 @@ The IR302 adopts a fanless cooling design, supports wide temperature and wide vo
 - **Application Layer Gateway**: SIP ALG (VoIP audio/video transmission support)
 - **Attack Protection**: Ping of Death protection, SYN Flood protection
 
+
+<div style="page-break-after: always;"></div>
+
+
 ## <span style="color: green;">7.4 Industrial Communication and DTU</span>
 
 | Function | Description |
 |----------|-------------|
-| **Serial DTU** | RS-232/RS-485 transparent transmission, supports TCP Server/Client, UDP, MQTT modes, supports multi-center reporting |
+| **Serial DTU** | RS232/RS485 transparent transmission, supports TCP Server/Client, UDP, MQTT modes, supports multi-center reporting |
 | **Ethernet DTU** | Supports transparent transmission of Ethernet port data to remote TCP/UDP servers |
 | **Protocol Conversion** | Supports Modbus RTU/TCP protocol conversion (optional) |
 | **State Grid Encryption** | Supports national cryptographic algorithm module (optional, model suffix -SEC), supports IEC101/IEC104 power protocols |
@@ -311,6 +319,10 @@ The IR302 adopts a fanless cooling design, supports wide temperature and wide vo
 - **State Grid Encryption**: Supports national cryptographic algorithm module and IEC101/IEC104 power protocols (optional, model suffix -SEC)
 
 
+
+<div style="page-break-after: always;"></div>
+
+
 # <span style="color: green;">8. Ordering Information</span>
 
 ## <span style="color: green;">8.1 Model Naming Convention</span>
@@ -321,69 +333,60 @@ IR302 - [4G Module] - [Wi-Fi] - [IO/S] - [L]
 
 | Field | Code | Description |
 |-------|------|-------------|
-| 4G Module | LQ28 | China, LTE Cat.4<br>FDD: B1/B3/B5/B8<br>TDD: B34/B38/B39/B40/B41<br>WCDMA: B1/B8<br>TD-SCDMA: B34/B39<br>EVDO/CDMA: BC0<br>GSM: B3/B8 |
-| | FQ58 | Europe/APAC/Australia, LTE Cat.4<br>FDD: B1/B3/B5/B8<br>TDD: B34/B38/B39/B40/B41<br>WCDMA: B1/B5/B8<br>GSM: B3/B8 |
-| | FQ53 | Europe/Middle East/Africa, LTE Cat.1<br>FDD: B1/B3/B7/B8/B20/B28A<br>WCDMA: B1/B8<br>GSM: B3/B8 |
-| | FQ38 | North America, LTE Cat.4<br>FDD: B1/B3/B5/B7/B8/B20/B28<br>TDD: B38/B40/B41<br>WCDMA: B1/B5/B8<br>GSM: B3/B8 |
-| | FQ33 | North America, LTE Cat.1<br>FDD: B1/B3/B7/B8/B20/B28<br>WCDMA: B1/B8<br>GSM: B3/B8 |
-| | FQ78 | Australia/Latin America, LTE Cat.4<br>FDD: B2/B4/B5/B12/B13/B14/B66/B71<br>WCDMA: B2/B4/B5 |
-| | FQ88 | Japan, LTE Cat.4<br>FDD: B2/B4/B5/B12/B13/B25/B26<br>WCDMA: B2/B4/B5 |
+| 4G Module | LQ28 | China, LTE CAT4<br>FDD: B1/B3/B5/B8<br>TDD: B34/B38/B39/B40/B41<br>WCDMA: B1/B8<br>TD-SCDMA: B34/B39<br>EVDO/CDMA: BC0<br>GSM: B3/B8 |
+| | FQ58 | Europe/APAC/Australia, LTE CAT4<br>FDD: B1/B3/B5/B8<br>TDD: B34/B38/B39/B40/B41<br>WCDMA: B1/B5/B8<br>GSM: B3/B8 |
+| | FQ53 | Europe/Middle East/Africa, LTE CAT1<br>FDD: B1/B3/B7/B8/B20/B28A<br>WCDMA: B1/B8<br>GSM: B3/B8 |
+| | FQ38 | North America, LTE CAT4<br>FDD: B1/B3/B5/B7/B8/B20/B28<br>TDD: B38/B40/B41<br>WCDMA: B1/B5/B8<br>GSM: B3/B8 |
+| | FQ33 | North America, LTE CAT1<br>FDD: B1/B3/B7/B8/B20/B28<br>WCDMA: B1/B8<br>GSM: B3/B8 |
+| | FQ78 | Australia/Latin America, LTE CAT4<br>FDD: B2/B4/B5/B12/B13/B14/B66/B71<br>WCDMA: B2/B4/B5 |
+| | FQ88 | Japan, LTE CAT4<br>FDD: B2/B4/B5/B12/B13/B25/B26<br>WCDMA: B2/B4/B5 |
 | | EN00 | No cellular module (Ethernet + Wi-Fi only) |
-| | FQ68 | Latin America, LTE Cat.4<br>FDD: B1/B2/B3/B4/B5/B7/B8/B28<br>TDD: B40<br>WCDMA: B1/B2/B5/B8<br>GSM: B2/B3/B5/B8 |
+| | FQ68 | Latin America, LTE CAT4<br>FDD: B1/B2/B3/B4/B5/B7/B8/B28<br>TDD: B40<br>WCDMA: B1/B2/B5/B8<br>GSM: B2/B3/B5/B8 |
 | Wi-Fi | WLAN | Supports 802.11 b/g/n Wi-Fi |
 | | (blank) | No Wi-Fi function (omitted) |
-| Serial/IO | S | 1×RS-232 |
+| Serial/IO | S | 1×RS232 |
 | | IO | 2×IO |
 | | (blank) | No serial/IO (omitted) |
 
 ## <span style="color: green;">8.2 Standard Model List</span>
 
-<table style="width:100%; table-layout:fixed; font-size:12px;">
-  <colgroup>
-    <col style="width:28%;">
-    <col style="width:8%;">
-    <col style="width:8%;">
-    <col style="width:16%;">
-    <col style="width:40%;">
-  </colgroup>
-  <tr><th>Model</th><th>4G</th><th>Wi-Fi</th><th>Serial/IO</th><th>Description</th></tr>
-  <tr><td style="white-space: nowrap;">IR302-LQ28-WLAN-S-L</td><td>✓</td><td>✓</td><td>1×RS-232</td><td>China (LTE Cat.4)</td></tr>
-  <tr><td style="white-space: nowrap;">IR302-LQ28-S-L</td><td>✓</td><td>—</td><td>1×RS-232</td><td>China, no Wi-Fi</td></tr>
-  <tr><td style="white-space: nowrap;">IR302-FQ58-WLAN-S</td><td>✓</td><td>✓</td><td>1×RS-232</td><td>Europe/APAC/Australia (LTE Cat.4)</td></tr>
-  <tr><td style="white-space: nowrap;">IR302-FQ58-WLAN-IO</td><td>✓</td><td>✓</td><td>2×IO</td><td>Europe/APAC/Australia (LTE Cat.4)</td></tr>
-  <tr><td style="white-space: nowrap;">IR302-FQ58-S</td><td>✓</td><td>—</td><td>1×RS-232</td><td>Europe/APAC/Australia, no Wi-Fi</td></tr>
-  <tr><td style="white-space: nowrap;">IR302-FQ58-IO</td><td>✓</td><td>—</td><td>2×IO</td><td>Europe/APAC/Australia, no Wi-Fi</td></tr>
-  <tr><td style="white-space: nowrap;">IR302-FQ58-WLAN-S-L</td><td>✓</td><td>✓</td><td>1×RS-232</td><td>Europe/APAC/Australia (LTE Cat.4)</td></tr>
-  <tr><td style="white-space: nowrap;">IR302-FQ58-WLAN-IO-L</td><td>✓</td><td>✓</td><td>2×IO</td><td>Europe/APAC/Australia (LTE Cat.4)</td></tr>
-  <tr><td style="white-space: nowrap;">IR302-FQ58-S-L</td><td>✓</td><td>—</td><td>1×RS-232</td><td>Europe/APAC/Australia, no Wi-Fi</td></tr>
-  <tr><td style="white-space: nowrap;">IR302-FQ58-IO-L</td><td>✓</td><td>—</td><td>2×IO</td><td>Europe/APAC/Australia, no Wi-Fi</td></tr>
-  <tr><td style="white-space: nowrap;">IR302-FQ53-WLAN</td><td>✓</td><td>✓</td><td>—</td><td>Europe/Middle East/Africa (LTE Cat.1), no serial/IO</td></tr>
-  <tr><td style="white-space: nowrap;">IR302-FQ53</td><td>✓</td><td>—</td><td>—</td><td>Europe/Middle East/Africa (LTE Cat.1), no Wi-Fi, no serial/IO</td></tr>
-  <tr><td style="white-space: nowrap;">IR302-FQ53-WLAN-S</td><td>✓</td><td>✓</td><td>1×RS-232</td><td>Europe/Middle East/Africa (LTE Cat.1)</td></tr>
-  <tr><td style="white-space: nowrap;">IR302-FQ53-WLAN-IO</td><td>✓</td><td>✓</td><td>2×IO</td><td>Europe/Middle East/Africa (LTE Cat.1)</td></tr>
-  <tr><td style="white-space: nowrap;">IR302-FQ53-WLAN-L</td><td>✓</td><td>✓</td><td>—</td><td>Europe/Middle East/Africa (LTE Cat.1), no serial/IO</td></tr>
-  <tr><td style="white-space: nowrap;">IR302-FQ53-L</td><td>✓</td><td>—</td><td>—</td><td>Europe/Middle East/Africa (LTE Cat.1), no Wi-Fi, no serial/IO</td></tr>
-  <tr><td style="white-space: nowrap;">IR302-FQ53-WLAN-S-L</td><td>✓</td><td>✓</td><td>1×RS-232</td><td>Europe/Middle East/Africa (LTE Cat.1)</td></tr>
-  <tr><td style="white-space: nowrap;">IR302-FQ53-WLAN-IO-L</td><td>✓</td><td>✓</td><td>2×IO</td><td>Europe/Middle East/Africa (LTE Cat.1)</td></tr>
-  <tr><td style="white-space: nowrap;">IR302-FQ38-WLAN-S</td><td>✓</td><td>✓</td><td>1×RS-232</td><td>North America (LTE Cat.4)</td></tr>
-  <tr><td style="white-space: nowrap;">IR302-FQ38-WLAN-IO</td><td>✓</td><td>✓</td><td>2×IO</td><td>North America (LTE Cat.4)</td></tr>
-  <tr><td style="white-space: nowrap;">IR302-FQ38-S</td><td>✓</td><td>—</td><td>1×RS-232</td><td>North America (LTE Cat.4), no Wi-Fi</td></tr>
-  <tr><td style="white-space: nowrap;">IR302-FQ38-IO</td><td>✓</td><td>—</td><td>2×IO</td><td>North America (LTE Cat.4), no Wi-Fi</td></tr>
-  <tr><td style="white-space: nowrap;">IR302-FQ33-WLAN-S</td><td>✓</td><td>✓</td><td>1×RS-232</td><td>North America (LTE Cat.1)</td></tr>
-  <tr><td style="white-space: nowrap;">IR302-FQ33-WLAN-IO</td><td>✓</td><td>✓</td><td>2×IO</td><td>North America (LTE Cat.1)</td></tr>
-  <tr><td style="white-space: nowrap;">IR302-FQ33-S</td><td>✓</td><td>—</td><td>1×RS-232</td><td>North America (LTE Cat.1), no Wi-Fi</td></tr>
-  <tr><td style="white-space: nowrap;">IR302-FQ33-IO</td><td>✓</td><td>—</td><td>2×IO</td><td>North America (LTE Cat.1), no Wi-Fi</td></tr>
-  <tr><td style="white-space: nowrap;">IR302-FQ78-WLAN-S</td><td>✓</td><td>✓</td><td>1×RS-232</td><td>Australia/Latin America (LTE Cat.4)</td></tr>
-  <tr><td style="white-space: nowrap;">IR302-FQ78-WLAN-IO</td><td>✓</td><td>✓</td><td>2×IO</td><td>Australia/Latin America (LTE Cat.4)</td></tr>
-  <tr><td style="white-space: nowrap;">IR302-FQ78-S</td><td>✓</td><td>—</td><td>1×RS-232</td><td>Australia/Latin America (LTE Cat.4), no Wi-Fi</td></tr>
-  <tr><td style="white-space: nowrap;">IR302-FQ78-IO</td><td>✓</td><td>—</td><td>2×IO</td><td>Australia/Latin America (LTE Cat.4), no Wi-Fi</td></tr>
-  <tr><td style="white-space: nowrap;">IR302-FQ88-WLAN-S</td><td>✓</td><td>✓</td><td>1×RS-232</td><td>Japan (LTE Cat.4)</td></tr>
-  <tr><td style="white-space: nowrap;">IR302-FQ88-S</td><td>✓</td><td>—</td><td>1×RS-232</td><td>Japan (LTE Cat.4), no Wi-Fi</td></tr>
-  <tr><td style="white-space: nowrap;">IR302-EN00-WLAN</td><td>—</td><td>✓</td><td>—</td><td>No cellular module, Ethernet + Wi-Fi only</td></tr>
-  <tr><td style="white-space: nowrap;">IR302-FQ68-WLAN-S</td><td>✓</td><td>✓</td><td>1×RS-232</td><td>Latin America (LTE Cat.4)</td></tr>
-  <tr><td style="white-space: nowrap;">IR302-FQ68-S</td><td>✓</td><td>—</td><td>1×RS-232</td><td>Latin America (LTE Cat.4), no Wi-Fi</td></tr>
-</table>
+<div style="font-size: 12px;">
 
+| Model | 4G | Wi-Fi | Serial/IO | Description |
+|-------|-----|-------|-----------|-------------|
+| IR302-LQ28-WLAN-S-L | ✓ | ✓ | 1×RS232 | China (LTE CAT4) |
+| IR302-LQ28-S-L | ✓ | — | 1×RS232 | China, no Wi-Fi |
+| IR302-FQ58-WLAN-S | ✓ | ✓ | 1×RS232 | Europe/APAC/Australia (LTE CAT4) |
+| IR302-FQ58-WLAN-IO | ✓ | ✓ | 2×IO | Europe/APAC/Australia (LTE CAT4) |
+| IR302-FQ58-S | ✓ | — | 1×RS232 | Europe/APAC/Australia, no Wi-Fi |
+| IR302-FQ58-IO | ✓ | — | 2×IO | Europe/APAC/Australia, no Wi-Fi |
+| IR302-FQ58-WLAN-S-L | ✓ | ✓ | 1×RS232 | Europe/APAC/Australia（LTE CAT4）|
+| IR302-FQ58-WLAN-IO-L | ✓ | ✓ | 2×IO | Europe/APAC/Australia（LTE CAT4）|
+| IR302-FQ58-S-L | ✓ | — | 1×RS232 | Europe/APAC/Australia，no Wi-Fi|
+| IR302-FQ58-IO-L | ✓ | — | 2×IO | Europe/APAC/Australia，no Wi-Fi|
+| IR302-FQ53-WLAN | ✓ | ✓ | — | Europe/Middle East/Africa (LTE CAT1), no serial/IO |
+| IR302-FQ53 | ✓ | — | — | Europe/Middle East/Africa (LTE CAT1), no Wi-Fi, no serial/IO |
+| IR302-FQ53-WLAN-S | ✓ | ✓ | 1×RS232| Europe/Middle East/Africa（LTE CAT1）|
+| IR302-FQ53-WLAN-IO | ✓ | ✓ | 2×IO | Europe/Middle East/Africa（LTE CAT1）|
+| IR302-FQ38-WLAN-S | ✓ | ✓ | 1×RS232 | North America (LTE CAT4) |
+| IR302-FQ38-WLAN-IO | ✓ | ✓ | 2×IO | North America (LTE CAT4) |
+| IR302-FQ38-S | ✓ | — | 1×RS232 | North America (LTE CAT4), no Wi-Fi |
+| IR302-FQ38-IO | ✓ | — | 2×IO | North America (LTE CAT4), no Wi-Fi |
+| IR302-FQ33-WLAN-S | ✓ | ✓ | 1×RS232 | North America (LTE CAT1) |
+| IR302-FQ33-WLAN-IO | ✓ | ✓ | 2×IO | North America (LTE CAT1) |
+| IR302-FQ33-S | ✓ | — | 1×RS232 | North America (LTE CAT1), no Wi-Fi |
+| IR302-FQ33-IO | ✓ | — | 2×IO | North America (LTE CAT1), no Wi-Fi |
+| IR302-FQ78-WLAN-S | ✓ | ✓ | 1×RS232 | Australia/Latin America (LTE CAT4) |
+| IR302-FQ78-WLAN-IO | ✓ | ✓ | 2×IO | Australia/Latin America (LTE CAT4) |
+| IR302-FQ78-S | ✓ | — | 1×RS232 | Australia/Latin America (LTE CAT4), no Wi-Fi |
+| IR302-FQ78-IO | ✓ | — | 2×IO | Australia/Latin America (LTE CAT4), no Wi-Fi |
+| IR302-FQ88-WLAN-S | ✓ | ✓ | 1×RS232 | Japan (LTE CAT4) |
+| IR302-FQ88-S | ✓ | — | 1×RS232 | Japan (LTE CAT4), no Wi-Fi |
+| IR302-EN00-WLAN | — | ✓ | — | No cellular module, Ethernet + Wi-Fi only |
+| IR302-FQ68-WLAN-S | ✓ | ✓ | 1×RS232 | Latin America (LTE CAT4) |
+| IR302-FQ68-S | ✓ | — | 1×RS232 | Latin America (LTE CAT4), no Wi-Fi |
+
+</div>
 
 ## <span style="color: green;">8.3 Accessories List (Per Unit Standard)</span>
 
@@ -398,13 +401,16 @@ IR302 - [4G Module] - [Wi-Fi] - [IO/S] - [L]
 | Product Warranty Card | 1 pc | 1 year warranty |
 | Certificate of Conformity | 1 pc | — |
 
+
+<div style="page-break-after: always;"></div>
+
+
 ## <span style="color: green;">8.4 Optional Accessories</span>
 
 - DIN rail mounting kit (1 set)
-- RS-232/RS-485 serial cable
+- RS232/RS485 serial cable
 - Wall mounting bracket
 - High-gain 4G/Wi-Fi antenna (extension cable 3m/5m/10m)
-
 
 # <span style="color: green;">9. Reliability Standards and Certifications</span>
 
@@ -412,8 +418,8 @@ IR302 - [4G Module] - [Wi-Fi] - [IO/S] - [L]
 
 | Item | Parameter |
 |------|-----------|
-| **Operating Temperature** | Normal:-35℃ to 70℃ (-31 °F ~ 158 °F)，Extended:-40℃ to 75℃ (-40 °F ~ 167 °F) |
-| **Storage Temperature** | -40 °C ~ +85 °C (-40 °F ~ +185 °F) |
+| **Operating Temperature** | Normal:-35℃ to 70℃，Extended:-40℃ to 75℃ |
+| **Storage Temperature** | -40°C ~ +85°C |
 | **Operating Humidity** | 5% ~ 95% RH (non-condensing) |
 | **Storage Humidity** | 5% ~ 95% RH (non-condensing) |
 | **Protection Rating** | IP30 |

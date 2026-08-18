@@ -344,7 +344,7 @@
   - [第5章 典型应用](IR302/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/IR302%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.md#%E7%AC%AC5%E7%AB%A0-%E5%85%B8%E5%9E%8B%E5%BA%94%E7%94%A8)
   - [附录 故障处理](IR302/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/IR302%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.md#%E9%99%84%E5%BD%95-%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86)
   - [附录 命令行/高级参考](IR302/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/IR302%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.md#%E9%99%84%E5%BD%95-%E5%91%BD%E4%BB%A4%E8%A1%8C%E9%AB%98%E7%BA%A7%E5%8F%82%E8%80%83)
-- [IR302 规格书 v1.1](IR302/Datasheets/%E9%80%9A%E7%94%A8/IR302%E8%A7%84%E6%A0%BC%E4%B9%A6_V1.1.md): IR302 规格书 v1.1 — IR302 是北京映翰通网络技术股份有限公司推出的紧凑型工业级蜂窝路由器，专为物联网（IoT）和工业自动化场景设计。该产品基于高性能工业级处理器，集成 4G LTE 蜂窝网络、以太网、Wi-Fi 及丰富的工业接口，可在严苛环境下提供稳定、安…
+- [IR302 规格书 v1.1](IR302/Datasheets/%E9%80%9A%E7%94%A8/IR302%E4%BA%A7%E5%93%81%E8%A7%84%E6%A0%BC%E4%B9%A6_V1.1.md): IR302 规格书 v1.1 — IR302 是北京映翰通网络技术股份有限公司推出的紧凑型工业级蜂窝路由器，专为物联网（IoT）和工业自动化场景设计。该产品基于高性能工业级处理器，集成 4G LTE 蜂窝网络、以太网、Wi-Fi 及丰富的工业接口，可在严苛环境下提供稳定、安…
 - [IR302 认证证书](IR302/certifications.md): IR302 已获认证清单（ANATEL、CB、CCC、CE、E-Mark、ECER118、EN18031、FCC、IC、ICASA、IEC62443、IFETEL、MIC_JATE、NOM、NRCS、PTCRB、RCM、UKCA、UL），含证书原件文件链接
 - [医疗设备联网案例配置指导手册](IR302/Use%20Cases/%E5%8C%BB%E7%96%97%E8%AE%BE%E5%A4%87%E8%81%94%E7%BD%91%E6%A1%88%E4%BE%8B/%E9%85%8D%E7%BD%AE%E6%89%8B%E5%86%8C.md): IR302 医疗设备联网案例 — InRouter302（简称IR302）系列产品是一款集成了4G网络、Wi-Fi和虚拟专用网等多种技术的物联网无线路由器，提供简单、可靠和
 - [医疗设备联网解决方案](IR302/Use%20Cases/%E5%8C%BB%E7%96%97%E8%AE%BE%E5%A4%87%E8%81%94%E7%BD%91%E6%A1%88%E4%BE%8B/%E6%96%B9%E6%A1%88%E6%89%8B%E5%86%8C.md): IR302 医疗设备联网案例
@@ -494,6 +494,10 @@
 ## InPAD070S
 
 - [InPAD070S 规格书 v1.0](InPAD070S/Datasheets/%E9%80%9A%E7%94%A8/InPAD070S%E8%A7%84%E6%A0%BC%E4%B9%A6_V1.0.md): InPAD070S 规格书 v1.0
+
+## InPAD101S
+
+- [InPAD101S 规格书 v1.0](InPAD101S/Datasheets/%E9%80%9A%E7%94%A8/InPAD101S%E8%A7%84%E6%A0%BC%E4%B9%A6_V1.0.md): InPAD101S 规格书 v1.0
 
 ## InPAD3101
 

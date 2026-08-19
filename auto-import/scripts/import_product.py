@@ -28,10 +28,10 @@ from pathlib import Path
 # 依赖
 import requests
 
-# CRS 配置（InHand 内部 Claude 代理）
-CRS_URL = os.environ.get("CRS_URL", "https://crs.inhand.online/api/v1/messages")
-CRS_TOKEN = os.environ.get("CRS_TOKEN", "")
-CRS_MODEL = os.environ.get("CRS_MODEL", "claude-opus-4-7")
+# LLM 配置（OpenAI 兼容格式，支持阿里云 DeepSeek 等）
+LLM_API_URL = os.environ.get("LLM_API_URL", "https://llm-tg3jkhnwwk1q7xif.cn-beijing.maas.aliyuncs.com/compatible-mode/v1/chat/completions")
+LLM_API_KEY = os.environ.get("LLM_API_KEY", "")
+LLM_MODEL = os.environ.get("LLM_MODEL", "deepseek-v4-flash")
 
 # 项目根目录（自动导入产品/）
 REPO_ROOT = Path(__file__).resolve().parent.parent
@@ -41,20 +41,20 @@ HIGHLIGHTS_PKG = ONBOARDING_DIR / "highlights-import"
 SPECS_PKG = ONBOARDING_DIR / "specs-import"
 
 # GitHub 配置
-GITHUB_RAW_BASE = "https://raw.githubusercontent.com/inhandnet/documents/master/"
+GITHUB_RAW_BASE = os.environ.get("GITHUB_RAW_BASE", "https://raw.githubusercontent.com/inhandnet/documents/master/")
 GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN", "")
 
-# 站点配置
+# 站点配置（全部从环境变量读取，不硬编码域名）
 SITES = {
     "zh": {
-        "wp_url": "https://zh-test.inhand.online",
-        "icon_url": "https://zh-test.inhand.online/wp-content/uploads/2026/04/",
-        "template_id": 1215391,
+        "wp_url": os.environ.get("WP_ZH_URL", ""),
+        "icon_url": os.environ.get("WP_ZH_ICON_URL", ""),
+        "template_id": int(os.environ.get("WP_ZH_TEMPLATE_ID", "0")),
     },
     "en": {
-        "wp_url": "https://www.inhand.com",
-        "icon_url": "https://www.inhand.com/wp-content/uploads/2026/04/",
-        "template_id": 1212230,
+        "wp_url": os.environ.get("WP_EN_URL", ""),
+        "icon_url": os.environ.get("WP_EN_ICON_URL", ""),
+        "template_id": int(os.environ.get("WP_EN_TEMPLATE_ID", "0")),
     },
 }
 
@@ -89,10 +89,10 @@ def fetch_md_from_github(md_path: str) -> str:
 
 
 def extract_highlights_with_claude(md_content: str, product: str, site: str) -> dict:
-    """调 CRS（内部 Claude 代理）从 md 提取闪光点 + 选图标"""
-    crs_token = CRS_TOKEN
-    if not crs_token:
-        raise RuntimeError("CRS_TOKEN 环境变量未设置（InHand 内部 Claude 代理）")
+    """调 LLM（OpenAI 兼容 API）从 md 提取闪光点 + 选图标"""
+    llm_key = LLM_API_KEY
+    if not llm_key:
+        raise RuntimeError("LLM_API_KEY 环境变量未设置")
 
     # 读取可用图标列表
     icons_file = SCRIPTS_DIR / "core-product-icons.json"
@@ -142,24 +142,23 @@ def extract_highlights_with_claude(md_content: str, product: str, site: str) -> 
 ---
 """
 
-    log("调 CRS API 提取闪光点 + 选图标...")
+    log("调 LLM API 提取闪光点 + 选图标...")
     payload = {
-        "model": CRS_MODEL,
+        "model": LLM_MODEL,
         "messages": [{"role": "user", "content": prompt}],
         "max_tokens": 4096,
     }
     headers = {
-        "Authorization": f"Bearer {crs_token}",
+        "Authorization": f"Bearer {llm_key}",
         "Content-Type": "application/json",
     }
-    r = requests.post(CRS_URL, json=payload, headers=headers, timeout=300)
+    r = requests.post(LLM_API_URL, json=payload, headers=headers, timeout=300)
     if r.status_code != 200:
-        raise RuntimeError(f"CRS API 失败: HTTP {r.status_code}\n{r.text[:500]}")
+        raise RuntimeError(f"LLM API 失败: HTTP {r.status_code}\n{r.text[:500]}")
     result = r.json()
 
-    # 解析响应（提取 text 类型 content 块）
-    text_parts = [b.get("text", "") for b in result.get("content", []) if b.get("type") == "text"]
-    raw = "".join(text_parts).strip()
+    # 解析响应（OpenAI 兼容格式：choices[0].message.content）
+    raw = result.get("choices", [{}])[0].get("message", {}).get("content", "").strip()
     # 去掉可能的 markdown 代码块标记
     raw = re.sub(r"^```(?:json)?\s*", "", raw)
     raw = re.sub(r"\s*```$", "", raw)

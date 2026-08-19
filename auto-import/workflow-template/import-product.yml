@@ -4,11 +4,18 @@ name: Import Product Draft
 #
 # 触发：WordPress 后台调用 GitHub API（workflow_dispatch）
 #
-# 需要的 secrets：
-#   ANTHROPIC_API_KEY       Claude API key
+# 需要的 Secrets（Settings → Secrets → Actions）：
+#   LLM_API_KEY             LLM API key
 #   WP_ZH_APP_PASSWORD      中文站 WP Application Password
 #   WP_EN_APP_PASSWORD      英文站 WP Application Password
-#   WP_CALLBACK_URL         WordPress 回调接口（可选）
+#
+# 需要的 Variables（Settings → Variables → Actions）：
+#   WP_ZH_URL               中文站 WordPress 地址
+#   WP_ZH_ICON_URL          中文站图标 URL
+#   WP_ZH_TEMPLATE_ID       中文站模板产品 ID
+#   WP_EN_URL               英文站 WordPress 地址
+#   WP_EN_ICON_URL          英文站图标 URL
+#   WP_EN_TEMPLATE_ID       英文站模板产品 ID
 
 on:
   workflow_dispatch:
@@ -53,11 +60,18 @@ jobs:
 
       - name: Run import
         env:
-          CRS_URL: ${{ vars.CRS_URL || 'https://crs.inhand.online/api/v1/messages' }}
-          CRS_TOKEN: ${{ secrets.CRS_TOKEN }}
-          CRS_MODEL: ${{ vars.CRS_MODEL || 'claude-opus-4-7' }}
+          LLM_API_URL: ${{ secrets.LLM_API_URL || 'https://llm-tg3jkhnwwk1q7xif.cn-beijing.maas.aliyuncs.com/compatible-mode/v1/chat/completions' }}
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          LLM_MODEL: ${{ secrets.LLM_MODEL || 'deepseek-v4-flash' }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_RAW_BASE: ${{ secrets.GITHUB_RAW_BASE || 'https://raw.githubusercontent.com/inhandnet/documents/master/' }}
+          WP_ZH_URL: ${{ secrets.WP_ZH_URL }}
+          WP_ZH_ICON_URL: ${{ secrets.WP_ZH_ICON_URL }}
+          WP_ZH_TEMPLATE_ID: ${{ secrets.WP_ZH_TEMPLATE_ID }}
           WP_ZH_APP_PASSWORD: ${{ secrets.WP_ZH_APP_PASSWORD }}
+          WP_EN_URL: ${{ secrets.WP_EN_URL }}
+          WP_EN_ICON_URL: ${{ secrets.WP_EN_ICON_URL }}
+          WP_EN_TEMPLATE_ID: ${{ secrets.WP_EN_TEMPLATE_ID }}
           WP_EN_APP_PASSWORD: ${{ secrets.WP_EN_APP_PASSWORD }}
         run: |
           python auto-import/scripts/import_product.py \

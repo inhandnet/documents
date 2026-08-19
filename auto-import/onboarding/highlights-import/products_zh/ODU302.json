@@ -1,0 +1,32 @@
+{
+  "name": "ODU302",
+  "title": "ODU302 4G 工业级户外无线路由器",
+  "oneLiner": "一步到位，告别天线",
+  "cards": [
+    {
+      "icon": "Cellular.svg",
+      "title": "天线路由一体化",
+      "desc": "路由器集成于天线外壳内，整机顶部安装"
+    },
+    {
+      "icon": "High-speedNetwork.svg",
+      "title": "零馈线损耗",
+      "desc": "射频与天线一体化，消除长馈线衰减"
+    },
+    {
+      "icon": "LinkBackup.svg",
+      "title": "PoE 单线供电",
+      "desc": "支持 IEEE 802.3af PoE，一根网线传输电力与数据"
+    },
+    {
+      "icon": "DualSIM.svg",
+      "title": "双 SIM 4G 冗余",
+      "desc": "双 Nano SIM 智能切换，保障 7×24 在线"
+    },
+    {
+      "icon": "ShieldSecurity.svg",
+      "title": "企业级安全与 VPN",
+      "desc": "SPI 防火墙、ACL、IPSec、OpenVPN、WireGuard"
+    }
+  ]
+}

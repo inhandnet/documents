@@ -1,0 +1,33 @@
+{
+  "name": "ISM7010D",
+  "title": "ISM7010D 系列三层网管型工业交换机",
+  "sectionTitle": "10口三层网管交换机 / 超宽温ERPS自愈",
+  "oneLiner": "10口三层网管型工业以太网交换机，2光8电全千兆，超宽温与ERPS快速自愈",
+  "cards": [
+    {
+      "icon": "SwitchShield.svg",
+      "title": "坚固设计",
+      "desc": "金属外壳，无风扇自然冷却，IP40 防护等级，适应工业现场部署"
+    },
+    {
+      "icon": "WideTemperature.svg",
+      "title": "超宽温域",
+      "desc": "支持 -40 ~ +85℃ 超宽温与 DC 12-52V 宽压输入，双电源冗余备份"
+    },
+    {
+      "icon": "High-speedNetwork.svg",
+      "title": "高速转发",
+      "desc": "76 Gbps 背板带宽，交换延迟 < 5 μs，满足实时性要求"
+    },
+    {
+      "icon": "LinkBackup.svg",
+      "title": "快速自愈",
+      "desc": "支持 ERPS 环网技术，自愈时间 < 20 ms，兼容 ITU-T G.8032"
+    },
+    {
+      "icon": "Network.svg",
+      "title": "三层能力",
+      "desc": "支持静态路由与 IPv4/IPv6 双栈，支持 IEEE 1588 时钟同步"
+    }
+  ]
+}

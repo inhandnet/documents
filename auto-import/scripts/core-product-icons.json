@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1201818,
+    "name": "5G.svg",
+    "title": "5G"
+  },
+  {
+    "id": 1201816,
+    "name": "4G.svg",
+    "title": "4G"
+  },
+  {
+    "id": 1201817,
+    "name": "4G-5G.svg",
+    "title": "4G-5G"
+  },
+  {
+    "id": 1201830,
+    "name": "Cellular.svg",
+    "title": "蜂窝网络"
+  },
+  {
+    "id": 1201833,
+    "name": "CellularTower.svg",
+    "title": "CellularTower"
+  },
+  {
+    "id": 1201972,
+    "name": "Wi-Fi.svg",
+    "title": "Wi-Fi"
+  },
+  {
+    "id": 1201942,
+    "name": "SD-WAN.svg",
+    "title": "SD-WAN"
+  },
+  {
+    "id": 1201884,
+    "name": "Ethernet.svg",
+    "title": "以太网"
+  },
+  {
+    "id": 1201881,
+    "name": "DualSIM.svg",
+    "title": "DualSIM"
+  },
+  {
+    "id": 1201922,
+    "name": "Network.svg",
+    "title": "网络"
+  },
+  {
+    "id": 1201919,
+    "name": "MultiDevice.svg",
+    "title": "多设备"
+  },
+  {
+    "id": 1201921,
+    "name": "Multi-Network.svg",
+    "title": "Multi-Network"
+  },
+  {
+    "id": 1201892,
+    "name": "High-speedNetwork.svg",
+    "title": "High-speedNetwork"
+  },
+  {
+    "id": 1201904,
+    "name": "LinkBackup.svg",
+    "title": "LinkBackup"
+  },
+  {
+    "id": 1201934,
+    "name": "Protocol.svg",
+    "title": "协议"
+  },
+  {
+    "id": 1201882,
+    "name": "EdgeCompute.svg",
+    "title": "边缘计算"
+  },
+  {
+    "id": 1201936,
+    "name": "Python.svg",
+    "title": "Python"
+  },
+  {
+    "id": 1201851,
+    "name": "Compute.svg",
+    "title": "Compute"
+  },
+  {
+    "id": 1201954,
+    "name": "Stable.svg",
+    "title": "稳定"
+  },
+  {
+    "id": 1201894,
+    "name": "IP67.svg",
+    "title": "IP67"
+  },
+  {
+    "id": 1201893,
+    "name": "Industrial.svg",
+    "title": "工业"
+  },
+  {
+    "id": 1201947,
+    "name": "ShieldSecurity.svg",
+    "title": "安全护盾"
+  },
+  {
+    "id": 1201945,
+    "name": "ShieldNet.svg",
+    "title": "网络护盾"
+  },
+  {
+    "id": 1201867,
+    "name": "DataTransSecure.svg",
+    "title": "数据安全传输"
+  },
+  {
+    "id": 1201858,
+    "name": "Cost.svg",
+    "title": "成本"
+  },
+  {
+    "id": 1201836,
+    "name": "Cloud.svg",
+    "title": "云端"
+  },
+  {
+    "id": 1201869,
+    "name": "Device.svg",
+    "title": "Device"
+  },
+  {
+    "id": 1201870,
+    "name": "DeviceOutdoor.svg",
+    "title": "户外设备"
+  },
+  {
+    "id": 1201871,
+    "name": "DeviceSignal.svg",
+    "title": "DeviceSignal"
+  },
+  {
+    "id": 1201850,
+    "name": "Component.svg",
+    "title": "组件"
+  },
+  {
+    "id": 1201824,
+    "name": "Battery.svg",
+    "title": "电池"
+  },
+  {
+    "id": 1201829,
+    "name": "Capacity.svg",
+    "title": "Capacity"
+  },
+  {
+    "id": 1201823,
+    "name": "Application.svg",
+    "title": "应用程序"
+  },
+  {
+    "id": 1201868,
+    "name": "Development.svg",
+    "title": "Development"
+  },
+  {
+    "id": 1201819,
+    "name": "Agility.svg",
+    "title": "敏捷"
+  },
+  {
+    "id": 1201886,
+    "name": "Fast.svg",
+    "title": "快速"
+  },
+  {
+    "id": 1201820,
+    "name": "Alert.svg",
+    "title": "Alert"
+  },
+  {
+    "id": 1201928,
+    "name": "Optimize.svg",
+    "title": "Optimize"
+  },
+  {
+    "id": 1201888,
+    "name": "Flexible.svg",
+    "title": "柔性"
+  },
+  {
+    "id": 1201950,
+    "name": "SpannerGear.svg",
+    "title": "扳手齿轮"
+  }
+]

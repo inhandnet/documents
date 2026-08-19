@@ -1,0 +1,76 @@
+name: Import Product Draft
+
+# 从 GitHub 仓库的规格书 md 一键生成 WordPress 产品页草稿
+#
+# 触发：WordPress 后台调用 GitHub API（workflow_dispatch）
+#
+# 需要的 secrets：
+#   ANTHROPIC_API_KEY       Claude API key
+#   WP_ZH_APP_PASSWORD      中文站 WP Application Password
+#   WP_EN_APP_PASSWORD      英文站 WP Application Password
+#   WP_CALLBACK_URL         WordPress 回调接口（可选）
+
+on:
+  workflow_dispatch:
+    inputs:
+      md_path:
+        description: '规格书 md 路径（相对于仓库根）'
+        required: true
+        type: string
+      site:
+        description: '站点（zh 或 en）'
+        required: true
+        type: choice
+        options: ['zh', 'en']
+      product:
+        description: '产品型号（如 IG532）'
+        required: true
+        type: string
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r auto-import/requirements.txt
+
+      - name: Run import
+        env:
+          CRS_URL: ${{ vars.CRS_URL || 'https://crs.inhand.online/api/v1/messages' }}
+          CRS_TOKEN: ${{ secrets.CRS_TOKEN }}
+          CRS_MODEL: ${{ vars.CRS_MODEL || 'claude-opus-4-7' }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          WP_ZH_APP_PASSWORD: ${{ secrets.WP_ZH_APP_PASSWORD }}
+          WP_EN_APP_PASSWORD: ${{ secrets.WP_EN_APP_PASSWORD }}
+        run: |
+          python auto-import/scripts/import_product.py \
+            --md-path "${{ inputs.md_path }}" \
+            --site "${{ inputs.site }}" \
+            --product "${{ inputs.product }}"
+
+      - name: Upload result artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: import-result-${{ inputs.product }}-${{ inputs.site }}
+          path: |
+            import_result_*.json
+            auto-import/onboarding/highlights-import/products_${{ inputs.site }}/${{ inputs.product }}.json
+          retention-days: 7

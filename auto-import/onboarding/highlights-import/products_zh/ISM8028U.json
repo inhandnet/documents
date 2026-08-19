@@ -1,0 +1,33 @@
+{
+  "name": "ISM8028U",
+  "title": "ISM8028U 系列万兆三层工业交换机",
+  "sectionTitle": "万兆三层网管交换机 / 高密端口核心汇聚",
+  "oneLiner": "万兆三层网管型工业交换机，4万兆光口 + 24千兆电口 + 8复用光口，核心汇聚完整三层能力",
+  "cards": [
+    {
+      "icon": "High-speedNetwork.svg",
+      "title": "丰富端口",
+      "desc": "4 × 万兆光口 + 24 × 千兆电口 + 8 × 复用光口，满足汇聚与核心组网需求"
+    },
+    {
+      "icon": "CPUShare.svg",
+      "title": "强大处理",
+      "desc": "基于 VCore-III MIPS 架构 CPU，1.2 Tbps 交换容量、406 Mpps 包转发率"
+    },
+    {
+      "icon": "WideTemperature.svg",
+      "title": "宽温宽压",
+      "desc": "-40℃ ~ +80℃ 超宽工作温度；DC 36-72V 与 AC/DC 110-240V 冗余双电源"
+    },
+    {
+      "icon": "LinkBackup.svg",
+      "title": "网络冗余",
+      "desc": "支持 STP/RSTP/MSTP 与 ERPS（自愈时间 < 20 ms），链路负载均衡、快速收敛"
+    },
+    {
+      "icon": "Network.svg",
+      "title": "三层路由",
+      "desc": "支持静态路由、RIP/RIPng、OSPF/OSPFv3 与 VRRP，支持 IPv4/IPv6 双栈线速转发"
+    }
+  ]
+}

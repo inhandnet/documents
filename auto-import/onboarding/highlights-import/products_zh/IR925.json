@@ -1,0 +1,32 @@
+{
+  "name": "IR925",
+  "title": "IR925 工业路由器",
+  "oneLiner": "拥抱 5G，共创数字时代",
+  "cards": [
+    {
+      "icon": "5G.svg",
+      "title": "拥抱 5G",
+      "desc": "5G 蜂窝高速网络接入，下行高达 3.4 Gbps，兼容 4G/3G"
+    },
+    {
+      "icon": "Wi-Fi.svg",
+      "title": "Wi-Fi 6",
+      "desc": "双频并发 3000 Mbps，支持 802.11 ax/ac/a/b/g/n"
+    },
+    {
+      "icon": "Stable.svg",
+      "title": "永久在线",
+      "desc": "链路备份、链路检测、双 SIM 切换、内嵌看门狗"
+    },
+    {
+      "icon": "ShieldSecurity.svg",
+      "title": "安全防护",
+      "desc": "VPN、防火墙、策略路由，支持 TPM 硬件安全"
+    },
+    {
+      "icon": "Cloud.svg",
+      "title": "云管理",
+      "desc": "DeviceLive 平台，统一管理上万分布式站点"
+    }
+  ]
+}

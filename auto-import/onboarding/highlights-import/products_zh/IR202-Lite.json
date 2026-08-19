@@ -1,0 +1,32 @@
+{
+  "name": "IR202-Lite",
+  "title": "IR202-Lite 工业路由器",
+  "oneLiner": "极简型工业路由器",
+  "cards": [
+    {
+      "icon": "Network.svg",
+      "title": "多元接入",
+      "desc": "支持蜂窝、有线与 Wi-Fi 接入互联网"
+    },
+    {
+      "icon": "Industrial.svg",
+      "title": "工业级设计",
+      "desc": "金属外壳，IP30，导轨安装，宽温工作"
+    },
+    {
+      "icon": "Stable.svg",
+      "title": "稳定连接",
+      "desc": "链路层检测，掉线自动重拨，硬件看门狗"
+    },
+    {
+      "icon": "ShieldSecurity.svg",
+      "title": "安全防护",
+      "desc": "IPsec VPN、SPI、SSH、DDoS 防御"
+    },
+    {
+      "icon": "Cloud.svg",
+      "title": "云管理",
+      "desc": "Device Manager 云管理平台，统一远程管理"
+    }
+  ]
+}

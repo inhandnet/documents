@@ -1,0 +1,33 @@
+{
+  "name": "ISM3018D",
+  "title": "ISM3018D 系列网管型工业交换机",
+  "sectionTitle": "18口网管工业交换机 / 2光16电宽温冗余",
+  "oneLiner": "18口网管型工业以太网交换机，2千兆光口 + 16百兆电口，高密接入与冗余环网",
+  "cards": [
+    {
+      "icon": "SwitchShield.svg",
+      "title": "坚固设计",
+      "desc": "金属外壳，无风扇自然冷却，IP40 防护等级，适应工业现场部署"
+    },
+    {
+      "icon": "WideTemperature.svg",
+      "title": "宽域适应",
+      "desc": "支持 -40 ~ +80℃ 宽温与 DC 12-52V 宽压输入，双电源冗余备份"
+    },
+    {
+      "icon": "High-speedNetwork.svg",
+      "title": "高密接入",
+      "desc": "16个百兆电口 + 2个千兆 SFP 光口，满足现场高密度终端接入"
+    },
+    {
+      "icon": "LinkBackup.svg",
+      "title": "网络冗余",
+      "desc": "支持 STP/RSTP/MSTP 与工业环网协议 ERPS，保障链路可靠性"
+    },
+    {
+      "icon": "SwitchMonitor.svg",
+      "title": "便捷运维",
+      "desc": "支持 Web、CLI、SNMP v1/v2c/v3 管理，支持 RMON 与端口镜像"
+    }
+  ]
+}

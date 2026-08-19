@@ -1,0 +1,32 @@
+{
+  "name": "ODU302",
+  "title": "ODU302 4G Industrial Outdoor Router",
+  "oneLiner": "All-in-one outdoor connectivity, no more antennas",
+  "cards": [
+    {
+      "icon": "IP67.svg",
+      "title": "Harsh Outdoor Environments",
+      "desc": "IP65-rated enclosure and wide operating temperature, supports PoE and DC power input for stable operation"
+    },
+    {
+      "icon": "Network.svg",
+      "title": "Reliable Connectivity",
+      "desc": "Integrates 4G LTE backhaul, Wi-Fi access and dual Ethernet ports in a compact structure"
+    },
+    {
+      "icon": "ShieldSecurity.svg",
+      "title": "Advanced Security",
+      "desc": "Equipped with firewall policies, access control, built-in VPN and data encryption"
+    },
+    {
+      "icon": "Cloud.svg",
+      "title": "Device Manager Cloud Management",
+      "desc": "Manages tens of thousands of distributed site devices in real time via InHand Device Manager"
+    },
+    {
+      "icon": "DualSIM.svg",
+      "title": "Dual SIM Redundancy",
+      "desc": "Dual Nano SIM with automatic link switching ensures network stability and reliability"
+    }
+  ]
+}

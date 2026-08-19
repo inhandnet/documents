@@ -1,0 +1,32 @@
+{
+  "name": "IG532",
+  "title": "IG532 系列边缘网关",
+  "oneLiner": "多串口边缘网关，打破数据壁垒，为工业数字化赋能",
+  "cards": [
+    {
+      "icon": "MultiDevice.svg",
+      "title": "多串口采集",
+      "desc": "支持 4×RS485，满足多设备并行接入"
+    },
+    {
+      "icon": "Cellular.svg",
+      "title": "LoRa组网",
+      "desc": "可选 LoRa 自组网，支持远距离、低功耗无线传输"
+    },
+    {
+      "icon": "EdgeCompute.svg",
+      "title": "边缘计算",
+      "desc": "ARM Cortex-A8 + Python 开发，内置 DSA 服务"
+    },
+    {
+      "icon": "Protocol.svg",
+      "title": "协议丰富",
+      "desc": "支持80+工业与电力协议，快速实现采集和上云"
+    },
+    {
+      "icon": "Cloud.svg",
+      "title": "云端管理",
+      "desc": "支持 Device Manager 与 InConnect 平台远程运维"
+    }
+  ]
+}

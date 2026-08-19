@@ -1,0 +1,32 @@
+{
+  "name": "IG502-LITE",
+  "title": "IG502-LITE 系列边缘网关",
+  "oneLiner": "极简型边缘网关，超高性价比，助力工业数字化",
+  "cards": [
+    {
+      "icon": "Cost.svg",
+      "title": "高性价比接入",
+      "desc": "提供4G与有线接入能力，满足基础工业联网需求"
+    },
+    {
+      "icon": "Stable.svg",
+      "title": "可靠在线",
+      "desc": "多级链路检测 + 软硬件看门狗，保障通信连续性"
+    },
+    {
+      "icon": "EdgeCompute.svg",
+      "title": "边缘处理能力",
+      "desc": "支持 Python 二次开发，支持 DSA 零代码/低代码部署"
+    },
+    {
+      "icon": "Protocol.svg",
+      "title": "协议集成丰富",
+      "desc": "支持 80+ 工业协议，快速实现采集、处理与上云"
+    },
+    {
+      "icon": "Cloud.svg",
+      "title": "云端统一管理",
+      "desc": "支持 DeviceLive、InConnect、iSCADA 远程管理"
+    }
+  ]
+}

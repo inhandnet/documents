@@ -1,0 +1,33 @@
+{
+  "name": "ISM5010D",
+  "title": "ISM5010D 系列网管型工业交换机",
+  "sectionTitle": "10口网管工业交换机 / 2光8电全千兆",
+  "oneLiner": "10口网管型工业以太网交换机，2千兆光口 + 8千兆电口，全千兆接入与冗余环网",
+  "cards": [
+    {
+      "icon": "SwitchShield.svg",
+      "title": "坚固设计",
+      "desc": "金属外壳，无风扇自然冷却，IP40 防护等级，适应工业现场部署"
+    },
+    {
+      "icon": "WideTemperature.svg",
+      "title": "宽域适应",
+      "desc": "支持 -40 ~ +75℃ 宽温与 DC 12-52V 宽压输入，双电源冗余备份"
+    },
+    {
+      "icon": "High-speedNetwork.svg",
+      "title": "全千兆接入",
+      "desc": "8个千兆自适应电口 + 2个千兆 SFP 光口，满足大带宽组网需求"
+    },
+    {
+      "icon": "LinkBackup.svg",
+      "title": "网络冗余",
+      "desc": "支持 STP/RSTP/MSTP 与工业环网协议 ERPS，保障链路可靠性"
+    },
+    {
+      "icon": "Alert.svg",
+      "title": "告警联动",
+      "desc": "支持电源异常状态继电器输出，便于现场快速响应"
+    }
+  ]
+}

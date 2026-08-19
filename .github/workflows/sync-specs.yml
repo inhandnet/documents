@@ -1,0 +1,51 @@
+name: Sync Specs to WordPress
+
+# 规格文档自动同步：当 Datasheets md 变更时，自动提取规格并更新 WordPress 产品属性
+#
+# 触发条件：push 到 master，且 docs/{zh|en}/**/Datasheets/**/*.md 有变更
+#
+# 需要的 Secrets（Settings → Secrets → Actions）：
+#   LLM_API_KEY             LLM API key（未使用，预留）
+#   WP_ZH_APP_PASSWORD      中文站 WP Application Password
+#   WP_EN_APP_PASSWORD      英文站 WP Application Password
+#   WP_ZH_URL               中文站 WordPress 地址
+#   WP_EN_URL               英文站 WordPress 地址
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - "docs/zh/*/Datasheets/**/*.md"
+      - "docs/zh/*/Datasheets/通用/**/*.md"
+      - "docs/en/*/Datasheets/**/*.md"
+      - "docs/en/*/Datasheets/General/**/*.md"
+      - "docs/en/*/Datasheets/specifications/**/*.md"
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2  # 需要 HEAD~1 来做 diff
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+
+      - name: Sync specs
+        env:
+          WP_ZH_URL: ${{ secrets.WP_ZH_URL }}
+          WP_ZH_APP_PASSWORD: ${{ secrets.WP_ZH_APP_PASSWORD }}
+          WP_EN_URL: ${{ secrets.WP_EN_URL }}
+          WP_EN_APP_PASSWORD: ${{ secrets.WP_EN_APP_PASSWORD }}
+          GITHUB_EVENT_BEFORE: ${{ github.event.before }}
+          GITHUB_SHA: ${{ github.sha }}
+        run: python auto-import/scripts/sync_specs.py

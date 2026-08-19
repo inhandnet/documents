@@ -177,9 +177,9 @@ async function main() {
     console.log('  特性卡片已替换: ' + count + ' 张');
   }
 
-  // 4. 写回 meta_data
+  // 4. 写回 meta_data（必须用 PUT 更新现有产品，POST 会静默失败）
   const newMeta = (newProd.meta_data || []).map(m => m.key === '_elementor_data' ? {...m, value: JSON.stringify(d)} : m);
-  await req('/wp-json/wc/v3/products/' + newId, {meta_data: newMeta});
+  await req('/wp-json/wc/v3/products/' + newId, {meta_data: newMeta}, 'PUT');
 
   console.log('  完成! 后台编辑: ' + CONFIG.wpUrl + '/wp-admin/post.php?post=' + newId + '&action=elementor');
 }

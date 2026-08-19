@@ -227,9 +227,9 @@ def ensure_clone_config(site: str):
     with open(cfg_file, "w", encoding="utf-8") as f:
         json.dump(cfg, f, ensure_ascii=False, indent=2)
     log(f"已动态生成 config.json:")
-    log(f"  zh wp_url={cfg['zh']['wp_url']!r}")
-    log(f"  zh template_id={cfg['zh']['template_id']!r}")
-    log(f"  en wp_url={cfg['en']['wp_url']!r}")
+    log(f"  zh wpUrl={cfg['zh']['wpUrl']!r}")
+    log(f"  zh templateProductId={cfg['zh']['templateProductId']!r}")
+    log(f"  en wpUrl={cfg['en']['wpUrl']!r}")
 
 
 def save_product_config(highlights: dict, site: str, product: str) -> Path:

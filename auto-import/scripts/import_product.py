@@ -320,6 +320,9 @@ def upload_specs(product_id: int, attrs: list, site: str):
         ]
         env = os.environ.copy()
         env["WP_SITE"] = site
+        env["WP_URL"] = SITES[site]["wp_url"]
+        env["WP_USER"] = "admin"
+        env["WP_APP_PASSWORD"] = os.environ.get(f"WP_{site.upper()}_APP_PASSWORD", "")
         env["PYTHONIOENCODING"] = "utf-8"  # 强制 Python 子进程用 UTF-8
         result = subprocess.run(
             cmd, capture_output=True,

@@ -146,7 +146,7 @@ def extract_highlights_with_claude(md_content: str, product: str, site: str) -> 
     payload = {
         "model": LLM_MODEL,
         "messages": [{"role": "user", "content": prompt}],
-        "max_tokens": 4096,
+        "max_tokens": 8192,
     }
     headers = {
         "Authorization": f"Bearer {llm_key}",
@@ -166,9 +166,21 @@ def extract_highlights_with_claude(md_content: str, product: str, site: str) -> 
     try:
         result = json.loads(raw)
     except json.JSONDecodeError as e:
-        log(f"JSON 解析失败: {e}")
-        log(f"原始输出：\n{raw}")
-        raise
+        # 容错：截断的 JSON 通常在最后一个完整 } 处断开，尝试修复
+        last_brace = raw.rfind('}')
+        if last_brace > 0:
+            trimmed = raw[:last_brace + 1]
+            log(f"JSON 截断，尝试从 {last_brace} 位置截断修复...")
+            try:
+                result = json.loads(trimmed)
+                log("JSON 截断修复成功")
+            except json.JSONDecodeError:
+                log(f"JSON 修复失败，原始输出：\n{raw[:500]}")
+                raise
+        else:
+            log(f"JSON 解析失败: {e}")
+            log(f"原始输出：\n{raw[:500]}")
+            raise
 
     # 校验
     required = ["productName", "title", "sectionTitle", "oneLiner", "overview", "cards"]

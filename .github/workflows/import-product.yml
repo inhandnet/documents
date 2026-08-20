@@ -94,6 +94,7 @@ jobs:
         if: always()
         env:
           WP_CALLBACK_URL: ${{ secrets.WP_CALLBACK_URL }}
+          WP_CALLBACK_TOKEN: ${{ secrets.WP_CALLBACK_TOKEN }}
         run: |
           if [ -z "$WP_CALLBACK_URL" ]; then
             echo "WP_CALLBACK_URL 未配置，跳过回调"
@@ -113,9 +114,16 @@ jobs:
             EDIT_URL=""
           fi
 
+          # 构建回调请求
+          AUTH_HEADER=""
+          if [ -n "$WP_CALLBACK_TOKEN" ]; then
+            AUTH_HEADER="-H \"Authorization: Bearer $WP_CALLBACK_TOKEN\""
+          fi
+
           # 回调 WordPress
-          curl -X POST "$WP_CALLBACK_URL" \
+          eval curl -X POST "$WP_CALLBACK_URL" \
             -H "Content-Type: application/json" \
+            $AUTH_HEADER \
             -d "{
               \"run_id\": ${{ github.run_id }},
               \"status\": \"$STATUS\",

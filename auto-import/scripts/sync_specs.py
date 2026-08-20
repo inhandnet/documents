@@ -173,8 +173,49 @@ def ai_review_match(product_name: str, candidates: list) -> dict:
         return None
 
 
-def find_product_by_name(product_name: str, site: str) -> dict:
-    """调 WP API 搜索产品，返回 {id, name} 或 None"""
+def ai_extract_product_models(md_content: str) -> list:
+    """让 LLM 从 md 内容分析出产品型号列表"""
+    if not LLM_API_URL or not LLM_API_KEY:
+        return []
+
+    prompt = f"""从下面的规格书内容中，提取所有出现的产品型号/产品名称。
+只返回型号列表，每行一个，不要其他内容。
+例如：
+EC300
+EC312
+EC5000
+
+规格书内容：
+{md_content[:3000]}"""
+
+    try:
+        headers = {
+            "Authorization": f"Bearer {LLM_API_KEY}",
+            "Content-Type": "application/json",
+        }
+        payload = {
+            "model": os.environ.get("LLM_MODEL", "deepseek-v4-flash"),
+            "messages": [{"role": "user", "content": prompt}],
+            "max_tokens": 200,
+        }
+        r = requests.post(LLM_API_URL, json=payload, headers=headers, timeout=30)
+        if r.status_code != 200:
+            return []
+
+        result = r.json()
+        text = result.get("choices", [{}])[0].get("message", {}).get("content", "").strip()
+
+        # 每行一个型号
+        models = [line.strip() for line in text.split("\n") if line.strip()]
+        return models
+
+    except Exception as e:
+        log(f"AI 提取型号异常: {e}")
+        return []
+
+
+def find_product_by_name(product_name: str, site: str, md_content: str = None) -> dict:
+    """搜索产品，返回 {id, name} 或 None。如果字符串匹配失败，用 LLM 从 md 内容分析型号。"""
     wp_url = SITES[site].get("wp_url", "")
     if not wp_url:
         log(f"警告：{site} 站点 WP_URL 未配置")
@@ -190,7 +231,7 @@ def find_product_by_name(product_name: str, site: str) -> dict:
     auth = basic_auth("admin", pw)
     headers = {"Authorization": auth, "Accept": "application/json"}
 
-    # 搜索产品
+    # 搜索产品（用路径型号作为关键词）
     try:
         r = requests.get(
             f"{wp_url}/wp-json/wc/v3/products",
@@ -224,7 +265,27 @@ def find_product_by_name(product_name: str, site: str) -> dict:
             candidates = [{"id": p["id"], "name": p["name"]} for p in contains]
             return ai_review_match(product_name, candidates)
 
-        log(f"未精确匹配产品：{product_name}（搜索到 {len(products)} 个，但都不匹配）")
+        # 字符串匹配失败 → 用 LLM 从 md 内容分析型号
+        if md_content and LLM_API_URL and LLM_API_KEY:
+            log(f"字符串匹配失败，调 LLM 从 md 内容分析型号...")
+            models = ai_extract_product_models(md_content)
+            if models:
+                log(f"LLM 分析出型号: {models}")
+                # 用分析出的型号搜索 WP
+                for model in models:
+                    r2 = requests.get(
+                        f"{wp_url}/wp-json/wc/v3/products",
+                        headers=headers,
+                        params={"search": model, "per_page": 5, "status": "publish,draft"},
+                        timeout=30,
+                    )
+                    if r2.status_code == 200:
+                        for p in r2.json():
+                            if p["name"].lower() == model.lower() or model.lower() in p["name"].lower():
+                                log(f"LLM 匹配成功: {p['name']} (ID={p['id']})")
+                                return {"id": p["id"], "name": p["name"]}
+
+        log(f"未匹配产品：{product_name}")
         return None
 
     except Exception as e:
@@ -298,10 +359,17 @@ def sync_file(file_path: str):
 
     log(f"处理: {file_path} (site={site}, product={product_name})")
 
-    # 搜索产品
-    product = find_product_by_name(product_name, site)
+    # 读取 md 内容（用于 LLM 分析型号）
+    md_content = ""
+    try:
+        md_content = Path(file_path).read_text(encoding="utf-8")
+    except Exception:
+        pass
+
+    # 搜索产品（字符串匹配 → LLM 分析型号）
+    product = find_product_by_name(product_name, site, md_content=md_content)
     if not product:
-        log(f"跳过: 未找到 {product_name} 在 {site} 站点")
+        log(f"跳过: 未匹配到产品（路径: {product_name}）")
         return
 
     product_id = product["id"]

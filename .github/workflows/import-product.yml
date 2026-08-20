@@ -93,11 +93,19 @@ jobs:
       - name: Notify WordPress callback
         if: always()
         env:
-          WP_CALLBACK_URL: ${{ secrets.WP_CALLBACK_URL }}
+          WP_ZH_CALLBACK_URL: ${{ secrets.WP_ZH_CALLBACK_URL }}
+          WP_EN_CALLBACK_URL: ${{ secrets.WP_EN_CALLBACK_URL }}
           WP_CALLBACK_TOKEN: ${{ secrets.WP_CALLBACK_TOKEN }}
         run: |
-          if [ -z "$WP_CALLBACK_URL" ]; then
-            echo "WP_CALLBACK_URL 未配置，跳过回调"
+          # 根据 site 选择回调 URL
+          if [ "${{ inputs.site }}" = "zh" ]; then
+            CALLBACK_URL="$WP_ZH_CALLBACK_URL"
+          else
+            CALLBACK_URL="$WP_EN_CALLBACK_URL"
+          fi
+
+          if [ -z "$CALLBACK_URL" ]; then
+            echo "${{ inputs.site }} 站点回调 URL 未配置，跳过回调"
             exit 0
           fi
 
@@ -121,7 +129,7 @@ jobs:
           fi
 
           # 回调 WordPress
-          eval curl -X POST "$WP_CALLBACK_URL" \
+          eval curl -X POST "$CALLBACK_URL" \
             -H "Content-Type: application/json" \
             $AUTH_HEADER \
             -d "{

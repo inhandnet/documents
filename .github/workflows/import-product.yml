@@ -88,3 +88,39 @@ jobs:
             import_result_*.json
             auto-import/onboarding/highlights-import/products_${{ inputs.site }}/${{ inputs.product }}.json
           retention-days: 7
+
+      # 回调 WordPress，通知导入结果
+      - name: Notify WordPress callback
+        if: always()
+        env:
+          WP_CALLBACK_URL: ${{ secrets.WP_CALLBACK_URL }}
+        run: |
+          if [ -z "$WP_CALLBACK_URL" ]; then
+            echo "WP_CALLBACK_URL 未配置，跳过回调"
+            exit 0
+          fi
+
+          # 读取结果文件
+          RESULT_FILE=$(ls import_result_*.json 2>/dev/null | head -1)
+
+          if [ -n "$RESULT_FILE" ]; then
+            STATUS="success"
+            NEW_ID=$(python -c "import json; print(json.load(open('$RESULT_FILE')).get('new_id', 0))")
+            EDIT_URL=$(python -c "import json; print(json.load(open('$RESULT_FILE')).get('edit_url', ''))")
+          else
+            STATUS="failure"
+            NEW_ID=0
+            EDIT_URL=""
+          fi
+
+          # 回调 WordPress
+          curl -X POST "$WP_CALLBACK_URL" \
+            -H "Content-Type: application/json" \
+            -d "{
+              \"run_id\": ${{ github.run_id }},
+              \"status\": \"$STATUS\",
+              \"product\": \"${{ inputs.product }}\",
+              \"site\": \"${{ inputs.site }}\",
+              \"new_id\": $NEW_ID,
+              \"edit_url\": \"$EDIT_URL\"
+            }" || echo "回调失败（不影响主流程）"

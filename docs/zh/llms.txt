@@ -68,7 +68,7 @@
 
 - [EAP600 快速安装手册](EAP600/Manuals/%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97/EAP600%E5%BF%AB%E9%80%9F%E5%AE%89%E8%A3%85%E6%89%8B%E5%86%8C_V1.0.md): EAP600 安装指南 v1.0
 - [映翰通企业级无线接入点EAP600用户手册](EAP600/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/EAP600%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.md): EAP600 用户手册 v1.0 — EAP600是北京映翰通网络技术股份有限公司面向商业领域推出的Wi-Fi 6无线接入点（AP）产品。该产品可为小型商业场所、企业分支机构和酒店等需要无线覆盖的场景提供高速、安全的无线网络接入。EAP600支持Wi-Fi 6标准，具备强大的网…
-- [EAP600 规格书 v2.4](EAP600/Datasheets/%E9%80%9A%E7%94%A8/EAP600%E8%A7%84%E6%A0%BC%E4%B9%A6_V2.4.md): EAP600 规格书 v2.4 — Wi-Fi 6 高性能接入, 云管理, 企业级安全
+- [EAP600 规格书 v1.0](EAP600/Datasheets/%E9%80%9A%E7%94%A8/EAP600%E8%A7%84%E6%A0%BC%E4%B9%A6_V1.0.md): EAP600 规格书 v1.0 — Wi-Fi 6 高性能接入, 云管理, 企业级安全
 - [EAP600 认证证书](EAP600/certifications.md): EAP600 已获认证清单（CE、FCC、IC），含证书原件文件链接
 
 ## EC300
@@ -421,7 +421,7 @@
 
 ## ISE1005D
 
-- [ISE1005D 规格书 v1.0](ISE1005D/Datasheets/%E9%80%9A%E7%94%A8/%E6%98%A0%E7%BF%B0%E9%80%9AISE1005D%E4%BA%A7%E5%93%81%E8%A7%84%E6%A0%BC%E4%B9%A6_V1.0.md): ISE1005D 规格书 v1.0 — ISE1005D 非网管工业以太网交换机
+- [ISE1005D 规格书 v1.0](ISE1005D/Datasheets/%E9%80%9A%E7%94%A8/ISE1005D%E8%A7%84%E6%A0%BC%E4%B9%A6_V1.0.md): ISE1005D 规格书 v1.0 — ISE1005D 非网管工业以太网交换机
 
 ## ISE1008D
 
@@ -573,13 +573,11 @@
 - [InHand VG814 用户手册 V1.0](VG814/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/VG814%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.md): VG814 用户手册 v1.0 — InHand VG814是面向车联网（IoV）的新一代4G/5G车载网关。该设备为汽车和运输服务车辆提供快速安全的网络，满足警车、应急指挥车、工程车、医疗车和物流车对快速移动网络的需求。配合基于云的远程车辆管理平台使用，可为物流管理、资产跟…
 - [VG814 Rail v1.0](VG814/Datasheets/Rail/VG814%E8%BD%A8%E9%81%93%E7%89%88%E8%A7%84%E6%A0%BC%E4%B9%A6_V1.0.md): VG814 Rail v1.0 — 高性能、一体化、EN50155 轨道标准
 - [VG814 Road v1.0](VG814/Datasheets/Road/VG814%E9%81%93%E8%B7%AF%E7%89%88%E8%A7%84%E6%A0%BC%E4%B9%A6_V1.0.md): VG814 Road v1.0
-- [VG814 规格书 v1.0](VG814/Datasheets/%E9%80%9A%E7%94%A8/VG814%E8%A7%84%E6%A0%BC%E4%B9%A6_V1.0.md): VG814 规格书 v1.0
 - [VG814 结构图纸](VG814/drawings.md): VG814 结构图纸登记（2D、3D），含图纸原件文件链接
 - [VG814 认证证书](VG814/certifications.md): VG814 已获认证清单（CE、E-Mark、ECER118、EN18031、EN45545、EN50155、EN61373、ISO16750、ITxPT、RoHS、UKCA），含证书原件文件链接
 
 ## VR624
 
-- [VR624 规格书 v1.0](VR624/Datasheets/%E9%80%9A%E7%94%A8/VR624%E8%A7%84%E6%A0%BC%E4%B9%A6_V1.0.md): VR624 规格书 v1.0 — VR624 是一款专为车载网络设计的坚固型 5G 路由器，配备 4 个 M12 X-code 千兆以太网端口、RS232 串口以及支持反极性保护的 DC 9-48 V 输入。该设备提供高达 3.4 Gbps 的 5G NR SA/NSA 速…
 - [VR624 规格书 v1.1](VR624/Datasheets/%E9%80%9A%E7%94%A8/VR624%E8%A7%84%E6%A0%BC%E4%B9%A6_V1.1.md): VR624 规格书 v1.1 — VR624 是一款专为车载网络设计的坚固型 5G 路由器，配备 4 个 M12 X-code 千兆以太网端口、支持反极性保护的 DC 9-48 V 输入。该设备提供高达 3.4 Gbps 的 5G NR SA/NSA 速率、双 Nano-S…
 
 ## VT200

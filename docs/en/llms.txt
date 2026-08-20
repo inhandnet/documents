@@ -890,7 +890,7 @@
 - [Mo 68A Quick Start Guide](Mo%2068A/Manuals/Installation%20Guide/Mo%2068A_Quick_Start_Guide_V1.0.md): Mo 68A Installation Guide v1.0
 - [Mo 68A User Guide](Mo%2068A/Manuals/User%20manual/Mo%2068A_User%20manual_V1.0.md): Mo 68A User manual v1.0 — Mo 68A is a single-board computer built around the TDA4VE / AM68A SoC (TI J721S2 family). It features dual Cortex-A72 ap…
 - [Mo 68A Datasheet v1.0](Mo%2068A/Datasheets/General/Mo%2068A_Datasheet_V1.0.md): Mo 68A Datasheet v1.0 — Embrace Edge AI, Empower Intelligent Vision
-- [MO 68A Drawings](Mo%2068A/drawings.md): MO 68A mechanical drawings (2D) with links to the original drawing files
+- [Mo 68A Drawings](Mo%2068A/drawings.md): Mo 68A mechanical drawings (2D) with links to the original drawing files
 
 ## ODU12
 

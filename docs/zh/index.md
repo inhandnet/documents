@@ -444,21 +444,14 @@ hide:
     </div>
     <div class="pm-card">
       <div class="pm-card__body">
-        <div class="pm-card__title">MO 68A</div>
-        <ul class="pm-card__links">
-        <li><a href="MO%2068A/drawings.html" title="MO 68A 结构图纸">结构图纸</a></li>
-        <li><a href="MO%2068A/Manuals/%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97/MO68A_%E7%A1%AC%E4%BB%B6%E5%8F%82%E8%80%83%E6%89%8B%E5%86%8C_V1.0.html" title="MO68A 硬件参考手册">安装指南 V1.0</a></li>
-        <li><a href="MO%2068A/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/MO68A_%E7%94%A8%E6%88%B7%E6%8C%87%E5%8D%97_V1.0.html" title="MO68A 用户指南">用户手册 V1.0</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="pm-card">
-      <div class="pm-card__body">
         <div class="pm-card__title">Mo 68A</div>
         <ul class="pm-card__links">
-        <li><a href="Mo%2068A/Manuals/%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97/Mo%2068A_%E7%94%A8%E6%88%B7%E6%8C%87%E5%8D%97_V1.0.html" title="Mo 68A 用户指南">安装指南 V1.0</a></li>
+        <li><a href="Mo%2068A/drawings.html" title="Mo 68A 结构图纸">结构图纸</a></li>
+        <li><a href="Mo%2068A/Manuals/%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97/MO68A_%E7%A1%AC%E4%BB%B6%E5%8F%82%E8%80%83%E6%89%8B%E5%86%8C_V1.0.html" title="MO68A 硬件参考手册">MO68A 硬件参考手册</a></li>
+        <li><a href="Mo%2068A/Manuals/%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97/Mo%2068A_%E7%94%A8%E6%88%B7%E6%8C%87%E5%8D%97_V1.0.html" title="Mo 68A 用户指南">Mo 68A 用户指南</a></li>
         <li><a href="Mo%2068A/Manuals/%E5%BF%AB%E9%80%9F%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/Mo%2068A_%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97_V1.0.html" title="Mo 68A 快速入门指南">快速用户手册 V1.0</a></li>
-        <li><a href="Mo%2068A/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/Mo%2068A%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="Mo 68A 硬件参考手册">用户手册 V1.0</a></li>
+        <li><a href="Mo%2068A/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/MO68A_%E7%94%A8%E6%88%B7%E6%8C%87%E5%8D%97_V1.0.html" title="MO68A 用户指南">MO68A 用户指南</a></li>
+        <li><a href="Mo%2068A/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/Mo%2068A%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="Mo 68A 硬件参考手册">Mo 68A 硬件参考手册</a></li>
         </ul>
       </div>
     </div>

@@ -524,7 +524,7 @@
 - [MO68A 用户指南](Mo%2068A/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/MO68A_%E7%94%A8%E6%88%B7%E6%8C%87%E5%8D%97_V1.0.md): Mo 68A 用户手册 v1.0 — MO68A 是一款基于 TDA4VE / AM68A SoC（TI J721S2 系列）的单板计算机，具有双 Cortex-A72 CPU、最多六个 Cortex-R5F 实时核以及 8 TOPS AI 加速器，兼容树莓派 40-pin H…
 - [Mo 68A 硬件参考手册](Mo%2068A/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/Mo%2068A%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.md): Mo 68A 用户手册 v1.0
 - [Mo 68A 规格书 v1.0](Mo%2068A/Datasheets/%E9%80%9A%E7%94%A8/Mo%2068A%E8%A7%84%E6%A0%BC%E4%B9%A6_V1.0.md): Mo 68A 规格书 v1.0
-- [MO 68A 结构图纸](Mo%2068A/drawings.md): MO 68A 结构图纸登记（2D），含图纸原件文件链接
+- [Mo 68A 结构图纸](Mo%2068A/drawings.md): Mo 68A 结构图纸登记（2D），含图纸原件文件链接
 
 ## ODU2002
 

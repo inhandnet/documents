@@ -30,6 +30,10 @@ import requests
 REPO_ROOT = Path(__file__).resolve().parent.parent
 SPECS_PKG = REPO_ROOT / "onboarding" / "specs-import"
 
+# LLM 配置（用于 AI 审查产品匹配）
+LLM_API_URL = os.environ.get("LLM_API_URL", "")
+LLM_API_KEY = os.environ.get("LLM_API_KEY", "")
+
 # 站点配置（从环境变量读取）
 SITES = {
     "zh": {
@@ -112,6 +116,63 @@ def basic_auth(username: str, password: str) -> str:
     return "Basic " + base64.b64encode(f"{username}:{password}".encode()).decode()
 
 
+def ai_review_match(product_name: str, candidates: list) -> dict:
+    """用 LLM 审查多个候选产品，返回最匹配的 {id, name}"""
+    if not LLM_API_URL or not LLM_API_KEY:
+        log("LLM API 未配置，跳过 AI 审查")
+        return None
+
+    # 构建候选列表
+    candidate_list = "\n".join([f"- ID={c['id']}, name=\"{c['name']}\"" for c in candidates])
+
+    prompt = f"""产品型号 "{product_name}" 需要匹配到 WordPress 产品。
+
+候选产品列表：
+{candidate_list}
+
+请判断哪个产品最匹配 "{product_name}"。只返回最匹配产品的 ID 数字，不匹配则返回 0。
+例如：123"""
+
+    try:
+        headers = {
+            "Authorization": f"Bearer {LLM_API_KEY}",
+            "Content-Type": "application/json",
+        }
+        payload = {
+            "model": os.environ.get("LLM_MODEL", "deepseek-v4-flash"),
+            "messages": [{"role": "user", "content": prompt}],
+            "max_tokens": 100,
+        }
+        r = requests.post(LLM_API_URL, json=payload, headers=headers, timeout=30)
+        if r.status_code != 200:
+            log(f"LLM API 失败: HTTP {r.status_code}")
+            return None
+
+        result = r.json()
+        text = result.get("choices", [{}])[0].get("message", {}).get("content", "").strip()
+
+        # 提取数字
+        match = re.search(r"\d+", text)
+        if match:
+            selected_id = int(match.group())
+            if selected_id == 0:
+                log(f"AI 审查：无匹配产品")
+                return None
+            for c in candidates:
+                if c["id"] == selected_id:
+                    log(f"AI 审查：选择 {c['name']} (ID={selected_id})")
+                    return c
+            log(f"AI 审查：返回 ID {selected_id} 不在候选列表中")
+            return None
+
+        log(f"AI 审查：无法解析返回值: {text}")
+        return None
+
+    except Exception as e:
+        log(f"AI 审查异常: {e}")
+        return None
+
+
 def find_product_by_name(product_name: str, site: str) -> dict:
     """调 WP API 搜索产品，返回 {id, name} 或 None"""
     wp_url = SITES[site].get("wp_url", "")
@@ -157,9 +218,11 @@ def find_product_by_name(product_name: str, site: str) -> dict:
         if len(contains) == 1:
             return {"id": contains[0]["id"], "name": contains[0]["name"]}
 
+        # 多个候选 → AI 审查
         if len(contains) > 1:
-            log(f"找到 {len(contains)} 个匹配产品，跳过：{[p['name'] for p in contains]}")
-            return None
+            log(f"找到 {len(contains)} 个候选产品，调 AI 审查...")
+            candidates = [{"id": p["id"], "name": p["name"]} for p in contains]
+            return ai_review_match(product_name, candidates)
 
         log(f"未精确匹配产品：{product_name}（搜索到 {len(products)} 个，但都不匹配）")
         return None

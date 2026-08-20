@@ -39,6 +39,9 @@ jobs:
 
       - name: Sync specs
         env:
+          LLM_API_URL: ${{ secrets.LLM_API_URL || 'https://llm-tg3jkhnwwk1q7xif.cn-beijing.maas.aliyuncs.com/compatible-mode/v1/chat/completions' }}
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          LLM_MODEL: ${{ secrets.LLM_MODEL || 'deepseek-v4-flash' }}
           WP_ZH_URL: ${{ secrets.WP_ZH_URL }}
           WP_ZH_APP_PASSWORD: ${{ secrets.WP_ZH_APP_PASSWORD }}
           WP_EN_URL: ${{ secrets.WP_EN_URL }}

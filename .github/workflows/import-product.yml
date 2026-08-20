@@ -85,7 +85,7 @@ jobs:
         with:
           name: import-result-${{ inputs.product }}-${{ inputs.site }}
           path: |
-            import_result_*.json
+            auto-import/import_result_*.json
             auto-import/onboarding/highlights-import/products_${{ inputs.site }}/${{ inputs.product }}.json
           retention-days: 7
 
@@ -105,8 +105,8 @@ jobs:
             exit 0
           fi
 
-          # 读取结果文件
-          RESULT_FILE=$(ls import_result_*.json 2>/dev/null | head -1)
+          # 读取结果文件（import_product.py 写入 auto-import/ 目录）
+          RESULT_FILE=$(ls auto-import/import_result_*.json 2>/dev/null | head -1)
 
           if [ -n "$RESULT_FILE" ]; then
             STATUS="success"

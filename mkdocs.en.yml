@@ -83,4 +83,7 @@ plugins:
         - "**/certification documents/**"
         - "**/Drawings/**"
         - "**/drawings/**"
+        # EOL list is served to AI via llms.txt / md twins only, no HTML page
+        # (dir sits at the language root, so no **/ prefix — it would not match)
+        - "EOL Products/**"
 

@@ -82,4 +82,7 @@ plugins:
         - "**/certification documents/**"
         - "**/Drawings/**"
         - "**/drawings/**"
+        # EOL 清单只进 llms.txt / md 孪生（供 AI 问答），不出 HTML 页面
+        # （目录在语言根下，glob 不能带 **/ 前缀，否则匹配不上）
+        - "EOL Products/**"
 

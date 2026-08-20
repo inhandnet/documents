@@ -68,7 +68,7 @@ The IR624 series is suitable for the networking of unattended devices and sites.
 
 ## 1.2 LED Indicators
 
-<p align="center"><img src="images/img_5d8222d0.webp" alt="LED indicators location"></p>
+<p align="center"><img src="images/img_5d8222d0.webp" alt="LED indicators location" width="50%"></p>
 
 <p align="center"><strong>Figure 1-2 LED Indicators</strong></p>
 

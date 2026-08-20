@@ -81,9 +81,9 @@ The VT310/320 series vehicle tracking gateway is an asset tracking product that 
 
 **Fig. 1-2 VT310 Product Appearance**
 
-![1681197819895-81f62a8e-fe0c-4640-9b84-febf092f2644.png](./img/JTyXJeajJoIDZj8-/1681197819895-81f62a8e-fe0c-4640-9b84-febf092f2644-622908.webp)
+<p align="center"><img src="./img/JTyXJeajJoIDZj8-/1681197819895-81f62a8e-fe0c-4640-9b84-febf092f2644-622908.webp" alt="1681197819895-81f62a8e-fe0c-4640-9b84-febf092f2644.png" width="50%"></p>
 
-![1681197820302-c9303e84-ab8b-4465-a27a-1ff3b9387deb.png](./img/JTyXJeajJoIDZj8-/1681197820302-c9303e84-ab8b-4465-a27a-1ff3b9387deb-561563.webp)
+<p align="center"><img src="./img/JTyXJeajJoIDZj8-/1681197820302-c9303e84-ab8b-4465-a27a-1ff3b9387deb-561563.webp" alt="1681197820302-c9303e84-ab8b-4465-a27a-1ff3b9387deb.png" width="50%"></p>
 
 **Fig. 1-3 VT320 Product Dimensions (Unit: mm)**
 
@@ -137,7 +137,7 @@ The VT310/320 series vehicle tracking gateway is an asset tracking product that 
 
 #### VT320 26PIN
 
-![VT320 26PIN](./img/JTyXJeajJoIDZj8-/1741230711226-673dbece-891c-4bf4-af9c-fa5e62f24d57-321283.webp)
+<p align="center"><img src="./img/JTyXJeajJoIDZj8-/1741230711226-673dbece-891c-4bf4-af9c-fa5e62f24d57-321283.webp" alt="VT320 26PIN" width="50%"></p>
 
 | PIN | Definition | Description |
 | :---: | --- | --- |

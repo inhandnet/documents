@@ -210,8 +210,7 @@ To restore default settings via the Reset button:
 
 <p align="center"><strong>Figure 2.2 VG710 Hardware Connection (Wiring)</strong></p>
 
-| ![1690880113377-06d3be22-3197-4e1f-83e7-a9bd303c1de5.png](./img/Gs3dvISjhRc0qruU/1690880113377-06d3be22-3197-4e1f-83e7-a9bd303c1de5-398139.webp) Note:<br/>Before inserting or removing the SIM card, unplug the power cable; otherwise, data loss or gateway damage may occur. |
-| :--- |
+Note:<br/>Before inserting or removing the SIM card, unplug the power cable; otherwise, data loss or gateway damage may occur. 
 
 ### 2.2.2 PC IP Address Configuration
 

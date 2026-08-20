@@ -189,7 +189,7 @@ The ER805 supports dual nano SIM cards. Use the SIM card ejector tool included i
 
 Attach the antennas to the corresponding SMA connectors on the device.
 
-<p align="center"><img src="images/fig-3-2-attach-antennas.webp" alt="Attach Antennas"></p>
+<p align="center"><img src="images/fig-3-2-attach-antennas.webp" alt="Attach Antennas" width="50%"></p>
 
 <p align="center"><strong>Fig. 2-2 Attach Antennas</strong></p>
 
@@ -202,7 +202,7 @@ Attach the antennas to the corresponding SMA connectors on the device.
 3. Verify correct installation of the SIM card, antennas, and power cable.
 4. Place the device steadily on the tabletop.
 
-<p align="center"><img src="images/fig-3-3-1-desktop.webp" alt="Desktop Installation"></p>
+<p align="center"><img src="images/fig-3-3-1-desktop.webp" alt="Desktop Installation" width="50%"></p>
 
 <p align="center"><strong>Fig. 2-3 Desktop Installation</strong></p>
 
@@ -212,7 +212,7 @@ Attach the antennas to the corresponding SMA connectors on the device.
 2. Install two screws on the wall; the distance between screws must match the hole distance between the hanging ears.
 3. Hang the device in the predetermined position and push down to confirm stable installation.
 
-<p align="center"><img src="images/fig-3-3-2-a-panel-mount.webp" alt="Panel Mounting"></p>
+<p align="center"><img src="images/fig-3-3-2-a-panel-mount.webp" alt="Panel Mounting" width="50%"></p>
 
 <p align="center"><strong>Fig. 2-4-a Panel Mounting Installation</strong></p>
 
@@ -221,7 +221,7 @@ Attach the antennas to the corresponding SMA connectors on the device.
 1. Drill holes at predetermined installation positions and install two expansion screws; the screw distance must match the mounting hole positions on the device bottom.
 2. After mounting, push the device down to ensure firm installation.
 
-<p align="center"><img src="images/fig-3-3-2-b-wall-mount.webp" alt="Wall Mounting"></p>
+<p align="center"><img src="images/fig-3-3-2-b-wall-mount.webp" alt="Wall Mounting" width="50%"></p>
 
 <p align="center"><strong>Fig. 2-4-b Wall Mounting Installation</strong></p>
 

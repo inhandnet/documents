@@ -6,7 +6,7 @@ Thank you for choosing our product. Before using the product, read this manual c
 
 The contents of this manual cannot be copied or reproduced in any form without the written permission of InHand. Due to continuous updating, InHand cannot promise that the contents are consistent with the actual product information, and does not assume any disputes caused by the inconsistency of technical parameters. The information in this document is subject to change without notice. InHand reserves the right of final change and interpretation.
 
-漏 2024 InHand Networks. All rights reserved.
+
 
 ## Conventions
 

@@ -188,7 +188,7 @@ The ODU2002 supports dual nano-SIM cards.
 
 Attach the eight antennas to the TNC connectors marked 5G, 5G MIMO, Wi-Fi, and GNSS.
 
-<p align="center"><img src="images/img_87e1b428.webp" alt="Antenna Connection"></p>
+<p align="center"><img src="images/img_87e1b428.webp" alt="Antenna Connection" width="50%"></p>
 
 <p align="center"><strong>Fig. 2-2 Antenna Connection</strong></p>
 
@@ -196,7 +196,7 @@ Attach the eight antennas to the TNC connectors marked 5G, 5G MIMO, Wi-Fi, and G
 
 Attach the mounting plate to the ODU2002 using screws. Ensure the top side faces upward.
 
-<p align="center"><img src="images/img_2f4a9703.webp" alt="Mounting Plate Installation" style="width:50%;height:auto;"></p>
+<p align="center"><img src="images/img_2f4a9703.webp" alt="Mounting Plate Installation" style="width:25%;height:auto;"></p>
 
 <p align="center"><strong>Fig. 2-3 Mounting Plate Installation</strong></p>
 
@@ -204,13 +204,13 @@ Attach the mounting plate to the ODU2002 using screws. Ensure the top side faces
 
 1. Install the adjustable base on the wall at the desired angle and position.
 
-<p align="center"><img src="images/img_c7d28048.webp" alt="Wall Mount Base"></p>
+<p align="center"><img src="images/img_c7d28048.webp" alt="Wall Mount Base" width="50%"></p>
 
 <p align="center"><strong>Fig. 2-4 Wall Mount Base</strong></p>
 
 2. Attach the mounted ODU2002 to the base. Tighten the mounting bolts to lock the ODU2002 in place.
 
-<p align="center"><img src="images/img_48892120.webp" alt="Wall Mount Assembly"></p>
+<p align="center"><img src="images/img_48892120.webp" alt="Wall Mount Assembly" width="50%"></p>
 
 <p align="center"><strong>Fig. 2-5 Wall Mount Assembly</strong></p>
 
@@ -218,13 +218,13 @@ Attach the mounting plate to the ODU2002 using screws. Ensure the top side faces
 
 1. Install the adjustable base on the pole at the desired angle and position.
 
-<p align="center"><img src="images/img_c9f70ae6.webp" alt="Pole Mount Base"></p>
+<p align="center"><img src="images/img_c9f70ae6.webp" alt="Pole Mount Base" width="50%"></p>
 
 <p align="center"><strong>Fig. 2-6 Pole Mount Base</strong></p>
 
 2. Attach the mounted ODU2002 to the base. Tighten the mounting bolts to lock the ODU2002 in place.
 
-<p align="center"><img src="images/img_b103c4bb.webp" alt="Pole Mount Assembly"></p>
+<p align="center"><img src="images/img_b103c4bb.webp" alt="Pole Mount Assembly" width="50%"></p>
 
 <p align="center"><strong>Fig. 2-7 Pole Mount Assembly</strong></p>
 
@@ -232,7 +232,7 @@ Attach the mounting plate to the ODU2002 using screws. Ensure the top side faces
 
 Connect the grounding hole of the device to earth ground through the grounding wire with the OT terminal. Cut the grounding wire to an appropriate length according to the field situation to avoid waste.
 
-<p align="center"><img src="images/img_111a4b3a.webp" alt="Grounding Connection"></p>
+<p align="center"><img src="images/img_111a4b3a.webp" alt="Grounding Connection" width="50%"></p>
 
 <p align="center"><strong>Fig. 2-8 Grounding Connection</strong></p>
 
@@ -247,7 +247,7 @@ Connect the grounding hole of the device to earth ground through the grounding w
 1. Cut the Ethernet cable to the appropriate length according to the distance from the ODU to the power supply and pass it through the bracket.
 2. Process the crystal head and pass it through the waterproof PG head in the order shown below.
 
-<p align="center"><img src="images/img_5b0d1378.webp" alt="Ethernet Cable Waterproof Assembly"></p>
+<p align="center"><img src="images/img_5b0d1378.webp" alt="Ethernet Cable Waterproof Assembly" width="50%"></p>
 
 <p align="center"><strong>Fig. 2-9 Ethernet Cable Waterproof Assembly</strong></p>
 
@@ -257,7 +257,7 @@ Connect the grounding hole of the device to earth ground through the grounding w
 
 Connect one end of the Ethernet cable to the PoE 2.5G LAN1 port and plug the other end into the 802.3af (50V/0.3A) PoE adapter or a router/switch with an 802.3af port.
 
-<p align="center"><img src="images/img_845fb6ff.webp" alt="PoE Connection"></p>
+<p align="center"><img src="images/img_845fb6ff.webp" alt="PoE Connection" width="50%"></p>
 
 <p align="center"><strong>Fig. 2-10 PoE Connection</strong></p>
 

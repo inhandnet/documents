@@ -191,7 +191,7 @@ The ER605 supports dual nano SIM cards. Use the SIM card ejector tool included i
 
 Attach the antennas to the SMA connectors. The stick antenna must be installed on the corresponding SMA interface according to the logo on the antenna and near the SMA interface.
 
-<p align="center"><img src="images/fig-3-2.webp" alt="Attach Antennas"></p>
+<p align="center"><img src="images/fig-3-2.webp" alt="Attach Antennas" width="50%"></p>
 
 <p align="center"><strong>Fig. 2-2 Attach Antennas</strong></p>
 
@@ -202,7 +202,7 @@ Attach the antennas to the SMA connectors. The stick antenna must be installed o
 3. Verify the correct installation of the SIM cards, antennas, and power cable.
 4. Place the device steadily on the tabletop.
 
-<p align="center"><img src="images/fig-3-3-1-a.webp" alt="Attach Foot Pads"></p>
+<p align="center"><img src="images/fig-3-3-1-a.webp" alt="Attach Foot Pads" width="50%"></p>
 
 <p align="center"><strong>Fig. 2-3 Attach Foot Pads</strong></p>
 
@@ -216,7 +216,7 @@ Attach the antennas to the SMA connectors. The stick antenna must be installed o
 2. Install two screws on the wall where the equipment needs to be mounted. The distance between the two screws must be consistent with the hole distance between the hanging ears of the equipment.
 3. Hang the device in the predetermined position and push down to confirm that the device is installed stably and will not fall.
 
-<p align="center"><img src="images/fig-3-3-2.webp" alt="Wall-Mounted Installation"></p>
+<p align="center"><img src="images/fig-3-3-2.webp" alt="Wall-Mounted Installation" width="50%"></p>
 
 <p align="center"><strong>Fig. 2-5 Wall-Mounted Installation</strong></p>
 

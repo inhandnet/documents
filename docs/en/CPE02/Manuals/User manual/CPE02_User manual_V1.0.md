@@ -128,7 +128,7 @@ The 5G CPE02 series leverages the high-speed connectivity of 5G cellular network
 1. Power on the device. When the SYS indicator is solid red, press and hold the Reset button (approximately 50 seconds) until the SYS indicator turns solid blue.
 2. Release the Reset button. The SYS indicator will flash blue. Press and hold the Reset button again. Once the SYS indicator turns solid blue, release it to start the factory reset process.
 
-<p align="center"><img src="./images/img_51087d2c.webp" alt="Reset Button"></p>
+<p align="center"><img src="./images/img_51087d2c.webp" alt="Reset Button" width="50%"></p>
 
 <p align="center"><strong>Figure 1-3 Reset Button</strong></p>
 
@@ -220,7 +220,7 @@ If the PC fails to obtain an IP address automatically, configure it with a stati
 
 If the terminal device supports the WPS function, password-free connection to the Wi-Fi SSID can be achieved by using the WPS button. Terminal devices with iOS/macOS operating system currently do not support this feature.
 
-<p align="center"><img src="./images/img_664f2c60.webp" alt="WPS Button"></p>
+<p align="center"><img src="./images/img_664f2c60.webp" alt="WPS Button" width="50%"></p>
 
 <p align="center"><strong>Figure 2-3 WPS Button</strong></p>
 

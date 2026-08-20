@@ -188,7 +188,7 @@ EC300共有8个LED指示灯，用于指示电源及系统运行状态。
 
 1、通过键入命令，系统会自动重启并恢复出厂设置。
 
-![1719803386710-456311b5-ab25-4c6d-a7d7-b3b6f68d1285.png](D:/user-manual/zh/device-dsa/EC300/img/59Hs2LEPhAS7d-b_/1719803386710-456311b5-ab25-4c6d-a7d7-b3b6f68d1285-785580.png)
+<p align="center"><img src="./img/59Hs2LEPhAS7d-b_/1719803386710-456311b5-ab25-4c6d-a7d7-b3b6f68d1285-785580.png" alt="命令重启" Width="70%"></p>
 
 2、通过按键恢复出厂设置：
 

@@ -81,7 +81,7 @@ Combined with the InCloud Manager platform, the 5G FWA02 forms a cloud-managed n
 
 ## 1.3 Appearance and Interfaces
 
-<p align="center"><img src="images/img_2d858f02.webp" alt="Device panel"></p>
+<p align="center"><img src="images/img_2d858f02.webp" alt="Device panel" width="50%"></p>
 
 <p align="center"><strong>Figure 1-2 Device panel</strong></p>
 
@@ -173,7 +173,7 @@ The 5G FWA02 supports dual nano SIM cards (4FF).
 
 > **Note**: For Verizon users, an embedded SIM card is built in. The ICCID is located on the back of the device if activation of the embedded SIM is required instead of the 4FF SIM.
 
-<p align="center"><img src="images/img_75add86a.webp" alt="Install the SIM cards"></p>
+<p align="center"><img src="images/img_75add86a.webp" alt="Install the SIM cards" width="50%"></p>
 
 <p align="center"><strong>Figure 2-1 Install the SIM cards</strong></p>
 
@@ -181,7 +181,7 @@ The 5G FWA02 supports dual nano SIM cards (4FF).
 
 Attach all the 5G antennas to the SMA connectors. The four Wi-Fi antennas are built-in and do not require installation.
 
-<p align="center"><img src="images/img_4778c08a.webp" alt="Install the antennas"></p>
+<p align="center"><img src="images/img_4778c08a.webp" alt="Install the antennas" width="50%"></p>
 
 <p align="center"><strong>Figure 2-2 Install the antennas</strong></p>
 

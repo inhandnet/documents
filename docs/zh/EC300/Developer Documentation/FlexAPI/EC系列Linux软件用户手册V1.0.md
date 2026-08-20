@@ -61,10 +61,11 @@ Inhand linux计算机支持基于以太网的SSH连接，使用下述默认IP地
 | ETH1 | 192.168.3.100 |
 | ETH2 | 192.168.4.100 |
 
-**NOTE**
+<u>NOTE                                                        `</u>`
 
 在运行ssh命令之前，请确保配置您的笔记本电脑/台式电脑以太网接口的IP地址，范围为ETH1 192.168.3.0/24，ETH2 192.168.4.0/24。
 
+<u>                                                                 `</u>`
 
 **通过ETH1使用SSH命令行连接到Inhand linux计算机。**
 
@@ -82,10 +83,11 @@ Inhand linux计算机支持基于以太网的SSH连接，使用下述默认IP地
 
 ![1749108342945-397cabf7-732b-4020-9a99-af147b951c47.png](./img/R2_F4K-zBA-w0XXw/1749108342945-397cabf7-732b-4020-9a99-af147b951c47-605012.png)
 
-**NOTE**
+<u>NOTE                                                        `</u>`
 
 更多SSH信息可以访问[https://wiki.debian.org/SSH](https://wiki.debian.org/SSH)
 
+<u>                                                                 `</u>`
 
 ### 2.2.用户管理
 
@@ -97,7 +99,7 @@ Inhand linux计算机支持基于以太网的SSH连接，使用下述默认IP地
 
 ![1749108343139-59a42fa4-7caa-4907-abea-ab1e4c6c48f8.png](./img/R2_F4K-zBA-w0XXw/1749108343139-59a42fa4-7caa-4907-abea-ab1e4c6c48f8-450868.png)
 
-**NOTE**
+<u>NOTE                                                        `</u>`
 
 当执行命令后Arm计算机返回permission denied消息时需要使用sudo来提升权限
 
@@ -105,6 +107,7 @@ Inhand linux计算机支持基于以太网的SSH连接，使用下述默认IP地
 
 更多sudo信息可以访问[https://wiki.debian.org/sudo](https://wiki.debian.org/sudo)
 
+<u>`                                                                 `</u>`
 
 ### 2.2.2.创建和删除用户
 
@@ -132,10 +135,11 @@ Inhand linux计算机支持基于以太网的SSH连接，使用下述默认IP地
 
 ![1749108344611-f6ae32cc-8cb4-4717-9fb8-486676da6c22.png](./img/R2_F4K-zBA-w0XXw/1749108344611-f6ae32cc-8cb4-4717-9fb8-486676da6c22-648631.png)
 
-**NOTE**
+<u>NOTE                                                        `</u>`
 
 在禁用默认用户前请创建其他用户并保证其他用户可以SSH访问Arm计算机  
 
+<u>                                                                 `</u>`
 
 ### 2.3.网络设置
 
@@ -143,10 +147,11 @@ Inhand linux计算机支持基于以太网的SSH连接，使用下述默认IP地
 
 第一次登录后，您可以配置基于Arm的计算机网络设置以适应您的应用程序。
 
-**NOTE**
+<u>NOTE                                                        `</u>`
 
 在更新网络配置后，以太网IP地址变化将引起SSH连接中断，需要重新创建SSH连接
 
+<u>                                                                 `</u>`
 
 **以太网配置文件路径。**
 
@@ -180,12 +185,13 @@ Inhand linux计算机支持基于以太网的SSH连接，使用下述默认IP地
 
 ![1749108345935-3109cbdb-0c4b-4ddf-8820-65481846759a.png](./img/R2_F4K-zBA-w0XXw/1749108345935-3109cbdb-0c4b-4ddf-8820-65481846759a-341909.png)
 
-**NOTE**
+<u>NOTE                                                        `</u>`
 
 更多vim使用可以参考[https://manpages.org/vim](https://manpages.org/vim)
 
 更多以太网配置可以参考[https://www.baeldung.com/linux/network-interface-configure](https://www.baeldung.com/linux/network-interface-configure)
 
+<u>                                                                 `</u>`
 
 ### 2.4.系统管理
 
@@ -230,7 +236,7 @@ Inhand linux计算机支持基于以太网的SSH连接，使用下述默认IP地
 
 ![1749108347631-facb2df0-e254-4600-a292-626710b90bfa.png](./img/R2_F4K-zBA-w0XXw/1749108347631-facb2df0-e254-4600-a292-626710b90bfa-136023.png)
 
-**NOTE**
+<u>NOTE                                                        `</u>`
 
 更多日期和时间信息可以参考
 
@@ -238,6 +244,7 @@ Inhand linux计算机支持基于以太网的SSH连接，使用下述默认IP地
 
 [https://wiki.debian.org/DateTime](https://wiki.debian.org/DateTime)
 
+<u>                                                                 `</u>`
 
 ### 2.4.3.调整时区
 
@@ -307,12 +314,13 @@ TZ=`<值>`HH[：MM[：SS]][夏[HH[：MM[：SS]][，开始日期[/starttime]，�
 
 本地时区存储在/etc/localtime中，如果没有为TZ环境变量设置值，则由GNU Library for C（glibc）使用。此文件要么是/usr/share/zoneinfo/文件的副本，要么是指向该文件的符号链接。基于Arm的计算机不提供/usr/share/zoneinfo/文件。您应该找到一个合适的时区信息文件，并在基于Arm的计算机中重写原始本地时间文件。
 
-**NOTE**
+<u>NOTE                                                        `</u>`
 
 通过localtime变更时区可以参考
 
 [https://linuxize.com/post/how-to-set-or-change-timezone-in-linux/](https://linuxize.com/post/how-to-set-or-change-timezone-in-linux/)
 
+<u>                                                                 `</u>`
 
 ### 2.5.确定磁盘空间
 
@@ -408,12 +416,13 @@ TZ=`<值>`HH[：MM[：SS]][夏[HH[：MM[：SS]][，开始日期[/starttime]，�
 
 (9)断开电源，移除J16短接端子和SD卡，复原上盖板并重新上电
 
-**NOTE**
+<u>NOTE                                                        `</u>`
 
 通过flash命令更新系统不会清除用户数据和设备厂商固化信息（比如设备型号 / SN号 / 以太网MAC地址等）
 
 如果要清除用户数据和设备厂商固化信息请谨慎使用flash -f命令
 
+<u>                                                                 `</u>`
 
 ## 3.外设配置
 
@@ -435,12 +444,13 @@ stty命令用于查看和修改串行终端设置，详情如下。
 
 ![1749108352687-4835a476-5ac2-4237-a346-f80380ccd12c.png](./img/R2_F4K-zBA-w0XXw/1749108352687-4835a476-5ac2-4237-a346-f80380ccd12c-349817.png)
 
-**NOTE**
+<u>NOTE                                                        `</u>`
 
 更多stty使用方式可以参考
 
 [http://www.gnu.org/software/coreutils/manual/coreutils.html](http://www.gnu.org/software/coreutils/manual/coreutils.html)
 
+<u>                                                                 `</u>`
 
 ### 3.2.USB和SD卡
 
@@ -482,7 +492,7 @@ stty命令用于查看和修改串行终端设置，详情如下。
 
 ![1749108354898-7157b088-08fa-432d-a58e-b5ab9fd207a3.png](./img/R2_F4K-zBA-w0XXw/1749108354898-7157b088-08fa-432d-a58e-b5ab9fd207a3-044158.png)
 
-**NOTE**
+<u>NOTE                                                        `</u>`
 
 在格式化存储器前请确保存储器没有挂载到设备
 
@@ -498,6 +508,7 @@ stty命令用于查看和修改串行终端设置，详情如下。
 
 [https://linuxsimply.com/mkfs-command-in-linux/](https://linuxsimply.com/mkfs-command-in-linux/)
 
+<u>                                                                 `</u>`
 
 ### 3.3.CAN总线
 
@@ -615,7 +626,7 @@ int main(void)
 
 SocketCAN信息将写入路径/proc/sys/net/ipv4/conf/can*和/proc/sys/net/ipv4/neigh/can*
 
-**NOTE**
+<u>NOTE                                                        `</u>`
 
 在配置CAN接口前，请保证CAN接口处于down状态
 
@@ -623,6 +634,7 @@ SocketCAN信息将写入路径/proc/sys/net/ipv4/conf/can*和/proc/sys/net/ipv4/
 
 [https://www.kernel.org/doc/html/latest/networking/can.html](https://www.kernel.org/doc/html/latest/networking/can.html)
 
+<u>                                                                 `</u>`
 
 ### 3.4.模拟量输入检测
 
@@ -630,10 +642,11 @@ Arm计算机上的模拟量输入端口支持4-20mA电流信号检测，可以�
 
 ![1749108355526-7b561ebf-56f5-40cb-aeec-4178e49680c3.png](./img/R2_F4K-zBA-w0XXw/1749108355526-7b561ebf-56f5-40cb-aeec-4178e49680c3-925796.png)
 
-**NOTE**
+<u>NOTE                                                        `</u>`
 
 模拟量输入检测获取的电流值单位是微安
 
+<u>                                                                 `</u>`
 
 ### 3.5.数字量输入输出
 
@@ -662,10 +675,11 @@ Arm计算机上有多路数字量输入检测和数字量输出控制，可以�
 
 ![1749108356123-c3798ba6-9278-4bf8-8742-52bbf7a56032.png](./img/R2_F4K-zBA-w0XXw/1749108356123-c3798ba6-9278-4bf8-8742-52bbf7a56032-364642.png)
 
-**NOTE**
+<u>NOTE                                                        `</u>`
 
 避免’sudo echo x >’ 时’Permission denied’，这是因为重定向符号 “>” 也是 bash 的命令。sudo 只是让 echo 命令具有了 root 权限，但是没有让 “>” 命令也具有root 权限，所以 bash 会认为这个命令没有写入信息的权限。此时需要使用sudo su -c ‘命令’来处理。
 
+<u>                                                                 `</u>`
 
 ### 3.6.用户可编程按键
 
@@ -712,12 +726,13 @@ int main()
 }
 ```
 
-**NOTE**
+<u>NOTE                                                        `</u>`
 
 更多event使用方式可以参考
 
 [https://askubuntu.com/questions/826719/decoding-key-values-from-dev-input-eventx-in-c](https://askubuntu.com/questions/826719/decoding-key-values-from-dev-input-eventx-in-c)
 
+<u>                                                                 `</u>`
 
 ### 3.7.LED
 
@@ -733,7 +748,7 @@ Arm计算机上有多个用户可编程LED，可以使用ls命令查看LED节点
 
 ![1749108356959-066fec20-db30-48fa-8a0c-8f79946b2db5.png](./img/R2_F4K-zBA-w0XXw/1749108356959-066fec20-db30-48fa-8a0c-8f79946b2db5-231406.png)
 
-**NOTE**
+<u>NOTE                                                        `</u>`
 
 更多LED使用方式可以参考
 
@@ -741,6 +756,7 @@ Arm计算机上有多个用户可编程LED，可以使用ls命令查看LED节点
 
 [https://raspberrypi.stackexchange.com/questions/697/how-do-i-control-the-system-leds-using-my-software](https://raspberrypi.stackexchange.com/questions/697/how-do-i-control-the-system-leds-using-my-software)
 
+<u>                                                                 `</u>`
 
 ### 3.8.TPM
 
@@ -750,12 +766,13 @@ Arm计算机提供TPM2.0硬件支持，并预装了tpm2-tools工具，可以使�
 
 ![1749108357197-1366ad59-c83d-4b38-8969-c0ad618bd710.png](./img/R2_F4K-zBA-w0XXw/1749108357197-1366ad59-c83d-4b38-8969-c0ad618bd710-249554.png)
 
-**NOTE**
+<u>NOTE                                                        `</u>`
 
 更多tpm2-tools使用方式可以参考
 
 [https://tpm2-tools.readthedocs.io/en/latest/](https://tpm2-tools.readthedocs.io/en/latest/)
 
+<u>                                                                 `</u>`
 
 ## 4.无线连接
 
@@ -772,10 +789,11 @@ Arm计算机提供TPM2.0硬件支持，并预装了tpm2-tools工具，可以使�
 | SIM card switch | /sys/class/gpio/gpio405/value | 1 | SIM card 2 | |
 | | | 0 | SIM card 1 | ✔ |
 
-**NOTE**
+<u>NOTE                                                        `</u>`
 
 使用蜂窝时需要确认当前SIM卡位于哪个卡槽或者期望使用哪一个卡槽的SIM卡拨号，在使能蜂窝电源前需要切换至所需的SIM卡否则会导致蜂窝模组检卡失败。
 
+<u>                                                                 `</u>`
 
 **切换SIM至SIM卡1**
 
@@ -809,10 +827,11 @@ Arm计算机提供TPM2.0硬件支持，并预装了tpm2-tools工具，可以使�
 
 ![1749108358472-8391dcfb-2019-41db-acd6-05b3f37e7131.png](./img/R2_F4K-zBA-w0XXw/1749108358472-8391dcfb-2019-41db-acd6-05b3f37e7131-613701.png)
 
-**NOTE**
+<u>NOTE                                                        `</u>`
 
 设备默认配置的PPPD拨号脚本为最基础的拨号实现方式，并没有配置APN等信息，如果需要配置APN或使用更加丰富的模组功能，需要更改/etc/ppp/peers/quectel-ppp-ttyUSB*脚本
 
+<u>                                                                 `</u>`
 
 ### 4.2.Wi-Fi设置
 
@@ -864,12 +883,13 @@ Arm计算机支持Wi-Fi配置，您可以使用wpa_supplicant工具配置和使�
 
 ![1749108361005-9bdd736e-27cf-4cc0-85e7-00295234e41c.png](./img/R2_F4K-zBA-w0XXw/1749108361005-9bdd736e-27cf-4cc0-85e7-00295234e41c-075743.png)
 
-**NOTE**
+<u>NOTE                                                        `</u>`
 
 更多wpa_supplicant使用方式请参考
 
 [https://wiki.archlinux.org/title/Wpa_supplicant](https://wiki.archlinux.org/title/Wpa_supplicant)
 
+<u>                                                                 `</u>`
 
 ## 5.安全
 
@@ -921,7 +941,7 @@ reset按键机制依赖于reset_monitor.service服务，此服务默认未加入
 
 在reset_monitor.service服务启动后，可以通过按reset按键方式实现系统重置，当持续按下超过10秒后，warn LED将亮起；按下超过20秒后warn LED将熄灭。在warn LED亮起阶段松开reset按键，Arm计算机将自动重启并进行系统重置。
 
-**NOTE**
+<u>NOTE                                                        `</u>`
 
 系统重置对Arm计算机而言是重要的功能，系统重置后Arm计算机将恢复到默认状态，此时用户数据和配置将全部丢失
 
@@ -953,7 +973,7 @@ Arm计算机基于发行版Linux系统（Debian 11）提供完善的应用更新
 
 ![1749108363760-cb69b2d8-e452-461e-bd98-75182d762480.png](./img/R2_F4K-zBA-w0XXw/1749108363760-cb69b2d8-e452-461e-bd98-75182d762480-918035.png)
 
-**NOTE**
+<u>NOTE                                                        `</u>`
 
 更多apt命令使用方式请参考
 
@@ -971,6 +991,7 @@ dpkg: error processing package bcron (--install):
 
 此时需要根据提示安装依赖软件后尝试
 
+<u>                                                                 `</u>`
 
 ### 6.2.2.Arm计算机版本更新
 
@@ -1000,10 +1021,11 @@ dpkg: error processing package bcron (--install):
 
 (7)更新完成后，可以使用sudo ecversion命令检查当前Arm计算机版本
 
-**NOTE**
+<u>NOTE                                                        `</u>`
 
 当同时接入可移动USB存储器和SD卡时，Arm计算机会判断两个存储器中是否有可更新镜像，如果都存在可更新镜像时，默认启动可移动USB存储器中的镜像进行更新
 
+<u>                                                                 `</u>`
 
 ## 7.编程说明
 
@@ -1055,7 +1077,7 @@ wget
 
 ![1749108366004-34453494-0c9e-4dc2-885b-da2c07bd8562.png](./img/R2_F4K-zBA-w0XXw/1749108366004-34453494-0c9e-4dc2-885b-da2c07bd8562-540752.png)
 
-**NOTE**
+<u>NOTE                                                        `</u>`
 
 基于make和makefile的编译方式请参考
 

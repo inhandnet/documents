@@ -119,7 +119,7 @@ CPE02是北京映翰通网络技术股份有限公司推出的新一代5G简单�
 
 ### 1.3 恢复出厂设置
 
-<p align="center"><img src="./img/jIZJ3DrGUjxbW8hw/1750153565407-55eb27c9-40ea-4a46-8729-4b9055888305-772457.webp" alt="恢复出厂按钮"></p>
+<p align="center"><img src="./img/jIZJ3DrGUjxbW8hw/1750153565407-55eb27c9-40ea-4a46-8729-4b9055888305-772457.webp" alt="恢复出厂按钮" width="50%"></p>
 
 <p align="center"><strong>图 1-2 恢复出厂按钮</strong></p>
 
@@ -347,7 +347,7 @@ CPE02是北京映翰通网络技术股份有限公司推出的新一代5G简单�
 
 CPE02支持WPS功能，可为支持WPS的客户端提供免密连接Wi-Fi的功能。
 
-<p align="center"><img src="./img/jIZJ3DrGUjxbW8hw/1750907202531-4adfd624-3ce7-49d7-ab9f-60796b002306-424374.webp" alt="WPS按键"></p>
+<p align="center"><img src="./img/jIZJ3DrGUjxbW8hw/1750907202531-4adfd624-3ce7-49d7-ab9f-60796b002306-424374.webp" alt="WPS按键" width="50%"></p>
 
 <p align="center"><strong>图 4-1 WPS按键</strong></p>
 

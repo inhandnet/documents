@@ -511,6 +511,10 @@
 
 - [MDT600 规格书 v1.0](MDT600/Datasheets/%E9%80%9A%E7%94%A8/MDT600%E8%A7%84%E6%A0%BC%E4%B9%A6_V1.0.md): MDT600 规格书 v1.0 — 车载智能终端, 边缘AI算力, 5G与Wi-Fi 6互联
 
+## MO 68A
+
+- [MO 68A 结构图纸](MO%2068A/drawings.md): MO 68A 结构图纸登记（2D），含图纸原件文件链接
+
 ## Mo 62A
 
 - [Mo 62A 快速入门指南](Mo%2062A/Manuals/%E5%BF%AB%E9%80%9F%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/Mo%2062A%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8.md): Mo 62A 快速用户手册

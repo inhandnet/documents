@@ -876,6 +876,10 @@
 
 - [MDT600 Datasheet v1.0](MDT600/Datasheets/General/MDT600_Datasheet_V1.0.md): MDT600 Datasheet v1.0 — Vehicle HMI &amp; Edge AI · 5G &amp; Wi-Fi 6 Connectivity
 
+## MO 68A
+
+- [MO 68A Drawings](MO%2068A/drawings.md): MO 68A mechanical drawings (2D) with links to the original drawing files
+
 ## Mo 62A
 
 - [Mo 62A Hardware Interface Description](Mo%2062A/Manuals/Installation%20Guide/Mo%2062A%20Hardware%20Interface%20Description-V1%200.md): Mo 62A Installation Guide v1

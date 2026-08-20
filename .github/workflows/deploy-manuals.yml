@@ -85,6 +85,12 @@ jobs:
         if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
         run: python scripts/generate_llms_txt.py --full
 
+      # 2.7 Generate product-level .nav.yml (flatten the Manuals nav level;
+      # build-time artifact, gitignored — hand-written ones are kept as-is)
+      - name: Generate nav files
+        if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+        run: python scripts/generate_nav_files.py
+
       # 3. Build sites
       - name: Build (zh)
         if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'

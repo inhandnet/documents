@@ -38,6 +38,7 @@ jobs:
         run: |
           python scripts/generate_product_index.py --report
           python scripts/generate_llms_txt.py --full
+          python scripts/generate_nav_files.py
           python -m mkdocs build -f mkdocs.yml -d site-zh --clean
           python -m mkdocs build -f mkdocs.en.yml -d site-en --clean
           # replicate deploy step 4 (clean cloud-storage files)

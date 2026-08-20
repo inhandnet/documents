@@ -15,6 +15,7 @@ This page registers the certification files for IR302. Originals are PDF / archi
 | CB | IR302_CB_Certificate.zip | [View](https://github.com/inhandnet/documents/blob/master/docs/en/IR302/Certification%20Documents/CB/IR302_CB_Certificate.zip) |
 | CE | IR302-FQ58-L_CE_Certificate_.zip | [View](https://github.com/inhandnet/documents/blob/master/docs/en/IR302/Certification%20Documents/CE/IR302-FQ58-L_CE_Certificate_.zip) |
 | CE | IR302-FQ58_CE_Certificate.pdf | [View](https://github.com/inhandnet/documents/blob/master/docs/en/IR302/Certification%20Documents/CE/IR302-FQ58_CE_Certificate.pdf) |
+| CE | IR302-FQ58_DoC.pdf | [View](https://github.com/inhandnet/documents/blob/master/docs/en/IR302/Certification%20Documents/CE/IR302-FQ58_DoC.pdf) |
 | E-Mark | IR302_E-mark_Certificate.pdf | [View](https://github.com/inhandnet/documents/blob/master/docs/en/IR302/Certification%20Documents/E-Mark/IR302_E-mark_Certificate.pdf) |
 | ECER118 | IR302_ECE_R118_Certificate.pdf | [View](https://github.com/inhandnet/documents/blob/master/docs/en/IR302/Certification%20Documents/ECER118/IR302_ECE_R118_Certificate.pdf) |
 | EN18031 | IR302_EN18031_Certificate.zip | [View](https://github.com/inhandnet/documents/blob/master/docs/en/IR302/Certification%20Documents/EN18031/IR302_EN18031_Certificate.zip) |

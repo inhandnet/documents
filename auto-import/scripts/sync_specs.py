@@ -245,27 +245,22 @@ def find_product_by_name(product_name: str, site: str, md_content: str = None) -
 
         products = r.json()
         if not products:
-            log(f"未找到产品：{product_name}")
-            return None
+            log(f"未搜索到产品：{product_name}")
+        else:
+            # 精确匹配（不区分大小写）→ 直接用
+            name_lower = product_name.lower()
+            exact = [p for p in products if p["name"].lower() == name_lower]
+            if len(exact) == 1:
+                return {"id": exact[0]["id"], "name": exact[0]["name"]}
 
-        # 精确匹配（不区分大小写）
-        name_lower = product_name.lower()
-        exact = [p for p in products if p["name"].lower() == name_lower]
-        if len(exact) == 1:
-            return {"id": exact[0]["id"], "name": exact[0]["name"]}
+            # 有搜索结果但不是精确匹配 → AI 审查
+            log(f"搜索到 {len(products)} 个产品但无精确匹配，调 AI 审查...")
+            candidates = [{"id": p["id"], "name": p["name"]} for p in products]
+            result = ai_review_match(product_name, candidates)
+            if result:
+                return result
 
-        # 包含匹配
-        contains = [p for p in products if name_lower in p["name"].lower()]
-        if len(contains) == 1:
-            return {"id": contains[0]["id"], "name": contains[0]["name"]}
-
-        # 多个候选 → AI 审查
-        if len(contains) > 1:
-            log(f"找到 {len(contains)} 个候选产品，调 AI 审查...")
-            candidates = [{"id": p["id"], "name": p["name"]} for p in contains]
-            return ai_review_match(product_name, candidates)
-
-        # 字符串匹配失败 → 用 LLM 从 md 内容分析型号
+        # 没搜到或 AI 审查无结果 → 读 md 内容，LLM 分析型号
         if md_content and LLM_API_URL and LLM_API_KEY:
             log(f"字符串匹配失败，调 LLM 从 md 内容分析型号...")
             models = ai_extract_product_models(md_content)

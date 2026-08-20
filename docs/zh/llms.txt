@@ -513,7 +513,7 @@
 
 ## MO 68A
 
-- [MO 68A 结构图纸](MO%2068A/drawings.md): MO 68A 结构图纸登记（2D），含图纸原件文件链接
+- [Mo 68A 结构图纸](MO%2068A/drawings.md): Mo 68A 结构图纸登记（2D），含图纸原件文件链接
 
 ## Mo 62A
 

@@ -446,7 +446,7 @@ hide:
       <div class="pm-card__body">
         <div class="pm-card__title">MO 68A</div>
         <ul class="pm-card__links">
-        <li><a href="MO%2068A/drawings.html" title="MO 68A 结构图纸">结构图纸</a></li>
+        <li><a href="MO%2068A/drawings.html" title="Mo 68A 结构图纸">Mo 68A 结构图纸</a></li>
         </ul>
       </div>
     </div>

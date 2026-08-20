@@ -878,7 +878,7 @@
 
 ## MO 68A
 
-- [MO 68A Drawings](MO%2068A/drawings.md): MO 68A mechanical drawings (2D) with links to the original drawing files
+- [Mo 68A Drawings](MO%2068A/drawings.md): Mo 68A mechanical drawings (2D) with links to the original drawing files
 
 ## Mo 62A
 

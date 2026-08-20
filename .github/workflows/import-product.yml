@@ -92,16 +92,12 @@ jobs:
       # 回调 WordPress，通知导入结果
       - name: Notify WordPress callback
         if: always()
-        env:
-          WP_ZH_CALLBACK_URL: ${{ secrets.WP_ZH_CALLBACK_URL }}
-          WP_EN_CALLBACK_URL: ${{ secrets.WP_EN_CALLBACK_URL }}
-          WP_CALLBACK_TOKEN: ${{ secrets.WP_CALLBACK_TOKEN }}
         run: |
           # 根据 site 选择回调 URL
           if [ "${{ inputs.site }}" = "zh" ]; then
-            CALLBACK_URL="$WP_ZH_CALLBACK_URL"
+            CALLBACK_URL="${{ secrets.WP_ZH_CALLBACK_URL }}"
           else
-            CALLBACK_URL="$WP_EN_CALLBACK_URL"
+            CALLBACK_URL="${{ secrets.WP_EN_CALLBACK_URL }}"
           fi
 
           if [ -z "$CALLBACK_URL" ]; then
@@ -122,21 +118,18 @@ jobs:
             EDIT_URL=""
           fi
 
-          # 构建回调请求
-          AUTH_HEADER=""
-          if [ -n "$WP_CALLBACK_TOKEN" ]; then
-            AUTH_HEADER="-H \"Authorization: Bearer $WP_CALLBACK_TOKEN\""
+          # 回调 WordPress（用 Basic Auth，和 WooCommerce API 相同的认证方式）
+          if [ "${{ inputs.site }}" = "zh" ]; then
+            WP_USER="${{ secrets.WP_ZH_USER }}"
+            WP_PASS="${{ secrets.WP_ZH_APP_PASSWORD }}"
+          else
+            WP_USER="${{ secrets.WP_EN_USER }}"
+            WP_PASS="${{ secrets.WP_EN_APP_PASSWORD }}"
           fi
 
-          # 回调 WordPress
-          eval curl -X POST "$CALLBACK_URL" \
+          AUTH=$(echo -n "$WP_USER:$WP_PASS" | base64)
+
+          curl -X POST "$CALLBACK_URL" \
             -H "Content-Type: application/json" \
-            $AUTH_HEADER \
-            -d "{
-              \"run_id\": ${{ github.run_id }},
-              \"status\": \"$STATUS\",
-              \"product\": \"${{ inputs.product }}\",
-              \"site\": \"${{ inputs.site }}\",
-              \"new_id\": $NEW_ID,
-              \"edit_url\": \"$EDIT_URL\"
-            }" || echo "回调失败（不影响主流程）"
+            -H "Authorization: Basic $AUTH" \
+            -d "{\"run_id\": ${{ github.run_id }}, \"status\": \"$STATUS\", \"product\": \"${{ inputs.product }}\", \"site\": \"${{ inputs.site }}\", \"new_id\": $NEW_ID, \"edit_url\": \"$EDIT_URL\"}" || echo "回调失败"

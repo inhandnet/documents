@@ -4,20 +4,20 @@
       <img src="images/logo.png" alt="logo" />
     </div>
     <div style="font-size: 28px; font-weight: bold; color:#000;text-align: center; margin-bottom: 60px;">
-      All-in-one, high-performance, rugged rail cellular gateway
+      All-in-one, high-performance, railway  certificated 
     </div>
   </div>
   <div style="padding-left: 40px;">
     <div style="font-size: 40px; font-weight: bold; color:#000;margin-bottom: 30px;">
-      InVehicle G814 Series Cellular Gateway
+       VG814 Series Cellular Vehice Gateway
     </div>
     <div style="text-align: center;">
       <div style="display: flex; flex-wrap: wrap; gap: 16px; ">
-        <div style="width: 200px;background-color: #4CAF50; color: white; padding: 8px 8px; border-radius: 6px; font-size: 18px;">· 5G/LTE-A</div>
+        <div style="width: 200px;background-color: #4CAF50; color: white; padding: 8px 8px; border-radius: 6px; font-size: 18px;">· 5G/LTE CAT6</div>
         <div style="width: 200px;background-color: #4CAF50; color: white; padding: 8px 8px; border-radius: 6px; font-size: 18px;">· Dual-band Wi-Fi 5</div>
       </div>
       <div style="display: flex; flex-wrap: wrap; gap: 16px;margin-top:16px">
-        <div style="width: 200px;background-color: #4CAF50; color: white; padding: 8px 8px; border-radius: 6px; font-size: 18px;">· GNSS + ADR</div>
+        <div style="width: 200px;background-color: #4CAF50; color: white; padding: 8px 8px; border-radius: 6px; font-size: 18px;">· GNSS + DR</div>
         <div style="width: 200px;background-color: #4CAF50; color: white; padding: 8px 8px; border-radius: 6px; font-size: 18px;">· TNC + M12</div>
       </div>
     </div>
@@ -34,7 +34,7 @@
 
 **Key Features:**
 - **Rail-ready hardware:** TNC RF and M12 connectors for vibration and harsh environments
-- **High-speed connectivity:** 5G/LTE-A, dual-SIM, and link backup for uninterrupted service
+- **High-speed connectivity:** 5G/LTE-A, dual SIM, and link backup for uninterrupted service
 - **Global positioning:** Multi-constellation GNSS with ADR and up to 10 Hz update rate
 - **Open edge platform:** Supports C/C++, Python, Docker, and cloud SDK integration
 - **Fleet operation enablement:** Supports diagnostics collection and OTA lifecycle management
@@ -43,17 +43,17 @@
 
 |Technical Metric|Specification|
 |---|---|
-|Cellular Network|5G SA/NSA (Sub-6) + LTE Cat.6/Cat.4, dual-SIM (2 x Mini SIM)|
-|Positioning|GPS/GLONASS/Galileo/Beidou, 10 Hz, ADR support|
+|Cellular Network|5G SA/NSA (Sub-6) or LTE Cat6 dual SIM (2 x Mini SIM)|
+|Positioning|GPS/GLONASS/Galileo/Beidou, 10 Hz, DR support|
 |Cloud Management|InHand Device Manager for remote O&M|
 |VPN & Security|IPsec/OpenVPN/L2TP/GRE, SPI firewall, ACL, AAA|
 |Network Features|APN/VPDN, static routing/RIP/OSPF/BGP, VRRP, link backup|
 |Edge Computing|C/C++, Python, Docker, MQTT/HTTP/TCP FlexAPI|
-|Dimensions|223 × 177.76 × 66.2 mm (8.78 × 7 × 2.61 in)|
-|Weight|1438 g (3.17 lb)|
-|Interfaces|4 x Gigabit Ethernet, 2 x RS-232, 1 x RS-485, 1 x USB 3.0, 2 x CAN, 11DI/4DO|
+|Dimensions|223 x 177.76 x 66.2 mm|
+|Weight|1438 g|
+|Interfaces|4 x Gigabit Ethernet, 2 x RS232, 1 x RS485, 1 x USB 3.0, 2 x CAN, 11DI/4DO|
 |Power Input|9-36 VDC (M12 A-coded)|
-|Operating Environment|-30 °C ~ +70 °C (-22 °F ~ +158 °F); storage -40 °C ~ +85 °C (-40 °F ~ +185 °F); 95% RH @ 40 C|
+|Operating Environment|-30 C to +70 C; storage -40 C to +85 C; 95% RH @ 40 C|
 |Protection & Structure|IP53, aluminum enclosure, fanless|
 
 # <span style="color: green;">2. Product Dimensions</span>
@@ -76,7 +76,7 @@
   </div>
   <div style="width: 45%;">
     <div>Notes:</div>
-    <div>1. All dimensions are in millimeters (mm), with inches (in) in parentheses.</div>
+    <div>1. All dimensions are in millimeters (mm).</div>
     <div>2. All dimensions are approximate and <span style="font-weight: bold;">for reference only</span>.</div>
     <div>3. Drawings <span style="font-weight: bold;">must not be used for manufacturing</span>.</div>
     <div>4. Dimensions are subject to part and manufacturing tolerances.</div>
@@ -94,7 +94,7 @@
 | RAM | 1 GB DDR3L |
 | Flash | 8 GB eMMC |
 | <span style="color: green;">**Cellular & Networking**</span> | |
-| Cellular | 5G SA/NSA (Sub-6), LTE Cat.6/Cat.4 |
+| Cellular | 5G SA/NSA (Sub-6), LTE Cat6 |
 | SIM | 2 x Mini SIM (2FF) |
 | Ethernet | 4 x Gigabit Ethernet, M12 X-coded female |
 | Antenna Connector | TNC |
@@ -107,7 +107,7 @@
 | ADR | 2% of distance traveled without GNSS |
 | <span style="color: green;">**Vehicle Interfaces**</span> | |
 | CAN Bus | 1 x CAN 2.0B + 1 x CAN 2.0B (FMS) |
-| Serial | 2 x RS-232, 1 x RS-485 |
+| Serial | 2 x RS232, 1 x RS485 |
 | USB | 1 x USB 3.0 (Type-A) |
 | I/O | 11 x DI, 4 x DO |
 | <span style="color: green;">**Wi-Fi**</span> | |
@@ -124,14 +124,14 @@
 | Operating Power | 16.00 W (average, RF full load) |
 | Peak Power | 20.0 W (RF full load) |
 | <span style="color: green;">**Mechanical & Environment**</span> | |
-| Dimensions (W x H x D) | 223 × 177.76 × 66.2 mm (8.78 × 7 × 2.61 in) |
-| Weight | 1438 g (3.17 lb) |
+| Dimensions (W x H x D) | 223 x 177.76 x 66.2 mm |
+| Weight | 1438 g |
 | Mounting | Wall mounting |
 | Ingress Protection | IP53 |
 | Cooling | Fanless cooling |
 | Enclosure | Aluminum |
-| Operating Temperature | -30 °C ~ +70 °C (-22 °F ~ +158 °F) |
-| Storage Temperature | -40 °C ~ +85 °C (-40 °F ~ +185 °F) |
+| Operating Temperature | -30 C to +70 C |
+| Storage Temperature | -40 C to +85 C |
 | Humidity | 95% RH @ 40 C |
 | <span style="color: green;">**Compliance & Certifications**</span> | |
 | Rail Standard | EN50155, EN50121-3-2, EN61373, EN45545-2 |
@@ -174,6 +174,8 @@
 | Built-in Services | Inventory, time, GNSS, FMStoIP, MQTT broker |
 | Management Platform | InHand Device Manager (cloud deployment and remote operations) |
 
+<div style="page-break-after: always;"></div>
+
 # <span style="color: green;">5. Ordering Information</span>
 
 ## <span style="color: green;">Model Rule</span>
@@ -182,33 +184,23 @@
 
 \<WMNN\>: Cellular Type & Module
 
-
-<div style="page-break-after: always;"></div>
-
-
 ## <span style="color: green;">Product Models</span>
 
 <table style="width:100%; table-layout:fixed;">
   <colgroup>
+    <col style="width:32%;">
     <col style="width:28%;">
-    <col style="width:25%;">
-    <col style="width:47%;">
+    <col style="width:40%;">
   </colgroup>
   <tr><th>Model</th><th>Region</th><th>&lt;WMNN&gt;: Cellular Type &amp; Module</th></tr>
-  <tr><td>VG814-FS59-W-G-R</td><td>Europe, Africa, APAC, Oceania</td><td>LTE-FDD: B1/3/5/7/8/18/19/20/26/28A/28B<br/>LTE-TDD: B38/39/40/41<br/>TD-SCDMA: B34/B39<br/>UMTS/HSPA+: B1/3/5/6/8<br/>GSM/GPRS/EDGE: 900/1800 MHz</td></tr>
-  <tr><td>VG814-FQ09-W-G-R</td><td>Europe, APAC</td><td>LTE-FDD: B1/2/3/4/5/7/8/12/13/14/17/18/19/20/25/26/28/29/30/32/66/71<br/>LTE-TDD: B34/38/39/40/41/42/43/46(LAA)/48(CBRS)<br/>WCDMA: B1/2/3/4/5/6/8/19</td></tr>
-  <tr><td>VG814-NRQ3-W-G-R</td><td>Global</td><td>5G NSA: n1/2/3/5/7/8/12/20/25/28/38/40/41/48/66/71/77/78/79<br/>5G SA: n1/2/3/5/7/8/12/20/25/28/38/40/41/48/66/71/77/78/79<br/>LTE-FDD: B1/2/3/4/5/7/8/9/12(17)/13/14/18/19/20/25/26/28/29/30/32/66/71<br/>LTE-TDD: B34/38/39/40/41/42/43/48<br/>LAA: B46<br/>WCDMA: B1/2/3/4/5/6/8/19</td></tr>
+  <tr><td>VG814-FQ09-W-G-R</td><td>LTE CAT6 <br> Global</td><td> LTE-FDD B1/2/3/4/5/7/8/12/13/14/17/18/19/<br>20/25/26/28/29/30/32/66/71 <br> LTE-TDD B34/38/39/40/41/42/43/46(LAA)/48(CBRS)<br>WCDMA B1/2/3/4/5/6/8/19</td></tr>
+  <tr><td>VG814-NRQ3-W-G-R</td><td>5G Global</td><td>5G NSA n1/2/3/5/7/8/12/20/25/28/<br>38/40/41/48/66/71/77/78/79<br/>5G SA <br>n1/2/3/5/7/8/12/20/25/28<br>/38/40/41/48/66/71/77/78/79<br/>LTE-FDD B1/2/3/4/5/7/8/9/12(17)/13/14/18<br>/19/20/25/26/28/29/30/32/66/71<br>LTE-TDD B34/38/39/40/41/42/43/48<br>LAA B46<br> WCDMA B1/2/3/4/5/6/8/19</td></tr>
 </table>
-
-
-<div style="page-break-after: always;"></div>
-
 
 # <span style="color: green;">6. Contact Us</span>
 
 - **Website:** [InHand Networks](https://www.inhand.com)
 - **Copyright:** © InHand Networks. All rights reserved.
-
 
 # <span style="color: green;">7. Terminal Definition</span>
 

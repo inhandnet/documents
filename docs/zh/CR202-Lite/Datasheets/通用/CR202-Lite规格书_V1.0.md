@@ -172,11 +172,17 @@ WLAN：Wi-Fi
 
 ### <span style="color: green;">产品型号</span>
 
-| 型号 | 区域 | 规格说明 |
-|------|------|----------|
-| CR202-CNC4-WLAN-\<B/NA\>-\<E/NA\>-Lite | 中国 | LTE-FDD B1/B3/B5/B8；LTE-TDD B34/B38/B39/B40/B41；WCDMA B1/B5/B8；GSM/EDGE B3/B8；WLAN Wi-Fi；B 带电池，NA 无电池；E 仅 eSIM，NA 仅外置 Nano SIM |
-| CR202-EUC4-WLAN-\<B/NA\>-Lite | 欧洲/亚太 | LTE-FDD B1/B3/B5/B7/B8/B20/B28；LTE-TDD B38/B40/B41；WCDMA B1/B5/B8；GSM/EDGE B3/B8；WLAN Wi-Fi；B 带电池，NA 无电池；仅支持外置 Nano SIM |
-| CR202-NAC6-WLAN-\<B/NA\>-Lite | 北美 | LTE-FDD B2/B4/B5/B7/B12/B13/B14/B25/B26/B29/B30/B66/B71；LTE-TDD B41/B48；WLAN Wi-Fi；B 带电池，NA 无电池；支持 eSIM 和外置 Nano SIM |
+<table style="width:100%; table-layout:fixed; font-size:11px;">
+  <colgroup>
+    <col style="width:40%;">
+    <col style="width:12%;">
+    <col style="width:48%;">
+  </colgroup>
+  <tr><th>型号</th><th>区域</th><th>规格说明</th></tr>
+  <tr><td style="white-space: nowrap;">CR202-CNC4-WLAN-&lt;B/NA&gt;-&lt;E/NA&gt;-Lite</td><td>中国</td><td>LTE-FDD B1/B3/B5/B8；LTE-TDD B34/B38/B39/B40/B41；WCDMA B1/B5/B8；GSM/EDGE B3/B8；WLAN Wi-Fi；B 带电池，NA 无电池；E 仅 eSIM，NA 仅外置 Nano SIM</td></tr>
+  <tr><td style="white-space: nowrap;">CR202-EUC4-WLAN-&lt;B/NA&gt;-Lite</td><td>欧洲/亚太</td><td>LTE-FDD B1/B3/B5/B7/B8/B20/B28；LTE-TDD B38/B40/B41；WCDMA B1/B5/B8；GSM/EDGE B3/B8；WLAN Wi-Fi；B 带电池，NA 无电池；仅支持外置 Nano SIM</td></tr>
+  <tr><td style="white-space: nowrap;">CR202-NAC6-WLAN-&lt;B/NA&gt;-Lite</td><td>北美</td><td>LTE-FDD B2/B4/B5/B7/B12/B13/B14/B25/B26/B29/B30/B66/B71；LTE-TDD B41/B48；WLAN Wi-Fi；B 带电池，NA 无电池；支持 eSIM 和外置 Nano SIM</td></tr>
+</table>
 
 **示例：** CR202-CNC4-WLAN-B-E-Lite 表示 CR202-Lite 系列无线路由器，支持 FDD、TDD、WCDMA 和 GSM/EDGE 网络，支持 Wi-Fi AP & Client 模式，带电池，内部集成 eSIM 卡，激活可用。
 

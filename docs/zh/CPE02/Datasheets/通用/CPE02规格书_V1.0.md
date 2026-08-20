@@ -166,11 +166,19 @@
 
 ### <span style="color: green;">产品型号</span>
 
-| 型号 | 区域 | 5G Sub-6 | LTE-FDD | LTE-TDD | 以太网 | Wi-Fi |
-| --- | --- | --- | --- | --- | --- | --- |
-| CPE02-CNNR | 中国 | SA n1/n3/n5/n7/n8/n20/n28/n38/n40/n41/n66/n77/n78；NSA n1/n3/n7/n28/n38/n40/n41/n77/n78 | B1/B2/B3/B4/B5/B7/B8/B20/B28/B66 | B34/B40/B41 | 2 × GbE | AX3000 |
-| CPE02-NANR | 北美 | SA n1/n2/n3/n5/n7/n8/n12/n13/n14/n18/n20/n25/n26/n28/n29/n30/n38/n40/n41/n48/n66/n70/n71/n75/n76/n77/n78/n79；NSA 同上 | B1/B2/B3/B4/B5/B7/B8/B12/B13/B14/B17/B18/B19/B20/B25/B26/B28/B29/B30/B32/B66/B71 | B34/B38/B39/B40/B41/B42/B43/B48 | 1 × 2.5G + 1 × 1G | AX5400 |
-| CPE02-EUNR | 欧洲/亚太 | SA n1/n3/n5/n7/n8/n20/n28/n38/n40/n41/n66/n77/n78；NSA n1/n3/n7/n28/n38/n40/n41/n77/n78 | B1/B2/B3/B4/B5/B7/B8/B20/B28/B66 | B34/B40/B41 | 2 × 1G | AX3000 |
+<table style="width:100%; table-layout:fixed; font-size:11px;">
+  <colgroup>
+    <col style="width:16%;">
+    <col style="width:8%;">
+    <col style="width:46%;">
+    <col style="width:18%;">
+    <col style="width:12%;">
+  </colgroup>
+  <tr><th>型号</th><th>区域</th><th>频段</th><th>以太网</th><th>Wi-Fi</th></tr>
+  <tr><td style="white-space: nowrap;">CPE02-CNNR</td><td>中国</td><td>5G Sub-6: SA n1/n3/n5/n7/n8/n20/n28/n38/n40/n41/n66/n77/n78；NSA n1/n3/n7/n28/n38/n40/n41/n77/n78<br/>LTE-FDD: B1/B2/B3/B4/B5/B7/B8/B20/B28/B66<br/>LTE-TDD: B34/B40/B41</td><td>2 × GbE</td><td>AX3000</td></tr>
+  <tr><td style="white-space: nowrap;">CPE02-NANR</td><td>北美</td><td>5G Sub-6: SA n1/n2/n3/n5/n7/n8/n12/n13/n14/n18/n20/n25/n26/n28/n29/n30/n38/n40/n41/n48/n66/n70/n71/n75/n76/n77/n78/n79；NSA 同上<br/>LTE-FDD: B1/B2/B3/B4/B5/B7/B8/B12/B13/B14/B17/B18/B19/B20/B25/B26/B28/B29/B30/B32/B66/B71<br/>LTE-TDD: B34/B38/B39/B40/B41/B42/B43/B48</td><td>1 × 2.5G + 1 × 1G</td><td>AX5400</td></tr>
+  <tr><td style="white-space: nowrap;">CPE02-EUNR</td><td>欧洲/亚太</td><td>5G Sub-6: SA n1/n3/n5/n7/n8/n20/n28/n38/n40/n41/n66/n77/n78；NSA n1/n3/n7/n28/n38/n40/n41/n77/n78<br/>LTE-FDD: B1/B2/B3/B4/B5/B7/B8/B20/B28/B66<br/>LTE-TDD: B34/B40/B41</td><td>2 × 1G</td><td>AX3000</td></tr>
+</table>
 
 
 

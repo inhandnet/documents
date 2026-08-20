@@ -177,12 +177,12 @@
 
 ## <span style="color: green;">产品型号</span>
 
-<table style="width:100%; table-layout:fixed;">
+<table style="width:100%; table-layout:fixed;font-size:11px;cuile">
   <colgroup>
-    <col style="width:29%;">
+    <col style="width:25%;">
     <col style="width:16%;">
     <col style="width:40%;">
-    <col style="width:15%;">
+    <col style="width:19%;">
   </colgroup>
   <tr><th>型号</th><th>区域</th><th>&lt;WMNN&gt;: 无线通讯类型 &amp; 模块</th><th>&lt;Lxxx&gt;</th></tr>
   <tr><td style="white-space: nowrap;">EC312-H-FQ53-L868</td><td style="white-space: nowrap;">EMEA</td><td>CAT1<br/>FDD: B1/B3/B7/B8/B20/B28<br/>TDD: B38/B40/B41<br/>GSM: B2/B3/B5/B8</td><td>EU868</td></tr>

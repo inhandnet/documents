@@ -1,0 +1,267 @@
+!
+# product IG502L
+!
+#system config
+language Chinese
+hostname EdgeGateway
+ip domain-name edgegateway.com.cn
+clock timezone UTC-8
+service password-encryption
+!
+#log config
+!
+#user config
+username adm privilege 15 password $1$KFuChvuH$Gsos3.r3.Vvkjto7XdKyl1
+!
+enable password $1$Hpz2yv7R$FE9BwD3O5.1o9/CAg37CC/
+!
+#aaa config
+!
+#cron config
+remote-login retry 20
+!
+#alarm config
+!
+#loopback config
+interface loopback 1
+  ip address 127.0.0.1 255.0.0.0
+!
+!
+#ethernet interface config
+interface fastethernet 0/1
+  track l2-state
+  ip address 192.168.1.1 255.255.255.0
+!
+interface fastethernet 0/2
+!
+!
+#Ethernet sub interface config
+!
+#cellular config
+cellular 1 gsm profile 1 3gnet *99***1# auto gprs $AES$1AECAFF97D1C43422E0186407306E5AA
+cellular 1 dial interval 10
+cellular 1 signal interval 120
+cellular 1 network auto
+cellular 1 pdp_type ipv4v6
+cellular 1 dual-sim main 1
+cellular 1 dual-sim policy redial 3
+cellular 1 dual-sim policy uptime 600
+cellular 1 sms mode text
+cellular 1 sms interval 30
+!
+interface cellular 1
+  dialer profile auto
+  dialer profile auto secondary
+  dialer timeout 120
+  dialer activate auto
+  ip address negotiated
+  ip mru 1500
+  ip mtu 1500
+  ppp ipcp dns request
+  ppp keepalive 55 5
+!
+!
+#bridge config
+!
+bridge 1
+!
+interface bridge 1
+  ip address 192.168.2.1 255.255.255.0
+!
+interface fastethernet 0/2
+  bridge-group 1
+!
+!
+!
+#dialer config
+!
+#ipsec config
+crypto ipsec-daemon stop
+!
+#l2tp config
+!
+#openvpn config
+!
+#openvpn server config
+!
+#web config
+ip web-access timeout 300
+ip https access enable
+!
+#device-manager config
+!
+#InConnect config
+!
+#DeviceLive config
+devicelive mode off
+!
+#Erlang config
+erlang mode off
+!
+#Custome Cloud Cert
+!
+#telnet server config
+no ip telnet server
+no ip telnet access enable
+!
+#ssh server config
+ip ssh server port 22
+crypto ssh-key generate rsa modulus 1024
+!
+#dhcp-relay config
+!
+#dns-relay config
+ip dns-relay server
+!
+#dhcp server config
+interface bridge 1
+  ip dhcp-server enable
+  ip dhcp-server range 192.168.2.2 192.168.2.100
+  ip dhcp-server lease 1440
+!
+!
+#dns config
+!
+ip protocol dns 1
+!
+#ip host config
+!
+#ddns config
+!
+
+#bluetooth config
+bluetooth name IG_bluetooth
+bluetooth mode ble
+bluetooth work-mode master
+!
+#snmp config
+
+#ovdp config
+!
+!
+
+#huaweicloud config
+!
+
+#Azure IoT Edge config
+!
+
+#AWS IoT Greengrass config
+!
+#ntp server config
+  ntp server 0.pool.ntp.org
+  ntp server 1.pool.ntp.org
+  ntp server 2.pool.ntp.org
+  ntp server 3.pool.ntp.org
+!
+!
+
+#Telegraf config
+!
+
+#abbcloud config
+abbcloud prefix-len 64
+!
+#email config
+!
+#sntp client config
+sntp-client
+sntp-client server 0.pool.ntp.org port 123
+sntp-client server 1.pool.ntp.org port 123
+sntp-client server 2.pool.ntp.org port 123
+sntp-client server 3.pool.ntp.org port 123
+!
+#gre config
+!
+#static route config
+ip route 0.0.0.0 0.0.0.0 cellular 1 255
+ip route 0.0.0.0 0.0.0.0 fastethernet 0/1 253
+!
+#rip config
+!
+!
+#ospf config
+!
+!
+#filtering config
+!
+#bgp config
+!
+!
+#firewall config
+!
+!
+interface cellular 1
+  ip access-group 192 admin
+!
+access-list 100 10 permit ip any any 
+access-list 101 10 permit ip any any 
+access-list 102 10 permit ip any any 
+access-list 192 10 permit tcp any any eq 443 log
+access-list 192 20 deny tcp any any eq 80 
+access-list 192 30 deny tcp any any eq 23 
+access-list 192 40 deny tcp any any eq 22 
+access-list 192 50 deny tcp any any eq 53 
+access-list 192 60 deny udp any any eq 53 
+interface cellular 1
+  ip nat outside
+!
+interface bridge 1
+  ip nat inside
+!
+interface fastethernet 0/1
+  ip nat outside
+!
+!
+ip snat inside list 101 interface fastethernet 0/1 
+ip snat inside list 100 interface cellular 1 
+!
+!
+!
+!
+!
+#tcp mss config
+ip tcp adjust-mss 1360
+!
+!
+!
+#netwatcher config
+!
+!
+#sla config
+!
+#track config
+!
+#vrrpd config
+!
+#backup config
+!
+#mroute config
+!
+#cert config
+!
+!
+#cert enroll config
+crypto key generate rsa general-keys modulus 1024
+!
+!
+#dls config
+!
+#Serial Configuration
+serial 1
+!
+serial 2
+!
+!
+#python config
+python enable
+python app 1 on
+python appcmd 1 logsize 1 2
+device_supervisor 
+quit
+!
+!
+#traffic-stated config
+!
+#data-usage config
+#end of configuration

@@ -116,6 +116,8 @@ hide:
         <li><a href="EC300/Developer%20Documentation/FlexAPI/EC%E7%B3%BB%E5%88%97Linux%E8%BD%AF%E4%BB%B6%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8CV1.0.html" title="EC系列Linux软件用户手册V1.0">EC系列Linux软件用户手册V1.0</a></li>
         <li><a href="EC300/Manuals/%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97/EC312%E5%BF%AB%E9%80%9F%E5%AE%89%E8%A3%85%E6%89%8B%E5%86%8C_V1.0.html" title="EC312 快速安装手册">安装指南 V1.0</a></li>
         <li><a href="EC300/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/EC300%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="EC300边缘计算机用户手册">用户手册 V1.0</a></li>
+        <li><a href="EC300/Use%20Cases/CAN%E8%BD%ACAWS%E6%96%B9%E6%A1%88/CAN%E8%BD%ACAWS%E6%96%B9%E6%A1%88.html" title="EC312 CAN-to-AWS 解决方案">EC312 CAN-to-AWS 解决方案</a></li>
+        <li><a href="EC300/Use%20Cases/CAN%E8%BD%ACAWS%E6%96%B9%E6%A1%88/CAN%E8%BD%ACAWS%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8D%97.html" title="EC312 CAN-to-AWS 配置手册">EC312 CAN-to-AWS 配置手册</a></li>
         </ul>
       </div>
     </div>
@@ -398,6 +400,8 @@ hide:
         <div class="pm-card__title">IR615-S</div>
         <ul class="pm-card__links">
         <li><a href="IR615-S/certifications.html" title="IR615-S 认证证书">认证证书</a></li>
+        <li><a href="IR615-S/Use%20Cases/%E5%86%9C%E6%9D%91%E9%A5%AE%E7%94%A8%E6%B0%B4%E8%BF%9C%E7%A8%8B%E7%9B%91%E6%8E%A7%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/%E6%A1%88%E4%BE%8B%E6%89%8B%E5%86%8C.html" title="农村饮用水远程监控解决方案">农村饮用水远程监控解决方案</a></li>
+        <li><a href="IR615-S/Use%20Cases/%E5%86%9C%E6%9D%91%E9%A5%AE%E7%94%A8%E6%B0%B4%E8%BF%9C%E7%A8%8B%E7%9B%91%E6%8E%A7%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/%E9%85%8D%E7%BD%AE%E6%96%87%E6%A1%A3.html" title="IR615 ipsec VPN配置指导手册">IR615 ipsec VPN配置指导手册</a></li>
         </ul>
       </div>
     </div>
@@ -431,6 +435,15 @@ hide:
         <div class="pm-card__title">ISM 网管型</div>
         <ul class="pm-card__links">
         <li><a href="ISM%20%E7%BD%91%E7%AE%A1%E5%9E%8B/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/ISM%20%E7%BD%91%E7%AE%A1%E5%9E%8B%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="B系列交换机WEB操作手册">用户手册 V1.0</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pm-card">
+      <div class="pm-card__body">
+        <div class="pm-card__title">ISM5010D</div>
+        <ul class="pm-card__links">
+        <li><a href="ISM5010D/Use%20Cases/%E5%82%A8%E8%83%BD%E5%BA%94%E7%94%A8%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/%E6%A1%88%E4%BE%8B%E6%89%8B%E5%86%8C.html" title="储能系统环网解决方案">储能系统环网解决方案</a></li>
+        <li><a href="ISM5010D/Use%20Cases/%E5%82%A8%E8%83%BD%E5%BA%94%E7%94%A8%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/%E9%85%8D%E7%BD%AE%E6%89%8B%E5%86%8C.html" title="ISM5010D环网配置指导手册">ISM5010D环网配置指导手册</a></li>
         </ul>
       </div>
     </div>

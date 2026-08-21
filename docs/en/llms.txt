@@ -185,6 +185,8 @@
   - [7.Programming instructions](EC300/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#7programming-instructions)
 - [EC300 Datasheet v1.0](EC300/Datasheets/General/EC300_Datasheet_V1.0.md): EC300 Datasheet v1.0 — Embrace edge computing, Empower Industrial Digitalization
 - [EC300 Certifications](EC300/certifications.md): EC300 certification list (CE, EN18031, FCC, IC, PTCRB, UL) with links to the original certificate files
+- [EC312 CAN-to-AWS Configuration Manual](EC300/Use%20Cases/CAN%20to%20AWS%20Solution/CAN%20to%20AWS%20Configuration%20Guide.md): EC300 CAN to AWS Solution
+- [EC312 CAN-to-AWS Solution](EC300/Use%20Cases/CAN%20to%20AWS%20Solution/CAN%20to%20AWS%20Solution.md): EC300 CAN to AWS Solution
 
 ## EC300-LoRaWAN
 
@@ -649,6 +651,8 @@
   - [4.1 System](IR615-S/Manuals/User%20manual/IR615-S_User%20manual_V1.0.md#41-system)
 - [IR615-S Certifications](IR615-S/certifications.md): IR615-S certification list (C1D2, E-Mark, EN18031, FCC, IC, MIC_JATE, PTCRB, SDPPI, UKCA, UL) with links to the original certificate files
 - [IR615-S Drawings](IR615-S/drawings.md): IR615-S mechanical drawings (2D, 3D) with links to the original drawing files
+- [IR615 IPsec VPN Configuration Guide](IR615-S/Use%20Cases/Rural-Drinking-Water-Remote-Monitoring/configuration-guide.md): IR615-S Rural-Drinking-Water-Remote-Monitoring
+- [Rural Drinking Water Remote Monitoring Solution](IR615-S/Use%20Cases/Rural-Drinking-Water-Remote-Monitoring/case-manual.md): IR615-S Rural-Drinking-Water-Remote-Monitoring
 
 ## IR624
 
@@ -770,6 +774,8 @@
 
 - [ISM5010D Datasheet v1.0](ISM5010D/Datasheets/General/ISM5010D_Datasheet_V1.0.md): ISM5010D Datasheet v1.0 — Build advanced and highly reliable industrial Ethernet communication system
 - [ISM5010D Certifications](ISM5010D/certifications.md): ISM5010D certification list (CE) with links to the original certificate files
+- [Energy Storage System Ring Network Solution](ISM5010D/Use%20Cases/Energy-Storage-Application/case-manual.md): ISM5010D Energy-Storage-Application
+- [ISM5010D Ring Network Configuration Guide](ISM5010D/Use%20Cases/Energy-Storage-Application/configuration-guide.md): ISM5010D Energy-Storage-Application
 
 ## ISM5012D
 

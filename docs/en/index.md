@@ -103,6 +103,8 @@ hide:
         <li><a href="EC300/Developer%20Documentation/FlexAPI/ECSeriesAPIDocumentationV1.0.html" title="EC Series API Documentation V1.0">EC Series API Documentation V1.0</a></li>
         <li><a href="EC300/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.html" title="EC Series Linux Software User&#x27;s Manual V1.0">EC Series Linux Software User&#x27;s Manual V1.0</a></li>
         <li><a href="EC300/Manuals/User%20manual/EC300_User%20manual_V1.0.html" title="EC300 Series Edge Computer User Manual">User manual V1.0</a></li>
+        <li><a href="EC300/Use%20Cases/CAN%20to%20AWS%20Solution/CAN%20to%20AWS%20Configuration%20Guide.html" title="EC312 CAN-to-AWS Configuration Manual">EC312 CAN-to-AWS Configuration Manual</a></li>
+        <li><a href="EC300/Use%20Cases/CAN%20to%20AWS%20Solution/CAN%20to%20AWS%20Solution.html" title="EC312 CAN-to-AWS Solution">EC312 CAN-to-AWS Solution</a></li>
         </ul>
       </div>
     </div>
@@ -345,6 +347,8 @@ hide:
         <li><a href="IR615-S/certifications.html" title="IR615-S Certifications">Certifications</a></li>
         <li><a href="IR615-S/drawings.html" title="IR615-S Drawings">Drawings</a></li>
         <li><a href="IR615-S/Manuals/User%20manual/IR615-S_User%20manual_V1.0.html" title="Industrial Router IR615-S Product User Manual">User manual V1.0</a></li>
+        <li><a href="IR615-S/Use%20Cases/Rural-Drinking-Water-Remote-Monitoring/case-manual.html" title="Rural Drinking Water Remote Monitoring Solution">Rural Drinking Water Remote Monitoring Solution</a></li>
+        <li><a href="IR615-S/Use%20Cases/Rural-Drinking-Water-Remote-Monitoring/configuration-guide.html" title="IR615 IPsec VPN Configuration Guide">IR615 IPsec VPN Configuration Guide</a></li>
         </ul>
       </div>
     </div>
@@ -467,6 +471,8 @@ hide:
         <div class="pm-card__title">ISM5010D</div>
         <ul class="pm-card__links">
         <li><a href="ISM5010D/certifications.html" title="ISM5010D Certifications">Certifications</a></li>
+        <li><a href="ISM5010D/Use%20Cases/Energy-Storage-Application/case-manual.html" title="Energy Storage System Ring Network Solution">Energy Storage System Ring Network Solution</a></li>
+        <li><a href="ISM5010D/Use%20Cases/Energy-Storage-Application/configuration-guide.html" title="ISM5010D Ring Network Configuration Guide">ISM5010D Ring Network Configuration Guide</a></li>
         </ul>
       </div>
     </div>

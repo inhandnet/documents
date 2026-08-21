@@ -217,7 +217,6 @@
 - [映翰通边缘路由器ER805用户手册](ER805/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/ER805%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.md): ER805 用户手册 v1.0 — ER805是北京映翰通面向商业联网领域推出的新一代高性能Wi-Fi5边缘路由器，具备650Mbps的转发能力和多网口设计，支持多种VPN组网协议，最大VPN吞吐100Mbps。通过小星云平台，IT人员可轻松了解每个门店的网络状态、流量使用、…
 - [ER805 规格书 v1.0](ER805/Datasheets/%E9%80%9A%E7%94%A8/ER805%E8%A7%84%E6%A0%BC%E4%B9%A6_V1.0.md): ER805 规格书 v1.0
 - [ER805 认证证书](ER805/certifications.md): ER805 已获认证清单（CE、EN18031、FCC、IC、PTCRB），含证书原件文件链接
-- [Deploy Key 连通性测试](ER805/Use%20Cases/%E5%91%A8%E9%BB%91%E9%B8%AD%E8%BF%9E%E9%94%81%E9%97%A8%E5%BA%97%E8%AE%BE%E6%96%BD%E8%81%94%E7%BD%91%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/_deploykey_test.md): ER805 周黑鸭连锁门店设施联网解决方案
 
 ## ER815
 

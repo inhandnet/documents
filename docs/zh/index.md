@@ -226,7 +226,6 @@ hide:
         <ul class="pm-card__links">
         <li><a href="ER805/certifications.html" title="ER805 认证证书">认证证书</a></li>
         <li><a href="ER805/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/ER805%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="映翰通边缘路由器ER805用户手册">用户手册 V1.0</a></li>
-        <li><a href="ER805/Use%20Cases/%E5%91%A8%E9%BB%91%E9%B8%AD%E8%BF%9E%E9%94%81%E9%97%A8%E5%BA%97%E8%AE%BE%E6%96%BD%E8%81%94%E7%BD%91%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/_deploykey_test.html" title="Deploy Key 连通性测试">周黑鸭连锁门店设施联网解决方案</a></li>
         </ul>
       </div>
     </div>

@@ -16,9 +16,9 @@
         <div style="width: 300px;background-color: #4CAF50; color: white; padding: 8px 8px; border-radius: 6px; font-size: 18px;">· 5G</div>
         <div style="width: 300px;background-color: #4CAF50; color: white; padding: 8px 8px; border-radius: 6px; font-size: 18px;">· Wi-Fi 7</div>
       </div>
-      <div style="display: flex; flex-wrap: wrap; gap: 16px;margin-top:16px">
-        <div style="width: 300px;background-color: #4CAF50; color: white; padding: 8px 8px; border-radius: 6px; font-size: 18px;">· AI-Powered Management</div>
-        <div style="width: 300px;background-color: #4CAF50; color: white; padding: 8px 8px; border-radius: 6px; font-size: 18px; ">· Enterprise Security</div>
+      <div style="display: flex; gap: 16px; margin-top:16px; align-items: center;">
+        <div style="width: 300px; background-color: #4CAF50; color: white; padding: 8px 8px; border-radius: 6px; font-size: 18px;">· AI-Powered Management</div>
+        <div style="width: 300px; background-color: #4CAF50; color: white; padding: 4px 8px; border-radius: 6px; font-size: 18px; display: inline-flex; align-items: center; white-space: nowrap;">· POS Ready™<img src="images/pos-ready.png" alt="POS Ready" width="74" height="48" style="display: inline-block; vertical-align: middle; margin: 0; padding: 0; border: 0;" /></div>
       </div>
     </div>
   </div>
@@ -35,6 +35,7 @@
 - **Next-Gen Wi-Fi 7:** Dual-band 2.4 / 5.8 GHz, 5000 Mbps peak rate, 128 concurrent connections, enhanced MU-MIMO
 - **Enterprise Security:** IPsec and L2TP VPN, advanced firewall, traffic management, security logs, anomaly detection
 - **AI-Driven Cloud Management:** InCloud Manager with zero-touch provisioning, AI assistant with 7×24 support
+- **One-Click POS Ready™:** Ensure business continuity with one-click POS traffic optimization, prioritizing bandwidth for mission-critical transactions
 - **Built for Enterprise Agility:** Abundant features, flexible configuration, high network resilience
 
 <div style="margin-top: 32px;"></div>
@@ -160,6 +161,7 @@
 | Mode | 802.11 be/ax/ac/b/g/n, Wi-Fi 7, AP mode |
 | <span style="color: green;">**Policy**</span> | |
 | Policy | Policy routing, traffic shaping |
+| POS Ready™ | One-click POS traffic optimization; prioritizes bandwidth for mission-critical transactions |
 | <span style="color: green;">**Self Recovery**</span> | |
 | Watchdog | Software and hardware watchdog, self-healing |
 | <span style="color: green;">**Remote Maintenance**</span> | |

@@ -1,4 +1,4 @@
-<div style="width: 100%;height: 100%;background: url(images/ISE1005D-cover.jpg); background-size: 100% 100%;">
+<div style="width: 100%;height: 100%;background: url(images/ISE5008D-S-cover.jpg); background-size: 100% 100%;">
   <div style="height:75%;">
     <div style="width:35%; padding: 40px 40px">
       <img src="images/logo.png" alt="logo" />
@@ -9,7 +9,7 @@
   </div>
   <div style="padding-left: 40px;">
     <div style="font-size: 40px; font-weight: bold; color:#000;margin-bottom: 30px;">
-      ISE1005D 非网管工业以太网交换机
+      ISE5008D-S 非网管工业以太网交换机
     </div>
     <div style="text-align: center;">
       <div style="display: flex; flex-wrap: wrap; gap: 16px; ">
@@ -18,19 +18,18 @@
       </div>
       <div style="display: flex; flex-wrap: wrap; gap: 16px;margin-top:16px">
         <div style="width: 200px;background-color: #4CAF50; color: white; padding: 8px 8px; border-radius: 6px; font-size: 18px;">· 无风扇</div>
-        <div style="width: 200px;background-color: #4CAF50; color: white; padding: 8px 8px; border-radius: 6px; font-size: 18px; ">· IP40</div>
+        <div style="width: 200px;background-color: #4CAF50; color: white; padding: 8px 8px; border-radius: 6px; font-size: 18px;">· IP40</div>
       </div>
     </div>
   </div>
 </div>
-
 <div style="page-break-after: always;"></div>
 
 # <span style="color: green;">1. 产品概述</span>
 
-**ISE1005D 专为电力、交通、工业控制及其他严酷工业环境设计。**
+**ISE5008D-S 专为电力、交通、工业控制及其他严酷工业环境设计。**
 
-ISE1005D-S-5T-24 是 1 路百兆上联电口 + 4 路百兆下联电口的工业级以太网交换机，支持 1 个 10/100Base-TX 上联电口和 4 个 10Base-T/100Base-TX 下联电口。产品符合 FCC、CE、ROHS 标准，具有 -40℃ ~ +80℃ 的宽工作温度范围，能适应各种严苛环境，也可非常方便地安置在空间紧凑的控制箱中。导轨安装特性、宽温操作及 IP40 防护等级的金属外壳与 LED 指示灯，使 ISE1005D 成为一款即插即用的工业级设备，为用户的以太网设备联网提供可靠、便捷的解决方案。
+ISE5008D-S-8GT-24 是 8 路千兆电口的工业级以太网交换机，支持 8 个 10Base-T/100Base-T/1000Base-TX 电口。产品符合 FCC、CE、ROHS 标准，具有 -40℃ ~ +80℃ 的宽工作温度范围，能适应各种严苛环境，也可非常方便地安置在空间紧凑的控制箱中。导轨安装特性、宽温操作及 IP40 防护等级的金属外壳与 LED 指示灯，使 ISE5008D-S 成为一款即插即用的工业级设备，为用户的以太网设备联网提供可靠、便捷的解决方案。
 
 **产品特点：**
 
@@ -46,20 +45,19 @@ ISE1005D-S-5T-24 是 1 路百兆上联电口 + 4 路百兆下联电口的工业�
 | 参数 | 规格 |
 |-----------|---------------|
 | 类型 | 二层非网管工业以太网交换机 |
-| 端口 | 5 × 10/100Base-T(X) 自适应 RJ45 端口 |
-| 交换性能 | 1.6 Gbps 背板带宽，存储转发，2K MAC |
-| 尺寸 / 重量 | 118 × 85.8 × 33.5 mm / 0.35 kg |
-| 电源 | DC 12-52 V，双电源冗余备份，< 3 W |
+| 端口 | 8 × 10/100/1000BaseT(X) 自适应RJ45端口 |
+| 交换性能 | 20 Gbps 背板带宽，存储转发，8K MAC |
+| 尺寸 / 重量 | 143.7 × 103.8 × 47.7 mm / 0.64 kg |
+| 电源 | DC 12-52 V，双电源冗余备份，< 5 W |
 | 环境 | 工作温度 -40 至 +80 ℃，IP40 |
 | 电磁兼容 | EN61000-4-2/3/4/5/6 Level 3；EMI：FCC Part 15、CISPR (EN55032) Class A |
-
 
 # <span style="color: green;">2. 产品尺寸</span>
 
 <div style="display: flex; align-items: end; flex-wrap: wrap; justify-content: space-between;row-gap: 16px;">
   <div style="width: 100%;">
-    <img src="images/dimension.png" width="100%" alt="ISE1005D 尺寸图" />
-    <div style="width: 100%; text-align: center; font-size: 12px;">ISE1005D</div>
+    <img src="images/dimension.png" width="100%" alt="ISE5008D-S 尺寸图" />
+    <div style="width: 100%; text-align: center; font-size: 12px;">ISE5008D-S</div>
   </div>
 
 
@@ -76,40 +74,40 @@ ISE1005D-S-5T-24 是 1 路百兆上联电口 + 4 路百兆下联电口的工业�
   </div>
 </div>
 
-
-
 # <span style="color: green;">3. 硬件规格</span>
 
 | 类别/参数 | 规格 |
 |----------------------|---------------|
 | <span style="color: green;">**物理性能**</span> | |
 | 外壳 | 金属外壳，IP40 防护等级 |
-| 尺寸 (W × D × H) | 118 mm × 85.8 mm × 33.5 mm |
-| 重量 | 0.35 kg |
+| 尺寸 (W × D × H) | 143.7 mm × 103.8 mm × 47.7 mm |
+| 重量 | 0.64 kg |
 | 安装方式 | DIN 导轨式、壁挂式安装 |
 | 散热方式 | 自然冷却，无风扇 |
 | 防护等级 | IP40 |
-| 存储温度 | -40 °C ~ +85 °C |
+| 存储温度 | -40 °C ~ +80 °C |
 | 工作温度 | -40 °C ~ +80 °C |
 | 湿度 | 5 ~ 95%（无凝露） |
 | <span style="color: green;">**接口**</span> | |
-| 端口 | 5 × RJ45 |
-| RJ45 端口 | 10/100BaseT(X) 自动侦测，全/半双工，MDI/MDI-X 自适应 |
-| LED 指示灯 | 电源指示灯（Power）、接口指示灯（Link） |
+| 端口 | 8 × RJ45 |
+| RJ45 端口 | 10/100/1000BaseT(X) 自动侦测，全/半双工，MDI/MDI-X 自适应 |
+| LED 指示灯 | 电源指示灯（PWR）、接口指示灯（Link） |
 | <span style="color: green;">**硬件性能**</span> | |
-| 背板带宽 | 1.6 Gbps |
+| 背板带宽 | 20 Gbps |
 | 处理方式 | 存储转发 |
-| MAC 地址表 | 2K |
-| 包缓存区大小 | 1 Mbit |
+| MAC 地址表 | 8K |
+| 包缓存区大小 | 2 Mbit |
 | 交换延迟 | <10 μs |
 | <span style="color: green;">**网络协议**</span> | |
-| 10Base-T | 遵循 IEEE 802.3 |
-| 100Base-TX | 遵循 IEEE 802.3u |
+| 10Base-T | 遵循 IEEE 802.3、IEEE 802.3i |
+| 100Base-TX/FX | 遵循 IEEE 802.3u |
+| 1000Base-T | 遵循 IEEE 802.3ab |
+| 1000Base-X | 遵循 IEEE 802.3z |
 | 流控 | 遵循 IEEE 802.3x |
 | <span style="color: green;">**电源参数**</span> | |
 | 工作电压 | DC 12-52 V（双电源冗余备份） |
 | 接入端子 | 凤凰端子 |
-| 功耗 | < 3 W |
+| 功耗 | < 5 W |
 | 过流保护 | 支持，内置 4.0 A 保护 |
 | 反极性保护 | 支持 |
 | 雷击浪涌冲击防护（电源） | 5000 A（8/20 μs） |
@@ -132,7 +130,7 @@ table:last-of-type td:first-child { white-space: nowrap; max-width: none; }
 
 | 型号 | 描述 |
 |-------|--------|
-| ISE1005D-S-5T-24 | 5 端口二层非网管工业以太网交换机。1 × 10/100BaseT(X) 上联电口，4 × 10/100BaseT(X) 下联电口。IP40 防护等级，DIN 导轨式安装，工作温度 -40°C 至 +80°C。DC 12-52 V 电源输入，支持双电源冗余备份。 |
+| ISE5008D-S-8GT-24 | 8 端口二层非网管工业以太网交换机。8 × 10/100/1000BaseT(X) 电口。IP40 防护等级，DIN 导轨式安装，工作温度 -40°C 至 +80°C。DC 12-52 V 电源输入，支持双电源冗余备份。 |
 
 # <span style="color: green;">5. 联系我们</span>
 

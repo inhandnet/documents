@@ -1,4 +1,4 @@
-<div style="width: 100%;height: 100%;background: url(images/product_new.png); background-size: 100% 100%;">
+<div style="width: 100%;height: 100%;background: url(images/IG502-L.jpg); background-size: 100% 100%;">
   <div style="height:75%;">
     <div style="width:35%; padding: 40px 40px">
       <img src="images/logo.png" alt="logo" />
@@ -18,7 +18,7 @@
       </div>
       <div style="display: flex; flex-wrap: wrap; gap: 16px;margin-top:16px">
         <div style="width: 200px;background-color: #4CAF50; color: white; padding: 8px 8px; border-radius: 6px; font-size: 18px;">· 内置DSA</div>
-        <div style="width: 200px;background-color: #4CAF50; color: white; padding: 8px 8px; border-radius: 6px; font-size: 18px; "></div>
+        <div style="width: 200px;background-color: #4CAF50; color: white; padding: 8px 8px; border-radius: 6px; font-size: 18px; ">接口丰富</div>
       </div>
     </div>
   </div>

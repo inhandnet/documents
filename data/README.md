@@ -1,74 +1,87 @@
-# `data/` — 构建期数据
+# `data/` — build-time data
 
-这里放**结构化源数据**：它们不是站点内容，而是构建和同步的输入。
+This directory holds **structured source data**: not site content, but
+input for builds and sync jobs.
 
-站点内容在 `docs/zh`、`docs/en`（两个 mkdocs 配置的 `docs_dir`）。
-`data/` 在站点源之外，**不会被发布**到文档站。
+Site content lives in `docs/zh` and `docs/en` (the `docs_dir` of the two
+mkdocs configs). `data/` sits outside the site sources and is **never
+published** to the docs site.
 
-## 当前内容
+## Current contents
 
-| 文件 | 用途 |
+| File | Purpose |
 | --- | --- |
-| `eol-products.zh.md` | 中文站 EOL 清单，官网 EOL 页面的数据源 |
-| `eol-products.en.md` | 英文站 EOL 清单，同上 |
+| `eol-products.zh.md` | EOL list for the Chinese site; data source of the corporate-site EOL page |
+| `eol-products.en.md` | EOL list for the English site; same as above |
 
-这两份是**镜像**，由内部仓库 `device-hw-docs` 的 `eol-products/` 自动同步过来，
-在本仓库直接改会被下一次同步覆盖。详见文件开头的说明。
+Both files are **mirrors**, synced automatically from `eol-products/` in
+the internal `device-hw-docs` repo. Edits made here are overwritten by
+the next sync — see the note at the top of each file.
 
-本仓库拿它们做两件事：
+This repo uses them for two things:
 
-- `scripts/generate_eol_pages.py` → 生成文档站的 EOL 页面（进 `llms.txt`）
-- `scripts/sync_eol_products.py` → 增量同步到官网 WordPress EOL API（由 `sync-eol.yml` 触发）
+- `scripts/generate_eol_pages.py` → renders the docs-site EOL pages (also feeds `llms.txt`)
+- `scripts/sync_eol_products.py` → incremental sync to the corporate WordPress EOL API (triggered by `sync-eol.yml`)
 
-## 新增数据集时的约定
+## Conventions for adding a new dataset
 
-### 1. 命名：`<数据集>.<语言>.md`，先保持扁平
+### 1. Naming: `<dataset>.<lang>.md`, stay flat at first
 
-文件名前缀即分组，两三个文件时不必建子目录。例如：
+The filename prefix is the grouping; with two or three files there is no
+need for a subdirectory. For example:
 
 ```
 data/eol-products.zh.md
 data/product-matrix.zh.md
 ```
 
-满足下列任一条，再引入 `data/<数据集>/` 子目录：
+Introduce a `data/<dataset>/` subdirectory only when one of these holds:
 
-- 单个数据集超过 3 个文件
-- 两个数据集想用同一个文件名
-- 某个数据集需要带附件（图片、CSV 等）
+- a single dataset exceeds 3 files
+- two datasets want the same filename
+- a dataset needs attachments (images, CSV, …)
 
-分目录时记得同步改动：`scripts/eol_data.py` 的 `DATA_DIR`、各工作流的路径过滤，
-以及上游 `device-hw-docs` 里 `eol-sync-to-documents.yml` 的 `--out-dir`。
+When you do split into a directory, update everything together:
+`DATA_DIR` in `scripts/eol_data.py`, the path filters of the workflows,
+and `--out-dir` in the upstream `eol-sync-to-documents.yml` of
+`device-hw-docs`.
 
-### 2. 路径过滤必须写到文件名，**不要用 `data/**`**
+### 2. Path filters must name the files — **never use `data/**`**
 
-现有四个工作流都把触发路径写成精确通配：
+All four existing workflows trigger on an exact glob:
 
 ```yaml
 paths:
   - "data/eol-products.*.md"
 ```
 
-新增数据集就照样**新增一行**，不要图省事改成 `data/**`。
+When adding a dataset, **add another line** just like it; do not widen
+the filter to `data/**` for convenience.
 
-原因：`sync-eol.yml` 会调用官网 API 写数据。一旦改成目录通配，任何一个
-数据集的改动都会触发官网 EOL 同步，产生无谓的写入和噪音。
+Reason: `sync-eol.yml` calls the corporate-site API and writes data.
+With a directory-wide glob, a change to any dataset would trigger the
+EOL sync and produce pointless writes and noise.
 
-### 3. 读取要指名文件，不要扫目录
+### 3. Read files by name, never scan the directory
 
-现有脚本都通过一个入口取文件，没有 `glob` / `iterdir`：
+Existing scripts fetch files through a single entry point — no `glob` /
+`iterdir`:
 
 ```python
 def data_file(site: str) -> Path:
     return DATA_DIR / f"eol-products.{site}.md"
 ```
 
-保持这个习惯，新文件才不会被别的脚本误当成 EOL 数据解析。
+Keep that habit so new files are never mistakenly parsed as EOL data by
+other scripts.
 
-### 4. 需要从上游同步的数据，两边都要配
+### 4. Data synced from upstream must be configured on both ends
 
-如果新数据集也由 `device-hw-docs` 维护并同步过来，除了本仓库的路径过滤，
-还要在上游 `eol-sync-to-documents.yml` 里配好渲染和推送。
+If a new dataset is also maintained in `device-hw-docs` and synced over,
+configure the rendering and push in the upstream
+`eol-sync-to-documents.yml` in addition to this repo's path filters.
 
-⚠️ 跨仓库同步对不齐是**静默失效**——校验通过、文件却永远不过来，不会报错。
-配完请实际改一次数据、确认文件真的落地，别只看流水线变绿。
+⚠️ A misaligned cross-repo sync **fails silently** — validation passes,
+yet the files never arrive, with no error raised. After wiring it up,
+make a real data change and confirm the file actually lands; do not
+trust a green pipeline alone.

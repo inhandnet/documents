@@ -194,8 +194,8 @@
   <tr><td>VG814-FQ09-W-G-V</td><td align="left">LTE CAT6 Global</td><td align="left">LTE-FDD B1/2/3/4/5/7/8/12/13/14/17/18/19/20/25<br>/26/28/29/30/32/66/71<br>LTE-TDD B34/38/39/40/41/42/43/46(LAA)/48(CBRS)<br>WCDMA B1/2/3/4/5/6/8/19</td></tr>
   <tr><td>VG814-NRQ3-W-G-V</td><td>5G Global</td><td>5G NSA n1/2/3/5/7/8/12/20/25/28/38/40/41/48/66<br>/71/77/78/79<br/>5G SA n1/2/3/5/7/8/12/20/25/28/38/40/41/48/66<br>/71/77/78/79<br/>LTE-FDD B1/2/3/4/5/7/8/9/12(17)/13/14/18/19/20/25<br>/26/28/29/30/32/66/71<br/>LTE-TDD B34/38/39/40/41/42/43/48<br/>LAA B46 WCDMA B1/2/3/4/5/6/8/19</td></tr>
   <tr><td>VG814-NRQ5-W-G-V</td><td>5G Global</td><td>5G SA/NSA n1/2/3/5/7/8/12/13/14/18/20/25<br>/26/28/29/30/38/40/41/48/66/70/71/75/76/77/78/79<br/>LTE-FDD B1/2/3/4/5/7/8/12/13/14/17/18/19/20/25<br>/26/28/29/30/32/66/71<br/>LTE-TDD B34/38/39/40/41/42/43/48<br>LAA: B46 WCDMA: B1/2/4/5/8/19</td></tr>
-  <tr><td>VG814-NRQ5RC25-W-G-V</td><td>5G + 5G RedCap Global</td><td>5G SA/NSA NRQ5 with<br/>5G RedCap SA n1/2/3/5/7/8/12/13/14/18/20/25<br>/26/28/30/38/40/41/48/66/70/71/77/78/79<br/>LTE-FDD B1/2/3/4/5/7/8/12/13/14/17/18/19/20<br>/25/26/28/30/66/70/71<br/>LTE-TDD B34/38/39/40/41/42/43/48</td></tr>
 </table>
+
 
 # <span style="color: green;">6. Contact Us</span>
 
@@ -211,4 +211,3 @@
     <img src="四图_road/端子接口图.png" alt="Front View" />
     <div style="width: 100%; text-align: center; font-size: 12px;"></div>
   </div>
-

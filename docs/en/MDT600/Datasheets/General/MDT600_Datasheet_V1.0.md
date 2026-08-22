@@ -48,13 +48,13 @@
 | Network & Security | IPv4/IPv6; NAT; IPsec/L2TP, OpenVPN |
 | System / Standards | Android 14 / Linux; ITxPT-aligned |
 | AI / Display | 6 TOPS NPU; 10.1″ 1280×800 G+G touch |
-| CPU / Storage | A72+A53 up to 2.0 GHz; 8 GB LPDDR4; 256 GB UFS (default) |
+| CPU / Storage | A72+A53 up to 2.0 GHz; 8 GB RAM; 256 GB Storage|
 | Interfaces | M12 GbE; CAN/RS-232/485, DI/DO; USB-C; up to 8×AHD |
 | SIM | 2 × Nano-SIM; eSIM optional |
 | Power | 9–48 VDC |
 | Dimensions / Mount | 300 × 182 × 38 mm (11.81 × 7.17 × 1.5 in); VESA 75 × 75 mm (2.95 × 2.95 in) |
 | Environment / Protection | -30 °C ~ +70 °C (-22 °F ~ +158 °F) op.; -40 °C ~ +85 °C (-40 °F ~ +185 °F) stg.; IP65, IK08 |
-| Certification | CE, E-Mark, UKCA, FCC (*in progress) |
+| Certification | CE, E-Mark, UKCA, FCC |
 
 <div style="margin-top: 32px;"></div>
 
@@ -94,8 +94,8 @@
 | <span style="color: green;">**Processing Platform**</span> | |
 | CPU | Quad-Core Cortex-A72 + Quad-Core Cortex-A53, up to 2.0 GHz |
 | GPU &amp; NPU | ARM Mali-G52 MC3 GPU; 6 TOPS INT8 NPU |
-| RAM | 8 GB LPDDR4 |
-| Storage | 256 GB UFS (default) |
+| RAM | 8 GB or 4GB LPDDR4 |
+| Storage | 256 GB UFS or 64 GB eMMC |
 | <span style="color: green;">**Connectivity &amp; Wireless**</span> | |
 | Cellular | 5G/4G or non-cellular SKUs |
 | Wi-Fi | Wi-Fi 6, AP/STA |
@@ -120,8 +120,8 @@
 | Expansion | 1 × M.2 SATA SSD (up to 4 TB) |
 | SD | 1 × microSD (up to 256 GB) |
 | Audio / Mic | L, R, GND, Mic-in on 26-pin multi-function interface |
-| CAN | 1 × CAN 2.0 on 26-pin multi-function interface |
-| I/O &amp; Serial | 1 × RS-232/RS-485, 5 × DI, 4 × DO on 26-pin multi-function interface |
+| CAN | 2 × CAN 2.0 on 26-pin multi-function interface |
+| I/O &amp; Serial | 1 × RS-232/RS-485, 6 × DI, 4 × DO on 26-pin multi-function interface |
 | <span style="color: green;">**Mechanical &amp; Environment**</span> | |
 | Mounting | VESA 75 × 75 mm (2.95 × 2.95 in) |
 | Dimensions (W × D × H) | 300 × 182 × 38 mm (11.81 × 7.17 × 1.5 in) |
@@ -132,16 +132,17 @@
 | Impact | IK08 |
 | <span style="color: green;">**Power &amp; Compliance**</span> | |
 | Input | 9–48 VDC wide-range |
+| Power consumption | Maximum 25.94W, Normal 14.16W Standby 1.224W |
 | Connector | VIN+, VIN−, IGT on 26-pin multi-function interface |
 | Automotive / transport | EN 61373; EN 45545-2; ISO 16750-1/2; ECE R10; ECE R118 |
-| Certification* | CE, E-Mark, UKCA, FCC (*in progress) |
+| Certification | CE, E-Mark, UKCA, FCC |
 
 # <span style="color: green;">4. Software Specifications</span>
 
 | Category/Parameter | Specification |
 | --- | --- |
 | <span style="color: green;">**Operating System**</span> | |
-| Platform | Android 14 or Linux |
+| Platform | Android 14 or Linux Debian 12 or Linux Yocto |
 | <span style="color: green;">**Network Features**</span> | |
 | IP protocols | IPv4 / IPv6 |
 | Network services | NAT, routing, IPsec/L2TP VPN, OpenVPN, etc. |
@@ -157,6 +158,7 @@
 | Standards | ITxPT-aligned |
 | Openness | Third-party apps and custom integration |
 
+<div style="page-break-after: always;"></div>
 
 # <span style="color: green;">5. Ordering Information</span>
 
@@ -177,10 +179,14 @@
     <col style="width:28%;">
     <col style="width:30%;">
   </colgroup>
-  <tr><th>Model</th><th>Region</th><th>&lt;W&gt;: Type &amp; Module</th><th>&lt;M&gt;: Storage</th></tr>
-  <tr><td>MDT600-NRQ5-&lt;M&gt;</td><td>Global</td><td>Cellular 5G</td><td>Optional 256GB / 512GB / 1TB</td></tr>
-  <tr><td>MDT600-FQ09-&lt;M&gt;</td><td>Global</td><td>Cellular Cat.6</td><td>Optional 256GB / 512GB / 1TB</td></tr>
-  <tr><td>MDT600-EN00-&lt;M&gt;</td><td>Global</td><td>No cellular</td><td>Optional 256GB / 512GB / 1TB</td></tr>
+  <tr><th>Model</th><th>Region</th><th>&lt;W&gt;: Type &amp; Module</th><th>RAM &amp; Storage</th></tr>
+  <tr><td>MDT600-NRQ5</td><td>Global</td><td>Cellular 5G</td><td>8GB RAM, 256GB UFS</td></tr>
+  <tr><td>MDT600-NRQ5-ANT</td><td>Global</td><td>Cellular 5G (external antenna)</td><td>8GB RAM, 256GB UFS</td></tr>
+  <tr><td>MDT600-NRQ5-E-ANT</td><td>Global</td><td>Cellular 5G (external antenna)</td><td>4GB RAM, 64GB eMMC</td></tr>
+  <tr><td>MDT600-FQ09-ANT</td><td>Global</td><td>Cellular Cat.6 (external antenna)</td><td>8GB RAM, 256GB UFS</td></tr>
+  <tr><td>MDT600-FQ09-E-ANT</td><td>Global</td><td>Cellular Cat.6 (external antenna)</td><td>4GB RAM, 64GB eMMC</td></tr>
+  <tr><td>MDT600-EN00</td><td>Global</td><td>No cellular</td><td>8GB RAM, 256GB UFS</td></tr>
+  <tr><td>MDT600-EN00-E</td><td>Global</td><td>No cellular</td><td>4GB RAM, 64GB eMMC</td></tr>
 </table>
 
 **Example:** `MDT600-FQ09-512GB` — 256 GB UFS by default, plus up to 512 GB M.2 SSD when configured.
@@ -195,12 +201,13 @@
   <tr><th>Order Code</th><th>Description</th></tr>
   <tr><td>AANT040013</td><td>GNSS FAKRA antenna — GPS L1 1575.42 MHz &amp; BDS 1561.098 MHz &amp; GLONASS 1602 MHz; 2000 mm cable</td></tr>
   <tr><td>AETH050002</td><td>M12 X-coded to RJ45 cable, 1000 mm</td></tr>
-  <tr><td>SCAB000601</td><td>MDT600 multi-function cable — 26-pin waterproof, audio, pull cord, 1000 mm</td></tr>
+  <tr><td>SCAB250006</td><td>MDT600 multi-function cable — 26-pin waterproof, audio, pull cord, 1000 mm</td></tr>
   <tr><td>SCAB000600</td><td>MDT600 camera test cable — 26-pin waterproof, pull cord, 1000 mm</td></tr>
   <tr><td>SMDM060045</td><td>DSM camera — AHD 1080P PAL, 1920×1080, IR, M12, DC 12 V, -30 °C ~ 70 °C (-22 °F ~ 158 °F) (see datasheet for full spec)</td></tr>
   <tr><td>SMDM060044</td><td>ADAS camera — AHD 1080P PAL, 1920×1080, M12, DC 12 V, -20 °C ~ 70 °C (-4 °F ~ 158 °F)</td></tr>
-  <tr><td>SMDM060043</td><td>Panoramic camera IN-813-A200H — AHD 1080P PAL, 360°, M12, DC 12 V, -20 °C ~ 70 °C (-4 °F ~ 158 °F)</td></tr>
+  <tr><td>SMDM060043</td><td>Panoramic camera — AHD 1080P PAL, 360°, M12, DC 12 V, -20 °C ~ 70 °C (-4 °F ~ 158 °F)</td></tr>
 </table>
+
 
 # <span style="color: green;">6. Contact Us</span>
 

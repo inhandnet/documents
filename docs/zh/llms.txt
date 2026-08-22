@@ -570,7 +570,7 @@
 
 ## MDT600
 
-- [MDT600 规格书 v1.0](MDT600/Datasheets/%E9%80%9A%E7%94%A8/MDT600%E8%A7%84%E6%A0%BC%E4%B9%A6_V1.0.md): MDT600 规格书 v1.0 — 车载智能终端, 边缘AI算力, 5G与Wi-Fi 6互联
+- [MDT600 规格书 v1.0](MDT600/Datasheets/%E9%80%9A%E7%94%A8/MDT600%E8%A7%84%E6%A0%BC%E4%B9%A6_V1.0.md): MDT600 规格书 v1.0 — 智能车载终端, 边缘AI算力, 蜂窝5G Wi-Fi6
 
 ## Mo 62A
 

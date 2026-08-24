@@ -4,7 +4,7 @@
       <img src="images/logo.png" alt="logo" />
     </div>
     <div style="font-size: 28px; font-weight: bold; color:#000;text-align: center; margin-bottom: 60px;">
-      5G Cost-Effective Multi-Port Industrial Router for Secure Networking and Cloud O&M
+      Cost-Effective Multi-Port Industrial Router for Secure Networking and Cloud O&M
     </div>
   </div>
   <div style="padding-left: 40px;">
@@ -13,7 +13,7 @@
     </div>
     <div style="text-align: center;">
       <div style="display: flex; flex-wrap: wrap; gap: 16px; ">
-        <div style="width: 300px;background-color: #4CAF50; color: white; padding: 8px 8px; border-radius: 6px; font-size: 18px;">· 5G</div>
+        <div style="width: 300px;background-color: #4CAF50; color: white; padding: 8px 8px; border-radius: 6px; font-size: 18px;">· 4G</div>
         <div style="width: 300px;background-color: #4CAF50; color: white; padding: 8px 8px; border-radius: 6px; font-size: 18px;">· Wi-Fi</div>
       </div>
       <div style="display: flex; flex-wrap: wrap; gap: 16px;margin-top:16px">
@@ -24,11 +24,12 @@
   </div>
 </div>
 
+
 <div style="page-break-after: always;"></div>
 
 # <span style="color: green;">1. Product Overview</span>
 
-**The InRouter315 (IR315) series is a 5G cost-effective multi-port industrial router designed for industrial IoT scenarios, integrating cellular, Wi-Fi, VPN, and cloud management capabilities.**
+**The InRouter315 (IR315) series is a cost-effective multi-port industrial router designed for industrial IoT scenarios, integrating cellular, Wi-Fi, VPN, and cloud management capabilities.**
 
 The IR315 provides uninterrupted multi-network access with comprehensive security and wireless service features, enabling tens of thousands of devices to connect and delivering high-speed data pathways for industrial field equipment. The product is designed to meet the requirements of unattended field communication, utilizing hardware and software watchdogs and multi-level link detection mechanisms to ensure communication stability and reliability. It also supports the InHand Device Manager "Device Cloud" management platform, facilitating remote management and ensuring intelligent device management.
 
@@ -36,7 +37,7 @@ The IR315 provides uninterrupted multi-network access with comprehensive securit
 
 | Technical Specification | Specification |
 |---------|------|
-| Cellular Network | 5G NR (SA/NSA) or LTE (depending on model); dual Nano-SIM; supports PDP configuration (IPv4/IPv4V6) |
+| Cellular Network | 4G LTE (depending on model); dual Nano-SIM; supports PDP configuration (IPv4/IPv4V6) |
 | VPN | IPsec (IKEv2, AES256-SHA512), PPTP, L2TP, GRE, DMVPN, OpenVPN, WireGuard, ZeroTier |
 | Wi-Fi (optional) | 2.4 GHz, IEEE 802.11 b/g/n, up to 300 Mbps |
 | Firewall and Access Control | SPI stateful inspection, DoS protection, ACL, content filtering (domain auto-refresh), 802.1x, IP-MAC binding, MAC address filtering, etc. |
@@ -53,7 +54,7 @@ The IR315 provides uninterrupted multi-network access with comprehensive securit
 
 ## <span style="color: green;">2.1 Multi-Network Access</span>
 
-- **Cellular Network:** Supports 5G NR (SA/NSA) or LTE (depending on model), covering global mainstream operator frequency bands, adaptable to diverse field network environments
+- **Cellular Network:** Supports 4G LTE (depending on model), covering global mainstream operator frequency bands, adaptable to diverse field network environments
 - **Wired Network:** 5 × 10/100 Mbps RJ45 Ethernet ports, supports flexible WAN/LAN/VLAN configuration, 1.5KV network isolation transformer protection
 - **Wi-Fi Access:** 2.4 GHz IEEE 802.11 b/g/n, up to 300 Mbps, supports AP/Client/WDS three working modes
 - **Dual-SIM Card Slots:** Drawer-type slot supports 2 × Nano-SIM, dual-SIM hot backup ensures network continuity
@@ -82,7 +83,7 @@ The IR315 provides uninterrupted multi-network access with comprehensive securit
 ## <span style="color: green;">2.5 Industrial Expansion</span>
 
 - **Rich Interfaces:** Five Ethernet port design, optional RS-232+RS-485 serial port or 4×IO (DI/DO configurable)
-- **GNSS Positioning:** Some models support GPS/BeiDou positioning functions
+- **GNSS Positioning:** Some models support GPS/BeiDou/Galileo/GLONASS/QZSS positioning functions
 - **Industrial-Grade Design:** Metal enclosure fanless cooling, DIN rail mounting, IP30 protection rating
 - **Wide-Temperature Operation:** Standard -35 °C ~ 70 °C (-31 °F ~ 158 °F), extended models support -40 °C ~ 75 °C (-40 °F ~ 167 °F)
 
@@ -116,7 +117,6 @@ Suitable for atmospheric monitoring, water quality monitoring, noise monitoring,
 |---------|--------|--------------|
 | Multi-Mode Cellular Communication | Intelligent Dialing Mode Adaptation | Supports QMI / PPP / ECM multiple dialing modes, automatically selects the optimal method according to module and network environment |
 | | Dual-SIM Intelligent Switching | Supports automatic SIM switching based on signal quality, ICMP detection, packet loss rate, dial failure count, and other strategies |
-| | 5G / RedCap Support | Supports NRQ2, NRR0, NRR2 and other 5G modules, as well as NRF2/NRF4 and other RedCap modules |
 | | Global Operator Adaptation | Automatically matches APN, BAND, IMS configurations for operators such as Verizon / AT&T / T-Mobile |
 | Link Reliability | Link Backup and Hot Backup | Automatic master/backup link switching, supports hot backup + policy routing, actively reports alarms when switching |
 | | Load Balancing | Multi-link load balancing optimization, improving bandwidth utilization and business continuity |
@@ -200,7 +200,7 @@ Suitable for atmospheric monitoring, water quality monitoring, noise monitoring,
 | Serial Port (optional) | 1 × RS-232 + 1 × RS-485 |
 | Reset Button | Pinhole reset button |
 | SIM Card Slot | Drawer-type slot ×1, supports 2 × Nano-SIM |
-| Antenna Connectors | 5G: SMA ×2; 4G: SMA ×1 (overseas 4G models are SMA ×2); Wi-Fi: RP-SMA ×2 |
+| Antenna Connectors | 4G: SMA ×1 or 2 (only LQ20 is SMA ×1); Wi-Fi: RP-SMA ×2 |
 | Grounding Terminal | Supported |
 | LED Indicators | Power, System, Network, Wi-Fi, Signal |
 | GNSS (optional) | Some models support (see ordering information <G/NA>) |
@@ -399,61 +399,25 @@ Suitable for atmospheric monitoring, water quality monitoring, noise monitoring,
 
 # <span style="color: green;">8. Ordering Information</span>
 
-## <span style="color: green;">8.1 Model Rules</span>
 
-**Model code:** IR315-<WMNN>-<WLAN/NA>-<S/NA>-<G/NA>
+| Model | Region | Cellular Type & Frequency Band | WLAN/NA | S/NA | G |
+|------|------|---------------|------|------|------|
+| IR315-LQ20-<WLAN/NA>-S | China | Cat.4<br/>LTE-FDD: B1/B3/B5/B8<br/>LTE-TDD: B34/B38/B39/B40/B41<br/>WCDMA: B1/B5/B8<br/>GSM: B3/B8 | WLAN: Wi-Fi<br/>NA: no Wi-Fi | S: Serial | - |
+| IR315-FQ58-<WLAN/NA>-<S/NA> | Europe/APAC/Australia/NZ | Cat.4<br/>LTE-FDD: B1/B3/B5/B7/B8/B20/B28<br/>LTE-TDD: B38/B40/B41<br/>WCDMA: B1/B5/B8<br/>GSM: B3/B8 | WLAN: Wi-Fi<br/>NA: no Wi-Fi | S: Serial<br/>NA: IO | - |
+| IR315-FQ58-WLAN-<S/NA>-G | Europe/APAC | Cat.4<br/>LTE-FDD: B1/ B3/ B7/ B8/ B20/ B28A<br/>LTE-TDD: B38/ B40/ B41<br/>WCDMA: B1/ B8<br/>GSM: B3/ B8 | WLAN: Wi-Fi                  | S: Serial<br/>NA: IO | G: GNSS |
+| IR315-FQ68-<WLAN/NA>-<S/NA> | Latin America | Cat.4<br/>LTE FDD: B1/B2/B3/B4/B5/B7/B8/B28/B66<br/>LTE TDD: B40<br/>WCDMA: B1/B2/B4/B5/B8<br/>GSM: B2/B3/B5/B8 | WLAN: Wi-Fi<br/>NA: no Wi-Fi | S: Serial<br/>NA: IO | - |
+| IR315-FQ88-<WLAN/NA>-S | Japan | Cat.4<br/>LTE-FDD: B1/B3/B8/B18/B19/B26<br/>LTE-TDD: B41<br/>WCDMA: B1/B6/B8/B19 | WLAN: Wi-Fi<br/>NA: no Wi-Fi | S: Serial |  |
+| IR315-FQ38-<WLAN/NA>-<S/NA> | North America | Cat.4<br/>LTE-FDD: B2/B4/B5/B12/B13/B14/B66/B71<br/>WCDMA: B2/B4/B5 | WLAN: Wi-Fi<br/>NA: no Wi-Fi | S: Serial<br/>NA: IO | - |
+| IR315-FF39-<WLAN/NA>-<S/NA> | North America | Cat.6<br/>LTE-FDD: B2/B4/B5/B7/B12/B13/B14/B17/B25/B26/B29/B30/B66/B71<br/>LTE-TDD: B41/B42/B43/B46/B48<br/>WCDMA: B2/B4/B5WLAN: Wi-Fi<br/>NA: no Wi-Fi | WLAN: Wi-Fi<br/>NA: no Wi-Fi | S: Serial<br/>NA: IO | - |
+| IR315-FF39-WLAN-<S/NA>-G | North America | Cat.6<br/>LTE-FDD: B2/B4/B5/B7/B12/B13/B14/B17/B25/B26/B29/B30/B66/B71<br/>LTE-TDD: B41/B42/B43/B46/B48<br/>WCDMA: B2/B4/B5 | WLAN: Wi-Fi | S: Serial<br/>NA: IO | G: GNSS |
+|                             |                          |                                                              |                              |                      |         |
 
-<WMNN>: Wireless communication type & module  
-<WLAN/NA>: Wi-Fi  
-<S/NA>: Serial/IO  
-<G/NA>: GNSS
+</div>
 
+**Note:**
 
-<div style="page-break-after: always;"></div>
-
-
-## <span style="color: green;">8.2 Product Models</span>
-
-### Quick Selection Table
-
-<table style="width:100%; table-layout:fixed; font-size:10px;">
-  <colgroup>
-    <col style="width:28%;">
-    <col style="width:18%;">
-    <col style="width:16%;">
-    <col style="width:12%;">
-    <col style="width:14%;">
-    <col style="width:12%;">
-  </colgroup>
-  <tr><th>Model</th><th>Region</th><th>Cellular Network</th><th>Wi-Fi</th><th>Serial/IO</th><th>GNSS</th></tr>
-  <tr><td style="white-space: nowrap;">IR315-LQ20-&lt;WLAN/NA&gt;-S</td><td>China</td><td>Cat.4</td><td>Optional</td><td>S</td><td>—</td></tr>
-  <tr><td style="white-space: nowrap;">IR315-FQ58-&lt;WLAN/NA&gt;-&lt;S/NA&gt;</td><td>Europe/APAC/Australia/NZ</td><td>Cat.4</td><td>Optional</td><td>Optional</td><td>—</td></tr>
-  <tr><td style="white-space: nowrap;">IR315-FQ58-WLAN-&lt;S/NA&gt;-G</td><td>Europe/APAC</td><td>Cat.4</td><td>Standard</td><td>Optional</td><td>Supported</td></tr>
-  <tr><td style="white-space: nowrap;">IR315-FQ78-&lt;WLAN/NA&gt;-&lt;S/NA&gt;</td><td>Australia/New Zealand</td><td>Cat.4</td><td>Optional</td><td>Optional</td><td>—</td></tr>
-  <tr><td style="white-space: nowrap;">IR315-FQ78-WLAN-G</td><td>Australia/New Zealand</td><td>Cat.4</td><td>Standard</td><td>IO</td><td>Supported</td></tr>
-  <tr><td style="white-space: nowrap;">IR315-FQ88-&lt;WLAN/NA&gt;-S</td><td>Japan</td><td>Cat.4</td><td>Optional</td><td>S</td><td>—</td></tr>
-  <tr><td style="white-space: nowrap;">IR315-FQ38-&lt;WLAN/NA&gt;</td><td>North America</td><td>Cat.4</td><td>Optional</td><td>IO</td><td>—</td></tr>
-  <tr><td style="white-space: nowrap;">IR315-FF39-&lt;WLAN/NA&gt;-&lt;S/NA&gt;</td><td>North America</td><td>Cat.6</td><td>Optional</td><td>Optional</td><td>—</td></tr>
-  <tr><td style="white-space: nowrap;">IR315-FF39-WLAN-&lt;S/NA&gt;-G</td><td>North America</td><td>Cat.6</td><td>Standard</td><td>Optional</td><td>Supported</td></tr>
-  <tr><td style="white-space: nowrap;">IR315-EN00-&lt;WLAN/NA&gt;-S</td><td>Global</td><td>No cellular</td><td>Optional</td><td>S</td><td>—</td></tr>
-</table>
-
-> **Note:**
-> - `Optional` = This position is optional (e.g., `<WLAN/NA>` can be WLAN or NA, `<S/NA>` can be S or NA)
-> - `S` = 1×RS-232 + 1×RS-485; `IO` = 4×IO
-> - `—` = Not supported
-
-### Frequency Band Specification Details
-
-| Module | Region | Cellular Type |
-|------|------|---------------|
-| LQ20 | China | LTE-FDD: B1/B3/B5/B8<br/>LTE-TDD: B34/B38/B39/B40/B41<br/>WCDMA: B1/B5/B8<br/>GSM: B3/B8 |
-| FQ58 | Europe/APAC/Australia/NZ | LTE-FDD: B1/B3/B5/B7/B8/B20/B28<br/>LTE-TDD: B38/B40/B41<br/>WCDMA: B1/B5/B8<br/>GSM: B3/B8 |
-| FQ78 | Australia/New Zealand | LTE-FDD: B1/B2/B3/B4/B5/B7/B8/B28<br/>LTE-TDD: B40<br/>WCDMA: B1/B2/B5/B8<br/>GSM: B2/B3/B5/B8 |
-| FQ88 | Japan | LTE-FDD: B1/B3/B8/B18/B19/B26<br/>LTE-TDD: B41<br/>WCDMA: B1/B6/B8/B19 |
-| FQ38 | North America | LTE-FDD: B2/B4/B5/B12/B13/B14/B66/B71<br/>WCDMA: B2/B4/B5 |
-| FF39 | North America | LTE-FDD: B2/B4/B5/B7/B12/B13/B14/B17/B25/B26/B29/B30/B66/B71<br/>LTE-TDD: B41/B42/B43/B46/B48<br/>WCDMA: B2/B4/B5 |
-| EN00 | Global | — |
+- `Serial` = 1×RS-232 + 1×RS-485; `IO` = 4×IO
+- `—` = Not supported
 
 # <span style="color: green;">9. Contact Us</span>
 

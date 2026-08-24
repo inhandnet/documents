@@ -930,6 +930,7 @@
 ## MDT600
 
 - [MDT600 Datasheet v1.0](MDT600/Datasheets/General/MDT600_Datasheet_V1.0.md): MDT600 Datasheet v1.0 — Vehicle HMI &amp; Edge AI · 5G &amp; Wi-Fi 6 Connectivity
+- [MDT600 Certifications](MDT600/certifications.md): MDT600 certification list (E-Mark) with links to the original certificate files
 
 ## Mo 62A
 
@@ -1032,6 +1033,7 @@
 ## VR624
 
 - [VR624 Datasheet v1.1](VR624/Datasheets/General/VR624_Datasheet_V1.1.md): VR624 Datasheet v1.1 — High-speed 5G, Wi-Fi 6, Cloud-managed
+- [VR624 Certifications](VR624/certifications.md): VR624 certification list (CE, E-Mark, EN50155, EN61373) with links to the original certificate files
 
 ## VT200
 

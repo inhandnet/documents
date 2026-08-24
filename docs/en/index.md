@@ -579,6 +579,14 @@ hide:
     </div>
     <div class="pm-card">
       <div class="pm-card__body">
+        <div class="pm-card__title">MDT600</div>
+        <ul class="pm-card__links">
+        <li><a href="MDT600/certifications.html" title="MDT600 Certifications">Certifications</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pm-card">
+      <div class="pm-card__body">
         <div class="pm-card__title">Mo 62A</div>
         <ul class="pm-card__links">
         <li><a href="Mo%2062A/Manuals/Installation%20Guide/Mo%2062A%20Hardware%20Interface%20Description-V1%200.html" title="Mo 62A Hardware Interface Description">Installation Guide V1</a></li>
@@ -644,6 +652,14 @@ hide:
         <li><a href="VG814/certifications.html" title="VG814 Certifications">Certifications</a></li>
         <li><a href="VG814/drawings.html" title="VG814 Drawings">Drawings</a></li>
         <li><a href="VG814/Manuals/User%20manual/VG814_User%20manual_V1.0.html" title="InHand VG814 User Manual (Standard Edition) V1.2">User manual V1.0</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pm-card">
+      <div class="pm-card__body">
+        <div class="pm-card__title">VR624</div>
+        <ul class="pm-card__links">
+        <li><a href="VR624/certifications.html" title="VR624 Certifications">Certifications</a></li>
         </ul>
       </div>
     </div>

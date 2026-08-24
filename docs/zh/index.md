@@ -479,6 +479,14 @@ hide:
     </div>
     <div class="pm-card">
       <div class="pm-card__body">
+        <div class="pm-card__title">MDT600</div>
+        <ul class="pm-card__links">
+        <li><a href="MDT600/certifications.html" title="MDT600 认证证书">认证证书</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pm-card">
+      <div class="pm-card__body">
         <div class="pm-card__title">Mo 62A</div>
         <ul class="pm-card__links">
         <li><a href="Mo%2062A/Manuals/%E5%BF%AB%E9%80%9F%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/Mo%2062A%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8.html" title="Mo 62A 快速入门指南">快速用户手册</a></li>
@@ -523,6 +531,14 @@ hide:
         <li><a href="VG814/certifications.html" title="VG814 认证证书">认证证书</a></li>
         <li><a href="VG814/drawings.html" title="VG814 结构图纸">结构图纸</a></li>
         <li><a href="VG814/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/VG814%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="InHand VG814 用户手册 V1.0">用户手册 V1.0</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pm-card">
+      <div class="pm-card__body">
+        <div class="pm-card__title">VR624</div>
+        <ul class="pm-card__links">
+        <li><a href="VR624/certifications.html" title="VR624 认证证书">认证证书</a></li>
         </ul>
       </div>
     </div>

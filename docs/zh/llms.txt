@@ -425,6 +425,10 @@
 - [IR315 带外管理（OOBM）方案](IR315/Use%20Cases/%E5%B8%A6%E5%A4%96%E7%AE%A1%E7%90%86OOBM%E6%96%B9%E6%A1%88/%E5%B8%A6%E5%A4%96%E7%AE%A1%E7%90%86OOBM%E6%96%B9%E6%A1%88.md): IR315 带外管理OOBM方案
 - [带外管理（Out-of-Band Management，OOBM）配置指南](IR315/Use%20Cases/%E5%B8%A6%E5%A4%96%E7%AE%A1%E7%90%86OOBM%E6%96%B9%E6%A1%88/%E5%B8%A6%E5%A4%96%E7%AE%A1%E7%90%86OOBM%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8D%97.md): IR315 带外管理OOBM方案 — InHand **IR315** 是一款工业蜂窝路由器，具备 4G LTE 上行链路、以太网 WAN/LAN 端口以及工业级 3.5 mm 间距端子排（引出 RS232 与 RS485）。该设备专为无人值守机柜设计，并支持 InHand I…
 
+## IR602
+
+- [IR602 规格书 v1.1](IR602/Datasheets/%E9%80%9A%E7%94%A8/IR602%E8%A7%84%E6%A0%BC%E4%B9%A6_V1.1.md): IR602 规格书 v1.1 — IR602 5G RedCap 工业路由器
+
 ## IR615-S
 
 - [IR615-S 认证证书](IR615-S/certifications.md): IR615-S 已获认证清单（C1D2、E-Mark、EN18031、FCC、IC、MIC_JATE、PTCRB、SDPPI、UKCA、UL），含证书原件文件链接

@@ -243,7 +243,7 @@ ODU12 配备 4 个多色 LED（红/蓝/绿），分别用于系统、Wi-Fi、信
 - **IPv6 支持：** 完整 IPv6 功能，支持 5 种接入模式
 - **吞吐量：** 最高 2 Gbps
 
-## <span style="color: green;">4.4 Wi-Fi 7 无线接入</span>
+## <span style="color: green;">4.4 Wi-Fi 6 无线接入</span>
 
 - **标准：** IEEE 802.11ax（Wi-Fi 6）
 - **频段：** 2.4 GHz + 5 GHz 双频并发

@@ -65,23 +65,28 @@ Each ODU302 product includes the following standard accessories. Please check ca
 
 In addition, according to different site characteristics, InHand can provide customers with optional accessories.
 
-**Table 1-2-1 Standard Accessories**
+**Table 1-2-1 Standard Package**
 
 | Item | Quantity | Description |
 | --- | --- | --- |
-| ODU302 | 1 | Outdoor router |
-| Hanging ear | 2 | For router mounting |
-| Power Adapter | 1 | 12V DC power adapter |
-| Ethernet cable | 1 | 1.5 m Ethernet cable |
-| Cellular Antenna | 1 | Suction antenna |
-| Wi-Fi Antenna | 1 | Suction antenna |
+| ODU302 Outdoor Router | 1 | Outdoor router |
+| Ethernet Cable | 1 | 1 m Ethernet cable |
+| Wall-mount Bracket | 1 | For wall mounting |
+| Pole-mount Clamp | 1 | For pole mounting |
+| SIM Eject Pin | 1 | For SIM card installation |
+| Outdoor Waterproof Connector | 2 | Outdoor waterproof connector |
+| Outdoor Waterproof Cover | 2 | Outdoor waterproof cover |
+| Outdoor Waterproof Nut | 1 | Outdoor waterproof nut |
+| Expansion Bolts and Screws Set | 1 | Mounting fasteners |
 
 
 **Table 1-2-2 Optional Accessories**
 
 | Item | Quantity | Description |
 | --- | --- | --- |
-| DIN rail | 1 | For router mounting |
+| DC Power Adapter | 1 | DC power adapter |
+| PoE Injector | 1 | PoE power injector |
+| AC Power Cord | 1 | AC power cord |
 
 
 ## 1.3 Appearance and Interfaces

@@ -678,6 +678,10 @@
 - [IR315 Out-of-Band Management (OOBM) Solution](IR315/Use%20Cases/Out-of-Band%20Management%20%28OOBM%29%20Solution/Out-of-Band%20Management%20%28OOBM%29%20Solution.md): IR315 Out-of-Band Management (OOBM) Solution
 - [Out-of-Band Management (OOBM) Configuration Guide](IR315/Use%20Cases/Out-of-Band%20Management%20%28OOBM%29%20Solution/Out-of-Band%20Management%20%28OOBM%29%20Configuration%20Guide.md): IR315 Out-of-Band Management (OOBM) Solution
 
+## IR602
+
+- [IR602 Datasheet v1.1](IR602/Datasheets/General/IR602_Datasheet_V1.1.md): IR602 Datasheet v1.1 — Lightweight 5G Connectivity, Build Industrial Digital Foundation
+
 ## IR615-S
 
 - [Industrial Router IR615-S Product User Manual](IR615-S/Manuals/User%20manual/IR615-S_User%20manual_V1.0.md): IR615-S User manual v1.0 — The InRouter615-S is the next generation of the InRouter600 series cellular router, integrating 3G, 4G LTE, and advanced…

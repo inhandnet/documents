@@ -588,7 +588,7 @@
 
 ## ODU12
 
-- [ODU12 规格书 v1.1](ODU12/Datasheets/%E9%80%9A%E7%94%A8/ODU12%E8%A7%84%E6%A0%BC%E4%B9%A6_V1.1.md): ODU12 规格书 v1.1 — ODU12 5G 户外 AI 原生路由器
+- [ODU12 规格书 v1.2](ODU12/Datasheets/%E9%80%9A%E7%94%A8/ODU12%E8%A7%84%E6%A0%BC%E4%B9%A6_V1.2.md): ODU12 规格书 v1.2 — ODU12 5G 户外 AI 原生路由器
 
 ## ODU2002
 

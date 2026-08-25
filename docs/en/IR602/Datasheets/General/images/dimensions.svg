@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="600" height="450">
+  <rect width="600" height="450" fill="#ffffff"/>
+
+  <!-- 产品主体 - 正视图 -->
+  <rect x="100" y="80" width="380" height="180" rx="6" ry="6" fill="#f5f5f5" stroke="#333" stroke-width="2"/>
+
+  <!-- 前面板示意 (左侧) -->
+  <rect x="100" y="80" width="380" height="180" rx="6" ry="6" fill="#2d2d2d" stroke="#333" stroke-width="2"/>
+
+  <!-- LED 指示灯 -->
+  <circle cx="140" cy="120" r="5" fill="#ff3333"/>
+  <circle cx="165" cy="120" r="5" fill="#33ff33"/>
+  <circle cx="195" cy="120" r="5" fill="#ffcc00"/>
+  <circle cx="220" cy="120" r="5" fill="#33ff33"/>
+  <circle cx="245" cy="120" r="5" fill="#ffcc00"/>
+
+  <!-- LED 标签 -->
+  <text x="155" y="145" font-size="8" fill="#aaa" text-anchor="middle" font-family="Arial">SYS</text>
+  <text x="195" y="145" font-size="8" fill="#aaa" text-anchor="middle" font-family="Arial">SIGNAL</text>
+  <text x="245" y="145" font-size="8" fill="#aaa" text-anchor="middle" font-family="Arial">WiFi</text>
+
+  <!-- SMA 天线接口 -->
+  <rect x="310" y="92" width="12" height="20" rx="2" fill="#888" stroke="#666" stroke-width="1"/>
+  <text x="352" y="106" font-size="8" fill="#aaa" text-anchor="middle" font-family="Arial">ANT</text>
+  <rect x="340" y="92" width="12" height="20" rx="2" fill="#888" stroke="#666" stroke-width="1"/>
+  <rect x="370" y="92" width="12" height="20" rx="2" fill="#888" stroke="#666" stroke-width="1"/>
+  <rect x="400" y="92" width="12" height="20" rx="2" fill="#888" stroke="#666" stroke-width="1"/>
+
+  <!-- 以太网口 -->
+  <rect x="320" y="140" width="40" height="28" rx="3" fill="#555" stroke="#888" stroke-width="1"/>
+  <text x="340" y="158" font-size="7" fill="#0f0" text-anchor="middle" font-family="Arial">2.5G</text>
+  <rect x="370" y="140" width="40" height="28" rx="3" fill="#555" stroke="#888" stroke-width="1"/>
+  <text x="390" y="158" font-size="7" fill="#0f0" text-anchor="middle" font-family="Arial">LAN</text>
+
+  <!-- 电源端子 -->
+  <rect x="320" y="185" width="40" height="20" rx="2" fill="#777" stroke="#999" stroke-width="1"/>
+  <text x="340" y="198" font-size="7" fill="#fff" text-anchor="middle" font-family="Arial">DC</text>
+
+  <!-- 工业 IO 端子 -->
+  <rect x="370" y="185" width="40" height="20" rx="2" fill="#777" stroke="#999" stroke-width="1"/>
+  <text x="390" y="198" font-size="7" fill="#fff" text-anchor="middle" font-family="Arial">IO</text>
+
+  <!-- SIM 卡槽 -->
+  <rect x="320" y="220" width="30" height="15" rx="2" fill="#666" stroke="#888" stroke-width="1"/>
+  <text x="335" y="231" font-size="6" fill="#aaa" text-anchor="middle" font-family="Arial">SIM</text>
+
+  <!-- Reset -->
+  <circle cx="380" cy="235" r="5" fill="#666" stroke="#888" stroke-width="1"/>
+  <text x="380" y="248" font-size="6" fill="#999" text-anchor="middle" font-family="Arial">RST</text>
+
+  <!-- 宽度尺寸标注 -->
+  <line x1="100" y1="290" x2="100" y2="310" stroke="#e53935" stroke-width="1.5"/>
+  <line x1="480" y1="290" x2="480" y2="310" stroke="#e53935" stroke-width="1.5"/>
+  <line x1="100" y1="300" x2="480" y2="300" stroke="#e53935" stroke-width="1.5"/>
+  <polygon points="100,300 108,296 108,304" fill="#e53935"/>
+  <polygon points="480,300 472,296 472,304" fill="#e53935"/>
+  <text x="290" y="315" font-size="14" fill="#e53935" text-anchor="middle" font-family="Arial" font-weight="bold">98.3 mm</text>
+
+  <!-- 高度尺寸标注 -->
+  <line x1="510" y1="80" x2="530" y2="80" stroke="#e53935" stroke-width="1.5"/>
+  <line x1="510" y1="260" x2="530" y2="260" stroke="#e53935" stroke-width="1.5"/>
+  <line x1="520" y1="80" x2="520" y2="260" stroke="#e53935" stroke-width="1.5"/>
+  <polygon points="520,80 516,88 524,88" fill="#e53935"/>
+  <polygon points="520,260 516,252 524,252" fill="#e53935"/>
+  <text x="535" y="175" font-size="14" fill="#e53935" text-anchor="middle" font-family="Arial" font-weight="bold" transform="rotate(90,535,175)">92 mm</text>
+
+  <!-- 侧视图 (右侧小图) -->
+  <rect x="100" y="340" width="180" height="60" rx="4" fill="#2d2d2d" stroke="#333" stroke-width="1.5"/>
+
+  <!-- 侧视图厚度标注 -->
+  <line x1="90" y1="340" x2="70" y2="340" stroke="#e53935" stroke-width="1.5"/>
+  <line x1="90" y1="400" x2="70" y2="400" stroke="#e53935" stroke-width="1.5"/>
+  <line x1="80" y1="340" x2="80" y2="400" stroke="#e53935" stroke-width="1.5"/>
+  <polygon points="80,340 76,348 84,348" fill="#e53935"/>
+  <polygon points="80,400 76,392 84,392" fill="#e53935"/>
+  <text x="65" y="375" font-size="12" fill="#e53935" text-anchor="middle" font-family="Arial" font-weight="bold" transform="rotate(-90,65,375)">24 mm</text>
+
+  <text x="190" y="430" font-size="11" fill="#666" text-anchor="middle" font-family="Arial">正视图（左）· 侧视图（右）</text>
+  <text x="190" y="445" font-size="9" fill="#999" text-anchor="middle" font-family="Arial">尺寸单位：mm | 所有尺寸均为近似值，仅供参考</text>
+</svg>

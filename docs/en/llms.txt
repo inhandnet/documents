@@ -98,7 +98,7 @@
   - [4.1 Dashboard](CR602/Manuals/User%20manual/CR602_User%20manual_V1.0.md#41-dashboard)
   - [4.2 Status](CR602/Manuals/User%20manual/CR602_User%20manual_V1.0.md#42-status)
   - [4.3 Internet](CR602/Manuals/User%20manual/CR602_User%20manual_V1.0.md#43-internet)
-- [CR602 Datasheet v1.1](CR602/Datasheets/General/CR602_Datasheet_V1.1.md): CR602 Datasheet v1.1 — High-Speed Connectivity, Smart on the Go
+- [CR602 Datasheet v1.2](CR602/Datasheets/General/CR602_Datasheet_V1.2.md): CR602 Datasheet v1.2 — High-Speed Connectivity, Smart on the Go
 - [CR602 Certifications](CR602/certifications.md): CR602 certification list (EN18031, FCC, IC, PTCRB) with links to the original certificate files
 - [CR602 Drawings](CR602/drawings.md): CR602 mechanical drawings (2D, 3D) with links to the original drawing files
 
@@ -950,7 +950,7 @@
 
 ## ODU12
 
-- [ODU12 Datasheet v1.0](ODU12/Datasheets/General/ODU12_Datasheet_V1.0.md): ODU12 Datasheet v1.0 — Minimalist Design, Powerful Connectivity
+- [ODU12 Datasheet v1.1](ODU12/Datasheets/General/ODU12_Datasheet_V1.1.md): ODU12 Datasheet v1.1 — Minimalist Design, Powerful Connectivity
 - [ODU12 Drawings](ODU12/drawings.md): ODU12 mechanical drawings (2D, 3D) with links to the original drawing files
 
 ## ODU2002

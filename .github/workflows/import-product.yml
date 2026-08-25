@@ -66,10 +66,12 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_RAW_BASE: ${{ secrets.GITHUB_RAW_BASE || 'https://raw.githubusercontent.com/inhandnet/documents/master/' }}
           WP_ZH_URL: ${{ secrets.WP_ZH_URL }}
+          WP_ZH_USER: ${{ secrets.WP_ZH_USER }}
           WP_ZH_ICON_URL: ${{ secrets.WP_ZH_ICON_URL }}
           WP_ZH_TEMPLATE_ID: ${{ secrets.WP_ZH_TEMPLATE_ID }}
           WP_ZH_APP_PASSWORD: ${{ secrets.WP_ZH_APP_PASSWORD }}
           WP_EN_URL: ${{ secrets.WP_EN_URL }}
+          WP_EN_USER: ${{ secrets.WP_EN_USER }}
           WP_EN_ICON_URL: ${{ secrets.WP_EN_ICON_URL }}
           WP_EN_TEMPLATE_ID: ${{ secrets.WP_EN_TEMPLATE_ID }}
           WP_EN_APP_PASSWORD: ${{ secrets.WP_EN_APP_PASSWORD }}

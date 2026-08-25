@@ -214,6 +214,7 @@ def ensure_clone_config(site: str):
     """从环境变量动态生成 clone_highlights.js 需要的 config.json（避免明文密码提交到 git）"""
     cfg_file = HIGHLIGHTS_PKG / "config.json"
     env_map = {"zh": "WP_ZH_APP_PASSWORD", "en": "WP_EN_APP_PASSWORD"}
+    user_map = {"zh": "WP_ZH_USER", "en": "WP_EN_USER"}
 
     pw = os.environ.get(env_map.get(site, ""))
     if not pw:
@@ -223,14 +224,14 @@ def ensure_clone_config(site: str):
     cfg = {
         "zh": {
             "wpUrl": SITES["zh"]["wp_url"],
-            "username": "admin",
+            "username": os.environ.get(user_map["zh"], "admin"),
             "appPassword": os.environ.get("WP_ZH_APP_PASSWORD", ""),
             "iconUrl": SITES["zh"]["icon_url"],
             "templateProductId": SITES["zh"]["template_id"],
         },
         "en": {
             "wpUrl": SITES["en"]["wp_url"],
-            "username": "admin",
+            "username": os.environ.get(user_map["en"], "admin"),
             "appPassword": os.environ.get("WP_EN_APP_PASSWORD", ""),
             "iconUrl": SITES["en"]["icon_url"],
             "templateProductId": SITES["en"]["template_id"],

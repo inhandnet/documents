@@ -47,8 +47,8 @@ function req(path, data, method) {
     const body = data ? JSON.stringify(data) : null;
     const opts = {hostname: H, path, method: method || (body ? 'POST' : 'GET'), headers: {'Authorization': `Basic ${A}`}};
     if (body) opts.headers['Content-Type'] = 'application/json';
-    const req = https.request(opts, res => { let d=''; res.on('data',c=>d+=c); res.on('end',()=>{ try{r(JSON.parse(d))}catch(e){r(d)} }); });
-    req.on('error', () => r(null));
+    const req = https.request(opts, res => { let d=''; res.on('data',c=>d+=c); res.on('end',()=>{ if(res.statusCode>=400) console.error(`[API ${res.statusCode}] ${method||'GET'} ${path}: ${d.slice(0,200)}`); try{r(JSON.parse(d))}catch(e){r(d)} }); });
+    req.on('error', e => { console.error(`[API ERROR] ${e.message} (${method||'GET'} ${path})`); r(null); });
     if (body) req.write(body);
     req.end();
   });

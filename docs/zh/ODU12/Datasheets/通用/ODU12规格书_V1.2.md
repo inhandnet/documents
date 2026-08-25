@@ -456,8 +456,9 @@ ODU12 由 InCloud Manager AI 云管理平台提供支持。通过 AI 网络助�
     <col style="width:66%;">
   </colgroup>
   <tr><th>型号</th><th>区域</th><th>蜂窝频段</th></tr>
-  <tr><td style="white-space: nowrap;">ODU12-CNNR</td><td>中国</td><td>5G Sub-6：N1/N8/N28/N41/N78/N79<br/>LTE：B1/B3/B5/B8/B34/B38/B39/B40/B41</td></tr>
+  <tr><td style="white-space: nowrap;">ODU12-CNNR</td><td>中国</td><td>5G Sub-6：N1/N8/N28/N41/N78/N79<br/>LTE：B1/B3/B5/B8/B34/B38/B39/B40/B41<br/>WCDMA：B1/B8</td></tr>
 </table>
+
 
 
 ## <span style="color: green;">10.2 包装清单</span>

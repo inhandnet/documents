@@ -149,11 +149,6 @@ The LED indicator layout is concise and intuitive, allowing users to quickly und
 - **4G Performance Specifications**:
   - 4G CAT19: Downlink 1.6Gbps / Uplink 200Mbps
 
-| Network Type | Supported Bands |
-| ------------ | --------------- |
-| **5G NR** | n2/n5/n7/n12/n13/n14/n25/n26/n29/n30/n38/n41/n48/n66/n70/n71/n77/n78 |
-| **4G LTE** | B2/B4/B5/B7/B12(B17)/B13/B14/B25/B26/B29/B30/B38/B41/B42/B43/B46/B48/B66/B70/B71 |
-
 ## <span style="color: green;">5.2 SIM Card Management</span>
 
 ### <span style="color: green;">5.2.1 Triple SIM Slot Hardware Configuration</span>
@@ -400,17 +395,18 @@ The CR602 is equipped with InCloud Manager cloud management platform for full li
 - **Base Station Location**: Rough location based on cellular base stations
 - **Location Tracking**: Cloud-based device location tracking
 
-
-
 # <span style="color: green;">11. Ordering Information</span>
 
 ## <span style="color: green;">11.1 Model Description</span>
 
-| Model | Description | Target Market |
+<div style="font-size:11px">
+
+| Model | Region | Cellular Bands |
 | ----- | ----------- | ------------- |
-| CR602-CNNR | China Version | China mainland market |
-| CR602-EUNR | Europe Version | European market |
-| CR602-NANR | North America Version | North America (USA, Canada, etc.) |
+| CR602-EUNR | Europe/APAC | 5G Sub-6: n1/3/5/7/8/20/28/38/40/41/75/76/77/78<br/>LTE: B1/3/5/7/8/20/28/32/38/40/41/42/43/46(LAA)<br/>WCDMA: B1/5/8 |
+| CR602-NANR | North America | 5G Sub-6: n2/5/7/12/13/14/25/26/29/30/38/41/48/66/70/71/77/78<br/>LTE: B2/4/5/7/12(B17)/13/14/25/26/29/30/38/41/42/43/46/48/66/70/71 |
+
+</div>
 
 ## <span style="color: green;">11.2 Package Contents</span>
 
@@ -452,10 +448,9 @@ The CR602 is equipped with InCloud Manager cloud management platform for full li
 
 | Certification Type | Europe Version | North America Version |
 | ----------------- | -------------- | --------------------- |
-| **Mandatory Certification** | CE | FCC/IC |
-| **Environmental Certification** | RoHS/REACH | RoHS |
-| **Battery Certification** | CE | UL |
-| **Carrier Certification** | | Verizon/AT&T/T-Mobile |
+| **Mandatory** | CE（pending） | FCC / IC / PTCRB |
+| **Environmental** | RoHS / REACH | RoHS / REACH |
+| **Carrier** |  | Verizon / AT&T / T-Mobile |
 
 
 # <span style="color: green;">13. Contact Us</span>

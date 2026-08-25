@@ -179,7 +179,7 @@ AI Agent cloud management enables unified remote operations and maintenance:
 | ------------- | --------------------------------------- |
 | **Processor** | Quad-core Cortex-A55 @ 2.2 GHz |
 | **Memory** | 2 GB DDR4 |
-| **Storage** | 32 GB eMMC |
+| **Storage** | 4 GB eMMC |
 | **5G Module** | MTK 830 platform, 3GPP Release 16 |
 | **SIM Slots** | 2 × 4FF Nano-SIM + 1 × eSIM (reserved) |
 | **WAN Port** | 1 × 2.5 Gbps RJ45, PoE powered |
@@ -192,7 +192,7 @@ AI Agent cloud management enables unified remote operations and maintenance:
 | **Power Supply** | IEEE 802.3at PoE powered (802.3af compatible) |
 | **Power Consumption** | ≤ 18 W |
 | **Reset Button** | 1 × Reset button |
-| **Cooling** | Structure-thermal integrated passive cooling, fanless design |f
+| **Cooling** | Structure-thermal integrated passive cooling, fanless design |
 | **Protection Rating** | IP65 |
 | **Enclosure Material** | Die-cast aluminum heat sink + UV-stabilized polymer shell |
 | **Color** | White |
@@ -202,7 +202,6 @@ AI Agent cloud management enables unified remote operations and maintenance:
 | **Dimensions** | 235 mm x 167.93 mm x 81.93 mm |
 | **Weight** | Approx. 1.5 kg (3.31 lb) (reference) |
 | **Mounting** | Wall, pole, and roof mounting |
-
 
 ## <span style="color: green;">LED Indicators</span>
 
@@ -220,11 +219,6 @@ The ODU12 features 4 multi-color LEDs (red/blue/green) for System, Wi-Fi, Signal
 - **Speed Specifications:**
   - 5G SA/NSA: 7.01 Gbps DL / 2.5 Gbps UL
   - 4G Cat.19: 1.6 Gbps DL / 200 Mbps UL
-
-| Network Type | Supported Bands |
-| ---------- | ------------------------------------------------------------ |
-| **5G NR** | n2/n5/n7/n12/n13/n14/n25/n26/n29/n30/n38/n41/n48/n66/n70/n71/n77/n78 |
-| **4G LTE** | B2/B4/B5/B7/B12(B17)/B13/B14/B25/B26/B29/B30/B38/B41/B42/B43/B46/B48/B66/B70/B71 |
 
 ## <span style="color: green;">4.2 SIM Management</span>
 
@@ -257,11 +251,7 @@ The ODU12 features 4 multi-color LEDs (red/blue/green) for System, Wi-Fi, Signal
 - **Security:** WPA3-PSK/WPA3-Enterprise/WPA2-PSK/WPA2-Enterprise
 - **Multi-SSID:** Multiple virtual APs with flexible primary/sub-AP configuration
 
-
-
 <div style="page-break-after: always;"></div>
-
-
 
 # <span style="color: green;">5. Link Management & Backup</span>
 
@@ -282,8 +272,6 @@ The ODU12 features 4 multi-color LEDs (red/blue/green) for System, Wi-Fi, Signal
 - **Quality Trends:** Historical link quality trend charts
 - **Health Checks:** Automated link health assessment
 - **Alert Notifications:** Instant alerts on link anomalies
-
-
 
 # <span style="color: green;">6. Security Features</span>
 
@@ -321,8 +309,6 @@ The ODU12 features 4 multi-color LEDs (red/blue/green) for System, Wi-Fi, Signal
 - **Built-in Portal:** Local Portal server support
 - **Multiple Authentication Methods:** Username/password, SMS, WeChat, etc.
 - **Bypass Settings:** Whitelist and authentication-free time periods
-
-
 
 
 # <span style="color: green;">7. Local Network Services</span>
@@ -404,8 +390,6 @@ The ODU12 is powered by the InCloud Manager AI cloud management platform. Throug
 - **GPS Positioning:** High-precision GPS positioning (integrated GPS antenna)
 - **Location Tracking:** Cloud-based device location tracking
 
-
-
 # <span style="color: green;">9. System Management & Maintenance</span>
 
 ## <span style="color: green;">9.1 Device Management</span>
@@ -450,8 +434,6 @@ The ODU12 is powered by the InCloud Manager AI cloud management platform. Throug
 - **Login Timeout:** Automatic Web session logout on timeout
 - **Access Control:** Login access control
 
-
-
 # <span style="color: green;">10. Ordering Information</span>
 
 ## <span style="color: green;">10.1 Product Models</span>
@@ -482,8 +464,6 @@ The ODU12 is powered by the InCloud Manager AI cloud management platform. Throug
 - Extension cable
 
 
-
-
 # <span style="color: green;">11. Reliability Standards & Certifications</span>
 
 ## <span style="color: green;">11.1 Protection Rating</span>
@@ -499,17 +479,13 @@ The ODU12 is powered by the InCloud Manager AI cloud management platform. Throug
 
 ## <span style="color: green;">11.4 Certifications & Compliance</span>
 
-| Certification Type | North America Edition |
-|----------|--------|
-| **Mandatory** | FCC / IC / PTCRB |
-| **Carrier** | Verizon / AT&T / T-Mobile(coming soon) |
-| **Environmental** | RoHS / REACH |
-
-
+| Certification Type | North America Version | Europe Version |
+|----------|--------|--------|
+| **Mandatory** | FCC / IC / PTCRB | CE（pending） |
+| **Carrier** | Verizon / AT&T / T-Mobile(coming soon) |  |
+| **Environmental** | RoHS / REACH | RoHS / REACH |
 
 <div style="page-break-after: always;"></div>
-
-
 
 # <span style="color: green;">12. Contact Us</span>
 

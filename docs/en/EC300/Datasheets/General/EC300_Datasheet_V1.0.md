@@ -31,25 +31,25 @@
 **EC312 is a secure industrial edge computer designed for lightweight edge applications with reliable connectivity, flexible expansion, and cloud-native operations.**
 
 **Key features:**
+- **Open software stack:** Debian 11 and Yocto options, Docker-ready platform
 - **Industrial security:** IEC62443 certified, Secure Boot, TPM2.0, TrustZone
 - **Reliable connectivity:** Ethernet/cellular/Wi-Fi backup with dual-SIM failover
 - **Flexible expansion:** Supports CAN, DIO, analog input, and extra serial options
-- **Open software stack:** Debian 11 and Yocto options, Docker-ready platform
 - **Remote operations:** DeviceLive for remote monitoring and app/container management
 
 ## <span style="color: green;">Core Technical Specifications</span>
 
 | Technical Indicator | Specification |
 |------|---------------|
-| Cellular Network | LTE Cat.1 / Cat.6 (model-dependent) |
+| Open Platform | Debian 11 / Yocto, Docker-ready, multi-language development |
+| CPU | ARM Cortex-A53 @1.4GHz |
+| Data Acquisition | Modbus RTU/TCP, EtherNet/IP, OPC UA, DNP3.0, BACnet, CNC |
 | Network Features | APN, VPDN, CHAP/PAP, ARP, DHCP, ICMP, DNS, TCP/UDP, static routing |
 | Security | IEC62443 certification, Secure Boot, TrustZone, firewall |
 | Cloud Management | DeviceLive, HTTP/HTTPS/SSH remote management |
-| Data Acquisition | Modbus RTU/TCP, EtherNet/IP, OPC UA, DNP3.0, BACnet, CNC |
-| Open Platform | Debian 11 / Yocto, Docker-ready, multi-language development |
-| CPU | ARM Cortex-A53 @1.4GHz |
 | Memory / Storage | 1GB DDR4 / 8GB eMMC |
 | Interfaces | 2×FE, 1×RS-232/485 + 1×RS-485, USB2.0 Type-A, Nano-SIM×2, microSD |
+| Cellular Network | LTE Cat.1 / Cat.6 (model-dependent) |
 | Power Input | 9~48V DC (max 6W) |
 | Dimensions (W × D × H) | 145 × 106 × 36 mm (5.71 × 4.17 × 1.42 in) |
 | Protection Rating | IP30 |

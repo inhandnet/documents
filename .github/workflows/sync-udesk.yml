@@ -1,0 +1,63 @@
+name: Sync Udesk Knowledge Base
+
+# documents 仓库 md 文件变更时，自动同步到 Udesk KCS 知识库
+#
+# 需要的 Secrets（Settings → Secrets → Actions）：
+#   UDESK_API_BASE    KCS API 域名
+#   UDESK_APP_ID      KCS 应用 ID（UUID 格式）
+#   UDESK_USER_ID     KCS 用户 ID
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - "docs/zh/**/*.md"
+      - "docs/en/**/*.md"
+  workflow_dispatch:
+    inputs:
+      site:
+        description: '站点（all/zh/en）'
+        type: choice
+        options: ['all', 'zh', 'en']
+        default: 'all'
+
+concurrency:
+  group: sync-udesk-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Sync to Udesk
+        env:
+          UDESK_API_BASE: ${{ secrets.UDESK_API_BASE }}
+          UDESK_APP_ID: ${{ secrets.UDESK_APP_ID }}
+          UDESK_USER_ID: ${{ secrets.UDESK_USER_ID }}
+        run: |
+          SITE_FLAG=""
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            SITE_FLAG="--site ${{ inputs.site }}"
+          fi
+          python auto-import/scripts/sync_udesk.py $SITE_FLAG
+
+      - name: Upload result
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: udesk-sync-result
+          path: sync_result.json
+          retention-days: 7

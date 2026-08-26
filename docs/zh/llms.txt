@@ -570,6 +570,7 @@
 
 ## LoRaWAN Terminals
 
+- [LT312用户手册](LoRaWAN%20Terminals/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/LT312%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C.md): LoRaWAN Terminals 用户手册
 - [LoRaWAN Terminals 规格书 v1.0](LoRaWAN%20Terminals/Datasheets/%E9%80%9A%E7%94%A8/LT312%E8%A7%84%E6%A0%BC%E4%B9%A6_V1.0.md): LoRaWAN Terminals 规格书 v1.0
 
 ## MDT600

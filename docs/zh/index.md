@@ -479,6 +479,14 @@ hide:
     </div>
     <div class="pm-card">
       <div class="pm-card__body">
+        <div class="pm-card__title">LoRaWAN Terminals</div>
+        <ul class="pm-card__links">
+        <li><a href="LoRaWAN%20Terminals/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/LT312%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C.html" title="LT312用户手册">用户手册</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pm-card">
+      <div class="pm-card__body">
         <div class="pm-card__title">MDT600</div>
         <ul class="pm-card__links">
         <li><a href="MDT600/certifications.html" title="MDT600 认证证书">认证证书</a></li>

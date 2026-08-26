@@ -929,6 +929,7 @@
 
 ## LoRaWAN Terminals
 
+- [LT312 User Manual](LoRaWAN%20Terminals/Manuals/User%20manual/LT312_User%20manual.md): LoRaWAN Terminals User manual — This user manual will guide you on how to use this product. Please read this user guide carefully before using the produ…
 - [LoRaWAN Terminals Datasheet v1.0](LoRaWAN%20Terminals/Datasheets/General/LT312_Datasheet_V1.0.md): LoRaWAN Terminals Datasheet v1.0 — Industrial LoRaWAN DTU for robust serial data connectivity
 
 ## MDT600

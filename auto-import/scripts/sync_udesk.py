@@ -60,10 +60,15 @@ def log(msg):
 
 
 def decode_git_path(path):
-    """解码 git 输出的八进制转义路径（如 \\351\\200\\236 → 中文字符）"""
-    def replace_octal(m):
-        return chr(int(m.group(1), 8))
-    return re.sub(r'\\(\d{3})', replace_octal, path)
+    """解码 git 输出的八进制转义路径（如 \\351\\200\\236 → 通用）"""
+    parts = re.split(r'(\\[0-9]{3})', path)
+    result = []
+    for part in parts:
+        if part.startswith('\\') and len(part) == 4:
+            result.append(bytes([int(part[1:], 8)]))
+        else:
+            result.append(part.encode('utf-8'))
+    return b''.join(result).decode('utf-8')
 
 
 # ========== Udesk API ==========

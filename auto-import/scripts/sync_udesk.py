@@ -236,7 +236,7 @@ def get_changed_files(ref_from, ref_to):
         parts = line.split("\t", 1)
         if len(parts) != 2:
             continue
-        status, filepath = parts[0], parts[1]
+        status, filepath = parts[0], parts[1].strip('"')
 
         # 只处理 docs/{zh,en} 下的 md 文件
         if not filepath.startswith("docs/"):

@@ -59,6 +59,13 @@ def log(msg):
     print(f"[SYNC] {msg}", flush=True)
 
 
+def decode_git_path(path):
+    """解码 git 输出的八进制转义路径（如 \\351\\200\\236 → 中文字符）"""
+    def replace_octal(m):
+        return chr(int(m.group(1), 8))
+    return re.sub(r'\\(\d{3})', replace_octal, path)
+
+
 # ========== Udesk API ==========
 
 def get_token():
@@ -236,7 +243,7 @@ def get_changed_files(ref_from, ref_to):
         parts = line.split("\t", 1)
         if len(parts) != 2:
             continue
-        status, filepath = parts[0], parts[1].strip('"')
+        status, filepath = parts[0], decode_git_path(parts[1].strip('"'))
 
         # 只处理 docs/{zh,en} 下的 md 文件
         if not filepath.startswith("docs/"):

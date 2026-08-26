@@ -222,7 +222,10 @@ def fix_md_images(content, md_rel_path, site_key):
 def get_changed_files(ref_from, ref_to):
     """获取变更的 md 文件列表，返回 {zh: {added:[], modified:[], deleted:[]}, en: {...}}"""
     cmd = ["git", "diff", "--name-status", "--diff-filter=ACDMR", ref_from, ref_to]
+    log(f"运行: {' '.join(cmd)}")
+    log(f"工作目录: {REPO_ROOT}")
     result = subprocess.run(cmd, capture_output=True, text=True, check=True, cwd=str(REPO_ROOT))
+    log(f"git diff 输出:\n{result.stdout if result.stdout else '(空)'}")
 
     changes = {"zh": {"added": [], "modified": [], "deleted": []},
                "en": {"added": [], "modified": [], "deleted": []}}
@@ -253,6 +256,7 @@ def get_changed_files(ref_from, ref_to):
             continue
 
         rel_path = "/".join(parts2[2:])  # 产品路径部分
+        log(f"  变更: [{status}] {filepath} -> lang={lang}, rel={rel_path}")
 
         if status in ("A", "M"):
             if status == "A":

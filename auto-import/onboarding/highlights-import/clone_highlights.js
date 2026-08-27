@@ -177,16 +177,15 @@ async function main() {
     console.log('  特性卡片已替换: ' + count + ' 张');
   }
 
-  // 4. 写回 meta_data（必须用 PUT 更新现有产品，POST 会静默失败）
-  //    同时删掉 _elementor_css，强制 Elementor 重新生成样式
-  const newMeta = (newProd.meta_data || [])
-    .filter(m => m.key !== '_elementor_css')
-    .map(m => m.key === '_elementor_data' ? {...m, value: JSON.stringify(d)} : m);
-  const putResult = await req('/wp-json/wc/v3/products/' + newId, {meta_data: newMeta}, 'PUT');
-  if (putResult && putResult.id) {
-    console.log('  meta_data 更新成功 (product id=' + putResult.id + ')');
+  // 4. 写回 Elementor 数据（WC REST API 无法更新 _elementor_data，用自定义接口）
+  const updateResult = await req('/wp-json/inhand-import/v1/update-elementor', {
+    product_id: newId,
+    elementor_data: JSON.stringify(d),
+  }, 'POST');
+  if (updateResult && updateResult.ok) {
+    console.log('  Elementor 数据更新成功');
   } else {
-    console.error('  meta_data 更新可能失败: ' + JSON.stringify(putResult).slice(0, 200));
+    console.error('  Elementor 数据更新失败: ' + JSON.stringify(updateResult).slice(0, 200));
   }
 
   console.log('  完成! 后台编辑: ' + CONFIG.wpUrl + '/wp-admin/post.php?post=' + newId + '&action=elementor');

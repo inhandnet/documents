@@ -1,4 +1,6 @@
 ### OSX ###
+.worktrees/
+
 .DS_Store
 .AppleDouble
 .LSOverride

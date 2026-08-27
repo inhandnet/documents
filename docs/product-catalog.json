@@ -1854,6 +1854,21 @@
       "public": true
     },
     {
+      "id": "XCR624",
+      "kind": "model",
+      "display_names": {
+        "zh": "XCR624"
+      },
+      "aliases": [],
+      "source_folders": [
+        "XCR624"
+      ],
+      "expected_languages": [
+        "zh"
+      ],
+      "public": true
+    },
+    {
       "id": "XINGYUN-MANAGER",
       "kind": "software",
       "display_names": {

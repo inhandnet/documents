@@ -1,0 +1,1874 @@
+{
+  "schema_version": 1,
+  "products": [
+    {
+      "id": "AE510",
+      "kind": "model",
+      "display_names": {
+        "en": "AE510"
+      },
+      "aliases": [],
+      "source_folders": [
+        "AE510"
+      ],
+      "expected_languages": [
+        "en"
+      ],
+      "public": true
+    },
+    {
+      "id": "CPE02",
+      "kind": "model",
+      "display_names": {
+        "en": "CPE02",
+        "zh": "CPE02"
+      },
+      "aliases": [],
+      "source_folders": [
+        "CPE02"
+      ],
+      "expected_languages": [
+        "en",
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "CR202",
+      "kind": "model",
+      "display_names": {
+        "en": "CR202",
+        "zh": "CR202"
+      },
+      "aliases": [],
+      "source_folders": [
+        "CR202"
+      ],
+      "expected_languages": [
+        "en",
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "CR202-Lite",
+      "kind": "model",
+      "display_names": {
+        "en": "CR202-Lite",
+        "zh": "CR202-Lite"
+      },
+      "aliases": [],
+      "source_folders": [
+        "CR202-Lite"
+      ],
+      "expected_languages": [
+        "en",
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "CR202-Pro",
+      "kind": "model",
+      "display_names": {
+        "en": "CR202-Pro",
+        "zh": "CR202-Pro"
+      },
+      "aliases": [],
+      "source_folders": [
+        "CR202-Pro"
+      ],
+      "expected_languages": [
+        "en",
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "CR602",
+      "kind": "model",
+      "display_names": {
+        "en": "CR602",
+        "zh": "CR602"
+      },
+      "aliases": [],
+      "source_folders": [
+        "CR602"
+      ],
+      "expected_languages": [
+        "en",
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "DEVELOP",
+      "kind": "software",
+      "display_names": {
+        "zh": "develop"
+      },
+      "aliases": [
+        "develop"
+      ],
+      "source_folders": [
+        "develop"
+      ],
+      "expected_languages": [
+        "zh"
+      ],
+      "public": false
+    },
+    {
+      "id": "Device-Manager",
+      "kind": "software",
+      "display_names": {
+        "en": "Device-Manager",
+        "zh": "Device-Manager"
+      },
+      "aliases": [
+        "Device Manager"
+      ],
+      "source_folders": [
+        "Device Manager"
+      ],
+      "expected_languages": [
+        "en",
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "DeviceLive",
+      "kind": "software",
+      "display_names": {
+        "en": "DeviceLive",
+        "zh": "DeviceLive"
+      },
+      "aliases": [],
+      "source_folders": [
+        "DeviceLive"
+      ],
+      "expected_languages": [
+        "en",
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "DeviceSupervisor-Agent",
+      "kind": "software",
+      "display_names": {
+        "zh": "DeviceSupervisor-Agent"
+      },
+      "aliases": [
+        "DeviceSupervisor Agent"
+      ],
+      "source_folders": [
+        "DeviceSupervisor Agent"
+      ],
+      "expected_languages": [
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "EAGLE-ENERGY-MANAGEMENT",
+      "kind": "software",
+      "display_names": {
+        "en": "Eagle Energy Management",
+        "zh": "白鹰能源管家"
+      },
+      "aliases": [
+        "Eagle Energy Management",
+        "白鹰能源管家"
+      ],
+      "source_folders": [
+        "Eagle Energy Management",
+        "白鹰能源管家"
+      ],
+      "expected_languages": [
+        "en",
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "EAP600",
+      "kind": "model",
+      "display_names": {
+        "en": "EAP600",
+        "zh": "EAP600"
+      },
+      "aliases": [],
+      "source_folders": [
+        "EAP600"
+      ],
+      "expected_languages": [
+        "en",
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "EC300",
+      "kind": "model",
+      "display_names": {
+        "en": "EC300",
+        "zh": "EC300"
+      },
+      "aliases": [],
+      "source_folders": [
+        "EC300"
+      ],
+      "expected_languages": [
+        "en",
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "EC300-LoRaWAN",
+      "kind": "model",
+      "display_names": {
+        "en": "EC300-LoRaWAN",
+        "zh": "EC300-LoRaWAN"
+      },
+      "aliases": [],
+      "source_folders": [
+        "EC300-LoRaWAN"
+      ],
+      "expected_languages": [
+        "en",
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "EC3000",
+      "kind": "model",
+      "display_names": {
+        "en": "EC3000",
+        "zh": "EC3000"
+      },
+      "aliases": [],
+      "source_folders": [
+        "EC3000"
+      ],
+      "expected_languages": [
+        "en",
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "EC3320",
+      "kind": "model",
+      "display_names": {
+        "en": "EC3320",
+        "zh": "EC3320"
+      },
+      "aliases": [],
+      "source_folders": [
+        "EC3320"
+      ],
+      "expected_languages": [
+        "en",
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "EC3576-C",
+      "kind": "model",
+      "display_names": {
+        "en": "EC3576-C"
+      },
+      "aliases": [],
+      "source_folders": [
+        "EC3576-C"
+      ],
+      "expected_languages": [
+        "en"
+      ],
+      "public": true
+    },
+    {
+      "id": "EC3588-C",
+      "kind": "model",
+      "display_names": {
+        "en": "EC3588-C"
+      },
+      "aliases": [],
+      "source_folders": [
+        "EC3588-C"
+      ],
+      "expected_languages": [
+        "en"
+      ],
+      "public": true
+    },
+    {
+      "id": "EC4600",
+      "kind": "model",
+      "display_names": {
+        "zh": "EC4600"
+      },
+      "aliases": [],
+      "source_folders": [
+        "EC4600"
+      ],
+      "expected_languages": [
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "EC5000",
+      "kind": "model",
+      "display_names": {
+        "en": "EC5000",
+        "zh": "EC5000"
+      },
+      "aliases": [],
+      "source_folders": [
+        "EC5000"
+      ],
+      "expected_languages": [
+        "en",
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "EC940",
+      "kind": "model",
+      "display_names": {
+        "en": "EC940",
+        "zh": "EC940"
+      },
+      "aliases": [],
+      "source_folders": [
+        "EC940"
+      ],
+      "expected_languages": [
+        "en",
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "EC950",
+      "kind": "model",
+      "display_names": {
+        "en": "EC950",
+        "zh": "EC950"
+      },
+      "aliases": [],
+      "source_folders": [
+        "EC950"
+      ],
+      "expected_languages": [
+        "en",
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "EOL-Products",
+      "kind": "software",
+      "display_names": {
+        "en": "EOL Products",
+        "zh": "退市产品"
+      },
+      "aliases": [
+        "EOL Products"
+      ],
+      "source_folders": [
+        "EOL Products"
+      ],
+      "expected_languages": [
+        "en",
+        "zh"
+      ],
+      "public": false
+    },
+    {
+      "id": "ER2000",
+      "kind": "model",
+      "display_names": {
+        "en": "ER2000",
+        "zh": "ER2000"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ER2000"
+      ],
+      "expected_languages": [
+        "en",
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "ER605",
+      "kind": "model",
+      "display_names": {
+        "en": "ER605",
+        "zh": "ER605"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ER605"
+      ],
+      "expected_languages": [
+        "en",
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "ER615",
+      "kind": "model",
+      "display_names": {
+        "en": "ER615",
+        "zh": "ER615"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ER615"
+      ],
+      "expected_languages": [
+        "en",
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "ER615X",
+      "kind": "model",
+      "display_names": {
+        "en": "ER615X"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ER615X"
+      ],
+      "expected_languages": [
+        "en"
+      ],
+      "public": true
+    },
+    {
+      "id": "ER805",
+      "kind": "model",
+      "display_names": {
+        "en": "ER805",
+        "zh": "ER805"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ER805"
+      ],
+      "expected_languages": [
+        "en",
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "ER815",
+      "kind": "model",
+      "display_names": {
+        "en": "ER815",
+        "zh": "ER815"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ER815"
+      ],
+      "expected_languages": [
+        "en",
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "ES220",
+      "kind": "model",
+      "display_names": {
+        "en": "ES220",
+        "zh": "ES220"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ES220"
+      ],
+      "expected_languages": [
+        "en",
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "ES620",
+      "kind": "model",
+      "display_names": {
+        "en": "ES620",
+        "zh": "ES620"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ES620"
+      ],
+      "expected_languages": [
+        "en",
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "FV680",
+      "kind": "model",
+      "display_names": {
+        "en": "FV680"
+      },
+      "aliases": [],
+      "source_folders": [
+        "FV680"
+      ],
+      "expected_languages": [
+        "en"
+      ],
+      "public": true
+    },
+    {
+      "id": "FWA02",
+      "kind": "model",
+      "display_names": {
+        "en": "FWA02",
+        "zh": "FWA02"
+      },
+      "aliases": [],
+      "source_folders": [
+        "FWA02"
+      ],
+      "expected_languages": [
+        "en",
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "FWA12",
+      "kind": "model",
+      "display_names": {
+        "en": "FWA12",
+        "zh": "FWA12"
+      },
+      "aliases": [],
+      "source_folders": [
+        "FWA12"
+      ],
+      "expected_languages": [
+        "en",
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "IG101",
+      "kind": "model",
+      "display_names": {
+        "en": "IG101",
+        "zh": "IG101"
+      },
+      "aliases": [],
+      "source_folders": [
+        "IG101"
+      ],
+      "expected_languages": [
+        "en",
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "IG502",
+      "kind": "model",
+      "display_names": {
+        "en": "IG502",
+        "zh": "IG502"
+      },
+      "aliases": [],
+      "source_folders": [
+        "IG502"
+      ],
+      "expected_languages": [
+        "en",
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "IG502-LITE",
+      "kind": "model",
+      "display_names": {
+        "zh": "IG502-LITE"
+      },
+      "aliases": [],
+      "source_folders": [
+        "IG502-LITE"
+      ],
+      "expected_languages": [
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "IG504",
+      "kind": "model",
+      "display_names": {
+        "zh": "IG504"
+      },
+      "aliases": [],
+      "source_folders": [
+        "IG504"
+      ],
+      "expected_languages": [
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "IG532",
+      "kind": "model",
+      "display_names": {
+        "zh": "IG532"
+      },
+      "aliases": [],
+      "source_folders": [
+        "IG532"
+      ],
+      "expected_languages": [
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "IG902",
+      "kind": "model",
+      "display_names": {
+        "en": "IG902",
+        "zh": "IG902"
+      },
+      "aliases": [],
+      "source_folders": [
+        "IG902"
+      ],
+      "expected_languages": [
+        "en",
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "IG974",
+      "kind": "model",
+      "display_names": {
+        "zh": "IG974"
+      },
+      "aliases": [],
+      "source_folders": [
+        "IG974"
+      ],
+      "expected_languages": [
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "InBOX710",
+      "kind": "model",
+      "display_names": {
+        "en": "InBOX710",
+        "zh": "InBOX710"
+      },
+      "aliases": [
+        "InBOX710 Industrial Computer",
+        "InBOX710 人脸识别安卓工控机"
+      ],
+      "source_folders": [
+        "InBOX710 Industrial Computer",
+        "InBOX710 人脸识别安卓工控机"
+      ],
+      "expected_languages": [
+        "en",
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "InBOX712",
+      "kind": "model",
+      "display_names": {
+        "en": "InBOX712",
+        "zh": "InBOX712"
+      },
+      "aliases": [
+        "InBOX712 Industrial Computer",
+        "InBOX712 人脸识别安卓工控机"
+      ],
+      "source_folders": [
+        "InBOX712 Industrial Computer",
+        "InBOX712 人脸识别安卓工控机"
+      ],
+      "expected_languages": [
+        "en",
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "InBOX732",
+      "kind": "model",
+      "display_names": {
+        "en": "InBOX732",
+        "zh": "InBOX732"
+      },
+      "aliases": [],
+      "source_folders": [
+        "InBOX732"
+      ],
+      "expected_languages": [
+        "en",
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "InCloudManager",
+      "kind": "software",
+      "display_names": {
+        "en": "InCloudManager",
+        "zh": "InCloudManager"
+      },
+      "aliases": [],
+      "source_folders": [
+        "InCloudManager"
+      ],
+      "expected_languages": [
+        "en",
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "InConnect",
+      "kind": "software",
+      "display_names": {
+        "en": "InConnect",
+        "zh": "InConnect"
+      },
+      "aliases": [],
+      "source_folders": [
+        "InConnect"
+      ],
+      "expected_languages": [
+        "en",
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "InConnect-Service",
+      "kind": "software",
+      "display_names": {
+        "en": "InConnect-Service"
+      },
+      "aliases": [
+        "InConnect Service"
+      ],
+      "source_folders": [
+        "InConnect Service"
+      ],
+      "expected_languages": [
+        "en"
+      ],
+      "public": true
+    },
+    {
+      "id": "InDTU311",
+      "kind": "model",
+      "display_names": {
+        "zh": "InDTU311"
+      },
+      "aliases": [],
+      "source_folders": [
+        "InDTU311"
+      ],
+      "expected_languages": [
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "InDTU312",
+      "kind": "model",
+      "display_names": {
+        "zh": "InDTU312"
+      },
+      "aliases": [],
+      "source_folders": [
+        "InDTU312"
+      ],
+      "expected_languages": [
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "InDTU323",
+      "kind": "model",
+      "display_names": {
+        "zh": "InDTU323"
+      },
+      "aliases": [],
+      "source_folders": [
+        "InDTU323"
+      ],
+      "expected_languages": [
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "InDTU951",
+      "kind": "model",
+      "display_names": {
+        "zh": "InDTU951"
+      },
+      "aliases": [],
+      "source_folders": [
+        "InDTU951"
+      ],
+      "expected_languages": [
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "InDTU954C",
+      "kind": "model",
+      "display_names": {
+        "zh": "InDTU954C"
+      },
+      "aliases": [],
+      "source_folders": [
+        "InDTU954C"
+      ],
+      "expected_languages": [
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "InLink",
+      "kind": "software",
+      "display_names": {
+        "en": "InLink",
+        "zh": "InLink"
+      },
+      "aliases": [],
+      "source_folders": [
+        "InLink"
+      ],
+      "expected_languages": [
+        "en",
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "InPAD070S",
+      "kind": "model",
+      "display_names": {
+        "en": "InPAD070S",
+        "zh": "InPAD070S"
+      },
+      "aliases": [],
+      "source_folders": [
+        "InPAD070S"
+      ],
+      "expected_languages": [
+        "en",
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "InPAD101S",
+      "kind": "model",
+      "display_names": {
+        "zh": "InPAD101S"
+      },
+      "aliases": [],
+      "source_folders": [
+        "InPAD101S"
+      ],
+      "expected_languages": [
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "InPAD3101",
+      "kind": "model",
+      "display_names": {
+        "en": "InPAD3101",
+        "zh": "InPAD3101"
+      },
+      "aliases": [],
+      "source_folders": [
+        "InPAD3101"
+      ],
+      "expected_languages": [
+        "en",
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "IR202",
+      "kind": "model",
+      "display_names": {
+        "en": "IR202",
+        "zh": "IR202"
+      },
+      "aliases": [],
+      "source_folders": [
+        "IR202"
+      ],
+      "expected_languages": [
+        "en",
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "IR202-Lite",
+      "kind": "model",
+      "display_names": {
+        "zh": "IR202-Lite"
+      },
+      "aliases": [],
+      "source_folders": [
+        "IR202-Lite"
+      ],
+      "expected_languages": [
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "IR302",
+      "kind": "model",
+      "display_names": {
+        "en": "IR302",
+        "zh": "IR302"
+      },
+      "aliases": [],
+      "source_folders": [
+        "IR302"
+      ],
+      "expected_languages": [
+        "en",
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "IR305",
+      "kind": "model",
+      "display_names": {
+        "en": "IR305",
+        "zh": "IR305"
+      },
+      "aliases": [],
+      "source_folders": [
+        "IR305"
+      ],
+      "expected_languages": [
+        "en",
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "IR315",
+      "kind": "model",
+      "display_names": {
+        "en": "IR315",
+        "zh": "IR315"
+      },
+      "aliases": [],
+      "source_folders": [
+        "IR315"
+      ],
+      "expected_languages": [
+        "en",
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "IR602",
+      "kind": "model",
+      "display_names": {
+        "en": "IR602",
+        "zh": "IR602"
+      },
+      "aliases": [],
+      "source_folders": [
+        "IR602"
+      ],
+      "expected_languages": [
+        "en",
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "IR615-S",
+      "kind": "model",
+      "display_names": {
+        "en": "IR615-S",
+        "zh": "IR615-S"
+      },
+      "aliases": [],
+      "source_folders": [
+        "IR615-S"
+      ],
+      "expected_languages": [
+        "en",
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "IR624",
+      "kind": "model",
+      "display_names": {
+        "en": "IR624",
+        "zh": "IR624"
+      },
+      "aliases": [],
+      "source_folders": [
+        "IR624"
+      ],
+      "expected_languages": [
+        "en",
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "IR900",
+      "kind": "model",
+      "display_names": {
+        "en": "IR900",
+        "zh": "IR900"
+      },
+      "aliases": [],
+      "source_folders": [
+        "IR900"
+      ],
+      "expected_languages": [
+        "en",
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "IR925",
+      "kind": "model",
+      "display_names": {
+        "en": "IR925",
+        "zh": "IR925"
+      },
+      "aliases": [],
+      "source_folders": [
+        "IR925"
+      ],
+      "expected_languages": [
+        "en",
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISE1005D",
+      "kind": "model",
+      "display_names": {
+        "zh": "ISE1005D"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISE1005D"
+      ],
+      "expected_languages": [
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISE1008D",
+      "kind": "model",
+      "display_names": {
+        "zh": "ISE1008D"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISE1008D"
+      ],
+      "expected_languages": [
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISE2003D",
+      "kind": "model",
+      "display_names": {
+        "en": "ISE2003D"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISE2003D"
+      ],
+      "expected_languages": [
+        "en"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISE2005D",
+      "kind": "model",
+      "display_names": {
+        "en": "ISE2005D"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISE2005D"
+      ],
+      "expected_languages": [
+        "en"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISE2008D",
+      "kind": "model",
+      "display_names": {
+        "en": "ISE2008D"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISE2008D"
+      ],
+      "expected_languages": [
+        "en"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISE2016D",
+      "kind": "model",
+      "display_names": {
+        "en": "ISE2016D"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISE2016D"
+      ],
+      "expected_languages": [
+        "en"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISE3018D",
+      "kind": "model",
+      "display_names": {
+        "en": "ISE3018D"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISE3018D"
+      ],
+      "expected_languages": [
+        "en"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISE5005D",
+      "kind": "model",
+      "display_names": {
+        "en": "ISE5005D"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISE5005D"
+      ],
+      "expected_languages": [
+        "en"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISE5005D-S",
+      "kind": "model",
+      "display_names": {
+        "zh": "ISE5005D-S"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISE5005D-S"
+      ],
+      "expected_languages": [
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISE5006D",
+      "kind": "model",
+      "display_names": {
+        "en": "ISE5006D"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISE5006D"
+      ],
+      "expected_languages": [
+        "en"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISE5008D",
+      "kind": "model",
+      "display_names": {
+        "en": "ISE5008D"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISE5008D"
+      ],
+      "expected_languages": [
+        "en"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISE5008D-S",
+      "kind": "model",
+      "display_names": {
+        "zh": "ISE5008D-S"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISE5008D-S"
+      ],
+      "expected_languages": [
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISE5010D",
+      "kind": "model",
+      "display_names": {
+        "en": "ISE5010D"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISE5010D"
+      ],
+      "expected_languages": [
+        "en"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISE5016D",
+      "kind": "model",
+      "display_names": {
+        "zh": "ISE5016D"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISE5016D"
+      ],
+      "expected_languages": [
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISE5306D",
+      "kind": "model",
+      "display_names": {
+        "en": "ISE5306D"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISE5306D"
+      ],
+      "expected_languages": [
+        "en"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISE5310D",
+      "kind": "model",
+      "display_names": {
+        "en": "ISE5310D"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISE5310D"
+      ],
+      "expected_languages": [
+        "en"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISM-MANAGED",
+      "kind": "family",
+      "display_names": {
+        "en": "ISM Managed Switches",
+        "zh": "ISM 网管型交换机"
+      },
+      "aliases": [
+        "ISM managed",
+        "ISM 网管型"
+      ],
+      "source_folders": [
+        "ISM managed",
+        "ISM 网管型"
+      ],
+      "expected_languages": [
+        "en",
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISM3010D",
+      "kind": "model",
+      "display_names": {
+        "zh": "ISM3010D"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISM3010D"
+      ],
+      "expected_languages": [
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISM3018D",
+      "kind": "model",
+      "display_names": {
+        "zh": "ISM3018D"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISM3018D"
+      ],
+      "expected_languages": [
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISM5006D",
+      "kind": "model",
+      "display_names": {
+        "en": "ISM5006D"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISM5006D"
+      ],
+      "expected_languages": [
+        "en"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISM5010D",
+      "kind": "model",
+      "display_names": {
+        "en": "ISM5010D",
+        "zh": "ISM5010D"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISM5010D"
+      ],
+      "expected_languages": [
+        "en",
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISM5012D",
+      "kind": "model",
+      "display_names": {
+        "en": "ISM5012D"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISM5012D"
+      ],
+      "expected_languages": [
+        "en"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISM5020D",
+      "kind": "model",
+      "display_names": {
+        "en": "ISM5020D"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISM5020D"
+      ],
+      "expected_languages": [
+        "en"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISM5026U",
+      "kind": "model",
+      "display_names": {
+        "en": "ISM5026U"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISM5026U"
+      ],
+      "expected_languages": [
+        "en"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISM5026U-P",
+      "kind": "model",
+      "display_names": {
+        "en": "ISM5026U-P"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISM5026U-P"
+      ],
+      "expected_languages": [
+        "en"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISM5306D",
+      "kind": "model",
+      "display_names": {
+        "en": "ISM5306D"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISM5306D"
+      ],
+      "expected_languages": [
+        "en"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISM5310D",
+      "kind": "model",
+      "display_names": {
+        "en": "ISM5310D"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISM5310D"
+      ],
+      "expected_languages": [
+        "en"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISM7010D",
+      "kind": "model",
+      "display_names": {
+        "zh": "ISM7010D"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISM7010D"
+      ],
+      "expected_languages": [
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISM7012D",
+      "kind": "model",
+      "display_names": {
+        "en": "ISM7012D"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISM7012D"
+      ],
+      "expected_languages": [
+        "en"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISM7028U",
+      "kind": "model",
+      "display_names": {
+        "en": "ISM7028U"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISM7028U"
+      ],
+      "expected_languages": [
+        "en"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISM7028U-P",
+      "kind": "model",
+      "display_names": {
+        "en": "ISM7028U-P"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISM7028U-P"
+      ],
+      "expected_languages": [
+        "en"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISM7312D",
+      "kind": "model",
+      "display_names": {
+        "en": "ISM7312D"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISM7312D"
+      ],
+      "expected_languages": [
+        "en"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISM8028U",
+      "kind": "model",
+      "display_names": {
+        "zh": "ISM8028U"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISM8028U"
+      ],
+      "expected_languages": [
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "LoRaWAN-Terminals",
+      "kind": "family",
+      "display_names": {
+        "en": "LoRaWAN-Terminals",
+        "zh": "LoRaWAN-Terminals"
+      },
+      "aliases": [
+        "LoRaWAN Terminals"
+      ],
+      "source_folders": [
+        "LoRaWAN Terminals"
+      ],
+      "expected_languages": [
+        "en",
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "MDT600",
+      "kind": "model",
+      "display_names": {
+        "en": "MDT600",
+        "zh": "MDT600"
+      },
+      "aliases": [],
+      "source_folders": [
+        "MDT600"
+      ],
+      "expected_languages": [
+        "en",
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "MO62A",
+      "kind": "model",
+      "display_names": {
+        "en": "MO62A",
+        "zh": "MO62A"
+      },
+      "aliases": [
+        "Mo 62A"
+      ],
+      "source_folders": [
+        "Mo 62A"
+      ],
+      "expected_languages": [
+        "en",
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "MO68A",
+      "kind": "model",
+      "display_names": {
+        "en": "MO68A",
+        "zh": "MO68A"
+      },
+      "aliases": [
+        "Mo 68A"
+      ],
+      "source_folders": [
+        "Mo 68A"
+      ],
+      "expected_languages": [
+        "en",
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "ODU12",
+      "kind": "model",
+      "display_names": {
+        "en": "ODU12",
+        "zh": "ODU12"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ODU12"
+      ],
+      "expected_languages": [
+        "en",
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "ODU2002",
+      "kind": "model",
+      "display_names": {
+        "en": "ODU2002",
+        "zh": "ODU2002"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ODU2002"
+      ],
+      "expected_languages": [
+        "en",
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "ODU302",
+      "kind": "model",
+      "display_names": {
+        "en": "ODU302",
+        "zh": "ODU302"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ODU302"
+      ],
+      "expected_languages": [
+        "en",
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "VG710",
+      "kind": "model",
+      "display_names": {
+        "en": "VG710",
+        "zh": "VG710"
+      },
+      "aliases": [],
+      "source_folders": [
+        "VG710"
+      ],
+      "expected_languages": [
+        "en",
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "VG814",
+      "kind": "model",
+      "display_names": {
+        "en": "VG814",
+        "zh": "VG814"
+      },
+      "aliases": [
+        "VG814-Rail",
+        "VG814-Road"
+      ],
+      "source_folders": [
+        "VG814"
+      ],
+      "expected_languages": [
+        "en",
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "VR624",
+      "kind": "model",
+      "display_names": {
+        "en": "VR624",
+        "zh": "VR624"
+      },
+      "aliases": [],
+      "source_folders": [
+        "VR624"
+      ],
+      "expected_languages": [
+        "en",
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "VT200",
+      "kind": "model",
+      "display_names": {
+        "en": "VT200",
+        "zh": "VT200"
+      },
+      "aliases": [],
+      "source_folders": [
+        "VT200"
+      ],
+      "expected_languages": [
+        "en",
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "VT300",
+      "kind": "model",
+      "display_names": {
+        "en": "VT300",
+        "zh": "VT300"
+      },
+      "aliases": [],
+      "source_folders": [
+        "VT300"
+      ],
+      "expected_languages": [
+        "en",
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "VT310",
+      "kind": "model",
+      "display_names": {
+        "en": "VT310",
+        "zh": "VT310"
+      },
+      "aliases": [],
+      "source_folders": [
+        "VT310"
+      ],
+      "expected_languages": [
+        "en",
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "VT320",
+      "kind": "model",
+      "display_names": {
+        "en": "VT320"
+      },
+      "aliases": [],
+      "source_folders": [
+        "VT320"
+      ],
+      "expected_languages": [
+        "en"
+      ],
+      "public": true
+    },
+    {
+      "id": "XINGYUN-MANAGER",
+      "kind": "software",
+      "display_names": {
+        "zh": "小星云管家"
+      },
+      "aliases": [
+        "小星云管家"
+      ],
+      "source_folders": [
+        "小星云管家"
+      ],
+      "expected_languages": [
+        "zh"
+      ],
+      "public": true
+    }
+  ]
+}

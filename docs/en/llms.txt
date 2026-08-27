@@ -611,7 +611,7 @@
   - [Scenario 4: DM Cloud Platform Access](IR302/Manuals/User%20manual/IR302_User%20manual_V1.0.md#scenario-4-dm-cloud-platform-access)
   - [4.1 System](IR302/Manuals/User%20manual/IR302_User%20manual_V1.0.md#41-system)
   - [4.2 Network](IR302/Manuals/User%20manual/IR302_User%20manual_V1.0.md#42-network)
-- [IR302 Datasheet v1.1](IR302/Datasheets/General/IR302_Datasheet_V1.1.md): IR302 Datasheet v1.1 — Compact Industrial Cellular Router for IoT
+- [IR302 Datasheet v1.2](IR302/Datasheets/General/IR302_Datasheet_V1.2.md): IR302 Datasheet v1.2 — Compact Industrial Cellular Router for IoT
 - [IR302 Certifications](IR302/certifications.md): IR302 certification list (ANATEL, CB, CE, E-Mark, ECER118, EN18031, FCC, IC, ICASA, IEC62443, IFETEL, MIC_JATE, NOM, NRCS, PTCRB, RCM, UKCA, UL) with links to the original certificate files
 - [IR302 Drawings](IR302/drawings.md): IR302 mechanical drawings (2D, 3D) with links to the original drawing files
 - [Always-Online Connectivity Configuration Guide](IR302/Use%20Cases/Always-Online%20Connectivity%20Solution/Always-Online%20Connectivity%20Configuration%20Guide.md): IR302 Always-Online Connectivity Solution
@@ -680,7 +680,7 @@
 
 ## IR602
 
-- [IR602 Datasheet v1.1](IR602/Datasheets/General/IR602_Datasheet_V1.1.md): IR602 Datasheet v1.1 — Lightweight 5G Connectivity, Build Industrial Digital Foundation
+- [IR602 Datasheet v1.2](IR602/Datasheets/General/IR602_Datasheet_V1.2.md): IR602 Datasheet v1.2 — Lightweight 5G Connectivity, Build Industrial Digital Foundation
 
 ## IR615-S
 

@@ -525,7 +525,7 @@ hide:
       <div class="pm-card__body">
         <div class="pm-card__title">ODU302</div>
         <ul class="pm-card__links">
-        <li><a href="ODU302/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/ODU302%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0_%E4%B8%AD%E6%96%87.html" title="北京映翰通户外4G蜂窝路由器 ODU302 产品用户手册">用户手册 V1.0</a></li>
+        <li><a href="ODU302/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/ODU302%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C.html" title="北京映翰通户外4G蜂窝路由器 ODU302 产品用户手册">用户手册</a></li>
         </ul>
       </div>
     </div>

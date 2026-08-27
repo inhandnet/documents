@@ -31,24 +31,25 @@
 **EC312 is an industrial-grade LoRaWAN gateway designed for large-scale LPWAN deployments with secure, reliable, and cloud-manageable connectivity.**
 
 **Key features:**
+- **Open edge platform:** Debian 11 + Docker + DeviceLive remote management
 - **High-capacity LoRaWAN:** Semtech SX1302, up to 2,000 node access
 - **Wide coverage:** Up to 15 km LOS / 2 km NLOS (deployment dependent)
 - **Reliable communications:** Ethernet/cellular/Wi-Fi backup with dual-SIM failover
 - **Security architecture:** Secure Boot, TPM 2.0, TrustZone, firewall, VPN
-- **Open edge platform:** Debian 11 + Docker + DeviceLive remote management
+
 
 ## <span style="color: green;">Core Technical Specifications</span>
 
 | Technical Indicator | Specification |
 |------|---------------|
+| Open Platform | Debian 11 + Docker, cloud integration for AWS/Azure/AliCloud |
 | LoRaWAN Capability | SX1302, 8-channel half-duplex, up to 2,000 nodes |
-| Cellular Access | LTE Cat.1, APN/VPDN, CHAP/PAP |
+| Device Management | Web/Telnet/SSH, FOTA/DFOTA, local/remote logs, DeviceLive remote operations |
 | Network Features | ARP/Ethernet, static IP/DHCP, ICMP, DNS, TCP/UDP, static routing |
 | Security | Multi-level user roles, firewall, OpenVPN, IPsec VPN |
-| Open Platform | Debian 11 + Docker, cloud integration for AWS/Azure/AliCloud |
-| Device Management | Web/Telnet/SSH, FOTA/DFOTA, local/remote logs, DeviceLive remote operations |
 | Dimensions (W x D x H) | 145 × 106 × 36 mm (5.71 × 4.17 × 1.42 in) |
 | Weight | 339 g (0.75 lb) |
+| Cellular Access | LTE Cat.1, APN/VPDN, CHAP/PAP |
 | Interfaces | 2xFE, 1xRS-232/485 + 1xRS-485, USB2.0 Type-A, Nano-SIM x2 |
 | Power Input | 9 to 48 V DC |
 | Operating Temperature | -20 °C ~ 70 °C (-4 °F ~ 158 °F) |

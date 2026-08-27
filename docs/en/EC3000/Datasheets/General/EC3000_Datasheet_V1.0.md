@@ -41,16 +41,16 @@
 
 | Technical Indicator | Specification |
 |------|---------------|
-| Cellular Network | 5G NR / 4G Cat.6 (model-dependent) |
-| Network Features | Dual-SIM backup, multi-level link detection, auto-redial |
-| Security (TPM2.0 Optional) | Secure Boot, TPM2.0 |
-| Cloud Management | DeviceLive, HTTP/HTTPS/SSH remote management |
-| Data Acquisition | Modbus RTU/TCP, EtherNet/IP, OPC UA, DNP3.0, BACnet, CNC |
 | Open Platform | Linux with edge app/container management |
 | CPU | 4×Cortex-A76 + 4×Cortex-A55, up to 2.4GHz |
 | GPU | Mali-G610 MC4 |
 | NPU | Up to 6 TOPS (INT8), Hailo expansion up to 26 TOPS |
 | Memory / Storage | 8GB / 64GB eMMC |
+| Data Acquisition | Modbus RTU/TCP, EtherNet/IP, OPC UA, DNP3.0, BACnet, CNC |
+| Cellular Network | 5G NR / 4G Cat.6 (model-dependent) |
+| Network Features | Dual-SIM backup, multi-level link detection, auto-redial |
+| Security (TPM2.0 Optional) | Secure Boot, TPM2.0 |
+| Cloud Management | DeviceLive, HTTP/HTTPS/SSH remote management |
 | Interfaces | 3×GE, 2×RS-232 + 2×RS-485, CAN, DI/DO, USB3.0, HDMI, MIC/SPK |
 | Power Input | 9~36V DC |
 

@@ -41,15 +41,15 @@
 
 | Technical Indicator | Specification |
 |------|---------------|
-| Cellular Network | 5G SA/NSA or LTE Cat.4/Cat.6 (model-dependent) |
-| Network Features | APN/VPDN, CHAP/PAP, ARP/Ethernet, static IP/DHCP |
-| Security (TPM2.0 Optional) | Secure Boot, TPM2.0, firewall, VPN |
-| Cloud Management | DeviceLive, HTTP/HTTPS/SSH remote management |
-| Data Acquisition | Modbus RTU/TCP, EtherNet/IP, OPC UA, DNP3.0, BACnet, CNC |
 | Open Platform | Yocto/Linux and Debian 10, Debian package manager |
 | CPU/GPU | Quad-core Cortex-A55@2.0GHz / Mali-G52 2EE |
 | RAM/Storage | 4GB / 16GB eMMC |
+| Data Acquisition | Modbus RTU/TCP, EtherNet/IP, OPC UA, DNP3.0, BACnet, CNC |
 | Interfaces | 2×GE, 2×RS-232/485/422, USB2.0, HDMI2.0, mSATA, microSD |
+| Security (TPM2.0 Optional) | Secure Boot, TPM2.0, firewall, VPN |
+| Cloud Management | DeviceLive, HTTP/HTTPS/SSH remote management |
+| Cellular Network | 5G SA/NSA or LTE Cat.4/Cat.6 (model-dependent) |
+| Network Features | APN/VPDN, CHAP/PAP, ARP/Ethernet, static IP/DHCP |
 | Power Input | DC 12~48V (8W) |
 | Dimensions (W × D × H) | 47.3 × 162.7 × 148.3 mm (1.86 × 6.41 × 5.84 in) |
 | Protection Rating | IP30 |

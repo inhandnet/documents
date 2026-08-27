@@ -41,15 +41,15 @@
 
 | Technical Indicator | Specification |
 |------|---------------|
-| Cellular Network | LTE Cat.4 / 5G (model-dependent) |
-| Network Features | APN/VPDN, CHAP/PAP, ARP/Ethernet, static IP/DHCP |
-| Security | Secure Boot, TPM2.0, TrustZone, firewall, VPN |
-| Cloud Management | DeviceLive, HTTP/HTTPS/SSH remote management |
-| Data Acquisition | Modbus RTU/TCP, EtherNet/IP, OPC UA, DNP3.0, BACnet, CNC |
 | Open Platform | Yocto/Linux with Debian 11 core root filesystem |
 | CPU/GPU | Quad-core Cortex-A55 @ 2.0GHz / Mali-G52 2EE |
 | NPU | RKNN 1.0 TOPS (up to 26 TOPS with Hailo-8) |
 | Memory/Storage | 4GB / 16GB eMMC |
+| Data Acquisition | Modbus RTU/TCP, EtherNet/IP, OPC UA, DNP3.0, BACnet, CNC |
+| Cellular Network | LTE Cat.4 / 5G (model-dependent) |
+| Network Features | APN/VPDN, CHAP/PAP, ARP/Ethernet, static IP/DHCP |
+| Security | Secure Boot, TPM2.0, TrustZone, firewall, VPN |
+| Cloud Management | DeviceLive, HTTP/HTTPS/SSH remote management |
 | Interfaces | 4×GE, 4×RS-232/485/422 + 8×RS-485, CAN, DI/DO, USB, HDMI, mSATA |
 | Power Input | DC 12~48V (4W typical / 8W max) |
 | Dimensions (W × D × H) | 203 × 122 × 49 mm (7.99 × 4.8 × 1.93 in) |

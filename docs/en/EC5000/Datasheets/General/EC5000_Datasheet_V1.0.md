@@ -41,16 +41,16 @@
 
 | Technical Indicator | Specification |
 |------|---------------|
-| Cellular Network | 5G NR / LTE Cat.6 (model-dependent) |
-| Network Features | Dual-SIM backup, multi-level link detection, auto-redial |
-| Security | TPM2.0, Secure Boot |
-| Cloud Management | DeviceLive cloud parameter, container, app, and firmware lifecycle management |
-| Data Acquisition | Modbus RTU/TCP, EtherNet/IP, OPC UA, DNP3.0, IEC 61850-MMS, BACnet, CNC |
 | Open Platform | Linux (JetPack 5.1 and above) |
 | AI Module | Jetson Orin Nano 8GB / Orin NX 16GB |
 | AI Performance | Up to 40 TOPS (EC5350) / 100 TOPS (EC5550) |
-| Interfaces | 2×GE, 2×RS-232/485/422, DI/DO, CAN FD, USB3.2, HDMI, audio, GMSL2 |
+| Data Acquisition | Modbus RTU/TCP, EtherNet/IP, OPC UA, DNP3.0, IEC 61850-MMS, BACnet, CNC |
 | Storage | Built-in 128GB NVMe, microSD support |
+| Security | TPM2.0, Secure Boot |
+| Cloud Management | DeviceLive cloud parameter, container, app, and firmware lifecycle management |
+| Interfaces | 2×GE, 2×RS-232/485/422, DI/DO, CAN FD, USB3.2, HDMI, audio, GMSL2 |
+| Cellular Network | 5G NR / LTE Cat.6 (model-dependent) |
+| Network Features | Dual-SIM backup, multi-level link detection, auto-redial |
 | Power Input | 9~36V DC, polarity reversal protection |
 | Protection Rating | IP30 |
 

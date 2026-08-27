@@ -333,15 +333,15 @@ IR302 - [4G Module] - [Wi-Fi] - [IO/S] - [L]
 
 | Field | Code | Description |
 |-------|------|-------------|
-| 4G Module | LQ28 | China, LTE CAT4<br>FDD: B1/B3/B5/B8<br>TDD: B34/B38/B39/B40/B41<br>WCDMA: B1/B8<br>TD-SCDMA: B34/B39<br>EVDO/CDMA: BC0<br>GSM: B3/B8 |
-| | FQ58 | Europe/APAC/Australia, LTE CAT4<br>FDD: B1/B3/B5/B8<br>TDD: B34/B38/B39/B40/B41<br>WCDMA: B1/B5/B8<br>GSM: B3/B8 |
-| | FQ53 | Europe/Middle East/Africa, LTE CAT1<br>FDD: B1/B3/B7/B8/B20/B28A<br>WCDMA: B1/B8<br>GSM: B3/B8 |
-| | FQ38 | North America, LTE CAT4<br>FDD: B1/B3/B5/B7/B8/B20/B28<br>TDD: B38/B40/B41<br>WCDMA: B1/B5/B8<br>GSM: B3/B8 |
-| | FQ33 | North America, LTE CAT1<br>FDD: B1/B3/B7/B8/B20/B28<br>WCDMA: B1/B8<br>GSM: B3/B8 |
-| | FQ78 | Australia/Latin America, LTE CAT4<br>FDD: B2/B4/B5/B12/B13/B14/B66/B71<br>WCDMA: B2/B4/B5 |
-| | FQ88 | Japan, LTE CAT4<br>FDD: B2/B4/B5/B12/B13/B25/B26<br>WCDMA: B2/B4/B5 |
+| 4G Module | LQ28 | China, LTE CAT4<br>FDD: B1/B3/B5/B8<br/>TDD: B34/B38/B39/B40/B41<br/>WCDMA: B1/B5/B8<br/>GSM/EDGE: B3/B8 |
+| | FQ58 | Europe/APAC, LTE CAT4<br>FDD: B1/B3/B7/B8/B20/B28A<br/>WCDMA: B1/B8<br/>GSM: B3/B8 |
+| | FQ58-L | Europe/APAC/Australia, LTE CAT4<br/>FDD: B1/B3/B5/B7/B8/B20/B28<br/>TDD: B38/B40/B41<br/>WCDMA: B1/B5/B8 <br/>GSM/EDGE: B3/B8 |
+| | FQ53 | Europe/Middle East/Africa, LTE CAT1<br>FDD: B1/B3/B7/B8/B20/B28<br/>WCDMA: B1/B8<br/>GSM: B3/B8 |
+| | FQ38 | North America, LTE CAT4<br>FDD: B2/B4/B5/B12/B13/B14/B66/B71<br/>WCDMA: B2/B4/B5 |
+| | FQ33 | North America, LTE CAT1<br>FDD: B2/B4/B5/B12/B13/B25/B26<br/>WCDMA: B2/B4/B5 |
+| | FQ88 | Japan, LTE CAT4<br>FDD: B1/B3/B8/B18/B19/B26<br/>TDD: B41<br/>WCDMA: B1/B6/B8/B19 |
 | | EN00 | No cellular module (Ethernet + Wi-Fi only) |
-| | FQ68 | Latin America, LTE CAT4<br>FDD: B1/B2/B3/B4/B5/B7/B8/B28<br>TDD: B40<br>WCDMA: B1/B2/B5/B8<br>GSM: B2/B3/B5/B8 |
+| | FQ68 | Latin America, LTE CAT4<br>FDD: B1/B2/B3/B4/B5/B7/B8/B28/B66<br/>TDD: B40<br/>WCDMA: B1/B2/B4/B5/B8<br/>GSM: B2/B3/B5/B8 |
 | Wi-Fi | WLAN | Supports 802.11 b/g/n Wi-Fi |
 | | (blank) | No Wi-Fi function (omitted) |
 | Serial/IO | S | 1×RS232 |
@@ -376,10 +376,6 @@ IR302 - [4G Module] - [Wi-Fi] - [IO/S] - [L]
 | IR302-FQ33-WLAN-IO | ✓ | ✓ | 2×IO | North America (LTE CAT1) |
 | IR302-FQ33-S | ✓ | — | 1×RS232 | North America (LTE CAT1), no Wi-Fi |
 | IR302-FQ33-IO | ✓ | — | 2×IO | North America (LTE CAT1), no Wi-Fi |
-| IR302-FQ78-WLAN-S | ✓ | ✓ | 1×RS232 | Australia/Latin America (LTE CAT4) |
-| IR302-FQ78-WLAN-IO | ✓ | ✓ | 2×IO | Australia/Latin America (LTE CAT4) |
-| IR302-FQ78-S | ✓ | — | 1×RS232 | Australia/Latin America (LTE CAT4), no Wi-Fi |
-| IR302-FQ78-IO | ✓ | — | 2×IO | Australia/Latin America (LTE CAT4), no Wi-Fi |
 | IR302-FQ88-WLAN-S | ✓ | ✓ | 1×RS232 | Japan (LTE CAT4) |
 | IR302-FQ88-S | ✓ | — | 1×RS232 | Japan (LTE CAT4), no Wi-Fi |
 | IR302-EN00-WLAN | — | ✓ | — | No cellular module, Ethernet + Wi-Fi only |

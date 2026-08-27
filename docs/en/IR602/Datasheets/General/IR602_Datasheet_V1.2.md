@@ -1,29 +1,25 @@
-<div style="width: 100%; height: 279mm; background-image: url('images/cover_bg.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
-  <div style="height: 100%; display: flex; flex-direction: column;">
-    <div style="flex: 0 0 75%; display: flex; flex-direction: column;">
-      <div style="padding: 40px;">
-        <img src="images/logo.svg" alt="logo" style="width: 35%;" />
-      </div>
-      <div style="text-align: center; margin-top: auto; margin-bottom: 60px; padding: 0 40px;">
-        <div style="font-size: 28px; font-weight: bold; color: #000;">
-          Lightweight 5G Connectivity, Build Industrial Digital Foundation
-        </div>
-      </div>
+<div style="width: 100%;height: 100%;background: url(images/IR602.jpg); background-size: 100% 100%;">
+  <div style="height:82%;">
+    <div style="width:35%; padding: 40px 40px">
+      <img src="images/logo.png" alt="logo" />
     </div>
-    <div style="flex: 1; padding-left: 40px; padding-bottom: 40px;">
-      <div style="font-size: 40px; font-weight: bold; color: #000; margin-bottom: 30px;">
-        IR602 5G RedCap Industrial Router
+    <div style="font-size: 28px; font-weight: bold; color:#000;text-align: center; margin-bottom: 60px;">
+      Lightweight 5G Connectivity, Build Industrial Digital Foundation
+    </div>
+  </div>
+  <div style="padding-left: 40px;">
+    <div style="font-size: 34px; font-weight: bold; color:#000;margin-bottom: 24px;">
+      IR602 Industrial Router
+    </div>
+    <div style="text-align: center;">
+      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 16px;">
+        <div style="width: 200px;background-color: #4CAF50; color: white; padding: 8px 8px; border-radius: 6px; font-size: 18px;">· 5G RedCap</div>
+        <div style="width: 200px;background-color: #4CAF50; color: white; padding: 8px 8px; border-radius: 6px; font-size: 18px;">· Wi-Fi 6</div>
       </div>
-      <div style="text-align: center;">
-        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 16px;">
-          <div style="width: 200px; background-color: #4CAF50; color: white; padding: 8px; border-radius: 6px; font-size: 18px;">· 5G RedCap</div>
-          <div style="width: 200px; background-color: #4CAF50; color: white; padding: 8px; border-radius: 6px; font-size: 18px;">· Wi-Fi 6</div>
-        </div>
-        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; margin-top: 16px;">
-          <div style="width: 200px; background-color: #4CAF50; color: white; padding: 8px; border-radius: 6px; font-size: 18px;">· 2.5GbE</div>
-          <div style="width: 200px; background-color: #4CAF50; color: white; padding: 8px; border-radius: 6px; font-size: 18px;">· Multi-Protocol VPN</div>
-          <div style="width: 200px; background-color: #4CAF50; color: white; padding: 8px; border-radius: 6px; font-size: 18px;">· Cloud Management</div>
-        </div>
+      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; margin-top: 16px;">
+        <div style="width: 200px;background-color: #4CAF50; color: white; padding: 8px 8px; border-radius: 6px; font-size: 18px;">· 2.5GbE</div>
+        <div style="width: 200px;background-color: #4CAF50; color: white; padding: 8px 8px; border-radius: 6px; font-size: 18px;">· Multi-Protocol VPN</div>
+        <div style="width: 200px;background-color: #4CAF50; color: white; padding: 8px 8px; border-radius: 6px; font-size: 18px;">· Cloud Management</div>
       </div>
     </div>
   </div>
@@ -305,11 +301,11 @@ The IR602 integrates the DeviceLive cloud management platform, providing full de
 
 ## <span style="color: #3eb044;">10.1 Product Models</span>
 
-| Model | Cellular Standard | Region | Frequency Bands | Wi-Fi | Application |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **IR602-GLRC-WLAN** | 5G RedCap | Global | 5G NR: n1/2/3/5/7/8/12/13/14/18/20/25/26/28/30/38/40/41/48/66/70/71/77/78/79<br/>LTE-FDD: B1/2/3/4/5/7/8/12/13/14/17/18/19/20/25/26/28/30/66/70/71<br/>LTE-TDD: B34/38/39/40/41/42/43/48 | AX3000 | Multi-national deployment requiring global band coverage |
-| **IR602-CNRC-WLAN** | 5G RedCap | China | 5G NR: n1/3/5/8/28/40/41/78/79<br/>LTE-FDD: B1/3/5/8<br/>LTE-TDD: B34/38/39/40/41 | AX3000 | China domestic use, ideal 5G transition solution |
-| **IR602-EN00-WLAN** | None (Wired only) | Global | — | AX3000 | Pure wired network scenarios |
+| Model | Region | Frequency Bands | Wi-Fi |
+| :--- | :--- | :--- | :--- |
+| **IR602-GLRC-WLAN** | Global | 5G NR: n1/2/3/5/7/8/12/13/14/18/20/25/26/28/30/38/40/41/48/66/70/71/77/78/79<br/>LTE-FDD: B1/2/3/4/5/7/8/12/13/14/17/18/19/20/25/26/28/30/66/70/71<br/>LTE-TDD: B34/38/39/40/41/42/43/48 | AX3000 |
+| **IR602-CNRC-WLAN** | China | 5G NR: n1/3/5/8/28/40/41/78/79<br/>LTE-FDD: B1/3/5/8<br/>LTE-TDD: B34/38/39/40/41 | AX3000 |
+| **IR602-EN00-WLAN** | Global | — | AX3000 |
 
 ## <span style="color: #3eb044;">10.2 Package Contents</span>
 
@@ -318,9 +314,7 @@ The IR602 integrates the DeviceLive cloud management platform, providing full de
 - Cellular antenna (SMA) &times; 2
 - Wi-Fi antenna (SMA) &times; 2
 - DC power adapter &times; 1
-- 1 m RJ45 Ethernet cable &times; 1
-- 4-pin industrial terminal block (pre-installed) &times; 1
-- Warranty card &times; 1 (China)
+- RJ45 Ethernet cable &times; 1
 
 **Optional Accessories**
 - DIN rail mounting kit
@@ -362,6 +356,7 @@ The IR602 integrates the DeviceLive cloud management platform, providing full de
 - PTCRB
 - IC
 - RoHS
+- REACH
 - Verizon
 - AT&T
 - T-Mobile

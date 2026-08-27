@@ -450,7 +450,7 @@ The CR602 is equipped with InCloud Manager cloud management platform for full li
 | ----------------- | -------------- | --------------------- |
 | **Mandatory** | CE（pending） | FCC / IC / PTCRB |
 | **Environmental** | RoHS / REACH | RoHS / REACH |
-| **Carrier** |  | Verizon / AT&T / T-Mobile |
+| **Carrier** |  | Verizon / AT&T / T-Mobile/FirstNet |
 
 
 # <span style="color: green;">13. Contact Us</span>

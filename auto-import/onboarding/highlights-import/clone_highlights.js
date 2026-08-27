@@ -178,8 +178,16 @@ async function main() {
   }
 
   // 4. 写回 meta_data（必须用 PUT 更新现有产品，POST 会静默失败）
-  const newMeta = (newProd.meta_data || []).map(m => m.key === '_elementor_data' ? {...m, value: JSON.stringify(d)} : m);
-  await req('/wp-json/wc/v3/products/' + newId, {meta_data: newMeta}, 'PUT');
+  //    同时删掉 _elementor_css，强制 Elementor 重新生成样式
+  const newMeta = (newProd.meta_data || [])
+    .filter(m => m.key !== '_elementor_css')
+    .map(m => m.key === '_elementor_data' ? {...m, value: JSON.stringify(d)} : m);
+  const putResult = await req('/wp-json/wc/v3/products/' + newId, {meta_data: newMeta}, 'PUT');
+  if (putResult && putResult.id) {
+    console.log('  meta_data 更新成功 (product id=' + putResult.id + ')');
+  } else {
+    console.error('  meta_data 更新可能失败: ' + JSON.stringify(putResult).slice(0, 200));
+  }
 
   console.log('  完成! 后台编辑: ' + CONFIG.wpUrl + '/wp-admin/post.php?post=' + newId + '&action=elementor');
 }

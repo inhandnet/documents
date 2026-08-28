@@ -156,38 +156,64 @@ def update_product_attributes(wp_url, username, app_password, product_id, attrib
     product = api_get(product_url, headers)
 
     existing_meta = product.get('meta_data', [])
-    stale_meta = [m for m in existing_meta if str(m.get('key', '')).startswith('_attr_desc_')]
-    keep_meta = [m for m in existing_meta if not str(m.get('key', '')).startswith('_attr_desc_')]
-    print(f'  发现 {len(stale_meta)} 个旧的 _attr_desc_ 条目需要清理')
+    stale_meta = [m for m in existing_meta if str(m.get('key', '')).startswith('_attr_desc_') or str(m.get('key', '')).startswith('_attr_term_order_')]
+    keep_meta = [m for m in existing_meta if not str(m.get('key', '')).startswith('_attr_desc_') and not str(m.get('key', '')).startswith('_attr_term_order_')]
+    print(f'  发现 {len(stale_meta)} 个旧的 _attr_desc_/_attr_term_order_ 条目需要清理')
 
     new_attr_desc_meta = []
+    term_order_meta = []
 
     # 2. 处理每个属性
     for attr in attributes:
         option_values = attr.get('optionValues', {})
+        options = attr.get('options', [])
         if not option_values:
             continue
 
         attr_id = get_or_create_attribute(wp_url, auth_header, attr['slug'], attr['name'])
         attr['id'] = attr_id
 
-        for option_name, value in option_values.items():
+        # 按 options 数组顺序处理，收集 term_id 顺序
+        term_order = []
+        processed = set()
+        for option_name in options:
             term_id = get_or_create_term(wp_url, auth_header, attr_id, option_name)
-            meta_key = f"_attr_desc_pa_{attr['slug']}_{term_id}"
-            new_attr_desc_meta.append({'key': meta_key, 'value': value})
+            term_order.append(term_id)
+            processed.add(option_name)
 
-    # 3. 更新 meta_data
+            value = option_values.get(option_name, '')
+            if value:
+                meta_key = f"_attr_desc_pa_{attr['slug']}_{term_id}"
+                new_attr_desc_meta.append({'key': meta_key, 'value': value})
+
+        # optionValues 里有但 options 里没有的，追加到末尾
+        for option_name, value in option_values.items():
+            if option_name not in processed:
+                term_id = get_or_create_term(wp_url, auth_header, attr_id, option_name)
+                term_order.append(term_id)
+                if value:
+                    meta_key = f"_attr_desc_pa_{attr['slug']}_{term_id}"
+                    new_attr_desc_meta.append({'key': meta_key, 'value': value})
+
+        # 记录顺序 meta（JSON 字符串格式，前台 json_decode 读取）
+        order_key = f"_attr_term_order_pa_{attr['slug']}"
+        term_order_meta.append({'key': order_key, 'value': json.dumps(term_order)})
+
+    print(f'  收集到 {len(term_order_meta)} 个属性的顺序记录')
+
+    # 3. 更新 meta_data（描述 + 顺序）
     meta_body = {
         'meta_data': (
             [{'id': m['id']} for m in stale_meta if m.get('id')] +
             [{'id': m.get('id'), 'key': m['key'], 'value': m['value']} for m in keep_meta] +
-            new_attr_desc_meta
+            new_attr_desc_meta +
+            term_order_meta
         )
     }
 
     meta_result = api_put(product_url, headers, meta_body)
     attr_desc_after = [m for m in meta_result.get('meta_data', []) if str(m.get('key', '')).startswith('_attr_desc_')]
-    print(f'  Meta 更新: 删除 {len(stale_meta)} 个, 新建 {len(new_attr_desc_meta)} 个, 现有 {len(attr_desc_after)} 个 _attr_desc_')
+    print(f'  Meta 更新: 删除 {len(stale_meta)} 个, 新建 {len(new_attr_desc_meta) + len(term_order_meta)} 个, 现有 {len(attr_desc_after)} 个 _attr_desc_')
 
     # 4. 更新 attributes
     attr_body = {

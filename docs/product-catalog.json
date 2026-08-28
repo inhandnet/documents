@@ -1751,6 +1751,222 @@
       "public": true
     },
     {
+      "id": "FC210",
+      "kind": "model",
+      "display_names": {"zh": "FC210"},
+      "aliases": [],
+      "source_folders": ["FC210\u7cfb\u5217"],
+      "expected_languages": ["zh"],
+      "public": true
+    },
+    {
+      "id": "FV400-FV500",
+      "kind": "family",
+      "display_names": {"zh": "FV400/FV500\u7cfb\u5217"},
+      "aliases": ["FV400", "FV500", "FV\u7cfb\u5217"],
+      "source_folders": ["FV\u7cfb\u5217"],
+      "expected_languages": ["zh"],
+      "public": true
+    },
+    {
+      "id": "FV428",
+      "kind": "model",
+      "display_names": {"zh": "FV428"},
+      "aliases": [],
+      "source_folders": ["FV428"],
+      "expected_languages": ["zh"],
+      "public": true
+    },
+    {
+      "id": "FV470",
+      "kind": "model",
+      "display_names": {"zh": "FV470"},
+      "aliases": [],
+      "source_folders": ["FV470"],
+      "expected_languages": ["zh"],
+      "public": true
+    },
+    {
+      "id": "FV700",
+      "kind": "model",
+      "display_names": {"zh": "FV700"},
+      "aliases": [],
+      "source_folders": ["FV700"],
+      "expected_languages": ["zh"],
+      "public": true
+    },
+    {
+      "id": "FV980",
+      "kind": "model",
+      "display_names": {"zh": "FV980"},
+      "aliases": [],
+      "source_folders": ["FV980"],
+      "expected_languages": ["zh"],
+      "public": true
+    },
+    {
+      "id": "InBOT001",
+      "kind": "model",
+      "display_names": {"zh": "InBOT001"},
+      "aliases": ["InBot001"],
+      "source_folders": ["InBOT001"],
+      "expected_languages": ["zh"],
+      "public": true
+    },
+    {
+      "id": "InBOT002",
+      "kind": "model",
+      "display_names": {"zh": "InBOT002"},
+      "aliases": ["InBot002"],
+      "source_folders": ["InBOT002"],
+      "expected_languages": ["zh"],
+      "public": true
+    },
+    {
+      "id": "InBOX610",
+      "kind": "family",
+      "display_names": {"zh": "InBOX610\u7cfb\u5217"},
+      "aliases": ["InBOX610\u7cfb\u5217"],
+      "source_folders": ["InBOX610\u7cfb\u5217"],
+      "expected_languages": ["zh"],
+      "public": true
+    },
+    {
+      "id": "InBOX612",
+      "kind": "family",
+      "display_names": {"zh": "InBOX612\u7cfb\u5217"},
+      "aliases": ["InBOX612\u7cfb\u5217"],
+      "source_folders": ["InBOX612\u7cfb\u5217"],
+      "expected_languages": ["zh"],
+      "public": true
+    },
+    {
+      "id": "InBOX620",
+      "kind": "family",
+      "display_names": {"zh": "InBOX620\u7cfb\u5217"},
+      "aliases": ["InBOX620\u7cfb\u5217"],
+      "source_folders": ["InBOX620\u7cfb\u5217"],
+      "expected_languages": ["zh"],
+      "public": true
+    },
+    {
+      "id": "InBOX730",
+      "kind": "model",
+      "display_names": {"en": "InBOX730"},
+      "aliases": [],
+      "source_folders": ["InBOX730"],
+      "expected_languages": ["en"],
+      "public": true
+    },
+    {
+      "id": "InCam201",
+      "kind": "model",
+      "display_names": {"zh": "InCam201"},
+      "aliases": ["InCam"],
+      "source_folders": ["InCam"],
+      "expected_languages": ["zh"],
+      "public": true
+    },
+    {
+      "id": "InDTU212L",
+      "kind": "model",
+      "display_names": {"zh": "InDTU212L"},
+      "aliases": ["InDTU200"],
+      "source_folders": ["InDTU200"],
+      "expected_languages": ["zh"],
+      "public": true
+    },
+    {
+      "id": "InDTU351S",
+      "kind": "model",
+      "display_names": {"zh": "InDTU351S"},
+      "aliases": [],
+      "source_folders": ["InDTU351S"],
+      "expected_languages": ["zh"],
+      "public": true
+    },
+    {
+      "id": "InDTU352S",
+      "kind": "model",
+      "display_names": {"zh": "InDTU352S"},
+      "aliases": [],
+      "source_folders": ["InDTU352S"],
+      "expected_languages": ["zh"],
+      "public": true
+    },
+    {
+      "id": "InDTU932S",
+      "kind": "model",
+      "display_names": {"zh": "InDTU932S"},
+      "aliases": ["InDTU932SCN"],
+      "source_folders": ["InDTU932SCN"],
+      "expected_languages": ["zh"],
+      "public": true
+    },
+    {
+      "id": "InDTU950",
+      "kind": "model",
+      "display_names": {"zh": "InDTU950"},
+      "aliases": [],
+      "source_folders": ["InDTU950"],
+      "expected_languages": ["zh"],
+      "public": true
+    },
+    {
+      "id": "InDTU950-NR",
+      "kind": "model",
+      "display_names": {"zh": "InDTU950-NR"},
+      "aliases": ["InDTU951CN"],
+      "source_folders": ["InDTU951CN"],
+      "expected_languages": ["zh"],
+      "public": true
+    },
+    {
+      "id": "IR301",
+      "kind": "model",
+      "display_names": {"en": "IR301"},
+      "aliases": [],
+      "source_folders": ["IR301"],
+      "expected_languages": ["en"],
+      "public": true
+    },
+    {
+      "id": "IWOC",
+      "kind": "family",
+      "display_names": {"zh": "IWOC"},
+      "aliases": [],
+      "source_folders": ["IWOC"],
+      "expected_languages": ["zh"],
+      "public": true
+    },
+    {
+      "id": "IWOM",
+      "kind": "family",
+      "display_names": {"zh": "IWOM"},
+      "aliases": [],
+      "source_folders": ["IWOM"],
+      "expected_languages": ["zh"],
+      "public": true
+    },
+    {
+      "id": "IWOS",
+      "kind": "family",
+      "display_names": {"en": "IWOS"},
+      "aliases": [],
+      "source_folders": ["IWOS"],
+      "expected_languages": ["en"],
+      "public": true
+    },
+    {
+      "id": "SG300",
+      "kind": "model",
+      "display_names": {"zh": "SG300"},
+      "aliases": [],
+      "source_folders": ["SG300"],
+      "expected_languages": ["zh"],
+      "public": true
+    },
+    {
       "id": "VG814",
       "kind": "model",
       "display_names": {

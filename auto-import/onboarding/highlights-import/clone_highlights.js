@@ -107,10 +107,9 @@ async function main() {
   const newId = created.id;
   console.log('  新ID: ' + newId + ' (草稿)');
 
-  // 3. 替换闪光点
-  const newProd = await req('/wp-json/wc/v3/products/' + newId);
-  const edMeta = (newProd.meta_data || []).find(m => m.key === '_elementor_data');
-  const d = JSON.parse(edMeta.value);
+  // 3. 替换闪光点（用 WP REST API 读取 _elementor_data）
+  const wpProd = await req('/wp-json/wp/v2/product/' + newId + '?context=edit&_fields=meta');
+  const d = JSON.parse(wpProd.meta._elementor_data);
 
   // 3.1 标题（widget id 2bcccbd8 = 产品名，25983c80 = 一句话卖点，6e44a6f4 = 产品分类/场景标题）
   function replaceHeadings(elements) {
@@ -177,13 +176,12 @@ async function main() {
     console.log('  特性卡片已替换: ' + count + ' 张');
   }
 
-  // 4. 写回 Elementor 数据（WC REST API 无法更新 _elementor_data，用自定义接口）
-  const updateResult = await req('/wp-json/inhand-import/v1/update-elementor', {
-    product_id: newId,
-    elementor_data: JSON.stringify(d),
+  // 4. 写回 Elementor 数据（用 WP REST API，不是 WC API）
+  const updateResult = await req('/wp-json/wp/v2/product/' + newId, {
+    meta: { _elementor_data: JSON.stringify(d, null, 0) },
   }, 'POST');
-  if (updateResult && updateResult.ok) {
-    console.log('  Elementor 数据更新成功');
+  if (updateResult && updateResult.id) {
+    console.log('  Elementor 数据更新成功 (product id=' + updateResult.id + ')');
   } else {
     console.error('  Elementor 数据更新失败: ' + JSON.stringify(updateResult).slice(0, 200));
   }

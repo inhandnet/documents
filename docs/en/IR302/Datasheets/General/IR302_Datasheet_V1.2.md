@@ -447,7 +447,7 @@ IR302 - [4G Module] - [Wi-Fi] - [IO/S] - [L]
 | Item | Indicator |
 |------|-----------|
 | **MTBF** | ≥ 100,000 hours (Telcordia SR-332 standard, 25°C environment) |
-| **Warranty Period** | 1 year (standard terms) |
+| **Warranty Period** | 3 years |
 
 
 # <span style="color: green;">10. Contact Us</span>

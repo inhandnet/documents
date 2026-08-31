@@ -40,7 +40,7 @@ The CR602 features an all-in-one compact design supporting triple-SIM (dual Nano
 | **Wi-Fi 7 Next-Generation Wireless** | BE3000 dual-band concurrent (2.4GHz + 5GHz); up to 32 clients; 160MHz channel width; 4K QAM modulation | Multiple devices online simultaneously without lag, share high-speed network with whole family, meet smart home demands |
 | **Triple SIM Intelligent Switching** | Dual Nano-SIM + pre-provisioned eSIM; Primary/Backup1/Backup2 priority configurable; second-level failover switching | Network redundancy backup, critical business never offline, flexible carrier selection |
 | **eSIM Factory Pre-activated** | Ready to use out of box, no waiting for physical SIM card delivery | Ready to use out of box, quick deployment, save time cost |
-| **10000mAh Large Battery** | Up to 15 hours continuous operation in 5G mode; supports USB-C, power bank and other charging methods | All-day normal use without charging, worry-free for outdoor work and travel |
+| **10000mAh Large Battery** | Up to 12 hours continuous operation in 5G mode; supports USB-C, power bank and other charging methods | All-day normal use without charging, worry-free for outdoor work and travel |
 | **Compact All-in-One Design** | Compact body (167 × 102 × 36.5 mm (6.57 × 4.02 × 1.44 in)); foldable external antenna; IP30 protection rating | Compact and portable, easy to store, carry for business travel |
 | **InCloud Cloud Management** | Unified cloud platform management, mobile APP anytime anywhere O&M | No on-site maintenance needed, remote monitoring device status, worry-free |
 
@@ -63,7 +63,7 @@ The CR602 features an all-in-one compact design supporting triple-SIM (dual Nano
 
 | Design Highlight | Design Description | Technical Features |
 |------------------|-------------------|-------------------|
-| **Large Capacity Battery** | 10000mAh large battery provides extended runtime, supports removal and replacement | Up to 15 hours continuous operation in 5G mode; removable and replaceable battery; smart power management; fast charging support; overcharge/discharge protection; USB-C/power bank and other charging methods |
+| **Large Capacity Battery** | 10000mAh large battery provides extended runtime, supports removal and replacement | Up to 12 hours continuous operation in 5G mode; removable and replaceable battery; smart power management; fast charging support; overcharge/discharge protection; USB-C/power bank and other charging methods |
 | **Wi-Fi 7 Next-Generation Wireless** | Wi-Fi 7 BE3000 delivers ultimate wireless experience | 2.4GHz + 5GHz dual-band concurrent, total rate up to 3000Mbps; 5GHz supports 160MHz channel width; 4K QAM modulation technology; supports up to 32 devices simultaneously |
 | **High-Performance Antenna Design** | Dual design of external foldable and built-in LDS antenna ensures stable signal | External antenna foldable design, convenient storage; built-in high-performance LDS antenna, 6× cellular antenna + 3× Wi-Fi antenna; smart antenna switching optimizes signal quality |
 | **Smart SIM Management** | Dual Nano-SIM + eSIM triple-card design provides flexible connectivity | Triple-card hot standby, second-level failover switching; eSIM factory pre-activated, online upon power-on; flexible triple-card priority configuration; smart switching strategy (dial failure/link detection/traffic threshold) |

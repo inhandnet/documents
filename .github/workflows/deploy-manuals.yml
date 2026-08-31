@@ -166,6 +166,15 @@ jobs:
             fi
           done
 
+      # 4.6 Generate permanent user-manual redirect pages (user-manual.html
+      # per product, for QR codes). Pure additive: creates NEW files only,
+      # never modifies existing MkDocs output.
+      - name: Generate manual redirects
+        if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+        run: |
+          python scripts/generate_manual_redirects.py --site-dir site-zh --lang zh
+          python scripts/generate_manual_redirects.py --site-dir site-en --lang en
+
       # 5. Deploy via rsync --delete (mirror sync).
       # Switched from scp-action: the servers' ForceCommand wrapper blocks
       # drone-scp's remote tar exec but explicitly allows `rsync --server ...

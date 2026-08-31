@@ -216,7 +216,9 @@
         "en": "EC300",
         "zh": "EC300"
       },
-      "aliases": [],
+      "aliases": [
+        "EC312"
+      ],
       "source_folders": [
         "EC300"
       ],
@@ -346,7 +348,9 @@
         "en": "EC940",
         "zh": "EC940"
       },
-      "aliases": [],
+      "aliases": [
+        "EC942"
+      ],
       "source_folders": [
         "EC940"
       ],
@@ -363,7 +367,9 @@
         "en": "EC950",
         "zh": "EC950"
       },
-      "aliases": [],
+      "aliases": [
+        "EC954"
+      ],
       "source_folders": [
         "EC950"
       ],
@@ -1740,7 +1746,11 @@
         "en": "VG710",
         "zh": "VG710"
       },
-      "aliases": [],
+      "aliases": [
+        "VG710-4G",
+        "VG710-H",
+        "VG710-M"
+      ],
       "source_folders": [
         "VG710"
       ],

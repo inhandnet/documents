@@ -1147,7 +1147,9 @@
       "display_names": {
         "en": "ISE2003D"
       },
-      "aliases": [],
+      "aliases": [
+        "ISE2003D-P"
+      ],
       "source_folders": [
         "ISE2003D"
       ],
@@ -1162,7 +1164,9 @@
       "display_names": {
         "en": "ISE2005D"
       },
-      "aliases": [],
+      "aliases": [
+        "ISE2005D-P"
+      ],
       "source_folders": [
         "ISE2005D"
       ],
@@ -1177,7 +1181,9 @@
       "display_names": {
         "en": "ISE2008D"
       },
-      "aliases": [],
+      "aliases": [
+        "ISE2008D-P"
+      ],
       "source_folders": [
         "ISE2008D"
       ],
@@ -1192,7 +1198,9 @@
       "display_names": {
         "en": "ISE2016D"
       },
-      "aliases": [],
+      "aliases": [
+        "ISE2016D-P"
+      ],
       "source_folders": [
         "ISE2016D"
       ],
@@ -1207,7 +1215,9 @@
       "display_names": {
         "en": "ISE3018D"
       },
-      "aliases": [],
+      "aliases": [
+        "ISE3018D-P"
+      ],
       "source_folders": [
         "ISE3018D"
       ],
@@ -1222,7 +1232,9 @@
       "display_names": {
         "en": "ISE5005D"
       },
-      "aliases": [],
+      "aliases": [
+        "ISE5005D-P"
+      ],
       "source_folders": [
         "ISE5005D"
       ],
@@ -1252,7 +1264,9 @@
       "display_names": {
         "en": "ISE5006D"
       },
-      "aliases": [],
+      "aliases": [
+        "ISE5006D-P"
+      ],
       "source_folders": [
         "ISE5006D"
       ],
@@ -1267,7 +1281,9 @@
       "display_names": {
         "en": "ISE5008D"
       },
-      "aliases": [],
+      "aliases": [
+        "ISE5008D-P"
+      ],
       "source_folders": [
         "ISE5008D"
       ],
@@ -1297,7 +1313,9 @@
       "display_names": {
         "en": "ISE5010D"
       },
-      "aliases": [],
+      "aliases": [
+        "ISE5010D-P"
+      ],
       "source_folders": [
         "ISE5010D"
       ],
@@ -1327,7 +1345,9 @@
       "display_names": {
         "en": "ISE5306D"
       },
-      "aliases": [],
+      "aliases": [
+        "ISE5306D-P"
+      ],
       "source_folders": [
         "ISE5306D"
       ],
@@ -1342,7 +1362,9 @@
       "display_names": {
         "en": "ISE5310D"
       },
-      "aliases": [],
+      "aliases": [
+        "ISE5310D-P"
+      ],
       "source_folders": [
         "ISE5310D"
       ],

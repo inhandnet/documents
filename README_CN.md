@@ -41,21 +41,27 @@ docs/zh/
 
 ### 产品目录（product-catalog.json）自动化
 
-`docs/product-catalog.json` 把每个 `docs/{en,zh}/<文件夹>` 顶层文件夹映射到一个稳定的产品身份。
-Documents MCP 检索服务构建索引时会做双向校验：文件夹没登记、或登记了文件夹却不存在，都会导致构建失败。
+`docs/product-catalog.json` 把文档文件夹映射到一个稳定的产品身份。Documents MCP 检索服务
+真正要求登记的，只是**含有至少一个 Markdown 文件**的顶层 `docs/{en,zh}/<文件夹>`——这是它
+实际用来切分内容块的文件夹集合。纯 PDF 文件夹（例如多个下市子型号共用的规格书聚合目录）
+是按 PDF 文件名单独匹配产品的，完全不需要出现在任何 `source_folders` 里。
 
-当有 push 在 `docs/en/` 或 `docs/zh/` 下新增了顶层产品文件夹时，`sync-product-catalog`
-GitHub Actions workflow 会运行 `scripts/sync_product_catalog.py`，自动为新文件夹追加一条
-目录条目（`kind: model`、`public: true`、无别名）并提交。普通新增产品文件夹**不需要**手工编辑目录。
+当有 push 在 `docs/en/` 或 `docs/zh/` 下新增了**含 Markdown** 的顶层文件夹时，
+`sync-product-catalog` GitHub Actions workflow 会运行 `scripts/sync_product_catalog.py`，
+自动为新文件夹追加一条目录条目（`kind: model`、`public: true`、无别名）并提交。普通新增
+Markdown 产品文件夹**不需要**手工编辑目录。新增的**纯 PDF** 文件夹会被脚本刻意忽略——如果
+里面某个 PDF 无法归属到任何产品，MCP 构建本身会明确报错，那才是需要人工介入的信号。
 
 以下情况仍需人工编辑 `docs/product-catalog.json`：
 
 - **别名（aliases）**：产品的其他称呼。
 - **调整 `kind`**（例如产品系列用 `family`、非硬件产品用 `software`）或 `public`（内部专用条目）。
 - **把多个文件夹合并成一个产品**，例如同一产品在中英文下用了不同名字的文件夹
-  （`source_folders: ["Eagle Energy Management", "白鹰能源管家"]`）。
-- **下架产品**：文件夹被删除后，脚本不会自动删除对应的目录条目——它只会追加新条目，
-  遇到"已登记文件夹却消失了"的情况会以非零退出（使 workflow 失败），交由人工判断是删除条目还是恢复文件夹。
+  （`source_folders: ["Eagle Energy Management", "白鹰能源管家"]`），或者要把一个纯 PDF
+  聚合文件夹登记到某个已有产品的 `source_folders` 下。
+- **下架产品，或处理改名/删除的文件夹**：脚本不会修改或删除任何已有条目，只会为新的
+  Markdown 文件夹追加新条目；它不检查已登记文件夹是否还在磁盘上存在（MCP 构建本来就不是按
+  磁盘是否存在来校验的），所以这种情况脚本不会报警，交由 MCP 构建自身的校验来发现。
 
 ## 本地开发
 

@@ -43,15 +43,22 @@ docs/en/
 
 ### Product Catalog Automation
 
-`docs/product-catalog.json` maps every top-level `docs/{en,zh}/<folder>` to a
-stable product identity. The Documents MCP indexer refuses to build an index
-if a folder exists without a matching catalog entry, or vice versa.
+`docs/product-catalog.json` maps documentation folders to a stable product
+identity. The Documents MCP indexer only requires a catalog entry for a
+top-level `docs/{en,zh}/<folder>` that contains at least one Markdown file
+-- that's the folder set it actually resolves chunks from. A folder made up
+purely of PDFs (e.g. a shared spec-sheet aggregation folder for several
+sub-models) is resolved per-PDF by filename matching instead and does not
+need to appear in `source_folders` at all.
 
-When a push adds a new top-level product folder under `docs/en/` or
-`docs/zh/`, the `sync-product-catalog` GitHub Actions workflow runs
+When a push adds a new top-level folder under `docs/en/` or `docs/zh/` that
+contains Markdown, the `sync-product-catalog` GitHub Actions workflow runs
 `scripts/sync_product_catalog.py` and commits a new catalog entry for it
 automatically (`kind: model`, `public: true`, no aliases). You do not need to
-edit the catalog by hand for a plain new product folder.
+edit the catalog by hand for a plain new Markdown product folder. A new
+pure-PDF folder is left alone by design -- if a PDF in it can't be resolved
+to a product, the MCP build itself will fail loudly, which is the correct
+signal for a human to look at it.
 
 A human still needs to edit `docs/product-catalog.json` manually for:
 
@@ -60,11 +67,14 @@ A human still needs to edit `docs/product-catalog.json` manually for:
   non-hardware products) or `public` (internal-only entries).
 - **Merging multiple folders into one product**, e.g. a product that ships
   a differently-named folder per language (`source_folders: ["Eagle Energy
-  Management", "白鹰能源管家"]`).
-- **De-listing a product** whose folder was removed. The sync script never
-  deletes an existing catalog entry; it only appends new ones, and it exits
-  non-zero (failing the workflow) if a registered folder has disappeared, so
-  you can review whether to delete the entry or restore the folder.
+  Management", "白鹰能源管家"]`), or a pure-PDF aggregation folder that should
+  be registered under an existing product's `source_folders`.
+- **De-listing a product** or reconciling a renamed/removed folder. The sync
+  script never deletes or edits an existing catalog entry -- it only appends
+  new ones for new Markdown folders. It does not check whether a registered
+  folder still exists on disk (disk existence isn't what the MCP build
+  actually validates), so it will not warn about that case; rely on the MCP
+  build's own validation for that.
 
 ## Local Development
 

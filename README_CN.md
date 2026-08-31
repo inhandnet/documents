@@ -39,6 +39,24 @@ docs/zh/
 └── index.md
 ```
 
+### 产品目录（product-catalog.json）自动化
+
+`docs/product-catalog.json` 把每个 `docs/{en,zh}/<文件夹>` 顶层文件夹映射到一个稳定的产品身份。
+Documents MCP 检索服务构建索引时会做双向校验：文件夹没登记、或登记了文件夹却不存在，都会导致构建失败。
+
+当有 push 在 `docs/en/` 或 `docs/zh/` 下新增了顶层产品文件夹时，`sync-product-catalog`
+GitHub Actions workflow 会运行 `scripts/sync_product_catalog.py`，自动为新文件夹追加一条
+目录条目（`kind: model`、`public: true`、无别名）并提交。普通新增产品文件夹**不需要**手工编辑目录。
+
+以下情况仍需人工编辑 `docs/product-catalog.json`：
+
+- **别名（aliases）**：产品的其他称呼。
+- **调整 `kind`**（例如产品系列用 `family`、非硬件产品用 `software`）或 `public`（内部专用条目）。
+- **把多个文件夹合并成一个产品**，例如同一产品在中英文下用了不同名字的文件夹
+  （`source_folders: ["Eagle Energy Management", "白鹰能源管家"]`）。
+- **下架产品**：文件夹被删除后，脚本不会自动删除对应的目录条目——它只会追加新条目，
+  遇到"已登记文件夹却消失了"的情况会以非零退出（使 workflow 失败），交由人工判断是删除条目还是恢复文件夹。
+
 ## 本地开发
 
 ### 环境要求

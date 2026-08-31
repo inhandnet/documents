@@ -1,0 +1,83 @@
+name: Sync product catalog
+
+# docs/product-catalog.json is the single source of truth the Documents MCP
+# indexer reads to map docs/{en,zh}/<folder> to a stable product identity.
+# It refuses to build an index at all if a folder exists without a catalog
+# entry (or vice versa) -- so a forgotten manual registration step used to
+# silently block *all* new content from being indexed until someone noticed.
+#
+# This workflow removes that manual step for the common case: when a push
+# adds a new top-level docs/en/ or docs/zh/ product folder, it is appended
+# to the catalog automatically. Humans still own: aliases, kind, multi-folder
+# merges (one product with folders in both languages under different names),
+# and de-listing a product whose folder disappeared -- scripts/sync_product_
+# catalog.py deliberately refuses to guess on any of those and exits
+# non-zero instead, which fails this job so a human notices.
+#
+# Isolated, additive workflow, mirroring generate-llms.yml: if it fails,
+# the deploy pipeline (deploy-manuals.yml) is unaffected.
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - "docs/en/**"
+      - "docs/zh/**"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-product-catalog-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      # Standard-library only -- no pip install, cannot break the build env.
+      - name: Sync product catalog
+        id: sync
+        run: |
+          set +e
+          python scripts/sync_product_catalog.py
+          echo "exit_code=$?" >> "$GITHUB_OUTPUT"
+          set -e
+
+      - name: Commit if changed
+        run: |
+          git add docs/product-catalog.json
+          if git diff --cached --quiet; then
+            echo "No new products to register; nothing to commit."
+            exit 0
+          fi
+          new_ids=$(git diff --cached docs/product-catalog.json | grep '^\+      "id":' | sed -E 's/.*"id": "([^"]+)".*/\1/' | paste -sd', ' -)
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore: auto-register new product folder(s) in catalog [skip ci]
+
+          New docs/{en,zh} top-level folders detected and registered by
+          scripts/sync_product_catalog.py. Newly registered id(s): ${new_ids}
+
+          Aliases, kind and any multi-folder merge still need human review."
+          git push
+
+      # scripts/sync_product_catalog.py exits non-zero when it found a
+      # folder it refuses to auto-resolve (non-ASCII name, or a previously
+      # registered folder that disappeared). Any legitimate new folders were
+      # still committed above; this step just makes sure the remaining
+      # manual-action item is visible as a failed run.
+      - name: Fail if manual action is required
+        if: steps.sync.outputs.exit_code != '0'
+        run: |
+          echo "::error::scripts/sync_product_catalog.py needs manual action -- see the 'Sync product catalog' step log above."
+          exit 1

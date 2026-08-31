@@ -41,6 +41,31 @@ docs/en/
 └── index.md
 ```
 
+### Product Catalog Automation
+
+`docs/product-catalog.json` maps every top-level `docs/{en,zh}/<folder>` to a
+stable product identity. The Documents MCP indexer refuses to build an index
+if a folder exists without a matching catalog entry, or vice versa.
+
+When a push adds a new top-level product folder under `docs/en/` or
+`docs/zh/`, the `sync-product-catalog` GitHub Actions workflow runs
+`scripts/sync_product_catalog.py` and commits a new catalog entry for it
+automatically (`kind: model`, `public: true`, no aliases). You do not need to
+edit the catalog by hand for a plain new product folder.
+
+A human still needs to edit `docs/product-catalog.json` manually for:
+
+- **Aliases** for a product (alternate names it should also resolve under).
+- **Adjusting `kind`** (e.g. `family` for a product family, `software` for
+  non-hardware products) or `public` (internal-only entries).
+- **Merging multiple folders into one product**, e.g. a product that ships
+  a differently-named folder per language (`source_folders: ["Eagle Energy
+  Management", "白鹰能源管家"]`).
+- **De-listing a product** whose folder was removed. The sync script never
+  deletes an existing catalog entry; it only appends new ones, and it exits
+  non-zero (failing the workflow) if a registered folder has disappeared, so
+  you can review whether to delete the entry or restore the folder.
+
 ## Local Development
 
 ### Prerequisites

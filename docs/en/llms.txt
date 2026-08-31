@@ -842,11 +842,8 @@
 
 ## ISM5026U
 
+- [ISM5026U Datasheet v1.0](ISM5026U/Datasheets/General/ISM5026U-P_Datasheet_V1.0.md): ISM5026U Datasheet v1.0 — Build advanced and highly reliable industrial Ethernet communication system
 - [ISM5026U Certifications](ISM5026U/certifications.md): ISM5026U certification list (CE) with links to the original certificate files
-
-## ISM5026U-P
-
-- [ISM5026U-P Datasheet v1.0](ISM5026U-P/Datasheets/General/ISM5026U-P_Datasheet_V1.0.md): ISM5026U-P Datasheet v1.0 — Build advanced and highly reliable industrial Ethernet communication system
 
 ## ISM5306D
 
@@ -864,11 +861,8 @@
 
 ## ISM7028U
 
+- [ISM7028U Datasheet v1.0](ISM7028U/Datasheets/General/ISM7028U-P_Datasheet_V1.0.md): ISM7028U Datasheet v1.0 — Build advanced and highly reliable industrial Ethernet communication system
 - [ISM7028U Certifications](ISM7028U/certifications.md): ISM7028U certification list (CE) with links to the original certificate files
-
-## ISM7028U-P
-
-- [ISM7028U-P Datasheet v1.0](ISM7028U-P/Datasheets/General/ISM7028U-P_Datasheet_V1.0.md): ISM7028U-P Datasheet v1.0 — Build advanced and highly reliable industrial Ethernet communication system
 
 ## ISM7312D
 

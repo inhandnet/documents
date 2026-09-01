@@ -34,8 +34,8 @@ def log(msg):
 
 
 def find_html_files(manual_dir: Path) -> list:
-    """找到目录下所有 .html 文件"""
-    return sorted(manual_dir.glob("*.html"))
+    """找到目录下所有 .html 文件（排除 MkDocs 自动生成的 index.html）"""
+    return sorted(f for f in manual_dir.glob("*.html") if f.name != "index.html")
 
 
 def generate_redirect(site_dir: Path, product: str, manuals_subdir: str, target_html: str) -> Path:

@@ -43,7 +43,7 @@
 |------|---------------|
 | Open Platform | Linux (JetPack 5.1 and above) |
 | AI Module | Jetson Orin Nano 8GB / Orin NX 16GB |
-| AI Performance | Up to 40 TOPS (EC5350) / 100 TOPS (EC5550) |
+| AI Performance | Up to 67 TOPS (EC5350) / 157 TOPS (EC5550) |
 | Data Acquisition | Modbus RTU/TCP, EtherNet/IP, OPC UA, DNP3.0, IEC 61850-MMS, BACnet, CNC |
 | Storage | Built-in 128GB NVMe, microSD support |
 | Security | TPM2.0, Secure Boot |
@@ -92,7 +92,7 @@
 | <span style="color: green;">**Hardware Platform**</span> |  |
 | CPU | EC5350:  ARM Cortex-A78AE, 6 cores, TDP up to 15 W, 1.5 GHz; <br/>EC5550: ARM Cortex-A78AE CPU, 8 cores, TDP up to 25 W, 2 GHz |
 | GPU | 1024-core NVIDIA Ampere GPU with 32 Tensor Cores |
-| NPU | AI acceleration up to 40 TOPS (EC5350) / 100 TOPS (EC5550) |
+| NPU | AI acceleration up to 67 TOPS (EC5350) / 157 TOPS (EC5550) |
 | RAM | 8GB (EC5350) / 16GB (EC5550) |
 | FLASH |  1 x M.2 NVMe M-Key 2280 (128GB built-in) |
 | <span style="color: green;">**Connectivity & Interfaces**</span> |  |

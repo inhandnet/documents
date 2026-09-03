@@ -37,7 +37,7 @@ The ODU302 is an outdoor cellular router designed to simplify outdoor networking
 - **Wi-Fi**: Supports 802.11b/g/n, providing stable and reliable wireless connectivity.
 - **Always-On Reliability**: Link backup, dual-SIM failover, heartbeat detection, and a hardware watchdog together guarantee communication continuity.
 - **Security and Trust**: Enterprise-grade firewall and a full suite of mainstream VPN tunneling protocols meet the compliance requirements for encrypted business data transmission.
-- **Environmental Robustness**: IP65 all-weather protection with a wide operating temperature range of -20 °C to +70 °C, withstanding harsh outdoor conditions such as direct sunlight, extreme cold, dust, and rain.
+- **Environmental Robustness**: IP65 all-weather protection with a wide operating temperature range of -40 °C to +70 °C, withstanding harsh outdoor conditions such as direct sunlight, extreme cold, dust, and rain.
 - **Cloud-Based O&M**: Integrates with the Device Manager cloud platform for batch remote management and maintenance.
 - **Flexible Installation for All Scenarios**: Compact and lightweight form factor supports wall-mount, pole-mount, and top-mount installation, adapting to a full range of deployment scenarios.
 - **Dual Redundant Power Inputs**: Compatible with both IEEE 802.3af standard PoE power over Ethernet and a wide-range DC 9–36 V terminal power input.
@@ -58,7 +58,7 @@ Outdoor terminals such as ATM cabinets and fuel dispensers have limited internal
 
 ### <span style="color: green;">Outdoor Security and Surveillance</span>
 
-Outdoor surveillance sites are typically deployed on open poles and largely lack wired broadband resources. In conventional setups, routers are placed inside separate weatherproof boxes whose enclosures tend to shield cellular signals and degrade network quality. The ODU302 is inherently IP65 dust- and water-resistant and operates reliably from -20 °C to +70 °C, requiring no additional weatherproof enclosure and supporting direct outdoor exposure. Externally mounted with built-in omnidirectional antennas, it achieves stronger cellular reception and ensures stable upload of surveillance video streams.
+Outdoor surveillance sites are typically deployed on open poles and largely lack wired broadband resources. In conventional setups, routers are placed inside separate weatherproof boxes whose enclosures tend to shield cellular signals and degrade network quality. The ODU302 is inherently IP65 dust- and water-resistant and operates reliably from -40 °C to +70 °C, requiring no additional weatherproof enclosure and supporting direct outdoor exposure. Externally mounted with built-in omnidirectional antennas, it achieves stronger cellular reception and ensures stable upload of surveillance video streams.
 
 ### <span style="color: green;">Signal-Constrained Sites Such as Underground Parking</span>
 
@@ -151,7 +151,7 @@ The device is compatible with both IEEE 802.3af standard PoE power over Ethernet
 | **Peak Power Consumption** | 340–360 mA @ 12 V |
 | **Ingress Protection** | IP65 |
 | **Enclosure** | Plastic |
-| **Operating Temperature** | -20 °C ~ +70 °C |
+| **Operating Temperature** | -40 °C ~ +70 °C |
 | **Storage Temperature** | -40 °C ~ +85 °C |
 | **Humidity** | 5% ~ 95% (non-condensing) |
 | **Dimensions** | 164 × 50 × 129.7 mm |

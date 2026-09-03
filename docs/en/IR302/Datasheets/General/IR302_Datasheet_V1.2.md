@@ -356,10 +356,10 @@ IR302 - [4G Module] - [Wi-Fi] - [IO/S] - [L]
 |-------|-----|-------|-----------|-------------|
 | IR302-LQ28-WLAN-S-L | ✓ | ✓ | 1×RS232 | China (LTE CAT4) |
 | IR302-LQ28-S-L | ✓ | — | 1×RS232 | China, no Wi-Fi |
-| IR302-FQ58-WLAN-S | ✓ | ✓ | 1×RS232 | Europe/APAC/Australia (LTE CAT4) |
-| IR302-FQ58-WLAN-IO | ✓ | ✓ | 2×IO | Europe/APAC/Australia (LTE CAT4) |
-| IR302-FQ58-S | ✓ | — | 1×RS232 | Europe/APAC/Australia, no Wi-Fi |
-| IR302-FQ58-IO | ✓ | — | 2×IO | Europe/APAC/Australia, no Wi-Fi |
+| IR302-FQ58-WLAN-S | ✓ | ✓ | 1×RS232 | Europe/APAC (LTE CAT4) |
+| IR302-FQ58-WLAN-IO | ✓ | ✓ | 2×IO | Europe/APAC (LTE CAT4) |
+| IR302-FQ58-S | ✓ | — | 1×RS232 | Europe/APAC, no Wi-Fi |
+| IR302-FQ58-IO | ✓ | — | 2×IO | Europe/APAC, no Wi-Fi |
 | IR302-FQ58-WLAN-S-L | ✓ | ✓ | 1×RS232 | Europe/APAC/Australia（LTE CAT4）|
 | IR302-FQ58-WLAN-IO-L | ✓ | ✓ | 2×IO | Europe/APAC/Australia（LTE CAT4）|
 | IR302-FQ58-S-L | ✓ | — | 1×RS232 | Europe/APAC/Australia，no Wi-Fi|

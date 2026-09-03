@@ -37,7 +37,7 @@ Addressing the distributed networking needs of industrial digitalization, the pr
 
 - **Unified Three-Link Architecture**: Multi-link networking across 5G RedCap, Wi-Fi 6, and 2.5G wired access to cover all application scenarios.
 - **High-Performance Local Access**: Gigabit wired Ethernet and gigabit Wi-Fi 6 wireless provide stable access for on-site terminals.
-- **Continuous Online Guarantee**: Dual SIM hot backup, multi-WAN intelligent link switchover, heartbeat detection, and hardware watchdog ensure uninterrupted communication in unattended scenarios.
+- **Continuous Online Guarantee**: Dual SIM failover, multi-WAN intelligent link switchover, heartbeat detection, and hardware watchdog ensure uninterrupted communication in unattended scenarios.
 - **Granular Traffic Control**: QoS priority scheduling to prioritize stable transmission of critical industrial services.
 - **Secure Encrypted Networking**: Compatible with mainstream VPN protocols, built-in firewall and access control for encrypted remote transmission of business data.
 - **Cloud Management**: Integrated with InHand's DeviceLive cloud platform for batch configuration, remote OTA, fault diagnosis, and alarm push, enabling unified management of massive distributed sites.
@@ -102,7 +102,7 @@ Built-in stateful inspection firewall and access control, compatible with mainst
 
 ## <span style="color: #3eb044;">Highlight 4: Multi-Layer Link Redundancy for Continuous Online Operation</span>
 
-Dual SIM hot backup, multi-WAN intelligent link switchover, heartbeat detection, and hardware watchdog form a progressive multi-dimensional protection logic, with millisecond-level link failover to keep communication uninterrupted in unattended scenarios, suitable for production lines, energy, and municipal applications with high online requirements.
+Dual SIM failover, multi-WAN intelligent link switchover, heartbeat detection, and hardware watchdog form a progressive multi-dimensional protection logic, with millisecond-level link failover to keep communication uninterrupted in unattended scenarios, suitable for production lines, energy, and municipal applications with high online requirements.
 
 ## <span style="color: #3eb044;">Highlight 5: All-Environment Industrial Design for Reliable Operation in Harsh Conditions</span>
 
@@ -157,7 +157,7 @@ IP30 fanless all-metal enclosure, -40 °C to +70 °C wide-temperature operation,
 ## <span style="color: #3eb044;">4.2 SIM Card Management</span>
 
 - **Dual SIM Support**: 2 &times; Nano-SIM (4FF) slots
-- **Dual SIM Hot Backup**: Automatic switchover on dial failure
+- **Dual SIM failover**: Automatic switchover on dial failure
 - **eSIM Reserved**: eSIM capability reserved
 
 ## <span style="color: #3eb044;">4.3 Wired Network</span>

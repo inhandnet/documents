@@ -286,7 +286,17 @@ Suitable for atmospheric monitoring, water quality monitoring, noise monitoring,
 | Transmit Power | 16 dBm ±2 dBm |
 | Antenna Interface | RP-SMA ×2 |
 
-## <span style="color: green;">6.4 Link Backup and Redundancy</span>
+## <span style="color: green;">6.4 GNSS</span>
+
+| Parameter                    | Specification                                                |
+| ---------------------------- | ------------------------------------------------------------ |
+| Number of Ports              | 1 x SMA                                                      |
+| Connector                    | SMA with 50 Ohms impedance or other interface connectors provided with adaptor |
+| GNSS Technology              | GPS/GOLNASS/Galileo/BeiDou                                   |
+| Tracking Sensitivity         | GNSS greater than -157 dBm                                   |
+| Horizontal Position Accuracy | 2.5m                                                         |
+
+## <span style="color: green;">6.5 Link Backup and Redundancy</span>
 
 | Function | Description |
 |------|------|
@@ -295,7 +305,7 @@ Suitable for atmospheric monitoring, water quality monitoring, noise monitoring,
 | ICMP Detection | Supports detection server, interval, timeout, maximum retry count configuration |
 | Load Balancing | After ICMP detection succeeds, data is transmitted through the corresponding link |
 
-## <span style="color: green;">6.5 Routing Capability</span>
+## <span style="color: green;">6.6 Routing Capability</span>
 
 | Function | Description |
 |------|------|
@@ -319,10 +329,6 @@ Suitable for atmospheric monitoring, water quality monitoring, noise monitoring,
 | WireGuard | New-generation high-performance VPN protocol, supports connection status detection |
 | ZeroTier | Supports virtual LAN networking, multiple tunnels configurable |
 | Certificate Management | Supports CA certificate, PKCS12 certificate import/export |
-
-
-<div style="page-break-after: always;"></div>
-
 
 ## <span style="color: green;">7.2 Firewall and Access Control</span>
 
@@ -396,6 +402,10 @@ Suitable for atmospheric monitoring, water quality monitoring, noise monitoring,
 | Scheduled Tasks | Scheduled restart, supports advanced options to configure multiple rules |
 | Network Packet Capture | Built-in TCPDUMP packet capture tool, supports interface, capture count, expert options configuration |
 | Maintenance Tools | Ping, traceroute, speed test, ARPING |
+
+<style>
+  h1[id="8-ordering-information"] + table { font-size: 10px; }
+</style>
 
 # <span style="color: green;">8. Ordering Information</span>
 

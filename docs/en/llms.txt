@@ -668,7 +668,7 @@
   - [Scenario 2: Wired Access to Internet](IR315/Manuals/User%20manual/IR315_User%20manual_V1.0.md#scenario-2-wired-access-to-internet)
   - [Scenario 3: Wi-Fi Networking](IR315/Manuals/User%20manual/IR315_User%20manual_V1.0.md#scenario-3-wi-fi-networking)
   - [Scenario 4: Connect to InHand Device Manager](IR315/Manuals/User%20manual/IR315_User%20manual_V1.0.md#scenario-4-connect-to-inhand-device-manager)
-- [IR315 Datasheet v1.2](IR315/Datasheets/General/IR315_Datasheet_V1.2.md): IR315 Datasheet v1.2 — Cost-Effective Multi-Port Industrial Router for Secure Networking and Cloud O&M
+- [IR315 Datasheet v1.3](IR315/Datasheets/General/IR315_Datasheet_V1.3.md): IR315 Datasheet v1.3 — Cost-Effective Multi-Port Industrial Router for Secure Networking and Cloud O&M
 - [IR315 Certifications](IR315/certifications.md): IR315 certification list (ANATEL, C1D2, CE, E-Mark, ECER118, EN18031, FCC, IC, IMDA, MIC_JATE, PTCRB, RCM, UL) with links to the original certificate files
 - [IR315 Drawings](IR315/drawings.md): IR315 mechanical drawings (2D, 3D) with links to the original drawing files
 - [Driving Test Networking Router Configuration Manual](IR315/Use%20Cases/4G-5G-Driving-Test-Networking/config-manual.md): IR315 4G-5G-Driving-Test-Networking

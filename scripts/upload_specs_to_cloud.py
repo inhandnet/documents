@@ -243,8 +243,8 @@ def _should_upload(file_path: Path) -> bool:
     # 跳过 Developer Documentation 下的 series.txt
     if file_path.name == "series.txt" and "Developer Documentation" in file_path.parts:
         return False
-    # 跳过 images 目录下的所有文件（图片及图片目录下的 PDF 等）
-    if any(p.lower() == "images" for p in file_path.parts):
+    # 跳过 images/img/imgs 等图片目录下的所有文件
+    if any(p.lower() in ("images", "img", "imgs") for p in file_path.parts):
         return False
     # 跳过语言根目录下的站点级索引文件（llms.txt 等）：
     # 它们不属于产品文件，PLM API 也不接受产品目录之外的 path

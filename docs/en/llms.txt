@@ -277,6 +277,14 @@
 - [EC5000 Datasheet v1.0](EC5000/Datasheets/General/EC5000_Datasheet_V1.0.md): EC5000 Datasheet v1.0 — Embrace Edge AI, Empower Industrial Digitalization
 - [EC5000 Certifications](EC5000/certifications.md): EC5000 certification list (CE) with links to the original certificate files
 
+## EC5350
+
+- [EC5350 Datasheet v1.0](EC5350/Datasheets/General/EC5350_Datasheet_V1.0.md): EC5350 Datasheet v1.0 — Embrace Edge AI, Empower Industrial Digitalization
+
+## EC5550
+
+- [EC5550 Datasheet v1.0](EC5550/Datasheets/General/EC5550_Datasheet_V1.0.md): EC5550 Datasheet v1.0 — Embrace Edge AI, Empower Industrial Digitalization
+
 ## EC940
 
 - [EC942 Edge Computer User Manual](EC940/Manuals/User%20manual/EC940_User%20manual_V1.0.md): EC940 User manual v1.0 — The EC942 series edge computer is a lightweight AI-accelerated edge computing device developed by InHand Networks for in…

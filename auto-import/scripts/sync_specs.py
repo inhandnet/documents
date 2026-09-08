@@ -36,8 +36,8 @@ if _config_path.exists():
         pass
 
 # 项目路径
-REPO_ROOT = Path(__file__).resolve().parent.parent
-SPECS_PKG = REPO_ROOT / "自动导入产品" / "新产品录入" / "规格属性技能包"
+REPO_ROOT = Path(__file__).resolve().parent.parent.parent
+SPECS_PKG = REPO_ROOT / "auto-import" / "onboarding" / "specs-import"
 
 # LLM 配置（用于 AI 审查产品匹配）
 LLM_API_URL = os.environ.get("LLM_API_URL", "") or LOCAL_CONFIG.get("llm", {}).get("api_url", "")

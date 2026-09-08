@@ -2132,6 +2132,40 @@
         "zh"
       ],
       "public": true
+    },
+    {
+      "id": "EC5350",
+      "kind": "model",
+      "display_names": {
+        "en": "EC5350",
+        "zh": "EC5350"
+      },
+      "aliases": [],
+      "source_folders": [
+        "EC5350"
+      ],
+      "expected_languages": [
+        "en",
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "EC5550",
+      "kind": "model",
+      "display_names": {
+        "en": "EC5550",
+        "zh": "EC5550"
+      },
+      "aliases": [],
+      "source_folders": [
+        "EC5550"
+      ],
+      "expected_languages": [
+        "en",
+        "zh"
+      ],
+      "public": true
     }
   ]
 }

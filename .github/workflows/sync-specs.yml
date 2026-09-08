@@ -46,9 +46,15 @@ jobs:
           LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
           LLM_MODEL: ${{ secrets.LLM_MODEL || 'deepseek-v4-flash' }}
           WP_ZH_URL: ${{ secrets.WP_ZH_URL }}
+          WP_ZH_USER: ${{ secrets.WP_ZH_USER }}
           WP_ZH_APP_PASSWORD: ${{ secrets.WP_ZH_APP_PASSWORD }}
           WP_EN_URL: ${{ secrets.WP_EN_URL }}
+          WP_EN_USER: ${{ secrets.WP_EN_USER }}
           WP_EN_APP_PASSWORD: ${{ secrets.WP_EN_APP_PASSWORD }}
+          POWERIS_ZH_BASE: ${{ secrets.POWERIS_ZH_BASE }}
+          POWERIS_ZH_KEY: ${{ secrets.POWERIS_ZH_KEY }}
+          POWERIS_EN_BASE: ${{ secrets.POWERIS_EN_BASE }}
+          POWERIS_EN_KEY: ${{ secrets.POWERIS_EN_KEY }}
           GITHUB_EVENT_BEFORE: ${{ github.event.before }}
           GITHUB_SHA: ${{ github.sha }}
         run: python auto-import/scripts/sync_specs.py

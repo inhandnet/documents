@@ -29,7 +29,11 @@ permissions:
   contents: write
 
 concurrency:
-  group: sync-product-catalog-${{ github.ref }}
+  # Shared with the other docs/** autocommit workflow so the two do not
+  # race each other to push master. This only reduces collisions (each job
+  # still checks out the triggering SHA, so it can be behind master) -- the
+  # rebase-and-retry push below is what actually guarantees correctness.
+  group: docs-autocommit-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:
@@ -69,6 +73,18 @@ jobs:
           scripts/sync_product_catalog.py. Newly registered id(s): ${new_ids}
 
           Aliases, kind and any multi-folder merge still need human review."
+          # Another docs/** autocommit workflow (generate-llms.yml /
+          # sync-product-catalog.yml) can push to master concurrently, so a
+          # plain push loses the race with a non-fast-forward rejection.
+          # The two jobs write disjoint files and the generators are
+          # idempotent full rewrites, so rebasing onto the winner is safe.
+          for attempt in 1 2 3; do
+            if git push; then
+              exit 0
+            fi
+            echo "push rejected (attempt ${attempt}); rebasing onto origin/master"
+            git pull --rebase --autostash origin master
+          done
           git push
 
       # scripts/sync_product_catalog.py exits non-zero when it found a

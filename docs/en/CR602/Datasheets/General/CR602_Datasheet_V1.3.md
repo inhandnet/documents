@@ -40,8 +40,8 @@ The CR602 features an all-in-one compact design supporting triple-SIM (dual Nano
 | **Wi-Fi 7 Next-Generation Wireless** | BE3000 dual-band concurrent (2.4GHz + 5GHz); up to 32 clients; 160MHz channel width; 4K QAM modulation | Multiple devices online simultaneously without lag, share high-speed network with whole family, meet smart home demands |
 | **Triple SIM Intelligent Switching** | Dual Nano-SIM + pre-provisioned eSIM; Primary/Backup1/Backup2 priority configurable; second-level failover switching | Network redundancy backup, critical business never offline, flexible carrier selection |
 | **eSIM Factory Pre-activated** | Ready to use out of box, no waiting for physical SIM card delivery | Ready to use out of box, quick deployment, save time cost |
-| **10000mAh Large Battery** | Up to 15 hours continuous operation in 5G mode; supports USB-C, power bank and other charging methods | All-day normal use without charging, worry-free for outdoor work and travel |
-| **Compact All-in-One Design** | Compact body (167 × 102 × 36.5 mm (6.57 × 4.02 × 1.44 in)); foldable external antenna; IP30 protection rating | Compact and portable, easy to store, carry for business travel |
+| **10000mAh Large Battery** | Up to 15 hours continuous operation in 5G mode; supports USB-C, power bank and other charging methods | All-day normal use without charging, worry-free for outdoor work |
+| **Compact All-in-One Design** | Compact body (167 × 102 × 36.5 mm (6.57 × 4.02 × 1.44 in)); foldable external antenna; IP30 protection rating | Compact, easy to store |
 | **InCloud Cloud Management** | Unified cloud platform management, mobile APP anytime anywhere O&M | No on-site maintenance needed, remote monitoring device status, worry-free |
 
 
@@ -52,7 +52,6 @@ The CR602 features an all-in-one compact design supporting triple-SIM (dual Nano
 |---------------------|---------------------|---------------------|
 | **Small Business Office** | Network solution for small offices and startups | Office network, remote work access, branch rapid deployment, temporary office network support |
 | **Chain Stores** | Network connectivity for chain retail, food & beverage, service stores | Retail shops, restaurants & cafes, beauty salons, gyms, education & training, mobile vendor network coverage |
-| **Outdoor Travel** | Mobile network support for outdoor travel and business trips | RV camping, road trips, business travel, outdoor weddings/events/exhibitions network support |
 | **Temporary Work** | Temporary network coverage for construction sites, event exhibitions | Construction site temporary network (video surveillance, equipment management), exhibitions/performances/sports events, emergency communication support |
 | **Remote Areas** | Areas with poor network coverage such as rural, mountainous, island regions | Remote area network access, temporary base (field exploration/research), emergency communication, telemedicine support |
 | **Home Entertainment** | Home backup network or temporary network upgrade | 4K/8K video streaming, online gaming, temporary network during renovation/relocation, up to 32 devices online simultaneously |
@@ -97,7 +96,7 @@ The CR602 features an all-in-one compact design supporting triple-SIM (dual Nano
 | Specification Item | Parameters |
 | ------------------ | ---------- |
 | **Processor** | Quad-core Cortex-A55 (2.2 GHz) |
-| **Memory** | 2GB DDR4 |
+| **Memory** | 1GB DDR4 |
 | **Storage** | 4GB eMMC |
 | **5G Module** | RG620T |
 | **SIM Card Slot** | 2× Nano-SIM + 1× Built-in eSIM (GSMA Consumer specification) |
@@ -416,7 +415,7 @@ The CR602 is equipped with InCloud Manager cloud management platform for full li
 - RJ45 Ethernet cable × 1
 - Quick Start Guide × 1
 - Warranty card × 1
-- Portable protective case × 1
+- Protective case × 1
 
 ## <span style="color: green;">11.3 Optional Accessories</span>
 
@@ -450,7 +449,7 @@ The CR602 is equipped with InCloud Manager cloud management platform for full li
 | ----------------- | -------------- | --------------------- |
 | **Mandatory** | CE（pending） | FCC / IC / PTCRB |
 | **Environmental** | RoHS / REACH | RoHS / REACH |
-| **Carrier** |  | Verizon / AT&T / T-Mobile/FirstNet |
+| **Carrier** |  | Verizon / AT&T / T-Mobile / FirstNet |
 
 
 # <span style="color: green;">13. Contact Us</span>

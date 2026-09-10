@@ -93,15 +93,14 @@
 | FLASH | 16GB eMMC |
 | <span style="color: green;">**Connectivity & Interfaces**</span> |  |
 | Ethernet Ports | 2×10/100/1000 Mbps GE |
-| I/O Ports (Optional) | 4×DI + 4×DO |
+| I/O Ports (Optional) | 4×DI + 4×DO (isolated) |
 | Serial Ports | 2×RS-232/485/422 (DB9) |
-| CAN (Optional) | CAN2.0A/B |
+| CAN (Optional) | CAN2.0A/B (isolated)|
 | Buttons | Pinhole reset button |
 | SIM Card Holders | 2×MicroSIM |
 | LED Indicators | 4G/5G, Signal Strength (L1, L2, L3), SIM1, SIM2, User1, User2, PWR, STATUS, WARN, ERR |
 | USB | USB2.0 (2×Type-A + 1×Type-C) |
-| microSD | Supports microSD cards up to 32GB (recommended maximum 
-capacity) |
+| microSD | Supports microSD cards up to 32GB (recommended maximum capacity) |
 | Expansion Interfaces |  1x mSATA, supports mSATA SSD |
 | HDMI | HDMI2.0 |
 | Wi-Fi (Optional) |  STA, 802.11ac/a/b/g/n, 2.4G/5G dual band |

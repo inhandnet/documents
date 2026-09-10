@@ -98,9 +98,9 @@
 | FLASH | 16GB eMMC |
 | <span style="color: green;">**Connectivity & Interfaces**</span> |  |
 | Ethernet Ports | 4×10/100/1000 Mbps GE |
-| I/O Ports | 4×DI + 4×DO |
-| Serial Ports | 4×RS-232/485/422 + 8×RS-485 |
-| CAN | 2×CAN2.0A/B |
+| I/O Ports | 4×DI + 4×DO (isolated)|
+| Serial Ports | 4×RS-232/485/422 + 8×RS-485 (isolated)|
+| CAN | 2×CAN2.0A/B (isolated)|
 | Buttons | Pinhole reset button |
 | SIM Card Holders | Dual-SIM |
 | LED Indicators | 4G, SignalStrength (L1, L2, L3), SIM1, SIM2, User1, User2, PWR, STATUS, WARN, ERR |

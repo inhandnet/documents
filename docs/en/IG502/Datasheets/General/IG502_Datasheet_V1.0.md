@@ -150,7 +150,7 @@
 | Flash | 8GB eMMC |
 | <span style="color: green;">**Connectivity and Interfaces**</span> | |
 | Ethernet Ports | 2×10/100 Mbps Ethernet |
-| I/O Ports | Up to 4×DI + 4×DO (optional) |
+| I/O Ports | Up to 4×DI + 4×DO (optional) (isolated)|
 | Serial Ports | 1×RS-232 + 1×RS-485, or 2×RS-485, industrial terminal block, ordering guide for details |
 | SIM Card Slot | Dual Micro SIM |
 | Antenna Connectors | LTE：SMA x 1, Wi-Fi：SMA x 1, GNSS：SMA x 1, <br/>Note: North America models: 2 x SMA 4G antenna connectors. |

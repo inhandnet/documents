@@ -152,7 +152,7 @@
 | Flash | 8GB eMMC |
 | <span style="color: green;">**Connectivity and Interfaces**</span> | |
 | Ethernet Ports | 2×10/100/1000 Mbps Ethernet ports (WAN/LAN or 2×LAN) |
-| I/O Ports | None / 4×DI + 3×DO + 1×Relay output DO or digital/pulse output DO |
+| I/O Ports | None / 4×DI + 3×DO + 1×Relay output DO or digital/pulse output DO (isolated)|
 | Serial Ports | 1×RS-232/RS-485 + 1×RS-485 |
 | SIM Card Slot | 1.8V/3V, 2×drawer-type slot |
 | LED Indicators | POWER, STATUS, WARN, ERROR, MODEM, SIM1, SIM2, microSD, PYTHON, USER1, USER2, Wi-Fi, GPS, SIGNAL |

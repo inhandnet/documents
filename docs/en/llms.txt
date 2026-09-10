@@ -233,6 +233,10 @@
 
 - [EC3588-C Datasheet v1.0](EC3588-C/Datasheets/General/EC3588-C_Datasheet_V1.0.md): EC3588-C Datasheet v1.0 — Embrace Edge AI, Empower Industrial Digitalization
 
+## EC4600
+
+- [EC4600 Datasheet v1.0](EC4600/Datasheets/General/EC4600_Datasheet_V1.0.md): EC4600 Datasheet v1.0 — Embrace Edge AI, Empower the Era of Visual Recognition
+
 ## EC5000
 
 - [EC5000 Series AI Edge Computer User Manual](EC5000/Manuals/User%20manual/EC5000_User%20manual_V1.0.md): EC5000 User manual v1.0 — The EC5000 series AI edge computer is pre-integrated with NVIDIA Jetson Orin NX or Orin Nano modules, making it suitable…

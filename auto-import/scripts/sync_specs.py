@@ -400,6 +400,53 @@ def search_wp_product(product_name: str, site: str, md_content: str = None) -> d
         return None
 
 
+def _merge_multicolumn_values(content: str, attrs: list) -> list:
+    """后处理：检测多列表格（如 功能|基础版|高级版），将多列值融合到 optionValues。
+
+    规则：
+      - 各列值相同 → 直接用该值
+      - 各列值不同 → 合并为 "列名1: 值1 列名2: 值2"
+    """
+    lines = content.split("\n")
+    i = 0
+    while i < len(lines):
+        line = lines[i]
+        # 找 markdown 表格头
+        if line.strip().startswith("|") and i + 1 < len(lines) and set(lines[i + 1].strip()) <= set("|-: "):
+            header = [c.strip() for c in line.strip().strip("|").split("|")]
+            # 3 列以上才需要融合（第 1 列是参数名，第 2 列起是值）
+            if len(header) >= 3:
+                col_names = header[1:]  # 值列的名称（如 基础版, 高级版）
+                j = i + 2
+                while j < len(lines) and lines[j].strip().startswith("|"):
+                    cells = [c.strip() for c in lines[j].strip().strip("|").split("|")]
+                    if len(cells) >= 2:
+                        opt_name = cells[0]
+                        values = cells[1:]
+                        # 去重：如果所有值相同，直接用
+                        unique_vals = set(values)
+                        if len(unique_vals) > 1:
+                            # 值不同 → 合并
+                            merged_parts = []
+                            for col_name, val in zip(col_names, values):
+                                if val and val != "—":
+                                    merged_parts.append(f"{col_name}：{val}")
+                                elif val == "—":
+                                    merged_parts.append(f"{col_name}：不支持")
+                            merged_val = "；".join(merged_parts)
+                            # 更新到 attrs
+                            for attr in attrs:
+                                if opt_name in attr.get("optionValues", {}):
+                                    attr["optionValues"][opt_name] = merged_val
+                    j += 1
+                i = j
+            else:
+                i += 1
+        else:
+            i += 1
+    return attrs
+
+
 def extract_specs(md_path: str) -> list:
     """从 md 文件提取规格属性（合并相同 slug 的属性组）"""
     file_path = Path(md_path)
@@ -437,6 +484,9 @@ def extract_specs(md_path: str) -> list:
             }
 
     result = list(merged.values())
+
+    # 后处理：多列表格融合（如 License 对比表：功能|基础版|高级版）
+    result = _merge_multicolumn_values(content, result)
     log(f"合并后 {len(result)} 个规格属性组")
     return result
 

@@ -400,13 +400,14 @@ def search_wp_product(product_name: str, site: str, md_content: str = None) -> d
         return None
 
 
-def _merge_multicolumn_values(content: str, attrs: list) -> list:
+def _merge_multicolumn_values(content: str, attrs: list, lang: str = "zh") -> list:
     """后处理：检测多列表格（如 功能|基础版|高级版），将多列值融合到 optionValues。
 
     规则：
       - 各列值相同 → 直接用该值
       - 各列值不同 → 合并为 "列名1: 值1 列名2: 值2"
     """
+    not_supported = "不支持" if lang == "zh" else "Not supported"
     lines = content.split("\n")
     i = 0
     while i < len(lines):
@@ -432,7 +433,7 @@ def _merge_multicolumn_values(content: str, attrs: list) -> list:
                                 if val and val != "—":
                                     merged_parts.append(f"{col_name}：{val}")
                                 elif val == "—":
-                                    merged_parts.append(f"{col_name}：不支持")
+                                    merged_parts.append(f"{col_name}：{not_supported}")
                             merged_val = "；".join(merged_parts)
                             # 更新到 attrs
                             for attr in attrs:
@@ -486,7 +487,8 @@ def extract_specs(md_path: str) -> list:
     result = list(merged.values())
 
     # 后处理：多列表格融合（如 License 对比表：功能|基础版|高级版）
-    result = _merge_multicolumn_values(content, result)
+    lang = "zh" if "/zh/" in md_path.replace("\\", "/") else "en"
+    result = _merge_multicolumn_values(content, result, lang=lang)
     log(f"合并后 {len(result)} 个规格属性组")
     return result
 

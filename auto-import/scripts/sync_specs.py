@@ -73,6 +73,18 @@ def log(msg):
     print(f"[SYNC] {msg}", flush=True)
 
 
+def decode_git_path(path: str) -> str:
+    """解码 git 输出的八进制转义路径（如 \\351\\200\\236 → 通用）"""
+    parts = re.split(r'(\\[0-9]{3})', path)
+    result = []
+    for part in parts:
+        if part.startswith('\\') and len(part) == 4:
+            result.append(bytes([int(part[1:], 8)]))
+        else:
+            result.append(part.encode('utf-8'))
+    return b''.join(result).decode('utf-8')
+
+
 def get_changed_datasheet_files() -> list:
     """从 git diff 获取变更的 Datasheets md 文件"""
     # 支持 push（HEAD~1..HEAD）和手动指定 sha
@@ -86,7 +98,7 @@ def get_changed_datasheet_files() -> list:
 
     try:
         result = subprocess.run(cmd, capture_output=True, text=True, check=True)
-        all_files = [f.strip() for f in result.stdout.strip().split("\n") if f.strip()]
+        all_files = [decode_git_path(f.strip().strip('"')) for f in result.stdout.strip().split("\n") if f.strip()]
     except subprocess.CalledProcessError:
         log("git diff 失败，尝试从环境变量获取")
         return []

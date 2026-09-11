@@ -404,10 +404,9 @@ def _merge_multicolumn_values(content: str, attrs: list, lang: str = "zh") -> li
     """后处理：检测多列表格（如 功能|基础版|高级版），将多列值融合到 optionValues。
 
     规则：
-      - 各列值相同 → 直接用该值
-      - 各列值不同 → 合并为 "列名1: 值1 列名2: 值2"
+      - 各列值相同 → "列名1 & 列名2：共同值"
+      - 各列值不同 → "列名1：值1　列名2：值2"
     """
-    not_supported = "不支持" if lang == "zh" else "Not supported"
     lines = content.split("\n")
     i = 0
     while i < len(lines):
@@ -424,21 +423,18 @@ def _merge_multicolumn_values(content: str, attrs: list, lang: str = "zh") -> li
                     if len(cells) >= 2:
                         opt_name = cells[0]
                         values = cells[1:]
-                        # 去重：如果所有值相同，直接用
                         unique_vals = set(values)
-                        if len(unique_vals) > 1:
-                            # 值不同 → 合并
-                            merged_parts = []
-                            for col_name, val in zip(col_names, values):
-                                if val and val != "—":
-                                    merged_parts.append(f"{col_name}：{val}")
-                                elif val == "—":
-                                    merged_parts.append(f"{col_name}：{not_supported}")
-                            merged_val = "；".join(merged_parts)
-                            # 更新到 attrs
-                            for attr in attrs:
-                                if opt_name in attr.get("optionValues", {}):
-                                    attr["optionValues"][opt_name] = merged_val
+                        if len(unique_vals) == 1:
+                            # 各列值相同 → "列名1 & 列名2：共同值"
+                            merged_val = f"{' & '.join(col_names)}：{values[0]}"
+                        else:
+                            # 值不同 → "列名1：值1　列名2：值2"
+                            merged_val = "　".join(
+                                f"{col}：{val}" for col, val in zip(col_names, values)
+                            )
+                        for attr in attrs:
+                            if opt_name in attr.get("optionValues", {}):
+                                attr["optionValues"][opt_name] = merged_val
                     j += 1
                 i = j
             else:

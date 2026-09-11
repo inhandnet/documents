@@ -44,7 +44,29 @@ The rapid development of IoT has brought massive numbers of devices and business
 
 <div style="page-break-after: always;"></div>
 
-# <span style="color: green;">2. Platform Capability Overview</span>
+# <span style="color: green;">2. License Comparison</span>
+
+| Functionality | Basic Edition | Advanced Edition |
+| ---- | ------ | ------ |
+| Device Connection & Management | ✓ Supports device onboarding, configuration management, firmware upgrade and remote reboot | ✓ Supports device onboarding, configuration management, firmware upgrade and remote reboot |
+| Remote Access | ✓ Supports remote device access for remote maintenance and troubleshooting | ✓ Supports remote device access for remote maintenance and troubleshooting |
+| Device Status Monitoring | ✓ Supports device status, network status and resource monitoring | ✓ Supports device status, network status and resource monitoring |
+| Data Visualization & Analytics | ✓ Supports device data viewing and basic data analysis | ✓ Supports device data viewing and basic data analysis |
+| Alarm Management | ✓ Supports abnormal alarms for device status, network and resources | ✓ Supports abnormal alarms for device status, network and resources |
+| Report Management | ✓ Supports device operation data reports | ✓ Supports device operation data reports |
+| User & Permission Management | ✓ Supports multi-user and role-based permission management | ✓ Supports multi-user and role-based permission management |
+| GPS / Location Management | ✓ Supports GPS, base station positioning and device location management | ✓ Supports GPS, base station positioning and device location management |
+| InHand DSA Deployment Management | ✓ Supports InHand DSA deployment management (Applicable to EC/IG series devices) | ✓ Supports InHand DSA deployment management (Applicable to EC/IG series devices) |
+| Cloud Connection & Networking | — | ✓ Supports cloud connection and networking capabilities for devices requiring remote network management through DeviceLive |
+| Cloud Connection History Analysis | — | ✓ Supports cloud connection history viewing and connection status analysis |
+| Edge Application Management | — | ✓ Supports edge application and containerized application deployment, version management and operation & maintenance (Applicable to EC/IG series devices) |
+
+**Plan Description**
+
+- **Basic Edition:** Provides basic device onboarding, remote access, device management, status monitoring, data analysis and alarm capabilities for daily device operation and maintenance.
+- **Advanced Edition:** Provides advanced cloud connection, edge application deployment and operation & maintenance capabilities based on basic device management, mainly targeting edge computing scenarios.
+
+# <span style="color: green;">3. Platform Capability Overview</span>
 
 DeviceLive provides four core capabilities: **device management, network monitoring, edge computing application management, and remote terminal maintenance**. With cloud-edge collaboration, it enables intelligent edge deployment and upgrades, edge data collection and preprocessing, and visualized status monitoring, comprehensively improving management efficiency.
 
@@ -92,7 +114,7 @@ DeviceLive provides four core capabilities: **device management, network monitor
 | **Multi-Dimensional Security Policies** | Data encryption, multi-role permissions, and multi-factor authentication |
 | **Visualized Monitoring** | Comprehensive insights into connection status, network quality, cellular signal, and more |
 
-# <span style="color: green;">3. Edge Intelligence Hardware and Cloud Data Integration</span>
+# <span style="color: green;">4. Edge Intelligence Hardware and Cloud Data Integration</span>
 
 ## <span style="color: green;">Multi-Function Edge Hardware</span>
 
@@ -113,7 +135,7 @@ DeviceLive provides four core capabilities: **device management, network monitor
 - Supports integration with major public clouds and IoT cloud platforms, including **AWS, Microsoft Azure, and Alibaba Cloud**  
 
 
-# <span style="color: green;">4. Application Scenarios</span>
+# <span style="color: green;">5. Application Scenarios</span>
 
 InHand edge intelligence solutions integrate 5G, AI, IoT, and cloud computing, and can be used in **public utility digitalization, predictive equipment maintenance, new energy digitalization, and factory digitalization**.
 
@@ -127,7 +149,7 @@ InHand edge intelligence solutions integrate 5G, AI, IoT, and cloud computing, a
 <div style="page-break-after: always;"></div>
 
 
-# <span style="color: green;">5. Platform Feature List</span>
+# <span style="color: green;">6. Platform Feature List</span>
 
 
 <table style="width:100%;">
@@ -162,7 +184,7 @@ InHand edge intelligence solutions integrate 5G, AI, IoT, and cloud computing, a
 
 **Platform URL:** [device.inhandcloud.cn](https://device.inhandcloud.cn)
 
-# <span style="color: green;">6. Contact Us</span>
+# <span style="color: green;">7. Contact Us</span>
 
 - **Website:** [InHand Networks](https://www.inhand.com)
 - **Copyright Notice:** © InHand Networks. All rights reserved.

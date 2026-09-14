@@ -97,9 +97,9 @@
 | FLASH |  1 x M.2 NVMe M-Key 2280 (128GB built-in) |
 | <span style="color: green;">**Connectivity & Interfaces**</span> |  |
 | Ethernet Ports | 2×10/100/1000 Mbps, PoE PSE 15W per port |
-| I/O Ports | 4×DI + 4×DO |
+| I/O Ports | 4×DI + 4×DO (isolated)|
 | Serial Ports | 2×RS-232/RS-485/RS-422 (DB9) |
-| CAN | 1×CAN FD |
+| CAN | 1×CAN FD (isolated)|
 | Buttons | 1×Recovery Button, 1×Reset Button |
 | SIM Card Holders | 2×standard SIM |
 | LED Indicators | 1×Power, 1×Status, 4×User |

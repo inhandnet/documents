@@ -179,7 +179,6 @@ AI Agent 云管理实现统一的远程运维：
 | **处理器** | 双核 Cortex-A53 @ 1.3 GHz |
 | **内存** | 512MB DDR3 |
 | **存储** | 128MB SPI Flash |
-| **5G 模块** | MTK 830 平台，3GPP Release 16 |
 | **SIM 卡槽** | 2 × 4FF Nano-SIM + 1 × eSIM（预留） |
 | **WAN 口** | 1 × 1 Gbps RJ45，支持WAN/LAN切换 |
 | **LAN 口** | 1 × 2.5 Gbps RJ45, PoE 受电 |

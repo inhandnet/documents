@@ -396,7 +396,7 @@
         "en",
         "zh"
       ],
-      "public": false
+      "public": true
     },
     {
       "id": "ER2000",

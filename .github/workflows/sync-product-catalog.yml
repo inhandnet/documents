@@ -8,7 +8,10 @@ name: Sync product catalog
 #
 # This workflow removes that manual step for the common case: when a push
 # adds a new top-level docs/en/ or docs/zh/ product folder, it is appended
-# to the catalog automatically. Humans still own: aliases, kind, multi-folder
+# to the catalog automatically -- and if that folder's id was until now an
+# alias of another product, the alias is dropped in the same commit (keeping
+# it would make MCP reject the whole catalog). Humans still own: kind, other
+# aliases, multi-folder
 # merges (one product with folders in both languages under different names),
 # and de-listing a product whose folder disappeared -- scripts/sync_product_
 # catalog.py deliberately refuses to guess on any of those and exits
@@ -53,9 +56,15 @@ jobs:
         id: sync
         run: |
           set +e
-          python scripts/sync_product_catalog.py
-          echo "exit_code=$?" >> "$GITHUB_OUTPUT"
+          python scripts/sync_product_catalog.py | tee "${RUNNER_TEMP}/sync-product-catalog.log"
+          echo "exit_code=${PIPESTATUS[0]}" >> "$GITHUB_OUTPUT"
           set -e
+          {
+            echo "### sync_product_catalog"
+            echo '```'
+            cat "${RUNNER_TEMP}/sync-product-catalog.log"
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
 
       - name: Commit if changed
         run: |
@@ -65,12 +74,23 @@ jobs:
             exit 0
           fi
           new_ids=$(git diff --cached docs/product-catalog.json | grep '^\+      "id":' | sed -E 's/.*"id": "([^"]+)".*/\1/' | paste -sd', ' -)
+          # A sub-model that just got its own docs folder stops being an alias
+          # of the bare model in the same change (MCP refuses to load a catalog
+          # with a duplicate lookup name), so the commit message must say which
+          # aliases were handed off, not just which ids were added.
+          alias_notes=$(grep '^sync_product_catalog: alias ' "${RUNNER_TEMP}/sync-product-catalog.log" || true)
+          if [ -z "${alias_notes}" ]; then
+            alias_notes="(none)"
+          fi
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git commit -m "chore: auto-register new product folder(s) in catalog [skip ci]
 
           New docs/{en,zh} top-level folders detected and registered by
           scripts/sync_product_catalog.py. Newly registered id(s): ${new_ids}
+
+          Aliases handed off to the new entries:
+          ${alias_notes}
 
           Aliases, kind and any multi-folder merge still need human review."
           # Another docs/** autocommit workflow (generate-llms.yml /

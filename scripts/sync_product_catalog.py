@@ -40,11 +40,28 @@ mechanically safe:
   * A new folder's name is not ASCII (id cannot be safely derived) -> the
     script refuses to guess and exits non-zero so a human registers it.
 
-It NEVER modifies or removes an existing catalog entry: aliases, kind,
-public, expected_languages and display_names are human-authored and are
-left byte-for-byte untouched. New entries are spliced into the JSON text
-immediately before the closing of the "products" array so that a diff only
-ever shows pure additions -- no reformatting noise.
+It leaves existing catalog entries byte-for-byte untouched -- kind, public,
+expected_languages and display_names are human-authored -- with exactly one
+exception, "alias hand-off":
+
+  * A sub-model with no documentation of its own (e.g. ISE2003D-P) is
+    registered as an *alias* of the bare model (ISE2003D). Once the content
+    team gives it its own Markdown folder, it must become an independent
+    product -- and the alias MUST disappear in the same catalog change,
+    because MCP's catalog loader puts ids, display names, aliases and source
+    folders into one global lookup table and refuses to load the catalog at
+    all on a duplicate ("duplicate lookup name ..."), which silently freezes
+    every index update. So when a new folder's derived id normalizes to an
+    existing entry's alias, that alias is removed from that entry and the new
+    independent entry is registered in the same run.
+
+Any *other* collision (an existing entry's id, one of its display_names, or
+one of its source_folders) is never auto-resolved: the script reports it and
+exits non-zero so a human decides.
+
+New entries are spliced into the JSON text immediately before the closing of
+the "products" array so that a diff only ever shows pure additions plus, at
+most, the one-line alias removal -- no reformatting noise.
 
 Design notes
 ------------
@@ -111,6 +128,33 @@ def discover_markdown_folders() -> dict[str, set[str]]:
     return folders
 
 
+def _normalize(value: str) -> str:
+    """Byte-for-byte the same normalization MCP's catalog loader uses.
+
+    Kept identical to `_normalize` in inhand-docs-mcp's
+    src/inhand_docs_mcp/catalog.py -- if these two ever diverge this script
+    will happily write a catalog that MCP then refuses to load.
+    """
+    return " ".join(value.split()).casefold()
+
+
+def build_lookup(catalog: dict) -> dict[str, list[tuple[str, str, str]]]:
+    """Mirror MCP's global lookup table: normalized name -> owners.
+
+    Each owner is (product_id, field, original_name) where field is one of
+    "id", "display_name", "alias", "source_folder".
+    """
+    lookup: dict[str, list[tuple[str, str, str]]] = {}
+    for product in catalog["products"]:
+        named: list[tuple[str, str]] = [("id", product["id"])]
+        named += [("display_name", value) for value in product["display_names"].values()]
+        named += [("alias", alias) for alias in product["aliases"]]
+        named += [("source_folder", folder) for folder in product["source_folders"]]
+        for field, name in named:
+            lookup.setdefault(_normalize(name), []).append((product["id"], field, name))
+    return lookup
+
+
 def registered_source_folders(catalog: dict) -> set[str]:
     registered: set[str] = set()
     for product in catalog["products"]:
@@ -134,7 +178,25 @@ def derive_id(folder_name: str) -> str:
     return candidate
 
 
-def build_new_entry(folder_name: str, langs_present: list[str], existing_ids: set[str]) -> dict:
+_FIELD_LABELS = {
+    "id": "id",
+    "display_name": "display_names value",
+    "source_folder": "source_folders entry",
+}
+
+
+def build_new_entry(
+    folder_name: str,
+    langs_present: list[str],
+    lookup: dict[str, list[tuple[str, str, str]]],
+) -> tuple[dict, list[tuple[str, str]]]:
+    """Plan the entry for a new folder.
+
+    Returns (entry, alias_removals) where alias_removals is a list of
+    (owner_product_id, alias) pairs that must be deleted from existing
+    entries so the new entry does not collide in MCP's global lookup table.
+    Raises SyncError for any collision that is not a plain alias hand-off.
+    """
     if not folder_name.isascii():
         raise SyncError(
             f"folder {folder_name!r} is not ASCII; a catalog id cannot be "
@@ -142,13 +204,36 @@ def build_new_entry(folder_name: str, langs_present: list[str], existing_ids: se
             "(id, kind, display_names, expected_languages, aliases as needed)."
         )
     product_id = derive_id(folder_name)
-    if product_id in existing_ids:
-        raise SyncError(
-            f"derived id {product_id!r} for new folder {folder_name!r} "
-            "collides with an existing catalog id; register this folder "
-            "manually with an explicit, non-colliding id."
-        )
-    return {
+
+    alias_removals: list[tuple[str, str]] = []
+    seen_keys: set[str] = set()
+    for own_field, name in (
+        ("id", product_id),
+        ("display_names", folder_name),
+        ("source_folders", folder_name),
+    ):
+        key = _normalize(name)
+        if key in seen_keys:
+            continue
+        seen_keys.add(key)
+        owners = lookup.get(key, [])
+        hard = [owner for owner in owners if owner[1] != "alias"]
+        if hard:
+            owner_id, owner_field, owner_name = hard[0]
+            raise SyncError(
+                f"new folder {folder_name!r} would register {own_field} "
+                f"{name!r}, which collides with the {_FIELD_LABELS[owner_field]} "
+                f"{owner_name!r} of existing catalog entry {owner_id!r}. MCP "
+                "would refuse to load the catalog (duplicate lookup name), so "
+                "this is not auto-resolved: either add this folder to "
+                f"{owner_id!r}'s source_folders, or register it manually with "
+                "an explicit, non-colliding id/display_names."
+            )
+        for owner_id, _field, alias in owners:
+            if (owner_id, alias) not in alias_removals:
+                alias_removals.append((owner_id, alias))
+
+    entry = {
         "id": product_id,
         "kind": "model",
         "display_names": {lang: folder_name for lang in langs_present},
@@ -157,12 +242,105 @@ def build_new_entry(folder_name: str, langs_present: list[str], existing_ids: se
         "expected_languages": list(langs_present),
         "public": True,
     }
+    return entry, alias_removals
 
 
 def format_entry(entry: dict) -> str:
     """Render one catalog entry matching the file's existing indent style."""
     rendered = json.dumps(entry, indent=2, ensure_ascii=False)
     return "\n".join("    " + line if line else line for line in rendered.split("\n"))
+
+
+def format_aliases(aliases: list[str], *, multiline: bool, ensure_ascii: bool) -> str:
+    """Render an aliases array in the style the edited entry already uses.
+
+    docs/product-catalog.json is not uniformly formatted: most entries are
+    `json.dumps(indent=2, ensure_ascii=False)` output shifted by 4 spaces
+    (fields at indent 6, array items at indent 8), while an older block of
+    entries keeps each array on one line with \\uXXXX escapes. The style of
+    the array being edited is detected and reproduced so the diff shows only
+    the removed alias -- no reformatting noise.
+    """
+    if not multiline:
+        return json.dumps(aliases, ensure_ascii=ensure_ascii)
+    rendered = json.dumps(aliases, indent=2, ensure_ascii=ensure_ascii)
+    return "\n".join(
+        ("      " + line if index else line)
+        for index, line in enumerate(rendered.split("\n"))
+    )
+
+
+def find_array_span(raw_text: str, start: int, key: str) -> tuple[int, int] | None:
+    """Return (open_bracket, end) of the array value of `key` after `start`."""
+    key_at = raw_text.find(f'"{key}":', start)
+    if key_at == -1:
+        return None
+    open_at = raw_text.find("[", key_at)
+    if open_at == -1:
+        return None
+    index = open_at + 1
+    in_string = False
+    escaped = False
+    while index < len(raw_text):
+        char = raw_text[index]
+        if in_string:
+            if escaped:
+                escaped = False
+            elif char == "\\":
+                escaped = True
+            elif char == '"':
+                in_string = False
+        elif char == '"':
+            in_string = True
+        elif char == "]":
+            return open_at, index + 1
+        index += 1
+    return None
+
+
+def remove_alias(raw_text: str, catalog: dict, product_id: str, alias: str) -> str:
+    """Delete one alias from one existing entry, in place, in the raw text."""
+    marker = f'\n      "id": "{product_id}",\n'
+    start_of_entry = raw_text.find(marker)
+    if start_of_entry == -1 or raw_text.find(marker, start_of_entry + 1) != -1:
+        raise SyncError(
+            f"could not locate exactly one catalog entry with id {product_id!r} "
+            "in docs/product-catalog.json; refusing to edit its aliases "
+            f"automatically. Remove the alias {alias!r} by hand."
+        )
+    products = [item for item in catalog["products"] if item["id"] == product_id]
+    if len(products) != 1:
+        raise SyncError(f"catalog has {len(products)} entries with id {product_id!r}")
+    remaining = [
+        item for item in products[0]["aliases"] if _normalize(item) != _normalize(alias)
+    ]
+
+    span = find_array_span(raw_text, start_of_entry, "aliases")
+    if span is None:
+        raise SyncError(
+            f"could not locate the aliases array of catalog entry {product_id!r}; "
+            f"remove the alias {alias!r} by hand."
+        )
+    open_at, end_at = span
+    current = raw_text[open_at:end_at]
+    try:
+        current_aliases = json.loads(current)
+    except json.JSONDecodeError:
+        current_aliases = None
+    if current_aliases != products[0]["aliases"]:
+        raise SyncError(
+            f"the aliases array of catalog entry {product_id!r} does not read back "
+            f"as expected; remove the alias {alias!r} by hand."
+        )
+    # Keep the parsed catalog in step so a second removal on the same entry
+    # still validates against what the text now holds.
+    products[0]["aliases"] = remaining
+    replacement = format_aliases(
+        remaining,
+        multiline="\n" in current,
+        ensure_ascii="\\u" in current,
+    )
+    return raw_text[:open_at] + replacement + raw_text[end_at:]
 
 
 def splice_entries(raw_text: str, entries: list[dict]) -> str:
@@ -198,19 +376,33 @@ def main() -> int:
     new_folders = sorted(all_discovered - registered)
 
     problems: list[str] = []
-    existing_ids = {product["id"] for product in catalog["products"]}
+    lookup = build_lookup(catalog)
     new_entries: list[dict] = []
+    alias_removals: list[tuple[str, str]] = []
     for folder_name in new_folders:
         langs_present = sorted(
             (lang for lang in LANGUAGES if folder_name in folders_by_lang[lang]),
             key=LANGUAGES.index,
         )
         try:
-            entry = build_new_entry(folder_name, langs_present, existing_ids)
+            entry, removals = build_new_entry(folder_name, langs_present, lookup)
         except SyncError as error:
             problems.append(str(error))
             continue
-        existing_ids.add(entry["id"])
+        # Keep the lookup table in step with what this run will write, so a
+        # second new folder colliding with the first (or with an alias this
+        # run already hands off) is still caught.
+        for owner_id, alias in removals:
+            key = _normalize(alias)
+            lookup[key] = [owner for owner in lookup.get(key, []) if owner[1] != "alias"]
+            if (owner_id, alias) not in alias_removals:
+                alias_removals.append((owner_id, alias))
+        for field, name in (
+            ("id", entry["id"]),
+            ("display_name", folder_name),
+            ("source_folder", folder_name),
+        ):
+            lookup.setdefault(_normalize(name), []).append((entry["id"], field, name))
         new_entries.append(entry)
 
     # New, cleanly-derivable folders are registered even if some other new
@@ -224,7 +416,15 @@ def main() -> int:
         for entry in new_entries:
             print(f"  - {entry['id']} (source_folders={entry['source_folders']!r})")
 
+    def report_alias_removals(verb: str) -> None:
+        for owner_id, alias in alias_removals:
+            print(
+                f"sync_product_catalog: alias {alias!r} {verb} from {owner_id!r} "
+                "(folder now has independent docs)"
+            )
+
     if args.check:
+        report_alias_removals("will be removed")
         if problems or new_entries:
             if problems:
                 print("sync_product_catalog: manual action required:", file=sys.stderr)
@@ -236,8 +436,22 @@ def main() -> int:
         return 0
 
     if new_entries:
-        new_text = splice_entries(raw_text, new_entries)
+        new_text = raw_text
+        try:
+            for owner_id, alias in alias_removals:
+                new_text = remove_alias(new_text, catalog, owner_id, alias)
+        except SyncError as error:
+            # An alias hand-off that cannot be applied must abort the whole
+            # write: registering the new entry without dropping the alias is
+            # exactly the duplicate-lookup-name failure that freezes indexing.
+            print("sync_product_catalog: manual action required:", file=sys.stderr)
+            print(f"  - {error}", file=sys.stderr)
+            for problem in problems:
+                print(f"  - {problem}", file=sys.stderr)
+            return 1
+        new_text = splice_entries(new_text, new_entries)
         CATALOG_PATH.write_text(new_text, encoding="utf-8", newline="\n")
+        report_alias_removals("removed")
         print(f"sync_product_catalog: wrote {CATALOG_PATH.relative_to(REPO_ROOT).as_posix()}")
     elif not problems:
         print("sync_product_catalog: catalog already up to date; nothing to do.")

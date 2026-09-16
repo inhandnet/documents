@@ -516,13 +516,6 @@
 
 - [ISM8028U 规格书 v1.0](ISM8028U/Datasheets/%E9%80%9A%E7%94%A8/ISM8028U%E8%A7%84%E6%A0%BC%E4%B9%A6_V1.0.md): ISM8028U 规格书 v1.0 — ISM8028U 万兆三层网管型工业交换机
 
-## IWOM
-
-- [IWOM AILT v1.0](IWOM/Datasheets/AILT/AILT%E8%A7%84%E6%A0%BC%E4%B9%A6_V1.0.md): IWOM AILT v1.0 — 高精度暂态录波型故障指示器——采集单元(压簧固定型)
-- [IWOM CSP v1.0](IWOM/Datasheets/CSP/CSP%E8%A7%84%E6%A0%BC%E4%B9%A6_V1.0.md): IWOM CSP v1.0 — 高精度暂态录波型故障指示器——采集单元(双电源型)
-- [IWOM MT v1.0](IWOM/Datasheets/MT/MT%E8%A7%84%E6%A0%BC%E4%B9%A6_V1.0.md): IWOM MT v1.0 — 高精度暂态录波型故障指示器——采集单元(线路取电型)
-- [IWOM SE v1.0](IWOM/Datasheets/SE/SE%E8%A7%84%E6%A0%BC%E4%B9%A6_V1.0.md): IWOM SE v1.0 — 高精度暂态录波型故障指示器——采集单元(太阳能取电型)
-
 ## InBOX710 人脸识别安卓工控机
 
 - [InBOX710 人脸识别安卓工控机 规格书 v1.0](InBOX710%20%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB%E5%AE%89%E5%8D%93%E5%B7%A5%E6%8E%A7%E6%9C%BA/Datasheets/%E9%80%9A%E7%94%A8/InBOX710%E8%A7%84%E6%A0%BC%E4%B9%A6_V1.0.md): InBOX710 人脸识别安卓工控机 规格书 v1.0

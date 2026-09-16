@@ -1492,24 +1492,11 @@
       "display_names": {
         "en": "ISM5026U"
       },
-      "aliases": [],
+      "aliases": [
+        "ISM5026U-P"
+      ],
       "source_folders": [
         "ISM5026U"
-      ],
-      "expected_languages": [
-        "en"
-      ],
-      "public": true
-    },
-    {
-      "id": "ISM5026U-P",
-      "kind": "model",
-      "display_names": {
-        "en": "ISM5026U-P"
-      },
-      "aliases": [],
-      "source_folders": [
-        "ISM5026U-P"
       ],
       "expected_languages": [
         "en"
@@ -1582,24 +1569,11 @@
       "display_names": {
         "en": "ISM7028U"
       },
-      "aliases": [],
+      "aliases": [
+        "ISM7028U-P"
+      ],
       "source_folders": [
         "ISM7028U"
-      ],
-      "expected_languages": [
-        "en"
-      ],
-      "public": true
-    },
-    {
-      "id": "ISM7028U-P",
-      "kind": "model",
-      "display_names": {
-        "en": "ISM7028U-P"
-      },
-      "aliases": [],
-      "source_folders": [
-        "ISM7028U-P"
       ],
       "expected_languages": [
         "en"

@@ -49,6 +49,7 @@
   - [4.1 System](CR202/Manuals/User%20manual/CR202_User%20manual_V1.0.md#41-system)
 - [CR202 Certifications](CR202/certifications.md): CR202 certification list (CE, FCC, IC, PTCRB, UKCA) with links to the original certificate files
 - [CR202 Drawings](CR202/drawings.md): CR202 mechanical drawings (2D, 3D) with links to the original drawing files
+- [QA — CR202 Portable Router (EN samples)](CR202/FAQ/QA_CR202.md): CR202 FAQ
 
 ## CR202-Lite
 

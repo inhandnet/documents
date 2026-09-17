@@ -14,22 +14,6 @@
 - [CR202 快速安装手册](CR202/Manuals/%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97/CR202%E5%BF%AB%E9%80%9F%E5%AE%89%E8%A3%85%E6%89%8B%E5%86%8C_V1.0.md): CR202 安装指南 v1.0
 - [北京映翰通4G蜂窝路由器CR202用户手册](CR202/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/CR202%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.md): CR202 用户手册 v1.0 — CR202是一款集4G蜂窝网络、Wi-Fi、VPN技术于一体的移动无线路由器，能够为室内场景、户外场景以及移动场景提供可靠稳定的网络连接。该设备适用于中小型分支机构和自助服务终端等场景，具备链路检测机制以保障网络连续性。部分型号内置电池，支…
 - [CR202 认证证书](CR202/certifications.md): CR202 已获认证清单（CE、FCC、IC、PTCRB、UKCA），含证书原件文件链接
-- [QA — CR202 Portable Router](CR202/FAQ/QA_CR202.md): CR202 FAQ
-  - [Q1. CR202 won't power on — what should I check?](CR202/FAQ/QA_CR202.md#q1-cr202-wont-power-on-what-should-i-check)
-  - [Q2. CR202 battery LED is red or the device won't charge — how do I fix it?](CR202/FAQ/QA_CR202.md#q2-cr202-battery-led-is-red-or-the-device-wont-charge-how-do-i-fix-it)
-  - [Q3. How do I access the CR202 web GUI when my laptop has no Ethernet port?](CR202/FAQ/QA_CR202.md#q3-how-do-i-access-the-cr202-web-gui-when-my-laptop-has-no-ethernet-port)
-  - [Q4. How do I configure or change the Wi-Fi name (SSID) and password on the CR202?](CR202/FAQ/QA_CR202.md#q4-how-do-i-configure-or-change-the-wi-fi-name-ssid-and-password-on-the-cr202)
-  - [Q5. CR202 is not connecting to cellular / shows cellular registered but no internet](CR202/FAQ/QA_CR202.md#q5-cr202-is-not-connecting-to-cellular-shows-cellular-registered-but-no-internet)
-  - [Q6. Verizon changed the APN from vzwinternet to V5GA01INTERNET and the CR202 stopped working](CR202/FAQ/QA_CR202.md#q6-verizon-changed-the-apn-from-vzwinternet-to-v5ga01internet-and-the-cr202-stopped-working)
-  - [Q7. End devices cannot connect to CR202 via Wi-Fi or Ethernet after a factory reset — what is wrong?](CR202/FAQ/QA_CR202.md#q7-end-devices-cannot-connect-to-cr202-via-wi-fi-or-ethernet-after-a-factory-reset-what-is-wrong)
-  - [Q8. CR202 SIM failure — fixed after a reboot. Is this expected?](CR202/FAQ/QA_CR202.md#q8-cr202-sim-failure-fixed-after-a-reboot-is-this-expected)
-  - [Q9. I tried to log in to my CR202 with the default username and password but it says login failed — what should I check?](CR202/FAQ/QA_CR202.md#q9-i-tried-to-log-in-to-my-cr202-with-the-default-username-and-password-but-it-says-login-failed-what-should-i-check)
-  - [Q10. The Global icon LED on my CR202 keeps blinking and the device can't reach the internet — what does this mean?](CR202/FAQ/QA_CR202.md#q10-the-global-icon-led-on-my-cr202-keeps-blinking-and-the-device-cant-reach-the-internet-what-does-this-mean)
-  - [Q11. I need to reach an end device behind my CR202 (e.g. 192.168.1.80) from the public internet — how do I set up port forwarding?](CR202/FAQ/QA_CR202.md#q11-i-need-to-reach-an-end-device-behind-my-cr202-eg-192168180-from-the-public-internet-how-do-i-set-up-port-forwarding)
-  - [Q12. I want to restrict my CR202 so only specific devices (by MAC address) can use the network — what's the correct approach?](CR202/FAQ/QA_CR202.md#q12-i-want-to-restrict-my-cr202-so-only-specific-devices-by-mac-address-can-use-the-network-whats-the-correct-approach)
-  - [Q13. My CR202 goes offline randomly — how do I investigate the cause?](CR202/FAQ/QA_CR202.md#q13-my-cr202-goes-offline-randomly-how-do-i-investigate-the-cause)
-  - [Q14. End devices connect to the CR202 Wi-Fi and get an IP, but can't reach the internet — what should I check?](CR202/FAQ/QA_CR202.md#q14-end-devices-connect-to-the-cr202-wi-fi-and-get-an-ip-but-cant-reach-the-internet-what-should-i-check)
-  - [Q15. My CR202 battery is not holding a charge even with the supplied power adapter — what can be done?](CR202/FAQ/QA_CR202.md#q15-my-cr202-battery-is-not-holding-a-charge-even-with-the-supplied-power-adapter-what-can-be-done)
 
 ## CR202-Lite
 

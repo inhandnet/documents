@@ -962,6 +962,16 @@
 
 ## ODU12
 
+- [5G ODU12 Product User Manual](ODU12/Manuals/User%20manual/ODU12_User%20manual_V1.0.md): ODU12 User manual v1.0 — The ODU12 is an outdoor 5G router and a cloud-managed, high-performance network access device. Built on a pioneering "st…
+  - [Front Matter](ODU12/Manuals/User%20manual/ODU12_User%20manual_V1.0.md#front-matter)
+  - [Chapter 1: Know the Device](ODU12/Manuals/User%20manual/ODU12_User%20manual_V1.0.md#chapter-1-know-the-device)
+  - [Chapter 2: Installation and First Use](ODU12/Manuals/User%20manual/ODU12_User%20manual_V1.0.md#chapter-2-installation-and-first-use)
+  - [Chapter 3: Common Scenario Configuration](ODU12/Manuals/User%20manual/ODU12_User%20manual_V1.0.md#chapter-3-common-scenario-configuration)
+  - [Chapter 4: Function Description and Parameter Reference](ODU12/Manuals/User%20manual/ODU12_User%20manual_V1.0.md#chapter-4-function-description-and-parameter-reference)
+  - [Chapter 5: Typical Applications](ODU12/Manuals/User%20manual/ODU12_User%20manual_V1.0.md#chapter-5-typical-applications)
+  - [Appendix: Troubleshooting](ODU12/Manuals/User%20manual/ODU12_User%20manual_V1.0.md#appendix-troubleshooting)
+  - [Appendix: Safety Precautions](ODU12/Manuals/User%20manual/ODU12_User%20manual_V1.0.md#appendix-safety-precautions)
+  - [FAQ](ODU12/Manuals/User%20manual/ODU12_User%20manual_V1.0.md#faq)
 - [ODU12 Datasheet v1.1](ODU12/Datasheets/General/ODU12_Datasheet_V1.1.md): ODU12 Datasheet v1.1 — Minimalist Design, Powerful Connectivity
 - [ODU12 Drawings](ODU12/drawings.md): ODU12 mechanical drawings (2D, 3D) with links to the original drawing files
 

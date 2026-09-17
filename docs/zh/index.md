@@ -425,6 +425,14 @@ hide:
     </div>
     <div class="pm-card">
       <div class="pm-card__body">
+        <div class="pm-card__title">IR602</div>
+        <ul class="pm-card__links">
+        <li><a href="IR602/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/IR602%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="北京映翰通工业路由器IR602产品系列用户手册">用户手册 V1.0</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pm-card">
+      <div class="pm-card__body">
         <div class="pm-card__title">IR615-S</div>
         <ul class="pm-card__links">
         <li><a href="IR615-S/certifications.html" title="IR615-S 认证证书">认证证书</a></li>
@@ -509,6 +517,14 @@ hide:
         <li><a href="Mo%2068A/Manuals/%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97/Mo%2068A_%E7%94%A8%E6%88%B7%E6%8C%87%E5%8D%97_V1.0.html" title="Mo 68A 用户指南">安装指南 V1.0</a></li>
         <li><a href="Mo%2068A/Manuals/%E5%BF%AB%E9%80%9F%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/Mo%2068A_%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97_V1.0.html" title="Mo 68A 快速入门指南">快速用户手册 V1.0</a></li>
         <li><a href="Mo%2068A/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/Mo%2068A%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="Mo 68A 硬件参考手册">用户手册 V1.0</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pm-card">
+      <div class="pm-card__body">
+        <div class="pm-card__title">ODU12</div>
+        <ul class="pm-card__links">
+        <li><a href="ODU12/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/ODU12%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="5G室外路由器ODU12用户手册">用户手册 V1.0</a></li>
         </ul>
       </div>
     </div>

@@ -621,6 +621,7 @@ hide:
         <div class="pm-card__title">ODU12</div>
         <ul class="pm-card__links">
         <li><a href="ODU12/drawings.html" title="ODU12 Drawings">Drawings</a></li>
+        <li><a href="ODU12/Manuals/User%20manual/ODU12_User%20manual_V1.0.html" title="5G ODU12 Product User Manual">User manual V1.0</a></li>
         </ul>
       </div>
     </div>

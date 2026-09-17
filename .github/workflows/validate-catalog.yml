@@ -1,0 +1,59 @@
+name: Validate catalog for MCP
+
+# Pre-flight for the Documents MCP indexer (https://docs-mcp.inhand.com).
+#
+# WHAT THIS BLOCKS
+# The MCP service rebuilds its search index from every push to master. Before
+# indexing it validates docs/product-catalog.json against the real docs/en and
+# docs/zh folder tree (inhand-docs-mcp: commit_builder._catalog_chunks_and_assets
+# -> catalog.validate_source_folders / catalog.for_asset). Typical breakage:
+# a new product folder nobody registered, a catalog entry pointing at a folder
+# that was deleted/renamed, a duplicate alias, or a PDF in an unregistered
+# folder whose filename matches zero or several product names.
+#
+# WHY IT MATTERS
+# A commit that fails that validation makes the MCP index silently freeze on
+# the previous version: the build aborts, the old index stays active, nothing
+# errors out, search keeps answering -- from a stale commit, potentially for
+# weeks. This job turns that invisible failure into a red check on the commit
+# that caused it. It does not affect deploy-manuals.yml or the docs site.
+#
+# EXPECTED RED-THEN-GREEN ON BRAND NEW PRODUCT FOLDERS -- DO NOT PANIC
+# The first push that adds docs/en/<NewProduct>/ is red here ("unmapped source
+# folder"), because the folder is not in the catalog yet. The sync-product-
+# catalog.yml workflow then auto-registers it and pushes a follow-up commit,
+# and this job goes green on that commit. Only worry if it stays red -- that
+# means sync-product-catalog.py refused to guess and a human must edit
+# docs/product-catalog.json.
+#
+# No secrets, standard library only.
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - "docs/**"
+  pull_request:
+    paths:
+      - "docs/**"
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # Standard-library only -- no pip install, cannot break the build env.
+      - name: Validate product catalog against docs tree
+        run: python scripts/validate_catalog_for_mcp.py

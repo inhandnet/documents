@@ -40,6 +40,7 @@ hide:
         <div class="pm-card__title">CR202</div>
         <ul class="pm-card__links">
         <li><a href="CR202/certifications.html" title="CR202 认证证书">认证证书</a></li>
+        <li><a href="CR202/FAQ/QA_CR202.html" title="QA — CR202 Portable Router">FAQ</a></li>
         <li><a href="CR202/Manuals/%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97/CR202%E5%BF%AB%E9%80%9F%E5%AE%89%E8%A3%85%E6%89%8B%E5%86%8C_V1.0.html" title="CR202 快速安装手册">安装指南 V1.0</a></li>
         <li><a href="CR202/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/CR202%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="北京映翰通4G蜂窝路由器CR202用户手册">用户手册 V1.0</a></li>
         </ul>

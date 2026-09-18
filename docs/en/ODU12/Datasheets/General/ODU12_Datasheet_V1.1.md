@@ -17,19 +17,20 @@
         <div style="width: 200px;background-color: #4CAF50; color: white; padding: 8px 8px; border-radius: 6px; font-size: 18px;">· Wi-Fi 7</div>
       </div>
       <div style="display: flex; flex-wrap: wrap; gap: 16px;margin-top:16px">
-        <div style="width: 200px;background-color: #4CAF50; color: white; padding: 8px 8px; border-radius: 6px; font-size: 18px;">· Outdoor IP65</div>
+        <div style="width: 200px;background-color: #4CAF50; color: white; padding: 8px 8px; border-radius: 6px; font-size: 18px;">· Outdoor IP67</div>
         <div style="width: 200px;background-color: #4CAF50; color: white; padding: 8px 8px; border-radius: 6px; font-size: 18px; ">· AI-Native</div>
       </div>
     </div>
   </div>
 </div>
 
+
 <div style="page-break-after: always;"></div>
 
 
 # <span style="color: green;">1. Product Overview</span>
 
-The ODU12 is an innovative outdoor 5G router—a high-performance, cloud-managed network access device built on a groundbreaking structure-thermal integration design. It seamlessly combines high-performance connectivity with architectural aesthetics, purpose-built for residential and light commercial applications. Advanced capabilities including 5G SA/NSA dual-mode cellular, Wi-Fi 7 dual-band wireless, and 2.5 Gbps wired networking are integrated into a compact IP65-rated enclosure.
+The ODU12 is an innovative outdoor 5G router—a high-performance, cloud-managed network access device built on a groundbreaking structure-thermal integration design. It seamlessly combines high-performance connectivity with architectural aesthetics, purpose-built for residential and light commercial applications. Advanced capabilities including 5G SA/NSA dual-mode cellular, Wi-Fi 7 dual-band wireless, and 2.5 Gbps wired networking are integrated into a compact IP67-rated enclosure.
 
 The ODU12 moves beyond the bulky appearance and cluttered external antennas of traditional outdoor routers. Its minimalist all-in-one design features fully integrated 360° omnidirectional antennas, delivering reliable performance in extreme weather while minimizing visual impact and blending harmoniously with the built environment.
 
@@ -133,7 +134,7 @@ The ODU12 is a true AI Agent-native router, designed for the digital workplace o
 The **die-cast aluminum heat sink** serves as both a passive cooling element and the primary structural frame:
 
 - Eliminates fans and redundant internal supports for fanless, silent operation
-- Significantly reduces size while maintaining IP65 protection
+- Significantly reduces size while maintaining IP67 protection
 - Enhances durability and long-term reliability, extending component lifespan
 - Greatly reduces bill of materials (BOM) and assembly complexity
 
@@ -468,7 +469,7 @@ The ODU12 is powered by the InCloud Manager AI cloud management platform. Throug
 
 ## <span style="color: green;">11.1 Protection Rating</span>
 
-- **IP Rating:** IP65
+- **IP Rating:** IP67
 - **Salt Mist Test:** 48 hours; PCBA conformal coating; compliant with IEC 60068-2-52
 
 ## <span style="color: green;">11.2 Mechanical Reliability</span>

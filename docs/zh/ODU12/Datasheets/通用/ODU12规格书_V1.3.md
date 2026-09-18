@@ -17,7 +17,7 @@
         <div style="width: 200px;background-color: #4CAF50; color: white; padding: 8px 8px; border-radius: 6px; font-size: 18px;">· Wi-Fi 6</div>
       </div>
       <div style="display: flex; flex-wrap: wrap; gap: 16px;margin-top:16px">
-        <div style="width: 200px;background-color: #4CAF50; color: white; padding: 8px 8px; border-radius: 6px; font-size: 18px;">· 户外 IP65</div>
+        <div style="width: 200px;background-color: #4CAF50; color: white; padding: 8px 8px; border-radius: 6px; font-size: 18px;">· 户外 IP67</div>
         <div style="width: 200px;background-color: #4CAF50; color: white; padding: 8px 8px; border-radius: 6px; font-size: 18px; ">· AI 原生</div>
       </div>
     </div>
@@ -25,12 +25,13 @@
 </div>
 
 
+
 <div style="page-break-after: always;"></div>
 
 
 # <span style="color: green;">1. 产品概述</span>
 
-ODU12 是一款创新的户外 5G 路由器——基于开创性的结构-散热一体化设计打造的高性能、云管理网络接入设备。它将高性能连接与建筑美学完美融合，专为住宅和轻商用场景而设计。5G SA/NSA 双模蜂窝、Wi-Fi 6 双频无线和 2.5 Gbps 有线组网等先进能力，被集成于紧凑的 IP65 防护等级外壳之中。
+ODU12 是一款创新的户外 5G 路由器——基于开创性的结构-散热一体化设计打造的高性能、云管理网络接入设备。它将高性能连接与建筑美学完美融合，专为住宅和轻商用场景而设计。5G SA/NSA 双模蜂窝、Wi-Fi 6 双频无线和 2.5 Gbps 有线组网等先进能力，被集成于紧凑的 IP67 防护等级外壳之中。
 
 ODU12 突破了传统户外路由器笨重的外观和杂乱的外置天线设计。其极简的一体化设计采用全集成 360° 全向天线，在极端天气下仍能提供可靠性能，同时最大限度减少视觉影响，与建筑环境和谐融为一体。
 
@@ -132,7 +133,7 @@ ODU12 是真正的 AI Agent 原生路由器，专为未来数字化办公场景�
 **压铸铝散热片**同时作为被动散热元件和主要结构框架：
 
 - 取消风扇和冗余的内部支撑结构，实现无风扇静音运行
-- 在保持 IP65 防护的同时显著缩小体积
+- 在保持 IP67 防护的同时显著缩小体积
 - 增强耐用性和长期可靠性，延长元器件使用寿命
 - 大幅降低物料清单（BOM）成本和装配复杂度
 
@@ -481,7 +482,7 @@ ODU12 由 InCloud Manager AI 云管理平台提供支持。通过 AI 网络助�
 
 ## <span style="color: green;">11.1 防护等级</span>
 
-- **IP 防护等级：** IP65
+- **IP 防护等级：** IP67
 - **盐雾测试：** 48 小时；PCBA 三防涂覆；符合 IEC 60068-2-52
 
 ## <span style="color: green;">11.2 机械可靠性</span>

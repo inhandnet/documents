@@ -334,18 +334,27 @@ The ODU302 integrates with the InHand Device Manager cloud management platform t
 
 ## <span style="color: green;">10.2 Package Contents</span>
 
+**Standard package：**
+
 - ODU302 main unit × 1
-- IEEE 802.3af PoE adapter × 1
 - 1 m Ethernet cable × 1
 - Mounting kit (wall-mount/pole-mount/top-mount) × 1
 - Quick Start Guide × 1
+- SlM Eject Pin x 1
 
+**Optional accessories：**
+
+- DC Power Adapter x 1
+- PoE Injector x 1
+- AC Power Cord x 1
 
 # <span style="color: green;">11. Reliability Standards and Certifications</span>
 
 ## <span style="color: green;">11.1 Ingress Protection</span>
 
-- **IP Rating:** IP65 (dust-tight, protected against high-pressure water jets)
+## <span style="color: green;">11.1 Ingress Protection</span>
+
+**IP Rating:** IP65 (dust-tight, protected against high-pressure water jets)
 
 ## <span style="color: green;">11.2 Mechanical Reliability</span>
 
@@ -375,9 +384,9 @@ The ODU302 integrates with the InHand Device Manager cloud management platform t
 | IC            | Completed   |
 | PTCRB         | Completed   |
 | AT&T          | In‑progress |
-| Verizon       | In‑progress |
+| Verizon       | Completed   |
 | T-Mobile      | In‑progress |
-| CE            | In‑progress |
+| CE            | Completed   |
 
 > Note: Certification status is subject to the time of publication. For the latest certification status of specific SKUs, please contact the InHand sales team.
 

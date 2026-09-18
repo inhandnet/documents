@@ -1,0 +1,38 @@
+name: Sync Download URLs to Udesk
+
+# 每3天自动拉取 poweris 产品下载页 URL，同步到 Udesk 知识库
+
+on:
+  schedule:
+    - cron: '0 2 */3 * *'  # 每3天 UTC 凌晨2点
+  workflow_dispatch:
+    inputs:
+      site:
+        description: '站点（all/zh/en）'
+        type: choice
+        options: ['all', 'zh', 'en']
+        default: 'all'
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - run: pip install requests
+
+      - name: Sync download URLs
+        env:
+          POWERIS_ZH_BASE: ${{ secrets.POWERIS_ZH_BASE }}
+          POWERIS_ZH_KEY: ${{ secrets.POWERIS_ZH_KEY }}
+          POWERIS_EN_BASE: ${{ secrets.POWERIS_EN_BASE }}
+          POWERIS_EN_KEY: ${{ secrets.POWERIS_EN_KEY }}
+          UDESK_API_BASE: ${{ secrets.UDESK_API_BASE }}
+          UDESK_APP_ID: ${{ secrets.UDESK_APP_ID }}
+          UDESK_USER_ID: ${{ secrets.UDESK_USER_ID }}
+        run: |
+          python auto-import/scripts/sync_download_urls.py --site ${{ inputs.site || 'all' }}

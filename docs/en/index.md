@@ -42,7 +42,6 @@ hide:
         <ul class="pm-card__links">
         <li><a href="CR202/certifications.html" title="CR202 Certifications">Certifications</a></li>
         <li><a href="CR202/drawings.html" title="CR202 Drawings">Drawings</a></li>
-        <li><a href="CR202/FAQ/QA_CR202.html" title="QA — CR202 Portable Router (EN samples)">FAQ</a></li>
         <li><a href="CR202/Manuals/User%20manual/CR202_User%20manual_V1.0.html" title="Portable Router CR202 Product User Manual">User manual V1.0</a></li>
         </ul>
       </div>

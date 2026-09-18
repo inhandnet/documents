@@ -692,6 +692,22 @@
 
 ## IR602
 
+- [Industrial Router IR602 User manual](IR602/Manuals/User%20manual/IR602%20User%20Manual_V1.0.md): IR602 User manual v1.0 — The IR602 series is a lightweight 5G RedCap industrial router developed by InHand Networks for large-scale, medium-rate…
+  - [Graphical Interface Conventions](IR602/Manuals/User%20manual/IR602%20User%20Manual_V1.0.md#graphical-interface-conventions)
+  - [How to Use This Manual](IR602/Manuals/User%20manual/IR602%20User%20Manual_V1.0.md#how-to-use-this-manual)
+  - [1.1 Overview](IR602/Manuals/User%20manual/IR602%20User%20Manual_V1.0.md#11-overview)
+  - [1.2 LED Indicators](IR602/Manuals/User%20manual/IR602%20User%20Manual_V1.0.md#12-led-indicators)
+  - [1.3 Restore Factory Defaults](IR602/Manuals/User%20manual/IR602%20User%20Manual_V1.0.md#13-restore-factory-defaults)
+  - [1.4 Default Settings](IR602/Manuals/User%20manual/IR602%20User%20Manual_V1.0.md#14-default-settings)
+  - [2.1 Pre-installation Preparation](IR602/Manuals/User%20manual/IR602%20User%20Manual_V1.0.md#21-pre-installation-preparation)
+  - [2.2 Installation Guide](IR602/Manuals/User%20manual/IR602%20User%20Manual_V1.0.md#22-installation-guide)
+  - [2.3 Quick Check](IR602/Manuals/User%20manual/IR602%20User%20Manual_V1.0.md#23-quick-check)
+  - [Scenario 1: Cellular Networking](IR602/Manuals/User%20manual/IR602%20User%20Manual_V1.0.md#scenario-1-cellular-networking)
+  - [Scenario 2: Wired Networking](IR602/Manuals/User%20manual/IR602%20User%20Manual_V1.0.md#scenario-2-wired-networking)
+  - [Scenario 3: Wi-Fi STA Networking](IR602/Manuals/User%20manual/IR602%20User%20Manual_V1.0.md#scenario-3-wi-fi-sta-networking)
+  - [Scenario 4: Connect to DeviceLive Cloud Platform](IR602/Manuals/User%20manual/IR602%20User%20Manual_V1.0.md#scenario-4-connect-to-devicelive-cloud-platform)
+  - [4.1 Device Monitoring](IR602/Manuals/User%20manual/IR602%20User%20Manual_V1.0.md#41-device-monitoring)
+  - [4.2 Status](IR602/Manuals/User%20manual/IR602%20User%20Manual_V1.0.md#42-status)
 - [IR602 Datasheet v1.2](IR602/Datasheets/General/IR602_Datasheet_V1.2.md): IR602 Datasheet v1.2 — Lightweight 5G Connectivity, Build Industrial Digital Foundation
 
 ## IR615-S

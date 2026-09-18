@@ -393,6 +393,14 @@ hide:
     </div>
     <div class="pm-card">
       <div class="pm-card__body">
+        <div class="pm-card__title">IR602</div>
+        <ul class="pm-card__links">
+        <li><a href="IR602/Manuals/User%20manual/IR602%20User%20Manual_V1.0.html" title="Industrial Router IR602 User manual">User manual V1.0</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pm-card">
+      <div class="pm-card__body">
         <div class="pm-card__title">IR615-S</div>
         <ul class="pm-card__links">
         <li><a href="IR615-S/certifications.html" title="IR615-S Certifications">Certifications</a></li>

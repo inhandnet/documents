@@ -605,6 +605,14 @@ hide:
     </div>
     <div class="pm-card">
       <div class="pm-card__body">
+        <div class="pm-card__title">XCR624</div>
+        <ul class="pm-card__links">
+        <li><a href="XCR624/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/XCR624%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="北京映翰通工业路由器XCR624产品系列用户手册">用户手册 V1.0</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pm-card">
+      <div class="pm-card__body">
         <div class="pm-card__title">白鹰能源管家</div>
         <ul class="pm-card__links">
         <li><a href="%E7%99%BD%E9%B9%B0%E8%83%BD%E6%BA%90%E7%AE%A1%E5%AE%B6/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/%E7%99%BD%E9%B9%B0%E8%83%BD%E6%BA%90%E7%AE%A1%E5%AE%B6%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C-V1.1.html" title="白鹰能源管家用户手册（规范版）">用户手册 V1.1</a></li>

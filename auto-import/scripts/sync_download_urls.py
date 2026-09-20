@@ -35,6 +35,24 @@ URL_TEMPLATES = {
     "en": "https://www.inhand.com/en/resources-center/#/{industry}/{category}/{series}",
 }
 
+# 文件名和标题（多语言）
+TITLES = {
+    "zh": {
+        "filename": "产品资源页面汇总_zh.md",
+        "title": "映翰通产品资源页面汇总（{site}）",
+        "intro": "本页汇总映翰通所有产品的资源入口页面，包含用户手册、规格书、固件、认证证书、图纸、FAQ 等资料的下载入口。",
+        "link_text": "进入",
+        "col_header": "资源页面",
+    },
+    "en": {
+        "filename": "产品资源页面汇总_en.md",
+        "title": "InHand Product Resource Pages ({site})",
+        "intro": "This page lists the resource entry pages for all InHand products, including user manuals, datasheets, firmware, certifications, drawings, FAQs, and more.",
+        "link_text": "Open",
+        "col_header": "Resource Page",
+    },
+}
+
 # Udesk API
 UDESK_BASE = os.environ.get("UDESK_API_BASE", "https://knowledgeservice.s2.udesk.cn")
 UDESK_APP_ID = os.environ.get("UDESK_APP_ID", "9b1b1ba1-4ecf-4a79-70f9-9e0ee93d0252")
@@ -81,10 +99,13 @@ def fetch_poweris_data(base_url, api_key):
     return all_data
 
 
-def generate_md(data, url_template, title):
+def generate_md(data, url_template, title_config):
     """生成 md 内容"""
+    t = title_config
     lines = []
-    lines.append(f"# {title}")
+    lines.append(f"# {t['title']}")
+    lines.append("")
+    lines.append(f"> {t['intro']}")
     lines.append("")
     lines.append("> 自动生成，数据来源：poweris 系统")
 
@@ -96,11 +117,11 @@ def generate_md(data, url_template, title):
     for ind_key in sorted(by_industry.keys()):
         lines.append(f"\n### {ind_key}")
         lines.append("")
-        lines.append("| 产品系列 | 下载页面 |")
+        lines.append(f"| 产品系列 | {t['col_header']} |")
         lines.append("|---------|---------|")
         for item in by_industry[ind_key]:
             url = url_template.format(**item)
-            lines.append(f"| {item['series_name']} | [打开]({url}) |")
+            lines.append(f"| {item['series_name']} | [{t['link_text']}]({url}) |")
         lines.append("")
 
     return "\n".join(lines)
@@ -182,25 +203,25 @@ def main():
     parser.add_argument("--site", choices=["zh", "en", "all"], default="all")
     args = parser.parse_args()
 
-    log("=== 产品下载页 URL 同步 ===")
+    log("=== 产品资源页 URL 同步 ===")
 
     sites = {
-        "zh": (POWERIS_ZH_BASE, POWERIS_ZH_KEY, "中文站", "产品下载页面汇总_zh.md"),
-        "en": (POWERIS_EN_BASE, POWERIS_EN_KEY, "英文站", "产品下载页面汇总_en.md"),
+        "zh": (POWERIS_ZH_BASE, POWERIS_ZH_KEY, {**TITLES["zh"], "title": TITLES["zh"]["title"].format(site="中文站")}),
+        "en": (POWERIS_EN_BASE, POWERIS_EN_KEY, {**TITLES["en"], "title": TITLES["en"]["title"].format(site="English")}),
     }
     targets = [args.site] if args.site != "all" else ["zh", "en"]
 
     for site_key in targets:
-        base, key, title, filename = sites[site_key]
+        base, key, t = sites[site_key]
         url_template = URL_TEMPLATES[site_key]
 
-        log(f"\n{title}:")
+        log(f"\n{t['title']}:")
         data = fetch_poweris_data(base, key)
         log(f"  {len(data)} products")
 
-        md_content = generate_md(data, url_template, f"映翰通产品下载页面汇总（{title}）")
+        md_content = generate_md(data, url_template, t)
 
-        out_path = Path(f"产品下载页面汇总_{site_key}.md")
+        out_path = Path(t["filename"])
         out_path.write_text(md_content, encoding="utf-8")
         log(f"  生成: {out_path} ({len(md_content)} 字符)")
 
@@ -211,7 +232,7 @@ def main():
         # 上传到 Udesk
         kb_id = UDESK_KB_ID_ZH if site_key == "zh" else UDESK_KB_ID_EN
         log(f"  上传到 Udesk KB {kb_id}...")
-        ok = upload_to_udesk(md_content, kb_id, UDESK_CAT_ID, filename)
+        ok = upload_to_udesk(md_content, kb_id, UDESK_CAT_ID, t["filename"])
         log(f"  上传{'成功' if ok else '失败'}")
 
 

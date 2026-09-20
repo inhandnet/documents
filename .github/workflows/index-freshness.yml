@@ -1,6 +1,6 @@
 name: MCP index freshness
 
-# Hourly watchdog for the Documents MCP index (https://docs-mcp.inhand.com).
+# Hourly watchdog for the Documents MCP index (https://docs-mcp.inhand.com.cn).
 #
 # WHAT IT CHECKS
 # The MCP service indexes master and exposes the indexed commit through its
@@ -48,7 +48,7 @@ jobs:
 
       - name: Compare master HEAD with the active MCP index commit
         env:
-          MCP_URL: https://docs-mcp.inhand.com/mcp
+          MCP_URL: https://docs-mcp.inhand.com.cn/mcp
           MCP_PROTOCOL_VERSION: "2025-11-25"
           # Grace period for a rebuild triggered by a very recent push.
           REBUILD_GRACE_SECONDS: "2700"

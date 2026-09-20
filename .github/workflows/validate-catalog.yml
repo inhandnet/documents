@@ -1,6 +1,6 @@
 name: Validate catalog for MCP
 
-# Pre-flight for the Documents MCP indexer (https://docs-mcp.inhand.com).
+# Pre-flight for the Documents MCP indexer (https://docs-mcp.inhand.com.cn).
 #
 # WHAT THIS BLOCKS
 # The MCP service rebuilds its search index from every push to master. Before

@@ -60,7 +60,7 @@ The IR302 adopts a fanless cooling design, supports wide temperature and wide vo
 
 ## <span style="color: green;">2.4 Intelligent Operations and Maintenance Management</span>
 - **Remote Management Platform**: Supports Device Manager (DM) batch management and InConnect Service (ICS) cloud management platform
-- **DTU Function**: Supports serial RS232/RS485 and Ethernet DTU modes for transparent data transmission
+- **DTU Function**: Supports serial RS232 and Ethernet DTU modes for transparent data transmission
 - **SNMP/Trap**: Standard SNMP v1/v2c/v3 and Trap alarms, compatible with mainstream network management systems
 - **WebUI/CLI**: Graphical Chinese interface + complete command line (show/ping/telnet/traceroute/reboot/arping, etc.)
 - **SSH Client**: Device can act as SSH client to connect to remote servers
@@ -80,7 +80,7 @@ The IR302 adopts a fanless cooling design, supports wide temperature and wide vo
 | Remote Management | SNMP v1/v2c/v3, WebUI, CLI, SSH Client, HTTP/HTTPS API |
 | Processor | 580MHz industrial-grade embedded processor, 128 MB DDR, 32 MB SPI Flash |
 | Ethernet | 1× 10/100 Mbps WAN/LAN switchable + 1× 10/100 Mbps LAN |
-| Serial Interface | 1× RS232/RS485 combo terminal, DTU transparent transmission (TCP Server/Client/UDP/MQTT) |
+| Serial Interface | 1× RS232 combo terminal, DTU transparent transmission (TCP Server/Client/UDP/MQTT) |
 | Power Supply | 9&#126;36V DC wide voltage input, typical power consumption 2~5W, peak &lt; 10W, reverse polarity protection |
 | Dimensions | Approx. 100 mm × 30 mm × 100 mm (L × W × H, excluding mounting ears and antennas) |
 | Operating Temperature / Protection | Normal:-35℃ to 70℃，Extended:-40℃ to 75℃, IP30, full metal fanless natural convection cooling |
@@ -158,9 +158,9 @@ The IR302 adopts a fanless cooling design, supports wide temperature and wide vo
 | **Processor** | 580MHz industrial-grade embedded processor |
 | **Memory** | 128 MB DDR |
 | **Storage** | 32 MB SPI Flash |
-| **4G Module** | Depends on model configuration, covering Quectel, Fibocom, MeiG and other mainstream industrial modules (see Ordering Information for details) |
+| **4G Module** | Depends on model configuration, covering LTE Cat.1/LTE Cat.4 (see Ordering Information for details) |
 | **Ethernet Interfaces** | 1 x 10/100 Mbps WAN/LAN switchable port<br>1 x 10/100 Mbps LAN port |
-| **Serial Port** | 1 x RS232 / RS485 combo terminal (supports DTU transparent transmission) |
+| **Serial Port** | 1 x RS232 combo terminal (supports DTU transparent transmission) |
 | **SIM Card Slots** | 2 x dual SIM card slots (drawer type / Nano-SIM, supports dual-SIM network backup) |
 | **Antenna Interfaces** | 2 x 4G main/diversity antennas (SMA female)<br>1 x Wi-Fi antenna (SMA female, FQ38-WLAN configuration) |
 | **Power Interface** | 2-pin industrial terminal (9~36V DC)<br>Optional 12V DC adapter |
@@ -284,7 +284,7 @@ The IR302 adopts a fanless cooling design, supports wide temperature and wide vo
 
 | Function | Description |
 |----------|-------------|
-| **Serial DTU** | RS232/RS485 transparent transmission, supports TCP Server/Client, UDP, MQTT modes, supports multi-center reporting |
+| **Serial DTU** | RS232 transparent transmission, supports TCP Server/Client, UDP, MQTT modes, supports multi-center reporting |
 | **Ethernet DTU** | Supports transparent transmission of Ethernet port data to remote TCP/UDP servers |
 | **Protocol Conversion** | Supports Modbus RTU/TCP protocol conversion (optional) |
 | **State Grid Encryption** | Supports national cryptographic algorithm module (optional, model suffix -SEC), supports IEC101/IEC104 power protocols |
@@ -404,7 +404,7 @@ IR302 - [4G Module] - [Wi-Fi] - [IO/S] - [L]
 ## <span style="color: green;">8.4 Optional Accessories</span>
 
 - DIN rail mounting kit (1 set)
-- RS232/RS485 serial cable
+- RS232 serial cable
 - Wall mounting bracket
 - High-gain 4G/Wi-Fi antenna (extension cable 3m/5m/10m)
 

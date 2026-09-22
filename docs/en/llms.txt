@@ -692,22 +692,22 @@
 
 ## IR602
 
-- [Industrial Router IR602 User manual](IR602/Manuals/User%20manual/IR602%20User%20Manual_V1.0.md): IR602 User manual v1.0 — The IR602 series is a lightweight 5G RedCap industrial router developed by InHand Networks for large-scale, medium-rate…
-  - [Graphical Interface Conventions](IR602/Manuals/User%20manual/IR602%20User%20Manual_V1.0.md#graphical-interface-conventions)
-  - [How to Use This Manual](IR602/Manuals/User%20manual/IR602%20User%20Manual_V1.0.md#how-to-use-this-manual)
-  - [1.1 Overview](IR602/Manuals/User%20manual/IR602%20User%20Manual_V1.0.md#11-overview)
-  - [1.2 LED Indicators](IR602/Manuals/User%20manual/IR602%20User%20Manual_V1.0.md#12-led-indicators)
-  - [1.3 Restore Factory Defaults](IR602/Manuals/User%20manual/IR602%20User%20Manual_V1.0.md#13-restore-factory-defaults)
-  - [1.4 Default Settings](IR602/Manuals/User%20manual/IR602%20User%20Manual_V1.0.md#14-default-settings)
-  - [2.1 Pre-installation Preparation](IR602/Manuals/User%20manual/IR602%20User%20Manual_V1.0.md#21-pre-installation-preparation)
-  - [2.2 Installation Guide](IR602/Manuals/User%20manual/IR602%20User%20Manual_V1.0.md#22-installation-guide)
-  - [2.3 Quick Check](IR602/Manuals/User%20manual/IR602%20User%20Manual_V1.0.md#23-quick-check)
-  - [Scenario 1: Cellular Networking](IR602/Manuals/User%20manual/IR602%20User%20Manual_V1.0.md#scenario-1-cellular-networking)
-  - [Scenario 2: Wired Networking](IR602/Manuals/User%20manual/IR602%20User%20Manual_V1.0.md#scenario-2-wired-networking)
-  - [Scenario 3: Wi-Fi STA Networking](IR602/Manuals/User%20manual/IR602%20User%20Manual_V1.0.md#scenario-3-wi-fi-sta-networking)
-  - [Scenario 4: Connect to DeviceLive Cloud Platform](IR602/Manuals/User%20manual/IR602%20User%20Manual_V1.0.md#scenario-4-connect-to-devicelive-cloud-platform)
-  - [4.1 Device Monitoring](IR602/Manuals/User%20manual/IR602%20User%20Manual_V1.0.md#41-device-monitoring)
-  - [4.2 Status](IR602/Manuals/User%20manual/IR602%20User%20Manual_V1.0.md#42-status)
+- [Industrial Router IR602 User manual](IR602/Manuals/User%20manual/IR602%20User%20manual.md): IR602 User manual — The IR602 series is a lightweight 5G RedCap industrial router developed by InHand Networks for large-scale, medium-rate…
+  - [Graphical Interface Conventions](IR602/Manuals/User%20manual/IR602%20User%20manual.md#graphical-interface-conventions)
+  - [How to Use This Manual](IR602/Manuals/User%20manual/IR602%20User%20manual.md#how-to-use-this-manual)
+  - [1.1 Overview](IR602/Manuals/User%20manual/IR602%20User%20manual.md#11-overview)
+  - [1.2 LED Indicators](IR602/Manuals/User%20manual/IR602%20User%20manual.md#12-led-indicators)
+  - [1.3 Restore Factory Defaults](IR602/Manuals/User%20manual/IR602%20User%20manual.md#13-restore-factory-defaults)
+  - [1.4 Default Settings](IR602/Manuals/User%20manual/IR602%20User%20manual.md#14-default-settings)
+  - [2.1 Pre-installation Preparation](IR602/Manuals/User%20manual/IR602%20User%20manual.md#21-pre-installation-preparation)
+  - [2.2 Installation Guide](IR602/Manuals/User%20manual/IR602%20User%20manual.md#22-installation-guide)
+  - [2.3 Quick Check](IR602/Manuals/User%20manual/IR602%20User%20manual.md#23-quick-check)
+  - [Scenario 1: Cellular Networking](IR602/Manuals/User%20manual/IR602%20User%20manual.md#scenario-1-cellular-networking)
+  - [Scenario 2: Wired Networking](IR602/Manuals/User%20manual/IR602%20User%20manual.md#scenario-2-wired-networking)
+  - [Scenario 3: Wi-Fi STA Networking](IR602/Manuals/User%20manual/IR602%20User%20manual.md#scenario-3-wi-fi-sta-networking)
+  - [Scenario 4: Connect to DeviceLive Cloud Platform](IR602/Manuals/User%20manual/IR602%20User%20manual.md#scenario-4-connect-to-devicelive-cloud-platform)
+  - [4.1 Device Monitoring](IR602/Manuals/User%20manual/IR602%20User%20manual.md#41-device-monitoring)
+  - [4.2 Status](IR602/Manuals/User%20manual/IR602%20User%20manual.md#42-status)
 - [IR602 Datasheet v1.2](IR602/Datasheets/General/IR602_Datasheet_V1.2.md): IR602 Datasheet v1.2 — Lightweight 5G Connectivity, Build Industrial Digital Foundation
 
 ## IR615-S
@@ -778,6 +778,22 @@
 
 ## IR925
 
+- [Industrial Router IR925 User manual](IR925/Manuals/User%20manual/IR925%20User%20manual.md): IR925 User manual — The IR925 series industrial cellular router is an IoT-dedicated device that integrates core technologies such as high-sp…
+  - [Graphical Interface Conventions](IR925/Manuals/User%20manual/IR925%20User%20manual.md#graphical-interface-conventions)
+  - [How to Use This Manual](IR925/Manuals/User%20manual/IR925%20User%20manual.md#how-to-use-this-manual)
+  - [1.1 Overview](IR925/Manuals/User%20manual/IR925%20User%20manual.md#11-overview)
+  - [1.2 Appearance and Interfaces](IR925/Manuals/User%20manual/IR925%20User%20manual.md#12-appearance-and-interfaces)
+  - [1.3 LED Indicators](IR925/Manuals/User%20manual/IR925%20User%20manual.md#13-led-indicators)
+  - [1.4 Restore Factory Defaults](IR925/Manuals/User%20manual/IR925%20User%20manual.md#14-restore-factory-defaults)
+  - [1.5 Default Settings](IR925/Manuals/User%20manual/IR925%20User%20manual.md#15-default-settings)
+  - [2.1 Pre-installation Preparation](IR925/Manuals/User%20manual/IR925%20User%20manual.md#21-pre-installation-preparation)
+  - [2.2 Installation Guide](IR925/Manuals/User%20manual/IR925%20User%20manual.md#22-installation-guide)
+  - [2.3 Quick Check](IR925/Manuals/User%20manual/IR925%20User%20manual.md#23-quick-check)
+  - [Scenario 1: Cellular Networking](IR925/Manuals/User%20manual/IR925%20User%20manual.md#scenario-1-cellular-networking)
+  - [Scenario 2: Wired Networking](IR925/Manuals/User%20manual/IR925%20User%20manual.md#scenario-2-wired-networking)
+  - [Scenario 3: Wi-Fi STA Networking](IR925/Manuals/User%20manual/IR925%20User%20manual.md#scenario-3-wi-fi-sta-networking)
+  - [Scenario 4: Connect to DeviceLive Cloud Platform](IR925/Manuals/User%20manual/IR925%20User%20manual.md#scenario-4-connect-to-devicelive-cloud-platform)
+  - [4.1 Device Monitoring](IR925/Manuals/User%20manual/IR925%20User%20manual.md#41-device-monitoring)
 - [IR925 Datasheet v1.0](IR925/Datasheets/General/IR925_Datasheet_V1.0.md): IR925 Datasheet v1.0 — Embracing 5G, Shaping the Digital Future
 - [IR925 Drawings](IR925/drawings.md): IR925 mechanical drawings (2D, 3D) with links to the original drawing files
 
@@ -978,16 +994,16 @@
 
 ## ODU12
 
-- [5G ODU12 Product User Manual](ODU12/Manuals/User%20manual/ODU12_User%20manual_V1.0.md): ODU12 User manual v1.0 — The ODU12 is an outdoor 5G router and a cloud-managed, high-performance network access device. Built on a pioneering "st…
-  - [Front Matter](ODU12/Manuals/User%20manual/ODU12_User%20manual_V1.0.md#front-matter)
-  - [Chapter 1: Know the Device](ODU12/Manuals/User%20manual/ODU12_User%20manual_V1.0.md#chapter-1-know-the-device)
-  - [Chapter 2: Installation and First Use](ODU12/Manuals/User%20manual/ODU12_User%20manual_V1.0.md#chapter-2-installation-and-first-use)
-  - [Chapter 3: Common Scenario Configuration](ODU12/Manuals/User%20manual/ODU12_User%20manual_V1.0.md#chapter-3-common-scenario-configuration)
-  - [Chapter 4: Function Description and Parameter Reference](ODU12/Manuals/User%20manual/ODU12_User%20manual_V1.0.md#chapter-4-function-description-and-parameter-reference)
-  - [Chapter 5: Typical Applications](ODU12/Manuals/User%20manual/ODU12_User%20manual_V1.0.md#chapter-5-typical-applications)
-  - [Appendix: Troubleshooting](ODU12/Manuals/User%20manual/ODU12_User%20manual_V1.0.md#appendix-troubleshooting)
-  - [Appendix: Safety Precautions](ODU12/Manuals/User%20manual/ODU12_User%20manual_V1.0.md#appendix-safety-precautions)
-  - [FAQ](ODU12/Manuals/User%20manual/ODU12_User%20manual_V1.0.md#faq)
+- [5G ODU12 Product User Manual](ODU12/Manuals/User%20manual/ODU12_User%20manual.md): ODU12 User manual — The ODU12 is an outdoor 5G router and a cloud-managed, high-performance network access device. Built on a pioneering "st…
+  - [Front Matter](ODU12/Manuals/User%20manual/ODU12_User%20manual.md#front-matter)
+  - [Chapter 1: Know the Device](ODU12/Manuals/User%20manual/ODU12_User%20manual.md#chapter-1-know-the-device)
+  - [Chapter 2: Installation and First Use](ODU12/Manuals/User%20manual/ODU12_User%20manual.md#chapter-2-installation-and-first-use)
+  - [Chapter 3: Common Scenario Configuration](ODU12/Manuals/User%20manual/ODU12_User%20manual.md#chapter-3-common-scenario-configuration)
+  - [Chapter 4: Function Description and Parameter Reference](ODU12/Manuals/User%20manual/ODU12_User%20manual.md#chapter-4-function-description-and-parameter-reference)
+  - [Chapter 5: Typical Applications](ODU12/Manuals/User%20manual/ODU12_User%20manual.md#chapter-5-typical-applications)
+  - [Appendix: Troubleshooting](ODU12/Manuals/User%20manual/ODU12_User%20manual.md#appendix-troubleshooting)
+  - [Appendix: Safety Precautions](ODU12/Manuals/User%20manual/ODU12_User%20manual.md#appendix-safety-precautions)
+  - [FAQ](ODU12/Manuals/User%20manual/ODU12_User%20manual.md#faq)
 - [ODU12 Datasheet v1.1](ODU12/Datasheets/General/ODU12_Datasheet_V1.1.md): ODU12 Datasheet v1.1 — Minimalist Design, Powerful Connectivity
 - [ODU12 Drawings](ODU12/drawings.md): ODU12 mechanical drawings (2D, 3D) with links to the original drawing files
 

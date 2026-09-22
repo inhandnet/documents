@@ -427,7 +427,7 @@ hide:
       <div class="pm-card__body">
         <div class="pm-card__title">IR602</div>
         <ul class="pm-card__links">
-        <li><a href="IR602/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/IR602%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="北京映翰通工业路由器IR602产品系列用户手册">用户手册 V1.0</a></li>
+        <li><a href="IR602/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/IR602%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C.html" title="北京映翰通工业路由器IR602产品系列用户手册">用户手册</a></li>
         </ul>
       </div>
     </div>
@@ -524,7 +524,7 @@ hide:
       <div class="pm-card__body">
         <div class="pm-card__title">ODU12</div>
         <ul class="pm-card__links">
-        <li><a href="ODU12/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/ODU12%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="5G室外路由器ODU12用户手册">用户手册 V1.0</a></li>
+        <li><a href="ODU12/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/ODU12%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C.html" title="5G室外路由器ODU12用户手册">用户手册</a></li>
         </ul>
       </div>
     </div>
@@ -607,7 +607,7 @@ hide:
       <div class="pm-card__body">
         <div class="pm-card__title">XCR624</div>
         <ul class="pm-card__links">
-        <li><a href="XCR624/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/XCR624%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="北京映翰通工业路由器XCR624产品系列用户手册">用户手册 V1.0</a></li>
+        <li><a href="XCR624/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/XCR624%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C.html" title="北京映翰通工业路由器XCR624产品系列用户手册">用户手册</a></li>
         </ul>
       </div>
     </div>

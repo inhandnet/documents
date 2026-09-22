@@ -395,7 +395,7 @@ hide:
       <div class="pm-card__body">
         <div class="pm-card__title">IR602</div>
         <ul class="pm-card__links">
-        <li><a href="IR602/Manuals/User%20manual/IR602%20User%20Manual_V1.0.html" title="Industrial Router IR602 User manual">User manual V1.0</a></li>
+        <li><a href="IR602/Manuals/User%20manual/IR602%20User%20manual.html" title="Industrial Router IR602 User manual">User manual</a></li>
         </ul>
       </div>
     </div>
@@ -436,6 +436,7 @@ hide:
         <div class="pm-card__title">IR925</div>
         <ul class="pm-card__links">
         <li><a href="IR925/drawings.html" title="IR925 Drawings">Drawings</a></li>
+        <li><a href="IR925/Manuals/User%20manual/IR925%20User%20manual.html" title="Industrial Router IR925 User manual">User manual</a></li>
         </ul>
       </div>
     </div>
@@ -628,7 +629,7 @@ hide:
         <div class="pm-card__title">ODU12</div>
         <ul class="pm-card__links">
         <li><a href="ODU12/drawings.html" title="ODU12 Drawings">Drawings</a></li>
-        <li><a href="ODU12/Manuals/User%20manual/ODU12_User%20manual_V1.0.html" title="5G ODU12 Product User Manual">User manual V1.0</a></li>
+        <li><a href="ODU12/Manuals/User%20manual/ODU12_User%20manual.html" title="5G ODU12 Product User Manual">User manual</a></li>
         </ul>
       </div>
     </div>

@@ -663,8 +663,8 @@ def sync_file(file_path: str):
         log(f"跳过: {file_path} 未提取到规格属性")
         return
 
-    # 上传
-    upload_specs(product_id, attrs, site)
+    # 上传（始终上传，不做跳过判断——确保参数值变更也能同步）
+    upload_specs(product_id, attrs, site, force=True)
     log(f"完成: {product_name} 规格已更新")
 
 

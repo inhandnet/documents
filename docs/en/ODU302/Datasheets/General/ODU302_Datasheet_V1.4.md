@@ -1,4 +1,4 @@
-<div style="width: 100%;height: 100%;background: url(images/cover_bg.png); background-size: 100% 100%;">
+<div style="width: 100%;height: 100%;background: url(images/cover.jpg); background-size: 100% 100%;">
   <div style="height:75%;">
     <div style="width:35%; padding: 40px 40px">
       <img src="images/logo.png" alt="logo" />
@@ -385,7 +385,7 @@ The ODU302 integrates with the InHand Device Manager cloud management platform t
 | PTCRB         | Completed   |
 | AT&T          | In‑progress |
 | Verizon       | Completed   |
-| T-Mobile      | In‑progress |
+| T-Mobile      | Completed   |
 | CE            | Completed   |
 
 > Note: Certification status is subject to the time of publication. For the latest certification status of specific SKUs, please contact the InHand sales team.

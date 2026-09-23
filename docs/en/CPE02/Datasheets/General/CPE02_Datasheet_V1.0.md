@@ -1,6 +1,5 @@
-<div style="position: relative; width: 100%; min-height: 100vh; overflow: hidden;">
-  <img src="images/cpe02-cover.jpg" alt="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0;" />
-  <div style="position: relative; z-index: 1; height: 75%;">
+<div style="width: 100%;height: 100%;background: url(images/cpe02-cover.jpg); background-size: 100% 100%;">
+  <div style="height:75%;">
     <div style="width:35%; padding: 40px 40px">
       <img src="images/logo.png" alt="logo" />
     </div>
@@ -8,7 +7,7 @@
       Simple Connectivity, Convenient Life
     </div>
   </div>
-  <div style="position: relative; z-index: 1; padding-left: 40px;">
+  <div style="padding-left: 40px;">
     <div style="font-size: 40px; font-weight: bold; color:#000;margin-bottom: 30px;">
       CPE02 5G Router
     </div>
@@ -189,5 +188,3 @@
 
 - **Website:** [InHand Networks](https://www.inhand.com)
 - **Copyright:** © InHand Networks. All rights reserved.
-
-

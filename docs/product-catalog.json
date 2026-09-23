@@ -2140,6 +2140,621 @@
         "zh"
       ],
       "public": true
+    },
+    {
+      "id": "ISE1002D-S",
+      "kind": "model",
+      "display_names": {
+        "zh": "ISE1002D-S"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISE1002D-S"
+      ],
+      "expected_languages": [
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISE1003D-S",
+      "kind": "model",
+      "display_names": {
+        "zh": "ISE1003D-S"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISE1003D-S"
+      ],
+      "expected_languages": [
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISE1008F-S",
+      "kind": "model",
+      "display_names": {
+        "zh": "ISE1008F-S"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISE1008F-S"
+      ],
+      "expected_languages": [
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISE1308F-S",
+      "kind": "model",
+      "display_names": {
+        "zh": "ISE1308F-S"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISE1308F-S"
+      ],
+      "expected_languages": [
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISE2008D-S",
+      "kind": "model",
+      "display_names": {
+        "zh": "ISE2008D-S"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISE2008D-S"
+      ],
+      "expected_languages": [
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISE2016D-S",
+      "kind": "model",
+      "display_names": {
+        "zh": "ISE2016D-S"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISE2016D-S"
+      ],
+      "expected_languages": [
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISE2305D-S",
+      "kind": "model",
+      "display_names": {
+        "zh": "ISE2305D-S"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISE2305D-S"
+      ],
+      "expected_languages": [
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISE2308D-S",
+      "kind": "model",
+      "display_names": {
+        "zh": "ISE2308D-S"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISE2308D-S"
+      ],
+      "expected_languages": [
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISE3010D-S",
+      "kind": "model",
+      "display_names": {
+        "zh": "ISE3010D-S"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISE3010D-S"
+      ],
+      "expected_languages": [
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISE5002D-S",
+      "kind": "model",
+      "display_names": {
+        "zh": "ISE5002D-S"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISE5002D-S"
+      ],
+      "expected_languages": [
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISE5003D-S",
+      "kind": "model",
+      "display_names": {
+        "zh": "ISE5003D-S"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISE5003D-S"
+      ],
+      "expected_languages": [
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISE5006D-S",
+      "kind": "model",
+      "display_names": {
+        "zh": "ISE5006D-S"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISE5006D-S"
+      ],
+      "expected_languages": [
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISE5008F-S",
+      "kind": "model",
+      "display_names": {
+        "zh": "ISE5008F-S"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISE5008F-S"
+      ],
+      "expected_languages": [
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISE5009D-S",
+      "kind": "model",
+      "display_names": {
+        "zh": "ISE5009D-S"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISE5009D-S"
+      ],
+      "expected_languages": [
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISE5010D-S",
+      "kind": "model",
+      "display_names": {
+        "zh": "ISE5010D-S"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISE5010D-S"
+      ],
+      "expected_languages": [
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISE5026U-S",
+      "kind": "model",
+      "display_names": {
+        "zh": "ISE5026U-S"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISE5026U-S"
+      ],
+      "expected_languages": [
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISE5305D-S",
+      "kind": "model",
+      "display_names": {
+        "zh": "ISE5305D-S"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISE5305D-S"
+      ],
+      "expected_languages": [
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISE5308D-S",
+      "kind": "model",
+      "display_names": {
+        "zh": "ISE5308D-S"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISE5308D-S"
+      ],
+      "expected_languages": [
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISE5308F-S",
+      "kind": "model",
+      "display_names": {
+        "zh": "ISE5308F-S"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISE5308F-S"
+      ],
+      "expected_languages": [
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISM3008D-S",
+      "kind": "model",
+      "display_names": {
+        "zh": "ISM3008D-S"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISM3008D-S"
+      ],
+      "expected_languages": [
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISM5006D-S",
+      "kind": "model",
+      "display_names": {
+        "zh": "ISM5006D-S"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISM5006D-S"
+      ],
+      "expected_languages": [
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISM5006D-S-W",
+      "kind": "model",
+      "display_names": {
+        "zh": "ISM5006D-S-W"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISM5006D-S-W"
+      ],
+      "expected_languages": [
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISM5010D-S-2GS203",
+      "kind": "model",
+      "display_names": {
+        "zh": "ISM5010D-S-2GS203"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISM5010D-S-2GS203"
+      ],
+      "expected_languages": [
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISM5012D-S",
+      "kind": "model",
+      "display_names": {
+        "zh": "ISM5012D-S"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISM5012D-S"
+      ],
+      "expected_languages": [
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISM5012D-S-W",
+      "kind": "model",
+      "display_names": {
+        "zh": "ISM5012D-S-W"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISM5012D-S-W"
+      ],
+      "expected_languages": [
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISM5016D-S",
+      "kind": "model",
+      "display_names": {
+        "zh": "ISM5016D-S"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISM5016D-S"
+      ],
+      "expected_languages": [
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISM5020D-S",
+      "kind": "model",
+      "display_names": {
+        "zh": "ISM5020D-S"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISM5020D-S"
+      ],
+      "expected_languages": [
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISM5024D-S",
+      "kind": "model",
+      "display_names": {
+        "zh": "ISM5024D-S"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISM5024D-S"
+      ],
+      "expected_languages": [
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISM5028U-S",
+      "kind": "model",
+      "display_names": {
+        "zh": "ISM5028U-S"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISM5028U-S"
+      ],
+      "expected_languages": [
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISM5310D-S",
+      "kind": "model",
+      "display_names": {
+        "zh": "ISM5310D-S"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISM5310D-S"
+      ],
+      "expected_languages": [
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISM7012D-S",
+      "kind": "model",
+      "display_names": {
+        "zh": "ISM7012D-S"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISM7012D-S"
+      ],
+      "expected_languages": [
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISM7016D-S",
+      "kind": "model",
+      "display_names": {
+        "zh": "ISM7016D-S"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISM7016D-S"
+      ],
+      "expected_languages": [
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISM7024D-S-12GSFP-12GT",
+      "kind": "model",
+      "display_names": {
+        "zh": "ISM7024D-S-12GSFP-12GT"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISM7024D-S-12GSFP-12GT"
+      ],
+      "expected_languages": [
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISM7024D-S-4GSFP-20GT",
+      "kind": "model",
+      "display_names": {
+        "zh": "ISM7024D-S-4GSFP-20GT"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISM7024D-S-4GSFP-20GT"
+      ],
+      "expected_languages": [
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISM7312D-S",
+      "kind": "model",
+      "display_names": {
+        "zh": "ISM7312D-S"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISM7312D-S"
+      ],
+      "expected_languages": [
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISM7314D-S",
+      "kind": "model",
+      "display_names": {
+        "zh": "ISM7314D-S"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISM7314D-S"
+      ],
+      "expected_languages": [
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISM8012D-S",
+      "kind": "model",
+      "display_names": {
+        "zh": "ISM8012D-S"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISM8012D-S"
+      ],
+      "expected_languages": [
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISM8028U-S",
+      "kind": "model",
+      "display_names": {
+        "zh": "ISM8028U-S"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISM8028U-S"
+      ],
+      "expected_languages": [
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISM8028U-S-16GSFP",
+      "kind": "model",
+      "display_names": {
+        "zh": "ISM8028U-S-16GSFP"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISM8028U-S-16GSFP"
+      ],
+      "expected_languages": [
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISM8052U-S",
+      "kind": "model",
+      "display_names": {
+        "zh": "ISM8052U-S"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISM8052U-S"
+      ],
+      "expected_languages": [
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISM8312D-S",
+      "kind": "model",
+      "display_names": {
+        "zh": "ISM8312D-S"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISM8312D-S"
+      ],
+      "expected_languages": [
+        "zh"
+      ],
+      "public": true
     }
   ]
 }

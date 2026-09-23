@@ -42,31 +42,8 @@ The rapid development of IoT has brought massive numbers of devices and business
 
 **Enhanced Customer Experience**: Supports preventive maintenance, intelligent repair, and fast response to improve customer satisfaction and loyalty.
 
-<div style="page-break-after: always;"></div>
 
-# <span style="color: green;">2. License Comparison</span>
-
-| Functionality | Basic Edition | Advanced Edition |
-| ---- | ------ | ------ |
-| Device Connection & Management | ✓ Supports device onboarding, configuration management, firmware upgrade and remote reboot | ✓ Supports device onboarding, configuration management, firmware upgrade and remote reboot |
-| Remote Access | ✓ Supports remote device access for remote maintenance and troubleshooting | ✓ Supports remote device access for remote maintenance and troubleshooting |
-| Device Status Monitoring | ✓ Supports device status, network status and resource monitoring | ✓ Supports device status, network status and resource monitoring |
-| Data Visualization & Analytics | ✓ Supports device data viewing and basic data analysis | ✓ Supports device data viewing and basic data analysis |
-| Alarm Management | ✓ Supports abnormal alarms for device status, network and resources | ✓ Supports abnormal alarms for device status, network and resources |
-| Report Management | ✓ Supports device operation data reports | ✓ Supports device operation data reports |
-| User & Permission Management | ✓ Supports multi-user and role-based permission management | ✓ Supports multi-user and role-based permission management |
-| GPS / Location Management | ✓ Supports GPS, base station positioning and device location management | ✓ Supports GPS, base station positioning and device location management |
-| InHand DSA Deployment Management | ✓ Supports InHand DSA deployment management (Applicable to EC/IG series devices) | ✓ Supports InHand DSA deployment management (Applicable to EC/IG series devices) |
-| Cloud Connection & Networking | — | ✓ Supports cloud connection and networking capabilities for devices requiring remote network management through DeviceLive |
-| Cloud Connection History Analysis | — | ✓ Supports cloud connection history viewing and connection status analysis |
-| Edge Application Management | — | ✓ Supports edge application and containerized application deployment, version management and operation & maintenance (Applicable to EC/IG series devices) |
-
-**Plan Description**
-
-- **Basic Edition:** Provides basic device onboarding, remote access, device management, status monitoring, data analysis and alarm capabilities for daily device operation and maintenance.
-- **Advanced Edition:** Provides advanced cloud connection, edge application deployment and operation & maintenance capabilities based on basic device management, mainly targeting edge computing scenarios.
-
-# <span style="color: green;">3. Platform Capability Overview</span>
+# <span style="color: green;">2. Platform Capability Overview</span>
 
 DeviceLive provides four core capabilities: **device management, network monitoring, edge computing application management, and remote terminal maintenance**. With cloud-edge collaboration, it enables intelligent edge deployment and upgrades, edge data collection and preprocessing, and visualized status monitoring, comprehensively improving management efficiency.
 
@@ -85,7 +62,6 @@ DeviceLive provides four core capabilities: **device management, network monitor
   </tr>
 </table>
 
-<div style="page-break-after: always;"></div>
 
 ## <span style="color: green;">Edge Computing Application Management</span>
 
@@ -114,7 +90,7 @@ DeviceLive provides four core capabilities: **device management, network monitor
 | **Multi-Dimensional Security Policies** | Data encryption, multi-role permissions, and multi-factor authentication |
 | **Visualized Monitoring** | Comprehensive insights into connection status, network quality, cellular signal, and more |
 
-# <span style="color: green;">4. Edge Intelligence Hardware and Cloud Data Integration</span>
+# <span style="color: green;">3. Edge Intelligence Hardware and Cloud Data Integration</span>
 
 ## <span style="color: green;">Multi-Function Edge Hardware</span>
 
@@ -135,7 +111,7 @@ DeviceLive provides four core capabilities: **device management, network monitor
 - Supports integration with major public clouds and IoT cloud platforms, including **AWS, Microsoft Azure, and Alibaba Cloud**  
 
 
-# <span style="color: green;">5. Application Scenarios</span>
+# <span style="color: green;">4. Application Scenarios</span>
 
 InHand edge intelligence solutions integrate 5G, AI, IoT, and cloud computing, and can be used in **public utility digitalization, predictive equipment maintenance, new energy digitalization, and factory digitalization**.
 
@@ -149,42 +125,154 @@ InHand edge intelligence solutions integrate 5G, AI, IoT, and cloud computing, a
 <div style="page-break-after: always;"></div>
 
 
-# <span style="color: green;">6. Platform Feature List</span>
+# <span style="color: green;">5. License List</span>
 
-
-<table style="width:100%;">
-  <colgroup>
-    <col style="width:35%;">
-    <col style="width:47%;">
-    <col style="width:9%;">
-    <col style="width:9%;">
-  </colgroup>
-  <tr>
-    <th align="left">Feature</th>
-    <th align="left">Description</th>
-    <th align="center">Basic Edition</th>
-    <th align="center">Advanced Edition</th>
-  </tr>
-  <tr><td>Batch Remote Device Configuration</td><td>Configure devices remotely</td><td align="center">√</td><td align="center">√</td></tr>
-  <tr><td>Batch Device Firmware Upgrade</td><td>Remotely upgrade device firmware with flexible scheduled upgrade settings</td><td align="center">√</td><td align="center">√</td></tr>
-  <tr><td>Device Group Management</td><td>Classify devices by business needs for flexible management</td><td align="center">√</td><td align="center">√</td></tr>
-  <tr><td>Remote Control Commands</td><td>Remotely reboot devices and restore factory settings</td><td align="center">√</td><td align="center">√</td></tr>
-  <tr><td>Connection Status Statistics</td><td>Monitor device connection status, network type, and more</td><td align="center">√</td><td align="center">√</td></tr>
-  <tr><td>Network Status Analysis</td><td>Monitor interface connection status, link status, and traffic consumption</td><td align="center">√</td><td align="center">√</td></tr>
-  <tr><td>Network Quality Monitoring</td><td>Monitor cellular signal, network latency, jitter, packet loss, and throughput</td><td align="center">√</td><td align="center">√</td></tr>
-  <tr><td>DSA Management</td><td>Remote DSA configuration, upgrade updates, and status viewing</td><td align="center">√</td><td align="center">√</td></tr>
-  <tr><td>Remote Diagnostic Tools</td><td>Diagnostic logs, Ping, Traceroute, packet capture, and event analysis</td><td align="center">√</td><td align="center">√</td></tr>
-  <tr><td>Geolocation Management</td><td>Supports GPS/base-station/manual positioning and map-based device distribution overview</td><td align="center">√</td><td align="center">√</td></tr>
-  <tr><td>Status Alert Notifications</td><td>Supports multiple alert strategies such as CPU utilization, link status, and cellular traffic monitoring; supports SMS, email, and app notifications</td><td align="center">√</td><td align="center">√</td></tr>
-  <tr><td>Remote Terminal Maintenance</td><td>Quickly establish remote channels and support engineer remote access and control of terminal devices</td><td align="center">—</td><td align="center">√</td></tr>
-  <tr><td>Edge Computing Management</td><td>Container management, native application management, and edge computing app upgrade deployment</td><td align="center">—</td><td align="center">√</td></tr>
-  <tr><td>MFA</td><td>Multi-factor account authentication for comprehensive security assurance</td><td align="center">√</td><td align="center">√</td></tr>
-  <tr><td>DeviceLive App</td><td>Supports app-based QR code device onboarding and app-based network status monitoring</td><td align="center">√</td><td align="center">√</td></tr>
+<table>
+<thead>
+<tr>
+<th style="text-align:center;width:22%;min-width:9em;white-space:nowrap;">Module</th>
+<th style="text-align:center;width:28%;min-width:12em;white-space:nowrap;">Feature</th>
+<th style="text-align:center;">DeviceLive Basic</th>
+<th style="text-align:center;">DeviceLive Edge Intelligence Advanced</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="7" style="text-align:center;vertical-align:middle;width:22%;min-width:9em;white-space:nowrap;">Device Management</td>
+<td style="width:28%;min-width:12em;white-space:nowrap;">Remote Configuration</td>
+<td style="text-align:center;">√</td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td style="width:28%;min-width:12em;white-space:nowrap;">Firmware Upgrade</td>
+<td style="text-align:center;">√</td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td style="width:28%;min-width:12em;white-space:nowrap;">Remote Reboot</td>
+<td style="text-align:center;">√</td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td style="width:28%;min-width:12em;white-space:nowrap;">Remote Factory Reset</td>
+<td style="text-align:center;">√</td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td style="width:28%;min-width:12em;white-space:nowrap;">Batch Management</td>
+<td style="text-align:center;">√</td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td style="width:28%;min-width:12em;white-space:nowrap;">DeviceSupervisor Management</td>
+<td style="text-align:center;">√</td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td style="width:28%;min-width:12em;white-space:nowrap;">OTA Upgrade</td>
+<td style="text-align:center;">√</td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td rowspan="7" style="text-align:center;vertical-align:middle;width:22%;min-width:9em;white-space:nowrap;">Device Monitoring</td>
+<td style="width:28%;min-width:12em;white-space:nowrap;">Online/Offline</td>
+<td style="text-align:center;">√</td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td style="width:28%;min-width:12em;white-space:nowrap;">Interface Status</td>
+<td style="text-align:center;">√</td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td style="width:28%;min-width:12em;white-space:nowrap;">Cellular Signal</td>
+<td style="text-align:center;">√</td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td style="width:28%;min-width:12em;white-space:nowrap;">Traffic Statistics</td>
+<td style="text-align:center;">√</td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td style="width:28%;min-width:12em;white-space:nowrap;">Performance Status</td>
+<td style="text-align:center;">√</td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td style="width:28%;min-width:12em;white-space:nowrap;">Geolocation</td>
+<td style="text-align:center;">√</td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td style="width:28%;min-width:12em;white-space:nowrap;">Alerts</td>
+<td style="text-align:center;">√</td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td rowspan="2" style="text-align:center;vertical-align:middle;width:22%;min-width:9em;white-space:nowrap;">Remote Terminal Maintenance</td>
+<td style="width:28%;min-width:12em;white-space:nowrap;">Cloud Connect</td>
+<td style="text-align:center;">×</td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td style="width:28%;min-width:12em;white-space:nowrap;">DeviceTouch</td>
+<td style="text-align:center;">√</td>
+<td></td>
+</tr>
+<tr>
+<td rowspan="3" style="text-align:center;vertical-align:middle;width:22%;min-width:9em;white-space:nowrap;">Project & Application Management</td>
+<td style="width:28%;min-width:12em;white-space:nowrap;">Project Version Management</td>
+<td style="text-align:center;">×</td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td style="width:28%;min-width:12em;white-space:nowrap;">Environment Incremental Package Management</td>
+<td style="text-align:center;">×</td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td style="width:28%;min-width:12em;white-space:nowrap;">Application Management</td>
+<td style="text-align:center;">×</td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td rowspan="5" style="text-align:center;vertical-align:middle;width:22%;min-width:9em;white-space:nowrap;">Remote O&M and Diagnostics</td>
+<td style="width:28%;min-width:12em;white-space:nowrap;">Remote Access</td>
+<td style="text-align:center;">√</td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td style="width:28%;min-width:12em;white-space:nowrap;">Ping</td>
+<td style="text-align:center;">√</td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td style="width:28%;min-width:12em;white-space:nowrap;">Traceroute</td>
+<td style="text-align:center;">√</td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td style="width:28%;min-width:12em;white-space:nowrap;">Packet Capture</td>
+<td style="text-align:center;">√</td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td style="width:28%;min-width:12em;white-space:nowrap;">Log Download</td>
+<td style="text-align:center;">√</td>
+<td style="text-align:center;">√</td>
+</tr>
+</tbody>
 </table>
+
+**Plan Description**
+
+- **Basic Edition:** Provides basic device onboarding, remote access, device management, status monitoring, data analysis and alarm capabilities for daily device operation and maintenance.
+- **Advanced Edition:** Provides advanced cloud connection, edge application deployment and operation & maintenance capabilities based on basic device management, mainly targeting edge computing scenarios.
 
 **Platform URL:** [device.inhandcloud.cn](https://device.inhandcloud.cn)
 
-# <span style="color: green;">7. Contact Us</span>
+# <span style="color: green;">6. Contact Us</span>
 
 - **Website:** [InHand Networks](https://www.inhand.com)
 - **Copyright Notice:** © InHand Networks. All rights reserved.

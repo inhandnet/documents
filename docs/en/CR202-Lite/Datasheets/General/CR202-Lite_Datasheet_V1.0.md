@@ -154,13 +154,13 @@
 
 ## <span style="color: green;">Model Code</span>
 
-**Model code:** CR202-\u003cWMNN\u003e-WLAN-\u003cB/NA\u003e-Lite
+**Model code:** CR202-\WMNN\-WLAN-\NA\-Lite
 
-\u003cWMNN\u003e: Cellular Type & Module
+\WMNN\: Cellular Type & Module
 
 WLAN: Wi-Fi
 
-\u003cB/NA\u003e: B = Battery, NA = No battery
+\NA\: B = Battery, NA = No battery
 
 
 ## <span style="color: green;">Product Models</span>

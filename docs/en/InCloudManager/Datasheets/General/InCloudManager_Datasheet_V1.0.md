@@ -323,3 +323,180 @@ Applicable wherever distributed devices need centralized management.
 | Monthly inspection — days of device-by-device review        | Manual device-by-device audit                     | AI generates complete report in minutes → **Problem stores automatically flagged**         |
 | Pre-event network check — ahead of major promotion          | Manual monitoring, ad hoc                         | Real-time monitoring during event period → **O&M team has full visibility and confidence** |
 | New store rollout — push standard config to all new devices | Manual device-by-device configuration             | Natural language batch instruction → **Dramatically reduces labor investment**             |
+
+# <span style="color: green;">8. License List</span>
+
+<table>
+<thead>
+<tr>
+<th style="text-align:center;width:22%;min-width:9em;white-space:nowrap;">Module</th>
+<th style="text-align:center;width:28%;min-width:12em;white-space:nowrap;">Feature</th>
+<th style="text-align:center;">InCloud Manager Basic</th>
+<th style="text-align:center;">InCloud Manager Branch Professional</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="5" style="text-align:center;vertical-align:middle;width:22%;min-width:9em;white-space:nowrap;">Device Management</td>
+<td style="width:28%;min-width:12em;white-space:nowrap;">Remote Configuration</td>
+<td style="text-align:center;">√</td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td style="width:28%;min-width:12em;white-space:nowrap;">Firmware Upgrade</td>
+<td style="text-align:center;">√</td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td style="width:28%;min-width:12em;white-space:nowrap;">Remote Reboot</td>
+<td style="text-align:center;">√</td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td style="width:28%;min-width:12em;white-space:nowrap;">Remote Factory Reset</td>
+<td style="text-align:center;">√</td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td style="width:28%;min-width:12em;white-space:nowrap;">Batch Management</td>
+<td style="text-align:center;">√</td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td rowspan="8" style="text-align:center;vertical-align:middle;width:22%;min-width:9em;white-space:nowrap;">Device Monitoring</td>
+<td style="width:28%;min-width:12em;white-space:nowrap;">Online/Offline</td>
+<td style="text-align:center;">√</td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td style="width:28%;min-width:12em;white-space:nowrap;">Interface Status</td>
+<td style="text-align:center;">√</td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td style="width:28%;min-width:12em;white-space:nowrap;">Link Monitoring</td>
+<td style="text-align:center;">√</td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td style="width:28%;min-width:12em;white-space:nowrap;">Performance Status</td>
+<td style="text-align:center;">√</td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td style="width:28%;min-width:12em;white-space:nowrap;">Cellular Signal</td>
+<td style="text-align:center;">√</td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td style="width:28%;min-width:12em;white-space:nowrap;">Traffic Statistics</td>
+<td style="text-align:center;">√</td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td style="width:28%;min-width:12em;white-space:nowrap;">Geolocation</td>
+<td style="text-align:center;">√</td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td style="width:28%;min-width:12em;white-space:nowrap;">Alerts</td>
+<td style="text-align:center;">√</td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td rowspan="2" style="text-align:center;vertical-align:middle;width:22%;min-width:9em;white-space:nowrap;">Network & SD-WAN</td>
+<td style="width:28%;min-width:12em;white-space:nowrap;">Cloud Connect</td>
+<td style="text-align:center;">×</td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td style="width:28%;min-width:12em;white-space:nowrap;">SD-WAN</td>
+<td style="text-align:center;">×</td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td rowspan="4" style="text-align:center;vertical-align:middle;width:22%;min-width:9em;white-space:nowrap;">Client Management</td>
+<td style="width:28%;min-width:12em;white-space:nowrap;">Connection Status & History</td>
+<td style="text-align:center;">√</td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td style="width:28%;min-width:12em;white-space:nowrap;">Traffic Statistics</td>
+<td style="text-align:center;">√</td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td style="width:28%;min-width:12em;white-space:nowrap;">POS Identification</td>
+<td style="text-align:center;">√</td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td style="width:28%;min-width:12em;white-space:nowrap;">Out-of-Band Management</td>
+<td style="text-align:center;">√</td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td rowspan="7" style="text-align:center;vertical-align:middle;width:22%;min-width:9em;white-space:nowrap;">Remote O&M and Diagnostics</td>
+<td style="width:28%;min-width:12em;white-space:nowrap;">Remote Access</td>
+<td style="text-align:center;">√</td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td style="width:28%;min-width:12em;white-space:nowrap;">Ping</td>
+<td style="text-align:center;">√</td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td style="width:28%;min-width:12em;white-space:nowrap;">Traceroute</td>
+<td style="text-align:center;">√</td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td style="width:28%;min-width:12em;white-space:nowrap;">Packet Capture</td>
+<td style="text-align:center;">√</td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td style="width:28%;min-width:12em;white-space:nowrap;">Domain Monitoring</td>
+<td style="text-align:center;">√</td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td style="width:28%;min-width:12em;white-space:nowrap;">Speed Test</td>
+<td style="text-align:center;">√</td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td style="width:28%;min-width:12em;white-space:nowrap;">Log Download</td>
+<td style="text-align:center;">√</td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td rowspan="3" style="text-align:center;vertical-align:middle;width:22%;min-width:9em;white-space:nowrap;">AI-Powered O&M</td>
+<td style="width:28%;min-width:12em;white-space:nowrap;">Intelligent Inspection</td>
+<td style="text-align:center;">√</td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td style="width:28%;min-width:12em;white-space:nowrap;">Fault Analysis</td>
+<td style="text-align:center;">√</td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td style="width:28%;min-width:12em;white-space:nowrap;">Intelligent Report</td>
+<td style="text-align:center;">√</td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle;width:22%;min-width:9em;white-space:nowrap;">Mobile</td>
+<td style="width:28%;min-width:12em;white-space:nowrap;">InCloud Manager App</td>
+<td style="text-align:center;">√</td>
+<td style="text-align:center;">√</td>
+</tr>
+</tbody>
+</table>
+
+# <span style="color: green;">9. Contact Us</span>
+
+- **Website:** [InHand Networks](https://www.inhand.com)
+- **Copyright Notice:** © InHand Networks. All rights reserved.

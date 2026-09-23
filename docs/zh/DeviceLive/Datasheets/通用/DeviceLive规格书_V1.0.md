@@ -47,29 +47,8 @@
 ![DeviceLive Dashboard](./imgs/dashboard.png)
 
 
-# <span style="color: green;">2. License 类型对比</span>
 
-| 功能 | 基础版 | 高级版 |
-| ---- | ------ | ------ |
-| 设备接入与管理 | ✓ 支持设备接入、设备配置管理、固件升级、远程重启 | ✓ 支持设备接入、设备配置管理、固件升级、远程重启 |
-| 远程访问 | ✓ 支持远程访问设备，实现远程运维 | ✓ 支持远程访问设备，实现远程运维 |
-| 设备状态监控 | ✓ 支持设备运行状态、网络状态、资源状态监控 | ✓ 支持设备运行状态、网络状态、资源状态监控 |
-| 数据可视化分析 | ✓ 支持设备数据查看、基础数据分析 | ✓ 支持设备数据查看、基础数据分析 |
-| 告警管理 | ✓ 支持设备状态、网络、资源等异常告警 | ✓ 支持设备状态、网络、资源等异常告警 |
-| 报表管理 | ✓ 支持设备运行数据报表 | ✓ 支持设备运行数据报表 |
-| 用户与权限管理 | ✓ 支持多用户、多角色权限管理 | ✓ 支持多用户、多角色权限管理 |
-| GPS/位置管理 | ✓ 支持 GPS、基站定位及设备位置管理 | ✓ 支持 GPS、基站定位及设备位置管理 |
-| InHand DSA 部署管理 | ✓ 支持 InHand DSA 部署管理（适用于 EC/IG 系列设备） | ✓ 支持 InHand DSA 部署管理（适用于 EC/IG 系列设备） |
-| 云连接组网 | — | ✓ 支持云连接组网能力，适用于需要通过 DeviceLive 实现远程组网管理的设备场景 |
-| 云连接历史分析 | — | ✓ 支持云连接历史数据查看及连接状态分析 |
-| 边缘应用管理 | — | ✓ 支持边缘应用及容器化应用部署、版本管理与运维管理（适用于 EC/IG 系列设备） |
-
-**版本说明**
-
-- **基础版：** 提供设备接入、远程访问、设备管理、状态监控、数据分析及告警能力，满足设备日常运维管理需求。
-- **高级版：** 在基础设备管理能力基础上，面向边缘计算设备场景提供云连接、边缘应用部署及高级运维能力。
-
-# <span style="color: green;">3. 运维挑战：分散现场资产难管</span>
+# <span style="color: green;">2. 运维挑战：分散现场资产难管</span>
 
 传统工业现场设备运维常见痛点：
 
@@ -80,7 +59,7 @@
 | 高级能力（Cloud Connect 连 PLC、边缘应用发布）依赖现场或自建系统 | 告警与许可证到期易遗漏 — 业务影响发现滞后 |
 | 多客户/多项目 — 组织与权限隔离复杂 | 边缘数据难整合 — OTA 与远程访问重复建设 |
 
-# <span style="color: green;">4. 核心管理能力</span>
+# <span style="color: green;">3. 核心管理能力</span>
 
 ## <span style="color: green;">设备管理与远程访问</span>
 
@@ -162,7 +141,7 @@
 - DSA 远程配置、升级与状态查看（基础版与高级版均支持）
 - 降低上行流量；边缘采集与业务系统联动
 
-# <span style="color: green;">5. 平台价值与效率提升</span>
+# <span style="color: green;">4. 平台价值与效率提升</span>
 
 | 任务 | 传统方式 | DeviceLive 方式 |
 | ---- | -------------------- | ------------------- |
@@ -179,7 +158,7 @@
 
 **支撑 MSP / 集成商规模化：** 组织隔离、外部用户与报表，提升单工程师可服务客户与站点数量。
 
-# <span style="color: green;">6. 安全与合规</span>
+# <span style="color: green;">5. 安全与合规</span>
 
 DeviceLive 从账号、权限、传输与通知等环节保护设备与数据。
 
@@ -193,7 +172,7 @@ DeviceLive 从账号、权限、传输与通知等环节保护设备与数据。
 | 许可证管理 | 按设备订阅，到期告警 |
 | 账号规范 | 强密码、定期更换、离开时注销、按用户授权 |
 
-# <span style="color: green;">7. 边缘智能生态</span>
+# <span style="color: green;">6. 边缘智能生态</span>
 
 DeviceLive 与映翰通边缘硬件协同，形成现场到云端的端到端方案。
 
@@ -213,7 +192,7 @@ DeviceLive 与映翰通边缘硬件协同，形成现场到云端的端到端方
 
 <div style="page-break-after: always;"></div>
 
-# <span style="color: green;">8. 行业应用</span>
+# <span style="color: green;">7. 行业应用</span>
 
 适用于需要对分布式边缘设备进行集中管理的各类场景。
 
@@ -239,7 +218,7 @@ DeviceLive 与映翰通边缘硬件协同，形成现场到云端的端到端方
 <div style="page-break-after: always;"></div>
 
 
-# <span style="color: green;">9. 软件规格与功能清单</span>
+# <span style="color: green;">8. 软件规格与功能清单</span>
 
 ## <span style="color: green;">核心参数速览</span>
 
@@ -251,55 +230,145 @@ DeviceLive 与映翰通边缘硬件协同，形成现场到云端的端到端方
 | 客户端 | DeviceLive APP（扫码开局、网络状态监控） |
 | 适配硬件 | 映翰通边缘路由器与边缘智能网关（见第 7 章） |
 
-## <span style="color: green;">平台功能清单</span>
+# <span style="color: green;">9. 许可证清单</span>
 
-<table style="width:100%;">
-  <colgroup>
-    <col style="width:35%;">
-    <col style="width:47%;">
-    <col style="width:9%;">
-    <col style="width:9%;">
-  </colgroup>
-  <tr>
-    <th align="left">特性</th>
-    <th align="left">描述</th>
-    <th align="center">基础版</th>
-    <th align="center">高级版</th>
-  </tr>
-  <tr><td>设备批量远程配置</td><td>远程配置设备</td><td align="center">√</td><td align="center">√</td></tr>
-  <tr><td>设备批量固件升级</td><td>远程升级设备固件，支持灵活排程</td><td align="center">√</td><td align="center">√</td></tr>
-  <tr><td>设备分组管理</td><td>按业务需要归类设备，灵活管理</td><td align="center">√</td><td align="center">√</td></tr>
-  <tr><td>远程控制指令</td><td>远程重启、恢复出厂</td><td align="center">√</td><td align="center">√</td></tr>
-  <tr><td>连接状态统计</td><td>监控连接状态与网络类型</td><td align="center">√</td><td align="center">√</td></tr>
-  <tr><td>网络状态分析</td><td>监控接口、链路状态与流量消耗</td><td align="center">√</td><td align="center">√</td></tr>
-  <tr><td>网络质量监控</td><td>蜂窝信号；时延、抖动、丢包与吞吐率</td><td align="center">√</td><td align="center">√</td></tr>
-  <tr><td>DSA 管理</td><td>DSA 远程配置、升级与状态查看</td><td align="center">√</td><td align="center">√</td></tr>
-  <tr><td>远程诊断工具</td><td>诊断日志、Ping、Traceroute、抓包、事件分析</td><td align="center">√</td><td align="center">√</td></tr>
-  <tr><td>地理位置管理</td><td>GPS/基站/手动定位；地图纵览设备分布</td><td align="center">√</td><td align="center">√</td></tr>
-  <tr><td>状态告警通知</td><td>多种告警策略；短信、邮件与 APP 通知</td><td align="center">√</td><td align="center">√</td></tr>
-  <tr><td>终端远程维护</td><td>快速建立远程通道，访问控制下连终端</td><td align="center">—</td><td align="center">√</td></tr>
-  <tr><td>边缘计算管理</td><td>容器/原生应用与边缘 APP 部署</td><td align="center">—</td><td align="center">√</td></tr>
-  <tr><td>MFA</td><td>账号多因素认证</td><td align="center">√</td><td align="center">√</td></tr>
-  <tr><td>DeviceLive APP</td><td>APP 扫码配置设备，监控网络状态</td><td align="center">√</td><td align="center">√</td></tr>
+<table>
+<thead>
+<tr>
+<th style="text-align:center;width:22%;min-width:9em;white-space:nowrap;">功能模块</th>
+<th style="text-align:center;width:28%;min-width:12em;white-space:nowrap;">功能</th>
+<th style="text-align:center;">DeviceLive基础版</th>
+<th style="text-align:center;">DeviceLive边缘智能高级版</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="7" style="text-align:center;vertical-align:middle;width:22%;min-width:9em;white-space:nowrap;">设备管理</td>
+<td style="width:28%;min-width:12em;white-space:nowrap;">远程配置</td>
+<td style="text-align:center;">√</td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td style="width:28%;min-width:12em;white-space:nowrap;">固件升级</td>
+<td style="text-align:center;">√</td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td style="width:28%;min-width:12em;white-space:nowrap;">远程重启</td>
+<td style="text-align:center;">√</td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td style="width:28%;min-width:12em;white-space:nowrap;">远程恢复出厂</td>
+<td style="text-align:center;">√</td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td style="width:28%;min-width:12em;white-space:nowrap;">批量管理</td>
+<td style="text-align:center;">√</td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td style="width:28%;min-width:12em;white-space:nowrap;">DeviceSupervisor管理</td>
+<td style="text-align:center;">√</td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td style="width:28%;min-width:12em;white-space:nowrap;">OTA升级</td>
+<td style="text-align:center;">√</td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td rowspan="7" style="text-align:center;vertical-align:middle;width:22%;min-width:9em;white-space:nowrap;">设备监控</td>
+<td style="width:28%;min-width:12em;white-space:nowrap;">在线/离线</td>
+<td style="text-align:center;">√</td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td style="width:28%;min-width:12em;white-space:nowrap;">接口状态</td>
+<td style="text-align:center;">√</td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td style="width:28%;min-width:12em;white-space:nowrap;">蜂窝信号</td>
+<td style="text-align:center;">√</td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td style="width:28%;min-width:12em;white-space:nowrap;">流量统计</td>
+<td style="text-align:center;">√</td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td style="width:28%;min-width:12em;white-space:nowrap;">性能状态</td>
+<td style="text-align:center;">√</td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td style="width:28%;min-width:12em;white-space:nowrap;">地理位置</td>
+<td style="text-align:center;">√</td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td style="width:28%;min-width:12em;white-space:nowrap;">告警</td>
+<td style="text-align:center;">√</td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td rowspan="2" style="text-align:center;vertical-align:middle;width:22%;min-width:9em;white-space:nowrap;">终端远程维护</td>
+<td style="width:28%;min-width:12em;white-space:nowrap;">云连接</td>
+<td style="text-align:center;">×</td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td style="width:28%;min-width:12em;white-space:nowrap;">DeviceTouch</td>
+<td style="text-align:center;">√</td>
+<td></td>
+</tr>
+<tr>
+<td rowspan="3" style="text-align:center;vertical-align:middle;width:22%;min-width:9em;white-space:nowrap;">项目与应用管理</td>
+<td style="width:28%;min-width:12em;white-space:nowrap;">项目版本管理</td>
+<td style="text-align:center;">×</td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td style="width:28%;min-width:12em;white-space:nowrap;">环境增量包管理</td>
+<td style="text-align:center;">×</td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td style="width:28%;min-width:12em;white-space:nowrap;">应用管理</td>
+<td style="text-align:center;">×</td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td rowspan="5" style="text-align:center;vertical-align:middle;width:22%;min-width:9em;white-space:nowrap;">远程运维及诊断</td>
+<td style="width:28%;min-width:12em;white-space:nowrap;">远程访问</td>
+<td style="text-align:center;">√</td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td style="width:28%;min-width:12em;white-space:nowrap;">Ping</td>
+<td style="text-align:center;">√</td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td style="width:28%;min-width:12em;white-space:nowrap;">Traceroute</td>
+<td style="text-align:center;">√</td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td style="width:28%;min-width:12em;white-space:nowrap;">抓包</td>
+<td style="text-align:center;">√</td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td style="width:28%;min-width:12em;white-space:nowrap;">日志下载</td>
+<td style="text-align:center;">√</td>
+<td style="text-align:center;">√</td>
+</tr>
+</tbody>
 </table>
-
-| 类别/参数 | 规格 |
-| --- | --- |
-| <span style="color: green;">**设备管理**</span> | |
-| 设备信息 | SN、机型、固件、同步状态、信号、IMSI、流量、在线统计 |
-| 远程访问 | 在线设备一键打开本地 Web |
-| 配置与升级 | 远程配置、单台/分组/OTA 固件、配置任务 |
-| DeviceSupervisor | 版本、远程配置与升级（视机型） |
-| <span style="color: green;">**监控与告警**</span> | |
-| 概览 | 在线/离线、流量、上行、地图、TOP 统计 |
-| 告警 | 规则；邮件/短信/Webhook；告警列表 |
-| 报表 | 按设备/分组与时间段的历史报表 |
-| <span style="color: green;">**高级能力**</span> | |
-| Cloud Connect | VPN 访问下连终端（高级版） |
-| 边缘计算 | 容器/原生部署与升级（高级版） |
-| <span style="color: green;">**系统管理**</span> | |
-| 组织与用户 | 多级组织、角色、内外部用户、MFA |
-| 许可证 | 按设备订阅与到期告警 |
 
 # <span style="color: green;">10. 联系我们</span>
 

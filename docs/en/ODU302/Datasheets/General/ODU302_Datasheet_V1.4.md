@@ -65,6 +65,10 @@ Outdoor surveillance sites are typically deployed on open poles and largely lack
 Concrete walls and metal structures in underground parking facilities readily shield cellular signals, and wired broadband is generally unavailable. Meanwhile, license-plate recognition, surveillance, and barrier-gate equipment are numerous, making cabling difficult and inspection costly. The ODU302 can be deployed at signal-reachable areas such as garage entrances/exits and ramps, receiving cellular signals across the area via its built-in omnidirectional antenna to ensure stable online operation for parking management and video backhaul.
 
 
+<div style="page-break-after: always;"></div>
+
+
+
 ## <span style="color: green;">Product Dimensions</span>
 
 <div style="display: flex; align-items: end; flex-wrap: wrap; justify-content: space-between; row-gap: 16px;">
@@ -84,7 +88,7 @@ Concrete walls and metal structures in underground parking facilities readily sh
     <img src="images/back_view.png" alt="Rear View" style="width: 100%; max-height: 250px; object-fit: contain; display: block; margin: 0 auto;"/>
     <div style="width: 100%; text-align: center; font-size: 14px;">Rear View</div>
   </div>
-  <div style="width: 45%;">
+  <div style="width: 90%;">
     <div>Note:</div>
     <div>1. All dimensions are in millimeters (mm).</div>
     <div>2. Dimensions (L × W × H): 164 × 50 × 129.7 mm.</div>
@@ -157,9 +161,6 @@ The device is compatible with both IEEE 802.3af standard PoE power over Ethernet
 | **Dimensions** | 164 × 50 × 129.7 mm |
 | **Weight** | Approx. 500 g |
 | **Installation** | Wall-mount, pole-mount, top-mount |
-
-
-<div style="page-break-after: always;"></div>
 
 
 # <span style="color: green;">4. Network Connectivity</span>

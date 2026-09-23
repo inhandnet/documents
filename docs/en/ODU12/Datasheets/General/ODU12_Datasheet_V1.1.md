@@ -194,7 +194,7 @@ AI Agent cloud management enables unified remote operations and maintenance:
 | **Power Consumption** | ≤ 18 W |
 | **Reset Button** | 1 × Reset button |
 | **Cooling** | Structure-thermal integrated passive cooling, fanless design |
-| **Protection Rating** | IP65 |
+| **Protection Rating** | IP67 |
 | **Enclosure Material** | Die-cast aluminum heat sink + UV-stabilized polymer shell |
 | **Color** | White |
 | **Operating Temperature** | -30 °C ~ +70 °C (-22 °F ~ +158 °F) |

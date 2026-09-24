@@ -526,7 +526,7 @@
   - [Appendix: Safety Precautions](FWA12/Manuals/User%20manual/FWA12_User%20manual_V1.0.md#appendix-safety-precautions)
   - [FAQ](FWA12/Manuals/User%20manual/FWA12_User%20manual_V1.0.md#faq)
 - [FWA12 Datasheet v1.0](FWA12/Datasheets/General/FWA12_Datasheet_V1.0.md): FWA12 Datasheet v1.0 — Transform Connectivity, Unlock Possibilities
-- [FWA12 Certifications](FWA12/certifications.md): FWA12 certification list (EN18031, FCC, IC, PTCRB) with links to the original certificate files
+- [FWA12 Certifications](FWA12/certifications.md): FWA12 certification list (CE, EN18031, FCC, IC, PTCRB) with links to the original certificate files
 - [FWA12 Drawings](FWA12/drawings.md): FWA12 mechanical drawings (2D, 3D) with links to the original drawing files
 
 ## IG101
@@ -709,6 +709,7 @@
   - [4.1 Device Monitoring](IR602/Manuals/User%20manual/IR602%20User%20manual.md#41-device-monitoring)
   - [4.2 Status](IR602/Manuals/User%20manual/IR602%20User%20manual.md#42-status)
 - [IR602 Datasheet v1.2](IR602/Datasheets/General/IR602_Datasheet_V1.2.md): IR602 Datasheet v1.2 — Lightweight 5G Connectivity, Build Industrial Digital Foundation
+- [IR602 Drawings](IR602/drawings.md): IR602 mechanical drawings (2D, 3D) with links to the original drawing files
 
 ## IR615-S
 
@@ -1048,6 +1049,7 @@
   - [4.3 Service](ODU302/Manuals/User%20manual/ODU302%20Product%20User%20Manual.md#43-service)
   - [4.4 Firewall](ODU302/Manuals/User%20manual/ODU302%20Product%20User%20Manual.md#44-firewall)
 - [ODU302 Datasheet v1.4](ODU302/Datasheets/General/ODU302_Datasheet_V1.4.md): ODU302 Datasheet v1.4 — Flexible Deployment, Reliable Connectivity
+- [ODU302 Certifications](ODU302/certifications.md): ODU302 certification list (CE, FCC, IC) with links to the original certificate files
 - [ODU302 Drawings](ODU302/drawings.md): ODU302 mechanical drawings (2D, 3D) with links to the original drawing files
 
 ## VG710

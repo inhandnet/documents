@@ -436,6 +436,7 @@ hide:
         <div class="pm-card__title">IR615-S</div>
         <ul class="pm-card__links">
         <li><a href="IR615-S/certifications.html" title="IR615-S 认证证书">认证证书</a></li>
+        <li><a href="IR615-S/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/IR615-S%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="IR615-S 用户手册">用户手册 V1.0</a></li>
         <li><a href="IR615-S/Use%20Cases/%E5%86%9C%E6%9D%91%E9%A5%AE%E7%94%A8%E6%B0%B4%E8%BF%9C%E7%A8%8B%E7%9B%91%E6%8E%A7%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/%E6%A1%88%E4%BE%8B%E6%89%8B%E5%86%8C.html" title="农村饮用水远程监控解决方案">农村饮用水远程监控解决方案</a></li>
         <li><a href="IR615-S/Use%20Cases/%E5%86%9C%E6%9D%91%E9%A5%AE%E7%94%A8%E6%B0%B4%E8%BF%9C%E7%A8%8B%E7%9B%91%E6%8E%A7%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/%E9%85%8D%E7%BD%AE%E6%96%87%E6%A1%A3.html" title="IR615 ipsec VPN配置指导手册">IR615 ipsec VPN配置指导手册</a></li>
         </ul>

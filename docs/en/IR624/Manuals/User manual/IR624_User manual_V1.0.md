@@ -410,15 +410,18 @@ The **Status > Events** feature displays event information related to the device
 Currently supported event types are as follows:
 
 1. Successful/Failed User Logins
-2. High CPU Utilization in the Last 5 Minutes
-3. High Memory Utilization in the Last 5 Minutes
-4. Cellular Traffic Reaches Threshold
-5. VPN Status Changes
-6. Uplink Status Changes
-7. Uplink Switching
-8. WAN2/LAN1 Switching
-9. Reboot
-10. Upgrade
+2. Configuration Changes
+3. High CPU Utilization in the Last 5 Minutes
+4. High Memory Utilization in the Last 5 Minutes
+5. Detection Status Changed
+6. Cellular Traffic Reaches Threshold
+7. VPN Status Changes
+8. Client Status Changed
+9. Uplink Status Changes
+10. Uplink Switching
+11. WAN2/LAN1 Switching
+12. Reboot
+13. Upgrade
 
 ### 4.2.6 Logs
 

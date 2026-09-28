@@ -235,135 +235,135 @@ DeviceLive 与映翰通边缘硬件协同，形成现场到云端的端到端方
 <table>
 <thead>
 <tr>
-<th style="text-align:center;width:22%;min-width:9em;white-space:nowrap;">功能模块</th>
-<th style="text-align:center;width:28%;min-width:12em;white-space:nowrap;">功能</th>
+<th style="text-align:center;width:22%;min-width:9em;">功能模块</th>
+<th style="text-align:center;width:28%;min-width:12em;">功能</th>
 <th style="text-align:center;">DeviceLive基础版</th>
 <th style="text-align:center;">DeviceLive边缘智能高级版</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td rowspan="7" style="text-align:center;vertical-align:middle;width:22%;min-width:9em;white-space:nowrap;">设备管理</td>
-<td style="width:28%;min-width:12em;white-space:nowrap;">远程配置</td>
+<td rowspan="7" style="text-align:center;vertical-align:middle;width:22%;min-width:9em;">设备管理</td>
+<td style="width:28%;min-width:12em;">远程配置</td>
 <td style="text-align:center;">√</td>
 <td style="text-align:center;">√</td>
 </tr>
 <tr>
-<td style="width:28%;min-width:12em;white-space:nowrap;">固件升级</td>
+<td style="width:28%;min-width:12em;">固件升级</td>
 <td style="text-align:center;">√</td>
 <td style="text-align:center;">√</td>
 </tr>
 <tr>
-<td style="width:28%;min-width:12em;white-space:nowrap;">远程重启</td>
+<td style="width:28%;min-width:12em;">远程重启</td>
 <td style="text-align:center;">√</td>
 <td style="text-align:center;">√</td>
 </tr>
 <tr>
-<td style="width:28%;min-width:12em;white-space:nowrap;">远程恢复出厂</td>
+<td style="width:28%;min-width:12em;">远程恢复出厂</td>
 <td style="text-align:center;">√</td>
 <td style="text-align:center;">√</td>
 </tr>
 <tr>
-<td style="width:28%;min-width:12em;white-space:nowrap;">批量管理</td>
+<td style="width:28%;min-width:12em;">批量管理</td>
 <td style="text-align:center;">√</td>
 <td style="text-align:center;">√</td>
 </tr>
 <tr>
-<td style="width:28%;min-width:12em;white-space:nowrap;">DeviceSupervisor管理</td>
+<td style="width:28%;min-width:12em;">DeviceSupervisor管理</td>
 <td style="text-align:center;">√</td>
 <td style="text-align:center;">√</td>
 </tr>
 <tr>
-<td style="width:28%;min-width:12em;white-space:nowrap;">OTA升级</td>
+<td style="width:28%;min-width:12em;">OTA升级</td>
 <td style="text-align:center;">√</td>
 <td style="text-align:center;">√</td>
 </tr>
 <tr>
-<td rowspan="7" style="text-align:center;vertical-align:middle;width:22%;min-width:9em;white-space:nowrap;">设备监控</td>
-<td style="width:28%;min-width:12em;white-space:nowrap;">在线/离线</td>
+<td rowspan="7" style="text-align:center;vertical-align:middle;width:22%;min-width:9em;">设备监控</td>
+<td style="width:28%;min-width:12em;">在线/离线</td>
 <td style="text-align:center;">√</td>
 <td style="text-align:center;">√</td>
 </tr>
 <tr>
-<td style="width:28%;min-width:12em;white-space:nowrap;">接口状态</td>
+<td style="width:28%;min-width:12em;">接口状态</td>
 <td style="text-align:center;">√</td>
 <td style="text-align:center;">√</td>
 </tr>
 <tr>
-<td style="width:28%;min-width:12em;white-space:nowrap;">蜂窝信号</td>
+<td style="width:28%;min-width:12em;">蜂窝信号</td>
 <td style="text-align:center;">√</td>
 <td style="text-align:center;">√</td>
 </tr>
 <tr>
-<td style="width:28%;min-width:12em;white-space:nowrap;">流量统计</td>
+<td style="width:28%;min-width:12em;">流量统计</td>
 <td style="text-align:center;">√</td>
 <td style="text-align:center;">√</td>
 </tr>
 <tr>
-<td style="width:28%;min-width:12em;white-space:nowrap;">性能状态</td>
+<td style="width:28%;min-width:12em;">性能状态</td>
 <td style="text-align:center;">√</td>
 <td style="text-align:center;">√</td>
 </tr>
 <tr>
-<td style="width:28%;min-width:12em;white-space:nowrap;">地理位置</td>
+<td style="width:28%;min-width:12em;">地理位置</td>
 <td style="text-align:center;">√</td>
 <td style="text-align:center;">√</td>
 </tr>
 <tr>
-<td style="width:28%;min-width:12em;white-space:nowrap;">告警</td>
+<td style="width:28%;min-width:12em;">告警</td>
 <td style="text-align:center;">√</td>
 <td style="text-align:center;">√</td>
 </tr>
 <tr>
-<td rowspan="2" style="text-align:center;vertical-align:middle;width:22%;min-width:9em;white-space:nowrap;">终端远程维护</td>
-<td style="width:28%;min-width:12em;white-space:nowrap;">云连接</td>
-<td style="text-align:center;">×</td>
+<td rowspan="2" style="text-align:center;vertical-align:middle;width:22%;min-width:9em;">终端远程维护</td>
+<td style="width:28%;min-width:12em;">云连接</td>
+<td style="text-align:center;"><span style="font-size:1.4em;">×</span></td>
 <td style="text-align:center;">√</td>
 </tr>
 <tr>
-<td style="width:28%;min-width:12em;white-space:nowrap;">DeviceTouch</td>
-<td style="text-align:center;">√</td>
-<td></td>
-</tr>
-<tr>
-<td rowspan="3" style="text-align:center;vertical-align:middle;width:22%;min-width:9em;white-space:nowrap;">项目与应用管理</td>
-<td style="width:28%;min-width:12em;white-space:nowrap;">项目版本管理</td>
-<td style="text-align:center;">×</td>
-<td style="text-align:center;">√</td>
-</tr>
-<tr>
-<td style="width:28%;min-width:12em;white-space:nowrap;">环境增量包管理</td>
-<td style="text-align:center;">×</td>
-<td style="text-align:center;">√</td>
-</tr>
-<tr>
-<td style="width:28%;min-width:12em;white-space:nowrap;">应用管理</td>
-<td style="text-align:center;">×</td>
-<td style="text-align:center;">√</td>
-</tr>
-<tr>
-<td rowspan="5" style="text-align:center;vertical-align:middle;width:22%;min-width:9em;white-space:nowrap;">远程运维及诊断</td>
-<td style="width:28%;min-width:12em;white-space:nowrap;">远程访问</td>
+<td style="width:28%;min-width:12em;">DeviceTouch</td>
 <td style="text-align:center;">√</td>
 <td style="text-align:center;">√</td>
 </tr>
 <tr>
-<td style="width:28%;min-width:12em;white-space:nowrap;">Ping</td>
+<td rowspan="3" style="text-align:center;vertical-align:middle;width:22%;min-width:9em;">项目与应用管理</td>
+<td style="width:28%;min-width:12em;">项目版本管理</td>
+<td style="text-align:center;"><span style="font-size:1.4em;">×</span></td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td style="width:28%;min-width:12em;">环境增量包管理</td>
+<td style="text-align:center;"><span style="font-size:1.4em;">×</span></td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td style="width:28%;min-width:12em;">应用管理</td>
+<td style="text-align:center;"><span style="font-size:1.4em;">×</span></td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td rowspan="5" style="text-align:center;vertical-align:middle;width:22%;min-width:9em;">远程运维及诊断</td>
+<td style="width:28%;min-width:12em;">远程访问</td>
 <td style="text-align:center;">√</td>
 <td style="text-align:center;">√</td>
 </tr>
 <tr>
-<td style="width:28%;min-width:12em;white-space:nowrap;">Traceroute</td>
+<td style="width:28%;min-width:12em;">Ping</td>
 <td style="text-align:center;">√</td>
 <td style="text-align:center;">√</td>
 </tr>
 <tr>
-<td style="width:28%;min-width:12em;white-space:nowrap;">抓包</td>
+<td style="width:28%;min-width:12em;">Traceroute</td>
 <td style="text-align:center;">√</td>
 <td style="text-align:center;">√</td>
 </tr>
 <tr>
-<td style="width:28%;min-width:12em;white-space:nowrap;">日志下载</td>
+<td style="width:28%;min-width:12em;">抓包</td>
+<td style="text-align:center;">√</td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td style="width:28%;min-width:12em;">日志下载</td>
 <td style="text-align:center;">√</td>
 <td style="text-align:center;">√</td>
 </tr>

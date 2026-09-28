@@ -32,7 +32,7 @@ The VR624 is a robust 5G router engineered for in-vehicle networking, featuring 
 ## <span style="color: #3eb044;">1.1 Feature and Advantage</span>
 | Value Dimension | Description |
 | :--- | :--- |
-| **High-Speed Connectivity** | 5G SA/NSA support with downlink speeds up to 3.4 Gbps, Wi-Fi 6 throughput 3000Mbps, enabling gigabit-class data transmissionfor real-time video, telemetry, and fleet communications |
+| **High-Speed Connectivity** | 5G SA/NSA support with downlink speeds up to 3.4 Gbps, Wi-Fi 6 throughput 3000Mbps, enabling gigabit-class data transmission for real-time video, telemetry, and fleet communications |
 | **Robust Design** | M12 X-Coded connectors with vibration resistance, certified to ECE R10, ECE R118, and EN 50155 standards for EMC compliance, fire safety, and railway-grade reliability |
 | **Integrated Positioning** | Built-in GNSS support (GPS, BDS, Galileo, GLONASS, QZSS) with  <1.5m positioning accuracy for real-time fleet tracking and route optimization |
 | **Enterprise-Grade Security** | Hardware TPM 2.0 encryption chip combined with multi-layer software security policies  (firewall, VPN, access control) for comprehensive threat protection, WPA3 Enterprise level secure encryption |
@@ -138,7 +138,7 @@ Each vehicle is equipped with one VR624 router in a standard configuration:
 | **Security Chip** | TPM 2.0 |
 | **Real-Time Clock** | RTC supported |
 | **Power Supply** | DC 9-48 V, over-current protection, anti-reverse connection |
-| **Power Consumption** | Standby 5.3 W, Typical 8.5 W, Maxmum 17.8 W |
+| **Power Consumption** | Standby 5.3 W, Typical 8.5 W, Maxium 17.8 W |
 | **Reset Button** | Reset button for factory restore |
 | **Housing** | Metal enclosure |
 | **Cooling** | Fanless passive cooling |

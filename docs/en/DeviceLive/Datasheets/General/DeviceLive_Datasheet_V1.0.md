@@ -52,12 +52,12 @@ DeviceLive provides four core capabilities: **device management, network monitor
 <table>
   <tr>
     <td valign="top" style="text-align: center;">
-      <img src="images/remote-terminal-access.png" alt="Remote Terminal Access Control Diagram" style="width: 100%; max-width: 560px; display: block; margin: 0 auto;" />
+      <img src="images/image.png" alt="Remote Terminal Access Control Diagram" style="width: 100%; max-width: 560px; display: block; margin: 0 auto;" />
     </td>
   </tr>
   <tr>
     <td valign="top">
-      DeviceLive supports engineers in **remotely accessing terminal devices connected downstream of routers**, enabling remote terminal maintenance and program deployment, while establishing transmission channels for continuous terminal data reporting to business centers. It is suitable for distributed terminal access scenarios and supports Ethernet terminal access for industrial PCs, servers, cameras, PLCs, HMIs, controllers, and more.
+      DeviceLive supports engineers in remotely accessing terminal devices connected downstream of routers, enabling remote terminal maintenance and program deployment, while establishing transmission channels for continuous terminal data reporting to business centers. It is suitable for distributed terminal access scenarios and supports Ethernet terminal access for industrial PCs, servers, cameras, PLCs, HMIs, controllers, and more.
     </td>
   </tr>
 </table>
@@ -68,7 +68,7 @@ DeviceLive provides four core capabilities: **device management, network monitor
 <table>
   <tr>
     <td valign="top" style="text-align: center;">
-      <img src="images/edge-computing-app-mgmt.png" alt="Edge Computing Application Management Interface" style="width: 100%; max-width: 560px; display: block; margin: 0 auto;" />
+      <img src="images/image1.png" alt="Edge Computing Application Management Interface" style="width: 100%; max-width: 560px; display: block; margin: 0 auto;" />
     </td>
   </tr>
   <tr>
@@ -130,147 +130,147 @@ InHand edge intelligence solutions integrate 5G, AI, IoT, and cloud computing, a
 <table>
 <thead>
 <tr>
-<th style="text-align:center;width:22%;min-width:9em;white-space:nowrap;">Module</th>
-<th style="text-align:center;width:28%;min-width:12em;white-space:nowrap;">Feature</th>
+<th style="text-align:center;width:22%;min-width:9em;">Module</th>
+<th style="text-align:center;width:28%;min-width:12em;">Feature</th>
 <th style="text-align:center;">DeviceLive Basic</th>
-<th style="text-align:center;">DeviceLive Edge Intelligence Advanced</th>
+<th style="text-align:center;">DeviceLive Edge Professional Plan</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td rowspan="7" style="text-align:center;vertical-align:middle;width:22%;min-width:9em;white-space:nowrap;">Device Management</td>
-<td style="width:28%;min-width:12em;white-space:nowrap;">Remote Configuration</td>
+<td rowspan="7" style="text-align:center;vertical-align:middle;width:22%;min-width:9em;">Device Management</td>
+<td style="width:28%;min-width:12em;">Remote Configuration</td>
 <td style="text-align:center;">√</td>
 <td style="text-align:center;">√</td>
 </tr>
 <tr>
-<td style="width:28%;min-width:12em;white-space:nowrap;">Firmware Upgrade</td>
+<td style="width:28%;min-width:12em;">Firmware Upgrade</td>
 <td style="text-align:center;">√</td>
 <td style="text-align:center;">√</td>
 </tr>
 <tr>
-<td style="width:28%;min-width:12em;white-space:nowrap;">Remote Reboot</td>
+<td style="width:28%;min-width:12em;">Remote Reboot</td>
 <td style="text-align:center;">√</td>
 <td style="text-align:center;">√</td>
 </tr>
 <tr>
-<td style="width:28%;min-width:12em;white-space:nowrap;">Remote Factory Reset</td>
+<td style="width:28%;min-width:12em;">Remote Factory Reset</td>
 <td style="text-align:center;">√</td>
 <td style="text-align:center;">√</td>
 </tr>
 <tr>
-<td style="width:28%;min-width:12em;white-space:nowrap;">Batch Management</td>
+<td style="width:28%;min-width:12em;">Batch Management</td>
 <td style="text-align:center;">√</td>
 <td style="text-align:center;">√</td>
 </tr>
 <tr>
-<td style="width:28%;min-width:12em;white-space:nowrap;">DeviceSupervisor Management</td>
+<td style="width:28%;min-width:12em;">DeviceSupervisor Management</td>
 <td style="text-align:center;">√</td>
 <td style="text-align:center;">√</td>
 </tr>
 <tr>
-<td style="width:28%;min-width:12em;white-space:nowrap;">OTA Upgrade</td>
+<td style="width:28%;min-width:12em;">OTA Upgrade</td>
 <td style="text-align:center;">√</td>
 <td style="text-align:center;">√</td>
 </tr>
 <tr>
-<td rowspan="7" style="text-align:center;vertical-align:middle;width:22%;min-width:9em;white-space:nowrap;">Device Monitoring</td>
-<td style="width:28%;min-width:12em;white-space:nowrap;">Online/Offline</td>
+<td rowspan="7" style="text-align:center;vertical-align:middle;width:22%;min-width:9em;">Device Monitoring</td>
+<td style="width:28%;min-width:12em;">Online/Offline</td>
 <td style="text-align:center;">√</td>
 <td style="text-align:center;">√</td>
 </tr>
 <tr>
-<td style="width:28%;min-width:12em;white-space:nowrap;">Interface Status</td>
+<td style="width:28%;min-width:12em;">Interface Status</td>
 <td style="text-align:center;">√</td>
 <td style="text-align:center;">√</td>
 </tr>
 <tr>
-<td style="width:28%;min-width:12em;white-space:nowrap;">Cellular Signal</td>
+<td style="width:28%;min-width:12em;">Cellular Signal</td>
 <td style="text-align:center;">√</td>
 <td style="text-align:center;">√</td>
 </tr>
 <tr>
-<td style="width:28%;min-width:12em;white-space:nowrap;">Traffic Statistics</td>
+<td style="width:28%;min-width:12em;">Traffic Statistics</td>
 <td style="text-align:center;">√</td>
 <td style="text-align:center;">√</td>
 </tr>
 <tr>
-<td style="width:28%;min-width:12em;white-space:nowrap;">Performance Status</td>
+<td style="width:28%;min-width:12em;">Performance Status</td>
 <td style="text-align:center;">√</td>
 <td style="text-align:center;">√</td>
 </tr>
 <tr>
-<td style="width:28%;min-width:12em;white-space:nowrap;">Geolocation</td>
+<td style="width:28%;min-width:12em;">Geolocation</td>
 <td style="text-align:center;">√</td>
 <td style="text-align:center;">√</td>
 </tr>
 <tr>
-<td style="width:28%;min-width:12em;white-space:nowrap;">Alerts</td>
+<td style="width:28%;min-width:12em;">Alerts</td>
 <td style="text-align:center;">√</td>
 <td style="text-align:center;">√</td>
 </tr>
 <tr>
-<td rowspan="2" style="text-align:center;vertical-align:middle;width:22%;min-width:9em;white-space:nowrap;">Remote Terminal Maintenance</td>
-<td style="width:28%;min-width:12em;white-space:nowrap;">Cloud Connect</td>
-<td style="text-align:center;">×</td>
+<td rowspan="2" style="text-align:center;vertical-align:middle;width:22%;min-width:9em;">Remote Terminal Maintenance</td>
+<td style="width:28%;min-width:12em;">Cloud Connect</td>
+<td style="text-align:center;"><span style="font-size:1.4em;">×</span></td>
 <td style="text-align:center;">√</td>
 </tr>
 <tr>
-<td style="width:28%;min-width:12em;white-space:nowrap;">DeviceTouch</td>
-<td style="text-align:center;">√</td>
-<td></td>
-</tr>
-<tr>
-<td rowspan="3" style="text-align:center;vertical-align:middle;width:22%;min-width:9em;white-space:nowrap;">Project & Application Management</td>
-<td style="width:28%;min-width:12em;white-space:nowrap;">Project Version Management</td>
-<td style="text-align:center;">×</td>
-<td style="text-align:center;">√</td>
-</tr>
-<tr>
-<td style="width:28%;min-width:12em;white-space:nowrap;">Environment Incremental Package Management</td>
-<td style="text-align:center;">×</td>
-<td style="text-align:center;">√</td>
-</tr>
-<tr>
-<td style="width:28%;min-width:12em;white-space:nowrap;">Application Management</td>
-<td style="text-align:center;">×</td>
-<td style="text-align:center;">√</td>
-</tr>
-<tr>
-<td rowspan="5" style="text-align:center;vertical-align:middle;width:22%;min-width:9em;white-space:nowrap;">Remote O&M and Diagnostics</td>
-<td style="width:28%;min-width:12em;white-space:nowrap;">Remote Access</td>
+<td style="width:28%;min-width:12em;">DeviceTouch</td>
 <td style="text-align:center;">√</td>
 <td style="text-align:center;">√</td>
 </tr>
 <tr>
-<td style="width:28%;min-width:12em;white-space:nowrap;">Ping</td>
+<td rowspan="3" style="text-align:center;vertical-align:middle;width:22%;min-width:9em;">Project & Application Management</td>
+<td style="width:28%;min-width:12em;">Project Version Management</td>
+<td style="text-align:center;"><span style="font-size:1.4em;">×</span></td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td style="width:28%;min-width:12em;">Environment Incremental Package Management</td>
+<td style="text-align:center;"><span style="font-size:1.4em;">×</span></td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td style="width:28%;min-width:12em;">Application Management</td>
+<td style="text-align:center;"><span style="font-size:1.4em;">×</span></td>
+<td style="text-align:center;">√</td>
+</tr>
+<tr>
+<td rowspan="5" style="text-align:center;vertical-align:middle;width:22%;min-width:9em;">Remote O&M and Diagnostics</td>
+<td style="width:28%;min-width:12em;">Remote Access</td>
 <td style="text-align:center;">√</td>
 <td style="text-align:center;">√</td>
 </tr>
 <tr>
-<td style="width:28%;min-width:12em;white-space:nowrap;">Traceroute</td>
+<td style="width:28%;min-width:12em;">Ping</td>
 <td style="text-align:center;">√</td>
 <td style="text-align:center;">√</td>
 </tr>
 <tr>
-<td style="width:28%;min-width:12em;white-space:nowrap;">Packet Capture</td>
+<td style="width:28%;min-width:12em;">Traceroute</td>
 <td style="text-align:center;">√</td>
 <td style="text-align:center;">√</td>
 </tr>
 <tr>
-<td style="width:28%;min-width:12em;white-space:nowrap;">Log Download</td>
+<td style="width:28%;min-width:12em;">Packet Capture</td>
 <td style="text-align:center;">√</td>
 <td style="text-align:center;">√</td>
 </tr>
+<tr>
+<td style="width:28%;min-width:12em;">Log Download</td>
+<td style="text-align:center;">√</td>
+<td style="text-align:center;">√</td>
+  </tr>
 </tbody>
 </table>
 
 **Plan Description**
 
-- **Basic Edition:** Provides basic device onboarding, remote access, device management, status monitoring, data analysis and alarm capabilities for daily device operation and maintenance.
-- **Advanced Edition:** Provides advanced cloud connection, edge application deployment and operation & maintenance capabilities based on basic device management, mainly targeting edge computing scenarios.
+- **Basic Plan:** Provides basic device onboarding, remote access, device management, status monitoring, data analysis and alarm capabilities for daily device operation and maintenance.
+- **Edge Professional Plan:** Provides advanced cloud connection, edge application deployment and operation & maintenance capabilities based on basic device management, mainly targeting edge computing scenarios.
 
-**Platform URL:** [device.inhandcloud.cn](https://device.inhandcloud.cn)
+**Platform URL:** [device.inhandcloud.com](https://device.inhandcloud.com)
 
 # <span style="color: green;">6. Contact Us</span>
 

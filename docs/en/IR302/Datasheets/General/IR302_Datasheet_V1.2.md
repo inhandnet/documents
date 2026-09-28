@@ -75,7 +75,7 @@ The IR302 adopts a fanless cooling design, supports wide temperature and wide vo
 | Cellular | 4G LTE Cat.4/Cat.1/3G/2G, multi-band coverage, dual-SIM redundancy, ICCID binding and RSRP threshold auto-switching |
 | Wi-Fi | IEEE 802.11 b/g/n, 2.4 GHz, AP/STA/AP+STA mixed mode, up to 32 clients |
 | VPN | IPSec (IKEv1/v2), GRE, L2TP, PPTP, OpenVPN, WireGuard, ZeroTier |
-| Security | Firewall, ACL access contro/l, MAC-IP binding (200 entries), content filtering, SIP ALG, attack protection |
+| Security | Firewall, ACL access control, MAC-IP binding (200 entries), content filtering, SIP ALG, attack protection |
 | Cloud Management | Device Manager (DM) batch configuration and firmware upgrade; InConnect Service (ICS) cloud management |
 | Remote Management | SNMP v1/v2c/v3, WebUI, CLI, SSH Client, HTTP/HTTPS API |
 | Processor | 580MHz industrial-grade embedded processor, 128 MB DDR, 32 MB SPI Flash |

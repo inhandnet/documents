@@ -436,7 +436,7 @@
   - [场景6：VRRP热备份](IR315/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/IR315%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.md#%E5%9C%BA%E6%99%AF6vrrp%E7%83%AD%E5%A4%87%E4%BB%BD)
 - [IR315 规格书 v1.2](IR315/Datasheets/%E9%80%9A%E7%94%A8/IR315%E8%A7%84%E6%A0%BC%E4%B9%A6_V1.2.md): IR315 规格书 v1.2 — 5G经济型多网口工业路由器，安全联网与云端运维
 - [IR315 结构图纸](IR315/drawings.md): IR315 结构图纸登记（2D、3D），含图纸原件文件链接
-- [IR315 认证证书](IR315/certifications.md): IR315 已获认证清单（ANATEL、C1D2、CE、E-Mark、ECER118、EN18031、FCC、IC、IMDA、MIC_JATE、PTCRB、RCM、SRRC、UL），含证书原件文件链接
+- [IR315 认证证书](IR315/certifications.md): IR315 已获认证清单（ANATEL、C1D2、CE、E-Mark、ECER118、EN18031、FCC、IC、IEC62443、IMDA、MIC_JATE、PTCRB、RCM、SRRC、UL），含证书原件文件链接
 - [驾考科目三4G/5G组网方案](IR315/Use%20Cases/4G5G%E9%A9%BE%E8%80%83%E7%BB%84%E7%BD%91%E6%A1%88%E4%BE%8B/%E6%A1%88%E4%BE%8B%E6%89%8B%E5%86%8C.md): IR315 4G5G驾考组网案例
 - [驾考联网路由器配置手册](IR315/Use%20Cases/4G5G%E9%A9%BE%E8%80%83%E7%BB%84%E7%BD%91%E6%A1%88%E4%BE%8B/%E9%A9%BE%E8%80%83%E8%81%94%E7%BD%91%E9%85%8D%E7%BD%AE%E6%89%8B%E5%86%8C.md): IR315 4G5G驾考组网案例 — 在此场景下路由器产品主要用于驾考联网场景下现场**车辆驾考设备联网**、**自建L2TP-VPN隧道**
 - [工厂数字化NAT组网案例](IR315/Use%20Cases/%E5%B7%A5%E5%8E%82%E6%95%B0%E5%AD%97%E5%8C%96NAT%E7%BB%84%E7%BD%91/%E6%A1%88%E4%BE%8B%E6%89%8B%E5%86%8C.md): IR315 工厂数字化NAT组网

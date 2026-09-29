@@ -278,7 +278,6 @@
   - [5.Safety](EC5000/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#5safety)
   - [6.Start, recover and update](EC5000/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#6start-recover-and-update)
   - [7.Programming instructions](EC5000/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#7programming-instructions)
-- [EC5000 Datasheet v1.0](EC5000/Datasheets/General/EC5000_Datasheet_V1.0.md): EC5000 Datasheet v1.0 — Embrace Edge AI, Empower Industrial Digitalization
 - [EC5000 Certifications](EC5000/certifications.md): EC5000 certification list (CE) with links to the original certificate files
 
 ## EC5350

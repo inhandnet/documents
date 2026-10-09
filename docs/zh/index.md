@@ -439,6 +439,7 @@ hide:
         <div class="pm-card__title">IR602</div>
         <ul class="pm-card__links">
         <li><a href="IR602/drawings.html" title="IR602 结构图纸">结构图纸</a></li>
+        <li><a href="IR602/Manuals/%E5%BF%AB%E9%80%9F%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/IR602%E5%BF%AB%E9%80%9F%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C.html" title="IR602 快速用户手册">快速用户手册</a></li>
         <li><a href="IR602/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/IR602%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C.html" title="北京映翰通工业路由器IR602产品系列用户手册">用户手册</a></li>
         </ul>
       </div>

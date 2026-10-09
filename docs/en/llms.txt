@@ -691,6 +691,7 @@
 
 ## IR602
 
+- [IR602 Quick user manual](IR602/Manuals/Quick%20user%20manual/IR602%20Quick%20User%20Manual.md): IR602 Quick user manual — The IR602 ships with standard accessories. On receipt, check the package to make sure all items are present.
 - [Industrial Router IR602 User manual](IR602/Manuals/User%20manual/IR602%20User%20manual.md): IR602 User manual — The IR602 series is a lightweight 5G RedCap industrial router developed by InHand Networks for large-scale, medium-rate…
   - [Graphical Interface Conventions](IR602/Manuals/User%20manual/IR602%20User%20manual.md#graphical-interface-conventions)
   - [How to Use This Manual](IR602/Manuals/User%20manual/IR602%20User%20manual.md#how-to-use-this-manual)

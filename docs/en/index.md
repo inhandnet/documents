@@ -396,6 +396,7 @@ hide:
         <div class="pm-card__title">IR602</div>
         <ul class="pm-card__links">
         <li><a href="IR602/drawings.html" title="IR602 Drawings">Drawings</a></li>
+        <li><a href="IR602/Manuals/Quick%20user%20manual/IR602%20Quick%20User%20Manual.html" title="IR602 Quick user manual">Quick user manual</a></li>
         <li><a href="IR602/Manuals/User%20manual/IR602%20User%20manual.html" title="Industrial Router IR602 User manual">User manual</a></li>
         </ul>
       </div>

@@ -62,7 +62,7 @@ URL: www.inhand.com
 
 ### 1.1 Overview
 
-The ODU12 is an outdoor 5G router and a cloud-managed, high-performance network access device. Built on a pioneering "structure–thermal integration" design concept, it combines high-performance connectivity with architectural aesthetics and is purpose-built for residential and light commercial applications. Within a compact IP65-rated enclosure, the device integrates 5G NSA/SA dual-mode cellular connectivity, dual-band Wi-Fi 7, and 2.5 Gbps wired networking. Departing from the bulky form factor and exposed external antennas typical of conventional outdoor routers, the ODU12 adopts a minimalist all-in-one design with a fully integrated 360° omnidirectional antenna system, ensuring reliable performance under extreme weather conditions while minimizing visual impact and blending harmoniously into the architectural environment. The ODU12 is also a truly AI agent–native router, engineered for the future of digital work.
+The ODU12 is an outdoor 5G router and a cloud-managed, high-performance network access device. Built on a pioneering "structure–thermal integration" design concept, it combines high-performance connectivity with architectural aesthetics and is purpose-built for residential and light commercial applications. Within a compact IP67-rated enclosure, the device integrates 5G NSA/SA dual-mode cellular connectivity, dual-band Wi-Fi 7, and 2.5 Gbps wired networking. Departing from the bulky form factor and exposed external antennas typical of conventional outdoor routers, the ODU12 adopts a minimalist all-in-one design with a fully integrated 360° omnidirectional antenna system, ensuring reliable performance under extreme weather conditions while minimizing visual impact and blending harmoniously into the architectural environment. The ODU12 is also a truly AI agent–native router, engineered for the future of digital work.
 
 <p align="center"><img src="images/img_001.png" alt="ODU12 Application Scenario"></p>
 
@@ -1215,7 +1215,7 @@ Set the web login timeout, enable or disable accelerated forwarding, and configu
 3. The device is intended for outdoor installation. After installation, confirm the device is mounted securely to avoid damage caused by falling.
 4. Do not open the device enclosure unless performed by professional personnel; risk of electric shock exists.
 
-> **Warning**: Use the device under the specified operating environmental conditions. Avoid deploying the device outside extreme condition limits to ensure the IP65 protection performance and long-term reliable operation.
+> **Warning**: Use the device under the specified operating environmental conditions. Avoid deploying the device outside extreme condition limits to ensure the IP67 protection performance and long-term reliable operation.
 
 ## FAQ
 

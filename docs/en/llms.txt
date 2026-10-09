@@ -185,8 +185,6 @@
   - [7.Programming instructions](EC300/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#7programming-instructions)
 - [EC300 Datasheet v1.0](EC300/Datasheets/General/EC300_Datasheet_V1.0.md): EC300 Datasheet v1.0 — Embrace edge computing, Empower Industrial Digitalization
 - [EC300 Certifications](EC300/certifications.md): EC300 certification list (CE, EN18031, FCC, IC, PTCRB, UL) with links to the original certificate files
-- [EC312 CAN-to-AWS Configuration Manual](EC300/Use%20Cases/CAN%20to%20AWS%20Solution/CAN%20to%20AWS%20Configuration%20Guide.md): EC300 CAN to AWS Solution
-- [EC312 CAN-to-AWS Solution](EC300/Use%20Cases/CAN%20to%20AWS%20Solution/CAN%20to%20AWS%20Solution.md): EC300 CAN to AWS Solution
 
 ## EC300-LoRaWAN
 
@@ -219,6 +217,11 @@
   - [6.Start, recover and update](EC3000/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#6start-recover-and-update)
   - [7.Programming instructions](EC3000/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#7programming-instructions)
 - [EC3000 Datasheet v1.0](EC3000/Datasheets/General/EC3000_Datasheet_V1.0.md): EC3000 Datasheet v1.0 — Embrace Edge AI, Empower Industrial Digitalization
+
+## EC312
+
+- [EC312 CAN-to-AWS Configuration Manual](EC312/Use%20Cases/CAN%20to%20AWS%20Solution/CAN%20to%20AWS%20Configuration%20Guide.md): EC312 CAN to AWS Solution
+- [EC312 CAN-to-AWS Solution](EC312/Use%20Cases/CAN%20to%20AWS%20Solution/CAN%20to%20AWS%20Solution.md): EC312 CAN to AWS Solution
 
 ## EC3320
 

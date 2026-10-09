@@ -220,6 +220,7 @@
         "EC312"
       ],
       "source_folders": [
+        "EC300",
         "EC312"
       ],
       "expected_languages": [
@@ -352,6 +353,7 @@
         "EC942"
       ],
       "source_folders": [
+        "EC940",
         "EC942"
       ],
       "expected_languages": [
@@ -371,6 +373,7 @@
         "EC954"
       ],
       "source_folders": [
+        "EC950",
         "EC954"
       ],
       "expected_languages": [

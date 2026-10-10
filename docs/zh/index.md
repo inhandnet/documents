@@ -165,12 +165,19 @@ hide:
       <div class="pm-card__body">
         <div class="pm-card__title">EC5000</div>
         <ul class="pm-card__links">
-        <li><a href="EC5000/certifications.html" title="EC5000 认证证书">认证证书</a></li>
         <li><a href="EC5000/Developer%20Documentation/FlexAPI/DSAAPI%E6%96%87%E6%A1%A3V1.0.html" title="DSA API文档V1.0">DSA API文档V1.0</a></li>
         <li><a href="EC5000/Developer%20Documentation/FlexAPI/EC%E7%B3%BB%E5%88%97API%E6%96%87%E6%A1%A3V1.0.html" title="EC系列API文档V1.0">EC系列API文档V1.0</a></li>
         <li><a href="EC5000/Developer%20Documentation/FlexAPI/EC%E7%B3%BB%E5%88%97Linux%E8%BD%AF%E4%BB%B6%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8CV1.0.html" title="EC系列Linux软件用户手册V1.0">EC系列Linux软件用户手册V1.0</a></li>
         <li><a href="EC5000/Manuals/%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97/EC5000%E5%BF%AB%E9%80%9F%E5%AE%89%E8%A3%85%E6%89%8B%E5%86%8C_V1.0.html" title="EC5000 快速安装手册">安装指南 V1.0</a></li>
         <li><a href="EC5000/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/EC5000%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="EC5000系列边缘AI计算机 用户手册">用户手册 V1.0</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pm-card">
+      <div class="pm-card__body">
+        <div class="pm-card__title">EC5550</div>
+        <ul class="pm-card__links">
+        <li><a href="EC5550/certifications.html" title="EC5550 认证证书">认证证书</a></li>
         </ul>
       </div>
     </div>

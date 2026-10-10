@@ -119,6 +119,9 @@ hide:
         <div class="pm-card__title">EC312</div>
         <ul class="pm-card__links">
         <li><a href="EC312/certifications.html" title="EC312 Certifications">Certifications</a></li>
+        <li><a href="EC312/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.html" title="DSA API Documentation V1.0">DSA API Documentation V1.0</a></li>
+        <li><a href="EC312/Developer%20Documentation/FlexAPI/ECSeriesAPIDocumentationV1.0.html" title="EC Series API Documentation V1.0">EC Series API Documentation V1.0</a></li>
+        <li><a href="EC312/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.html" title="EC Series Linux Software User&#x27;s Manual V1.0">EC Series Linux Software User&#x27;s Manual V1.0</a></li>
         <li><a href="EC312/Manuals/User%20manual/EC312_User%20manual_V1.0.html" title="EC300 Series Edge Computer User Manual">User manual V1.0</a></li>
         <li><a href="EC312/Use%20Cases/CAN%20to%20AWS%20Solution/CAN%20to%20AWS%20Configuration%20Guide.html" title="EC312 CAN-to-AWS Configuration Manual">EC312 CAN-to-AWS Configuration Manual</a></li>
         <li><a href="EC312/Use%20Cases/CAN%20to%20AWS%20Solution/CAN%20to%20AWS%20Solution.html" title="EC312 CAN-to-AWS Solution">EC312 CAN-to-AWS Solution</a></li>
@@ -130,6 +133,9 @@ hide:
         <div class="pm-card__title">EC3320</div>
         <ul class="pm-card__links">
         <li><a href="EC3320/certifications.html" title="EC3320 Certifications">Certifications</a></li>
+        <li><a href="EC3320/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.html" title="DSA API Documentation V1.0">DSA API Documentation V1.0</a></li>
+        <li><a href="EC3320/Developer%20Documentation/FlexAPI/ECSeriesAPIDocumentationV1.0.html" title="EC Series API Documentation V1.0">EC Series API Documentation V1.0</a></li>
+        <li><a href="EC3320/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.html" title="EC Series Linux Software User&#x27;s Manual V1.0">EC Series Linux Software User&#x27;s Manual V1.0</a></li>
         <li><a href="EC3320/Manuals/User%20manual/EC3320_User%20manual_V1.0.html" title="EC3000 Series AI Edge Computer User Manual">User manual V1.0</a></li>
         <li><a href="EC3320/Use%20Cases/Power-Station-Data-Acquisition/case-manual.html" title="Power Station Data Acquisition Intelligent Analysis Solution">Power-Station-Data-Acquisition</a></li>
         </ul>
@@ -149,6 +155,9 @@ hide:
       <div class="pm-card__body">
         <div class="pm-card__title">EC5350</div>
         <ul class="pm-card__links">
+        <li><a href="EC5350/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.html" title="DSA API Documentation V1.0">DSA API Documentation V1.0</a></li>
+        <li><a href="EC5350/Developer%20Documentation/FlexAPI/ECSeriesAPIDocumentationV1.0.html" title="EC Series API Documentation V1.0">EC Series API Documentation V1.0</a></li>
+        <li><a href="EC5350/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.html" title="EC Series Linux Software User&#x27;s Manual V1.0">EC Series Linux Software User&#x27;s Manual V1.0</a></li>
         <li><a href="EC5350/Manuals/User%20manual/EC5350_User%20manual_V1.0.html" title="EC5000 Series AI Edge Computer User Manual">User manual V1.0</a></li>
         </ul>
       </div>
@@ -158,6 +167,9 @@ hide:
         <div class="pm-card__title">EC5550</div>
         <ul class="pm-card__links">
         <li><a href="EC5550/certifications.html" title="EC5550 Certifications">Certifications</a></li>
+        <li><a href="EC5550/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.html" title="DSA API Documentation V1.0">DSA API Documentation V1.0</a></li>
+        <li><a href="EC5550/Developer%20Documentation/FlexAPI/ECSeriesAPIDocumentationV1.0.html" title="EC Series API Documentation V1.0">EC Series API Documentation V1.0</a></li>
+        <li><a href="EC5550/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.html" title="EC Series Linux Software User&#x27;s Manual V1.0">EC Series Linux Software User&#x27;s Manual V1.0</a></li>
         <li><a href="EC5550/Manuals/User%20manual/EC5550_User%20manual_V1.0.html" title="EC5000 Series AI Edge Computer User Manual">User manual V1.0</a></li>
         </ul>
       </div>
@@ -177,6 +189,9 @@ hide:
         <div class="pm-card__title">EC942</div>
         <ul class="pm-card__links">
         <li><a href="EC942/certifications.html" title="EC942 Certifications">Certifications</a></li>
+        <li><a href="EC942/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.html" title="DSA API Documentation V1.0">DSA API Documentation V1.0</a></li>
+        <li><a href="EC942/Developer%20Documentation/FlexAPI/ECSeriesAPIDocumentationV1.0.html" title="EC Series API Documentation V1.0">EC Series API Documentation V1.0</a></li>
+        <li><a href="EC942/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.html" title="EC Series Linux Software User&#x27;s Manual V1.0">EC Series Linux Software User&#x27;s Manual V1.0</a></li>
         <li><a href="EC942/Manuals/User%20manual/EC942_User%20manual_V1.0.html" title="EC942 Edge Computer User Manual">User manual V1.0</a></li>
         </ul>
       </div>
@@ -196,6 +211,9 @@ hide:
         <div class="pm-card__title">EC954</div>
         <ul class="pm-card__links">
         <li><a href="EC954/certifications.html" title="EC954 Certifications">Certifications</a></li>
+        <li><a href="EC954/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.html" title="DSA API Documentation V1.0">DSA API Documentation V1.0</a></li>
+        <li><a href="EC954/Developer%20Documentation/FlexAPI/ECSeriesAPIDocumentationV1.0.html" title="EC Series API Documentation V1.0">EC Series API Documentation V1.0</a></li>
+        <li><a href="EC954/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.html" title="EC Series Linux Software User&#x27;s Manual V1.0">EC Series Linux Software User&#x27;s Manual V1.0</a></li>
         <li><a href="EC954/Manuals/User%20manual/EC954_User%20manual_V1.0.html" title="EC954 Edge Computer User Manual">User manual V1.0</a></li>
         </ul>
       </div>

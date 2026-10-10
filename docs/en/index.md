@@ -96,26 +96,6 @@ hide:
     </div>
     <div class="pm-card">
       <div class="pm-card__body">
-        <div class="pm-card__title">EC300</div>
-        <ul class="pm-card__links">
-        <li><a href="EC300/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.html" title="DSA API Documentation V1.0">DSA API Documentation V1.0</a></li>
-        <li><a href="EC300/Developer%20Documentation/FlexAPI/ECSeriesAPIDocumentationV1.0.html" title="EC Series API Documentation V1.0">EC Series API Documentation V1.0</a></li>
-        <li><a href="EC300/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.html" title="EC Series Linux Software User&#x27;s Manual V1.0">EC Series Linux Software User&#x27;s Manual V1.0</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="pm-card">
-      <div class="pm-card__body">
-        <div class="pm-card__title">EC3000</div>
-        <ul class="pm-card__links">
-        <li><a href="EC3000/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.html" title="DSA API Documentation V1.0">DSA API Documentation V1.0</a></li>
-        <li><a href="EC3000/Developer%20Documentation/FlexAPI/ECSeriesAPIDocumentationV1.0.html" title="EC Series API Documentation V1.0">EC Series API Documentation V1.0</a></li>
-        <li><a href="EC3000/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.html" title="EC Series Linux Software User&#x27;s Manual V1.0">EC Series Linux Software User&#x27;s Manual V1.0</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="pm-card">
-      <div class="pm-card__body">
         <div class="pm-card__title">EC312</div>
         <ul class="pm-card__links">
         <li><a href="EC312/certifications.html" title="EC312 Certifications">Certifications</a></li>
@@ -138,16 +118,6 @@ hide:
         <li><a href="EC3320/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.html" title="EC Series Linux Software User&#x27;s Manual V1.0">EC Series Linux Software User&#x27;s Manual V1.0</a></li>
         <li><a href="EC3320/Manuals/User%20manual/EC3320_User%20manual_V1.0.html" title="EC3000 Series AI Edge Computer User Manual">User manual V1.0</a></li>
         <li><a href="EC3320/Use%20Cases/Power-Station-Data-Acquisition/case-manual.html" title="Power Station Data Acquisition Intelligent Analysis Solution">Power-Station-Data-Acquisition</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="pm-card">
-      <div class="pm-card__body">
-        <div class="pm-card__title">EC5000</div>
-        <ul class="pm-card__links">
-        <li><a href="EC5000/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.html" title="DSA API Documentation V1.0">DSA API Documentation V1.0</a></li>
-        <li><a href="EC5000/Developer%20Documentation/FlexAPI/ECSeriesAPIDocumentationV1.0.html" title="EC Series API Documentation V1.0">EC Series API Documentation V1.0</a></li>
-        <li><a href="EC5000/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.html" title="EC Series Linux Software User&#x27;s Manual V1.0">EC Series Linux Software User&#x27;s Manual V1.0</a></li>
         </ul>
       </div>
     </div>
@@ -176,16 +146,6 @@ hide:
     </div>
     <div class="pm-card">
       <div class="pm-card__body">
-        <div class="pm-card__title">EC940</div>
-        <ul class="pm-card__links">
-        <li><a href="EC940/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.html" title="DSA API Documentation V1.0">DSA API Documentation V1.0</a></li>
-        <li><a href="EC940/Developer%20Documentation/FlexAPI/ECSeriesAPIDocumentationV1.0.html" title="EC Series API Documentation V1.0">EC Series API Documentation V1.0</a></li>
-        <li><a href="EC940/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.html" title="EC Series Linux Software User&#x27;s Manual V1.0">EC Series Linux Software User&#x27;s Manual V1.0</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="pm-card">
-      <div class="pm-card__body">
         <div class="pm-card__title">EC942</div>
         <ul class="pm-card__links">
         <li><a href="EC942/certifications.html" title="EC942 Certifications">Certifications</a></li>
@@ -193,16 +153,6 @@ hide:
         <li><a href="EC942/Developer%20Documentation/FlexAPI/ECSeriesAPIDocumentationV1.0.html" title="EC Series API Documentation V1.0">EC Series API Documentation V1.0</a></li>
         <li><a href="EC942/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.html" title="EC Series Linux Software User&#x27;s Manual V1.0">EC Series Linux Software User&#x27;s Manual V1.0</a></li>
         <li><a href="EC942/Manuals/User%20manual/EC942_User%20manual_V1.0.html" title="EC942 Edge Computer User Manual">User manual V1.0</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="pm-card">
-      <div class="pm-card__body">
-        <div class="pm-card__title">EC950</div>
-        <ul class="pm-card__links">
-        <li><a href="EC950/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.html" title="DSA API Documentation V1.0">DSA API Documentation V1.0</a></li>
-        <li><a href="EC950/Developer%20Documentation/FlexAPI/ECSeriesAPIDocumentationV1.0.html" title="EC Series API Documentation V1.0">EC Series API Documentation V1.0</a></li>
-        <li><a href="EC950/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.html" title="EC Series Linux Software User&#x27;s Manual V1.0">EC Series Linux Software User&#x27;s Manual V1.0</a></li>
         </ul>
       </div>
     </div>

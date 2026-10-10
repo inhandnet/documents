@@ -74,18 +74,6 @@
 - [EAP600 结构图纸](EAP600/drawings.md): EAP600 结构图纸登记（2D、3D），含图纸原件文件链接
 - [EAP600 认证证书](EAP600/certifications.md): EAP600 已获认证清单（CE、FCC），含证书原件文件链接
 
-## EC300
-
-- [DSA API文档V1.0](EC300/Developer%20Documentation/FlexAPI/DSAAPI%E6%96%87%E6%A1%A3V1.0.md): EC300 FlexAPI v1.0
-- [EC系列API文档V1.0](EC300/Developer%20Documentation/FlexAPI/EC%E7%B3%BB%E5%88%97API%E6%96%87%E6%A1%A3V1.0.md): EC300 FlexAPI v1.0
-- [EC系列Linux软件用户手册V1.0](EC300/Developer%20Documentation/FlexAPI/EC%E7%B3%BB%E5%88%97Linux%E8%BD%AF%E4%BB%B6%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8CV1.0.md): EC300 FlexAPI v1.0 — 本用户手册适用于以下列出的Inhand基于Arm架构的边缘计算机，涵盖了适用于所有受支持型号的说明。有关配置高级设置的详细说明在手册的第3章和第4章中有介绍。在参考这些章节之前，确认您的计算机型号的硬件规格支持所涵盖的功能和配置。
-
-## EC3000
-
-- [DSA API文档V1.0](EC3000/Developer%20Documentation/FlexAPI/DSAAPI%E6%96%87%E6%A1%A3V1.0.md): EC3000 FlexAPI v1.0
-- [EC系列API文档V1.0](EC3000/Developer%20Documentation/FlexAPI/EC%E7%B3%BB%E5%88%97API%E6%96%87%E6%A1%A3V1.0.md): EC3000 FlexAPI v1.0
-- [EC系列Linux软件用户手册V1.0](EC3000/Developer%20Documentation/FlexAPI/EC%E7%B3%BB%E5%88%97Linux%E8%BD%AF%E4%BB%B6%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8CV1.0.md): EC3000 FlexAPI v1.0 — 本用户手册适用于以下列出的Inhand基于Arm架构的边缘计算机，涵盖了适用于所有受支持型号的说明。有关配置高级设置的详细说明在手册的第3章和第4章中有介绍。在参考这些章节之前，确认您的计算机型号的硬件规格支持所涵盖的功能和配置。
-
 ## EC312
 
 - [EC312 快速安装手册](EC312/Manuals/%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97/EC312%E5%BF%AB%E9%80%9F%E5%AE%89%E8%A3%85%E6%89%8B%E5%86%8C_V1.0.md): EC312 安装指南 v1.0
@@ -149,12 +137,6 @@
 
 - [EC4600 规格书 v1.0](EC4600/Datasheets/%E9%80%9A%E7%94%A8/EC4600%E8%A7%84%E6%A0%BC%E4%B9%A6_V1.0.md): EC4600 规格书 v1.0
 
-## EC5000
-
-- [DSA API文档V1.0](EC5000/Developer%20Documentation/FlexAPI/DSAAPI%E6%96%87%E6%A1%A3V1.0.md): EC5000 FlexAPI v1.0
-- [EC系列API文档V1.0](EC5000/Developer%20Documentation/FlexAPI/EC%E7%B3%BB%E5%88%97API%E6%96%87%E6%A1%A3V1.0.md): EC5000 FlexAPI v1.0
-- [EC系列Linux软件用户手册V1.0](EC5000/Developer%20Documentation/FlexAPI/EC%E7%B3%BB%E5%88%97Linux%E8%BD%AF%E4%BB%B6%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8CV1.0.md): EC5000 FlexAPI v1.0 — 本用户手册适用于以下列出的Inhand基于Arm架构的边缘计算机，涵盖了适用于所有受支持型号的说明。有关配置高级设置的详细说明在手册的第3章和第4章中有介绍。在参考这些章节之前，确认您的计算机型号的硬件规格支持所涵盖的功能和配置。
-
 ## EC5350
 
 - [EC5000 快速安装手册](EC5350/Manuals/%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97/EC5350%E5%BF%AB%E9%80%9F%E5%AE%89%E8%A3%85%E6%89%8B%E5%86%8C_V1.0.md): EC5350 安装指南 v1.0
@@ -204,12 +186,6 @@
 - [EC5550 规格书 v1.0](EC5550/Datasheets/%E9%80%9A%E7%94%A8/EC5550%E8%A7%84%E6%A0%BC%E4%B9%A6_V1.0.md): EC5550 规格书 v1.0 — EC5550 系列高性能 AI 边缘计算机
 - [EC5550 认证证书](EC5550/certifications.md): EC5550 已获认证清单（CE），含证书原件文件链接
 
-## EC940
-
-- [DSA API文档V1.0](EC940/Developer%20Documentation/FlexAPI/DSAAPI%E6%96%87%E6%A1%A3V1.0.md): EC940 FlexAPI v1.0
-- [EC系列API文档V1.0](EC940/Developer%20Documentation/FlexAPI/EC%E7%B3%BB%E5%88%97API%E6%96%87%E6%A1%A3V1.0.md): EC940 FlexAPI v1.0
-- [EC系列Linux软件用户手册V1.0](EC940/Developer%20Documentation/FlexAPI/EC%E7%B3%BB%E5%88%97Linux%E8%BD%AF%E4%BB%B6%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8CV1.0.md): EC940 FlexAPI v1.0 — 本用户手册适用于以下列出的Inhand基于Arm架构的边缘计算机，涵盖了适用于所有受支持型号的说明。有关配置高级设置的详细说明在手册的第3章和第4章中有介绍。在参考这些章节之前，确认您的计算机型号的硬件规格支持所涵盖的功能和配置。
-
 ## EC942
 
 - [EC942 快速安装手册](EC942/Manuals/%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97/EC942%E5%BF%AB%E9%80%9F%E5%AE%89%E8%A3%85%E6%89%8B%E5%86%8C_V1.0.md): EC942 安装指南 v1.0
@@ -227,12 +203,6 @@
 - [EC系列Linux软件用户手册V1.0](EC942/Developer%20Documentation/FlexAPI/EC%E7%B3%BB%E5%88%97Linux%E8%BD%AF%E4%BB%B6%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8CV1.0.md): EC942 FlexAPI v1.0 — 本用户手册适用于以下列出的Inhand基于Arm架构的边缘计算机，涵盖了适用于所有受支持型号的说明。有关配置高级设置的详细说明在手册的第3章和第4章中有介绍。在参考这些章节之前，确认您的计算机型号的硬件规格支持所涵盖的功能和配置。
 - [EC942 规格书 v1.0](EC942/Datasheets/%E9%80%9A%E7%94%A8/EC942%E8%A7%84%E6%A0%BC%E4%B9%A6_V1.0.md): EC942 规格书 v1.0 — EC942 系列轻量级 AI 边缘计算机
 - [EC942 认证证书](EC942/certifications.md): EC942 已获认证清单（CE、FCC），含证书原件文件链接
-
-## EC950
-
-- [DSA API文档V1.0](EC950/Developer%20Documentation/FlexAPI/DSAAPI%E6%96%87%E6%A1%A3V1.0.md): EC950 FlexAPI v1.0
-- [EC系列API文档V1.0](EC950/Developer%20Documentation/FlexAPI/EC%E7%B3%BB%E5%88%97API%E6%96%87%E6%A1%A3V1.0.md): EC950 FlexAPI v1.0
-- [EC系列Linux软件用户手册V1.0](EC950/Developer%20Documentation/FlexAPI/EC%E7%B3%BB%E5%88%97Linux%E8%BD%AF%E4%BB%B6%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8CV1.0.md): EC950 FlexAPI v1.0 — 本用户手册适用于以下列出的Inhand基于Arm架构的边缘计算机，涵盖了适用于所有受支持型号的说明。有关配置高级设置的详细说明在手册的第3章和第4章中有介绍。在参考这些章节之前，确认您的计算机型号的硬件规格支持所涵盖的功能和配置。
 
 ## EC954
 
@@ -949,22 +919,6 @@
   - [5. Event Service](VT200/Developer%20Documentation/FlexAPI/FlexAPI_TCP_for_3rd_party_platform.md#5-event-service)
   - [Appendix A. FlexAPI Supported Parameters](VT200/Developer%20Documentation/FlexAPI/FlexAPI_TCP_for_3rd_party_platform.md#appendix-a-flexapi-supported-parameters)
 - [VT200 规格书 v1.0](VT200/Datasheets/%E9%80%9A%E7%94%A8/VT200%E8%A7%84%E6%A0%BC%E4%B9%A6_V1.0.md): VT200 规格书 v1.0
-
-## VT300
-
-- [FlexAPI_MQTT_for_3rd_party_platform](VT300/Developer%20Documentation/FlexAPI/FlexAPI_MQTT_for_3rd_party_platform.md): VT300 FlexAPI — We introduced FlexAPI for the fast evolving IoT applications, which highly value easy integration, openness, flexibility…
-  - [For VT300/VT200 and VG700/VG814 series](VT300/Developer%20Documentation/FlexAPI/FlexAPI_MQTT_for_3rd_party_platform.md#for-vt300vt200-and-vg700vg814-series)
-  - [1. Introduction](VT300/Developer%20Documentation/FlexAPI/FlexAPI_MQTT_for_3rd_party_platform.md#1-introduction)
-  - [2. FlexAPI Overview](VT300/Developer%20Documentation/FlexAPI/FlexAPI_MQTT_for_3rd_party_platform.md#2-flexapi-overview)
-  - [Payload is customized by the customer, usually written by the APP](VT300/Developer%20Documentation/FlexAPI/FlexAPI_MQTT_for_3rd_party_platform.md#payload-is-customized-by-the-customer-usually-written-by-the-app)
-- [FlexAPI_TCP_for_3rd_party_platform](VT300/Developer%20Documentation/FlexAPI/FlexAPI_TCP_for_3rd_party_platform.md): VT300 FlexAPI — We introduced FlexAPI for the fast evolving IoT applications, which highly value easy integration, openness, flexibility…
-  - [*For VT series*](VT300/Developer%20Documentation/FlexAPI/FlexAPI_TCP_for_3rd_party_platform.md#for-vt-series)
-  - [1. Introduction](VT300/Developer%20Documentation/FlexAPI/FlexAPI_TCP_for_3rd_party_platform.md#1-introduction)
-  - [2. FlexAPI Overview](VT300/Developer%20Documentation/FlexAPI/FlexAPI_TCP_for_3rd_party_platform.md#2-flexapi-overview)
-  - [3. Basic Usage](VT300/Developer%20Documentation/FlexAPI/FlexAPI_TCP_for_3rd_party_platform.md#3-basic-usage)
-  - [4. Advanced Usage](VT300/Developer%20Documentation/FlexAPI/FlexAPI_TCP_for_3rd_party_platform.md#4-advanced-usage)
-  - [5. Event Service](VT300/Developer%20Documentation/FlexAPI/FlexAPI_TCP_for_3rd_party_platform.md#5-event-service)
-  - [Appendix A. FlexAPI Supported Parameters](VT300/Developer%20Documentation/FlexAPI/FlexAPI_TCP_for_3rd_party_platform.md#appendix-a-flexapi-supported-parameters)
 
 ## VT310
 

@@ -142,58 +142,6 @@
 - [EAP600 Certifications](EAP600/certifications.md): EAP600 certification list (CE, FCC, IC) with links to the original certificate files
 - [EAP600 Drawings](EAP600/drawings.md): EAP600 mechanical drawings (2D, 3D) with links to the original drawing files
 
-## EC300
-
-- [DSA API Documentation V1.0](EC300/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md): EC300 FlexAPI v1.0
-  - [1 fast function API reference](EC300/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#1-fast-function-api-reference)
-  - [Enter your python code.](EC300/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#enter-your-python-code)
-  - [Enter your python code.](EC300/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#enter-your-python-code)
-  - [Returns True online](EC300/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#returns-true-online)
-  - [Return False offline](EC300/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#return-false-offline)
-  - [Global profile information](EC300/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#global-profile-information)
-  - [success returned: success](EC300/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#success-returned-success)
-  - [failed to return: failed](EC300/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#failed-to-return-failed)
-  - [Enter your python code.](EC300/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#enter-your-python-code)
-  - [The string of all the contents of the file; If there is an error, an exception will be thrown](EC300/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#the-string-of-all-the-contents-of-the-file-if-there-is-an-error-an-exception-will-be-thrown)
-  - [Enter your python code.](EC300/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#enter-your-python-code)
-  - [Enter your python code.](EC300/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#enter-your-python-code)
-  - [Enter your python code.](EC300/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#enter-your-python-code)
-- [EC Series API Documentation V1.0](EC300/Developer%20Documentation/FlexAPI/ECSeriesAPIDocumentationV1.0.md): EC300 FlexAPI v1.0
-- [EC Series Linux Software User's Manual V1.0](EC300/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md): EC300 FlexAPI v1.0 — This user manual is for the Inhand Arm-based edge computers listed below and covers instructions for all supported model…
-  - [1.Introduction](EC300/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#1introduction)
-  - [2.Quick boot](EC300/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#2quick-boot)
-  - [3.Peripheral configuration](EC300/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#3peripheral-configuration)
-  - [4.Wireless connections](EC300/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#4wireless-connections)
-  - [5.Safety](EC300/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#5safety)
-  - [6.Start, recover and update](EC300/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#6start-recover-and-update)
-  - [7.Programming instructions](EC300/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#7programming-instructions)
-
-## EC3000
-
-- [DSA API Documentation V1.0](EC3000/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md): EC3000 FlexAPI v1.0
-  - [1 fast function API reference](EC3000/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#1-fast-function-api-reference)
-  - [Enter your python code.](EC3000/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#enter-your-python-code)
-  - [Enter your python code.](EC3000/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#enter-your-python-code)
-  - [Returns True online](EC3000/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#returns-true-online)
-  - [Return False offline](EC3000/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#return-false-offline)
-  - [Global profile information](EC3000/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#global-profile-information)
-  - [success returned: success](EC3000/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#success-returned-success)
-  - [failed to return: failed](EC3000/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#failed-to-return-failed)
-  - [Enter your python code.](EC3000/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#enter-your-python-code)
-  - [The string of all the contents of the file; If there is an error, an exception will be thrown](EC3000/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#the-string-of-all-the-contents-of-the-file-if-there-is-an-error-an-exception-will-be-thrown)
-  - [Enter your python code.](EC3000/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#enter-your-python-code)
-  - [Enter your python code.](EC3000/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#enter-your-python-code)
-  - [Enter your python code.](EC3000/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#enter-your-python-code)
-- [EC Series API Documentation V1.0](EC3000/Developer%20Documentation/FlexAPI/ECSeriesAPIDocumentationV1.0.md): EC3000 FlexAPI v1.0
-- [EC Series Linux Software User's Manual V1.0](EC3000/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md): EC3000 FlexAPI v1.0 — This user manual is for the Inhand Arm-based edge computers listed below and covers instructions for all supported model…
-  - [1.Introduction](EC3000/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#1introduction)
-  - [2.Quick boot](EC3000/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#2quick-boot)
-  - [3.Peripheral configuration](EC3000/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#3peripheral-configuration)
-  - [4.Wireless connections](EC3000/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#4wireless-connections)
-  - [5.Safety](EC3000/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#5safety)
-  - [6.Start, recover and update](EC3000/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#6start-recover-and-update)
-  - [7.Programming instructions](EC3000/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#7programming-instructions)
-
 ## EC312
 
 - [EC300 Series Edge Computer User Manual](EC312/Manuals/User%20manual/EC312_User%20manual_V1.0.md): EC312 User manual v1.0 — The EC300 series edge computers are Arm architecture-based industrial computing platforms designed for lightweight edge…
@@ -286,32 +234,6 @@
 
 - [EC4600 Datasheet v1.0](EC4600/Datasheets/General/EC4600_Datasheet_V1.0.md): EC4600 Datasheet v1.0 — Embrace Edge AI, Empower the Era of Visual Recognition
 
-## EC5000
-
-- [DSA API Documentation V1.0](EC5000/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md): EC5000 FlexAPI v1.0
-  - [1 fast function API reference](EC5000/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#1-fast-function-api-reference)
-  - [Enter your python code.](EC5000/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#enter-your-python-code)
-  - [Enter your python code.](EC5000/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#enter-your-python-code)
-  - [Returns True online](EC5000/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#returns-true-online)
-  - [Return False offline](EC5000/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#return-false-offline)
-  - [Global profile information](EC5000/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#global-profile-information)
-  - [success returned: success](EC5000/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#success-returned-success)
-  - [failed to return: failed](EC5000/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#failed-to-return-failed)
-  - [Enter your python code.](EC5000/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#enter-your-python-code)
-  - [The string of all the contents of the file; If there is an error, an exception will be thrown](EC5000/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#the-string-of-all-the-contents-of-the-file-if-there-is-an-error-an-exception-will-be-thrown)
-  - [Enter your python code.](EC5000/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#enter-your-python-code)
-  - [Enter your python code.](EC5000/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#enter-your-python-code)
-  - [Enter your python code.](EC5000/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#enter-your-python-code)
-- [EC Series API Documentation V1.0](EC5000/Developer%20Documentation/FlexAPI/ECSeriesAPIDocumentationV1.0.md): EC5000 FlexAPI v1.0
-- [EC Series Linux Software User's Manual V1.0](EC5000/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md): EC5000 FlexAPI v1.0 — This user manual is for the Inhand Arm-based edge computers listed below and covers instructions for all supported model…
-  - [1.Introduction](EC5000/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#1introduction)
-  - [2.Quick boot](EC5000/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#2quick-boot)
-  - [3.Peripheral configuration](EC5000/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#3peripheral-configuration)
-  - [4.Wireless connections](EC5000/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#4wireless-connections)
-  - [5.Safety](EC5000/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#5safety)
-  - [6.Start, recover and update](EC5000/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#6start-recover-and-update)
-  - [7.Programming instructions](EC5000/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#7programming-instructions)
-
 ## EC5350
 
 - [EC5000 Series AI Edge Computer User Manual](EC5350/Manuals/User%20manual/EC5350_User%20manual_V1.0.md): EC5350 User manual v1.0 — The EC5000 series AI edge computer is pre-integrated with NVIDIA Jetson Orin NX or Orin Nano modules, making it suitable…
@@ -399,32 +321,6 @@
 - [EC5550 Datasheet v1.0](EC5550/Datasheets/General/EC5550_Datasheet_V1.0.md): EC5550 Datasheet v1.0 — Embrace Edge AI, Empower Industrial Digitalization
 - [EC5550 Certifications](EC5550/certifications.md): EC5550 certification list (CE) with links to the original certificate files
 
-## EC940
-
-- [DSA API Documentation V1.0](EC940/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md): EC940 FlexAPI v1.0
-  - [1 fast function API reference](EC940/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#1-fast-function-api-reference)
-  - [Enter your python code.](EC940/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#enter-your-python-code)
-  - [Enter your python code.](EC940/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#enter-your-python-code)
-  - [Returns True online](EC940/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#returns-true-online)
-  - [Return False offline](EC940/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#return-false-offline)
-  - [Global profile information](EC940/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#global-profile-information)
-  - [success returned: success](EC940/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#success-returned-success)
-  - [failed to return: failed](EC940/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#failed-to-return-failed)
-  - [Enter your python code.](EC940/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#enter-your-python-code)
-  - [The string of all the contents of the file; If there is an error, an exception will be thrown](EC940/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#the-string-of-all-the-contents-of-the-file-if-there-is-an-error-an-exception-will-be-thrown)
-  - [Enter your python code.](EC940/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#enter-your-python-code)
-  - [Enter your python code.](EC940/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#enter-your-python-code)
-  - [Enter your python code.](EC940/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#enter-your-python-code)
-- [EC Series API Documentation V1.0](EC940/Developer%20Documentation/FlexAPI/ECSeriesAPIDocumentationV1.0.md): EC940 FlexAPI v1.0
-- [EC Series Linux Software User's Manual V1.0](EC940/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md): EC940 FlexAPI v1.0 — This user manual is for the Inhand Arm-based edge computers listed below and covers instructions for all supported model…
-  - [1.Introduction](EC940/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#1introduction)
-  - [2.Quick boot](EC940/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#2quick-boot)
-  - [3.Peripheral configuration](EC940/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#3peripheral-configuration)
-  - [4.Wireless connections](EC940/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#4wireless-connections)
-  - [5.Safety](EC940/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#5safety)
-  - [6.Start, recover and update](EC940/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#6start-recover-and-update)
-  - [7.Programming instructions](EC940/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#7programming-instructions)
-
 ## EC942
 
 - [EC942 Edge Computer User Manual](EC942/Manuals/User%20manual/EC942_User%20manual_V1.0.md): EC942 User manual v1.0 — The EC942 series edge computer is a lightweight AI-accelerated edge computing device developed by InHand Networks for in…
@@ -467,32 +363,6 @@
   - [7.Programming instructions](EC942/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#7programming-instructions)
 - [EC942 Datasheet v1.0](EC942/Datasheets/General/EC942_Datasheet_V1.0.md): EC942 Datasheet v1.0 — Embrace Edge AI, Empower Industrial Digitalization
 - [EC942 Certifications](EC942/certifications.md): EC942 certification list (CE, FCC) with links to the original certificate files
-
-## EC950
-
-- [DSA API Documentation V1.0](EC950/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md): EC950 FlexAPI v1.0
-  - [1 fast function API reference](EC950/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#1-fast-function-api-reference)
-  - [Enter your python code.](EC950/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#enter-your-python-code)
-  - [Enter your python code.](EC950/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#enter-your-python-code)
-  - [Returns True online](EC950/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#returns-true-online)
-  - [Return False offline](EC950/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#return-false-offline)
-  - [Global profile information](EC950/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#global-profile-information)
-  - [success returned: success](EC950/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#success-returned-success)
-  - [failed to return: failed](EC950/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#failed-to-return-failed)
-  - [Enter your python code.](EC950/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#enter-your-python-code)
-  - [The string of all the contents of the file; If there is an error, an exception will be thrown](EC950/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#the-string-of-all-the-contents-of-the-file-if-there-is-an-error-an-exception-will-be-thrown)
-  - [Enter your python code.](EC950/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#enter-your-python-code)
-  - [Enter your python code.](EC950/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#enter-your-python-code)
-  - [Enter your python code.](EC950/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.md#enter-your-python-code)
-- [EC Series API Documentation V1.0](EC950/Developer%20Documentation/FlexAPI/ECSeriesAPIDocumentationV1.0.md): EC950 FlexAPI v1.0
-- [EC Series Linux Software User's Manual V1.0](EC950/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md): EC950 FlexAPI v1.0 — This user manual is for the Inhand Arm-based edge computers listed below and covers instructions for all supported model…
-  - [1.Introduction](EC950/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#1introduction)
-  - [2.Quick boot](EC950/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#2quick-boot)
-  - [3.Peripheral configuration](EC950/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#3peripheral-configuration)
-  - [4.Wireless connections](EC950/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#4wireless-connections)
-  - [5.Safety](EC950/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#5safety)
-  - [6.Start, recover and update](EC950/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#6start-recover-and-update)
-  - [7.Programming instructions](EC950/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#7programming-instructions)
 
 ## EC954
 

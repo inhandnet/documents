@@ -121,6 +121,7 @@ hide:
         <div class="pm-card__title">EC312</div>
         <ul class="pm-card__links">
         <li><a href="EC312/certifications.html" title="EC312 Certifications">Certifications</a></li>
+        <li><a href="EC312/Manuals/User%20manual/EC312_User%20manual_V1.0.html" title="EC300 Series Edge Computer User Manual">User manual V1.0</a></li>
         <li><a href="EC312/Use%20Cases/CAN%20to%20AWS%20Solution/CAN%20to%20AWS%20Configuration%20Guide.html" title="EC312 CAN-to-AWS Configuration Manual">EC312 CAN-to-AWS Configuration Manual</a></li>
         <li><a href="EC312/Use%20Cases/CAN%20to%20AWS%20Solution/CAN%20to%20AWS%20Solution.html" title="EC312 CAN-to-AWS Solution">EC312 CAN-to-AWS Solution</a></li>
         </ul>
@@ -131,6 +132,7 @@ hide:
         <div class="pm-card__title">EC3320</div>
         <ul class="pm-card__links">
         <li><a href="EC3320/certifications.html" title="EC3320 Certifications">Certifications</a></li>
+        <li><a href="EC3320/Manuals/User%20manual/EC3320_User%20manual_V1.0.html" title="EC3000 Series AI Edge Computer User Manual">User manual V1.0</a></li>
         <li><a href="EC3320/Use%20Cases/Power-Station-Data-Acquisition/case-manual.html" title="Power Station Data Acquisition Intelligent Analysis Solution">Power-Station-Data-Acquisition</a></li>
         </ul>
       </div>
@@ -170,6 +172,7 @@ hide:
         <div class="pm-card__title">EC942</div>
         <ul class="pm-card__links">
         <li><a href="EC942/certifications.html" title="EC942 Certifications">Certifications</a></li>
+        <li><a href="EC942/Manuals/User%20manual/EC942_User%20manual_V1.0.html" title="EC942 Edge Computer User Manual">User manual V1.0</a></li>
         </ul>
       </div>
     </div>
@@ -189,6 +192,7 @@ hide:
         <div class="pm-card__title">EC954</div>
         <ul class="pm-card__links">
         <li><a href="EC954/certifications.html" title="EC954 Certifications">Certifications</a></li>
+        <li><a href="EC954/Manuals/User%20manual/EC954_User%20manual_V1.0.html" title="EC954 Edge Computer User Manual">User manual V1.0</a></li>
         </ul>
       </div>
     </div>

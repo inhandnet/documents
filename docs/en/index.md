@@ -139,11 +139,18 @@ hide:
       <div class="pm-card__body">
         <div class="pm-card__title">EC5000</div>
         <ul class="pm-card__links">
-        <li><a href="EC5000/certifications.html" title="EC5000 Certifications">Certifications</a></li>
         <li><a href="EC5000/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.html" title="DSA API Documentation V1.0">DSA API Documentation V1.0</a></li>
         <li><a href="EC5000/Developer%20Documentation/FlexAPI/ECSeriesAPIDocumentationV1.0.html" title="EC Series API Documentation V1.0">EC Series API Documentation V1.0</a></li>
         <li><a href="EC5000/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.html" title="EC Series Linux Software User&#x27;s Manual V1.0">EC Series Linux Software User&#x27;s Manual V1.0</a></li>
         <li><a href="EC5000/Manuals/User%20manual/EC5000_User%20manual_V1.0.html" title="EC5000 Series AI Edge Computer User Manual">User manual V1.0</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pm-card">
+      <div class="pm-card__body">
+        <div class="pm-card__title">EC5550</div>
+        <ul class="pm-card__links">
+        <li><a href="EC5550/certifications.html" title="EC5550 Certifications">Certifications</a></li>
         </ul>
       </div>
     </div>

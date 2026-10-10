@@ -183,12 +183,6 @@
   - [5.Safety](EC300/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#5safety)
   - [6.Start, recover and update](EC300/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#6start-recover-and-update)
   - [7.Programming instructions](EC300/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#7programming-instructions)
-- [EC300 Datasheet v1.0](EC300/Datasheets/General/EC300_Datasheet_V1.0.md): EC300 Datasheet v1.0 — Embrace edge computing, Empower Industrial Digitalization
-- [EC300 Certifications](EC300/certifications.md): EC300 certification list (CE, EN18031, FCC, IC, PTCRB, UL) with links to the original certificate files
-
-## EC300-LoRaWAN
-
-- [EC300-LoRaWAN Datasheet v1.0](EC300-LoRaWAN/Datasheets/General/EC300-LoRaWAN_Datasheet_V1.0.md): EC300-LoRaWAN Datasheet v1.0 — Embrace LPWAN, Empower Industrial Digitalization
 
 ## EC3000
 
@@ -216,15 +210,21 @@
   - [5.Safety](EC3000/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#5safety)
   - [6.Start, recover and update](EC3000/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#6start-recover-and-update)
   - [7.Programming instructions](EC3000/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#7programming-instructions)
-- [EC3000 Datasheet v1.0](EC3000/Datasheets/General/EC3000_Datasheet_V1.0.md): EC3000 Datasheet v1.0 — Embrace Edge AI, Empower Industrial Digitalization
 
 ## EC312
 
+- [EC312 Datasheet v1.0](EC312/Datasheets/General/EC312_Datasheet_V1.0.md): EC312 Datasheet v1.0 — Embrace edge computing, Empower Industrial Digitalization
+- [EC312 Certifications](EC312/certifications.md): EC312 certification list (CE, EN18031, FCC, IC, PTCRB, UL) with links to the original certificate files
 - [EC312 CAN-to-AWS Configuration Manual](EC312/Use%20Cases/CAN%20to%20AWS%20Solution/CAN%20to%20AWS%20Configuration%20Guide.md): EC312 CAN to AWS Solution
 - [EC312 CAN-to-AWS Solution](EC312/Use%20Cases/CAN%20to%20AWS%20Solution/CAN%20to%20AWS%20Solution.md): EC312 CAN to AWS Solution
 
+## EC312-LoRaWAN
+
+- [EC312-LoRaWAN Datasheet v1.0](EC312-LoRaWAN/Datasheets/General/EC312-LoRaWAN_Datasheet_V1.0.md): EC312-LoRaWAN Datasheet v1.0 — Embrace LPWAN, Empower Industrial Digitalization
+
 ## EC3320
 
+- [EC3320 Datasheet v1.0](EC3320/Datasheets/General/EC3320_Datasheet_V1.0.md): EC3320 Datasheet v1.0 — Embrace Edge AI, Empower Industrial Digitalization
 - [EC3320 Certifications](EC3320/certifications.md): EC3320 certification list (CE, EN18031, FCC, IC, PTCRB) with links to the original certificate files
 - [Power Station Data Acquisition Intelligent Analysis Solution](EC3320/Use%20Cases/Power-Station-Data-Acquisition/case-manual.md): EC3320 Power-Station-Data-Acquisition
 
@@ -331,8 +331,11 @@
   - [5.Safety](EC940/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#5safety)
   - [6.Start, recover and update](EC940/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#6start-recover-and-update)
   - [7.Programming instructions](EC940/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#7programming-instructions)
-- [EC940 Datasheet v1.0](EC940/Datasheets/General/EC942_Datasheet_V1.0.md): EC940 Datasheet v1.0 — Embrace Edge AI, Empower Industrial Digitalization
-- [EC940 Certifications](EC940/certifications.md): EC940 certification list (CE, FCC) with links to the original certificate files
+
+## EC942
+
+- [EC942 Datasheet v1.0](EC942/Datasheets/General/EC942_Datasheet_V1.0.md): EC942 Datasheet v1.0 — Embrace Edge AI, Empower Industrial Digitalization
+- [EC942 Certifications](EC942/certifications.md): EC942 certification list (CE, FCC) with links to the original certificate files
 
 ## EC950
 
@@ -375,8 +378,11 @@
   - [5.Safety](EC950/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#5safety)
   - [6.Start, recover and update](EC950/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#6start-recover-and-update)
   - [7.Programming instructions](EC950/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#7programming-instructions)
-- [EC950 Datasheet v1.0](EC950/Datasheets/General/EC950_Datasheet_V1.0.md): EC950 Datasheet v1.0 — Embrace Edge AI, Empower Industrial Digitalization
-- [EC950 Certifications](EC950/certifications.md): EC950 certification list (IC, PTCRB) with links to the original certificate files
+
+## EC954
+
+- [EC954 Datasheet v1.0](EC954/Datasheets/General/EC954_Datasheet_V1.0.md): EC954 Datasheet v1.0 — Embrace Edge AI, Empower Industrial Digitalization
+- [EC954 Certifications](EC954/certifications.md): EC954 certification list (IC, PTCRB) with links to the original certificate files
 
 ## EOL Products
 
@@ -970,10 +976,13 @@
 
 - [InPAD3101 Datasheet v1.0](InPAD3101/Datasheets/General/InPAD3101_Datasheet_V1.0.md): InPAD3101 Datasheet v1.0 — 10.1'' All-in-One Android Tablet
 
+## LT312
+
+- [LT312 Datasheet v1.0](LT312/Datasheets/General/LT312_Datasheet_V1.0.md): LT312 Datasheet v1.0 — Industrial LoRaWAN DTU for robust serial data connectivity
+
 ## LoRaWAN Terminals
 
 - [LT312 User Manual](LoRaWAN%20Terminals/Manuals/User%20manual/LT312_User%20manual.md): LoRaWAN Terminals User manual — This user manual will guide you on how to use this product. Please read this user guide carefully before using the produ…
-- [LoRaWAN Terminals Datasheet v1.0](LoRaWAN%20Terminals/Datasheets/General/LT312_Datasheet_V1.0.md): LoRaWAN Terminals Datasheet v1.0 — Industrial LoRaWAN DTU for robust serial data connectivity
 
 ## MDT600
 

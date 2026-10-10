@@ -16,7 +16,6 @@ description: "ER805 已获认证清单（CE、EN18031、FCC、IC、PTCRB），�
 | EN18031 | ER605_EN18031_Certificate.zip | [查看](https://github.com/inhandnet/documents/blob/master/docs/zh/ER805/Certification%20Documents/EN18031/ER605_EN18031_Certificate.zip) |
 | FCC | ER805-FQ39_FCC_Certificate.zip | [查看](https://github.com/inhandnet/documents/blob/master/docs/zh/ER805/Certification%20Documents/FCC/ER805-FQ39_FCC_Certificate.zip) |
 | FCC | ER805-NRQ3_FCC_Certificate.zip | [查看](https://github.com/inhandnet/documents/blob/master/docs/zh/ER805/Certification%20Documents/FCC/ER805-NRQ3_FCC_Certificate.zip) |
-| IC | ER805-FQ39_IC_Certificate.pdf | [查看](https://github.com/inhandnet/documents/blob/master/docs/zh/ER805/Certification%20Documents/IC/ER805-FQ39_IC_Certificate.pdf) |
 | IC | ER805-NRQ3_IC_Certificate.pdf | [查看](https://github.com/inhandnet/documents/blob/master/docs/zh/ER805/Certification%20Documents/IC/ER805-NRQ3_IC_Certificate.pdf) |
 | PTCRB | ER805-FQ39_PTCRB_Certificate.pdf | [查看](https://github.com/inhandnet/documents/blob/master/docs/zh/ER805/Certification%20Documents/PTCRB/ER805-FQ39_PTCRB_Certificate.pdf) |
 | PTCRB | ER805-NRQ3_PTCRB_Certificate.pdf | [查看](https://github.com/inhandnet/documents/blob/master/docs/zh/ER805/Certification%20Documents/PTCRB/ER805-NRQ3_PTCRB_Certificate.pdf) |

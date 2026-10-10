@@ -98,7 +98,6 @@ hide:
       <div class="pm-card__body">
         <div class="pm-card__title">EC300</div>
         <ul class="pm-card__links">
-        <li><a href="EC300/certifications.html" title="EC300 Certifications">Certifications</a></li>
         <li><a href="EC300/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.html" title="DSA API Documentation V1.0">DSA API Documentation V1.0</a></li>
         <li><a href="EC300/Developer%20Documentation/FlexAPI/ECSeriesAPIDocumentationV1.0.html" title="EC Series API Documentation V1.0">EC Series API Documentation V1.0</a></li>
         <li><a href="EC300/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.html" title="EC Series Linux Software User&#x27;s Manual V1.0">EC Series Linux Software User&#x27;s Manual V1.0</a></li>
@@ -121,6 +120,7 @@ hide:
       <div class="pm-card__body">
         <div class="pm-card__title">EC312</div>
         <ul class="pm-card__links">
+        <li><a href="EC312/certifications.html" title="EC312 Certifications">Certifications</a></li>
         <li><a href="EC312/Use%20Cases/CAN%20to%20AWS%20Solution/CAN%20to%20AWS%20Configuration%20Guide.html" title="EC312 CAN-to-AWS Configuration Manual">EC312 CAN-to-AWS Configuration Manual</a></li>
         <li><a href="EC312/Use%20Cases/CAN%20to%20AWS%20Solution/CAN%20to%20AWS%20Solution.html" title="EC312 CAN-to-AWS Solution">EC312 CAN-to-AWS Solution</a></li>
         </ul>
@@ -151,7 +151,6 @@ hide:
       <div class="pm-card__body">
         <div class="pm-card__title">EC940</div>
         <ul class="pm-card__links">
-        <li><a href="EC940/certifications.html" title="EC940 Certifications">Certifications</a></li>
         <li><a href="EC940/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.html" title="DSA API Documentation V1.0">DSA API Documentation V1.0</a></li>
         <li><a href="EC940/Developer%20Documentation/FlexAPI/ECSeriesAPIDocumentationV1.0.html" title="EC Series API Documentation V1.0">EC Series API Documentation V1.0</a></li>
         <li><a href="EC940/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.html" title="EC Series Linux Software User&#x27;s Manual V1.0">EC Series Linux Software User&#x27;s Manual V1.0</a></li>
@@ -161,13 +160,28 @@ hide:
     </div>
     <div class="pm-card">
       <div class="pm-card__body">
+        <div class="pm-card__title">EC942</div>
+        <ul class="pm-card__links">
+        <li><a href="EC942/certifications.html" title="EC942 Certifications">Certifications</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pm-card">
+      <div class="pm-card__body">
         <div class="pm-card__title">EC950</div>
         <ul class="pm-card__links">
-        <li><a href="EC950/certifications.html" title="EC950 Certifications">Certifications</a></li>
         <li><a href="EC950/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.html" title="DSA API Documentation V1.0">DSA API Documentation V1.0</a></li>
         <li><a href="EC950/Developer%20Documentation/FlexAPI/ECSeriesAPIDocumentationV1.0.html" title="EC Series API Documentation V1.0">EC Series API Documentation V1.0</a></li>
         <li><a href="EC950/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.html" title="EC Series Linux Software User&#x27;s Manual V1.0">EC Series Linux Software User&#x27;s Manual V1.0</a></li>
         <li><a href="EC950/Manuals/User%20manual/EC950_User%20manual_V1.0.html" title="EC954 Edge Computer User Manual">User manual V1.0</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pm-card">
+      <div class="pm-card__body">
+        <div class="pm-card__title">EC954</div>
+        <ul class="pm-card__links">
+        <li><a href="EC954/certifications.html" title="EC954 Certifications">Certifications</a></li>
         </ul>
       </div>
     </div>

@@ -2958,6 +2958,36 @@
         "zh"
       ],
       "public": true
+    },
+    {
+      "id": "InPAD5101",
+      "kind": "model",
+      "display_names": {
+        "zh": "InPAD5101"
+      },
+      "aliases": [],
+      "source_folders": [
+        "InPAD5101"
+      ],
+      "expected_languages": [
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "SGB300",
+      "kind": "model",
+      "display_names": {
+        "zh": "SGB300"
+      },
+      "aliases": [],
+      "source_folders": [
+        "SGB300"
+      ],
+      "expected_languages": [
+        "zh"
+      ],
+      "public": true
     }
   ]
 }

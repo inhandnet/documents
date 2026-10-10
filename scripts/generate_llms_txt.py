@@ -295,6 +295,11 @@ def collect(lang: str, base_url: str | None) -> list[Doc]:
     for md in list_markdown_files(lang_root):
         if md.name in SKIP_FILENAMES:
             continue
+        if not md.exists():
+            # generate_asset_pages.py runs earlier in the same CI job and
+            # unlinks orphaned generated pages from disk; the git index that
+            # list_markdown_files() reads still lists them until commit time.
+            continue
         rel = md.relative_to(lang_root)
         parts = rel.parts  # e.g. (Product, Category, Subcategory, file.md)
         if len(parts) < 2:

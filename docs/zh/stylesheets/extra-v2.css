@@ -676,3 +676,5 @@ input.md-nav__toggle + label.md-nav__link svg {
 /* deploy trigger: regenerate manual PDFs at 300dpi (2026-07-14) */
 
 /* trigger rsync deploy 2026-07-16 */
+
+/* trigger deploy: publish regenerated homepage after EC/VT rename (2026-10-10) */

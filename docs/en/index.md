@@ -101,7 +101,6 @@ hide:
         <li><a href="EC300/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.html" title="DSA API Documentation V1.0">DSA API Documentation V1.0</a></li>
         <li><a href="EC300/Developer%20Documentation/FlexAPI/ECSeriesAPIDocumentationV1.0.html" title="EC Series API Documentation V1.0">EC Series API Documentation V1.0</a></li>
         <li><a href="EC300/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.html" title="EC Series Linux Software User&#x27;s Manual V1.0">EC Series Linux Software User&#x27;s Manual V1.0</a></li>
-        <li><a href="EC300/Manuals/User%20manual/EC300_User%20manual_V1.0.html" title="EC300 Series Edge Computer User Manual">User manual V1.0</a></li>
         </ul>
       </div>
     </div>
@@ -112,7 +111,6 @@ hide:
         <li><a href="EC3000/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.html" title="DSA API Documentation V1.0">DSA API Documentation V1.0</a></li>
         <li><a href="EC3000/Developer%20Documentation/FlexAPI/ECSeriesAPIDocumentationV1.0.html" title="EC Series API Documentation V1.0">EC Series API Documentation V1.0</a></li>
         <li><a href="EC3000/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.html" title="EC Series Linux Software User&#x27;s Manual V1.0">EC Series Linux Software User&#x27;s Manual V1.0</a></li>
-        <li><a href="EC3000/Manuals/User%20manual/EC3000_User%20manual_V1.0.html" title="EC3000 Series AI Edge Computer User Manual">User manual V1.0</a></li>
         </ul>
       </div>
     </div>
@@ -144,7 +142,6 @@ hide:
         <li><a href="EC5000/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.html" title="DSA API Documentation V1.0">DSA API Documentation V1.0</a></li>
         <li><a href="EC5000/Developer%20Documentation/FlexAPI/ECSeriesAPIDocumentationV1.0.html" title="EC Series API Documentation V1.0">EC Series API Documentation V1.0</a></li>
         <li><a href="EC5000/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.html" title="EC Series Linux Software User&#x27;s Manual V1.0">EC Series Linux Software User&#x27;s Manual V1.0</a></li>
-        <li><a href="EC5000/Manuals/User%20manual/EC5000_User%20manual_V1.0.html" title="EC5000 Series AI Edge Computer User Manual">User manual V1.0</a></li>
         </ul>
       </div>
     </div>
@@ -172,7 +169,6 @@ hide:
         <li><a href="EC940/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.html" title="DSA API Documentation V1.0">DSA API Documentation V1.0</a></li>
         <li><a href="EC940/Developer%20Documentation/FlexAPI/ECSeriesAPIDocumentationV1.0.html" title="EC Series API Documentation V1.0">EC Series API Documentation V1.0</a></li>
         <li><a href="EC940/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.html" title="EC Series Linux Software User&#x27;s Manual V1.0">EC Series Linux Software User&#x27;s Manual V1.0</a></li>
-        <li><a href="EC940/Manuals/User%20manual/EC940_User%20manual_V1.0.html" title="EC942 Edge Computer User Manual">User manual V1.0</a></li>
         </ul>
       </div>
     </div>
@@ -192,7 +188,6 @@ hide:
         <li><a href="EC950/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.html" title="DSA API Documentation V1.0">DSA API Documentation V1.0</a></li>
         <li><a href="EC950/Developer%20Documentation/FlexAPI/ECSeriesAPIDocumentationV1.0.html" title="EC Series API Documentation V1.0">EC Series API Documentation V1.0</a></li>
         <li><a href="EC950/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.html" title="EC Series Linux Software User&#x27;s Manual V1.0">EC Series Linux Software User&#x27;s Manual V1.0</a></li>
-        <li><a href="EC950/Manuals/User%20manual/EC950_User%20manual_V1.0.html" title="EC954 Edge Computer User Manual">User manual V1.0</a></li>
         </ul>
       </div>
     </div>
@@ -730,14 +725,6 @@ hide:
         <div class="pm-card__title">VT200</div>
         <ul class="pm-card__links">
         <li><a href="VT200/Manuals/User%20manual/VT200_User%20manual_V1.0.html" title="Vehicle Telematics 200 User Manual (Standard Edition) V1.0">User manual V1.0</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="pm-card">
-      <div class="pm-card__body">
-        <div class="pm-card__title">VT300</div>
-        <ul class="pm-card__links">
-        <li><a href="VT300/Manuals/User%20manual/VT300_User%20manual_V1.0.html" title="Vehicle Telematics VT310/320 User Manual (Standard Edition)">User manual V1.0</a></li>
         </ul>
       </div>
     </div>

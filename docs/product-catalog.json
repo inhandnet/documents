@@ -2924,6 +2924,40 @@
         "zh"
       ],
       "public": true
+    },
+    {
+      "id": "EC312-LoRaWAN",
+      "kind": "model",
+      "display_names": {
+        "en": "EC312-LoRaWAN",
+        "zh": "EC312-LoRaWAN"
+      },
+      "aliases": [],
+      "source_folders": [
+        "EC312-LoRaWAN"
+      ],
+      "expected_languages": [
+        "en",
+        "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "LT312",
+      "kind": "model",
+      "display_names": {
+        "en": "LT312",
+        "zh": "LT312"
+      },
+      "aliases": [],
+      "source_folders": [
+        "LT312"
+      ],
+      "expected_languages": [
+        "en",
+        "zh"
+      ],
+      "public": true
     }
   ]
 }

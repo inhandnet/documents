@@ -213,49 +213,14 @@
       "id": "EC300",
       "kind": "model",
       "display_names": {
-        "en": "EC300",
-        "zh": "EC300"
+        "en": "EC312",
+        "zh": "EC312"
       },
       "aliases": [
+        "EC300"
+      ],
+      "source_folders": [
         "EC312"
-      ],
-      "source_folders": [
-        "EC300",
-        "EC312"
-      ],
-      "expected_languages": [
-        "en",
-        "zh"
-      ],
-      "public": true
-    },
-    {
-      "id": "EC300-LoRaWAN",
-      "kind": "model",
-      "display_names": {
-        "en": "EC300-LoRaWAN",
-        "zh": "EC300-LoRaWAN"
-      },
-      "aliases": [],
-      "source_folders": [
-        "EC300-LoRaWAN"
-      ],
-      "expected_languages": [
-        "en",
-        "zh"
-      ],
-      "public": true
-    },
-    {
-      "id": "EC3000",
-      "kind": "model",
-      "display_names": {
-        "en": "EC3000",
-        "zh": "EC3000"
-      },
-      "aliases": [],
-      "source_folders": [
-        "EC3000"
       ],
       "expected_languages": [
         "en",
@@ -270,7 +235,9 @@
         "en": "EC3320",
         "zh": "EC3320"
       },
-      "aliases": [],
+      "aliases": [
+        "EC3000"
+      ],
       "source_folders": [
         "EC3320"
       ],
@@ -326,34 +293,16 @@
       "public": true
     },
     {
-      "id": "EC5000",
-      "kind": "model",
-      "display_names": {
-        "en": "EC5000",
-        "zh": "EC5000"
-      },
-      "aliases": [],
-      "source_folders": [
-        "EC5000"
-      ],
-      "expected_languages": [
-        "en",
-        "zh"
-      ],
-      "public": true
-    },
-    {
       "id": "EC940",
       "kind": "model",
       "display_names": {
-        "en": "EC940",
-        "zh": "EC940"
+        "en": "EC942",
+        "zh": "EC942"
       },
       "aliases": [
-        "EC942"
+        "EC940"
       ],
       "source_folders": [
-        "EC940",
         "EC942"
       ],
       "expected_languages": [
@@ -366,14 +315,13 @@
       "id": "EC950",
       "kind": "model",
       "display_names": {
-        "en": "EC950",
-        "zh": "EC950"
+        "en": "EC954",
+        "zh": "EC954"
       },
       "aliases": [
-        "EC954"
+        "EC950"
       ],
       "source_folders": [
-        "EC950",
         "EC954"
       ],
       "expected_languages": [
@@ -2196,23 +2144,6 @@
       "public": true
     },
     {
-      "id": "VT300",
-      "kind": "model",
-      "display_names": {
-        "en": "VT300",
-        "zh": "VT300"
-      },
-      "aliases": [],
-      "source_folders": [
-        "VT300"
-      ],
-      "expected_languages": [
-        "en",
-        "zh"
-      ],
-      "public": true
-    },
-    {
       "id": "VT310",
       "kind": "model",
       "display_names": {
@@ -2932,7 +2863,9 @@
         "en": "EC312-LoRaWAN",
         "zh": "EC312-LoRaWAN"
       },
-      "aliases": [],
+      "aliases": [
+        "EC300-LoRaWAN"
+      ],
       "source_folders": [
         "EC312-LoRaWAN"
       ],

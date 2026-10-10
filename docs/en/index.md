@@ -150,9 +150,18 @@ hide:
     </div>
     <div class="pm-card">
       <div class="pm-card__body">
+        <div class="pm-card__title">EC5350</div>
+        <ul class="pm-card__links">
+        <li><a href="EC5350/Manuals/User%20manual/EC5350_User%20manual_V1.0.html" title="EC5000 Series AI Edge Computer User Manual">User manual V1.0</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pm-card">
+      <div class="pm-card__body">
         <div class="pm-card__title">EC5550</div>
         <ul class="pm-card__links">
         <li><a href="EC5550/certifications.html" title="EC5550 Certifications">Certifications</a></li>
+        <li><a href="EC5550/Manuals/User%20manual/EC5550_User%20manual_V1.0.html" title="EC5000 Series AI Edge Computer User Manual">User manual V1.0</a></li>
         </ul>
       </div>
     </div>
@@ -736,8 +745,17 @@ hide:
       <div class="pm-card__body">
         <div class="pm-card__title">VT310</div>
         <ul class="pm-card__links">
+        <li><a href="VT310/Manuals/User%20manual/VT310_User%20manual_V1.0.html" title="Vehicle Telematics VT310/320 User Manual (Standard Edition)">User manual V1.0</a></li>
         <li><a href="VT310/Use%20Cases/Transport-Refrigeration-Monitoring/case-manual.html" title="Transport Refrigeration Networking Monitoring Solution">Transport Refrigeration Networking Monitoring Solution</a></li>
         <li><a href="VT310/Use%20Cases/Transport-Refrigeration-Monitoring/config-manual.html" title="Vehicle Refrigeration Monitoring">Vehicle Refrigeration Monitoring</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pm-card">
+      <div class="pm-card__body">
+        <div class="pm-card__title">VT320</div>
+        <ul class="pm-card__links">
+        <li><a href="VT320/Manuals/User%20manual/VT320_User%20manual_V1.0.html" title="Vehicle Telematics VT310/320 User Manual (Standard Edition)">User manual V1.0</a></li>
         </ul>
       </div>
     </div>

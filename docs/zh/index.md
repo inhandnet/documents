@@ -147,8 +147,19 @@ hide:
         <div class="pm-card__title">EC312</div>
         <ul class="pm-card__links">
         <li><a href="EC312/certifications.html" title="EC312 认证证书">认证证书</a></li>
+        <li><a href="EC312/Manuals/%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97/EC312%E5%BF%AB%E9%80%9F%E5%AE%89%E8%A3%85%E6%89%8B%E5%86%8C_V1.0.html" title="EC312 快速安装手册">安装指南 V1.0</a></li>
+        <li><a href="EC312/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/EC312%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="EC300边缘计算机用户手册">用户手册 V1.0</a></li>
         <li><a href="EC312/Use%20Cases/CAN%E8%BD%ACAWS%E6%96%B9%E6%A1%88/CAN%E8%BD%ACAWS%E6%96%B9%E6%A1%88.html" title="EC312 CAN-to-AWS 解决方案">EC312 CAN-to-AWS 解决方案</a></li>
         <li><a href="EC312/Use%20Cases/CAN%E8%BD%ACAWS%E6%96%B9%E6%A1%88/CAN%E8%BD%ACAWS%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8D%97.html" title="EC312 CAN-to-AWS 配置手册">EC312 CAN-to-AWS 配置手册</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pm-card">
+      <div class="pm-card__body">
+        <div class="pm-card__title">EC312-LoRaWAN</div>
+        <ul class="pm-card__links">
+        <li><a href="EC312-LoRaWAN/Manuals/%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97/EC312-LoRaWAN%E5%BF%AB%E9%80%9F%E5%AE%89%E8%A3%85%E6%89%8B%E5%86%8C_V1.0.html" title="EC312-LoRaWAN 快速安装手册">安装指南 V1.0</a></li>
+        <li><a href="EC312-LoRaWAN/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/EC312-LoRaWAN%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="EC300-LoRAWAN边缘计算机用户手册">用户手册 V1.0</a></li>
         </ul>
       </div>
     </div>
@@ -157,6 +168,8 @@ hide:
         <div class="pm-card__title">EC3320</div>
         <ul class="pm-card__links">
         <li><a href="EC3320/certifications.html" title="EC3320 认证证书">认证证书</a></li>
+        <li><a href="EC3320/Manuals/%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97/EC3000%E5%BF%AB%E9%80%9F%E5%AE%89%E8%A3%85%E6%89%8B%E5%86%8C_V1.0.html" title="EC3000 快速安装手册">安装指南 V1.0</a></li>
+        <li><a href="EC3320/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/EC3000%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="EC3000用户手册">用户手册 V1.0</a></li>
         <li><a href="EC3320/Use%20Cases/%E7%94%B5%E7%AB%99%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E6%99%BA%E8%83%BD%E5%88%86%E6%9E%90%E6%A1%88%E4%BE%8B/%E6%A1%88%E4%BE%8B%E6%89%8B%E5%86%8C.html" title="电站数据采集智能分析解决方案">电站数据采集智能分析案例</a></li>
         </ul>
       </div>
@@ -175,9 +188,20 @@ hide:
     </div>
     <div class="pm-card">
       <div class="pm-card__body">
+        <div class="pm-card__title">EC5350</div>
+        <ul class="pm-card__links">
+        <li><a href="EC5350/Manuals/%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97/EC5350%E5%BF%AB%E9%80%9F%E5%AE%89%E8%A3%85%E6%89%8B%E5%86%8C_V1.0.html" title="EC5000 快速安装手册">安装指南 V1.0</a></li>
+        <li><a href="EC5350/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/EC5350%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="EC5000系列边缘AI计算机 用户手册">用户手册 V1.0</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pm-card">
+      <div class="pm-card__body">
         <div class="pm-card__title">EC5550</div>
         <ul class="pm-card__links">
         <li><a href="EC5550/certifications.html" title="EC5550 认证证书">认证证书</a></li>
+        <li><a href="EC5550/Manuals/%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97/EC5550%E5%BF%AB%E9%80%9F%E5%AE%89%E8%A3%85%E6%89%8B%E5%86%8C_V1.0.html" title="EC5000 快速安装手册">安装指南 V1.0</a></li>
+        <li><a href="EC5550/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/EC5550%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="EC5000系列边缘AI计算机 用户手册">用户手册 V1.0</a></li>
         </ul>
       </div>
     </div>
@@ -198,6 +222,8 @@ hide:
         <div class="pm-card__title">EC942</div>
         <ul class="pm-card__links">
         <li><a href="EC942/certifications.html" title="EC942 认证证书">认证证书</a></li>
+        <li><a href="EC942/Manuals/%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97/EC942%E5%BF%AB%E9%80%9F%E5%AE%89%E8%A3%85%E6%89%8B%E5%86%8C_V1.0.html" title="EC942 快速安装手册">安装指南 V1.0</a></li>
+        <li><a href="EC942/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/EC942%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="EC942系列边缘计算机用户手册">用户手册 V1.0</a></li>
         </ul>
       </div>
     </div>
@@ -218,6 +244,8 @@ hide:
         <div class="pm-card__title">EC954</div>
         <ul class="pm-card__links">
         <li><a href="EC954/certifications.html" title="EC954 认证证书">认证证书</a></li>
+        <li><a href="EC954/Manuals/%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97/EC954%E5%BF%AB%E9%80%9F%E5%AE%89%E8%A3%85%E6%89%8B%E5%86%8C_V1.0.html" title="EC954 快速安装手册">安装指南 V1.0</a></li>
+        <li><a href="EC954/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/EC954%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="EC954边缘计算机用户手册">用户手册 V1.0</a></li>
         </ul>
       </div>
     </div>
@@ -469,6 +497,7 @@ hide:
         <li><a href="IR602/drawings.html" title="IR602 结构图纸">结构图纸</a></li>
         <li><a href="IR602/Manuals/%E5%BF%AB%E9%80%9F%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/IR602%E5%BF%AB%E9%80%9F%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C.html" title="IR602 快速用户手册">快速用户手册</a></li>
         <li><a href="IR602/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/IR602%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C.html" title="北京映翰通工业路由器IR602产品系列用户手册">用户手册</a></li>
+        <li><a href="IR602/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/img/IR602%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="北京映翰通工业路由器IR602产品系列用户手册">用户手册 V1.0</a></li>
         </ul>
       </div>
     </div>
@@ -646,6 +675,7 @@ hide:
       <div class="pm-card__body">
         <div class="pm-card__title">VT310</div>
         <ul class="pm-card__links">
+        <li><a href="VT310/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/VT310%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="车载追踪网关VT300系列用户手册">用户手册 V1.0</a></li>
         <li><a href="VT310/Use%20Cases/%E8%BD%A6%E8%BD%BD%E5%86%B7%E6%9C%BA%E7%9B%91%E6%8E%A7/%E6%A1%88%E4%BE%8B%E6%89%8B%E5%86%8C.html" title="运输冷机联网监控解决方案">运输冷机联网监控解决方案</a></li>
         <li><a href="VT310/Use%20Cases/%E8%BD%A6%E8%BD%BD%E5%86%B7%E6%9C%BA%E7%9B%91%E6%8E%A7/%E9%85%8D%E7%BD%AE%E6%89%8B%E5%86%8C.html" title="车载冷机监控">车载冷机监控</a></li>
         </ul>

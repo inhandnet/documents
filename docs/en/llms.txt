@@ -301,10 +301,42 @@
 
 ## EC5350
 
+- [EC5000 Series AI Edge Computer User Manual](EC5350/Manuals/User%20manual/EC5350_User%20manual_V1.0.md): EC5350 User manual v1.0 — The EC5000 series AI edge computer is pre-integrated with NVIDIA Jetson Orin NX or Orin Nano modules, making it suitable…
+  - [Front Matter](EC5350/Manuals/User%20manual/EC5350_User%20manual_V1.0.md#front-matter)
+  - [Chapter 1 Device Overview](EC5350/Manuals/User%20manual/EC5350_User%20manual_V1.0.md#chapter-1-device-overview)
+  - [Chapter 2 Installation and First Use](EC5350/Manuals/User%20manual/EC5350_User%20manual_V1.0.md#chapter-2-installation-and-first-use)
+  - [Chapter 3 Common Scenario Configuration](EC5350/Manuals/User%20manual/EC5350_User%20manual_V1.0.md#chapter-3-common-scenario-configuration)
+  - [Chapter 4 Function Description and Parameter Reference](EC5350/Manuals/User%20manual/EC5350_User%20manual_V1.0.md#chapter-4-function-description-and-parameter-reference)
+  - [4.1 User Management](EC5350/Manuals/User%20manual/EC5350_User%20manual_V1.0.md#41-user-management)
+  - [4.2 Web Management based on IEOS](EC5350/Manuals/User%20manual/EC5350_User%20manual_V1.0.md#42-web-management-based-on-ieos)
+  - [4.3 Ubuntu Graphical Interface Management](EC5350/Manuals/User%20manual/EC5350_User%20manual_V1.0.md#43-ubuntu-graphical-interface-management)
+  - [4.6 Advanced Configuration of the Peripheral Interface](EC5350/Manuals/User%20manual/EC5350_User%20manual_V1.0.md#46-advanced-configuration-of-the-peripheral-interface)
+  - [4.5 Advanced](EC5350/Manuals/User%20manual/EC5350_User%20manual_V1.0.md#45-advanced)
+  - [4.6 Security](EC5350/Manuals/User%20manual/EC5350_User%20manual_V1.0.md#46-security)
+  - [4.7 Programming Guide](EC5350/Manuals/User%20manual/EC5350_User%20manual_V1.0.md#47-programming-guide)
+  - [Chapter 5 Typical Applications](EC5350/Manuals/User%20manual/EC5350_User%20manual_V1.0.md#chapter-5-typical-applications)
+  - [Appendix A Troubleshooting](EC5350/Manuals/User%20manual/EC5350_User%20manual_V1.0.md#appendix-a-troubleshooting)
+  - [Appendix B Safety Precautions](EC5350/Manuals/User%20manual/EC5350_User%20manual_V1.0.md#appendix-b-safety-precautions)
 - [EC5350 Datasheet v1.0](EC5350/Datasheets/General/EC5350_Datasheet_V1.0.md): EC5350 Datasheet v1.0 — Embrace Edge AI, Empower Industrial Digitalization
 
 ## EC5550
 
+- [EC5000 Series AI Edge Computer User Manual](EC5550/Manuals/User%20manual/EC5550_User%20manual_V1.0.md): EC5550 User manual v1.0 — The EC5000 series AI edge computer is pre-integrated with NVIDIA Jetson Orin NX or Orin Nano modules, making it suitable…
+  - [Front Matter](EC5550/Manuals/User%20manual/EC5550_User%20manual_V1.0.md#front-matter)
+  - [Chapter 1 Device Overview](EC5550/Manuals/User%20manual/EC5550_User%20manual_V1.0.md#chapter-1-device-overview)
+  - [Chapter 2 Installation and First Use](EC5550/Manuals/User%20manual/EC5550_User%20manual_V1.0.md#chapter-2-installation-and-first-use)
+  - [Chapter 3 Common Scenario Configuration](EC5550/Manuals/User%20manual/EC5550_User%20manual_V1.0.md#chapter-3-common-scenario-configuration)
+  - [Chapter 4 Function Description and Parameter Reference](EC5550/Manuals/User%20manual/EC5550_User%20manual_V1.0.md#chapter-4-function-description-and-parameter-reference)
+  - [4.1 User Management](EC5550/Manuals/User%20manual/EC5550_User%20manual_V1.0.md#41-user-management)
+  - [4.2 Web Management based on IEOS](EC5550/Manuals/User%20manual/EC5550_User%20manual_V1.0.md#42-web-management-based-on-ieos)
+  - [4.3 Ubuntu Graphical Interface Management](EC5550/Manuals/User%20manual/EC5550_User%20manual_V1.0.md#43-ubuntu-graphical-interface-management)
+  - [4.6 Advanced Configuration of the Peripheral Interface](EC5550/Manuals/User%20manual/EC5550_User%20manual_V1.0.md#46-advanced-configuration-of-the-peripheral-interface)
+  - [4.5 Advanced](EC5550/Manuals/User%20manual/EC5550_User%20manual_V1.0.md#45-advanced)
+  - [4.6 Security](EC5550/Manuals/User%20manual/EC5550_User%20manual_V1.0.md#46-security)
+  - [4.7 Programming Guide](EC5550/Manuals/User%20manual/EC5550_User%20manual_V1.0.md#47-programming-guide)
+  - [Chapter 5 Typical Applications](EC5550/Manuals/User%20manual/EC5550_User%20manual_V1.0.md#chapter-5-typical-applications)
+  - [Appendix A Troubleshooting](EC5550/Manuals/User%20manual/EC5550_User%20manual_V1.0.md#appendix-a-troubleshooting)
+  - [Appendix B Safety Precautions](EC5550/Manuals/User%20manual/EC5550_User%20manual_V1.0.md#appendix-b-safety-precautions)
 - [EC5550 Datasheet v1.0](EC5550/Datasheets/General/EC5550_Datasheet_V1.0.md): EC5550 Datasheet v1.0 — Embrace Edge AI, Empower Industrial Digitalization
 - [EC5550 Certifications](EC5550/certifications.md): EC5550 certification list (CE) with links to the original certificate files
 
@@ -1161,10 +1193,12 @@
 
 ## VT310
 
+- [Vehicle Telematics VT310/320 User Manual (Standard Edition)](VT310/Manuals/User%20manual/VT310_User%20manual_V1.0.md): VT310 User manual v1.0 — The VT310/320 series vehicle tracking gateway is an asset tracking product that features cost-effectiveness, rich interf…
 - [VT310 Datasheet v1.0](VT310/Datasheets/General/VT310_Datasheet_V1.0.md): VT310 Datasheet v1.0 — High Precision Tracking, Rugged for Harsh Environments
 - [Transport Refrigeration Networking Monitoring Solution](VT310/Use%20Cases/Transport-Refrigeration-Monitoring/case-manual.md): VT310 Transport-Refrigeration-Monitoring
 - [Vehicle Refrigeration Monitoring](VT310/Use%20Cases/Transport-Refrigeration-Monitoring/config-manual.md): VT310 Transport-Refrigeration-Monitoring
 
 ## VT320
 
+- [Vehicle Telematics VT310/320 User Manual (Standard Edition)](VT320/Manuals/User%20manual/VT320_User%20manual_V1.0.md): VT320 User manual v1.0 — The VT310/320 series vehicle tracking gateway is an asset tracking product that features cost-effectiveness, rich interf…
 - [VT320 Datasheet v1.0](VT320/Datasheets/General/VT320_Datasheet_V1.0.md): VT320 Datasheet v1.0 — Reliable Tracking, Rugged Design, Open Interfaces

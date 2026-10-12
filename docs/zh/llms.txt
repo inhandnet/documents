@@ -333,6 +333,19 @@
 
 - [IG502-LITE 规格书 v1.0](IG502-LITE/Datasheets/%E9%80%9A%E7%94%A8/IG502-LITE%E8%A7%84%E6%A0%BC%E4%B9%A6_V1.0.md): IG502-LITE 规格书 v1.0 — 极简型边缘网关，超高性价比，助力工业数字化
 
+## IG502-lite
+
+- [IG502-LITE快速安装手册V1.0](IG502-lite/Manuals/%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97/IG502-lite%E5%BF%AB%E9%80%9F%E5%AE%89%E8%A3%85%E6%89%8B%E5%86%8C_V1.0.md): IG502-lite 安装指南 v1.0
+- [IG502 边缘计算网关用户手册](IG502-lite/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/IG502-lite%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.md): IG502-lite 用户手册 v1.0 — InGateway502（简称IG502）是映翰通公司面向工业物联网领域推出的高性价比边缘计算网关。该设备尺寸小巧，接口丰富，具备便捷的全球蜂窝接入能力。IG502支持用户使用Python进行二次开发，可内置映翰通DeviceSupervi…
+  - [第1章 认识设备](IG502-lite/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/IG502-lite%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.md#%E7%AC%AC1%E7%AB%A0-%E8%AE%A4%E8%AF%86%E8%AE%BE%E5%A4%87)
+  - [第2章 安装与首次使用](IG502-lite/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/IG502-lite%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.md#%E7%AC%AC2%E7%AB%A0-%E5%AE%89%E8%A3%85%E4%B8%8E%E9%A6%96%E6%AC%A1%E4%BD%BF%E7%94%A8)
+  - [第3章 常用场景配置](IG502-lite/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/IG502-lite%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.md#%E7%AC%AC3%E7%AB%A0-%E5%B8%B8%E7%94%A8%E5%9C%BA%E6%99%AF%E9%85%8D%E7%BD%AE)
+  - [第4章 功能说明与参数参考](IG502-lite/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/IG502-lite%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.md#%E7%AC%AC4%E7%AB%A0-%E5%8A%9F%E8%83%BD%E8%AF%B4%E6%98%8E%E4%B8%8E%E5%8F%82%E6%95%B0%E5%8F%82%E8%80%83)
+  - [第5章 典型应用](IG502-lite/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/IG502-lite%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.md#%E7%AC%AC5%E7%AB%A0-%E5%85%B8%E5%9E%8B%E5%BA%94%E7%94%A8)
+  - [附录 故障处理](IG502-lite/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/IG502-lite%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.md#%E9%99%84%E5%BD%95-%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86)
+  - [附录 安全注意事项](IG502-lite/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/IG502-lite%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.md#%E9%99%84%E5%BD%95-%E5%AE%89%E5%85%A8%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9)
+  - [FAQ 常见问题解答](IG502-lite/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/IG502-lite%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.md#faq-%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E8%A7%A3%E7%AD%94)
+
 ## IG504
 
 - [IG504 快速安装手册](IG504/Manuals/%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97/IG504%E5%BF%AB%E9%80%9F%E5%AE%89%E8%A3%85%E6%89%8B%E5%86%8CV1.0.md): IG504 安装指南 v1.0
@@ -372,6 +385,7 @@
 
 ## IG974
 
+- [IG974快速安装手册V1.0](IG974/Manuals/%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97/IG974%E5%BF%AB%E9%80%9F%E5%AE%89%E8%A3%85%E6%89%8B%E5%86%8C_V1.0.md): IG974 安装指南 v1.0
 - [IG974 规格书 v1.9](IG974/Datasheets/%E9%80%9A%E7%94%A8/IG974%E8%A7%84%E6%A0%BC%E4%B9%A6_V1.9.md): IG974 规格书 v1.9 — 工业化设计，安全可靠，助力企业数字化升级
 - [IG974 认证证书](IG974/certifications.md): IG974 已获认证清单（CE、FCC、PTCRB），含证书原件文件链接
 

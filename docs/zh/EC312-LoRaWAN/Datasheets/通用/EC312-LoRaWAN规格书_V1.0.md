@@ -123,7 +123,7 @@
 | 环境湿度 | 5~95%（无凝露） |
 | 物理特性 | 防震 IEC60068-2-27<br/>振动 IEC60068-2-6<br/>跌落 IEC60068-2-32 |
 | EMC指标 | EN61000-4-2，level 3，静电<br/>EN61000-4-3，level 3，辐射电场<br/>EN61000-4-4，level 3，脉冲电场<br/>EN61000-4-5，level 3，浪涌<br/>EN61000-4-6，level 3，传导骚扰抗扰度<br/>EN61000-4-8，&gt;level 2，工频磁场抗扰度，水平方向/垂直方向 400A/m<br/>EN61000-4-12，level 3，震荡波抗扰度 |
-| 认证 | CE, FCC, IC, PTCRB |
+
 
 # <span style="color: green;">4. 软件规格</span>
 

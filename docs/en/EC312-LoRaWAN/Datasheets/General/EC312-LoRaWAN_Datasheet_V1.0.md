@@ -127,7 +127,7 @@
 | Environmental Humidity | 5 to 95% RH (non-condensing) |
 | Physical Characteristics | IEC60068-2-27 shock resistance<br>IEC60068-2-6 vibration resistance<br>IEC60068-2-32 drop resistance |
 | EMC Standard | EN61000-4-2, level 3, Static<br>EN61000-4-3, level 3, Radiation Electric Field<br>EN61000-4-4, level 3, Pulsed Electric Field<br>EN61000-4-5, level 3, Surge<br>EN61000-4-6, level 3, Conducted Distubance Immunity<br>EN61000-4-8, Power Frequency Field Resistance, horizontal / vertical 400A/m (>level 2)<br>EN61000-4-12,level 3,Shock Wave Resistance |
-| Certifications | CE, FCC, IC, PTCRB |
+
 
 # <span style="color: green;">4. Software Specifications</span>
 

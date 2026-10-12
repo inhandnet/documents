@@ -61,7 +61,6 @@
   - [Appendix Safety Precautions](CR202-Lite/Manuals/User%20manual/CR202-Lite_User%20manual_V1.0.md#appendix-safety-precautions)
   - [Appendix Command Line Reference](CR202-Lite/Manuals/User%20manual/CR202-Lite_User%20manual_V1.0.md#appendix-command-line-reference)
   - [FAQ](CR202-Lite/Manuals/User%20manual/CR202-Lite_User%20manual_V1.0.md#faq)
-- [CR202-Lite Datasheet v1.0](CR202-Lite/Datasheets/General/CR202-Lite_Datasheet_V1.0.md): CR202-Lite Datasheet v1.0 — Stay Connected Anywhere
 - [CR202-Lite Certifications](CR202-Lite/certifications.md): CR202-Lite certification list (CE, FCC, IC, PTCRB) with links to the original certificate files
 - [CR202-Lite Drawings](CR202-Lite/drawings.md): CR202-Lite mechanical drawings (2D, 3D) with links to the original drawing files
 
@@ -785,7 +784,6 @@
   - [4.1 Dashboard](IR624/Manuals/User%20manual/IR624_User%20manual_V1.0.md#41-dashboard)
   - [4.2 Status](IR624/Manuals/User%20manual/IR624_User%20manual_V1.0.md#42-status)
   - [4.3 Internet](IR624/Manuals/User%20manual/IR624_User%20manual_V1.0.md#43-internet)
-- [IR624 Datasheet v1.0](IR624/Datasheets/General/IR624_Datasheet_V1.0.md): IR624 Datasheet v1.0 — Embrace 5G, Co-Create the Digital Era
 - [IR624 Certifications](IR624/certifications.md): IR624 certification list (ANATEL, CE, E-Mark, ECER118, EN18031, FCC, IC, PTCRB) with links to the original certificate files
 - [IR624 Drawings](IR624/drawings.md): IR624 mechanical drawings (2D, 3D) with links to the original drawing files
 - [Medical Device Data Transmission Solution](IR624/Use%20Cases/Medical-Device-Data-Transmission/case-manual.md): IR624 Medical-Device-Data-Transmission

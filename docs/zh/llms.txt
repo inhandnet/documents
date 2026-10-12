@@ -20,7 +20,6 @@
 
 - [CR202-Lite 快速安装手册](CR202-Lite/Manuals/%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97/CR202-Lite%E5%BF%AB%E9%80%9F%E5%AE%89%E8%A3%85%E6%89%8B%E5%86%8C_V1.0.md): CR202-Lite 安装指南 v1.0
 - [北京映翰通4G蜂窝路由器CR202-Lite用户手册](CR202-Lite/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/CR202-Lite%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.md): CR202-Lite 用户手册 v1.0 — CR202-Lite是一款集4G蜂窝网络、Wi-Fi、VPN技术于一体的移动无线路由器，能够在室内、户外及移动场景下提供稳定可靠的网络连接。该设备支持有线以太网接入，提高了入网的多样性；内置链路检测机制可有效保障网络连续性。部分型号配备内置…
-- [CR202-Lite 规格书 v1.0](CR202-Lite/Datasheets/%E9%80%9A%E7%94%A8/CR202-Lite%E8%A7%84%E6%A0%BC%E4%B9%A6_V1.0.md): CR202-Lite 规格书 v1.0
 - [CR202-Lite 结构图纸](CR202-Lite/drawings.md): CR202-Lite 结构图纸登记（2D），含图纸原件文件链接
 - [CR202-Lite 认证证书](CR202-Lite/certifications.md): CR202-Lite 已获认证清单（FCC、IC、PTCRB），含证书原件文件链接
 
@@ -484,7 +483,6 @@
 ## IR624
 
 - [北京映翰通工业路由器IR624产品系列用户手册](IR624/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/IR624%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.md): IR624 用户手册 v1.0 — IR624 系列工业级蜂窝路由器，集成 4G/5G、Wi-Fi、虚拟专用网络（VPN）等核心技术，不仅能提供不间断网络访问能力与全面安全防护功能，还可通过内置的物联网行业智能软件服务，为各类场景构建安全可靠的业务数据链路，助力企业推进数字化…
-- [IR624 规格书 v1.6](IR624/Datasheets/%E9%80%9A%E7%94%A8/IR624%E8%A7%84%E6%A0%BC%E4%B9%A6_V1.6.md): IR624 规格书 v1.6 — 拥抱5G时代，网络新体验，安全可靠云管理
 - [IR624 结构图纸](IR624/drawings.md): IR624 结构图纸登记（2D、3D），含图纸原件文件链接
 - [IR624 认证证书](IR624/certifications.md): IR624 已获认证清单（ANATEL、CE、E-Mark、ECER118、EN18031、FCC、IC、PTCRB、SRRC），含证书原件文件链接
 - [医疗设备数据传输解决方案](IR624/Use%20Cases/%E5%8C%BB%E7%96%97%E8%AE%BE%E5%A4%87%E6%95%B0%E6%8D%AE%E4%BC%A0%E8%BE%93%E6%96%B9%E6%A1%88/%E6%A1%88%E4%BE%8B%E6%89%8B%E5%86%8C.md): IR624 医疗设备数据传输方案

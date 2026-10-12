@@ -31,6 +31,7 @@
 
 ## CR202
 
+- [CR202 Portable Router Quick Installation Guide](CR202/Manuals/Installation%20Guide/Portable%20Router%20CR202%20Product%20Quick%20Guide.md): CR202 Installation Guide
 - [Portable Router CR202 Product User Manual](CR202/Manuals/User%20manual/CR202_User%20manual_V1.0.md): CR202 User manual v1.0 — The CR202 is a portable 4G cellular router designed to provide reliable Internet connectivity for remote offices, mobile…
   - [1.1 Overview](CR202/Manuals/User%20manual/CR202_User%20manual_V1.0.md#11-overview)
   - [1.2 Packing List](CR202/Manuals/User%20manual/CR202_User%20manual_V1.0.md#12-packing-list)
@@ -52,6 +53,7 @@
 
 ## CR202-Lite
 
+- [CR202-Lite Quick Installation Guide (UniFi-Style)](CR202-Lite/Manuals/Installation%20Guide/Portable%20Router%20CR202-Lite%20Product%20Quick%20Guide.md): CR202-Lite Installation Guide
 - [Portable Router CR202-Lite Product User Manual](CR202-Lite/Manuals/User%20manual/CR202-Lite_User%20manual_V1.0.md): CR202-Lite User manual v1.0 — CR202-Lite is a portable 4G cellular router designed to provide reliable Internet connectivity for remote office, mobile…
   - [Chapter 1 Understanding the Device](CR202-Lite/Manuals/User%20manual/CR202-Lite_User%20manual_V1.0.md#chapter-1-understanding-the-device)
   - [Chapter 2 Installation and First Use](CR202-Lite/Manuals/User%20manual/CR202-Lite_User%20manual_V1.0.md#chapter-2-installation-and-first-use)
@@ -67,6 +69,7 @@
 
 ## CR202-Pro
 
+- [CR202-Pro Quick Installation Guide (UniFi-Style)](CR202-Pro/Manuals/Installation%20Guide/Portable%20Router%20CR202-Pro%20Product%20Quick%20Guide.md): CR202-Pro Installation Guide
 - [Portable Router CR202-Pro Product User Manual](CR202-Pro/Manuals/User%20manual/CR202-Pro_User%20manual_V1.0.md): CR202-Pro User manual v1.0 — The CR202-Pro is a portable 4G cellular router designed to provide reliable Internet connectivity for remote office, mob…
   - [Chapter 1 Understanding the Device](CR202-Pro/Manuals/User%20manual/CR202-Pro_User%20manual_V1.0.md#chapter-1-understanding-the-device)
   - [Chapter 2 Installation and First Use](CR202-Pro/Manuals/User%20manual/CR202-Pro_User%20manual_V1.0.md#chapter-2-installation-and-first-use)
@@ -144,6 +147,7 @@
 
 ## EC312
 
+- [EC312 Quick Start Guide](EC312/Manuals/Installation%20Guide/EC312%20Quick%20Start%20Guide_V1.0.md): EC312 Installation Guide v1.0
 - [EC300 Series Edge Computer User Manual](EC312/Manuals/User%20manual/EC312_User%20manual_V1.0.md): EC312 User manual v1.0 — The EC300 series edge computers are Arm architecture-based industrial computing platforms designed for lightweight edge…
   - [GUI Conventions](EC312/Manuals/User%20manual/EC312_User%20manual_V1.0.md#gui-conventions)
   - [How to Use This Manual](EC312/Manuals/User%20manual/EC312_User%20manual_V1.0.md#how-to-use-this-manual)
@@ -323,6 +327,7 @@
 
 ## EC942
 
+- [Part One: Quick Installation (Visual Step-by-Step)](EC942/Manuals/Installation%20Guide/EC942%20Quick%20Start%20Guide_V1.0.md): EC942 Installation Guide v1.0 — EC942 Quick Start Guide
 - [EC942 Edge Computer User Manual](EC942/Manuals/User%20manual/EC942_User%20manual_V1.0.md): EC942 User manual v1.0 — The EC942 series edge computer is a lightweight AI-accelerated edge computing device developed by InHand Networks for in…
   - [Chapter 1 Understanding the Device](EC942/Manuals/User%20manual/EC942_User%20manual_V1.0.md#chapter-1-understanding-the-device)
   - [Chapter 2 Installation and First Use](EC942/Manuals/User%20manual/EC942_User%20manual_V1.0.md#chapter-2-installation-and-first-use)
@@ -366,6 +371,7 @@
 
 ## EC954
 
+- [EC954 Quick Start Guide](EC954/Manuals/Installation%20Guide/EC954%20Quick%20Start%20Guide_V1.0.md): EC954 Installation Guide v1.0
 - [EC954 Edge Computer User Manual](EC954/Manuals/User%20manual/EC954_User%20manual_V1.0.md): EC954 User manual v1.0 — EC954 is a high-performance multi-interface edge computer featuring AI computation up to 26 TOPS and supporting TensorRT…
   - [Front Matter](EC954/Manuals/User%20manual/EC954_User%20manual_V1.0.md#front-matter)
   - [Chapter 1: Device Overview](EC954/Manuals/User%20manual/EC954_User%20manual_V1.0.md#chapter-1-device-overview)
@@ -428,6 +434,7 @@
 
 ## ER605
 
+- [Edge Router 605 Product Quick Guide](ER605/Manuals/Installation%20Guide/Edge%20Router%20605%20Product%20Quick%20Guide.md): ER605 Installation Guide
 - [Edge Router 605 Product User Manual](ER605/Manuals/User%20manual/ER605_User%20manual_V1.0.md): ER605 User manual v1.0 — The ER605 is a next-generation 5G edge router designed for commercial networking. It integrates 4G/5G wireless networks…
   - [GUI Conventions](ER605/Manuals/User%20manual/ER605_User%20manual_V1.0.md#gui-conventions)
   - [How to Use This Manual](ER605/Manuals/User%20manual/ER605_User%20manual_V1.0.md#how-to-use-this-manual)
@@ -462,6 +469,7 @@
 
 ## ER805
 
+- [Edge Router 805 Quick Installation Guide](ER805/Manuals/Installation%20Guide/Edge%20Router%20805%20Product%20Quick%20Guide.md): ER805 Installation Guide
 - [Edge Router 805 Product User Manual](ER805/Manuals/User%20manual/ER805_User%20manual_V1.0.md): ER805 User manual v1.0 — The Edge Router 805 (ER805) is a next-generation 5G edge router developed by InHand Networks for commercial networking a…
   - [Preliminary Information](ER805/Manuals/User%20manual/ER805_User%20manual_V1.0.md#preliminary-information)
   - [Chapter 1 Getting to Know the Device](ER805/Manuals/User%20manual/ER805_User%20manual_V1.0.md#chapter-1-getting-to-know-the-device)
@@ -524,6 +532,7 @@
 
 ## FWA02
 
+- [5G FWA02 Product Quick Guide](FWA02/Manuals/Installation%20Guide/5G%20FWA02%20Product%20Quick%20Guide.md): FWA02 Installation Guide
 - [5G FWA02 Product User Manual](FWA02/Manuals/User%20manual/FWA02_User%20manual_V1.0.md): FWA02 User manual v1.0 — The 5G FWA02 is a cloud-managed 5G fixed wireless access device developed by InHand Networks. It delivers high-speed, se…
   - [How to Use This Manual](FWA02/Manuals/User%20manual/FWA02_User%20manual_V1.0.md#how-to-use-this-manual)
   - [1.1 Overview](FWA02/Manuals/User%20manual/FWA02_User%20manual_V1.0.md#11-overview)
@@ -548,6 +557,7 @@
 
 ## FWA12
 
+- [5G FWA12 Quick Installation Guide](FWA12/Manuals/Installation%20Guide/5G%20FWA12%20Product%20Quick%20Guide.md): FWA12 Installation Guide
 - [5G FWA12 Product User Manual](FWA12/Manuals/User%20manual/FWA12_User%20manual_V1.0.md): FWA12 User manual v1.0 — The 5G cellular network significantly enhances network flexibility and convenience, enabling enterprises to establish a…
   - [Chapter 1 Getting to Know the Device](FWA12/Manuals/User%20manual/FWA12_User%20manual_V1.0.md#chapter-1-getting-to-know-the-device)
   - [Chapter 2 Installation and First Use](FWA12/Manuals/User%20manual/FWA12_User%20manual_V1.0.md#chapter-2-installation-and-first-use)
@@ -567,6 +577,7 @@
 
 ## IG502
 
+- [IG502 Quick Start Guide](IG502/Manuals/Installation%20Guide/InGateway502%20Quick%20Start%20Guide_V1.0.md): IG502 Installation Guide v1.0
 - [InGateway502 Edge Computing Gateway User Manual](IG502/Manuals/User%20manual/IG502_User%20manual_V1.0.md): IG502 User manual v1.0 — InGateway502 (IG502) is a cost-effective edge computing gateway designed by InHand Networks for industrial IoT applicati…
   - [Front Matter](IG502/Manuals/User%20manual/IG502_User%20manual_V1.0.md#front-matter)
   - [Chapter 1 Knowing the Device](IG502/Manuals/User%20manual/IG502_User%20manual_V1.0.md#chapter-1-knowing-the-device)
@@ -601,6 +612,7 @@
 
 ## IG902
 
+- [Part 1: Quick Installation](IG902/Manuals/Installation%20Guide/InGateway902%20Quick%20Start%20Guide_V1.0.md): IG902 Installation Guide v1.0 — InGateway902 Quick Start Guide
 - [InGateway902 User Manual](IG902/Manuals/User%20manual/IG902_User%20manual_V1.0.md): IG902 User manual v1.0 — The InGateway902 (IG902) series is a new-generation 4G edge computing gateway developed by InHand Networks for the Indus…
   - [GUI Conventions](IG902/Manuals/User%20manual/IG902_User%20manual_V1.0.md#gui-conventions)
   - [How to Use This Manual](IG902/Manuals/User%20manual/IG902_User%20manual_V1.0.md#how-to-use-this-manual)
@@ -639,6 +651,7 @@
 
 ## IR302
 
+- [Industrial Router IR302 Quick Installation Guide](IR302/Manuals/Installation%20Guide/Industrial%20Router%20IR302%20Product%20Quick%20Guide.md): IR302 Installation Guide
 - [Industrial Router IR302 Product User Manual](IR302/Manuals/User%20manual/IR302_User%20manual_V1.0.md): IR302 User manual v1.0 — The InRouter302 is the next generation of industrial cellular routers, integrating 3G, 4G LTE, and advanced security fea…
   - [1.1 Overview](IR302/Manuals/User%20manual/IR302_User%20manual_V1.0.md#11-overview)
   - [1.2 Packing List](IR302/Manuals/User%20manual/IR302_User%20manual_V1.0.md#12-packing-list)
@@ -673,6 +686,7 @@
 
 ## IR305
 
+- [IR305 Industrial Router Quick Install Guide](IR305/Manuals/Installation%20Guide/Industrial%20Router%20IR305%20Product%20Quick%20Guide.md): IR305 Installation Guide
 - [Industrial Router IR305 Product User Manual](IR305/Manuals/User%20manual/IR305_User%20manual_V1.0.md): IR305 User manual v1.0 — The InRouter305 (IR305) is an IoT cellular router that integrates 4G LTE, Wi-Fi, and VPN technologies to provide easy, r…
   - [How to Use This Manual](IR305/Manuals/User%20manual/IR305_User%20manual_V1.0.md#how-to-use-this-manual)
   - [1.1 Overview](IR305/Manuals/User%20manual/IR305_User%20manual_V1.0.md#11-overview)
@@ -696,6 +710,7 @@
 
 ## IR315
 
+- [Industrial Router IR315 Quick Installation Guide](IR315/Manuals/Installation%20Guide/Industrial%20Router%20IR315%20Product%20Quick%20Guide.md): IR315 Installation Guide
 - [Industrial Router IR315 Product User Manual](IR315/Manuals/User%20manual/IR315_User%20manual_V1.0.md): IR315 User manual v1.0 — The InRouter315 (IR315) is an IoT cellular router that integrates 4G LTE, Wi-Fi, and VPN technologies to provide easy, r…
   - [GUI Conventions](IR315/Manuals/User%20manual/IR315_User%20manual_V1.0.md#gui-conventions)
   - [How to Use This Manual](IR315/Manuals/User%20manual/IR315_User%20manual_V1.0.md#how-to-use-this-manual)
@@ -746,6 +761,7 @@
 
 ## IR615-S
 
+- [Industrial Router IR615-S Quick Installation Guide](IR615-S/Manuals/Installation%20Guide/Industrial%20Router%20IR615-S%20Product%20Quick%20Guide.md): IR615-S Installation Guide
 - [Industrial Router IR615-S Product User Manual](IR615-S/Manuals/User%20manual/IR615-S_User%20manual_V1.0.md): IR615-S User manual v1.0 — The InRouter615-S is the next generation of the InRouter600 series cellular router, integrating 3G, 4G LTE, and advanced…
   - [1.1 Overview](IR615-S/Manuals/User%20manual/IR615-S_User%20manual_V1.0.md#11-overview)
   - [1.2 Packing List](IR615-S/Manuals/User%20manual/IR615-S_User%20manual_V1.0.md#12-packing-list)
@@ -793,6 +809,7 @@
 
 ## IR900
 
+- [Industrial Router IR900 Quick Install Manual](IR900/Manuals/Installation%20Guide/Industrial%20Router%20IR900%20Product%20Quick%20Guide.md): IR900 Installation Guide
 - [Industrial Router IR900 Product User Manual](IR900/Manuals/User%20manual/IR900_User%20manual_V1.0.md): IR900 User manual v1.0 — IR900 is a new generation of 4G LTE VPN industrial router developed by InHand Networks. Integrating 4G LTE and various b…
   - [How to Use This Manual](IR900/Manuals/User%20manual/IR900_User%20manual_V1.0.md#how-to-use-this-manual)
   - [1.1 Overview](IR900/Manuals/User%20manual/IR900_User%20manual_V1.0.md#11-overview)

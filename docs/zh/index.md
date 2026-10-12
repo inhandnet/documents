@@ -301,7 +301,7 @@ hide:
         <div class="pm-card__title">IG101</div>
         <ul class="pm-card__links">
         <li><a href="IG101/Manuals/%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97/IG101%E5%BF%AB%E9%80%9F%E5%AE%89%E8%A3%85%E6%89%8B%E5%86%8C_V1.0.html" title="IG101 快速安装手册">安装指南 V1.0</a></li>
-        <li><a href="IG101/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/IG101%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="IG系列用户手册V1.0">用户手册 V1.0</a></li>
+        <li><a href="IG101/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/InGateway101%E7%B3%BB%E5%88%97%E4%BA%A7%E5%93%81%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8CV2.0.html" title="InGateway101系列产品用户手册">用户手册 V2.0</a></li>
         </ul>
       </div>
     </div>

@@ -42,6 +42,7 @@ hide:
         <ul class="pm-card__links">
         <li><a href="CR202/certifications.html" title="CR202 Certifications">Certifications</a></li>
         <li><a href="CR202/drawings.html" title="CR202 Drawings">Drawings</a></li>
+        <li><a href="CR202/Manuals/Installation%20Guide/Portable%20Router%20CR202%20Product%20Quick%20Guide.html" title="CR202 Portable Router Quick Installation Guide">Installation Guide</a></li>
         <li><a href="CR202/Manuals/User%20manual/CR202_User%20manual_V1.0.html" title="Portable Router CR202 Product User Manual">User manual V1.0</a></li>
         </ul>
       </div>
@@ -52,6 +53,7 @@ hide:
         <ul class="pm-card__links">
         <li><a href="CR202-Lite/certifications.html" title="CR202-Lite Certifications">Certifications</a></li>
         <li><a href="CR202-Lite/drawings.html" title="CR202-Lite Drawings">Drawings</a></li>
+        <li><a href="CR202-Lite/Manuals/Installation%20Guide/Portable%20Router%20CR202-Lite%20Product%20Quick%20Guide.html" title="CR202-Lite Quick Installation Guide (UniFi-Style)">Installation Guide</a></li>
         <li><a href="CR202-Lite/Manuals/User%20manual/CR202-Lite_User%20manual_V1.0.html" title="Portable Router CR202-Lite Product User Manual">User manual V1.0</a></li>
         </ul>
       </div>
@@ -62,6 +64,7 @@ hide:
         <ul class="pm-card__links">
         <li><a href="CR202-Pro/certifications.html" title="CR202-Pro Certifications">Certifications</a></li>
         <li><a href="CR202-Pro/drawings.html" title="CR202-Pro Drawings">Drawings</a></li>
+        <li><a href="CR202-Pro/Manuals/Installation%20Guide/Portable%20Router%20CR202-Pro%20Product%20Quick%20Guide.html" title="CR202-Pro Quick Installation Guide (UniFi-Style)">Installation Guide</a></li>
         <li><a href="CR202-Pro/Manuals/User%20manual/CR202-Pro_User%20manual_V1.0.html" title="Portable Router CR202-Pro Product User Manual">User manual V1.0</a></li>
         </ul>
       </div>
@@ -102,6 +105,7 @@ hide:
         <li><a href="EC312/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.html" title="DSA API Documentation V1.0">DSA API Documentation V1.0</a></li>
         <li><a href="EC312/Developer%20Documentation/FlexAPI/ECSeriesAPIDocumentationV1.0.html" title="EC Series API Documentation V1.0">EC Series API Documentation V1.0</a></li>
         <li><a href="EC312/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.html" title="EC Series Linux Software User&#x27;s Manual V1.0">EC Series Linux Software User&#x27;s Manual V1.0</a></li>
+        <li><a href="EC312/Manuals/Installation%20Guide/EC312%20Quick%20Start%20Guide_V1.0.html" title="EC312 Quick Start Guide">Installation Guide V1.0</a></li>
         <li><a href="EC312/Manuals/User%20manual/EC312_User%20manual_V1.0.html" title="EC300 Series Edge Computer User Manual">User manual V1.0</a></li>
         <li><a href="EC312/Use%20Cases/CAN%20to%20AWS%20Solution/CAN%20to%20AWS%20Configuration%20Guide.html" title="EC312 CAN-to-AWS Configuration Manual">EC312 CAN-to-AWS Configuration Manual</a></li>
         <li><a href="EC312/Use%20Cases/CAN%20to%20AWS%20Solution/CAN%20to%20AWS%20Solution.html" title="EC312 CAN-to-AWS Solution">EC312 CAN-to-AWS Solution</a></li>
@@ -152,6 +156,7 @@ hide:
         <li><a href="EC942/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.html" title="DSA API Documentation V1.0">DSA API Documentation V1.0</a></li>
         <li><a href="EC942/Developer%20Documentation/FlexAPI/ECSeriesAPIDocumentationV1.0.html" title="EC Series API Documentation V1.0">EC Series API Documentation V1.0</a></li>
         <li><a href="EC942/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.html" title="EC Series Linux Software User&#x27;s Manual V1.0">EC Series Linux Software User&#x27;s Manual V1.0</a></li>
+        <li><a href="EC942/Manuals/Installation%20Guide/EC942%20Quick%20Start%20Guide_V1.0.html" title="Part One: Quick Installation (Visual Step-by-Step)">Installation Guide V1.0</a></li>
         <li><a href="EC942/Manuals/User%20manual/EC942_User%20manual_V1.0.html" title="EC942 Edge Computer User Manual">User manual V1.0</a></li>
         </ul>
       </div>
@@ -164,6 +169,7 @@ hide:
         <li><a href="EC954/Developer%20Documentation/FlexAPI/DSAAPIDocumentationV1.0.html" title="DSA API Documentation V1.0">DSA API Documentation V1.0</a></li>
         <li><a href="EC954/Developer%20Documentation/FlexAPI/ECSeriesAPIDocumentationV1.0.html" title="EC Series API Documentation V1.0">EC Series API Documentation V1.0</a></li>
         <li><a href="EC954/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.html" title="EC Series Linux Software User&#x27;s Manual V1.0">EC Series Linux Software User&#x27;s Manual V1.0</a></li>
+        <li><a href="EC954/Manuals/Installation%20Guide/EC954%20Quick%20Start%20Guide_V1.0.html" title="EC954 Quick Start Guide">Installation Guide V1.0</a></li>
         <li><a href="EC954/Manuals/User%20manual/EC954_User%20manual_V1.0.html" title="EC954 Edge Computer User Manual">User manual V1.0</a></li>
         </ul>
       </div>
@@ -190,6 +196,7 @@ hide:
         <ul class="pm-card__links">
         <li><a href="ER605/certifications.html" title="ER605 Certifications">Certifications</a></li>
         <li><a href="ER605/drawings.html" title="ER605 Drawings">Drawings</a></li>
+        <li><a href="ER605/Manuals/Installation%20Guide/Edge%20Router%20605%20Product%20Quick%20Guide.html" title="Edge Router 605 Product Quick Guide">Installation Guide</a></li>
         <li><a href="ER605/Manuals/User%20manual/ER605_User%20manual_V1.0.html" title="Edge Router 605 Product User Manual">User manual V1.0</a></li>
         </ul>
       </div>
@@ -216,6 +223,7 @@ hide:
         <ul class="pm-card__links">
         <li><a href="ER805/certifications.html" title="ER805 Certifications">Certifications</a></li>
         <li><a href="ER805/drawings.html" title="ER805 Drawings">Drawings</a></li>
+        <li><a href="ER805/Manuals/Installation%20Guide/Edge%20Router%20805%20Product%20Quick%20Guide.html" title="Edge Router 805 Quick Installation Guide">Installation Guide</a></li>
         <li><a href="ER805/Manuals/User%20manual/ER805_User%20manual_V1.0.html" title="Edge Router 805 Product User Manual">User manual V1.0</a></li>
         <li><a href="ER805/Use%20Cases/Chain-Store-Facility-Networking/case-manual.html" title="Chain Store Facility Networking Solution">Chain Store Facility Networking Solution</a></li>
         <li><a href="ER805/Use%20Cases/Chain-Store-Facility-Networking/configuration-guide.html" title="Configuration Guide">Configuration Guide</a></li>
@@ -265,6 +273,7 @@ hide:
         <ul class="pm-card__links">
         <li><a href="FWA02/certifications.html" title="FWA02 Certifications">Certifications</a></li>
         <li><a href="FWA02/drawings.html" title="FWA02 Drawings">Drawings</a></li>
+        <li><a href="FWA02/Manuals/Installation%20Guide/5G%20FWA02%20Product%20Quick%20Guide.html" title="5G FWA02 Product Quick Guide">Installation Guide</a></li>
         <li><a href="FWA02/Manuals/User%20manual/FWA02_User%20manual_V1.0.html" title="5G FWA02 Product User Manual">User manual V1.0</a></li>
         <li><a href="FWA02/Use%20Cases/Retail%20Store%20Connectivity%20Solution/Retail%20Store%20Failover%20Solution%20Configuration%20Guide.html" title="Retail Store Connectivity — Failover Configuration Guide">Retail Store Connectivity — Failover Configuration Guide</a></li>
         <li><a href="FWA02/Use%20Cases/Retail%20Store%20Connectivity%20Solution/Retail%20Store%20Failover%20Solution.html" title="Retail Store Connectivity Solution">Retail Store Connectivity Solution</a></li>
@@ -277,6 +286,7 @@ hide:
         <ul class="pm-card__links">
         <li><a href="FWA12/certifications.html" title="FWA12 Certifications">Certifications</a></li>
         <li><a href="FWA12/drawings.html" title="FWA12 Drawings">Drawings</a></li>
+        <li><a href="FWA12/Manuals/Installation%20Guide/5G%20FWA12%20Product%20Quick%20Guide.html" title="5G FWA12 Quick Installation Guide">Installation Guide</a></li>
         <li><a href="FWA12/Manuals/User%20manual/FWA12_User%20manual_V1.0.html" title="5G FWA12 Product User Manual">User manual V1.0</a></li>
         </ul>
       </div>
@@ -288,6 +298,7 @@ hide:
         <li><a href="IG502/certifications.html" title="IG502 Certifications">Certifications</a></li>
         <li><a href="IG502/Developer%20Documentation/FlexAPI/IGSeriesAPIDocumentationV1.0.html" title="IG Series API Documentation V1.0">IG Series API Documentation V1.0</a></li>
         <li><a href="IG502/Developer%20Documentation/FlexAPI/IGsupportsIEC.APIDocumentationV1.0.html" title="IG supports IEC.API Documentation V1.0">IG supports IEC.API Documentation V1.0</a></li>
+        <li><a href="IG502/Manuals/Installation%20Guide/InGateway502%20Quick%20Start%20Guide_V1.0.html" title="IG502 Quick Start Guide">Installation Guide V1.0</a></li>
         <li><a href="IG502/Manuals/User%20manual/IG502_User%20manual_V1.0.html" title="InGateway502 Edge Computing Gateway User Manual">User manual V1.0</a></li>
         <li><a href="IG502/Use%20Cases/Digital-Factory-Transformation/case-manual.html" title="Digital Factory Project Solution">Digital Factory Project Solution</a></li>
         <li><a href="IG502/Use%20Cases/Digital-Factory-Transformation/config-manual.html" title="Digital Factory Transformation Gateway Configuration Manual Template">Digital Factory Transformation Gateway Configuration Manual Template</a></li>
@@ -307,6 +318,7 @@ hide:
         <li><a href="IG902/certifications.html" title="IG902 Certifications">Certifications</a></li>
         <li><a href="IG902/Developer%20Documentation/FlexAPI/IGSeriesAPIDocumentationV1.0.html" title="IG Series API Documentation V1.0">IG Series API Documentation V1.0</a></li>
         <li><a href="IG902/Developer%20Documentation/FlexAPI/IGsupportsIEC.APIDocumentationV1.0.html" title="IG supports IEC.API Documentation V1.0">IG supports IEC.API Documentation V1.0</a></li>
+        <li><a href="IG902/Manuals/Installation%20Guide/InGateway902%20Quick%20Start%20Guide_V1.0.html" title="Part 1: Quick Installation">Installation Guide V1.0</a></li>
         <li><a href="IG902/Manuals/User%20manual/IG902_User%20manual_V1.0.html" title="InGateway902 User Manual">User manual V1.0</a></li>
         <li><a href="IG902/Use%20Cases/Secondary-Water-Supply-Remote-Monitoring/case-manual.html" title="Remote Intelligent Management System for Large-City Secondary Water Supply Facilities">Remote Intelligent Management System for Large-City Secondary Water Supply Facilities</a></li>
         <li><a href="IG902/Use%20Cases/Secondary-Water-Supply-Remote-Monitoring/configuration-guide.html" title="Configuration Guide for the Remote Management System of Secondary Water Supply Facilities">Configuration Guide for the Remote Management System of Secondary Water Supply Facilities</a></li>
@@ -351,6 +363,7 @@ hide:
         <ul class="pm-card__links">
         <li><a href="IR302/certifications.html" title="IR302 Certifications">Certifications</a></li>
         <li><a href="IR302/drawings.html" title="IR302 Drawings">Drawings</a></li>
+        <li><a href="IR302/Manuals/Installation%20Guide/Industrial%20Router%20IR302%20Product%20Quick%20Guide.html" title="Industrial Router IR302 Quick Installation Guide">Installation Guide</a></li>
         <li><a href="IR302/Manuals/User%20manual/IR302_User%20manual_V1.0.html" title="Industrial Router IR302 Product User Manual">User manual V1.0</a></li>
         <li><a href="IR302/Use%20Cases/Always-Online%20Connectivity%20Solution/Always-Online%20Connectivity%20Configuration%20Guide.html" title="Always-Online Connectivity Configuration Guide">Always-Online Connectivity Configuration Guide</a></li>
         <li><a href="IR302/Use%20Cases/Always-Online%20Connectivity%20Solution/Always-Online%20Connectivity%20Solution.html" title="Always-Online Connectivity Solution">Always-Online Connectivity Solution</a></li>
@@ -373,6 +386,7 @@ hide:
         <ul class="pm-card__links">
         <li><a href="IR305/certifications.html" title="IR305 Certifications">Certifications</a></li>
         <li><a href="IR305/drawings.html" title="IR305 Drawings">Drawings</a></li>
+        <li><a href="IR305/Manuals/Installation%20Guide/Industrial%20Router%20IR305%20Product%20Quick%20Guide.html" title="IR305 Industrial Router Quick Install Guide">Installation Guide</a></li>
         <li><a href="IR305/Manuals/User%20manual/IR305_User%20manual_V1.0.html" title="Industrial Router IR305 Product User Manual">User manual V1.0</a></li>
         <li><a href="IR305/Use%20Cases/Remote%20Device%20Management%20via%20VZW%20MVPN/Configuration%20Guide.html" title="Remote Device Management via VZW MVPN Configuration Guide">Remote Device Management via VZW MVPN Configuration Guide</a></li>
         <li><a href="IR305/Use%20Cases/Remote%20Device%20Management%20via%20VZW%20MVPN/Remote%20Device%20Management%20via%20VZW%20MVPN.html" title="Remote Device Management via VZW MVPN">Remote Device Management via VZW MVPN</a></li>
@@ -385,6 +399,7 @@ hide:
         <ul class="pm-card__links">
         <li><a href="IR315/certifications.html" title="IR315 Certifications">Certifications</a></li>
         <li><a href="IR315/drawings.html" title="IR315 Drawings">Drawings</a></li>
+        <li><a href="IR315/Manuals/Installation%20Guide/Industrial%20Router%20IR315%20Product%20Quick%20Guide.html" title="Industrial Router IR315 Quick Installation Guide">Installation Guide</a></li>
         <li><a href="IR315/Manuals/User%20manual/IR315_User%20manual_V1.0.html" title="Industrial Router IR315 Product User Manual">User manual V1.0</a></li>
         <li><a href="IR315/Use%20Cases/4G-5G-Driving-Test-Networking/case-manual.html" title="Driving Test Subject 3 4G/5G Networking Solution">Driving Test Subject 3 4G/5G Networking Solution</a></li>
         <li><a href="IR315/Use%20Cases/4G-5G-Driving-Test-Networking/config-manual.html" title="Driving Test Networking Router Configuration Manual">Driving Test Networking Router Configuration Manual</a></li>
@@ -411,6 +426,7 @@ hide:
         <ul class="pm-card__links">
         <li><a href="IR615-S/certifications.html" title="IR615-S Certifications">Certifications</a></li>
         <li><a href="IR615-S/drawings.html" title="IR615-S Drawings">Drawings</a></li>
+        <li><a href="IR615-S/Manuals/Installation%20Guide/Industrial%20Router%20IR615-S%20Product%20Quick%20Guide.html" title="Industrial Router IR615-S Quick Installation Guide">Installation Guide</a></li>
         <li><a href="IR615-S/Manuals/User%20manual/IR615-S_User%20manual_V1.0.html" title="Industrial Router IR615-S Product User Manual">User manual V1.0</a></li>
         <li><a href="IR615-S/Use%20Cases/Rural-Drinking-Water-Remote-Monitoring/case-manual.html" title="Rural Drinking Water Remote Monitoring Solution">Rural Drinking Water Remote Monitoring Solution</a></li>
         <li><a href="IR615-S/Use%20Cases/Rural-Drinking-Water-Remote-Monitoring/configuration-guide.html" title="IR615 IPsec VPN Configuration Guide">IR615 IPsec VPN Configuration Guide</a></li>
@@ -433,6 +449,7 @@ hide:
       <div class="pm-card__body">
         <div class="pm-card__title">IR900</div>
         <ul class="pm-card__links">
+        <li><a href="IR900/Manuals/Installation%20Guide/Industrial%20Router%20IR900%20Product%20Quick%20Guide.html" title="Industrial Router IR900 Quick Install Manual">Installation Guide</a></li>
         <li><a href="IR900/Manuals/User%20manual/IR900_User%20manual_V1.0.html" title="Industrial Router IR900 Product User Manual">User manual V1.0</a></li>
         </ul>
       </div>

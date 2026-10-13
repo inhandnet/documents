@@ -321,6 +321,14 @@ hide:
     </div>
     <div class="pm-card">
       <div class="pm-card__body">
+        <div class="pm-card__title">IG532</div>
+        <ul class="pm-card__links">
+        <li><a href="IG532/certifications.html" title="IG532 Certifications">Certifications</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pm-card">
+      <div class="pm-card__body">
         <div class="pm-card__title">IG902</div>
         <ul class="pm-card__links">
         <li><a href="IG902/certifications.html" title="IG902 Certifications">Certifications</a></li>

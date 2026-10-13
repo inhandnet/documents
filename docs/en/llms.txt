@@ -614,6 +614,10 @@
 
 - [IG504 Certifications](IG504/certifications.md): IG504 certification list (IEC62443) with links to the original certificate files
 
+## IG532
+
+- [IG532 Certifications](IG532/certifications.md): IG532 certification list (IEC62443) with links to the original certificate files
+
 ## IG902
 
 - [Part 1: Quick Installation](IG902/Manuals/Installation%20Guide/InGateway902%20Quick%20Start%20Guide_V1.0.md): IG902 Installation Guide v1.0 — InGateway902 Quick Start Guide

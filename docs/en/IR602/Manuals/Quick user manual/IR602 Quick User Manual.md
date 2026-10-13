@@ -79,6 +79,7 @@ Connect the DC power cable to the power connector on the side of the IR602, then
 To reset the device, follow the steps below to restore it to factory settings:
 1. Power on the device. When the SYS LED just goes off, press and hold the Reset button for 5–10 seconds, then release it. The SYS LED will blink red.
 2. Press and hold the Reset button again until the SYS LED stays steady red, then release the button. The device enters the reset procedure.
+
 ![alt text](img/image-12.png)
 <p align="center"><strong>Figure 6 Reset Button</strong></p>
 

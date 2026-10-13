@@ -188,7 +188,7 @@
   - [6.Start, recover and update](EC312/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#6start-recover-and-update)
   - [7.Programming instructions](EC312/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#7programming-instructions)
 - [EC312 Datasheet v1.0](EC312/Datasheets/General/EC312_Datasheet_V1.0.md): EC312 Datasheet v1.0 — Embrace edge computing, Empower Industrial Digitalization
-- [EC312 Certifications](EC312/certifications.md): EC312 certification list (CE, EN18031, FCC, IC, PTCRB, UL) with links to the original certificate files
+- [EC312 Certifications](EC312/certifications.md): EC312 certification list (CE, EN18031, FCC, IC, IEC62443, PTCRB, UL) with links to the original certificate files
 - [EC312 CAN-to-AWS Configuration Manual](EC312/Use%20Cases/CAN%20to%20AWS%20Solution/CAN%20to%20AWS%20Configuration%20Guide.md): EC312 CAN to AWS Solution
 - [EC312 CAN-to-AWS Solution](EC312/Use%20Cases/CAN%20to%20AWS%20Solution/CAN%20to%20AWS%20Solution.md): EC312 CAN to AWS Solution
 
@@ -600,7 +600,7 @@
   - [system Management](IG502/Developer%20Documentation/FlexAPI/IGSeriesAPIDocumentationV1.0.md#system-management)
 - [IG supports IEC.API Documentation V1.0](IG502/Developer%20Documentation/FlexAPI/IGsupportsIEC.APIDocumentationV1.0.md): IG502 FlexAPI v1.0
 - [IG502 Datasheet v1.0](IG502/Datasheets/General/IG502_Datasheet_V1.0.md): IG502 Datasheet v1.0 — Embrace edge computing to empower industrial digitization
-- [IG502 Certifications](IG502/certifications.md): IG502 certification list (ANATEL, C1D2, CE, FCC, IC, MIC_JATE, PTCRB, RCM, UKCA, UL) with links to the original certificate files
+- [IG502 Certifications](IG502/certifications.md): IG502 certification list (ANATEL, C1D2, CE, FCC, IC, IEC62443, MIC_JATE, PTCRB, RCM, UKCA, UL) with links to the original certificate files
 - [Digital Factory Project Solution](IG502/Use%20Cases/Digital-Factory-Transformation/case-manual.md): IG502 Digital-Factory-Transformation
 - [Digital Factory Transformation Gateway Configuration Manual Template](IG502/Use%20Cases/Digital-Factory-Transformation/config-manual.md): IG502 Digital-Factory-Transformation
 - [IG502 - IEC 60870-5-101 to IEC 60870-5-104 Protocol Conversion](IG502/Use%20Cases/IEC%2060870-5-101%20to%20IEC%2060870-5-104%20Protocol%20Conversion/IEC%2060870-5-101%20to%20IEC%2060870-5-104%20Protocol%20Conversion%20Solution.md): IG502 IEC 60870-5-101 to IEC 60870-5-104 Protocol Conversion
@@ -609,6 +609,10 @@
 - [Smart Networking Solution for Rural Sewage Treatment](IG502/Use%20Cases/Rural-Sewage-Treatment-Smart-Solution/Case-Manual.md): IG502 Rural-Sewage-Treatment-Smart-Solution
 - [Smart Low-Voltage Power Distribution Networking Solution](IG502/Use%20Cases/Smart%20Low-Voltage%20Power%20Distribution%20Solution/case-manual.md): IG502 Smart Low-Voltage Power Distribution Solution
 - [Smart Low-Voltage Power Distribution — Configuration Guide](IG502/Use%20Cases/Smart%20Low-Voltage%20Power%20Distribution%20Solution/config-manual.md): IG502 Smart Low-Voltage Power Distribution Solution
+
+## IG504
+
+- [IG504 Certifications](IG504/certifications.md): IG504 certification list (IEC62443) with links to the original certificate files
 
 ## IG902
 
@@ -641,7 +645,7 @@
   - [system Management](IG902/Developer%20Documentation/FlexAPI/IGSeriesAPIDocumentationV1.0.md#system-management)
 - [IG supports IEC.API Documentation V1.0](IG902/Developer%20Documentation/FlexAPI/IGsupportsIEC.APIDocumentationV1.0.md): IG902 FlexAPI v1.0
 - [IG902 Datasheet v1.0](IG902/Datasheets/General/IG902_Datasheet_V1.0.md): IG902 Datasheet v1.0 — Break down protocol barriers and make industrial digitization more convenient and efficient
-- [IG902 Certifications](IG902/certifications.md): IG902 certification list (ANATEL, CE, FCC, IC, IMDA, MIC_JATE, PTCRB, RCM, UKCA) with links to the original certificate files
+- [IG902 Certifications](IG902/certifications.md): IG902 certification list (ANATEL, CE, FCC, IC, IEC62443, IMDA, MIC_JATE, PTCRB, RCM, UKCA) with links to the original certificate files
 - [Configuration Guide for the Remote Management System of Secondary Water Supply Facilities](IG902/Use%20Cases/Secondary-Water-Supply-Remote-Monitoring/configuration-guide.md): IG902 Secondary-Water-Supply-Remote-Monitoring
 - [Remote Intelligent Management System for Large-City Secondary Water Supply Facilities](IG902/Use%20Cases/Secondary-Water-Supply-Remote-Monitoring/case-manual.md): IG902 Secondary-Water-Supply-Remote-Monitoring
 

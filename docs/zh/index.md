@@ -338,6 +338,7 @@ hide:
       <div class="pm-card__body">
         <div class="pm-card__title">IG504</div>
         <ul class="pm-card__links">
+        <li><a href="IG504/certifications.html" title="IG504 认证证书">认证证书</a></li>
         <li><a href="IG504/Manuals/%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97/IG504%E5%BF%AB%E9%80%9F%E5%AE%89%E8%A3%85%E6%89%8B%E5%86%8CV1.0.html" title="IG504 快速安装手册">安装指南 V1.0</a></li>
         <li><a href="IG504/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/IG504%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="IG系列用户手册V1.0">用户手册 V1.0</a></li>
         </ul>

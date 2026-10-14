@@ -327,10 +327,10 @@ hide:
     </div>
     <div class="pm-card">
       <div class="pm-card__body">
-        <div class="pm-card__title">IG502-lite</div>
+        <div class="pm-card__title">IG502-LITE</div>
         <ul class="pm-card__links">
-        <li><a href="IG502-lite/Manuals/%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97/IG502-lite%E5%BF%AB%E9%80%9F%E5%AE%89%E8%A3%85%E6%89%8B%E5%86%8C_V1.0.html" title="IG502-LITE快速安装手册V1.0">安装指南 V1.0</a></li>
-        <li><a href="IG502-lite/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/IG502-lite%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="IG502 边缘计算网关用户手册">用户手册 V1.0</a></li>
+        <li><a href="IG502-LITE/Manuals/%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97/IG502-lite%E5%BF%AB%E9%80%9F%E5%AE%89%E8%A3%85%E6%89%8B%E5%86%8C_V1.0.html" title="IG502-LITE快速安装手册V1.0">安装指南 V1.0</a></li>
+        <li><a href="IG502-LITE/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/IG502-lite%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="IG502 边缘计算网关用户手册">用户手册 V1.0</a></li>
         </ul>
       </div>
     </div>

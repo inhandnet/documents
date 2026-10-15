@@ -75,6 +75,10 @@ extra_javascript:
 plugins:
   - search
   - awesome-nav
+  - git-revision-date-localized:
+      type: date
+      enable_creation_date: true
+      fallback_to_build_date: false
   - exclude:
       glob:
         - "**/Datasheets/**"
@@ -86,4 +90,7 @@ plugins:
         # EOL list is served to AI via llms.txt / md twins only, no HTML page
         # (dir sits at the language root, so no **/ prefix — it would not match)
         - "EOL Products/**"
+
+hooks:
+  - hooks/sitemap_lastmod.py
 

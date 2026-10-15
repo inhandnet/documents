@@ -74,6 +74,10 @@ extra_javascript:
 plugins:
   - search
   - awesome-nav
+  - git-revision-date-localized:
+      type: date
+      enable_creation_date: true
+      fallback_to_build_date: false
   - exclude:
       glob:
         - "**/Datasheets/**"
@@ -85,4 +89,7 @@ plugins:
         # EOL 清单只进 llms.txt / md 孪生（供 AI 问答），不出 HTML 页面
         # （目录在语言根下，glob 不能带 **/ 前缀，否则匹配不上）
         - "EOL Products/**"
+
+hooks:
+  - hooks/sitemap_lastmod.py
 

@@ -176,7 +176,7 @@
 | Operating Temperature | Models with Wi-Fi: -20 °C ~ 70 °C (-4 °F ~ 158 °F) <br> Models without Wi-Fi: -40 °C ~ 70 °C (-40 °F ~ 158 °F) |
 | Ambient Humidity | 5~95% RH non-condensing |
 | Physical Characteristics | IEC60068-2-27 shock resistance<br/>IEC60068-2-6 vibration resistance<br/>IEC60068-2-32 drop resistance |
-| EMC Standard | EN61000-4-2, level 3, Static<br/>EN61000-4-3, level 3, Radiation Electric Field<br/>EN61000-4-4, level 3, Pulsed Electric Field<br/>EN61000-4-5, level 3, Surge<br/>EN61000-4-6, level 3, Conducted Distubance Immunity<br/>EN61000-4-8, Power Frequency Field Resistance, horizontal / vertical 400A/m (>level 2)<br/>EN61000-4-12, level 3, Shock Wave Resistance |
+| EMC Standard | EN61000-4-2, level 3, Static<br/>EN61000-4-3, level 3, Radiation Electric Field<br/>EN61000-4-4, level 3, Pulsed Electric Field<br/>EN61000-4-5, level 3, Surge<br/>EN61000-4-6, level 3, Conducted Disturbance Immunity<br/>EN61000-4-8, Power Frequency Field Resistance, horizontal / vertical 400A/m (>level 2)<br/>EN61000-4-12, level 3, Shock Wave Resistance |
 | Certifications | CE, UKCA, FCC, PTCRB, UL, C1D2 (Class1 Division 2), MIC&JATE, VerizonWireless, AT&T, IC, RCM, NBTC, ANATEL, IEC62443-4-2, IEC61850-3 |
 
 # <span style="color: green;">4. Software Specifications</span>

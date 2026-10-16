@@ -139,7 +139,7 @@
 | File System | Debian core root filesystem |
 | Package Manager | Debian package manager |
 | <span style="color: green;">**Network Features**</span> |  |
-| Network Tpye | LTE Cat.4 (5G by model) |
+| Network Type | LTE Cat.4 (5G by model) |
 | Network Access | APN, VPDN |
 | Access Authentication | CHAP/PAP |
 | WAN Protocols | Static IP, DHCP |

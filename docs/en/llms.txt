@@ -1038,6 +1038,14 @@
 - [MDT600 Datasheet v1.0](MDT600/Datasheets/General/MDT600_Datasheet_V1.0.md): MDT600 Datasheet v1.0 — Vehicle HMI &amp; Edge AI · 5G &amp; Wi-Fi 6 Connectivity
 - [MDT600 Certifications](MDT600/certifications.md): MDT600 certification list (E-Mark) with links to the original certificate files
 
+## MG301
+
+- [MG301 Datasheet v1.3](MG301/Datasheets/General/MG301_Datasheet_V1.3.md): MG301 Datasheet v1.3 — MG301 is a wireless metering gateway designed according to the requirements of the Automatic Meter Reading System for co…
+
+## MG301-M
+
+- [MG301-M Datasheet v2.0](MG301-M/Datasheets/General/MG301-M_Datasheet_V2.0.md): MG301-M Datasheet v2.0 — MG301 is a wireless modem designed according to the requirements of the Automatic Meter Reading System (OSOS) for commun…
+
 ## Mo 62A
 
 - [Mo 62A Hardware Interface Description](Mo%2062A/Manuals/Installation%20Guide/Mo%2062A%20Hardware%20Interface%20Description-V1%200.md): Mo 62A Installation Guide v1

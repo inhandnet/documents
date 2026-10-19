@@ -2921,6 +2921,36 @@
         "zh"
       ],
       "public": true
+    },
+    {
+      "id": "MG301",
+      "kind": "model",
+      "display_names": {
+        "en": "MG301"
+      },
+      "aliases": [],
+      "source_folders": [
+        "MG301"
+      ],
+      "expected_languages": [
+        "en"
+      ],
+      "public": true
+    },
+    {
+      "id": "MG301-M",
+      "kind": "model",
+      "display_names": {
+        "en": "MG301-M"
+      },
+      "aliases": [],
+      "source_folders": [
+        "MG301-M"
+      ],
+      "expected_languages": [
+        "en"
+      ],
+      "public": true
     }
   ]
 }

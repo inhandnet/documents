@@ -765,6 +765,7 @@
   - [4.1 Device Monitoring](IR602/Manuals/User%20manual/IR602%20User%20manual.md#41-device-monitoring)
   - [4.2 Status](IR602/Manuals/User%20manual/IR602%20User%20manual.md#42-status)
 - [IR602 Datasheet v1.2](IR602/Datasheets/General/IR602_Datasheet_V1.2.md): IR602 Datasheet v1.2 — Lightweight 5G Connectivity, Build Industrial Digital Foundation
+- [IR602 Certifications](IR602/certifications.md): IR602 certification list (FCC, IC) with links to the original certificate files
 - [IR602 Drawings](IR602/drawings.md): IR602 mechanical drawings (2D, 3D) with links to the original drawing files
 
 ## IR615-S
@@ -1075,6 +1076,7 @@
   - [Appendix: Safety Precautions](ODU12/Manuals/User%20manual/ODU12_User%20manual.md#appendix-safety-precautions)
   - [FAQ](ODU12/Manuals/User%20manual/ODU12_User%20manual.md#faq)
 - [ODU12 Datasheet v1.1](ODU12/Datasheets/General/ODU12_Datasheet_V1.1.md): ODU12 Datasheet v1.1 — Minimalist Design, Powerful Connectivity
+- [ODU12 Certifications](ODU12/certifications.md): ODU12 certification list (FCC, IC, PTCRB) with links to the original certificate files
 - [ODU12 Drawings](ODU12/drawings.md): ODU12 mechanical drawings (2D, 3D) with links to the original drawing files
 
 ## ODU2002

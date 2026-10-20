@@ -131,6 +131,7 @@
 
 ## EAP600
 
+- [Enterprise AP600 Quick Installation Guide](EAP600/Manuals/Installation%20Guide/enterprise-ap600-product-quick-guide.md): EAP600 Installation Guide — This manual is for the installation and operation of the EAP600 of InHand Networks. Before installation, please confirm…
 - [EAP600 Product User Manual](EAP600/Manuals/User%20manual/EAP600_User%20manual_V1.0.md): EAP600 User manual v1.0 — The EAP600 is a Wi-Fi 6 Access Point developed by InHand Networks for the commercial sector. It delivers secure and high…
   - [Front Matter](EAP600/Manuals/User%20manual/EAP600_User%20manual_V1.0.md#front-matter)
   - [Chapter 1: Understanding the Device](EAP600/Manuals/User%20manual/EAP600_User%20manual_V1.0.md#chapter-1-understanding-the-device)
@@ -194,6 +195,17 @@
 
 ## EC312-LoRaWAN
 
+- [EC300-LoRaWAN Series LoRaWAN Gateway User Manual](EC312-LoRaWAN/Manuals/User%20manual/EC300-LoRaWAN%20User%20Manual_V1.0.md): EC312-LoRaWAN User manual v1.0 — The EC300-LoRaWAN is an Arm-based LoRaWAN gateway running Debian 11, pre-installed with IEOS, a management suite develop…
+  - [Front Matter](EC312-LoRaWAN/Manuals/User%20manual/EC300-LoRaWAN%20User%20Manual_V1.0.md#front-matter)
+  - [1 Getting to Know the Device](EC312-LoRaWAN/Manuals/User%20manual/EC300-LoRaWAN%20User%20Manual_V1.0.md#1-getting-to-know-the-device)
+  - [2 Installation and First Use](EC312-LoRaWAN/Manuals/User%20manual/EC300-LoRaWAN%20User%20Manual_V1.0.md#2-installation-and-first-use)
+  - [3 Common Configuration Scenarios](EC312-LoRaWAN/Manuals/User%20manual/EC300-LoRaWAN%20User%20Manual_V1.0.md#3-common-configuration-scenarios)
+  - [4 Function Description and Parameter Reference](EC312-LoRaWAN/Manuals/User%20manual/EC300-LoRaWAN%20User%20Manual_V1.0.md#4-function-description-and-parameter-reference)
+  - [5 Typical Application](EC312-LoRaWAN/Manuals/User%20manual/EC300-LoRaWAN%20User%20Manual_V1.0.md#5-typical-application)
+  - [Appendix Troubleshooting](EC312-LoRaWAN/Manuals/User%20manual/EC300-LoRaWAN%20User%20Manual_V1.0.md#appendix-troubleshooting)
+  - [Appendix Safety Precautions](EC312-LoRaWAN/Manuals/User%20manual/EC300-LoRaWAN%20User%20Manual_V1.0.md#appendix-safety-precautions)
+  - [Appendix Command Line Reference](EC312-LoRaWAN/Manuals/User%20manual/EC300-LoRaWAN%20User%20Manual_V1.0.md#appendix-command-line-reference)
+  - [FAQ](EC312-LoRaWAN/Manuals/User%20manual/EC300-LoRaWAN%20User%20Manual_V1.0.md#faq)
 - [EC312-LoRaWAN Datasheet v1.0](EC312-LoRaWAN/Datasheets/General/EC312-LoRaWAN_Datasheet_V1.0.md): EC312-LoRaWAN Datasheet v1.0 — Embrace LPWAN, Empower Industrial Digitalization
 
 ## EC3320
@@ -1081,6 +1093,7 @@
 
 ## ODU2002
 
+- [5G ODU2002 Quick Installation Guide](ODU2002/Manuals/Installation%20Guide/odu2002-product-quick-guide.md): ODU2002 Installation Guide
 - [5G ODU2002 Product User Manual](ODU2002/Manuals/User%20manual/ODU2002_User%20manual_V1.0.md): ODU2002 User manual v1.0 — The ODU2002 is a 5G outdoor unit (ODU) in the InHand cloud-managed 5G ODU 2000 series. It is designed to provide high-sp…
   - [Front Matter](ODU2002/Manuals/User%20manual/ODU2002_User%20manual_V1.0.md#front-matter)
   - [1.1 Overview](ODU2002/Manuals/User%20manual/ODU2002_User%20manual_V1.0.md#11-overview)
@@ -1158,6 +1171,14 @@
 
 ## VR624
 
+- [Vehicle Router VR624 Product User Manual](VR624/Manuals/User%20manual/VR624_User%20manual_V1.0.md): VR624 User manual v1.0 — The InVehicle Router 624 (VR624) series is an industrial-grade mobile network access solution, suitable for multi-field…
+  - [Front Matter](VR624/Manuals/User%20manual/VR624_User%20manual_V1.0.md#front-matter)
+  - [1 Getting to Know the Device](VR624/Manuals/User%20manual/VR624_User%20manual_V1.0.md#1-getting-to-know-the-device)
+  - [2 Installation and First-Time Use](VR624/Manuals/User%20manual/VR624_User%20manual_V1.0.md#2-installation-and-first-time-use)
+  - [3 Common Configuration Scenarios](VR624/Manuals/User%20manual/VR624_User%20manual_V1.0.md#3-common-configuration-scenarios)
+  - [4 Function Description and Parameter Reference](VR624/Manuals/User%20manual/VR624_User%20manual_V1.0.md#4-function-description-and-parameter-reference)
+  - [Appendix A Troubleshooting](VR624/Manuals/User%20manual/VR624_User%20manual_V1.0.md#appendix-a-troubleshooting)
+  - [Appendix B Safety Precautions](VR624/Manuals/User%20manual/VR624_User%20manual_V1.0.md#appendix-b-safety-precautions)
 - [VR624 Datasheet v1.1](VR624/Datasheets/General/VR624_Datasheet_V1.1.md): VR624 Datasheet v1.1 — High-speed 5G, Wi-Fi 6, Cloud-managed
 - [VR624 Certifications](VR624/certifications.md): VR624 certification list (CE, E-Mark, EN50155, EN61373) with links to the original certificate files
 

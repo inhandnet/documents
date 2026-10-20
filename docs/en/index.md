@@ -93,6 +93,7 @@ hide:
         <ul class="pm-card__links">
         <li><a href="EAP600/certifications.html" title="EAP600 Certifications">Certifications</a></li>
         <li><a href="EAP600/drawings.html" title="EAP600 Drawings">Drawings</a></li>
+        <li><a href="EAP600/Manuals/Installation%20Guide/enterprise-ap600-product-quick-guide.html" title="Enterprise AP600 Quick Installation Guide">Installation Guide</a></li>
         <li><a href="EAP600/Manuals/User%20manual/EAP600_User%20manual_V1.0.html" title="EAP600 Product User Manual">User manual V1.0</a></li>
         </ul>
       </div>
@@ -109,6 +110,14 @@ hide:
         <li><a href="EC312/Manuals/User%20manual/EC312_User%20manual_V1.0.html" title="EC300 Series Edge Computer User Manual">User manual V1.0</a></li>
         <li><a href="EC312/Use%20Cases/CAN%20to%20AWS%20Solution/CAN%20to%20AWS%20Configuration%20Guide.html" title="EC312 CAN-to-AWS Configuration Manual">EC312 CAN-to-AWS Configuration Manual</a></li>
         <li><a href="EC312/Use%20Cases/CAN%20to%20AWS%20Solution/CAN%20to%20AWS%20Solution.html" title="EC312 CAN-to-AWS Solution">EC312 CAN-to-AWS Solution</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pm-card">
+      <div class="pm-card__body">
+        <div class="pm-card__title">EC312-LoRaWAN</div>
+        <ul class="pm-card__links">
+        <li><a href="EC312-LoRaWAN/Manuals/User%20manual/EC300-LoRaWAN%20User%20Manual_V1.0.html" title="EC300-LoRaWAN Series LoRaWAN Gateway User Manual">User manual V1.0</a></li>
         </ul>
       </div>
     </div>
@@ -680,6 +689,7 @@ hide:
         <ul class="pm-card__links">
         <li><a href="ODU2002/certifications.html" title="ODU2002 Certifications">Certifications</a></li>
         <li><a href="ODU2002/drawings.html" title="ODU2002 Drawings">Drawings</a></li>
+        <li><a href="ODU2002/Manuals/Installation%20Guide/odu2002-product-quick-guide.html" title="5G ODU2002 Quick Installation Guide">Installation Guide</a></li>
         <li><a href="ODU2002/Manuals/User%20manual/ODU2002_User%20manual_V1.0.html" title="5G ODU2002 Product User Manual">User manual V1.0</a></li>
         </ul>
       </div>
@@ -720,6 +730,7 @@ hide:
         <div class="pm-card__title">VR624</div>
         <ul class="pm-card__links">
         <li><a href="VR624/certifications.html" title="VR624 Certifications">Certifications</a></li>
+        <li><a href="VR624/Manuals/User%20manual/VR624_User%20manual_V1.0.html" title="Vehicle Router VR624 Product User Manual">User manual V1.0</a></li>
         </ul>
       </div>
     </div>

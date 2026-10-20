@@ -397,6 +397,7 @@ hide:
         <div class="pm-card__title">IR202</div>
         <ul class="pm-card__links">
         <li><a href="IR202/certifications.html" title="IR202 认证证书">认证证书</a></li>
+        <li><a href="IR202/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/IR202-Lite%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="北京映翰通工业路由器IR202-Lite系列产品用户手册">用户手册 V1.0</a></li>
         <li><a href="IR202/Use%20Cases/%E5%85%85%E7%94%B5%E6%A1%A9%E8%81%94%E7%BD%91%E5%BA%94%E7%94%A8%E6%A1%88%E4%BE%8B/%E6%96%B9%E6%A1%88%E6%89%8B%E5%86%8C.html" title="充电桩联网解决方案">充电桩联网应用案例</a></li>
         </ul>
       </div>
@@ -542,6 +543,8 @@ hide:
         <div class="pm-card__title">Mo 62A</div>
         <ul class="pm-card__links">
         <li><a href="Mo%2062A/Manuals/%E5%BF%AB%E9%80%9F%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/Mo%2062A%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8.html" title="Mo 62A 快速入门指南">快速用户手册</a></li>
+        <li><a href="Mo%2062A/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/MO%2062A%20SDK%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C.html" title="AArch64">AArch64</a></li>
+        <li><a href="Mo%2062A/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/MO%2062A%E7%A1%AC%E4%BB%B6%E6%8E%A5%E5%8F%A3%E8%AF%B4%E6%98%8E.html" title="MO_62A硬件接口说明">MO_62A硬件接口说明</a></li>
         </ul>
       </div>
     </div>

@@ -1,4 +1,4 @@
-<div style="width: 100%; height: 100%; background: url(images/MG301-M-cover.jpg); background-size: 100% 100%;">
+<div style="width: 100%; height: 100%; background: url(images/MG301-M-cover.png); background-size: 100% 100%;">
   <div style="height:75%;"><div style="width:35%; padding:40px 40px;"></div><div style="font-size:28px; font-weight:bold; color:#000; text-align:center; margin-bottom:60px;">Enabling power meter reading applications</div></div>
   <div style="padding-left:40px;"><div style="font-size:40px; font-weight:bold; color:#000; margin-bottom:30px;">MG301-M Series Modular MASS Modem</div><div style="display:flex; flex-wrap:wrap; gap:16px;">
     <div style="width:200px;background-color:#4CAF50;color:white;padding:8px;border-radius:6px;font-size:18px;">· LTE CAT 1</div>

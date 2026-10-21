@@ -1,4 +1,4 @@
-<div style="width: 100%; height: 100%; background: url(images/); background-size: 100% 100%;">
+<div style="width: 100%; height: 100%; background: url(images/MG301-cover.jpg); background-size: 100% 100%;">
   <div style="height:75%;"><div style="width:35%; padding:40px 40px;"></div><div style="font-size:28px; font-weight:bold; color:#000; text-align:center; margin-bottom:60px;">Enabling Power Meter Reading Applications</div></div>
   <div style="padding-left:40px;"><div style="font-size:40px; font-weight:bold; color:#000; margin-bottom:30px;">MG301 Series Metering Gateway</div><div style="display:flex; flex-wrap:wrap; gap:16px;">
     <div style="width:200px;background-color:#4CAF50;color:white;padding:8px;border-radius:6px;font-size:18px;">· LTE CAT 1/4</div>
@@ -46,7 +46,7 @@ MG301 is a wireless metering gateway designed according to the requirements of t
 <div style="display:flex; align-items:end; flex-wrap:wrap; justify-content:space-between;">
   <div style="width:100%;"><img src="images/MG301-dimensions.png" width="100%" alt="MG301 dimension drawing placeholder" /></div>
 </div>
-**Dimension (specification table):** 130 × 125 × 61 mm.
+Dimension (specification table): 130 × 125 × 61 mm.
 
 <div style="page-break-after: always;"></div>
 
@@ -68,24 +68,25 @@ MG301 is a wireless metering gateway designed according to the requirements of t
 
 ## <span style="color: green;">LED Indicators</span>
 
-<div style="display: flex; align-items: start; flex-wrap: wrap; justify-content: space-between;">
-  <div style="width: 35%;">
-    <img src="images/MG301-led.png" width="100%" alt="MG301 LED indicators image placeholder" />
+<div style="display: grid; grid-template-columns: minmax(0, 32%) minmax(0, 1fr); gap: 20px; align-items: stretch; width: 100%; break-inside: avoid;">
+  <div style="min-width: 0; position: relative; aspect-ratio: 464 / 1269;">
+    <img src="images/MG301-led.png" alt="MG301 LED indicators" style="display: block; position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; object-position: center top; margin: 0; padding: 0; border: 0;" />
   </div>
-  <div style="width: 55%;">
-    <table>
+  <div style="min-width: 0;">
+    <table style="width: 100%; height: 100%; margin: 0; table-layout: fixed; border-collapse: collapse; box-sizing: border-box; font-size: 13px; line-height: 1.45;">
+      <colgroup><col style="width: 96px;" /><col /></colgroup>
       <thead>
-        <tr><th>LED</th><th>Status Description</th></tr>
+        <tr><th style="width: 96px; box-sizing: border-box; padding: 8px 10px; white-space: nowrap; word-break: normal; overflow-wrap: normal; text-align: left;">LED</th><th style="padding: 8px 10px; text-align: left;">Status Description</th></tr>
       </thead>
       <tbody>
-        <tr><td>PWR</td><td>Steady on: The power supply is normal<br/>Off: No external power supply is available</td></tr>
-        <tr><td>Relay-2</td><td>Steady on: Closing</td></tr>
-        <tr><td>Relay-1</td><td>Steady on: Closing</td></tr>
-        <tr><td>RS485-2</td><td>Blinking: Data is being exchanged through serial port 2<br/>Off: No data is being exchanged over serial port 2</td></tr>
-        <tr><td>RS485-1</td><td>Blinking: Data is being exchanged through serial port 1<br/>Off: No data is being exchanged over serial port 1</td></tr>
-        <tr><td>IP</td><td>Steady on: The device obtains an IP address for network communication<br/>Off: The device does not obtain an IP address for network communication</td></tr>
-        <tr><td>GPRS</td><td>Steady on: 2G<br/>Off: Not 2G</td></tr>
-        <tr><td>4G</td><td>Steady on: 4G<br/>Off: Not 4G</td></tr>
+        <tr><td style="padding: 8px 10px; white-space: nowrap; word-break: normal; overflow-wrap: normal; vertical-align: middle;">PWR</td><td style="padding: 8px 10px; word-break: normal; overflow-wrap: break-word; vertical-align: middle;">Steady on: The power supply is normal<br/>Off: No external power supply is available</td></tr>
+        <tr><td style="padding: 8px 10px; white-space: nowrap; word-break: normal; overflow-wrap: normal; vertical-align: middle;">Relay-2</td><td style="padding: 8px 10px; word-break: normal; overflow-wrap: break-word; vertical-align: middle;">Steady on: Closing</td></tr>
+        <tr><td style="padding: 8px 10px; white-space: nowrap; word-break: normal; overflow-wrap: normal; vertical-align: middle;">Relay-1</td><td style="padding: 8px 10px; word-break: normal; overflow-wrap: break-word; vertical-align: middle;">Steady on: Closing</td></tr>
+        <tr><td style="padding: 8px 10px; white-space: nowrap; word-break: normal; overflow-wrap: normal; vertical-align: middle;">RS485-2</td><td style="padding: 8px 10px; word-break: normal; overflow-wrap: break-word; vertical-align: middle;">Blinking: Data is being exchanged through serial port 2<br/>Off: No data is being exchanged over serial port 2</td></tr>
+        <tr><td style="padding: 8px 10px; white-space: nowrap; word-break: normal; overflow-wrap: normal; vertical-align: middle;">RS485-1</td><td style="padding: 8px 10px; word-break: normal; overflow-wrap: break-word; vertical-align: middle;">Blinking: Data is being exchanged through serial port 1<br/>Off: No data is being exchanged over serial port 1</td></tr>
+        <tr><td style="padding: 8px 10px; white-space: nowrap; word-break: normal; overflow-wrap: normal; vertical-align: middle;">IP</td><td style="padding: 8px 10px; word-break: normal; overflow-wrap: break-word; vertical-align: middle;">Steady on: The device obtains an IP address for network communication<br/>Off: The device does not obtain an IP address for network communication</td></tr>
+        <tr><td style="padding: 8px 10px; white-space: nowrap; word-break: normal; overflow-wrap: normal; vertical-align: middle;">GPRS</td><td style="padding: 8px 10px; word-break: normal; overflow-wrap: break-word; vertical-align: middle;">Steady on: 2G<br/>Off: Not 2G</td></tr>
+        <tr><td style="padding: 8px 10px; white-space: nowrap; word-break: normal; overflow-wrap: normal; vertical-align: middle;">4G</td><td style="padding: 8px 10px; word-break: normal; overflow-wrap: break-word; vertical-align: middle;">Steady on: 4G<br/>Off: Not 4G</td></tr>
       </tbody>
     </table>
   </div>

@@ -25,7 +25,7 @@ MG301 is a wireless metering gateway designed according to the requirements of t
 | Platform Access | MQTT/MQTTS/MASS/TeleMetriX Head-End |
 | Interfaces | 2 × isolated RS485; 1 × USB2.0 Type-C; 4 × DI; 2 × DO; 2 × latching relay outputs (optional); 1 × 100Mbps Ethernet (optional) |
 | Power | 55–270 VAC, nominal 230 V; 20 VA (max.) |
-| Dimensions | 130 × 125 × 68 mm (specification table) |
+| Dimensions | 130 × 125 × 61 mm |
 | Operating Environment | -30 to 70 °C; 0–93% ambient humidity |
 | Protection | IP40 |
 
@@ -33,38 +33,50 @@ MG301 is a wireless metering gateway designed according to the requirements of t
 
 # <span style="color: green;">2. Features and Advantages</span>
 
-| Feature | Description |
-| --- | --- |
-| Stable Communication | 2G/4G (LTE CAT 1)/NB-IoT (optional); independent hardware and software watchdog; multilevel link detection and communication self-healing |
-| Rich Interfaces | 2 × RS-485; 1 × USB2.0; 2 × latching relay outputs; 4 × DI + 2 × DO; 1 × 10/100Mbps Ethernet (optional) |
-| Performance and Platform | MIPS24KEc (575/580 MHz); 128MB RAM; 64MB Flash |
-| Multiple Protocols | IEC62056-21; DLMS/COSEM; Modbus RTU; MQTT/MQTTS; MASS; TeleMetriX Head-End; FTP |
-| Industrial-grade Design | Operating temperature -30 to 70 °C; +55 to 270 VAC power input; IP40; Li-ion battery or supercapacitor |
+<table style="table-layout: fixed; width: 100%;">
+  <colgroup><col style="width: 187.6000px;" /><col /></colgroup>
+  <thead>
+    <tr><th>Feature</th><th>Description</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Stable Communication</td><td>2G/4G (LTE CAT 1)/NB-IoT (optional); independent hardware and software watchdog; multilevel link detection and communication self-healing</td></tr>
+    <tr><td>Rich Interfaces</td><td>2 × RS-485; 1 × USB2.0; 2 × latching relay outputs; 4 × DI + 2 × DO; 1 × 10/100Mbps Ethernet (optional)</td></tr>
+    <tr><td>Performance and Platform</td><td>MIPS24KEc (575/580 MHz); 128MB RAM; 64MB Flash</td></tr>
+    <tr><td>Multiple Protocols</td><td>IEC62056-21; DLMS/COSEM; Modbus RTU; MQTT/MQTTS; MASS; TeleMetriX Head-End; FTP</td></tr>
+    <tr><td>Industrial-grade Design</td><td>Operating temperature -30 to 70 °C; +55 to 270 VAC power input; IP40; Li-ion battery or supercapacitor</td></tr>
+  </tbody>
+</table>
 
 # <span style="color: green;">3. Product Dimensions</span>
 
 <div style="display:flex; align-items:end; flex-wrap:wrap; justify-content:space-between;">
   <div style="width:100%;"><img src="images/MG301-dimensions.png" width="100%" alt="MG301 dimension drawing placeholder" /></div>
 </div>
-Dimension (specification table): 130 × 125 × 61 mm.
+Dimensions: 130 × 125 × 61 mm.
 
 <div style="page-break-after: always;"></div>
 
 # <span style="color: green;">4. Product Interfaces</span>
 
-| Interface | Description |
-| --- | --- |
-| Ethernet | 1 × 100Mbps Ethernet port, RJ45 connector (optional) |
-| Cellular | 4G cellular module, CAT1/CAT4 |
-| USB | 1 × USB2.0, Type-C |
-| Serial Port | 2 × RS485, isolated, terminal-block connector; RS485: Data+, Data-, GND |
-| SIM Card | Mini SIM-2FF card, supports 1.8/3V SIM/UIM card; eSIM |
-| Antenna Connector | 1 × Cellular Antenna |
-| Button | 1 × System reset button |
-| Open Lid Detection | 1 × Open Cover Inspection key |
-| Relay Outputs | 2 × relay outputs: 240VAC/5A, latching relay output (optional) |
-| Digital Inputs | 4 × digital inputs; isolation voltage: 3500 V; dry contact: Logic 1, Open; Logic 0, Close to ground; wet contact: VIH(max.) = 30 VDC, VIH(min.) = 5 VDC, VIL(max.) = 2 VDC |
-| Digital Outputs | 2 × digital outputs; isolation voltage: 3500 V; supply voltage: 20 V max.; sink current: 0.5 A max. |
+<table style="table-layout: fixed; width: 100%;">
+  <colgroup><col style="width: 180.6000px;" /><col /></colgroup>
+  <thead>
+    <tr><th>Interface</th><th>Description</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Ethernet</td><td>1 × 100Mbps Ethernet port, RJ45 connector (optional)</td></tr>
+    <tr><td>Cellular</td><td>4G cellular module, CAT1/CAT4</td></tr>
+    <tr><td>USB</td><td>1 × USB2.0, Type-C</td></tr>
+    <tr><td>Serial Port</td><td>2 × RS485, isolated, terminal-block connector; RS485: Data+, Data-, GND</td></tr>
+    <tr><td>SIM Card</td><td>Mini SIM-2FF card, supports 1.8/3V SIM/UIM card; eSIM</td></tr>
+    <tr><td>Antenna Connector</td><td>1 × Cellular Antenna</td></tr>
+    <tr><td>Button</td><td>1 × System reset button</td></tr>
+    <tr><td>Open Lid Detection</td><td>1 × Open Cover Inspection key</td></tr>
+    <tr><td>Relay Outputs</td><td>2 × relay outputs: 240VAC/5A, latching relay output (optional)</td></tr>
+    <tr><td>Digital Inputs</td><td>4 × digital inputs; isolation voltage: 3500 V; dry contact: Logic 1, Open; Logic 0, Close to ground; wet contact: VIH(max.) = 30 VDC, VIH(min.) = 5 VDC, VIL(max.) = 2 VDC</td></tr>
+    <tr><td>Digital Outputs</td><td>2 × digital outputs; isolation voltage: 3500 V; supply voltage: 20 V max.; sink current: 0.5 A max.</td></tr>
+  </tbody>
+</table>
 
 ## <span style="color: green;">LED Indicators</span>
 
@@ -122,7 +134,7 @@ Dimension (specification table): 130 × 125 × 61 mm.
 | <span style="color: green;">**Mechanical Characteristics**</span> | |
 | Mounting | DIN rail / mounting ear (default) |
 | Enclosure Material | Plastic |
-| Dimension | 130 × 125 × 61 mm |
+| Dimensions | 130 × 125 × 61 mm |
 | Protection | IP40 |
 | <span style="color: green;">**Ambient Temperature and Humidity**</span> | |
 | Operating Temperature | -30 to 70 °C |

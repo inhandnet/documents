@@ -33,21 +33,26 @@ MG301 is a wireless modem designed according to the requirements of the Automati
 
 # <span style="color: green;">2. Features and Advantages</span>
 
-| Feature | Description |
-| --- | --- |
-| Performance and Platform | 2.5MB RAM; 32MB Flash |
-| Rich Interfaces | 2 × RS-485; 1 × USB2.0; 1 × digital input; 1 × relay output |
-| Stable Communication | 2G/4G (LTE CAT 1); independent hardware and software watchdog; multilevel link detection, communication self-healing |
-| Industrial-grade, Ready for Harsh Industrial Environments | Operating temperatures up to -30 ~ 70 °C; protection rating IP40; Li-ion battery |
-| Multiple Acquisition Protocol | IEC62056-21; DLMS/COSEM; MASS; MQTT/MQTTS; VIKO; TeleMetriX Head-End |
+<table style="table-layout: fixed; width: 100%;">
+  <colgroup><col style="width: 184.6000px;" /><col /></colgroup>
+  <thead>
+    <tr><th>Feature</th><th>Description</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Performance and Platform</td><td>2.5MB RAM; 32MB Flash</td></tr>
+    <tr><td>Rich Interfaces</td><td>2 × RS-485; 1 × USB2.0; 1 × digital input; 1 × relay output</td></tr>
+    <tr><td>Stable Communication</td><td>2G/4G (LTE CAT 1); independent hardware and software watchdog; multilevel link detection, communication self-healing</td></tr>
+    <tr><td>Industrial-grade, Ready for Harsh Industrial Environments</td><td>Operating temperatures up to -30 ~ 70 °C; protection rating IP40; Li-ion battery</td></tr>
+    <tr><td>Multiple Acquisition Protocol</td><td>IEC62056-21; DLMS/COSEM; MASS; MQTT/MQTTS; VIKO; TeleMetriX Head-End</td></tr>
+  </tbody>
+</table>
 
 # <span style="color: green;">3. Product Dimensions</span>
 
 <div style="display:flex; align-items:end; flex-wrap:wrap; justify-content:space-between;">
   <div style="width:100%;"><img src="images/MG301-M-dimensions.png" width="100%" alt="MG301-M dimension drawing placeholder" /></div>
 </div>
-
-**Dimension (specification table):** 114 × 74.4 × 45 mm.
+Dimensions: 114 × 74.4 × 45 mm.
 
 <div style="page-break-after: always;"></div>
 
@@ -66,7 +71,8 @@ MG301 is a wireless modem designed according to the requirements of the Automati
 
 ## <span style="color: green;">LED Indicators</span>
 
-<table>
+<table style="table-layout: fixed; width: 100%;">
+  <colgroup><col style="width: 128.8000px;" /><col /></colgroup>
   <thead><tr><th>LED</th><th>Status Description</th></tr></thead>
   <tbody>
     <tr><td>PWR</td><td>Steady on: The power supply is normal<br/>Off: No external power supply is available</td></tr>
@@ -104,7 +110,7 @@ MG301 is a wireless modem designed according to the requirements of the Automati
 | <span style="color: green;">**Mechanical Characteristics**</span> | |
 | Mounting | Plug to the modem socket of the modular meters |
 | Enclosure Material | Plastic |
-| Dimension | 114 × 74.4 × 45 mm |
+| Dimensions | 114 × 74.4 × 45 mm |
 | Protection | IP40 |
 | <span style="color: green;">**Ambient Temperature and Humidity**</span> | |
 | Operation Temperature | -30 ~ 70℃ |
@@ -121,32 +127,38 @@ MG301 is a wireless modem designed according to the requirements of the Automati
 
 # <span style="color: green;">6. Software Specifications</span>
 
-| Parameter | Specification |
-| --- | --- |
-| <span style="color: green;">**Operating System**</span> | |
-| OS | RTOS |
-| <span style="color: green;">**Internet**</span> | |
-| Access Authentication | APN, VPDN |
-| Internet Access | CHAP, PAP |
-| Network Format | 2G/4G (LTE CAT 1) |
-| eSIM | Support eSIM (LPA) |
-| <span style="color: green;">**Network Protocol**</span> | |
-| IP Application | ICMP, DNS, TCP/UDP, TCP Server, DHCP, NTP |
-| <span style="color: green;">**Reliability**</span> | |
-| Power Failure Alarm | Detecting an external power failure |
-| Link Detection | Sends heartbeat packets to detect, auto redials when disconnected |
-| Embedded Watchdog | Device runs self-detection, auto recovers from malfunctions |
-| Temperature Detection | The CPU temperature can be detected and recorded in logs |
-| <span style="color: green;">**Communication Protocol**</span> | |
-| Acquisition Protocol | IEC62056-21 Mode-C; DLMS/COSEM |
-| Access Platform | MQTT/MQTTS/VIKO/MASS/TeleMetriX Head-End |
-| <span style="color: green;">**Security**</span> | |
-| Encryption | AES-128 and ECDHE |
-| Authentication | In cases where configuration changes, software updates, or connection to the control center are made via the modem's serial ports, authentication will be performed between the modem and the device attempting to connect to it. A log will be kept for these operations. |
-| <span style="color: green;">**Network Management**</span> | |
-| Configuration | Web Via USB |
-| Upgrade | Local Via USB, Remote Via FTP/InHand DM platform (Coming soon) |
-| Log | Support local system log and important log power-off autosave |
+<table style="table-layout: fixed; width: 100%;">
+  <colgroup><col style="width: 182.0000px;" /><col /></colgroup>
+  <thead>
+    <tr><th>Parameter</th><th>Specification</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><span style="color: green;"><strong>Operating System</strong></span></td><td></td></tr>
+    <tr><td>OS</td><td>RTOS</td></tr>
+    <tr><td><span style="color: green;"><strong>Internet</strong></span></td><td></td></tr>
+    <tr><td>Access Authentication</td><td>APN, VPDN</td></tr>
+    <tr><td>Internet Access</td><td>CHAP, PAP</td></tr>
+    <tr><td>Network Format</td><td>2G/4G (LTE CAT 1)</td></tr>
+    <tr><td>eSIM</td><td>Support eSIM (LPA)</td></tr>
+    <tr><td><span style="color: green;"><strong>Network Protocol</strong></span></td><td></td></tr>
+    <tr><td>IP Application</td><td>ICMP, DNS, TCP/UDP, TCP Server, DHCP, NTP</td></tr>
+    <tr><td><span style="color: green;"><strong>Reliability</strong></span></td><td></td></tr>
+    <tr><td>Power Failure Alarm</td><td>Detecting an external power failure</td></tr>
+    <tr><td>Link Detection</td><td>Sends heartbeat packets to detect, auto redials when disconnected</td></tr>
+    <tr><td>Embedded Watchdog</td><td>Device runs self-detection, auto recovers from malfunctions</td></tr>
+    <tr><td>Temperature Detection</td><td>The CPU temperature can be detected and recorded in logs</td></tr>
+    <tr><td><span style="color: green;"><strong>Communication Protocol</strong></span></td><td></td></tr>
+    <tr><td>Acquisition Protocol</td><td>IEC62056-21 Mode-C; DLMS/COSEM</td></tr>
+    <tr><td>Access Platform</td><td>MQTT/MQTTS/VIKO/MASS/TeleMetriX Head-End</td></tr>
+    <tr><td><span style="color: green;"><strong>Security</strong></span></td><td></td></tr>
+    <tr><td>Encryption</td><td>AES-128 and ECDHE</td></tr>
+    <tr><td>Authentication</td><td>In cases where configuration changes, software updates, or connection to the control center are made via the modem&#39;s serial ports, authentication will be performed between the modem and the device attempting to connect to it. A log will be kept for these operations.</td></tr>
+    <tr><td><span style="color: green;"><strong>Network Management</strong></span></td><td></td></tr>
+    <tr><td>Configuration</td><td>Web Via USB</td></tr>
+    <tr><td>Upgrade</td><td>Local Via USB, Remote Via FTP/InHand DM platform (Coming soon)</td></tr>
+    <tr><td>Log</td><td>Support local system log and important log power-off autosave</td></tr>
+  </tbody>
+</table>
 
 # <span style="color: green;">7. Ordering Information</span>
 

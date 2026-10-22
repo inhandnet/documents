@@ -48,7 +48,7 @@
 | Data Acquisition | Modbus RTU/TCP, EtherNet/IP, OPC UA, DNP3.0, IEC 61850-MMS, BACnet, CNC |
 | Open Platform | Linux (JetPack 5.1 and above) |
 | AI Module | Jetson Orin NX 16GB |
-| AI Performance | 100 TOPS |
+| AI Performance | 157 TOPS |
 | Interfaces | 2×GE, 2×RS-232/485/422, DI/DO, CAN FD, USB3.2, HDMI, audio, GMSL2 |
 | Storage | Built-in 128GB NVMe, Micro SD support |
 | Power Input | 9~36V DC, polarity reversal protection |
@@ -87,7 +87,7 @@
 | <span style="color: green;">**Hardware Platform**</span> |  |
 | CPU | ARM Cortex-A78AE CPU, 8 cores, TDP up to 25 W, 2 GHz |
 | GPU | 1024-core NVIDIA Ampere GPU with 32 Tensor Cores |
-| NPU | AI acceleration up to 100 TOPS |
+| NPU | AI acceleration up to 157 TOPS |
 | RAM | 16GB |
 | FLASH |  1 x M.2 NVMe M-Key 2280 (128GB built-in) |
 | <span style="color: green;">**Connectivity & Interfaces**</span> |  |

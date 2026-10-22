@@ -48,7 +48,7 @@
 | Data Acquisition | Modbus RTU/TCP, EtherNet/IP, OPC UA, DNP3.0, IEC 61850-MMS, BACnet, CNC |
 | Open Platform | Linux (JetPack 5.1 and above) |
 | AI Module | Jetson Orin NX 16GB |
-| AI Performance | 157 TOPS |
+| AI Performance | 157TOPS |
 | Interfaces | 2×GE, 2×RS-232/485/422, DI/DO, CAN FD, USB3.2, HDMI, audio, GMSL2 |
 | Storage | Built-in 128GB NVMe, Micro SD support |
 | Power Input | 9~36V DC, polarity reversal protection |
@@ -87,7 +87,7 @@
 | <span style="color: green;">**Hardware Platform**</span> |  |
 | CPU | ARM Cortex-A78AE CPU, 8 cores, TDP up to 25 W, 2 GHz |
 | GPU | 1024-core NVIDIA Ampere GPU with 32 Tensor Cores |
-| NPU | AI acceleration up to 157 TOPS |
+| NPU | AI acceleration up to 157TOPS |
 | RAM | 16GB |
 | FLASH |  1 x M.2 NVMe M-Key 2280 (128GB built-in) |
 | <span style="color: green;">**Connectivity & Interfaces**</span> |  |
@@ -161,11 +161,21 @@
 
 ## <span style="color: green;">Model List</span>
 
-| Model | Region | NVIDIA Module | \<WMNN\>: Cellular Band | Memory/Storage | Ethernet/Serial | GPS |
-|------|--------|---------------|------------------------------------|----------------|-----------------|-----|
-| EC5550-NRQ3 | Global | Orin NX 16GB | 5G NR NSA/SA: n1/n2/n3/n5/n7/n8/n12/n20/n25/n28/n38/n40/n41/n48/n66/n71/n77/n78/n79<br/>LTE FDD: B1/B2/B3/B5/B7/B8/B12(B17)/B13/B14/B18/B19/B20/B25/B26/B28/B29/B30/B32/B66/B71<br/>LTE TDD: B34/B38/B39/B40/B41/B42/B48<br/>LAA: B46<br/>WCDMA: B1/B2/B3/B4/B5/B6/B8/B19 | 16GB/128GB | 2×1000Mbps; 2×RS232/RS485/RS422 configurable | YES |
-| EC5550-FQ09 | Global | Orin NX 16GB | 4G CAT6<br/>LTE FDD: B1/B2/B3/B4/B5/B7/B8/B12/B13/B14/B17/B18/B19/B20/B25/B26/B28/B29/B30/B32/B66/B71<br/>LTE TDD: B34/B38/B39/B40/B41/B42/B43/B46(LAA)/B48(CBRS) | 16GB/128GB | 2×1000Mbps; 2×RS232/RS485/RS422 configurable | YES |
-| EC5550-EN00 | No Cellular | Orin NX 16GB | No Cellular | 16GB/128GB | 2×1000Mbps; 2×RS232/RS485/RS422 configurable | NO |
+<table style="width:100%; table-layout:fixed; font-size:11px;">
+  <colgroup>
+    <col style="width:22%;">
+    <col style="width:12%;">
+    <col style="width:13%;">
+    <col style="width:22%;">
+    <col style="width:11%;">
+    <col style="width:12%;">
+    <col style="width:8%;">
+  </colgroup>
+  <tr><th>Model</th><th>Region</th><th>NVIDIA Module</th><th>&lt;WMNN&gt;: Cellular Band</th><th>Memory/Storage</th><th>Ethernet/Serial</th><th>GPS</th></tr>
+  <tr><td style="white-space: nowrap;">EC5550-NRQ3</td><td>Global</td><td>Orin NX 16GB</td><td style="word-break: break-all;">5G NR NSA/SA: n1/n2/n3/n5/n7/n8/n12/n20/n25/n28/n38/n40/n41/n48/n66/n71/n77/n78/n79<br/>LTE FDD: B1/B2/B3/B5/B7/B8/B12(B17)/B13/B14/B18/B19/B20/B25/B26/B28/B29/B30/B32/B66/B71<br/>LTE TDD: B34/B38/B39/B40/B41/B42/B48<br/>LAA: B46<br/>WCDMA: B1/B2/B3/B4/B5/B6/B8/B19</td><td>16GB/128GB</td><td>2×1000Mbps; 2×RS232/RS485/RS422 configurable</td><td>YES</td></tr>
+  <tr><td style="white-space: nowrap;">EC5550-FQ09</td><td>Global</td><td>Orin NX 16GB</td><td style="word-break: break-all;">4G CAT6<br/>LTE FDD: B1/B2/B3/B4/B5/B7/B8/B12/B13/B14/B17/B18/B19/B20/B25/B26/B28/B29/B30/B32/B66/B71<br/>LTE TDD: B34/B38/B39/B40/B41/B42/B43/B46(LAA)/B48(CBRS)</td><td>16GB/128GB</td><td>2×1000Mbps; 2×RS232/RS485/RS422 configurable</td><td>YES</td></tr>
+  <tr><td style="white-space: nowrap;">EC5550-EN00</td><td>No Cellular</td><td>Orin NX 16GB</td><td>No Cellular</td><td>16GB/128GB</td><td>2×1000Mbps; 2×RS232/RS485/RS422 configurable</td><td>NO</td></tr>
+</table>
 
 # <span style="color: green;">6. Contact Us</span>
 

@@ -107,6 +107,7 @@
 
 ## Device Manager
 
+- [Declarations](Device%20Manager/Manuals/User%20manual/Device%20Manager%20User%20Manual_V1.0.md): Device Manager User manual v1.0
 - [Device Manager Datasheet v1.0](Device%20Manager/Datasheets/General/DeviceManager_Datasheet_V1.0.md): Device Manager Datasheet v1.0 — Simple and efficient device management solution
 
 ## DeviceLive
@@ -1019,6 +1020,22 @@
 
 ## InConnect
 
+- [Declarations](InConnect/Manuals/User%20manual/InConnect%20User%20Manual_V1.0.md): InConnect User manual v1.0
+  - [2.1 Registration](InConnect/Manuals/User%20manual/InConnect%20User%20Manual_V1.0.md#21-registration)
+  - [2.2 Login](InConnect/Manuals/User%20manual/InConnect%20User%20Manual_V1.0.md#22-login)
+  - [3.1 Adding the Router to InConnect](InConnect/Manuals/User%20manual/InConnect%20User%20Manual_V1.0.md#31-adding-the-router-to-inconnect)
+  - [3.2 Connecting a Router to InConnect](InConnect/Manuals/User%20manual/InConnect%20User%20Manual_V1.0.md#32-connecting-a-router-to-inconnect)
+  - [3.3 Check the connection between the router and InConnect](InConnect/Manuals/User%20manual/InConnect%20User%20Manual_V1.0.md#33-check-the-connection-between-the-router-and-inconnect)
+  - [4.1 Installing and Using OpenVPN in Windows](InConnect/Manuals/User%20manual/InConnect%20User%20Manual_V1.0.md#41-installing-and-using-openvpn-in-windows)
+  - [4.2 Installing and Using OpenVPN in Android](InConnect/Manuals/User%20manual/InConnect%20User%20Manual_V1.0.md#42-installing-and-using-openvpn-in-android)
+  - [5.1 Access Through the Virtual IP Address](InConnect/Manuals/User%20manual/InConnect%20User%20Manual_V1.0.md#51-access-through-the-virtual-ip-address)
+  - [5.2 Access Through the Real IP Address](InConnect/Manuals/User%20manual/InConnect%20User%20Manual_V1.0.md#52-access-through-the-real-ip-address)
+  - [6.1 Configuring a Mesh Network](InConnect/Manuals/User%20manual/InConnect%20User%20Manual_V1.0.md#61-configuring-a-mesh-network)
+  - [6.2 Configuring a Star Network](InConnect/Manuals/User%20manual/InConnect%20User%20Manual_V1.0.md#62-configuring-a-star-network)
+  - [7.1 Adding a user](InConnect/Manuals/User%20manual/InConnect%20User%20Manual_V1.0.md#71-adding-a-user)
+  - [7.2 External User](InConnect/Manuals/User%20manual/InConnect%20User%20Manual_V1.0.md#72-external-user)
+  - [7.3 Role description](InConnect/Manuals/User%20manual/InConnect%20User%20Manual_V1.0.md#73-role-description)
+  - [7.4 Multi-terminal description](InConnect/Manuals/User%20manual/InConnect%20User%20Manual_V1.0.md#74-multi-terminal-description)
 - [InConnect Datasheet v1.0](InConnect/Datasheets/General/InConnect_Datasheet_V1.0.md): InConnect Datasheet v1.0 — Simple and Secure Remote Connection
 
 ## InConnect Service

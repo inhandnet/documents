@@ -35,6 +35,7 @@
 
 ## Device Manager
 
+- [Device Manager用户手册](Device%20Manager/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/DeviceManager%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_%201.0.md): Device Manager 用户手册
 - [Device Manager 规格书 v1.0](Device%20Manager/Datasheets/%E9%80%9A%E7%94%A8/Device%20Manager%E8%A7%84%E6%A0%BC%E4%B9%A6_V1.0.md): Device Manager 规格书 v1.0
 
 ## DeviceLive
@@ -773,6 +774,7 @@
 
 ## InConnect
 
+- [InConnect 用户手册（规范版）](InConnect/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/InConnect%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.md): InConnect 用户手册 v1.0
 - [InConnect 规格书 v3.3](InConnect/Datasheets/%E9%80%9A%E7%94%A8/InConnect%E8%A7%84%E6%A0%BC%E4%B9%A6_V3.3.md): InConnect 规格书 v3.3 — InHand Connect Service
 
 ## InDTU311

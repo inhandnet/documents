@@ -81,6 +81,14 @@ hide:
     </div>
     <div class="pm-card">
       <div class="pm-card__body">
+        <div class="pm-card__title">Device Manager</div>
+        <ul class="pm-card__links">
+        <li><a href="Device%20Manager/Manuals/User%20manual/Device%20Manager%20User%20Manual_V1.0.html" title="Declarations">User manual V1.0</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pm-card">
+      <div class="pm-card__body">
         <div class="pm-card__title">DeviceLive</div>
         <ul class="pm-card__links">
         <li><a href="DeviceLive/Manuals/User%20manual/DeviceLive%20User%20Manual.html" title="**About the Platform**">User manual</a></li>
@@ -355,6 +363,14 @@ hide:
         <div class="pm-card__title">InCloudManager</div>
         <ul class="pm-card__links">
         <li><a href="InCloudManager/Manuals/User%20manual/InCloud%20Manager%20User%20Manual.html" title="**About the platform**">User manual</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pm-card">
+      <div class="pm-card__body">
+        <div class="pm-card__title">InConnect</div>
+        <ul class="pm-card__links">
+        <li><a href="InConnect/Manuals/User%20manual/InConnect%20User%20Manual_V1.0.html" title="Declarations">User manual V1.0</a></li>
         </ul>
       </div>
     </div>

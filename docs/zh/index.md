@@ -84,6 +84,14 @@ hide:
     </div>
     <div class="pm-card">
       <div class="pm-card__body">
+        <div class="pm-card__title">Device Manager</div>
+        <ul class="pm-card__links">
+        <li><a href="Device%20Manager/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/DeviceManager%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_%201.0.html" title="Device Manager用户手册">用户手册</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pm-card">
+      <div class="pm-card__body">
         <div class="pm-card__title">DeviceLive</div>
         <ul class="pm-card__links">
         <li><a href="DeviceLive/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/DeviceLive%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C.html" title="DeviceLive 用户手册">用户手册</a></li>
@@ -381,6 +389,14 @@ hide:
         <div class="pm-card__title">InCloudManager</div>
         <ul class="pm-card__links">
         <li><a href="InCloudManager/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/%E5%B0%8F%E6%98%9F%E4%BA%91%E7%AE%A1%E5%AE%B6%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C.html" title="小星云管家用户手册">用户手册</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pm-card">
+      <div class="pm-card__body">
+        <div class="pm-card__title">InConnect</div>
+        <ul class="pm-card__links">
+        <li><a href="InConnect/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/InConnect%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="InConnect 用户手册（规范版）">用户手册 V1.0</a></li>
         </ul>
       </div>
     </div>

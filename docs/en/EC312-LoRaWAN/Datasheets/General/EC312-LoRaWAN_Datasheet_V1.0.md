@@ -136,7 +136,7 @@
 | Operating System | Debian 11 (Kernel 5.10.168) |
 | <span style="color: green;">**LoRaWAN**</span> |  |
 | LoRaWAN LNS | Built-in LoRaWAN network server, compatible with The Things Stack and ChirpStack |
-| LoRaWAN Protocol | LoRaWAN 1.0/1.0.2, Class A/B/C |
+| LoRaWAN Protocol | LoRaWAN 1.0.4 with backward compatibility, Class A/B/C |
 | <span style="color: green;">**Network Features**</span> |  |
 | Network Type | LTE Cat.1 |
 | Network Access | APN, VPDN |

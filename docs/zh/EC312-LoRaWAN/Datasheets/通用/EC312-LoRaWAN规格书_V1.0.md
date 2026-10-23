@@ -133,7 +133,7 @@
 | 操作系统 | Debian 11（Kernel 5.10.168） |
 | <span style="color: green;">**LoRaWAN**</span> | |
 | LoRaWAN LNS | 内置 LoRaWAN 网络服务器，兼容主流网络服务器（The ThingsStack、ChirpStack 等） |
-| LoRaWAN 协议 | LoRaWAN 1.0 / 1.0.2，Class A/B/C |
+| LoRaWAN 协议 | LoRaWAN 1.0.4并向下兼容，Class A/B/C |
 | <span style="color: green;">**网络特性**</span> | |
 | 网络接入 | APN、VPDN |
 | 接入认证 | CHAP/PAP |

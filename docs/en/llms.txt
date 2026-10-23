@@ -806,22 +806,22 @@
 
 ## IR624
 
-- [Chapter 1 Getting to Know the Device](IR624/Manuals/User%20manual/IR624_User%20manual_V1.0.md): IR624 User manual v1.0 — First and foremost, thank you for choosing our company's product. Before use, carefully read this user manual. Complianc…
-  - [Graphical Interface Conventions](IR624/Manuals/User%20manual/IR624_User%20manual_V1.0.md#graphical-interface-conventions)
-  - [How to Use This Manual](IR624/Manuals/User%20manual/IR624_User%20manual_V1.0.md#how-to-use-this-manual)
-  - [1.1 Overview](IR624/Manuals/User%20manual/IR624_User%20manual_V1.0.md#11-overview)
-  - [1.2 LED Indicators](IR624/Manuals/User%20manual/IR624_User%20manual_V1.0.md#12-led-indicators)
-  - [1.3 Restore Factory Defaults](IR624/Manuals/User%20manual/IR624_User%20manual_V1.0.md#13-restore-factory-defaults)
-  - [1.4 Default Settings](IR624/Manuals/User%20manual/IR624_User%20manual_V1.0.md#14-default-settings)
-  - [2.1 Pre-installation Preparation](IR624/Manuals/User%20manual/IR624_User%20manual_V1.0.md#21-pre-installation-preparation)
-  - [2.2 Installation Guide](IR624/Manuals/User%20manual/IR624_User%20manual_V1.0.md#22-installation-guide)
-  - [2.3 Quick Check](IR624/Manuals/User%20manual/IR624_User%20manual_V1.0.md#23-quick-check)
-  - [Scenario 1: Cellular Networking](IR624/Manuals/User%20manual/IR624_User%20manual_V1.0.md#scenario-1-cellular-networking)
-  - [Scenario 2: Wired Networking](IR624/Manuals/User%20manual/IR624_User%20manual_V1.0.md#scenario-2-wired-networking)
-  - [Scenario 3: Wi-Fi STA Networking](IR624/Manuals/User%20manual/IR624_User%20manual_V1.0.md#scenario-3-wi-fi-sta-networking)
-  - [4.1 Dashboard](IR624/Manuals/User%20manual/IR624_User%20manual_V1.0.md#41-dashboard)
-  - [4.2 Status](IR624/Manuals/User%20manual/IR624_User%20manual_V1.0.md#42-status)
-  - [4.3 Internet](IR624/Manuals/User%20manual/IR624_User%20manual_V1.0.md#43-internet)
+- [Chapter 1 Getting to Know the Device](IR624/Manuals/User%20manual/IR624_User%20manual.md): IR624 User manual — First and foremost, thank you for choosing our company's product. Before use, carefully read this user manual. Complianc…
+  - [Graphical Interface Conventions](IR624/Manuals/User%20manual/IR624_User%20manual.md#graphical-interface-conventions)
+  - [How to Use This Manual](IR624/Manuals/User%20manual/IR624_User%20manual.md#how-to-use-this-manual)
+  - [1.1 Overview](IR624/Manuals/User%20manual/IR624_User%20manual.md#11-overview)
+  - [1.2 LED Indicators](IR624/Manuals/User%20manual/IR624_User%20manual.md#12-led-indicators)
+  - [1.3 Restore Factory Defaults](IR624/Manuals/User%20manual/IR624_User%20manual.md#13-restore-factory-defaults)
+  - [1.4 Default Settings](IR624/Manuals/User%20manual/IR624_User%20manual.md#14-default-settings)
+  - [2.1 Pre-installation Preparation](IR624/Manuals/User%20manual/IR624_User%20manual.md#21-pre-installation-preparation)
+  - [2.2 Installation Guide](IR624/Manuals/User%20manual/IR624_User%20manual.md#22-installation-guide)
+  - [2.3 Quick Check](IR624/Manuals/User%20manual/IR624_User%20manual.md#23-quick-check)
+  - [Scenario 1: Cellular Networking](IR624/Manuals/User%20manual/IR624_User%20manual.md#scenario-1-cellular-networking)
+  - [Scenario 2: Wired Networking](IR624/Manuals/User%20manual/IR624_User%20manual.md#scenario-2-wired-networking)
+  - [Scenario 3: Wi-Fi STA Networking](IR624/Manuals/User%20manual/IR624_User%20manual.md#scenario-3-wi-fi-sta-networking)
+  - [4.1 Dashboard](IR624/Manuals/User%20manual/IR624_User%20manual.md#41-dashboard)
+  - [4.2 Status](IR624/Manuals/User%20manual/IR624_User%20manual.md#42-status)
+  - [4.3 Internet](IR624/Manuals/User%20manual/IR624_User%20manual.md#43-internet)
 - [IR624 Datasheet v1.0](IR624/Datasheets/General/IR624_Datasheet_V1.0.md): IR624 Datasheet v1.0 — Embrace 5G, Co-Create the Digital Era
 - [IR624 Certifications](IR624/certifications.md): IR624 certification list (ANATEL, CE, E-Mark, ECER118, EN18031, FCC, IC, PTCRB) with links to the original certificate files
 - [IR624 Drawings](IR624/drawings.md): IR624 mechanical drawings (2D, 3D) with links to the original drawing files

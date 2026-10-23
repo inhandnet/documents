@@ -465,7 +465,7 @@ hide:
         <ul class="pm-card__links">
         <li><a href="IR624/certifications.html" title="IR624 Certifications">Certifications</a></li>
         <li><a href="IR624/drawings.html" title="IR624 Drawings">Drawings</a></li>
-        <li><a href="IR624/Manuals/User%20manual/IR624_User%20manual_V1.0.html" title="Chapter 1 Getting to Know the Device">User manual V1.0</a></li>
+        <li><a href="IR624/Manuals/User%20manual/IR624_User%20manual.html" title="Chapter 1 Getting to Know the Device">User manual</a></li>
         <li><a href="IR624/Use%20Cases/Medical-Device-Data-Transmission/case-manual.html" title="Medical Device Data Transmission Solution">Medical Device Data Transmission Solution</a></li>
         <li><a href="IR624/Use%20Cases/Medical-Device-Data-Transmission/config-manual.html" title="Medical Device Data Transmission Solution Configuration Manual">Medical Device Data Transmission Solution Configuration Manual</a></li>
         </ul>

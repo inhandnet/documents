@@ -482,7 +482,7 @@ hide:
         <ul class="pm-card__links">
         <li><a href="IR624/certifications.html" title="IR624 认证证书">认证证书</a></li>
         <li><a href="IR624/drawings.html" title="IR624 结构图纸">结构图纸</a></li>
-        <li><a href="IR624/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/IR624%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="北京映翰通工业路由器IR624产品系列用户手册">用户手册 V1.0</a></li>
+        <li><a href="IR624/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/IR624%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C.html" title="北京映翰通工业路由器IR624产品系列用户手册">用户手册</a></li>
         <li><a href="IR624/Use%20Cases/%E5%8C%BB%E7%96%97%E8%AE%BE%E5%A4%87%E6%95%B0%E6%8D%AE%E4%BC%A0%E8%BE%93%E6%96%B9%E6%A1%88/%E6%A1%88%E4%BE%8B%E6%89%8B%E5%86%8C.html" title="医疗设备数据传输解决方案">医疗设备数据传输解决方案</a></li>
         <li><a href="IR624/Use%20Cases/%E5%8C%BB%E7%96%97%E8%AE%BE%E5%A4%87%E6%95%B0%E6%8D%AE%E4%BC%A0%E8%BE%93%E6%96%B9%E6%A1%88/%E9%85%8D%E7%BD%AE%E6%89%8B%E5%86%8C.html" title="医疗设备数据传输解决方案配置手册">医疗设备数据传输解决方案配置手册</a></li>
         </ul>

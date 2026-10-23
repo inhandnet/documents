@@ -75,30 +75,27 @@ The IR624 series is suitable for the networking of unattended devices and sites.
 | LED Indicator | Status | Meaning |
 |--------------|--------|---------|
 | SYS | Off | Power off |
-| | Steady red | Device starting |
-| | Blink red | System error |
-| | Steady green | Working properly |
-| | Blink red | Firmware updating |
-| NET | Off | The WAN port is not connected |
-| | Steady green | The WAN port is connected normally |
-| | Blink green | Data transferring |
-| Cellular | Steady green with one indicator | Poor cellular signal |
-| | Steady green with two indicators | Medium cellular signal |
-| | Steady green with three indicators | Good cellular signal |
-| Wi-Fi 2.4G | Off | AP&STA is disabled |
-| | Blink green | Working properly |
-| | Steady green | Work as STA and AP is not associated |
-| Wi-Fi 5G | Off | AP&STA is disabled |
-| | Blink green | Working properly |
-| | Steady green | Work as STA and AP is not associated |
-| | Steady green | Other abnormalities |
+| | Solid Red | Booting up / Normal operation.|
+| Blinking Red |	Firmware upgrading / System error.|
+|Cellular LED|	Blinking Green	Connecting / Connection failed.|
+| | Solid Green |	Connected.|
+||Cellular Signal LED	|Off	|No cellular connection.|
+||1 Bar Solid|	Poor signal (ASU ≤ 9).|
+||2 Bars Solid|	Moderate signal (9 < ASU ≤ 19).|
+||3 Bars Solid	|Good signal (ASU ≥ 20).|
+|Wi-Fi 2.4G LED	|Off	|AP & STA disabled.|
+||Blinking Green	|Normal operation.|
+||Solid Green	|STA mode unassociated or malfunction.|
+|Wi-Fi 5G LED	|Off	|AP & STA disabled.|
+||Blinking Green	|Normal operation.|
+||Solid Green|	STA mode unassociated or malfunction.|
 
 ## 1.3 Restore Factory Defaults
 
 To reset to factory default settings using the Reset button:
 
-1. Power on the device. As soon as the SYS indicator light goes out, press and hold the Reset button for 5 to 10 seconds, then release it promptly. The SYS indicator light will then start flashing.
-2. While the SYS indicator light is flashing, press and hold the SYS indicator until the light stays on, and then release the button. At this time, the factory reset operation of the device is successful.
+1. Power on the device. Wait until the SYS LED turns off, then press and hold the Reset button for 5–10 seconds. Release the button when the SYS LED stays solid red. The SYS LED will then start blinking red.
+2. Press and hold the Reset button again until the SYS LED stays solid red, then release the button. The device will enter the system boot phase.
 
 ## 1.4 Default Settings
 

@@ -75,20 +75,20 @@ The IR624 series is suitable for the networking of unattended devices and sites.
 | LED Indicator | Status | Meaning |
 |--------------|--------|---------|
 | SYS | Off | Power off |
-| | Solid Red | Booting up / Normal operation.|
-| Blinking Red |	Firmware upgrading / System error.|
-|Cellular LED|	Blinking Green	Connecting / Connection failed.|
-| | Solid Green |	Connected.|
-||Cellular Signal LED	|Off	|No cellular connection.|
-||1 Bar Solid|	Poor signal (ASU ≤ 9).|
-||2 Bars Solid|	Moderate signal (9 < ASU ≤ 19).|
-||3 Bars Solid	|Good signal (ASU ≥ 20).|
-|Wi-Fi 2.4G LED	|Off	|AP & STA disabled.|
-||Blinking Green	|Normal operation.|
-||Solid Green	|STA mode unassociated or malfunction.|
-|Wi-Fi 5G LED	|Off	|AP & STA disabled.|
-||Blinking Green	|Normal operation.|
-||Solid Green|	STA mode unassociated or malfunction.|
+| | Solid Red | Booting up / Normal operation. |
+| | Blinking Red | Firmware upgrading / System error. |
+| Cellular Status LED | Blinking Green | Connecting / Connection failed. |
+| | Solid Green | Connected. |
+| Cellular Signal LED | Off | No cellular connection. |
+| | 1 Bar Solid | Poor signal (ASU ≤ 9). |
+| | 2 Bars Solid | Moderate signal (9 < ASU ≤ 19). |
+| | 3 Bars Solid | Good signal (ASU ≥ 20). |
+| Wi-Fi 2.4G LED | Off | AP & STA disabled. |
+| | Blinking Green | Normal operation. |
+| | Solid Green | STA mode unassociated or malfunction. |
+| Wi-Fi 5G LED | Off | AP & STA disabled. |
+| | Blinking Green | Normal operation. |
+| | Solid Green | STA mode unassociated or malfunction. |
 
 ## 1.3 Restore Factory Defaults
 

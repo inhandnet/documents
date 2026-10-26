@@ -1094,14 +1094,14 @@
 - [Mo 62A Quick Start Guide](Mo%2062A/Manuals/Quick%20user%20manual/Mo%2062A%20quickstart.md): Mo 62A Quick user manual
 - [Mo 62A Single Board Computer SDK User Guide](Mo%2062A/Manuals/User%20manual/Mo%2062A_User%20manual_V1.0.md): Mo 62A User manual v1.0 — Mo 62A is a single-board computer based on the TI AM62A7 processor, designed for edge AI inference, machine vision, and…
 - [MO 62A SDK User Guide](Mo%2062A/Developer%20Documentation/Greengrass%20SDK/mo-62a-sdk.md): Mo 62A Greengrass SDK
-- [Mo 62A Datasheet v1.0](Mo%2062A/Datasheets/General/Mo%2062A_Datasheet_V1.0.md): Mo 62A Datasheet v1.0 — Edge AI Computing, Open SDK, Debian Linux, HAT-Compatible
+- [Mo 62A Datasheet v1.5](Mo%2062A/Datasheets/General/Mo%2062A_Datasheet_V1.5.md): Mo 62A Datasheet v1.5 — Embrace Edge AI, Empower Intelligent Vision
 
 ## Mo 68A
 
 - [Mo 68A Hardware Reference Manual](Mo%2068A/Manuals/Installation%20Guide/Mo%2068A_Hardware_Reference_Manual_V1.0.md): Mo 68A Installation Guide v1.0 — This manual summarizes the Mo 68A system architecture, power and boot behavior, on-board peripheral interfaces, expansio…
 - [Mo 68A Quick Start Guide](Mo%2068A/Manuals/Installation%20Guide/Mo%2068A_Quick_Start_Guide_V1.0.md): Mo 68A Installation Guide v1.0
 - [Mo 68A User Guide](Mo%2068A/Manuals/User%20manual/Mo%2068A_User%20manual_V1.0.md): Mo 68A User manual v1.0 — Mo 68A is a single-board computer built around the TDA4VE / AM68A SoC (TI J721S2 family). It features dual Cortex-A72 ap…
-- [Mo 68A Datasheet v1.0](Mo%2068A/Datasheets/General/Mo%2068A_Datasheet_V1.0.md): Mo 68A Datasheet v1.0 — Embrace Edge AI, Empower Intelligent Vision
+- [Mo 68A Datasheet v1.1](Mo%2068A/Datasheets/General/Mo%2068A_Datasheet_V1.1.md): Mo 68A Datasheet v1.1 — Embrace Edge AI, Empower Intelligent Vision
 - [Mo 68A Drawings](Mo%2068A/drawings.md): Mo 68A mechanical drawings (2D) with links to the original drawing files
 
 ## ODU12

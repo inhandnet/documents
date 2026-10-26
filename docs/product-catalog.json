@@ -2951,6 +2951,21 @@
         "en"
       ],
       "public": true
+    },
+    {
+      "id": "InDTU350S",
+      "kind": "model",
+      "display_names": {
+        "zh": "InDTU350S"
+      },
+      "aliases": [],
+      "source_folders": [
+        "InDTU350S"
+      ],
+      "expected_languages": [
+        "zh"
+      ],
+      "public": true
     }
   ]
 }

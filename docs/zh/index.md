@@ -355,6 +355,8 @@ hide:
         <div class="pm-card__title">IG502-lite</div>
         <ul class="pm-card__links">
         <li><a href="IG502-lite/Manuals/DSA%E6%89%8B%E5%86%8C/DSA%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="DSA 用户手册 V2.0">DSA手册 V1.0</a></li>
+        <li><a href="IG502-lite/Manuals/%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97/IG502-lite%E5%BF%AB%E9%80%9F%E5%AE%89%E8%A3%85%E6%89%8B%E5%86%8C_V1.0.html" title="IG502-LITE快速安装手册V1.0">安装指南 V1.0</a></li>
+        <li><a href="IG502-lite/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/IG502-lite%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="IG502 边缘计算网关用户手册">用户手册 V1.0</a></li>
         </ul>
       </div>
     </div>
@@ -376,6 +378,7 @@ hide:
         <li><a href="IG532/certifications.html" title="IG532 认证证书">认证证书</a></li>
         <li><a href="IG532/Manuals/DSA%E6%89%8B%E5%86%8C/DSA%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="DSA 用户手册 V2.0">DSA手册 V1.0</a></li>
         <li><a href="IG532/Manuals/%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97/IG532%E5%BF%AB%E9%80%9F%E5%AE%89%E8%A3%85%E6%89%8B%E5%86%8C_V1.0.html" title="IG532 快速安装手册">安装指南 V1.0</a></li>
+        <li><a href="IG532/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/IG902%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="IG系列用户手册V1.0">用户手册 V1.0</a></li>
         </ul>
       </div>
     </div>
@@ -401,6 +404,7 @@ hide:
         <li><a href="IG974/certifications.html" title="IG974 认证证书">认证证书</a></li>
         <li><a href="IG974/Manuals/DSA%E6%89%8B%E5%86%8C/DSA%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="DSA 用户手册 V2.0">DSA手册 V1.0</a></li>
         <li><a href="IG974/Manuals/%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97/IG974%E5%BF%AB%E9%80%9F%E5%AE%89%E8%A3%85%E6%89%8B%E5%86%8C_V1.0.html" title="IG974快速安装手册V1.0">安装指南 V1.0</a></li>
+        <li><a href="IG974/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/IG902%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="IG系列用户手册V1.0">用户手册 V1.0</a></li>
         </ul>
       </div>
     </div>
@@ -417,6 +421,55 @@ hide:
         <div class="pm-card__title">InConnect</div>
         <ul class="pm-card__links">
         <li><a href="InConnect/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/InConnect%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="InConnect 用户手册（规范版）">用户手册 V1.0</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pm-card">
+      <div class="pm-card__body">
+        <div class="pm-card__title">InDTU311</div>
+        <ul class="pm-card__links">
+        <li><a href="InDTU311/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/InDTU311%E7%B3%BB%E5%88%97%E4%BA%A7%E5%93%81%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8CV4.2.html" title="InDTU311系列产品用户手册V4.2">用户手册 V4.2</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pm-card">
+      <div class="pm-card__body">
+        <div class="pm-card__title">InDTU312</div>
+        <ul class="pm-card__links">
+        <li><a href="InDTU312/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/InDTU312%E7%B3%BB%E5%88%97%E4%BA%A7%E5%93%81%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8CV4.2.html" title="InDTU312系列产品用户手册V4.2">用户手册 V4.2</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pm-card">
+      <div class="pm-card__body">
+        <div class="pm-card__title">InDTU323</div>
+        <ul class="pm-card__links">
+        <li><a href="InDTU323/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/InDTU323%E7%B3%BB%E5%88%97%E4%BA%A7%E5%93%81%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8CV4.2.html" title="InDTU323系列产品用户手册V4.2">用户手册 V4.2</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pm-card">
+      <div class="pm-card__body">
+        <div class="pm-card__title">InDTU350S</div>
+        <ul class="pm-card__links">
+        <li><a href="InDTU350S/Manuals/%E5%BF%AB%E9%80%9F%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/InDTU351S%E7%B3%BB%E5%88%97%E4%BA%A7%E5%93%81%E5%BF%AB%E9%80%9F%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8CV1.2.html" title="InDTU351S系列产品快速用户手册V1.2">快速用户手册 V1.2</a></li>
+        <li><a href="InDTU350S/Manuals/%E5%BF%AB%E9%80%9F%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/InDTU352S%E7%B3%BB%E5%88%97%E4%BA%A7%E5%93%81%E5%BF%AB%E9%80%9F%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8CV1.0.html" title="InDTU352S系列产品快速用户手册V1.0">快速用户手册 V1.0</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pm-card">
+      <div class="pm-card__body">
+        <div class="pm-card__title">InDTU951</div>
+        <ul class="pm-card__links">
+        <li><a href="InDTU951/Manuals/%E5%BF%AB%E9%80%9F%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/InDTU951%E7%B3%BB%E5%88%97%E4%BA%A7%E5%93%81%E5%BF%AB%E9%80%9F%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8CV1.0.html" title="InDTU951系列产品快速用户手册V1.0">快速用户手册 V1.0</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pm-card">
+      <div class="pm-card__body">
+        <div class="pm-card__title">InDTU954C</div>
+        <ul class="pm-card__links">
+        <li><a href="InDTU954C/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/InDTU954C%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="InDTU954C 用户手册_V1.0">用户手册 V1.0</a></li>
         </ul>
       </div>
     </div>

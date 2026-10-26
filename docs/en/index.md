@@ -665,6 +665,7 @@ hide:
         <div class="pm-card__title">MDT600</div>
         <ul class="pm-card__links">
         <li><a href="MDT600/certifications.html" title="MDT600 Certifications">Certifications</a></li>
+        <li><a href="MDT600/Manuals/User%20manual/MDT600%20Standard%20Version%20Android%20User%20Manual.html" title="MDT600 User manual">User manual</a></li>
         </ul>
       </div>
     </div>

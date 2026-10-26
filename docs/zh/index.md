@@ -125,6 +125,7 @@ hide:
         <li><a href="EC312/Developer%20Documentation/FlexAPI/DSAAPI%E6%96%87%E6%A1%A3V1.0.html" title="DSA API文档V1.0">DSA API文档V1.0</a></li>
         <li><a href="EC312/Developer%20Documentation/FlexAPI/EC%E7%B3%BB%E5%88%97API%E6%96%87%E6%A1%A3V1.0.html" title="EC系列API文档V1.0">EC系列API文档V1.0</a></li>
         <li><a href="EC312/Developer%20Documentation/FlexAPI/EC%E7%B3%BB%E5%88%97Linux%E8%BD%AF%E4%BB%B6%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8CV1.0.html" title="EC系列Linux软件用户手册V1.0">EC系列Linux软件用户手册V1.0</a></li>
+        <li><a href="EC312/Manuals/DSA%E6%89%8B%E5%86%8C/DSA%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="DSA 用户手册 V2.0">DSA手册 V1.0</a></li>
         <li><a href="EC312/Manuals/%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97/EC312%E5%BF%AB%E9%80%9F%E5%AE%89%E8%A3%85%E6%89%8B%E5%86%8C_V1.0.html" title="EC312 快速安装手册">安装指南 V1.0</a></li>
         <li><a href="EC312/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/EC312%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="EC300边缘计算机用户手册">用户手册 V1.0</a></li>
         <li><a href="EC312/Use%20Cases/CAN%E8%BD%ACAWS%E6%96%B9%E6%A1%88/CAN%E8%BD%ACAWS%E6%96%B9%E6%A1%88.html" title="EC312 CAN-to-AWS 解决方案">EC312 CAN-to-AWS 解决方案</a></li>
@@ -136,6 +137,7 @@ hide:
       <div class="pm-card__body">
         <div class="pm-card__title">EC312-LoRaWAN</div>
         <ul class="pm-card__links">
+        <li><a href="EC312-LoRaWAN/Manuals/DSA%E6%89%8B%E5%86%8C/DSA%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="DSA 用户手册 V2.0">DSA手册 V1.0</a></li>
         <li><a href="EC312-LoRaWAN/Manuals/%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97/EC312-LoRaWAN%E5%BF%AB%E9%80%9F%E5%AE%89%E8%A3%85%E6%89%8B%E5%86%8C_V1.0.html" title="EC312-LoRaWAN 快速安装手册">安装指南 V1.0</a></li>
         <li><a href="EC312-LoRaWAN/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/EC312-LoRaWAN%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="EC300-LoRAWAN边缘计算机用户手册">用户手册 V1.0</a></li>
         </ul>
@@ -149,6 +151,7 @@ hide:
         <li><a href="EC3320/Developer%20Documentation/FlexAPI/DSAAPI%E6%96%87%E6%A1%A3V1.0.html" title="DSA API文档V1.0">DSA API文档V1.0</a></li>
         <li><a href="EC3320/Developer%20Documentation/FlexAPI/EC%E7%B3%BB%E5%88%97API%E6%96%87%E6%A1%A3V1.0.html" title="EC系列API文档V1.0">EC系列API文档V1.0</a></li>
         <li><a href="EC3320/Developer%20Documentation/FlexAPI/EC%E7%B3%BB%E5%88%97Linux%E8%BD%AF%E4%BB%B6%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8CV1.0.html" title="EC系列Linux软件用户手册V1.0">EC系列Linux软件用户手册V1.0</a></li>
+        <li><a href="EC3320/Manuals/DSA%E6%89%8B%E5%86%8C/DSA%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="DSA 用户手册 V2.0">DSA手册 V1.0</a></li>
         <li><a href="EC3320/Manuals/%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97/EC3000%E5%BF%AB%E9%80%9F%E5%AE%89%E8%A3%85%E6%89%8B%E5%86%8C_V1.0.html" title="EC3000 快速安装手册">安装指南 V1.0</a></li>
         <li><a href="EC3320/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/EC3000%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="EC3000用户手册">用户手册 V1.0</a></li>
         <li><a href="EC3320/Use%20Cases/%E7%94%B5%E7%AB%99%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E6%99%BA%E8%83%BD%E5%88%86%E6%9E%90%E6%A1%88%E4%BE%8B/%E6%A1%88%E4%BE%8B%E6%89%8B%E5%86%8C.html" title="电站数据采集智能分析解决方案">电站数据采集智能分析案例</a></li>
@@ -162,6 +165,7 @@ hide:
         <li><a href="EC5350/Developer%20Documentation/FlexAPI/DSAAPI%E6%96%87%E6%A1%A3V1.0.html" title="DSA API文档V1.0">DSA API文档V1.0</a></li>
         <li><a href="EC5350/Developer%20Documentation/FlexAPI/EC%E7%B3%BB%E5%88%97API%E6%96%87%E6%A1%A3V1.0.html" title="EC系列API文档V1.0">EC系列API文档V1.0</a></li>
         <li><a href="EC5350/Developer%20Documentation/FlexAPI/EC%E7%B3%BB%E5%88%97Linux%E8%BD%AF%E4%BB%B6%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8CV1.0.html" title="EC系列Linux软件用户手册V1.0">EC系列Linux软件用户手册V1.0</a></li>
+        <li><a href="EC5350/Manuals/DSA%E6%89%8B%E5%86%8C/DSA%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="DSA 用户手册 V2.0">DSA手册 V1.0</a></li>
         <li><a href="EC5350/Manuals/%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97/EC5350%E5%BF%AB%E9%80%9F%E5%AE%89%E8%A3%85%E6%89%8B%E5%86%8C_V1.0.html" title="EC5000 快速安装手册">安装指南 V1.0</a></li>
         <li><a href="EC5350/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/EC5350%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="EC5000系列边缘AI计算机 用户手册">用户手册 V1.0</a></li>
         </ul>
@@ -175,6 +179,7 @@ hide:
         <li><a href="EC5550/Developer%20Documentation/FlexAPI/DSAAPI%E6%96%87%E6%A1%A3V1.0.html" title="DSA API文档V1.0">DSA API文档V1.0</a></li>
         <li><a href="EC5550/Developer%20Documentation/FlexAPI/EC%E7%B3%BB%E5%88%97API%E6%96%87%E6%A1%A3V1.0.html" title="EC系列API文档V1.0">EC系列API文档V1.0</a></li>
         <li><a href="EC5550/Developer%20Documentation/FlexAPI/EC%E7%B3%BB%E5%88%97Linux%E8%BD%AF%E4%BB%B6%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8CV1.0.html" title="EC系列Linux软件用户手册V1.0">EC系列Linux软件用户手册V1.0</a></li>
+        <li><a href="EC5550/Manuals/DSA%E6%89%8B%E5%86%8C/DSA%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="DSA 用户手册 V2.0">DSA手册 V1.0</a></li>
         <li><a href="EC5550/Manuals/%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97/EC5550%E5%BF%AB%E9%80%9F%E5%AE%89%E8%A3%85%E6%89%8B%E5%86%8C_V1.0.html" title="EC5000 快速安装手册">安装指南 V1.0</a></li>
         <li><a href="EC5550/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/EC5550%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="EC5000系列边缘AI计算机 用户手册">用户手册 V1.0</a></li>
         </ul>
@@ -188,6 +193,7 @@ hide:
         <li><a href="EC942/Developer%20Documentation/FlexAPI/DSAAPI%E6%96%87%E6%A1%A3V1.0.html" title="DSA API文档V1.0">DSA API文档V1.0</a></li>
         <li><a href="EC942/Developer%20Documentation/FlexAPI/EC%E7%B3%BB%E5%88%97API%E6%96%87%E6%A1%A3V1.0.html" title="EC系列API文档V1.0">EC系列API文档V1.0</a></li>
         <li><a href="EC942/Developer%20Documentation/FlexAPI/EC%E7%B3%BB%E5%88%97Linux%E8%BD%AF%E4%BB%B6%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8CV1.0.html" title="EC系列Linux软件用户手册V1.0">EC系列Linux软件用户手册V1.0</a></li>
+        <li><a href="EC942/Manuals/DSA%E6%89%8B%E5%86%8C/DSA%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="DSA 用户手册 V2.0">DSA手册 V1.0</a></li>
         <li><a href="EC942/Manuals/%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97/EC942%E5%BF%AB%E9%80%9F%E5%AE%89%E8%A3%85%E6%89%8B%E5%86%8C_V1.0.html" title="EC942 快速安装手册">安装指南 V1.0</a></li>
         <li><a href="EC942/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/EC942%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="EC942系列边缘计算机用户手册">用户手册 V1.0</a></li>
         </ul>
@@ -201,6 +207,7 @@ hide:
         <li><a href="EC954/Developer%20Documentation/FlexAPI/DSAAPI%E6%96%87%E6%A1%A3V1.0.html" title="DSA API文档V1.0">DSA API文档V1.0</a></li>
         <li><a href="EC954/Developer%20Documentation/FlexAPI/EC%E7%B3%BB%E5%88%97API%E6%96%87%E6%A1%A3V1.0.html" title="EC系列API文档V1.0">EC系列API文档V1.0</a></li>
         <li><a href="EC954/Developer%20Documentation/FlexAPI/EC%E7%B3%BB%E5%88%97Linux%E8%BD%AF%E4%BB%B6%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8CV1.0.html" title="EC系列Linux软件用户手册V1.0">EC系列Linux软件用户手册V1.0</a></li>
+        <li><a href="EC954/Manuals/DSA%E6%89%8B%E5%86%8C/DSA%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="DSA 用户手册 V2.0">DSA手册 V1.0</a></li>
         <li><a href="EC954/Manuals/%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97/EC954%E5%BF%AB%E9%80%9F%E5%AE%89%E8%A3%85%E6%89%8B%E5%86%8C_V1.0.html" title="EC954 快速安装手册">安装指南 V1.0</a></li>
         <li><a href="EC954/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/EC954%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="EC954边缘计算机用户手册">用户手册 V1.0</a></li>
         </ul>
@@ -320,6 +327,7 @@ hide:
         <li><a href="IG502/certifications.html" title="IG502 认证证书">认证证书</a></li>
         <li><a href="IG502/Developer%20Documentation/FlexAPI/IG%E6%94%AF%E6%8C%81IEC.API%E6%96%87%E6%A1%A3V1.0.html" title="IG支持IEC.API文档V1.0">IG支持IEC.API文档V1.0</a></li>
         <li><a href="IG502/Developer%20Documentation/FlexAPI/IG%E7%B3%BB%E5%88%97API%E6%96%87%E6%A1%A3V1.0.html" title="IG系列API文档V1.0">IG系列API文档V1.0</a></li>
+        <li><a href="IG502/Manuals/DSA%E6%89%8B%E5%86%8C/DSA%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="DSA 用户手册 V2.0">DSA手册 V1.0</a></li>
         <li><a href="IG502/Manuals/%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97/IG502%E5%BF%AB%E9%80%9F%E5%AE%89%E8%A3%85%E6%89%8B%E5%86%8C_V1.0.html" title="IG502 快速安装手册">安装指南 V1.0</a></li>
         <li><a href="IG502/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/IG502%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="IG502 边缘计算网关用户手册">用户手册 V1.0</a></li>
         <li><a href="IG502/Use%20Cases/IEC60870-5-101%E8%BD%ACIEC60870-5-104%E5%8D%8F%E8%AE%AE%E8%BD%AC%E6%8D%A2/IEC60870-5-101%E8%BD%ACIEC60870-5-104%E5%8D%8F%E8%AE%AE%E8%BD%AC%E6%8D%A2%E6%96%B9%E6%A1%88.html" title="IG502 - IEC 60870-5-101 至 IEC 60870-5-104 协议转换">IG502 - IEC 60870-5-101 至 IEC 60870-5-104 协议转换</a></li>
@@ -344,9 +352,18 @@ hide:
     </div>
     <div class="pm-card">
       <div class="pm-card__body">
+        <div class="pm-card__title">IG502-lite</div>
+        <ul class="pm-card__links">
+        <li><a href="IG502-lite/Manuals/DSA%E6%89%8B%E5%86%8C/DSA%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="DSA 用户手册 V2.0">DSA手册 V1.0</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pm-card">
+      <div class="pm-card__body">
         <div class="pm-card__title">IG504</div>
         <ul class="pm-card__links">
         <li><a href="IG504/certifications.html" title="IG504 认证证书">认证证书</a></li>
+        <li><a href="IG504/Manuals/DSA%E6%89%8B%E5%86%8C/DSA%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="DSA 用户手册 V2.0">DSA手册 V1.0</a></li>
         <li><a href="IG504/Manuals/%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97/IG504%E5%BF%AB%E9%80%9F%E5%AE%89%E8%A3%85%E6%89%8B%E5%86%8CV1.0.html" title="IG504 快速安装手册">安装指南 V1.0</a></li>
         <li><a href="IG504/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/IG504%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="IG系列用户手册V1.0">用户手册 V1.0</a></li>
         </ul>
@@ -357,6 +374,7 @@ hide:
         <div class="pm-card__title">IG532</div>
         <ul class="pm-card__links">
         <li><a href="IG532/certifications.html" title="IG532 认证证书">认证证书</a></li>
+        <li><a href="IG532/Manuals/DSA%E6%89%8B%E5%86%8C/DSA%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="DSA 用户手册 V2.0">DSA手册 V1.0</a></li>
         <li><a href="IG532/Manuals/%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97/IG532%E5%BF%AB%E9%80%9F%E5%AE%89%E8%A3%85%E6%89%8B%E5%86%8C_V1.0.html" title="IG532 快速安装手册">安装指南 V1.0</a></li>
         </ul>
       </div>
@@ -368,6 +386,7 @@ hide:
         <li><a href="IG902/certifications.html" title="IG902 认证证书">认证证书</a></li>
         <li><a href="IG902/Developer%20Documentation/FlexAPI/IG%E6%94%AF%E6%8C%81IEC.API%E6%96%87%E6%A1%A3V1.0.html" title="IG支持IEC.API文档V1.0">IG支持IEC.API文档V1.0</a></li>
         <li><a href="IG902/Developer%20Documentation/FlexAPI/IG%E7%B3%BB%E5%88%97API%E6%96%87%E6%A1%A3V1.0.html" title="IG系列API文档V1.0">IG系列API文档V1.0</a></li>
+        <li><a href="IG902/Manuals/DSA%E6%89%8B%E5%86%8C/DSA%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="DSA 用户手册 V2.0">DSA手册 V1.0</a></li>
         <li><a href="IG902/Manuals/%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97/IG902%E5%BF%AB%E9%80%9F%E5%AE%89%E8%A3%85%E6%89%8B%E5%86%8C_V1.0.html" title="IG902 快速安装手册">安装指南 V1.0</a></li>
         <li><a href="IG902/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/IG902%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="IG系列用户手册V1.0">用户手册 V1.0</a></li>
         <li><a href="IG902/Use%20Cases/%E5%A4%A7%E5%9E%8B%E5%9F%8E%E5%B8%82%E4%BA%8C%E6%AC%A1%E4%BE%9B%E6%B0%B4%E8%AE%BE%E6%96%BD%E8%BF%9C%E7%A8%8B%E6%99%BA%E8%83%BD%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/%E6%A1%88%E4%BE%8B%E6%89%8B%E5%86%8C.html" title="大型城市二次供水设施远程智能管理系统">大型城市二次供水设施远程智能管理系统</a></li>
@@ -380,6 +399,7 @@ hide:
         <div class="pm-card__title">IG974</div>
         <ul class="pm-card__links">
         <li><a href="IG974/certifications.html" title="IG974 认证证书">认证证书</a></li>
+        <li><a href="IG974/Manuals/DSA%E6%89%8B%E5%86%8C/DSA%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="DSA 用户手册 V2.0">DSA手册 V1.0</a></li>
         <li><a href="IG974/Manuals/%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97/IG974%E5%BF%AB%E9%80%9F%E5%AE%89%E8%A3%85%E6%89%8B%E5%86%8C_V1.0.html" title="IG974快速安装手册V1.0">安装指南 V1.0</a></li>
         </ul>
       </div>

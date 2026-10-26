@@ -333,6 +333,7 @@ hide:
         <div class="pm-card__title">IG504</div>
         <ul class="pm-card__links">
         <li><a href="IG504/certifications.html" title="IG504 Certifications">Certifications</a></li>
+        <li><a href="IG504/Manuals/User%20manual/IG504_User%20manual_V1.0.html" title="InGateway502 Edge Computing Gateway User Manual">User manual V1.0</a></li>
         </ul>
       </div>
     </div>
@@ -671,6 +672,7 @@ hide:
       <div class="pm-card__body">
         <div class="pm-card__title">Mo 62A</div>
         <ul class="pm-card__links">
+        <li><a href="Mo%2062A/Developer%20Documentation/Greengrass%20SDK/mo-62a-sdk.html" title="MO 62A SDK User Guide">Greengrass SDK</a></li>
         <li><a href="Mo%2062A/Manuals/Installation%20Guide/Mo%2062A%20Hardware%20Interface%20Description-V1%200.html" title="Mo 62A Hardware Interface Description">Installation Guide V1</a></li>
         <li><a href="Mo%2062A/Manuals/Installation%20Guide/Mo%2062A%20Quick%20Start%20Guide.html" title="Mo 62A Quick Start Guide">Installation Guide</a></li>
         <li><a href="Mo%2062A/Manuals/Quick%20user%20manual/Mo%2062A%20quickstart.html" title="Mo 62A Quick Start Guide">Quick user manual</a></li>
@@ -754,6 +756,8 @@ hide:
       <div class="pm-card__body">
         <div class="pm-card__title">VT200</div>
         <ul class="pm-card__links">
+        <li><a href="VT200/Developer%20Documentation/FlexAPI/FlexAPI_MQTT_for_3rd_party_platform.html" title="FlexAPI_MQTT_for_3rd_party_platform">FlexAPI_MQTT_for_3rd_party_platform</a></li>
+        <li><a href="VT200/Developer%20Documentation/FlexAPI/FlexAPI_TCP_for_3rd_party_platform.html" title="FlexAPI_TCP_for_3rd_party_platform">FlexAPI_TCP_for_3rd_party_platform</a></li>
         <li><a href="VT200/Manuals/User%20manual/VT200_User%20manual_V1.0.html" title="Vehicle Telematics 200 User Manual (Standard Edition) V1.0">User manual V1.0</a></li>
         </ul>
       </div>
@@ -762,6 +766,8 @@ hide:
       <div class="pm-card__body">
         <div class="pm-card__title">VT310</div>
         <ul class="pm-card__links">
+        <li><a href="VT310/Developer%20Documentation/FlexAPI/FlexAPI_MQTT_for_3rd_party_platform.html" title="FlexAPI_MQTT_for_3rd_party_platform">FlexAPI_MQTT_for_3rd_party_platform</a></li>
+        <li><a href="VT310/Developer%20Documentation/FlexAPI/FlexAPI_TCP_for_3rd_party_platform.html" title="FlexAPI_TCP_for_3rd_party_platform">FlexAPI_TCP_for_3rd_party_platform</a></li>
         <li><a href="VT310/Manuals/User%20manual/VT310_User%20manual_V1.0.html" title="Vehicle Telematics VT310/320 User Manual (Standard Edition)">User manual V1.0</a></li>
         <li><a href="VT310/Use%20Cases/Transport-Refrigeration-Monitoring/case-manual.html" title="Transport Refrigeration Networking Monitoring Solution">Transport Refrigeration Networking Monitoring Solution</a></li>
         <li><a href="VT310/Use%20Cases/Transport-Refrigeration-Monitoring/config-manual.html" title="Vehicle Refrigeration Monitoring">Vehicle Refrigeration Monitoring</a></li>
@@ -772,6 +778,8 @@ hide:
       <div class="pm-card__body">
         <div class="pm-card__title">VT320</div>
         <ul class="pm-card__links">
+        <li><a href="VT320/Developer%20Documentation/FlexAPI/FlexAPI_MQTT_for_3rd_party_platform.html" title="FlexAPI_MQTT_for_3rd_party_platform">FlexAPI_MQTT_for_3rd_party_platform</a></li>
+        <li><a href="VT320/Developer%20Documentation/FlexAPI/FlexAPI_TCP_for_3rd_party_platform.html" title="FlexAPI_TCP_for_3rd_party_platform">FlexAPI_TCP_for_3rd_party_platform</a></li>
         <li><a href="VT320/Manuals/User%20manual/VT320_User%20manual_V1.0.html" title="Vehicle Telematics VT310/320 User Manual (Standard Edition)">User manual V1.0</a></li>
         </ul>
       </div>

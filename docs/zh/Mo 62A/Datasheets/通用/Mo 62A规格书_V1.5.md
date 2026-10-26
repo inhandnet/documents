@@ -1,4 +1,4 @@
-<div style="width: 100%;height: 100%;background: url(images/68A.jpg); background-size: 100% 100%;">
+<div style="width: 100%;height: 100%;background: url(images/62A.jpg); background-size: 100% 100%;">
   <div style="height:75%;">
     <div style="width:35%; padding: 40px 40px">
       <img src="images/logo.png" alt="logo" />
@@ -9,7 +9,7 @@
   </div>
   <div style="padding-left: 40px;">
     <div style="font-size: 40px; font-weight: bold; color:#000;margin-bottom: 30px;">
-      Mo 68A AI 单板计算机
+      Mo 62A AI 单板计算机
     </div>
     <div style="text-align: center;">
       <div style="display: flex; flex-wrap: wrap; gap: 16px; ">
@@ -28,31 +28,31 @@
 
 # <span style="color: green;">1. 产品概述</span>
 
-**Mo 68A 是基于 TI AM68A SoC 的 8 TOPS 边缘 AI 单板计算机，采用兼容标准 SBC 外形规格，适用于 AI 视觉盒子、智能摄像头及边缘 AI 推理终端。**
+**Mo 62A 是基于 TI AM62A74 SoC 的 2 TOPS 边缘 AI 单板计算机，兼容标准 SBC 外形规格，适用于 AI 视觉及边缘推理终端。**
 
 **产品特点：**
-- **边缘 AI：** 8 TOPS 端侧 AI 加速，TI TIDL 支持 TFLite / ONNX
-- **视觉处理：** 两路 4-lane MIPI CSI-2，VPAC / DMPAC，4K@60fps 编解码
-- **丰富接口：** 千兆以太网、PCIe 3.0、4 × USB 3.0、mini DP
-- **SBC 兼容：** 标准外形，40-pin HAT 兼容，支持主流外壳配件
-- **高级安全：** 安全启动、TrustZone、OP-TEE、硬件加密加速
+- **AI 加速:** 内置 C7x DSP 与深度学习加速器，2 TOPS 端侧 AI 推理
+- **SBC 兼容:** 标准 SBC 外形，兼容 HAT 扩展配件及主流外壳
+- **丰富接口:** 千兆以太网、4×USB 2.0、Micro HDMI、MIPI CSI-2
+- **安全稳定:** 安全启动、TrustZone、OP-TEE、硬件加密加速器
+- **开源生态:** Debian 13 Linux，开放 SDK，支持 TFLite/ONNX 模型
 
 ## <span style="color: green;">核心技术指标</span>
 
-| 技术指标      | 规格                                       |
-|---------------|--------------------------------------------|
-| AI 推理       | 8 TOPS，TFLite / ONNX                      |
-| 视觉处理      | 两路 MIPI CSI-2，4K@60fps 编解码           |
-| 操作系统      | Debian 13 Trixie，Linux 6.12               |
-| 网络          | 1 × 千兆以太网                             |
-| 安全          | 安全启动，TrustZone，OP-TEE，AES-256       |
-| 开发          | Python / C / C++，OpenCV，开放 SDK         |
-| CPU           | 2 × Cortex-A72 @ 2.0 GHz                   |
-| 内存          | LPDDR4 4 GB / 8 GB（默认）                 |
-| 存储          | Micro SD                                   |
-| 供电          | 5 V / 5 A DC，≤ 25 W                       |
-| 尺寸          | 85 × 56 mm                                 |
-| 工作温度      | 0 ~ 50 ℃                                   |
+| 技术指标 | 规格                        |
+| -------- | --------------------------- |
+| AI 推理  | 2 TOPS（C7x DSP + DLA）     |
+| 操作系统 | Debian 13.2（Linux 6.12）   |
+| Wi-Fi    | Wi-Fi 5（802.11ac），双频 2.4/5 GHz    |
+| 蓝牙     | BLE 4.2                     |
+| AI 框架  | TI TIDL，支持 TFLite / ONNX |
+| 摄像头   | 1 × 4-lane MIPI CSI-2       |
+| 尺寸     | 85 × 56 mm                  |
+| 重量     | 47 g                        |
+| 供电     | USB Type-C 5V/5A DC         |
+| 功耗     | 25W（MAX）                  |
+| 工作温度 | 0 ~ 50 ℃                    |
+| 内存     | LPDDR4 2GB（默认）/ 4GB     |
 
 # <span style="color: green;">2. 产品尺寸</span>
 
@@ -61,14 +61,15 @@
     <img src="images/prod_1.png" width="100%" alt="正视图" />
     <div style="width: 100%; text-align: center; font-size: 12px;">正视图</div>
   </div>
-  <div style="width: 45%;">
+    <div style="width: 45%;">
     <img src="images/prod_3.png" width="100%" alt="侧视图" />
     <div style="width: 100%; text-align: center; font-size: 12px;">侧视图</div>
   </div>
-    <div style="width: 25%;">
+  <div style="width: 25%;">
     <img src="images/prod_2.png" width="100%" alt="接口图" />
     <div style="width: 100%; text-align: center; font-size: 12px;">接口图</div>
   </div>
+
   <div style="width: 45%;">
     <div>注意：</div>
     <div>1.所有尺寸单位为毫米（mm）。</div>
@@ -88,33 +89,40 @@
 | 类别/参数 | 规格 |
 |--------------------------|------|
 | <span style="color: green;">**硬件平台**</span> | |
-| CPU | TI AM68A，2 × Cortex-A72 @ 2.0 GHz |
-| AI 加速器 | 2 × C7x DSP + 深度学习加速器，8 TOPS |
+| 处理器 | TI AM62A74，4 × Cortex-A53 @ 1.4 GHz |
+| AI 加速器 | C7x DSP + Deep Learning Accelerator，2 TOPS |
 | ISP / 视觉 | On-chip ISP + VPAC（RGB-IR，WDR，LDC） |
-| RAM | LPDDR4 4 GB / 8 GB（默认） |
-| <span style="color: green;">**连接与接口**</span> | |
+| 内存 | LPDDR4 2GB（默认）/ 4GB |
+| <span style="color: green;">**连接与联网**</span> | |
 | 以太网 | 1 × 千兆以太网 |
-| USB | 4 × USB 3.0 Type-A |
-| PCIe | 1 × PCIe 3.0 |
-| 显示 | 1 × mini DP，up to 2 × 4-lane MIPI DSI |
-| 摄像头 | up to 2 × 4-lane MIPI CSI-2 |
-| 音频 | I2S 经 40-pin 连接器引出 |
-| 40-pin 连接器 | GPIO / I2C / I2S / SPI / UART / PCM，HAT-compatible |
-| 风扇接口 | 1 × 4-pin 风扇接口（5 V，PWM，GND，TACH） |
-| 按键 | 1 × 复位键 |
+| USB | 4 × USB 2.0 Type-A |
+| 显示 | 1 × Micro HDMI |
+| 摄像头 | 1 × 4-lane MIPI CSI-2 |
+| 音频 | 3.5 mm 接口 + PCM（经 40-pin 连接器引出） |
+| 40-pin 连接器 | GPIO / I²C / SPI / UART / PCM，HAT-compatible |
 | 存储 | Micro SD |
 | 调试串口 | 1 × TTL UART |
-| LED | PWR，STATUS |
+| 风扇接口 | 1 × 4-pin 风扇接口 |
+| 按键 | 1 × 电源键 |
+| LED | PWR，USER |
+| <span style="color: green;">**无线**</span> | |
+| Wi-Fi | Wi-Fi 5（802.11ac），双频 2.4/5 GHz |
+| 蓝牙 | BLE 4.2 |
+| 天线接口 | Wi-Fi / BLE：板载扣式天线 |
+| <span style="color: green;">**安全性**</span> | |
+| 安全启动 | 支持（ARM TrustZone + OP-TEE） |
 | <span style="color: green;">**电源与功耗**</span> | |
-| 输入电源 | USB Type-C 5 V / 5 A DC |
-| 功耗 | 25 W（MAX） |
-| <span style="color: green;">**机械规格**</span> | |
-| 尺寸 (W × D) | 85 × 56 mm |
-| 重量 | 53 g |
-| 结构形式 | PCB |
+| 输入电源 | USB Type-C 5V/5A DC |
+| 功耗 | 25W（MAX） |
+| <span style="color: green;">**机械特性**</span> | |
+| 尺寸 | 85 × 56 mm |
+| 重量 | 47 g |
+| 外壳 | PCB |
 | 散热 | 主动风扇（可选） |
-| RTC | 支持（带电池备份）|
-| <span style="color: green;">**环境**</span> | |
+| <span style="color: green;">**其他**</span> | |
+| RTC | 支持（带电池备份） |
+| 看门狗 | 硬件看门狗 |
+| <span style="color: green;">**环境温度**</span> | |
 | 工作温度 | 0 ~ 50 ℃ |
 | 存储温度 | -20 ~ 70 ℃ |
 
@@ -123,24 +131,23 @@
 | 类别/参数 | 规格 |
 |--------------------------|------|
 | <span style="color: green;">**操作系统**</span> | |
-| 系统 | Debian 13 Trixie |
+| 系统 | Debian 13.2 Trixie |
 | 内核 | Linux Kernel 6.12 |
 | <span style="color: green;">**AI 与视觉**</span> | |
 | AI 运行时 | TI TIDL，supports TFLite / ONNX |
 | 视觉 SDK | TI EdgeAI SDK |
 | 摄像头框架 | V4L2 |
 | 显示框架 | DRM / KMS |
-| <span style="color: green;">**网络特性**</span> | |
-| IP 应用 | TCP / UDP，ICMP，DNS，DHCP |
+| <span style="color: green;">**网络协议**</span> | |
+| IP 应用 | TCP/UDP，ICMP，DNS，DHCP |
 | IP 路由 | 静态路由 |
 | <span style="color: green;">**安全性**</span> | |
 | 安全启动 | 支持 |
 | TrustZone | 支持 |
 | OP-TEE | 支持 |
 | 加密加速器 | Hardware AES-256 |
-| 看门狗 | 硬件看门狗 |
 | <span style="color: green;">**开发**</span> | |
-| 编程语言 | Python，C / C++ |
+| 语言 | Python，C/C++ |
 | 库 | OpenCV，GStreamer，NumPy |
 | 包管理器 | apt（Debian） |
 | 开放 SDK | 支持客户自定义系统构建 |
@@ -149,30 +156,26 @@
 | 固件升级 | SD 卡烧录 |
 | 调试 | UART 控制台 |
 
-
-<div style="page-break-after: always;"></div>
-
-
 # <span style="color: green;">5. 订购信息</span>
 
 ## <span style="color: green;">型号规则</span>
 
-**Model code:** Mo-68A-x
+**型号模板：** MO62A-\<DRAM\>
 
-Mo-68A: Base Model
--x: Memory
+MO62A：基础型号
+
+\<-DRAM\>：内存
 
 ## <span style="color: green;">产品型号</span>
 
-| 基础型号 | -x | 内存 |
-|---------|-------|-----------|
-| Mo-68A-4G | 4G | 4 GB |
-| Mo-68A-8G | 8G | 8 GB |
+| 型号 | 内存 |
+|---------|-----------|
+| MO62A-2G | 2GB |
+| MO62A-4G | 4GB |
 
 **示例**<br/>
-型号：Mo-68A-8G<br/> 
-“Mo-68A” 为基础型号。<br/>
-“–8G”  代表 8GB 内存。
+型号：MO62A-2G<br/>
+配备 2GB 内存的 Mo 62A 主板。
 
 # <span style="color: green;">6. 联系我们</span>
 

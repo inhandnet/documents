@@ -1,15 +1,15 @@
-<div style="width: 100%;height: 100%;background: url(images/62A.jpg); background-size: 100% 100%;">
+<div style="width: 100%;height: 100%;background: url(images/68A.jpg); background-size: 100% 100%;">
   <div style="height:75%;">
     <div style="width:35%; padding: 40px 40px">
       <img src="images/logo.png" alt="logo" />
     </div>
     <div style="font-size: 28px; font-weight: bold; color:#000;text-align: center; margin-bottom: 60px;">
-      Edge AI Computing, Open SDK, Debian Linux, HAT-Compatible
+      Embrace Edge AI, Empower Intelligent Vision
     </div>
   </div>
   <div style="padding-left: 40px;">
     <div style="font-size: 40px; font-weight: bold; color:#000;margin-bottom: 30px;">
-      Mo 62A AI Single Board Computer
+      Mo 68A AI Single Board Computer
     </div>
     <div style="text-align: center;">
       <div style="display: flex; flex-wrap: wrap; gap: 16px; ">
@@ -28,31 +28,31 @@
 
 # <span style="color: green;">1. Product Overview</span>
 
-**The Mo 62A is a 2 TOPS edge AI single-board computer based on the TI AM62A74 SoC, designed for AI vision boxes, intelligent cameras, and edge AI inference terminals.**
+**The Mo 68A is an 8 TOPS edge AI single-board computer based on the TI AM68A SoC, with a form factor compatible with standard SBCs, designed for AI vision boxes, intelligent cameras, and edge AI inference terminals.**
 
 **Product Features:**
-- **Edge AI Acceleration:** 2 TOPS on-device AI inference with C7x DSP and deep-learning accelerator
-- **Open Ecosystem:** Debian Linux, open SDK, Python/C/C++ development with Docker support
-- **Rich Interfaces:** Gigabit Ethernet, 4 × USB 2.0, micro HDMI, 4-lane MIPI CSI-2, 40-pin HAT connector
-- **Wireless Connectivity:** Wi-Fi 5 dual-band and BLE for flexible deployment
-- **HAT Compatible:** Standard SBC form factor, mechanically compatible with mainstream enclosures and accessories
+- **Edge AI:** 8 TOPS on-device AI acceleration, TI TIDL supports TFLite / ONNX
+- **Vision Processing:** Dual 4-lane MIPI CSI-2, VPAC / DMPAC, 4K@60fps codec
+- **Rich Interfaces:** Gigabit Ethernet, PCIe 3.0, 4 × USB 3.0, mini DP
+- **SBC Compatibility:** Standard form factor, 40-pin HAT compatibility, support for mainstream enclosures and accessories
+- **High Security:** Secure Boot, TrustZone, OP-TEE, hardware crypto acceleration
 
 ## <span style="color: green;">Core Technical Specifications</span>
 
-| Technical Indicator | Specification |
-|---|---|
-| OS | Debian 13 (Embedded Linux) |
-| AI Accelerator | C7x DSP + Deep Learning Accelerator, 2 TOPS |
-| AI Runtime | TI TIDL, supports TFLite / ONNX |
-| Wi-Fi | Wi-Fi 5 (802.11ac), dual-band 2.4 / 5 GHz |
-| Bluetooth | BLE 4.2 |
-| Security | Secure Boot, TrustZone, OP-TEE, Hardware AES-256 |
-| CPU | 4 × Cortex-A53 @ 1.4 GHz |
-| RAM | LPDDR4 4 GB (default) / 2 GB / 8 GB |
-| Interface | 1 × GbE, 4 × USB 2.0, micro HDMI, MIPI CSI-2, 40-pin HAT |
-| Power | USB Type-C 5 V / 5 A DC; ≤ 25 W |
-| Dimensions (W × D × H) | 85 × 56 mm (3.35 × 2.2 in) |
-| Operating Temperature | 0 °C ~ +50 °C (32 °F ~ +122 °F) |
+| Technical Indicator      | Specification                                       |
+|---------------|--------------------------------------------|
+| AI Inference       | 8 TOPS, TI TIDL supports TFLite / ONNX models      |
+| Vision Processing      | Dual 4-lane MIPI CSI-2 RX, VPAC / DMPAC, 4K@60fps H.265 / H.264 hardware codec |
+| Operating System      | Debian 13 Trixie, Linux 6.12               |
+| Network          | 1 × Gigabit Ethernet                             |
+| Security          | Secure Boot, TrustZone, OP-TEE, AES-256       |
+| Development          | Python / C / C++, OpenCV, Open SDK         |
+| CPU           | 2 × Cortex-A72 @ 2.0 GHz                   |
+| Memory          | LPDDR4 4 GB / 8 GB (default)                 |
+| Storage          | Micro SD                                   |
+| Power          | USB Type-C 5 V / 5 A DC,  25 W (MAX) |
+| Dimensions          | 85 × 56 mm                                 |
+| Operating Temperature      | 0 ~ 50 °C                                   |
 
 # <span style="color: green;">2. Product Dimensions</span>
 
@@ -65,13 +65,14 @@
     <img src="images/prod_3.png" width="100%" alt="Side View" />
     <div style="width: 100%; text-align: center; font-size: 12px;">Side View</div>
   </div>
-    <div style="width: 18%;">
+  <div style="width: 25%;">
     <img src="images/prod_2.png" width="100%" alt="Interface View" />
     <div style="width: 100%; text-align: center; font-size: 12px;">Interface View</div>
   </div>
+
   <div style="width: 45%;">
     <div>Note:</div>
-    <div>1. All dimensions are in millimeters (mm), with inches (in) in parentheses.</div>
+    <div>1. All dimensions are in millimeters (mm).</div>
     <div>2. All dimensions are approximate values for <span style="font-weight: bold;">reference only</span>.</div>
     <div>3. The dimensions shown <span style="font-weight: bold;">shall not be used for production or processing</span>.</div>
     <div>4. Dimensions shall comply with part and manufacturing tolerance requirements.</div>
@@ -79,51 +80,55 @@
   </div>
 </div>
 
+
+<div style="page-break-after: always;"></div>
+
+
 # <span style="color: green;">3. Hardware Specifications</span>
 
 | Category / Parameter | Specification |
 |--------------------------|------|
 | <span style="color: green;">**Hardware Platform**</span> | |
-| CPU | TI AM62A74, 4 × Cortex-A53 @ 1.4 GHz |
-| AI Accelerator | C7x DSP + Deep Learning Accelerator, 2 TOPS |
+| CPU | TI AM68A, 2 × Cortex-A72 @ 2.0 GHz |
+| AI Accelerator | 2 × C7x DSP + Deep Learning Accelerator, 8 TOPS |
 | ISP / Vision | On-chip ISP + VPAC (RGB-IR, WDR, LDC) |
-| RAM | LPDDR4 4 GB (default) / 2 GB / 8 GB |
-| <span style="color: green;">**Interface**</span> | |
+| RAM | LPDDR4 4 GB / 8 GB (default) |
+| <span style="color: green;">**Interfaces**</span> | |
 | Ethernet | 1 × Gigabit Ethernet |
-| USB | 4 × USB 2.0 Type-A |
-| Display | 1 × micro HDMI |
-| Camera | 1 × 4-lane MIPI CSI-2 |
-| Audio | 3.5 mm jack + PCM via 40-pin connector |
-| 40-pin Connector | GPIO / I²C / SPI / UART / PCM, HAT-compatible |
-| Fan Connector | 1 × 4-pin fan connector |
+| USB | 4 × USB 3.0 Type-A |
+| PCIe | 1 × PCIe 3.0 |
+| Display | 1 × mini DP, up to 2 × 4-lane MIPI DSI |
+| Camera | up to 2 × 4-lane MIPI CSI-2 |
+| Audio | I2S via 40-pin connector |
+| 40-pin Connector | GPIO / I2C / I2S / SPI / UART / PCM, HAT-compatible |
+| Fan Connector | 1 × 4-pin fan connector (5 V, PWM, GND, TACH) |
 | Button | 1 × Reset button |
-| Storage | microSD |
+| Storage | Micro SD |
 | Debug UART | 1 × TTL UART |
-| LED | PWR, USER |
-| <span style="color: green;">**Wireless**</span> | |
-| Wi-Fi | Wi-Fi 5 (802.11ac), dual-band 2.4 / 5 GHz |
-| Bluetooth | BLE 4.2 |
-| Antenna | Wi-Fi / BLE: on-board snap-on antenna |
+| LED | PWR, STATUS |
+| <span style="color: green;">**Security**</span> | |
+| Secure Boot | Support (ARM TrustZone + OP-TEE) |
 | <span style="color: green;">**Power**</span> | |
 | Power Input | USB Type-C 5 V / 5 A DC |
 | Power Consumption | 25 W (MAX) |
 | <span style="color: green;">**Mechanical**</span> | |
-| Dimensions (W × D × H) | 85 × 56 mm (3.35 × 2.2 in) |
-| Weight | 47 g (0.1 lb) |
+| Dimensions | 85 × 56 mm |
+| Weight | 53 g |
 | Housing | PCB |
 | Cooling | Active fan (optional) |
+| <span style="color: green;">**Others**</span> | |
 | RTC | Support (battery backup) |
+| Watchdog | Hardware watchdog supported |
 | <span style="color: green;">**Environmental**</span> | |
-| Operating Temperature | 0 °C ~ +50 °C (32 °F ~ +122 °F) |
-| Storage Temperature | -20 °C ~ +70 °C (-4 °F ~ +158 °F) |
-
+| Operating Temperature | 0 ~ 50 °C |
+| Storage Temperature | -20 ~ 70 °C |
 
 # <span style="color: green;">4. Software Specifications</span>
 
 | Category / Parameter | Specification |
 |--------------------------|------|
 | <span style="color: green;">**Operating System**</span> | |
-| OS | Debian 13.2 Trixie |
+| OS | Debian 13 Trixie |
 | Kernel | Linux Kernel 6.12 |
 | <span style="color: green;">**AI & Vision**</span> | |
 | AI Runtime | TI TIDL, supports TFLite / ONNX |
@@ -139,7 +144,7 @@
 | OP-TEE | Support |
 | Crypto Accelerator | Hardware AES-256 |
 | <span style="color: green;">**Development**</span> | |
-| Languages | Python, C/C++ |
+| Languages | Python, C / C++ |
 | Libraries | OpenCV, GStreamer, NumPy |
 | Package Manager | apt (Debian) |
 | Open SDK | Supports custom system build by customer |
@@ -148,21 +153,34 @@
 | Firmware Upgrade | SD card flash |
 | Debug | UART console |
 
+
+<div style="page-break-after: always;"></div>
+
+
 # <span style="color: green;">5. Ordering Information</span>
 
 ## <span style="color: green;">Model Code Rule</span>
 
-**Model code:** Mo 62A-\<Memory\>
+**Model code:** Mo68A-\<x\>-\<y\>
 
-\<Memory\>: RAM Capacity
+Mo68A: Base Model
+
+\<-x\>: Memory
+
+\<-y\>: MIPI configuration
 
 ## <span style="color: green;">Product Models</span>
 
-| Model | \<Memory\>: RAM Capacity |
-|-------|--------------------------|
-| Mo 62A-2G | 2 GB |
-| Mo 62A-4G | 4 GB |
-| Mo 62A-8G | 8 GB |
+| Base Model | -x | Memory | -y | MIPI Configuration |
+|---------|-------|-----------|-------|-----------|
+| Mo68A | 4G | 4 GB | DC | DSI on MIPI0, CSI on MIPI1 |
+| Mo68A | 8G | 8 GB | DC | DSI on MIPI0, CSI on MIPI1 |
+
+**Example**<br/>
+Model: Mo68A-8G-DC<br/>
+"Mo68A" means Base Model.<br/>
+"-8G" means 8 GB memory.<br/>
+"-DC" means DSI on MIPI0, CSI on MIPI1.
 
 # <span style="color: green;">6. Contact Us</span>
 

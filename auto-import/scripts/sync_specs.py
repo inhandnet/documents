@@ -490,15 +490,17 @@ def extract_specs(md_path: str) -> list:
 
 
 def get_existing_specs(product_id: int, site: str) -> dict:
-    """获取产品现有规格属性"""
+    """获取产品现有规格属性，返回 {"groups": {slug: {name, options}},
+    "values": {slug: {option_name: desc}}}。values 来自 _attr_desc_ meta。"""
+    empty = {"groups": {}, "values": {}}
     wp_url = SITES[site].get("wp_url", "")
     if not wp_url:
-        return {}
+        return empty
 
     env_map = {"zh": "WP_ZH_APP_PASSWORD", "en": "WP_EN_APP_PASSWORD"}
     pw = os.environ.get(env_map[site], "") or _sites_config.get(site, {}).get("wp_app_password", "")
     if not pw:
-        return {}
+        return empty
 
     auth = basic_auth(_sites_config.get(site, {}).get("wp_user", "admin"), pw)
 
@@ -509,22 +511,62 @@ def get_existing_specs(product_id: int, site: str) -> dict:
             timeout=30,
         )
         if r.status_code != 200:
-            return {}
+            return empty
 
         product = r.json()
         attrs = product.get("attributes", [])
 
-        # 构建属性字典 {slug: {name, options}}
+        # 构建属性字典 {slug: {name, options, id}}
         existing = {}
         for a in attrs:
-            existing[a["slug"]] = {
+            existing[normalize_slug(a["slug"])] = {
                 "name": a["name"],
                 "options": sorted(a.get("options", [])),
+                "id": a["id"],
             }
-        return existing
+
+        # 拉取 _attr_desc_ meta（slug -> {term_id: 描述}），再按 term id 反查名称
+        meta_desc = {}
+        for m in product.get("meta_data", []):
+            key = m.get("key", "")
+            if key.startswith("_attr_desc_"):
+                rest = key[len("_attr_desc_"):]
+                slug_raw, _, term_id = rest.rpartition("_")
+                meta_desc.setdefault(normalize_slug(slug_raw), {})[term_id] = m.get("value", "") or ""
+
+        values = {}
+        for slug, term_descs in meta_desc.items():
+            attr_id = existing.get(slug, {}).get("id")
+            if attr_id is None:
+                continue
+            try:
+                id2name = {}
+                page = 1
+                while True:  # terms 可能超 100，需翻页
+                    tr = requests.get(
+                        f"{wp_url}/wp-json/wc/v3/products/attributes/{attr_id}/terms",
+                        params={"per_page": 100, "page": page},
+                        headers={"Authorization": auth, "Accept": "application/json"},
+                        timeout=30,
+                    )
+                    if tr.status_code != 200:
+                        break
+                    batch = tr.json()
+                    if not batch:
+                        break
+                    for t in batch:
+                        id2name[str(t["id"])] = t["name"]
+                    if len(batch) < 100:
+                        break
+                    page += 1
+                values[slug] = {id2name.get(tid, tid): v for tid, v in term_descs.items()}
+            except Exception:
+                continue
+
+        return {"groups": existing, "values": values}
 
     except Exception:
-        return {}
+        return empty
 
 
 def normalize_slug(slug: str) -> str:
@@ -532,13 +574,18 @@ def normalize_slug(slug: str) -> str:
     return slug[3:] if slug.startswith("pa_") else slug
 
 
-def has_specs_changed(new_attrs: list, existing: dict) -> bool:
-    """对比新旧规格，判断是否有变化"""
+def has_specs_changed(new_attrs: list, existing: dict, existing_values: dict | None = None) -> bool:
+    """对比新旧规格（组、选项名、选项值），判断是否有变化。
+
+    只改选项值（描述）也会判为有变化——否则网站上一直显示旧值
+    （规格书修订只改数值、选项名不变时曾被跳过）。"""
     if not existing:
         return True  # 现有为空，需要更新
+    existing_values = existing_values or {}
 
     # 构建新属性字典（统一 slug 格式）
     new_dict = {}
+    new_values = {}
     for a in new_attrs:
         norm_slug = normalize_slug(a["slug"])
         if norm_slug in new_dict:
@@ -551,12 +598,23 @@ def has_specs_changed(new_attrs: list, existing: dict) -> bool:
                 "name": a.get("name", ""),
                 "options": sorted(a.get("options", [])),
             }
+        new_values.setdefault(norm_slug, {}).update(a.get("optionValues") or {})
 
-    # 构建现有属性字典（统一 slug 格式）
+    # 构建现有属性字典（统一 slug 格式；WP term 名会把 & 存成 &amp;，对比前还原）
+    import html as _html
+
+    def _unescape_opt(names):
+        # WP term 名会 HTML 转义 &，且旧 term 可能与新名仅大小写不同
+        # （如 Remote management vs Remote Management）——大小写不敏感比对，
+        # 否则历史遗留 term 会让每次运行都误判有变化
+        return sorted(_html.unescape(n).casefold() for n in names)
+
     existing_dict = {}
     for slug, info in existing.items():
-        norm_slug = normalize_slug(slug)
-        existing_dict[norm_slug] = info
+        existing_dict[normalize_slug(slug)] = {
+            "name": info.get("name", ""),
+            "options": _unescape_opt(info.get("options", [])),
+        }
 
     # 对比
     if set(new_dict.keys()) != set(existing_dict.keys()):
@@ -564,8 +622,17 @@ def has_specs_changed(new_attrs: list, existing: dict) -> bool:
         return True
 
     for slug in new_dict:
-        if new_dict[slug]["options"] != existing_dict[slug]["options"]:
+        if _unescape_opt(new_dict[slug]["options"]) != existing_dict[slug]["options"]:
             log(f"属性组 '{slug}' 选项有变化: 新={len(new_dict[slug]['options'])}, 现有={len(existing_dict[slug]['options'])}")
+            return True
+        nv = new_values.get(slug, {})
+        ev = {k: v for k, v in (existing_values.get(slug) or {}).items()}
+        # 去掉首尾空白、还原实体、忽略大小写再比，避免 WP 端 term 名差异导致每次误判
+        norm_nv = {_html.unescape(k).strip().casefold(): (v or "").strip() for k, v in nv.items()}
+        norm_ev = {_html.unescape(k).strip().casefold(): (v or "").strip() for k, v in ev.items()}
+        if norm_nv != norm_ev:
+            diff_keys = [k for k in set(norm_nv) | set(norm_ev) if norm_nv.get(k) != norm_ev.get(k)]
+            log(f"属性组 '{slug}' 选项值有变化: {diff_keys[:5]}")
             return True
 
     return False
@@ -580,11 +647,12 @@ def upload_specs(product_id: int, attrs: list, site: str, force: bool = False):
         return
 
     # 获取现有规格
-    existing = get_existing_specs(product_id, site)
+    state = get_existing_specs(product_id, site)
+    existing = state["groups"]
     log(f"现有规格: {len(existing)} 个属性组")
 
     # 对比
-    if not force and not has_specs_changed(attrs, existing):
+    if not force and not has_specs_changed(attrs, existing, state["values"]):
         log("规格无变化，跳过上传")
         return
 

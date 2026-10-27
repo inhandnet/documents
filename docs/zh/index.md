@@ -426,55 +426,6 @@ hide:
     </div>
     <div class="pm-card">
       <div class="pm-card__body">
-        <div class="pm-card__title">InDTU311</div>
-        <ul class="pm-card__links">
-        <li><a href="InDTU311/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/InDTU311%E7%B3%BB%E5%88%97%E4%BA%A7%E5%93%81%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8CV4.2.html" title="InDTU311系列产品用户手册V4.2">用户手册 V4.2</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="pm-card">
-      <div class="pm-card__body">
-        <div class="pm-card__title">InDTU312</div>
-        <ul class="pm-card__links">
-        <li><a href="InDTU312/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/InDTU312%E7%B3%BB%E5%88%97%E4%BA%A7%E5%93%81%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8CV4.2.html" title="InDTU312系列产品用户手册V4.2">用户手册 V4.2</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="pm-card">
-      <div class="pm-card__body">
-        <div class="pm-card__title">InDTU323</div>
-        <ul class="pm-card__links">
-        <li><a href="InDTU323/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/InDTU323%E7%B3%BB%E5%88%97%E4%BA%A7%E5%93%81%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8CV4.2.html" title="InDTU323系列产品用户手册V4.2">用户手册 V4.2</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="pm-card">
-      <div class="pm-card__body">
-        <div class="pm-card__title">InDTU350S</div>
-        <ul class="pm-card__links">
-        <li><a href="InDTU350S/Manuals/%E5%BF%AB%E9%80%9F%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/InDTU351S%E7%B3%BB%E5%88%97%E4%BA%A7%E5%93%81%E5%BF%AB%E9%80%9F%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8CV1.2.html" title="InDTU351S系列产品快速用户手册V1.2">快速用户手册 V1.2</a></li>
-        <li><a href="InDTU350S/Manuals/%E5%BF%AB%E9%80%9F%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/InDTU352S%E7%B3%BB%E5%88%97%E4%BA%A7%E5%93%81%E5%BF%AB%E9%80%9F%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8CV1.0.html" title="InDTU352S系列产品快速用户手册V1.0">快速用户手册 V1.0</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="pm-card">
-      <div class="pm-card__body">
-        <div class="pm-card__title">InDTU951</div>
-        <ul class="pm-card__links">
-        <li><a href="InDTU951/Manuals/%E5%BF%AB%E9%80%9F%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/InDTU951%E7%B3%BB%E5%88%97%E4%BA%A7%E5%93%81%E5%BF%AB%E9%80%9F%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8CV1.0.html" title="InDTU951系列产品快速用户手册V1.0">快速用户手册 V1.0</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="pm-card">
-      <div class="pm-card__body">
-        <div class="pm-card__title">InDTU954C</div>
-        <ul class="pm-card__links">
-        <li><a href="InDTU954C/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/InDTU954C%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="InDTU954C 用户手册_V1.0">用户手册 V1.0</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="pm-card">
-      <div class="pm-card__body">
         <div class="pm-card__title">InLink</div>
         <ul class="pm-card__links">
         <li><a href="InLink/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/InLink%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C.html" title="InLink用户手册">用户手册</a></li>

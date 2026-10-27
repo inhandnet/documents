@@ -1936,36 +1936,6 @@
       "public": true
     },
     {
-      "id": "InDTU351S",
-      "kind": "model",
-      "display_names": {
-        "zh": "InDTU351S"
-      },
-      "aliases": [],
-      "source_folders": [
-        "InDTU351S"
-      ],
-      "expected_languages": [
-        "zh"
-      ],
-      "public": true
-    },
-    {
-      "id": "InDTU352S",
-      "kind": "model",
-      "display_names": {
-        "zh": "InDTU352S"
-      },
-      "aliases": [],
-      "source_folders": [
-        "InDTU352S"
-      ],
-      "expected_languages": [
-        "zh"
-      ],
-      "public": true
-    },
-    {
       "id": "InDTU932S",
       "kind": "model",
       "display_names": {

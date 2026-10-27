@@ -107,7 +107,7 @@ Each vehicle is equipped with one VR624 router in a standard configuration:
 | GNSS Antenna | 1 | GPS antenna for positioning |
 | SIM Cards | 1 | Dual Nano-SIM with failover support |
 | Power Supply | 1 | DC 9-48V input with protection |
-| Ethernet Connections | Up to 4 | M12 X-code connectors for in-vehicle devices |
+| Ethernet Connections | Up to 4 | M12 X-coded connectors for in-vehicle devices |
 
 
 <div style="page-break-after: always;"></div>
@@ -122,7 +122,7 @@ Each vehicle is equipped with one VR624 router in a standard configuration:
 | **Storage** | 128MB Flash |
 | **Cellular Module** | 5G NR SA/NSA, downlink up to 3.4 Gbps |
 | **SIM Card Slots** | 1× drawer-type dual Nano-SIM slot + 1× eSIM (optional) |
-| **Ethernet Ports** | 4× M12 X-code 8-pin female, 10/100/1000 Mbps |
+| **Ethernet Ports** | 4× M12 X-coded 8-pin female, 10/100/1000 Mbps |
 | **I/O Interfaces** | 2× Input (ignition detection / low battery) |
 | **Wi-Fi** | IEEE802.11 ax/ac/a/b/g/n, Wi-Fi 6, 2.4GHz + 5GHz, 3000 Mbps |
 | **Wi-Fi Security** | WPA3-Enterprise, WPA2-Enterprise, WEP/TKIP/AES encryption |
@@ -138,7 +138,7 @@ Each vehicle is equipped with one VR624 router in a standard configuration:
 | **Security Chip** | TPM 2.0 |
 | **Real-Time Clock** | RTC supported |
 | **Power Supply** | DC 9-48 V, over-current protection, anti-reverse connection |
-| **Power Consumption** | Standby 5.3 W, Typical 8.5 W, Maxium 17.8 W |
+| **Power Consumption** | Standby 5.3 W, Typical 8.5 W, Maximum 17.8 W |
 | **Reset Button** | Reset button for factory restore |
 | **Housing** | Metal enclosure |
 | **Cooling** | Fanless passive cooling |
@@ -154,7 +154,7 @@ Each vehicle is equipped with one VR624 router in a standard configuration:
 ## <span style="color: #3eb044;">3.2 Interface Overview</span>
 **M12 Ethernet Ports (×4)**
 
-- M12 X-code 8-pin female connectors
+- M12 X-coded 8-pin female connectors
 - 10/100/1000 Mbps auto-negotiation
 - Vibration-resistant design for mobile environments
 
@@ -350,7 +350,7 @@ VR624 integrates seamlessly with InHand Networks DeviceLive IoT device managemen
   </tr>
   <tr>
     <td style="width: 160px; white-space: nowrap;"><strong>VR624-GLNR</strong></td>
-    <td><strong>5G NR NSA</strong> n1/2/3/5/7/8/12/13/14/18/20/25/26/28/29/30/38/40/41/48/66/<br/>70/71/75/76/77/78/79<br/><strong>5G NR SA</strong> n1/2/3/5/7/8/12/13/14/18/20/25/26/28/29/30/38/40/41/48/66/<br/>70/71/75/76/77/78/79<br/><strong>LTE FDD</strong> B1/2/3/4/5/7/8/12/13/14/17/18/19/20/25/26/28/29/30/32/66/71<br/><strong>LTE TDD</strong> B34/38/39/40/41/42/43/48<br/><strong>LTE LAA</strong> B46 <strong>WCDMA</strong> B1/2/4/5/8/19</td>
+    <td><strong>5G NR NSA</strong> n1/2/3/5/7/8/12/13/14/18/20/25/26/28/29/30/38/40/41/<br/>48/66/70/71/75/76/77/78/79<br/><strong>5G NR SA</strong> n1/2/3/5/7/8/12/13/14/18/20/25/26/28/29/30/38/40/41/<br/>48/66/70/71/75/76/77/78/79<br/><strong>LTE-FDD</strong> B1/2/3/4/5/7/8/12/13/14/17/18/19/20/25/26/28/29/<br/>30/32/66/71<br/><strong>LTE-TDD</strong> B34/38/39/40/41/42/43/48<br/><strong>LTE LAA</strong> B46 <strong>WCDMA</strong> B1/2/4/5/8/19</td>
     <td style="white-space: nowrap;"><strong>Global</strong></td>
   </tr>
   <tr>
@@ -364,14 +364,15 @@ VR624 integrates seamlessly with InHand Networks DeviceLive IoT device managemen
 **Standard Package**
 
 - VR624 5G Vehicle Router × 1
-- Mounting kit × 1
-- Quick Start Guide × 1
+- VR624 Power Cable × 1
 
 **Optional Accessories**
-- M12 to RJ45 Ethernt cable
+- M12 X-coded to RJ45 Ethernt cable
+- M12 X-coded to M12 X-coded Ethernt cable
+- M12 X-coded to M12 D-coded Ethernt cable
 - Antenna kit (Cellular + Wi-Fi + GNSS)
-- Power cable
 - DIN-rail mounting bracket
+- VR624 Customized Power Cable
 
 ## <span style="color: #3eb044;">6.3 Certifications*</span>
 | Certification Type |

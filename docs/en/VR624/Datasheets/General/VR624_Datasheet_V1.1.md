@@ -27,13 +27,13 @@
 <div style="page-break-after: always;"></div>
 
 # <span style="color: #3eb044;">1. Product Overview</span>
-The VR624 is a robust 5G router engineered for in-vehicle networking, featuring 4×M12 X-code Gigabit Ethernet ports,DC 9-48 V input with reverse-polarity protection. It delivers 5G NR SA/NSA speeds up to 3.4 Gbps, dual Nano-SIM with eSIM optional, Wi-Fi 6 3000 Mbps, and multi-constellation GNSS. Operating from -30 °C to +70 °C (-22 °F to +158 °F) fanless cooling, the VR624 is certified to CE, E-Mark (ECE R10/ECE R118), FCC, PTCRB, and ITxPT standards. With TPM 2.0 hardware encryption and M12 vibration-resistant connectors, the device ensures secure, reliable connectivity for transportation fleets. Compatible with DeviceLive for centralized fleet management and remote diagnostics.
+The VR624 is a robust 5G router engineered for in-vehicle networking, featuring 4×M12 X-coded Gigabit Ethernet ports, DC 9-48 V input with reverse-polarity protection. It delivers 5G NR SA/NSA speeds up to 3.4 Gbps, dual Nano-SIM with eSIM optional, Wi-Fi 6 3000 Mbps, and multi-constellation GNSS. Operating from -30 °C to +70 °C (-22 °F to +158 °F) fanless cooling, the VR624 is certified to CE, E-Mark (ECE R10/ECE R118), FCC, PTCRB, and ITxPT standards. With TPM 2.0 hardware encryption and M12 vibration-resistant connectors, the device ensures secure, reliable connectivity for transportation fleets. Compatible with DeviceLive for centralized fleet management and remote diagnostics.
 
 ## <span style="color: #3eb044;">1.1 Feature and Advantage</span>
 | Value Dimension | Description |
 | :--- | :--- |
 | **High-Speed Connectivity** | 5G SA/NSA support with downlink speeds up to 3.4 Gbps, Wi-Fi 6 throughput 3000Mbps, enabling gigabit-class data transmission for real-time video, telemetry, and fleet communications |
-| **Robust Design** | M12 X-Coded connectors with vibration resistance, certified to ECE R10, ECE R118, and EN 50155 standards for EMC compliance, fire safety, and railway-grade reliability |
+| **Robust Design** | M12 X-coded connectors with vibration resistance, certified to ECE R10, ECE R118, and EN 50155 standards for EMC compliance, fire safety, and railway-grade reliability |
 | **Integrated Positioning** | Built-in GNSS support (GPS, BDS, Galileo, GLONASS, QZSS) with  <1.5m positioning accuracy for real-time fleet tracking and route optimization |
 | **Enterprise-Grade Security** | Hardware TPM 2.0 encryption chip combined with multi-layer software security policies  (firewall, VPN, access control) for comprehensive threat protection, WPA3 Enterprise level secure encryption |
 | **Cloud-Managed** | Integrated with InHand DeviceLive platform for real-time monitoring, remote diagnostics, and centralized fleet management |
@@ -51,7 +51,7 @@ The VR624 is a robust 5G router engineered for in-vehicle networking, featuring 
   <tr>
     <td align="left"><strong>Public Transit</strong></td>
     <td align="left">Bus operators, intercity coach companies</td>
-    <td align="left">Gigabit Ethernet, vehicle tracking, surveillance backhaul, Passager Wi-Fi</td>
+    <td align="left">Gigabit Ethernet, vehicle tracking, surveillance backhaul, Passenger Wi-Fi</td>
     <td align="left">High-speed connectivity for Ticket vending machines, vehicle mounted MDVR etc.,</td>
   </tr>
   <tr>
@@ -106,7 +106,7 @@ Each vehicle is equipped with one VR624 router in a standard configuration:
 | Wi-Fi Antennas | 2 | External antennas for Wi-Fi coverage |
 | GNSS Antenna | 1 | GPS antenna for positioning |
 | SIM Cards | 1 | Dual Nano-SIM with failover support |
-| Power Supply | 1 | DC 9-48V input with protection |
+| Power Supply | 1 | DC 9-48 V input with protection |
 | Ethernet Connections | Up to 4 | M12 X-coded connectors for in-vehicle devices |
 
 
@@ -183,7 +183,7 @@ Each vehicle is equipped with one VR624 router in a standard configuration:
 ## <span style="color: #3eb044;">3.4 Key Hardware Advantages</span>
 | Advantage | Description |
 | :--- | :--- |
-| **M12 X-Coded Connectors** | Vibration-resistant, corrosion-resistant, ensuring reliable wired connections<br> in harsh mobile environments, flow  ITxPT standards |
+| **M12 X-coded Connectors** | Vibration-resistant, corrosion-resistant, ensuring reliable wired connections<br> in harsh mobile environments, complying with ITxPT standards |
 | **Wide-Temperature Design** | -30 °C ~ +70 °C (-22 °F ~ +158 °F) operating range for extreme weather conditions |
 | **TPM 2.0 Security** | Hardware-level encryption for enterprise-grade security |
 | **Dual-SIM Failover** | Automatic SIM switching for uninterrupted connectivity |
@@ -304,7 +304,7 @@ Each vehicle is equipped with one VR624 router in a standard configuration:
 
 - Web management interface
 - CLI (Command Line Interface) 
-- Remote Web/CLI acces
+- Remote Web/CLI access
 
 ## <span style="color: #3eb044;">4.7 Positioning Service</span>
 **GNSS Positioning**
@@ -367,9 +367,9 @@ VR624 integrates seamlessly with InHand Networks DeviceLive IoT device managemen
 - VR624 Power Cable × 1
 
 **Optional Accessories**
-- M12 X-coded to RJ45 Ethernt cable
-- M12 X-coded to M12 X-coded Ethernt cable
-- M12 X-coded to M12 D-coded Ethernt cable
+- M12 X-coded to RJ45 Ethernet cable
+- M12 X-coded to M12 X-coded Ethernet cable
+- M12 X-coded to M12 D-coded Ethernet cable
 - Antenna kit (Cellular + Wi-Fi + GNSS)
 - DIN-rail mounting bracket
 - VR624 Customized Power Cable
@@ -402,7 +402,7 @@ The product is currently undergoing certification.
 | 1 | Mount VR624 unit in vehicle cabin |
 | 2 | Connect external antennas (cellular/Wi-Fi/GNSS) |
 | 3 | Insert SIM cards (dual-SIM configuration) |
-| 4 | Connect power supply (DC 9-48V) |
+| 4 | Connect power supply (DC 9-48 V) |
 | 5 | Connect Ethernet devices (up to 4) |
 | 6 | Connect I/O cables (if required) |
 | 7 | Power on and verify system status |

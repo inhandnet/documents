@@ -52,6 +52,20 @@ jobs:
           python-version: "3.11"
 
       # Standard-library only -- no pip install, cannot break the build env.
+      # Upstream syncs may spell a product folder with different letter case
+      # than the catalog (IG502-lite vs IG502-LITE); on the case-sensitive
+      # runner both folders then exist and the MCP catalog refuses to index.
+      # Merge variants into the catalog-canonical spelling before anything
+      # else looks at the tree.
+      - name: Normalize case-variant product folders
+        id: normalize
+        run: |
+          python scripts/normalize_case.py | tee "${RUNNER_TEMP}/normalize-case.log"
+          if grep -q '^\[CASE\]' "${RUNNER_TEMP}/normalize-case.log"; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+          cat "${RUNNER_TEMP}/normalize-case.log" >> "$GITHUB_STEP_SUMMARY"
+
       - name: Sync product catalog
         id: sync
         run: |
@@ -68,7 +82,7 @@ jobs:
 
       - name: Commit if changed
         run: |
-          git add docs/product-catalog.json
+          git add docs/
           if git diff --cached --quiet; then
             echo "No new products to register; nothing to commit."
             exit 0
@@ -84,13 +98,24 @@ jobs:
           fi
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git commit -m "chore: auto-register new product folder(s) in catalog [skip ci]
+          # Pure catalog registrations skip CI; a case-variant folder merge
+          # changes docs/** and must go through deploy + validation.
+          ci_skip="[skip ci]"
+          norm_note="(none)"
+          if [ "${{ steps.normalize.outputs.changed }}" = "true" ]; then
+            ci_skip=""
+            norm_note=$(grep '^\[CASE\]' "${RUNNER_TEMP}/normalize-case.log" | tr '\n' ' ')
+          fi
+          git commit -m "chore: auto-register new product folder(s) in catalog ${ci_skip}
 
           New docs/{en,zh} top-level folders detected and registered by
           scripts/sync_product_catalog.py. Newly registered id(s): ${new_ids}
 
           Aliases handed off to the new entries:
           ${alias_notes}
+
+          Case-variant folders merged by scripts/normalize_case.py:
+          ${norm_note}
 
           Aliases, kind and any multi-folder merge still need human review."
           # Another docs/** autocommit workflow (generate-llms.yml /

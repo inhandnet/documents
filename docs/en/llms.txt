@@ -1075,6 +1075,7 @@
 
 ## MDT600
 
+- [MDT600 FlexAPI](MDT600/Developer%20Documentation/FlexAPI/MDT600%20Standard%20Version%20Android%20User%20Manual.md): MDT600 FlexAPI — The MDT600 is a high-performance embedded development platform based on the Rockchip RK3576 processor. This product adop…
 - [MDT600 Datasheet v1.0](MDT600/Datasheets/General/MDT600_Datasheet_V1.0.md): MDT600 Datasheet v1.0 — Vehicle HMI &amp; Edge AI · 5G &amp; Wi-Fi 6 Connectivity
 - [MDT600 Certifications](MDT600/certifications.md): MDT600 certification list (E-Mark) with links to the original certificate files
 

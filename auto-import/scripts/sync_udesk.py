@@ -245,38 +245,45 @@ def get_changed_files(ref_from, ref_to):
     for line in result.stdout.strip().split("\n"):
         if not line.strip():
             continue
-        parts = line.split("\t", 1)
-        if len(parts) != 2:
-            continue
-        status, filepath = parts[0], decode_git_path(parts[1].strip('"'))
+        fields = line.split("\t")
+        status = fields[0]
+        # R=重命名：旧路径视为删除、新路径视为新增（按文件名匹配知识库，两者都要处理）
+        if status.startswith("R"):
+            if len(fields) < 3:
+                continue
+            paths = [decode_git_path(f.strip('"')) for f in fields[1:3]]
+        else:
+            if len(fields) < 2:
+                continue
+            paths = [decode_git_path(fields[1].strip('"'))]
 
-        # 只处理 docs/{zh,en} 下的 md 文件
-        if not filepath.startswith("docs/"):
-            continue
-        if not filepath.endswith(".md"):
-            continue
+        for filepath in paths:
+            # 只处理 docs/{zh,en} 下的 md 文件
+            if not filepath.startswith("docs/"):
+                continue
+            if not filepath.endswith(".md"):
+                continue
 
-        parts2 = filepath.split("/")
-        if len(parts2) < 3:
-            continue
-        lang = parts2[1]
-        if lang not in ("zh", "en"):
-            continue
+            parts2 = filepath.split("/")
+            if len(parts2) < 3:
+                continue
+            lang = parts2[1]
+            if lang not in ("zh", "en"):
+                continue
 
-        filename = Path(filepath).name
-        if filename in SKIP_FILES:
-            continue
+            filename = Path(filepath).name
+            if filename in SKIP_FILES:
+                continue
 
-        rel_path = "/".join(parts2[2:])  # 产品路径部分
-        log(f"  变更: [{status}] {filepath} -> lang={lang}, rel={rel_path}")
+            rel_path = "/".join(parts2[2:])  # 产品路径部分
+            log(f"  变更: [{status}] {filepath} -> lang={lang}, rel={rel_path}")
 
-        if status in ("A", "M"):
-            if status == "A":
+            if status.startswith("R") or status == "A":
                 changes[lang]["added"].append(rel_path)
-            else:
+            elif status == "M":
                 changes[lang]["modified"].append(rel_path)
-        elif status == "D":
-            changes[lang]["deleted"].append(rel_path)
+            elif status == "D":
+                changes[lang]["deleted"].append(rel_path)
 
     return changes
 
@@ -412,7 +419,10 @@ def main():
         for site_key in sites_to_sync:
             site_changes = changes[site_key]
             to_upload = site_changes["added"] + site_changes["modified"]
-            to_delete = site_changes["deleted"]
+            # 删除按文件名全库匹配：本次正在上传的同名文件跳过删除，
+            # 避免同名移动/共享手册（如 DSA用户手册）误删其他产品的知识库条目
+            upload_names = {Path(f).name for f in to_upload}
+            to_delete = [f for f in site_changes["deleted"] if Path(f).name not in upload_names]
 
             if not to_upload and not to_delete:
                 log(f"\n{site_key.upper()}: 无变更")

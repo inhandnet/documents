@@ -1093,6 +1093,7 @@
 - [Mo 62A Quick Start Guide](Mo%2062A/Manuals/Installation%20Guide/Mo%2062A%20Quick%20Start%20Guide.md): Mo 62A Installation Guide
 - [Mo 62A Quick Start Guide](Mo%2062A/Manuals/Quick%20user%20manual/Mo%2062A%20quickstart.md): Mo 62A Quick user manual
 - [Mo 62A Single Board Computer SDK User Guide](Mo%2062A/Manuals/User%20manual/Mo%2062A_User%20manual_V1.0.md): Mo 62A User manual v1.0 — Mo 62A is a single-board computer based on the TI AM62A7 processor, designed for edge AI inference, machine vision, and…
+- [MO 62A SDK User Guide](Mo%2062A/Developer%20Documentation/Greengrass%20SDK/mo-62a-sdk.md): Mo 62A Greengrass SDK
 - [Mo 62A Datasheet v1.5](Mo%2062A/Datasheets/General/Mo%2062A_Datasheet_V1.5.md): Mo 62A Datasheet v1.5 — Embrace Edge AI, Empower Intelligent Vision
 
 ## Mo 68A
@@ -1213,11 +1214,37 @@
 ## VT200
 
 - [Vehicle Telematics 200 User Manual (Standard Edition) V1.0](VT200/Manuals/User%20manual/VT200_User%20manual_V1.0.md): VT200 User manual v1.0 — The VT200 series vehicle tracking gateway is an asset tracking product that features cost-effectiveness, rich interfaces…
+- [FlexAPI_MQTT_for_3rd_party_platform](VT200/Developer%20Documentation/FlexAPI/FlexAPI_MQTT_for_3rd_party_platform.md): VT200 FlexAPI — We introduced FlexAPI for the fast evolving IoT applications, which highly value easy integration, openness, flexibility…
+  - [For VT300/VT200 and VG700/VG814 series](VT200/Developer%20Documentation/FlexAPI/FlexAPI_MQTT_for_3rd_party_platform.md#for-vt300vt200-and-vg700vg814-series)
+  - [1. Introduction](VT200/Developer%20Documentation/FlexAPI/FlexAPI_MQTT_for_3rd_party_platform.md#1-introduction)
+  - [2. FlexAPI Overview](VT200/Developer%20Documentation/FlexAPI/FlexAPI_MQTT_for_3rd_party_platform.md#2-flexapi-overview)
+  - [Payload is customized by the customer, usually written by the APP](VT200/Developer%20Documentation/FlexAPI/FlexAPI_MQTT_for_3rd_party_platform.md#payload-is-customized-by-the-customer-usually-written-by-the-app)
+- [FlexAPI_TCP_for_3rd_party_platform](VT200/Developer%20Documentation/FlexAPI/FlexAPI_TCP_for_3rd_party_platform.md): VT200 FlexAPI — We introduced FlexAPI for the fast evolving IoT applications, which highly value easy integration, openness, flexibility…
+  - [*For VT series*](VT200/Developer%20Documentation/FlexAPI/FlexAPI_TCP_for_3rd_party_platform.md#for-vt-series)
+  - [1. Introduction](VT200/Developer%20Documentation/FlexAPI/FlexAPI_TCP_for_3rd_party_platform.md#1-introduction)
+  - [2. FlexAPI Overview](VT200/Developer%20Documentation/FlexAPI/FlexAPI_TCP_for_3rd_party_platform.md#2-flexapi-overview)
+  - [3. Basic Usage](VT200/Developer%20Documentation/FlexAPI/FlexAPI_TCP_for_3rd_party_platform.md#3-basic-usage)
+  - [4. Advanced Usage](VT200/Developer%20Documentation/FlexAPI/FlexAPI_TCP_for_3rd_party_platform.md#4-advanced-usage)
+  - [5. Event Service](VT200/Developer%20Documentation/FlexAPI/FlexAPI_TCP_for_3rd_party_platform.md#5-event-service)
+  - [Appendix A. FlexAPI Supported Parameters](VT200/Developer%20Documentation/FlexAPI/FlexAPI_TCP_for_3rd_party_platform.md#appendix-a-flexapi-supported-parameters)
 - [VT200 Datasheet v1.0](VT200/Datasheets/General/VT200_Datasheet_V1.0.md): VT200 Datasheet v1.0 — Lightweight Vehicle Tracking, Reliable Connectivity, Precise Positioning
 
 ## VT310
 
 - [Vehicle Telematics VT310/320 User Manual (Standard Edition)](VT310/Manuals/User%20manual/VT310_User%20manual_V1.0.md): VT310 User manual v1.0 — The VT310/320 series vehicle tracking gateway is an asset tracking product that features cost-effectiveness, rich interf…
+- [FlexAPI_MQTT_for_3rd_party_platform](VT310/Developer%20Documentation/FlexAPI/FlexAPI_MQTT_for_3rd_party_platform.md): VT310 FlexAPI — We introduced FlexAPI for the fast evolving IoT applications, which highly value easy integration, openness, flexibility…
+  - [For VT300/VT200 and VG700/VG814 series](VT310/Developer%20Documentation/FlexAPI/FlexAPI_MQTT_for_3rd_party_platform.md#for-vt300vt200-and-vg700vg814-series)
+  - [1. Introduction](VT310/Developer%20Documentation/FlexAPI/FlexAPI_MQTT_for_3rd_party_platform.md#1-introduction)
+  - [2. FlexAPI Overview](VT310/Developer%20Documentation/FlexAPI/FlexAPI_MQTT_for_3rd_party_platform.md#2-flexapi-overview)
+  - [Payload is customized by the customer, usually written by the APP](VT310/Developer%20Documentation/FlexAPI/FlexAPI_MQTT_for_3rd_party_platform.md#payload-is-customized-by-the-customer-usually-written-by-the-app)
+- [FlexAPI_TCP_for_3rd_party_platform](VT310/Developer%20Documentation/FlexAPI/FlexAPI_TCP_for_3rd_party_platform.md): VT310 FlexAPI — We introduced FlexAPI for the fast evolving IoT applications, which highly value easy integration, openness, flexibility…
+  - [*For VT series*](VT310/Developer%20Documentation/FlexAPI/FlexAPI_TCP_for_3rd_party_platform.md#for-vt-series)
+  - [1. Introduction](VT310/Developer%20Documentation/FlexAPI/FlexAPI_TCP_for_3rd_party_platform.md#1-introduction)
+  - [2. FlexAPI Overview](VT310/Developer%20Documentation/FlexAPI/FlexAPI_TCP_for_3rd_party_platform.md#2-flexapi-overview)
+  - [3. Basic Usage](VT310/Developer%20Documentation/FlexAPI/FlexAPI_TCP_for_3rd_party_platform.md#3-basic-usage)
+  - [4. Advanced Usage](VT310/Developer%20Documentation/FlexAPI/FlexAPI_TCP_for_3rd_party_platform.md#4-advanced-usage)
+  - [5. Event Service](VT310/Developer%20Documentation/FlexAPI/FlexAPI_TCP_for_3rd_party_platform.md#5-event-service)
+  - [Appendix A. FlexAPI Supported Parameters](VT310/Developer%20Documentation/FlexAPI/FlexAPI_TCP_for_3rd_party_platform.md#appendix-a-flexapi-supported-parameters)
 - [VT310 Datasheet v1.0](VT310/Datasheets/General/VT310_Datasheet_V1.0.md): VT310 Datasheet v1.0 — High Precision Tracking, Rugged for Harsh Environments
 - [Transport Refrigeration Networking Monitoring Solution](VT310/Use%20Cases/Transport-Refrigeration-Monitoring/case-manual.md): VT310 Transport-Refrigeration-Monitoring
 - [Vehicle Refrigeration Monitoring](VT310/Use%20Cases/Transport-Refrigeration-Monitoring/config-manual.md): VT310 Transport-Refrigeration-Monitoring
@@ -1225,4 +1252,17 @@
 ## VT320
 
 - [Vehicle Telematics VT310/320 User Manual (Standard Edition)](VT320/Manuals/User%20manual/VT320_User%20manual_V1.0.md): VT320 User manual v1.0 — The VT310/320 series vehicle tracking gateway is an asset tracking product that features cost-effectiveness, rich interf…
+- [FlexAPI_MQTT_for_3rd_party_platform](VT320/Developer%20Documentation/FlexAPI/FlexAPI_MQTT_for_3rd_party_platform.md): VT320 FlexAPI — We introduced FlexAPI for the fast evolving IoT applications, which highly value easy integration, openness, flexibility…
+  - [For VT300/VT200 and VG700/VG814 series](VT320/Developer%20Documentation/FlexAPI/FlexAPI_MQTT_for_3rd_party_platform.md#for-vt300vt200-and-vg700vg814-series)
+  - [1. Introduction](VT320/Developer%20Documentation/FlexAPI/FlexAPI_MQTT_for_3rd_party_platform.md#1-introduction)
+  - [2. FlexAPI Overview](VT320/Developer%20Documentation/FlexAPI/FlexAPI_MQTT_for_3rd_party_platform.md#2-flexapi-overview)
+  - [Payload is customized by the customer, usually written by the APP](VT320/Developer%20Documentation/FlexAPI/FlexAPI_MQTT_for_3rd_party_platform.md#payload-is-customized-by-the-customer-usually-written-by-the-app)
+- [FlexAPI_TCP_for_3rd_party_platform](VT320/Developer%20Documentation/FlexAPI/FlexAPI_TCP_for_3rd_party_platform.md): VT320 FlexAPI — We introduced FlexAPI for the fast evolving IoT applications, which highly value easy integration, openness, flexibility…
+  - [*For VT series*](VT320/Developer%20Documentation/FlexAPI/FlexAPI_TCP_for_3rd_party_platform.md#for-vt-series)
+  - [1. Introduction](VT320/Developer%20Documentation/FlexAPI/FlexAPI_TCP_for_3rd_party_platform.md#1-introduction)
+  - [2. FlexAPI Overview](VT320/Developer%20Documentation/FlexAPI/FlexAPI_TCP_for_3rd_party_platform.md#2-flexapi-overview)
+  - [3. Basic Usage](VT320/Developer%20Documentation/FlexAPI/FlexAPI_TCP_for_3rd_party_platform.md#3-basic-usage)
+  - [4. Advanced Usage](VT320/Developer%20Documentation/FlexAPI/FlexAPI_TCP_for_3rd_party_platform.md#4-advanced-usage)
+  - [5. Event Service](VT320/Developer%20Documentation/FlexAPI/FlexAPI_TCP_for_3rd_party_platform.md#5-event-service)
+  - [Appendix A. FlexAPI Supported Parameters](VT320/Developer%20Documentation/FlexAPI/FlexAPI_TCP_for_3rd_party_platform.md#appendix-a-flexapi-supported-parameters)
 - [VT320 Datasheet v1.0](VT320/Datasheets/General/VT320_Datasheet_V1.0.md): VT320 Datasheet v1.0 — Reliable Tracking, Rugged Design, Open Interfaces

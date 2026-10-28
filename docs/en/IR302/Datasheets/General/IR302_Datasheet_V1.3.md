@@ -176,13 +176,13 @@ The IR302 adopts a fanless cooling design, supports wide temperature and wide vo
 
 ## <span style="color: green;">5.1 Product Size</span>
 
-<img src="images/page_1.jpg" alt="IR300 Product Size" style="max-width: 100%;" />
+<img src="images/page_1.png" alt="IR300 Product Size" style="max-width: 100%;" />
 
 
 <div style="page-break-after: always;"></div>
 
-
 **Notes:**
+
 1. All dimensions are in millimeters (mm), with inches (in) in parentheses.
 2. Dimensions (L × W × H): 92 × 90 × 24 mm(3.62 × 3.54 × 0.94 in).
 3. All dimensions are approximate values and for reference only.
@@ -335,8 +335,7 @@ IR302 - [4G Module] - [Wi-Fi] - [IO/S] - [L]
 |-------|------|-------------|
 | 4G Module | LQ28 | China, LTE CAT4<br>FDD: B1/B3/B5/B8<br/>TDD: B34/B38/B39/B40/B41<br/>WCDMA: B1/B5/B8<br/>GSM/EDGE: B3/B8 |
 | | FQ58 | Europe/APAC, LTE CAT4<br>FDD: B1/B3/B7/B8/B20/B28A<br/>WCDMA: B1/B8<br/>GSM: B3/B8 |
-| | FQ58-L | Europe/APAC/Australia, LTE CAT4<br/>FDD: B1/B3/B5/B7/B8/B20/B28<br/>TDD: B38/B40/B41<br/>WCDMA: B1/B5/B8 <br/>GSM/EDGE: B3/B8 |
-| | FQ53 | Europe/Middle East/Africa, LTE CAT1<br>FDD: B1/B3/B7/B8/B20/B28<br/>WCDMA: B1/B8<br/>GSM: B3/B8 |
+| | FQ58-L | Europe/APAC/Australia/Middle East/Africa, LTE CAT4<br/>FDD: B1/B3/B5/B7/B8/B20/B28<br/>TDD: B38/B40/B41<br/>WCDMA: B1/B5/B8 <br/>GSM/EDGE: B3/B8 |
 | | FQ38 | North America, LTE CAT4<br>FDD: B2/B4/B5/B12/B13/B14/B66/B71<br/>WCDMA: B2/B4/B5 |
 | | FQ33 | North America, LTE CAT1<br>FDD: B2/B4/B5/B12/B13/B25/B26<br/>WCDMA: B2/B4/B5 |
 | | FQ88 | Japan, LTE CAT4<br>FDD: B1/B3/B8/B18/B19/B26<br/>TDD: B41<br/>WCDMA: B1/B6/B8/B19 |
@@ -364,10 +363,6 @@ IR302 - [4G Module] - [Wi-Fi] - [IO/S] - [L]
 | IR302-FQ58-WLAN-IO-L | ✓ | ✓ | 2×IO | Europe/APAC/Australia（LTE CAT4）|
 | IR302-FQ58-S-L | ✓ | — | 1×RS232 | Europe/APAC/Australia，no Wi-Fi|
 | IR302-FQ58-IO-L | ✓ | — | 2×IO | Europe/APAC/Australia，no Wi-Fi|
-| IR302-FQ53-WLAN | ✓ | ✓ | — | Europe/Middle East/Africa (LTE CAT1), no serial/IO |
-| IR302-FQ53 | ✓ | — | — | Europe/Middle East/Africa (LTE CAT1), no Wi-Fi, no serial/IO |
-| IR302-FQ53-WLAN-S | ✓ | ✓ | 1×RS232| Europe/Middle East/Africa（LTE CAT1）|
-| IR302-FQ53-WLAN-IO | ✓ | ✓ | 2×IO | Europe/Middle East/Africa（LTE CAT1）|
 | IR302-FQ38-WLAN-S | ✓ | ✓ | 1×RS232 | North America (LTE CAT4) |
 | IR302-FQ38-WLAN-IO | ✓ | ✓ | 2×IO | North America (LTE CAT4) |
 | IR302-FQ38-S | ✓ | — | 1×RS232 | North America (LTE CAT4), no Wi-Fi |

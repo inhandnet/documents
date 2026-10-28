@@ -630,6 +630,7 @@ hide:
       <div class="pm-card__body">
         <div class="pm-card__title">Mo 62A</div>
         <ul class="pm-card__links">
+        <li><a href="Mo%2062A/Developer%20Documentation/Greengrass%20SDK/MO%2062A%20SDK%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C.html" title="AArch64">Greengrass SDK</a></li>
         <li><a href="Mo%2062A/Manuals/%E5%BF%AB%E9%80%9F%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/Mo%2062A%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8.html" title="Mo 62A 快速入门指南">快速用户手册</a></li>
         <li><a href="Mo%2062A/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/MO%2062A%20SDK%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C.html" title="AArch64">AArch64</a></li>
         <li><a href="Mo%2062A/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/MO%2062A%E7%A1%AC%E4%BB%B6%E6%8E%A5%E5%8F%A3%E8%AF%B4%E6%98%8E.html" title="MO_62A硬件接口说明">MO_62A硬件接口说明</a></li>

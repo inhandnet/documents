@@ -1059,6 +1059,7 @@
 - [Mo 62A 快速入门指南](Mo%2062A/Manuals/%E5%BF%AB%E9%80%9F%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/Mo%2062A%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8.md): Mo 62A 快速用户手册
 - [AArch64](Mo%2062A/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/MO%2062A%20SDK%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C.md): Mo 62A 用户手册 — MO-62A 单板计算机 SDK，基于 TI AM62A7 平台，提供高达 2 TOPS AI 推理性能。
 - [MO_62A硬件接口说明](Mo%2062A/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/MO%2062A%E7%A1%AC%E4%BB%B6%E6%8E%A5%E5%8F%A3%E8%AF%B4%E6%98%8E.md): Mo 62A 用户手册
+- [AArch64](Mo%2062A/Developer%20Documentation/Greengrass%20SDK/MO%2062A%20SDK%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C.md): Mo 62A Greengrass SDK — MO-62A 单板计算机 SDK，基于 TI AM62A7 平台，提供高达 2 TOPS AI 推理性能。
 - [Mo 62A 规格书 v1.5](Mo%2062A/Datasheets/%E9%80%9A%E7%94%A8/Mo%2062A%E8%A7%84%E6%A0%BC%E4%B9%A6_V1.5.md): Mo 62A 规格书 v1.5
 
 ## Mo 68A

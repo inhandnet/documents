@@ -243,6 +243,9 @@ def _should_upload(file_path: Path) -> bool:
     # 跳过 Developer Documentation 下的 series.txt
     if file_path.name == "series.txt" and "Developer Documentation" in file_path.parts:
         return False
+    # 跳过 .gitkeep 占位文件（0 字节，云端接口会报 invalid file size 并卡死重试）
+    if file_path.name == ".gitkeep":
+        return False
     # 跳过 images/img/imgs 等图片目录下的所有文件
     if any(p.lower() in ("images", "img", "imgs") for p in file_path.parts):
         return False

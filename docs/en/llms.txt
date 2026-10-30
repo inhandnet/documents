@@ -130,6 +130,10 @@
   - [**6****.1 Device Management**](DeviceLive/Manuals/User%20manual/DeviceLive%20User%20Manual.md#61-device-management)
 - [DeviceLive Datasheet v1.0](DeviceLive/Datasheets/General/DeviceLive_Datasheet_V1.0.md): DeviceLive Datasheet v1.0 — IoT Device Management and Operations Platform
 
+## DeviceSupervisor Agent
+
+- [DeviceSupervisor™ Agent (DSA)](DeviceSupervisor%20Agent/Datasheets/General/DeviceSupervisor%20Agent_Datasheet_V1.0.md): DeviceSupervisor Agent Datasheet v1.0 — Software-Defined Acquisition, Intelligence-Driven Edge
+
 ## EAP600
 
 - [Enterprise AP600 Quick Installation Guide](EAP600/Manuals/Installation%20Guide/enterprise-ap600-product-quick-guide.md): EAP600 Installation Guide — This manual is for the installation and operation of the EAP600 of InHand Networks. Before installation, please confirm…

@@ -483,7 +483,7 @@ ODU12 由 InCloud Manager AI 云管理平台提供支持。通过 AI 网络助�
 ## <span style="color: green;">11.1 防护等级</span>
 
 - **IP 防护等级：** IP67
-- **盐雾测试：** 48 小时；PCBA 三防涂覆；符合 IEC 60068-2-52
+- **盐雾测试：** 48 小时；符合 IEC 60068-2-11
 
 ## <span style="color: green;">11.2 机械可靠性</span>
 

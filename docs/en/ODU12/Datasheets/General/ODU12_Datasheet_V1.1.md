@@ -470,7 +470,7 @@ The ODU12 is powered by the InCloud Manager AI cloud management platform. Throug
 ## <span style="color: green;">11.1 Protection Rating</span>
 
 - **IP Rating:** IP67
-- **Salt Mist Test:** 48 hours; PCBA conformal coating; compliant with IEC 60068-2-52
+- **Salt Mist Test:** 48 hours; compliant with IEC 60068-2-11
 
 ## <span style="color: green;">11.2 Mechanical Reliability</span>
 

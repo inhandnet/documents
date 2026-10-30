@@ -130,7 +130,7 @@ IP30 fanless all-metal enclosure, -40 °C to +70 °C wide-temperature operation,
 | **Antenna Connectors** | 4 &times; SMA external antennas: 2 &times; cellular + 2 &times; Wi-Fi |
 | **LED Indicators** | 1 &times; SYS, 1 &times; NET, 3 &times; Signal (red/yellow/green), 1 &times; Wi-Fi 2.4G, 1 &times; Wi-Fi 5G |
 | **Reset Button** | 1 &times; Reset pinhole |
-| **Power Input** | DC 12 V / 2 A, 4-pin industrial terminal block |
+| **Power Input** | DC 9-48V, 4-pin industrial terminal block |
 | **Power Consumption** | &le; 15 W |
 | **Cooling** | Fanless passive cooling |
 | **Enclosure** | All-metal SGCC galvanized steel, black fine-texture coating |

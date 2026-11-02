@@ -556,6 +556,14 @@ hide:
     </div>
     <div class="pm-card">
       <div class="pm-card__body">
+        <div class="pm-card__title">ISE5006D-P</div>
+        <ul class="pm-card__links">
+        <li><a href="ISE5006D-P/certifications.html" title="ISE5006D-P Certifications">Certifications</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pm-card">
+      <div class="pm-card__body">
         <div class="pm-card__title">ISE5008D</div>
         <ul class="pm-card__links">
         <li><a href="ISE5008D/certifications.html" title="ISE5008D Certifications">Certifications</a></li>
@@ -596,6 +604,22 @@ hide:
     </div>
     <div class="pm-card">
       <div class="pm-card__body">
+        <div class="pm-card__title">ISM3008D-P</div>
+        <ul class="pm-card__links">
+        <li><a href="ISM3008D-P/certifications.html" title="ISM3008D-P Certifications">Certifications</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pm-card">
+      <div class="pm-card__body">
+        <div class="pm-card__title">ISM5006D-P</div>
+        <ul class="pm-card__links">
+        <li><a href="ISM5006D-P/certifications.html" title="ISM5006D-P Certifications">Certifications</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pm-card">
+      <div class="pm-card__body">
         <div class="pm-card__title">ISM5010D</div>
         <ul class="pm-card__links">
         <li><a href="ISM5010D/certifications.html" title="ISM5010D Certifications">Certifications</a></li>
@@ -630,6 +654,14 @@ hide:
     </div>
     <div class="pm-card">
       <div class="pm-card__body">
+        <div class="pm-card__title">ISM5306D-P</div>
+        <ul class="pm-card__links">
+        <li><a href="ISM5306D-P/certifications.html" title="ISM5306D-P Certifications">Certifications</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pm-card">
+      <div class="pm-card__body">
         <div class="pm-card__title">ISM5310D</div>
         <ul class="pm-card__links">
         <li><a href="ISM5310D/certifications.html" title="ISM5310D Certifications">Certifications</a></li>
@@ -646,9 +678,25 @@ hide:
     </div>
     <div class="pm-card">
       <div class="pm-card__body">
+        <div class="pm-card__title">ISM7020D-P</div>
+        <ul class="pm-card__links">
+        <li><a href="ISM7020D-P/certifications.html" title="ISM7020D-P Certifications">Certifications</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pm-card">
+      <div class="pm-card__body">
         <div class="pm-card__title">ISM7028U</div>
         <ul class="pm-card__links">
         <li><a href="ISM7028U/certifications.html" title="ISM7028U Certifications">Certifications</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pm-card">
+      <div class="pm-card__body">
+        <div class="pm-card__title">ISM7312D-P</div>
+        <ul class="pm-card__links">
+        <li><a href="ISM7312D-P/certifications.html" title="ISM7312D-P Certifications">Certifications</a></li>
         </ul>
       </div>
     </div>

@@ -918,6 +918,10 @@
 
 - [ISE5006D Datasheet v1.0](ISE5006D/Datasheets/General/ISE5006D_Datasheet_V1.0.md): ISE5006D Datasheet v1.0 — Simple, highly reliable network communication system
 
+## ISE5006D-P
+
+- [ISE5006D-P Certifications](ISE5006D-P/certifications.md): ISE5006D-P certification list (CE) with links to the original certificate files
+
 ## ISE5008D
 
 - [ISE5008D Datasheet v1.0](ISE5008D/Datasheets/General/ISE5008D_Datasheet_V1.0.md): ISE5008D Datasheet v1.0 — Simple, Highly Reliable Industrial Network Communication
@@ -951,9 +955,17 @@
   - [Appendix B Safety Notices](ISM%20managed/Manuals/User%20manual/ISM%20managed_User%20manual_V1.0.md#appendix-b-safety-notices)
   - [Appendix C CLI Reference](ISM%20managed/Manuals/User%20manual/ISM%20managed_User%20manual_V1.0.md#appendix-c-cli-reference)
 
+## ISM3008D-P
+
+- [ISM3008D-P Certifications](ISM3008D-P/certifications.md): ISM3008D-P certification list (CE) with links to the original certificate files
+
 ## ISM5006D
 
 - [ISM5006D Datasheet v1.0](ISM5006D/Datasheets/General/ISM5006D_Datasheet_V1.0.md): ISM5006D Datasheet v1.0 — Build advanced and highly reliable industrial Ethernet communication system
+
+## ISM5006D-P
+
+- [ISM5006D-P Certifications](ISM5006D-P/certifications.md): ISM5006D-P certification list (CE) with links to the original certificate files
 
 ## ISM5010D
 
@@ -981,6 +993,10 @@
 
 - [ISM5306D Datasheet v1.0](ISM5306D/Datasheets/General/ISM5306D_Datasheet_V1.0.md): ISM5306D Datasheet v1.0 — Build advanced and highly reliable industrial Ethernet communication system
 
+## ISM5306D-P
+
+- [ISM5306D-P Certifications](ISM5306D-P/certifications.md): ISM5306D-P certification list (CE) with links to the original certificate files
+
 ## ISM5310D
 
 - [ISM5310D Datasheet v1.0](ISM5310D/Datasheets/General/ISM5310D_Datasheet_V1.0.md): ISM5310D Datasheet v1.0 — Build advanced and highly reliable industrial Ethernet communication system
@@ -991,6 +1007,10 @@
 - [ISM7012D Datasheet v1.0](ISM7012D/Datasheets/General/ISM7012D_Datasheet_V1.0.md): ISM7012D Datasheet v1.0 — Build Advanced and Highly Reliable Industrial Ethernet Communication Systems
 - [ISM7012D Certifications](ISM7012D/certifications.md): ISM7012D certification list (CE) with links to the original certificate files
 
+## ISM7020D-P
+
+- [ISM7020D-P Certifications](ISM7020D-P/certifications.md): ISM7020D-P certification list (CE) with links to the original certificate files
+
 ## ISM7028U
 
 - [ISM7028U Datasheet v1.0](ISM7028U/Datasheets/General/ISM7028U-P_Datasheet_V1.0.md): ISM7028U Datasheet v1.0 — Build advanced and highly reliable industrial Ethernet communication system
@@ -999,6 +1019,10 @@
 ## ISM7312D
 
 - [ISM7312D Datasheet v1.0](ISM7312D/Datasheets/General/ISM7312D_Datasheet_V1.0.md): ISM7312D Datasheet v1.0 — Build advanced and highly reliable industrial Ethernet communication system
+
+## ISM7312D-P
+
+- [ISM7312D-P Certifications](ISM7312D-P/certifications.md): ISM7312D-P certification list (CE) with links to the original certificate files
 
 ## InBOX710 Industrial Computer
 

@@ -235,11 +235,11 @@
 
 <div style="display: flex; align-items: end; flex-wrap: wrap; justify-content: space-between;row-gap: 16px;">
   <div style="width: 50%;">
-    <img src="VG710_M12/引脚接口图_4G.png" alt="Top View" style="width: 144%; margin: 0 auto; display: block;" />
+    <img src="VG710_M12/引脚接口图_4G.png" alt="Top View" style="width: 100%; margin: 0 auto; display: block;" />
     <div style="width: 100%; text-align: center; font-size: 11px;">Pin Interface Diagram (4G Version)</div>
   </div>
   <div style="width: 50%;">
-    <img src="VG710_M12/引脚接口图_5G.png" alt="Interface View" style="width: 96%; margin: 0 auto; display: block;" />
+    <img src="VG710_M12/引脚接口图_5G.png" alt="Interface View" style="width: 100%; margin: 0 auto; display: block;" />
     <div style="width: 100%; text-align: center; font-size: 11px;">Pin Interface Diagram (5G Version)</div>
   </div>
   </div>

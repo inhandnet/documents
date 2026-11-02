@@ -162,6 +162,8 @@ The LED indicator layout is concise and intuitive, allowing users to quickly und
   - **Simplified production**: Eliminates SIM card assembly and power-on testing processes, improves factory consistency
   - **Remote parameter O&M**: Although dynamic profile switching is not supported, parameters such as APN / network priority / roaming policy can be remotely updated via InCloud cloud platform
 
+> **Note**: The device label shows two IMEI numbers: IMEI1 corresponds to the physical SIM card, and IMEI2 corresponds to the eSIM. When activating the Verizon eSIM, you need to provide the IMEI2 and the ICCID to the carrier.
+
 ### <span style="color: green;">5.2.2 Flexible SIM Priority Configuration</span>
 
 Supports custom roles and priorities for three SIMs, three slots can be **arbitrarily assigned** as Primary / Backup 1 / Backup 2:

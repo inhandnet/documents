@@ -134,6 +134,8 @@ The CR602 supports two methods for SIM card installation:
 
    Activate the ICCID shown on the device label following the carrier's guide.
 
+   > **Note**: The device label shows two IMEI numbers: IMEI1 corresponds to the physical SIM card, and IMEI2 corresponds to the eSIM. When activating the Verizon eSIM, you need to provide the IMEI2 and the ICCID to the carrier.
+
 2. **Using external Nano SIM cards**
 
    Use the provided pin to remove the SIM card tray. Insert the Nano SIM card, then slide the tray back into the device.

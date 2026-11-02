@@ -1215,9 +1215,7 @@
       "display_names": {
         "en": "ISE5006D"
       },
-      "aliases": [
-        "ISE5006D-P"
-      ],
+      "aliases": [],
       "source_folders": [
         "ISE5006D"
       ],
@@ -2934,6 +2932,96 @@
       ],
       "expected_languages": [
         "zh"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISE5006D-P",
+      "kind": "model",
+      "display_names": {
+        "en": "ISE5006D-P"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISE5006D-P"
+      ],
+      "expected_languages": [
+        "en"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISM3008D-P",
+      "kind": "model",
+      "display_names": {
+        "en": "ISM3008D-P"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISM3008D-P"
+      ],
+      "expected_languages": [
+        "en"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISM5006D-P",
+      "kind": "model",
+      "display_names": {
+        "en": "ISM5006D-P"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISM5006D-P"
+      ],
+      "expected_languages": [
+        "en"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISM5306D-P",
+      "kind": "model",
+      "display_names": {
+        "en": "ISM5306D-P"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISM5306D-P"
+      ],
+      "expected_languages": [
+        "en"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISM7020D-P",
+      "kind": "model",
+      "display_names": {
+        "en": "ISM7020D-P"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISM7020D-P"
+      ],
+      "expected_languages": [
+        "en"
+      ],
+      "public": true
+    },
+    {
+      "id": "ISM7312D-P",
+      "kind": "model",
+      "display_names": {
+        "en": "ISM7312D-P"
+      },
+      "aliases": [],
+      "source_folders": [
+        "ISM7312D-P"
+      ],
+      "expected_languages": [
+        "en"
       ],
       "public": true
     }

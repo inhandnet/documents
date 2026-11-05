@@ -154,6 +154,8 @@ hide:
         <li><a href="EC3320/Manuals/DSA%E6%89%8B%E5%86%8C/DSA%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="DSA 用户手册 V2.0">DSA手册 V1.0</a></li>
         <li><a href="EC3320/Manuals/%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97/EC3000%E5%BF%AB%E9%80%9F%E5%AE%89%E8%A3%85%E6%89%8B%E5%86%8C_V1.0.html" title="EC3000 快速安装手册">安装指南 V1.0</a></li>
         <li><a href="EC3320/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/EC3000%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="EC3000用户手册">用户手册 V1.0</a></li>
+        <li><a href="EC3320/Use%20Cases/%E6%99%BA%E8%83%BD%E9%A9%BE%E9%A9%B6%E6%95%B0%E6%8D%AE%E4%B8%8A%E4%BA%91%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/%E6%A1%88%E4%BE%8B%E6%89%8B%E5%86%8C.html" title="智能驾驶数据上云解决方案">智能驾驶数据上云解决方案</a></li>
+        <li><a href="EC3320/Use%20Cases/%E6%99%BA%E8%83%BD%E9%A9%BE%E9%A9%B6%E6%95%B0%E6%8D%AE%E4%B8%8A%E4%BA%91%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/%E9%85%8D%E7%BD%AE%E6%96%87%E6%A1%A3.html" title="智能驾驶数据上云方案EC3320配置指导手册">智能驾驶数据上云方案EC3320配置指导手册</a></li>
         <li><a href="EC3320/Use%20Cases/%E7%94%B5%E7%AB%99%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E6%99%BA%E8%83%BD%E5%88%86%E6%9E%90%E6%A1%88%E4%BE%8B/%E6%A1%88%E4%BE%8B%E6%89%8B%E5%86%8C.html" title="电站数据采集智能分析解决方案">电站数据采集智能分析案例</a></li>
         </ul>
       </div>
@@ -493,6 +495,8 @@ hide:
         <li><a href="IR302/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/IR302%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="北京映翰通工业路由器IR302系列产品用户手册">用户手册 V1.0</a></li>
         <li><a href="IR302/Use%20Cases/%E5%8C%BB%E7%96%97%E8%AE%BE%E5%A4%87%E8%81%94%E7%BD%91%E6%A1%88%E4%BE%8B/%E6%96%B9%E6%A1%88%E6%89%8B%E5%86%8C.html" title="医疗设备联网解决方案">医疗设备联网解决方案</a></li>
         <li><a href="IR302/Use%20Cases/%E5%8C%BB%E7%96%97%E8%AE%BE%E5%A4%87%E8%81%94%E7%BD%91%E6%A1%88%E4%BE%8B/%E9%85%8D%E7%BD%AE%E6%89%8B%E5%86%8C.html" title="医疗设备联网案例配置指导手册">医疗设备联网案例配置指导手册</a></li>
+        <li><a href="IR302/Use%20Cases/%E5%9F%8E%E6%8A%95%E8%AF%BB%E5%8D%A1%E5%99%A8%E8%81%94%E7%BD%91%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/%E6%A1%88%E4%BE%8B%E6%89%8B%E5%86%8C.html" title="阅读器联网解决方案">阅读器联网解决方案</a></li>
+        <li><a href="IR302/Use%20Cases/%E5%9F%8E%E6%8A%95%E8%AF%BB%E5%8D%A1%E5%99%A8%E8%81%94%E7%BD%91%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/%E9%85%8D%E7%BD%AE%E6%96%87%E6%A1%A3.html" title="阅读器联网方案IR302配置指导手册">阅读器联网方案IR302配置指导手册</a></li>
         <li><a href="IR302/Use%20Cases/%E5%B7%A1%E6%A3%80%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%81%94%E7%BD%91%E6%A1%88%E4%BE%8B/%E6%A1%88%E4%BE%8B%E6%89%8B%E5%86%8C.html" title="巡检机器人联网解决方案">巡检机器人联网解决方案</a></li>
         <li><a href="IR302/Use%20Cases/%E5%B7%A1%E6%A3%80%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%81%94%E7%BD%91%E6%A1%88%E4%BE%8B/%E9%85%8D%E7%BD%AE%E6%89%8B%E5%86%8C.html" title="巡检机器人联网案例配置指导手册">巡检机器人联网案例配置指导手册</a></li>
         <li><a href="IR302/Use%20Cases/%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%BF%9C%E7%A8%8B%E7%9B%91%E6%8E%A7%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/%E6%A1%88%E4%BE%8B%E6%89%8B%E5%86%8C.html" title="机器人远程监控解决方案">机器人远程监控解决方案</a></li>
@@ -531,6 +535,8 @@ hide:
         <li><a href="IR315/Use%20Cases/%E5%B7%A5%E5%8E%82%E6%95%B0%E5%AD%97%E5%8C%96NAT%E7%BB%84%E7%BD%91/%E9%85%8D%E7%BD%AE%E6%89%8B%E5%86%8C.html" title="工厂数字化NAT路由器配置手册">工厂数字化NAT路由器配置手册</a></li>
         <li><a href="IR315/Use%20Cases/%E5%B8%A6%E5%A4%96%E7%AE%A1%E7%90%86OOBM%E6%96%B9%E6%A1%88/%E5%B8%A6%E5%A4%96%E7%AE%A1%E7%90%86OOBM%E6%96%B9%E6%A1%88.html" title="IR315 带外管理（OOBM）方案">IR315 带外管理（OOBM）方案</a></li>
         <li><a href="IR315/Use%20Cases/%E5%B8%A6%E5%A4%96%E7%AE%A1%E7%90%86OOBM%E6%96%B9%E6%A1%88/%E5%B8%A6%E5%A4%96%E7%AE%A1%E7%90%86OOBM%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8D%97.html" title="带外管理（Out-of-Band Management，OOBM）配置指南">带外管理（Out-of-Band Management，OOBM）配置指南</a></li>
+        <li><a href="IR315/Use%20Cases/%E6%99%BA%E8%83%BD%E9%A9%BE%E9%A9%B6%E6%95%B0%E6%8D%AE%E4%B8%8A%E4%BA%91%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/%E6%A1%88%E4%BE%8B%E6%89%8B%E5%86%8C.html" title="智能驾驶数据上云解决方案">智能驾驶数据上云解决方案</a></li>
+        <li><a href="IR315/Use%20Cases/%E6%99%BA%E8%83%BD%E9%A9%BE%E9%A9%B6%E6%95%B0%E6%8D%AE%E4%B8%8A%E4%BA%91%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/%E9%85%8D%E7%BD%AE%E6%96%87%E6%A1%A3.html" title="智能驾驶数据上云IR315配置指导手册">智能驾驶数据上云IR315配置指导手册</a></li>
         </ul>
       </div>
     </div>

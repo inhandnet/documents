@@ -1,0 +1,265 @@
+{
+  "baseSystem": {
+    "setting": {
+      "hostname": "edge-computer",
+      "zone": "Asia/Shanghai",
+      "ntp": {
+        "enabled": true,
+        "servers": [
+          "0.debian.pool.ntp.org:123",
+          "1.debian.pool.ntp.org:123",
+          "2.debian.pool.ntp.org:123",
+          "3.debian.pool.ntp.org:123"
+        ],
+        "period": 3600
+      },
+      "locale": "zh-CN",
+      "disableSSH": false,
+      "disableResetKey": false,
+      "disableSD": false,
+      "disableUSB": false,
+      "sata": false,
+      "can0": {
+        "resistor": true
+      },
+      "can1": {
+        "resistor": true
+      }
+    },
+    "users": {
+      "0000649ab1018221": {
+        "username": "adm",
+        "password": "$2a$10$.w8tzA4paaOgEiFBwZf/WuhHYlFImk/1yIJh/ru7MmTf5xVlJMmOi",
+        "role": {
+          "name": "admin",
+          "permissions": [
+            "*"
+          ]
+        },
+        "permissions": 0,
+        "expiration": 0,
+        "ssh": false,
+        "lock": false
+      }
+    },
+    "cloud": {
+      "enabled": true,
+      "region": "cn",
+      "dsa": {
+        "enable": false,
+        "region": "",
+        "server": ""
+      }
+    }
+  },
+  "networkServices": {
+    "custom_firewall": {
+      "rules": [
+        "iptables -t nat -I POSTROUTING -o cellular0 -j MASQUERADE"
+      ]
+    },
+    "dhcp": {
+      "dhcp": {
+        "0001000000000000": {
+          "config-name": "lo",
+          "ignore": "1",
+          "interface": "lo"
+        },
+        "0002000000000000": {
+          "config-name": "eth1",
+          "force": 1,
+          "ignore": "1",
+          "interface": "eth1",
+          "leasetime": "",
+          "limit": "",
+          "start": ""
+        },
+        "0003000000000000": {
+          "config-name": "eth2",
+          "ignore": "1",
+          "interface": "eth2"
+        }
+      },
+      "dnsmasq": {
+        "0001000000000000": {
+          "cachesize": 150,
+          "domainneeded": 1,
+          "ednspacket_max": 1500,
+          "expandhosts": 1,
+          "filter_aaaa": 1,
+          "localise_queries": 1,
+          "localservice": 1,
+          "nonwildcard": 0,
+          "rebind_localhost": 1,
+          "rebind_protection": 0,
+          "resolvfile": "/tmp/resolv.conf.auto",
+          "server": "",
+          "strictorder": 1
+        }
+      }
+    },
+    "dial": {
+      "debug": 0,
+      "dial_interval": 10,
+      "dualsim_config": {
+        "retries": 3
+      },
+      "enable": 1,
+      "modem_config": {
+        "enable_dualsim": 1,
+        "lwm2m": 0,
+        "main_sim": 0,
+        "network_mode": 0,
+        "sim1_pin_code": "",
+        "sim2_pin_code": ""
+      },
+      "netwatcher": {
+        "addr": [
+          "",
+          ""
+        ],
+        "interval": 60,
+        "is_strict_detect": 0,
+        "retries": 3,
+        "timeout": 5
+      },
+      "profile_config": {
+        "enable_infinitely_redial": 1,
+        "sim1_profile_id": 0,
+        "sim2_profile_id": 0,
+        "sim_profiles": [
+          {
+            "apn": "3gnet",
+            "auth_type": 0,
+            "index": 1,
+            "password": "",
+            "username": ""
+          }
+        ]
+      },
+      "route": {
+        "enable_default_route": 1,
+        "route_metric": 200
+      },
+      "signal_interval": 120
+    },
+    "firewall": {
+      "defaults": {
+        "0001000000000000": {
+          "drop_invalid": 0,
+          "flow_offloading": 0,
+          "flow_offloading_hw": 0,
+          "forward": "ACCEPT",
+          "fullcone": 2,
+          "input": "ACCEPT",
+          "output": "ACCEPT",
+          "syn_flood": 1
+        }
+      },
+      "include": {
+        "0001000000000000": {
+          "path": "/etc/firewall.user",
+          "type": "script"
+        },
+        "0002000000000000": {
+          "config-name": "miniupnpd",
+          "family": "any",
+          "path": "/usr/share/miniupnpd/firewall.include",
+          "reload": 1,
+          "type": "script"
+        },
+        "0003000000000000": {
+          "config-name": "mia",
+          "path": "/etc/mia.include",
+          "reload": 1,
+          "type": "script"
+        }
+      },
+      "zone": {
+        "00006979723cc840": {
+          "forward": "ACCEPT",
+          "input": "ACCEPT",
+          "masq": 1,
+          "name": "eth1",
+          "network": "eth1",
+          "output": "ACCEPT"
+        }
+      }
+    },
+    "gnss": {
+      "enable": 1,
+      "gnss_timesync_enable": 1
+    },
+    "network": {
+      "interface": {
+        "0001000000000000": {
+          "config-name": "lo",
+          "ifname": "lo",
+          "ipaddr": "127.0.0.1",
+          "netmask": "255.0.0.0",
+          "proto": "static"
+        },
+        "0002000000000000": {
+          "auto": "1",
+          "config-name": "eth1",
+          "ifname": "eth1",
+          "ih_iftype": "wan",
+          "ipaddr": "",
+          "netmask": "",
+          "proto": "dhcp"
+        },
+        "0003000000000000": {
+          "auto": "1",
+          "config-name": "eth2",
+          "ifname": "eth2",
+          "ipaddr": "192.168.4.100",
+          "netmask": "255.255.255.0",
+          "proto": "static"
+        },
+        "0010000000000000": {
+          "config-name": "cellular0",
+          "ifname": "cellular0",
+          "proto": "none"
+        },
+        "0020000000000000": {
+          "config-name": "wlan0",
+          "ifname": "wlan0",
+          "proto": "none"
+        }
+      }
+    },
+    "wifi_config": {
+      "ap_network": {
+        "ap_bandwidth": 3,
+        "ap_channel": 36,
+        "ap_frequency": 1,
+        "ap_max_associations": 128,
+        "ap_radio_type": 8,
+        "ap_ssid": "EdgeComputer-AP",
+        "ap_ssid_broadcast": 1,
+        "auth_method": 1,
+        "encrypt_mode": 4,
+        "ip_addr": "192.168.100.100",
+        "netmask": "255.255.255.0",
+        "wpa_psk_key": "123456789"
+      },
+      "enable": 0,
+      "iface": "wlan0",
+      "sta_network": {
+        "algorithm": 0,
+        "icmp_enable": 1,
+        "icmp_interval": 10,
+        "key_mgmt": 0,
+        "probes_custom_enable": 0,
+        "psk": "",
+        "route": {
+          "enable_default_route": 1,
+          "route_metric": 201
+        },
+        "ssid": "",
+        "sta_dhcp": 1
+      },
+      "station_role": 1
+    }
+  }
+}

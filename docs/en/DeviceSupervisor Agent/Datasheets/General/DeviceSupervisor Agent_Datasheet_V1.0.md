@@ -49,7 +49,7 @@ DSA delivers **low-latency data access management** and **intelligent analytics 
 
 ### 1.1 Product Positioning
 
-> **"An integrated edge agent software that runs embedded within industrial-grade gateways, with deep native support for Chinese industrial protocols, delivered through zero-code / low-code workflows."**
+> **"An integrated edge agent software that runs embedded within industrial-grade gateways and edge computers, with broad compatibility with mainstream industrial communication protocols, delivered through zero-code / low-code workflows."**
 
 ### 1.2 Target Markets
 
@@ -80,7 +80,7 @@ DSA delivers **low-latency data access management** and **intelligent analytics 
 | 6 | **100ms High-Frequency Acquisition** | Per-controller and per-tag polling intervals; critical data acquired as fast as **100ms** |
 | 7 | **Massive Tag Scalability** | Up to **190,000 tags per gateway** (EC942 hardware); concurrent multi-device polling |
 | 8 | **Excel Bulk Configuration** | CSV/Excel bulk import/export of devices and tags; **device templates** for rapid deployment |
-| 9 | **Local Historical Storage + Alarm Engine** | Built-in SQLite time-series database; **5-level alarms** (Notice/Warning/Minor/Major/Critical); power-loss data preservation |
+| 9 | **Local Historical Storage + Alarm Engine** | Built-in SQLite time-series database; **5-level alarms** (Notice/Warning/Minor/Major/Critical); offline caching and store-and-forward retransmission after recovery |
 | 10 | **Real-Time Communication Diagnostics** | Southbound controllers support online viewing / downloading of communication messages for rapid on-site troubleshooting |
 
 ---
@@ -208,7 +208,7 @@ DSA follows a **layered modular architecture** consisting of five main modules:
 
 ## 5. Northbound Protocol Conversion List (10+)
 
-Expose acquired data via standard industrial protocols to upstream systems (SCADA / DCS / HMI):
+Expose acquired data via standard industrial protocols to upstream systems, such as SCADA, DCS, and HMI:
 
 | Northbound Protocol | Interface | Description |
 |---|---|---|
@@ -312,16 +312,18 @@ Expose acquired data via standard industrial protocols to upstream systems (SCAD
 |---|---|
 | **Alarm Levels** | 5 levels: Notice / Warning / Minor / Major / Critical |
 | **Comparison Operators** | `=`, `!=`, `>`, `≥`, `<`, `≤` |
-| **Logical Operators** | No logic / && (AND) / || (OR) |
+| **Logical Operators** | No logic / && (AND) / \|\| (OR) |
 | **Alarm Labels** | Group alarm items; MQTT reporting can select by label |
 | **Historical Alarms** | Historical alarm records including trigger / restoration time and values |
 | **CSV Import / Export** | Bulk alarm rule management |
 
 ---
 
-## 9. Data Storage & Failover
+## 9. Data Storage & Offline Cache & Retransmission
 
 ### 9.1 Storage Configuration
+
+> The parameters below configure offline caching and store-and-forward retransmission for cloud reporting.
 
 | Item | Parameter | Default |
 |---|---|---|
@@ -392,7 +394,7 @@ Measured DSA performance across InHand hardware platforms (single protocol, sing
 | Modbus RTU | 10s | **190,000** | 24–30% |
 | OPC UA | 10s | 80,000 | 30% |
 
-> **Performance Highlight**: A single EC942 supports ~190,000 tags — sufficient for a large substation or full factory site.
+> **Performance Highlight**: A single EC942 supports ~190,000 tags — meets full-site data access needs of large sites; evaluate actual selection against project tag count, protocols, and refresh requirements.
 
 ---
 
@@ -404,15 +406,15 @@ DSA is pre-installed on or available as an APP for the following InHand hardware
 
 | Model | Positioning | CPU | Memory | Typical Application |
 |---|---|---|---|---|
-| **IG502** | Entry 4G/5G industrial gateway | ARM Cortex-A7 | 512MB | Small equipment connectivity |
-| **IG902** | Mainstream 4G/5G industrial gateway | ARM Cortex-A7 | 512MB–1GB | PLC acquisition, protocol conversion |
+| **IG502** | Entry 4G/5G industrial gateway | ARM Cortex-A8 | 512MB | Small equipment connectivity |
+| **IG902** | Mainstream 4G/5G industrial gateway | ARM Cortex-A8 | 512MB–1GB | PLC acquisition, protocol conversion |
 
 ### 11.2 EC Series Edge Computers (APP Installation)
 
 | Model | Positioning | CPU | Memory | Typical Application |
 |---|---|---|---|---|
-| **EC312** | Entry-level edge computer | ARM Cortex-A55 | 1–2GB | Building automation / water utilities |
-| **EC942** | Flagship edge computer | ARM Cortex-A72/A53 | 4–8GB | Large factories / substation edge |
+| **EC312** | Entry-level edge computer | ARM Cortex-A53 | 1GB | Building automation / water utilities |
+| **EC942** | Flagship edge computer | ARM Cortex-A55 | 4GB/8GB | Large factories / substation edge |
 
 ---
 
@@ -421,7 +423,7 @@ DSA is pre-installed on or available as an APP for the following InHand hardware
 | Item | Requirement |
 |---|---|
 | **Operating System** | InHand custom Linux (kernel 5.x based) |
-| **CPU Architecture** | ARM Cortex-A7 / A53 / A55 / A72 |
+| **CPU Architecture** | ARM Cortex-A8 / A53 / A55 |
 | **Minimum RAM** | 256MB (IG series) / 512MB (EC series) |
 | **Minimum Storage** | 512MB Flash |
 | **Network** | Ethernet / 4G / 5G / Wi-Fi (per hardware) |
@@ -490,7 +492,7 @@ Please contact InHand Networks sales for pricing and ordering:
 Founded in 2001, InHand Networks is a leading global provider of Industrial IoT solutions, dedicated to driving digital transformation across industries. Our business spans **Enterprise Networking, Industrial & Building IoT, Digital Energy, Smart Commerce, and Intelligent Transportation**, with products and services deployed in 60+ countries including China, the United States, France, Germany, the United Kingdom, and Italy.
 
 **Headquarters**: Beijing, China
-**Overseas Offices**: USA, UK, Germany, France, Italy
+**Overseas Offices**: USA, Singapore, Germany, Canada
 **Website**: www.inhand.com
 
 ---

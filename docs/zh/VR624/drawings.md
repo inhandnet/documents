@@ -13,4 +13,4 @@ description: "VR624 结构图纸登记（2D、3D），含图纸原件文件链�
 |---|---|---|
 | 2D | SCAB110010  VR624 POWER IN cable.pdf | [查看](https://github.com/inhandnet/documents/blob/master/docs/zh/VR624/Drawings/2D/SCAB110010%20%20VR624%C2%A0POWER%C2%A0IN%C2%A0cable.pdf) |
 | 2D | VR624-XXNR_M12 PWR_V1.pdf | [查看](https://github.com/inhandnet/documents/blob/master/docs/zh/VR624/Drawings/2D/VR624-XXNR_M12%20PWR_V1.pdf) |
-| 3D | VR624-XXNR_M12 PWR_3D_V1.stp.zip | [查看](https://github.com/inhandnet/documents/blob/master/docs/zh/VR624/Drawings/3D/VR624-XXNR_M12%20PWR_3D_V1.stp.zip) |
+| 3D | VR624-XXNR_M12 PWR_3D_V1.zip | [查看](https://github.com/inhandnet/documents/blob/master/docs/zh/VR624/Drawings/3D/VR624-XXNR_M12%20PWR_3D_V1.zip) |

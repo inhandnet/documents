@@ -13,4 +13,4 @@ This page registers the mechanical drawings for VR624. 2D drawings are PDF, 3D m
 |---|---|---|
 | 2D | SCAB110010  VR624 POWER IN cable.pdf | [View](https://github.com/inhandnet/documents/blob/master/docs/en/VR624/Drawings/2D/SCAB110010%20%20VR624%C2%A0POWER%C2%A0IN%C2%A0cable.pdf) |
 | 2D | VR624-XXNR_M12 PWR_V1.pdf | [View](https://github.com/inhandnet/documents/blob/master/docs/en/VR624/Drawings/2D/VR624-XXNR_M12%20PWR_V1.pdf) |
-| 3D | VR624-XXNR_M12 PWR_3D_V1.stp.zip | [View](https://github.com/inhandnet/documents/blob/master/docs/en/VR624/Drawings/3D/VR624-XXNR_M12%20PWR_3D_V1.stp.zip) |
+| 3D | VR624-XXNR_M12 PWR_3D_V1.zip | [View](https://github.com/inhandnet/documents/blob/master/docs/en/VR624/Drawings/3D/VR624-XXNR_M12%20PWR_3D_V1.zip) |

@@ -1693,8 +1693,7 @@
       },
       "aliases": [
         "VG710-4G",
-        "VG710-H",
-        "VG710-M"
+        "VG710-H"
       ],
       "source_folders": [
         "VG710"
@@ -3022,6 +3021,21 @@
       ],
       "expected_languages": [
         "en"
+      ],
+      "public": true
+    },
+    {
+      "id": "VG710-M",
+      "kind": "model",
+      "display_names": {
+        "zh": "VG710-M"
+      },
+      "aliases": [],
+      "source_folders": [
+        "VG710-M"
+      ],
+      "expected_languages": [
+        "zh"
       ],
       "public": true
     }

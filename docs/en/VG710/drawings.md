@@ -15,7 +15,7 @@ This page registers the mechanical drawings for VG710. 2D drawings are PDF, 3D m
 | 2D | VG710-M_4G Version_V4.pdf | [View](https://github.com/inhandnet/documents/blob/master/docs/en/VG710/Drawings/2D/VG710-M_4G%20Version_V4.pdf) |
 | 2D | VG710-M_5G Version_V4.pdf | [View](https://github.com/inhandnet/documents/blob/master/docs/en/VG710/Drawings/2D/VG710-M_5G%20Version_V4.pdf) |
 | 2D | VG710_4G Verison_V2.pdf | [View](https://github.com/inhandnet/documents/blob/master/docs/en/VG710/Drawings/2D/VG710_4G%20Verison_V2.pdf) |
-| 3D | VG710-H_5G Version_V2.zip | [View](https://github.com/inhandnet/documents/blob/master/docs/en/VG710/Drawings/3D/VG710-H_5G%20Version_V2.zip) |
-| 3D | VG710-M-4G_V4.zip | [View](https://github.com/inhandnet/documents/blob/master/docs/en/VG710/Drawings/3D/VG710-M-4G_V4.zip) |
-| 3D | VG710-M-5G_V4.zip | [View](https://github.com/inhandnet/documents/blob/master/docs/en/VG710/Drawings/3D/VG710-M-5G_V4.zip) |
-| 3D | VG710_4G Version_V2.zip | [View](https://github.com/inhandnet/documents/blob/master/docs/en/VG710/Drawings/3D/VG710_4G%20Version_V2.zip) |
+| 3D | VG710-H_5G Version_3D_V2.zip | [View](https://github.com/inhandnet/documents/blob/master/docs/en/VG710/Drawings/3D/VG710-H_5G%20Version_3D_V2.zip) |
+| 3D | VG710-M-4G_3D_V4.zip | [View](https://github.com/inhandnet/documents/blob/master/docs/en/VG710/Drawings/3D/VG710-M-4G_3D_V4.zip) |
+| 3D | VG710-M-5G_3D_V4.zip | [View](https://github.com/inhandnet/documents/blob/master/docs/en/VG710/Drawings/3D/VG710-M-5G_3D_V4.zip) |
+| 3D | VG710_4G Version_3D_V2.zip | [View](https://github.com/inhandnet/documents/blob/master/docs/en/VG710/Drawings/3D/VG710_4G%20Version_3D_V2.zip) |

@@ -13,5 +13,5 @@ description: "VG710 结构图纸登记（2D、3D），含图纸原件文件链�
 |---|---|---|
 | 2D | VG710-5G_V2.pdf | [查看](https://github.com/inhandnet/documents/blob/master/docs/zh/VG710/Drawings/2D/VG710-5G_V2.pdf) |
 | 2D | VG710_4G Verison_V2.pdf | [查看](https://github.com/inhandnet/documents/blob/master/docs/zh/VG710/Drawings/2D/VG710_4G%20Verison_V2.pdf) |
-| 3D | VG710-H_5G Version_V2.zip | [查看](https://github.com/inhandnet/documents/blob/master/docs/zh/VG710/Drawings/3D/VG710-H_5G%20Version_V2.zip) |
-| 3D | VG710_4G Version_V2.zip | [查看](https://github.com/inhandnet/documents/blob/master/docs/zh/VG710/Drawings/3D/VG710_4G%20Version_V2.zip) |
+| 3D | VG710-H_5G Version_3D_V2.zip | [查看](https://github.com/inhandnet/documents/blob/master/docs/zh/VG710/Drawings/3D/VG710-H_5G%20Version_3D_V2.zip) |
+| 3D | VG710_4G Version_3D_V2.zip | [查看](https://github.com/inhandnet/documents/blob/master/docs/zh/VG710/Drawings/3D/VG710_4G%20Version_3D_V2.zip) |

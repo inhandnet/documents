@@ -623,6 +623,7 @@ hide:
         <div class="pm-card__title">MDT600</div>
         <ul class="pm-card__links">
         <li><a href="MDT600/certifications.html" title="MDT600 认证证书">认证证书</a></li>
+        <li><a href="MDT600/drawings.html" title="MDT600 结构图纸">结构图纸</a></li>
         </ul>
       </div>
     </div>

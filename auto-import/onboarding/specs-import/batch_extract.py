@@ -147,6 +147,9 @@ SPEC_KEYWORDS = {
     'speaker', 'microphone', 'fingerprint', 'nfc', 'expansion',
     'humidity', 'ip', 'mac', 'address', 'table', 'capacity',
     'supply', 'connector', 'pin', 'definition', 'ignition',
+    # 认证/合规类（行名常是 Mandatory/Carrier/Environmental 这类抽象词）
+    'compliance', 'regulatory', 'mandatory', 'carrier', 'environmental',
+    'rohs', 'reach',
     # 中文规格关键词
     '规格', '参数', '技术指标', '指标', '性能', '特性',
     '尺寸', '重量', '电源', '功率', '电压', '电流', '温度', '湿度',
@@ -157,6 +160,7 @@ SPEC_KEYWORDS = {
     '协议', '管理', '安全', '加密', '防火墙', 'vpn',
     'led', '指示灯', '按键', '复位',
     '环境', '机械', '电气', '电磁',
+    '合规', '环保', '强制',
 }
 
 
@@ -186,6 +190,19 @@ def looks_like_model_or_code(name: str) -> bool:
     if re.match(r'^[A-Z]{2,6}\d{1,4}[A-Z]?(-[A-Z0-9]+)*$', name):
         return True
     return False
+
+
+_CERT_TITLE_RE = re.compile(r'certif|compliance|regulat', re.IGNORECASE)
+
+
+def is_certification_title(title: str) -> bool:
+    """认证/合规类表格的小节标题（如 "Certifications and Compliance"）。
+
+    这类表格的行名常是抽象分类词（Mandatory / Carrier / Environmental），
+    行名启发式会把它们误判为"非规格表"整表丢弃；标题明确是认证类时直接放行，
+    不再看行名比例（ODU12 规格书 11.4 认证表即此例）。
+    """
+    return bool(title) and bool(_CERT_TITLE_RE.search(title))
 
 
 def is_spec_table(table: dict) -> bool:
@@ -334,11 +351,11 @@ def parse_markdown_tables(content: str) -> list:
             i += 1
             continue
 
-        if not is_spec_table(table):
+        # 获取表格标题作为默认 group；认证/合规类标题直接放行行名启发式
+        table_title = extract_table_title(lines, table_start)
+        if not is_spec_table(table) and not is_certification_title(table_title):
             continue
 
-        # 获取表格标题作为默认 group
-        table_title = extract_table_title(lines, table_start)
         if is_marketing_table(table_title) or is_ordering_model_table(table_title):
             continue
 
@@ -448,10 +465,11 @@ def parse_html_tables(content: str) -> list:
         table = parse_html_table(table_html)
         if table is None:
             continue
-        if not is_spec_table(table):
-            continue
 
         table_title = extract_table_title(lines, table_start)
+        if not is_spec_table(table) and not is_certification_title(table_title):
+            continue
+
         if is_marketing_table(table_title) or is_ordering_model_table(table_title):
             continue
         specs = extract_specs_from_table(table, default_group=table_title)

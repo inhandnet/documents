@@ -776,6 +776,7 @@ hide:
         <div class="pm-card__title">VG710</div>
         <ul class="pm-card__links">
         <li><a href="VG710/certifications.html" title="VG710 Certifications">Certifications</a></li>
+        <li><a href="VG710/drawings.html" title="VG710 Drawings">Drawings</a></li>
         <li><a href="VG710/Manuals/User%20manual/VG710_User%20manual_V1.0.html" title="InHand VG710 Series In-Vehicle Gateway User&#x27;s Manual">User manual V1.0</a></li>
         <li><a href="VG710/Use%20Cases/Aviation-Ground-Vehicle-Monitoring/case-manual.html" title="Aviation Ground Vehicle Digitalization Solution">Aviation Ground Vehicle Digitalization Solution</a></li>
         <li><a href="VG710/Use%20Cases/Aviation-Ground-Vehicle-Monitoring/config-manual.html" title="Aviation Ground Vehicle VG710 Vehicle Gateway Configuration Manual">Aviation Ground Vehicle VG710 Vehicle Gateway Configuration Manual</a></li>
@@ -797,6 +798,7 @@ hide:
         <div class="pm-card__title">VR624</div>
         <ul class="pm-card__links">
         <li><a href="VR624/certifications.html" title="VR624 Certifications">Certifications</a></li>
+        <li><a href="VR624/drawings.html" title="VR624 Drawings">Drawings</a></li>
         <li><a href="VR624/Manuals/User%20manual/VR624_User%20manual_V1.0.html" title="Vehicle Router VR624 Product User Manual">User manual V1.0</a></li>
         </ul>
       </div>

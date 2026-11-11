@@ -1215,6 +1215,7 @@
 - [VG710 5G Version v1.0](VG710/Datasheets/5G%20Version/VG710_5G_Datasheet_V1.0.md): VG710 5G Version v1.0 — High-performance, Powerful, Programmable
 - [VG710 Datasheet v1.0](VG710/Datasheets/General/VG710_M12_Datasheet_V1.0.md): VG710 Datasheet v1.0 — High-performance, Powerful, Programmable
 - [VG710 Certifications](VG710/certifications.md): VG710 certification list (CE, E-Mark, ECER118, EN18031, EN45545, EN50155, EN61373, FCC, ITxPT, PTCRB, RCM, RoHS, UKCA) with links to the original certificate files
+- [VG710 Drawings](VG710/drawings.md): VG710 mechanical drawings (2D, 3D) with links to the original drawing files
 - [Aviation Ground Vehicle Digitalization Solution](VG710/Use%20Cases/Aviation-Ground-Vehicle-Monitoring/case-manual.md): VG710 Aviation-Ground-Vehicle-Monitoring
 - [Aviation Ground Vehicle VG710 Vehicle Gateway Configuration Manual](VG710/Use%20Cases/Aviation-Ground-Vehicle-Monitoring/config-manual.md): VG710 Aviation-Ground-Vehicle-Monitoring
 
@@ -1238,6 +1239,7 @@
   - [Appendix B Safety Precautions](VR624/Manuals/User%20manual/VR624_User%20manual_V1.0.md#appendix-b-safety-precautions)
 - [VR624 Datasheet v1.1](VR624/Datasheets/General/VR624_Datasheet_V1.1.md): VR624 Datasheet v1.1 — High-speed 5G, Wi-Fi 6, Cloud-managed
 - [VR624 Certifications](VR624/certifications.md): VR624 certification list (CE, E-Mark, EN50155, EN61373) with links to the original certificate files
+- [VR624 Drawings](VR624/drawings.md): VR624 mechanical drawings (2D, 3D) with links to the original drawing files
 
 ## VT200
 

@@ -331,8 +331,8 @@ Applicable wherever distributed devices need centralized management.
 <tr>
 <th style="text-align:center;width:22%;min-width:9em;white-space:nowrap;">Module</th>
 <th style="text-align:center;width:28%;min-width:12em;white-space:nowrap;">Feature</th>
-<th style="text-align:center;">InCloud Manager Basic</th>
-<th style="text-align:center;">InCloud Manager Branch Professional</th>
+<th style="text-align:center;">InCloud Essential Plan</th>
+<th style="text-align:center;white-space:normal;min-width:11em;">InCloud Branch Professional Plan</th>
 </tr>
 </thead>
 <tbody>
@@ -405,7 +405,7 @@ Applicable wherever distributed devices need centralized management.
 </tr>
 <tr>
 <td rowspan="2" style="text-align:center;vertical-align:middle;width:22%;min-width:9em;white-space:nowrap;">Network & SD-WAN</td>
-<td style="width:28%;min-width:12em;white-space:nowrap;">Cloud Connect</td>
+<td style="width:28%;min-width:12em;white-space:nowrap;">Connector</td>
 <td style="text-align:center;">×</td>
 <td style="text-align:center;">√</td>
 </tr>
@@ -436,7 +436,7 @@ Applicable wherever distributed devices need centralized management.
 <td style="text-align:center;">√</td>
 </tr>
 <tr>
-<td rowspan="7" style="text-align:center;vertical-align:middle;width:22%;min-width:9em;white-space:nowrap;">Remote O&M and Diagnostics</td>
+<td rowspan="7" style="text-align:center;vertical-align:middle;width:22%;min-width:9em;white-space:normal;">Remote O&M and Diagnostics</td>
 <td style="width:28%;min-width:12em;white-space:nowrap;">Remote Access</td>
 <td style="text-align:center;">√</td>
 <td style="text-align:center;">√</td>

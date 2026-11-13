@@ -125,14 +125,14 @@ InHand edge intelligence solutions integrate 5G, AI, IoT, and cloud computing, a
 <div style="page-break-after: always;"></div>
 
 
-# <span style="color: green;">5. License List</span>
+# <span style="color: green;">5. License Specifications</span>
 
 <table>
 <thead>
 <tr>
 <th style="text-align:center;width:22%;min-width:9em;">Module</th>
 <th style="text-align:center;width:28%;min-width:12em;">Feature</th>
-<th style="text-align:center;">DeviceLive Basic</th>
+<th style="text-align:center;">DeviceLive Basic Plan</th>
 <th style="text-align:center;">DeviceLive Edge Professional Plan</th>
 </tr>
 </thead>
@@ -210,8 +210,8 @@ InHand edge intelligence solutions integrate 5G, AI, IoT, and cloud computing, a
 <td style="text-align:center;">√</td>
 </tr>
 <tr>
-<td rowspan="2" style="text-align:center;vertical-align:middle;width:22%;min-width:9em;">Remote Terminal Maintenance</td>
-<td style="width:28%;min-width:12em;">Cloud Connect</td>
+<td rowspan="2" style="text-align:center;vertical-align:middle;width:22%;min-width:9em;">Remote Endpoint Maintenance</td>
+<td style="width:28%;min-width:12em;">Connector</td>
 <td style="text-align:center;"><span style="font-size:1.4em;">×</span></td>
 <td style="text-align:center;">√</td>
 </tr>
@@ -265,10 +265,14 @@ InHand edge intelligence solutions integrate 5G, AI, IoT, and cloud computing, a
 </tbody>
 </table>
 
-**Plan Description**
+**Key Notes**
 
-- **Basic Plan:** Provides basic device onboarding, remote access, device management, status monitoring, data analysis and alarm capabilities for daily device operation and maintenance.
-- **Edge Professional Plan:** Provides advanced cloud connection, edge application deployment and operation & maintenance capabilities based on basic device management, mainly targeting edge computing scenarios.
+- **1. The DeviceLive Basic Plan is free of charge.** 
+
+    Connecting devices, monitoring them, and day-to-day remote management require no license purchase.
+- **2. New devices include three months of DeviceLive Edge Professional Plan.** 
+
+    The first time a device is added to DeviceLive, a three-month Pro license is issued automatically — no request and no payment required. When the term ends, the device continues to run on the Basic plan with full access to all basic features.
 
 **Platform URL:** [device.inhandcloud.com](https://device.inhandcloud.com)
 

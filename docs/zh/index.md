@@ -481,6 +481,7 @@ hide:
         <div class="pm-card__title">IR202</div>
         <ul class="pm-card__links">
         <li><a href="IR202/certifications.html" title="IR202 认证证书">认证证书</a></li>
+        <li><a href="IR202/drawings.html" title="IR202 结构图纸">结构图纸</a></li>
         <li><a href="IR202/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/IR202-Lite%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="北京映翰通工业路由器IR202-Lite系列产品用户手册">用户手册 V1.0</a></li>
         <li><a href="IR202/Use%20Cases/%E5%85%85%E7%94%B5%E6%A1%A9%E8%81%94%E7%BD%91%E5%BA%94%E7%94%A8%E6%A1%88%E4%BE%8B/%E6%96%B9%E6%A1%88%E6%89%8B%E5%86%8C.html" title="充电桩联网解决方案">充电桩联网应用案例</a></li>
         </ul>

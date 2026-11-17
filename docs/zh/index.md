@@ -716,6 +716,7 @@ hide:
         <ul class="pm-card__links">
         <li><a href="VR624/certifications.html" title="VR624 认证证书">认证证书</a></li>
         <li><a href="VR624/drawings.html" title="VR624 结构图纸">结构图纸</a></li>
+        <li><a href="VR624/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/VR624%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C.html" title="北京映翰通车载路由器VR624产品系列用户手册">用户手册</a></li>
         </ul>
       </div>
     </div>

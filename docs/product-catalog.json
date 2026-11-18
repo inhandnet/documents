@@ -3038,6 +3038,23 @@
         "zh"
       ],
       "public": true
+    },
+    {
+      "id": "OAP700",
+      "kind": "model",
+      "display_names": {
+        "en": "OAP700",
+        "zh": "OAP700"
+      },
+      "aliases": [],
+      "source_folders": [
+        "OAP700"
+      ],
+      "expected_languages": [
+        "en",
+        "zh"
+      ],
+      "public": true
     }
   ]
 }

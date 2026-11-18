@@ -1073,6 +1073,10 @@
 - [Mo 68A 规格书 v1.2](Mo%2068A/Datasheets/%E9%80%9A%E7%94%A8/Mo%2068A%E8%A7%84%E6%A0%BC%E4%B9%A6_V1.2.md): Mo 68A 规格书 v1.2
 - [Mo 68A 结构图纸](Mo%2068A/drawings.md): Mo 68A 结构图纸登记（2D），含图纸原件文件链接
 
+## OAP700
+
+- [OAP700 规格书 v1.0](OAP700/Datasheets/%E9%80%9A%E7%94%A8/OAP700%E8%A7%84%E6%A0%BC%E4%B9%A6_V1.0.md): OAP700 规格书 v1.0 — OAP700 Wi-Fi 7 户外接入点
+
 ## ODU12
 
 - [ODU12 快速用户手册](ODU12/Manuals/%E5%BF%AB%E9%80%9F%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/ODU12%E5%BF%AB%E9%80%9F%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C.md): ODU12 快速用户手册 — 安装视频：https://www.inhand.com/odu12-installation-guide

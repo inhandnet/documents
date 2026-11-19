@@ -24,6 +24,8 @@
   </div>
 </div>
 
+
+
 <div style="page-break-after: always;"></div>
 
 # <span style="color: green;">1. Product Overview</span>
@@ -449,7 +451,7 @@ The CR602 is equipped with InCloud Manager cloud management platform for full li
 
 | Certification Type | Europe Version | North America Version |
 | ----------------- | -------------- | --------------------- |
-| **Mandatory** | CE（pending） | FCC / IC / PTCRB |
+| **Mandatory** | CE | FCC / IC / PTCRB |
 | **Environmental** | RoHS / REACH | RoHS / REACH |
 | **Carrier** |  | Verizon / AT&T / T-Mobile / FirstNet |
 

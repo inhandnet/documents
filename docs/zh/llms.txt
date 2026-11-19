@@ -1187,6 +1187,19 @@
 ## VT310
 
 - [车载追踪网关VT300系列用户手册](VT310/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/VT310%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.md): VT310 用户手册 v1.0 — VT300系列车载追踪网关是一款面向物流运输、工程车辆监控等行业的资产追踪产品，具备接口丰富、性能稳定的特点。该设备支持GNSS（全球导航卫星系统，可以理解为：提供高精度定位和授时服务的卫星系统）精准定位，可实现车辆与驾驶人员状态追踪监控、…
+- [FlexAPI_MQTT_for_3rd_party_platform](VT310/Developer%20Documentation/FlexAPI/FlexAPI_MQTT_for_3rd_party_platform.md): VT310 FlexAPI — We introduced FlexAPI for the fast evolving IoT applications, which highly value easy integration, openness, flexibility…
+  - [For VT300/VT200 and VG700/VG814 series](VT310/Developer%20Documentation/FlexAPI/FlexAPI_MQTT_for_3rd_party_platform.md#for-vt300vt200-and-vg700vg814-series)
+  - [1. Introduction](VT310/Developer%20Documentation/FlexAPI/FlexAPI_MQTT_for_3rd_party_platform.md#1-introduction)
+  - [2. FlexAPI Overview](VT310/Developer%20Documentation/FlexAPI/FlexAPI_MQTT_for_3rd_party_platform.md#2-flexapi-overview)
+  - [Payload is customized by the customer, usually written by the APP](VT310/Developer%20Documentation/FlexAPI/FlexAPI_MQTT_for_3rd_party_platform.md#payload-is-customized-by-the-customer-usually-written-by-the-app)
+- [FlexAPI_TCP_for_3rd_party_platform](VT310/Developer%20Documentation/FlexAPI/FlexAPI_TCP_for_3rd_party_platform.md): VT310 FlexAPI — We introduced FlexAPI for the fast evolving IoT applications, which highly value easy integration, openness, flexibility…
+  - [*For VT series*](VT310/Developer%20Documentation/FlexAPI/FlexAPI_TCP_for_3rd_party_platform.md#for-vt-series)
+  - [1. Introduction](VT310/Developer%20Documentation/FlexAPI/FlexAPI_TCP_for_3rd_party_platform.md#1-introduction)
+  - [2. FlexAPI Overview](VT310/Developer%20Documentation/FlexAPI/FlexAPI_TCP_for_3rd_party_platform.md#2-flexapi-overview)
+  - [3. Basic Usage](VT310/Developer%20Documentation/FlexAPI/FlexAPI_TCP_for_3rd_party_platform.md#3-basic-usage)
+  - [4. Advanced Usage](VT310/Developer%20Documentation/FlexAPI/FlexAPI_TCP_for_3rd_party_platform.md#4-advanced-usage)
+  - [5. Event Service](VT310/Developer%20Documentation/FlexAPI/FlexAPI_TCP_for_3rd_party_platform.md#5-event-service)
+  - [Appendix A. FlexAPI Supported Parameters](VT310/Developer%20Documentation/FlexAPI/FlexAPI_TCP_for_3rd_party_platform.md#appendix-a-flexapi-supported-parameters)
 - [VT310 规格书 v1.0](VT310/Datasheets/%E9%80%9A%E7%94%A8/VT310%E8%A7%84%E6%A0%BC%E4%B9%A6_V1.0.md): VT310 规格书 v1.0 — 智能车载追踪，IP66 防护，全场景连接
 - [车载冷机监控](VT310/Use%20Cases/%E8%BD%A6%E8%BD%BD%E5%86%B7%E6%9C%BA%E7%9B%91%E6%8E%A7/%E9%85%8D%E7%BD%AE%E6%89%8B%E5%86%8C.md): VT310 车载冷机监控 — VT310 是⼀款可靠耐⽤、功能丰富，性能强劲的⻋载追踪器。VT310 具有 IP66 ⾼等级防护、独特的低功耗设计，可在恶劣环境中稳定⼯作，在⻋辆熄⽕后也能⻓时间运⾏。这款追踪器集成了 LTE、GNSS、陀螺仪和惯性传感器，并具有强劲的处…
 - [运输冷机联网监控解决方案](VT310/Use%20Cases/%E8%BD%A6%E8%BD%BD%E5%86%B7%E6%9C%BA%E7%9B%91%E6%8E%A7/%E6%A1%88%E4%BE%8B%E6%89%8B%E5%86%8C.md): VT310 车载冷机监控

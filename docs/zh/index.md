@@ -734,8 +734,6 @@ hide:
       <div class="pm-card__body">
         <div class="pm-card__title">VT310</div>
         <ul class="pm-card__links">
-        <li><a href="VT310/Developer%20Documentation/FlexAPI/FlexAPI_MQTT_for_3rd_party_platform.html" title="FlexAPI_MQTT_for_3rd_party_platform">FlexAPI_MQTT_for_3rd_party_platform</a></li>
-        <li><a href="VT310/Developer%20Documentation/FlexAPI/FlexAPI_TCP_for_3rd_party_platform.html" title="FlexAPI_TCP_for_3rd_party_platform">FlexAPI_TCP_for_3rd_party_platform</a></li>
         <li><a href="VT310/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/VT310%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="车载追踪网关VT300系列用户手册">用户手册 V1.0</a></li>
         <li><a href="VT310/Use%20Cases/%E8%BD%A6%E8%BD%BD%E5%86%B7%E6%9C%BA%E7%9B%91%E6%8E%A7/%E6%A1%88%E4%BE%8B%E6%89%8B%E5%86%8C.html" title="运输冷机联网监控解决方案">运输冷机联网监控解决方案</a></li>
         <li><a href="VT310/Use%20Cases/%E8%BD%A6%E8%BD%BD%E5%86%B7%E6%9C%BA%E7%9B%91%E6%8E%A7/%E9%85%8D%E7%BD%AE%E6%89%8B%E5%86%8C.html" title="车载冷机监控">车载冷机监控</a></li>

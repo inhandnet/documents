@@ -1,4 +1,4 @@
-<div style="width: 100%;height: 100%;background: url(images/EC954.jpg); background-size: 100% 100%;">
+<div style="width: 100%;height: 100%;background: url('images/紧凑型InHand双设备展示.png'); background-size: 100% 100%;">
   <div style="height:75%;">
     <div style="width:35%; padding: 40px 40px">
       <img src="images/logo.png" alt="logo" />
@@ -8,17 +8,17 @@
     </div>
   </div>
   <div style="padding-left: 40px;">
-    <div style="font-size: 40px; font-weight: bold; color:#000;margin-bottom: 30px;">
-      EC954 Series High-Performance AI Edge Computer
+    <div style="font-size: 30px; font-weight: bold; color:#000;margin-bottom: 16px;width: 62%;line-height: 1.2;">
+      EC954 Series<br/>High-Performance AI Edge Computer
     </div>
-    <div style="text-align: center;">
-      <div style="display: flex; flex-wrap: wrap; gap: 16px; ">
-        <div style="width: 200px;background-color: #4CAF50; color: white; padding: 8px 8px; border-radius: 6px; font-size: 18px;">· Scalable AI Power</div>
-        <div style="width: 200px;background-color: #4CAF50; color: white; padding: 8px 8px; border-radius: 6px; font-size: 18px;">· High Security</div>
+    <div>
+      <div style="display: flex; gap: 16px;">
+        <div style="flex: 0 0 auto;width: 200px;background-color: #4CAF50; color: white; padding: 8px 8px; border-radius: 6px; font-size: 18px;white-space: nowrap;">· Scalable AI Power</div>
+        <div style="flex: 0 0 auto;width: 200px;background-color: #4CAF50; color: white; padding: 8px 8px; border-radius: 6px; font-size: 18px;white-space: nowrap;">· High Security</div>
       </div>
-      <div style="display: flex; flex-wrap: wrap; gap: 16px;margin-top:16px">
-        <div style="width: 200px;background-color: #4CAF50; color: white; padding: 8px 8px; border-radius: 6px; font-size: 18px;">· Rich Interfaces</div>
-        <div style="width: 200px;background-color: #4CAF50; color: white; padding: 8px 8px; border-radius: 6px; font-size: 18px; ">· Cloud-Managed</div>
+      <div style="display: flex; gap: 16px;margin-top:10px">
+        <div style="flex: 0 0 auto;width: 200px;background-color: #4CAF50; color: white; padding: 8px 8px; border-radius: 6px; font-size: 18px;white-space: nowrap;">· Rich Interfaces</div>
+        <div style="flex: 0 0 auto;width: 200px;background-color: #4CAF50; color: white; padding: 8px 8px; border-radius: 6px; font-size: 18px;white-space: nowrap;">· Cloud-Managed</div>
       </div>
     </div>
   </div>
@@ -56,30 +56,21 @@
 
 # <span style="color: green;">2. Product Dimensions</span>
 
-<div style="display: flex; align-items: end; justify-content: space-between; column-gap: 2%;">
-
-  <div style="width: 45%;">
-    <img src="images/prod_1.png" alt="Front View" />
-    <div style="width: 100%; text-align: center; font-size: 12px;">Front View</div>
+<div style="display: flex; align-items: center; justify-content: space-between; column-gap: 2%;">
+  <div style="width: 49%;">
+    <img src="images/EC954_dimension_page1新.png" alt="Product Dimensions" style="width: 100%;" />
   </div>
-  <div style="width: 45%;">
-    <img src="images/prod_3.png" alt="Side View" style="display: block; margin: 0 auto;" />
-    <div style="width: 100%; text-align: center; font-size: 12px;">Side View</div>
+  <div style="width: 49%;">
+    <img src="images/EC954_dimension_page2新.png" alt="Product Dimensions" style="width: 100%;" />
   </div>
 </div>
-<div style="margin-top: 12px; display: flex; align-items: flex-start; justify-content: space-between; column-gap: 2%;">
-  <div style="width: 45%;">
-    <img src="images/prod_2.png" alt="Interface Diagram" style="display: block; margin: 0 auto;" />
-    <div style="width: 100%; text-align: center; font-size: 12px;">Interface Diagram</div>
-  </div>
-  <div style="width: 45%; font-size: 12px;">
-    <div><strong>Note:</strong></div>
-    <div>1. All dimensions are in millimeters (mm), with inches (in) in parentheses.</div>
-    <div>2. All dimensions are approximate and <span style="font-weight: bold;">for reference only</span>.</div>
-    <div>3. Drawings <span style="font-weight: bold;">must not be used for manufacturing</span>.</div>
-    <div>4. Dimensions are subject to part and manufacturing tolerances.</div>
-    <div>5. Specifications may change without prior notice.</div>
-  </div>
+<div style="margin-top: 12px; font-size: 12px;">
+  <div><strong>Note:</strong></div>
+  <div>1. All dimensions are in millimeters (mm).</div>
+  <div>2. All dimensions are approximate and <span style="font-weight: bold;">for reference only</span>.</div>
+  <div>3. Drawings <span style="font-weight: bold;">must not be used for manufacturing</span>.</div>
+  <div>4. Dimensions are subject to part and manufacturing tolerances.</div>
+  <div>5. Specifications may change without prior notice.</div>
 </div>
 
 

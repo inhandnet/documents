@@ -21,7 +21,7 @@ Take the EC954 out of the box and compare it with the front and rear panels belo
 
 ![Front Panel](images/img_2cd76b82.png)
 
-![Rear Panel](images/img_d6c759e3.png)
+![Rear Panel](images/EC954_rear_panel_annotated_EN.png)
 
 For the full panel layout, see §2.2.
 
@@ -128,7 +128,7 @@ EC954 is a high-performance multi-interface edge computer with AI scaling up to 
 
 ### Rear Panel
 
-![Rear Panel](images/img_d6c759e3.png)
+![Rear Panel](images/EC954_rear_panel_annotated_EN.png)
 
 The EC954 provides an API interface that users can call to detect the state of programmable keys and then implement their own key logic.
 

@@ -93,13 +93,13 @@ EC954 is a high-performance multi-interface edge computer featuring AI computati
 
 #### 1.3.3 Rear Panel
 
-<p align="center"><img src="images/img_d6c759e3.webp" alt="EC954 rear panel" width="70%"></p>
+<p align="center"><img src="images/EC954_rear_panel_annotated_EN.png" alt="EC954 rear panel" width="70%"></p>
 
 <p align="center"><strong>Figure 1-3 EC954 Rear Panel</strong></p>
 
 #### 1.3.4 Alternative Front Panel View
 
-<p align="center"><img src="images/img_5a955f40.webp" alt="EC954 front panel alternative view" width="70%"></p>
+<p align="center"><img src="images/EC954_front_panel_annotated_EN.png" alt="EC954 front panel alternative view" width="70%"></p>
 
 <p align="center"><strong>Figure 1-4 EC954 Front Panel (Alternative View)</strong></p>
 
@@ -128,7 +128,7 @@ EC954 is a high-performance multi-interface edge computer featuring AI computati
 
 EC954 has 12 LEDs indicating power supply and system operating status.
 
-<p align="center"><img src="images/img_203e0898.webp" alt="EC954 LED indicators"  width="70%"></p>
+<p align="center"><img src="images/EC954_LED_indicators.webp" alt="EC954 LED indicators"  width="70%"></p>
 
 <p align="center"><strong>Figure 1-5 EC954 LED Indicators</strong></p>
 
@@ -1146,10 +1146,6 @@ For more information about the `stty` command, refer to [http://www.gnu.org/soft
 
 EC954 provides two USB 2.0 Host ports, used for expanding storage devices and connecting input devices.
 
-<p align="center"><img src="images/img_a775885c.webp" alt="USB ports" width="70%"></p>
-
-<p align="center"><strong>Figure 4-54 USB Ports</strong></p>
-
 USB storage devices support hot-plugging. All partitions are automatically mounted to `/mnt/usb_<node>_<num>`.
 
 <p align="center"><img src="images/img_f901c407.webp" alt="USB mount example"></p>
@@ -1333,10 +1329,6 @@ Short press the power button. The system performs the power-on operation.
 ### 4.4.9 User Programmable Buttons
 
 EC954 provides an API interface to detect the state of programmable buttons. The device node information can be obtained from the system description file.
-
-<p align="center"><img src="images/img_db35bdef.webp" alt="User programmable buttons" width="70%"></p>
-
-<p align="center"><strong>Figure 4-70 User Programmable Buttons</strong></p>
 
 ## 4.5 Security Mechanisms
 

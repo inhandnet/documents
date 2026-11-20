@@ -652,6 +652,14 @@ hide:
     </div>
     <div class="pm-card">
       <div class="pm-card__body">
+        <div class="pm-card__title">OAP700</div>
+        <ul class="pm-card__links">
+        <li><a href="OAP700/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/OAP700%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C.html" title="北京映翰通OAP700产品用户手册">用户手册</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pm-card">
+      <div class="pm-card__body">
         <div class="pm-card__title">ODU12</div>
         <ul class="pm-card__links">
         <li><a href="ODU12/certifications.html" title="ODU12 认证证书">认证证书</a></li>

@@ -68,26 +68,23 @@ Built with industrial-grade design, the IR602 series can adapt to complex indust
 
 ## 1.2 LED Indicators
 
-| LED Indicator | Status | Meaning |
-|--------------|--------|---------|
-| SYS | Off | Power off |
-| | Steady red | Device starting |
-| | Blink red | System error |
-| | Steady green | Working properly |
-| | Blink red | Firmware updating |
-| NET | Off | The WAN port is not connected |
-| | Steady green | The WAN port is connected normally |
-| | Blink green | Data transferring |
-| Cellular | Steady green with one indicator | Poor cellular signal |
-| | Steady green with two indicators | Medium cellular signal |
-| | Steady green with three indicators | Good cellular signal |
-| Wi-Fi 2.4G | Off | AP&STA is disabled |
-| | Blink green | Working properly |
-| | Steady green | Work as STA and AP is not associated |
-| Wi-Fi 5G | Off | AP&STA is disabled |
-| | Blink green | Working properly |
-| | Steady green | Work as STA and AP is not associated |
-| | Steady green | Other abnormalities |
+| LED | Status | Description |
+| --- | --- | --- |
+| System Status LED | Off | Device is not powered on |
+| | Solid red | System is booting up / System is operating normally |
+| | Blinking red | Firmware upgrade in progress / System error |
+| Cellular Status LED | Blinking green | Cellular connection is being established |
+| | Solid green | Cellular connection established successfully |
+| Cellular Signal LED | Off | No cellular connection |
+| | Solid red | Poor signal quality |
+| | Solid yellow | Fair signal quality |
+| | Solid green | Good signal quality |
+| Wi-Fi 2.4G LED | Off | AP & STA disabled |
+| | Blinking green | 2.4 GHz band operating normally |
+| | Solid green | Working in STA mode and not associated with an AP |
+| Wi-Fi 5G LED | Off | AP & STA disabled |
+| | Blinking yellow | 5 GHz band operating normally |
+| | Solid yellow | Working in STA mode and not associated with an AP |
 
 
 ## 1.3 Restore Factory Defaults

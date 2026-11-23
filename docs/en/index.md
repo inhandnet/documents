@@ -745,7 +745,7 @@ hide:
       <div class="pm-card__body">
         <div class="pm-card__title">OAP700</div>
         <ul class="pm-card__links">
-        <li><a href="OAP700/Manuals/User%20manual/OAP700_User%20manual_V1.0.html" title="OAP700 Product User Manual">User manual V1.0</a></li>
+        <li><a href="OAP700/Manuals/User%20manual/OAP700_User%20manual.html" title="OAP700 Product User Manual">User manual</a></li>
         </ul>
       </div>
     </div>

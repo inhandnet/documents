@@ -1135,16 +1135,16 @@
 
 ## OAP700
 
-- [OAP700 Product User Manual](OAP700/Manuals/User%20manual/OAP700_User%20manual_V1.0.md): OAP700 User manual v1.0 — The OAP700 is an enterprise-grade Wi-Fi 7 access point designed for outdoor scenarios. It combines BE5000 dual-band conc…
-  - [1 Safety Information](OAP700/Manuals/User%20manual/OAP700_User%20manual_V1.0.md#1-safety-information)
-  - [2 Product Introduction](OAP700/Manuals/User%20manual/OAP700_User%20manual_V1.0.md#2-product-introduction)
-  - [3 Installation and Connection](OAP700/Manuals/User%20manual/OAP700_User%20manual_V1.0.md#3-installation-and-connection)
-  - [4 Device Software Functions](OAP700/Manuals/User%20manual/OAP700_User%20manual_V1.0.md#4-device-software-functions)
-  - [5 Cloud Management and AI Intelligent O&M](OAP700/Manuals/User%20manual/OAP700_User%20manual_V1.0.md#5-cloud-management-and-ai-intelligent-om)
-  - [6 Troubleshooting](OAP700/Manuals/User%20manual/OAP700_User%20manual_V1.0.md#6-troubleshooting)
-  - [7 Maintenance](OAP700/Manuals/User%20manual/OAP700_User%20manual_V1.0.md#7-maintenance)
-  - [8 Technical Specifications](OAP700/Manuals/User%20manual/OAP700_User%20manual_V1.0.md#8-technical-specifications)
-  - [Appendix A Default Parameters and Abbreviations](OAP700/Manuals/User%20manual/OAP700_User%20manual_V1.0.md#appendix-a-default-parameters-and-abbreviations)
+- [OAP700 Product User Manual](OAP700/Manuals/User%20manual/OAP700_User%20manual.md): OAP700 User manual — The OAP700 is an enterprise-grade Wi-Fi 7 access point designed for outdoor scenarios. It combines BE5000 dual-band conc…
+  - [1 Safety Information](OAP700/Manuals/User%20manual/OAP700_User%20manual.md#1-safety-information)
+  - [2 Product Introduction](OAP700/Manuals/User%20manual/OAP700_User%20manual.md#2-product-introduction)
+  - [3 Installation and Connection](OAP700/Manuals/User%20manual/OAP700_User%20manual.md#3-installation-and-connection)
+  - [4 Device Software Functions](OAP700/Manuals/User%20manual/OAP700_User%20manual.md#4-device-software-functions)
+  - [5 Cloud Management and AI Intelligent O&M](OAP700/Manuals/User%20manual/OAP700_User%20manual.md#5-cloud-management-and-ai-intelligent-om)
+  - [6 Troubleshooting](OAP700/Manuals/User%20manual/OAP700_User%20manual.md#6-troubleshooting)
+  - [7 Maintenance](OAP700/Manuals/User%20manual/OAP700_User%20manual.md#7-maintenance)
+  - [8 Technical Specifications](OAP700/Manuals/User%20manual/OAP700_User%20manual.md#8-technical-specifications)
+  - [Appendix A Default Parameters and Abbreviations](OAP700/Manuals/User%20manual/OAP700_User%20manual.md#appendix-a-default-parameters-and-abbreviations)
 - [OAP700 Datasheet v1.0](OAP700/Datasheets/General/OAP700_Datasheet_V1.0.md): OAP700 Datasheet v1.0 — Smart Wi-Fi 7 Outdoor Connectivity at Blazing-Fast Speeds
 
 ## ODU12

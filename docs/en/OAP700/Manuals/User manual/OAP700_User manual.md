@@ -777,7 +777,7 @@ Engineer Mode allows an InHand technical support engineer, with the user's autho
 
 ### 5.1 Cloud Platform Management
 
-The OAP700 is managed in the cloud by InCloud Manager (https://star.inhandcloud.cn). The "InCloud Manager" label in the top bar is the entry point to the cloud platform.
+The OAP700 is managed in the cloud by InCloud Manager (https://star.inhandcloud.com). The "InCloud Manager" label in the top bar is the entry point to the cloud platform.
 
 | Capability | Description |
 | --- | --- |

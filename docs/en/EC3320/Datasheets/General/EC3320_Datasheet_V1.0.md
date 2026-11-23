@@ -47,7 +47,7 @@
 | NPU | Up to 6 TOPS (INT8), Hailo expansion up to 26 TOPS |
 | Memory / Storage | 8GB / 64GB eMMC |
 | Data Acquisition | Modbus RTU/TCP, EtherNet/IP, OPC UA, DNP3.0, BACnet, CNC |
-| Cellular Network | 5G NR / 4G Cat.6 (model-dependent), supporting 2T2R (2×2 MIMO) |
+| Cellular Network | 5G NR / 4G Cat.6 (model-dependent) |
 | Network Features | Dual-SIM backup, multi-level link detection, auto-redial |
 | Security (TPM2.0 Optional) | Secure Boot, TPM2.0 |
 | Cloud Management | DeviceLive, HTTP/HTTPS/SSH remote management |
@@ -114,7 +114,7 @@
 | HDMI | 2×HDMI2.0 |
 | MIC | Supported |
 | SPK | Supported |
-| Wi-Fi | STA, 802.11ac/a/b/g/n, 2.4G/5G dual band |
+| Wi-Fi | STA, 802.11ac/a/b/g/n, 2.4G/5G dual band, supports 2T2R (2×2 MIMO) |
 | Bluetooth | BLE5.0 |
 | GPS | Supported (requires cellular module support) |
 | <span style="color: green;">**Power & Power Consumption**</span> |  |

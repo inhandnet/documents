@@ -183,8 +183,8 @@ AI Agent cloud management enables unified remote operations and maintenance:
 | **Storage** | 4 GB eMMC |
 | **5G Module** | MTK 830 platform, 3GPP Release 16 |
 | **SIM Slots** | 2 × 4FF Nano-SIM + 1 × eSIM (reserved) |
-| **WAN Port** | 1 × 2.5 Gbps RJ45, PoE powered |
-| **LAN Port** | 1 × 2.5 Gbps RJ45 (can be shared with WAN for dual-LAN) |
+| **WAN Port** | 1 × 2.5 Gbps RJ45 (can be shared with LAN for dual-LAN) |
+| **LAN Port** | 1 × 2.5 Gbps RJ45, PoE powered (IEEE 802.3at PD, 802.3af compatible) |
 | **USB Port** | 1 × Type-C |
 | **Wi-Fi** | Wi-Fi 7 (802.11be) dual-band BE5000 |
 | **5G Antennas** | 8 × integrated high-performance cellular antennas, 360° omnidirectional coverage |
@@ -236,7 +236,7 @@ The ODU12 features 4 multi-color LEDs (red/blue/green) for System, Wi-Fi, Signal
 
 - **WAN Port:** 1 × 2.5G RJ45; supports PPPoE/DHCP/static IP
 - **LAN Port:** 1 × 2.5G RJ45; configurable as WAN extension (dual-LAN mode)
-- **PoE Support:** LAN2 supports PoE output (in powered mode)
+- **PoE Support:** LAN2 supports PoE input (IEEE 802.3at powered device, 802.3af compatible)
 - **IPv6 Support:** Full IPv6 functionality with 5 access modes
 - **Throughput:** Up to 2 Gbps
 

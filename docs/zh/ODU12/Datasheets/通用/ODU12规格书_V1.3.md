@@ -239,7 +239,7 @@ ODU12 配备 4 个多色 LED（红/蓝/绿），分别用于系统、Wi-Fi、信
 
 - **WAN 口：** 1 × 1 RJ45；支持 PPPoE/DHCP/静态 IP；支持WAN/LAN切换
 - **LAN 口：** 支持双LAN
-- **PoE 支持：** LAN2 支持 PoE 受电
+- **PoE 支持：** LAN2 支持 PoE 受电（IEEE 802.3at PD，兼容 802.3af）
 - **IPv6 支持：** 完整 IPv6 功能，支持 5 种接入模式
 - **吞吐量：** 最高 2 Gbps
 

@@ -129,8 +129,7 @@ Panel mount kit option 2 is shown in the figure below:
 |  | Flashing green | System upgrading |
 |  | Steady green | System operating normally |
 | Wi-Fi | Off | Wi-Fi function disabled |
-|  | Flashing green | Wi-Fi connecting |
-|  | Steady green | Wi-Fi operating normally |
+|  | Fast flash (green) | Wi-Fi enabled (fast flash in both AP and STA modes) |
 | NET | Off | Network disconnected |
 |  | Flashing green | Network connecting |
 |  | Steady green | Network connected |

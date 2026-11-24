@@ -3055,6 +3055,23 @@
         "zh"
       ],
       "public": true
+    },
+    {
+      "id": "IR654",
+      "kind": "model",
+      "display_names": {
+        "en": "IR654",
+        "zh": "IR654"
+      },
+      "aliases": [],
+      "source_folders": [
+        "IR654"
+      ],
+      "expected_languages": [
+        "en",
+        "zh"
+      ],
+      "public": true
     }
   ]
 }

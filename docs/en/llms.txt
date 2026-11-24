@@ -843,6 +843,10 @@
 - [Medical Device Data Transmission Solution](IR624/Use%20Cases/Medical-Device-Data-Transmission/case-manual.md): IR624 Medical-Device-Data-Transmission
 - [Medical Device Data Transmission Solution Configuration Manual](IR624/Use%20Cases/Medical-Device-Data-Transmission/config-manual.md): IR624 Medical-Device-Data-Transmission
 
+## IR654
+
+- [IR654 Datasheet v1.0](IR654/Datasheets/General/IR654_Datasheet_V1.0.md): IR654 Datasheet v1.0 — Embrace 5G, Co-Create the Digital Era
+
 ## IR900
 
 - [Industrial Router IR900 Quick Install Manual](IR900/Manuals/Installation%20Guide/Industrial%20Router%20IR900%20Product%20Quick%20Guide.md): IR900 Installation Guide

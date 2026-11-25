@@ -102,7 +102,7 @@ def upload_file(file_path, token, kb_id, category_id, lang_code):
     resp = requests.get(
         f"{API_BASE}/api/oss/efficiency",
         headers=headers,
-        params={"knowledgeBaseId": kb_id, "dataType": "document", "filename": filename, "verify": 1},
+        params={"knowledgeBaseId": kb_id, "dataType": "file", "filename": filename, "verify": 1},
         timeout=15,
     )
     if resp.status_code != 200 or not resp.json().get("succeed"):

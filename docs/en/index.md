@@ -53,7 +53,7 @@ hide:
         <ul class="pm-card__links">
         <li><a href="CR202-Lite/certifications.html" title="CR202-Lite Certifications">Certifications</a></li>
         <li><a href="CR202-Lite/drawings.html" title="CR202-Lite Drawings">Drawings</a></li>
-        <li><a href="CR202-Lite/Manuals/Installation%20Guide/Portable%20Router%20CR202-Lite%20Product%20Quick%20Guide.html" title="CR202-Lite Quick Installation Guide (UniFi-Style)">Installation Guide</a></li>
+        <li><a href="CR202-Lite/Manuals/Installation%20Guide/Portable%20Router%20CR202-Lite%20Product%20Quick%20Guide.html" title="CR202-Lite Quick Installation Guide">Installation Guide</a></li>
         <li><a href="CR202-Lite/Manuals/User%20manual/CR202-Lite_User%20manual_V1.0.html" title="Portable Router CR202-Lite Product User Manual">User manual V1.0</a></li>
         </ul>
       </div>
@@ -64,7 +64,7 @@ hide:
         <ul class="pm-card__links">
         <li><a href="CR202-Pro/certifications.html" title="CR202-Pro Certifications">Certifications</a></li>
         <li><a href="CR202-Pro/drawings.html" title="CR202-Pro Drawings">Drawings</a></li>
-        <li><a href="CR202-Pro/Manuals/Installation%20Guide/Portable%20Router%20CR202-Pro%20Product%20Quick%20Guide.html" title="CR202-Pro Quick Installation Guide (UniFi-Style)">Installation Guide</a></li>
+        <li><a href="CR202-Pro/Manuals/Installation%20Guide/Portable%20Router%20CR202-Pro%20Product%20Quick%20Guide.html" title="CR202-Pro Quick Installation Guide">Installation Guide</a></li>
         <li><a href="CR202-Pro/Manuals/User%20manual/CR202-Pro_User%20manual_V1.0.html" title="Portable Router CR202-Pro Product User Manual">User manual V1.0</a></li>
         </ul>
       </div>

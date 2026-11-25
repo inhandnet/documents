@@ -53,7 +53,7 @@
 
 ## CR202-Lite
 
-- [CR202-Lite Quick Installation Guide (UniFi-Style)](CR202-Lite/Manuals/Installation%20Guide/Portable%20Router%20CR202-Lite%20Product%20Quick%20Guide.md): CR202-Lite Installation Guide
+- [CR202-Lite Quick Installation Guide](CR202-Lite/Manuals/Installation%20Guide/Portable%20Router%20CR202-Lite%20Product%20Quick%20Guide.md): CR202-Lite Installation Guide
 - [Portable Router CR202-Lite Product User Manual](CR202-Lite/Manuals/User%20manual/CR202-Lite_User%20manual_V1.0.md): CR202-Lite User manual v1.0 — CR202-Lite is a portable 4G cellular router designed to provide reliable Internet connectivity for remote office, mobile…
   - [Chapter 1 Understanding the Device](CR202-Lite/Manuals/User%20manual/CR202-Lite_User%20manual_V1.0.md#chapter-1-understanding-the-device)
   - [Chapter 2 Installation and First Use](CR202-Lite/Manuals/User%20manual/CR202-Lite_User%20manual_V1.0.md#chapter-2-installation-and-first-use)
@@ -69,7 +69,7 @@
 
 ## CR202-Pro
 
-- [CR202-Pro Quick Installation Guide (UniFi-Style)](CR202-Pro/Manuals/Installation%20Guide/Portable%20Router%20CR202-Pro%20Product%20Quick%20Guide.md): CR202-Pro Installation Guide
+- [CR202-Pro Quick Installation Guide](CR202-Pro/Manuals/Installation%20Guide/Portable%20Router%20CR202-Pro%20Product%20Quick%20Guide.md): CR202-Pro Installation Guide
 - [Portable Router CR202-Pro Product User Manual](CR202-Pro/Manuals/User%20manual/CR202-Pro_User%20manual_V1.0.md): CR202-Pro User manual v1.0 — The CR202-Pro is a portable 4G cellular router designed to provide reliable Internet connectivity for remote office, mob…
   - [Chapter 1 Understanding the Device](CR202-Pro/Manuals/User%20manual/CR202-Pro_User%20manual_V1.0.md#chapter-1-understanding-the-device)
   - [Chapter 2 Installation and First Use](CR202-Pro/Manuals/User%20manual/CR202-Pro_User%20manual_V1.0.md#chapter-2-installation-and-first-use)

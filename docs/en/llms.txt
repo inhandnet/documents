@@ -1142,6 +1142,7 @@
 
 ## OAP700
 
+- [OAP700 Quick user manual](OAP700/Manuals/Quick%20user%20manual/OAP700%20Quick%20User%20Manual.md): OAP700 Quick user manual
 - [OAP700 Product User Manual](OAP700/Manuals/User%20manual/OAP700_User%20manual.md): OAP700 User manual — The OAP700 is an enterprise-grade Wi-Fi 7 access point designed for outdoor scenarios. It combines BE5000 dual-band conc…
   - [1 Safety Information](OAP700/Manuals/User%20manual/OAP700_User%20manual.md#1-safety-information)
   - [2 Product Introduction](OAP700/Manuals/User%20manual/OAP700_User%20manual.md#2-product-introduction)

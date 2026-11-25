@@ -175,7 +175,8 @@ def upload_file(file_path, token, kb_id, category_id, lang_code):
     }
     resp3 = s.post(
         f"{API_BASE}/api/sdk/knowledgeBases/{kb_id}/materialRepositorys/batchSave",
-        headers={"Accept": "application/json", "Content-Type": "application/json"},
+        headers={"Authorization": f"Bearer {token}", "Accept": "application/json",
+                 "Content-Type": "application/json"},
         params={"knowledgeBaseId": kb_id},
         json=save_data,
         timeout=30,

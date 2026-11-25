@@ -56,11 +56,11 @@ jobs:
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             SITE_FLAG="--site ${{ inputs.site }}"
           fi
-          FILE_FLAG=""
+          FILE_ARGS=()
           if [ -n "${{ inputs.file_path }}" ]; then
-            FILE_FLAG="--file ${{ inputs.file_path }}"
+            FILE_ARGS=(--file "${{ inputs.file_path }}")
           fi
-          python auto-import/scripts/sync_udesk.py $SITE_FLAG $FILE_FLAG
+          python auto-import/scripts/sync_udesk.py $SITE_FLAG "${FILE_ARGS[@]}
 
       - name: Upload result
         if: always()

@@ -1115,11 +1115,13 @@
 ## MG301
 
 - [MG301 Datasheet v1.3](MG301/Datasheets/General/MG301_Datasheet_V1.3.md): MG301 Datasheet v1.3 — MG301 is a wireless metering gateway designed according to the requirements of the Automatic Meter Reading System for co…
+- [MG301 Certifications](MG301/certifications.md): MG301 certification list (CE) with links to the original certificate files
 
 ## MG301-M
 
 - [MG301-M Series Modular Modem User Manual](MG301-M/Manuals/User%20manual/MG301-M_User%20Manual.md): MG301-M User manual
 - [MG301-M Datasheet v2.0](MG301-M/Datasheets/General/MG301-M_Datasheet_V2.0.md): MG301-M Datasheet v2.0 — MG301 is a wireless modem designed according to the requirements of the Automatic Meter Reading System (OSOS) for commun…
+- [MG301-M Certifications](MG301-M/certifications.md): MG301-M certification list (CE) with links to the original certificate files
 
 ## Mo 62A
 

@@ -720,8 +720,17 @@ hide:
     </div>
     <div class="pm-card">
       <div class="pm-card__body">
+        <div class="pm-card__title">MG301</div>
+        <ul class="pm-card__links">
+        <li><a href="MG301/certifications.html" title="MG301 Certifications">Certifications</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pm-card">
+      <div class="pm-card__body">
         <div class="pm-card__title">MG301-M</div>
         <ul class="pm-card__links">
+        <li><a href="MG301-M/certifications.html" title="MG301-M Certifications">Certifications</a></li>
         <li><a href="MG301-M/Manuals/User%20manual/MG301-M_User%20Manual.html" title="MG301-M Series Modular Modem User Manual">User manual</a></li>
         </ul>
       </div>

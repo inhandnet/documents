@@ -107,7 +107,10 @@ def upload_file(file_path, token, kb_id, category_id, lang_code):
     )
     if resp.status_code != 200 or not resp.json().get("succeed"):
         return False, f"OSS 签名失败: {resp.status_code}"
-    oss = resp.json()["data"]
+    # Udesk 偶发"succeed=true 但 data 为空"（签名服务异常/OSS 权限未开通），此处防崩
+    oss = resp.json().get("data") or {}
+    if not oss.get("host") or not oss.get("key"):
+        return False, "OSS 签名返回空（Udesk 服务端异常或 OSS 权限未开通）"
     host, key = oss["host"], oss["key"]
     access_key_id = oss["temporaryId"]
     access_key_secret = oss["policy"]

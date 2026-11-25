@@ -20,6 +20,10 @@ on:
         type: choice
         options: ['all', 'zh', 'en']
         default: 'all'
+      file_path:
+        description: '指定单个文件（相对仓库根，留空=按 diff 增量）'
+        type: string
+        default: ''
 
 concurrency:
   group: sync-udesk-${{ github.ref }}
@@ -52,7 +56,11 @@ jobs:
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             SITE_FLAG="--site ${{ inputs.site }}"
           fi
-          python auto-import/scripts/sync_udesk.py $SITE_FLAG
+          FILE_FLAG=""
+          if [ -n "${{ inputs.file_path }}" ]; then
+            FILE_FLAG="--file ${{ inputs.file_path }}"
+          fi
+          python auto-import/scripts/sync_udesk.py $SITE_FLAG $FILE_FLAG
 
       - name: Upload result
         if: always()

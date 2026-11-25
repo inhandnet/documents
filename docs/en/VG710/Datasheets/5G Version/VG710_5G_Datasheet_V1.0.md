@@ -99,7 +99,7 @@
 | <span style="color: green;">**Satellite Navigation**</span> | |
 | GNSS Receiver | GPS, GLONASS, Galileo, Beidou |
 | Built-in Sensor | Accelerometer + gyroscope, supports DR |
-| Position Accuracy | 2.5 m CEP |
+| Position Accuracy | 1.5 m CEP |
 | Tracking Sensitivity | -160 dBm |
 | Navigation Update Rate | Max 10 Hz |
 | <span style="color: green;">**Wi-Fi**</span> | |

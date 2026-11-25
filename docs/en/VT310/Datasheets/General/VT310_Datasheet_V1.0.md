@@ -133,7 +133,7 @@
 | Humidity | 95% RH @ 50 ℃ (non-condensing) |
 | ESD | IEC 61000-4-2 (4 kV test) |
 | <span style="color: green;">**Certifications**</span> | |
-| Compliance | CE, FCC, IC, PTCRB, E-Mark / E-Mark (per source listing) |
+| Compliance | CE, FCC, E-Mark |
 
 
 # <span style="color: green;">4. Software Specifications</span>

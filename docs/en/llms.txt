@@ -383,7 +383,7 @@
   - [5.Safety](EC942/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#5safety)
   - [6.Start, recover and update](EC942/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#6start-recover-and-update)
   - [7.Programming instructions](EC942/Developer%20Documentation/FlexAPI/ECSeriesLinuxSoftwareUser%27sManualV1.0.md#7programming-instructions)
-- [EC942 Datasheet v1.0](EC942/Datasheets/General/EC942_Datasheet_V1.0.md): EC942 Datasheet v1.0 — Embrace Edge AI, Empower Industrial Digitalization
+- [EC942 Datasheet v1.0](EC942/Datasheets/General/EC942_Datasheet_V1.0.md): EC942 Datasheet v1.0 — EC942 Series lite AI Edge Computer
 - [EC942 Certifications](EC942/certifications.md): EC942 certification list (CE, FCC) with links to the original certificate files
 
 ## EC954

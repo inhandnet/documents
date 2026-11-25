@@ -158,8 +158,9 @@ To restore the device to default settings using the reset button, perform the fo
 | Subnet Mask          | 255.255.255.0                               |
 | Web Login Username   | adm                                         |
 | Web Login Password   | (See nameplate at the bottom of the device) |
-| Wi-Fi SSID           | inhand                                      |
-| Wi-Fi Authentication | Open type                                   |
+| Wi-Fi SSID           | (See nameplate at the bottom of the device) |
+| Wi-Fi Authentication | (See nameplate at the bottom of the device) |
+| Wi-Fi Password       | (See nameplate at the bottom of the device) |
 | DHCP                 | Enable                                      |
 | DHCP IP Pool Range   | 192.168.2.2 ~ 192.168.2.100                 |
 
@@ -757,7 +758,7 @@ Click 【Network】→【WLAN】 in the navigation tree to enter the "WLAN" inte
 | Channel                                                                                                                           | Select the channel                                                                                            | 11                           |
 | SSID                                                                                                                              | SSID name defined by user                                                                                     | Refer to equipment nameplate |
 | Authentication method                                                                                                             | Support open type, shared type, auto selection of WEP, WPA-PSK, WPA, WPA2-PSK, WPA2, WPA/WPA2, WPAPSK/WPA2PSK | Refer to equipment nameplate |
-| Encryption                                                                                                                        | Support NONE, WEP                                                                                             | NONE                         |
+| Encryption                                                                                                                        | Support NONE, WEP                                                                                             | Refer to equipment nameplate |
 | Wireless bandwidth                                                                                                                | Both 20MHz and 40MHz for selection                                                                            | 20MHz                        |
 | Enable WDS                                                                                                                        | Click to enable WDS                                                                                           | Disable                      |
 | Default Route                                                                                                                     | Click to enable Route                                                                                         | Disable                      |
@@ -765,7 +766,7 @@ Click 【Network】→【WLAN】 in the navigation tree to enter the "WLAN" inte
 | Bridged BSSID                                                                                                                     | Set bridged BSSID                                                                                             | None                         |
 | Scan                                                                                                                              | Click "Scan" to scan available APs nearby                                                                     |                              |
 | Auth Mode                                                                                                                         | Open type, shared type, WPA-PSK, WPA2-PSK                                                                     | Refer to equipment nameplate |
-| Encryption Method                                                                                                                 | Support NONE, WEP                                                                                             | None                         |
+| Encryption Method                                                                                                                 | Support NONE, WEP                                                                                             | Refer to equipment nameplate |
 
 
 #### 4.2.6 WLAN Client (STA Mode)

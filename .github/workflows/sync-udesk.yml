@@ -51,16 +51,18 @@ jobs:
           UDESK_API_BASE: ${{ secrets.UDESK_API_BASE }}
           UDESK_APP_ID: ${{ secrets.UDESK_APP_ID }}
           UDESK_USER_ID: ${{ secrets.UDESK_USER_ID }}
+          UDESK_SITE: ${{ inputs.site }}
+          UDESK_FILE_PATH: ${{ inputs.file_path }}
         run: |
           SITE_FLAG=""
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            SITE_FLAG="--site ${{ inputs.site }}"
+          if [ -n "$UDESK_SITE" ] && [ "$UDESK_SITE" != "all" ]; then
+            SITE_FLAG="--site $UDESK_SITE"
           fi
-          FILE_ARGS=()
-          if [ -n "${{ inputs.file_path }}" ]; then
-            FILE_ARGS=(--file "${{ inputs.file_path }}")
+          if [ -n "$UDESK_FILE_PATH" ]; then
+            python auto-import/scripts/sync_udesk.py --site "$UDESK_SITE" --file "$UDESK_FILE_PATH"
+          else
+            python auto-import/scripts/sync_udesk.py $SITE_FLAG
           fi
-          python auto-import/scripts/sync_udesk.py $SITE_FLAG "${FILE_ARGS[@]}
 
       - name: Upload result
         if: always()

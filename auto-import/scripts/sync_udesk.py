@@ -12,9 +12,6 @@ Udesk 知识库自动同步：检测 md 文件变更，上传新增/修改，删
 """
 
 import argparse
-import base64
-import hashlib
-import hmac
 import json
 import os
 import re
@@ -92,55 +89,70 @@ def get_headers(token, content_type="application/json"):
 
 
 def upload_file(file_path, token, kb_id, category_id, lang_code):
-    """OSS 三步上传单个文件"""
+    """Udesk 新版上传流程（2026-11 接口变更：/api/oss/efficiency 已废弃）
+    ① POST /kcs/login（Bearer 静态 token）→ kcs-session-id 会话
+    ② GET  /kcs/oss/token（会话 Cookie）→ OSS 凭据（formData，policy 锁定 key）
+    ③ POST {host} 表单上传（formData 字段 + 文件）
+    ④ GET  /kcs/oss/checkDocument 校验文件
+    ⑤ POST /api/sdk/.../batchSave 登记到知识库
+    """
     filename = file_path.name
     file_data = file_path.read_bytes()
     file_size = len(file_data)
-    headers = get_headers(token)
+    auth_headers = {"Authorization": f"Bearer {token}", "Accept": "application/json"}
+    s = requests.Session()
+    s.trust_env = False
 
-    # 第一步：OSS 签名
-    resp = requests.get(
-        f"{API_BASE}/api/oss/efficiency",
-        headers=headers,
-        params={"knowledgeBaseId": kb_id, "dataType": "file", "filename": filename, "verify": 1},
+    # ① 换 KCS 会话
+    resp = s.post(f"{API_BASE}/kcs/login", json={}, headers=auth_headers, timeout=15)
+    if resp.status_code != 200 or "kcs-session-id" not in (resp.headers.get("Set-Cookie") or ""):
+        return False, f"KCS 会话获取失败: {resp.status_code}"
+
+    # ② OSS 凭据（新端点 /kcs/oss/token，靠会话 Cookie 鉴权）
+    resp = s.get(
+        f"{API_BASE}/kcs/oss/token",
+        headers={"Accept": "application/json", "systemType": "pc",
+                 "Referer": f"{API_BASE}/site/knowledge-base/knowledge/file"},
+        params={"knowledgeBaseId": kb_id, "dataType": "document", "filename": filename, "verify": 1},
         timeout=15,
     )
     if resp.status_code != 200 or not resp.json().get("succeed"):
         return False, f"OSS 签名失败: {resp.status_code}"
     # Udesk 偶发"succeed=true 但 data 为空"（签名服务异常/OSS 权限未开通），此处防崩
     oss = resp.json().get("data") or {}
-    if not oss.get("host") or not oss.get("key"):
+    fd = oss.get("formData") or {}
+    host, key = oss.get("host"), oss.get("key")
+    if not host or not key or not fd.get("policy"):
         return False, "OSS 签名返回空（Udesk 服务端异常或 OSS 权限未开通）"
-    host, key = oss["host"], oss["key"]
-    access_key_id = oss["temporaryId"]
-    access_key_secret = oss["policy"]
-    security_token = oss["signature"]
 
-    # 第二步：上传
-    policy_json = json.dumps({
-        "expiration": "2026-12-31T23:59:59.000Z",
-        "conditions": [{"bucket": oss["bucket"]}, ["starts-with", "$key", "Data/"]],
-    })
-    base64_policy = base64.b64encode(policy_json.encode()).decode()
-    signature = base64.b64encode(
-        hmac.new(access_key_secret.encode(), base64_policy.encode(), hashlib.sha1).digest()
-    ).decode()
-
-    resp2 = requests.post(
+    # ③ 表单上传（formData 的 policy 已锁定 key）
+    resp2 = s.post(
         host,
         data={
             "key": key,
-            "policy": base64_policy,
-            "OSSAccessKeyId": access_key_id,
-            "Signature": signature,
-            "x-oss-security-token": security_token,
+            "OSSAccessKeyId": fd.get("accessId"),
+            "policy": fd.get("policy"),
+            "Signature": fd.get("signature"),
             "success_action_status": "200",
         },
         files={"file": (filename, file_data, "application/octet-stream")},
-        timeout=60,
+        timeout=120,
     )
     if resp2.status_code != 200:
         return False, f"OSS 上传失败: {resp2.status_code}"
+
+    # ④ 校验文件（新流程步骤，data:true 才算成功）
+    resp3 = s.get(
+        f"{API_BASE}/kcs/oss/checkDocument",
+        params={"key": f"{host}/{key}", "knowledgeBaseId": kb_id},
+        headers={"Accept": "application/json", "systemType": "pc"},
+        timeout=30,
+    )
+    try:
+        if resp3.json().get("data") is not True:
+            return False, f"checkDocument 未通过: {resp3.text[:150]}"
+    except ValueError:
+        return False, f"checkDocument 响应异常: {resp3.text[:150]}"
 
     # 第三步：保存到知识库
     file_uid = str(uuid.uuid4())
@@ -161,9 +173,9 @@ def upload_file(file_path, token, kb_id, category_id, lang_code):
         "accessLevel": 0,
         "availableTimeType": 0,
     }
-    resp3 = requests.post(
+    resp3 = s.post(
         f"{API_BASE}/api/sdk/knowledgeBases/{kb_id}/materialRepositorys/batchSave",
-        headers={**headers, "Content-Type": "application/json"},
+        headers={"Accept": "application/json", "Content-Type": "application/json"},
         params={"knowledgeBaseId": kb_id},
         json=save_data,
         timeout=30,

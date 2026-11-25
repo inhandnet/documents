@@ -402,7 +402,7 @@ def main():
     log("Token 获取成功")
 
     # 确定变更文件
-    if args.file:
+    if args.file and args.file.strip():
         # 指定文件模式
         filepath = args.file
         if not filepath.startswith("docs/"):

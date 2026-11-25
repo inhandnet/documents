@@ -1,15 +1,9 @@
-# CR202-Lite Quick Installation Guide (UniFi-Style)
+# CR202-Lite Quick Installation Guide
 
-> **Layout Principle Statement**: This document is written in the UniFi-style structure. The upper half (Part I) uses text and illustrations to walk through the physical installation and login主线; the lower half (Part II) provides complete references for packing list, LED meanings, wall mounting, interface parameters, configuration management, log diagnostics, and remote access.
->
-> **Version Correspondence Statement**: This manual is rewritten based on the original document *Portable Router CR202-Lite Product Quick Guide*. All parameters, steps, and images are strictly derived from the original text.
+# Part 1: Quick Installation (Visual Workflow)
 
----
-
-# Part I: Quick Installation (Visual Step-by-Step Flow)
-
-> **What you need to do first:** Unbox → Mount the device → Connect power and Ethernet → (If using cellular) **Power off** to install SIM and attach antennas → Power on → Set PC to same subnet → Open Web UI in browser.
-> **Then:** Scroll down to **Part II** to look up packing list, LED meanings, wall mounting, interface details, and configuration management as needed.
+> **What you need to do first:** Unbox → Mount the device → Connect power and Ethernet → (If using cellular) **Power off** to install SIM and attach antennas → Power on → Set PC to same subnet → Open Web UI in browser.  
+> **Then:** Scroll down to **Part 2** for packing list, indicator meanings, wall mounting, and interface details.
 
 ## Must-Read Summary (Before Wiring and Power-On)
 
@@ -119,7 +113,7 @@ CR202-Lite supports three ways to access the Internet: wired, cellular, and Wi-F
 
 ---
 
-# Part II: Detailed Information
+# Part 2: Detailed Information
 
 ## 2.1 Packing List
 
@@ -285,7 +279,7 @@ RJ45 pinout:
 
 ### 2.7.1 Web Login and Internet Configuration
 
-**First login steps** (same as Step 6 in Part I):
+**First login steps** (same as Step 6 in Part 1):
 
 1. Connect the PC Ethernet port to the device's **LAN2** port.
 2. Set the PC to obtain an IP address automatically (recommended), or manually configure a static IP: **192.168.2.2 ~ 192.168.2.254**, subnet mask **255.255.255.0**, gateway **192.168.2.1**, DNS **8.8.8.8**.

@@ -46,7 +46,7 @@
 |Cellular Network|LTE CAT6 / 5G / 5G+5G RedCap|
 |Network Features|APN, VPDN, DHCP, DNS, DDNS, static routing/RIP/OSPF/BGP|
 |Positioning Capability|GPS/GLONASS/Galileo/Beidou, 2.5 m CEP accuracy, up to 10 Hz|
-|Security Capability|SPI firewall, ACL, NAT/NAPT, IPsec/OpenVPN/L2TP/GRE|
+|Security Capability|SPI firewall, ACL, NAT/PAT, IPsec/OpenVPN/L2TP/GRE|
 |Wi-Fi Capability|Wi-Fi 5 dual-band (2.4/5 GHz), AP/Client, multi-SSID, Captive Portal|
 |Edge and Cloud|Supports C/C++, Python, Docker; compatible with Azure/AWS IoT; FlexAPI|
 |Processing Platform|ARM Cortex-A7 quad-core 717 MHz, 1 GB DDR3L, 8 GB eMMC|
@@ -151,7 +151,7 @@
 | Diagnostics | Ping, Traceroute, tcpdump, speed test |
 | <span style="color: green;">**Security**</span> | |
 | Firewall | SPI, DoS defense, multicast/Ping filtering, ACL |
-| NAT | NAT, NAPT, DMZ, port mapping |
+| NAT | NAT, PAT, DMZ, port mapping |
 | User Levels | Administrator and read-only user |
 | AAA | Local authentication, Radius, TACACS+, LDAP |
 | Certificates | PEM, PKCS12, SCEP, CRL |

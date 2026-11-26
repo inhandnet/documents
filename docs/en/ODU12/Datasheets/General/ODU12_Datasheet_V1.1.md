@@ -282,7 +282,7 @@ The ODU12 features 4 multi-color LEDs (red/blue/green) for System, Wi-Fi, Signal
 - **Inbound Rules:** Granular inbound access control
 - **Outbound Rules:** Outbound traffic policy management
 - **Port Forwarding:** Port mapping and NAT traversal support
-- **NAT:** SNAT/DNAT with NAPT support
+- **NAT:** SNAT/DNAT with PAT support
 - **MAC Filtering:** MAC address-based access control
 - **Domain Filtering:** Domain-based content filtering
 - **LAN Firewall:** East-west traffic security isolation

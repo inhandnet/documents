@@ -298,7 +298,7 @@ Any triggered condition switches to next available SIM by priority:
 - **Inbound Rules**: Refined inbound access control
 - **Outbound Rules**: Outbound traffic policy management
 - **Port Forwarding**: Supports port mapping and NAT traversal
-- **NAT Function**: SNAT/DNAT, supports NAPT
+- **NAT Function**: SNAT/DNAT, supports PAT
 - **MAC Filtering**: MAC address-based access control
 - **Domain Filtering**: Domain name-based content filtering
 - **LAN Firewall**: East-west traffic security isolation

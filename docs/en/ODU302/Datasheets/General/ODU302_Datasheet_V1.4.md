@@ -188,7 +188,7 @@ The device is compatible with both IEEE 802.3af standard PoE power over Ethernet
 - **WAN Protocols:** Static IP, DHCP, PPPoE
 - **LAN Protocols:** ARP, Ethernet
 - **Interface Mode:** 2 × RJ45 ports, WAN/LAN configurable
-- **NAT:** Network Address Translation (NAPT)
+- **NAT:** Network Address Translation (PAT)
 
 ## <span style="color: green;">4.4 Wi-Fi 4 Wireless Access</span>
 
@@ -230,7 +230,7 @@ The device is compatible with both IEEE 802.3af standard PoE power over Ethernet
 - **Content Filtering:** URL content filtering
 - **Port Mapping:** Port forwarding, virtual IP mapping
 - **IP-MAC Binding:** IP-MAC binding; multicast/Ping packet filtering
-- **NAT:** NAPT supported
+- **NAT:** PAT supported
 
 ## <span style="color: green;">6.2 VPN Support</span>
 

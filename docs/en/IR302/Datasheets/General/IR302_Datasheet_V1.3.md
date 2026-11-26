@@ -247,7 +247,7 @@ The IR302 adopts a fanless cooling design, supports wide temperature and wide vo
 | **DDNS** | Supports PeanutShell, DynDNS, No-IP and other mainstream dynamic DNS providers |
 | **NTP** | Network time synchronization, supports custom NTP servers and calibration cycles |
 | **Static Routing** | Supports multiple static routes and policy routes, supports route priority configuration |
-| **NAT** | SNAT/DNAT, NAPT, port forwarding (100 rules), virtual IP mapping, DMZ |
+| **NAT** | SNAT/DNAT, PAT, port forwarding (100 rules), virtual IP mapping, DMZ |
 | **TCP Checksum** | Supports TCP checksum option configuration |
 | **Dual SIM Management** | Dual-SIM network backup, ICCID binding, signal threshold (RSRP) automatic switching, packet loss rate triggered switching, maximum dial attempt limit, minimum connection time control |
 | **SMS Management** | SMS remote reboot/dial control, custom commands, access whitelist |

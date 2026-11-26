@@ -150,7 +150,7 @@
 | IP Routing | Static routing, RIP, OSPF, BGP |
 | <span style="color: green;">**Security**</span> | |
 | Firewall | SPI, DoS defense, multicast/Ping filtering, ACL |
-| NAT | NAT, NAPT, DMZ, port mapping |
+| NAT | NAT, PAT, DMZ, port mapping |
 | User Level | Administrator and read-only user |
 | AAA | Local authentication, Radius, TACACS+, LDAP |
 | Certificate | PEM, PKCS12, SCEP, CRL |

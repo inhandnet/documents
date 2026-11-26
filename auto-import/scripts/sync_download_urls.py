@@ -11,9 +11,6 @@
     python auto-import/scripts/sync_download_urls.py --site zh      # 只处理中文
 """
 import argparse
-import base64
-import hashlib
-import hmac
 import json
 import os
 import sys
@@ -158,35 +155,49 @@ def upload_to_udesk(content, kb_id, category_id, file_name):
         if page > 10:
             break
 
-    # OSS 三步上传
-    h = {"Authorization": f"Bearer {token}", "Accept": "application/json"}
+    # 新版上传流程（2026-11 接口变更后）：/kcs/login 会话 + /kcs/oss/token + 表单上传 + checkDocument
+    resp = s.post(f"{UDESK_BASE}/kcs/login", json={},
+                  headers={"Authorization": f"Bearer {token}", "Content-Type": "application/json"}, timeout=15)
+    if "kcs-session-id" not in (resp.headers.get("Set-Cookie") or ""):
+        log("  KCS 会话获取失败")
+        return False
 
-    # 第一步
-    r1 = s.get(f"{UDESK_BASE}/api/oss/efficiency", headers=h,
+    r1 = s.get(f"{UDESK_BASE}/kcs/oss/token", headers={"Accept": "application/json", "systemType": "pc"},
                params={"knowledgeBaseId": kb_id, "dataType": "document",
                        "filename": file_name, "verify": 1}, timeout=15)
-    oss = r1.json()["data"]
-
-    # 第二步
-    policy_json = json.dumps({"expiration": "2026-12-31T23:59:59.000Z",
-                              "conditions": [{"bucket": oss["bucket"]}, ["starts-with", "$key", "Data/"]]})
-    base64_policy = base64.b64encode(policy_json.encode()).decode()
-    signature = base64.b64encode(
-        hmac.new(oss["policy"].encode(), base64_policy.encode(), hashlib.sha1).digest()
-    ).decode()
+    j1 = r1.json()
+    oss = j1.get("data") or {}
+    fd = oss.get("formData") or {}
+    host, key = oss.get("host"), oss.get("key")
+    if not host or not key or not fd.get("policy"):
+        log(f"  OSS 签名返回空: {r1.status_code} {r1.text[:120]}")
+        return False
 
     file_data = content.encode("utf-8")
-    r2 = s.post(oss["host"], data={
-        "key": oss["key"], "policy": base64_policy,
-        "OSSAccessKeyId": oss["temporaryId"], "Signature": signature,
-        "x-oss-security-token": oss["signature"], "success_action_status": "200",
+    r2 = s.post(host, data={
+        "key": key, "OSSAccessKeyId": fd.get("accessId"), "policy": fd.get("policy"),
+        "Signature": fd.get("signature"), "success_action_status": "200",
     }, files={"file": (file_name, file_data, "text/markdown")}, timeout=60)
+    if r2.status_code != 200:
+        log(f"  OSS 上传失败: {r2.status_code}")
+        return False
 
-    # 第三步
+    r2c = s.get(f"{UDESK_BASE}/kcs/oss/checkDocument",
+                params={"key": f"{host}/{key}", "knowledgeBaseId": kb_id},
+                headers={"Accept": "application/json", "systemType": "pc"}, timeout=30)
+    try:
+        if r2c.json().get("data") is not True:
+            log(f"  checkDocument 未通过: {r2c.text[:120]}")
+            return False
+    except ValueError:
+        log("  checkDocument 响应异常")
+        return False
+
+    h = {"Authorization": f"Bearer {token}", "Accept": "application/json"}
     save_data = {
-        "materials": [{"key": oss["key"], "url": f'{oss["host"]}/{oss["key"]}',
+        "materials": [{"key": key, "url": f"{host}/{key}",
                         "name": file_name, "percent": 100, "size": len(file_data),
-                        "status": 1, "uid": str(__import__("uuid").uuid4())}],
+                        "status": 1, "uid": str(uuid.uuid4())}],
         "knowledgeBaseId": kb_id, "categoryIdList": [category_id],
         "langCode": "ZH-CN" if kb_id == UDESK_KB_ID_ZH else "EN",
         "tags": [], "accessLevel": 0, "availableTimeType": 0,

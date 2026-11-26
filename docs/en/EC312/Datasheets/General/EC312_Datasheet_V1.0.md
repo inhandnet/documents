@@ -1,4 +1,4 @@
-<div style="width: 100%;height: 100%;background: url(images/EC312.jpg); background-size: 100% 100%;">
+<div style="width: 100%;height: 100%;background: url(images/EC312封面图.jpg); background-size: 100% 100%;">
   <div style="height:75%;">
     <div style="width:35%; padding: 40px 40px">
       <img src="images/logo.png" alt="logo" />

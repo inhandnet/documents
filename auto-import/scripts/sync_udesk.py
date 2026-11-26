@@ -103,6 +103,14 @@ def upload_file(file_path, token, kb_id, category_id, lang_code):
     s = requests.Session()
     s.trust_env = False
 
+    # ⓪ 删除同名旧文件（防重复堆积：历史多次重传产生的旧条目）
+    try:
+        for f in list_kb_files(token, kb_id):
+            if f.get("name") == filename:
+                delete_kb_file(token, kb_id, f["id"])
+    except Exception:
+        pass  # 清理失败不阻断上传
+
     # ① 换 KCS 会话
     resp = s.post(f"{API_BASE}/kcs/login", json={}, headers=auth_headers, timeout=15)
     if resp.status_code != 200 or "kcs-session-id" not in (resp.headers.get("Set-Cookie") or ""):

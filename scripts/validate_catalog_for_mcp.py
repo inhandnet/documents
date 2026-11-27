@@ -25,13 +25,13 @@ is a verbatim copy of inhand-docs-mcp source and MUST be kept identical to it:
     rules, for_source_folder, for_asset, validate_source_folders
     -> must stay consistent with inhand-docs-mcp
        src/inhand_docs_mcp/catalog.py
-  * the md/pdf path filters (indexable_paths)
+  * the md/asset path filters (indexable_paths)
     -> must stay consistent with inhand-docs-mcp
        src/inhand_docs_mcp/github.py  (GitHubDocsSource.indexable_paths /
-       list_pdf_assets)
+       list_downloadable_assets)
   * the represented-folders derivation
     -> must stay consistent with inhand-docs-mcp
-       src/inhand_docs_mcp/commit_builder.py:71-96
+       src/inhand_docs_mcp/commit_builder.py:126-142
 
 The only intentional behavioural difference: the real indexer raises on the
 first problem, while this script collects *every* problem and reports them all
@@ -170,13 +170,21 @@ def indexable_markdown(paths: list[str]) -> list[str]:
     )
 
 
+# Must stay consistent with inhand-docs-mcp assets.ASSET_MEDIA_TYPES.
+ASSET_SUFFIXES = (".pdf", ".zip", ".stp")
+
+
 def indexable_pdfs(paths: list[str]) -> list[str]:
-    """Must stay consistent with inhand-docs-mcp github.list_pdf_assets."""
+    """Must stay consistent with inhand-docs-mcp github.list_downloadable_assets.
+
+    Despite the name it covers every downloadable asset the indexer maps to a
+    product by file name: PDFs, ZIP certification bundles and STEP models.
+    """
     return sorted(
         {
             path
             for path in paths
-            if path.startswith(DOC_ROOTS) and path.casefold().endswith(".pdf")
+            if path.startswith(DOC_ROOTS) and path.casefold().endswith(ASSET_SUFFIXES)
         }
     )
 
@@ -417,7 +425,7 @@ def main() -> int:
     md = indexable_markdown(files)
     pdf = indexable_pdfs(files)
 
-    # Mirrors commit_builder._catalog_chunks_and_assets:71-96.
+    # Mirrors commit_builder._catalog_chunks_and_assets:126-142.
     represented: set[str] = {
         path.split("/")[2] for path in md if len(path.split("/")) > 3
     }
@@ -431,7 +439,7 @@ def main() -> int:
             report.add(
                 str(error),
                 detail=(
-                    f"PDF {path} sits in a folder that is not in any entry's "
+                    f"File {path} sits in a folder that is not in any entry's "
                     "source_folders, so MCP falls back to matching the file NAME "
                     "against every public product id/alias/display name -- and that "
                     "must hit exactly one product."
@@ -466,7 +474,8 @@ def main() -> int:
         return 1
 
     print(
-        f"catalog OK: {len(products)} products, {len(md)} md, {len(pdf)} pdf, "
+        f"catalog OK: {len(products)} products, {len(md)} md, "
+        f"{len(pdf)} pdf/zip/stp, "
         f"{len(represented)} folders"
     )
     return 0

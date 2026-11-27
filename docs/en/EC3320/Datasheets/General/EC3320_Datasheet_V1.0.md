@@ -45,7 +45,7 @@
 | CPU | 4×Cortex-A76 + 4×Cortex-A55, up to 2.4GHz |
 | GPU | Mali-G610 MC4 |
 | NPU | Up to 6 TOPS (INT8), Hailo expansion up to 26 TOPS |
-| Memory / Storage | 8GB / 64GB eMMC |
+| Memory / Storage | 8GB LPDDR4X/ 64GB eMMC |
 | Data Acquisition | Modbus RTU/TCP, EtherNet/IP, OPC UA, DNP3.0, BACnet, CNC |
 | Cellular Network | 5G NR / 4G Cat.6 (model-dependent) |
 | Network Features | Dual-SIM backup, multi-level link detection, auto-redial |

@@ -1035,7 +1035,14 @@
         "en": "IR900",
         "zh": "IR900"
       },
-      "aliases": [],
+      "aliases": [
+        "IR912",
+        "IR912L",
+        "IR912P",
+        "IR915",
+        "IR915L",
+        "IR915P"
+      ],
       "source_folders": [
         "IR900"
       ],

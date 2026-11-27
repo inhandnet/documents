@@ -692,6 +692,7 @@
   - [Appendix: Troubleshooting](IG925/Manuals/User%20manual/IG925_User%20manual_V1.0.md#appendix-troubleshooting)
   - [Appendix: Safety Precautions](IG925/Manuals/User%20manual/IG925_User%20manual_V1.0.md#appendix-safety-precautions)
   - [FAQ](IG925/Manuals/User%20manual/IG925_User%20manual_V1.0.md#faq)
+- [IG925 Datasheet v1.0](IG925/Datasheets/General/IG925_Datasheet_V1.0.md): IG925 Datasheet v1.0 — Embrace 5G, Embark on a Journey of Edge Intelligence
 
 ## IR202
 

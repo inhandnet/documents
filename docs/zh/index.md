@@ -396,6 +396,7 @@ hide:
       <div class="pm-card__body">
         <div class="pm-card__title">IG925</div>
         <ul class="pm-card__links">
+        <li><a href="IG925/Manuals/%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97/IG925%E5%BF%AB%E9%80%9F%E5%AE%89%E8%A3%85%E6%89%8B%E5%86%8C_V1.0.html" title="IG925 快速安装手册">安装指南 V1.0</a></li>
         <li><a href="IG925/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/IG925%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="IG925 边缘计算网关用户手册">用户手册 V1.0</a></li>
         </ul>
       </div>

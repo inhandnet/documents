@@ -363,6 +363,7 @@ hide:
       <div class="pm-card__body">
         <div class="pm-card__title">IG925</div>
         <ul class="pm-card__links">
+        <li><a href="IG925/Manuals/Installation%20Guide/IG925%20Quick%20Start%20Guide_V1.0.html" title="IG925 Quick Start Guide">Installation Guide V1.0</a></li>
         <li><a href="IG925/Manuals/User%20manual/IG925_User%20manual_V1.0.html" title="InGateway925 Edge Computing Gateway User Manual">User manual V1.0</a></li>
         </ul>
       </div>

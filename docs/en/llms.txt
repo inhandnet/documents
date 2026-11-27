@@ -682,6 +682,7 @@
 
 ## IG925
 
+- [IG925 Quick Start Guide](IG925/Manuals/Installation%20Guide/IG925%20Quick%20Start%20Guide_V1.0.md): IG925 Installation Guide v1.0
 - [InGateway925 Edge Computing Gateway User Manual](IG925/Manuals/User%20manual/IG925_User%20manual_V1.0.md): IG925 User manual v1.0 — InGateway925 (IG925) is a high-performance 5G edge computing gateway designed by InHand Networks for industrial IoT appl…
   - [Front Matter](IG925/Manuals/User%20manual/IG925_User%20manual_V1.0.md#front-matter)
   - [Chapter 1 Knowing the Device](IG925/Manuals/User%20manual/IG925_User%20manual_V1.0.md#chapter-1-knowing-the-device)

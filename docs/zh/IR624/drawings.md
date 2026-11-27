@@ -12,6 +12,8 @@ description: "IR624 结构图纸登记（2D、3D），含图纸原件文件链�
 | 类型 | 文件 | 原件 |
 |---|---|---|
 | 2D | IR624-Din_Rail_2D_Drawing_V1.0.pdf | [查看](https://github.com/inhandnet/documents/blob/master/docs/zh/IR624/Drawings/2D/IR624-Din_Rail_2D_Drawing_V1.0.pdf) |
+| 2D | IR624-Rear_Wall_Mount_2D_Drawing_V1.0.pdf | [查看](https://github.com/inhandnet/documents/blob/master/docs/zh/IR624/Drawings/2D/IR624-Rear_Wall_Mount_2D_Drawing_V1.0.pdf) |
+| 2D | IR624-Side_Wall_Mount_2D_Drawing_V1.0.pdf | [查看](https://github.com/inhandnet/documents/blob/master/docs/zh/IR624/Drawings/2D/IR624-Side_Wall_Mount_2D_Drawing_V1.0.pdf) |
 | 3D | IR624-Din_Rail_3D_Model_V1.0.stp | [查看](https://github.com/inhandnet/documents/blob/master/docs/zh/IR624/Drawings/3D/IR624-Din_Rail_3D_Model_V1.0.stp) |
 | 3D | IR624-Rear_Wall_Mount_3D_Model_V1.0.stp | [查看](https://github.com/inhandnet/documents/blob/master/docs/zh/IR624/Drawings/3D/IR624-Rear_Wall_Mount_3D_Model_V1.0.stp) |
 | 3D | IR624-Side_Wall_Mount_3D_Model_V1.0.stp | [查看](https://github.com/inhandnet/documents/blob/master/docs/zh/IR624/Drawings/3D/IR624-Side_Wall_Mount_3D_Model_V1.0.stp) |

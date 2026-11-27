@@ -99,7 +99,7 @@
 | CPU | Quad Cortex-A76 + Quad Cortex-A55, up to 2.4GHz |
 | GPU |  Quad-core Mali-G610 MC4 high-performance GPU |
 | NPU | Up to 6 TOPS (INT8)<br/>Support INT4/INT8/lNT16 mixed operations and framework switching of TensorFlow / MXNet / PyTorch / Caffe |
-| RAM | 8GB |
+| RAM | 8GB LPDDR4X|
 | FLASH | 64GB eMMC |
 | <span style="color: green;">**Connectivity & Interfaces**</span> |  |
 | Ethernet Ports | 3×10/100/1000 Mbps GE |

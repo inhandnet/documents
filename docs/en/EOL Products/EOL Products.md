@@ -18,10 +18,10 @@ The same list is published at <https://www.inhand.com/en/support/eol-products>. 
 
 | EOL Product | Replacement | End of Ordering | End of Production | End of Support |
 |---|---|---|---|---|
-| VG814-FS59-W-G-V | VG814-F09-W-G-V | 2026-07-24 | 2026-09-24 | 2030-07-24 |
-| VG814-FQ59-W-G-V | VG814-F09-W-G-V | 2026-07-24 | 2026-09-24 | 2030-07-24 |
-| VG814-FS59-W-G-R | VG814-F09-W-G-R | 2026-07-24 | 2026-09-24 | 2030-07-24 |
-| VG814-FQ59-W-G-R | VG814-F09-W-G-R | 2026-07-24 | 2026-09-24 | 2030-07-24 |
+| VG814-FS59-W-G-V | VG814-FQ09-W-G-V | 2026-07-24 | 2026-09-24 | 2030-07-24 |
+| VG814-FQ59-W-G-V | VG814-FQ09-W-G-V | 2026-07-24 | 2026-09-24 | 2030-07-24 |
+| VG814-FS59-W-G-R | VG814-FQ09-W-G-R | 2026-07-24 | 2026-09-24 | 2030-07-24 |
+| VG814-FQ59-W-G-R | VG814-FQ09-W-G-R | 2026-07-24 | 2026-09-24 | 2030-07-24 |
 | IR915L-FQ39 Series | IR315-FF39 Series | 2024-08-23 | 2024-10-23 | 2028-08-23 |
 | IR912L-FQ39 | IR315-FF39 Series | 2024-08-23 | 2024-10-23 | 2028-08-23 |
 | IR615-S-FQ88 Series | IR315-FQ88 Series | 2024-01-05 | 2024-03-05 | 2029-01-05 |

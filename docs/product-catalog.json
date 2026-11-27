@@ -3072,6 +3072,23 @@
         "zh"
       ],
       "public": true
+    },
+    {
+      "id": "IG925",
+      "kind": "model",
+      "display_names": {
+        "en": "IG925",
+        "zh": "IG925"
+      },
+      "aliases": [],
+      "source_folders": [
+        "IG925"
+      ],
+      "expected_languages": [
+        "en",
+        "zh"
+      ],
+      "public": true
     }
   ]
 }

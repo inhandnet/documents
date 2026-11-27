@@ -680,6 +680,19 @@
 - [Configuration Guide for the Remote Management System of Secondary Water Supply Facilities](IG902/Use%20Cases/Secondary-Water-Supply-Remote-Monitoring/configuration-guide.md): IG902 Secondary-Water-Supply-Remote-Monitoring
 - [Remote Intelligent Management System for Large-City Secondary Water Supply Facilities](IG902/Use%20Cases/Secondary-Water-Supply-Remote-Monitoring/case-manual.md): IG902 Secondary-Water-Supply-Remote-Monitoring
 
+## IG925
+
+- [InGateway925 Edge Computing Gateway User Manual](IG925/Manuals/User%20manual/IG925_User%20manual_V1.0.md): IG925 User manual v1.0 — InGateway925 (IG925) is a high-performance 5G edge computing gateway designed by InHand Networks for industrial IoT appl…
+  - [Front Matter](IG925/Manuals/User%20manual/IG925_User%20manual_V1.0.md#front-matter)
+  - [Chapter 1 Knowing the Device](IG925/Manuals/User%20manual/IG925_User%20manual_V1.0.md#chapter-1-knowing-the-device)
+  - [Chapter 2 Installation and First Use](IG925/Manuals/User%20manual/IG925_User%20manual_V1.0.md#chapter-2-installation-and-first-use)
+  - [Chapter 3 Common Scenario Configuration](IG925/Manuals/User%20manual/IG925_User%20manual_V1.0.md#chapter-3-common-scenario-configuration)
+  - [Chapter 4 Function Description and Parameter Reference](IG925/Manuals/User%20manual/IG925_User%20manual_V1.0.md#chapter-4-function-description-and-parameter-reference)
+  - [Chapter 5 Typical Applications](IG925/Manuals/User%20manual/IG925_User%20manual_V1.0.md#chapter-5-typical-applications)
+  - [Appendix: Troubleshooting](IG925/Manuals/User%20manual/IG925_User%20manual_V1.0.md#appendix-troubleshooting)
+  - [Appendix: Safety Precautions](IG925/Manuals/User%20manual/IG925_User%20manual_V1.0.md#appendix-safety-precautions)
+  - [FAQ](IG925/Manuals/User%20manual/IG925_User%20manual_V1.0.md#faq)
+
 ## IR202
 
 - [Charging Station Networking Solution](IR202/Use%20Cases/EV-Charging-Station-Networking/solution-manual.md): IR202 EV-Charging-Station-Networking

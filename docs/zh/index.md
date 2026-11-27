@@ -394,6 +394,14 @@ hide:
     </div>
     <div class="pm-card">
       <div class="pm-card__body">
+        <div class="pm-card__title">IG925</div>
+        <ul class="pm-card__links">
+        <li><a href="IG925/Manuals/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/IG925%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.0.html" title="IG925 边缘计算网关用户手册">用户手册 V1.0</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pm-card">
+      <div class="pm-card__body">
         <div class="pm-card__title">IG974</div>
         <ul class="pm-card__links">
         <li><a href="IG974/certifications.html" title="IG974 认证证书">认证证书</a></li>

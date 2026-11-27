@@ -361,6 +361,14 @@ hide:
     </div>
     <div class="pm-card">
       <div class="pm-card__body">
+        <div class="pm-card__title">IG925</div>
+        <ul class="pm-card__links">
+        <li><a href="IG925/Manuals/User%20manual/IG925_User%20manual_V1.0.html" title="InGateway925 Edge Computing Gateway User Manual">User manual V1.0</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pm-card">
+      <div class="pm-card__body">
         <div class="pm-card__title">InCloudManager</div>
         <ul class="pm-card__links">
         <li><a href="InCloudManager/Manuals/User%20manual/InCloud%20Manager%20User%20Manual.html" title="**About the platform**">User manual</a></li>
